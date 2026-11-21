@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the specific Born–Hopf Geometry manuscript and version you use."
+title: "Born–Hopf Geometry: Research Manuscript Series I–VII"
+type: generic
+authors:
+  - family-names: Kugelmann
+    given-names: Peter
+version: "3.058"
+date-released: "2026-11-20"
+abstract: "Research manuscripts on compact geometric structures, finite spectral and quantum carriers, dynamical constructions and proposed observable responses."
