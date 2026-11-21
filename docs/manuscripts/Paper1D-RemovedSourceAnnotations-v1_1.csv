@@ -1,0 +1,654 @@
+old_line,source_annotation,action
+1,"Paper I-D closure integration v1.67: source-relative original ND/PI/SC/CI/FS/TN/BG comparison, explicit guards; older math preserved.",exported; removed from manuscript
+2,Paper-series v2.381: complete algebraic exceptional torsion atlas and all-cocycle twist-stability; original claims retained.,exported; removed from manuscript
+3,"Paper-series v2.380: unified bibliography, exact exceptional double/length/gauge mathematics in I-B; previous theorem labels retained.",exported; removed from manuscript
+4,Paper-series v2.379: full equivariant Dirac/Hodge/eta/torsion atlas in Paper I-B; paper-root references synchronized.,exported; removed from manuscript
+5,Paper-series v2.378: 2026 exceptional literature consolidation and reference synchronization. The mathematical additions are located in Paper I-B.,exported; removed from manuscript
+6,Paper-series v2.377: reference-only rebind to current Paper I-B v1.1; original mathematics retained except new Paper I-B comparison chapter.,exported; removed from manuscript
+7,"Framework v2.371: exact 600-cell total-graph, Q8 and tangent-response certificates.",exported; removed from manuscript
+8,Framework v2.370: derived exceptional-root/Hurwitz comparison in I-A/I-C; other papers reference-only synchronized.,exported; removed from manuscript
+9,Framework v2.368: preserve prior II-B convention/unital fixes and verified II-D corrections; current references synchronized.,exported; removed from manuscript
+10,Framework v2.366: exact chamber--transporter/Hurwitz integration; physical action and hadron decay gates remain conditional.,exported; removed from manuscript
+11,Framework v2.366: scoped Hurwitz/600-cell hadron-source integration; physical APBI/decay frontier remains open.,exported; removed from manuscript
+12,"Framework v2.358: current 30-root source reference synchronization; selectively updated III-E, III-F, VI-B, VI-C.",exported; removed from manuscript
+13,"Framework v2.357: normal-jet/Clifford/hadron-shell observable proof additions at scoped mathematical, conditional, or QCD-source levels.",exported; removed from manuscript
+14,Framework v2.356: bibliography/source-registry synchronization; mathematical body unchanged.,exported; removed from manuscript
+15,Framework v2.349: integrated exact conditional mathematical closures; G0 and GP1--GP3 retained as axioms.,exported; removed from manuscript
+16,Framework v2.345: F40 native three-readout and source-visibility integration.,exported; removed from manuscript
+17,"Framework v2.344: Twisted Hurwitz C3/Petersen bridge, native baryon source and same-action curvature firewall.",exported; removed from manuscript
+18,"Framework v2.343: Reciprocal signed coupling, selected 15 and conditional physical boundary.",exported; removed from manuscript
+19,"Framework v2.342: Exact three-cycle Petersen reconstruction, class frames, typed nonactualization.",exported; removed from manuscript
+20,Framework v2.341: Coherent coset--Hodge and parity cover integration. Previous v2.340 retained.,exported; removed from manuscript
+21,Framework v2.340: Exact rank-two 600-cell incidence and typed operator/observable closure.,exported; removed from manuscript
+22,Geometry source update v1.43: Petersen exact-certificate technical ledger.,exported; removed from manuscript
+23,Baseline: v1.42 from Framework archive v2_316; semantic graph reindex pending.,exported; removed from manuscript
+24,"Framework v2.275: exact positive dense-twin word cubature, finite repeatability and eighth-moment classification, nested sampling frames, joint action and POVM-jet exports; preserves v2.274.",exported; removed from manuscript
+25,"Framework v2.274: two-scalar positive convolution certificates, first-leaked exceptional coset detection, branch-symmetric twin mixing, and finite endpoint moments; all v2.273 branches preserved.",exported; removed from manuscript
+26,"Framework v2.273: restored missing Problem 3 theorems from v2.268; exact exceptional frames, twin geometry, convolution repeatability and projector/occurrence firewalls; merged on v2.272 without overwriting independent branches.",exported; removed from manuscript
+27,Framework v2.272: merged v2.270 covariant native-readout mathematics with v2.271 Problem 4 finite-action Hopf hypercharge/holonomy corrections; no universal bulk-gauge uniqueness claim.,exported; removed from manuscript
+28,Independent branches: v2.270 readout/guard exports and v2.270 K16 action-consumed charge closure; all prior scoped assumptions retained.,exported; removed from manuscript
+29,"Framework v2.267: exact Paper II-A converse/observable certificates, III-F action tests, V-B right orbit and V-C native gauge scope; prior v2.266 preserved.",exported; removed from manuscript
+30,Framework v2.266: exact Paper II-C outcome-count/readout converse results and scoped downstream imports; 30-root references synchronized.,exported; removed from manuscript
+31,Framework v2.265: II-C coordinate-stage constitution and exact first-symbol host inheritance; prior mathematical domains retained.,exported; removed from manuscript
+32,Framework v2.264: II-B reverse and action-bridge integration; preserves prior mathematical domains; active 30-root references synchronized.,exported; removed from manuscript
+33,Framework v2.263: Paper I-C adds bridge-controlled root-carry parity and source-relative old-cap cancellation; other root mathematical bodies retained; active 30-root references synchronized.,exported; removed from manuscript
+34,"Framework v2.262: merges Paper II-F three-gap closure from v2.260 into v2.261, preserving newer II-B/II-D repairs; 30-root references synchronized.",exported; removed from manuscript
+35,Framework v2.261: merged Paper II-B GP2-level/geometric repairs; preserves v2.260 II-D repairs; active references synchronized.,exported; removed from manuscript
+36,"Framework v2.260: Paper II-D signed RS, finite-symbol typing, and conditional curvature/Jordan repairs; references synchronized.",exported; removed from manuscript
+37,Framework v2.259: conditional native SU(2) atlas and explicit later discharge; v2.258 mathematical bodies retained elsewhere.,exported; removed from manuscript
+38,Framework v2.258: preserves parallel II-A/dynamics update and adds complete readout/frequency closures.,exported; removed from manuscript
+39,Framework v2.257: exact minimal complete position readout and arbitrary-preparation frequency law.,exported; removed from manuscript
+40,Framework v2.256: exact native inertia and sharp bounded ordered-source closure; preserves concurrent v2.255 work.,exported; removed from manuscript
+41,Framework v2.255: preserves parallel detector integration and adds exact finite readout closures.,exported; removed from manuscript
+42,Framework v2.254: shared bibliography/reference sync; substantive Pasterski detector-Ward additions only IV-B/IV-C/VII-C.,exported; removed from manuscript
+43,Framework v2.253: typed raw coordinate defect in I-A and synchronized VI-A import; active references synchronized.,exported; removed from manuscript
+44,Framework v2.252: optional shell-frame source-return calculation in III-G; active references synchronized.,exported; removed from manuscript
+45,"Framework v2.251: forward common-action execution, joint source jets and scoped coupled control.",exported; removed from manuscript
+46,"Framework v2.251: exact full-heat variations, fermion source jets and explicit physical completion frontier.",exported; removed from manuscript
+47,"Framework v2.251: certified interacting source jets, pole stability and scoped completion proofs.",exported; removed from manuscript
+48,Framework v2.251: interacting finite-source evaluation and coupled local vacuum classification.,exported; removed from manuscript
+49,Framework v2.251: exact finite source execution and native causal common-parent bridge.,exported; removed from manuscript
+50,Framework v2.251: constructive parent and scoped source-incidence audit; see release report.,exported; removed from manuscript
+51,"Framework v2.251: common-action two-jet, corrected source/response closure and synchronized references.",exported; removed from manuscript
+52,Framework v2.244: scoped rooted source-order Schur diagnostics and synchronized paper references.,exported; removed from manuscript
+53,"Framework v2.242: signed rooted phase lift, complete transverse return and exact family cubic.",exported; removed from manuscript
+54,"Framework v2.241: proved rooted conormal geometry, conditional cap realization and scoped action tests.",exported; removed from manuscript
+55,Framework v2.239: coherent 30-paper reference rebinding; selective new proofs on established owners.,exported; removed from manuscript
+56,Framework v2.238: source registry synchronized; existing mathematical body retained except declared insertions.,exported; removed from manuscript
+57,Internal p1b:* labels of the extracted theorems remain stable and unique.,exported; removed from manuscript
+71,BEGIN INLINE SOURCE: Paper00-ActiveExternalReferences-v2_130.tex,exported; removed from manuscript
+72,Framework v2.191: current reference binding; existing definitions retained.,exported; removed from manuscript
+73,Framework v2.190: current22-root registry with native clock-evolution proofs.,exported; removed from manuscript
+74,"Framework v2.189: exact current22-root external registry, including retained v2.188 hardening owners.",exported; removed from manuscript
+75,Framework v2.187: current registry synchronization only; source release v2.186 preserved.,exported; removed from manuscript
+76,Framework v2.186: authoritative current 22-paper registry.,exported; removed from manuscript
+77,Framework v2.182: all current 22 logical paper AUX bindings.,exported; removed from manuscript
+78,Framework v2.170: current I-B v1.43 external AUX binding.,exported; removed from manuscript
+79,Framework v2.167: exact current 22-root registry after CP--BL2 integration.,exported; removed from manuscript
+80,Framework v2.166: exact current 22-root compact-release AUX registry.,exported; removed from manuscript
+81,Framework v2.165: authoritative current root bindings.,exported; removed from manuscript
+82,Framework v2.164: exact current 22 manuscript AUX bindings.,exported; removed from manuscript
+83,"Framework v2.162: finite metric, functional Hilbert and scoped Ward integration.",exported; removed from manuscript
+84,Framework v2.161: current 22 manuscript AUX bindings; source only.,exported; removed from manuscript
+85,Framework v2.156 / registry v2.113: synchronized current 22 manuscript roots; source-only registry.,exported; removed from manuscript
+86,Framework v2.143 / registry v2.111: active manuscript AUX basenames; no generated AUX or PDF included.,exported; removed from manuscript
+87,======================================================================,exported; removed from manuscript
+88,"Central external-reference imports, numbers only, no PDF jumping",exported; removed from manuscript
+89,======================================================================,exported; removed from manuscript
+91,xr-hyper is loaded centrally so that papers may retain their existing,exported; removed from manuscript
+92,\usepackage{xr-hyper} lines without redefining \externaldocument after this,exported; removed from manuscript
+93,"registry is installed.  If plain xr was loaded earlier, retain it.",exported; removed from manuscript
+100,Make external-document registration idempotent.  The registry identifies a,exported; removed from manuscript
+101,logical paper by its Paper<number><optional letter> prefix.  Prefix-qualified,exported; removed from manuscript
+102,imports remain independent.  Current paper roots contain no local,exported; removed from manuscript
+103,\externaldocument calls; this guard also makes accidental duplicates harmless.,exported; removed from manuscript
+134,"Do not import the aux file of the logical paper currently being compiled,",exported; removed from manuscript
+135,even when the job and registry use different version suffixes.,exported; removed from manuscript
+166,External references are automatic.  This file is the sole owner of both the,exported; removed from manuscript
+167,bibliography and the current Paper-I-A--VII-C AUX registry.  Missing auxiliaries,exported; removed from manuscript
+168,are informational on the first pass and are populated by the source-only,exported; removed from manuscript
+169,two-pass series build.  Basenames deliberately omit temporary download/copy,exported; removed from manuscript
+170,suffixes such as ``(1)'' or ``-1''.,exported; removed from manuscript
+171,Paper I-A: A Normalized Reference Atlas.,exported; removed from manuscript
+174,Paper I-B: Reciprocal Product Geometry of M8.,exported; removed from manuscript
+176,Import geometry results for technical cross-volume references.,exported; removed from manuscript
+179,Paper II: Kinematic Foundation and Derived Structures (six components).,exported; removed from manuscript
+184,Historical p2f:* export labels remain in II-E; II-F is the new technical volume.,exported; removed from manuscript
+186,Paper III: Dynamics and Intrinsic Geometric Constitution (six components).,exported; removed from manuscript
+193,Paper IV: Quantum Mechanics.,exported; removed from manuscript
+195,Paper V-A: The Standard Model.,exported; removed from manuscript
+197,Paper V-B: Finite Spectrum and Flavor Closure.,exported; removed from manuscript
+199,Paper V-C: Finite Interaction Boundaries of the Standard Model.,exported; removed from manuscript
+201,Paper VI-A: Gravity and Closed Cosmology.,exported; removed from manuscript
+203,Paper VI-B: Geometric Dark Sector and Cosmological Readouts.,exported; removed from manuscript
+205,Paper VII-A: Finite QCD Kernel and Nonperturbative Closure.,exported; removed from manuscript
+207,"Paper VII-B: Hadronic, Thermal, and Nuclear QCD Readouts.",exported; removed from manuscript
+209,Paper VII-C: Continuous Quantum Field Theory.,exported; removed from manuscript
+211,END INLINE SOURCE: Paper00-ActiveExternalReferences-v2_130.tex,exported; removed from manuscript
+296,BEGIN INLINE SOURCE: Paper1B-RankTwoClosure-Main-v1_0.tex,exported; removed from manuscript
+297,Framework v2.182: complete post-Batch-28 mixed rank-two proof chain.,exported; removed from manuscript
+313,BEGIN INLINE SOURCE: Paper1B-RankTwoLiteratureApplication-Main-v1_1.tex,exported; removed from manuscript
+314,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoLiteratureApplication-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+315,Standalone positive proof-chain addendum for subsequent framework integration.,exported; removed from manuscript
+316,This file is not yet included by the supplied v2.171 root.,exported; removed from manuscript
+475,END INLINE SOURCE: Paper1B-RankTwoLiteratureApplication-Main-v1_1.tex,exported; removed from manuscript
+478,BEGIN INLINE SOURCE: Paper1B-RankTwoFourthGauge-Main-v1_1.tex,exported; removed from manuscript
+479,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoFourthGauge-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+480,"Positive proof supplement to the supplied framework v2.171, after Batch 29.",exported; removed from manuscript
+481,Uses the ambient manuscript's theorem environments and current notation.,exported; removed from manuscript
+734,END INLINE SOURCE: Paper1B-RankTwoFourthGauge-Main-v1_1.tex,exported; removed from manuscript
+737,BEGIN INLINE SOURCE: Paper1B-RankTwoEvenClosure-Main-v1_1.tex,exported; removed from manuscript
+738,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoEvenClosure-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+739,Positive proof supplement to framework v2.171 and Batches 29--30.,exported; removed from manuscript
+740,The supplied manuscript's theorem environments and notation are used.,exported; removed from manuscript
+1032,END INLINE SOURCE: Paper1B-RankTwoEvenClosure-Main-v1_1.tex,exported; removed from manuscript
+1035,BEGIN INLINE SOURCE: Paper1B-RankTwoOddLowGauges-Main-v1_1.tex,exported; removed from manuscript
+1036,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoOddLowGauges-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+1037,Batch 32: positive proof supplement to supplied v2.171 and Batches 29--31.,exported; removed from manuscript
+1305,END INLINE SOURCE: Paper1B-RankTwoOddLowGauges-Main-v1_1.tex,exported; removed from manuscript
+1308,BEGIN INLINE SOURCE: Paper1B-RankTwoForgetfulFibres-Main-v1_1.tex,exported; removed from manuscript
+1309,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoForgetfulFibres-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+1310,Batch 33: positive continuation using the actual Batch 32 low gauges.,exported; removed from manuscript
+1540,END INLINE SOURCE: Paper1B-RankTwoForgetfulFibres-Main-v1_1.tex,exported; removed from manuscript
+1543,BEGIN INLINE SOURCE: Paper1B-RankTwoExoticKappa-Main-v1_1.tex,exported; removed from manuscript
+1544,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoExoticKappa-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+1545,Batch 34: relative sixth-stage surgery and the actual odd exotic eta column.,exported; removed from manuscript
+1781,END INLINE SOURCE: Paper1B-RankTwoExoticKappa-Main-v1_1.tex,exported; removed from manuscript
+1784,BEGIN INLINE SOURCE: Paper1B-RankTwoMixedCardinalities-Main-v1_1.tex,exported; removed from manuscript
+1785,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoMixedCardinalities-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+1786,Batch 35: evaluated mixed cardinalities and the remaining quotient-type bit.,exported; removed from manuscript
+1958,END INLINE SOURCE: Paper1B-RankTwoMixedCardinalities-Main-v1_1.tex,exported; removed from manuscript
+1961,BEGIN INLINE SOURCE: Paper1B-RankTwoNormalTransport-Main-v1_1.tex,exported; removed from manuscript
+1962,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoNormalTransport-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+1963,"Batch 36: actual normal-component conjugation, in the retained boundary model.",exported; removed from manuscript
+2103,END INLINE SOURCE: Paper1B-RankTwoNormalTransport-Main-v1_1.tex,exported; removed from manuscript
+2106,BEGIN INLINE SOURCE: Paper1B-RankTwoFibreGroups-Main-v1_1.tex,exported; removed from manuscript
+2107,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoFibreGroups-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+2108,Batch 37: matched generators and groups acting on the ordinary lift fibres.,exported; removed from manuscript
+2275,END INLINE SOURCE: Paper1B-RankTwoFibreGroups-Main-v1_1.tex,exported; removed from manuscript
+2278,BEGIN INLINE SOURCE: Paper1B-RankTwoRelativeObstructions-Main-v1_1.tex,exported; removed from manuscript
+2279,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoRelativeObstructions-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+2280,Batch 38: exact terminal relative coefficient maps and their gauge interpretation.,exported; removed from manuscript
+2450,END INLINE SOURCE: Paper1B-RankTwoRelativeObstructions-Main-v1_1.tex,exported; removed from manuscript
+2453,BEGIN INLINE SOURCE: Paper1B-RankTwoTerminalTypeTest-Main-v1_1.tex,exported; removed from manuscript
+2454,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoTerminalTypeTest-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+2455,Batch 39: final-stage pure extension and location of the remaining matched bits.,exported; removed from manuscript
+2582,END INLINE SOURCE: Paper1B-RankTwoTerminalTypeTest-Main-v1_1.tex,exported; removed from manuscript
+2585,BEGIN INLINE SOURCE: Paper1B-RankTwoCoincidentCircle-Main-v1_1.tex,exported; removed from manuscript
+2586,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoCoincidentCircle-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+2587,Batch 40: actual geometric detection of the natural e coefficients.,exported; removed from manuscript
+2894,END INLINE SOURCE: Paper1B-RankTwoCoincidentCircle-Main-v1_1.tex,exported; removed from manuscript
+2897,BEGIN INLINE SOURCE: Paper1B-RankTwoOddType-Main-v1_1.tex,exported; removed from manuscript
+2898,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoOddType-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+2899,"Batch 41: selected quotient types, fibres, and the remaining top-stage tests.",exported; removed from manuscript
+3057,END INLINE SOURCE: Paper1B-RankTwoOddType-Main-v1_1.tex,exported; removed from manuscript
+3060,BEGIN INLINE SOURCE: Paper1B-RankTwoFramedBand-Main-v1_1.tex,exported; removed from manuscript
+3061,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoFramedBand-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+3062,Batch 42: retain the product boundary framing when using the proper band.,exported; removed from manuscript
+3243,END INLINE SOURCE: Paper1B-RankTwoFramedBand-Main-v1_1.tex,exported; removed from manuscript
+3246,BEGIN INLINE SOURCE: Paper1B-RankTwoBandComparison-Main-v1_1.tex,exported; removed from manuscript
+3247,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoBandComparison-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+3248,Batch 43: the forced top boundary bundle null-comparison.,exported; removed from manuscript
+3384,END INLINE SOURCE: Paper1B-RankTwoBandComparison-Main-v1_1.tex,exported; removed from manuscript
+3387,BEGIN INLINE SOURCE: Paper1B-RankTwoBoundaryFrame-Main-v1_1.tex,exported; removed from manuscript
+3388,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoBoundaryFrame-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+3389,Batch 44: a base-coordinate frame transport in the actual twisted bundle.,exported; removed from manuscript
+3550,END INLINE SOURCE: Paper1B-RankTwoBoundaryFrame-Main-v1_1.tex,exported; removed from manuscript
+3553,BEGIN INLINE SOURCE: Paper1B-RankTwoMatchedFrame-Main-v1_1.tex,exported; removed from manuscript
+3554,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoMatchedFrame-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+3555,"Batch 45: geometric matched finite generator, invariant top comparison.",exported; removed from manuscript
+3720,END INLINE SOURCE: Paper1B-RankTwoMatchedFrame-Main-v1_1.tex,exported; removed from manuscript
+3723,BEGIN INLINE SOURCE: Paper1B-RankTwoConfigurationPushout-Main-v1_1.tex,exported; removed from manuscript
+3724,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoConfigurationPushout-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+3725,Batch 46: an explicit model of the actual free configuration region.,exported; removed from manuscript
+3954,END INLINE SOURCE: Paper1B-RankTwoConfigurationPushout-Main-v1_1.tex,exported; removed from manuscript
+3957,BEGIN INLINE SOURCE: Paper1B-RankTwoBoundaryGluing-Main-v1_1.tex,exported; removed from manuscript
+3958,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoBoundaryGluing-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+3959,"Batch 47: the boundary map, actual clutching, and top-comparison source.",exported; removed from manuscript
+4199,END INLINE SOURCE: Paper1B-RankTwoBoundaryGluing-Main-v1_1.tex,exported; removed from manuscript
+4202,BEGIN INLINE SOURCE: Paper1B-RankTwoJoiningComponents-Main-v1_1.tex,exported; removed from manuscript
+4203,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoJoiningComponents-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+4204,Batch 48: the exact joining-component group and actual endpoint criterion.,exported; removed from manuscript
+4342,END INLINE SOURCE: Paper1B-RankTwoJoiningComponents-Main-v1_1.tex,exported; removed from manuscript
+4345,BEGIN INLINE SOURCE: Paper1B-RankTwoJoiningPaths-Main-v1_1.tex,exported; removed from manuscript
+4346,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoJoiningPaths-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+4347,"Batch 49: matching-path group, clutching action, and actual joining gauges.",exported; removed from manuscript
+4528,END INLINE SOURCE: Paper1B-RankTwoJoiningPaths-Main-v1_1.tex,exported; removed from manuscript
+4531,BEGIN INLINE SOURCE: Paper1B-RankTwoSpherePiece-Main-v1_1.tex,exported; removed from manuscript
+4532,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoSpherePiece-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+4533,"Batch 50: actual Z_s bundle classes, gauges, and evaluated joining endpoint.",exported; removed from manuscript
+4723,END INLINE SOURCE: Paper1B-RankTwoSpherePiece-Main-v1_1.tex,exported; removed from manuscript
+4726,BEGIN INLINE SOURCE: Paper1B-RankTwoTargetGaugeConstruction-Main-v1_1.tex,exported; removed from manuscript
+4727,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoTargetGaugeConstruction-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+4728,Batch 51: actual mapping-torus gauge components and target gluing recipe.,exported; removed from manuscript
+4944,END INLINE SOURCE: Paper1B-RankTwoTargetGaugeConstruction-Main-v1_1.tex,exported; removed from manuscript
+4947,BEGIN INLINE SOURCE: Paper1B-RankTwoMappingTorusNormalForm-Main-v1_1.tex,exported; removed from manuscript
+4948,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoMappingTorusNormalForm-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+4949,"Batch 52: an actual ordinary bundle normal form on Y, preserving its fibre sector.",exported; removed from manuscript
+5065,END INLINE SOURCE: Paper1B-RankTwoMappingTorusNormalForm-Main-v1_1.tex,exported; removed from manuscript
+5068,BEGIN INLINE SOURCE: Paper1B-RankTwoClosingFamilyComponents-Main-v1_1.tex,exported; removed from manuscript
+5069,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoClosingFamilyComponents-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+5070,Batch 53: exact determinant-fixed closing components and their joining restriction.,exported; removed from manuscript
+5308,END INLINE SOURCE: Paper1B-RankTwoClosingFamilyComponents-Main-v1_1.tex,exported; removed from manuscript
+5311,BEGIN INLINE SOURCE: Paper1B-RankTwoOrdinaryBoundaryFrames-Main-v1_1.tex,exported; removed from manuscript
+5312,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoOrdinaryBoundaryFrames-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+5313,Batch 54: arbitrary ordinary boundary bundle frame transport.,exported; removed from manuscript
+5467,END INLINE SOURCE: Paper1B-RankTwoOrdinaryBoundaryFrames-Main-v1_1.tex,exported; removed from manuscript
+5470,BEGIN INLINE SOURCE: Paper1B-RankTwoCombinedTopTarget-Main-v1_1.tex,exported; removed from manuscript
+5471,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoCombinedTopTarget-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+5472,Batch 55: an actual composite target and one top test for the invariant sum.,exported; removed from manuscript
+5650,END INLINE SOURCE: Paper1B-RankTwoCombinedTopTarget-Main-v1_1.tex,exported; removed from manuscript
+5653,BEGIN INLINE SOURCE: Paper1B-RankTwoStabilizedTopDetector-Main-v1_1.tex,exported; removed from manuscript
+5654,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoStabilizedTopDetector-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+5655,Batch 56: a complete detector for the residual rank-two C2 coefficient.,exported; removed from manuscript
+5825,END INLINE SOURCE: Paper1B-RankTwoStabilizedTopDetector-Main-v1_1.tex,exported; removed from manuscript
+5828,BEGIN INLINE SOURCE: Paper1B-RankTwoFiniteSquareEvaluation-Main-v1_1.tex,exported; removed from manuscript
+5829,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoFiniteSquareEvaluation-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+5830,Batch 57: a finite cochain evaluation of the new exact detector.,exported; removed from manuscript
+5953,END INLINE SOURCE: Paper1B-RankTwoFiniteSquareEvaluation-Main-v1_1.tex,exported; removed from manuscript
+5956,BEGIN INLINE SOURCE: Paper1B-RankTwoExoticCoordinates-Main-v1_1.tex,exported; removed from manuscript
+5957,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoExoticCoordinates-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+5958,Batch 58: explicit coordinates for the coherent exotic reference.,exported; removed from manuscript
+6200,END INLINE SOURCE: Paper1B-RankTwoExoticCoordinates-Main-v1_1.tex,exported; removed from manuscript
+6203,BEGIN INLINE SOURCE: Paper1B-RankTwoComparisonConeConstruction-Main-v1_1.tex,exported; removed from manuscript
+6204,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoComparisonConeConstruction-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+6205,Batch 59: last-column reduction and a finite map-to-cone construction.,exported; removed from manuscript
+6417,END INLINE SOURCE: Paper1B-RankTwoComparisonConeConstruction-Main-v1_1.tex,exported; removed from manuscript
+6420,BEGIN INLINE SOURCE: Paper1B-RankTwoOddJoiningCoordinates-Main-v1_1.tex,exported; removed from manuscript
+6421,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoOddJoiningCoordinates-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+6422,Batch 60: explicit ordinary joining frames and the odd exotic clutch.,exported; removed from manuscript
+6586,END INLINE SOURCE: Paper1B-RankTwoOddJoiningCoordinates-Main-v1_1.tex,exported; removed from manuscript
+6589,BEGIN INLINE SOURCE: Paper1B-RankTwoJoiningTopFilling-Main-v1_1.tex,exported; removed from manuscript
+6590,Framework v2.182: adopted positive proof stage from inputs/prior/Paper1B-RankTwoJoiningTopFilling-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+6591,Batch 61: an explicit stable joining path and Hopf-composed top filling.,exported; removed from manuscript
+6834,END INLINE SOURCE: Paper1B-RankTwoJoiningTopFilling-Main-v1_1.tex,exported; removed from manuscript
+6837,BEGIN INLINE SOURCE: Paper1B-RankTwoExoticFibreWords-Main-v1_1.tex,exported; removed from manuscript
+6838,Framework v2.182: adopted positive proof stage from Paper1B-RankTwoExoticFibreWords-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+6839,Batch 62: actual matrix representatives of both targets' initial fibre roots.,exported; removed from manuscript
+6996,END INLINE SOURCE: Paper1B-RankTwoExoticFibreWords-Main-v1_1.tex,exported; removed from manuscript
+6999,BEGIN INLINE SOURCE: Paper1B-RankTwoExoticSphereClosing-Main-v1_1.tex,exported; removed from manuscript
+7000,Framework v2.182: adopted positive proof stage from Paper1B-RankTwoExoticSphereClosing-Main-v1_0.tex; original bytes preserved in the bound proof archive.,exported; removed from manuscript
+7001,Batch 63: an actual rank-two sphere closing family and its joining restriction.,exported; removed from manuscript
+7219,END INLINE SOURCE: Paper1B-RankTwoExoticSphereClosing-Main-v1_1.tex,exported; removed from manuscript
+7222,END INLINE SOURCE: Paper1B-RankTwoClosure-Main-v1_0.tex,exported; removed from manuscript
+7230,BEGIN INLINE SOURCE: Paper1B-NaturalRankTwoCompletion-Main-v1_0.tex,exported; removed from manuscript
+7231,Framework v2.182: complete adopted natural boundary proof chain.,exported; removed from manuscript
+7257,BEGIN INLINE SOURCE: Paper1B-NaturalSphereBoundary-Main-v1_4.tex,exported; removed from manuscript
+7258,Adopted in framework v2.182 from Paper1B-NaturalSphereBoundary-Main-v1_3.tex; source equations retained.,exported; removed from manuscript
+7259,Targeted continuation from Batches 62--63: actual odd sphere comparison.,exported; removed from manuscript
+7260,Load-bearing construction belongs in MAIN under the supplied placement rule.,exported; removed from manuscript
+7855,END INLINE SOURCE: Paper1B-NaturalSphereBoundary-Main-v1_4.tex,exported; removed from manuscript
+7858,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantJoining-Main-v1_1.tex,exported; removed from manuscript
+7859,Adopted in framework v2.182 from Paper1B-NaturalDeterminantJoining-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+7860,"A constructed component of the actual determinant target, not its bit.",exported; removed from manuscript
+8089,END INLINE SOURCE: Paper1B-NaturalDeterminantJoining-Main-v1_1.tex,exported; removed from manuscript
+8092,BEGIN INLINE SOURCE: Paper1B-NaturalClosingBranch-Main-v1_2.tex,exported; removed from manuscript
+8093,Adopted in framework v2.182 from Paper1B-NaturalClosingBranch-Main-v1_1.tex; source equations retained.,exported; removed from manuscript
+8094,"A named missing component of the actual natural sphere input, not a detector.",exported; removed from manuscript
+8291,END INLINE SOURCE: Paper1B-NaturalClosingBranch-Main-v1_2.tex,exported; removed from manuscript
+8294,BEGIN INLINE SOURCE: Paper1B-NaturalSphereEvaluation-Main-v1_1.tex,exported; removed from manuscript
+8295,Adopted in framework v2.182 from Paper1B-NaturalSphereEvaluation-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+8296,Actual closing-map identification; not another calibration or detector.,exported; removed from manuscript
+8610,END INLINE SOURCE: Paper1B-NaturalSphereEvaluation-Main-v1_1.tex,exported; removed from manuscript
+8613,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantPatch-Main-v1_1.tex,exported; removed from manuscript
+8614,Adopted in framework v2.182 from Paper1B-NaturalDeterminantPatch-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+8615,A named component of the actual determinant target. No new detector.,exported; removed from manuscript
+8849,END INLINE SOURCE: Paper1B-NaturalDeterminantPatch-Main-v1_1.tex,exported; removed from manuscript
+8852,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantCapComparison-Main-v1_1.tex,exported; removed from manuscript
+8853,Adopted in framework v2.182 from Paper1B-NaturalDeterminantCapComparison-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+8854,Applied actual-map homotopies and side filling. No new detector.,exported; removed from manuscript
+9087,END INLINE SOURCE: Paper1B-NaturalDeterminantCapComparison-Main-v1_1.tex,exported; removed from manuscript
+9090,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantStiefelComparison-Main-v1_1.tex,exported; removed from manuscript
+9091,Adopted in framework v2.182 from Paper1B-NaturalDeterminantStiefelComparison-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+9092,A completed prerequisite of the actual determinant target. No new detector.,exported; removed from manuscript
+9572,END INLINE SOURCE: Paper1B-NaturalDeterminantStiefelComparison-Main-v1_1.tex,exported; removed from manuscript
+9575,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantCharacteristicComparison-Main-v1_1.tex,exported; removed from manuscript
+9576,Adopted in framework v2.182 from Paper1B-NaturalDeterminantCharacteristicComparison-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+9577,"Actual comparison legs, applied to the retained cap. No new detector.",exported; removed from manuscript
+9859,END INLINE SOURCE: Paper1B-NaturalDeterminantCharacteristicComparison-Main-v1_1.tex,exported; removed from manuscript
+9862,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantStabilizedClosing-Main-v1_1.tex,exported; removed from manuscript
+9863,Adopted in framework v2.182 from Paper1B-NaturalDeterminantStabilizedClosing-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+9864,An actual stabilized filling and its applied complete boundary restriction.,exported; removed from manuscript
+10221,END INLINE SOURCE: Paper1B-NaturalDeterminantStabilizedClosing-Main-v1_1.tex,exported; removed from manuscript
+10224,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantQuaternionRepair-Main-v1_1.tex,exported; removed from manuscript
+10225,Adopted in framework v2.182 from Paper1B-NaturalDeterminantQuaternionRepair-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+10226,"Actual applied replacement of the Stiefel endpoint, not a bit assignment.",exported; removed from manuscript
+10403,END INLINE SOURCE: Paper1B-NaturalDeterminantQuaternionRepair-Main-v1_1.tex,exported; removed from manuscript
+10406,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantBundleComparison-Main-v1_1.tex,exported; removed from manuscript
+10407,Adopted in framework v2.182 from Paper1B-NaturalDeterminantBundleComparison-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+10408,Complete the named actual source/frame comparison and apply it immediately.,exported; removed from manuscript
+10683,END INLINE SOURCE: Paper1B-NaturalDeterminantBundleComparison-Main-v1_1.tex,exported; removed from manuscript
+10686,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantIntrinsicClosing-Main-v1_1.tex,exported; removed from manuscript
+10687,Adopted in framework v2.182 from Paper1B-NaturalDeterminantIntrinsicClosing-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+10688,Apply the completed intrinsic bridge and retain the exact remaining map.,exported; removed from manuscript
+10910,END INLINE SOURCE: Paper1B-NaturalDeterminantIntrinsicClosing-Main-v1_1.tex,exported; removed from manuscript
+10913,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantProjectiveComparison-Main-v1_1.tex,exported; removed from manuscript
+10914,Adopted in framework v2.182 from Paper1B-NaturalDeterminantProjectiveComparison-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+10915,"The actual \eqref{p1b:eq:natural-oa-10} nullhomotopy, and its immediate application to \eqref{p1b:eq:natural-oa-12}.",exported; removed from manuscript
+11281,END INLINE SOURCE: Paper1B-NaturalDeterminantProjectiveComparison-Main-v1_1.tex,exported; removed from manuscript
+11284,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantToggleFilling-Main-v1_1.tex,exported; removed from manuscript
+11285,Adopted in framework v2.182 from Paper1B-NaturalDeterminantToggleFilling-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+11286,"A named component of the actual \eqref{p1b:eq:natural-ob-19} filling, applied immediately.",exported; removed from manuscript
+11540,END INLINE SOURCE: Paper1B-NaturalDeterminantToggleFilling-Main-v1_1.tex,exported; removed from manuscript
+11543,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantCoreFrame-Main-v1_1.tex,exported; removed from manuscript
+11544,Adopted in framework v2.182 from Paper1B-NaturalDeterminantCoreFrame-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+11545,Complete a named comparison on the actual \eqref{p1b:eq:natural-oc-14} core; apply immediately.,exported; removed from manuscript
+11712,END INLINE SOURCE: Paper1B-NaturalDeterminantCoreFrame-Main-v1_1.tex,exported; removed from manuscript
+11715,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantCoreRetraction-Main-v1_1.tex,exported; removed from manuscript
+11716,Adopted in framework v2.182 from Paper1B-NaturalDeterminantCoreRetraction-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+11717,"A named part of the actual \eqref{p1b:eq:natural-od-9} filling, not a new detector or calibration.",exported; removed from manuscript
+11894,END INLINE SOURCE: Paper1B-NaturalDeterminantCoreRetraction-Main-v1_1.tex,exported; removed from manuscript
+11897,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantRootComparison-Main-v1_1.tex,exported; removed from manuscript
+11898,Adopted in framework v2.182 from Paper1B-NaturalDeterminantRootComparison-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+11899,"Apply an exact simplification to the actual \eqref{p1b:eq:natural-oe-9} inner map, retaining its carry.",exported; removed from manuscript
+11992,END INLINE SOURCE: Paper1B-NaturalDeterminantRootComparison-Main-v1_1.tex,exported; removed from manuscript
+11995,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantAnnularComparison-Main-v1_1.tex,exported; removed from manuscript
+11996,Adopted in framework v2.182 from Paper1B-NaturalDeterminantAnnularComparison-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+11997,Actual input for the existing detector; every comparison is applied.,exported; removed from manuscript
+12168,END INLINE SOURCE: Paper1B-NaturalDeterminantAnnularComparison-Main-v1_1.tex,exported; removed from manuscript
+12171,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantAnnularParity-Main-v1_1.tex,exported; removed from manuscript
+12172,Adopted in framework v2.182 from Paper1B-NaturalDeterminantAnnularParity-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+12173,"Evaluate the specific \eqref{p1b:eq:natural-og-12} input, accounting for both full fibres.",exported; removed from manuscript
+12446,END INLINE SOURCE: Paper1B-NaturalDeterminantAnnularParity-Main-v1_1.tex,exported; removed from manuscript
+12449,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantRebasedRoot-Main-v1_1.tex,exported; removed from manuscript
+12450,Adopted in framework v2.182 from Paper1B-NaturalDeterminantRebasedRoot-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+12451,Apply the rebase to the actual root comparison; retain its changed carry.,exported; removed from manuscript
+12528,END INLINE SOURCE: Paper1B-NaturalDeterminantRebasedRoot-Main-v1_1.tex,exported; removed from manuscript
+12531,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantExteriorLocalization-Main-v1_1.tex,exported; removed from manuscript
+12532,Adopted in framework v2.182 from Paper1B-NaturalDeterminantExteriorLocalization-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+12533,Actual intrinsic comparisons applied to the remaining natural core.,exported; removed from manuscript
+12773,END INLINE SOURCE: Paper1B-NaturalDeterminantExteriorLocalization-Main-v1_1.tex,exported; removed from manuscript
+12776,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantCapWordReduction-Main-v1_1.tex,exported; removed from manuscript
+12777,Adopted in framework v2.182 from Paper1B-NaturalDeterminantCapWordReduction-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+12778,"Actual cap-input identification, including moving lower and frame factors.",exported; removed from manuscript
+12911,END INLINE SOURCE: Paper1B-NaturalDeterminantCapWordReduction-Main-v1_1.tex,exported; removed from manuscript
+12914,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantBackgroundReduction-Main-v1_1.tex,exported; removed from manuscript
+12915,Adopted in framework v2.182 from Paper1B-NaturalDeterminantBackgroundReduction-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+12916,"Simplify a named actual input, retaining its root and all prescribed faces.",exported; removed from manuscript
+13061,END INLINE SOURCE: Paper1B-NaturalDeterminantBackgroundReduction-Main-v1_1.tex,exported; removed from manuscript
+13064,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantPrefixFlattening-Main-v1_1.tex,exported; removed from manuscript
+13065,Adopted in framework v2.182 from Paper1B-NaturalDeterminantPrefixFlattening-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+13066,Applied to the actual \eqref{p1b:eq:natural-og-10} input. No new detector or bit assignment.,exported; removed from manuscript
+13205,END INLINE SOURCE: Paper1B-NaturalDeterminantPrefixFlattening-Main-v1_1.tex,exported; removed from manuscript
+13208,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantRootSeamStabilization-Main-v1_1.tex,exported; removed from manuscript
+13209,Adopted in framework v2.182 from Paper1B-NaturalDeterminantRootSeamStabilization-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+13210,"A named actual component of the existing filling, applied immediately.",exported; removed from manuscript
+13298,END INLINE SOURCE: Paper1B-NaturalDeterminantRootSeamStabilization-Main-v1_1.tex,exported; removed from manuscript
+13301,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantBoundaryDiskComparison-Main-v1_1.tex,exported; removed from manuscript
+13302,Adopted in framework v2.182 from Paper1B-NaturalDeterminantBoundaryDiskComparison-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+13303,"Actual cap boundary-null comparison, with all resulting terms retained.",exported; removed from manuscript
+13471,END INLINE SOURCE: Paper1B-NaturalDeterminantBoundaryDiskComparison-Main-v1_1.tex,exported; removed from manuscript
+13474,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantPairedCutCancellation-Main-v1_1.tex,exported; removed from manuscript
+13475,Adopted in framework v2.182 from Paper1B-NaturalDeterminantPairedCutCancellation-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+13476,"An actual filling of the identified exchanged-pair factor, applied immediately.",exported; removed from manuscript
+13635,END INLINE SOURCE: Paper1B-NaturalDeterminantPairedCutCancellation-Main-v1_1.tex,exported; removed from manuscript
+13638,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantNormRemainderReduction-Main-v1_1.tex,exported; removed from manuscript
+13639,Adopted in framework v2.182 from Paper1B-NaturalDeterminantNormRemainderReduction-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+13640,Applied relative simplifications of the exact retained \eqref{p1b:eq:natural-op-7} input.,exported; removed from manuscript
+13762,END INLINE SOURCE: Paper1B-NaturalDeterminantNormRemainderReduction-Main-v1_1.tex,exported; removed from manuscript
+13765,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantRootNormTail-Main-v1_1.tex,exported; removed from manuscript
+13766,Adopted in framework v2.182 from Paper1B-NaturalDeterminantRootNormTail-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+13767,"Actual root-norm tail and comparison factors, not a new calibration.",exported; removed from manuscript
+13936,END INLINE SOURCE: Paper1B-NaturalDeterminantRootNormTail-Main-v1_1.tex,exported; removed from manuscript
+13939,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantCommonClutchSource-Main-v1_1.tex,exported; removed from manuscript
+13940,Adopted in framework v2.182 from Paper1B-NaturalDeterminantCommonClutchSource-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+13941,"Actual source identifications, applied immediately to the retained target.",exported; removed from manuscript
+14118,END INLINE SOURCE: Paper1B-NaturalDeterminantCommonClutchSource-Main-v1_1.tex,exported; removed from manuscript
+14121,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantClutchSquareFilling-Main-v1_1.tex,exported; removed from manuscript
+14122,Adopted in framework v2.182 from Paper1B-NaturalDeterminantClutchSquareFilling-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+14123,Actual clutch-square null and its identified power-collar filling.,exported; removed from manuscript
+14267,END INLINE SOURCE: Paper1B-NaturalDeterminantClutchSquareFilling-Main-v1_1.tex,exported; removed from manuscript
+14270,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantPairToPower-Main-v1_1.tex,exported; removed from manuscript
+14271,Adopted in framework v2.182 from Paper1B-NaturalDeterminantPairToPower-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+14272,"Construct the actual missing \eqref{p1b:eq:natural-os-6} family, not a homotopy-class substitute.",exported; removed from manuscript
+14463,END INLINE SOURCE: Paper1B-NaturalDeterminantPairToPower-Main-v1_1.tex,exported; removed from manuscript
+14466,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantPairToPowerAssembly-Main-v1_1.tex,exported; removed from manuscript
+14467,Adopted in framework v2.182 from Paper1B-NaturalDeterminantPairToPowerAssembly-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+14468,Immediate full-input application and exact remaining target.,exported; removed from manuscript
+14589,END INLINE SOURCE: Paper1B-NaturalDeterminantPairToPowerAssembly-Main-v1_1.tex,exported; removed from manuscript
+14592,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantIntrinsicNormMirror-Main-v1_1.tex,exported; removed from manuscript
+14593,Adopted in framework v2.182 from Paper1B-NaturalDeterminantIntrinsicNormMirror-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+14594,Actual remaining-target comparisons; no natural bit inferred from a primitive.,exported; removed from manuscript
+14772,END INLINE SOURCE: Paper1B-NaturalDeterminantIntrinsicNormMirror-Main-v1_1.tex,exported; removed from manuscript
+14775,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantClosedAnnularSphere-Main-v1_1.tex,exported; removed from manuscript
+14776,Adopted in framework v2.182 from Paper1B-NaturalDeterminantClosedAnnularSphere-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+14777,"Standard-domain input of the existing detector, not another detector.",exported; removed from manuscript
+14906,END INLINE SOURCE: Paper1B-NaturalDeterminantClosedAnnularSphere-Main-v1_1.tex,exported; removed from manuscript
+14909,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantBridgeElimination-Main-v1_1.tex,exported; removed from manuscript
+14910,Adopted in framework v2.182 from Paper1B-NaturalDeterminantBridgeElimination-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+14911,"A constructed comparison of the actual target, not a bit assignment.",exported; removed from manuscript
+15058,END INLINE SOURCE: Paper1B-NaturalDeterminantBridgeElimination-Main-v1_1.tex,exported; removed from manuscript
+15061,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantRootPowerCarry-Main-v1_1.tex,exported; removed from manuscript
+15062,Adopted in framework v2.182 from Paper1B-NaturalDeterminantRootPowerCarry-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+15063,The actual carry input retains both collapsing faces.,exported; removed from manuscript
+15182,END INLINE SOURCE: Paper1B-NaturalDeterminantRootPowerCarry-Main-v1_1.tex,exported; removed from manuscript
+15185,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantRootExchangeLocalization-Main-v1_1.tex,exported; removed from manuscript
+15186,Adopted in framework v2.182 from Paper1B-NaturalDeterminantRootExchangeLocalization-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+15187,"Actual equivariant compression and complete discrepancy, no benchmark bit.",exported; removed from manuscript
+15316,END INLINE SOURCE: Paper1B-NaturalDeterminantRootExchangeLocalization-Main-v1_1.tex,exported; removed from manuscript
+15319,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantRootPathComparison-Main-v1_1.tex,exported; removed from manuscript
+15320,Adopted in framework v2.182 from Paper1B-NaturalDeterminantRootPathComparison-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+15321,"A relative null of one actual path difference, applied to full matrices.",exported; removed from manuscript
+15464,END INLINE SOURCE: Paper1B-NaturalDeterminantRootPathComparison-Main-v1_1.tex,exported; removed from manuscript
+15467,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantCanonicalCarryEvaluation-Main-v1_1.tex,exported; removed from manuscript
+15468,Adopted in framework v2.182 from Paper1B-NaturalDeterminantCanonicalCarryEvaluation-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+15469,"Evaluate one named actual carry, with its complete source and cancellations.",exported; removed from manuscript
+15677,END INLINE SOURCE: Paper1B-NaturalDeterminantCanonicalCarryEvaluation-Main-v1_1.tex,exported; removed from manuscript
+15680,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantCarrySubtraction-Main-v1_1.tex,exported; removed from manuscript
+15681,Adopted in framework v2.182 from Paper1B-NaturalDeterminantCarrySubtraction-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+15682,Immediate application to the original two-bit target; no new detector.,exported; removed from manuscript
+15782,END INLINE SOURCE: Paper1B-NaturalDeterminantCarrySubtraction-Main-v1_1.tex,exported; removed from manuscript
+15785,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantCharacteristicMeridianReduction-Main-v1_1.tex,exported; removed from manuscript
+15786,Adopted in framework v2.182 from Paper1B-NaturalDeterminantCharacteristicMeridianReduction-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+15787,Remove named actual characteristic lower terms and apply immediately.,exported; removed from manuscript
+15924,END INLINE SOURCE: Paper1B-NaturalDeterminantCharacteristicMeridianReduction-Main-v1_1.tex,exported; removed from manuscript
+15927,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantSewnAnnulus-Main-v1_1.tex,exported; removed from manuscript
+15928,Adopted in framework v2.182 from Paper1B-NaturalDeterminantSewnAnnulus-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+15929,Exact whole-cut evaluation of the actual \eqref{p1b:eq:natural-ox-5} annulus.,exported; removed from manuscript
+15930,"This proof retains the actual bridge and the original collar, and compares",exported; removed from manuscript
+15931,the two complete intrinsic ends of the already constructed annulus.,exported; removed from manuscript
+16121,Scope: the argument evaluates the original whole annular parity. It does,exported; removed from manuscript
+16122,"not replace the original joining, declare an isolated annular leg null,",exported; removed from manuscript
+16123,"delete a moving \eqref{p1b:eq:natural-on-2} right inverse, or assign h_t from comparison choice.",exported; removed from manuscript
+16125,END INLINE SOURCE: Paper1B-NaturalDeterminantSewnAnnulus-Main-v1_1.tex,exported; removed from manuscript
+16128,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantCharacteristicParity-Main-v1_1.tex,exported; removed from manuscript
+16129,Adopted in framework v2.182 from Paper1B-NaturalDeterminantCharacteristicParity-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+16130,Actual characteristic coefficient. All original endpoint and closing,exported; removed from manuscript
+16131,tracks are retained through their source-identified relative comparisons.,exported; removed from manuscript
+16654,"BEGIN v2.263 CORPUS-CLOSURE: bridge-controlled carry, no new physical postulate.",exported; removed from manuscript
+16730,END v2.263 CORPUS-CLOSURE.,exported; removed from manuscript
+16767,END INLINE SOURCE: Paper1B-NaturalDeterminantCharacteristicParity-Main-v1_1.tex,exported; removed from manuscript
+16770,BEGIN INLINE SOURCE: Paper1B-NaturalJoiningProjectivePrimitive-Main-v1_1.tex,exported; removed from manuscript
+16771,Adopted in framework v2.182 from Paper1B-NaturalJoiningProjectivePrimitive-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+16772,Exact primitive in the retained projective comparison; no r_J assignment.,exported; removed from manuscript
+16970,END INLINE SOURCE: Paper1B-NaturalJoiningProjectivePrimitive-Main-v1_1.tex,exported; removed from manuscript
+16973,BEGIN INLINE SOURCE: Paper1B-NaturalJoiningCutConjugation-Main-v1_1.tex,exported; removed from manuscript
+16974,Adopted in framework v2.182 from Paper1B-NaturalJoiningCutConjugation-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+16975,A complete alternative matched joining and the exact surviving second-cut,exported; removed from manuscript
+16976,comparison.  No absolute determinant or original joining bit is assigned.,exported; removed from manuscript
+17219,END INLINE SOURCE: Paper1B-NaturalJoiningCutConjugation-Main-v1_1.tex,exported; removed from manuscript
+17222,BEGIN INLINE SOURCE: Paper1B-NaturalDeterminantSecondCutPhase-Main-v1_1.tex,exported; removed from manuscript
+17223,Adopted in framework v2.182 from Paper1B-NaturalDeterminantSecondCutPhase-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+17224,A proved second-cut comparison.  The coherent exterior itself is not evaluated.,exported; removed from manuscript
+17496,END INLINE SOURCE: Paper1B-NaturalDeterminantSecondCutPhase-Main-v1_1.tex,exported; removed from manuscript
+17499,BEGIN INLINE SOURCE: Paper1B-NaturalJoiningCoherentTail-Main-v1_0.tex,exported; removed from manuscript
+17500,Adopted in framework v2.182 from Paper1B-NaturalJoiningCoherentTail-Appendix-v1_0.tex; source equations retained.,exported; removed from manuscript
+17501,Exact paired projective comparison.  No value of the natural coefficient.,exported; removed from manuscript
+17655,END INLINE SOURCE: Paper1B-NaturalJoiningCoherentTail-Main-v1_0.tex,exported; removed from manuscript
+17658,BEGIN INLINE SOURCE: Paper1B-NaturalCoherentBoundaryIdentification-Main-v1_1.tex,exported; removed from manuscript
+17659,Adopted in framework v2.182 from Paper1B-NaturalCoherentBoundaryIdentification-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+17660,Complete coherent source identification. Independently source-audited.,exported; removed from manuscript
+17846,END INLINE SOURCE: Paper1B-NaturalCoherentBoundaryIdentification-Main-v1_1.tex,exported; removed from manuscript
+17849,BEGIN INLINE SOURCE: Paper1B-NaturalReducedNeckClutch-Main-v1_1.tex,exported; removed from manuscript
+17850,Adopted in framework v2.182 from Paper1B-NaturalReducedNeckClutch-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+17851,Source lemma for the reduced actual neck family; independently audited.,exported; removed from manuscript
+17942,END INLINE SOURCE: Paper1B-NaturalReducedNeckClutch-Main-v1_1.tex,exported; removed from manuscript
+17945,BEGIN INLINE SOURCE: Paper1B-NaturalJoiningPairedNullIndependence-Main-v1_1.tex,exported; removed from manuscript
+17946,Adopted in framework v2.182 from Paper1B-NaturalJoiningPairedNullIndependence-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+17947,Positive exact-map lemmas for the retained JT paired comparison.,exported; removed from manuscript
+17948,No value of the natural joining coefficient is asserted here.,exported; removed from manuscript
+18040,END INLINE SOURCE: Paper1B-NaturalJoiningPairedNullIndependence-Main-v1_1.tex,exported; removed from manuscript
+18043,BEGIN INLINE SOURCE: Paper1B-NaturalJoiningInteriorFrameKernel-Main-v1_1.tex,exported; removed from manuscript
+18044,Adopted in framework v2.182 from Paper1B-NaturalJoiningInteriorFrameKernel-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+18045,Exact relative comparison of the complete paired JT map.,exported; removed from manuscript
+18111,END INLINE SOURCE: Paper1B-NaturalJoiningInteriorFrameKernel-Main-v1_1.tex,exported; removed from manuscript
+18114,BEGIN INLINE SOURCE: Paper1B-NaturalJoiningMovingCapReference-Main-v1_1.tex,exported; removed from manuscript
+18115,Adopted in framework v2.182 from Paper1B-NaturalJoiningMovingCapReference-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+18116,Reference-only exact coefficient and full lower-value null.,exported; removed from manuscript
+18232,END INLINE SOURCE: Paper1B-NaturalJoiningMovingCapReference-Main-v1_1.tex,exported; removed from manuscript
+18235,BEGIN INLINE SOURCE: Paper1B-NaturalJoiningTwistedCellNorm-Main-v1_1.tex,exported; removed from manuscript
+18236,Adopted in framework v2.182 from Paper1B-NaturalJoiningTwistedCellNorm-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+18237,"Complete two-disc transport, with the literal antipodal seam routing.",exported; removed from manuscript
+18373,END INLINE SOURCE: Paper1B-NaturalJoiningTwistedCellNorm-Main-v1_1.tex,exported; removed from manuscript
+18376,BEGIN INLINE SOURCE: Paper1B-NaturalJoiningFrameProductSplitting-Main-v1_1.tex,exported; removed from manuscript
+18377,Adopted in framework v2.182 from Paper1B-NaturalJoiningFrameProductSplitting-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+18378,Whole-map splitting after disjoint support; all projective seams retained.,exported; removed from manuscript
+18513,END INLINE SOURCE: Paper1B-NaturalJoiningFrameProductSplitting-Main-v1_1.tex,exported; removed from manuscript
+18516,BEGIN INLINE SOURCE: Paper1B-NaturalJoiningZeroVertexBigons-Main-v1_1.tex,exported; removed from manuscript
+18517,Adopted in framework v2.182 from Paper1B-NaturalJoiningZeroVertexBigons-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+18518,"Complete zero-vertex paired-map calculation, independently reviewed.",exported; removed from manuscript
+18698,END INLINE SOURCE: Paper1B-NaturalJoiningZeroVertexBigons-Main-v1_1.tex,exported; removed from manuscript
+18701,BEGIN INLINE SOURCE: Paper1B-NaturalJoiningAbsoluteEvaluation-Main-v1_1.tex,exported; removed from manuscript
+18702,Adopted in framework v2.182 from Paper1B-NaturalJoiningAbsoluteEvaluation-Main-v1_0.tex; source equations retained.,exported; removed from manuscript
+18703,Absolute joining coefficient; all original comparison seams retained.,exported; removed from manuscript
+18842,END INLINE SOURCE: Paper1B-NaturalJoiningAbsoluteEvaluation-Main-v1_1.tex,exported; removed from manuscript
+18894,END INLINE SOURCE: Paper1B-NaturalRankTwoCompletion-Main-v1_0.tex,exported; removed from manuscript
+18903,SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:thm:m8td-hodge-dirac; p3f:cor:m8td-dirac-spectrum,exported; removed from manuscript
+18907,SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:thm:m8td-protected-zero,exported; removed from manuscript
+19056,SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:prop:m8td-explicit-nonconstant-zero,exported; removed from manuscript
+19060,SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:thm:m8td-low-mode,exported; removed from manuscript
+19112,SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:prop:m8td-heat-curvature; p3f:app:m8td-examples,exported; removed from manuscript
+19165,SOURCES: Paper00-M8StructuralConsequences-v1_1.md :: SC-05; SC-21; SC-22; SC-25,exported; removed from manuscript
+19285,SOURCES: Paper00-M8BiHopfModularRigor-v1_2.md :: double-groupoid compatibility test,exported; removed from manuscript
+19305,SOURCES: Paper10-QCDKernel-v1_44.tex :: p10:thm:v199-exact-cartan-links; p10:prop:v199-restricted-heat-dynamics,exported; removed from manuscript
+19372,SOURCES: Paper10-QCDKernel-v1_44.tex :: p10:thm:v190-generated-4d-gw-regulator,exported; removed from manuscript
+19373,SOURCES: Paper00-M8ScalarG20Topology-v1_1.md :: sections 3--10,exported; removed from manuscript
+19448,SOURCES: Paper10-QCDKernel-v1_44.tex :: p10:thm:v199-native-clock-covers; p10:thm:m8td-all-link-neighborhood; p10:cor:m8td-overlap-continuity,exported; removed from manuscript
+19502,SOURCES: Paper10-QCDKernel-v1_44.tex :: p10:thm:v202-native-overlap-locality,exported; removed from manuscript
+19503,SOURCES: Paper00-GeometricClosureBatches-v1_1.md :: A.3; A.4,exported; removed from manuscript
+19568,SOURCES: Paper1-Geometry-v5_45.tex :: p1:prop:higher-invariant-pencil; p1:prop:invariant-compression-connection; p1:prop:axial-invariant-transport,exported; removed from manuscript
+19650,SOURCES: Paper1-Geometry-v5_45.tex :: p1:prop:opposite-hopf-moving-axis,exported; removed from manuscript
+19689,SOURCES: Paper1-Geometry-v5_45.tex :: p1:thm:joint-axis-moments-heat; p1:prop:fixed-axis-quadratic-zeros,exported; removed from manuscript
+19728,SOURCES: Paper4-QM-v4_68.tex :: p4:thm:scalar-born-compact-boson-partition; p4:cor:scalar-born-modular-invariance; p4:cor:scalar-born-t-duality,exported; removed from manuscript
+19770,SOURCES: Paper3A-Dynamics-v1_56.tex :: p3a:sec:v187-m8-relative-solder-localization; p3a:sec:v189-local-symmetric-quadratic-descent,exported; removed from manuscript
+19771,SOURCES: Paper3E-Dynamics-v1_77.tex :: p3:thm:lorentzian-signature,exported; removed from manuscript
+19812,SOURCES: Paper10-QCDKernel-v1_44.tex :: p10:prop:v199-yang-mills-kink; p10:prop:m8td-kink-zero,exported; removed from manuscript
+19878,SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:thm:v179-normalized-scalar-hessian; p3f:cor:v177-source-coordinate-polar-invariance; p3f:thm:v199-rgas-kinetic-connection,exported; removed from manuscript
+19915,SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:thm:v202-boundary-higher-vertices; p3f:thm:v199-second-schur-jet,exported; removed from manuscript
+20025,SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:thm:v203-matrix-reciprocal-rigidity,exported; removed from manuscript
+20058,SOURCES: Paper6-SM_Spectrum-v5_52.tex :: p6:prop:v203-native-determinant-derivatives; p6:prop:v203-full-probe-stationarity,exported; removed from manuscript
+20088,SOURCES: Paper5-StandardModel-v3_58.tex :: p5:thm:v199-weak-current-moments,exported; removed from manuscript
+20089,SOURCES: Paper6-SM_Spectrum-v5_52.tex :: p6:thm:v199-flavor-reconstruction; p6:prop:v199-mixed-resolvent,exported; removed from manuscript
+20154,SOURCES: Paper10-QCDKernel-v1_44.tex :: p10:thm:v203-chiral-norm-ball-chart,exported; removed from manuscript
+20188,SOURCES: Paper10-QCDKernel-v1_44.tex :: p10:cor:v204-native-chart-discharge,exported; removed from manuscript
+20213,SOURCES: Paper11-QCDReadouts-v1_41.tex :: p11:prop:v199-compression-defect,exported; removed from manuscript
+20233,SOURCES: Paper10-QCDKernel-v1_44.tex :: p10:prop:v202-vectorlike-positive,exported; removed from manuscript
+20263,BEGIN EXCEPTIONAL-ROOT-INTEGRATION v2.173,exported; removed from manuscript
+20265,BEGIN INLINE SOURCE: Paper1B-ExceptionalRootResponse-Appendix-v1_0.tex,exported; removed from manuscript
+20417,END INLINE SOURCE: Paper1B-ExceptionalRootResponse-Appendix-v1_0.tex,exported; removed from manuscript
+20419,END EXCEPTIONAL-ROOT-INTEGRATION v2.173,exported; removed from manuscript
+20423,SOURCES: Paper12-ContinuousQFT-v2_58.tex :: p12:cor:m8td-shell-covariance; p12:lem:m8td-affine-support; p12:cor:m8td-affine-eaa,exported; removed from manuscript
+20530,SOURCES: Paper12-ContinuousQFT-v2_58.tex :: p12:thm:v203-blocking-oscillation; p12:cor:v203-summable-action-defects,exported; removed from manuscript
+20581,SOURCES: Paper10-QCDKernel-v1_44.tex :: p10:thm:v185-heat-hessian-inversion; p10:thm:v199-quartic-heat-vertex; p10:thm:v202-native-heat-bounds,exported; removed from manuscript
+20676,SOURCES: Paper3C-Dynamics-v1_69.tex :: p3:prop:hopf-spectral-trace; p3:thm:hopf-trace-constant; p3c:thm:dyadic-hopf-null-trace,exported; removed from manuscript
+20731,SOURCES: Paper3D-Dynamics-v1_58.tex :: p3:thm:riccati; p3:prop:n_closed; p3:def:active-reduced-window,exported; removed from manuscript
+21208,SOURCES: Paper3E-Dynamics-v1_77.tex :: p3e:def:laur17-branch-data; p3e:prop:laur17-active-hessian; p3e:eq:laur17-distributional-hessian,exported; removed from manuscript
+21270,SOURCES: Paper8-Cosmology_Gravity-v2_67.tex :: p8:thm:v199-trace-force-vertices; p8:thm:v202-trace-inverse; p8:eq:v202-trace-junction-jump,exported; removed from manuscript
+21333,SOURCES: Paper8-Cosmology_Gravity-v2_67.tex :: p8:thm:v199-uniform-scalar-mass,exported; removed from manuscript
+21429,SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:thm:v199-rgas-conformal-hessian; p3f:cor:v199-rgas-scalaron-factor,exported; removed from manuscript
+21482,SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:thm:v202-all-order-schur-residual,exported; removed from manuscript
+21525,BEGIN Paper I-C v1.24 boundary groupoid/gluing completion,exported; removed from manuscript
+21730,END Paper I-C v1.24 boundary groupoid/gluing completion,exported; removed from manuscript
+21733,SOURCES: Paper1-Geometry-v5_45.tex :: p1:app:v181-exceptional-frontier-witnesses; p1:prop:v203-quadratic-alias-witness,exported; removed from manuscript
+21783,SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:prop:m8td-heat-curvature,exported; removed from manuscript
+21910,BEGIN INLINE SOURCE: Paper1B-G02-Appendix-v1_1.tex,exported; removed from manuscript
+21911,Framework v2.110 / G02 appendix v1.1: retained Casimir interpolation.,exported; removed from manuscript
+21912,Mathematics transferred from the corrected StructuralDerivations v1.9.,exported; removed from manuscript
+22001,END INLINE SOURCE: Paper1B-G02-Appendix-v1_1.tex,exported; removed from manuscript
+22004,BEGIN INLINE SOURCE: Paper1B-G04-Appendix-v1_0.tex,exported; removed from manuscript
+22005,Mathematics transferred from the corrected StructuralDerivations v1.9.,exported; removed from manuscript
+22121,END INLINE SOURCE: Paper1B-G04-Appendix-v1_0.tex,exported; removed from manuscript
+22124,BEGIN INLINE SOURCE: Paper1B-G05-Appendix-v1_0.tex,exported; removed from manuscript
+22125,Mathematics transferred from the corrected StructuralDerivations v1.9.,exported; removed from manuscript
+22244,END INLINE SOURCE: Paper1B-G05-Appendix-v1_0.tex,exported; removed from manuscript
+22247,BEGIN INLINE SOURCE: Paper1B-G06-Appendix-v1_0.tex,exported; removed from manuscript
+22248,Mathematics transferred from the corrected StructuralDerivations v1.9.,exported; removed from manuscript
+22304,END INLINE SOURCE: Paper1B-G06-Appendix-v1_0.tex,exported; removed from manuscript
+22307,BEGIN INLINE SOURCE: Paper1B-G07-Appendix-v1_0.tex,exported; removed from manuscript
+22308,Mathematics transferred from the corrected StructuralDerivations v1.9.,exported; removed from manuscript
+22418,END INLINE SOURCE: Paper1B-G07-Appendix-v1_0.tex,exported; removed from manuscript
+22421,BEGIN INLINE SOURCE: Paper1B-G08-Appendix-v1_0.tex,exported; removed from manuscript
+22422,Mathematics transferred from the corrected StructuralDerivations v1.9.,exported; removed from manuscript
+22552,END INLINE SOURCE: Paper1B-G08-Appendix-v1_0.tex,exported; removed from manuscript
+22555,BEGIN INLINE SOURCE: Paper1B-G09-Appendix-v1_0.tex,exported; removed from manuscript
+22556,Mathematics transferred from the corrected StructuralDerivations v1.9.,exported; removed from manuscript
+22651,END INLINE SOURCE: Paper1B-G09-Appendix-v1_0.tex,exported; removed from manuscript
+22654,BEGIN INLINE SOURCE: Paper1B-G10-Appendix-v1_0.tex,exported; removed from manuscript
+22655,Mathematics transferred from the corrected StructuralDerivations v1.9.,exported; removed from manuscript
+22734,END INLINE SOURCE: Paper1B-G10-Appendix-v1_0.tex,exported; removed from manuscript
+22738,BEGIN INLINE SOURCE: Paper1B-G11-Appendix-v1_2.tex,exported; removed from manuscript
+22739,Paper1B-G11-Appendix-v1_2.tex: appendix-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G11-Appendix-v1_1.tex.,exported; removed from manuscript
+22746,TRANSFER: Paper10-QCDKernel-v1_49.tex :: p10:prop:v199-cartan-transgression;,exported; removed from manuscript
+22747,p10:prop:v199-yang-mills-kink. The proofs below retain only the mathematics.,exported; removed from manuscript
+22878,Independent full-field kink closure.  No main manuscript edits.,exported; removed from manuscript
+23051,END INLINE SOURCE: Paper1B-G11-Appendix-v1_2.tex,exported; removed from manuscript
+23054,BEGIN INLINE SOURCE: Paper1B-NativeWeakMorseBridge-Appendix-v1_0.tex,exported; removed from manuscript
+23055,Framework v2.183: technical derivation supporting the main midpoint Morse theorem.,exported; removed from manuscript
+23124,END INLINE SOURCE: Paper1B-NativeWeakMorseBridge-Appendix-v1_0.tex,exported; removed from manuscript
+23127,BEGIN INLINE SOURCE: Paper1B-G12-Appendix-v1_0.tex,exported; removed from manuscript
+23202,END INLINE SOURCE: Paper1B-G12-Appendix-v1_0.tex,exported; removed from manuscript
+23205,BEGIN INLINE SOURCE: Paper1B-G13-Appendix-v1_2.tex,exported; removed from manuscript
+23206,Paper1B-G13-Appendix-v1_2.tex: appendix-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G13-Appendix-v1_1.tex.,exported; removed from manuscript
+23376,END INLINE SOURCE: Paper1B-G13-Appendix-v1_2.tex,exported; removed from manuscript
+23379,BEGIN INLINE SOURCE: Paper1B-G14-Appendix-v1_0.tex,exported; removed from manuscript
+23464,END INLINE SOURCE: Paper1B-G14-Appendix-v1_0.tex,exported; removed from manuscript
+23467,BEGIN INLINE SOURCE: Paper1B-G15-Appendix-v1_2.tex,exported; removed from manuscript
+23615,END INLINE SOURCE: Paper1B-G15-Appendix-v1_2.tex,exported; removed from manuscript
+23618,BEGIN INLINE SOURCE: Paper1B-G16-Appendix-v1_0.tex,exported; removed from manuscript
+23768,END INLINE SOURCE: Paper1B-G16-Appendix-v1_0.tex,exported; removed from manuscript
+23771,BEGIN INLINE SOURCE: Paper1B-G18-Appendix-v1_1.tex,exported; removed from manuscript
+23772,v1.17 correction scope: see Paper1B-CorrectnessUpdate-v1_0.md. Earlier version comments below are provenance only.,exported; removed from manuscript
+23773,Paper1B-G18-Appendix-v1_1.tex: double-cone scaling and extrinsic geometry.,exported; removed from manuscript
+23831,END INLINE SOURCE: Paper1B-G18-Appendix-v1_1.tex,exported; removed from manuscript
+23834,BEGIN INLINE SOURCE: Paper1B-G20-Appendix-v1_2.tex,exported; removed from manuscript
+23835,v1.17 correction scope: see Paper1B-CorrectnessUpdate-v1_0.md. Earlier version comments below are provenance only.,exported; removed from manuscript
+23836,"Paper1B-G20-Appendix-v1_2.tex: low-rank obstruction specializations, odd-determinant desuspension, and determinant-zero multiplicity proof.",exported; removed from manuscript
+24135,END INLINE SOURCE: Paper1B-G20-Appendix-v1_2.tex,exported; removed from manuscript
+24138,BEGIN INLINE SOURCE: Paper1B-G21-Appendix-v1_1.tex,exported; removed from manuscript
+24139,v1.17 correction scope: see Paper1B-CorrectnessUpdate-v1_0.md. Earlier version comments below are provenance only.,exported; removed from manuscript
+24140,"Paper1B-G21-Appendix-v1_1.tex: Born-fixed orbit counts, equivariant index, symmetric-square no-go, and principal descent.",exported; removed from manuscript
+24320,Independent closure fragment.  Main manuscript intentionally not edited.,exported; removed from manuscript
+24321,Insert the first proposition after G20's affine-unframing paragraph.,exported; removed from manuscript
+24322,Replace G21's claim of a coherently equivariant translator by the,exported; removed from manuscript
+24323,ordinary-intertwining proposition; the following counterobstruction,exported; removed from manuscript
+24324,states exactly why the stronger claim is false.,exported; removed from manuscript
+24496,END INLINE SOURCE: Paper1B-G21-Appendix-v1_1.tex,exported; removed from manuscript
+24511,BEGIN INLINE SOURCE: Paper1B-RankTwoClosureDiagnostics-Appendix-v1_0.tex,exported; removed from manuscript
+24512,Supplementary expanded enumeration and source verification scope.,exported; removed from manuscript
+24603,END INLINE SOURCE: Paper1B-RankTwoClosureDiagnostics-Appendix-v1_0.tex,exported; removed from manuscript
+24607,BEGIN INLINE SOURCE: Paper1B-G22-Appendix-v1_0.tex,exported; removed from manuscript
+24608,Paper1B-G22-Appendix-v1_0.tex: Magnin normal-form comparison.,exported; removed from manuscript
+24634,END INLINE SOURCE: Paper1B-G22-Appendix-v1_0.tex,exported; removed from manuscript
+24637,BEGIN INLINE SOURCE: Paper1B-G23-Appendix-v1_0.tex,exported; removed from manuscript
+24638,Paper1B-G23-Appendix-v1_0.tex: product ADE bookkeeping.,exported; removed from manuscript
+24667,END INLINE SOURCE: Paper1B-G23-Appendix-v1_0.tex,exported; removed from manuscript
+24670,BEGIN INLINE SOURCE: Paper1B-G24-Appendix-v1_0.tex,exported; removed from manuscript
+24671,Paper1B-G24-Appendix-v1_0.tex: independent rescalings and symmetry firewalls.,exported; removed from manuscript
+24701,END INLINE SOURCE: Paper1B-G24-Appendix-v1_0.tex,exported; removed from manuscript
+24762,BEGIN FRAMEWORK v2.242: EXACT ROOTED FAMILY CUBIC,exported; removed from manuscript
+24846,END FRAMEWORK v2.242: EXACT ROOTED FAMILY CUBIC,exported; removed from manuscript
+24848,BEGIN FRAMEWORK v2.243: EXACT ONE-ROOT FINITE-GEOMETRY REPLAYS,exported; removed from manuscript
+25030,END FRAMEWORK v2.243: EXACT ONE-ROOT FINITE-GEOMETRY REPLAYS,exported; removed from manuscript
+25032,BEGIN PETERSEN EXACT CERTIFICATE AND SCOPED COMPLETENESS RECORD,exported; removed from manuscript
+25090,END PETERSEN EXACT CERTIFICATE,exported; removed from manuscript
+25093,BEGIN FRAMEWORK v2.340: PETERSEN EDGE--HP2 TOPOLOGICAL COMPARISON,exported; removed from manuscript
+25174,END FRAMEWORK v2.340,exported; removed from manuscript
+25396,BEGIN EXCEPTIONAL-ROOT-INTEGRATION v2.173,exported; removed from manuscript
+25398,BEGIN INLINE SOURCE: Paper1A-ExceptionalRootConstruction-Appendix-v1_0.tex,exported; removed from manuscript
+25400,BEGIN FRAMEWORK v2.341: EXACT PETERSEN BRIDGE CERTIFICATE AND HP2 SCOPE,exported; removed from manuscript
+25439,END FRAMEWORK v2.341,exported; removed from manuscript
+25442,BEGIN FRAMEWORK v2.342: EXACT THREE-CYCLE CERTIFICATE LEDGER,exported; removed from manuscript
+25475,END FRAMEWORK v2.342,exported; removed from manuscript
+25478,BEGIN FRAMEWORK v2.343: RECIPROCAL SIGNED FINITE CERTIFICATE,exported; removed from manuscript
+25514,END FRAMEWORK v2.343,exported; removed from manuscript
+25517,BEGIN FRAMEWORK v2.344: EXACT TWISTED C3 CERTIFICATE,exported; removed from manuscript
+25548,END FRAMEWORK v2.344,exported; removed from manuscript
+25551,BEGIN FRAMEWORK v2.345: EXACT F40 QUATERNIONIC CERTIFICATE,exported; removed from manuscript
+25585,END FRAMEWORK v2.345,exported; removed from manuscript
+25587,BEGIN FRAMEWORK v2.349: F40 CHANNEL GLUING CERTIFICATES,exported; removed from manuscript
+25674,END FRAMEWORK v2.349,exported; removed from manuscript
+25677,BEGIN FRAMEWORK v2.357: conditional diagonal-spin comparison geometry,exported; removed from manuscript
+25774,END FRAMEWORK v2.357,exported; removed from manuscript
+25777,BEGIN FRAMEWORK v2.365: INDEPENDENT FINITE COORDINATE REPLAY,exported; removed from manuscript
+25817,END FRAMEWORK v2.365,exported; removed from manuscript
+25820,BEGIN FRAMEWORK v2.366: INDEPENDENT EXACT CHAMBER AND HURWITZ CERTIFICATES,exported; removed from manuscript
+25930,END FRAMEWORK v2.366,exported; removed from manuscript
+25932,BEGIN FRAMEWORK v2.370: EXACT EXCEPTIONAL-ROOT COMPARISON CERTIFICATE,exported; removed from manuscript
+26004,END FRAMEWORK v2.370,exported; removed from manuscript
+26007,BEGIN FRAMEWORK v2.371: exact Petersen/600-cell certificates; source-owned operators unchanged.,exported; removed from manuscript
+26115,END FRAMEWORK v2.371: exact technical source certificates.,exported; removed from manuscript
+26119,BEGIN PAPER I-D INDEPENDENT GAP-DERIVATION SUPPLEMENT v1_66,exported; removed from manuscript
+26120,Additional proof evidence for existing Paper I-C results; no new axioms or unconditioned physical identification.,exported; removed from manuscript
+26396,END PAPER I-D INDEPENDENT GAP-DERIVATION SUPPLEMENT v1_66,exported; removed from manuscript
+26399,BEGIN SOURCE-INTEGRATED IC19 GEOMETRIC ISSUE-CLOSURE CERTIFICATES,exported; removed from manuscript
+26661,END SOURCE-INTEGRATED IC19 GEOMETRIC ISSUE-CLOSURE CERTIFICATES,exported; removed from manuscript

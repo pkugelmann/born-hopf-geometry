@@ -1,66 +1,42 @@
 # Born–Hopf Geometry
 
-**A geometry-first research programme connecting mathematical structure to physical observables.**
+**A geometry-first mathematical physics research programme: from admissible structure to measurable observables.**
 
-Author: **Peter Kugelmann** · Manuscripts: **PapersMinimal v3.058**, 20 November 2026 · Proof audits: **v1.79** · DAG Atlas: **v1.215** · Geometry network: **v1.41** · Website package: **Paper00-GitHubPage-v1_1**.
+Author: **Peter Kugelmann**. This repository hosts both the public research website and byte-preserved primary sources, so scientific claims can be traced from an accessible explanation to a specific manuscript and its versioned audit record.
 
-This repository contains a public-friendly research website, the current **31 source PDFs and LaTeX manuscripts**, proof-chain audit reports, geometric diagrams and integrity metadata. It is designed so the **explanatory website text can be replaced without touching the mathematical source archive**.
+## Current source edition (20 November 2026)
 
-## Read the website
+| Component | Version | Source presentation |
+|:--|:--|:--|
+| Papers I–VII, 31 active manuscripts | **PapersMinimal v3.077** | 31 current PDF/TeX pairs, source index |
+| Proof-chain audits | **v1.83** | 45 readable Markdown/HTML reports, 130 retained obligation rows |
+| Dependency graph | **DAG Atlas v1.223** | 14,366 current source labels; 7,667 inherited nodes |
+| S³ exact finite-geometry network | **v1.49** | 13 diagrams, complete network ZIP |
+| Website | **Paper00-GitHubPage-v1_2** | Editable Markdown + browser indexes |
 
-- [Start here](docs/index.html) — readable, research-level introduction.
-- [Framework explained](docs/framework.html) — how G0, GP1–GP3, S³, M₈, dynamics, quantum states, matter, gravity and QCD relate.
-- [What must be explained](docs/observables.html) — masses, decays, forces, gravitational coupling, cosmology, hadronic readouts.
-- [Glossary](docs/glossary.html) — concepts explained without removing technical meaning.
-- [Manuscript library](docs/papers.html) — 31 papers, each PDF and LaTeX, exact version and SHA-256.
-- [Verification archive](docs/verification.html) — full separate proof-chain records, not a blanket 'verified' status.
-- [Download provenance](docs/downloads.html) — audit and diagram archive sources, plus large DAG Atlas release instructions.
+The v3.077 source adds **55 scoped mathematical source labels** across five papers. The current DAG source overlay links these statements to their new line numbers but does **not** promote them to independently verified global E3/E4 status or physical occurrence. The audit archive is versioned and source-dependent; not every new paper has been independently re-audited.
 
-## Replace public-facing content
+## Read and browse
 
-**Edit Markdown, not HTML.** All human-readable research explanations live in [`content/`](content/EDITING.md):
+- [Start](docs/index.html) — the research question in clear, technically serious language.
+- [Framework explained](docs/framework.html) — from G0/GP1–3 to S³, M₈, dynamics, particles, gravity and QCD.
+- [Guided reading paths](docs/pathways.html) — follow a question to the relevant proofs and physical bridges.
+- [Search the research index](docs/research.html) — all 14,366 current source labels; 7,667 inherited DAG nodes; 130 retained proof obligations; 45 reports; 13 diagrams.
+- [31-paper library](docs/papers.html) — searchable, each paper viewable as an embedded PDF, with TeX and related audit.
+- [Verification](docs/verification.html) — source-specific evidence, protocols, formal scope and audit records.
+- [Current updates](docs/updates.html) — mathematical additions and unclosed source-action/measurement bridges.
+- [Original archive downloads](docs/downloads.html) — four released ZIPs and SHA-256 hashes.
 
-| File | Controls |
-| --- | --- |
-| `content/site.json` | Homepage heading, introductory paragraph, cards, reading pathway, and status note |
-| `content/home.md` | Narrative introduction |
-| `content/framework.md` | Full guided explanation |
-| `content/observables.md` | Testable physical questions and unresolved bridges |
-| `content/glossary.md` | Definitions |
+## Updating the site
 
-With **GitHub Pages → Source: GitHub Actions**, editing these files on GitHub and committing to `main` automatically rebuilds and publishes the website. No editing of generated `docs/*.html` pages and no re-uploading the large paper ZIP are required.
+The explanatory pages can be updated **without touching the scientific PDFs**: edit `content/*.md` and `content/site.json`, commit to main and let the GitHub Actions Pages workflow rebuild the HTML. Read [the editorial guide](content/EDITING.md).
 
-The checked-in HTML can also be previewed immediately. To build locally:
+For a new scientific archive, run `python3 scripts/refresh_framework.py --papers ... --audits ... --dag ... --geometry ...`, then `python3 scripts/render_content.py` and `python3 scripts/check_site.py`. The release-matching and source-hash checks prevent mixing a new paper snapshot with an unrelated atlas.
 
-```sh
-python3 -m pip install -r requirements-edit.txt
-python3 scripts/render_content.py
-python3 scripts/check_site.py
-python3 -m http.server 8000 --directory docs
-```
+To install this version over the existing GitHub repository from the versioned ZIP, follow [GITHUB-SETUP.md](GITHUB-SETUP.md) or run the bundled `publish.sh`. It clones your existing repository, replaces the managed website paths and pushes a normal commit; it does not force-push or replace Git history.
 
-Open `http://localhost:8000` and review the layout. The rendering library is `mistune==3.2.1`. The public site itself is static HTML, CSS and JavaScript; it has no server dependency.
+## Research and licence status
 
-## Update the scientific corpus
+Mathematical construction, action/source selection, propagation, measurement and independent validation are different claims. Source-integrated does **not** mean globally independently proved. Original manuscripts and full audit records govern the detailed hypotheses.
 
-The manuscript files are not silently overwritten when the public explanation changes. To replace the **entire papers snapshot** with a new versioned archive, run:
-
-```sh
-python3 scripts/refresh_manuscripts.py /path/to/Paper00-PapersMinimal-v3_059.zip
-python3 scripts/render_content.py
-python3 scripts/check_site.py
-```
-
-The refresh tool validates 31 paper entries against the source inventory and regenerates the manuscript manifest and searchable paper catalog with exact hashes. Review any changed conceptual explanations and external archive/release data before publishing. Older paper files are removed so the repository holds the current papers only.
-
-## Research status
-
-This archive deliberately separates **exact mathematical construction**, **same-action/source physical realization**, **measurement mapping** and **experimental validation**. Not every proposed bridge has been closed. The v3.058 release notes explicitly retain open questions concerning a realized charged source, physical interacting poles and the microscopic Newton-action/measurement match. For claims consult the exact manuscript hypotheses and the separate proof-chain status reports.
-
-## Publish
-
-Follow [`GITHUB-SETUP.md`](GITHUB-SETUP.md). GitHub access is required to create the actual repository; this ZIP is a complete prepublication package.
-
-The original 205 MB DAG Atlas archive exceeds GitHub's 100 MiB normal Git-blob limit. It belongs in a **GitHub Release**, not the Git repository. See [`RELEASE-ORIGINALS.md`](RELEASE-ORIGINALS.md).
-
-Citation metadata is in `CITATION.cff`. **No public reuse license is implied by this package**; the author should choose licensing deliberately.
+Citation metadata: `CITATION.cff`. No open-source licence is implied unless the author publishes one explicitly.

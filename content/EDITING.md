@@ -1,18 +1,25 @@
-# Editing the public explanations
+# Edit the public explanations without rewriting the science
 
-This directory is the **editable source of public-facing explanatory content**, separate from the mathematical manuscript archive.
+The editable source is `content/` — **not** the generated `docs/*.html` pages.
 
-- `site.json` controls the homepage headline, introduction, three concept cards, explanatory path, and status summary. Edit text values only unless intentionally changing structure.
-- `home.md` controls the narrative introduction below the homepage cards.
-- `framework.md` controls the long guided explanation, including its source links and section titles.
-- `observables.md` controls the question-led explanation of physical tests and remaining bridges.
-- `glossary.md` controls the vocabulary page.
+| File | What it controls |
+| --- | --- |
+| `site.json` | Homepage heading, introductory paragraph, concept cards and research path |
+| `home.md` | Homepage narrative |
+| `framework.md` | Main plain-language technical explanation |
+| `pathways.md` | The six guided routes through the papers |
+| `observables.md` | What measurements and predictions must ultimately be explained |
+| `updates.md` | Current source integration, its scope and remaining obligations |
+| `glossary.md` | Definition of terms for scientifically curious readers |
+| `protocols/*.md` | Original verification protocol sources (not rewritten by website editing) |
 
-## Replacing text directly on GitHub
+All other site material (paper catalog, audit browser, source-label anchors, geometry network, PDF files, full archives) comes from a versioned research release and should not be rewritten editorially.
 
-When GitHub Pages is configured to deploy with **GitHub Actions**, edit any Markdown file through GitHub's web editor and commit to `main`. The publishing workflow automatically regenerates the HTML and publishes the site; **no HTML editing, software installation, or manual copy of the whole archive is needed**.
+## Publish text edits on GitHub
 
-For a local preview:
+Edit a Markdown file on GitHub, commit to `main`, and the Pages Actions workflow runs `scripts/render_content.py` followed by `scripts/check_site.py`. The public HTML is rebuilt and redeployed. This requires the repository's **Settings → Pages → Source: GitHub Actions**.
+
+For local preview:
 
 ```bash
 python3 -m pip install -r requirements-edit.txt
@@ -21,12 +28,12 @@ python3 scripts/check_site.py
 python3 -m http.server 8000 --directory docs
 ```
 
-Open `http://localhost:8000/`.
+Then browse `http://localhost:8000/`.
 
-## From future ChatGPT conversations
+## Future scientific updates
 
-Supply the current repository ZIP or the changed `content/` files plus any new research archive. Ask: **“Update the public website from the current Born–Hopf framework; preserve the source/claim distinction; increment Paper00-GitHubPage-v1_W; provide replacement files.”** The content can then be reviewed and replaced in the GitHub repository without reconstructing the website.
+A new source snapshot requires **all matching archive versions**. Use `scripts/refresh_framework.py` with four ZIP paths; the script checks the new manuscript inventory, verifies 31 active source/PDF hashes, matches the DAG's source/audit archive hashes and regenerates browser indices. It preserves the original files byte-for-byte. It does not rewrite these explanatory Markdown files: **revise explanations separately based on the new release notes, then increment the website filename to v1_W+1.**
 
-The manuscript catalog is independently generated from the versioned paper archive and recorded in `docs/data/manifest.json`. Changing explanations does not rewrite paper PDF/TeX bytes or their hashes. A true research update must also refresh the paper library and provenance metadata; the narrative is **not** a substitute for the technical record.
+The current site uses PapersMinimal v3.077 / ProofChainAudits v1.83 / DAG v1.223 / S³ network v1.49. The 55 newly added v3.077 labels are only source-integrated; they are not globally E3/E4 certified by the matching atlas.
 
-**Editorial rule:** explain physical questions in accessible but precise language. Never infer that a geometric object has been physically realized merely because a mathematical construction exists. Keep open obligations visible, with links to the source papers. Do not use childlike analogies or present conditional calculations as measured predictions.
+**Writing standard:** accessible and precise, neither inaccessible academic shorthand nor childish analogy. Ask which observable is explained by an operator; preserve the theorem's domain, action/source gates and independent status. Never call a decay rate or Newton coupling 'derived' when only a conditional finite comparison has been established.

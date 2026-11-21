@@ -1,16 +1,16 @@
-# Website package change log
+# Website changes
 
-## Paper00-GitHubPage-v1_1 — 20 November 2026
+## Paper00-GitHubPage-v1_2 (21 November 2026)
 
-- Rewrote the homepage as a readable overview for scientifically curious readers.
-- Added an extended conceptual introduction to geometric constitution, three-sphere, reciprocal geometry, quantum carriers, matter, gravity and strong interactions.
-- Added a separate observable-first page and terminology guide. Kept open physical bridge conditions explicit.
-- Made public explanations replaceable from `content/site.json` and Markdown without modifying the source papers.
-- Added auto-publishing GitHub Pages Actions for every commit to `main` and a local renderer.
-- Refreshed all 31 versioned paper PDF/TeX files to `PapersMinimal v3_058`, preserving source hashes and current-only files.
-- Updated DAG release provenance to `DAGAtlas v1_215`. The oversized original is still a separate GitHub Release asset.
-- Retained the original proof audit `v1_79` and S³ network `v1_41` unchanged.
+- Updated the public scientific corpus to PapersMinimal v3.077, ProofChainAudits v1.83, DAG Atlas v1.223 and S³ Structure Network v1.49.
+- Verified 31 current source/PDF pairs against the release inventory, all 14,366 current source-label line anchors, audit and source archive digests, and static local links.
+- Added the current 55 source-integrated labels, retaining their noncanonical/unreviewed evidence status.
+- Added a client-side, searchable navigator with 7,667 inherited DAG nodes, 130 retained proof-obligation rows, 45 complete audit reports and 13 current geometric diagrams.
+- Added six question-led reading paths, a source-specific 'What changed' page, and embedded PDF viewers on individual paper pages.
+- Included the current four original versioned archives directly under `docs/data/`, all less than the normal Git blob limit.
+- Added an update script to replace all four matched snapshots and a safe terminal upload script targeting the existing GitHub repository, without force-push or loss of Git history.
+- Preserved the distinction between source integration, E3/E4 proof audit, physical source/current selection and observed measurements.
 
-## Paper00-GitHubPage-v1_0 — 20 November 2026
+## Paper00-GitHubPage-v1_1 (20 November 2026)
 
-Initial public-facing static research archive and basic explanation.
+- Separated public-facing explanation into editable Markdown and added automated GitHub Pages deployment.

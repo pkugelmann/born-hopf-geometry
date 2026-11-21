@@ -1,0 +1,208 @@
+{
+  "name": "Paper00-MathematicalRepairBatch3Verification-v1_1",
+  "source_versions": {
+    "3F": "Paper3F-CompleteDynamics-v1_268.tex",
+    "5C": "Paper5C-InteractionResponse-v2_180.tex",
+    "7D": "Paper7D-TechnicalMaterial-v1_57.tex",
+    "4B": "Paper4B-QuantumResponse-v1_53.tex",
+    "2E": "Paper2E-KinematicExports-v3_138.tex",
+    "3E": "Paper3E-GravityAction-v1_200.tex",
+    "1A": "Paper1A-Geometry-v5_178.tex"
+  },
+  "sha256": {
+    "3F": "37f986adbb46e4fed0dd7b98cb4e0ab102572b490d6a2c035d18e2626fab842a",
+    "5C": "bd95ca6ab26719d276f3f610ace398dcdd6ff33f411575d06272aeb09343d0ee",
+    "7D": "651ec63500154b043695bf2b5dfa6696915b5e1e2206f8b74e06fd4d1dbb7bf4",
+    "4B": "2f549db1ba4c95daf837e58096a6d15e8588d65cfced64a689d23b014ab31151",
+    "2E": "43adf4ec506bf0482b0c378c44f72a12bc6a36046eee6b9d8c95fdd29bdd683a",
+    "3E": "55140497df851051c40b8e126c917aadb7bbf6d8e043065d57f632c700d97a4f",
+    "1A": "970cf792a328b0d55f8327c8869250dae964be0edf15a943a7dcc7a2efb2551c"
+  },
+  "checks": [
+    {
+      "id": "anchor-3f",
+      "claim": "New source anchor and specific correction present",
+      "pass": true,
+      "kind": "E0_EXACT_SOURCE",
+      "scope": "Exact statement locator and correction token only"
+    },
+    {
+      "id": "anchor-5c",
+      "claim": "New source anchor and specific correction present",
+      "pass": true,
+      "kind": "E0_EXACT_SOURCE",
+      "scope": "Exact statement locator and correction token only"
+    },
+    {
+      "id": "anchor-7d-cot",
+      "claim": "New source anchor and specific correction present",
+      "pass": true,
+      "kind": "E0_EXACT_SOURCE",
+      "scope": "Exact statement locator and correction token only"
+    },
+    {
+      "id": "anchor-7d-local",
+      "claim": "New source anchor and specific correction present",
+      "pass": true,
+      "kind": "E0_EXACT_SOURCE",
+      "scope": "Exact statement locator and correction token only"
+    },
+    {
+      "id": "anchor-7d-rg",
+      "claim": "New source anchor and specific correction present",
+      "pass": true,
+      "kind": "E0_EXACT_SOURCE",
+      "scope": "Exact statement locator and correction token only"
+    },
+    {
+      "id": "anchor-7d-ccr",
+      "claim": "New source anchor and specific correction present",
+      "pass": true,
+      "kind": "E0_EXACT_SOURCE",
+      "scope": "Exact statement locator and correction token only"
+    },
+    {
+      "id": "anchor-7d-classical",
+      "claim": "New source anchor and specific correction present",
+      "pass": true,
+      "kind": "E0_EXACT_SOURCE",
+      "scope": "Exact statement locator and correction token only"
+    },
+    {
+      "id": "gauge-coefficient",
+      "claim": "General coefficient specializes correctly at r=1",
+      "pass": true,
+      "kind": "E3_SYMBOLIC",
+      "scope": "General coefficient formula; not a physical coupling selection"
+    },
+    {
+      "id": "gauge-non-saturation",
+      "claim": "At same generator calibration the absolute coefficient varies with r",
+      "pass": true,
+      "kind": "E4_COUNTERMODEL",
+      "scope": "Counterexample to saturation from CAL alone"
+    },
+    {
+      "id": "cotangent-fiber",
+      "claim": "Same cotangent covector above y=1 has different pullbacks at \u00b11",
+      "pass": true,
+      "kind": "E4_COUNTERMODEL",
+      "scope": "Shows no canonical T*Y -> T*X without choice of x"
+    },
+    {
+      "id": "coarse-graph-nonprimitive",
+      "claim": "Connected two-species jump retains spectator commutant",
+      "pass": true,
+      "kind": "E4_COUNTERMODEL",
+      "scope": "Coarse species graph fails to imply scalar commutant"
+    },
+    {
+      "id": "micro-matrix-unit",
+      "claim": "Adjacent rank-one units compose to all-path matrix units",
+      "pass": true,
+      "kind": "E3_EXACT_FINITE",
+      "scope": "Sufficient condition for irreducibility if actual operators contain the micro units"
+    },
+    {
+      "id": "window-locality",
+      "claim": "Actual operator window commutator controlled by overlap norm",
+      "pass": true,
+      "kind": "E3_BOUNDED_NUMERIC",
+      "scope": "80 bounded 6x6 finite operator tests, plus analytic factorizations in source"
+    },
+    {
+      "id": "rg-unidentifiable-shift",
+      "claim": "H and H+cI have identical normalized Gibbs states",
+      "pass": true,
+      "kind": "E4_COUNTERMODEL",
+      "scope": "QFT4 expectation comparisons do not uniquely select arbitrary action coordinates"
+    },
+    {
+      "id": "ccr-boundary-not-sufficient",
+      "claim": "Chosen |N-1> states have zero top weight but unbounded expected number",
+      "pass": true,
+      "kind": "E4_COUNTERMODEL",
+      "scope": "Necessary one-commutator condition; not sufficiency for regular Weyl state"
+    },
+    {
+      "id": "ccr-geometric-8",
+      "claim": "Exact finite geometric tail arithmetic",
+      "pass": true,
+      "kind": "E3_ARITHMETIC",
+      "scope": "Source example arithmetic only"
+    },
+    {
+      "id": "ccr-geometric-32",
+      "claim": "Exact finite geometric tail arithmetic",
+      "pass": true,
+      "kind": "E3_ARITHMETIC",
+      "scope": "Source example arithmetic only"
+    },
+    {
+      "id": "ccr-geometric-128",
+      "claim": "Exact finite geometric tail arithmetic",
+      "pass": true,
+      "kind": "E3_ARITHMETIC",
+      "scope": "Source example arithmetic only"
+    },
+    {
+      "id": "cauchy-density",
+      "claim": "Continuous exponential obeys rational additive composition",
+      "pass": true,
+      "kind": "E3_SAMPLE_PLUS_SOURCE_PROOF",
+      "scope": "The source proof extends to R by continuity, not verified merely numerically"
+    },
+    {
+      "id": "collision-graph-invariants",
+      "claim": "Connected four-species reaction hyperedge has three collision invariants",
+      "pass": true,
+      "kind": "E4_EXACT_LINEAR",
+      "scope": "Connected coarse reaction hypergraph alone does not force Gibbs uniqueness"
+    },
+    {
+      "id": "cp1-ray-projector",
+      "claim": "Homogeneous phase changes vector but not rank-one projector",
+      "pass": true,
+      "kind": "E3_FINITE",
+      "scope": "Projective type, not physical measurement"
+    },
+    {
+      "id": "cubature-symmetry",
+      "claim": "Averaging one-node \u03b41 under x->-x has 2 support points",
+      "pass": true,
+      "kind": "E4_EXACT",
+      "scope": "d=1 constant span; invariant rule may require more nodes"
+    },
+    {
+      "id": "source-jacobian",
+      "claim": "16-dimensional scale determinant R_s^16",
+      "pass": true,
+      "kind": "E3_SYMBOLIC",
+      "scope": "Flat local measure; physical measure/owner remains separate"
+    },
+    {
+      "id": "feshbach-positive-singular",
+      "claim": "Aligned full-column rank gives positive smallest nonzero singular bound",
+      "pass": true,
+      "kind": "E3_BOUNDED_NUMERIC",
+      "scope": "30 independent full-rank examples, math proof in actual source"
+    },
+    {
+      "id": "whitening-kernel",
+      "claim": "Canonical mass kernel transports raw stabilizer by Q^(1/2)",
+      "pass": true,
+      "kind": "E3_FINITE",
+      "scope": "Only metric-kernel typing; physical gauge occurrence remains separate"
+    },
+    {
+      "id": "primitive-support",
+      "claim": "supp(P1+P2) is a projection though P1+P2 is not",
+      "pass": true,
+      "kind": "E3_FINITE",
+      "scope": "Exact finite support formula; no physical QCD pole"
+    }
+  ],
+  "passed": 26,
+  "total": 26,
+  "scope": "E0 anchors, selected analytic identities, bounded finite counterexamples. Does not discharge physical occurrence, full E3/E4 paper audits, or missing exact computational witnesses."
+}

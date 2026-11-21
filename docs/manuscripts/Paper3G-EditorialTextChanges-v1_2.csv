@@ -1,0 +1,189 @@
+line,category,before,after
+63,cross-reference registry,\input{Macros-v2_188.tex},\input{Macros-v2_202.tex}
+73,edition metadata,\date{Version 1.057 --- 19 November 2026 \\ Framework v3.053},\date{Version 1.058 --- 20 November 2026 \\ Framework v3.053}
+73,current release integration,\date{Version 1.058 --- 20 November 2026 \\ Framework v3.053},\date{Version 1.058 --- 20 November 2026 \\ Framework v3.076}
+78,abstract publication synopsis,"Paper III-G is the technical owner of auxiliary and optional proof chains transferred from Papers III-A--III-F. Mathematical theorem and proof bodies are preserved with inherited labels and hypotheses; this paper does not add new physical occurrences, fixed sources, calibrated profiles, or cosmological histories. Physical source/action statements remain in their owning main papers.","This technical companion establishes reciprocal-continuation and phase-cell tests, finite spectral and Hopf--Clifford certificates, valuation and Laurent comparisons, conditional gravity-action junctions, and local Schur, heat, and source-response bounds. Exact computations and countermodels distinguish generated geometry from optional selectors, benchmark actions, and calibrated inputs. Finite identities by themselves do not constitute physical source occurrences, observed couplings, or cosmological histories."
+772,section title,\subsection{Supplementary theorem-status taxonomy for dynamics},\subsection{Dynamical theorem scopes and representation status}
+992,section title,\subsection{Legacy momentum-selector diagnostics},\subsection{Conditional finite-carrier and fixed-action selector tests}
+1786,section title,\subsection{Legacy momentum-selector diagnostics},\subsection{Conditional lower-ideal momentum-support comparisons}
+2277,section title,\subsection{Legacy transverse harmonic-count diagnostics},\subsection{Auxiliary transverse harmonic-window rank tests}
+4426,section title,\subsection{Historical depth-two scalar/tensor K16 freeze comparison},\subsection{Conditional depth-two scalar/tensor K16 comparisons}
+4576,section title,\subsection{Smooth hierarchy bookkeeping visualization},\subsection{Smooth hierarchy parameterization and scope}
+4922,section title,\subsubsection{Historical least-support depth-two comparison (not the active carrier dressing)},\subsubsection{Conditional depth-two least-support comparison}
+6487,section title,\subsection{current G26/G15 scope synchronization},\subsection{Local versus terminal response ownership}
+8413,section title,"\section{Finite examples, normalizations, and reproducible crosschecks}","\section{Independent benchmarks, normalizations, and exact certificates}"
+8706,section title,\section{Shell--frame return and a possible \(1/96\) source explanation},\section{Shell--frame return and a conditional \(1/96\) source weight}
+8415,verification structure,\paragraph{Verification index.} The exact original theorem labels,\paragraph{Verification scope.} The mathematical hypotheses and conclusions
+8416,verification structure,of the auxiliary calculations in Sections~\ref{p3g:sec:constitution}--\ref{p3g:sec:sources} provide the primary verification index.,in Sections~\ref{p3g:sec:constitution}--\ref{p3g:sec:sources} delimit the exact comparisons below.
+1009,formal caption (scope retained),\begin{proposition}[Legacy finite-carrier selector diagnostic and fixed-action level-one alternative],\begin{proposition}[Finite-carrier selector diagnostic and fixed-action level-one alternative]
+1806,formal caption (scope retained),\begin{definition}[Former spectral-lower-ideal finite-role domain],\begin{definition}[Conditional spectral-lower-ideal finite-role domain]
+1842,formal caption (scope retained),\begin{corollary}[Historical sharpness of the former finite-role domain],\begin{corollary}[Sharpness of the conditional finite-role domain]
+1874,formal caption (scope retained),\begin{corollary}[Historical fixed-action alternative inside the former level-one window],\begin{corollary}[Fixed-action alternative inside an assumed level-one window]
+1981,formal caption (scope retained),\begin{theorem}[Former factor-local momentum support and lower bound],\begin{theorem}[Conditional factor-local momentum support and lower bound]
+2039,formal caption (scope retained),"\begin{theorem}[Former factor-local momentum level, conditional]",\begin{theorem}[Factor-local momentum level under an explicit ceiling]
+2105,formal caption (scope retained),\begin{theorem}[Former finite typed-role realization under explicit shape and level conditions],\begin{theorem}[Finite typed-role realization under explicit shape and level conditions]
+2149,formal caption (scope retained),\begin{theorem}[Historical compact-cell value and trace stability],\begin{theorem}[Conditional compact-cell value and trace stability]
+2181,formal caption (scope retained),\begin{remark}[Historical cell-constitution scope],\begin{remark}[Conditional cell-constitution scope]
+2196,formal caption (scope retained),\begin{theorem}[Historical level-one realization and Paper-I-A handoff],\begin{theorem}[Conditional level-one realization and Paper-I-A comparison]
+2286,formal caption (scope retained),\begin{definition}[Legacy transverse harmonic-window normalization],\begin{definition}[Auxiliary transverse harmonic-window normalization]
+2320,formal caption (scope retained),\begin{theorem}[Legacy two-cutoff auxiliary transverse count],\begin{theorem}[Two-cutoff auxiliary transverse count]
+2362,formal caption (scope retained),\begin{proposition}[Legacy status of the saturated transverse-count check],\begin{proposition}[Conditional saturated transverse-count check]
+5036,formal caption (scope retained),\begin{theorem}[Historical depth-two dressed positive-response comparison],\begin{theorem}[Conditional depth-two dressed positive-response comparison]
+5109,formal caption (scope retained),\begin{corollary}[Historical depth-two coefficient freeze and reflected label],\begin{corollary}[Depth-two coefficient freeze and reflected label]
+5235,formal caption (scope retained),\begin{proposition}[Historical depth-two K16 third-jet freeze (comparison only)],\begin{proposition}[Depth-two K16 third-jet comparison]
+8421,section hierarchy,\section{Determinants for the rooted conormal cap comparison},\subsection{Determinants for the rooted conormal cap comparison}
+8484,section hierarchy,\section{Rooted phase source Gram and common-interior quotient order},\subsection{Rooted phase source Gram and common-interior quotient order}
+8706,section hierarchy,\section{Shell--frame return and a conditional \(1/96\) source weight},\subsection{Shell--frame return and a conditional \(1/96\) source weight}
+8858,section hierarchy,\section{Exact Petersen--action certificates and reproducibility},\subsection{Exact Petersen--action certificates and reproducibility}
+8905,section hierarchy,\section{Detailed Born-connection and vacuum verification ledger},\subsection{Detailed Born-connection and vacuum verification ledger}
+9020,section hierarchy,\section{Direct meron spectral-flow and spectral-zeta continuation checks},\subsection{Direct meron spectral-flow and spectral-zeta continuation checks}
+8907,section hierarchy,"\subsection{Chern--Simons, meron stationarity, spectral flow}","\subsubsection{Chern--Simons, meron stationarity, spectral flow}"
+8959,section hierarchy,\subsection{Clifford heat trace and determinant amplitude},\subsubsection{Clifford heat trace and determinant amplitude}
+8979,section hierarchy,\subsection{Direct check of the near-terminal trace residual},\subsubsection{Direct check of the near-terminal trace residual}
+9003,section hierarchy,\subsection{Strict closure and open physical ports},\subsubsection{Strict closure and open physical ports}
+9098,section hierarchy: Maxwell sibling,\subsubsection{Conditional round-$S^3$ static Maxwell benchmark},\subsection{Conditional round-$S^3$ static Maxwell benchmark}
+1819,source owner II-F,"package \(\mathsf P_{\rm sli}\) of Paper~II-B,","package \(\mathsf P_{\rm sli}\) of Paper~II-F,"
+1869,source owner II-F,"This is the reciprocal-stage restatement of Paper~II-B,","This is the reciprocal-stage restatement of Paper~II-F,"
+2070,source owner II-F,"Within \(\mathsf P_{\rm sli}+(\mathrm{COORD}_A)\), Paper~II-B,","Within \(\mathsf P_{\rm sli}+(\mathrm{COORD}_A)\), Paper~II-F,"
+2074,source owner I-B,"\((1,\tfrac12)\) and \((\tfrac12,1)\) are absent.  Paper~I-A,","\((1,\tfrac12)\) and \((\tfrac12,1)\) are absent.  Paper~I-B,"
+2256,source owner I-B,"Paper~I-A records two purely mathematical facts about the constituted Hurwitz support.  First, the \(24\)-cell is a spherical \(5\)-design, so finite averaging over \(2T\) agrees with round \(S^3\) averaging for all polynomials of degree at most five.  Second, the full \(F_4\) invariant ring has generator degrees \(2,6,8,12\); on the unit sphere the degree-two generator is the constant \(r^2=1\).  Hence no nonconstant fully cell-symmetric scalar correction is available before degree six.  Directly,","Paper~I-B records two purely mathematical facts about the constituted Hurwitz support.  First, the \(24\)-cell is a spherical \(5\)-design, so finite averaging over \(2T\) agrees with round \(S^3\) averaging for all polynomials of degree at most five.  Second, the full \(F_4\) invariant ring has generator degrees \(2,6,8,12\); on the unit sphere the degree-two generator is the constant \(r^2=1\).  Hence no nonconstant fully cell-symmetric scalar correction is available before degree six.  Directly,"
+2780,source owner I-B,"Paper~I-A, Theorem~\ref{p1:thm:septet-octet-resolution-module}, fixes the","Paper~I-B, Theorem~\ref{p1:thm:septet-octet-resolution-module}, fixes the"
+3366,source owner I-B,the Levi-to-round first-order conversion.  Paper~I-A gives,the Levi-to-round first-order conversion.  Paper~I-B gives
+3466,source owner I-B,protected Clifford module.  Paper~I-A's resolution-data construction is,protected Clifford module.  Paper~I-B's resolution-data construction is
+3486,source owner I-B,from Paper~I-A; no additional Clifford refinement block \(B_{\rm Cl}\) is,from Paper~I-B; no additional Clifford refinement block \(B_{\rm Cl}\) is
+3492,source owner I-B,"If \(\mathsf{Supp}_{2T}\) occurs, Paper~I-A supplies unmarked finite-support","If \(\mathsf{Supp}_{2T}\) occurs, Paper~I-B supplies unmarked finite-support"
+5888,source owner I-D,"The exact series is Paper~I-C,","The exact series is Paper~I-D,"
+5949,source owner I-D,"block of Paper~I-C,","block of Paper~I-D,"
+6301,source owner I-D,"In Paper~I-C, Theorem~\ref{p1b:thm:all-order-schur}","In Paper~I-D, Theorem~\ref{p1b:thm:all-order-schur}"
+6316,source owner I-D,"Apply the scalar case of Paper~I-C,","Apply the scalar case of Paper~I-D,"
+6339,source owner I-D,"This is Paper~I-C, Theorem~\ref{p1b:thm:matrix-rigidity}","This is Paper~I-D, Theorem~\ref{p1b:thm:matrix-rigidity}"
+7819,source owner I-D,"Paper~I-C, Proposition~\ref{p1b:prop:feshbach}","Paper~I-D, Proposition~\ref{p1b:prop:feshbach}"
+8041,source owner I-D,"Paper~I-C, Theorem~\ref{p1b:thm:dirac-transverse-generation}","Paper~I-D, Theorem~\ref{p1b:thm:dirac-transverse-generation}"
+8057,source owner I-D,"Paper~I-C, Corollary~\ref{p1b:cor:dirac-helicity-balance}, gives","Paper~I-D, Corollary~\ref{p1b:cor:dirac-helicity-balance}, gives"
+1375,source owner I-C,"Transport the pair-groupoid and cocycle of Paper~1B,","Transport the pair-groupoid and cocycle of Paper~I-C,"
+1421,source owner I-C,"Apply the inversion-even jet conclusion of Paper~1B,","Apply the inversion-even jet conclusion of Paper~I-C,"
+3084,source owner I-C,"This is Paper~1B, Proposition~\ref{p1b:prop:relative-cohomology}, with","This is Paper~I-C, Proposition~\ref{p1b:prop:relative-cohomology}, with"
+3098,source owner I-C,"The degree and non-covering context is Paper~1B,","The degree and non-covering context is Paper~I-C,"
+3127,source owner I-C,"The full-product local model and singularity are Paper~1B,","The full-product local model and singularity are Paper~I-C,"
+3155,source owner I-C,"Apply the integral exchange-eigensublattice table of Paper~1B,","Apply the integral exchange-eigensublattice table of Paper~I-C,"
+3172,source owner I-C,"This is the regular-locus dimension calculation in Paper~1B,","This is the regular-locus dimension calculation in Paper~I-C,"
+3222,source owner I-C,"This is Paper~1B, Theorem~\ref{p1b:thm:transgression}, with the same","This is Paper~I-C, Theorem~\ref{p1b:thm:transgression}, with the same"
+3249,source owner I-C,"Apply Paper~1B, Theorem~\ref{p1b:thm:dirac-graph}, with","Apply Paper~I-C, Theorem~\ref{p1b:thm:dirac-graph}, with"
+4862,source owner I-D,"Paper~1B, Theorem~\ref{p1b:thm:born-euler-anticommutation} and","Paper~I-D, Theorem~\ref{p1b:thm:born-euler-anticommutation} and"
+4940,source owner I-D,"is Paper~1B, Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1B},","is Paper~I-D, Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1B},"
+5021,source owner I-C,"The positive-character classification of Paper~1B,","The positive-character classification of Paper~I-C,"
+5143,source owner I-D,"Paper~1B, Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1B},","Paper~I-D, Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1B},"
+5186,source owner I-D,"Paper~1B, Theorem~\ref{p1b:thm:laurent-family}, gives the unique zero","Paper~I-D, Theorem~\ref{p1b:thm:laurent-family}, gives the unique zero"
+982,bibliography paper owner I-C,"\cite{Kugelmann2026Paper1B}, apply to that same degree-\(q\) line.","\cite{Kugelmann2026Paper1C}, apply to that same degree-\(q\) line."
+3261,bibliography paper owner I-C,\cite{Kugelmann2026Paper1B}.  On its compatible bi-invariant Hermitian branch,\cite{Kugelmann2026Paper1C}.  On its compatible bi-invariant Hermitian branch
+4940,bibliography paper owner I-D,"is Paper~I-D, Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1B},","is Paper~I-D, Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1D},"
+5022,bibliography paper owner I-C,"Proposition~\ref{p1b:prop:trace-coordinate}~\cite{Kugelmann2026Paper1B},","Proposition~\ref{p1b:prop:trace-coordinate}~\cite{Kugelmann2026Paper1C},"
+5143,bibliography paper owner I-D,"Paper~I-D, Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1B},","Paper~I-D, Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1D},"
+5188,bibliography paper owner I-D,Theorem~\ref{p1b:thm:dressed-convexity}~\cite{Kugelmann2026Paper1B},Theorem~\ref{p1b:thm:dressed-convexity}~\cite{Kugelmann2026Paper1D}
+5892,bibliography paper owner I-D,"\cite{Kugelmann2026Paper1B}. The definitions of \(h\), \(\delta\),","\cite{Kugelmann2026Paper1D}. The definitions of \(h\), \(\delta\),"
+5951,bibliography paper owner I-D,"\cite{Kugelmann2026Paper1B}, gives the scalar--exact pair's Hamiltonian","\cite{Kugelmann2026Paper1D}, gives the scalar--exact pair's Hamiltonian"
+6160,bibliography paper owner I-C,"\cite{Kugelmann2026Paper1B}, fix the corresponding scalar Landau/Dirac","\cite{Kugelmann2026Paper1C}, fix the corresponding scalar Landau/Dirac"
+6218,bibliography paper owner I-C,"\cite{Kugelmann2026Paper1B}, for the principal","\cite{Kugelmann2026Paper1C}, for the principal"
+6302,bibliography paper owner I-D,"\cite{Kugelmann2026Paper1B}, this affine family has residual","\cite{Kugelmann2026Paper1D}, this affine family has residual"
+6317,bibliography paper owner I-D,"Theorem~\ref{p1b:thm:matrix-rigidity} \cite{Kugelmann2026Paper1B},","Theorem~\ref{p1b:thm:matrix-rigidity} \cite{Kugelmann2026Paper1D},"
+6340,bibliography paper owner I-D,"\cite{Kugelmann2026Paper1B}, on the stated normalized reciprocal window.","\cite{Kugelmann2026Paper1D}, on the stated normalized reciprocal window."
+7619,bibliography paper owner I-C,"Corollary~\ref{p1b:cor:adjoint-gap} \cite{Kugelmann2026Paper1B}, give","Corollary~\ref{p1b:cor:adjoint-gap} \cite{Kugelmann2026Paper1C}, give"
+7656,bibliography paper owner I-C,"\cite{Kugelmann2026Paper1B}, for solvability, the orthogonal transverse","\cite{Kugelmann2026Paper1C}, for solvability, the orthogonal transverse"
+7704,bibliography paper owner I-C,"\cite{Kugelmann2026Paper1B}, on \(Q_cL^2\), with","\cite{Kugelmann2026Paper1C}, on \(Q_cL^2\), with"
+7741,bibliography paper owner I-C,"\cite{Kugelmann2026Paper1B}, identifies this midpoint with the displayed","\cite{Kugelmann2026Paper1C}, identifies this midpoint with the displayed"
+7778,bibliography paper owner I-C,"\cite{Kugelmann2026Paper1B}, with the same \(R\) and \(\delta\).","\cite{Kugelmann2026Paper1C}, with the same \(R\) and \(\delta\)."
+7820,bibliography paper owner I-D,"\cite{Kugelmann2026Paper1B}, gives the singlet contraction and the","\cite{Kugelmann2026Paper1D}, gives the singlet contraction and the"
+7854,bibliography paper owner I-C,"\cite{Kugelmann2026Paper1B}, with the same \(\mathcal U\), doublet","\cite{Kugelmann2026Paper1C}, with the same \(\mathcal U\), doublet"
+7897,bibliography paper owner I-C,"\cite{Kugelmann2026Paper1B}, with the same midpoint operator, reciprocal","\cite{Kugelmann2026Paper1C}, with the same midpoint operator, reciprocal"
+8042,bibliography paper owner I-D,"\cite{Kugelmann2026Paper1B}, gives all displayed formulas and the","\cite{Kugelmann2026Paper1D}, gives all displayed formulas and the"
+606,historical prose reframing,The earlier stage remains historically unresolved and is not rewritten as,The smaller-domain conclusion is not retrospectively strengthened as
+1086,historical prose reframing,"In the former selector architecture the vector finite-level problem was treated differently: once the coordinate sector was required, lower-ideal candidates formed a nested family with mathematical lower bound \(s\ge1\), but the old framework did not derive the endpoint \(s=1\).  That contrast motivated the later revision.  It is historical only: current Paper~II-B derives \(\mathcal H_p\cong\mathcal H_1\) directly and reads off \(m_p=1\) afterward.","In the former selector architecture the vector finite-level problem was treated differently: once the coordinate sector was required, lower-ideal candidates formed a nested family with mathematical lower bound \(s\ge1\), but the old framework did not derive the endpoint \(s=1\).  The independent current Paper~II-B derives \(\mathcal H_p\cong\mathcal H_1\) directly and reads off \(m_p=1\) afterward."
+1897,historical prose reframing,"Historically this provided an alternative consistency check to the former \(\mathsf P_{\rm sli}\) tower handoff; it is not part of the present momentum-seed derivation.  The two nonzero channels, level-one ceiling, and","This supplies a conditional consistency check to the separately assumed \(\mathsf P_{\rm sli}\) tower handoff; it is not part of the present momentum-seed derivation.  The two nonzero channels, level-one ceiling, and"
+2188,historical prose reframing,This appendix preserves that calculation only as a historical diagnostic.,This calculation is a conditional comparison and does not enter the active seed proof.
+2279,historical prose reframing,This appendix is retained for provenance of the former auxiliary counting,This subsection studies a separate auxiliary harmonic-counting
+2397,historical prose reframing,The old THC/SAT branch is retained only as a historical auxiliary diagnostic.,The THC/SAT branch is only an auxiliary rank comparison.
+6496,historical prose reframing,The historical v1.114 G15 primitive source statement was the v1.113 gate,The separately scoped directed-source identity is
+6501,historical prose reframing,retained as release provenance only and is superseded by Release v1.117.,not a premise for the terminal deep response.
+585,historical prose reframing,the smaller domain.  The superseded \(\mathsf P_{\rm sli}\) package is retained,the smaller domain.  The optional \(\mathsf P_{\rm sli}\) package is used
+586,historical prose reframing,"only as historical selector bookkeeping.  By contrast,","only as a conditional comparison.  By contrast,"
+222,scientific scope prose,on the profile doctrine.  The legacy symbols \((\mathrm{BR}_{\rm ind})\) and,on the profile doctrine.  The auxiliary symbols \((\mathrm{BR}_{\rm ind})\) and
+623,scientific scope prose,former \(\mathsf P_{\rm sli}\) route is historical only.,the optional \(\mathsf P_{\rm sli}\) route is not a premise of this result.
+724,scientific scope prose,\(F_g(u)=e^{-u}\) from the protected scalar-Laplace signature; the historical,\(F_g(u)=e^{-u}\) from the protected scalar-Laplace signature; the auxiliary
+994,scientific scope prose,The following material records the former tower/fixed-action routes to a,The following comparison tests level-one selection under separately
+995,scientific scope prose,level-one carrier.  It is retained as a sharp diagnostic of the weaker former,imposed tower and fixed-action premises. It identifies the conclusions
+996,scientific scope prose,signature only.  The current constitutional route imports,dependent on those premises. The constitutional route independently imports
+1047,scientific scope prose,"This proposition records the former fixed-action alternative.  It is not used by the current constitutional route, because Paper~II-B now derives the momentum carrier directly from the revised GP2 host closure.",This fixed-action alternative is conditional on the supplied level-one window; the independent Paper~II-B momentum-host proof does not consume it.
+1086,scientific scope prose,"In the former selector architecture the vector finite-level problem was treated differently: once the coordinate sector was required, lower-ideal candidates formed a nested family with mathematical lower bound \(s\ge1\), but the old framework did not derive the endpoint \(s=1\).  The independent current Paper~II-B derives \(\mathcal H_p\cong\mathcal H_1\) directly and reads off \(m_p=1\) afterward.","The optional lower-ideal comparison admits nested candidate supports with \(s\ge1\), once the coordinate sector is required, but does not select the terminal member \(s=1\). The independent Paper~II-B host theorem establishes \(\mathcal H_p\cong\mathcal H_1\) and \(m_p=1\)."
+1788,scientific scope prose,The statements in this appendix preserve the former lower-ideal/level-ceiling,The following statements study a separately postulated lower-ideal/level-ceiling
+1789,scientific scope prose,analysis as a diagnostic of the weaker pre-revision signature.  They are not,domain and its exact consequences. They are not
+1791,scientific scope prose,"Paper~II-B.  Whenever the older prose below says that a level is ``selected'',",Paper~II-B. Any selection statement below is restricted
+1792,scientific scope prose,it is to be read only inside the explicitly displayed former conditional,to its explicitly displayed conditional
+1793,scientific scope prose,"domain.  In the current chronology,",domain. The independent constitutional result is
+1802,scientific scope prose,Using any of those later or superseded structures to reselect the momentum,None of these separately conditioned structures may select the momentum
+1803,scientific scope prose,carrier would be an invalid backward selector.  Their correctly typed,carrier backwards from downstream data. They instead supply
+1804,scientific scope prose,conditional mathematics may nevertheless remain as historical diagnostics.,conditional mathematical comparisons on their stated domains.
+1844,scientific scope prose,"In the former weaker momentum signature, before canonical-image host closure was adopted, omitting \(\mathsf P_{\rm sli}\) left the generated scalar and coordinate roles insufficient to force \(\mathcal H_1\).  On one reciprocal factor, the proper","Without the auxiliary lower-ideal premise \(\mathsf P_{\rm sli}\), the scalar and coordinate constraints alone do not entail \(\mathcal H_1\). On one reciprocal factor, the proper"
+1865,scientific scope prose,\(\mathcal H_1\).  In that former signature they were excluded precisely by the complete spectral-lower-ideal rule.  Under the revised GP2 host closure they are already excluded by exact/faithful no-omission of the generated momentum-host content.,"\(\mathcal H_1\).  They are excluded by the optional complete spectral-lower-ideal rule, or independently by GP2 exact/faithful no-omission of the constituted momentum-host content."
+2144,scientific scope prose,"In that former signature, the proper modules of Corollary~\ref{p3:cor:spectral-lower-ideal-sharpness} remained countermodels outside \(\mathsf P_{\rm sli}\).  They are not countermodels to the current GP2 host-closure theorem.  At terminal weight one the Paper-II","Under those auxiliary premises, the proper modules of Corollary~\ref{p3:cor:spectral-lower-ideal-sharpness} remained countermodels outside \(\mathsf P_{\rm sli}\).  They are not countermodels to the current GP2 host-closure theorem.  At terminal weight one the Paper-II"
+2183,scientific scope prose,"In the former selector architecture, the displayed branch fixed","On the conditional lower-ideal/ceiling domain, the displayed branch fixed"
+2192,scientific scope prose,"therefore inherit the current upstream host theorem, not this former selector","therefore inherit the current upstream host theorem, not the optional selector"
+2214,scientific scope prose,"used to select the level.  Within this former branch, representation-theoretic conclusions depending only on \(\mathcal H_1\) followed by modus ponens; current uses instead import \(\mathcal H_p\cong\mathcal H_1\) from Paper~II-B.  The normalized Paper-I-A","used to select the level. Within this conditional comparison, representation-theoretic conclusions depending only on \(\mathcal H_1\) follow from the stipulated endpoint; the independent \(\mathcal H_p\cong\mathcal H_1\) result is imported from Paper~II-B. The normalized Paper-I-B"
+2302,scientific scope prose,The historical tag \((\mathrm{THC})\) denotes only this degree-\(<\mu\),The notation \((\mathrm{THC})\) denotes only this degree-\(<\mu\)
+2306,scientific scope prose,The historical tag \((\mathrm{ID}_{\rm THC})\) denoted an externally declared,The auxiliary tag \((\mathrm{ID}_{\rm THC})\) denoted an externally declared
+2308,scientific scope prose,It is now \emph{superseded on the reciprocal-position side}: Paper~II-C,It does not control the physical reciprocal-position side:  Paper~II-C
+2364,scientific scope prose,If one nevertheless retains the historical auxiliary assumptions,Under the separately supplied auxiliary assumptions
+2459,scientific scope prose,Clifford response.  At the historical III-B stage the maximally mixed,Clifford response. The generic comparison does not determine the maximally mixed
+2460,scientific scope prose,ultraviolet normalization and the interpolation profile are not derived and,ultraviolet normalization or the interpolation profile; they
+2461,scientific scope prose,therefore remain explicit forward data in this generic appendix.  This status,remain explicit forward data in this generic comparison. Their status
+2462,scientific scope prose,is not retroactively changed by later specialization.,is unchanged by an independently constituted specialization.
+3941,scientific scope prose,scale calibration; \((\mathrm{CAL}_{xp})\) does not supply it.  The legacy,scale calibration; \((\mathrm{CAL}_{xp})\) does not supply it.  The auxiliary
+4876,scientific scope prose,current release Paper~III-F extends it through the generated depth-two,Paper~III-F also establishes the generated depth-two
+4877,scientific scope prose,coefficient character and thereby replaces the former copied-response action,coefficient character and its distinct inverse-Euler action
+4878,scientific scope prose,placement by the unique inverse-Euler primitive.  The exact structural,primitive. The exact structural
+5033,scientific scope prose,"used in earlier releases is therefore retained only as an appendix diagnostic,","is a separately conditional comparison,"
+6276,scientific scope prose,"This is a sufficient comparison class for the historical local-\(L\)/G26-GLOBAL route, with its additional hypotheses","This is a sufficient comparison class for a conditional local-\(L\)/G26-GLOBAL comparison, with its additional hypotheses"
+6490,scientific scope prose,the distinct static-plus-terminal modality \(S+T\).  Therefore the older,the distinct static-plus-terminal modality \(S+T\).  Therefore the distinct
+87,technical-companion terminology,This appendix records why global scalar faithfulness does not by itself,This subsection records why global scalar faithfulness does not by itself
+129,technical-companion terminology,scalar loop-character constructor. This appendix proves the additional,scalar loop-character constructor. This subsection proves the additional
+774,technical-companion terminology,This appendix records the status of standard theorem families discussed in the,This subsection records the status of standard theorem families discussed in the
+1467,technical-companion terminology,closure may cite this appendix alone to supply any such occurrence.,closure may cite this subsection alone to supply any such occurrence.
+2233,technical-companion terminology,This appendix records the full-cell scalar calculation available only on the,This subsection records the full-cell scalar calculation available only on the
+2937,technical-companion terminology,consuming it is not established by this appendix.,consuming it is not established by this subsection.
+2980,technical-companion terminology,This appendix records the native local cotangent calculation used in,This subsection records the native local cotangent calculation used in
+3275,technical-companion terminology,This appendix records a mathematical comparison only; it is not used in the,This subsection records a mathematical comparison only; it is not used in the
+3297,technical-companion terminology,This appendix records an optional \(\mathsf{Supp}_{2T}\) compatibility check.,This subsection records an optional \(\mathsf{Supp}_{2T}\) compatibility check.
+3521,technical-companion terminology,This appendix treats geometric scalar modes on the Hopf fibration.  It proves,This subsection treats geometric scalar modes on the Hopf fibration.  It proves
+3547,technical-companion terminology,"In this appendix the Berger metric is written in dimensionless unit-radius coframe notation, with factors of \(\Rmom\) restored in the eigenvalue formulas.  Let $g_\varepsilon$ be the Berger family of left-invariant metrics on $S^3$ obtained by","In this subsection the Berger metric is written in dimensionless unit-radius coframe notation, with factors of \(\Rmom\) restored in the eigenvalue formulas.  Let $g_\varepsilon$ be the Berger family of left-invariant metrics on $S^3$ obtained by"
+3768,technical-companion terminology,The results in this appendix are mathematically useful but are not required by,The results in this subsection are mathematically useful but are not required by
+4224,technical-companion terminology,This appendix records the exact logical status of the reduced response used in,This subsection records the exact logical status of the reduced response used in
+4621,technical-companion terminology,This appendix records the negative and diagnostic details behind,This subsection records the negative and diagnostic details behind
+4819,technical-companion terminology,This appendix studies the bare unit-quadratic specialization only. It does,This subsection studies the bare unit-quadratic specialization only. It does
+5350,technical-companion terminology,This appendix adds the declared comparison operator,This subsection adds the declared comparison operator
+5361,technical-companion terminology,intersect this appendix's offset range with \(U+|\eta|\le1\).,intersect this subsection's offset range with \(U+|\eta|\le1\).
+5428,technical-companion terminology,This appendix supplies a declared bounded finite-rank insertion for the,This subsection supplies a declared bounded finite-rank insertion for the
+5616,technical-companion terminology,This appendix records the scope of the native coordinate bound and spherical,This subsection records the scope of the native coordinate bound and spherical
+5752,technical-companion terminology,This appendix illustrates the main-text moment evaluator. It selects a,This subsection illustrates the main-text moment evaluator. It selects a
+5806,technical-companion terminology,This appendix checks the source coefficients. Its homogeneous $L=2$,This subsection checks the source coefficients. Its homogeneous $L=2$
+5858,technical-companion terminology,This appendix evaluates the specified spatial trace and proves its,This subsection evaluates the specified spatial trace and proves its
+6352,technical-companion terminology,not additional constitutive requirements imposed by this appendix.,not additional constitutive requirements imposed by this subsection.
+6507,technical-companion terminology,This appendix records a typing diagnostic needed to interpret candidate,This subsection records a typing diagnostic needed to interpret candidate
+6675,technical-companion terminology,This appendix adds the explicitly stated source/current alignment dictionary.,This subsection adds the explicitly stated source/current alignment dictionary.
+7112,technical-companion terminology,is inferred from this appendix.,is inferred from this subsection.
+7364,technical-companion terminology,This appendix is an exact algebraic architecture for an enlarged matched,This subsection is an exact algebraic architecture for an enlarged matched
+812,internal subsection locator,example appear in Appendix~\ref{p3a:app:v166-legendre-image}.,example appear in Section~\ref{p3a:app:v166-legendre-image}.
+2703,internal subsection locator,relegated to Appendix~\ref{p3:app:oneeighth_checks}.,relegated to Section~\ref{p3:app:oneeighth_checks}.
+8350,internal subsection locator,eight when \(L_4\ne0\); Appendix~\ref{p3f:app:native-source-square-readout},eight when \(L_4\ne0\); Section~\ref{p3f:app:native-source-square-readout}
+8390,internal subsection locator,readout remainder; Appendix~\ref{p3f:app:native-mixed-quartic-comparison} gives an exact,readout remainder; Section~\ref{p3f:app:native-mixed-quartic-comparison} gives an exact
+9080,publication terminology,heat expansion; finite numerical checks in,heat expansion. Finite checks of its initial coefficients
+9081,publication terminology,\texttt{Proofs/Paper00-MultiGapClosures-v1\_1-verify.py},
+9082,publication terminology,"validate the first terms, while the analytic theta identity",provide independent corroboration; the analytic theta identity
+9083,publication terminology,proves all terms.,proves the expansion to all orders.
+6500,publication terminology,(up to complete rooted reversal).  No broader \texttt{HS\_D4\_SOURCE} geometry selector is live.  This paragraph is,(up to complete rooted reversal).  No broader \texttt{HS\_D4\_SOURCE} geometry selector is live.  This identity is
+8897,reproducibility correction,$E_{36}$ congruence on every pair axis.  The standalone exact script is,$E_{36}$ congruence on every pair axis.  An exact polynomial verification of the axis moments is supplied as
+8898,reproducibility correction,\texttt{Paper3G-PetersenDynamics-v1\_1-verify.py} in the cumulative,\texttt{Paper3G-PetersenMoments-v1\_1-verify.py} in the cumulative
+8898,reproducibility correction,\texttt{Paper3G-PetersenMoments-v1\_1-verify.py} in the cumulative,\texttt{Paper3G-PetersenMoments-v1\_1-verify.py} in the
+8899,reproducibility guard,"update bundle.  No physical Hessian, normalization, beta function or","technical supplement. The separate two-core matrix checks require their declared operators and are not a consequence of the moment script alone. No physical Hessian, normalization, beta function or"
+2798,pdf bookmark text-safety,\subsection{Supplementary \(E_7\) inverse on the protected complement},\subsection{Supplementary \texorpdfstring{\(E_7\)}{E7} inverse on the protected complement}
+3388,pdf bookmark text-safety,\subsection{Supplementary determinant and \(E_7\) inverse comparison},\subsection{Supplementary determinant and \texorpdfstring{\(E_7\)}{E7} inverse comparison}
+8706,pdf bookmark text-safety,\subsection{Shell--frame return and a conditional \(1/96\) source weight},\subsection{Shell--frame return and a conditional \texorpdfstring{\(1/96\)}{1/96} source weight}
+9098,pdf bookmark text-safety,\subsection{Conditional round-$S^3$ static Maxwell benchmark},\subsection{Conditional round-\texorpdfstring{$S^3$}{S3} static Maxwell benchmark}

@@ -1,0 +1,57 @@
+{
+  "release": "Paper00-PapersMinimal-v3_077.zip",
+  "parent_archive": "Paper00-PapersMinimal-v3_076(1).zip",
+  "parent_sha256": "019ed8e92377ec101f9e433d9582b2781b22dbb96cfa128593b5ab7850de6d71",
+  "rebased_proposal": "Paper00-UnconditionalFrameworkUpdates-v1_1.zip",
+  "rebased_proposal_sha256": "8b1c99be719a9dd3ead86d4719d3378c3c2e04d7e6e3449684cb7657405177a2",
+  "current_papers": 31,
+  "current_source_labels": 14366,
+  "new_labels": 55,
+  "baseline_labels": 14311,
+  "inherited_labels_preserved": true,
+  "duplicate_labels": 0,
+  "parsed_source_references": 11646,
+  "missing_source_references": 0,
+  "changed_paper_roots": 5,
+  "unchanged_paper_pairs_byte_identical": 26,
+  "current_xref_aliases": 204,
+  "new_macro": "Macros-v2_203.tex",
+  "pdf_builds": {
+    "Paper1B-ExceptionalGeometry-v1_27": {
+      "pages": 304,
+      "tex_sha256": "c908291ac05e0aab8b3c7de8a298aa362011766e9b63baed7a32995be5502183",
+      "pdf_sha256": "c74b3d4306d7563e22f3f23b3047befb9af9dbd6c6a4b364630c9e6e1dba3a6e",
+      "log_warnings_unresolved": 0
+    },
+    "Paper2C-ReciprocalLocalization-v2_177": {
+      "pages": 124,
+      "tex_sha256": "bf9b9dec2df27d1964d6b031b2ebe4c13af306c695bc2edead7b2f416fb9d843",
+      "pdf_sha256": "0d319aaf4bba787be315ade58c1f938c7a56bfdf0e103cecd770c2ac8e4b509d",
+      "log_warnings_unresolved": 0
+    },
+    "Paper3F-CompleteDynamics-v1_281": {
+      "pages": 336,
+      "tex_sha256": "33e57bc94a18c8b9d0104b4592b02308bb27b08ed6c8b4834a4e5f353f1ed14c",
+      "pdf_sha256": "af8f0e071358ebc29cfc99d80bb9e118ad180a2e03426a68a1f6ac8366f719c0",
+      "log_warnings_unresolved": 0
+    },
+    "Paper7A-QCDKernel-v1_185": {
+      "pages": 168,
+      "tex_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "pdf_sha256": "827db212a367094a276b2727869da2de5a579c386bace236291042dd609015ff",
+      "log_warnings_unresolved": 0
+    },
+    "Paper7B-QCDReadouts-v1_169": {
+      "pages": 121,
+      "tex_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "pdf_sha256": "ae7fefdfad9862a3342c8c0eea87f9f43e3c62184e1acee5ef6859a2efc5bf23",
+      "log_warnings_unresolved": 0
+    }
+  },
+  "independent_E3_E4_audit": "NOT_PERFORMED",
+  "canonical_DAG": "UNCHANGED",
+  "proof_chain_audits": "UNCHANGED",
+  "physical_action_source_selected": false,
+  "physical_widths_derived": false,
+  "notes": "This is an adopted SOURCE RELEASE of scoped mathematical statements, not global independent mathematical verification or physical occurrence."
+}

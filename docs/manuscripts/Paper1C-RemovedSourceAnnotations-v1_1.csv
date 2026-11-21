@@ -1,0 +1,473 @@
+original_line,exact_source_comment
+1,% Framework research-mathematical source integration v3.020; E3/E4 pending; no physical occurrence promoted.
+2,% Current integrated source: Paper1C-M8Geometry-v1_140.tex (PapersMinimal-v3_019; 16 November 2026).
+3,% Current integrated paper source: Paper1C-M8Geometry-v1_139.tex (v3_017).
+4,"% Prior source: Paper1C-M8Geometry-v1_138.tex. New cross-DAG mathematics is scoped, not physical-occurrence certified."
+5,% Paper-series v2.381: complete algebraic exceptional torsion atlas and all-cocycle twist-stability; original claims retained.
+6,"% Paper-series v2.380: unified bibliography, exact exceptional double/length/gauge mathematics in I-B; previous theorem labels retained."
+7,% Paper-series v2.379: full equivariant Dirac/Hodge/eta/torsion atlas in Paper I-B; paper-root references synchronized.
+8,% Paper-series v2.378: 2026 exceptional literature consolidation and reference synchronization. The mathematical additions are located in Paper I-B.
+9,% Paper-series v2.377: reference-only rebind to current Paper I-B v1.1; original mathematics retained except new Paper I-B comparison chapter.
+10,% Framework v2.370: derived exceptional-root/Hurwitz comparison in I-A/I-C; other papers reference-only synchronized.
+11,% Framework v2.368: preserve prior II-B convention/unital fixes and verified II-D corrections; current references synchronized.
+12,"% Framework v2.358: current 30-root source reference synchronization; selectively updated III-E, III-F, VI-B, VI-C."
+13,% Framework v2.356: bibliography/source-registry synchronization; mathematical body unchanged.
+14,% Framework v2.349: integrated exact conditional mathematical closures; G0 and GP1--GP3 retained as axioms.
+15,"% Framework v2.343: Reciprocal signed coupling, selected 15 and conditional physical boundary."
+16,% Framework v2.341: Coherent coset--Hodge and parity cover integration. Previous v2.340 retained.
+17,% Framework v2.340: Exact rank-two 600-cell incidence and typed operator/observable closure.
+18,% Geometry source update v1.122: factorwise Petersen packets and matched Born exchange.
+19,% Baseline: v1.121 from Framework archive v2_316; semantic graph reindex pending.
+20,"% Framework v2.275: exact positive dense-twin word cubature, finite repeatability and eighth-moment classification, nested sampling frames, joint action and POVM-jet exports; preserves v2.274."
+21,"% Framework v2.274: two-scalar positive convolution certificates, first-leaked exceptional coset detection, branch-symmetric twin mixing, and finite endpoint moments; all v2.273 branches preserved."
+22,"% Framework v2.273: restored missing Problem 3 theorems from v2.268; exact exceptional frames, twin geometry, convolution repeatability and projector/occurrence firewalls; merged on v2.272 without overwriting independent branches."
+23,% Framework v2.272: merged v2.270 covariant native-readout mathematics with v2.271 Problem 4 finite-action Hopf hypercharge/holonomy corrections; no universal bulk-gauge uniqueness claim.
+24,% Independent branches: v2.270 readout/guard exports and v2.270 K16 action-consumed charge closure; all prior scoped assumptions retained.
+25,"% Framework v2.267: exact Paper II-A converse/observable certificates, III-F action tests, V-B right orbit and V-C native gauge scope; prior v2.266 preserved."
+26,% Framework v2.266: exact Paper II-C outcome-count/readout converse results and scoped downstream imports; 30-root references synchronized.
+27,% Framework v2.265: II-C coordinate-stage constitution and exact first-symbol host inheritance; prior mathematical domains retained.
+28,% Framework v2.264: II-B reverse and action-bridge integration; preserves prior mathematical domains; active 30-root references synchronized.
+29,% Framework v2.263: Paper I-C adds bridge-controlled root-carry parity and source-relative old-cap cancellation; other root mathematical bodies retained; active 30-root references synchronized.
+30,"% Framework v2.262: merges Paper II-F three-gap closure from v2.260 into v2.261, preserving newer II-B/II-D repairs; 30-root references synchronized."
+31,% Framework v2.261: merged Paper II-B GP2-level/geometric repairs; preserves v2.260 II-D repairs; active references synchronized.
+32,"% Framework v2.260: Paper II-D signed RS, finite-symbol typing, and conditional curvature/Jordan repairs; references synchronized."
+33,% Framework v2.259: conditional native SU(2) atlas and explicit later discharge; v2.258 mathematical bodies retained elsewhere.
+34,% Framework v2.258: preserves parallel II-A/dynamics update and adds complete readout/frequency closures.
+35,% Framework v2.257: exact minimal complete position readout and arbitrary-preparation frequency law.
+36,% Framework v2.256: exact native inertia and sharp bounded ordered-source closure; preserves concurrent v2.255 work.
+37,% Framework v2.255: preserves parallel detector integration and adds exact finite readout closures.
+38,% Framework v2.254: shared bibliography/reference sync; substantive Pasterski detector-Ward additions only IV-B/IV-C/VII-C.
+39,% Framework v2.253: typed raw coordinate defect in I-A and synchronized VI-A import; active references synchronized.
+40,% Framework v2.252: optional shell-frame source-return calculation in III-G; active references synchronized.
+41,"% Framework v2.251: forward common-action execution, joint source jets and scoped coupled control."
+42,"% Framework v2.251: exact full-heat variations, fermion source jets and explicit physical completion frontier."
+43,"% Framework v2.251: certified interacting source jets, pole stability and scoped completion proofs."
+44,% Framework v2.251: interacting finite-source evaluation and coupled local vacuum classification.
+45,% Framework v2.251: exact finite source execution and native causal common-parent bridge.
+46,% Paper I-C v1.142: exact residual-fibre orientation sign repair and unit-radius gradient normalization.
+47,% Framework v2.251: constructive parent and scoped source-incidence audit; see release report.
+48,"% Framework v2.251: common-action two-jet, corrected source/response closure and synchronized references."
+49,% Framework v2.244: scoped rooted source-order Schur diagnostics and synchronized paper references.
+50,"% Framework v2.242: signed rooted phase lift, complete transverse return and exact family cubic."
+51,"% Framework v2.241: proved rooted conormal geometry, conditional cap realization and scoped action tests."
+52,% Framework v2.240: observable-minimal action and response certificates integrated; inherited v2.239 geometry retained.
+53,% Framework v2.238: source registry synchronized; existing mathematical body retained except declared insertions.
+54,"% Source baseline: Paper1C-M8Geometry-v1_138.tex, Framework v2.230."
+68,% BEGIN INLINE SOURCE: Paper00-ActiveExternalReferences-v2_130.tex
+69,% Framework v2.191: current reference binding; existing definitions retained.
+70,% Framework v2.190: current22-root registry with native clock-evolution proofs.
+71,"% Framework v2.189: exact current22-root external registry, including retained v2.188 hardening owners."
+72,% Framework v2.187: current registry synchronization only; source release v2.186 preserved.
+73,% Framework v2.186: authoritative current 22-paper registry.
+74,% Framework v2.182: all current 22 logical paper AUX bindings.
+75,% Framework v2.170: current I-B v1.43 external AUX binding.
+76,% Framework v2.167: exact current 22-root registry after CP--BL2 integration.
+77,% Framework v2.166: exact current 22-root compact-release AUX registry.
+78,% Framework v2.165: authoritative current root bindings.
+79,% Framework v2.164: exact current 22 manuscript AUX bindings.
+80,"% Framework v2.162: finite metric, functional Hilbert and scoped Ward integration."
+81,% Framework v2.161: current 22 manuscript AUX bindings; source only.
+82,% Framework v2.156 / registry v2.113: synchronized current 22 manuscript roots; source-only registry.
+83,% Framework v2.143 / registry v2.111: active manuscript AUX basenames; no generated AUX or PDF included.
+84,% ======================================================================
+85,"% Central external-reference imports, numbers only, no PDF jumping"
+86,% ======================================================================
+88,% xr-hyper is loaded centrally so that papers may retain their existing
+89,% \usepackage{xr-hyper} lines without redefining \externaldocument after this
+90,"% registry is installed.  If plain xr was loaded earlier, retain it."
+97,% Make external-document registration idempotent.  The registry identifies a
+98,% logical paper by its Paper<number><optional letter> prefix.  Prefix-qualified
+99,% imports remain independent.  Current paper roots contain no local
+100,% \externaldocument calls; this guard also makes accidental duplicates harmless.
+131,"  % Do not import the aux file of the logical paper currently being compiled,"
+132,  % even when the job and registry use different version suffixes.
+163,% External references are automatic.  This file is the sole owner of both the
+164,% bibliography and the current Paper-I-A--VII-C AUX registry.  Missing auxiliaries
+165,% are informational on the first pass and are populated by the source-only
+166,% two-pass series build.  Basenames deliberately omit temporary download/copy
+167,% suffixes such as ``(1)'' or ``-1''.
+168,  % Paper I-A: A Normalized Reference Atlas.
+171,  % Paper I-B: Reciprocal Product Geometry of M8.
+173,  % Paper I-C: proof and computation volume for Paper I-B.
+176,  % Paper II: Kinematic Foundation and Derived Structures (six components).
+181,  % Historical p2f:* export labels remain in II-E; II-F is the new technical volume.
+183,  % Paper III: later native-role discharge owners.
+192,  % Paper IV: Quantum Mechanics.
+194,  % Paper V-A: The Standard Model.
+196,  % Paper V-B: Finite Spectrum and Flavor Closure.
+198,  % Paper V-C: Finite Interaction Boundaries of the Standard Model.
+200,  % Paper VI-A: Gravity and Closed Cosmology.
+202,  % Paper VI-B: Geometric Dark Sector and Cosmological Readouts.
+204,  % Paper VII-A: Finite QCD Kernel and Nonperturbative Closure.
+206,"  % Paper VII-B: Hadronic, Thermal, and Nuclear QCD Readouts."
+208,  % Paper VII-C: Continuous Quantum Field Theory.
+210,% END INLINE SOURCE: Paper00-ActiveExternalReferences-v2_130.tex
+265,% Cross-DAG current-series import for the new source-owned mathematical bridge.
+266,% Duplicate Paper I-B external import removed: first import is current v1_13.
+321,% SOURCES: Paper3B-Dynamics-v1_72.tex :: p3b:rem:m8-host-construction-chronology; p3:thm:born-parity-decomposition
+322,% SOURCES: Paper1-Geometry-v5_45.tex :: p1:thm:canonical-retained-smooth-model
+420,% SOURCES: Paper3B-Dynamics-v1_72.tex :: p3b:thm:v193-m8-derived-center-abelianization; p3b:rem:v193-diagonal-action-typing
+421,% SOURCES: Paper00-M8StructuralConsequences-v1_1.md :: SC-13
+479,% SOURCES: Paper1B-M8SubstructureAtlas-v1_3.tex :: I.2--I.5
+562,% SOURCES: Paper2A-Kinematics-v3_78.tex :: p2:cor:v193-u1-su2-cocharacters
+581,% SOURCES: Paper3B-Dynamics-v1_72.tex :: p3:thm:born-parity-decomposition; p3b:thm:canonical-compact-seven-quotient
+631,% SOURCES: Paper3B-Dynamics-v1_72.tex :: p3b:prop:v193-full-born-quotient-singularity
+672,% SOURCES: Paper3B-Dynamics-v1_72.tex :: p3b:thm:v187-m8-cartan-split; p3b:thm:v187-cartan-embedding-commutator
+719,% SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:thm:unique-born-invariant-gred-connection; p3f:cor:v181-full-born-holonomy
+747,% SOURCES: Paper3B-Dynamics-v1_72.tex :: p3b:thm:v199-cartan-deformation
+769,% BEGIN INLINE SOURCE: Paper1B-G11-Main-v1_2.tex
+770,% Paper1B-G11-Main-v1_2.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G11-Main-v1_1.tex.
+771,% Paper1B-G11-Main-v1_1.tex: category result ledger edition; mathematical statements inherited unchanged from Paper1B-G11-Main-v1_0.tex.
+790,% END INLINE SOURCE: Paper1B-G11-Main-v1_2.tex
+793,% SOURCES: Paper3A-Dynamics-v1_56.tex :: p3:thm:scalar-born-residue; p3a:thm:v190-scalar-born-eigenphase-cover; p3a:cor:v190-scalar-deck-grading; p3a:cor:v190-scalar-mutual-moments
+870,% SOURCES: Paper3B-Dynamics-v1_72.tex :: p3b:cor:v181-relative-scalar-generator
+894,% SOURCES: Paper00-M8BiHopfModularRigor-v1_2.md :: III; IV; V; VI; VII; VIII
+919,% SOURCES: Paper1B-M8SubstructureAtlas-v1_3.tex :: III.6--III.9
+1091,% BEGIN INLINE SOURCE: Paper1B-G17-Main-v1_1.tex
+1092,% Paper1B-G17-Main-v1_1.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G17-Main-v1_0.tex.
+1093,% Paper1B-G17-Main-v1_0.tex: primitive pure-Hopf quotient contact/prequantization refinement.
+1209,% END INLINE SOURCE: Paper1B-G17-Main-v1_1.tex
+1229,% SOURCES: Paper3B-Dynamics-v1_72.tex :: p3b:thm:typed-pair-groupoid-relative-cocycle
+1254,% SOURCES: Paper3B-Dynamics-v1_72.tex :: p3b:cor:born-even-odd-jets
+1255,% SOURCES: Paper00-M8StructuralConsequences-v1_1.md :: SC-18
+1332,% SOURCES: Paper00-M8StructuralConsequences-v1_1.md :: SC-01; SC-02; SC-03; SC-04; SC-05
+1333,% SOURCES: Paper3B-Dynamics-v1_72.tex :: p3b:prop:v193-relative-cohomology-pullback; p3b:prop:v193-born-cohomology-eigenspaces
+1452,% SOURCES: Paper00-M8StructuralConsequences-v1_1.md :: SC-06; SC-07; SC-08; SC-09; SC-10; SC-23; SC-24
+1453,% SOURCES: Paper5-StandardModel-v3_58.tex :: p5:app:global-quadratic-line-spin-descent
+1540,% BEGIN INLINE SOURCE: Paper1B-G15-Main-v1_4.tex
+1541,"% Paper1B-G15-Main-v1_4.tex: canonical-carrier/framework-family clarification. The ordinary classification is unchanged; P_v is identified with D_6=[M_8,M_8] and the complete two-class family is indexed without selecting a member."
+1542,% Paper1B-G15-Main-v1_3.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G15-Main-v1_2.tex.
+1543,% Paper1B-G15-Main-v1_2.tex: cross-reference update after the explicit coherent Born-lift construction; G15 classification theorem unchanged.
+1632,% END INLINE SOURCE: Paper1B-G15-Main-v1_4.tex
+1635,% BEGIN INLINE SOURCE: Paper1B-G20-Main-v1_4.tex
+1636,% v1.17 correction scope: see Paper1B-CorrectnessUpdate-v1_0.md. Earlier version comments below are provenance only.
+1637,% Paper1B-G20-Main-v1_3.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G20-Main-v1_1.tex.
+1638,% Paper1B-G20-Main-v1_1.tex: verified actual low-rank complex-bundle boundary and determinant-zero unstable multiplicities.
+1999,% END INLINE SOURCE: Paper1B-G20-Main-v1_4.tex
+2002,% BEGIN INLINE SOURCE: Paper1B-RankTwoOrdinary-Main-v1_0.tex
+2003,% Integrated ordinary classification from RankTwoClassification Batches 1--3.
+2263,% END INLINE SOURCE: Paper1B-RankTwoOrdinary-Main-v1_0.tex
+2266,% BEGIN INLINE SOURCE: Paper1B-G21-Main-v1_6.tex
+2267,% v1.17 correction scope: see Paper1B-CorrectnessUpdate-v1_0.md. Earlier version comments below are provenance only.
+2268,% Paper1B-G21-Main-v1_4.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G21-Main-v1_2.tex.
+2269,% Paper1B-G21-Main-v1_2.tex: coherent Born-equivariant rank-two closure.
+3003,% END INLINE SOURCE: Paper1B-G21-Main-v1_6.tex
+3006,% BEGIN INLINE SOURCE: Paper1B-RankTwoMixed-Main-v1_1.tex
+3007,% Current mixed classification. Historical batch charts are reconciled in the appendix.
+3394,% END INLINE SOURCE: Paper1B-RankTwoMixed-Main-v1_1.tex
+3397,% BEGIN INLINE SOURCE: Paper1B-RankTwoGaugeProofs-Main-v1_1.tex
+3398,% Positive gauge proof chain migrated from Batches 23 and 25--28.
+4069,% END INLINE SOURCE: Paper1B-RankTwoGaugeProofs-Main-v1_1.tex
+4073,% Technical classification proof chains now have one owner: Paper I-D.
+4087,% BEGIN INLINE SOURCE: Paper1B-RankTwoSummary-Main-v1_0.tex
+4088,% Current positive classification theorem; historical helpers are evidence.
+4179,% END INLINE SOURCE: Paper1B-RankTwoSummary-Main-v1_0.tex
+4251,% SOURCES: Paper3B-Dynamics-v1_72.tex :: p3b:thm:v203-reciprocal-transgression; p3b:thm:v203-exact-twisted-dirac
+4252,% SOURCES: Paper00-M8StructuralConsequences-v1_1.md :: SC-11; SC-12
+4327,% BEGIN INLINE SOURCE: Paper1B-G12-Main-v1_2.tex
+4328,% Paper1B-G12-Main-v1_2.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G12-Main-v1_1.tex.
+4329,% Paper1B-G12-Main-v1_1.tex: category result ledger edition; mathematical statements inherited unchanged from Paper1B-G12-Main-v1_0.tex.
+4415,% END INLINE SOURCE: Paper1B-G12-Main-v1_2.tex
+4420,% SOURCES: Paper00-M8StructuralConsequences-v1_1.md :: SC-14; SC-15; SC-16; SC-17
+4421,% SOURCES: Paper00-M8OperationClosure-v1_119.md :: MTH-99-06; MTH-99-07
+4574,% SOURCES: Paper1-Geometry-v5_45.tex :: p1:sec:v189-complete-quadratic-content; p1:prop:v189-tracefree-quadratic-harmonics; p1:cor:v191-sym2-e1-e0e2
+4575,% SOURCES: Paper3B-Dynamics-v1_72.tex :: p3b:thm:v189-quadratic-sibling-exact-sequence; p3b:cor:v189-quadratic-fibre-product
+4614,% SOURCES: Paper2C-Kinematics-v2_52.tex :: p2c:thm:v187-transvection-clifford-identity; p2c:thm:v188-clifford-central-commutator; p2c:cor:v188-curvature-bivector-normal
+4615,% SOURCES: Paper3C-Dynamics-v1_69.tex :: p3c:sec:v189-quadratic-parent-septet
+4715,% SOURCES: Paper3B-Dynamics-v1_72.tex :: p3b:thm:v188-momentum-cartan-restriction; p3b:cor:v188-exceptional-defect-filtration
+4716,% SOURCES: Paper1-Geometry-v5_45.tex :: p1:thm:v188-exceptional-defect-residues
+4744,% SOURCES: Paper2C-Kinematics-v2_52.tex :: p2c:thm:canonical-reciprocal-harmonic-intertwiner; p2c:prop:v191-finite-subgroup-band-commutation; p2c:cor:v191-2i-position-rank-jump
+4779,% SOURCES: Paper1-Geometry-v5_45.tex :: p1:thm:v180-exceptional-scalar-moment-ranges; p1:thm:v181-exceptional-complete-band-frontier; p1:cor:v185-2t-degree-two-sampling-isometry
+4821,% SOURCES: Paper1-Geometry-v5_45.tex :: p1:thm:v203-scalar-observable-compiler; p1:cor:v203-quadratic-top-block-correction
+4823,% BEGIN INLINE SOURCE: Paper1B-PremiseClosure-Main-v1_0.tex
+4824,"% Framework v2.33: D01--D06 and D11--D12, geometric owners."
+4952,% BEGIN FRAMEWORK v2.273: EXACT EXCEPTIONAL RESOLUTION FRAMES
+5104,% END FRAMEWORK v2.273
+5107,% BEGIN FRAMEWORK v2.274: BRANCH-SYMMETRIC TWIN RESOLUTION MIXING
+5188,% END FRAMEWORK v2.274: BRANCH-SYMMETRIC TWIN RESOLUTION MIXING
+5190,% BEGIN FRAMEWORK v2.268: SIXTH-ORDER UNMARKED SUPPORT CERTIFICATE
+5259,% END FRAMEWORK v2.268: SIXTH-ORDER UNMARKED SUPPORT CERTIFICATE
+5337,% END INLINE SOURCE: Paper1B-PremiseClosure-Main-v1_0.tex
+5367,% SOURCES: Paper1-Geometry-v5_45.tex :: p1:thm:canonical-retained-smooth-model; p1:thm:v203-full-carrier-sampling; p1:cor:v203-geometric-positive-polar
+5414,% SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:cor:v181-degree-two-relative-selector-spectrum; p3f:thm:v180-exact-finite-quartic-scalar-action
+5452,% SOURCES: Paper2C-Kinematics-v2_52.tex :: p2c:prop:generated-chiral-operation-algebras; p2c:thm:position-to-momentum-chiral-quotient
+5453,% SOURCES: Paper4-QM-v4_68.tex :: p4:rem:chiral-algebra-inherited-trace-comparison; p4:cor:v185-clock-state-space-equivalence
+5561,% SOURCES: Paper00-M8BiHopfModularRigor-v1_2.md :: sections 7--12
+5607,% SOURCES: Paper1B-M8SubstructureAtlas-v1_3.tex :: VII.3--VII.3A
+5608,% CERTIFICATE: Paper1B-M8SubstructureChecks-v1_3.py/json
+5742,% BEGIN RECIPROCAL PETERSEN GEOMETRY INTEGRATION 2026-11-05
+5866,% END RECIPROCAL PETERSEN GEOMETRY INTEGRATION
+5868,% SOURCES: Paper1-Geometry-v5_45.tex :: p1:prop:v179-exceptional-quadratic-pencil
+5894,% SOURCES: Paper1-Geometry-v5_45.tex :: p1:thm:intrinsic-even-hopf-hurwitz-comparison; p1:thm:hopf-hurwitz-quadratic-comparison; p1:cor:joint-c4-quadratic-nonvanishing
+5943,% BEGIN HOPF-SECTOR-PHASE-DESCENT v1.35
+5993,% END HOPF-SECTOR-PHASE-DESCENT v1.35
+5995,% SOURCES: Paper1-Geometry-v5_45.tex :: p1:prop:axial-relative-determinant-line; p1:thm:joint-hopf-axial-orbit; p1:thm:joint-orbit-quadratic-descent; p1:cor:joint-orbit-sign-line-torsion; p1:thm:joint-comparison-unitary-connection
+6037,% SOURCES: Paper5-StandardModel-v3_58.tex :: p5:prop:global-m8-quadratic-sign-class; p5:prop:relative-determinant-poincare-parity; p5:prop:quadratic-sign-spin-matter-incidence
+6072,% SOURCES: Paper3C-Dynamics-v1_69.tex :: p3c:thm:v179-clifford-projector-tangent; p3c:thm:v179-balanced-hierarchy-response; p3c:cor:v179-complete-balanced-weights
+6112,% SOURCES: Paper3C-Dynamics-v1_69.tex :: p3c:thm:common-trace-defect-spectral-filtration
+6113,% SOURCES: Paper3D-Dynamics-v1_58.tex :: p3:lem:additive-rank-valuation; p3d:cor:rank-character-laurent-family
+6328,% BEGIN INLINE SOURCE: Paper1B-G19-Main-v1_1.tex
+6329,% Paper1B-G19-Main-v1_1.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G19-Main-v1_0.tex.
+6330,% Paper1B-G19-Main-v1_0.tex: finite operation calculus for all left-invariant metric connections.
+6724,% END INLINE SOURCE: Paper1B-G19-Main-v1_1.tex
+6727,% BEGIN INLINE SOURCE: Paper1B-G18-Main-v1_1.tex
+6728,% Paper1B-G18-Main-v1_1.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G18-Main-v1_0.tex.
+6729,% Paper1B-G18-Main-v1_0.tex: reciprocal double-cone ambient geometry.
+6819,% END INLINE SOURCE: Paper1B-G18-Main-v1_1.tex
+6821,% The metric-isometry and scaling classification below is the owner of D16.
+6824,% BEGIN INLINE SOURCE: Paper1B-G24-Main-v1_1.tex
+6825,% Paper1B-G24-Main-v1_1.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G24-Main-v1_0.tex.
+6826,% Paper1B-G24-Main-v1_0.tex: isometry and scaling atlas.
+6929,% END INLINE SOURCE: Paper1B-G24-Main-v1_1.tex
+7039,% BEGIN INLINE SOURCE: Paper1B-G22-Main-v1_1.tex
+7040,% Paper1B-G22-Main-v1_1.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G22-Main-v1_0.tex.
+7041,% Paper1B-G22-Main-v1_0.tex: automorphism-saturated left-invariant complex geometry.
+7119,% END INLINE SOURCE: Paper1B-G22-Main-v1_1.tex
+7122,% BEGIN INLINE SOURCE: Paper1B-G14-Main-v1_2.tex
+7123,% Paper1B-G14-Main-v1_2.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G14-Main-v1_1.tex.
+7124,% Paper1B-G14-Main-v1_1.tex: category result ledger edition; mathematical statements inherited unchanged from Paper1B-G14-Main-v1_0.tex.
+7220,% END INLINE SOURCE: Paper1B-G14-Main-v1_2.tex
+7223,% BEGIN INLINE SOURCE: Paper1B-G16-Main-v1_3.tex
+7224,% Paper1B-G16-Main-v1_3.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G16-Main-v1_2.tex.
+7225,% Paper1B-G16-Main-v1_2.tex: adds the derived-subgroup complex-locus corollary from the M8 substructure atlas.
+7226,% Paper1B-G16-Main-v1_1.tex: category result ledger edition; mathematical statements inherited unchanged from Paper1B-G16-Main-v1_0.tex.
+7396,% SOURCES: Paper1B-M8SubstructureAtlas-v1_3.tex :: VI.2
+7434,% END INLINE SOURCE: Paper1B-G16-Main-v1_3.tex
+7558,% SOURCES: Paper00-M8StructuralConsequences-v1_1.md :: SC-23; SC-24
+7616,% SOURCES: Paper00-M8StructuralConsequences-v1_1.md :: SC-19; SC-20
+7671,% SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:cor:v181-full-born-holonomy
+7672,% SOURCES: Paper00-M8OperationClosure-v1_119.md :: MTH-99-02
+7691,% SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:thm:m8td-covariant-casimir
+7720,% SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:cor:m8td-gauss-response
+7757,% SOURCES: Paper3F-Dynamics-v1_83.tex :: p3f:prop:m8td-local-gauge-inverse
+7785,% BEGIN INLINE SOURCE: Paper1B-G13-Main-v1_2.tex
+7786,% Paper1B-G13-Main-v1_2.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G13-Main-v1_1.tex.
+7787,% Paper1B-G13-Main-v1_1.tex: category result ledger edition; mathematical statements inherited unchanged from Paper1B-G13-Main-v1_0.tex.
+7892,% END INLINE SOURCE: Paper1B-G13-Main-v1_2.tex
+8049,% SOURCES: Paper1-Geometry-v5_45.tex :: p1:def:s3one-finite-geometry-datum; p1:cor:level-one-coordinate-completion-moduli; p1:cor:s3one-finite-package
+9199,% SOURCES: Paper1-Geometry-v5_45.tex :: p1:thm:v204-isometric-algebra-transport
+9200,% SOURCES: Paper2C-Kinematics-v2_52.tex :: p2c:cor:v204-sampled-realization
+9235,% SOURCES: Paper3A-Dynamics-v1_56.tex :: p3a:thm:v204-action-law-transport; p3a:cor:v204-moving-presentation
+9270,% SOURCES: Paper4-QM-v4_68.tex :: p4:cor:v204-quantum-sampled-transport
+9291,% SOURCES: Paper12-ContinuousQFT-v2_58.tex :: p12:thm:v204-blocking-presentation
+9326,% BEGIN INLINE SOURCE: Paper1B-G02-Main-v1_4.tex
+9327,% Framework v2.110 / G02 main v1.4: one-factor polynomial scope and appendix export.
+9328,% Paper1B-G02-Main-v1_3.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G02-Main-v1_2.tex.
+9329,% Paper1B-G02-Main-v1_2.tex: category result ledger edition; mathematical statements inherited unchanged from Paper1B-G02-Main-v1_0.tex.
+9330,% Mathematics transferred from the corrected StructuralDerivations v1.9.
+9955,% END INLINE SOURCE: Paper1B-G02-Main-v1_4.tex
+9958,% BEGIN INLINE SOURCE: Paper1B-G03-Main-v1_2.tex
+9959,% Paper1B-G03-Main-v1_2.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G03-Main-v1_1.tex.
+9960,% Paper1B-G03-Main-v1_1.tex: category result ledger edition; mathematical statements inherited unchanged from Paper1B-G03-Main-v1_0.tex.
+9961,% Mathematics transferred from the corrected StructuralDerivations v1.9.
+10911,% END INLINE SOURCE: Paper1B-G03-Main-v1_2.tex
+10914,% BEGIN INLINE SOURCE: Paper1B-G04-Main-v1_4.tex
+10915,% Framework v2.110 / G04 main v1.4: exact ambient overlaps and typed tensor products.
+10916,% Paper1B-G04-Main-v1_3.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G04-Main-v1_2.tex.
+10917,% Paper1B-G04-Main-v1_2.tex: category result ledger edition; mathematical statements inherited unchanged from Paper1B-G04-Main-v1_0.tex.
+10918,% Mathematics transferred from the corrected StructuralDerivations v1.9.
+11585,% END INLINE SOURCE: Paper1B-G04-Main-v1_4.tex
+11588,% BEGIN INLINE SOURCE: Paper1B-G05-Main-v1_3.tex
+11589,% Paper1B-G05-Main-v1_3.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G05-Main-v1_2.tex.
+11590,% Paper1B-G05-Main-v1_2.tex: category result ledger edition; mathematical statements inherited unchanged from Paper1B-G05-Main-v1_0.tex.
+11591,% Mathematics transferred from the corrected StructuralDerivations v1.9.
+12086,% END INLINE SOURCE: Paper1B-G05-Main-v1_3.tex
+12089,% BEGIN INLINE SOURCE: Paper1B-G06-Main-v1_4.tex
+12090,% Paper1B-G06-Main-v1_4.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G06-Main-v1_3.tex.
+12091,% Paper1B-G06-Main-v1_3.tex: category result ledger edition; mathematical statements inherited unchanged from Paper1B-G06-Main-v1_1.tex.
+12092,% Mathematics transferred from the corrected StructuralDerivations v1.9.
+12714,% END INLINE SOURCE: Paper1B-G06-Main-v1_4.tex
+12717,% BEGIN INLINE SOURCE: Paper1B-G07-Main-v1_3.tex
+12718,% Paper1B-G07-Main-v1_3.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G07-Main-v1_2.tex.
+12719,% Paper1B-G07-Main-v1_2.tex: category result ledger edition; mathematical statements inherited unchanged from Paper1B-G07-Main-v1_0.tex.
+12720,% Mathematics transferred from the corrected StructuralDerivations v1.9.
+13343,% END INLINE SOURCE: Paper1B-G07-Main-v1_3.tex
+13346,% BEGIN INLINE SOURCE: Paper1B-G08-Main-v1_3.tex
+13347,% Paper1B-G08-Main-v1_3.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G08-Main-v1_2.tex.
+13348,% Paper1B-G08-Main-v1_2.tex: category result ledger edition; mathematical statements inherited unchanged from Paper1B-G08-Main-v1_0.tex.
+13349,% Mathematics transferred from the corrected StructuralDerivations v1.9.
+14026,% END INLINE SOURCE: Paper1B-G08-Main-v1_3.tex
+14029,% BEGIN INLINE SOURCE: Paper1B-G09-Main-v1_3.tex
+14030,% Paper1B-G09-Main-v1_3.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G09-Main-v1_2.tex.
+14031,% Paper1B-G09-Main-v1_2.tex: category result ledger edition; mathematical statements inherited unchanged from Paper1B-G09-Main-v1_0.tex.
+14032,% Mathematics transferred from the corrected StructuralDerivations v1.9.
+14516,% END INLINE SOURCE: Paper1B-G09-Main-v1_3.tex
+14519,% BEGIN INLINE SOURCE: Paper1B-G10-Main-v1_4.tex
+14520,% Paper1B-G10-Main-v1_4.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G10-Main-v1_3.tex.
+14521,% Paper1B-G10-Main-v1_3.tex: category result ledger edition; mathematical statements inherited unchanged from Paper1B-G10-Main-v1_1.tex.
+14522,% Mathematics transferred from the corrected StructuralDerivations v1.9.
+15143,% END INLINE SOURCE: Paper1B-G10-Main-v1_4.tex
+15146,% BEGIN INLINE SOURCE: Paper1B-G23-Main-v1_1.tex
+15147,% Paper1B-G23-Main-v1_1.tex: category-ledger compression; mathematical statements and proofs inherited unchanged from Paper1B-G23-Main-v1_0.tex.
+15148,% Paper1B-G23-Main-v1_0.tex: product invariant rings and McKay/ADE geometry.
+15262,% END INLINE SOURCE: Paper1B-G23-Main-v1_1.tex
+15279,% CATEGORY_LEDGER_V1_8
+15732,% BEGIN INLINE SOURCE: Paper1B-G25-Main-v1_4.tex
+15733,% v1.17 correction scope: see Paper1B-CorrectnessUpdate-v1_0.md. Earlier version comments below are provenance only.
+15734,% Paper1B-G25-Main-v1_2.tex: explicit relative geometry-saturation basis and sharpened residual frontier.
+15802,% END INLINE SOURCE: Paper1B-G25-Main-v1_4.tex
+16023,% BEGIN INLINE SOURCE: Paper1B-NativeCartanPremises-Main-v1_0.tex
+16024,% Framework v2.182: positive premises moved from the spectral appendix.
+16300,% END INLINE SOURCE: Paper1B-NativeCartanPremises-Main-v1_0.tex
+16303,% BEGIN INLINE SOURCE: Paper1B-NativeRootTransversality-Main-v1_1.tex
+16304,% Positive native-operator result. This does not select a physical Hamiltonian.
+16412,% END INLINE SOURCE: Paper1B-NativeRootTransversality-Main-v1_1.tex
+16415,% BEGIN INLINE SOURCE: Paper1B-NativeWeakMorseBridge-Main-v1_0.tex
+16416,% Framework v2.183: full midpoint gauge Morse theorem and Dirac/topological coordinate bridge.
+16567,% Framework v2.217 helper integration.
+16669,% END INLINE SOURCE: Paper1B-NativeWeakMorseBridge-Main-v1_0.tex
+16673,% BEGIN INLINE SOURCE: Paper1B-SuccessiveReduction-Main-v1_0.tex
+16674,% Framework v2.163: common-parent reduction composition.
+16867,% Framework v2.217 helper integration.
+16913,% END INLINE SOURCE: Paper1B-SuccessiveReduction-Main-v1_0.tex
+16918,% BEGIN INLINE SOURCE: Paper1B-PrimitiveOwnerSupport-Main-v1_0.tex
+16919,% Framework v2.168: integrated finite charged-source derivations.
+16920,% BEGIN INLINE SOURCE: Paper1B-M8SubstructureAppendix-v1_1.tex
+16921,% Paper1B-M8SubstructureAppendix-v1_0.tex
+16922,% Supplementary typed substructure results associated with Paper1B-M8SubstructureAtlas-v1_3.
+17193,% END INLINE SOURCE: Paper1B-M8SubstructureAppendix-v1_1.tex
+17196,% BEGIN INLINE SOURCE: Paper1B-PremiseClosure-Appendix-v1_0.tex
+17290,% END INLINE SOURCE: Paper1B-PremiseClosure-Appendix-v1_0.tex
+17294,% BEGIN CHARGED-PRIMITIVE-OWNER v1.25
+17384,% END CHARGED-PRIMITIVE-OWNER v1.25
+17387,% BEGIN D4-TRIALITY-CLIFFORD-RESTRICTION v1.26
+17490,% END D4-TRIALITY-CLIFFORD-RESTRICTION v1.26
+17493,% BEGIN D4-AXIAL-TRIALITY-RESTRICTION v1.27
+17523,% END D4-AXIAL-TRIALITY-RESTRICTION v1.27
+17526,% BEGIN Q5-TRIMER-ISOMETRY-SIGNLINE v1.28
+17626,% END Q5-TRIMER-ISOMETRY-SIGNLINE v1.28
+17630,% BEGIN Q5-ASSOCIATED-OWNER-GEOMETRY v1.30
+17926,% END Q5-ASSOCIATED-OWNER-GEOMETRY v1.30
+17928,% BEGIN FERMION-SOURCE-BOUNDARY v1.32
+17976,% END FERMION-SOURCE-BOUNDARY v1.32
+17978,% BEGIN ANTIPRISM-FAMILY-PRIMITIVE v1.33
+18084,% END ANTIPRISM-FAMILY-PRIMITIVE v1.33
+18088,% BEGIN NATIVE-OWNER-PRETERMINAL-GEOMETRY v1.37
+18186,% END NATIVE-OWNER-PRETERMINAL-GEOMETRY v1.37
+18189,% BEGIN CHARGED-HIERARCHY-FAMILY-BRIDGE v1.38
+18294,% END CHARGED-HIERARCHY-FAMILY-BRIDGE v1.38
+18296,% BEGIN ROOTED-C3-RELATION-CELL v1.39
+18364,% END ROOTED-C3-RELATION-CELL v1.39
+18367,% BEGIN INLINE SOURCE: Paper1B-CompressionDiagnostic-Appendix-v1_0.tex
+18368,"% Framework v2.163: supplementary algebra diagnostic, no physical constructor."
+18423,% END INLINE SOURCE: Paper1B-PrimitiveOwnerSupport-Main-v1_0.tex
+18426,% BEGIN NEUTRINO-BOUNDARY-GEOMETRY v2.208
+18640,% BEGIN FRAMEWORK v2.239: NONSINGLET HARMONIC GREEN RETURN
+18704,% BEGIN FRAMEWORK v2.240: ORTHOGONAL K56 GREEN-ROLE FIREWALL
+18742,% END FRAMEWORK v2.240: ORTHOGONAL K56 GREEN-ROLE FIREWALL
+18744,% END FRAMEWORK v2.239: NONSINGLET HARMONIC GREEN RETURN
+18886,% END NEUTRINO-BOUNDARY-GEOMETRY v2.208
+18888,% BEGIN v2.210 VERIFIED GEOMETRY LITERATURE TRANSFERS
+19196,% END v2.210 VERIFIED GEOMETRY LITERATURE TRANSFERS
+19199,% BEGIN FRAMEWORK v2.223: Born boundary constructor and complete source transport
+19355,% END FRAMEWORK v2.223: Born boundary constructor and complete source transport
+19358,% BEGIN FRAMEWORK v2.224: reference Poisson defect and source calculus
+19568,% END FRAMEWORK v2.224: reference Poisson defect and source calculus
+19571,% BEGIN FRAMEWORK v2.228: CHARGED ORIGIN AND CHARACTER TESTS
+19705,% BEGIN FRAMEWORK v2.240: CHARACTER-EQUIVARIANCE NO-GO
+19739,% END FRAMEWORK v2.240: CHARACTER-EQUIVARIANCE NO-GO
+19767,% END FRAMEWORK v2.228: CHARGED ORIGIN AND CHARACTER TESTS
+19786,% END INLINE SOURCE: Paper1B-CompressionDiagnostic-Appendix-v1_0.tex
+19790,% BEGIN INLINE SOURCE: Paper1B-CPBL2RetentionDiagnostic-Appendix-v1_0.tex
+19791,"% Framework v2.167: supplied-chart diagnostic, no native physical constructor."
+19884,% END INLINE SOURCE: Paper1B-CPBL2RetentionDiagnostic-Appendix-v1_0.tex
+19889,% BEGIN GEOMETRY-FIRST CONSEQUENCES v2.201
+19922,% END GEOMETRY-FIRST CONSEQUENCES v2.201
+19926,% Pure mathematical providers for Paper I-C.  Main manuscripts are read-only.
+19927,% No member of a mathematical family is selected by this fragment.
+20487,% PURE MATHEMATICS. Proposed insertion after I-B's singular Hermitian reduction.
+20488,% Self-contained proofs; no result of Papers II--VII is a premise.
+20965,% Pure mathematical closure fragment. Existing manuscripts remain read-only.
+21163,% Proof-complete principal-category companion to the existing ordinary map.
+21164,% Main manuscripts remain read-only.
+21308,% Further independently reviewed closure; supersedes only the extension-class
+21309,% frontier and non-strict-monodromy warning in principal_mapping_fibre_reduction.
+21452,% BEGIN FRAMEWORK v2.221: HURWITZ QUADRATIC FRAME AND PRINCIPAL ANGLES
+21562,% END FRAMEWORK v2.221: HURWITZ QUADRATIC FRAME AND PRINCIPAL ANGLES
+21564,% BEGIN FRAMEWORK v2.242: NATIVE FAMILY QUADRATIC-BAND EMBEDDING
+21654,% END FRAMEWORK v2.242: NATIVE FAMILY QUADRATIC-BAND EMBEDDING
+21656,% BEGIN FRAMEWORK v2.243: ONE-ROOT ICOSIAN/HURWITZ GEOMETRIC CLOSURES
+21892,% END FRAMEWORK v2.243: ONE-ROOT ICOSIAN/HURWITZ GEOMETRIC CLOSURES
+21948,% BEGIN FRAMEWORK v2.226: KINEMATIC CLOSURES
+22127,% END FRAMEWORK v2.226: KINEMATIC CLOSURES
+22129,% BEGIN FRAMEWORK v2.227: DOWNWARD CLOSURES
+22306,% BEGIN FRAMEWORK v2.230: SHARP CANONICAL GIBBS STATE COVARIANCE
+22359,% END FRAMEWORK v2.230: SHARP CANONICAL GIBBS STATE COVARIANCE
+22463,% END FRAMEWORK v2.227: DOWNWARD CLOSURES
+22466,% BEGIN FRAMEWORK v2.229: PHYSICAL WEAK DESCENT VERSUS GENERIC CARRY
+22493,% END FRAMEWORK v2.229: PHYSICAL WEAK DESCENT VERSUS GENERIC CARRY
+22499,% Minimal native handoff; mathematical provider proofs have no later-paper premise.
+23785,% END FRAMEWORK v2.357
+23788,% BEGIN FRAMEWORK v2.365: VERIFIED FINITE HURWITZ INCIDENCE AND TYPED COLOR BRIDGE
+23790,% BEGIN FRAMEWORK v2.241: ROOTED CONORMAL GRAVITY AUDIT
+24112,% END FRAMEWORK v2.241: ROOTED CONORMAL GRAVITY AUDIT
+24121,% BEGIN INTEGRATED V2.250 PROOF PACKAGE
+24122,% Narrow additional identity. It does not create a whole-action projection.
+24254,% END INTEGRATED V2.250 PROOF PACKAGE
+24261,% BEGIN INTEGRATED V2.251 FORWARD PACKAGE
+24262,% Geometric coordinate tools retained upstream of the common action.
+24333,% Forward neutral integration on the full retained harmonic packet.
+24334,% Standalone fragment; no existing framework file is modified.
+24335,"% Native anchors: I-B v2208 boundary coisometry/projectors,"
+24336,"% v239 nonsinglet Green owner, v243 icosian seed and augmentation."
+24628,% END INTEGRATED V2.251 FORWARD PACKAGE
+24631,% BEGIN FRAMEWORK v2.275: EXACT POSITIVE TWIN-WORD CUBATURE AND RESOLUTION TOWER
+24868,% END FRAMEWORK v2.275: EXACT POSITIVE TWIN-WORD CUBATURE AND RESOLUTION TOWER
+24871,% BEGIN FRAMEWORK v2.340: TYPED RECIPROCAL RANK-TWO INCIDENCE EXPORT
+24913,% END FRAMEWORK v2.340
+24916,% BEGIN FRAMEWORK v2.341: RECIPROCAL COSET COEFFICIENT REALIZATION
+24961,% END FRAMEWORK v2.341
+24964,% BEGIN FRAMEWORK v2.343: RECIPROCAL FIVEFOLD SIGNED SPECTRAL CLOSURE
+25124,% END FRAMEWORK v2.343
+25126,% BEGIN FRAMEWORK v2.349: TWISTED 25 FINITE/CONTINUOUS EXACT QUADRATURE
+25212,% END FRAMEWORK v2.349
+25216,% BEGIN PAPER I-C INDEPENDENT VERIFICATION INTEGRATION v1_138
+25217,% Documentary proof-evidence supplement. No prior theorem statement or original proof is altered.
+25276,% END PAPER I-C INDEPENDENT VERIFICATION INTEGRATION v1_138
+25280,"% BEGIN SOURCE-INTEGRATED CROSS-PAPER MATHEMATICS v3_017, 15 November 2026."
+25281,%  Derived geometric comparison modules; physical source occurrence not promoted.
+25282,%  E3/E4 independent audit of these NEW results remains pending; inherited source statements retained.
+25285,% -------- Research module Paper1C-ReciprocalGrassmannian-v1_3 (latest supplied version) --------
+25286,"% Born--Hopf Geometry cross-DAG research insert, PROPOSED ONLY."
+25287,"% Destination: Paper I-C, following p1b:thm:v343-s5-twist-so6."
+25366,% BEGIN CROSS-DAG v1.5: cancellation of the two tautological spin obstructions
+25416,% END CROSS-DAG v1.5
+25419,% BEGIN CROSS-DAG v1.6: exact scalar curvature and untwisted spinor gap
+25466,% END CROSS-DAG v1.6
+25468,% -------- Research module Paper1C-Exact120SpectralCompiler-v1_1 (latest supplied version) --------
+25469,% CROSS-DAG RESEARCH v1.6. Proposed Paper I-C extension.
+25470,% Consumes source Paper I-B 2I eleven-design and I-C
+25471,% p1b:thm:v273-cosetwise-resolution-groupoid. Auxiliary scalar only.
+25568,% -------- Research module Paper1C-ChamberSpectralGalerkins-v1_1 (latest supplied version) --------
+25569,% Born--Hopf Geometry CC17 / Paper I-C proposed mathematics.
+25570,"% Inputs: new p1b:thm:cc17-positive-vertex-facet-19,"
+25571,"% p1b:cor:cc17-register-lowband-blindness,"
+25572,% p1:thm:v366-petersen-face-walk and the S3 scalar kernel.
+25573,% Not a native physical Dirac or chamber-to-continuum operator identity.
+25742,% END SOURCE-INTEGRATED CROSS-PAPER MATHEMATICS v3_017.
+25745,% BEGIN SOURCE-INTEGRATED DAG CROSS-CONNECTIONS CC18 (16 November 2026)
+25777,% END SOURCE-INTEGRATED DAG CROSS-CONNECTIONS CC18
+25781,% BEGIN SOURCE-INTEGRATED CROSS-DAG MATHEMATICS CC20 (2026-11-16)
+25782,% BEGIN MODULE: Paper1C-RegisterDegree12Inversion-v1_1.tex
+25783,% CC18 source extension; exact scalar harmonics of fixed 600-facet geometry.
+25847,% END MODULE: Paper1C-RegisterDegree12Inversion-v1_1.tex
+25849,% BEGIN MODULE: Paper1C-ExceptionalInvariantCorrelation-v1_1.tex
+25850,% Prerequisites: p1b:thm:cc17-facet-double-coset;
+25851,% p1b:thm:cc17-positive-vertex-facet-19;
+25852,% p1c:prop:cc17-register-degree-six-eight;
+25853,% p1b:thm:v243-icosian-h12-origin; CC18 degree-twelve 25-register Gram (research only).
+25954,% END MODULE: Paper1C-ExceptionalInvariantCorrelation-v1_1.tex
+25956,% BEGIN MODULE: Paper1C-OrbitSpectralPropagation-v1_1.tex
+25957,% RESEARCH ONLY: Proposed Paper I-C cross-DAG extension v1.10.
+25958,% Depends on new unpromoted p1b:thm:cc110-positive-orbit-cubatures;
+25959,% imports source p1c:thm:cc17-720-shell-projectors and the round S^3 kernel.
+25960,"% Not a replacement for the physical action, metric or QCD carrier."
+26057,% END MODULE: Paper1C-OrbitSpectralPropagation-v1_1.tex
+26059,% BEGIN MODULE: Paper1C-Band20ScalarSpectralCompiler-v1_1.tex
+26060,% RESEARCH ONLY Paper I-C proposal.
+26061,% Requires proposed Paper I-B degree-41 positive cubature; no physical owner map.
+26100,% END MODULE: Paper1C-Band20ScalarSpectralCompiler-v1_1.tex
+26102,% BEGIN MODULE: Paper1C-Band30ScalarSpectralCompiler-v1_1.tex
+26103,% Born--Hopf Geometry CC112 proposed research insert for Paper I-C.
+26154,% END MODULE: Paper1C-Band30ScalarSpectralCompiler-v1_1.tex
+26155,% END SOURCE-INTEGRATED CROSS-DAG MATHEMATICS CC20

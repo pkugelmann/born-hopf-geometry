@@ -1,11 +1,11 @@
 {
-  "site": "Paper00-GitHubPage-v1_1",
+  "site": "Paper00-GitHubPage-v1_2",
   "snapshotDate": "2026-11-20",
   "author": "Peter Kugelmann",
-  "papersRelease": "v3_058",
-  "auditRelease": "v1_79",
-  "dagRelease": "v1_215",
-  "geometryRelease": "v1_41",
+  "papersRelease": "v3_077",
+  "auditRelease": "v1_83",
+  "dagRelease": "v1_223",
+  "geometryRelease": "v1_49",
   "papers": [
     {
       "code": "Paper1A",
@@ -14,14 +14,14 @@
       "description": "Intrinsic geometry, analysis, topology and representations of the round three-sphere.",
       "volume": "I",
       "volumeIndex": 1,
-      "pages": 104,
-      "source": "manuscripts/Paper1A-Geometry-v5_180.tex",
-      "pdf": "manuscripts/Paper1A-Geometry-v5_180.pdf",
-      "pdfVersion": "5.180",
-      "sourceSha256": "7d8c4dc466390434d99b59885c09baef5288b230924d9a409dff0e4e82019cb1",
-      "pdfSha256": "3b2bf22010d5a423372faa2ac34281e6055f0f2c13945d731e1db2568a24d5ad",
+      "pages": 105,
+      "source": "manuscripts/Paper1A-Geometry-v5_181.tex",
+      "pdf": "manuscripts/Paper1A-Geometry-v5_181.pdf",
+      "pdfVersion": "5.181",
+      "sourceSha256": "d27ed084e7d0b11e8e6a6f6b7937573476449d4282fab6a1714cfc71fb23ea87",
+      "pdfSha256": "210e0892c22cd7792fbbfac1a1eed31f70f154a5b8f2aed784d68c2e56a665a6",
       "audit": "verification/reports/Paper1A-ProofChainAudit-v1_9.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper1B",
@@ -30,14 +30,14 @@
       "description": "Binary exceptional groups, 600-cell, Clifford, finite spectral and cubature constructions.",
       "volume": "I",
       "volumeIndex": 1,
-      "pages": 295,
-      "source": "manuscripts/Paper1B-ExceptionalGeometry-v1_22.tex",
-      "pdf": "manuscripts/Paper1B-ExceptionalGeometry-v1_22.pdf",
-      "pdfVersion": "1.22",
-      "sourceSha256": "40eed3943a135269e06f384ac5d0e9ca0a679cdda1d7ce02cea25328d1937da0",
-      "pdfSha256": "3c0e7170fccc5e2829b7cc0c1b8b8fc3311321aa6d791032967146398a31931c",
+      "pages": 304,
+      "source": "manuscripts/Paper1B-ExceptionalGeometry-v1_27.tex",
+      "pdf": "manuscripts/Paper1B-ExceptionalGeometry-v1_27.pdf",
+      "pdfVersion": "1.27",
+      "sourceSha256": "c908291ac05e0aab8b3c7de8a298aa362011766e9b63baed7a32995be5502183",
+      "pdfSha256": "c74b3d4306d7563e22f3f23b3047befb9af9dbd6c6a4b364630c9e6e1dba3a6e",
       "audit": "verification/reports/Paper1B-ExceptionalGeometryProofChainAudit-v1_5.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper1C",
@@ -46,14 +46,14 @@
       "description": "The reciprocal product, bi-Hopf structure, topology, transport and finite carriers.",
       "volume": "I",
       "volumeIndex": 1,
-      "pages": 358,
-      "source": "manuscripts/Paper1C-M8Geometry-v1_144.tex",
-      "pdf": "manuscripts/Paper1C-M8Geometry-v1_144.pdf",
-      "pdfVersion": "1.144",
-      "sourceSha256": "d69ba12aa0c6a5c0c70a3fef2dbb02ee5d377ad1ba1fb3ede2fa3696434851c0",
-      "pdfSha256": "4d79216bf3bc33abf5468b3d5164268cee080c06ac179f196a7283a982ca8038",
+      "pages": 359,
+      "source": "manuscripts/Paper1C-M8Geometry-v1_146.tex",
+      "pdf": "manuscripts/Paper1C-M8Geometry-v1_146.pdf",
+      "pdfVersion": "1.146",
+      "sourceSha256": "be135865467120cb8d98c81f688a2ece0c3ff34592a796e69e40d709f4b95f3f",
+      "pdfSha256": "5207f1b6015c0a9a449c9c047cdc2e4612e281c330ef6c52256441e393fcf644",
       "audit": "verification/reports/Paper1C-ProofChainAudit-v1_7.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper1D",
@@ -69,7 +69,7 @@
       "sourceSha256": "7bc4cf5121dcdc8fb7b1d938ae882e77f694752e76a75f60cf4eaf0e1f40197e",
       "pdfSha256": "4f3b25f8d4d67ba6c2a625ab72011fd35b06808715db61ace6e6d5d713a9cec3",
       "audit": "verification/reports/Paper1D-ProofChainAudit-v1_5.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper2A",
@@ -78,14 +78,14 @@
       "description": "Geometric primacy, selection principles, physical occurrence and G0/GP1–GP3.",
       "volume": "II",
       "volumeIndex": 2,
-      "pages": 174,
-      "source": "manuscripts/Paper2A-GeometricConstitution-v3_226.tex",
-      "pdf": "manuscripts/Paper2A-GeometricConstitution-v3_226.pdf",
-      "pdfVersion": "3.226",
-      "sourceSha256": "6f730fe5ca615c44520f8ccf667503bff12713c785aa031f1f78ea7619f723d7",
-      "pdfSha256": "fb3dfee9c283ca08698d6895d9f1811767a7bc8adc497ec59008b95a1b89ced8",
+      "pages": 171,
+      "source": "manuscripts/Paper2A-GeometricConstitution-v3_227.tex",
+      "pdf": "manuscripts/Paper2A-GeometricConstitution-v3_227.pdf",
+      "pdfVersion": "3.227",
+      "sourceSha256": "863d7e2efde76d8156ddd384cb9febd81b53cc1d5f0fd7911968508c346128a9",
+      "pdfSha256": "79e37ad924347f49a325c70c4668e9753942b6b76b34c2eaeb1485acbc7498f0",
       "audit": "verification/reports/Paper2A-ProofChainAudit-v1_56.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper2B",
@@ -94,14 +94,14 @@
       "description": "The finite level-one momentum representation and its exact selection hypotheses.",
       "volume": "II",
       "volumeIndex": 2,
-      "pages": 47,
-      "source": "manuscripts/Paper2B-MomentumCarrier-v2_146.tex",
-      "pdf": "manuscripts/Paper2B-MomentumCarrier-v2_146.pdf",
-      "pdfVersion": "2.146",
-      "sourceSha256": "29a985ac8c89eaa6a8864b3b8ab5585f4ffbbd88bd6d4d1b6537a0b9ee837b72",
-      "pdfSha256": "916e4b0f6380d337d4fcb39d992642bdd376c43c3043be6401e645b89932b9fd",
+      "pages": 45,
+      "source": "manuscripts/Paper2B-MomentumCarrier-v2_147.tex",
+      "pdf": "manuscripts/Paper2B-MomentumCarrier-v2_147.pdf",
+      "pdfVersion": "2.147",
+      "sourceSha256": "bb6157cd0f9db87624f1af0ea322116c7fcc08cd273871399e4662244596939c",
+      "pdfSha256": "88896dcecaf07d6589429a7ab8746095751d574172240b2aa062b22641136ef6",
       "audit": "verification/reports/Paper2B-ProofChainAudit-v1_8.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper2C",
@@ -110,14 +110,14 @@
       "description": "Localization, reciprocal observables and the generated position–momentum role.",
       "volume": "II",
       "volumeIndex": 2,
-      "pages": 119,
-      "source": "manuscripts/Paper2C-ReciprocalLocalization-v2_172.tex",
-      "pdf": "manuscripts/Paper2C-ReciprocalLocalization-v2_172.pdf",
-      "pdfVersion": "2.172",
-      "sourceSha256": "08442b6485cdd63c53c7a57547be434650025550956cb30de1a4cc4a7b85efff",
-      "pdfSha256": "e51b9055d0a26e1bcc5cc8a6e0b4855c6fe0f340405fc8ea851a65b1ed6d0910",
-      "audit": "verification/reports/Paper2C-ProofChainAudit-v1_2.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "pages": 124,
+      "source": "manuscripts/Paper2C-ReciprocalLocalization-v2_177.tex",
+      "pdf": "manuscripts/Paper2C-ReciprocalLocalization-v2_177.pdf",
+      "pdfVersion": "2.177",
+      "sourceSha256": "bf9b9dec2df27d1964d6b031b2ebe4c13af306c695bc2edead7b2f416fb9d843",
+      "pdfSha256": "0d319aaf4bba787be315ade58c1f938c7a56bfdf0e103cecd770c2ac8e4b509d",
+      "audit": "verification/reports/Paper2C-ProofChainAudit-v1_3.html",
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper2D",
@@ -126,14 +126,14 @@
       "description": "Algebraic symmetry, spectra and topological consequences of finite kinematics.",
       "volume": "II",
       "volumeIndex": 2,
-      "pages": 58,
-      "source": "manuscripts/Paper2D-SymmetrySpectra-v2_144.tex",
-      "pdf": "manuscripts/Paper2D-SymmetrySpectra-v2_144.pdf",
-      "pdfVersion": "2.144",
-      "sourceSha256": "855f45653db887760e819acc597a3df9109e91924303364119e677c97319d1d6",
-      "pdfSha256": "84abaf851bc5db28e9c0bfe64825dc2dddc671657837c8d4e46f2a9b30ab3dbc",
+      "pages": 56,
+      "source": "manuscripts/Paper2D-SymmetrySpectra-v2_145.tex",
+      "pdf": "manuscripts/Paper2D-SymmetrySpectra-v2_145.pdf",
+      "pdfVersion": "2.145",
+      "sourceSha256": "a8643016cb403220a25a345539a52b3b0648e35060f1fadd2b5c67c9276e18a1",
+      "pdfSha256": "ff1c006f18b5dccea9432f1c1346dd1278fea8e78c5a9e72abb6aa3971fe66c7",
       "audit": "verification/reports/Paper2D-ProofChainAudit-v1_2.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper2E",
@@ -142,14 +142,14 @@
       "description": "Geometric exports, flat cone and finite constraints on their stated domains.",
       "volume": "II",
       "volumeIndex": 2,
-      "pages": 33,
-      "source": "manuscripts/Paper2E-KinematicExports-v3_139.tex",
-      "pdf": "manuscripts/Paper2E-KinematicExports-v3_139.pdf",
-      "pdfVersion": "3.139",
-      "sourceSha256": "e0e5691fc98c8f7e2eadb07332acf5b81ef36159198830f8f417ab043c2e8d48",
-      "pdfSha256": "e347a1ca086f3011adc20d67dc409bb5377a4a83b85e5e33b451a309918e935b",
+      "pages": 32,
+      "source": "manuscripts/Paper2E-KinematicExports-v3_140.tex",
+      "pdf": "manuscripts/Paper2E-KinematicExports-v3_140.pdf",
+      "pdfVersion": "3.140",
+      "sourceSha256": "17fbc2547f59fff323b12327dffacd8146c4c2d732a71801fcde6382b5d213e7",
+      "pdfSha256": "990ea34907218242cafb93da1b1f06ce04580aa9ed14a94b61f4c8e5ae82a79a",
       "audit": "verification/reports/Paper2E-ProofChainAudit-v1_5.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper2F",
@@ -159,13 +159,13 @@
       "volume": "II",
       "volumeIndex": 2,
       "pages": 116,
-      "source": "manuscripts/Paper2F-TechnicalMaterial-v1_70.tex",
-      "pdf": "manuscripts/Paper2F-TechnicalMaterial-v1_70.pdf",
-      "pdfVersion": "1.70",
-      "sourceSha256": "81ed2c9c568103bdc4824be8ac68b98b04424db8811607fe5d4189e94e031939",
-      "pdfSha256": "ab4cd50d44fac0a267ae6dc5fb0c2d99ff913861fc82dda67dfc8a972c1d8312",
+      "source": "manuscripts/Paper2F-TechnicalMaterial-v1_71.tex",
+      "pdf": "manuscripts/Paper2F-TechnicalMaterial-v1_71.pdf",
+      "pdfVersion": "1.71",
+      "sourceSha256": "a7d091ce67c74dc3ddb5a477a99a68d7e02d2e9805ccad4472b3be27f8ee8a8c",
+      "pdfSha256": "332e6dfda2831d385eded55a875f8087a3a8d1c2b5579f527556fb68b8a4ef74",
       "audit": "verification/reports/Paper2F-ProofChainAudit-v1_8.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper3A",
@@ -175,13 +175,13 @@
       "volume": "III",
       "volumeIndex": 3,
       "pages": 80,
-      "source": "manuscripts/Paper3A-GeneratedDynamics-v1_180.tex",
-      "pdf": "manuscripts/Paper3A-GeneratedDynamics-v1_180.pdf",
-      "pdfVersion": "1.180",
-      "sourceSha256": "e786d9b5773cfd25adbb3f7fa48d9dc0f68b94f02b53e9b5c9ce8c9f2f674128",
-      "pdfSha256": "6d38c26d86386badeea80ce7ebbf3a135d0a587eea906aad60240a34dc420898",
+      "source": "manuscripts/Paper3A-GeneratedDynamics-v1_181.tex",
+      "pdf": "manuscripts/Paper3A-GeneratedDynamics-v1_181.pdf",
+      "pdfVersion": "1.181",
+      "sourceSha256": "0aa086369ba879a8a65c46041b0fa7d4d64ec70f3eea111d74d7aec7d9fbb7e6",
+      "pdfSha256": "c748ce6868803e45b4844863bdff0308eddb77527605484d32aeb8549cb510d9",
       "audit": "verification/reports/Paper3A-ProofChainAudit-v1_7.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper3B",
@@ -190,14 +190,14 @@
       "description": "Spectral operators, finite-module constructions and the common action class.",
       "volume": "III",
       "volumeIndex": 3,
-      "pages": 89,
-      "source": "manuscripts/Paper3B-SpectralAction-v1_191.tex",
-      "pdf": "manuscripts/Paper3B-SpectralAction-v1_191.pdf",
-      "pdfVersion": "1.191",
-      "sourceSha256": "a9967f571ec7f75ee9b85f1201a074652517b92a10c4fb19b9bb5ba25a55ead2",
-      "pdfSha256": "467e2a02eb6a5aeb05ca23e35708b31dfdaac008f26869f7072dd42d4f111ce9",
+      "pages": 88,
+      "source": "manuscripts/Paper3B-SpectralAction-v1_192.tex",
+      "pdf": "manuscripts/Paper3B-SpectralAction-v1_192.pdf",
+      "pdfVersion": "1.192",
+      "sourceSha256": "259f948ba4a0e4c7f7c6512b772713dd9336d7f07ad707ecbc70bcca62715e02",
+      "pdfSha256": "44551e013a8be481e55c673b43e7f2170ecf4c99a305b648cdbf7bc9ba3abbaf",
       "audit": "verification/reports/Paper3B-ProofChainAudit-v1_5.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper3C",
@@ -206,14 +206,14 @@
       "description": "Hopf–Clifford hierarchy, finite-carrier ancestry and determinant characters.",
       "volume": "III",
       "volumeIndex": 3,
-      "pages": 91,
-      "source": "manuscripts/Paper3C-ProtectedHierarchy-v1_193.tex",
-      "pdf": "manuscripts/Paper3C-ProtectedHierarchy-v1_193.pdf",
-      "pdfVersion": "1.193",
-      "sourceSha256": "e9545313881ffab67df8809df3f4414146569788c17ab7e657a07a91ffd2aaa7",
-      "pdfSha256": "323a76b0e5d3c8759880004f4be5cbc382e4c5489513a1d70eb5f2927ab1427f",
+      "pages": 93,
+      "source": "manuscripts/Paper3C-ProtectedHierarchy-v1_196.tex",
+      "pdf": "manuscripts/Paper3C-ProtectedHierarchy-v1_196.pdf",
+      "pdfVersion": "1.196",
+      "sourceSha256": "f5f813b3cd69f6a3e0279863b021e582e9e02560e473068850e0e193a2c7470a",
+      "pdfSha256": "36c8994636588449e3c0a3d5b121e9b2a2f0ae37b4d2cbcc416d2951bdbddce6",
       "audit": "verification/reports/Paper3C-ProofChainAudit-v1_3.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper3D",
@@ -222,14 +222,14 @@
       "description": "Rank valuation, running response and reciprocal Laurent-jet relations.",
       "volume": "III",
       "volumeIndex": 3,
-      "pages": 50,
-      "source": "manuscripts/Paper3D-RunningResponse-v1_167.tex",
-      "pdf": "manuscripts/Paper3D-RunningResponse-v1_167.pdf",
-      "pdfVersion": "1.167",
-      "sourceSha256": "15e609f33b6861df8b437c48d57434a66fefb897267e73d9a3311a93e52d5c98",
-      "pdfSha256": "50caff8440f3aa8ed29da86ec8ba62132c87d762823f73ce099b1c6a0ade6b66",
+      "pages": 51,
+      "source": "manuscripts/Paper3D-RunningResponse-v1_168.tex",
+      "pdf": "manuscripts/Paper3D-RunningResponse-v1_168.pdf",
+      "pdfVersion": "1.168",
+      "sourceSha256": "7a14737e722346cd9b2912ac4f0630a421e81ca27ababa96e952b9f9da1da869",
+      "pdfSha256": "412fac3ab3635fec3a0ec7f1960ec9627d22624ffc48a21ba9727bebf5f09fdd",
       "audit": "verification/reports/Paper3D-ProofChainAudit-v1_3.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper3E",
@@ -239,13 +239,13 @@
       "volume": "III",
       "volumeIndex": 3,
       "pages": 91,
-      "source": "manuscripts/Paper3E-GravityAction-v1_203.tex",
-      "pdf": "manuscripts/Paper3E-GravityAction-v1_203.pdf",
-      "pdfVersion": "1.203",
-      "sourceSha256": "429efc8d50d6d82fff0e61dbe8b7373c3adedff3e99909fb26e100d7a8a2b184",
-      "pdfSha256": "173e0b66833327c4afb40e1adc3327b0c151f973a61105f14279d23aace48abd",
+      "source": "manuscripts/Paper3E-GravityAction-v1_204.tex",
+      "pdf": "manuscripts/Paper3E-GravityAction-v1_204.pdf",
+      "pdfVersion": "1.204",
+      "sourceSha256": "b76d35f9d9a46ff0cdbdaa826b8c270c10a60422d3db1688d1be79624bc73fb5",
+      "pdfSha256": "4e147c8941987eee348b4a4c40aab82055274fe2f352ab3d10b1b1857da838a5",
       "audit": "verification/reports/Paper3E-ProofChainAudit-v1_3.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper3F",
@@ -254,14 +254,14 @@
       "description": "Action, sources, variations, causal evolution and conditional physical response.",
       "volume": "III",
       "volumeIndex": 3,
-      "pages": 330,
-      "source": "manuscripts/Paper3F-CompleteDynamics-v1_276.tex",
-      "pdf": "manuscripts/Paper3F-CompleteDynamics-v1_276.pdf",
-      "pdfVersion": "1.276",
-      "sourceSha256": "8a959d3c70e7afe72799d1910b2e90a4981d6774614e62b632546933c9cc146d",
-      "pdfSha256": "7c0671b39839689b1dfb7e300bff9f56df922b05597a7f7ae330d793db54960f",
+      "pages": 336,
+      "source": "manuscripts/Paper3F-CompleteDynamics-v1_281.tex",
+      "pdf": "manuscripts/Paper3F-CompleteDynamics-v1_281.pdf",
+      "pdfVersion": "1.281",
+      "sourceSha256": "33e57bc94a18c8b9d0104b4592b02308bb27b08ed6c8b4834a4e5f353f1ed14c",
+      "pdfSha256": "af8f0e071358ebc29cfc99d80bb9e118ad180a2e03426a68a1f6ac8366f719c0",
       "audit": "verification/reports/Paper3F-ProofChainAudit-v1_5.html",
-      "rebuildStatus": "current-source AUX rebuilt; compatibility aliases regenerated"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper3G",
@@ -271,13 +271,13 @@
       "volume": "III",
       "volumeIndex": 3,
       "pages": 115,
-      "source": "manuscripts/Paper3G-TechnicalMaterial-v1_57.tex",
-      "pdf": "manuscripts/Paper3G-TechnicalMaterial-v1_57.pdf",
-      "pdfVersion": "1.57",
-      "sourceSha256": "b816daa50d8d88a48ee934f89b3f6e466cb5942e82ec460534b983c499d0e340",
-      "pdfSha256": "c985855db9cf853f4490bcebb512be393f99d86854f2ce27e40d2f9c23adf723",
+      "source": "manuscripts/Paper3G-TechnicalMaterial-v1_58.tex",
+      "pdf": "manuscripts/Paper3G-TechnicalMaterial-v1_58.pdf",
+      "pdfVersion": "1.58",
+      "sourceSha256": "1c6a431f1aefcf16c133550cd0064d8db8485ffdb94bb4647b38c219ebcf1537",
+      "pdfSha256": "7c833e4b5b4c9a54f2cf7f238214efe5eff2fa9df1d846352a4b3f05757757ca",
       "audit": "verification/reports/Paper3G-ProofChainAudit-v1_8.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper4A",
@@ -286,14 +286,14 @@
       "description": "Finite test algebra, states, effects and composition of quantum processes.",
       "volume": "IV",
       "volumeIndex": 4,
-      "pages": 107,
-      "source": "manuscripts/Paper4A-FiniteQuantumMechanics-v4_216.tex",
-      "pdf": "manuscripts/Paper4A-FiniteQuantumMechanics-v4_216.pdf",
-      "pdfVersion": "4.216",
-      "sourceSha256": "5692568255becc06af1d1aaffe3860b73cc04f13a5dddddf9fd9af857880ce03",
-      "pdfSha256": "1a2375dd6fbf888950572bb66433ca5d3bfccf9c1fa31e60206f5c450412922b",
+      "pages": 109,
+      "source": "manuscripts/Paper4A-FiniteQuantumMechanics-v4_217.tex",
+      "pdf": "manuscripts/Paper4A-FiniteQuantumMechanics-v4_217.pdf",
+      "pdfVersion": "4.217",
+      "sourceSha256": "4b50334ca1677dd08f1ab493fb30096f1deaa2623ca180b642bd453a5624d053",
+      "pdfSha256": "97e8af208b72488a5a2281bcf5aff310b2910e1ed7d8d33690d62925a819f54b",
       "audit": "verification/reports/Paper4A-ProofChainAudit-v1_2.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper4B",
@@ -303,13 +303,13 @@
       "volume": "IV",
       "volumeIndex": 4,
       "pages": 168,
-      "source": "manuscripts/Paper4B-QuantumResponse-v1_54.tex",
-      "pdf": "manuscripts/Paper4B-QuantumResponse-v1_54.pdf",
-      "pdfVersion": "1.54",
-      "sourceSha256": "d26faa7f22760d8c19536635428170e1b1556861b3452289b837b81350f21b10",
-      "pdfSha256": "3f912c5cb0f4ea399d9b6fc0daf17e9e92bdcebff506a90546c384c225618828",
+      "source": "manuscripts/Paper4B-QuantumResponse-v1_55.tex",
+      "pdf": "manuscripts/Paper4B-QuantumResponse-v1_55.pdf",
+      "pdfVersion": "1.55",
+      "sourceSha256": "699da7522504ee3fb989a2955b3ccf60d59e86c62e1aa087f2ed084e739e4ad3",
+      "pdfSha256": "f59000dfbea7cb5da6f474158d0f3134e8666375078adc4674e8bb0b7a32a435",
       "audit": "verification/reports/Paper4B-ProofChainAudit-v1_4.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper4C",
@@ -325,7 +325,7 @@
       "sourceSha256": "9f666cdef99146ba380b845ce337a5ad9662f9511d46b7a367b49ee7744fd871",
       "pdfSha256": "90d87e34f6916465f656822df43c2137f4f7bccb75f33d2ec36ee92fdd5735cf",
       "audit": "verification/reports/Paper4C-ProofChainAudit-v1_3.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper5A",
@@ -335,13 +335,13 @@
       "volume": "V",
       "volumeIndex": 5,
       "pages": 132,
-      "source": "manuscripts/Paper5A-FiniteMatterGeometry-v3_218.tex",
-      "pdf": "manuscripts/Paper5A-FiniteMatterGeometry-v3_218.pdf",
-      "pdfVersion": "3.218",
-      "sourceSha256": "4cd8c2b58d4533025878e0d321db1a3c91fa31c13824f497433496ab8fb282f4",
-      "pdfSha256": "1979a33fcf8a872e6023dabc8fe80ee12384e2805aad9186bc9182c071f21a59",
+      "source": "manuscripts/Paper5A-FiniteMatterGeometry-v3_219.tex",
+      "pdf": "manuscripts/Paper5A-FiniteMatterGeometry-v3_219.pdf",
+      "pdfVersion": "3.219",
+      "sourceSha256": "4d4842bb0f13261c348cb33f8ed8489e079684591cb031f260b132c5a4d2acc0",
+      "pdfSha256": "ce2094d4e89b9397478415580fdd18e6b35b46353c15175926f8fc7b781a61a7",
       "audit": "verification/reports/Paper5A-ProofChainAudit-v1_8.html",
-      "rebuildStatus": "current-source AUX rebuilt; compatibility aliases regenerated"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper5B",
@@ -357,7 +357,7 @@
       "sourceSha256": "afa44c046fe92c8b00ff7d32609f36bcbff50ef6b32516d5122efe629e94bd6c",
       "pdfSha256": "930914dc4bc1114ac42d1348e6bf72b68b4b36a7ab44a9d779e713fd6ca99950",
       "audit": "verification/reports/Paper5B-ProofChainAudit-v1_3.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper5C",
@@ -366,14 +366,14 @@
       "description": "Electromagnetic, weak, strong and scalar responses and their observability requirements.",
       "volume": "V",
       "volumeIndex": 5,
-      "pages": 109,
-      "source": "manuscripts/Paper5C-InteractionResponse-v2_182.tex",
-      "pdf": "manuscripts/Paper5C-InteractionResponse-v2_182.pdf",
-      "pdfVersion": "2.182",
-      "sourceSha256": "f9acbee01ea8356fba514698e173b2709bec4620859934fc05a942bf28b1a43b",
-      "pdfSha256": "9b509ee78a0aee5999222baf7c75a2942841a79bf3142fda047477ed447b7a08",
+      "pages": 112,
+      "source": "manuscripts/Paper5C-InteractionResponse-v2_185.tex",
+      "pdf": "manuscripts/Paper5C-InteractionResponse-v2_185.pdf",
+      "pdfVersion": "2.185",
+      "sourceSha256": "6401bd8ff1db21a6e623e5c343bdc6300e7e36c1d1c5d06cf52cb4378e955e69",
+      "pdfSha256": "f76bec436fab83c9f0e318079d40d4d7ce5e6df34c0c73b5b22335c825fbc827",
       "audit": "verification/reports/Paper5C-ProofChainAudit-v1_4.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper5D",
@@ -389,7 +389,7 @@
       "sourceSha256": "a8a6fe24ffac2fc47d0b6ea4acf75f13be9d52207ce9dcc472d816b3556f4a8e",
       "pdfSha256": "3d7187454e6420aca7821f69d2a4ff818b2e1dce61c376c0a0b71d48187d0aaa",
       "audit": "verification/reports/Paper5D-ProofChainAudit-v1_7.html",
-      "rebuildStatus": "current-source AUX rebuilt; compatibility aliases regenerated"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper6A",
@@ -398,14 +398,14 @@
       "description": "Closed-universe gravitational dynamics, curvature response and working action.",
       "volume": "VI",
       "volumeIndex": 6,
-      "pages": 247,
-      "source": "manuscripts/Paper6A-GravityCosmology-v2_267.tex",
-      "pdf": "manuscripts/Paper6A-GravityCosmology-v2_267.pdf",
-      "pdfVersion": "2.267",
-      "sourceSha256": "dce80c6b04267157c7fb71647ec013d6263c19392dc081b7313f0581053ffe87",
-      "pdfSha256": "28f72d7f963b75d24f70d49784f1277cc67e6fc396c961b1bec532d8247c40ca",
+      "pages": 248,
+      "source": "manuscripts/Paper6A-GravityCosmology-v2_268.tex",
+      "pdf": "manuscripts/Paper6A-GravityCosmology-v2_268.pdf",
+      "pdfVersion": "2.268",
+      "sourceSha256": "ea72d07db6078fb907790c685b097ad9c80b4c3e74058f325d2a25f76368d87f",
+      "pdfSha256": "3d67fcb56549f7e547c2665cd67ddee89d5ea77f853820022fee20002b029a75",
       "audit": "verification/reports/Paper6A-ProofChainAudit-v1_17.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper6B",
@@ -414,14 +414,14 @@
       "description": "Cosmological histories, spectra, growth, reheating and physical measurement maps.",
       "volume": "VI",
       "volumeIndex": 6,
-      "pages": 91,
-      "source": "manuscripts/Paper6B-CosmologyReadouts-v1_214.tex",
-      "pdf": "manuscripts/Paper6B-CosmologyReadouts-v1_214.pdf",
-      "pdfVersion": "1.214",
-      "sourceSha256": "ef2509d2f9cd1d6a0855dfb882ec19965c4746b28485fea60216633050658768",
-      "pdfSha256": "707e85dbeedd4a2851ac35f317e9faa120270f3314b390b80737242c4e5be203",
+      "pages": 92,
+      "source": "manuscripts/Paper6B-CosmologyReadouts-v1_215.tex",
+      "pdf": "manuscripts/Paper6B-CosmologyReadouts-v1_215.pdf",
+      "pdfVersion": "1.215",
+      "sourceSha256": "84169370e6477e7cd7bcb5de3b8d2ac2c80d4592185320d886f02ea1476bff94",
+      "pdfSha256": "34d42fe0fcc032155889d579b8ca573661a375bb3d5d628785a31fca4520bf34",
       "audit": "verification/reports/Paper6B-ProofChainAudit-v1_11.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper6C",
@@ -437,7 +437,7 @@
       "sourceSha256": "76be07e4e2b835f19693aa91fddb6fe70b64db13086b6efc13f1ec02c4fb68f3",
       "pdfSha256": "f2d488630c5198b6c6a0ea5c16fbf1274ac73239ac5880db8f029bcb11f626d8",
       "audit": "verification/reports/Paper6C-ProofChainAudit-v1_4.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper7A",
@@ -446,14 +446,14 @@
       "description": "Finite color, Hurwitz geometry, source dynamics and strong-interaction operators.",
       "volume": "VII",
       "volumeIndex": 7,
-      "pages": 147,
-      "source": "manuscripts/Paper7A-QCDKernel-v1_180.tex",
-      "pdf": "manuscripts/Paper7A-QCDKernel-v1_180.pdf",
-      "pdfVersion": "1.180",
-      "sourceSha256": "25bbbd0b0a69432465f0ff7ebdd91efb3fe330ac12af989c2aaae1eb831a3919",
-      "pdfSha256": "92720096b0a11ad6bb3e1f8cf02c5f47ff05877a1248725ca9e96c6a60297334",
+      "pages": 168,
+      "source": "manuscripts/Paper7A-QCDKernel-v1_185.tex",
+      "pdf": "manuscripts/Paper7A-QCDKernel-v1_185.pdf",
+      "pdfVersion": "1.185",
+      "sourceSha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "pdfSha256": "827db212a367094a276b2727869da2de5a579c386bace236291042dd609015ff",
       "audit": "verification/reports/Paper7A-ProofChainAudit-v1_8.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper7B",
@@ -462,14 +462,14 @@
       "description": "Hadron poles, distributions, thermal and nuclear observable response.",
       "volume": "VII",
       "volumeIndex": 7,
-      "pages": 107,
-      "source": "manuscripts/Paper7B-QCDReadouts-v1_165.tex",
-      "pdf": "manuscripts/Paper7B-QCDReadouts-v1_165.pdf",
-      "pdfVersion": "1.165",
-      "sourceSha256": "54e2262b178a2f8561c687bd4ebbcc95d7903298a1b060ea420d13b7ca49cfb4",
-      "pdfSha256": "add89493caf266fd7b48d55fb2525a2a26feb6ac87fb8d51287f3c05944dce6d",
+      "pages": 121,
+      "source": "manuscripts/Paper7B-QCDReadouts-v1_169.tex",
+      "pdf": "manuscripts/Paper7B-QCDReadouts-v1_169.pdf",
+      "pdfVersion": "1.169",
+      "sourceSha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "pdfSha256": "ae7fefdfad9862a3342c8c0eea87f9f43e3c62184e1acee5ef6859a2efc5bf23",
       "audit": "verification/reports/Paper7B-ProofChainAudit-v1_6.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper7C",
@@ -485,7 +485,7 @@
       "sourceSha256": "5ef752dff3626a01a771af3d4965bc61c952e4d3c14a3fa8dd4485b7ea03015b",
       "pdfSha256": "4d6787afed57cb2830e2183410d3ec30ce1b01f59ee0003f2d9b47ca016bc9b7",
       "audit": "verification/reports/Paper7C-ProofChainAudit-v1_7.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     },
     {
       "code": "Paper7D",
@@ -501,253 +501,268 @@
       "sourceSha256": "ca68af848c1267a6ef0ecafdb59889b996a3ae7245fbb6177f4c1ed93590d580",
       "pdfSha256": "11e6295faa1bb4ae7c965e36bae8d466df0f10714e26263cd4c5fca0ea33fabb",
       "audit": "verification/reports/Paper7D-ProofChainAudit-v1_8.html",
-      "rebuildStatus": "current-source AUX compatibility aliases retained/regenerated; unchanged PDF not rebuilt"
+      "rebuildStatus": "See current release notes: individual PDFs have different rebuild status."
     }
   ],
   "archives": [
     {
-      "name": "Paper00-PapersMinimal-v3_058.zip",
-      "version": "PapersMinimal v3.058",
-      "bytes": 41645489,
-      "sha256": "207d2c522a36ba5c1dfdd22ef7a53031c2b9dd3b2d397de07683901ec15bc7a4",
-      "sitePath": "manuscripts/",
-      "publishing": "Full original ZIP intended for GitHub Releases"
-    },
-    {
-      "name": "Paper00-ProofChainAudits-v1_79.zip",
-      "version": "ProofChainAudits v1.79",
-      "bytes": 3234411,
-      "sha256": "3b5574abaf3df98ecbb674efd0f7c008cd1854f6a225e82cbd8c5c2e51ab8324",
-      "sitePath": "data/Paper00-ProofChainAudits-v1_79.zip",
+      "name": "Paper00-PapersMinimal-v3_077.zip",
+      "version": "PapersMinimal v3.077",
+      "bytes": 51296996,
+      "sha256": "7251579625c16732bae925b2e77062820c65607edbf9f62d7cd1ba378997971a",
+      "sitePath": "data/Paper00-PapersMinimal-v3_077.zip",
       "publishing": "Downloadable on this site"
     },
     {
-      "name": "Paper00-S3StructureNetwork-v1_41.zip",
-      "version": "S3StructureNetwork v1.41",
-      "bytes": 2061899,
-      "sha256": "26ea68d441f8da572f2fbf09cf2d210242f031f746242be4f43b9219d4c3f600",
-      "sitePath": "data/Paper00-S3StructureNetwork-v1_41.zip",
+      "name": "Paper00-ProofChainAudits-v1_83.zip",
+      "version": "ProofChainAudits v1.83",
+      "bytes": 3235109,
+      "sha256": "f7511816b9854b1a158c306cf849380aee2f80a636399b2ca28f87340a193ce1",
+      "sitePath": "data/Paper00-ProofChainAudits-v1_83.zip",
       "publishing": "Downloadable on this site"
     },
     {
-      "name": "Paper00-DAGAtlas-v1_215.zip",
-      "version": "DAGAtlas v1.215",
-      "bytes": 214782837,
-      "sha256": "b85f1613307efe3be7603c1e93d0d9e4fe1f4ae44fc002079c5f3cf36946d5d5",
-      "sitePath": null,
-      "publishing": "Full original ZIP intended for GitHub Releases"
+      "name": "Paper00-DAGAtlas-v1_223.zip",
+      "version": "DAGAtlas v1.223",
+      "bytes": 29736495,
+      "sha256": "4db89138573b02d6852ca87bd24f77684d28906592887135dd326972b1de3443",
+      "sitePath": "data/Paper00-DAGAtlas-v1_223.zip",
+      "publishing": "Downloadable on this site"
+    },
+    {
+      "name": "Paper00-S3StructureNetwork-v1_49.zip",
+      "version": "S3StructureNetwork v1.49",
+      "bytes": 2176595,
+      "sha256": "cf07944aadf938f9371a785254e8cdb8c6b3ecf593e9a5b890c4860a6679eaf5",
+      "sitePath": "data/Paper00-S3StructureNetwork-v1_49.zip",
+      "publishing": "Downloadable on this site"
     }
   ],
   "audits": [
     {
-      "filename": "Paper00-AuditMigrationStatus-v1_11.md",
-      "stem": "Paper00-AuditMigrationStatus-v1_11",
-      "code": null
+      "name": "Paper00-ActionIncidenceSourceIntegration-v1_0.md",
+      "paper": "Cross-paper",
+      "href": "verification/reports/Paper00-ActionIncidenceSourceIntegration-v1_0.html"
     },
     {
-      "filename": "Paper00-ClosedGapReconciliationAudit-v1_5.md",
-      "stem": "Paper00-ClosedGapReconciliationAudit-v1_5",
-      "code": null
+      "name": "Paper00-AuditMigrationStatus-v1_11.md",
+      "paper": "Cross-paper",
+      "href": "verification/reports/Paper00-AuditMigrationStatus-v1_11.html"
     },
     {
-      "filename": "Paper00-EvidenceIntegrityBatch4-v1_1.md",
-      "stem": "Paper00-EvidenceIntegrityBatch4-v1_1",
-      "code": null
+      "name": "Paper00-BergerAuditSourceImpact-v1_17.md",
+      "paper": "Cross-paper",
+      "href": "verification/reports/Paper00-BergerAuditSourceImpact-v1_17.html"
     },
     {
-      "filename": "Paper00-GapReconciliationReport-v1_5.md",
-      "stem": "Paper00-GapReconciliationReport-v1_5",
-      "code": null
+      "name": "Paper00-ChargedActionOriginReconciliation-v1_1.md",
+      "paper": "Cross-paper",
+      "href": "verification/reports/Paper00-ChargedActionOriginReconciliation-v1_1.html"
     },
     {
-      "filename": "Paper00-MathematicalRepairBatch3-v1_1.md",
-      "stem": "Paper00-MathematicalRepairBatch3-v1_1",
-      "code": null
+      "name": "Paper00-ClosedGapReconciliationAudit-v1_5.md",
+      "paper": "Cross-paper",
+      "href": "verification/reports/Paper00-ClosedGapReconciliationAudit-v1_5.html"
     },
     {
-      "filename": "Paper00-MultiDomainReverificationBatch2-v1_1.md",
-      "stem": "Paper00-MultiDomainReverificationBatch2-v1_1",
-      "code": null
+      "name": "Paper00-EvidenceIntegrityBatch4-v1_1.md",
+      "paper": "Cross-paper",
+      "href": "verification/reports/Paper00-EvidenceIntegrityBatch4-v1_1.html"
     },
     {
-      "filename": "Paper00-PlanckCurvatureConsistency-v1_5.md",
-      "stem": "Paper00-PlanckCurvatureConsistency-v1_5",
-      "code": null
+      "name": "Paper00-FrontierOccurrenceSourceIntegration-v1_1.md",
+      "paper": "Cross-paper",
+      "href": "verification/reports/Paper00-FrontierOccurrenceSourceIntegration-v1_1.html"
     },
     {
-      "filename": "Paper00-QCDReverificationBatch1-v1_1.md",
-      "stem": "Paper00-QCDReverificationBatch1-v1_1",
-      "code": null
+      "name": "Paper00-GapReconciliationReport-v1_5.md",
+      "paper": "Cross-paper",
+      "href": "verification/reports/Paper00-GapReconciliationReport-v1_5.html"
     },
     {
-      "filename": "Paper1A-ProofChainAudit-v1_9.md",
-      "stem": "Paper1A-ProofChainAudit-v1_9",
-      "code": "Paper1A"
+      "name": "Paper00-GeometryBridgeSourceImpactAudit-v1_1.md",
+      "paper": "Cross-paper",
+      "href": "verification/reports/Paper00-GeometryBridgeSourceImpactAudit-v1_1.html"
     },
     {
-      "filename": "Paper1B-ExceptionalGeometryProofChainAudit-v1_5.md",
-      "stem": "Paper1B-ExceptionalGeometryProofChainAudit-v1_5",
-      "code": "Paper1B"
+      "name": "Paper00-MathematicalRepairBatch3-v1_1.md",
+      "paper": "Cross-paper",
+      "href": "verification/reports/Paper00-MathematicalRepairBatch3-v1_1.html"
     },
     {
-      "filename": "Paper1C-ProofChainAudit-v1_7.md",
-      "stem": "Paper1C-ProofChainAudit-v1_7",
-      "code": "Paper1C"
+      "name": "Paper00-MultiDomainReverificationBatch2-v1_1.md",
+      "paper": "Cross-paper",
+      "href": "verification/reports/Paper00-MultiDomainReverificationBatch2-v1_1.html"
     },
     {
-      "filename": "Paper1D-ProofChainAudit-v1_5.md",
-      "stem": "Paper1D-ProofChainAudit-v1_5",
-      "code": "Paper1D"
+      "name": "Paper00-PlanckCurvatureConsistency-v1_5.md",
+      "paper": "Cross-paper",
+      "href": "verification/reports/Paper00-PlanckCurvatureConsistency-v1_5.html"
     },
     {
-      "filename": "Paper2A-ProofChainAudit-v1_56.md",
-      "stem": "Paper2A-ProofChainAudit-v1_56",
-      "code": "Paper2A"
+      "name": "Paper00-ProofChainAuditsRelease-v1_83.md",
+      "paper": "Cross-paper",
+      "href": "verification/reports/Paper00-ProofChainAuditsRelease-v1_83.html"
     },
     {
-      "filename": "Paper2B-ProofChainAudit-v1_8.md",
-      "stem": "Paper2B-ProofChainAudit-v1_8",
-      "code": "Paper2B"
+      "name": "Paper00-QCDReverificationBatch1-v1_1.md",
+      "paper": "Cross-paper",
+      "href": "verification/reports/Paper00-QCDReverificationBatch1-v1_1.html"
     },
     {
-      "filename": "Paper2C-ProofChainAudit-v1_2.md",
-      "stem": "Paper2C-ProofChainAudit-v1_2",
-      "code": "Paper2C"
+      "name": "Paper1A-ProofChainAudit-v1_9.md",
+      "paper": "Paper1A",
+      "href": "verification/reports/Paper1A-ProofChainAudit-v1_9.html"
     },
     {
-      "filename": "Paper2D-ProofChainAudit-v1_2.md",
-      "stem": "Paper2D-ProofChainAudit-v1_2",
-      "code": "Paper2D"
+      "name": "Paper1B-ExceptionalGeometryProofChainAudit-v1_5.md",
+      "paper": "Paper1B",
+      "href": "verification/reports/Paper1B-ExceptionalGeometryProofChainAudit-v1_5.html"
     },
     {
-      "filename": "Paper2E-ProofChainAudit-v1_5.md",
-      "stem": "Paper2E-ProofChainAudit-v1_5",
-      "code": "Paper2E"
+      "name": "Paper1C-ProofChainAudit-v1_7.md",
+      "paper": "Paper1C",
+      "href": "verification/reports/Paper1C-ProofChainAudit-v1_7.html"
     },
     {
-      "filename": "Paper2F-ProofChainAudit-v1_8.md",
-      "stem": "Paper2F-ProofChainAudit-v1_8",
-      "code": "Paper2F"
+      "name": "Paper1D-ProofChainAudit-v1_5.md",
+      "paper": "Paper1D",
+      "href": "verification/reports/Paper1D-ProofChainAudit-v1_5.html"
     },
     {
-      "filename": "Paper3A-ProofChainAudit-v1_7.md",
-      "stem": "Paper3A-ProofChainAudit-v1_7",
-      "code": "Paper3A"
+      "name": "Paper2A-ProofChainAudit-v1_56.md",
+      "paper": "Paper2A",
+      "href": "verification/reports/Paper2A-ProofChainAudit-v1_56.html"
     },
     {
-      "filename": "Paper3B-ProofChainAudit-v1_5.md",
-      "stem": "Paper3B-ProofChainAudit-v1_5",
-      "code": "Paper3B"
+      "name": "Paper2B-ProofChainAudit-v1_8.md",
+      "paper": "Paper2B",
+      "href": "verification/reports/Paper2B-ProofChainAudit-v1_8.html"
     },
     {
-      "filename": "Paper3C-ProofChainAudit-v1_3.md",
-      "stem": "Paper3C-ProofChainAudit-v1_3",
-      "code": "Paper3C"
+      "name": "Paper2C-ProofChainAudit-v1_3.md",
+      "paper": "Paper2C",
+      "href": "verification/reports/Paper2C-ProofChainAudit-v1_3.html"
     },
     {
-      "filename": "Paper3D-ProofChainAudit-v1_3.md",
-      "stem": "Paper3D-ProofChainAudit-v1_3",
-      "code": "Paper3D"
+      "name": "Paper2D-ProofChainAudit-v1_2.md",
+      "paper": "Paper2D",
+      "href": "verification/reports/Paper2D-ProofChainAudit-v1_2.html"
     },
     {
-      "filename": "Paper3E-ProofChainAudit-v1_3.md",
-      "stem": "Paper3E-ProofChainAudit-v1_3",
-      "code": "Paper3E"
+      "name": "Paper2E-ProofChainAudit-v1_5.md",
+      "paper": "Paper2E",
+      "href": "verification/reports/Paper2E-ProofChainAudit-v1_5.html"
     },
     {
-      "filename": "Paper3F-ProofChainAudit-v1_5.md",
-      "stem": "Paper3F-ProofChainAudit-v1_5",
-      "code": "Paper3F"
+      "name": "Paper2F-ProofChainAudit-v1_8.md",
+      "paper": "Paper2F",
+      "href": "verification/reports/Paper2F-ProofChainAudit-v1_8.html"
     },
     {
-      "filename": "Paper3G-ProofChainAudit-v1_8.md",
-      "stem": "Paper3G-ProofChainAudit-v1_8",
-      "code": "Paper3G"
+      "name": "Paper3A-ProofChainAudit-v1_7.md",
+      "paper": "Paper3A",
+      "href": "verification/reports/Paper3A-ProofChainAudit-v1_7.html"
     },
     {
-      "filename": "Paper4A-ProofChainAudit-v1_2.md",
-      "stem": "Paper4A-ProofChainAudit-v1_2",
-      "code": "Paper4A"
+      "name": "Paper3B-ProofChainAudit-v1_5.md",
+      "paper": "Paper3B",
+      "href": "verification/reports/Paper3B-ProofChainAudit-v1_5.html"
     },
     {
-      "filename": "Paper4B-ProofChainAudit-v1_4.md",
-      "stem": "Paper4B-ProofChainAudit-v1_4",
-      "code": "Paper4B"
+      "name": "Paper3C-ProofChainAudit-v1_3.md",
+      "paper": "Paper3C",
+      "href": "verification/reports/Paper3C-ProofChainAudit-v1_3.html"
     },
     {
-      "filename": "Paper4C-ProofChainAudit-v1_3.md",
-      "stem": "Paper4C-ProofChainAudit-v1_3",
-      "code": "Paper4C"
+      "name": "Paper3D-ProofChainAudit-v1_3.md",
+      "paper": "Paper3D",
+      "href": "verification/reports/Paper3D-ProofChainAudit-v1_3.html"
     },
     {
-      "filename": "Paper5A-ProofChainAudit-v1_8.md",
-      "stem": "Paper5A-ProofChainAudit-v1_8",
-      "code": "Paper5A"
+      "name": "Paper3E-ProofChainAudit-v1_3.md",
+      "paper": "Paper3E",
+      "href": "verification/reports/Paper3E-ProofChainAudit-v1_3.html"
     },
     {
-      "filename": "Paper5B-ProofChainAudit-v1_3.md",
-      "stem": "Paper5B-ProofChainAudit-v1_3",
-      "code": "Paper5B"
+      "name": "Paper3F-ProofChainAudit-v1_5.md",
+      "paper": "Paper3F",
+      "href": "verification/reports/Paper3F-ProofChainAudit-v1_5.html"
     },
     {
-      "filename": "Paper5C-ProofChainAudit-v1_4.md",
-      "stem": "Paper5C-ProofChainAudit-v1_4",
-      "code": "Paper5C"
+      "name": "Paper3G-ProofChainAudit-v1_8.md",
+      "paper": "Paper3G",
+      "href": "verification/reports/Paper3G-ProofChainAudit-v1_8.html"
     },
     {
-      "filename": "Paper5D-ProofChainAudit-v1_7.md",
-      "stem": "Paper5D-ProofChainAudit-v1_7",
-      "code": "Paper5D"
+      "name": "Paper4A-ProofChainAudit-v1_2.md",
+      "paper": "Paper4A",
+      "href": "verification/reports/Paper4A-ProofChainAudit-v1_2.html"
     },
     {
-      "filename": "Paper6A-ProofChainAudit-v1_17.md",
-      "stem": "Paper6A-ProofChainAudit-v1_17",
-      "code": "Paper6A"
+      "name": "Paper4B-ProofChainAudit-v1_4.md",
+      "paper": "Paper4B",
+      "href": "verification/reports/Paper4B-ProofChainAudit-v1_4.html"
     },
     {
-      "filename": "Paper6B-ProofChainAudit-v1_11.md",
-      "stem": "Paper6B-ProofChainAudit-v1_11",
-      "code": "Paper6B"
+      "name": "Paper4C-ProofChainAudit-v1_3.md",
+      "paper": "Paper4C",
+      "href": "verification/reports/Paper4C-ProofChainAudit-v1_3.html"
     },
     {
-      "filename": "Paper6C-ProofChainAudit-v1_4.md",
-      "stem": "Paper6C-ProofChainAudit-v1_4",
-      "code": "Paper6C"
+      "name": "Paper5A-ProofChainAudit-v1_8.md",
+      "paper": "Paper5A",
+      "href": "verification/reports/Paper5A-ProofChainAudit-v1_8.html"
     },
     {
-      "filename": "Paper7A-ProofChainAudit-v1_8.md",
-      "stem": "Paper7A-ProofChainAudit-v1_8",
-      "code": "Paper7A"
+      "name": "Paper5B-ProofChainAudit-v1_3.md",
+      "paper": "Paper5B",
+      "href": "verification/reports/Paper5B-ProofChainAudit-v1_3.html"
     },
     {
-      "filename": "Paper7B-ProofChainAudit-v1_6.md",
-      "stem": "Paper7B-ProofChainAudit-v1_6",
-      "code": "Paper7B"
+      "name": "Paper5C-ProofChainAudit-v1_4.md",
+      "paper": "Paper5C",
+      "href": "verification/reports/Paper5C-ProofChainAudit-v1_4.html"
     },
     {
-      "filename": "Paper7C-ProofChainAudit-v1_7.md",
-      "stem": "Paper7C-ProofChainAudit-v1_7",
-      "code": "Paper7C"
+      "name": "Paper5D-ProofChainAudit-v1_7.md",
+      "paper": "Paper5D",
+      "href": "verification/reports/Paper5D-ProofChainAudit-v1_7.html"
     },
     {
-      "filename": "Paper7D-ProofChainAudit-v1_8.md",
-      "stem": "Paper7D-ProofChainAudit-v1_8",
-      "code": "Paper7D"
+      "name": "Paper6A-ProofChainAudit-v1_17.md",
+      "paper": "Paper6A",
+      "href": "verification/reports/Paper6A-ProofChainAudit-v1_17.html"
     },
     {
-      "filename": "Paper00-ChargedActionOriginReconciliation-v1_1.md",
-      "stem": "Paper00-ChargedActionOriginReconciliation-v1_1",
-      "code": null
+      "name": "Paper6B-ProofChainAudit-v1_11.md",
+      "paper": "Paper6B",
+      "href": "verification/reports/Paper6B-ProofChainAudit-v1_11.html"
     },
     {
-      "filename": "Paper00-ActionIncidenceSourceIntegration-v1_0.md",
-      "stem": "Paper00-ActionIncidenceSourceIntegration-v1_0",
-      "code": null
+      "name": "Paper6C-ProofChainAudit-v1_4.md",
+      "paper": "Paper6C",
+      "href": "verification/reports/Paper6C-ProofChainAudit-v1_4.html"
     },
     {
-      "filename": "Paper00-ProofChainAuditsRelease-v1_79.md",
-      "stem": "Paper00-ProofChainAuditsRelease-v1_79",
-      "code": null
+      "name": "Paper7A-ProofChainAudit-v1_8.md",
+      "paper": "Paper7A",
+      "href": "verification/reports/Paper7A-ProofChainAudit-v1_8.html"
+    },
+    {
+      "name": "Paper7B-ProofChainAudit-v1_6.md",
+      "paper": "Paper7B",
+      "href": "verification/reports/Paper7B-ProofChainAudit-v1_6.html"
+    },
+    {
+      "name": "Paper7C-ProofChainAudit-v1_7.md",
+      "paper": "Paper7C",
+      "href": "verification/reports/Paper7C-ProofChainAudit-v1_7.html"
+    },
+    {
+      "name": "Paper7D-ProofChainAudit-v1_8.md",
+      "paper": "Paper7D",
+      "href": "verification/reports/Paper7D-ProofChainAudit-v1_8.html"
     }
   ],
   "diagrams": [
@@ -765,5 +780,25 @@
     "batch9_common_axis_quotient_diagram.svg",
     "hopf_quotient_cover_tower.svg"
   ],
-  "statusNote": "Paper corpus v3.058; exact mathematical statements and conditional physical readouts require source-specific verification. The 3.058 release notes retain open charged-source, interacting-pole and physical Newton action/measurement bridges."
+  "statusNote": "Source-integrated 55 new labels in v3.077; independent global E3/E4 and physical occurrence not promoted. The v1.83 audit obligations are historical source-versioned records.",
+  "explorerCounts": {
+    "papers": 31,
+    "anchors": 14366,
+    "canonicalNodes": 7667,
+    "obligations": 130,
+    "reports": 45,
+    "diagrams": 13,
+    "newLabels": 55
+  },
+  "atlasStatus": {
+    "nodes": 7667,
+    "proofEdges": 1983,
+    "strictEdges": 67,
+    "sourceLabels": 14366,
+    "newLabelCount": 55,
+    "newProofEdges": 0,
+    "proofPromotions": 0,
+    "occurrencePromotions": 0
+  },
+  "sourceReleaseSha256": "7251579625c16732bae925b2e77062820c65607edbf9f62d7cd1ba378997971a"
 }

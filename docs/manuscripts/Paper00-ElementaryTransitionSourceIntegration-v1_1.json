@@ -1,0 +1,114 @@
+{
+  "release": "Paper00-PapersMinimal-v3_069.zip",
+  "parent": "Paper00-PapersMinimal-v3_068(1).zip",
+  "scope": "Five-core cubic and operator simplex, oriented auxiliary and 56-state comparison chart, same-action decay-operator test",
+  "modified_papers": {
+    "Paper1B": {
+      "new_tex": "Paper1B-ExceptionalGeometry-v1_25.tex",
+      "new_pdf": "Paper1B-ExceptionalGeometry-v1_25.pdf"
+    },
+    "Paper7A": {
+      "new_tex": "Paper7A-QCDKernel-v1_183.tex",
+      "new_pdf": "Paper7A-QCDKernel-v1_183.pdf"
+    },
+    "Paper7B": {
+      "new_tex": "Paper7B-QCDReadouts-v1_167.tex",
+      "new_pdf": "Paper7B-QCDReadouts-v1_167.pdf"
+    }
+  },
+  "new_labels": {
+    "p1b:thm:v369-five-core-cubic-intertwiner": {
+      "paper": "Paper1B",
+      "source_file": "Paper1B-ExceptionalGeometry-v1_25.tex",
+      "line": 2248
+    },
+    "p1b:cor:v369-five-core-operator-cubic": {
+      "paper": "Paper1B",
+      "source_file": "Paper1B-ExceptionalGeometry-v1_25.tex",
+      "line": 2300
+    },
+    "p10:def:v369-five-core-baryon-decay-action-test": {
+      "paper": "Paper7A",
+      "source_file": "Paper7A-QCDKernel-v1_183.tex",
+      "line": 8082
+    },
+    "p10:prop:v369-cubic-five-core-projection-firewall": {
+      "paper": "Paper7A",
+      "source_file": "Paper7A-QCDKernel-v1_183.tex",
+      "line": 8114
+    },
+    "p11:thm:v369-five-core-baryon-chart": {
+      "paper": "Paper7B",
+      "source_file": "Paper7B-QCDReadouts-v1_167.tex",
+      "line": 6703
+    },
+    "p11:cor:v369-five-core-factorized-capacity": {
+      "paper": "Paper7B",
+      "source_file": "Paper7B-QCDReadouts-v1_167.tex",
+      "line": 6752
+    },
+    "p11:prop:v369-oriented-core-auxiliary": {
+      "paper": "Paper7B",
+      "source_file": "Paper7B-QCDReadouts-v1_167.tex",
+      "line": 6776
+    },
+    "p11:cor:v369-axial-transition-benchmark": {
+      "paper": "Paper7B",
+      "source_file": "Paper7B-QCDReadouts-v1_167.tex",
+      "line": 6837
+    },
+    "p11:rem:v369-five-core-decay-scope": {
+      "paper": "Paper7B",
+      "source_file": "Paper7B-QCDReadouts-v1_167.tex",
+      "line": 6863
+    }
+  },
+  "new_label_count": 9,
+  "current_paper_count": 31,
+  "unique_current_labels": 14285,
+  "source_digests": {
+    "Paper1A": "d27ed084e7d0b11e8e6a6f6b7937573476449d4282fab6a1714cfc71fb23ea87",
+    "Paper1B": "a462802770b8bf2d5db9696318ecfb45bfe5ac8df730788834fcf171a55e12b7",
+    "Paper1C": "be135865467120cb8d98c81f688a2ece0c3ff34592a796e69e40d709f4b95f3f",
+    "Paper1D": "7bc4cf5121dcdc8fb7b1d938ae882e77f694752e76a75f60cf4eaf0e1f40197e",
+    "Paper2A": "863d7e2efde76d8156ddd384cb9febd81b53cc1d5f0fd7911968508c346128a9",
+    "Paper2B": "bb6157cd0f9db87624f1af0ea322116c7fcc08cd273871399e4662244596939c",
+    "Paper2C": "38947d84cf33f0bc12a4b3a8c80bbc167893c7e9c4c27e80bdc430a09bf6f5bb",
+    "Paper2D": "a8643016cb403220a25a345539a52b3b0648e35060f1fadd2b5c67c9276e18a1",
+    "Paper2E": "17fbc2547f59fff323b12327dffacd8146c4c2d732a71801fcde6382b5d213e7",
+    "Paper2F": "a7d091ce67c74dc3ddb5a477a99a68d7e02d2e9805ccad4472b3be27f8ee8a8c",
+    "Paper3A": "e786d9b5773cfd25adbb3f7fa48d9dc0f68b94f02b53e9b5c9ce8c9f2f674128",
+    "Paper3B": "a9967f571ec7f75ee9b85f1201a074652517b92a10c4fb19b9bb5ba25a55ead2",
+    "Paper3C": "5ae09490d68f215ca4dc3f8ddd58d0ea6dc4586afcd56f0a343f7a6c792c98c1",
+    "Paper3D": "15e609f33b6861df8b437c48d57434a66fefb897267e73d9a3311a93e52d5c98",
+    "Paper3E": "429efc8d50d6d82fff0e61dbe8b7373c3adedff3e99909fb26e100d7a8a2b184",
+    "Paper3F": "4eef29b833ec1c44d3089a10ac5705a97a3c25da684fa26a07ec822104e58280",
+    "Paper3G": "b816daa50d8d88a48ee934f89b3f6e466cb5942e82ec460534b983c499d0e340",
+    "Paper4A": "4b50334ca1677dd08f1ab493fb30096f1deaa2623ca180b642bd453a5624d053",
+    "Paper4B": "699da7522504ee3fb989a2955b3ccf60d59e86c62e1aa087f2ed084e739e4ad3",
+    "Paper4C": "9f666cdef99146ba380b845ce337a5ad9662f9511d46b7a367b49ee7744fd871",
+    "Paper5A": "4cd8c2b58d4533025878e0d321db1a3c91fa31c13824f497433496ab8fb282f4",
+    "Paper5B": "afa44c046fe92c8b00ff7d32609f36bcbff50ef6b32516d5122efe629e94bd6c",
+    "Paper5C": "c6db85cb07937f6a907138895f9165333b6687abcd3a7c3a208466ca3842bcb6",
+    "Paper5D": "a8a6fe24ffac2fc47d0b6ea4acf75f13be9d52207ce9dcc472d816b3556f4a8e",
+    "Paper6A": "ea72d07db6078fb907790c685b097ad9c80b4c3e74058f325d2a25f76368d87f",
+    "Paper6B": "84169370e6477e7cd7bcb5de3b8d2ac2c80d4592185320d886f02ea1476bff94",
+    "Paper6C": "76be07e4e2b835f19693aa91fddb6fe70b64db13086b6efc13f1ec02c4fb68f3",
+    "Paper7A": "9044b9ab9bca7d24b1fe35b7ccc5792a0ff7dd80a564d4edca1f9d3439bca01a",
+    "Paper7B": "2dd45924a5544185e031a1ce1828b9ecd139bd566c114979e45530170d87f8f4",
+    "Paper7C": "5ef752dff3626a01a771af3d4965bc61c952e4d3c14a3fa8dd4485b7ea03015b",
+    "Paper7D": "ca68af848c1267a6ef0ecafdb59889b996a3ae7245fbb6177f4c1ed93590d580"
+  },
+  "verified": "original v1_27 120-quaternion replay and independent v1_28 exact-character + target-spin checks; scoped finite comparison identities",
+  "not_certified": [
+    "physical action-selected 240x56/QCD endpoint",
+    "physical axial-field derivative",
+    "absolute baryon mass poles",
+    "partial widths",
+    "lifetimes",
+    "CP violation"
+  ],
+  "new_axioms": 0,
+  "e3e4_whole_paper_audit": "NOT_PERFORMED",
+  "audits_unchanged": "Paper00-ProofChainAudits-v1_83(1).zip"
+}

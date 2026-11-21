@@ -1,0 +1,1434 @@
+{
+  "current_papers": 31,
+  "entries": [
+    {
+      "logical_paper": "Paper1A",
+      "xref_name": "Paper1A-Geometry-v5_175.aux",
+      "current_source": "Paper1A-Geometry-v5_181.tex",
+      "sha256": "2306953c78947bf96acf2b8b5a3a967626a32aa3fc3cf0230a3c39b196cc0ff2",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1A",
+      "xref_name": "Paper1A-Geometry-v5_178.aux",
+      "current_source": "Paper1A-Geometry-v5_181.tex",
+      "sha256": "2306953c78947bf96acf2b8b5a3a967626a32aa3fc3cf0230a3c39b196cc0ff2",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1A",
+      "xref_name": "Paper1A-Geometry-v5_179.aux",
+      "current_source": "Paper1A-Geometry-v5_181.tex",
+      "sha256": "2306953c78947bf96acf2b8b5a3a967626a32aa3fc3cf0230a3c39b196cc0ff2",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1A",
+      "xref_name": "Paper1A-Geometry-v5_180.aux",
+      "current_source": "Paper1A-Geometry-v5_181.tex",
+      "sha256": "2306953c78947bf96acf2b8b5a3a967626a32aa3fc3cf0230a3c39b196cc0ff2",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1A",
+      "xref_name": "Paper1A-Geometry-v5_181.aux",
+      "current_source": "Paper1A-Geometry-v5_181.tex",
+      "sha256": "2306953c78947bf96acf2b8b5a3a967626a32aa3fc3cf0230a3c39b196cc0ff2",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_10.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_11.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_12.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_13.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_15.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_16.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_17.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_18.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_19.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_20.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_21.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_22.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_23.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_24.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_25.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_26.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_27.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper1B",
+      "xref_name": "Paper1B-ExceptionalGeometry-v1_5.aux",
+      "current_source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha256": "af4b3e51025aace8c6b9f45d6afff6240127c150c81db5184e2e48c695e2bbe8",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1C",
+      "xref_name": "Paper1C-M8Geometry-v1_137.aux",
+      "current_source": "Paper1C-M8Geometry-v1_146.tex",
+      "sha256": "e139df5cbfefc80cb58012e42e64ecb3b17cbc920f9d94cbe928a8ba4b18fe1d",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1C",
+      "xref_name": "Paper1C-M8Geometry-v1_138.aux",
+      "current_source": "Paper1C-M8Geometry-v1_146.tex",
+      "sha256": "e139df5cbfefc80cb58012e42e64ecb3b17cbc920f9d94cbe928a8ba4b18fe1d",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1C",
+      "xref_name": "Paper1C-M8Geometry-v1_141.aux",
+      "current_source": "Paper1C-M8Geometry-v1_146.tex",
+      "sha256": "e139df5cbfefc80cb58012e42e64ecb3b17cbc920f9d94cbe928a8ba4b18fe1d",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1C",
+      "xref_name": "Paper1C-M8Geometry-v1_142.aux",
+      "current_source": "Paper1C-M8Geometry-v1_146.tex",
+      "sha256": "e139df5cbfefc80cb58012e42e64ecb3b17cbc920f9d94cbe928a8ba4b18fe1d",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1C",
+      "xref_name": "Paper1C-M8Geometry-v1_143.aux",
+      "current_source": "Paper1C-M8Geometry-v1_146.tex",
+      "sha256": "e139df5cbfefc80cb58012e42e64ecb3b17cbc920f9d94cbe928a8ba4b18fe1d",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1C",
+      "xref_name": "Paper1C-M8Geometry-v1_144.aux",
+      "current_source": "Paper1C-M8Geometry-v1_146.tex",
+      "sha256": "e139df5cbfefc80cb58012e42e64ecb3b17cbc920f9d94cbe928a8ba4b18fe1d",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1C",
+      "xref_name": "Paper1C-M8Geometry-v1_145.aux",
+      "current_source": "Paper1C-M8Geometry-v1_146.tex",
+      "sha256": "e139df5cbfefc80cb58012e42e64ecb3b17cbc920f9d94cbe928a8ba4b18fe1d",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1C",
+      "xref_name": "Paper1C-M8Geometry-v1_146.aux",
+      "current_source": "Paper1C-M8Geometry-v1_146.tex",
+      "sha256": "e139df5cbfefc80cb58012e42e64ecb3b17cbc920f9d94cbe928a8ba4b18fe1d",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper1D",
+      "xref_name": "Paper1D-TechnicalMaterial-v1_65.aux",
+      "current_source": "Paper1D-TechnicalMaterial-v1_69.tex",
+      "sha256": "b74a56afc5509736f56b8a63fa1f0e62a4958de1d9b960d045d5decf45f7794f",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1D",
+      "xref_name": "Paper1D-TechnicalMaterial-v1_66.aux",
+      "current_source": "Paper1D-TechnicalMaterial-v1_69.tex",
+      "sha256": "b74a56afc5509736f56b8a63fa1f0e62a4958de1d9b960d045d5decf45f7794f",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1D",
+      "xref_name": "Paper1D-TechnicalMaterial-v1_67.aux",
+      "current_source": "Paper1D-TechnicalMaterial-v1_69.tex",
+      "sha256": "b74a56afc5509736f56b8a63fa1f0e62a4958de1d9b960d045d5decf45f7794f",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1D",
+      "xref_name": "Paper1D-TechnicalMaterial-v1_68.aux",
+      "current_source": "Paper1D-TechnicalMaterial-v1_69.tex",
+      "sha256": "b74a56afc5509736f56b8a63fa1f0e62a4958de1d9b960d045d5decf45f7794f",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper1D",
+      "xref_name": "Paper1D-TechnicalMaterial-v1_69.aux",
+      "current_source": "Paper1D-TechnicalMaterial-v1_69.tex",
+      "sha256": "b74a56afc5509736f56b8a63fa1f0e62a4958de1d9b960d045d5decf45f7794f",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper2A",
+      "xref_name": "Paper2A-GeometricConstitution-v3_221.aux",
+      "current_source": "Paper2A-GeometricConstitution-v3_227.tex",
+      "sha256": "ae70142b14ced08256a07bcde150b5ccea62b633e6d8b1018ff662bd599d7e11",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2A",
+      "xref_name": "Paper2A-GeometricConstitution-v3_224.aux",
+      "current_source": "Paper2A-GeometricConstitution-v3_227.tex",
+      "sha256": "ae70142b14ced08256a07bcde150b5ccea62b633e6d8b1018ff662bd599d7e11",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2A",
+      "xref_name": "Paper2A-GeometricConstitution-v3_225.aux",
+      "current_source": "Paper2A-GeometricConstitution-v3_227.tex",
+      "sha256": "ae70142b14ced08256a07bcde150b5ccea62b633e6d8b1018ff662bd599d7e11",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2A",
+      "xref_name": "Paper2A-GeometricConstitution-v3_226.aux",
+      "current_source": "Paper2A-GeometricConstitution-v3_227.tex",
+      "sha256": "ae70142b14ced08256a07bcde150b5ccea62b633e6d8b1018ff662bd599d7e11",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2A",
+      "xref_name": "Paper2A-GeometricConstitution-v3_227.aux",
+      "current_source": "Paper2A-GeometricConstitution-v3_227.tex",
+      "sha256": "ae70142b14ced08256a07bcde150b5ccea62b633e6d8b1018ff662bd599d7e11",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper2B",
+      "xref_name": "Paper2B-MomentumCarrier-v2_144.aux",
+      "current_source": "Paper2B-MomentumCarrier-v2_147.tex",
+      "sha256": "943f8278fb33cf2e638ce39f7ad5913a92b941b9cc54d07b112b98fc1439bbb9",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2B",
+      "xref_name": "Paper2B-MomentumCarrier-v2_145.aux",
+      "current_source": "Paper2B-MomentumCarrier-v2_147.tex",
+      "sha256": "943f8278fb33cf2e638ce39f7ad5913a92b941b9cc54d07b112b98fc1439bbb9",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2B",
+      "xref_name": "Paper2B-MomentumCarrier-v2_146.aux",
+      "current_source": "Paper2B-MomentumCarrier-v2_147.tex",
+      "sha256": "943f8278fb33cf2e638ce39f7ad5913a92b941b9cc54d07b112b98fc1439bbb9",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2B",
+      "xref_name": "Paper2B-MomentumCarrier-v2_147.aux",
+      "current_source": "Paper2B-MomentumCarrier-v2_147.tex",
+      "sha256": "943f8278fb33cf2e638ce39f7ad5913a92b941b9cc54d07b112b98fc1439bbb9",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper2C",
+      "xref_name": "Paper2C-ReciprocalLocalization-v2_169.aux",
+      "current_source": "Paper2C-ReciprocalLocalization-v2_177.tex",
+      "sha256": "d370bf1e9fdaf31061fe216fc2b1fe4377d2a3303ada18d6443467141cb0fbad",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2C",
+      "xref_name": "Paper2C-ReciprocalLocalization-v2_170.aux",
+      "current_source": "Paper2C-ReciprocalLocalization-v2_177.tex",
+      "sha256": "d370bf1e9fdaf31061fe216fc2b1fe4377d2a3303ada18d6443467141cb0fbad",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2C",
+      "xref_name": "Paper2C-ReciprocalLocalization-v2_171.aux",
+      "current_source": "Paper2C-ReciprocalLocalization-v2_177.tex",
+      "sha256": "d370bf1e9fdaf31061fe216fc2b1fe4377d2a3303ada18d6443467141cb0fbad",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2C",
+      "xref_name": "Paper2C-ReciprocalLocalization-v2_172.aux",
+      "current_source": "Paper2C-ReciprocalLocalization-v2_177.tex",
+      "sha256": "d370bf1e9fdaf31061fe216fc2b1fe4377d2a3303ada18d6443467141cb0fbad",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2C",
+      "xref_name": "Paper2C-ReciprocalLocalization-v2_173.aux",
+      "current_source": "Paper2C-ReciprocalLocalization-v2_177.tex",
+      "sha256": "d370bf1e9fdaf31061fe216fc2b1fe4377d2a3303ada18d6443467141cb0fbad",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2C",
+      "xref_name": "Paper2C-ReciprocalLocalization-v2_174.aux",
+      "current_source": "Paper2C-ReciprocalLocalization-v2_177.tex",
+      "sha256": "d370bf1e9fdaf31061fe216fc2b1fe4377d2a3303ada18d6443467141cb0fbad",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2C",
+      "xref_name": "Paper2C-ReciprocalLocalization-v2_175.aux",
+      "current_source": "Paper2C-ReciprocalLocalization-v2_177.tex",
+      "sha256": "d370bf1e9fdaf31061fe216fc2b1fe4377d2a3303ada18d6443467141cb0fbad",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2C",
+      "xref_name": "Paper2C-ReciprocalLocalization-v2_176.aux",
+      "current_source": "Paper2C-ReciprocalLocalization-v2_177.tex",
+      "sha256": "d370bf1e9fdaf31061fe216fc2b1fe4377d2a3303ada18d6443467141cb0fbad",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2C",
+      "xref_name": "Paper2C-ReciprocalLocalization-v2_177.aux",
+      "current_source": "Paper2C-ReciprocalLocalization-v2_177.tex",
+      "sha256": "d370bf1e9fdaf31061fe216fc2b1fe4377d2a3303ada18d6443467141cb0fbad",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper2D",
+      "xref_name": "Paper2D-SymmetrySpectra-v2_141.aux",
+      "current_source": "Paper2D-SymmetrySpectra-v2_145.tex",
+      "sha256": "7073b09b4b012d4bc689a5463a32f36e3424916dcb1befaeeaa27997e5925492",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2D",
+      "xref_name": "Paper2D-SymmetrySpectra-v2_143.aux",
+      "current_source": "Paper2D-SymmetrySpectra-v2_145.tex",
+      "sha256": "7073b09b4b012d4bc689a5463a32f36e3424916dcb1befaeeaa27997e5925492",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2D",
+      "xref_name": "Paper2D-SymmetrySpectra-v2_144.aux",
+      "current_source": "Paper2D-SymmetrySpectra-v2_145.tex",
+      "sha256": "7073b09b4b012d4bc689a5463a32f36e3424916dcb1befaeeaa27997e5925492",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2D",
+      "xref_name": "Paper2D-SymmetrySpectra-v2_145.aux",
+      "current_source": "Paper2D-SymmetrySpectra-v2_145.tex",
+      "sha256": "7073b09b4b012d4bc689a5463a32f36e3424916dcb1befaeeaa27997e5925492",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper2E",
+      "xref_name": "Paper2E-KinematicExports-v3_138.aux",
+      "current_source": "Paper2E-KinematicExports-v3_140.tex",
+      "sha256": "2431abfe3fff42694ae0c9135be36f543face94e73b48c6a22b7d3a6606c5f19",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2E",
+      "xref_name": "Paper2E-KinematicExports-v3_139.aux",
+      "current_source": "Paper2E-KinematicExports-v3_140.tex",
+      "sha256": "2431abfe3fff42694ae0c9135be36f543face94e73b48c6a22b7d3a6606c5f19",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2E",
+      "xref_name": "Paper2E-KinematicExports-v3_140.aux",
+      "current_source": "Paper2E-KinematicExports-v3_140.tex",
+      "sha256": "2431abfe3fff42694ae0c9135be36f543face94e73b48c6a22b7d3a6606c5f19",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper2F",
+      "xref_name": "Paper2F-TechnicalMaterial-v1_67.aux",
+      "current_source": "Paper2F-TechnicalMaterial-v1_71.tex",
+      "sha256": "c7977018f20f5aa91c1af5661e3228337bebd89fa8226fc3789e113533c8a31a",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2F",
+      "xref_name": "Paper2F-TechnicalMaterial-v1_68.aux",
+      "current_source": "Paper2F-TechnicalMaterial-v1_71.tex",
+      "sha256": "c7977018f20f5aa91c1af5661e3228337bebd89fa8226fc3789e113533c8a31a",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2F",
+      "xref_name": "Paper2F-TechnicalMaterial-v1_69.aux",
+      "current_source": "Paper2F-TechnicalMaterial-v1_71.tex",
+      "sha256": "c7977018f20f5aa91c1af5661e3228337bebd89fa8226fc3789e113533c8a31a",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2F",
+      "xref_name": "Paper2F-TechnicalMaterial-v1_70.aux",
+      "current_source": "Paper2F-TechnicalMaterial-v1_71.tex",
+      "sha256": "c7977018f20f5aa91c1af5661e3228337bebd89fa8226fc3789e113533c8a31a",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper2F",
+      "xref_name": "Paper2F-TechnicalMaterial-v1_71.aux",
+      "current_source": "Paper2F-TechnicalMaterial-v1_71.tex",
+      "sha256": "c7977018f20f5aa91c1af5661e3228337bebd89fa8226fc3789e113533c8a31a",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper3A",
+      "xref_name": "Paper3A-GeneratedDynamics-v1_176.aux",
+      "current_source": "Paper3A-GeneratedDynamics-v1_181.tex",
+      "sha256": "4a226a2dbfc10c5056784c0e7386345f11a13f08835f5b4bf8297fb3d020d1f5",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3A",
+      "xref_name": "Paper3A-GeneratedDynamics-v1_177.aux",
+      "current_source": "Paper3A-GeneratedDynamics-v1_181.tex",
+      "sha256": "4a226a2dbfc10c5056784c0e7386345f11a13f08835f5b4bf8297fb3d020d1f5",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3A",
+      "xref_name": "Paper3A-GeneratedDynamics-v1_178.aux",
+      "current_source": "Paper3A-GeneratedDynamics-v1_181.tex",
+      "sha256": "4a226a2dbfc10c5056784c0e7386345f11a13f08835f5b4bf8297fb3d020d1f5",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3A",
+      "xref_name": "Paper3A-GeneratedDynamics-v1_179.aux",
+      "current_source": "Paper3A-GeneratedDynamics-v1_181.tex",
+      "sha256": "4a226a2dbfc10c5056784c0e7386345f11a13f08835f5b4bf8297fb3d020d1f5",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3A",
+      "xref_name": "Paper3A-GeneratedDynamics-v1_180.aux",
+      "current_source": "Paper3A-GeneratedDynamics-v1_181.tex",
+      "sha256": "4a226a2dbfc10c5056784c0e7386345f11a13f08835f5b4bf8297fb3d020d1f5",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3A",
+      "xref_name": "Paper3A-GeneratedDynamics-v1_181.aux",
+      "current_source": "Paper3A-GeneratedDynamics-v1_181.tex",
+      "sha256": "4a226a2dbfc10c5056784c0e7386345f11a13f08835f5b4bf8297fb3d020d1f5",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper3B",
+      "xref_name": "Paper3B-SpectralAction-v1_187.aux",
+      "current_source": "Paper3B-SpectralAction-v1_192.tex",
+      "sha256": "6b3e2e4c0f9eeb6932e59c6497f626bf931a01e8ece866d075ecf6eefd81c8dc",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3B",
+      "xref_name": "Paper3B-SpectralAction-v1_189.aux",
+      "current_source": "Paper3B-SpectralAction-v1_192.tex",
+      "sha256": "6b3e2e4c0f9eeb6932e59c6497f626bf931a01e8ece866d075ecf6eefd81c8dc",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3B",
+      "xref_name": "Paper3B-SpectralAction-v1_190.aux",
+      "current_source": "Paper3B-SpectralAction-v1_192.tex",
+      "sha256": "6b3e2e4c0f9eeb6932e59c6497f626bf931a01e8ece866d075ecf6eefd81c8dc",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3B",
+      "xref_name": "Paper3B-SpectralAction-v1_191.aux",
+      "current_source": "Paper3B-SpectralAction-v1_192.tex",
+      "sha256": "6b3e2e4c0f9eeb6932e59c6497f626bf931a01e8ece866d075ecf6eefd81c8dc",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3B",
+      "xref_name": "Paper3B-SpectralAction-v1_192.aux",
+      "current_source": "Paper3B-SpectralAction-v1_192.tex",
+      "sha256": "6b3e2e4c0f9eeb6932e59c6497f626bf931a01e8ece866d075ecf6eefd81c8dc",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper3C",
+      "xref_name": "Paper3C-ProtectedHierarchy-v1_187.aux",
+      "current_source": "Paper3C-ProtectedHierarchy-v1_196.tex",
+      "sha256": "b5db1e6bb06a05a4ae0087358be0b0d3a9cd366b803152a6e7c6ff188b5a545a",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3C",
+      "xref_name": "Paper3C-ProtectedHierarchy-v1_190.aux",
+      "current_source": "Paper3C-ProtectedHierarchy-v1_196.tex",
+      "sha256": "b5db1e6bb06a05a4ae0087358be0b0d3a9cd366b803152a6e7c6ff188b5a545a",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3C",
+      "xref_name": "Paper3C-ProtectedHierarchy-v1_191.aux",
+      "current_source": "Paper3C-ProtectedHierarchy-v1_196.tex",
+      "sha256": "b5db1e6bb06a05a4ae0087358be0b0d3a9cd366b803152a6e7c6ff188b5a545a",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3C",
+      "xref_name": "Paper3C-ProtectedHierarchy-v1_192.aux",
+      "current_source": "Paper3C-ProtectedHierarchy-v1_196.tex",
+      "sha256": "b5db1e6bb06a05a4ae0087358be0b0d3a9cd366b803152a6e7c6ff188b5a545a",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3C",
+      "xref_name": "Paper3C-ProtectedHierarchy-v1_193.aux",
+      "current_source": "Paper3C-ProtectedHierarchy-v1_196.tex",
+      "sha256": "b5db1e6bb06a05a4ae0087358be0b0d3a9cd366b803152a6e7c6ff188b5a545a",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3C",
+      "xref_name": "Paper3C-ProtectedHierarchy-v1_194.aux",
+      "current_source": "Paper3C-ProtectedHierarchy-v1_196.tex",
+      "sha256": "b5db1e6bb06a05a4ae0087358be0b0d3a9cd366b803152a6e7c6ff188b5a545a",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3C",
+      "xref_name": "Paper3C-ProtectedHierarchy-v1_195.aux",
+      "current_source": "Paper3C-ProtectedHierarchy-v1_196.tex",
+      "sha256": "b5db1e6bb06a05a4ae0087358be0b0d3a9cd366b803152a6e7c6ff188b5a545a",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3C",
+      "xref_name": "Paper3C-ProtectedHierarchy-v1_196.aux",
+      "current_source": "Paper3C-ProtectedHierarchy-v1_196.tex",
+      "sha256": "b5db1e6bb06a05a4ae0087358be0b0d3a9cd366b803152a6e7c6ff188b5a545a",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper3D",
+      "xref_name": "Paper3D-RunningResponse-v1_165.aux",
+      "current_source": "Paper3D-RunningResponse-v1_168.tex",
+      "sha256": "3a971bd0290e653fb60dc64905ea54b5c6a11a6b3f16871bd3695c0359bad5be",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3D",
+      "xref_name": "Paper3D-RunningResponse-v1_166.aux",
+      "current_source": "Paper3D-RunningResponse-v1_168.tex",
+      "sha256": "3a971bd0290e653fb60dc64905ea54b5c6a11a6b3f16871bd3695c0359bad5be",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3D",
+      "xref_name": "Paper3D-RunningResponse-v1_167.aux",
+      "current_source": "Paper3D-RunningResponse-v1_168.tex",
+      "sha256": "3a971bd0290e653fb60dc64905ea54b5c6a11a6b3f16871bd3695c0359bad5be",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3D",
+      "xref_name": "Paper3D-RunningResponse-v1_168.aux",
+      "current_source": "Paper3D-RunningResponse-v1_168.tex",
+      "sha256": "3a971bd0290e653fb60dc64905ea54b5c6a11a6b3f16871bd3695c0359bad5be",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper3E",
+      "xref_name": "Paper3E-GravityAction-v1_197.aux",
+      "current_source": "Paper3E-GravityAction-v1_204.tex",
+      "sha256": "ace880fd4c7517dad0fb29c709a5f8a103c916a13f898d53ffb9d8c94d69fe43",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3E",
+      "xref_name": "Paper3E-GravityAction-v1_198.aux",
+      "current_source": "Paper3E-GravityAction-v1_204.tex",
+      "sha256": "ace880fd4c7517dad0fb29c709a5f8a103c916a13f898d53ffb9d8c94d69fe43",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3E",
+      "xref_name": "Paper3E-GravityAction-v1_199.aux",
+      "current_source": "Paper3E-GravityAction-v1_204.tex",
+      "sha256": "ace880fd4c7517dad0fb29c709a5f8a103c916a13f898d53ffb9d8c94d69fe43",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3E",
+      "xref_name": "Paper3E-GravityAction-v1_200.aux",
+      "current_source": "Paper3E-GravityAction-v1_204.tex",
+      "sha256": "ace880fd4c7517dad0fb29c709a5f8a103c916a13f898d53ffb9d8c94d69fe43",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3E",
+      "xref_name": "Paper3E-GravityAction-v1_201.aux",
+      "current_source": "Paper3E-GravityAction-v1_204.tex",
+      "sha256": "ace880fd4c7517dad0fb29c709a5f8a103c916a13f898d53ffb9d8c94d69fe43",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3E",
+      "xref_name": "Paper3E-GravityAction-v1_202.aux",
+      "current_source": "Paper3E-GravityAction-v1_204.tex",
+      "sha256": "ace880fd4c7517dad0fb29c709a5f8a103c916a13f898d53ffb9d8c94d69fe43",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3E",
+      "xref_name": "Paper3E-GravityAction-v1_203.aux",
+      "current_source": "Paper3E-GravityAction-v1_204.tex",
+      "sha256": "ace880fd4c7517dad0fb29c709a5f8a103c916a13f898d53ffb9d8c94d69fe43",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3E",
+      "xref_name": "Paper3E-GravityAction-v1_204.aux",
+      "current_source": "Paper3E-GravityAction-v1_204.tex",
+      "sha256": "ace880fd4c7517dad0fb29c709a5f8a103c916a13f898d53ffb9d8c94d69fe43",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_263.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_265.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_266.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_267.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_268.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_269.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_273.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_274.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_275.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_276.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_277.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_278.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_279.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_280.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3F",
+      "xref_name": "Paper3F-CompleteDynamics-v1_281.aux",
+      "current_source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha256": "f29a9381b04cbf3b3ad56205638cf3d97a838d36220cbd817a9a57b752a96525",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper3G",
+      "xref_name": "Paper3G-TechnicalMaterial-v1_53.aux",
+      "current_source": "Paper3G-TechnicalMaterial-v1_58.tex",
+      "sha256": "be87d3e4899221ddbc72c39a31df507569fc3b26fe8f4955fd43b99910434ca1",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3G",
+      "xref_name": "Paper3G-TechnicalMaterial-v1_54.aux",
+      "current_source": "Paper3G-TechnicalMaterial-v1_58.tex",
+      "sha256": "be87d3e4899221ddbc72c39a31df507569fc3b26fe8f4955fd43b99910434ca1",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3G",
+      "xref_name": "Paper3G-TechnicalMaterial-v1_55.aux",
+      "current_source": "Paper3G-TechnicalMaterial-v1_58.tex",
+      "sha256": "be87d3e4899221ddbc72c39a31df507569fc3b26fe8f4955fd43b99910434ca1",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3G",
+      "xref_name": "Paper3G-TechnicalMaterial-v1_56.aux",
+      "current_source": "Paper3G-TechnicalMaterial-v1_58.tex",
+      "sha256": "be87d3e4899221ddbc72c39a31df507569fc3b26fe8f4955fd43b99910434ca1",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3G",
+      "xref_name": "Paper3G-TechnicalMaterial-v1_57.aux",
+      "current_source": "Paper3G-TechnicalMaterial-v1_58.tex",
+      "sha256": "be87d3e4899221ddbc72c39a31df507569fc3b26fe8f4955fd43b99910434ca1",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper3G",
+      "xref_name": "Paper3G-TechnicalMaterial-v1_58.aux",
+      "current_source": "Paper3G-TechnicalMaterial-v1_58.tex",
+      "sha256": "be87d3e4899221ddbc72c39a31df507569fc3b26fe8f4955fd43b99910434ca1",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper4A",
+      "xref_name": "Paper4A-FiniteQuantumMechanics-v4_214.aux",
+      "current_source": "Paper4A-FiniteQuantumMechanics-v4_217.tex",
+      "sha256": "599edb1d38715f037aadd57dc777846a7885e02e0e75d2f35662b765d4580c61",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper4A",
+      "xref_name": "Paper4A-FiniteQuantumMechanics-v4_215.aux",
+      "current_source": "Paper4A-FiniteQuantumMechanics-v4_217.tex",
+      "sha256": "599edb1d38715f037aadd57dc777846a7885e02e0e75d2f35662b765d4580c61",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper4A",
+      "xref_name": "Paper4A-FiniteQuantumMechanics-v4_216.aux",
+      "current_source": "Paper4A-FiniteQuantumMechanics-v4_217.tex",
+      "sha256": "599edb1d38715f037aadd57dc777846a7885e02e0e75d2f35662b765d4580c61",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper4A",
+      "xref_name": "Paper4A-FiniteQuantumMechanics-v4_217.aux",
+      "current_source": "Paper4A-FiniteQuantumMechanics-v4_217.tex",
+      "sha256": "599edb1d38715f037aadd57dc777846a7885e02e0e75d2f35662b765d4580c61",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper4B",
+      "xref_name": "Paper4B-QuantumResponse-v1_49.aux",
+      "current_source": "Paper4B-QuantumResponse-v1_55.tex",
+      "sha256": "4dfe63b290b7bacf1f816b648147c1848ff37c51336d626ac964be8b8dc02486",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper4B",
+      "xref_name": "Paper4B-QuantumResponse-v1_53.aux",
+      "current_source": "Paper4B-QuantumResponse-v1_55.tex",
+      "sha256": "4dfe63b290b7bacf1f816b648147c1848ff37c51336d626ac964be8b8dc02486",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper4B",
+      "xref_name": "Paper4B-QuantumResponse-v1_54.aux",
+      "current_source": "Paper4B-QuantumResponse-v1_55.tex",
+      "sha256": "4dfe63b290b7bacf1f816b648147c1848ff37c51336d626ac964be8b8dc02486",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper4B",
+      "xref_name": "Paper4B-QuantumResponse-v1_55.aux",
+      "current_source": "Paper4B-QuantumResponse-v1_55.tex",
+      "sha256": "4dfe63b290b7bacf1f816b648147c1848ff37c51336d626ac964be8b8dc02486",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper4C",
+      "xref_name": "Paper4C-TechnicalMaterial-v1_49.aux",
+      "current_source": "Paper4C-TechnicalMaterial-v1_50.tex",
+      "sha256": "f027e5a85f4f581ec78ca9d7bacfad748b7c8deb03713856fc8496f0fe346b27",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper4C",
+      "xref_name": "Paper4C-TechnicalMaterial-v1_50.aux",
+      "current_source": "Paper4C-TechnicalMaterial-v1_50.tex",
+      "sha256": "f027e5a85f4f581ec78ca9d7bacfad748b7c8deb03713856fc8496f0fe346b27",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper5A",
+      "xref_name": "Paper5A-FiniteMatterGeometry-v3_209.aux",
+      "current_source": "Paper5A-FiniteMatterGeometry-v3_219.tex",
+      "sha256": "8c25f821ab805aaa2352d60df03fc7cf1ff8ac7d76b49da3df41a8aa214f36a4",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5A",
+      "xref_name": "Paper5A-FiniteMatterGeometry-v3_212.aux",
+      "current_source": "Paper5A-FiniteMatterGeometry-v3_219.tex",
+      "sha256": "8c25f821ab805aaa2352d60df03fc7cf1ff8ac7d76b49da3df41a8aa214f36a4",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5A",
+      "xref_name": "Paper5A-FiniteMatterGeometry-v3_213.aux",
+      "current_source": "Paper5A-FiniteMatterGeometry-v3_219.tex",
+      "sha256": "8c25f821ab805aaa2352d60df03fc7cf1ff8ac7d76b49da3df41a8aa214f36a4",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5A",
+      "xref_name": "Paper5A-FiniteMatterGeometry-v3_214.aux",
+      "current_source": "Paper5A-FiniteMatterGeometry-v3_219.tex",
+      "sha256": "8c25f821ab805aaa2352d60df03fc7cf1ff8ac7d76b49da3df41a8aa214f36a4",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5A",
+      "xref_name": "Paper5A-FiniteMatterGeometry-v3_216.aux",
+      "current_source": "Paper5A-FiniteMatterGeometry-v3_219.tex",
+      "sha256": "8c25f821ab805aaa2352d60df03fc7cf1ff8ac7d76b49da3df41a8aa214f36a4",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5A",
+      "xref_name": "Paper5A-FiniteMatterGeometry-v3_217.aux",
+      "current_source": "Paper5A-FiniteMatterGeometry-v3_219.tex",
+      "sha256": "8c25f821ab805aaa2352d60df03fc7cf1ff8ac7d76b49da3df41a8aa214f36a4",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5A",
+      "xref_name": "Paper5A-FiniteMatterGeometry-v3_218.aux",
+      "current_source": "Paper5A-FiniteMatterGeometry-v3_219.tex",
+      "sha256": "8c25f821ab805aaa2352d60df03fc7cf1ff8ac7d76b49da3df41a8aa214f36a4",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5A",
+      "xref_name": "Paper5A-FiniteMatterGeometry-v3_219.aux",
+      "current_source": "Paper5A-FiniteMatterGeometry-v3_219.tex",
+      "sha256": "8c25f821ab805aaa2352d60df03fc7cf1ff8ac7d76b49da3df41a8aa214f36a4",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper5B",
+      "xref_name": "Paper5B-TerminalSpectrum-v5_199.aux",
+      "current_source": "Paper5B-TerminalSpectrum-v5_202.tex",
+      "sha256": "7cda4bba09643386795cefc66ba3f6071cdeea05662bf2f133b6c12af6bd2a7d",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5B",
+      "xref_name": "Paper5B-TerminalSpectrum-v5_201.aux",
+      "current_source": "Paper5B-TerminalSpectrum-v5_202.tex",
+      "sha256": "7cda4bba09643386795cefc66ba3f6071cdeea05662bf2f133b6c12af6bd2a7d",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5B",
+      "xref_name": "Paper5B-TerminalSpectrum-v5_202.aux",
+      "current_source": "Paper5B-TerminalSpectrum-v5_202.tex",
+      "sha256": "7cda4bba09643386795cefc66ba3f6071cdeea05662bf2f133b6c12af6bd2a7d",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper5C",
+      "xref_name": "Paper5C-InteractionResponse-v2_177.aux",
+      "current_source": "Paper5C-InteractionResponse-v2_185.tex",
+      "sha256": "2a9d8f2a798622f96e11a036ca87d8c79084e903d9ae3e1cf4af3aefae59fb2f",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5C",
+      "xref_name": "Paper5C-InteractionResponse-v2_179.aux",
+      "current_source": "Paper5C-InteractionResponse-v2_185.tex",
+      "sha256": "2a9d8f2a798622f96e11a036ca87d8c79084e903d9ae3e1cf4af3aefae59fb2f",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5C",
+      "xref_name": "Paper5C-InteractionResponse-v2_180.aux",
+      "current_source": "Paper5C-InteractionResponse-v2_185.tex",
+      "sha256": "2a9d8f2a798622f96e11a036ca87d8c79084e903d9ae3e1cf4af3aefae59fb2f",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5C",
+      "xref_name": "Paper5C-InteractionResponse-v2_181.aux",
+      "current_source": "Paper5C-InteractionResponse-v2_185.tex",
+      "sha256": "2a9d8f2a798622f96e11a036ca87d8c79084e903d9ae3e1cf4af3aefae59fb2f",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5C",
+      "xref_name": "Paper5C-InteractionResponse-v2_182.aux",
+      "current_source": "Paper5C-InteractionResponse-v2_185.tex",
+      "sha256": "2a9d8f2a798622f96e11a036ca87d8c79084e903d9ae3e1cf4af3aefae59fb2f",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5C",
+      "xref_name": "Paper5C-InteractionResponse-v2_183.aux",
+      "current_source": "Paper5C-InteractionResponse-v2_185.tex",
+      "sha256": "2a9d8f2a798622f96e11a036ca87d8c79084e903d9ae3e1cf4af3aefae59fb2f",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5C",
+      "xref_name": "Paper5C-InteractionResponse-v2_184.aux",
+      "current_source": "Paper5C-InteractionResponse-v2_185.tex",
+      "sha256": "2a9d8f2a798622f96e11a036ca87d8c79084e903d9ae3e1cf4af3aefae59fb2f",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5C",
+      "xref_name": "Paper5C-InteractionResponse-v2_185.aux",
+      "current_source": "Paper5C-InteractionResponse-v2_185.tex",
+      "sha256": "2a9d8f2a798622f96e11a036ca87d8c79084e903d9ae3e1cf4af3aefae59fb2f",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper5D",
+      "xref_name": "Paper5D-TechnicalMaterial-v1_53.aux",
+      "current_source": "Paper5D-TechnicalMaterial-v1_58.tex",
+      "sha256": "82b14b60c5b9563227d7895a06c8b437466359d2d927139e7c6232bb0736b398",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5D",
+      "xref_name": "Paper5D-TechnicalMaterial-v1_55.aux",
+      "current_source": "Paper5D-TechnicalMaterial-v1_58.tex",
+      "sha256": "82b14b60c5b9563227d7895a06c8b437466359d2d927139e7c6232bb0736b398",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5D",
+      "xref_name": "Paper5D-TechnicalMaterial-v1_56.aux",
+      "current_source": "Paper5D-TechnicalMaterial-v1_58.tex",
+      "sha256": "82b14b60c5b9563227d7895a06c8b437466359d2d927139e7c6232bb0736b398",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5D",
+      "xref_name": "Paper5D-TechnicalMaterial-v1_57.aux",
+      "current_source": "Paper5D-TechnicalMaterial-v1_58.tex",
+      "sha256": "82b14b60c5b9563227d7895a06c8b437466359d2d927139e7c6232bb0736b398",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper5D",
+      "xref_name": "Paper5D-TechnicalMaterial-v1_58.aux",
+      "current_source": "Paper5D-TechnicalMaterial-v1_58.tex",
+      "sha256": "82b14b60c5b9563227d7895a06c8b437466359d2d927139e7c6232bb0736b398",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper6A",
+      "xref_name": "Paper6A-GravityCosmology-v2_260.aux",
+      "current_source": "Paper6A-GravityCosmology-v2_268.tex",
+      "sha256": "96b7ba4be8102e4a26848a75ca487552093f1f486906d6c1afb5f126d72c72d7",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6A",
+      "xref_name": "Paper6A-GravityCosmology-v2_262.aux",
+      "current_source": "Paper6A-GravityCosmology-v2_268.tex",
+      "sha256": "96b7ba4be8102e4a26848a75ca487552093f1f486906d6c1afb5f126d72c72d7",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6A",
+      "xref_name": "Paper6A-GravityCosmology-v2_263.aux",
+      "current_source": "Paper6A-GravityCosmology-v2_268.tex",
+      "sha256": "96b7ba4be8102e4a26848a75ca487552093f1f486906d6c1afb5f126d72c72d7",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6A",
+      "xref_name": "Paper6A-GravityCosmology-v2_264.aux",
+      "current_source": "Paper6A-GravityCosmology-v2_268.tex",
+      "sha256": "96b7ba4be8102e4a26848a75ca487552093f1f486906d6c1afb5f126d72c72d7",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6A",
+      "xref_name": "Paper6A-GravityCosmology-v2_265.aux",
+      "current_source": "Paper6A-GravityCosmology-v2_268.tex",
+      "sha256": "96b7ba4be8102e4a26848a75ca487552093f1f486906d6c1afb5f126d72c72d7",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6A",
+      "xref_name": "Paper6A-GravityCosmology-v2_266.aux",
+      "current_source": "Paper6A-GravityCosmology-v2_268.tex",
+      "sha256": "96b7ba4be8102e4a26848a75ca487552093f1f486906d6c1afb5f126d72c72d7",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6A",
+      "xref_name": "Paper6A-GravityCosmology-v2_267.aux",
+      "current_source": "Paper6A-GravityCosmology-v2_268.tex",
+      "sha256": "96b7ba4be8102e4a26848a75ca487552093f1f486906d6c1afb5f126d72c72d7",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6A",
+      "xref_name": "Paper6A-GravityCosmology-v2_268.aux",
+      "current_source": "Paper6A-GravityCosmology-v2_268.tex",
+      "sha256": "96b7ba4be8102e4a26848a75ca487552093f1f486906d6c1afb5f126d72c72d7",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper6B",
+      "xref_name": "Paper6B-CosmologyReadouts-v1_206.aux",
+      "current_source": "Paper6B-CosmologyReadouts-v1_215.tex",
+      "sha256": "1ed47e1cbc25e09283e96d106bacf11afdbd4a96b63a30bccc0bce2e13a54bd0",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6B",
+      "xref_name": "Paper6B-CosmologyReadouts-v1_209.aux",
+      "current_source": "Paper6B-CosmologyReadouts-v1_215.tex",
+      "sha256": "1ed47e1cbc25e09283e96d106bacf11afdbd4a96b63a30bccc0bce2e13a54bd0",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6B",
+      "xref_name": "Paper6B-CosmologyReadouts-v1_210.aux",
+      "current_source": "Paper6B-CosmologyReadouts-v1_215.tex",
+      "sha256": "1ed47e1cbc25e09283e96d106bacf11afdbd4a96b63a30bccc0bce2e13a54bd0",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6B",
+      "xref_name": "Paper6B-CosmologyReadouts-v1_211.aux",
+      "current_source": "Paper6B-CosmologyReadouts-v1_215.tex",
+      "sha256": "1ed47e1cbc25e09283e96d106bacf11afdbd4a96b63a30bccc0bce2e13a54bd0",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6B",
+      "xref_name": "Paper6B-CosmologyReadouts-v1_212.aux",
+      "current_source": "Paper6B-CosmologyReadouts-v1_215.tex",
+      "sha256": "1ed47e1cbc25e09283e96d106bacf11afdbd4a96b63a30bccc0bce2e13a54bd0",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6B",
+      "xref_name": "Paper6B-CosmologyReadouts-v1_213.aux",
+      "current_source": "Paper6B-CosmologyReadouts-v1_215.tex",
+      "sha256": "1ed47e1cbc25e09283e96d106bacf11afdbd4a96b63a30bccc0bce2e13a54bd0",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6B",
+      "xref_name": "Paper6B-CosmologyReadouts-v1_214.aux",
+      "current_source": "Paper6B-CosmologyReadouts-v1_215.tex",
+      "sha256": "1ed47e1cbc25e09283e96d106bacf11afdbd4a96b63a30bccc0bce2e13a54bd0",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6B",
+      "xref_name": "Paper6B-CosmologyReadouts-v1_215.aux",
+      "current_source": "Paper6B-CosmologyReadouts-v1_215.tex",
+      "sha256": "1ed47e1cbc25e09283e96d106bacf11afdbd4a96b63a30bccc0bce2e13a54bd0",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper6C",
+      "xref_name": "Paper6C-TechnicalMaterial-v1_50.aux",
+      "current_source": "Paper6C-TechnicalMaterial-v1_53.tex",
+      "sha256": "36e6fb64785d51501bce347770685ce6d475e404a9716031a6c1a5e41e9c0cf4",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6C",
+      "xref_name": "Paper6C-TechnicalMaterial-v1_51.aux",
+      "current_source": "Paper6C-TechnicalMaterial-v1_53.tex",
+      "sha256": "36e6fb64785d51501bce347770685ce6d475e404a9716031a6c1a5e41e9c0cf4",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6C",
+      "xref_name": "Paper6C-TechnicalMaterial-v1_52.aux",
+      "current_source": "Paper6C-TechnicalMaterial-v1_53.tex",
+      "sha256": "36e6fb64785d51501bce347770685ce6d475e404a9716031a6c1a5e41e9c0cf4",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper6C",
+      "xref_name": "Paper6C-TechnicalMaterial-v1_53.aux",
+      "current_source": "Paper6C-TechnicalMaterial-v1_53.tex",
+      "sha256": "36e6fb64785d51501bce347770685ce6d475e404a9716031a6c1a5e41e9c0cf4",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper7A",
+      "xref_name": "Paper7A-QCDKernel-v1_172.aux",
+      "current_source": "Paper7A-QCDKernel-v1_185.tex",
+      "sha256": "aff64a024965c9705cf5eb7421a6ee8b156f72283f810cc20287ceb8c92c8d24",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7A",
+      "xref_name": "Paper7A-QCDKernel-v1_173.aux",
+      "current_source": "Paper7A-QCDKernel-v1_185.tex",
+      "sha256": "aff64a024965c9705cf5eb7421a6ee8b156f72283f810cc20287ceb8c92c8d24",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7A",
+      "xref_name": "Paper7A-QCDKernel-v1_175.aux",
+      "current_source": "Paper7A-QCDKernel-v1_185.tex",
+      "sha256": "aff64a024965c9705cf5eb7421a6ee8b156f72283f810cc20287ceb8c92c8d24",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7A",
+      "xref_name": "Paper7A-QCDKernel-v1_176.aux",
+      "current_source": "Paper7A-QCDKernel-v1_185.tex",
+      "sha256": "aff64a024965c9705cf5eb7421a6ee8b156f72283f810cc20287ceb8c92c8d24",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7A",
+      "xref_name": "Paper7A-QCDKernel-v1_177.aux",
+      "current_source": "Paper7A-QCDKernel-v1_185.tex",
+      "sha256": "aff64a024965c9705cf5eb7421a6ee8b156f72283f810cc20287ceb8c92c8d24",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7A",
+      "xref_name": "Paper7A-QCDKernel-v1_178.aux",
+      "current_source": "Paper7A-QCDKernel-v1_185.tex",
+      "sha256": "aff64a024965c9705cf5eb7421a6ee8b156f72283f810cc20287ceb8c92c8d24",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7A",
+      "xref_name": "Paper7A-QCDKernel-v1_179.aux",
+      "current_source": "Paper7A-QCDKernel-v1_185.tex",
+      "sha256": "aff64a024965c9705cf5eb7421a6ee8b156f72283f810cc20287ceb8c92c8d24",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7A",
+      "xref_name": "Paper7A-QCDKernel-v1_180.aux",
+      "current_source": "Paper7A-QCDKernel-v1_185.tex",
+      "sha256": "aff64a024965c9705cf5eb7421a6ee8b156f72283f810cc20287ceb8c92c8d24",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7A",
+      "xref_name": "Paper7A-QCDKernel-v1_181.aux",
+      "current_source": "Paper7A-QCDKernel-v1_185.tex",
+      "sha256": "aff64a024965c9705cf5eb7421a6ee8b156f72283f810cc20287ceb8c92c8d24",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7A",
+      "xref_name": "Paper7A-QCDKernel-v1_182.aux",
+      "current_source": "Paper7A-QCDKernel-v1_185.tex",
+      "sha256": "aff64a024965c9705cf5eb7421a6ee8b156f72283f810cc20287ceb8c92c8d24",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7A",
+      "xref_name": "Paper7A-QCDKernel-v1_183.aux",
+      "current_source": "Paper7A-QCDKernel-v1_185.tex",
+      "sha256": "aff64a024965c9705cf5eb7421a6ee8b156f72283f810cc20287ceb8c92c8d24",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7A",
+      "xref_name": "Paper7A-QCDKernel-v1_184.aux",
+      "current_source": "Paper7A-QCDKernel-v1_185.tex",
+      "sha256": "aff64a024965c9705cf5eb7421a6ee8b156f72283f810cc20287ceb8c92c8d24",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7A",
+      "xref_name": "Paper7A-QCDKernel-v1_185.aux",
+      "current_source": "Paper7A-QCDKernel-v1_185.tex",
+      "sha256": "aff64a024965c9705cf5eb7421a6ee8b156f72283f810cc20287ceb8c92c8d24",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper7B",
+      "xref_name": "Paper7B-QCDReadouts-v1_157.aux",
+      "current_source": "Paper7B-QCDReadouts-v1_169.tex",
+      "sha256": "3972b8108cadec36daa19f75a6116ebe23ec176da007d80cff583b460d27bc27",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7B",
+      "xref_name": "Paper7B-QCDReadouts-v1_159.aux",
+      "current_source": "Paper7B-QCDReadouts-v1_169.tex",
+      "sha256": "3972b8108cadec36daa19f75a6116ebe23ec176da007d80cff583b460d27bc27",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7B",
+      "xref_name": "Paper7B-QCDReadouts-v1_163.aux",
+      "current_source": "Paper7B-QCDReadouts-v1_169.tex",
+      "sha256": "3972b8108cadec36daa19f75a6116ebe23ec176da007d80cff583b460d27bc27",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7B",
+      "xref_name": "Paper7B-QCDReadouts-v1_164.aux",
+      "current_source": "Paper7B-QCDReadouts-v1_169.tex",
+      "sha256": "3972b8108cadec36daa19f75a6116ebe23ec176da007d80cff583b460d27bc27",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7B",
+      "xref_name": "Paper7B-QCDReadouts-v1_165.aux",
+      "current_source": "Paper7B-QCDReadouts-v1_169.tex",
+      "sha256": "3972b8108cadec36daa19f75a6116ebe23ec176da007d80cff583b460d27bc27",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7B",
+      "xref_name": "Paper7B-QCDReadouts-v1_166.aux",
+      "current_source": "Paper7B-QCDReadouts-v1_169.tex",
+      "sha256": "3972b8108cadec36daa19f75a6116ebe23ec176da007d80cff583b460d27bc27",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7B",
+      "xref_name": "Paper7B-QCDReadouts-v1_167.aux",
+      "current_source": "Paper7B-QCDReadouts-v1_169.tex",
+      "sha256": "3972b8108cadec36daa19f75a6116ebe23ec176da007d80cff583b460d27bc27",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7B",
+      "xref_name": "Paper7B-QCDReadouts-v1_168.aux",
+      "current_source": "Paper7B-QCDReadouts-v1_169.tex",
+      "sha256": "3972b8108cadec36daa19f75a6116ebe23ec176da007d80cff583b460d27bc27",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7B",
+      "xref_name": "Paper7B-QCDReadouts-v1_169.aux",
+      "current_source": "Paper7B-QCDReadouts-v1_169.tex",
+      "sha256": "3972b8108cadec36daa19f75a6116ebe23ec176da007d80cff583b460d27bc27",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper7C",
+      "xref_name": "Paper7C-ContinuousQFT-v2_202.aux",
+      "current_source": "Paper7C-ContinuousQFT-v2_208.tex",
+      "sha256": "1902e8d4425f53a289270056882208ce572def6ad5dbfb11ea27415f16732c08",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7C",
+      "xref_name": "Paper7C-ContinuousQFT-v2_206.aux",
+      "current_source": "Paper7C-ContinuousQFT-v2_208.tex",
+      "sha256": "1902e8d4425f53a289270056882208ce572def6ad5dbfb11ea27415f16732c08",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7C",
+      "xref_name": "Paper7C-ContinuousQFT-v2_207.aux",
+      "current_source": "Paper7C-ContinuousQFT-v2_208.tex",
+      "sha256": "1902e8d4425f53a289270056882208ce572def6ad5dbfb11ea27415f16732c08",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7C",
+      "xref_name": "Paper7C-ContinuousQFT-v2_208.aux",
+      "current_source": "Paper7C-ContinuousQFT-v2_208.tex",
+      "sha256": "1902e8d4425f53a289270056882208ce572def6ad5dbfb11ea27415f16732c08",
+      "compatibility_alias": false
+    },
+    {
+      "logical_paper": "Paper7D",
+      "xref_name": "Paper7D-TechnicalMaterial-v1_53.aux",
+      "current_source": "Paper7D-TechnicalMaterial-v1_60.tex",
+      "sha256": "a9f8c41d75606fbada4f6ea19853b4b847f9e4834988f2e6737a1e91f6d053bb",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7D",
+      "xref_name": "Paper7D-TechnicalMaterial-v1_56.aux",
+      "current_source": "Paper7D-TechnicalMaterial-v1_60.tex",
+      "sha256": "a9f8c41d75606fbada4f6ea19853b4b847f9e4834988f2e6737a1e91f6d053bb",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7D",
+      "xref_name": "Paper7D-TechnicalMaterial-v1_57.aux",
+      "current_source": "Paper7D-TechnicalMaterial-v1_60.tex",
+      "sha256": "a9f8c41d75606fbada4f6ea19853b4b847f9e4834988f2e6737a1e91f6d053bb",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7D",
+      "xref_name": "Paper7D-TechnicalMaterial-v1_58.aux",
+      "current_source": "Paper7D-TechnicalMaterial-v1_60.tex",
+      "sha256": "a9f8c41d75606fbada4f6ea19853b4b847f9e4834988f2e6737a1e91f6d053bb",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7D",
+      "xref_name": "Paper7D-TechnicalMaterial-v1_59.aux",
+      "current_source": "Paper7D-TechnicalMaterial-v1_60.tex",
+      "sha256": "a9f8c41d75606fbada4f6ea19853b4b847f9e4834988f2e6737a1e91f6d053bb",
+      "compatibility_alias": true
+    },
+    {
+      "logical_paper": "Paper7D",
+      "xref_name": "Paper7D-TechnicalMaterial-v1_60.aux",
+      "current_source": "Paper7D-TechnicalMaterial-v1_60.tex",
+      "sha256": "a9f8c41d75606fbada4f6ea19853b4b847f9e4834988f2e6737a1e91f6d053bb",
+      "compatibility_alias": false
+    }
+  ],
+  "note": "Aliases carry currently compiled AUX bytes, not historical proof versions."
+}

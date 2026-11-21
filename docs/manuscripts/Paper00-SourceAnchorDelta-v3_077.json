@@ -1,0 +1,504 @@
+{
+  "release": "Paper00-PapersMinimal-v3_077.zip",
+  "source_baseline": "Paper00-PapersMinimal-v3_076(1).zip",
+  "status": "SOURCE_INTEGRATED_NONCANONICAL_CANDIDATES",
+  "canonical_dag_changed": false,
+  "new_label_count": 55,
+  "records": [
+    {
+      "label": "p1b:thm:v371-five-core-resistance-rigidity",
+      "source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "line": 2248,
+      "source_sha256": "c908291ac05e0aab8b3c7de8a298aa362011766e9b63baed7a32995be5502183",
+      "source_context": "\\begin{theorem}[Canonical five-core resistance and reversible comparison kernel]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p1b:cor:v372-resistance-orientation-bridge",
+      "source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "line": 2301,
+      "source_sha256": "c908291ac05e0aab8b3c7de8a298aa362011766e9b63baed7a32995be5502183",
+      "source_context": "\\begin{corollary}[Exact resistance-to-directed-overlap bridge on the same five-core labels]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p1b:thm:v374-outgoing-source-cyclic-schur",
+      "source": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "line": 2339,
+      "source_sha256": "c908291ac05e0aab8b3c7de8a298aa362011766e9b63baed7a32995be5502183",
+      "source_context": "\\begin{theorem}[Least outgoing-source carrier and exact Laplacian Schur self-energy]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p2c:thm:range-rank-povm-exactification",
+      "source": "Paper2C-ReciprocalLocalization-v2_177.tex",
+      "line": 7096,
+      "source_sha256": "bf9b9dec2df27d1964d6b031b2ebe4c13af306c695bc2edead7b2f416fb9d843",
+      "source_context": "\\begin{theorem}[Range-rank-preserving exact finite reduction of a general POVM]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p2c:cor:continuous-povm-effect-rank-hierarchy",
+      "source": "Paper2C-ReciprocalLocalization-v2_177.tex",
+      "line": 7152,
+      "source_sha256": "bf9b9dec2df27d1964d6b031b2ebe4c13af306c695bc2edead7b2f416fb9d843",
+      "source_context": "\\begin{corollary}[Unconditional continuous-label intrinsic effect-rank thresholds]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p2c:cor:rank6-universal-noise-floor",
+      "source": "Paper2C-ReciprocalLocalization-v2_177.tex",
+      "line": 7189,
+      "source_sha256": "bf9b9dec2df27d1964d6b031b2ebe4c13af306c695bc2edead7b2f416fb9d843",
+      "source_context": "\\begin{corollary}[Strict qualitative noise floor for rank-six measurements]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p3f:cor:v371-reference-independent-transition-current",
+      "source": "Paper3F-CompleteDynamics-v1_281.tex",
+      "line": 5395,
+      "source_sha256": "33e57bc94a18c8b9d0104b4592b02308bb27b08ed6c8b4834a4e5f353f1ed14c",
+      "source_context": "\\begin{corollary}[Exact reference-independence of nonmetric transition vertices]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:thm:v374-source-cyclic-observable-realization",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 8115,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{theorem}[Least source-visible realization without an independently chosen embedding]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:prop:v374-schur-twojet-and-spectral-measure",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 8166,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{proposition}[Full same-parent two-field Schur jet and spectral positivity]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:sec:v375-rooted-dressed-current",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10166,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": " (proposed v1.185). % Derived from exact rooted CAR source p10:prop:v3023-marked-baryon-source-overlap, % the Gauss projector p10:thm:v350-local-gauss-projector, % and the finite Schur source p10:eq:finite-schur-source-block. \\section{Rooted axial insertions and all-energy Schur transition vertices}",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:thm:v375-rooted-CAR-axial-insertion",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10169,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{theorem}[Exact rooted three-quark current and Wilson polarization]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:sec:v378-baryon-heat-membrane",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10230,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": " assumption. No expectation value or physical pole is used. \\end{proof} % Proposed Paper VII-A insertion v1.188. This is a finite heat-reference theorem, % not an occurrence claim about the full interacting QCD Hamiltonian. \\section{The minimal full-Hurwitz baryon heat membrane and its Gauss source}",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:thm:v378-unique-baryon-triality-membrane",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10233,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{theorem}[Unique three-face triality membrane of a Hurwitz baryon edge]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:thm:v378-full-heat-baryon-leading",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10265,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{theorem}[Fixed leading baryon overlap on the full 96-face heat reference]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:cor:v378-gauss-rooted-heat-axial",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10322,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{corollary}[Normalized locally Gauss-invariant heat-reference baryon source]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:prop:v378-root-gram-current-cancellation",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10368,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{proposition}[Scalar Wilson source overlap cancels from a canonically normalized bare current]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:cor:v378-root-current-residual-certificate",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10408,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{corollary}[Exact root-changing current residual after Gram normalization]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:thm:v375-two-energy-dressed-transition",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10441,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{theorem}[Two-energy dressed-current Schur identity and pole vertices]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:cor:v375-degenerate-multiplet-vertex",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10498,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{corollary}[Isolated degenerate multiplets have a canonical dressed-current frame]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:cor:v375-schur-current-error-bound",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10534,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{corollary}[Moment-certified bound on physical-current dressing]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:prop:v375-moving-source-current",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10577,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{proposition}[Moving source-chart current and quantitative leakage bound]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:thm:v375-projected-Ward-current",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10623,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{theorem}[Exact projected Noether--Ward identity, charge residues and broken-current defect]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:thm:v375-mixed-moment-current-reconstruction",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10696,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{theorem}[Finite mixed-moment reconstruction of the entire source-current three-point function]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:sec:v376-transfer-moment-inversion",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10759,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "GIN PAPER00 v1.6 -- transfer inversion and relative spectral port % Proposed v1.6 VII-A addition. Exactly scoped finite positive-transfer theorem. % Proposed v1.6 VII-A addition. Exactly scoped finite positive-transfer theorem. \\section{Transfer-source inversion and mass-to-current moment interface}",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:thm:v376-positive-transfer-current-inversion",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10761,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{theorem}[Unique finite transfer-source inversion at every positive transfer time]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:prop:v376-first-mixed-moment-leakage",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10815,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{proposition}[First mixed moment and the native leakage blocks]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:cor:v376-centered-double-leakage-current",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10850,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{corollary}[Exact centered mixed moment isolates the doubly leaked current]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:sec:v377-positive-moment-Schur",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10891,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": " reduced-tensor statement, with the existing full-packet normalization $\\sum_{ia}\\|P_8G^{ia}P_{10}\\|_{\\rm HS}^2=40$. \\end{proof} % END PAPER00 v1.6 % BEGIN PAPER00 v1.7 -- all-order centered positive-moment Schur closure \\section{Positive moment certificates for the source-visible auxiliary current}",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:thm:v377-auxiliary-krylov-centering",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10893,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{theorem}[All-order centered auxiliary moments and source-cyclic Schur reconstruction]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:cor:v377-auxiliary-current-gram-envelope",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10952,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{corollary}[Sharp semidefinite feasibility envelope for auxiliary currents]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:thm:v377-four-moment-flatness",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 10981,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{theorem}[Four-moment positive flatness and exact single-pole current]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:thm:v377-multipole-flatness",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 11054,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{theorem}[Positive polynomial flatness identifies every visible auxiliary pole]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p10:cor:v377-hurwitz-local-spectral-return",
+      "source": "Paper7A-QCDKernel-v1_185.tex",
+      "line": 11105,
+      "source_sha256": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb",
+      "source_context": "\\begin{corollary}[Exact local source return for the native Hurwitz adjacency]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:thm:v371-unique-decuplet-current-strengths",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 6862,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{theorem}[Unique covariant decuplet--octet axial tensor and twelve exact strengths]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:cor:v371-axial-current-gram-test",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 6974,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{corollary}[Two-contraction exact test and strength-error bound for the occurring axial packet]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:cor:v371-strong-decuplet-threshold-wave",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7019,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{corollary}[Exact pseudoscalar two-body support and unique orbital partial wave]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:cor:v371-primitive-octet-FD",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7076,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{corollary}[Fixed primitive octet axial $F/D$ ratio]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:rem:v371-axial-strength-scope",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7103,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{remark}[Exact symmetry versus occurring decay current]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:prop:v372-internal-external-axial-gram-no-go",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7116,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{proposition}[Zeroth-moment obstruction to identifying dressed axial and mass ports]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:cor:v372-octet-dressing-moment-firewall",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7157,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{corollary}[Dressed octet axial benchmarks and invariant inter-multiplet budget]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:rem:v372-mass-decay-trial-scope",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7211,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{remark}[Comparison of exact symmetry and on-shell spectral trials]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:thm:v374-axial-minimal-positive-contact",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7236,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{theorem}[Unique least affine positive connector and its sharp contact bound]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:cor:v374-native-56-contact-budget-and-nonuniqueness",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7287,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{corollary}[Exact 56-carrier current budgets, contact bound and affine no-go]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:sec:v375-dressed-baryon-transition",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7574,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "ing color-singlet/physical Gauss and channel conditions. \\end{remark} % END BERGER READOUT GATE v1.17 % BEGIN PAPER00 v1.5 -- exact rooted and dressed action currents % New exact consequence for Paper VII-B (proposed v1.171). \\section{Dressed octet currents and exact same-action transition readouts}",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:cor:v375-dressed-axial-reduced-tensor",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7576,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{corollary}[All-orders symmetry protection of the decuplet--octet tensor]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:rem:v375-action-current-remaining-edge",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7617,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{remark}[Exact physical-current matching interface after the Schur closure]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:sec:v376-symmetry-moment-port",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7638,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "y clock or physical absorptive operator. \\end{remark} % END PAPER00 v1.5 % BEGIN PAPER00 v1.6 -- transfer inversion and relative spectral port % Proposed v1.6 VII-B addition: finite exact symmetry + relative-port obstruction. \\section{All-energy axial tensor reduction and the relative spectral port}",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:thm:v376-all-energy-axial-moment-factorization",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7640,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{theorem}[Entire finite mixed-moment axial packet reduces to four scalar families]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:prop:v376-sharp-relative-port-moment-bound",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7689,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{proposition}[Mass moments sharply bound but do not select the axial port]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:thm:v376-identical-mass-distinct-current-moments",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7716,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{theorem}[In-domain finite symmetry counterexample: same masses and bare axial, different transitions]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:prop:v376-haar-symmetry-response-bound",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7770,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{proposition}[Canonical symmetry-breaking defect and all-energy comparison bound]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:sec:v377-positive-gram-boundary",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7818,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "s; submultiplicativity and $\\|\\iota\\|=1$ give the displayed bound. Group covariance of $H_0,J_0$ proves the last assertion. \\end{proof} % END PAPER00 v1.6 % BEGIN PAPER00 v1.7 -- native spin-flavour Gram response boundary \\section{Primitive axial Gram and a positive auxiliary mass-order certificate}",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:prop:v377-primitive-gram-zero-centered",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7820,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{proposition}[Primitive $E_{36}$ Gram has no hidden auxiliary-current correction]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:thm:v377-conditional-positive-gram-ordering",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7853,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{theorem}[Positive common-pole Schur parent forces the octet mass-order sign]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    },
+    {
+      "label": "p11:cor:v378-heat-root-common-factor-no-go",
+      "source": "Paper7B-QCDReadouts-v1_169.tex",
+      "line": 7921,
+      "source_sha256": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99",
+      "source_context": "\\begin{corollary}[Full-Hurwitz heat root factor cannot reweight the primitive strong channels]",
+      "status": "SOURCE_INTEGRATED_INDEPENDENT_E3_E4_PENDING",
+      "physical_occurrence_promoted": false
+    }
+  ]
+}

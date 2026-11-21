@@ -1,0 +1,41 @@
+{
+  "current_source_label_count": 14099,
+  "date": "2026-11-19",
+  "duplicated_labels": 0,
+  "labels": [
+    "p1:prop:signed-target-image-rank",
+    "p3a:prop:rooted-c3-split-preserving-closure",
+    "p3f:prop:primitive-odd-complement-grading",
+    "p5:cor:charged-c3-source-no-go",
+    "p5:prop:charged-signed-return-distance",
+    "p5:rem:charged-origin-two-route-test"
+  ],
+  "new_physical_status_promotions": 0,
+  "paper_release": "Paper00-PapersMinimal-v3_039.zip",
+  "physical_origin": "OPEN",
+  "scope": "source integration only; not full E3/E4 audit",
+  "witnesses": {
+    "Paper00-PhysicalDiracTrialityWitness-v1_0.py": {
+      "passed": true,
+      "sha256": "f27c9b5c54de9dacd1fd43c27726aef08a59f9dde7bb7ec79fbe8609d5a0301a",
+      "summary": [
+        "PASS: signed Fock normalization and complete transverse Gram",
+        "PASS: rank-8 channel-only source map, exact kernel and image relation",
+        "PASS: canonical Hopf source mismatch and exact HS distance (m_tau-m_mu)^2/4",
+        "PASS: all 48 finite generated group transport words have <=2 distinct squared singular values",
+        "PASS: seed projection isomorphism and weighted target-map determinant"
+      ]
+    },
+    "Paper00-TrialityActionNecessityWitness-v1_1.py": {
+      "passed": true,
+      "sha256": "83d3bc157718a1f74cf2ef3ebc7cf92bbd74b9fdb518e7498d47a69fb4a76035",
+      "summary": [
+        "PASS: canonical signed-Fock maps, full quarter-turn family return",
+        "PASS: current first moments all equal, distinct second moments",
+        "PASS: all three current probes see all three Gram poles",
+        "PASS: source-cell rational closure has no E36 crossing",
+        "PASS: target-spinor identity and rooted-seed ranks 8 vs 9"
+      ]
+    }
+  }
+}

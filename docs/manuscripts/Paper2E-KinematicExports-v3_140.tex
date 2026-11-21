@@ -1,0 +1,2394 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{slashed}
+\usepackage{tikz}
+\usepackage{colortbl}
+\usepackage{calc}
+
+\input{Macros-v2_194.tex}
+\hypersetup{hidelinks}
+
+\usetikzlibrary{positioning, calc}
+
+\title{\textbf{Born--Hopf Geometry II-E: Geometric Exports and Finite Constraints}\\[0.5em]
+\large Projective geometry, trimer grammar, and protected commutants}
+
+\author{Peter Kugelmann\thanks{\texttt{pkugelmann@proton.me}}}
+\date{Version 3.140 --- 20 November 2026}
+
+\setlength{\emergencystretch}{3em}
+
+\BHExternalRefs{Paper1A-Geometry-v5_180}
+\BHExternalRefs{Paper1C-M8Geometry-v1_144}
+\BHExternalRefs{Paper2A-GeometricConstitution-v3_227}
+\BHExternalRefs{Paper2B-MomentumCarrier-v2_147}
+\BHExternalRefs{Paper2C-ReciprocalLocalization-v2_174}
+\BHExternalRefs{Paper2D-SymmetrySpectra-v2_145}
+\BHExternalRefs{Paper2F-TechnicalMaterial-v1_70}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Paper~II-E gives the terminal mathematical exports of the constituted
+Born--Hopf momentum geometry.  From the round $SU(2)$ parent and its
+Killing metric it records the cone and Hopf constructions, normalized
+cotangent reduction and integral moment/prequantization loci.  The
+co-realized protected block
+$\mathcal S_{\rm prot}=V_{1/2,0}\oplus V_{0,1/2}\subset\mathcal H_p\cong\mathcal H_1$
+supplies branchwise projective $\mathbb{CP}^{1}$ geometry and a
+Hermitian-null-ray representation of the projective Lorentz group,
+not a physical boost law or selected chirality.
+
+The generated fixed-radius coordinate class $\mathsf C_D$ has a nonzero
+protected radius and a normalized represented $\Cl(0,3)$; the larger
+ambient coordinate atlas remains completion-relative, with a necessary
+nonzero-domain condition for the same normalized output.  Conditional
+binary-exceptional support, the exact $15/24$ Bose--Mesner trace conversion,
+and the obstruction to a natural $2T$-equivariant identification with
+$\mathcal H_1$ are kept distinct from the finite cyclic and Petersen
+trimer grammars.  The unmarked and oriented-Hopf marked protected
+commutants have different grading-weighted trace-zero loci; neither
+implies a physical gauged charge or anomaly-cancellation theorem.
+
+Finally the paper exports typed native-readout bounds, positive finite
+moment presentations, and conditional exceptional incidence and
+reciprocal-contrast operators.  Every formula is stated on its
+mathematical domain.  Physical states, apparatus, dynamical couplings,
+calibration and occurrence not already generated upstream require their
+separate constitutional and action/test interfaces.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Constituted inputs and mathematical export domains}
+\label{paper2e:sec:organized-scope}
+
+\subsection{Purpose, scope, and dependency boundary}
+\label{p2e:sec:introduction}
+\label{p2f:sec:introduction}
+
+\paragraph{Full technical derivations.}
+The active auxiliary classifications, exact calculations, and negative
+results supporting this paper are collected without abridgment in
+Paper~II-F, Section~\ref{p2ftech:sec:exports}.
+That companion is a proof owner, not an additional constructor,
+physical occurrence, state, or calibration assumption.
+
+
+Paper~II-E collects the terminal mathematical exports of Paper~II.  It does
+not extend the constitutional proof of Paper~II-A, the finite-module
+construction of Paper~II-B, the coordinate completion of Paper~II-C, or the
+spectral and Hopf derivations of Paper~II-D.  Every result below is either a
+direct consequence of an already constituted geometric or representation
+object, a Paper-I-B exceptional theorem on its stated support-role domain, or
+a precisely typed normalization dictionary.  Later gravity, continuum,
+gauge, particle, or dynamical conclusions cannot be used in reverse to justify
+an earlier Paper-II theorem.
+
+\subsubsection{Logical scope and ownership}
+
+The cone, Hopf, and cotangent statements are mathematical geometric exports.
+Spin, grading, projectivization, and commutants are kinematic representation
+facts.  Paper~II-B owns the exact formula for
+\(\dim\mathcal H_m\), and Paper~II-D owns the round-\(S^3\) spectral gaps;
+they are cited only to state the handoff boundary.  Energy thresholds,
+Hamiltonians, stable one-particle blocks, physical chirality, gauged charges,
+anomaly cancellation by a completed chiral matter representation, and
+gravity dynamics belong to later papers.
+
+\begin{remark}[Paper-II-E object-first export contract]
+\label{p2e:rem:v2-conditional-export-contract}
+\label{p2f:rem:v2-object-first-contract}
+Every theorem below is stated first on the object it actually requires.  The
+cone and Hopf exports use the derived compact parent and its Killing metric.
+The projective, Hermitian-ray, commutant, and grading-weighted trace results
+use the derived protected momentum summand
+\(\mathcal S_{\rm prot}=V_{1/2,0}\oplus V_{0,1/2}\subset\mathcal H_p\cong\mathcal H_1\), imported from
+Paper~II-B together with \(m_p=1\).  Its two chiral summands are co-realized
+constituents; choosing one for a displayed branch calculation does not select
+a physical chirality.  The current physical fixed-radius finite-coordinate
+output is the generated class \(\mathsf C_D\), imported from Paper~II-C,
+Corollaries~\ref{p2c:cor:intrinsic-coordinate-class-corealization}
+and~\ref{p2c:cor:physical-fixed-radius-ancestry-exhaustion}.  The quoted
+Paper-I-B coordinate normalization \(\mathsf C_{\rm PI}\) is instead an optional
+representative inside the unresolved ambient completion atlas, while every
+Hurwitz-support, vertex, diagonal, trimer, or \(15/24\) support statement is
+on the core-support output \(\mathsf{Supp}_{2T}\).  Generic modules \(\mathcal H_m\) remain auxiliary
+word-stage mathematics unless a later role separately constitutes them.
+\end{remark}
+
+\begin{remark}[G0 occurrence boundary for mathematical exports]
+All physical interfaces below are role-specific specializations of Paper~II-A's
+stage-safe G0 certificate.  An asserted occurrence must exhibit a contingent
+token of a geometrically licensed, claim-relative invariant distinction with
+result-independent provenance; its tag alone supplies no witness or separate
+actualization principle.  The generated geometric, momentum-carrier, and
+fixed-radius \(\mathsf C_D\) lines of the object-first dependency chain are
+structural theorem outputs; they require no duplicate occurrence witness.  A physical use
+of a raw completion-dependent coordinate datum outside the generated
+\(\mathsf C_D\) class, or of an ambient lift of that class,
+a local occurrence of \(\mathsf{Supp}_{2T}\), any later causal/field
+assignment, and every numerical normalization or readout not already generated
+by \(\mathsf C_D\) require the
+appropriate G0 occurrence or calibration certificate.  A new role, standard,
+or comparison interface opens its own downstream dependency frontier; no
+certificate reopens frozen upstream geometry.  G0 supplies their existence
+typing but does not derive the witnesses.  Analytic requirements such as
+prequantization integrality or regularity remain ordinary theorem-domain
+conditions rather than consequences of G0.
+\end{remark}
+
+\paragraph{Upstream premises and distinct realization domains.}
+The round $SU(2)$ momentum parent and Killing metric are constituted in
+Paper~II-A; Paper~II-B supplies $\mathcal H_p\cong\mathcal H_1$ and
+$m_p=1$.  The finite fixed-radius coordinate class $\mathsf C_D$ is the
+Paper~II-C generated output.  The unmarked protected commutant assumes
+the multiplicity-one protected pair and does not constrain additional
+marked multiplicity spaces.  Generic $\mathcal H_m$ and auxiliary
+selector comparisons in Paper~II-F,
+Section~\ref{p2e:app:legacy-selector}, supply no extra constructor
+premise for the present results.
+
+\begin{remark}[Mathematical dependency graph]
+\label{p2:rem:kin-f-dependency-record}
+The dependency chain is object-first:
+\[
+\begin{gathered}
+ \text{derived }SU(2)\text{ parent}+\text{Killing metric}\\
+ \Longrightarrow \text{cone, Hopf, and cotangent exports},\\[0.35em]
+ \mathcal H_p\cong\mathcal H_1,\quad
+ \mathcal S_{\rm prot}\subset\mathcal H_p\\
+ \Longrightarrow \text{projective, commutant, and trace results},\\[0.35em]
+ \text{current fixed-radius momentum root}\\
+ \Longrightarrow \mathsf C_D \Longrightarrow (\mathrm{ND}_{\rm sp})\\
+ \Longrightarrow \text{normalized protected }\Cl(0,3),\\[0.35em]
+ +[\mathsf C]\text{ raw completion datum}\\
+ \Longrightarrow \text{raw completion-relative coordinate data and scales},\\[0.35em]
+ +\bigl[(\mathrm{ND}_{\rm sp})\ \text{or an occurring nonzero}\\
+ \text{protected-coordinate root/}\mathsf C_{\rm PI}\bigr]\\
+ \Longrightarrow \text{the normalized protected even }\Cl(0,3),\\[0.35em]
+ +\bigl[\mathsf{Supp}_{2T}\text{ occurrence or a licensed}\\
+ \text{support-to-core route}\bigr]\\
+ \Longrightarrow \text{the Hurwitz, trimer, and}\\
+ \text{supported-trace consequences}.
+\end{gathered}
+\]
+The compact carrier statements are Theorem~\ref{p2:thm:momentum-host-H1},
+Theorem~\ref{p2b:thm:momentum-carrier-rigidity}, and
+Corollary~\ref{p2b:cor:momentum-seed-constituent-corealization}.  The third
+line is exactly the rooted generated image of
+Corollaries~\ref{p2c:cor:intrinsic-coordinate-class-corealization}
+and~\ref{p2c:cor:physical-fixed-radius-ancestry-exhaustion}; it removes the
+nonvanishing premise on the current physical branch.  The raw ambient
+coordinate-completion line nevertheless retains a genuine realization family.
+On that larger atlas the nondegenerate protected-even line consumes the whole
+nonzero family through the invariant output proved in
+Corollaries~\ref{p2c:cor:nondegenerate-protected-clifford-orbit}
+and~\ref{p2c:cor:protected-clifford-selector-discharge}, so it requires no
+completion selector but still requires nonvanishing.  That predicate is also
+redundant whenever the same claim contains an independently occurring nonzero
+protected coordinate or the positive-normalized representative
+\(\mathsf C_{\rm PI}\); otherwise the zero-member test preserves it as a
+domain condition.  The exceptional-support line is generated from an occurring
+root only on the licensed route of
+Corollary~\ref{p2:cor:core-support-inheritance-no-duplicate-witness} or a
+licensed exceptional-parent/core constructor; it does not follow from
+\(\mathcal H_p\cong\mathcal H_1\), \(m_p=1\), or a coordinate completion.
+Paper~II-B retains ownership of the auxiliary word-stage count and Paper~II-D
+of the spectral gaps.
+\end{remark}
+
+\begin{remark}[Generated and conditional export classes]
+The exports below separate into four distinct mathematical and
+physical domains.  Generated/co-realized structure includes the compact momentum
+parent and carrier, the full protected left/right pair, the intrinsic
+fixed-radius coordinate class \(\mathsf C_D\), compact projective symmetry,
+the protected commutant line, and generated core descendants.  Unresolved
+realization families include the larger raw finite/ambient coordinate atlas
+and ambient-lift fibres.  The predicate \((\mathrm{ND}_{\rm sp})\) is automatic
+on \(\mathsf C_D\) and retained only on the bare raw atlas as the nonzero
+stratum needed for normalized protected Clifford output.  G0 occurrences
+include particular fields, readouts, marked support representatives, or
+apparatus tokens not already inherited by a generated-role theorem.  Physical
+Lorentz structure, phase-space identification, a normalized gauged charge, and
+numerical scale matches are downstream bridges or calibrations.  Mathematical
+availability in any of these atlases does not by itself constitute physical
+selection or occurrence.  When several entries are consumed by one claim,
+their product is only an enumeration atlas.  The candidate class is their
+joint GP1/zero-GP2-defect locus: generated readouts give graphs and inherit the
+unresolved input; independently generated cross-relations give fibre products
+that may be proper, singleton, or empty; and GP3 acts only after that
+restriction.
+\end{remark}
+
+\begin{remark}[Compatibility loci for the exported families]
+\label{p2e:rem:joint-locus-index}
+The exact applications are recorded where their data are defined:
+the Hopf normalization and character graphs in
+Corollary~\ref{p2e:cor:joint-hopf-normalization-character-graphs};
+the moment/prequantization locus in
+Corollary~\ref{p2e:cor:moment-prequantization-joint-locus};
+the chiral typing locus in
+Theorem~\ref{p2e:thm:joint-chiral-typing-locus}; the generated fixed-radius
+coordinate branch and protected nondegeneracy boundary in
+Corollaries~\ref{p2e:cor:generated-fixed-radius-protected-branch}
+and~\ref{p2e:cor:joint-protected-nondegeneracy-discharge}; the optional scale
+intersections in Paper~II-F, Section~\ref{p2e:app:optional-calibration},
+Proposition~\ref{p2e:prop:joint-protected-scale-loci};
+support/core co-realization and the natural-\(2T\) empty locus in
+Theorem~\ref{p2e:thm:joint-exceptional-core-support-ledger} and
+Corollary~\ref{p2e:cor:empty-natural-2t-identification-locus};
+and the protected trace locus in
+Corollary~\ref{p2e:cor:protected-anomaly-free-joint-locus}, with its
+supplementary normalization diagnostic in
+Paper~II-F, Section~\ref{p2e:app:supplementary-normalization}.
+No further equality between these typed slots is licensed in Paper~II.
+\end{remark}
+
+\begin{remark}[Cross-role bridges not discharged by joint exhaustion]
+\label{p2e:rem:remaining-cross-role-bridges}
+Joint exhaustion removes redundant assumptions and inconsistent combinations;
+it does not promote a relation into a new target sort.  In particular, the
+mathematical cotangent reduction is not a physical reciprocal phase space, the
+positive Hermitian null-ray cone is not yet a physical tangent-space causal
+cone, and a positive spatial spectral gap is not an energy or mass threshold.
+Each promotion requires an independently generated bridge with its own domain,
+operator identification, and normalization.  Likewise, an actually occurring
+field, gauge connection, state/history, marked support representative, or
+calibration remains a G0 token unless a licensed constructor explicitly
+declares it as an output.  These are genuine remaining frontiers, not selectors
+hidden inside the mathematical atlases.
+\end{remark}
+
+\label{p2:part:kin-gravity}
+\label{p2:part:gravity-handoffs}
+
+\section{Cone, Hopf connections and line holonomy}
+\label{paper2e:sec:organized-cone}
+
+\subsection{Cone and Hopf exports}
+\label{p2:sec:geoCon}
+
+\subsubsection{Flat scale extension}
+
+Let
+\[
+ g_E:=\frac{g_{S^3(\Rmom)}}{\Rmom^2},
+ \qquad
+ C(S^3):=(0,\infty)\times S^3,
+ \qquad
+ \widetilde g:=dr^2+r^2g_E.
+\]
+The cone is isometric to \(\mathbb R^4\setminus\{0\}\), hence is flat and
+hyper-K\"ahler.  Its radial field \(\rho=r\partial_r\) satisfies
+\[
+        \mathcal L_\rho\widetilde g=2\widetilde g.
+\]
+For the fixed Paper-I-A left-fiber Hopf representative, the
+metric-normalized Reeb field \(\xi\) extends independently of \(r\) and obeys
+\[
+        \mathcal L_\xi\widetilde g=0,
+        \qquad
+        [\rho,\xi]=0.
+\]
+These are geometric homothety and isometry statements.  They do not define a
+renormalization flow, Lorentzian time, or a gravitational field equation.
+The controlling upstream results are Paper~I-A,
+Theorem~\ref{p1:thm:hyperkahler-cone} and
+Corollaries~\ref{p1:cor:flat-cone-canonical-scale}
+and~\ref{p1:cor:flat-cone-four-density-homothety}.
+
+\subsubsection{Connection convention}
+
+Fix the same Paper-I-A left-fiber convention of
+Theorem~\ref{p1:thm:hopf-normalization-package}, used in Paper~II-D,
+Corollary~\ref{p2d:cor:generated-hopf-normalization-graph}
+\cite{Kugelmann2026a}:
+\[
+        h_\alpha\cdot g=h_\alpha g,
+        \qquad
+        S^2\simeq U(1)\backslash SU(2),
+        \qquad
+        \alpha\sim\alpha+2\pi.
+\]
+Let \(\xi_0\) be the periodic principal generator.  Let
+\([\eta_0]_{\rm gauge}\) denote the homogeneous Reeb-normalized principal
+connection gauge class and use \(\eta_0\) for the Paper-I-A representative
+normalized by
+\[
+ \eta_0(\xi_0)=1,
+ \qquad
+ d\eta_0=\pi^*\omega,
+ \qquad
+ \int_{S^2}\omega=2\pi.
+\]
+The metric-normalized fields are
+\[
+        \xi=\frac{\xi_0}{\Rmom},
+        \qquad
+        \eta=\Rmom\eta_0.
+\]
+For the integer Hopf character
+\(e^{i\alpha}\mapsto e^{in_{\rm H}\alpha}\),
+\(n_{\rm H}\in\mathbb Z\), the induced connection on the associated line
+\(L^{n_{\rm H}}\) has curvature \(n_{\rm H}\omega\) and
+\[
+        c_1(L^{n_{\rm H}})=n_{\rm H}.
+\]
+Thus \(\eta_0\) represents the normalized principal-connection gauge class,
+whereas \(n_{\rm H}\eta_0\) is the pullback of an associated-character
+connection.
+Gauge-related representatives are one unmarked connection realization, not
+additional physical selectors.  Moreover
+\[
+ \boxed{c_1(P)=+1\not\Longrightarrow
+ \text{physical associated-character charge }n_{\rm H}=+1.}
+\]
+The complete mathematical character atlas remains
+\(\{L^{n_{\rm H}}\}_{n_{\rm H}\in\mathbb Z}\);
+a physical \(n_{\rm H}\)-channel requires an independently generated charge-role
+discriminator.  The quadratic total-space diagnostic
+\[
+ \frac{1}{4\pi^2}\int_{S^3}(n_{\rm H}\eta_0)
+ \wedge d(n_{\rm H}\eta_0)=n_{\rm H}^{\,2}
+\]
+must not be identified with the linear Chern class \(n_{\rm H}\).
+
+\begin{corollary}[Generated Hopf normalization and character readout graphs]
+\label{p2e:cor:joint-hopf-normalization-character-graphs}
+For the fixed principal representative and the occurring radius
+\(\Rmom>0\), the metric Hopf data form the generated graph
+\[
+ \boxed{\Gamma_{\rm met}
+ =\left\{\left(\xi_0,\eta_0,\Rmom;\
+          \Rmom^{-1}\xi_0,\Rmom\eta_0\right)\right\}.}
+\]
+Thus \(\xi=\Rmom^{-1}\xi_0\), \(\eta=\Rmom\eta_0\), and
+\(\eta(\xi)=1\) are simultaneous outputs of one normalization dictionary, not
+three independent assumptions.  They select neither \(\Rmom\) nor a Hopf
+representative.
+
+For the integer-character atlas, the induced connection, curvature, Chern
+class, and quadratic diagnostic form the graph
+\[
+ \boxed{\Gamma_{\rm H}
+ =\left\{\left(
+ n_{\rm H},[n_{\rm H}\eta_0],
+ n_{\rm H}\omega,n_{\rm H},n_{\rm H}^{\,2}\right):
+ n_{\rm H}\in\mathbb Z\right\}.}
+\]
+Its projection to \(n_{\rm H}\) is a bijection.  These generated readouts
+therefore co-realize with every character and select no integer.  An
+independently generated associated-line condition
+\(c_1(L^{n_{\rm H}})=n_0\) cuts out the singleton
+\(n_{\rm H}=n_0\); the differently typed principal condition \(c_1(P)=1\)
+does not.
+\end{corollary}
+
+\begin{proof}
+The metric identities are the declared principal-to-metric transport of
+Paper~I-A, Theorem~\ref{p1:thm:hopf-normalization-package}, and Paper~II-D,
+Corollary~\ref{p2d:cor:generated-hopf-normalization-graph}, and
+immediately give
+\((\Rmom\eta_0)(\Rmom^{-1}\xi_0)=1\).
+Paper~II-D, Corollary~\ref{p2d:cor:associated-character-readout-graph},
+then applies the character differential, which multiplies the connection and
+curvature by \(n_{\rm H}\); the normalized curvature integral gives
+\(c_1=n_{\rm H}\), and the total-space diagnostic is quadratic.  In both
+cases the displayed outputs are functions of the first entries, so their
+loci are graphs.  The associated-line fibre-product clause follows from the
+linear Chern equation, while the principal/associated type distinction blocks
+the last identification.
+\end{proof}
+
+
+\subsection{Connection-level ownership of periodic charge transfers}
+
+\label{p2e:sec:v2210-lit-line-ownership}
+The moment/prequantization graph fixes a normalized integer relation on its
+supplied owner.  The stronger question is when two actual line/charge
+presentations give the same phase, rather than merely the same integer.
+
+\begin{theorem}[Same-curvature line transfer is fixed by flat holonomy]
+\label{p2e:thm:v2210-lit-line-holonomy}
+Let $L_1,L_2$ be Hermitian line bundles on the same connected base and
+let $T:L_1\to L_2$ be a specified unitary bundle isomorphism.  Transport
+$\nabla_1$ by $T$ and suppose it and $\nabla_2$ have the same curvature.
+There is then a global real one-form $\alpha$ such that
+\[
+ \nabla_2-T\nabla_1T^{-1}=i\alpha,\qquad \mathrm d\alpha=0.
+\]
+For every closed loop $\gamma$,
+\[
+ \frac{\operatorname{Hol}_{\nabla_2}(\gamma)}
+ {\operatorname{Hol}_{T\nabla_1T^{-1}}(\gamma)}
+ =\exp\left(-i\oint_\gamma\alpha\right).
+\]
+The two connections are gauge-equivalent exactly when all these ratios are
+one, equivalently when every period of $\alpha$ belongs to $2\pi\mathbb Z$.
+On a simply connected base, equality of curvature after the specified
+bundle identification is sufficient.
+\end{theorem}
+\begin{proof}
+Differences of unitary line connections are imaginary scalar one-forms,
+and their curvature difference is $i\mathrm d\alpha$.  Parallel transport
+of the difference along a loop gives the exponential.  If all periods are
+integral multiples of $2\pi$, choose a base point and define the unitary
+gauge by $\exp(-i\int\alpha)$; the period condition makes it independent
+of the path and it transports the first connection to the second.
+Conversely a unitary gauge has integral $2\pi$ periods and leaves loop
+holonomies equal.  On a simply connected base a closed one-form is exact.
+\end{proof}
+
+\begin{corollary}[Equal degrees do not identify every native charge owner]
+\label{p2e:cor:v2210-lit-degree-versus-phase}
+On the actual Hopf base $S^2$, aligned orientation, the supplied line
+isomorphism and equal curvature suffice to identify the transported phase
+connection up to gauge.  Equal Chern degree alone fixes neither the
+curvature representative nor that isomorphism.  On $M_8$, even equal
+curvature can leave a flat phase difference on its two scalar circles.
+\end{corollary}
+\begin{proof}
+Apply the preceding theorem and $H^1(S^2;\mathbb R)=0$.  The supplied
+product has $H_1(M_8;\mathbb Z)=\mathbb Z^2$; flat unitary differences
+can therefore have independent holonomies on the two scalar generators.
+Equality of Chern degree concerns the integral curvature class, not a
+pointwise curvature form or these flat holonomies.
+\end{proof}
+The graph $\mu_0=\Rmom\mu=\varepsilon_{\rm red}\hbar n_{\rm pq}$ is
+unchanged.  Reusing $n_{\rm H}$, $n_{\rm pq}$, a protected coefficient or
+a gauged charge in one physical comparison still requires the actual
+representation/pullback map, generator period, orientation and connection.
+This theorem closes the connection-equivalence test once those data are
+supplied; it selects no moment member or charge normalization.  The Euler
+degree two and primitive spin-lift degree one likewise retain their distinct
+owners and are not multiplied into a new energy/current coefficient.
+
+
+The stated connection-equivalence test is Theorem~\ref{p2e:thm:v2210-lit-line-holonomy}; equal degree alone is not a connection isomorphism.
+
+\section{Normalized cotangent geometry and moment loci}
+\label{paper2e:sec:organized-cotangent}
+
+\subsection{Normalized mathematical cotangent reduction}
+\label{p2e:sec:cotangent-reduction}
+
+The cotangent lift \(T^*S^3\) is used only as a canonical mathematical
+construction; Paper~II does not identify it with physical reciprocal phase
+space.  Let
+\[
+ J_0(p_g):=\langle p_g,\xi_0(g)\rangle,
+ \qquad
+ J_\xi(p_g):=\langle p_g,\xi(g)\rangle.
+\]
+Since \(\xi=\xi_0/\Rmom\),
+\[
+        J_\xi=\frac{J_0}{\Rmom}.
+\]
+
+\begin{proposition}[Generator-normalized cotangent reduction]
+\label{p2e:prop:normalized-cotangent-reduction}
+At the metric-normalized moment level \(J_\xi=\mu\), one has
+\[
+        J_0=\mu_0:=\Rmom\mu.
+\]
+Cotangent reduction by the periodic circle action gives
+\[
+        J_0^{-1}(\mu_0)/U(1)\cong T^*S^2
+\]
+and, with \(\varepsilon_{\rm red}\in\{+1,-1\}\) recording the combined sign
+convention for the canonical symplectic form, curvature, and left action,
+\[
+        \Omega_{\mathrm{red}}
+        =\Omega_{\mathrm{can}}+\varepsilon_{\rm red}\mu_0\,\omega
+        =\Omega_{\mathrm{can}}+\varepsilon_{\rm red}\Rmom\mu\,\omega.
+\]
+Fix the standard prequantum convention
+\(F_{\nabla}=-i\Omega_{\mathrm{red}}/\hbar\) and the orientation
+\([\omega/(2\pi)]\) used above.  Since \(\Omega_{\mathrm{can}}\) is exact,
+the prequantum degree is
+\[
+        n_{\rm pq}
+        =\varepsilon_{\rm red}\frac{\mu_0}{\hbar}
+        =\varepsilon_{\rm red}\frac{\Rmom\mu}{\hbar}.
+\]
+Thus existence of the prequantum line is equivalent to
+\[
+        \frac{\mu_0}{\hbar}\in\mathbb Z,
+        \qquad\text{equivalently}\qquad
+        \frac{\Rmom\mu}{\hbar}\in\mathbb Z.
+\]
+\end{proposition}
+
+\begin{proof}
+The moment-map relation follows directly from
+\(\xi=\xi_0/\Rmom\).  The standard cotangent-bundle reduction theorem for a
+principal circle bundle adds the curvature term equal to the periodic
+moment level times \(\omega\); the overall sign depends only on the declared
+left-action and symplectic-form conventions and is retained as
+\(\varepsilon_{\rm red}\).  Chern--Weil gives
+\[
+ c_1(L_{\rm pq})
+ =\left[\frac{\Omega_{\rm red}}{2\pi\hbar}\right]
+ =\varepsilon_{\rm red}\frac{\mu_0}{\hbar}
+   \left[\frac{\omega}{2\pi}\right],
+\]
+because the canonical term is exact.  This proves both the signed degree and
+the integrality condition.  Choosing the globally opposite convention would
+reverse every degree simultaneously; it would not remove the relative factor
+\(\varepsilon_{\rm red}\).
+\end{proof}
+
+\begin{corollary}[Moment/prequantization joint zero-defect locus]
+\label{p2e:cor:moment-prequantization-joint-locus}
+Let \(\mu\in\mathbb R\) be the metric-normalized moment level,
+\(\mu_0\in\mathbb R\) the periodic moment level, and
+\(n_{\rm pq}\in\mathbb Z\) the degree of the standard prequantum line.  The
+licensed generator transport and prequantization relation give, for each fixed
+\(\varepsilon_{\rm red}\in\{+1,-1\}\), the exact joint locus
+\[
+ \boxed{
+ \mathfrak Z_{\rm pq}^{(\varepsilon_{\rm red})}
+ =\left\{(\mu,\mu_0,n_{\rm pq}):
+     \mu_0=\Rmom\mu
+     =\varepsilon_{\rm red}\hbar n_{\rm pq},\
+     n_{\rm pq}\in\mathbb Z\right\}.}
+\]
+Equivalently, it is the graph
+\[
+ n_{\rm pq}\longmapsto
+ \left(\frac{\varepsilon_{\rm red}\hbar n_{\rm pq}}{\Rmom},
+       \varepsilon_{\rm red}\hbar n_{\rm pq},n_{\rm pq}\right).
+\]
+It therefore selects no integer and no occurring moment level.  For an
+independently supplied \(\mu\), the fibre is a singleton precisely when
+\(\Rmom\mu/\hbar\in\mathbb Z\), and is empty otherwise; on the nonempty fibre,
+\(n_{\rm pq}=\varepsilon_{\rm red}\Rmom\mu/\hbar\).  If the prequantum line
+is explicitly identified, with the same orientation and Chern convention,
+with the Hopf-associated line \(L^{n_{\rm H}}\), the same-object relation forces
+\(n_{\rm pq}=n_{\rm H}\); absent that line identification, equality of the two
+integer labels may not be inserted merely because both lie in \(\mathbb Z\).
+\end{corollary}
+
+\begin{proof}
+The moment-map dictionary gives \(\mu_0=\Rmom\mu\), while the preceding
+proposition gives
+\(n_{\rm pq}=\varepsilon_{\rm red}\mu_0/\hbar\).  Solving these two
+equations gives the displayed graph.  Fixing \(\mu\) then
+gives the stated singleton/empty alternative.  The final clause is the typed
+same-line relation; equality of unbridged integer owner slots would be a
+relation and typing insertion.
+\end{proof}
+
+\begin{remark}[Moment-level and prequantization selector boundary]
+The family of reduced spaces is parameterized by the supplied moment level
+\(\mu_0=\Rmom\mu\).  The condition
+\[
+ \frac{\mu_0}{\hbar}\in\mathbb Z
+\]
+restricts the subfamily admitting the stated prequantization; it does not
+select an integer, generate an actually occurring moment level, or identify
+\(T^*S^2\) with physical reciprocal phase space.  Any such physical use is a
+downstream occurrence/bridge question.  Corollary~
+\ref{p2e:cor:moment-prequantization-joint-locus} gives the exact graph and
+empty-fibre cases, so this restriction is not counted as a free selector in
+addition to the moment level.
+\end{remark}
+
+\begin{remark}[Berry and monopole phase]
+The quantized datum is the curvature flux, equivalently the Chern class.
+Holonomy around an individual loop is a geometric phase defined modulo
+\(2\pi\) and depends on the loop or enclosed surface; it is not generally an
+integer multiple of \(2\pi\).
+\end{remark}
+
+\section{Projective spinors and protected coordinate normalization}
+\label{paper2e:sec:organized-projective}
+
+\subsection{Projective and coordinate-normalization exports}
+\label{p2:sec:kin-gravity-ident}
+
+\subsubsection{Compact projective symmetry}
+\label{p2:subsec:grav-projective-kin}
+
+Use the derived protected representation
+\[
+\mathcal S_{\rm prot}=S_L\oplus S_R
+=V_{1/2,0}\oplus V_{0,1/2}.
+\]
+Paper~II-B identifies both \(S_L\) and \(S_R\) as nonredundant constituents of
+the same generated protected block, so
+\[
+ \operatorname{CoReal}(S_L,S_R\mid\mathcal S_{\rm prot}).
+\]
+The projective and Hermitian-ray statements below depend only on this derived
+representation and require neither \(\mathsf C_{\rm PI}\) nor a coordinate
+normalization.  Its full projectivization is
+\(\mathbb P(\mathcal S_{\rm prot})\cong\mathbb{CP}^3\), while either already
+co-realized chiral constituent may be used branchwise and projectivizes to
+\(\mathbb{CP}^1\).  Each constituent must be paired with its acting factor:
+\[
+ (SU(2)_L,S_L)=(SU(2)_L,V_{\frac12,0}),
+ \qquad
+ (SU(2)_R,S_R)=(SU(2)_R,V_{0,\frac12}).
+\]
+The opposite compact factor acts trivially on the branchwise constituent.  The
+matching \(SU(2)_\chi\) action on \(\mathbb P(S_\chi)\) has central kernel
+\(\{\pm I\}\).  Therefore its compact projective symmetry is
+\[
+        PSU(2)_\chi=SU(2)_\chi/\{\pm I\}\cong SO(3).
+\]
+The full holomorphic automorphism group
+\[
+        \operatorname{Aut}_{\mathrm{hol}}(\mathbb{CP}^1)
+        \cong PGL(2,\mathbb C)
+        \cong PSL(2,\mathbb C)
+\]
+is noncompact.  It is the complexification or holomorphic enlargement of the
+compact projective action, not a derived compact transport group and not a
+Paper-II dynamics.
+
+\begin{theorem}[Joint chiral-factor/constituent typing locus]
+\label{p2e:thm:joint-chiral-typing-locus}
+Consider the formal enumeration atlas
+\[
+ \{SU(2)_L,SU(2)_R\}\times\{S_L,S_R\}.
+\]
+For the matching-factor role, in which the acting factor must act in its
+defining chiral representation, the complete joint
+GP1/zero-GP2-defect locus is
+\[
+ \boxed{
+ \mathfrak Z_{\rm chir}
+ =\{(SU(2)_L,S_L),(SU(2)_R,S_R)\}.}
+\]
+The crossed tuples are not further physical alternatives: \(SU(2)_L\) acts
+trivially on \(S_R=V_{0,1/2}\), and \(SU(2)_R\) acts trivially on
+\(S_L=V_{1/2,0}\), so either crossed tuple has a typing/relation defect for the
+declared defining-action role.  Both surviving pairs are nonredundant generated
+constituents of the already occurring
+\(\Spin(4)\)-protected composite and therefore co-realize.  Selecting one pair
+for a branchwise formula is not a physical chirality selector.
+
+Moreover, \(\mathbb P(\mathcal S_{\rm prot})\cong\mathbb{CP}^3\) and
+\(\mathbb P(S_\chi)\cong\mathbb{CP}^1\) occupy full-protected and
+branchwise-projective sorts.  No cross tuple identifying the whole
+\(\mathbb{CP}^3\) with one celestial \(\mathbb{CP}^1\) is admissible: their
+complex dimensions are \(3\) and \(1\).  A later physical chirality assignment
+must therefore be an independently generated bridge to one of the two
+co-realized branch pairs.
+\end{theorem}
+
+\begin{proof}
+By definition of \(V_{j_L,j_R}\), the left factor acts in the defining
+two-dimensional representation exactly when \(j_L=1/2\), and the right factor
+does so exactly when \(j_R=1/2\).  This gives the two matching tuples and makes
+the opposite-factor action trivial on each crossed constituent.  Paper~II-A's
+generated-constituent no-omission rule retains both nonredundant matches in the
+full protected composite.  The projective dimension calculation is
+\(\dim_{\mathbb C}\mathbb P(\mathbb C^n)=n-1\), giving \(3\neq1\) and hence
+the final type obstruction.
+\end{proof}
+
+\begin{theorem}[Celestial spinor--Hermitian-ray bridge]
+\label{p2e:thm:celestial-hermitian-ray-bridge}
+For the already co-realized left chiral constituent, take the matching pair
+\((SU(2)_L,S_L)\), with \(S_L\cong\mathbb C^2\), and let
+\[
+ \mathcal N_{\rm Herm}^{+}
+ :=
+ \{K\in\operatorname{Herm}_2(\mathbb C):
+       K\ge0,\ \operatorname{rank}K=1\}.
+\]
+Then
+\[
+ \Phi_L:\mathbb P(S_L)\longrightarrow
+ \mathcal N_{\rm Herm}^{+}/\mathbb R_{>0},
+ \qquad
+ [z]\longmapsto[zz^\dagger],
+\]
+is a well-defined bijection.  Hence
+\[
+        \mathbb{CP}^1
+        \cong
+        \mathcal N_{\rm Herm}^{+}/\mathbb R_{>0}.
+\]
+Writing
+\[
+        K=k^\mu\sigma_\mu
+        =k^0I+\sum_{i=1}^3k^i\sigma_i,
+\]
+one has
+\[
+        \det K=(k^0)^2-\lVert\mathbf k\rVert^2.
+\]
+For \(K=zz^\dagger\ne0\),
+\[
+        \det K=0,
+        \qquad
+        k^0=\frac12\operatorname{tr}K>0.
+\]
+The action
+\[
+        K\longmapsto A_LKA_L^\dagger,
+        \qquad A_L\in SL(2,\mathbb C)_L,
+\]
+preserves the determinant and the future-positive component, and satisfies
+\[
+        (A_Lz)(A_Lz)^\dagger=A_L(zz^\dagger)A_L^\dagger.
+\]
+Its kernel is \(\{\pm I\}\), giving the standard isomorphism
+\[
+        PSL(2,\mathbb C)_L\cong SO^+(1,3).
+\]
+On the compact subgroup \(SU(2)_L\), \(k^0\) is fixed and
+\(\mathbf k\) transforms through \(PSU(2)_L\cong SO(3)\).
+
+For the right chiral pair \((SU(2)_R,S_R)\), regard
+\(SL(2,\mathbb C)_R\) as a real Lie group and use its conjugate-dual
+representation
+\[
+        z_R\longmapsto(A_R^\dagger)^{-1}z_R,
+        \qquad A_R\in SL(2,\mathbb C)_R,
+        \qquad
+        K_R=z_Rz_R^\dagger
+        \longmapsto
+        (A_R^\dagger)^{-1}K_RA_R^{-1}.
+\]
+For each fixed \(A_R\), the spinor map is complex-linear and its
+projectivization is holomorphic.  Its dependence on \(A_R\), however, is
+antiholomorphic; it is not the holomorphic complexification of the defining
+compact representation.  The Hermitian action is dual to
+\(K\mapsto A_RKA_R^\dagger\) under the real pairing
+\(\langle H,K\rangle=\tfrac12\operatorname{tr}(HK)\), and gives the dual
+future-null-ray action.  On \(SU(2)_R\),
+\((A_R^\dagger)^{-1}=A_R\), so it reduces to the matching
+\(PSU(2)_R\cong SO(3)\) projective action.
+\end{theorem}
+
+\begin{proof}
+Replacing \(z\) by \(cz\), \(c\ne0\), multiplies \(zz^\dagger\) by
+\(|c|^2\), so the map is well defined.  Every nonzero positive rank-one
+Hermitian matrix has the form \(zz^\dagger\).  For a fixed matrix the factor
+is unique up to phase; after quotienting the matrix by
+\(\mathbb R_{>0}\), the factor is unique up to an arbitrary nonzero complex
+scalar.  This proves bijectivity.  The determinant identity
+is the Pauli-matrix determinant formula.  The remaining statements follow
+from \(\det(AKA^\dagger)=\det K\) for \(A\in SL(2,\mathbb C)\) and the
+standard spin covering of the proper orthochronous Lorentz group.  The
+right-chiral formulas follow by composing with the real Lie-group
+automorphism
+\[
+ \vartheta(A):=(A^\dagger)^{-1},\qquad
+ \vartheta(AB)=\vartheta(A)\vartheta(B),\qquad
+ \vartheta^2=\operatorname{id}.
+\]
+Congruence by the invertible matrix \(\vartheta(A)\) preserves positivity,
+rank, and determinant, so the same ray construction and covering kernel
+apply.  For \(Z\in\mathfrak{sl}(2,\mathbb C)\), viewed as a real Lie
+algebra,
+\[
+ d\vartheta(Z)=-Z^\dagger,\qquad
+ d\vartheta(iZ)=-i\,d\vartheta(Z).
+\]
+Thus the group-parameter map is antiholomorphic.  Its duality assertion is
+the identity
+\[
+ \frac12\operatorname{tr}\!\left[
+   (A^\dagger)^{-1}HA^{-1}\,AKA^\dagger\right]
+ =\frac12\operatorname{tr}(HK),
+ \qquad H,K\in\operatorname{Herm}_2(\mathbb C).
+\]
+\end{proof}
+
+\begin{remark}[Physical-causal boundary]
+\label{p2e:rem:celestial-physical-boundary}
+The theorem is an algebraic Hermitian-cone export.  Paper~II-E does not
+identify this cone with a physical tangent-space causal cone, derive a
+noncompact transport group, or produce finite-dimensional unitary boost
+dynamics.  The left holomorphic action and the right conjugate-dual
+real Lie-group action above are separate representation-level continuations.
+Combining them into one mathematical Lorentz-spin action requires a common
+group parameter and a compatible identification of the compact rotation
+subgroups.  The branchwise constructions do not by themselves constitute a
+single physical \(\Spin(1,3)\) action on \(\mathcal S_{\rm prot}\).  In
+particular,
+\[
+ \boxed{S_L\oplus S_R\text{ co-realizes}\not\Longrightarrow\text{a physically selected Lorentz chirality or boost/transport law}.}
+\]
+A later paper may compose one branch with an independently derived Lorentzian
+causal cone; that composition and any physical chirality assignment are not
+premises of the present theorem.
+\end{remark}
+
+\subsubsection{Protected-radius normalization boundary}
+\label{p2:subsec:planck-norm}
+
+Paper~II-C classifies the finite raw coordinate-completion realization
+family, after quotienting unmarked sector rephasings, as
+\[
+ \boxed{\mathfrak M_{\rm coord}(\mathcal H_1)/{\sim}\cong\mathbb R_{\ge0}^3,\qquad
+ [\mathsf C]\longleftrightarrow(r_{1,0},r_{0,1},\varrho_{\rm sp}).}
+\]
+Compatible ambient lifts need not be unique, so a theorem using ambient
+Wigner--Eckart data must state that stronger input separately.  This remains a
+genuine unresolved host family for raw completion-dependent output.  It is not,
+however, the current physical essential image: Corollaries~
+\ref{p2c:cor:intrinsic-coordinate-class-corealization}
+and~\ref{p2c:cor:physical-fixed-radius-ancestry-exhaustion} prove that the
+fixed-radius momentum root generates only \(\mathsf C_D\).
+The class \(\mathsf C_{\rm PI}\) is a separately declared optional
+representative, not that generated endpoint.
+
+Paper~II-C also proves that a Hermitian equivariant protected coordinate
+quadruple has
+\[
+        X_a^{\mathrm{sp}}
+        =\alpha C_a+\beta\,i\Gamma_{\rm sp}C_a,
+        \qquad
+        \varrho_{\rm sp}:=\sqrt{\alpha^2+\beta^2},
+        \qquad
+        \sum_{a=1}^4(X_a^{\mathrm{sp}})^2
+        =4\varrho_{\rm sp}^{\,2} I_{\mathcal S_{\rm prot}}.
+\]
+The invariant scale is completion-relative.  A relative chiral rephasing puts
+the vector in the representative form
+\(X_a^{\mathrm{sp}}=\gamma C_a\) with
+\(\gamma=\varrho_{\rm sp}\); this is an unmarked phase gauge, not an \(O(4)\)
+frame rotation or a physical selector.
+
+\begin{corollary}[Generated fixed-radius protected branch]
+\label{p2e:cor:generated-fixed-radius-protected-branch}
+On the current physical fixed-radius momentum branch, the finite-coordinate
+essential image is the singleton \(\{\mathsf C_D\}\).  In the raw-atlas
+coordinates its exact tuple is
+\[
+ \boxed{
+ (r_{1,0},r_{0,1},\varrho_{\rm sp})_D
+ =\left(\frac{\sqrt2\Rmom}{3},
+        \frac{\sqrt2\Rmom}{3},
+        \frac{\sqrt3\Rmom}{4}\right).}
+\]
+Consequently every allowed finite edge is nonzero and
+\[
+ \boxed{
+ (\mathrm{ND}_{\rm sp})\ \text{holds},\qquad
+ \sum_{a=1}^4(X_a^{\rm sp})^2
+ =\frac{3\Rmom^2}{4}I_{\mathcal S_{\rm prot}}.}
+\]
+The normalized protected even algebra is therefore the represented
+\(\Cl(0,3)\) without an additional nondegeneracy or completion-selection
+premise.  This conclusion selects no ambient lift, POVM, prepared state,
+Hamiltonian, or numerical calibration, and \(\mathsf C_D\ne\mathsf C_{\rm cone}\).
+\end{corollary}
+
+\begin{proof}
+Paper~I-B, Theorem~\ref{p1:thm:intrinsic-tangential-coordinate-class}, gives
+the displayed tuple, its nonzero-edge statement, and the protected quadratic
+fingerprint.  Paper~II-C,
+Corollary~\ref{p2c:cor:intrinsic-coordinate-class-corealization}, supplies the
+rooted constructor word, while
+Corollary~\ref{p2c:cor:physical-fixed-radius-ancestry-exhaustion} proves that
+its physical essential image is exactly \(\{\mathsf C_D\}\).  Since
+\(\Rmom>0\), the value \(\sqrt3\Rmom/4\) is nonzero, and substitution into
+\(4\varrho_{\rm sp}^{2}I\) gives \(3\Rmom^2I/4\).
+Corollaries~\ref{p2c:cor:nondegenerate-protected-clifford-orbit}
+and~\ref{p2c:cor:protected-clifford-selector-discharge} then give the
+normalized represented \(\Cl(0,3)\).  Their typed target excludes the listed
+ambient, apparatus, state, and dynamical data, so none is inherited.
+\end{proof}
+
+\begin{corollary}[Completion-independent protected even algebra]
+\label{p2e:cor:protected-clifford-selector-discharge}
+On the nondegenerate protected stratum
+\[
+ (\mathrm{ND}_{\rm sp}):\qquad \varrho_{\rm sp}>0,
+\]
+define \(Y_a:=\varrho_{\rm sp}^{-1}X_a^{\rm sp}\) and, for
+\(i=1,2,3\), \(e_i:=Y_iY_4\).  Paper~II-C,
+Corollaries~\ref{p2c:cor:nondegenerate-protected-clifford-orbit}
+and~\ref{p2c:cor:protected-clifford-selector-discharge}, give
+\[
+ e_i=C_iC_4,\qquad
+ e_i^2=-I,\qquad
+ e_ie_j+e_je_i=-2\delta_{ij}I,
+\]
+and therefore
+\[
+ \boxed{\operatorname{alg}_{\mathbb R}(I,e_1,e_2,e_3)
+ =\operatorname{alg}_{\mathbb R}(I,C_1C_4,C_2C_4,C_3C_4)
+ \cong\Cl(0,3).}
+\]
+Thus every compatible finite completion with \(\varrho_{\rm sp}>0\) gives the
+same represented normalized protected even algebra.  Selecting
+\(\mathsf C_{\rm PI}\), a numerical value of the positive protected magnitude,
+or a relative chiral phase is not required for this output.  On the bare
+completion atlas, the antecedent \((\mathrm{ND}_{\rm sp})\) remains a genuine
+nonvanishing domain condition and fixes neither raw coordinate coefficients,
+an absolute radius, an ambient lift, nor the coordinate--coordinate commutator
+magnitude.
+\end{corollary}
+
+\begin{corollary}[Joint discharge boundary for protected nondegeneracy]
+\label{p2e:cor:joint-protected-nondegeneracy-discharge}
+On the generated fixed-radius \(\mathsf C_D\) branch,
+Corollary~\ref{p2e:cor:generated-fixed-radius-protected-branch} discharges
+\((\mathrm{ND}_{\rm sp})\) without any additional occurrence or calibration
+premise.  More generally, if a physical claim independently contains an
+occurring protected-coordinate
+vector whose frozen distinction is \(X^{\rm sp}\neq0\), and the licensed
+relation identifies it with the protected block of the raw completion, then
+\[
+ X^{\rm sp}\neq0
+ \quad\Longleftrightarrow\quad
+ \varrho_{\rm sp}>0.
+\]
+The joint zero-defect completion locus is therefore the positive stratum, and
+a separate \((\mathrm{ND}_{\rm sp})\) premise is redundant for that claim.
+The same discharge holds when the occurring representative is
+\(\mathsf C_{\rm PI}\), since
+\(\rho_{\rm prot}>0\) and
+\(\varrho_{\rm sp}=\rho_{\rm prot}/2\).
+
+If neither a nonzero protected-coordinate occurrence nor an occurring
+positive-normalized representative is present, the zero completion
+\(\alpha=\beta=0\) preserves all frozen relations and closure obligations that
+do not explicitly require the protected edge.  In that branch Paper~II-A's
+zero-member test leaves \((\mathrm{ND}_{\rm sp})\) as a theorem-domain
+predicate.  In neither case is a positive numerical magnitude selected.
+\end{corollary}
+
+\begin{proof}
+The identity
+\(\sum_a(X_a^{\rm sp})^2=4\varrho_{\rm sp}^{\,2}I\) makes
+\(X^{\rm sp}=0\) equivalent to \(\varrho_{\rm sp}=0\).
+The representative implication follows from its positive protected scale.
+Without either antecedent, \(\alpha=\beta=0\) is still a Hermitian equivariant
+protected vector and hence supplies the zero-member countermodel.
+\end{proof}
+
+\begin{remark}[Optional protected-scale specializations]
+The optional Paper-I-A family satisfies
+\(\varrho_{\rm sp}=\rho_{\rm prot}/2\).  Matching its supplied protected
+scale to \(\Rmom\) is an additional calibration; the resulting
+radius-matched and factorized rows cannot describe the same completion for
+\(\Rmom>0\).  Neither row is a premise of the generated
+\(\mathsf C_D\) branch or the normalized protected even algebra.
+Paper~II-F, Section~\ref{p2e:app:optional-calibration},
+Corollary~\ref{p2e:cor:protected-scale-branches} and
+Proposition~\ref{p2e:prop:joint-protected-scale-loci}, gives the exact
+specializations and their same-completion loci.  Numerical comparability
+does not identify the three scale owners.
+\end{remark}
+
+This paper exports the parameterized identity and never combines scalar
+tables from distinct branches.  Any later identification of
+\(\hbar/\Rmom\), \(\rho_{\rm prot}\), \(\varrho_{\rm sp}\), or its
+phase-gauge representative \(\gamma\) with a phenomenological Planck
+normalization is a G0 calibration certificate.  If its standard and map are
+already constituted, it is instantiational and changes numerical presentation
+only.  A new standard or comparison interface is constitutive and must enter
+through a declared downstream frontier; neither case creates or modifies the
+carrier.
+
+\begin{remark}[Presentation and calibration consequences of the geometry]
+\label{p2e:rem:v233-geometry-export-boundary}
+The native coordinate coefficients already give
+\(\varrho_{\rm sp}=\sqrt3\Rmom/4>0\), so protected nondegeneracy
+is not an added premise on that intrinsic branch.
+Corollaries~\ref{p1:cor:v233-eight-fibre-sampling} and
+\ref{p2c:cor:v233-optimal-quaternion-povm} supply eight-fibre
+operator coordinates and eight-outcome exact moments, respectively.
+The first removes a support-occurrence premise from a presentation
+of an already constituted operator; the second is a mathematical
+instrument family, with actual measurement still requiring its
+occurrence package. Neither identifies the scalar natural
+\(2T\) module with \(\mathcal H_1\); the sharp rank-five result
+of Proposition~\ref{p2e:prop:sharp-natural-2t-rank} retains its domain.
+
+Exact coordinate moments alone do not separate every native source.
+Theorem~\ref{p2c:thm:v2211-central-sector-refinement} and
+Corollary~\ref{p2c:cor:v2211-tagged-intrinsic-populations} derive a
+geometric/protected sector-tagged refinement using already generated
+projectors.  It preserves those moments, measures the two populations and
+has a strictly positive effect-frame constant on their difference line.
+The explicit center retraction closes all central comparison words, while
+other source directions retain their claim-relative frame test.  The tag
+does not remove finite quadratic aliasing, select an apparatus occurrence,
+or provide full tomography.
+
+The finite invariant scalar line and a specified unital target need
+only the canonical map of
+Proposition~\ref{p2c:prop:v233-unit-and-positive-maps}.
+A new physical singlet remains a separate sector construction.
+If Born exchange is required to preserve the same product metric,
+Corollary~\ref{p1b:cor:v233-relative-scale-boundary} equates
+the reciprocal sphere radii but leaves a common radius and two
+central metric eigenvalues. This relative constraint does not
+determine an absolute calibration or a generic coordinate completion.
+\end{remark}
+
+\section{Exceptional support, normalized traces and trimer grammar}
+\subsection{Conditional exceptional support and normalized trace conversion}
+
+\label{p2e:subsec:trace-conversion}
+
+As a standalone finite theorem, the following decomposition holds on any
+representative of a tetrahedral core.  Its framework export is now read
+through the conditional exceptional-role atlas of Paper~II-A.  Generic point
+resolution does not identify an exceptional class; a physical theorem must
+enter through a typed support/operation/comparison branch.  Stronger
+\(2O\) or \(2I\) parents are retained when they generate a tetrahedral core,
+and comparison-only uses do not promote their sampling presentation to a
+physical support.  Whenever a branch below generates a \(2T\) core, labelled
+vertices and diagonals remain calculation representatives unless separately
+marked.
+
+\begin{theorem}[Conditional exceptional-role ancestry atlas]
+\label{p2e:thm:joint-exceptional-core-support-ledger}
+The finite exceptional support layer is role-indexed rather than one global
+choice.  Its canonical outputs are
+\[
+ \begin{aligned}
+ \mathsf{Supp}_{2T}&=(\mathrm{core},[2T]),\\
+ \mathsf{Supp}_{2O}&=(\mathrm{normalizer/interface},[2O]),\\
+ \mathsf{Supp}_{2I}&=(\mathrm{perfect/global},[2I]).
+ \end{aligned}
+\]
+The following branches are licensed conditional entries.
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em]
+\item A direct occurrence of one of these support roles supplies that role
+without selecting a labelled representative.
+\item An occurring point support supplies an exceptional descendant only
+through an independently generated domain bridge and frozen exceptional
+constructor; generic point resolution alone does not enter this atlas.
+\item An occurring optimal regular \(24\)-cell generates the unmarked
+\(\mathrm{GrpSupp}(2T)\) orbit by
+Lemma~\ref{p2a:lem:v236-optimal24-recentering}.
+\item An occurring \(\mathsf{QOp}_2\) role generates \([2T]\);
+\(\mathsf{QOp}_3\) retains the unresolved pair \(\{[2O],[2I]\}\);
+\(\mathsf{QOp}_{4,5}\) generates \([2I]\); and the corresponding
+complete-band role is obstructed for \(m\ge6\), by
+Theorem~\ref{p2a:thm:v236-qop-exceptional-frontier}.
+\item If \(\mathsf{Supp}_{2O}\) occurs, its parent role remains active and
+its group-word descendant satisfies \([2O,2O]=2T\); the generated tetrahedral
+core is not a replacement for the octahedral normalizer/interface role.
+\item If \(\mathsf{Supp}_{2I}\) occurs, the icosahedral parent remains
+active.  Its five conjugate tetrahedral cores and their pairwise cyclic-axis
+incidences are generated family data; choosing one core is an additional mark.
+A least-core constructor may export the unmarked \([2T]\) class when that is
+the consumed downstream role.
+\item Scalar three- and five-torsion may generate
+\(\mathrm{Abs/Tors}(2T)\) and \(\mathrm{Abs/Tors}(2I)\), respectively, but
+these become physical momentum supports only after a typed same-owner
+action/embedding bridge.
+\item If a downstream claim consumes only the exact sampled band image and
+transported operators, it may use \(\mathrm{Cmp}_m\) and requires no physical
+exceptional point support.
+\end{enumerate}
+Thus no stronger exceptional parent is erased merely because it contains or
+generates a tetrahedral core.  On every branch, all nonredundant unmarked
+descendants are generated/co-realized; a vertex, diagonal, orientation,
+performed support readout or selected trimer remains a token only when a
+physical claim actually consumes it.
+\end{theorem}
+
+\begin{proof}
+Branches (i)--(iii) are the direct, bridged and optimal-support constructions
+of Paper~II-A, including its orbit-level recentering lemma.  Branch (iv) is
+Theorem~\ref{p2a:thm:v236-qop-exceptional-frontier}; in particular full
+quadratic sampling alone is insufficient unless the finite operation and
+role-faithful comparison content of \(\mathsf{QOp}_2\) is present.  Paper~I-B
+supplies the intrinsic exceptional group identities
+\([2O,2O]=2T\), the five tetrahedral subgroups of \(2I\), and the scalar
+three-/five-torsion abstract realizations.  GP2 no-insertion enforces the
+same-owner bridge on branch (vii), while
+Proposition~\ref{p1b:prop:v233-sampling-restriction} gives branch (viii) on
+the exact comparison image.  Generated-constituent no-omission retains each
+nonredundant parent and descendant role.
+\end{proof}
+
+\begin{proposition}[Bose--Mesner supported trace and natural-action boundary]
+\label{p2e:prop:bm-supported-trace-boundary}
+Paper~I-B, Theorem~\ref{p1:thm:s3one-numerical-data}, provides the orthogonal
+common-space decomposition~\cite{Kugelmann2026Paper1BExceptional}
+\[
+ \mathbb C^{2T}
+ =\mathcal E_{15}^{\rm BM}\oplus\mathcal E_9^{\rm BM}.
+\]
+For the inclusion
+\(\iota_{15}:\mathcal E_{15}^{\rm BM}\hookrightarrow\mathbb C^{2T}\),
+define, without suppressing their carriers,
+\[
+ \tau_{24}(A):=\frac1{24}\Tr_{\mathbb C^{2T}}A,
+ \qquad
+ \tau_{15}(B):=\frac1{15}\Tr_{\mathcal E_{15}^{\rm BM}}B.
+\]
+These normalized traces satisfy the equivalent identities
+\[
+ \tau_{24}\!\left(\iota_{15}B\iota_{15}^*\right)
+ =\frac{15}{24}\,\tau_{15}(B),
+ \qquad
+ \tau_{15}(B)
+ =\frac{24}{15}\,
+  \tau_{24}\!\left(\iota_{15}B\iota_{15}^*\right),
+ \qquad
+ B\in\End(\mathcal E_{15}^{\rm BM}).
+\]
+For the natural left-\(2T\) actions used in Paper~I-B, there is no equivariant
+isomorphism
+\[
+        \mathcal H_1\cong\mathcal E_{15}^{\rm BM}.
+\]
+No such restriction is asserted for arbitrary vector-space isomorphisms or
+for actions transported through a separately chosen isomorphism.
+The natural-action statement is precisely Paper~I-B,
+Proposition~\ref{p1:prop:h1-e15-left-2t-obstruction}.
+\end{proposition}
+
+\begin{proof}
+Because \(\iota_{15}\) is an isometric inclusion,
+\[
+ \Tr_{\mathbb C^{2T}}(\iota_{15}B\iota_{15}^*)
+ =\Tr_{\mathcal E_{15}^{\rm BM}}B.
+\]
+Dividing the left side by \(24\) and the right side by \(15\) proves the
+first trace identity; algebraic inversion proves the second.  The natural
+left-\(2T\) equivariance obstruction is proved separately in
+Paper~II-F, Section~\ref{p2e:app:natural-action-no-go}.
+\end{proof}
+
+\begin{corollary}[Empty natural-\(2T\) module-identification locus]
+\label{p2e:cor:empty-natural-2t-identification-locus}
+The two natural \(2T\)-modules \(\mathcal H_1\) and
+\(\mathcal E_{15}^{\rm BM}\) are separately admissible and both have complex
+dimension \(15\).  Their natural fixed subspaces, however, have dimensions
+\[
+ \dim\mathcal H_1^{2T}=6,
+ \qquad
+ \dim(\mathcal E_{15}^{\rm BM})^{2T}=1.
+\]
+Consequently the joint locus obtained by adding a natural-\(2T\)-equivariant
+isomorphism relation is empty:
+\[
+ \boxed{
+ \mathfrak Z_{\rm nat\text{-}iso}
+ =
+ \operatorname{Iso}_{2T}^{\rm nat}
+   (\mathcal H_1,\mathcal E_{15}^{\rm BM})
+ =\varnothing.}
+\]
+The equality of total dimensions supplies ordinary vector-space isomorphisms
+but no distinguished map and no natural equivariant one.  In the absence of
+the isomorphism relation, the two differently typed modules may co-realize by
+relation-free composition.  Transporting one action through a separately
+chosen vector-space isomorphism defines a different, map-dependent branch; it
+does not repair the empty natural-action locus.
+\end{corollary}
+
+\begin{proof}
+An equivariant isomorphism maps invariant vectors bijectively to invariant
+vectors, so it would give an isomorphism between fixed subspaces and force
+their dimensions to agree.  Since \(6\neq1\), no such map exists.  Ordinary
+dimension equality forgets the action, and transporting the action changes
+the relation being tested, proving the remaining clauses.
+\end{proof}
+
+Every complex-linear intertwiner
+\(F:\mathcal H_1\to\mathcal E_{15}^{\rm BM}\) for these natural actions
+in fact satisfies \(\operatorname{rank}F\le5\) and \(\dim\ker F\ge10\).
+The bound is attained by the scalar evaluation bridge composed with the
+orthogonal scalar-sector projection; Paper~II-F, Section~\ref{p2e:app:natural-action-no-go},
+Proposition~\ref{p2e:prop:sharp-natural-2t-rank}, proves the sharp statement.
+
+This is a sharp boundary case for
+Theorem~\ref{p2a:thm:universal-corealization-bridge-normal-form}.  On a
+jointly generated relation-free branch, the modules are connected through
+their common product/provenance presentation, but the direct
+natural-\(2T\)-isomorphism bridge is not merely ungenerated: its locus is
+empty.  Thus co-realization does not universally imply a Born exchange, even
+when the two carriers have equal dimension.
+
+The trace formulas concern the \emph{same} operator supported on the actual
+summand \(\mathcal E_{15}^{\rm BM}\) of the common \(24\)-dimensional
+function space.  Equality of the two fifteen-dimensional module dimensions
+does not choose a map between them.  No \(15\leftrightarrow24\) visibility
+lift, amplitude factor, shell support theorem, or carrier map in either
+direction follows.  The factor \(24/15\) is the algebraic reciprocal of the
+supported-operator trace identity, not an inverse visibility or carrier
+construction.
+
+\subsubsection{No numerical or dynamical export}
+\label{p2:subsec:universal-remainders}
+
+No field equation, source law, scale evolution, physical phase-space pairing,
+universal dimensionless constant, cutoff selection, or shell normalization is
+fixed by this paper.
+
+
+\label{p2:part:kin-sm}
+\label{p2:part:internal-symmetry-handoffs}
+
+
+\subsection{Cyclic trimer grammar on exceptional support}
+\label{paper2e:sec:organized-grammar}
+
+\subsubsection{Neutral finite grammar}
+\label{p2:sec:kin-sm-internal}
+
+\subsubsection{Spin and chirality}
+\label{p2:subsec:kin-spin-chirality}
+
+The protected module
+\[
+        \mathcal S_{\rm prot}
+        =V_{1/2,0}\oplus V_{0,1/2}
+\]
+carries the standard chiral action of
+\(\Spin(4)\cong SU(2)_L\times SU(2)_R\).  These are kinematic
+representation labels, not Standard-Model multiplet assignments.
+
+\begin{remark}[Multiplicity boundary]
+\label{p2:rem:kin-f-envelope-sync}
+The calculation below uses the unmarked multiplicity-one protected block inside the derived \(\mathcal H_1\) momentum seed, in which the two
+protected summands are inequivalent and occur once.  Marked multiplicity
+spaces introduced later enlarge the commutant and must be analyzed
+separately.
+\end{remark}
+
+\subsubsection{Neutral rank-three cyclic trimer grammar on the core-support role}
+\label{p2:subsec:rank-three-trimer-grammar}
+
+Throughout this subsection assume the core-support output
+\(\mathsf{Supp}_{2T}\) of Paper~I-B, actualized as above.  Paper~I-B then constructs the
+Hurwitz/trimer orbit data.  Choosing a
+labelled Hurwitz vertex, an oriented body diagonal, and a cyclic orientation
+selects one calculation representative of the link graph
+\(C_6^{\rm link}\), with
+\(V(C_6^{\rm link})=T_+\sqcup T_-\), and of its cyclic lifted diagonal
+stabilizer \(C_6^{\rm grp}\), as constructed in Paper~I-B,
+Corollary~\ref{p1:cor:generated-c6-stabilizer-link-bridge}
+\cite{Kugelmann2026Paper1BExceptional}.  The two objects are
+distinct generated descendants of the unmarked core role.  These
+representative choices are conventions inside
+the Paper-I-B datum, not additional physical principles and not unique
+consequences of the derived momentum seed alone.  Paper~II-E uses the resulting
+finite support and first-order Hermitian grammar.  No color, family, generation, gauge,
+Yukawa, or transport interpretation is assigned here.
+
+\begin{corollary}[Generated core-descendant co-realization]
+\label{p2e:cor:core-descendant-corealization}
+Under the stated direct-core occurrence or point-support/core-bridge antecedent,
+the generated descendants are retained in their native sorts.  In the
+selector/co-realization sense,
+\[
+ \operatorname{CoReal}\!\left(
+ C_6^{\rm grp},C_6^{\rm link},T_+,T_-\mid\mathsf{Supp}_{2T}\right).
+\]
+This statement does not identify \(C_6^{\rm grp}\) with \(C_6^{\rm link}\), nor
+does it mark a Hurwitz vertex, body diagonal, cyclic orientation, or one
+trimer as uniquely physical.  Such a mark would be a later claim-relative
+occurrence.
+\end{corollary}
+
+\begin{proposition}[Kinematic cyclic trimer template]
+\label{p2:prop:kinematic-cyclic-trimer-template}
+Let \(T\) be either oriented Paper-I-B trimer and let \(X\) be its
+orientation-preserving cyclic shift.  Then \(T\) is a free transitive
+\(Z_3\)-set and
+\[
+ E_T:=\mathbb C^T\cong\mathbb C[Z_3]
+ \cong\mathbf1\oplus\chi\oplus\chi^{-1},
+ \qquad
+ \chi(X)=e^{2\pi i/3}.
+\]
+On the underlying real permutation module,
+\[
+        \mathbb R^T\cong\mathbb R\oplus W,
+        \qquad
+        \dim_{\mathbb R}W=2,
+\]
+and the pair module has
+\[
+        \dim_{\mathbb C}(E_T\otimes E_T^*)=9.
+\]
+\end{proposition}
+
+\begin{proof}
+These are the regular-representation and trimer-pair support statements of
+Paper~I-B, Theorem~\ref{p1:thm:cyclic-trimer-operator-grammar}
+\cite{Kugelmann2026Paper1BExceptional}.
+\end{proof}
+
+\begin{theorem}[First-order Hermitian trimer grammar]
+\label{p2:thm:primitive-trimer-grammar}
+In a cyclic vertex basis, define
+\[
+\DtriI=\operatorname{diag}\!\left(\frac23,-\frac13,-\frac13\right),
+\qquad
+\DtriII=\operatorname{diag}(0,1,-1),
+\]
+\[
+ C_1=X+X^\dagger,
+ \qquad
+ C_2=-i(X-X^\dagger).
+\]
+The first-order Hermitian slice is
+\[
+\mathfrak T_{\rm tri}
+=\operatorname{span}_{\mathbb R}
+\{I,\DtriI,\DtriII,C_1,C_2\}.
+\]
+Equivalently, every element of the slice has the form
+\[
+ H=\alpha I+\beta\DtriI+\gamma\DtriII+\rho C(\phi),
+ \qquad
+ C(\phi)=e^{-i\phi}X+e^{i\phi}X^2,
+\]
+with
+\(\alpha,\beta,\gamma\in\mathbb R\),
+\(\rho\ge0\), and
+\(\phi\in\mathbb R/(2\pi\mathbb Z)\).
+\end{theorem}
+
+\begin{proof}
+This is Paper~I-B, Theorem~\ref{p1:thm:cyclic-trimer-operator-grammar}, restated
+in Paper-II notation~\cite{Kugelmann2026Paper1BExceptional}.
+\end{proof}
+
+\begin{corollary}[Kinematic trimer Weyl and \(A_2\) defect constants]
+\label{p2:cor:kinematic-trimer-weyl-a2}
+Let \(\omega=e^{2\pi i/3}\), \(Ze_j=\omega^je_j\), and
+\(Xe_j=e_{j+1}\).  Then
+\[
+ X^3=Z^3=I,
+ \qquad
+ ZX=\omega XZ,
+\]
+and the nine operators \(X^aZ^b\), \(a,b\in\mathbb Z_3\), form a
+trace-orthogonal basis of \(M_3(\mathbb C)\).  For
+\(D_j=P_j-I/3\),
+\[
+ \operatorname{tr}(D_j^2)=\frac23,
+ \qquad
+ \operatorname{tr}(D_iD_j)=-\frac13
+ \quad(i\ne j).
+\]
+For \(\alpha_1=P_0-P_1\) and \(\alpha_2=P_1-P_2\),
+\[
+\operatorname{tr}(\alpha_i\alpha_j)
+=
+\begin{pmatrix}
+2&-1\\
+-1&2
+\end{pmatrix}_{ij}.
+\]
+Thus the resulting defect plane is the \(A_2\) root/weight plane.
+\end{corollary}
+
+\begin{proof}
+These are the Paper-I-B finite Weyl and trimer-defect identities following from
+Theorem~\ref{p1:thm:cyclic-trimer-operator-grammar}
+\cite{Kugelmann2026Paper1BExceptional}.
+\end{proof}
+
+\begin{remark}[Scope of the trimer template]
+\label{p2:rem:trimer-template-scope}
+The five-dimensional space above is a first-order Hermitian slice, not the
+full Hermitian \(3\times3\) algebra.  The \(*\)-algebra generated by the
+projectors and \(X\) is \(M_3(\mathbb C)\).  Any physical use of the
+trimer requires a later identification theorem.
+\end{remark}
+
+\subsection{Spectral and mode-count scope}
+\label{p2:sec:spectral-gaps-threshold-closure}
+
+Paper~II-D owns the scalar, Hopf-charged, spinor, vector, tensor, and
+Rarita--Schwinger spectral statements.  Paper~II-E imports only the fact that
+specified retained sectors may have positive eigenvalue gaps.  A positive
+spatial-operator gap is not an energy threshold without a Hamiltonian,
+dispersion law, stable block, and physical sector assignment.
+
+Paper~II-B owns the auxiliary word-stage count
+\[
+        \dim\mathcal H_m=\binom{2m+4}{4},
+        \qquad m\in\mathbb Z_{\ge0},\qquad
+        \dim\mathcal H_1=15.
+\]
+For generic \(m\in\mathbb Z_{\ge0}\), these formulas classify the optional complete lower-ideal
+family and do not constitute additional physical momentum stages.  The
+structural momentum seed is already derived as
+\(\mathcal H_p\cong\mathcal H_1\), hence has complex dimension \(15\).
+No mode-count proof or macroscopic scaling interpretation is repeated here.
+In particular, this structural carrier is not identified with the distinct
+\(15\)-dimensional Bose--Mesner summand
+\(\mathcal E_{15}^{\rm BM}\subset\mathbb C^{2T}\) of Paper~I-B.
+
+
+\subsection{Petersen transverse $A_2$ trimers}
+\label{p2e:sec:v318-petersen-trimer-grammar}
+\begin{theorem}[Ten local $S_3$ trimer fibres and their $A_2$ tangent planes]
+\label{p2e:thm:v318-local-petersen-trimer}
+On an occurring $2I$ packet, every vertex of the Petersen graph is a
+threefold Hopf-axis line $[u_{ij}]$.  Its $A_5$ setwise stabilizer has
+order six and is isomorphic to $S_3$; it permutes its three
+Petersen neighbors faithfully.  Its real permutation module splits
+canonically as $\mathbf1\oplus W_{A_2}$, with
+\[
+ W_{A_2}=\{(a,b,c)\in\mathbb R^3:a+b+c=0\},
+ \qquad\dim W_{A_2}=2.
+\]
+With a representative axis and compatible cyclic orientations, the
+Petersen cross-product directions $n_1,n_2,n_3\in u_{ij}^{\perp}$
+form an $A_2$ root trimer and the map
+$W_u=\sqrt{2/3}\,(n_1\ n_2\ n_3)$ satisfies
+\[
+ W_uW_u^{\mathsf T}=I_3-u_{ij}u_{ij}^{\mathsf T},\qquad
+ W_u^{\mathsf T}W_u=I_3-\tfrac13J_3.
+\]
+Thus the local trimer-defect plane is isometric to the transverse
+Hopf/Clifford tangent plane, conditional on its labelled frame.
+This is not an automatic identification with the earlier one-core
+$C_6^{\rm link}$, its $\mathbb C[Z_3]$ module, or the complex
+fundamental color representation.
+\end{theorem}
+\begin{proof}
+The stabilizer in $A_5$ of a two-label subset $\{i,j\}$ has
+order $60/10=6$; for every permutation of the three unused labels
+there is a unique parity-compatible permutation of the selected pair.
+Hence its action on the three unused two-label combinations is all
+$S_3$.  The permutation module decomposes into its constant
+line and its standard $A_2$ plane.  The transverse identities are
+the exact vector-projector identities of Paper~I-B, and the map
+annihilates the constant line while preserving the inner product
+on $W_{A_2}$.
+\end{proof}
+
+\begin{proposition}[No global flat assignment of three edge colors]
+\label{p2e:prop:v318-snark-no-flat-trimer}
+The Petersen graph is not properly three-edge-colorable: its edge
+chromatic number is four.  Consequently its ten local three-channel
+trimer fibres cannot all be identified with a single globally
+constant three-color edge labelling.  This is a \emph{flat labelling}
+obstruction, not a no-go theorem for a nontrivial local transition
+system, an $SU(3)$-valued color connection, or a physical color
+singlet; each requires its own action/representation theorem.
+\end{proposition}
+\begin{proof}
+In any three-edge-coloring of a cubic graph, one color is a
+perfect matching.  Every perfect matching of the Petersen graph
+has as its complement two disjoint five-cycles.  The remaining
+two colors would have to alternate around each cycle, impossible
+because a five-cycle is odd.  A four-edge-coloring exists by the
+standard degree-four edge-coloring of the Petersen graph.
+\end{proof}
+
+\begin{remark}[Two-parent bisector and native Clifford response]
+\label{p2e:rem:v318-bisector-vs-trimer}
+The Petersen trimer at $[u_{ij}]$ is the exact angular bisector of
+the transverse $A_2$ frames from its two parent tetrahedral cores,
+not an independently chosen third particle trimer.  Its tangent
+map can feed the established two-dimensional Clifford source.
+That composition has an unsplit tangent doublet; it neither chooses
+a unique physical color labelling nor creates a new $E_{36}$ mass
+splitting.  The trimer grammar remains local and finite until a
+same-owner action and color-singlet contraction are supplied.
+\end{remark}
+
+\section{Protected commutants, grading traces and visibility}
+\label{paper2e:sec:organized-contracts}
+\label{paper2e:sec:organized-commutants}
+
+\subsection{Protected-block abelian commutant}
+\label{p2:sec:kin-sm-charge}
+\label{p2:subsec:kin-u1}
+
+Write
+\[
+\mathcal S_{\rm prot}=\mathcal S_{{\rm prot},L}\oplus\mathcal S_{{\rm prot},R},
+\qquad
+P_L+P_R=I_{\mathcal S_{\rm prot}},
+\qquad
+\Gamma_{\rm sp}:=P_L-P_R.
+\]
+Both chiral summands have complex dimension \(2\).
+
+\begin{theorem}[Imported Paper-I-B protected commutant]
+\label{p2:prop:kin-u1-commutant}
+Paper~I-B, Theorem~\ref{p1:thm:s3one-commutant-line}, proves that the
+complex-linear commutant and its Hermitian part are~\cite{Kugelmann2026Paper1BExceptional}
+\[
+\End_{\Spin(4)}(\mathcal S_{\rm prot})
+=\mathbb CP_L\oplus\mathbb CP_R
+=\mathbb CI_{\mathcal S_{\rm prot}}\oplus\mathbb C\Gamma_{\rm sp},
+\]
+\[
+\End_{\Spin(4)}(\mathcal S_{\rm prot})^{\mathrm{sa}}
+=\mathbb RP_L\oplus\mathbb RP_R
+=\mathbb RI_{\mathcal S_{\rm prot}}\oplus\mathbb R\Gamma_{\rm sp}.
+\]
+Paper~II-E uses this as an imported theorem and does not re-prove the Schur
+decomposition.
+\end{theorem}
+
+\begin{corollary}[Finite antipodal lifts on the protected block]
+\label{p2e:cor:protected-antipodal-lifts}
+Let
+\[
+ z_L=(-I,I),\qquad z_R=(I,-I),\qquad z_c=(-I,-I)
+\]
+as in Paper~II-D.  On
+\(\mathcal S_{\rm prot}=V_{\frac12,0}\oplus V_{0,\frac12}\),
+\[
+ \boxed{\rho(z_L)=-\Gamma_{\rm sp},\qquad
+        \rho(z_R)=+\Gamma_{\rm sp},\qquad
+        \rho(z_c)=-I_{\mathcal S_{\rm prot}}.}
+\]
+Thus a provenance-fixed Hopf half-turn may coincide, up to the inherited
+handed sign, with the protected grading as a finite involution.  This does not
+identify the infinitesimal Hopf generator with \(\Gamma_{\rm sp}\) and does
+not select a nonzero gauged abelian generator.
+\end{corollary}
+
+\begin{proof}
+On \(V_{\frac12,0}\), \(z_L\) acts by \(-1\) and \(z_R\) by \(+1\); on
+\(V_{0,\frac12}\) the signs are reversed.  Writing the resulting diagonal
+operators in terms of \(P_L,P_R\) gives the first two identities, and their
+product gives the third.
+\end{proof}
+
+\begin{remark}[Marked versus unmarked round symmetry]
+\label{p2e:rem:marked-hopf-symmetry}
+The unmarked round parent retains the full connected round symmetry
+\(\Spin(4)\).  Fixing one oriented Hopf representative is additional
+constituted data; its connected geometric stabilizer is the corresponding
+\(U(2)\)-type subgroup (equivalently, at spin-cover level, one full chiral
+\(SU(2)\) together with the selected Cartan \(U(1)\) in the opposite factor,
+with the standard central quotient).  This reduced stabilizer belongs to one
+marked representative.  The family obtained by conjugating that representative
+with already generated round isometries is still \(\Spin(4)\)-covariant.
+\end{remark}
+
+\begin{theorem}[Oriented-Hopf marked commutants]
+\label{p2e:thm:oriented-hopf-marked-commutants}
+Fix one oriented left-fibre Hopf representative, with the conventions of
+Paper~II-D, Definition~\ref{p2:def:finite-diagonal-spin-weight-hopf-charge},
+and put \(Q_H:=Q_{H,L}=-2L_3^-\).  At spin-cover level its stabilizer is
+\(K_H=SU(2)_L\times U(1)_R\), and the protected restriction is
+\[
+ \mathcal S_{\rm prot}|_{K_H}
+ =(\mathbf2)_0\oplus(\mathbf1)_{+1}\oplus(\mathbf1)_{-1}.
+\]
+Let \(P_R^{(\pm)}\) project onto the \(Q_H=\pm1\) right-handed
+eigenlines, so \(P_R=P_R^{(+)}+P_R^{(-)}\).  Then
+\[
+ \boxed{\End_{K_H}(\mathcal S_{\rm prot})
+ =\mathbb CP_L\oplus\mathbb CP_R^{(+)}\oplus\mathbb CP_R^{(-)}
+ \cong\mathbb C^3,}
+\]
+\[
+ \boxed{\End_{K_H}(\mathcal S_{\rm prot})^{\rm sa}_0
+ =\operatorname{span}_{\mathbb R}\{\Gamma_{\rm sp},Q_H\},\qquad
+ Q_H^2=P_R,\qquad\Gamma_{\rm sp}=I-2Q_H^2.}
+\]
+For the full level-one carrier the corresponding commutant is
+\[
+ \boxed{\End_{K_H}(\mathcal H_1)\cong
+ M_2(\mathbb C)\oplus\mathbb C^8.}
+\]
+These are pointwise commutants for the marked symmetry action, not
+commutants of a covariant derivative.
+\end{theorem}
+
+\begin{proof}
+The three protected summands displayed above are inequivalent irreducible
+\(K_H\)-modules, so Schur's lemma gives their three scalar blocks.
+The first has dimension two and the last two have dimension one.
+Consequently \(\Gamma_{\rm sp}\) and \(Q_H\) span the two-dimensional
+traceless Hermitian part.  The eigenvalues \(0,+1,-1\) give the two
+polynomial identities.
+
+Restricting the six summands of Paper~II-D,
+Theorem~\ref{p2:thm:diagonal-center-grading}, gives
+\[
+ \mathcal H_1|_{K_H}
+ =2(\mathbf1)_0\oplus(\mathbf2)_0
+ \oplus(\mathbf1)_{+1}\oplus(\mathbf1)_{-1}
+ \oplus(\mathbf2)_{+1}\oplus(\mathbf2)_{-1}
+ \oplus(\mathbf3)_0
+ \oplus(\mathbf1)_{+2}\oplus(\mathbf1)_{-2}.
+\]
+The two copies of \((\mathbf1)_0\) come from \(V_{0,0}\) and the
+zero Hopf weight of \(V_{0,1}\).  All eight other types occur once.
+Schur's lemma therefore gives \(M_2(\mathbb C)\oplus\mathbb C^8\).
+\end{proof}
+
+\begin{remark}[Oriented marks, unoriented foliations, and connection holonomy]
+\label{p2e:rem:marked-commutant-versus-holonomy}
+If only the unoriented Hopf foliation is retained, the Weyl flip exchanges
+\(P_R^{(+)}\) and \(P_R^{(-)}\).  Invariance under this flip removes
+the \(Q_H\) direction and restores the protected commutant
+\(\mathbb CP_L\oplus\mathbb CP_R\).  In contrast, the connection of
+Paper~I-C, Theorem~\ref{p1b:thm:homogeneous}, has full restricted
+\(SU(2)\) holonomy.  A selected pointwise Hopf axis does not make that
+connection \(U(1)\)-valued or supply a parallel eigenline.  Paper~V-A's
+inherited right-handed split uses the oriented marked branch; its larger
+matter representation and coordinate-conjugate covariance own the later
+centralizer plane, not the unmarked protected calculation alone.
+\end{remark}
+
+\begin{remark}[Protected Fierz basis versus the commutant]
+\label{p2:rem:protected-fierz-versus-commutant}
+The full protected operator algebra has complex dimension \(16\).  The
+two-dimensional unmarked algebra
+\(\mathbb CP_L\oplus\mathbb CP_R\) is only its \(\Spin(4)\)-equivariant
+commutant.
+\end{remark}
+
+\begin{theorem}[Traceless refinement of the imported commutant]
+\label{p2:thm:kin-u1-unique}
+Define
+\[
+\End_{\Spin(4)}(\mathcal S_{\rm prot})^{\mathrm{sa}}_0
+:=
+\{Q\in\End_{\Spin(4)}(\mathcal S_{\rm prot})^{\mathrm{sa}}:
+       \Tr_{\mathcal S_{\rm prot}}Q=0\}.
+\]
+Then
+\[
+\End_{\Spin(4)}(\mathcal S_{\rm prot})^{\mathrm{sa}}_0
+=\mathbb R\Gamma_{\rm sp}.
+\]
+The quotient map restricts to an isomorphism
+\[
+\End_{\Spin(4)}(\mathcal S_{\rm prot})^{\mathrm{sa}}_0
+\xrightarrow{\ \cong\ }
+\End_{\Spin(4)}(\mathcal S_{\rm prot})^{\mathrm{sa}}/
+\mathbb RI_{\mathcal S_{\rm prot}},
+\qquad
+q_{\rm prot}\Gamma_{\rm sp}
+\longmapsto[q_{\rm prot}\Gamma_{\rm sp}].
+\]
+Thus every quotient class has the unique traceless representative
+\(q_{\rm prot}\Gamma_{\rm sp}\).  A later real structure may orient the line, but
+is not needed to derive it.
+\end{theorem}
+
+\begin{proof}
+By the Paper-I-B commutant theorem imported in
+Theorem~\ref{p2:prop:kin-u1-commutant},
+\(Q=aP_L+bP_R\) with \(a,b\in\mathbb R\).  Since both summands have
+dimension \(2\),
+\[
+        \Tr_{\mathcal S_{\rm prot}}Q=2(a+b).
+\]
+Tracelessness gives \(b=-a\), hence
+\(Q=a(P_L-P_R)=a\Gamma_{\rm sp}\).  The quotient statement is the
+same calculation without choosing a traceless representative.
+\end{proof}
+
+\begin{remark}[Derived abelian line versus a physical generator]
+The theorem derives the one-dimensional real subspace
+\[
+ \boxed{\End_{\Spin(4)}(\mathcal S_{\rm prot})^{\rm sa}_0
+ =\mathbb R\Gamma_{\rm sp},}
+\]
+not a preferred nonzero point on it.  Thus
+\[
+ \boxed{\text{derived line}\not\Longrightarrow
+ \text{selected }Q=q_{\rm prot}\Gamma_{\rm sp},
+ \text{ its sign, charge unit, or a gauged physical }U(1).}
+\]
+Those data belong to the later charge/gauge role.  The trace statements below
+are valid for every Hermitian equivariant \(Q\) in their declared domain and
+do not themselves select one.
+\end{remark}
+
+\begin{remark}[Hopf-character/protected-commutant type firewall]
+\label{p2e:rem:hopf-protected-charge-firewall}
+The symbol \(n_{\rm H}\in\mathbb Z\) denotes the character of the geometric
+Hopf principal circle and owns the associated line \(L^{n_{\rm H}}\).  The
+coefficient \(q_{\rm prot}\in\mathbb R\) denotes a point on the finite
+protected commutant line
+\(Q=q_{\rm prot}\Gamma_{\rm sp}\).  They are different typed slots.
+The finite half-turn identities
+\(\rho(z_L)=-\Gamma_{\rm sp}\) and
+\(\rho(z_R)=+\Gamma_{\rm sp}\) identify particular involutions only; they do
+not identify the infinitesimal Hopf generator, its character lattice, and the
+protected commutant coefficient.  No licensed constructor in Paper~II supplies
+such a bridge.  Hence the joint atlas is relation-free here, and an equation
+between \(n_{\rm H}\) and \(q_{\rm prot}\) would be an inserted relation unless
+a later charge-role theorem explicitly generates it.
+\end{remark}
+
+\subsection{Grading-weighted trace obstruction}
+\label{p2:subsec:kin-anomalies}
+
+For a Hermitian equivariant candidate
+\[
+        Q=aP_L+bP_R,
+\]
+define the grading-weighted linear and cubic traces
+\[
+        \mathcal A_1(Q):=\Tr_{\mathcal S_{\rm prot}}(\Gamma_{\rm sp}Q),
+        \qquad
+        \mathcal A_3(Q):=\Tr_{\mathcal S_{\rm prot}}(\Gamma_{\rm sp}Q^3).
+\]
+Unconditionally, these are finite trace functionals weighted by the protected
+grading \(\Gamma_{\rm sp}\).  They become contributions to the mixed
+gravitational--abelian and cubic abelian perturbative anomaly coefficients
+only after all of the following physical identifications are supplied:
+\(\mathcal S_{{\rm prot},L},\mathcal S_{{\rm prot},R}\) are identified with
+Weyl-fermion representation spaces in four-dimensional spacetime; \(\Gamma_{\rm sp}\) is their spacetime chirality; \(Q\) is the
+generator of a gauged compact \(U(1)\) with fixed charge normalization; and
+the displayed trace is identified with the protected-block contribution to
+the actual fermionic matter representation.  Paper~II supplies none of
+these identifications.
+
+\begin{remark}[Readout-role typing of the grading-weighted traces]
+\label{p2e:rem:anomaly-traces-decorated-loop}
+Each functional \(\Tr(\Gamma_{\rm sp}Q)\) and
+\(\Tr(\Gamma_{\rm sp}Q^3)\) is a decorated closed-loop readout: the ordinary
+finite trace supplies the loop closure, while the generated grading is a
+retained mark.  Thus these functionals belong to a marked subclass of the
+loop role \(\mathsf R_{\circ}^{\Sigma}\); they are neither unmarked loops nor
+a third primitive readout role.  Loop--boundary exhaustion fixes this outer
+structural form, but it does not supply the chirality, gauge, spacetime, or
+matter-representation identifications required for a physical anomaly
+interpretation.
+\end{remark}
+
+\begin{proposition}[Explicit protected-block grading-weighted traces]
+\label{p2:prop:protected-anomaly-traces}
+For \(Q=aP_L+bP_R\),
+\[
+        \mathcal A_1(Q)=2(a-b),
+        \qquad
+        \mathcal A_3(Q)=2(a^3-b^3).
+\]
+In particular, for the traceless non-scalar line
+\(Q=q_{\rm prot}\Gamma_{\rm sp}\),
+\[
+        \mathcal A_1(q_{\rm prot}\Gamma_{\rm sp})=4q_{\rm prot},
+        \qquad
+        \mathcal A_3(q_{\rm prot}\Gamma_{\rm sp})
+        =4q_{\rm prot}^{\,3}.
+\]
+
+The factor \(2\) in both coefficients is
+\(\rank P_L=\dim V_{(1/2,0)}=2\), the complex chiral-spinor dimension of each
+protected summand.  It is therefore a spinor trace multiplicity at this stage,
+not a Weyl-species count.  Only after a later Lorentzian Weyl interpretation
+is supplied does the same factor become a Lorentz-spin trace normalization.  A species-normalized anomaly
+coefficient counts one unit per Weyl species and would read \(a-b\) and
+\(a^3-b^3\).  The two normalizations cannot be reconciled by rescaling the
+charge, since \(Q\mapsto\lambda Q\) sends \(\mathcal A_1\mapsto\lambda\mathcal
+A_1\) but \(\mathcal A_3\mapsto\lambda^3\mathcal A_3\).  The common zero locus
+is unaffected, so the no-go statement below is independent of the choice.
+\end{proposition}
+
+\begin{proof}
+Use
+\(\Gamma_{\rm sp}P_L=P_L\),
+\(\Gamma_{\rm sp}P_R=-P_R\),
+\(\Tr P_L=\Tr P_R=2\), and
+\(P_LP_R=0\).  Then
+\[
+\Gamma_{\rm sp}Q=aP_L-bP_R,
+\qquad
+\Gamma_{\rm sp}Q^3=a^3P_L-b^3P_R,
+\]
+which gives the formulas.  Substituting
+\(a=q_{\rm prot}\) and \(b=-q_{\rm prot}\) gives the
+last pair.
+\end{proof}
+
+\begin{remark}[Spinor versus species normalization]
+The spinor and species conventions have the same common zero locus but are
+not related away from zero by one charge rescaling.  This supplementary
+normalization diagnostic is proved in
+Paper~II-F, Section~\ref{p2e:app:supplementary-normalization},
+Proposition~\ref{p2e:prop:empty-spinor-species-rescaling-locus}; it is not a
+premise of the trace-kernel classification below.
+\end{remark}
+
+\begin{theorem}[Protected-block trace kernel and chirality-distinguishing no-go]
+\label{p2:thm:protected-anomaly-no-go}
+Among all Hermitian \(\Spin(4)\)-equivariant generators \(Q=aP_L+bP_R\), the complete
+common kernel of the grading-weighted linear and cubic traces is
+\[
+ \boxed{
+ \ker\mathcal A_1\cap\ker\mathcal A_3
+ =\{aI_{\mathcal S_{\rm prot}}:a\in\mathbb R\}.}
+\]
+Consequently no chirality-distinguishing generator, equivalently no point with
+\(a\ne b\), lies in the common kernel.  On the traceless commutant line the
+only common-kernel point is zero.  The surviving scalar line is vector-like
+with respect to \(\Gamma_{\rm sp}\) and is not excluded by this finite trace
+calculation.
+Conditional on the physical chirality and gauged-\(U(1)\) identifications
+stated above, this finite trace no-go becomes a perturbative anomaly
+obstruction to a protected-only chirality-distinguishing generator.
+\end{theorem}
+
+\begin{proof}
+Proposition~\ref{p2:prop:protected-anomaly-traces} gives
+\(\mathcal A_1(Q)=2(a-b)\).  Hence
+\(\mathcal A_1(Q)=0\) implies \(a=b\), and then \(Q=aI_{\mathcal S_{\rm prot}}\);
+the cubic trace also vanishes.  If \(Q\) is traceless, then
+\(2(a+b)=4a=0\), so \(Q=0\).  Equivalently, on the traceless line the
+displayed grading-weighted traces vanish only for \(q_{\rm prot}=0\).
+\end{proof}
+
+\begin{corollary}[Protected trace-free and chirality-distinguishing joint loci]
+\label{p2e:cor:protected-anomaly-free-joint-locus}
+On the full Hermitian \(\Spin(4)\)-equivariant commutant, the joint zero locus is
+\[
+ \boxed{
+ \mathfrak Z_{\rm eq}
+ =\{(a,b)\in\mathbb R^2:
+      2(a-b)=0,\ 2(a^3-b^3)=0\}
+ =\{(t,t):t\in\mathbb R\}.}
+\]
+Its intersection with the chirality-distinguishing stratum is empty:
+\[
+ \boxed{\mathfrak Z_{\rm eq}\cap\{(a,b):a\ne b\}=\varnothing.}
+\]
+On the protected traceless commutant line, the same classification reduces to
+\[
+ \boxed{
+ \mathfrak Z_{\rm tr}
+ =\{q_{\rm prot}\in\mathbb R:
+     4q_{\rm prot}=0,\ 4q_{\rm prot}^{\,3}=0\}
+ =\{0\}.}
+\]
+Therefore adjoining an independently required nonzero traceless protected
+generator gives the empty joint locus
+\[
+ \boxed{\mathfrak Z_{\rm tr}\cap
+        \{q_{\rm prot}\neq0\}=\varnothing.}
+\]
+Under the physical anomaly interpretation stated above, there is no
+protected-only anomaly-free \(U(1)\) whose generator distinguishes the two
+chiral constituents.  A scalar vector-like \(U(1)\) is not ruled out by these
+two traces.  GP3 cannot select around the empty chirality-distinguishing locus.
+
+If additional chiral matter sectors occur, cancellation is a new joint
+fibre-product problem.  Writing their contributions as
+\((B_1,B_3)\), the required equations are
+\[
+ 4q_{\rm prot}+B_1=0,
+ \qquad
+ 4q_{\rm prot}^{\,3}+B_3=0.
+\]
+Neither the existence of extra sectors nor either equation is generated by
+the protected-block calculation.
+\end{corollary}
+
+\begin{proof}
+The theorem above gives the scalar common kernel in the full commutant and its
+singleton traceless representative.  Intersecting the scalar kernel with
+\(a\ne b\), or the traceless singleton with the nonzero stratum, is empty.
+Trace additivity gives the two displayed equations for an enlarged matter
+representation, which must be solved on that representation's actual typed
+charge atlas.
+\end{proof}
+
+\begin{theorem}[Oriented-Hopf protected weighted trace-zero locus]
+\label{p2e:thm:marked-hopf-weighted-trace-locus}
+On the marked domain of
+Theorem~\ref{p2e:thm:oriented-hopf-marked-commutants}, write
+\[
+ T=aP_L+b_+P_R^{(+)}+b_-P_R^{(-)},\qquad a,b_+,b_-\in\mathbb R.
+\]
+For the same grading-weighted functionals
+\(\mathcal A_k(T)=\Tr(\Gamma_{\rm sp}T^k)\), \(k=1,3\), one has
+\[
+ \mathcal A_1(T)=2a-b_+-b_-,\qquad
+ \mathcal A_3(T)=2a^3-b_+^3-b_-^3,
+\]
+and the exact common zero locus is
+\[
+ \boxed{\{T:\mathcal A_1(T)=\mathcal A_3(T)=0\}
+ =\mathbb RI\ \cup\ \mathbb RQ_H.}
+\]
+Its ordinary-traceless part is exactly \(\mathbb RQ_H\).
+This is a union of two lines, not their linear span.
+It changes the invariance group of
+Theorem~\ref{p2:thm:protected-anomaly-no-go} and therefore leaves that
+unmarked theorem intact.  The spacetime-chirality and internal-charge
+identifications required for a physical anomaly interpretation remain
+separate; splitting geometric magnetic weights does not supply them.
+\end{theorem}
+
+\begin{proof}
+The ranks of \(P_L,P_R^{(+)},P_R^{(-)}\) are \(2,1,1\), respectively,
+and \(\Gamma_{\rm sp}\) acts on them as \(+1,-1,-1\), proving the
+trace formulas.  The first zero condition gives \(b_\pm=a\pm d\).
+Substitution into the cubic gives \(\mathcal A_3=-6ad^2\).  Over
+\(\mathbb R\) the alternatives are \(d=0\), giving \(T=aI\), or
+\(a=0\), giving \(T=dQ_H\).  Their ordinary traces are \(4a\) and zero,
+so only \(\mathbb RQ_H\) survives ordinary tracelessness.
+\end{proof}
+
+\begin{lemma}[Valid odd-character trace identities]
+\label{p2:lem:odd-character-trace}
+For \(Q=q_{\rm prot}\Gamma_{\rm sp}\) and every
+\(n\in\mathbb Z_{\ge0}\),
+\[
+        \Tr_{\mathcal S_{\rm prot}}(Q^{2n+1})=0.
+\]
+These are ordinary character-trace identities.  They do not cancel the
+grading-weighted traces:
+\[
+        \Tr_{\mathcal S_{\rm prot}}
+        (\Gamma_{\rm sp}Q^{2n+1})
+        =4q_{\rm prot}^{\,2n+1}.
+\]
+\end{lemma}
+
+\begin{proof}
+\(\Gamma_{\rm sp}^{2}=I\) and
+\(\Tr\Gamma_{\rm sp}=2-2=0\), whereas
+\(\Tr I_{\mathcal S_{\rm prot}}=4\).
+\end{proof}
+
+\begin{remark}[Scope of the trace no-go]
+\label{p2:rem:kin-anomaly-scope}
+The unmarked unconditional theorem concerns only the protected block, its
+\(\Spin(4)\)-equivariant commutant, and the displayed grading-weighted
+traces.  The distinct oriented-Hopf marked locus is computed in
+Theorem~\ref{p2e:thm:marked-hopf-weighted-trace-locus}.  If the additional
+physical identifications are later supplied, a completed chiral matter
+representation may add sectors whose anomaly contributions cancel, but that
+cancellation must be proved from the actual representation list.  The
+displayed quantities become a theory-level anomaly obstruction only if the
+protected block is the complete chiral matter content or if all additional
+chiral sectors are proved not to cancel them.  The
+ordinary mirror balance of an ungraded list cannot substitute for the
+chirality-weighted trace, and no statement here establishes a global anomaly
+theorem.
+\end{remark}
+
+
+\subparagraph{Comparison exports and connection types.}
+The protected intrinsic coordinate branch and the complete
+Hopf--Hurwitz comparison word are exported by
+Corollary~\ref{p2c:cor:intrinsic-joint-comparison-role-export}.
+The parameter-orbit connection is carried in that geometric
+target type.  A physical gauge connection needs a specified
+base map and representation intertwiner.  Neutral representation
+availability in the cone, projective and trace-conversion
+constructions does not supply a charged comparison, numerical
+coupling or dynamical member.
+
+
+\subsection{Coordinate ancestry of the protected split and its readout boundary}
+
+\label{p2e:sec:v226-protected-export}
+Theorem~\ref{p1:thm:v226-chirality} reconstructs the separate geometric
+Hodge and protected spinor chirality operators as coordinate words of degree
+six. Thus the protected projectors and the existing traceless commutant
+line are coordinate-algebra descendants on the intrinsic branch. An
+orientation fixes the sign convention for the line, while both chiral
+constituents remain co-realized; a physical gauged generator still consumes
+its own charge representation and normalization.
+
+\begin{corollary}[Kinematic availability does not imply visibility in localization]
+\label{p2e:cor:v226-chirality-visibility}
+Every POVM with exact intrinsic first moments at radius $\sqrt3R_{\rm mom}$
+annihilates the protected chirality direction in its effect pairing.
+Consequently it cannot read the corresponding chiral population difference,
+even though that operator is a generated coordinate polynomial. At radius
+$r\ge\sqrt3R_{\rm mom}$ its total-variation visibility on the two normalized
+chiral states is bounded by $\sqrt{1-3R_{\rm mom}^2/r^2}$.
+\end{corollary}
+\begin{proof}
+Apply Theorem~\ref{p2c:thm:v226-chirality-radius} to the protected projector
+and the inherited chirality sign. Reversing orientation exchanges the two
+states and leaves the bound unchanged.
+\end{proof}
+The existing marked and unmarked commutant, weighted trace and line-holonomy
+statements retain their own groups and domains. Native coefficient tests
+can evaluate an actual finite trace word; neither this visibility bound
+nor operator availability alone identifies that word with a physical gauge
+anomaly, charged comparison or a global spacetime chirality assignment.
+
+
+\subsection{The symmetry commutant and the observable centre are distinct}
+\label{p2e:sec:v227-chirality-centre}
+\begin{proposition}[Protected chirality is not a removable central energy]
+\label{p2e:prop:v227-chirality-centre}
+The protected grading $\chi=\gamma_1\gamma_2\gamma_3\gamma_4$ commutes
+with the $\Spin(4)$ representation but is not central in the protected
+observable matrix algebra $M_4(\mathbb C)$. Its coefficient therefore
+cannot be retired by the central-offset invariance theorem.
+\end{proposition}
+\begin{proof}
+It anticommutes with each invertible Clifford coordinate $\gamma_a$,
+so $[\chi,\gamma_a]=2\chi\gamma_a\ne0$. The protected corner of the
+coordinate-generated algebra is the full $M_4$, whose centre consists
+only of scalar matrices. On the complete native algebra the centre is
+$\mathbb CP_{\rm geo}\oplus\mathbb CP_{\rm sp}$.
+\end{proof}
+Theorem~\ref{p1b:thm:v227-central-readouts} applies to this last centre,
+not to every symmetry-invariant matrix. A source crossing its two blocks
+retains their relative offset by
+Proposition~\ref{p1b:prop:v227-central-boundary}. Total parity evenness on
+an enlarged carrier alone does not imply membership in
+$\operatorname{End}(\mathcal K)\otimes\mathcal A_D$; an odd tensor an odd
+factor may couple the native blocks. The actual reducing-algebra test is
+therefore part of any use of the quotient.
+
+
+\paragraph{Hopf-character steps and connection holonomy.}
+The geometric Hopf grading is not a superselection rule for the
+coordinate operators: their Hopf-character steps are $\pm1$ by
+Paper~II-D, Proposition~\ref{p2d:prop:coordinate-hopf-charge-steps}.
+The marked protected pointwise commutant does not reduce the
+midpoint connection's full $SU(2)$ holonomy.  The Hopf character
+$n_{\rm H}$ and protected coefficient $q_{\rm prot}$ remain distinct
+types unless a later charge theorem supplies a bridge.
+
+\section{Native readout and exact finite moment presentations}
+\subsection{Protected-sector and directed-tangent access}
+
+\label{p2e:sec:v266-protected-readout}
+\begin{corollary}[Minimal exact-position protected-readout resource]
+\label{p2e:cor:v266-minimal-protected-readout}
+For the intrinsic finite tuple, a single exact-position POVM with five
+outcomes has effect span exactly
+$\operatorname{span}_{\mathbb R}\{I,X_1^D,\ldots,X_4^D\}$ and is blind to
+both the protected population $P_S$ and protected chirality
+$\widetilde\chi=P_S\chi$. For $r\ge2\Rmom$, six native outcomes suffice
+and are necessary to add \emph{either} observable directly to the four
+coordinate moments, while seven are sufficient and necessary to add
+\emph{both} independently. A generic native single-setting
+informationally complete frame still requires $137$ outcomes, and can
+carry exact moments only at $r>\sqrt3\Rmom$.
+\end{corollary}
+\begin{proof}
+The five/six/seven direct-effect systems and their lower bounds are
+Theorem~\ref{p2c:thm:v266-minimal-protected-readout}; the complete
+frame condition is
+Theorem~\ref{p2c:thm:v258-minimal-complete-readout}.
+The fact that $P_S$ and $\widetilde\chi$ are coordinate-polynomial
+operators does not make them linear combinations of five POVM effects.
+\end{proof}
+\begin{remark}[Observable discriminator, not physical constructor]
+\label{p2e:rem:v266-fingerprint}
+A five-effect regular-simplex L\"uders sequence at $r=2\Rmom$ has
+same-label return probability $7/20$ in the intrinsic protected
+maximally mixed state, against $2/5$ in the cone protected comparison
+state, by Proposition~\ref{p2c:prop:v266-repeat-fingerprint}.
+The one-shot laws are identical. This is a \emph{conditional} discriminator
+for independently identified preparations and repeated instruments,
+not a mechanism selecting the intrinsic constructor or an assertion of
+an actual measurement occurrence. The action- and source-consumer
+requirements of Paper~II-A are unchanged.
+\end{remark}
+
+
+\begin{corollary}[Mathematical directed-tangent access to the whole native algebra]
+\label{p2e:cor:v270-direction-native-capacity-export}
+On the constituted intrinsic completion $\mathsf C_D$, the
+$\Spin(4)$-covariant scalar-position effect space has maximal
+real rank $65$, whereas position plus an unoriented tangent axis has
+rank $107$. For a directed-tangent outcome $G/U(1)_{\rm diag}$,
+there exists at every outcome radius $r>\sqrt3\Rmom$ a positive
+continuous covariant POVM with exact native first moments and six
+passive labelled orbits whose effects span all $137$ Hermitian
+directions of $M_{11}(\CC)\oplus M_4(\CC)$.
+This existence statement is not a physical apparatus or an extension
+to the extra $88$ off-block Hermitian directions of $M_{15}(\CC)$.
+\end{corollary}
+\begin{proof}
+Apply Paper~II-C, Theorems~\ref{p2c:thm:covariant-stabilizer-capacity}
+and~\ref{p2c:thm:covariant-direction-complete-povm}, on the
+same coordinate-generated native algebra. The central $11\oplus4$
+split is retained by every effect in the construction.
+\end{proof}
+\begin{remark}[Neither the source-Hopf mark nor native tomography selects an instrument]
+\label{p2e:rem:v270-no-readout-selection}
+The rotating tangent stabilizer $U(1)_{\rm diag}$ differs from the
+oriented left-Hopf subgroup $U(1)_{\rm H}\subset SU(2)_L$.
+Paper~II-C, Lemma~\ref{p2c:lem:no-equivariant-tangent-section},
+excludes a globally $\Spin(4)$-equivariant fixed tangent selection.
+The covariant POVM is a nonunique \emph{mathematical} positive effect
+realization; no specific physical POVM, post-measurement CP instrument,
+state preparation, chirality charge, or action current is selected.
+The Paper~II-F countermodels remain applicable.
+\end{remark}
+
+
+\subsection{Exact finite moment presentations and dense-word cubature}
+\begin{corollary}[Finite endpoint moments require no exceptional physical sampler]
+\label{p2e:cor:v274-moment-finite-presentation-export}
+Every predetermined finite polynomial moment band of an admissible
+native degree-two continuous endpoint POVM has an exact positive
+finite-outcome mathematical representation by
+Corollary~\ref{p2f:cor:v274-finite-endpoint-moment-presentations}.
+Degree-seventeen moment tests, in particular, may be represented by
+a positive degree-nineteen finite cubature not supported on a
+subgroup. When an embedded tetrahedral core is supplied, the
+branch-symmetric twin finite word measures give quantitative
+approximations on the same moment band while converging to Haar at
+every fixed finite resolution. These facts discharge the
+\emph{finite representation} requirement for those observables,
+not the G0 occurrence of a physical finite sampler, the selection
+of a physical instrument, or a global continuous-covariance claim.
+\end{corollary}
+
+
+\begin{corollary}[One exact finite word presentation for all prescribed native observables]
+\label{p2e:cor:v275-joint-observable-exactification}
+Fix a supplied tetrahedral core $H$, its dense twin-word group
+$D_H$, a continuous native endpoint density $K$ of polynomial
+degree two, a finite readout band $\mathcal P_r$, and a finite
+collection $\mathscr F$ of continuous scalar action/readout
+integrands and prescribed parameter-jet coefficients on the same
+$S^3$ comparison owner. Then there exists one positive finite
+probability $\nu$ supported on $D_H$ that reproduces the Haar
+integrals of \emph{all} these quantities exactly, including the
+matrix-valued moments $\int fK$ for $f\in\mathcal P_r$.
+An upper bound on its node count is the real dimension of the
+space generated by $1$, the real and imaginary parts of the
+entries of $fK$, and the real and imaginary parts of the
+specified action coefficients. This bound applies to the initial,
+not necessarily invariant, positive rule and depends on the
+\emph{observable span}, not on the total spectrum of an untested
+mathematical host.
+
+If all selected quantities are restricted polynomials of degree
+at most $L$, the rule may in addition be chosen
+$H$-bi-invariant and $N_{SU(2)}(H)$-conjugation invariant, with
+nodes remaining in $D_H$. This optional invariant rule is a
+separate existence assertion: symmetrization may increase the
+number of atoms, and the preceding at-most-$d$ node bound is
+not asserted for it. The common rule is a mathematical
+comparison presentation only. It does not prove the physical
+occurrence of a finite sampler or a physically covariant
+finite-outcome instrument.
+\end{corollary}
+\begin{proof}
+Take the finite-dimensional real span of all listed continuous
+scalar functions, the stated matrix-entry products, and $1$.
+The first assertion of
+Theorem~\ref{p1b:thm:v275-dense-twin-word-cubature}
+supplies a positive word-supported rule exact on that span.
+Complex and matrix equalities follow entrywise. For polynomial
+functions use the invariant band $\mathcal P_L$ and the
+$H$- and $O$-symmetrized form of that theorem.
+\end{proof}
+
+\section{Conditional exceptional finite-operator comparisons}
+\subsection{Petersen five-core descriptor}
+\begin{corollary}[Conditional five-core readout descriptor without a new force]
+\label{p2e:cor:v339-petersen-operator-export}
+Given an embedded binary-icosahedral packet with its unmarked
+five-core $A_5$ orbit, the exact atlas construction
+of Theorems~\ref{p1:thm:v339-petersen-sl4-isometry} and
+\ref{p1:thm:v339-petersen-projector-strata} supplies a
+functorial \emph{finite mathematical descriptor}: an isometric
+oriented-edge-to-$\mathfrak{sl}_4(\mathbb R)$ comparison and a
+rank-fifteen incidence-visible projector on $\ell^2(2I)$,
+with the descent certificate of
+Proposition~\ref{p2f:prop:v339-projector-descent-certificate}.
+A same-owner physical probe of that particular projector would
+have the fixed central/noncentral leverage profile
+$(0,2/15,1/8,1/8)$, with lift counts $(2,30,40,48)$.
+Neither the $2I$ occurrence, a physical measurement of its
+projector, nor a coefficient turning the matrix commutator
+into physical dynamics is implied by this mathematical existence.
+\end{corollary}
+\begin{remark}[No carrier identification from a shared dimension]
+The real $\mathbf4\oplus\mathbf5\oplus\mathbf3\oplus\mathbf3'$
+edge-cochain module is not the complex $\Spin(4)$ carrier $H_1$.
+The analogy $\mathfrak{so}(4)=\mathbf3\oplus\mathbf3'$ is a
+typed real-operator comparison and does not provide the missing
+whole-candidate GP3 comparison of Paper~II-B.
+\end{remark}
+
+
+\subsection{Rank-two 600-cell incidence and conditional operators}
+\label{p2e:sec:v340-ranktwo-export}
+\begin{corollary}[Conditional projective 600-cell export, without a force claim]
+\label{p2e:cor:v340-ranktwo-export-contract}
+For a supplied same-parent binary-icosahedral marking, the
+mathematical export is the typed tuple
+\[
+\left(\mathbb R[A_5],\ M_2,M_3,M_5,\
+ \mathscr P_5=\frac{M_2-M_3}{12},\
+ \mathscr P_4=\frac{M_3-M_5}{15},\
+ R_{70},R_{80},S,T=S^2-3I\right).
+\]
+Here $\operatorname{rank}(\mathscr P_5,\mathscr P_4)=(25,16)$,
+$\mathscr P_5\mathscr P_4=0$, the two Reye ranks are $35,36$,
+and $T$ is even under $S\mapsto-S$. The projectors and incidence
+matrices are finite comparison operators; they become physically
+selected effects or action couplings only after G0 occurrence and an
+explicit GP2-frozen same-owner observable application. No new
+physical gauge generator, measured chirality, particle count, mass
+or QCD running follows from this export.
+\end{corollary}
+\begin{proof}
+The matrix identities and ranks are Theorems
+\ref{p1:thm:v340-cyclic-coset-design},
+\ref{p1:thm:v340-incidence-character-projectors},
+and \ref{p1:thm:v340-reye-70-80} and
+Corollary~\ref{p1:cor:v340-reye-dodeca-second-neighbour}; the
+additional occurrence requirements remain those of
+Proposition~\ref{p2a:prop:v340-ranktwo-nonactualization}.
+\end{proof}
+
+
+\subsection{Coset and parity-cover comparisons}
+\begin{corollary}[Typed 25-cell Gram and parity-cover export]
+\label{p2e:cor:v341-coset-desargues-export}
+On a separately supplied marked $2I$ packet the finite kinematic
+comparison data may be extended by
+\[
+ \mathfrak G_{\rm coset}=(B,V,W,A,S_H,L(S_H),L(-A),\Pi_{15}),
+\]
+with ranks
+$\operatorname{rank}(B,V,W,\Pi_{15})=(17,10,6,15)$,
+$V^{\mathsf T}W=0$, and
+$W^{\mathsf T}W=12S_H^2$ in binary counting convention.
+Here $L(S_H)$ is the dodecahedral signed-holonomy cover,
+whereas $L(-A)$ is the Desargues bipartite parity cover;
+only the latter is the cross-incidence graph of
+$\mathcal F_+$ and $\mathcal F_-$.  The threefold Reye
+$36$-point $70/80$-plane incidence is a distinct projective
+quaternionic construction.  None of the displays is an
+unconditionally realized state, observable, or particle mass.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{p1:thm:v341-coset-gram-hodge},
+Corollary~\ref{p1:cor:v341-coset-pi15}, and
+Theorem~\ref{p1:thm:v341-desargues-rp2-parity} prove the
+finite equalities; their constitutional export scope is
+Remark~\ref{p2a:rem:v341-desargues-occurrence-firewall}.
+\end{proof}
+
+
+\subsection{Class-resolved Petersen reconstruction}
+\begin{corollary}[Conditional class-resolved fifteen-mode reconstruction descriptor]
+\label{p2e:cor:v342-threecycle-class-readout-export}
+Suppose a marked $2I$ packet is already licensed as a mathematical
+same-owner support in the current finite stage.  The additional
+exact descriptor consists of ten orientation-even three-cycle
+operators $S_A$, ten orientation-odd triangle flows $K_A$,
+the rank-six signed isometry $J/\sqrt{10}$, and the
+class-filtered positive Hilbert--Schmidt frame operators
+$\mathcal A_{2A},\mathcal A_{3A},\mathcal A_{5A},\mathcal A_{5B}$.
+The graph overlap threshold $-5/4$ reconstructs Petersen adjacency
+and the three-cycle class gives a complete algebraic frame on
+$\mathfrak{sl}(4,\mathbb R)$ with condition ratio $10$.
+The two five-cycle class frames have opposite polarized weights
+$a,b$ on the two $\mathbf3$ sectors, with $a/b=\varphi^6$.
+Each statement is exact relative to its finite representation and
+normalization.  A physical observable is not constituted merely by
+writing a positive frame operator: a licensed state domain,
+effect map, action/test ownership, and measured readout must
+be supplied independently.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{p1:thm:v342-three-cycle-petersen-overlap},
+Theorem~\ref{p1:thm:v342-triangle-petersen-cycle-isometry},
+and Theorem~\ref{p1:thm:v342-class-frame-three-cycle-tomography}
+prove the finite expressions; the constitutional ownership condition
+is the same one used in
+Corollary~\ref{p2e:cor:v341-coset-desargues-export}.
+\end{proof}
+\begin{remark}[No automatic dynamics from Lie closure]
+\label{p2e:rem:v342-class-frame-no-gauge}
+The path-generator result of
+Theorem~\ref{p1:thm:v342-minimal-path-lie-generators}
+constructs $\mathfrak{sl}(4,\mathbb R)$ using mathematical
+commutators; it does not yield a physically selected
+noncompact gauge group or a new force.  A specific three-path
+is a marking, not a GP2-inherited unmarked observable.  Nor
+is the $\varphi^6$ class-frame polarization a hadron mass,
+parity-violating coupling or momentum-carrier multiplicity theorem.
+\end{remark}
+
+
+\subsection{Exchange-odd reciprocal contrast effects}
+\begin{corollary}[Typed three-outcome reciprocal contrast descriptor]
+\label{p2e:cor:v343-signed-correlation-export}
+Assume a matched reciprocal fifteen-carrier and, separately,
+a physical realization of its state and effect calculus that
+identifies the finite operator $\mathcal C_{xp}$ of
+Theorem~\ref{p1b:thm:v343-doubleodd-contrast} with a
+measurable self-adjoint contrast.  In the exchange-odd
+$105$-dimensional realization, the finite algebra defines
+orthogonal effect \emph{candidates}
+\[
+ E_+=\frac12(\mathcal C_{xp}^2+\mathcal C_{xp}),\qquad
+ E_-=\frac12(\mathcal C_{xp}^2-\mathcal C_{xp}),\qquad
+ E_0=I-\mathcal C_{xp}^2,
+\]
+with ranks $(6,9,90)$ and $E_++E_-+E_0=I$.
+For a normalized positive state $\rho$ on this carrier, define
+\[
+ c_{xp}=\operatorname{tr}(\rho\mathcal C_{xp}),\qquad
+ p_{\rm active}=\operatorname{tr}(\rho\mathcal C_{xp}^2).
+\]
+Then the mathematically forced feasibility region and outcome
+probabilities are
+\[
+ \boxed{|c_{xp}|\le p_{\rm active}\le1,\qquad
+ p_\pm=\frac12(p_{\rm active}\pm c_{xp}),\quad
+ p_0=1-p_{\rm active}.}
+\]
+These statements become operational only after independently
+supplying the physical carrier, preparation, effects, marking
+and measurement resolution.  They determine no interaction
+strength $g_{xp}$.
+\end{corollary}
+\begin{proof}
+The polynomial $\mathcal C_{xp}^3=\mathcal C_{xp}$ from
+Theorem~\ref{p1b:thm:v343-doubleodd-contrast} makes $E_+,E_-,E_0$
+pairwise orthogonal spectral projectors.  Their ranks follow from
+the exchange-odd spectral table.  Positivity gives
+$p_\pm,p_0\ge0$ and the displayed identities.
+\end{proof}
+
+\section{Conclusions and mathematical export boundaries}
+Paper~II-E exports mathematical geometry and finite operator constraints
+from the constituted compact momentum parent, protected carrier and
+fixed-radius coordinate class.  The cone, Hopf and normalized cotangent
+results have their stated connection and moment-level domains;
+branchwise projective $\mathbb{CP}^1$ and the Hermitian null-ray bridge
+are representations, not physical boost dynamics.  On $\mathsf C_D$ the
+protected Clifford normalization is generated; on the larger raw atlas
+its nonzero-domain hypothesis remains necessary.
+
+The exceptional support and trimer constructions are conditional on their
+marked or generated finite owners.  The exact $15/24$ trace conversion
+does not identify the natural $2T$ action on $\mathcal H_1$ with that on
+the Bose--Mesner summand.  The marked and unmarked protected commutants
+have different trace-zero domains, neither of which supplies a physical
+charge or an anomaly-cancellation theorem.  Finite localization effects,
+positive cubature, Petersen/600-cell projectors and reciprocal contrast
+operators are mathematical readout/comparison presentations on their
+stated inputs, not automatically occurring physical measurements or
+forces.  In particular, the at-most-$d$ atom bound applies to the
+initial positive cubature rule, not necessarily to its optional invariant
+counterpart.
+
+Later causal, field, phase-space, gauge, mass and apparatus claims must
+consume their own licensed realization, coupling, normalization or
+state/effect data.  The application-obligation records in Paper~II-A,
+Sections~\ref{p2a:sec:application-obligation-record}
+and~\ref{p2a:app:later-application-interfaces}, identify the
+corresponding external interfaces.  No such physical mechanism is
+obtained by reversing these finite mathematical exports.
+
+\printbibliography
+
+\end{document}

@@ -1,0 +1,203 @@
+[
+  {
+    "claim_id": "P3G-F-0001",
+    "labels": [
+      "p3:def:reciprocal-interface-hypotheses",
+      "p3a:eq:profile-spectrum-metric"
+    ],
+    "diff": "--- \n+++ \n@@ -84,3 +84,3 @@\n These operators give the faithful \\(A^{\\mathrm{op}}\\)-operation parent\n-on the profile doctrine.  The legacy symbols \\((\\mathrm{BR}_{\\rm ind})\\) and\n+on the profile doctrine.  The auxiliary symbols \\((\\mathrm{BR}_{\\rm ind})\\) and\n \\((\\mathrm{IND}_{xp})\\) are used below only as theorem-status names for the"
+  },
+  {
+    "claim_id": "P3G-F-0008",
+    "labels": [
+      "p3:cor:closed-core-open-completions"
+    ],
+    "diff": "--- \n+++ \n@@ -11,3 +11,3 @@\n already derived in Paper~II-B from the frozen momentum-host constitution; the\n-former \\(\\mathsf P_{\\rm sli}\\) route is historical only.\n+the optional \\(\\mathsf P_{\\rm sli}\\) route is not a premise of this result.\n The scalar orientation is derived on the separately displayed"
+  },
+  {
+    "claim_id": "P3G-F-0012",
+    "labels": [
+      "p3a:prop:finite-carrier-selector-boundary"
+    ],
+    "diff": "--- \n+++ \n@@ -38,2 +38,2 @@\n \\]\n-This proposition records the former fixed-action alternative.  It is not used by the current constitutional route, because Paper~II-B now derives the momentum carrier directly from the revised GP2 host closure.\n+This fixed-action alternative is conditional on the supplied level-one window; the independent Paper~II-B momentum-host proof does not consume it."
+  },
+  {
+    "claim_id": "P3G-F-0013",
+    "labels": [
+      "p3:rem:scalar-primitivity-versus-vector-ceiling"
+    ],
+    "diff": "--- \n+++ \n@@ -9,2 +9,2 @@\n \n-In the former selector architecture the vector finite-level problem was treated differently: once the coordinate sector was required, lower-ideal candidates formed a nested family with mathematical lower bound \\(s\\ge1\\), but the old framework did not derive the endpoint \\(s=1\\).  That contrast motivated the later revision.  It is historical only: current Paper~II-B derives \\(\\mathcal H_p\\cong\\mathcal H_1\\) directly and reads off \\(m_p=1\\) afterward.\n+The optional lower-ideal comparison admits nested candidate supports with \\(s\\ge1\\), once the coordinate sector is required, but does not select the terminal member \\(s=1\\). The independent Paper~II-B host theorem establishes \\(\\mathcal H_p\\cong\\mathcal H_1\\) and \\(m_p=1\\)."
+  },
+  {
+    "claim_id": "P3G-F-0020",
+    "labels": [],
+    "diff": "--- \n+++ \n@@ -4,2 +4,2 @@\n physical propagator, action, clock, state, or determinant ancestry.  No later\n-closure may cite this appendix alone to supply any such occurrence.\n+closure may cite this subsection alone to supply any such occurrence."
+  },
+  {
+    "claim_id": "P3G-F-0028",
+    "labels": [
+      "p3:def:seed-passivity"
+    ],
+    "diff": "--- \n+++ \n@@ -13,3 +13,3 @@\n The additional finite candidate shape is the declared spectral-lower-ideal\n-package \\(\\mathsf P_{\\rm sli}\\) of Paper~II-B,\n+package \\(\\mathsf P_{\\rm sli}\\) of Paper~II-F,\n Definition~\\ref{p2:def:spectral-lower-ideal-finite-role-package}.  It supplies"
+  },
+  {
+    "claim_id": "P3G-F-0029",
+    "labels": [
+      "p3:cor:spectral-lower-ideal-sharpness"
+    ],
+    "diff": "--- \n+++ \n@@ -2,3 +2,3 @@\n \\label{p3:cor:spectral-lower-ideal-sharpness}\n-In the former weaker momentum signature, before canonical-image host closure was adopted, omitting \\(\\mathsf P_{\\rm sli}\\) left the generated scalar and coordinate roles insufficient to force \\(\\mathcal H_1\\).  On one reciprocal factor, the proper\n+Without the auxiliary lower-ideal premise \\(\\mathsf P_{\\rm sli}\\), the scalar and coordinate constraints alone do not entail \\(\\mathcal H_1\\). On one reciprocal factor, the proper\n multiplicity-free equivariant carriers\n@@ -23,2 +23,2 @@\n three types omit the adjoint pair \\((1,0)\\oplus(0,1)\\) present in\n-\\(\\mathcal H_1\\).  In that former signature they were excluded precisely by the complete spectral-lower-ideal rule.  Under the revised GP2 host closure they are already excluded by exact/faithful no-omission of the generated momentum-host content.\n+\\(\\mathcal H_1\\).  They are excluded by the optional complete spectral-lower-ideal rule, or independently by GP2 exact/faithful no-omission of the constituted momentum-host content."
+  },
+  {
+    "claim_id": "P3G-F-0030",
+    "labels": [
+      "p3b:cor:fixed-action-full-carrier-selector"
+    ],
+    "diff": "--- \n+++ \n@@ -23,3 +23,3 @@\n \\]\n-Historically this provided an alternative consistency check to the former \\(\\mathsf P_{\\rm sli}\\) tower handoff; it is not part of the present momentum-seed derivation.  The two nonzero channels, level-one ceiling, and\n+This supplies a conditional consistency check to the separately assumed \\(\\mathsf P_{\\rm sli}\\) tower handoff; it is not part of the present momentum-seed derivation.  The two nonzero channels, level-one ceiling, and\n closure without recompression remain explicit premises."
+  },
+  {
+    "claim_id": "P3G-F-0037",
+    "labels": [
+      "p3:rem:registered-ceiling-support-provenance"
+    ],
+    "diff": "--- \n+++ \n@@ -2,3 +2,3 @@\n \\label{p3:rem:registered-ceiling-support-provenance}\n-Within \\(\\mathsf P_{\\rm sli}+(\\mathrm{COORD}_A)\\), Paper~II-B,\n+Within \\(\\mathsf P_{\\rm sli}+(\\mathrm{COORD}_A)\\), Paper~II-F,\n Proposition~\\ref{p2:prop:level-one-support-ceiling-bridge}, identifies the\n@@ -6,3 +6,3 @@\n that the first exterior spinor labels\n-\\((1,\\tfrac12)\\) and \\((\\tfrac12,1)\\) are absent.  Paper~I-A,\n+\\((1,\\tfrac12)\\) and \\((\\tfrac12,1)\\) are absent.  Paper~I-B,\n Theorem~\\ref{p1:thm:minimal-coordinate-closed-truncation}, gives the"
+  },
+  {
+    "claim_id": "P3G-F-0041",
+    "labels": [
+      "p3:rem:cell-constitution-gap-closed"
+    ],
+    "diff": "--- \n+++ \n@@ -2,3 +2,3 @@\n \\label{p3:rem:cell-constitution-gap-closed}\n-In the former selector architecture, the displayed branch fixed\n+On the conditional lower-ideal/ceiling domain, the displayed branch fixed\n \\(\\chi=1\\) by combining three logically distinct ingredients:\n@@ -7,3 +7,3 @@\n \\(\\mathsf P_{\\rm lvl}(R,1)\\) supplied the upper bound \\(s_R\\le1\\).\n-This appendix preserves that calculation only as a historical diagnostic.\n+This calculation is a conditional comparison and does not enter the active seed proof.\n In the current architecture the Paper-II host theorem already fixes the\n@@ -11,3 +11,3 @@\n consistency/stability result.  Later uses of \\(\\chi=1\\) or \\(m_p=1\\)\n-therefore inherit the current upstream host theorem, not this former selector\n+therefore inherit the current upstream host theorem, not the optional selector\n branch."
+  },
+  {
+    "claim_id": "P3G-F-0042",
+    "labels": [
+      "p3b:thm:legacy-level-one-handoff"
+    ],
+    "diff": "--- \n+++ \n@@ -18,3 +18,3 @@\n then identify \\(\\dim_{\\CC}\\mathcal H_1=15\\).  No shell-deletion preorder is\n-used to select the level.  Within this former branch, representation-theoretic conclusions depending only on \\(\\mathcal H_1\\) followed by modus ponens; current uses instead import \\(\\mathcal H_p\\cong\\mathcal H_1\\) from Paper~II-B.  The normalized Paper-I-A\n+used to select the level. Within this conditional comparison, representation-theoretic conclusions depending only on \\(\\mathcal H_1\\) follow from the stipulated endpoint; the independent \\(\\mathcal H_p\\cong\\mathcal H_1\\) result is imported from Paper~II-B. The normalized Paper-I-B\n coordinate/Clifford system still specializes to \\(\\mathsf C_{\\rm PI}\\), and"
+  },
+  {
+    "claim_id": "P3G-F-0045",
+    "labels": [
+      "p3:def:transverse-harmonic-cell-normalization"
+    ],
+    "diff": "--- \n+++ \n@@ -16,3 +16,3 @@\n \\]\n-The historical tag \\((\\mathrm{THC})\\) denotes only this degree-\\(<\\mu\\)\n+The notation \\((\\mathrm{THC})\\) denotes only this degree-\\(<\\mu\\)\n auxiliary counting window.  It is not a finite carrier or a count of spatial\n@@ -20,5 +20,5 @@\n \n-The historical tag \\((\\mathrm{ID}_{\\rm THC})\\) denoted an externally declared\n+The auxiliary tag \\((\\mathrm{ID}_{\\rm THC})\\) denoted an externally declared\n comparison between such an auxiliary label and a physical finite-level label.\n-It is now \\emph{superseded on the reciprocal-position side}: Paper~II-C\n+It does not control the physical reciprocal-position side:  Paper~II-C\n derives instead"
+  },
+  {
+    "claim_id": "P3G-F-0048",
+    "labels": [
+      "p3:thm:holographic-admissibility-mp-one"
+    ],
+    "diff": "--- \n+++ \n@@ -2,3 +2,3 @@\n \\label{p3:thm:holographic-admissibility-mp-one}\n-If one nevertheless retains the historical auxiliary assumptions\n+Under the separately supplied auxiliary assumptions\n \\((\\mathrm{THC})\\) and"
+  },
+  {
+    "claim_id": "P3G-F-0049",
+    "labels": [],
+    "diff": "--- \n+++ \n@@ -9,3 +9,3 @@\n \\]\n-The old THC/SAT branch is retained only as a historical auxiliary diagnostic.\n+The THC/SAT branch is only an auxiliary rank comparison.\n It does not supply the physical area law, does not select \\(m_p\\), and does"
+  },
+  {
+    "claim_id": "P3G-F-0057",
+    "labels": [
+      "p3:cor:bott-stable-primitive-shell-carrier"
+    ],
+    "diff": "--- \n+++ \n@@ -2,3 +2,3 @@\n \\label{p3:cor:bott-stable-primitive-shell-carrier}\n-Paper~I-A, Theorem~\\ref{p1:thm:septet-octet-resolution-module}, fixes the\n+Paper~I-B, Theorem~\\ref{p1:thm:septet-octet-resolution-module}, fixes the\n scalar-free resolution-data module"
+  },
+  {
+    "claim_id": "P3G-F-0062",
+    "labels": [
+      "paper3g:lemma:atlas-optional-product-symplectic-factorization-1074eae"
+    ],
+    "diff": "--- \n+++ \n@@ -1,3 +1,3 @@\n \n-\\label{paper3g:lemma:atlas-optional-product-symplectic-factorization-1074eae}% stable atlas label; provenance v2_277\n+\\label{paper3g:lemma:atlas-optional-product-symplectic-factorization-1074eae}\n "
+  },
+  {
+    "claim_id": "P3G-F-0075",
+    "labels": [
+      "p3:thm:protected-clifford-master-index"
+    ],
+    "diff": "--- \n+++ \n@@ -5,3 +5,3 @@\n complement and let \\(A_{\\rm prot}\\cong\\Cl(0,3)\\) be the eight-dimensional real\n-protected Clifford module.  Paper~I-A's resolution-data construction is\n+protected Clifford module.  Paper~I-B's resolution-data construction is\n \\["
+  },
+  {
+    "claim_id": "P3G-F-0076",
+    "labels": [
+      "p3:rem:hurwitz-link-master-index"
+    ],
+    "diff": "--- \n+++ \n@@ -2,3 +2,3 @@\n \\label{p3:rem:hurwitz-link-master-index}\n-If \\(\\mathsf{Supp}_{2T}\\) occurs, Paper~I-A supplies unmarked finite-support\n+If \\(\\mathsf{Supp}_{2T}\\) occurs, Paper~I-B supplies unmarked finite-support\n realizations whose dimensions are compatible with the same integer \\(56\\)."
+  },
+  {
+    "claim_id": "P3G-F-0080",
+    "labels": [
+      "paper3g:corollary:atlas-exact-finite-shell-threshold-staircase-f96297a"
+    ],
+    "diff": "--- \n+++ \n@@ -1,3 +1,3 @@\n \n-\\label{paper3g:corollary:atlas-exact-finite-shell-threshold-staircase-f96297a}% stable atlas label; provenance v2_277\n+\\label{paper3g:corollary:atlas-exact-finite-shell-threshold-staircase-f96297a}\n "
+  },
+  {
+    "claim_id": "P3G-F-0086",
+    "labels": [
+      "p3d:def:owner-typed-upper-scale-placement"
+    ],
+    "diff": "--- \n+++ \n@@ -34,3 +34,3 @@\n \\(U_{56}=\\Rp\\) requires a separately constituted response-to--Einstein--Hilbert\n-scale calibration; \\((\\mathrm{CAL}_{xp})\\) does not supply it.  The legacy\n+scale calibration; \\((\\mathrm{CAL}_{xp})\\) does not supply it.  The auxiliary\n tag \\((\\mathrm{HSC}_{56})\\) records the pair consisting of the proved"
+  },
+  {
+    "claim_id": "P3G-F-0091",
+    "labels": [
+      "paper3g:corollary:atlas-calibrated-lower-root-notation-3303475",
+      "p3:eq:terminal-active-curvature",
+      "p3:eq:freeze-root-alpha"
+    ],
+    "diff": "--- \n+++ \n@@ -1,3 +1,3 @@\n \n-\\label{paper3g:corollary:atlas-calibrated-lower-root-notation-3303475}% stable atlas label; provenance v2_277\n+\\label{paper3g:corollary:atlas-calibrated-lower-root-notation-3303475}\n "
+  },
+  {
+    "claim_id": "P3G-F-0111",
+    "labels": [
+      "p3e:def:laur17-branch-data",
+      "p3e:eq:laur17-index-family",
+      "p3e:eq:laur-active-response-family",
+      "p3e:eq:laur17-Q"
+    ],
+    "diff": "--- \n+++ \n@@ -15,3 +15,3 @@\n Paper~III-D fixes the realized Laurent family.  Its mathematical identity\n-is Paper~1B, Theorem~\\ref{p1b:thm:laurent-family}~\\cite{Kugelmann2026Paper1B},\n+is Paper~I-D, Theorem~\\ref{p1b:thm:laurent-family}~\\cite{Kugelmann2026Paper1D},\n with \\(A=A_\\sigma\\), \\(R=\\scal\\) and \\(C=C_j\\); for \\(q>0\\),"
+  },
+  {
+    "claim_id": "P3G-F-0128",
+    "labels": [
+      "paper3g:proposition:atlas-curvature-and-conjugate-completion-bbc8aec"
+    ],
+    "diff": "--- \n+++ \n@@ -1,3 +1,3 @@\n \n-\\label{paper3g:proposition:atlas-curvature-and-conjugate-completion-bbc8aec}% stable atlas label; provenance v2_277\n+\\label{paper3g:proposition:atlas-curvature-and-conjugate-completion-bbc8aec}\n "
+  },
+  {
+    "claim_id": "P3G-F-0129",
+    "labels": [
+      "p3f:cor:v181-trivial-bundle-nontrivial-holonomy"
+    ],
+    "diff": "--- \n+++ \n@@ -4,3 +4,3 @@\n Paper~I-C, Theorem~\\ref{p1b:thm:relative}\n-\\cite{Kugelmann2026Paper1B}, for the principal\n+\\cite{Kugelmann2026Paper1C}, for the principal\n $SU(2)_{\\rm diag}$ bundle $X_7^{\\rm cmp}\\to K_{\\rm rel}$."
+  },
+  {
+    "claim_id": "P3G-F-0161",
+    "labels": [
+      "p3f:rem:m8td-helicity-balance",
+      "p3f:eq:m8td-helicity-balance"
+    ],
+    "diff": "--- \n+++ \n@@ -8,3 +8,3 @@\n \\]\n-Paper~I-C, Corollary~\\ref{p1b:cor:dirac-helicity-balance}, gives\n+Paper~I-D, Corollary~\\ref{p1b:cor:dirac-helicity-balance}, gives\n \\begin{equation}"
+  },
+  {
+    "claim_id": "P3G-F-0166",
+    "labels": [
+      "p3f:thm:native-first-quartic-response",
+      "p3f:eq:native-first-quartic-coefficient",
+      "p3f:eq:native-quartic-sixth-remainder"
+    ],
+    "diff": "--- \n+++ \n@@ -27,3 +27,3 @@\n The separately declared square has its first energy motion at degree\n-eight when \\(L_4\\ne0\\); Appendix~\\ref{p3f:app:native-source-square-readout}\n+eight when \\(L_4\\ne0\\); Section~\\ref{p3f:app:native-source-square-readout}\n retains this optional squared readout and its explicit error estimate."
+  },
+  {
+    "claim_id": "P3G-F-0167",
+    "labels": [
+      "p3f:cor:native-shift-fourth-displacement"
+    ],
+    "diff": "--- \n+++ \n@@ -12,3 +12,3 @@\n Theorem~\\ref{p3f:thm:native-first-quartic-response} computes \\(L_4\\) and its signed\n-readout remainder; Appendix~\\ref{p3f:app:native-mixed-quartic-comparison} gives an exact\n+readout remainder; Section~\\ref{p3f:app:native-mixed-quartic-comparison} gives an exact\n nonzero example and a root-remainder bound."
+  },
+  {
+    "claim_id": "P3G-F-0181",
+    "labels": [
+      "p3g:prop:v349-meron-zeta-certificate"
+    ],
+    "diff": "--- \n+++ \n@@ -18,5 +18,5 @@\n the previously established theta trace gives the all-order\n-heat expansion; finite numerical checks in\n-\\texttt{Proofs/Paper00-MultiGapClosures-v1\\_1-verify.py}\n-validate the first terms, while the analytic theta identity\n-proves all terms.\n+heat expansion. Finite checks of its initial coefficients\n+\n+provide independent corroboration; the analytic theta identity\n+proves the expansion to all orders."
+  }
+]

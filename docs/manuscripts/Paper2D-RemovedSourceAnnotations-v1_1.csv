@@ -1,0 +1,90 @@
+original_line,classification,verbatim_source_line
+1,MATHEMATICAL_SCOPE,% Framework research-mathematical source integration v3.020; E3/E4 pending; no physical occurrence promoted.
+2,PROVENANCE_OR_EDITORIAL,% Current integrated paper source: Paper2D-SymmetrySpectra-v2_142.tex (v3_017).
+3,PROVENANCE_OR_EDITORIAL,"% Prior source: Paper2D-SymmetrySpectra-v2_141.tex. New cross-DAG mathematics is scoped, not physical-occurrence certified."
+4,PROVENANCE_OR_EDITORIAL,% Paper-series v2.381: complete algebraic exceptional torsion atlas and all-cocycle twist-stability; original claims retained.
+5,PROVENANCE_OR_EDITORIAL,"% Paper-series v2.380: unified bibliography, exact exceptional double/length/gauge mathematics in I-B; previous theorem labels retained."
+6,PROVENANCE_OR_EDITORIAL,% Paper-series v2.379: full equivariant Dirac/Hodge/eta/torsion atlas in Paper I-B; paper-root references synchronized.
+7,PROVENANCE_OR_EDITORIAL,% Paper-series v2.378: 2026 exceptional literature consolidation and reference synchronization. The mathematical additions are located in Paper I-B.
+8,PROVENANCE_OR_EDITORIAL,% Paper-series v2.377: reference-only rebind to current Paper I-B v1.1; original mathematics retained except new Paper I-B comparison chapter.
+9,PROVENANCE_OR_EDITORIAL,% Framework v2.370: derived exceptional-root/Hurwitz comparison in I-A/I-C; other papers reference-only synchronized.
+10,PROVENANCE_OR_EDITORIAL,% Framework v2.368: preserve prior II-B convention/unital fixes and verified II-D corrections; current references synchronized.
+11,PROVENANCE_OR_EDITORIAL,"% Framework v2.358: current 30-root source reference synchronization; selectively updated III-E, III-F, VI-B, VI-C."
+12,PROVENANCE_OR_EDITORIAL,% Framework v2.356: bibliography/source-registry synchronization; mathematical body unchanged.
+13,MATHEMATICAL_SCOPE,% Framework v2.352: integrated mathematical/operational closure; physical occurrence boundaries preserved.
+14,MATHEMATICAL_SCOPE,"% Framework v2.318: conditional 2I/Petersen incidence descent, exact ten-axis quadrupole comparison, readout and symmetry limits."
+15,PROVENANCE_OR_EDITORIAL,"% Framework v2.275: exact positive dense-twin word cubature, finite repeatability and eighth-moment classification, nested sampling frames, joint action and POVM-jet exports; preserves v2.274."
+16,PROVENANCE_OR_EDITORIAL,"% Framework v2.274: two-scalar positive convolution certificates, first-leaked exceptional coset detection, branch-symmetric twin mixing, and finite endpoint moments; all v2.273 branches preserved."
+17,PROVENANCE_OR_EDITORIAL,"% Framework v2.273: restored missing Problem 3 theorems from v2.268; exact exceptional frames, twin geometry, convolution repeatability and projector/occurrence firewalls; merged on v2.272 without overwriting independent branches."
+18,PROVENANCE_OR_EDITORIAL,% Framework v2.272: merged v2.270 covariant native-readout mathematics with v2.271 Problem 4 finite-action Hopf hypercharge/holonomy corrections; no universal bulk-gauge uniqueness claim.
+19,PROVENANCE_OR_EDITORIAL,% Independent branches: v2.270 readout/guard exports and v2.270 K16 action-consumed charge closure; all prior scoped assumptions retained.
+20,PROVENANCE_OR_EDITORIAL,"% Framework v2.267: exact Paper II-A converse/observable certificates, III-F action tests, V-B right orbit and V-C native gauge scope; prior v2.266 preserved."
+21,PROVENANCE_OR_EDITORIAL,% Framework v2.266: exact Paper II-C outcome-count/readout converse results and scoped downstream imports; 30-root references synchronized.
+22,PROVENANCE_OR_EDITORIAL,% Framework v2.265: II-C coordinate-stage constitution and exact first-symbol host inheritance; prior mathematical domains retained.
+23,PROVENANCE_OR_EDITORIAL,% Framework v2.264: II-B reverse and action-bridge integration; preserves prior mathematical domains; active 30-root references synchronized.
+24,PROVENANCE_OR_EDITORIAL,% Framework v2.263: Paper I-D adds bridge-controlled root-carry parity and source-relative old-cap cancellation; other root mathematical bodies retained; active 30-root references synchronized.
+25,PROVENANCE_OR_EDITORIAL,"% Framework v2.262: merges Paper II-F three-gap closure from v2.260 into v2.261, preserving newer II-B/II-D repairs; 30-root references synchronized."
+26,PROVENANCE_OR_EDITORIAL,% Framework v2.261: merged Paper II-B GP2-level/geometric repairs; preserves v2.260 II-D repairs; active references synchronized.
+27,PROVENANCE_OR_EDITORIAL,"% Framework v2.260: Paper II-D repair derivations; independent signed RS, canonical/Jordan action and inherited symbol."
+28,MATHEMATICAL_SCOPE,% Framework v2.259: conditional native SU(2) atlas and explicit later discharge; v2.258 mathematical bodies retained elsewhere.
+29,PROVENANCE_OR_EDITORIAL,% Framework v2.258: preserves parallel II-A/dynamics update and adds complete readout/frequency closures.
+30,PROVENANCE_OR_EDITORIAL,% Framework v2.257: exact minimal complete position readout and arbitrary-preparation frequency law.
+31,PROVENANCE_OR_EDITORIAL,% Framework v2.256: exact native inertia and sharp bounded ordered-source closure; preserves concurrent v2.255 work.
+32,PROVENANCE_OR_EDITORIAL,% Framework v2.255: preserves parallel detector integration and adds exact finite readout closures.
+33,PROVENANCE_OR_EDITORIAL,% Framework v2.254: shared bibliography/reference sync; substantive Pasterski detector-Ward additions only IV-B/IV-C/VII-C.
+34,PROVENANCE_OR_EDITORIAL,% Framework v2.253: typed raw coordinate defect in I-A and synchronized VI-A import; active references synchronized.
+35,PROVENANCE_OR_EDITORIAL,% Framework v2.252: optional shell-frame source-return calculation in III-G; active references synchronized.
+36,PROVENANCE_OR_EDITORIAL,"% Framework v2.251: forward common-action execution, joint source jets and scoped coupled control."
+37,PROVENANCE_OR_EDITORIAL,"% Framework v2.251: exact full-heat variations, fermion source jets and explicit physical completion frontier."
+38,PROVENANCE_OR_EDITORIAL,"% Framework v2.251: certified interacting source jets, pole stability and scoped completion proofs."
+39,PROVENANCE_OR_EDITORIAL,% Framework v2.251: interacting finite-source evaluation and coupled local vacuum classification.
+40,PROVENANCE_OR_EDITORIAL,% Framework v2.251: exact finite source execution and native causal common-parent bridge.
+41,MATHEMATICAL_SCOPE,% Framework v2.251: constructive parent and scoped source-incidence audit; see release report.
+42,PROVENANCE_OR_EDITORIAL,"% Framework v2.251: common-action two-jet, corrected source/response closure and synchronized references."
+43,PROVENANCE_OR_EDITORIAL,% Framework v2.244: scoped rooted source-order Schur diagnostics and synchronized paper references.
+44,PROVENANCE_OR_EDITORIAL,"% Framework v2.242: signed rooted phase lift, complete transverse return and exact family cubic."
+45,MATHEMATICAL_SCOPE,"% Framework v2.241: proved rooted conormal geometry, conditional cap realization and scoped action tests."
+46,PROVENANCE_OR_EDITORIAL,% Framework v2.239: coherent 30-paper reference rebinding; selective new proofs on established owners.
+47,PROVENANCE_OR_EDITORIAL,% Framework v2.238: source registry synchronized; existing mathematical body retained except declared insertions.
+49,PROVENANCE_OR_EDITORIAL,% v2.53 / framework v2.56: adds the transverse-shell typing firewall: diagonal shell degree is distinct from Hopf fibre charge and from diagonal Cartan weight.
+50,MATHEMATICAL_SCOPE,% v2.2: audit revision.  Standing note on the P_sli discharge; external-reference machinery synchronized.
+62,PROVENANCE_OR_EDITORIAL,% The shared macro owns the series bibliography and external-reference
+63,PROVENANCE_OR_EDITORIAL,% registry; this paper declares no local bibliography override.
+70,PROVENANCE_OR_EDITORIAL,% The canonical macro automatically supplies the current series AUX registry;
+71,PROVENANCE_OR_EDITORIAL,% this paper owns no local external-document list.
+80,PROVENANCE_OR_EDITORIAL,% Cross-DAG current-series import for the new source-owned mathematical bridge.
+873,PROVENANCE_OR_EDITORIAL,% BEGIN INLINE SOURCE: Paper2D-PremiseClosure-Main-v1_0.tex
+985,PROVENANCE_OR_EDITORIAL,% END INLINE SOURCE: Paper2D-PremiseClosure-Main-v1_0.tex
+1808,PROVENANCE_OR_EDITORIAL,% BEGIN M8 v1.78 IID_IMPORT
+1819,PROVENANCE_OR_EDITORIAL,% END M8 v1.78 IID_IMPORT
+3008,PROVENANCE_OR_EDITORIAL,% Proposed placement: at the existing use of K_LC in II-D / the native
+3009,MATHEMATICAL_SCOPE,"% geometric readout. This is a representation transport, not a new owner."
+3308,PROVENANCE_OR_EDITORIAL,% BEGIN SC v1.80 CLOCK-KINEMATICS
+3513,PROVENANCE_OR_EDITORIAL,% END SC v1.80 CLOCK-KINEMATICS
+3515,PROVENANCE_OR_EDITORIAL,% BEGIN v2.210 VERIFIED GEOMETRY LITERATURE TRANSFERS
+3668,PROVENANCE_OR_EDITORIAL,% END v2.210 VERIFIED GEOMETRY LITERATURE TRANSFERS
+3673,PROVENANCE_OR_EDITORIAL,% BEGIN FRAMEWORK v2.318: FINITE PETERSEN SPECTRAL INTERFACES
+3722,PROVENANCE_OR_EDITORIAL,% END FRAMEWORK v2.318: FINITE PETERSEN SPECTRAL INTERFACES
+3853,PROVENANCE_OR_EDITORIAL,% BEGIN FRAMEWORK v2.352: MINIMAL COVARIANT BRIDGE PORT AND EVEN-WORD NO-GO
+3915,PROVENANCE_OR_EDITORIAL,% END FRAMEWORK v2.352
+3919,PROVENANCE_OR_EDITORIAL,"% BEGIN SOURCE-INTEGRATED CROSS-PAPER MATHEMATICS v3_017, 15 November 2026."
+3920,PROVENANCE_OR_EDITORIAL,%  Derived geometric comparison modules; physical source occurrence not promoted.
+3921,MATHEMATICAL_SCOPE,%  E3/E4 independent audit of these NEW results remains pending; inherited source statements retained.
+3924,PROVENANCE_OR_EDITORIAL,% -------- Research module Paper2D-BinaryIcosahedralHopfSampler-v1_1 (latest supplied version) --------
+3925,PROVENANCE_OR_EDITORIAL,"% Born--Hopf Geometry cross-DAG research insert, PROPOSED ONLY."
+3926,PROVENANCE_OR_EDITORIAL,"% Destination: Paper II-D, after Hopf-charge definition."
+3927,MATHEMATICAL_SCOPE,% Theorem status: mathematical conditional on a chosen order-10 2I axis;
+3928,MATHEMATICAL_SCOPE,% not a new physical Hopf-axis/charge occurrence certificate.
+4023,PROVENANCE_OR_EDITORIAL,% END SOURCE-INTEGRATED CROSS-PAPER MATHEMATICS v3_017.
+4026,MATHEMATICAL_SCOPE,% BEGIN FRAMEWORK v2.241: ROOTED CONORMAL GRAVITY AUDIT
+4054,MATHEMATICAL_SCOPE,% END FRAMEWORK v2.241: ROOTED CONORMAL GRAVITY AUDIT
+4058,PROVENANCE_OR_EDITORIAL,% BEGIN SOURCE-INTEGRATED CROSS-DAG MATHEMATICS CC20 (2026-11-16)
+4059,PROVENANCE_OR_EDITORIAL,% BEGIN MODULE: Paper2D-Exceptional72HopfSampler-v1_1.tex
+4060,MATHEMATICAL_SCOPE,% CC18 72-base order-ten Hopf extension (different marked axis from
+4061,PROVENANCE_OR_EDITORIAL,% the separately integrated 150-direction quaternion i-axis rule).
+4119,PROVENANCE_OR_EDITORIAL,% END MODULE: Paper2D-Exceptional72HopfSampler-v1_1.tex
+4121,PROVENANCE_OR_EDITORIAL,% BEGIN MODULE: Paper2D-DoubleHopfMemoryCharges-v1_1.tex
+4122,MATHEMATICAL_SCOPE,"% CC19 RESEARCH ONLY, not integrated into Paper II-D or IV-B."
+4123,PROVENANCE_OR_EDITORIAL,% Imports p1b:thm:cc16-minimal-41state-memory and p2d:thm:cc14-hopf-120.
+4162,PROVENANCE_OR_EDITORIAL,% END MODULE: Paper2D-DoubleHopfMemoryCharges-v1_1.tex
+4163,PROVENANCE_OR_EDITORIAL,% END SOURCE-INTEGRATED CROSS-DAG MATHEMATICS CC20

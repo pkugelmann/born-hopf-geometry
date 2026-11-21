@@ -1,0 +1,16 @@
+{
+  "package": "v1_81",
+  "parent": "v1_80",
+  "paper_source_release": "v3_066",
+  "new_source_labels": 34,
+  "edited_papers": 11,
+  "historical_audits_changed": 0,
+  "new_audit_verdicts": 0,
+  "new_gap_closures": 0,
+  "status": "source-integration-notification; no full E1 E3 E4 re-audit",
+  "current_release": "Paper00-ProofChainAudits-v1_82.zip",
+  "current_source": "Paper00-PapersMinimal-v3_067.zip",
+  "latest_source_integration_scope": "Paper00-FrontierOccurrenceSourceIntegration-v1_1.md",
+  "independent_new_paper_audits": 0,
+  "physical_occurrence_promotions": 0
+}

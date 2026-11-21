@@ -1,0 +1,81 @@
+original_line,source_text
+1,% Paper-series v2.381: complete algebraic exceptional torsion atlas and all-cocycle twist-stability; original claims retained.
+2,"% Paper-series v2.380: unified bibliography, exact exceptional double/length/gauge mathematics in I-B; previous theorem labels retained."
+3,% Paper-series v2.379: full equivariant Dirac/Hodge/eta/torsion atlas in Paper I-B; paper-root references synchronized.
+4,% Paper-series v2.378: 2026 exceptional literature consolidation and reference synchronization. The mathematical additions are located in Paper I-B.
+5,% Paper-series v2.377: reference-only rebind to current Paper I-B v1.1; original mathematics retained except new Paper I-B comparison chapter.
+6,% Framework v2.370: derived exceptional-root/Hurwitz comparison in I-A/I-C; other papers reference-only synchronized.
+7,% Framework v2.368: preserve prior II-B convention/unital fixes and verified II-D corrections; current references synchronized.
+8,"% Framework v2.358: current 30-root source reference synchronization; selectively updated III-E, III-F, VI-B, VI-C."
+9,% Framework v2.356: bibliography/source-registry synchronization; mathematical body unchanged.
+10,"% Framework v2.343: Reciprocal signed coupling, selected 15 and conditional physical boundary."
+11,"% Framework v2.342: Exact three-cycle Petersen reconstruction, class frames, typed nonactualization."
+12,% Framework v2.341: Coherent coset--Hodge and parity cover integration. Previous v2.340 retained.
+13,% Framework v2.340: Exact rank-two 600-cell incidence and typed operator/observable closure.
+14,"% Framework v2.339: Petersen--endomorphism isometry, incidence projector and typed physical-proof firewall."
+15,"% Framework v2.318: conditional 2I/Petersen incidence descent, exact ten-axis quadrupole comparison, readout and symmetry limits."
+16,"% Framework v2.275: exact positive dense-twin word cubature, finite repeatability and eighth-moment classification, nested sampling frames, joint action and POVM-jet exports; preserves v2.274."
+17,"% Framework v2.274: two-scalar positive convolution certificates, first-leaked exceptional coset detection, branch-symmetric twin mixing, and finite endpoint moments; all v2.273 branches preserved."
+18,"% Framework v2.273: restored missing Problem 3 theorems from v2.268; exact exceptional frames, twin geometry, convolution repeatability and projector/occurrence firewalls; merged on v2.272 without overwriting independent branches."
+19,% Framework v2.272: merged v2.270 covariant native-readout mathematics with v2.271 Problem 4 finite-action Hopf hypercharge/holonomy corrections; no universal bulk-gauge uniqueness claim.
+20,% Independent branches: v2.270 readout/guard exports and v2.270 K16 action-consumed charge closure; all prior scoped assumptions retained.
+21,"% Framework v2.267: exact Paper II-A converse/observable certificates, III-F action tests, V-B right orbit and V-C native gauge scope; prior v2.266 preserved."
+22,% Framework v2.266: exact Paper II-C outcome-count/readout converse results and scoped downstream imports; 30-root references synchronized.
+23,% Framework v2.265: II-C coordinate-stage constitution and exact first-symbol host inheritance; prior mathematical domains retained.
+24,% Framework v2.264: II-B reverse and action-bridge integration; preserves prior mathematical domains; active 30-root references synchronized.
+25,% Framework v2.263: Paper I-D adds bridge-controlled root-carry parity and source-relative old-cap cancellation; other root mathematical bodies retained; active 30-root references synchronized.
+26,"% Framework v2.262: merges Paper II-F three-gap closure from v2.260 into v2.261, preserving newer II-B/II-D repairs; 30-root references synchronized."
+27,% Framework v2.261: merged Paper II-B GP2-level/geometric repairs; preserves v2.260 II-D repairs; active references synchronized.
+28,"% Framework v2.260: Paper II-D signed RS, finite-symbol typing, and conditional curvature/Jordan repairs; references synchronized."
+29,% Framework v2.259: conditional native SU(2) atlas and explicit later discharge; v2.258 mathematical bodies retained elsewhere.
+30,% Framework v2.258: preserves parallel II-A/dynamics update and adds complete readout/frequency closures.
+31,% Framework v2.257: exact minimal complete position readout and arbitrary-preparation frequency law.
+32,% Framework v2.256: exact native inertia and sharp bounded ordered-source closure; preserves concurrent v2.255 work.
+33,% Framework v2.255: preserves parallel detector integration and adds exact finite readout closures.
+34,% Framework v2.254: shared bibliography/reference sync; substantive Pasterski detector-Ward additions only IV-B/IV-C/VII-C.
+35,% Framework v2.253: typed raw coordinate defect in I-A and synchronized VI-A import; active references synchronized.
+36,% Framework v2.252: optional shell-frame source-return calculation in III-G; active references synchronized.
+37,"% Framework v2.251: forward common-action execution, joint source jets and scoped coupled control."
+38,"% Framework v2.251: exact full-heat variations, fermion source jets and explicit physical completion frontier."
+39,"% Framework v2.251: certified interacting source jets, pole stability and scoped completion proofs."
+40,% Framework v2.251: interacting finite-source evaluation and coupled local vacuum classification.
+41,% Framework v2.251: exact finite source execution and native causal common-parent bridge.
+42,% Framework v2.251: constructive parent and scoped source-incidence audit; see release report.
+43,"% Framework v2.251: common-action two-jet, corrected source/response closure and synchronized references."
+44,% Framework v2.244: scoped rooted source-order Schur diagnostics and synchronized paper references.
+45,"% Framework v2.242: signed rooted phase lift, complete transverse return and exact family cubic."
+46,"% Framework v2.241: proved rooted conormal geometry, conditional cap realization and scoped action tests."
+47,% Framework v2.239: coherent 30-paper reference rebinding; selective new proofs on established owners.
+48,% Framework v2.238: source registry synchronized; existing mathematical body retained except declared insertions.
+57,% The shared macro centrally registers the current series AUX files and skips
+58,% this paper's own logical root automatically.  Former II-E and II-F labels
+59,% remain local for downstream compatibility.
+73,% BEGIN FRAMEWORK v2.343: CURRENT EXTERNAL SOURCE-REFERENCE ROOTS
+81,% END FRAMEWORK v2.343: CURRENT EXTERNAL SOURCE-REFERENCE ROOTS
+1952,% BEGIN M8 v1.78 IIE_IMPORT
+1963,% END M8 v1.78 IIE_IMPORT
+1965,% BEGIN v2.210 VERIFIED GEOMETRY LITERATURE TRANSFERS
+2029,% END v2.210 VERIFIED GEOMETRY LITERATURE TRANSFERS
+2062,% END FRAMEWORK v2.226: KINEMATIC CLOSURES
+2064,% BEGIN FRAMEWORK v2.227: DOWNWARD CLOSURES
+2090,% END FRAMEWORK v2.227: DOWNWARD CLOSURES
+2094,% BEGIN FRAMEWORK v2.318: NATIVE LOCAL PETERSEN TRIMERS AND GLOBAL OBSTRUCTION
+2164,% END FRAMEWORK v2.318: NATIVE LOCAL PETERSEN TRIMERS AND GLOBAL OBSTRUCTION
+2267,% BEGIN FRAMEWORK v2.266: EXACT PROTECTED READOUT IMPORT
+2303,% END FRAMEWORK v2.266: EXACT PROTECTED READOUT IMPORT
+2306,% BEGIN FRAMEWORK v2.270: EXACT COVARIANT NATIVE READOUT EXPORT
+2337,% END FRAMEWORK v2.270: EXACT COVARIANT NATIVE READOUT EXPORT
+2341,% BEGIN FRAMEWORK v2.274: OBSERVABLE-LEVEL FINITE READOUT EXPORT
+2358,% END FRAMEWORK v2.274: OBSERVABLE-LEVEL FINITE READOUT EXPORT
+2361,% BEGIN FRAMEWORK v2.275: COMMON POSITIVE OBSERVABLE-LEVEL EXPORT
+2402,% END FRAMEWORK v2.275: COMMON POSITIVE OBSERVABLE-LEVEL EXPORT
+2405,% BEGIN FRAMEWORK v2.339: TYPED PETERSEN FINITE-OPERATOR EXPORT
+2431,% END FRAMEWORK v2.339
+2434,% BEGIN FRAMEWORK v2.340: FINITE INCIDENCE EXPORT CONTRACT
+2465,% END FRAMEWORK v2.340
+2469,% BEGIN FRAMEWORK v2.341: TYPED COSET--DESARGUES EXPORT
+2496,% END FRAMEWORK v2.341
+2499,% BEGIN FRAMEWORK v2.342: TYPED THREE-CYCLE READOUT EXPORT
+2539,% END FRAMEWORK v2.342
+2542,% BEGIN FRAMEWORK v2.343: CONDITIONAL SIGNED RECIPROCAL READOUT
+2582,% END FRAMEWORK v2.343

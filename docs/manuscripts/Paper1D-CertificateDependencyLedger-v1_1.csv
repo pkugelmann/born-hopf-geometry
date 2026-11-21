@@ -1,0 +1,23 @@
+line,path_in_source,basename,suffix,PapersMinimal-v3_056,S3StructureNetwork-v1_41,ProofChainAudits-v1_79,DAGAtlas-v1_214
+19165,Paper00-M8StructuralConsequences-v1_1.md,Paper00-M8StructuralConsequences-v1_1.md,md,,,,
+19285,Paper00-M8BiHopfModularRigor-v1_2.md,Paper00-M8BiHopfModularRigor-v1_2.md,md,,,,
+19373,Paper00-M8ScalarG20Topology-v1_1.md,Paper00-M8ScalarG20Topology-v1_1.md,md,,,,
+19503,Paper00-GeometricClosureBatches-v1_1.md,Paper00-GeometricClosureBatches-v1_1.md,md,,,,
+23772,Paper1B-CorrectnessUpdate-v1_0.md,Paper1B-CorrectnessUpdate-v1_0.md,md,,,,
+25067,Paper1A-PetersenHopfGeometry-v1_3-verify.py,Paper1A-PetersenHopfGeometry-v1_3-verify.py,py,,,,
+25068,Paper1A-PetersenHopfGeometry-v1_4-verify.py,Paper1A-PetersenHopfGeometry-v1_4-verify.py,py,,,,
+25434,Proofs/Paper00-PetersenBridges-v1_3.py,Paper00-PetersenBridges-v1_3.py,py,,,,Paper00-DAGAtlas-v1_214/Proofs/Paper00-PetersenBridges-v1_3.py
+25435,Proofs/Paper00-PetersenBridges-v1_3-output.json,Paper00-PetersenBridges-v1_3-output.json,json,,,,Paper00-DAGAtlas-v1_214/Proofs/Paper00-PetersenBridges-v1_3-output.json
+25464,Proofs/Paper00-ThreeCycleReconstruction-v1_2.py,Paper00-ThreeCycleReconstruction-v1_2.py,py,,,,Paper00-DAGAtlas-v1_214/Proofs/Paper00-ThreeCycleReconstruction-v1_2.py
+25484,Proofs/Paper00-ReciprocalSignedCoupling-v1_1.py,Paper00-ReciprocalSignedCoupling-v1_1.py,py,,,,Paper00-DAGAtlas-v1_214/Proofs/Paper00-ReciprocalSignedCoupling-v1_1.py
+25510,Proofs/Paper00-ReciprocalSignedCoupling-v1_1.json,Paper00-ReciprocalSignedCoupling-v1_1.json,json,,,,Paper00-DAGAtlas-v1_214/DAG/AuditLayer/Paper1C-v1_1/CertificateReplay/Paper00-ReciprocalSignedCoupling-v1_1.json; Paper00-DAGAtlas-v1_214/Proofs/Paper00-ReciprocalSignedCoupling-v1_1.json
+25523,Proofs/Paper00-HadronScaleTest-v1_7-certificate.py,Paper00-HadronScaleTest-v1_7-certificate.py,py,,,,
+25558,Proofs/Paper00-PetersenHodgePlucker-v1_11-verify.py,Paper00-PetersenHodgePlucker-v1_11-verify.py,py,,,,Paper00-DAGAtlas-v1_214/Proofs/Paper00-PetersenHodgePlucker-v1_11-verify.py
+25634,Proofs/Paper00-F40MirrorGluing-v1_1-verify.py,Paper00-F40MirrorGluing-v1_1-verify.py,py,,,,Paper00-DAGAtlas-v1_214/Proofs/Paper00-F40MirrorGluing-v1_1-verify.py
+25780,Proofs/Paper00-HurwitzHadronFiniteCheck-v1_1.py,Paper00-HurwitzHadronFiniteCheck-v1_1.py,py,,,,Paper00-DAGAtlas-v1_214/Proofs/Paper00-HurwitzHadronFiniteCheck-v1_1.py
+25848,Proofs/Paper00-HurwitzHadronChamberExact-v1_1.py,Paper00-HurwitzHadronChamberExact-v1_1.py,py,,,,
+25883,Proofs/Paper00-HadronChamberSplitCertificate-v1_7.py,Paper00-HadronChamberSplitCertificate-v1_7.py,py,,,,
+25888,Proofs/Paper00-HadronChamberSplitCertificate-v1_9.py,Paper00-HadronChamberSplitCertificate-v1_9.py,py,,,,
+25982,Proofs/Paper00-LisiE8Compatibility-v1_2.py,Paper00-LisiE8Compatibility-v1_2.py,py,,,,
+26081,Paper00-Petersen600CellIncidence-v1_7.py,Paper00-Petersen600CellIncidence-v1_7.py,py,,,,Paper00-DAGAtlas-v1_214/Proofs/Paper00-Petersen600CellIncidence-v1_7.py
+26406,Paper1D-IssueClosureResearch-v1_18.md,Paper1D-IssueClosureResearch-v1_18.md,md,,,,Paper00-DAGAtlas-v1_214/DAG/AuditLayer/Paper1D-TechnicalMaterial-v1_1/Evidence/Paper1D-IssueClosureResearch-v1_18.md

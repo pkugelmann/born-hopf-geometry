@@ -1,0 +1,382 @@
+claim_id,type,labels,original_line_start,revised_line_start,original_body_sha256,revised_body_sha256,body_text_identical,math_inside_identical,changed_text_diff
+P3G-F-0001,definition,p3:def:reciprocal-interface-hypotheses;p3a:eq:profile-spectrum-metric,138,88,df27e90f66508b2478b535519db798ceda72b9141f724175a528e5c5dadf4108,b28b9416f91b35d86535902ff2f9296f20c3d45f9cac6e4762cfdb344fccaec7,False,True,"--- 
++++ 
+@@ -84,3 +84,3 @@
+ These operators give the faithful \(A^{\mathrm{op}}\)-operation parent
+-on the profile doctrine.  The legacy symbols \((\mathrm{BR}_{\rm ind})\) and
++on the profile doctrine.  The auxiliary symbols \((\mathrm{BR}_{\rm ind})\) and
+ \((\mathrm{IND}_{xp})\) are used below only as theorem-status names for the"
+P3G-F-0002,theorem,p3:thm:reciprocal-status-discharge,230,180,1c6555368f3da25bb3861771dc10d3c1821adcfc22881273f957926e58523e8a,1c6555368f3da25bb3861771dc10d3c1821adcfc22881273f957926e58523e8a,True,True,
+P3G-F-0003,theorem,p3:def:intrinsic-born-reciprocal-constitution,291,241,4abbd0766e83b1a93a0e80ef0f8d78710eacfd3291678106d2b10e9e34b69958,4abbd0766e83b1a93a0e80ef0f8d78710eacfd3291678106d2b10e9e34b69958,True,True,
+P3G-F-0004,theorem,p3:thm:no-insertion-closure-from-GP2,516,466,c5ffdada0192a95bc97e601c2c6234f96d49439fe5b2a759b9f07a2b932a1313,c5ffdada0192a95bc97e601c2c6234f96d49439fe5b2a759b9f07a2b932a1313,True,True,
+P3G-F-0005,corollary,p3:cor:initial-closure-no-insertion,526,476,873f0c495abbd6c3402a155502133b24ca778db93873c858afe9c1f0776191cb,873f0c495abbd6c3402a155502133b24ca778db93873c858afe9c1f0776191cb,True,True,
+P3G-F-0006,definition,p3:def:constitutive-residue,534,484,9034dbe9a7cff5dbfccb0befa80bfc64b2c7df2909bddc1ea512d6a0d2626f1e,9034dbe9a7cff5dbfccb0befa80bfc64b2c7df2909bddc1ea512d6a0d2626f1e,True,True,
+P3G-F-0007,theorem,p3:thm:constitutive-residue-closure,547,497,18e089439a8b96d8b8fb86a01436e9fdd8793e96c89fac814e879bc7bd51c496,18e089439a8b96d8b8fb86a01436e9fdd8793e96c89fac814e879bc7bd51c496,True,True,
+P3G-F-0008,corollary,p3:cor:closed-core-open-completions,612,562,02960c5c1798e09486ebdaf0f926a1816f969a1c2131f39992eac7c1248c688e,5580390be30fe9301b1825a4684d716adb228d0aae93acbc70414c776a48b11f,False,True,"--- 
++++ 
+@@ -11,3 +11,3 @@
+ already derived in Paper~II-B from the frozen momentum-host constitution; the
+-former \(\mathsf P_{\rm sli}\) route is historical only.
++the optional \(\mathsf P_{\rm sli}\) route is not a premise of this result.
+ The scalar orientation is derived on the separately displayed"
+P3G-F-0009,corollary,p3:cor:forced-sector-succession,668,618,9dc2e1380b7c1e1e55489b9bd73c950ff594bdc78256dfb25aaae798a46baed4,9dc2e1380b7c1e1e55489b9bd73c950ff594bdc78256dfb25aaae798a46baed4,True,True,
+P3G-F-0010,remark,p3:rem:gp-use,736,686,b05fd4c0c8f2f2752126e1b8b663f0f3723b772c09a37b13f9221977b8e3d27f,b05fd4c0c8f2f2752126e1b8b663f0f3723b772c09a37b13f9221977b8e3d27f,True,True,
+P3G-F-0011,proposition,p3a:prop:v212-scalar-line-spectrum-handoff,950,900,6b8b3a3cab0d0898a88bcc2fce69972329da671f701e04a1aa78a19e4d543c7d,6b8b3a3cab0d0898a88bcc2fce69972329da671f701e04a1aa78a19e4d543c7d,True,True,
+P3G-F-0012,proposition,p3a:prop:finite-carrier-selector-boundary,1009,959,2d2239e3ad44c1adaa7d9da53b922f248b72778530eaea6b6e2963bda8bbfc5d,11c4c562e5dc8ca495fdcd4dbd9d6fb2336932569ae0118a4bdd5e41a75c274d,False,True,"--- 
++++ 
+@@ -38,2 +38,2 @@
+ \]
+-This proposition records the former fixed-action alternative.  It is not used by the current constitutional route, because Paper~II-B now derives the momentum carrier directly from the revised GP2 host closure.
++This fixed-action alternative is conditional on the supplied level-one window; the independent Paper~II-B momentum-host proof does not consume it."
+P3G-F-0013,remark,p3:rem:scalar-primitivity-versus-vector-ceiling,1077,1027,6cf4f3c306ab8e062f9c4db25bc07ae3cf6bf977cb223b815984ac55cf6017e8,128bb471442a3190cfc05dc13997c402d20540d11f986bd0752d15d085fa82a9,False,True,"--- 
++++ 
+@@ -9,2 +9,2 @@
+ 
+-In the former selector architecture the vector finite-level problem was treated differently: once the coordinate sector was required, lower-ideal candidates formed a nested family with mathematical lower bound \(s\ge1\), but the old framework did not derive the endpoint \(s=1\).  That contrast motivated the later revision.  It is historical only: current Paper~II-B derives \(\mathcal H_p\cong\mathcal H_1\) directly and reads off \(m_p=1\) afterward.
++The optional lower-ideal comparison admits nested candidate supports with \(s\ge1\), once the coordinate sector is required, but does not select the terminal member \(s=1\). The independent Paper~II-B host theorem establishes \(\mathcal H_p\cong\mathcal H_1\) and \(m_p=1\)."
+P3G-F-0014,lemma,p3a:lem:v166-coefficient-dual-continuation,1212,1162,6c2df6697ec6ffd8c006d889c72f4929fde53bc6d33775307c92253c86433acd,6c2df6697ec6ffd8c006d889c72f4929fde53bc6d33775307c92253c86433acd,True,True,
+P3G-F-0015,proposition,p3:pro:scalar-diagonal,1309,1259,c8e1f8405e0fbe9873dc1e4d3b95398f4959149ec3bbf144785eef7ff822d01f,c8e1f8405e0fbe9873dc1e4d3b95398f4959149ec3bbf144785eef7ff822d01f,True,True,
+P3G-F-0016,theorem,p3b:thm:typed-pair-groupoid-relative-cocycle,1344,1294,a7b51fa4fd6a5da4876aa804551ee39e02f44ee123e7dfb3f2d50f9594f38015,a7b51fa4fd6a5da4876aa804551ee39e02f44ee123e7dfb3f2d50f9594f38015,True,True,
+P3G-F-0017,remark,p3b:rem:pair-groupoid-scope-firewall,1383,1333,beb857604098b447918cefd11a4580af1b3deb237893a5092c3b797daca19488,beb857604098b447918cefd11a4580af1b3deb237893a5092c3b797daca19488,True,True,
+P3G-F-0018,corollary,p3b:cor:canonical-factor-restrictions,1391,1341,b1465a1654fde2a3c9baf63434af1afedd1afb82a0c9cd57171db72fee087fd5,b1465a1654fde2a3c9baf63434af1afedd1afb82a0c9cd57171db72fee087fd5,True,True,
+P3G-F-0019,corollary,p3b:cor:born-even-odd-jets,1407,1357,92a03051260e6a5183093c0f37006ce82a1544dae234a1b24de418fa493d2bed,92a03051260e6a5183093c0f37006ce82a1544dae234a1b24de418fa493d2bed,True,True,
+P3G-F-0020,remark,,1463,1413,3cf718acc790beb82f6fde5676f10fb634cac20b115e52d9aab0ceee903e099a,62eb46c77c4de7355e3e85b01dba0f9491a143e1d4b83d4b9adabf9bfcb5613b,False,True,"--- 
++++ 
+@@ -4,2 +4,2 @@
+ physical propagator, action, clock, state, or determinant ancestry.  No later
+-closure may cite this appendix alone to supply any such occurrence.
++closure may cite this subsection alone to supply any such occurrence."
+P3G-F-0021,proposition,p3:prop:free-casimir-flow,1472,1422,622621f07e90c0c35d648a8171b2d3b78c4a1584ea2060c4e60498c8d5f4a27b,622621f07e90c0c35d648a8171b2d3b78c4a1584ea2060c4e60498c8d5f4a27b,True,True,
+P3G-F-0022,remark,,1555,1505,6eb2016ed36b5bfd6a9bf51627a9b35a8bf7b91e5b922e5117b26b15eecaf549,6eb2016ed36b5bfd6a9bf51627a9b35a8bf7b91e5b922e5117b26b15eecaf549,True,True,
+P3G-F-0023,remark,p3:rem:hopf-cs-not-dirac-eta,1598,1548,5917210533a84f4845130e0343ffdbd7a85117942fa6d774d679217c1a2f9d7a,5917210533a84f4845130e0343ffdbd7a85117942fa6d774d679217c1a2f9d7a,True,True,
+P3G-F-0024,remark,p3:rem:beltrami-helicity-orientation-data,1609,1559,fd4b5e13b560ef9c79729869d8c072a584c68d3c718730ac1e4e52bf19017bd1,fd4b5e13b560ef9c79729869d8c072a584c68d3c718730ac1e4e52bf19017bd1,True,True,
+P3G-F-0025,theorem,p3b:thm:abstract-hopfion-comparison,1620,1570,73a6340757de836659779936d502b18763c177256db2770468e5cbfc68caa602,73a6340757de836659779936d502b18763c177256db2770468e5cbfc68caa602,True,True,
+P3G-F-0026,definition,p3:def:hopfion-functional;p3:eq:Hopfion-functional,1722,1672,447f663438b366d5e9658777f7f0291c07b4896a95054ea8bc1c3da4cee2fe85,447f663438b366d5e9658777f7f0291c07b4896a95054ea8bc1c3da4cee2fe85,True,True,
+P3G-F-0027,remark,,1761,1711,759b4881ab9345bf751d52e1833a2a416a3ba4a027bb06c45edc148d04467826,759b4881ab9345bf751d52e1833a2a416a3ba4a027bb06c45edc148d04467826,True,True,
+P3G-F-0028,definition,p3:def:seed-passivity,1806,1756,efd5a0bd1378e9cd1882491216a5db71f026448a96c4607681ca1c9ae80ed5c6,cb3e5acdc483b8b51f6ec1543111e4caec67f98cabaa6ca8ac78f291456ebe57,False,True,"--- 
++++ 
+@@ -13,3 +13,3 @@
+ The additional finite candidate shape is the declared spectral-lower-ideal
+-package \(\mathsf P_{\rm sli}\) of Paper~II-B,
++package \(\mathsf P_{\rm sli}\) of Paper~II-F,
+ Definition~\ref{p2:def:spectral-lower-ideal-finite-role-package}.  It supplies"
+P3G-F-0029,corollary,p3:cor:spectral-lower-ideal-sharpness,1842,1792,62eabdfb51743bc2475ec9f77599dcee4f8512762125d3c2c1dc5f99061dd9b1,f0c7917e4d88aa1d58492012f3100495e170472d3fd7f46c8c3c20cf6b75906a,False,True,"--- 
++++ 
+@@ -2,3 +2,3 @@
+ \label{p3:cor:spectral-lower-ideal-sharpness}
+-In the former weaker momentum signature, before canonical-image host closure was adopted, omitting \(\mathsf P_{\rm sli}\) left the generated scalar and coordinate roles insufficient to force \(\mathcal H_1\).  On one reciprocal factor, the proper
++Without the auxiliary lower-ideal premise \(\mathsf P_{\rm sli}\), the scalar and coordinate constraints alone do not entail \(\mathcal H_1\). On one reciprocal factor, the proper
+ multiplicity-free equivariant carriers
+@@ -23,2 +23,2 @@
+ three types omit the adjoint pair \((1,0)\oplus(0,1)\) present in
+-\(\mathcal H_1\).  In that former signature they were excluded precisely by the complete spectral-lower-ideal rule.  Under the revised GP2 host closure they are already excluded by exact/faithful no-omission of the generated momentum-host content.
++\(\mathcal H_1\).  They are excluded by the optional complete spectral-lower-ideal rule, or independently by GP2 exact/faithful no-omission of the constituted momentum-host content."
+P3G-F-0030,corollary,p3b:cor:fixed-action-full-carrier-selector,1874,1824,dc0f45430a827d6156703081c6c7e507d29e6ef0ad37f27682e64b1cbb01dec2,bd369e717499830ed7fffa02fb095246023ee4b9c1892c806e4e40a003ad391f,False,True,"--- 
++++ 
+@@ -23,3 +23,3 @@
+ \]
+-Historically this provided an alternative consistency check to the former \(\mathsf P_{\rm sli}\) tower handoff; it is not part of the present momentum-seed derivation.  The two nonzero channels, level-one ceiling, and
++This supplies a conditional consistency check to the separately assumed \(\mathsf P_{\rm sli}\) tower handoff; it is not part of the present momentum-seed derivation.  The two nonzero channels, level-one ceiling, and
+ closure without recompression remain explicit premises."
+P3G-F-0031,definition,p3b:def:scalar-coordinate-tests,1923,1873,bf60b153b21d7bd3a620f0903080f890a745886a6eea48159624e1a54a612fc0,bf60b153b21d7bd3a620f0903080f890a745886a6eea48159624e1a54a612fc0,True,True,
+P3G-F-0032,lemma,p3b:lem:sub-level-one-scalar-content,1941,1891,e7b3634a941a7ae52e86f6d0cbffc5bc5c70898318b1549ce0b0fe36aa3c8254,e7b3634a941a7ae52e86f6d0cbffc5bc5c70898318b1549ce0b0fe36aa3c8254,True,True,
+P3G-F-0033,remark,p3b:rem:scalar-tests-not-ambient-zero,1970,1920,af403e2e9ae4b0ee41ea36486160464c8b716768728a6a504c6d81841e240b91,af403e2e9ae4b0ee41ea36486160464c8b716768728a6a504c6d81841e240b91,True,True,
+P3G-F-0034,theorem,p3b:thm:legacy-factor-local-shape,1981,1931,b3b74d374097daa24d2cfc9991429d3a328be43852a59d7672102a6ca40e781e,b3b74d374097daa24d2cfc9991429d3a328be43852a59d7672102a6ca40e781e,True,True,
+P3G-F-0035,proposition,p3b:prop:v1382-multiplicity-trace-criterion,2016,1966,1ad49e6e9a10f77e42576bc07d832a0118a75fd6be3fc0ecbf82e77787d67152,1ad49e6e9a10f77e42576bc07d832a0118a75fd6be3fc0ecbf82e77787d67152,True,True,
+P3G-F-0036,theorem,p3b:thm:legacy-factor-local-m1,2039,1989,287b113ceccdd513ba53a488ead11229d0600f4ab566eab849d774beececb230,287b113ceccdd513ba53a488ead11229d0600f4ab566eab849d774beececb230,True,True,
+P3G-F-0037,remark,p3:rem:registered-ceiling-support-provenance,2068,2018,984e039915071718138be367c931383bbe4c0c382beb1e7490722afa61c9ee5c,1924fb6dc17f4d15b880a47b83e495a5d419603303b5b2e388c4c4b75abc7dba,False,True,"--- 
++++ 
+@@ -2,3 +2,3 @@
+ \label{p3:rem:registered-ceiling-support-provenance}
+-Within \(\mathsf P_{\rm sli}+(\mathrm{COORD}_A)\), Paper~II-B,
++Within \(\mathsf P_{\rm sli}+(\mathrm{COORD}_A)\), Paper~II-F,
+ Proposition~\ref{p2:prop:level-one-support-ceiling-bridge}, identifies the
+@@ -6,3 +6,3 @@
+ that the first exterior spinor labels
+-\((1,\tfrac12)\) and \((\tfrac12,1)\) are absent.  Paper~I-A,
++\((1,\tfrac12)\) and \((\tfrac12,1)\) are absent.  Paper~I-B,
+ Theorem~\ref{p1:thm:minimal-coordinate-closed-truncation}, gives the"
+P3G-F-0038,remark,p3:rem:level-one-window-agreement,2082,2032,22ae977e26cf12cf3801b41aeca0b5e968375f1f7b44e8bcd454f620043bd1bf,22ae977e26cf12cf3801b41aeca0b5e968375f1f7b44e8bcd454f620043bd1bf,True,True,
+P3G-F-0039,theorem,p3b:thm:legacy-finite-role-realization,2105,2055,ae179ac6d3d88c89d593ce4adcbb4bff24d1475df6cd712de06a815e576d1d02,ae179ac6d3d88c89d593ce4adcbb4bff24d1475df6cd712de06a815e576d1d02,True,True,
+P3G-F-0040,theorem,p3b:thm:legacy-cell-stability,2149,2099,b51400abc20a0ae91413f4be2ccd47446912e269cbfddd9b4134527abd3fee9a,b51400abc20a0ae91413f4be2ccd47446912e269cbfddd9b4134527abd3fee9a,True,True,
+P3G-F-0041,remark,p3:rem:cell-constitution-gap-closed,2181,2131,43d2f12a258d7cde870df2dfa997ba10b0f1f81b0f754ad38e37f21cd3a97767,1bf506397ed211fda11987cbf488c9bef844ee3d28ea96574af88db90818328a,False,True,"--- 
++++ 
+@@ -2,3 +2,3 @@
+ \label{p3:rem:cell-constitution-gap-closed}
+-In the former selector architecture, the displayed branch fixed
++On the conditional lower-ideal/ceiling domain, the displayed branch fixed
+ \(\chi=1\) by combining three logically distinct ingredients:
+@@ -7,3 +7,3 @@
+ \(\mathsf P_{\rm lvl}(R,1)\) supplied the upper bound \(s_R\le1\).
+-This appendix preserves that calculation only as a historical diagnostic.
++This calculation is a conditional comparison and does not enter the active seed proof.
+ In the current architecture the Paper-II host theorem already fixes the
+@@ -11,3 +11,3 @@
+ consistency/stability result.  Later uses of \(\chi=1\) or \(m_p=1\)
+-therefore inherit the current upstream host theorem, not this former selector
++therefore inherit the current upstream host theorem, not the optional selector
+ branch."
+P3G-F-0042,theorem,p3b:thm:legacy-level-one-handoff,2196,2146,9e6253f4c27d2b1236697bf0f9e712083f3432b8dcd69b3197248f8529150cde,2ecd3f97646d7b873c5cc0800cba49e215a82ba767286ad2e0f7bffdb3f31654,False,True,"--- 
++++ 
+@@ -18,3 +18,3 @@
+ then identify \(\dim_{\CC}\mathcal H_1=15\).  No shell-deletion preorder is
+-used to select the level.  Within this former branch, representation-theoretic conclusions depending only on \(\mathcal H_1\) followed by modus ponens; current uses instead import \(\mathcal H_p\cong\mathcal H_1\) from Paper~II-B.  The normalized Paper-I-A
++used to select the level. Within this conditional comparison, representation-theoretic conclusions depending only on \(\mathcal H_1\) follow from the stipulated endpoint; the independent \(\mathcal H_p\cong\mathcal H_1\) result is imported from Paper~II-B. The normalized Paper-I-B
+ coordinate/Clifford system still specializes to \(\mathsf C_{\rm PI}\), and"
+P3G-F-0043,proposition,p3:prop:first-symmetric-finite-cell-correction,2237,2187,99fa57bf0795dff091b72ceb15227d493d77074ddebc21e4d0a3041013303f44,99fa57bf0795dff091b72ceb15227d493d77074ddebc21e4d0a3041013303f44,True,True,
+P3G-F-0044,remark,,2269,2219,374e4b3c8223a1567b7601036b77bc04237af53d1fdd94c3d5df46f18ef4db50,374e4b3c8223a1567b7601036b77bc04237af53d1fdd94c3d5df46f18ef4db50,True,True,
+P3G-F-0045,definition,p3:def:transverse-harmonic-cell-normalization,2286,2236,670340d9ee6cc1646a33796f598206ab19c54a6b784b5057bdc6463055e1aec0,3359a10efb3ec4049a6aab3bf4036b6e1ed251c2b9a46cd7a507c2fce7b9c671,False,True,"--- 
++++ 
+@@ -16,3 +16,3 @@
+ \]
+-The historical tag \((\mathrm{THC})\) denotes only this degree-\(<\mu\)
++The notation \((\mathrm{THC})\) denotes only this degree-\(<\mu\)
+ auxiliary counting window.  It is not a finite carrier or a count of spatial
+@@ -20,5 +20,5 @@
+ 
+-The historical tag \((\mathrm{ID}_{\rm THC})\) denoted an externally declared
++The auxiliary tag \((\mathrm{ID}_{\rm THC})\) denoted an externally declared
+ comparison between such an auxiliary label and a physical finite-level label.
+-It is now \emph{superseded on the reciprocal-position side}: Paper~II-C
++It does not control the physical reciprocal-position side:  Paper~II-C
+ derives instead"
+P3G-F-0046,theorem,p3:thm:two-cutoff-holographic-scaling,2320,2270,d69f01bb1ac8732d4c6db8a3096ce6ff91d3f47596cadba15a06943fff01f3e5,d69f01bb1ac8732d4c6db8a3096ce6ff91d3f47596cadba15a06943fff01f3e5,True,True,
+P3G-F-0047,corollary,p3:cor:m4-diagonal-artifact,2351,2301,200739d52c99a85e3876036680b6a04fb6a6f6480b20f40d3fb9433600fc8649,200739d52c99a85e3876036680b6a04fb6a6f6480b20f40d3fb9433600fc8649,True,True,
+P3G-F-0048,proposition,p3:thm:holographic-admissibility-mp-one,2362,2312,ae3c54eda59bbdf7989ccd5406c6bbb8e26d6744b2db7ad1bd0787011d3a7b47,4206ccfaa77a57fa97330d715f0159920da9329f68792b3929cd217ae6a775a0,False,True,"--- 
++++ 
+@@ -2,3 +2,3 @@
+ \label{p3:thm:holographic-admissibility-mp-one}
+-If one nevertheless retains the historical auxiliary assumptions
++Under the separately supplied auxiliary assumptions
+ \((\mathrm{THC})\) and"
+P3G-F-0049,remark,,2388,2338,2096e282160a33bdfc0ed51fa6d9a6232b575f7ac610ca1d5bde0d6446e1a272,e7fd363bb55626e23d75bbb62d3b99fa444b418152600c43ef14c8fbed488325,False,True,"--- 
++++ 
+@@ -9,3 +9,3 @@
+ \]
+-The old THC/SAT branch is retained only as a historical auxiliary diagnostic.
++The THC/SAT branch is only an auxiliary rank comparison.
+ It does not supply the physical area law, does not select \(m_p\), and does"
+P3G-F-0050,corollary,p3:cor:reciprocal-position-source-criterion,2409,2359,29fa7d84d97ab52571bb1d75b15b4e8a108f40917e42071b72edca18f8cac7b0,29fa7d84d97ab52571bb1d75b15b4e8a108f40917e42071b72edca18f8cac7b0,True,True,
+P3G-F-0051,definition,p3:def:Neff;p3:eq:active_entropy;p3:eq:active_mode_count;p3:eq:active_index_entropy,2489,2439,4e2b184cbcfc6d18e21211fd400014eeeaabc9c9093b4d06da15418080245f36,4e2b184cbcfc6d18e21211fd400014eeeaabc9c9093b4d06da15418080245f36,True,True,
+P3G-F-0052,remark,,2551,2501,a6bf370282b95de71bdd284cb2bef69935ffa1875e869ee19d325e6609c234a7,a6bf370282b95de71bdd284cb2bef69935ffa1875e869ee19d325e6609c234a7,True,True,
+P3G-F-0053,lemma,p3:lem:Neff_entropy_endpoints,2560,2510,6ddf4966e963e6831cfe0704ed651282899231f15cd7f75f429b9f87f1deb2b0,6ddf4966e963e6831cfe0704ed651282899231f15cd7f75f429b9f87f1deb2b0,True,True,
+P3G-F-0054,theorem,p3:prop:Neff_exp;p3:eq:Neff_entropy_law,2624,2574,99d926ae83c59770c0f3905c60b6e9f02e7290d2466d7a6d24b43fce0ab81008,99d926ae83c59770c0f3905c60b6e9f02e7290d2466d7a6d24b43fce0ab81008,True,True,
+P3G-F-0055,remark,p3:rem:Neff_gap_closed,2674,2624,ac75ec6c02e9b909d2a3aa61b907ac2109d18a60d68d5e38f173eea84b4fc413,ac75ec6c02e9b909d2a3aa61b907ac2109d18a60d68d5e38f173eea84b4fc413,True,True,
+P3G-F-0056,theorem,p3:thm:bott-stable-protected-octet,2713,2663,e060280f55b42e7be5a471c86202f0576fa24e121cc380a4d7c798a3433cca7c,e060280f55b42e7be5a471c86202f0576fa24e121cc380a4d7c798a3433cca7c,True,True,
+P3G-F-0057,corollary,p3:cor:bott-stable-primitive-shell-carrier,2778,2728,1082ae09482f5e2d976e23662adba30b81ecc2bfe6497f5657be4587a975f57a,99702cd7bcd25cdb99d3066189140622fca753c6570e466aabef6dc4f8c34ffd,False,True,"--- 
++++ 
+@@ -2,3 +2,3 @@
+ \label{p3:cor:bott-stable-primitive-shell-carrier}
+-Paper~I-A, Theorem~\ref{p1:thm:septet-octet-resolution-module}, fixes the
++Paper~I-B, Theorem~\ref{p1:thm:septet-octet-resolution-module}, fixes the
+ scalar-free resolution-data module"
+P3G-F-0058,theorem,p3b:thm:exroot-full-e7-inverse,2811,2759,9c3b8447f473d5ce6a739593d916803766a2a798fcb92132eb7dd437901e6c9d,9c3b8447f473d5ce6a739593d916803766a2a798fcb92132eb7dd437901e6c9d,True,True,
+P3G-F-0059,proposition,p3b:prop:exroot-walsh-complement,2854,2802,fa022e536a5d3767f0cd06b800b7e295dade2e04e89db794e883feb3d35db04f,fa022e536a5d3767f0cd06b800b7e295dade2e04e89db794e883feb3d35db04f,True,True,
+P3G-F-0060,proposition,p3b:prop:exroot-septet-characters,2893,2841,d4c6f4270c3113fe4d708dd2d55f99a1ceaef2eaf687b0067c2f4b7d6e10888f,d4c6f4270c3113fe4d708dd2d55f99a1ceaef2eaf687b0067c2f4b7d6e10888f,True,True,
+P3G-F-0061,lemma,p3:thm:local-born-liouville-seesaw,2985,2931,169db5e7791d147118aa6bc3bce1d465051cc84fb131ede1414f2c6ae181319a,169db5e7791d147118aa6bc3bce1d465051cc84fb131ede1414f2c6ae181319a,True,True,
+P3G-F-0062,lemma,paper3g:lemma:atlas-optional-product-symplectic-factorization-1074eae,3005,2951,4c0f4c1c0ce8d864afdc1b206807a8f58b5f1180a0192f6edca91d6bcd9280e0,459ab317a878ac24a1150d971d9fb3f3e88b41eca8e2332152688d1511cdf3cb,False,True,"--- 
++++ 
+@@ -1,3 +1,3 @@
+ 
+-\label{paper3g:lemma:atlas-optional-product-symplectic-factorization-1074eae}% stable atlas label; provenance v2_277
++\label{paper3g:lemma:atlas-optional-product-symplectic-factorization-1074eae}
+ "
+P3G-F-0063,proposition,p3b:prop:v193-relative-cohomology-pullback,3059,3005,3e35b617f227133b104c4003619aa7e7443f956bda8ff552460fbd0e527f1693,3e35b617f227133b104c4003619aa7e7443f956bda8ff552460fbd0e527f1693,True,True,
+P3G-F-0064,proposition,p3b:prop:v193-square-map-stratification,3088,3034,d9b16c5d0b99f27c909ba3f465614f6c61080226ec20ea676c264ca5e001bf21,d9b16c5d0b99f27c909ba3f465614f6c61080226ec20ea676c264ca5e001bf21,True,True,
+P3G-F-0065,proposition,p3b:prop:v193-full-born-quotient-singularity,3112,3058,a818f1be33db36c74bea07d8050b8838302e96930906c43a80786b4c1bd1bf19,a818f1be33db36c74bea07d8050b8838302e96930906c43a80786b4c1bd1bf19,True,True,
+P3G-F-0066,proposition,p3b:prop:v193-born-cohomology-eigenspaces,3132,3078,ac7c1a4f76f0143d41baef92dc7bc999e412bb7e4367c4d8b67e8c1dff99d727,ac7c1a4f76f0143d41baef92dc7bc999e412bb7e4367c4d8b67e8c1dff99d727,True,True,
+P3G-F-0067,proposition,p3b:prop:v193-generic-commuting-locus,3160,3106,69c2e316ea543a7c8af91685f7901e5ff96ae2002b52158fc5e457f804e949e0,69c2e316ea543a7c8af91685f7901e5ff96ae2002b52158fc5e457f804e949e0,True,True,
+P3G-F-0068,theorem,p3b:thm:v203-reciprocal-transgression,3202,3148,ea1aeefb1587c28db65997bd597a61790a2f96ef0fb4a8513b736aea14e31082,ea1aeefb1587c28db65997bd597a61790a2f96ef0fb4a8513b736aea14e31082,True,True,
+P3G-F-0069,theorem,p3b:thm:v203-exact-twisted-dirac,3235,3181,518c9b626117be5015489366ead1baab3e0ab65e0defcf13dd1a66c333afe4fb,518c9b626117be5015489366ead1baab3e0ab65e0defcf13dd1a66c333afe4fb,True,True,
+P3G-F-0070,proposition,p3:prop:gauss-bonnet-zeta-third;p3:eq:gauss-bonnet-zeta-third,3301,3247,1e48c556ca14c0f80fe6e511ff549bf1a67065d85c6eecc4025fab2eafa012f1,1e48c556ca14c0f80fe6e511ff549bf1a67065d85c6eecc4025fab2eafa012f1,True,True,
+P3G-F-0071,remark,,3327,3273,28034a16914012c008b7795b0e68a5d5feed394adea3a252729df197107cbdeb,28034a16914012c008b7795b0e68a5d5feed394adea3a252729df197107cbdeb,True,True,
+P3G-F-0072,corollary,p3:cor:delta-e6-root-denominator-strengthened;p3:eq:delta-2O-shell-value-match;p3:eq:delta-e6-rank-coxeter;p3:eq:delta-2O-representation-factorization,3334,3280,200639316daf269cb9121296c9c67b3e18103fb4f173a7b3b417ce9e44bfb80f,200639316daf269cb9121296c9c67b3e18103fb4f173a7b3b417ce9e44bfb80f,True,True,
+P3G-F-0073,corollary,p3c:cor:exroot-delta-inverse,3391,3335,09ff901c16834f54348b5480198dd43f3c3fcfff4744e463dbd54ce5f2c4984d,09ff901c16834f54348b5480198dd43f3c3fcfff4744e463dbd54ce5f2c4984d,True,True,
+P3G-F-0074,remark,p3c:rem:exroot-measure-scaling,3432,3376,11685da3dee1b29f85e7825fb2884d957db9f966a965455b83ba354fa824f4f5,11685da3dee1b29f85e7825fb2884d957db9f966a965455b83ba354fa824f4f5,True,True,
+P3G-F-0075,theorem,p3:thm:protected-clifford-master-index,3461,3403,fcb8d40d4092cec2315bafdf104c0108b7ba122168bca3881c757366106fb092,00f8d4fe6491b903079abb9bd8db8484ee7e8fa44e2c722d1be9e4a8f050e19f,False,True,"--- 
++++ 
+@@ -5,3 +5,3 @@
+ complement and let \(A_{\rm prot}\cong\Cl(0,3)\) be the eight-dimensional real
+-protected Clifford module.  Paper~I-A's resolution-data construction is
++protected Clifford module.  Paper~I-B's resolution-data construction is
+ \["
+P3G-F-0076,remark,p3:rem:hurwitz-link-master-index,3490,3432,d7a89a93af28aa0a7a6ad5a4863411cefd7d996bcb7ea1922a88d31d65247ced,a4d35a6d98ef14747b588ced7ca855c65affffa96ff803545971cb9cb6d1ede0,False,True,"--- 
++++ 
+@@ -2,3 +2,3 @@
+ \label{p3:rem:hurwitz-link-master-index}
+-If \(\mathsf{Supp}_{2T}\) occurs, Paper~I-A supplies unmarked finite-support
++If \(\mathsf{Supp}_{2T}\) occurs, Paper~I-B supplies unmarked finite-support
+ realizations whose dimensions are compatible with the same integer \(56\)."
+P3G-F-0077,corollary,p3:cor:repeated-octet-factors-not-independent,3498,3440,6f3d45b3b59955423c496a286a511d313c831920437f6baa22b7c50d76825ae4,6f3d45b3b59955423c496a286a511d313c831920437f6baa22b7c50d76825ae4,True,True,
+P3G-F-0078,corollary,p3:cor:master-support-synchronization,3509,3451,f860b35fa4facdea5358fbd350f7af0380c3be7e584ebcd621ab7697607e5972,f860b35fa4facdea5358fbd350f7af0380c3be7e584ebcd621ab7697607e5972,True,True,
+P3G-F-0079,theorem,p3:thm:exact-fuzzy-s3-shell-trace,3669,3611,17d8929879c688bf756ae16b7cbb6fd360010c3531310038bcfe2eeba2b19b92,17d8929879c688bf756ae16b7cbb6fd360010c3531310038bcfe2eeba2b19b92,True,True,
+P3G-F-0080,corollary,paper3g:corollary:atlas-exact-finite-shell-threshold-staircase-f96297a,3711,3653,6ac26641e885e2b1d9c9b8409172d14f0b56eaff5283020c035eaa1676beafca,1b4ae3008350b6b134511c0338324a97b49d355ad20a69d615925b69e6d3ce3c,False,True,"--- 
++++ 
+@@ -1,3 +1,3 @@
+ 
+-\label{paper3g:corollary:atlas-exact-finite-shell-threshold-staircase-f96297a}% stable atlas label; provenance v2_277
++\label{paper3g:corollary:atlas-exact-finite-shell-threshold-staircase-f96297a}
+ "
+P3G-F-0081,lemma,p3:lem:distributional-beta-functions,3737,3679,88ff8eed26e6956e9e5e63a94bdca7740e7fa57c608d6bbfd5a13ffecb1471a2,88ff8eed26e6956e9e5e63a94bdca7740e7fa57c608d6bbfd5a13ffecb1471a2,True,True,
+P3G-F-0082,lemma,p3:lem:rank-only-quotient,3776,3718,5ccd5bb1a59a5fcd1d2905081c09701f9e52a8e67e5852e6323a1c02acd1f9ed,5ccd5bb1a59a5fcd1d2905081c09701f9e52a8e67e5852e6323a1c02acd1f9ed,True,True,
+P3G-F-0083,lemma,p3:lem:additive-rank-valuation,3797,3739,addaefc3986a78768b59f88748bf1d6d5ca72ae63e6fd875e36e996ce4f99c75,addaefc3986a78768b59f88748bf1d6d5ca72ae63e6fd875e36e996ce4f99c75,True,True,
+P3G-F-0084,corollary,p3:cor:H8-status;p3:eq:H8-response-export,3832,3774,7536c7af9537fc511736a50468af6138d43f79fdd5780a3b22bd663dd92d908e,7536c7af9537fc511736a50468af6138d43f79fdd5780a3b22bd663dd92d908e,True,True,
+P3G-F-0085,lemma,p3:lem:sector-valuation-linear,3862,3804,6e16aebf30a1bb178249eedd8a2e6a7731a8e2d95dbf197ee5f4f497ffb337c5,6e16aebf30a1bb178249eedd8a2e6a7731a8e2d95dbf197ee5f4f497ffb337c5,True,True,
+P3G-F-0086,definition,p3d:def:owner-typed-upper-scale-placement,3907,3849,14e5acecb079f072a12f4291f0ef6569f247f332161065fc54b2155c9113aea9,f7ebccd74065a0f966a2140f8b3252f7351995f37bfa2b0fbf799866ad9df6d6,False,True,"--- 
++++ 
+@@ -34,3 +34,3 @@
+ \(U_{56}=\Rp\) requires a separately constituted response-to--Einstein--Hilbert
+-scale calibration; \((\mathrm{CAL}_{xp})\) does not supply it.  The legacy
++scale calibration; \((\mathrm{CAL}_{xp})\) does not supply it.  The auxiliary
+ tag \((\mathrm{HSC}_{56})\) records the pair consisting of the proved"
+P3G-F-0087,proposition,p3d:prop:ordered-owner-joint-locus,3948,3890,b64a08080c430d2848e2d3015c74154ce193adbf896b6c1931f92df243323bc6,b64a08080c430d2848e2d3015c74154ce193adbf896b6c1931f92df243323bc6,True,True,
+P3G-F-0088,corollary,p3:cor:hierarchy-action-scale;p3:eq:R56-def-p3;p3:eq:R56-completed-hierarchy,3986,3928,05783c335ec6ed6d59b0a50e1d240f9ff2bc47b96758756e5282ca85e92c1621,05783c335ec6ed6d59b0a50e1d240f9ff2bc47b96758756e5282ca85e92c1621,True,True,
+P3G-F-0089,corollary,p3:cor:S1-equals-R56,4009,3951,635c48f713b3fe55b650f683eace48af2a7addbeb272f0c9d3ef5d9ab8fed680,635c48f713b3fe55b650f683eace48af2a7addbeb272f0c9d3ef5d9ab8fed680,True,True,
+P3G-F-0090,remark,p3:rem:c56-single-datum,4038,3980,2439eae63be5fd733803051ee7fe0b44ffe44d1a66bb54ea1e4c084212650fe9,2439eae63be5fd733803051ee7fe0b44ffe44d1a66bb54ea1e4c084212650fe9,True,True,
+P3G-F-0091,corollary,paper3g:corollary:atlas-calibrated-lower-root-notation-3303475;p3:eq:terminal-active-curvature;p3:eq:freeze-root-alpha,4048,3990,60b695521a908f91723fa2c62de66f251ab110340956b53807174de15e90f7d0,60cc3f8b089d9ab080b9102d1067f10ce90ac23c0d589a7112ca73453e3d2392,False,True,"--- 
++++ 
+@@ -1,3 +1,3 @@
+ 
+-\label{paper3g:corollary:atlas-calibrated-lower-root-notation-3303475}% stable atlas label; provenance v2_277
++\label{paper3g:corollary:atlas-calibrated-lower-root-notation-3303475}
+ "
+P3G-F-0092,corollary,p3:cor:so3-pseudoscalar-objection,4074,4016,a5c6afb04b0f7d1ed3c51946900c52d79f21021b59262e0c2b59a7c152e87f16,a5c6afb04b0f7d1ed3c51946900c52d79f21021b59262e0c2b59a7c152e87f16,True,True,
+P3G-F-0093,remark,p3d:rem:no-hidden-beta-system-detail,4121,4063,a3ce15dc0c83432293790d9c51a9b618c0be1a1d48ff1ece2f52b54fbaf1fe7b,a3ce15dc0c83432293790d9c51a9b618c0be1a1d48ff1ece2f52b54fbaf1fe7b,True,True,
+P3G-F-0094,remark,p3:rem:born-descent-gap-closed,4130,4072,dae9311a73af95f32ab02206c7379914f5cd6c95c037bad7b509daf5620d2dc9,dae9311a73af95f32ab02206c7379914f5cd6c95c037bad7b509daf5620d2dc9,True,True,
+P3G-F-0095,remark,p3:rem:geff_gap_closed,4139,4081,113b3ecb6ce10031cff33f3aff8f64610acb888c98e450281c2d79d5a214d2a5,113b3ecb6ce10031cff33f3aff8f64610acb888c98e450281c2d79d5a214d2a5,True,True,
+P3G-F-0096,remark,,4151,4093,239f4487ec476af8210f4f55f550a7d5771d73f1d817a11845a5c8dcfaacc85a,239f4487ec476af8210f4f55f550a7d5771d73f1d817a11845a5c8dcfaacc85a,True,True,
+P3G-F-0097,corollary,p3d:cor:forward-entropy-transport,4158,4100,d6075564e712ae7c264141ba983639fff042ee1532015ab7cafaf9c554d35f25,d6075564e712ae7c264141ba983639fff042ee1532015ab7cafaf9c554d35f25,True,True,
+P3G-F-0098,remark,,4194,4136,782fc504e7aa436455cc046526ff906c7c29f0fa01c256b7c23410082bb51738,782fc504e7aa436455cc046526ff906c7c29f0fa01c256b7c23410082bb51738,True,True,
+P3G-F-0099,definition,,4207,4149,83cd6712c0c239807b8f30d75bce60cf800e4902403ceccc595e9e72a805ac6d,83cd6712c0c239807b8f30d75bce60cf800e4902403ceccc595e9e72a805ac6d,True,True,
+P3G-F-0100,proposition,p3:prop:canonical_harmonic_lift,4261,4203,09df33df76c606a5319f1e861a39001b7ae03d47946b683d6549140c5f7e53ee,09df33df76c606a5319f1e861a39001b7ae03d47946b683d6549140c5f7e53ee,True,True,
+P3G-F-0101,remark,,4354,4296,bdcaa77cd22063e29a94fe9cb2faf410d90f1df4e3984de87f90ac8c3b2ee3cb,bdcaa77cd22063e29a94fe9cb2faf410d90f1df4e3984de87f90ac8c3b2ee3cb,True,True,
+P3G-F-0102,theorem,p3:thm:no_transverse_running,4363,4305,530a4374f04af275dc9db48b637bb928da134d7249eb43adf00540e543c93344,530a4374f04af275dc9db48b637bb928da134d7249eb43adf00540e543c93344,True,True,
+P3G-F-0103,proposition,p3e:prop:v2216-k16-derivative-continuity,4437,4378,c4148a3fb094303b482f0bcb76e3e67ea7abfa833c51273f32d933b40e15ba6b,c4148a3fb094303b482f0bcb76e3e67ea7abfa833c51273f32d933b40e15ba6b,True,True,
+P3G-F-0104,corollary,p3e:cor:v189-k16-F-jump,4456,4397,b6936f171a1bf72504f1ebd9c71930da8d9e2af5555d38a2c4ed24617bdc2de9,b6936f171a1bf72504f1ebd9c71930da8d9e2af5555d38a2c4ed24617bdc2de9,True,True,
+P3G-F-0105,theorem,p3e:thm:v189-k16-tt-regularity,4465,4406,a3554ba5be18ff74b7239475d6864a406b5396e702fb98306e692ed2c65661b0,a3554ba5be18ff74b7239475d6864a406b5396e702fb98306e692ed2c65661b0,True,True,
+P3G-F-0106,corollary,p3:cor:local-uncertainty-seesaw,4480,4420,688bc0a8ee0c8f37c8f102ddca26113900f82a09cb30ff62c48fc88292848d2c,688bc0a8ee0c8f37c8f102ddca26113900f82a09cb30ff62c48fc88292848d2c,True,True,
+P3G-F-0107,remark,p3:rem:primitive-finite-window-profile,4515,4455,dc3e8bd88ee0c3c76d0b060c3b242d74b3a2d804e6aa6688f88e7be9113377fa,dc3e8bd88ee0c3c76d0b060c3b242d74b3a2d804e6aa6688f88e7be9113377fa,True,True,
+P3G-F-0108,remark,p3:rem:local-global-measure,4557,4497,8ab556f6abb2da9bed8b957ed61cbea063323c353d431bc8eec0c44c1b356ad6,8ab556f6abb2da9bed8b957ed61cbea063323c353d431bc8eec0c44c1b356ad6,True,True,
+P3G-F-0109,proposition,p3e:prop:born-centering-not-vacuum-selection,4825,4764,d6d8b5209db2116a66ca6fae1d0fb196e9437f2a894fc76c26df2ca99290e41f,d6d8b5209db2116a66ca6fae1d0fb196e9437f2a894fc76c26df2ca99290e41f,True,True,
+P3G-F-0110,corollary,p3e:cor:v226-native-action-certificate,4897,4836,d93a29f1d9a80e86c89e338dad737af80a3cd4cabe0ca31739384369216d5d7c,d93a29f1d9a80e86c89e338dad737af80a3cd4cabe0ca31739384369216d5d7c,True,True,
+P3G-F-0111,definition,p3e:def:laur17-branch-data;p3e:eq:laur17-index-family;p3e:eq:laur-active-response-family;p3e:eq:laur17-Q,4925,4862,b5b28d585ece77791ddb4aa6fc0bb0a88beaf0ed87b81641372ae6d34b750e82,d5e66be7099303a73fce08cc2c1c33557b3dde63fa276a91779961b5d5b20b09,False,True,"--- 
++++ 
+@@ -15,3 +15,3 @@
+ Paper~III-D fixes the realized Laurent family.  Its mathematical identity
+-is Paper~1B, Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1B},
++is Paper~I-D, Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1D},
+ with \(A=A_\sigma\), \(R=\scal\) and \(C=C_j\); for \(q>0\),"
+P3G-F-0112,definition,p3e:post:laur17-action-realization,4979,4916,6d84dc5bd734a18a3e22b40b313201200d6d8ed7586150d304a6a481b856107c,6d84dc5bd734a18a3e22b40b313201200d6d8ed7586150d304a6a481b856107c,True,True,
+P3G-F-0113,lemma,p3e:lem:unique-character-dressing;p3e:eq:unique-character-dressing,5003,4940,ecd7d7fc97e46de1319d24588197b4cb1010f86a623a80dc8c33a454f0865d1e,ecd7d7fc97e46de1319d24588197b4cb1010f86a623a80dc8c33a454f0865d1e,True,True,
+P3G-F-0114,theorem,p3e:thm:raw-complementary-laurent-action;p3e:eq:laur17-dressing;p3e:eq:raw-complementary-laurent-action;p3e:eq:raw-complementary-laurent-expanded;p3e:eq:laur17-terminal-role-quotient;p3e:eq:laur17-no-second-EH-density,5036,4973,597e36c9886d77c25c9ff39d1b191a102ebeec6186f7119e0ef3f4841da2f15f,597e36c9886d77c25c9ff39d1b191a102ebeec6186f7119e0ef3f4841da2f15f,True,True,
+P3G-F-0115,corollary,p3e:cor:rank-one-exit-quadratic-grade;p3e:eq:rank-one-exit-depth-two-scale;p3e:eq:depth-two-corroborating-identity;p3e:eq:rank-one-exit-exact-response,5109,5046,162e8ed19a257c9db073d77daec4300a8a00001ec83a42cc3ce4d00670989eab,162e8ed19a257c9db073d77daec4300a8a00001ec83a42cc3ce4d00670989eab,True,True,
+P3G-F-0116,theorem,p3e:thm:depth-two-transverse-event;p3e:eq:depth-two-event-functional;p3e:eq:depth-two-event-unique-zero;p3e:eq:depth-two-event-q-derivative;p3e:eq:depth-two-event-clock-crossing,5154,5091,5a47e9863649e12f5f6f9758167a1ac0bdac2b0e205acbc1da4d2b41ffc4297e,5a47e9863649e12f5f6f9758167a1ac0bdac2b0e205acbc1da4d2b41ffc4297e,True,True,
+P3G-F-0117,theorem,p3e:prop:laur17-active-hessian;p3e:eq:laur17-active-hessian;p3e:eq:global-positive-hessian-bound,5198,5135,3cfd0c99b7847fa86db77894b9cba88ff206c6fcc7a318237bf6e72dd3758c03,3cfd0c99b7847fa86db77894b9cba88ff206c6fcc7a318237bf6e72dd3758c03,True,True,
+P3G-F-0118,proposition,p3e:prop:v263-legendre-junction-measure;p3e:eq:v263-k16-hessian-step,5235,5172,4e7e300883b0180a8631424d969e10f19a173a69477e3e3659e3c1d11d119dce,4e7e300883b0180a8631424d969e10f19a173a69477e3e3659e3c1d11d119dce,True,True,
+P3G-F-0119,corollary,p3e:cor:unique-k16-interior-action-junction;p3e:eq:k48-smooth-action-hessian,5252,5189,94e8836e4e2aace4b1bc01a88adba7ee025314527cb516751c682d4529034ed8,94e8836e4e2aace4b1bc01a88adba7ee025314527cb516751c682d4529034ed8,True,True,
+P3G-F-0120,proposition,p3f:prop:v2190-polynomial-continuation,5280,5215,5ca146a2c0193e67ba0fb5ba780c4c1fb5f3e55ab6891a09c0bd0e4aad06bedb,5ca146a2c0193e67ba0fb5ba780c4c1fb5f3e55ab6891a09c0bd0e4aad06bedb,True,True,
+P3G-F-0121,corollary,p3f:cor:native-source-square-root,5363,5294,dfd785ae00f1542b27795d1360ae09083078355c5bc40c2ed60fb7679d52d2f9,dfd785ae00f1542b27795d1360ae09083078355c5bc40c2ed60fb7679d52d2f9,True,True,
+P3G-F-0122,corollary,p3f:cor:native-source-quartic-square,5399,5330,acbbd8edc4e7ec952108d26efa70374394c879c33ac4f864ce99520646f73d4e,acbbd8edc4e7ec952108d26efa70374394c879c33ac4f864ce99520646f73d4e,True,True,
+P3G-F-0123,proposition,p3f:prop:m8td-heat-curvature;p3f:eq:m8td-heat-trace;p3f:eq:m8td-heat-curvature,5864,5776,2791d5aba189c0873ab9db568ebcb5b687e78229d2c99201cb8f2f3ba8ba465b,2791d5aba189c0873ab9db568ebcb5b687e78229d2c99201cb8f2f3ba8ba465b,True,True,
+P3G-F-0124,corollary,p3:prop:thermodynamic-arrow,5992,5903,fab3d39d88011e00ef2aee8d18188b2b63a3694d68d371489894339fbf2502a8,fab3d39d88011e00ef2aee8d18188b2b63a3694d68d371489894339fbf2502a8,True,True,
+P3G-F-0125,definition,p3f:def:born-eight-dimensional-diagnostic,6054,5965,7250cc60d902250ad85aa79d468c16768ca752e7af55f3868394ac419be706f8,7250cc60d902250ad85aa79d468c16768ca752e7af55f3868394ac419be706f8,True,True,
+P3G-F-0126,lemma,p3:lem:born-even-bulk-projection-factor,6076,5987,7a46cdbe8db344881f312493b7bcb7edfe9d24332ae3f1da8ab9e127608f88d8,7a46cdbe8db344881f312493b7bcb7edfe9d24332ae3f1da8ab9e127608f88d8,True,True,
+P3G-F-0127,corollary,p3f:cor:typed-eight-to-seven-routing,6109,6020,a0add5d836400537abb0931565652d1c6e13fca6fc0b45f19f7c4c71eb65b091,a0add5d836400537abb0931565652d1c6e13fca6fc0b45f19f7c4c71eb65b091,True,True,
+P3G-F-0128,proposition,paper3g:proposition:atlas-curvature-and-conjugate-completion-bbc8aec,6181,6092,ed56a708496b07f921775cbf0eeea3aa882d3a59ac9632824aca5427c9bb903c,75fa2bc855a083e6bf24f2c4b20bdc76cce4eaabbaf3814130f1cb3baf27795a,False,True,"--- 
++++ 
+@@ -1,3 +1,3 @@
+ 
+-\label{paper3g:proposition:atlas-curvature-and-conjugate-completion-bbc8aec}% stable atlas label; provenance v2_277
++\label{paper3g:proposition:atlas-curvature-and-conjugate-completion-bbc8aec}
+ "
+P3G-F-0129,corollary,p3f:cor:v181-trivial-bundle-nontrivial-holonomy,6214,6125,6c156dfac506edd0c9c54d567f964b68d52f37645891a75e34e9eda5f26cbba3,2956bd2d7e831eb4db54e1362cc6f17b82d710f673ae3a4b24f8b53f1d9dc89c,False,True,"--- 
++++ 
+@@ -4,3 +4,3 @@
+ Paper~I-C, Theorem~\ref{p1b:thm:relative}
+-\cite{Kugelmann2026Paper1B}, for the principal
++\cite{Kugelmann2026Paper1C}, for the principal
+ $SU(2)_{\rm diag}$ bundle $X_7^{\rm cmp}\to K_{\rm rel}$."
+P3G-F-0130,proposition,p3f:prop:v179-normalized-symmetry,6241,6150,78ed5d403f70b4b7b696122f0196d09c951953752a86925006cf025470b09e5d,78ed5d403f70b4b7b696122f0196d09c951953752a86925006cf025470b09e5d,True,True,
+P3G-F-0131,proposition,p3f:prop:v199-affine-schur-remainder,6287,6195,4dfc516cbd9e6e781d6f39c7dd53ef5fb7a2285cedb6f9562b653797b76871a5,4dfc516cbd9e6e781d6f39c7dd53ef5fb7a2285cedb6f9562b653797b76871a5,True,True,
+P3G-F-0132,proposition,p3f:prop:v199-reciprocal-concavity,6308,6216,553b66677a28f4c40476aa98f15822802253bb816c9baaf1c18a927bd9eb05eb,553b66677a28f4c40476aa98f15822802253bb816c9baaf1c18a927bd9eb05eb,True,True,
+P3G-F-0133,theorem,p3f:thm:v203-matrix-reciprocal-rigidity,6326,6234,988d06aa70695a10be3b9c29e9748d47716169e5708262608687e50e486c671f,988d06aa70695a10be3b9c29e9748d47716169e5708262608687e50e486c671f,True,True,
+P3G-F-0134,proposition,p3f:prop:v1126-directed-dagger,6510,6410,673a8f89b6dab7848b004719db3d8b4856cfe55b8da24d778f15d8758b8dff62,673a8f89b6dab7848b004719db3d8b4856cfe55b8da24d778f15d8758b8dff62,True,True,
+P3G-F-0135,proposition,p3f:prop:v2109-finite-cut-inverse,6538,6436,2557273642dbc7478307f30d970f635f19c492186d70b3ac220a06aded16cd36,2557273642dbc7478307f30d970f635f19c492186d70b3ac220a06aded16cd36,True,True,
+P3G-F-0136,theorem,p3f:thm:v2109-passive-exterior,6559,6457,c55982c3fc30ff664ecfe9bd71d6da70494f5643e9a7c7c8ece61ff88ec86cce,c55982c3fc30ff664ecfe9bd71d6da70494f5643e9a7c7c8ece61ff88ec86cce,True,True,
+P3G-F-0137,proposition,p3f:prop:v2109-born-legendre-fixed-source,6611,6509,8124afd2b5008ca163ac893a3ca91ebabee98fc7acded132722c44027a0c1c39,8124afd2b5008ca163ac893a3ca91ebabee98fc7acded132722c44027a0c1c39,True,True,
+P3G-F-0138,theorem,p3f:thm:v2168-aligned-mixed-poles,6711,6607,dd1719db591fe441d6422719e25b747800eaa03a5f5a62544c30989c813b48c7,dd1719db591fe441d6422719e25b747800eaa03a5f5a62544c30989c813b48c7,True,True,
+P3G-F-0139,theorem,p3f:v2169:b9:thm:obstruction;p3f:eq:v2169-b9-t2,6818,6710,e9410816aa4efab5a50ea8de93551a7f72866c28019f0c11317709c1452bf2ed,e9410816aa4efab5a50ea8de93551a7f72866c28019f0c11317709c1452bf2ed,True,True,
+P3G-F-0140,corollary,p3f:v2169:b9:cor:intertwining,6929,6821,b9c6724b139dee0c22e521cc6033ba4dc498d568fcdc92ce10a8e7713040af01,b9c6724b139dee0c22e521cc6033ba4dc498d568fcdc92ce10a8e7713040af01,True,True,
+P3G-F-0141,corollary,p3f:cor:exroot-common-scale-cancellation,7011,6900,64ed2957abdf00a7d52293cdc5dc9492922592f64942a07937f59e4c03252413,64ed2957abdf00a7d52293cdc5dc9492922592f64942a07937f59e4c03252413,True,True,
+P3G-F-0142,corollary,p3f:cor:exroot-residue-criterion,7053,6942,d9f8689e0cbc3d6b14834b2c1b47d300ee7041f4ada4f76259f493ff8788e84e,d9f8689e0cbc3d6b14834b2c1b47d300ee7041f4ada4f76259f493ff8788e84e,True,True,
+P3G-F-0143,proposition,p3f:prop:exroot-source-scale-poles,7092,6981,97d612fe67530adf81fdcaacf0f5852e717a2a2e7a53da521514c9aefa5c3286,97d612fe67530adf81fdcaacf0f5852e717a2a2e7a53da521514c9aefa5c3286,True,True,
+P3G-F-0144,proposition,p3f:prop:v2216-bare-heat-vacuum,7132,7017,dfb83ee8558501e9bcaf077794fedce5eecc6b9ce74f632ca2685b746324aee8,dfb83ee8558501e9bcaf077794fedce5eecc6b9ce74f632ca2685b746324aee8,True,True,
+P3G-F-0145,proposition,p3f:prop:v2217-quartic-omitted-term,7180,7065,0986389df660743dc53db1c27dd549125600d0d0085c452875d4cb013e46065c,0986389df660743dc53db1c27dd549125600d0d0085c452875d4cb013e46065c,True,True,
+P3G-F-0146,proposition,p3f:prop:v2216-commuting-heat-condensate,7214,7099,3333e1e0eea7cc2ba62fcb5a66747d8ae04179928ebb5a188a1c3c0a5811f129,3333e1e0eea7cc2ba62fcb5a66747d8ae04179928ebb5a188a1c3c0a5811f129,True,True,
+P3G-F-0147,proposition,p3f:prop:v2216-exact-heat-scale-work;p3f:eq:v2216-exact-heat-scale-work,7241,7126,b5c14c91254b8311479df2b36a7f0ea9d5c5f6f38b11a521ef0011eea3df82a2,b5c14c91254b8311479df2b36a7f0ea9d5c5f6f38b11a521ef0011eea3df82a2,True,True,
+P3G-F-0148,theorem,p3f:thm:v2216-positive-profile-vacuum-bound;p3f:eq:v2216-positive-profile-vacuum-bound,7293,7178,49daf8889868ca0dd715f16812d31b514337a11895a0c638baad49f69c05634b,49daf8889868ca0dd715f16812d31b514337a11895a0c638baad49f69c05634b,True,True,
+P3G-F-0149,proposition,p3g:prop:v3041-centered-radial-pole,7468,7352,24c5fc07c761e5306556e8935841be4f34b6af258a4f9968ce70c6f8f74ca130,24c5fc07c761e5306556e8935841be4f34b6af258a4f9968ce70c6f8f74ca130,True,True,
+P3G-F-0150,theorem,p3f:thm:m8td-covariant-casimir;p3f:eq:m8td-casimir;p3f:eq:m8td-adjoint-gap,7591,7473,c7c4cf01996937854dfc58e6d696cb195fc51812975ff8e9ff2e8d45e811e605,c7c4cf01996937854dfc58e6d696cb195fc51812975ff8e9ff2e8d45e811e605,True,True,
+P3G-F-0151,corollary,p3f:cor:m8td-gauss-response;p3f:eq:m8td-gauss-energy,7628,7510,0ecbfe1d47cf4dad5ace17f6f5bb0a6812fe33525fda4cbb3b342fa60456102b,0ecbfe1d47cf4dad5ace17f6f5bb0a6812fe33525fda4cbb3b342fa60456102b,True,True,
+P3G-F-0152,corollary,p3f:cor:v2217-cartan-transverse-mode,7664,7545,9a20ed64d0fbfe165109080474e83aca0c813b6e19da6b63c7dfe587c3447497,9a20ed64d0fbfe165109080474e83aca0c813b6e19da6b63c7dfe587c3447497,True,True,
+P3G-F-0153,proposition,p3f:prop:m8td-local-gauge-inverse;p3f:eq:m8td-gauge-inverse-bound,7686,7567,0798039e8abf75f230bceb090a7116ecff8f5778cda13502d940ccd869192c8b,0798039e8abf75f230bceb090a7116ecff8f5778cda13502d940ccd869192c8b,True,True,
+P3G-F-0154,theorem,p3f:thm:m8td-hodge-dirac;p3f:eq:m8td-hodge-dirac;p3f:eq:m8td-variable-cartan-dirac,7711,7592,ea261e30af30efca2a1a476af8c94267efbd179192d077037217bf95d1314e47,ea261e30af30efca2a1a476af8c94267efbd179192d077037217bf95d1314e47,True,True,
+P3G-F-0155,corollary,p3f:cor:m8td-dirac-spectrum;p3f:eq:m8td-dirac-spectrum,7753,7634,690e3c2713cebe213f364f71a9d162d14957359858b0cdc85a4a036ab7179c5e,690e3c2713cebe213f364f71a9d162d14957359858b0cdc85a4a036ab7179c5e,True,True,
+P3G-F-0156,theorem,p3f:thm:m8td-low-mode;p3f:eq:m8td-partial-trace;p3f:eq:m8td-feshbach,7786,7667,e6ca64c8fb65cad2724e92817548db2667c131cd0984cdfaee28afdbb8776428,e6ca64c8fb65cad2724e92817548db2667c131cd0984cdfaee28afdbb8776428,True,True,
+P3G-F-0157,theorem,p3f:thm:m8td-protected-zero;p3f:eq:m8td-protected-gap;p3f:eq:m8td-nonhomogeneous-gap,7831,7712,9ba60d66b40d81aa0584aed5d7271c5263c103e6ad9a7c850d677bf2cb187ad2,9ba60d66b40d81aa0584aed5d7271c5263c103e6ad9a7c850d677bf2cb187ad2,True,True,
+P3G-F-0158,corollary,p3f:cor:m8td-constructive-protected-zero;p3f:eq:m8td-constructive-zero;p3f:eq:m8td-zero-truncation,7862,7743,cb23e7333f6b59350cd7d6420e88a273c43a9bed473f85132f5ee74aad435112,cb23e7333f6b59350cd7d6420e88a273c43a9bed473f85132f5ee74aad435112,True,True,
+P3G-F-0159,theorem,p3f:thm:native-shift-complement-inverse;p3f:eq:native-shift-complement-inverse,7928,7806,e6bab02c853de6b405c13e9e1e137d0f028617a6cbd2e21bd3e8b31d81492cb4,e6bab02c853de6b405c13e9e1e137d0f028617a6cbd2e21bd3e8b31d81492cb4,True,True,
+P3G-F-0160,corollary,p3f:cor:m8td-transverse-zero-response;p3f:eq:m8td-transverse-response;p3f:eq:m8td-transverse-onset;p3f:eq:m8td-shell-generation;p3f:eq:m8td-shell-cross-response,7990,7867,fa4a3688b30381cce34063d8c30d62fbf6f30ead1e0d582d36f7c2a698927a4e,fa4a3688b30381cce34063d8c30d62fbf6f30ead1e0d582d36f7c2a698927a4e,True,True,
+P3G-F-0161,remark,p3f:rem:m8td-helicity-balance;p3f:eq:m8td-helicity-balance,8049,7926,707fd079ed66eab4797cb002fa160bf3de3d0ba97d57bb286753d642e38d6b09,5249e4d2cc26e26277533727e700d5b3bf94305d898037d65ed5723c39d810be,False,True,"--- 
++++ 
+@@ -8,3 +8,3 @@
+ \]
+-Paper~I-C, Corollary~\ref{p1b:cor:dirac-helicity-balance}, gives
++Paper~I-D, Corollary~\ref{p1b:cor:dirac-helicity-balance}, gives
+ \begin{equation}"
+P3G-F-0162,corollary,p3f:cor:cartan-even-source-cubic-error;p3f:eq:m8td-even-source-linear-coefficient,8069,7946,9790e575cf40b7dab7861fc23d87be4e68dcb7c1d3832c7327e98d04338bb1df,9790e575cf40b7dab7861fc23d87be4e68dcb7c1d3832c7327e98d04338bb1df,True,True,
+P3G-F-0163,theorem,p3f:thm:native-source-product-protection;p3f:eq:native-source-product-mod2,8140,8014,caecb401062c02c1daca273e1737f4f1551e03d59873a0f1a50ff89a33e2ce55,caecb401062c02c1daca273e1737f4f1551e03d59873a0f1a50ff89a33e2ce55,True,True,
+P3G-F-0164,theorem,p3f:thm:native-source-joint-selection;p3f:eq:native-source-four-components;p3f:eq:native-source-second-selection,8173,8047,023e80c148a8175684ed1ca699963b316bd4ee6908793721096d195b2641550e,023e80c148a8175684ed1ca699963b316bd4ee6908793721096d195b2641550e,True,True,
+P3G-F-0165,theorem,p3f:thm:native-source-helicity-coefficient;p3f:eq:native-source-helicity-coefficient;p3f:eq:native-source-helicity-bound;p3f:eq:native-source-quartic-error,8252,8123,091b9adc2174d1e0c5833f07517556d62cfbd1100fc86db9a19cb7d63adc740b,091b9adc2174d1e0c5833f07517556d62cfbd1100fc86db9a19cb7d63adc740b,True,True,
+P3G-F-0166,theorem,p3f:thm:native-first-quartic-response;p3f:eq:native-first-quartic-coefficient;p3f:eq:native-quartic-sixth-remainder,8323,8191,8809d5ac5c586908c759b534e8b284e15f19f77551459c40881f35c389548d05,416ab7a6efc847928bbc5d89b1a68e87d8ebdd8d70e52a3c8eb2292e6598d286,False,True,"--- 
++++ 
+@@ -27,3 +27,3 @@
+ The separately declared square has its first energy motion at degree
+-eight when \(L_4\ne0\); Appendix~\ref{p3f:app:native-source-square-readout}
++eight when \(L_4\ne0\); Section~\ref{p3f:app:native-source-square-readout}
+ retains this optional squared readout and its explicit error estimate."
+P3G-F-0167,corollary,p3f:cor:native-shift-fourth-displacement,8378,8246,cc0d3bd61df8d7adb2d6f91726dad1518107c3acf9d90d49dc299969566969c9,fe778cd7404b9bd3cce1dd5d84a189d8f3eb0f33b95747d8f564183eb482ea7f,False,True,"--- 
++++ 
+@@ -12,3 +12,3 @@
+ Theorem~\ref{p3f:thm:native-first-quartic-response} computes \(L_4\) and its signed
+-readout remainder; Appendix~\ref{p3f:app:native-mixed-quartic-comparison} gives an exact
++readout remainder; Section~\ref{p3f:app:native-mixed-quartic-comparison} gives an exact
+ nonzero example and a root-remainder bound."
+P3G-F-0168,proposition,p3f:prop:v229-determinant-scope,8423,8287,3d1e73a0fdf8d5f7e6a2449f4de848a11d446f1c824c79bd8b5e5eb8f1ac76b7,3d1e73a0fdf8d5f7e6a2449f4de848a11d446f1c824c79bd8b5e5eb8f1ac76b7,True,True,
+P3G-F-0169,proposition,p3f:prop:v229-rooted-product-zeta,8445,8309,a9eeb607ff7fc460ba012da077f61fb4461565cd2ebbcec1f3adcb601e4d9127,a9eeb607ff7fc460ba012da077f61fb4461565cd2ebbcec1f3adcb601e4d9127,True,True,
+P3G-F-0170,proposition,p3g:prop:v244-rooted-phase-schur-proof,8493,8355,37270b402b7b57f860b499a9b7faaf02731ea10d4d194421434e7b0d047345e7,37270b402b7b57f860b499a9b7faaf02731ea10d4d194421434e7b0d047345e7,True,True,
+P3G-F-0171,corollary,p3g:cor:v244-cyclic-quotient-order,8546,8408,eebc9d5c8b4e5a79ab13765da934767a8567eba7b4e81662dd3793cd7f99192d,eebc9d5c8b4e5a79ab13765da934767a8567eba7b4e81662dd3793cd7f99192d,True,True,
+P3G-F-0172,remark,,8588,8450,d23e00777a8378a7a65268a299d0dce06e152f593b3adf341d5ef789d92e4b54,d23e00777a8378a7a65268a299d0dce06e152f593b3adf341d5ef789d92e4b54,True,True,
+P3G-F-0173,corollary,p3g:cor:v245-rooted-schur-terminal-positivity,8607,8467,36edaf4ebb6add91b9693821164c52dd856864f1dc0271d192a264818fa48f55,36edaf4ebb6add91b9693821164c52dd856864f1dc0271d192a264818fa48f55,True,True,
+P3G-F-0174,proposition,p3g:prop:v245-cosine-half-angle-mismatch,8632,8492,ad6fbcbfcb5ce7700dba7e30c9fbdadf6dea698b26a579976c98277ae274b7ea,ad6fbcbfcb5ce7700dba7e30c9fbdadf6dea698b26a579976c98277ae274b7ea,True,True,
+P3G-F-0175,proposition,p3g:prop:v245-hurwitz-four-port-moment-comparison,8671,8531,000eecb8fb354fe51cf8daea82fb88e9c939cb814b3718b2579e0bacfac5b722,000eecb8fb354fe51cf8daea82fb88e9c939cb814b3718b2579e0bacfac5b722,True,True,
+P3G-F-0176,proposition,p3g:prop:v252-pointwise-shell-frame;p3g:eq:v252-four-axis-frame;p3g:eq:v252-pointwise-96,8716,8574,7aa355ae0b01b927bce66be70ab6e77e35616fb210429f4e6dd4bf4fc1aff03e,7aa355ae0b01b927bce66be70ab6e77e35616fb210429f4e6dd4bf4fc1aff03e,True,True,
+P3G-F-0177,corollary,p3g:cor:v252-gaussian-boundary-weight;p3g:eq:v252-comparison-parent;p3g:eq:v252-scalar-schur-96;p3g:eq:v252-gaussian-weight-96,8761,8619,7ec834368aabd1866170bb562928f819bf5d08c428e0ce1d599ecc16bae7cb96,7ec834368aabd1866170bb562928f819bf5d08c428e0ce1d599ecc16bae7cb96,True,True,
+P3G-F-0178,remark,p3g:rem:v252-96-physical-boundary;p3g:eq:v252-alpha-96-rewrite,8815,8673,12f4e1cbc28e8ef0749629398e801bd61284470c88ded198b596b771f743e05f,12f4e1cbc28e8ef0749629398e801bd61284470c88ded198b596b771f743e05f,True,True,
+P3G-F-0179,proposition,p3g:prop:v346-connection-spectral-flow,8930,8784,016d03bb9bb0f51de9b89d32f2c03a1126d4d809c53d855ba9f4b2efffe17423,016d03bb9bb0f51de9b89d32f2c03a1126d4d809c53d855ba9f4b2efffe17423,True,True,
+P3G-F-0180,proposition,p3g:prop:v349-meron-one-crossing,9022,8874,0b60bb5e114197ad676f7984bc9b4beb8b4b5ba09c8a7488031fff2defe55e8e,0b60bb5e114197ad676f7984bc9b4beb8b4b5ba09c8a7488031fff2defe55e8e,True,True,
+P3G-F-0181,proposition,p3g:prop:v349-meron-zeta-certificate,9062,8914,0f9cf25f34889a85fc1df5ecb6a23873809138e912c4c7046575017198d6219a,869476bce59924e2d5edf62ef31e577de2461dcd6ae6320cc6e58c9df75121ab,False,True,"--- 
++++ 
+@@ -18,5 +18,5 @@
+ the previously established theta trace gives the all-order
+-heat expansion; finite numerical checks in
+-\texttt{Proofs/Paper00-MultiGapClosures-v1\_1-verify.py}
+-validate the first terms, while the analytic theta identity
+-proves all terms.
++heat expansion. Finite checks of its initial coefficients
++
++provide independent corroboration; the analytic theta identity
++proves the expansion to all orders."
+P3G-F-0182,proposition,p3g:prop:v340-s3lit-round-coulomb,9100,8950,e6b49caad0b2dd627162a7daad9c867ffeee562412c8307d3cca6ca2ac3204bb,e6b49caad0b2dd627162a7daad9c867ffeee562412c8307d3cca6ca2ac3204bb,True,True,
+P3G-F-0183,corollary,p3g:cor:v340-s3lit-uv-criterion,9130,8980,6830146823e0de02390dea6d8f7e2704dd543eca51476ff75692d11c282242b8,6830146823e0de02390dea6d8f7e2704dd543eca51476ff75692d11c282242b8,True,True,
+P3G-F-0184,remark,p3g:rem:v340-s3lit-literature-firewall,9155,9005,a5b9fe2ab3b61e65aae94716f483aff32bfb9ed7de872399bba91c6e8f2e028c,a5b9fe2ab3b61e65aae94716f483aff32bfb9ed7de872399bba91c6e8f2e028c,True,True,

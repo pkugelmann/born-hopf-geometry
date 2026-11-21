@@ -1,0 +1,21 @@
+{
+  "known_open": [
+    "Cert_hier",
+    "BH-VA-G-0005 independent primitive-source route",
+    "K16 pair action occurrence",
+    "actual full physical charged Hessian",
+    "G16/QCD physical inputs"
+  ],
+  "needs_independent_adjudication": [
+    "BH-VA-G-0003"
+  ],
+  "new_source_labels": [
+    "p2a:rem:v3225-charged-origin-registry",
+    "p3f:rem:v1271-charged-hessian-origin-gate",
+    "p5:rem:v3215-charged-origin-ledger"
+  ],
+  "new_unconditional_proof_claims": 0,
+  "release": "v1_78",
+  "scope": "source_update_reconciliation_not_full_paper_audit",
+  "source_archive": "Paper00-PapersMinimal-v3_038.zip"
+}

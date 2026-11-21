@@ -1,0 +1,52 @@
+action_id,priority,original_line_start,original_line_end,disposition,implementation_status,implementation_note,math_premises_modified,re_audit_performed
+P3G-E-001,P0/HIGH,1,58,ARCHIVE_HISTORY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-002,P1/MEDIUM,63,63,REVIEW_MACRO_IMPORT,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-003,P1/MEDIUM,85,1292,RENAME / MERGE_EXPOSITION,TARGETED_APPLICATION,History/ownership prose retitled or normalized; conditional mathematics kept in its original technical subsection. No deletion or transfer of proof blocks.,NO,NO
+P3G-E-004,P1/MEDIUM,510,771,RENAME / ARCHIVE_HISTORY,TARGETED_APPLICATION,History/ownership prose retitled or normalized; conditional mathematics kept in its original technical subsection. No deletion or transfer of proof blocks.,NO,NO
+P3G-E-005,P1/MEDIUM,772,991,MERGE_EXPOSITION / RENAME,TARGETED_APPLICATION,History/ownership prose retitled or normalized; conditional mathematics kept in its original technical subsection. No deletion or transfer of proof blocks.,NO,NO
+P3G-E-006,P1/MEDIUM,992,1106,RENAME / KEEP_CONDITIONAL,TARGETED_APPLICATION,History/ownership prose retitled or normalized; conditional mathematics kept in its original technical subsection. No deletion or transfer of proof blocks.,NO,NO
+P3G-E-007,P1/MEDIUM,1786,2230,RENAME / KEEP_CONDITIONAL,TARGETED_APPLICATION,History/ownership prose retitled or normalized; conditional mathematics kept in its original technical subsection. No deletion or transfer of proof blocks.,NO,NO
+P3G-E-008,P1/MEDIUM,2277,2401,RENAME / KEEP_CONDITIONAL,TARGETED_APPLICATION,History/ownership prose retitled or normalized; conditional mathematics kept in its original technical subsection. No deletion or transfer of proof blocks.,NO,NO
+P3G-E-009,P1/MEDIUM,3056,3270,REATTRIBUTE / KEEP,TARGETED_APPLICATION,History/ownership prose retitled or normalized; conditional mathematics kept in its original technical subsection. No deletion or transfer of proof blocks.,NO,NO
+P3G-E-010,P1/MEDIUM,3271,3763,MERGE_EXPOSITION / KEEP,TARGETED_APPLICATION,History/ownership prose retitled or normalized; conditional mathematics kept in its original technical subsection. No deletion or transfer of proof blocks.,NO,NO
+P3G-E-011,P1/MEDIUM,3764,4423,RENAME / MERGE_EXPOSITION,TARGETED_APPLICATION,History/ownership prose retitled or normalized; conditional mathematics kept in its original technical subsection. No deletion or transfer of proof blocks.,NO,NO
+P3G-E-012,P1/MEDIUM,4426,4474,RENAME / KEEP_CONDITIONAL,TARGETED_APPLICATION,History/ownership prose retitled or normalized; conditional mathematics kept in its original technical subsection. No deletion or transfer of proof blocks.,NO,NO
+P3G-E-013,P0/HIGH,4940,4940,REATTRIBUTE,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-014,P0/HIGH,5022,5022,REATTRIBUTE,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-015,P0/HIGH,5143,5190,REATTRIBUTE,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-016,P1/MEDIUM,5269,8412,SPLIT / KEEP,TARGETED_APPLICATION,Technical source/response computations retained under existing 29+ mathematical subsection boundaries; additional top-level splitting declined to protect long-lived section/claim identities.,NO,NO
+P3G-E-017,P1/MEDIUM,6302,6340,REATTRIBUTE,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-018,P2/LOW,6487,6504,RENAME,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-019,P0/HIGH,8413,8420,SPLIT / RENAME,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-020,P1/MEDIUM,8421,8483,KEEP_CONDITIONAL,RETAINED_AS_MATHEMATICS,Exact finite result and printed conditional firewall preserved; not converted into an unconditional physical occurrence.,NO,NO
+P3G-E-021,P1/MEDIUM,8484,8705,KEEP / MERGE_EXPOSITION,RETAINED_AS_MATHEMATICS,Exact finite result and printed conditional firewall preserved; not converted into an unconditional physical occurrence.,NO,NO
+P3G-E-022,P1/MEDIUM,8706,8857,KEEP_CONDITIONAL / RENAME,RETAINED_AS_MATHEMATICS,Exact finite result and printed conditional firewall preserved; not converted into an unconditional physical occurrence.,NO,NO
+P3G-E-023,P1/MEDIUM,8858,8904,REVIEW_REPRODUCIBILITY,PARTIAL_REPRODUCIBILITY,Added and executed an exact ten-axis moment SymPy replay (2nd/4th/6th); the original named full PetersenDynamics script and two-core T/B matrix replay remain unavailable in supplied archives.,NO,NO
+P3G-E-024,P1/MEDIUM,8905,9019,RENAME / MOVE_SCOPE_SUMMARY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-025,P0/HIGH,9098,9100,RENAME / RELEVEL,APPLIED,Maxwell benchmark promoted from orphan subsubsection to sibling subsection within final verification chapter; label preserved.,NO,NO
+P3G-E-026,P1/MEDIUM,9168,9170,ADD_SCOPE_SUMMARY,APPLIED,"Added one final mathematical/physical scope conclusion before bibliography, without making a new formal theorem.",NO,NO
+P3G-E-027,P0/HIGH,982,8165,REATTRIBUTE / BIBLIOGRAPHY_CASE_BY_CASE,APPLIED,All 22 bound source citation occurrences corrected individually to current I-C or I-D keys; 22 exact anchor actions are preserved below.,NO,NO
+P3G-E-028,P1/MEDIUM,8312,8403,RENAME_LOCAL_REFERENCE,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-029,P1/MEDIUM,1,9169,ARCHIVE_HISTORY / REVIEW_INLINE,APPLIED,"All 155 comment records archived (151 standalone removed from TeX, 4 inline provenance comments excised); no proof qualification from source comments deleted.",NO,NO
+P3G-E-030,P1/MEDIUM,982,982,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-031,P1/MEDIUM,3261,3261,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-032,P0/HIGH,4940,4940,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-033,P1/MEDIUM,5022,5022,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-034,P0/HIGH,5143,5143,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-035,P0/HIGH,5188,5188,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-036,P0/HIGH,5892,5892,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-037,P0/HIGH,5951,5951,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-038,P1/MEDIUM,6160,6160,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-039,P1/MEDIUM,6218,6218,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-040,P0/HIGH,6302,6302,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-041,P0/HIGH,6317,6317,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-042,P0/HIGH,6340,6340,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-043,P1/MEDIUM,7619,7619,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-044,P1/MEDIUM,7656,7656,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-045,P1/MEDIUM,7704,7704,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-046,P1/MEDIUM,7741,7741,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-047,P1/MEDIUM,7778,7778,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-048,P0/HIGH,7820,7820,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-049,P1/MEDIUM,7854,7854,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-050,P1/MEDIUM,7897,7897,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO
+P3G-E-051,P0/HIGH,8042,8042,REATTRIBUTE / FIX_CITATION_KEY,APPLIED,Exact source-anchored editorial transformation; mathematics and labels retained.,NO,NO

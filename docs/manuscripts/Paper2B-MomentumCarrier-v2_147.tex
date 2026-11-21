@@ -1,0 +1,3173 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{graphicx}
+\usepackage{slashed}
+\usepackage{tikz}
+\usepackage{colortbl}
+\usepackage{calc}
+
+
+\input{Macros-v2_191.tex}
+\hypersetup{hidelinks}
+
+\usetikzlibrary{positioning, calc} 
+
+
+\title{\textbf{Born--Hopf Geometry II-B: The Generated Momentum Carrier}\\[0.5em]
+\large Compact SU(2), Spin(4), finite level one, and recovery}
+
+\author{Peter Kugelmann\thanks{\texttt{pkugelmann@proton.me}}}
+\date{Version 2.147 --- 20 November 2026}
+
+\setlength{\emergencystretch}{3em}
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Relative to the constituted round momentum parent
+$M_p\cong SU(2)\cong S^3(\Rmom)$ and the frozen
+Paper~II-A momentum-seed frontier, this paper derives the complete
+GP2-generated momentum type-support.  The connected isometry group
+$SO(4)$ and its spin lift $\Spin(4)$ act on the single parent; they
+are not additional momentum carriers.  The intrinsic scalar unit,
+lowest chiral spinors, first scalar harmonics and linearized
+gradient-bracket Killing fields generate the six irreducible types
+$(0,0)$, $(\frac12,0)$, $(0,\frac12)$, $(\frac12,\frac12)$,
+$(1,0)$ and $(0,1)$.  Their explicit one-copy model is
+$\mathcal H_1$ of complex dimension $15$.
+
+The intrinsic representation word length of that GP2 support gives
+$m_p=1$ without a tensor-tower selector or a universal GP3
+multiplicity-one premise.  A separate complete whole-candidate
+comparison certificate is required to identify every physical GP3
+endpoint with the one-copy model; that certificate remains open.
+The canonical smooth presentation, finite-state and operator-algebra
+capacities, product-closure obstructions, continuum recovery and
+inverse diagnostics are developed at their stated mathematical
+and conditional scopes.  Multiplicity-blind native tests, including
+finite-ancilla protocols, cannot themselves discharge the GP3
+comparison obligation.  Abstract carriers, state spaces and
+conditional finite-support comparisons do not by themselves establish
+actual preparations, interactions, rates or measurements.
+\end{abstract}
+
+\tableofcontents
+\listoftables
+\newpage
+
+\section{Momentum-role input and constructor dependencies}
+\label{paper2b:sec:organized-scope}
+
+\subsection{Introduction}
+\label{p2b:sec:introduction}
+
+\paragraph{Full technical derivations.}
+The active auxiliary classifications, exact calculations, and negative
+results supporting this paper are collected without abridgment in
+Paper~II-F, Section~\ref{p2ftech:sec:momentum}.
+That companion is a proof owner, not an additional constructor,
+physical occurrence, state, or calibration assumption.
+
+Paper~II-B imports the Paper~II-A momentum parent
+\[
+ M_p\cong SU(2)\cong S^3(\Rmom)
+\]
+and the constitutional semantics
+\[
+ \begin{aligned}
+  \mathrm{G0}&:\text{ actualized/distinguishable},&
+  \mathrm{GP1}&:\text{ finite/bounded},\\
+  \mathrm{GP2}&:\text{ exact/host-faithful},&
+  \mathrm{GP3}&:\text{ irreducible/least}.
+ \end{aligned}
+\]
+Paper~II-A owns the parent-role allocation.  This paper owns the next
+constructor-relative step: it derives the connected isometry completion,
+classifies the \(\Spin(4)\) sectors, identifies the complete generated
+momentum-seed carrier, and only afterward attaches the intrinsic word-length
+label \(m_p=1\).  Thus no tower membership, spectral exhaustivity, component
+ceiling, or numerical level is used to select the initial momentum carrier.
+
+The established type-support and level chain is
+\[
+ S^3(\Rmom)
+ \Longrightarrow \Spin(4)
+ \Longrightarrow E_0,S_+,S_-,E_1
+ \Longrightarrow (\mathcal K_{\rm Kill})_{\mathbb C}
+ \Longrightarrow \mathcal G^{\rm car}_{\Sigma_p}\cong\mathcal H_1
+ \Longrightarrow m_p=1.
+\]
+The stronger arrow from this common generated content to the carrier of
+\emph{every} GP3-irreducible structured endpoint requires the whole-candidate
+comparison certificate of Theorem~\ref{p2b:thm:momentum-carrier-rigidity}.
+The generic word tower and its component/shell bounds remain useful
+classification and recovery structures, especially for later roles, but they
+are not the constitutional origin of the momentum seed.
+
+\paragraph{Co-realization of the generated momentum constituents.}
+The momentum seed, \(E_0\), \(S_+\), \(S_-\), \(E_1\),
+\(\mathcal K_{\rm Kill}\), its common generated support, and the associated one-copy smooth model lie
+over one rooted constructor component.  Their
+universal bridges are constituent ancestry, inclusions, and the licensed
+section-to-operation map.  Different dimensions and sorts prevent a
+pairwise Born interpretation.  A Killing section and its induced operation
+remain different typed nodes but, when the derivation constructor is
+licensed, require only the one momentum-root occurrence.
+
+\subsubsection{Logical scope and import ledger}
+\label{p2b:subsec:import-ledger}
+The following table distinguishes constitutional inputs from structures
+derived in this paper.
+\begingroup
+\small
+\setlength{\LTpre}{6pt}
+\setlength{\LTpost}{6pt}
+\renewcommand*{\theHtable}{importledger.\arabic{table}}%
+\begin{longtable}{L{0.20\linewidth}L{0.35\linewidth}L{0.37\linewidth}}
+\toprule
+\textbf{Source} & \textbf{Imported datum} & \textbf{Not imported} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Source} & \textbf{Imported datum} & \textbf{Not imported} \\
+\midrule
+\endhead
+Paper~II-A
+& the least parent-role skeleton
+\(M_p\simeq SU(2)\), its round negative-Killing geometry up to \(\Rmom\),
+the stage-safe G0 geometric-actualization certificate and its
+occurrence/readout boundary,
+GP1 finite/bounded realization, GP2 exact/host-faithful constructor-relative
+closure including finite generated-image inheritance, canonical-image
+objectification, and the same-role no-splitting lemma, the frozen momentum-seed
+dependency frontier, generated-orbit and unresolved-family inheritance,
+no-representative-selection semantics, and the universal GP3 host-faithful
+reduction semantics
+& no finite momentum carrier, no momentum level, no arbitrary tensor closure,
+no component ceiling, no selected coordinate-completion point, and no
+core-support occurrence merely from the parent theorem \\
+Paper~I-A
+& the round-sphere scalar and spinor harmonic package and the intrinsic
+\(\Spin(4)\) representation dictionary
+& no physical selection of a finite carrier or level \\
+Paper~I-B
+& the finite representation identities, the canonical bracket/Killing
+comparison and the retained one-copy smooth model
+\(J_R:\mathcal H_1\simeq\mathcal L_R\)
+& no independent GP2 carrier-generation or universal GP3 endpoint proof \\
+Paper~I-B: \(\mathsf C_{\rm PI}\)
+
+& only where explicitly invoked, normalized finite coordinate intertwiners,
+the protected Euclidean Clifford vector, and its independent algebraic scale
+\(\rho_{\rm prot}\)
+& one representative of
+\(\mathfrak M_{\rm coord}(\mathcal H_1)/\!\sim\cong\mathbb R_{\ge0}^3\),
+with residual coordinates \((r_{1,0},r_{0,1},\varrho_{\rm sp})\), not a point
+selected by \(\mathcal H_1\), and no identification
+\(\rho_{\rm prot}=\Rmom\) without a separate convention \\
+Paper~I-B: \(\mathsf{Supp}_{2T}\)
+& only where explicitly invoked, the exceptional-core atlas/constructor and
+its finite octet/septet and oriented trimer-pair supports with their
+constituted transitive actions
+& no implication from generic point resolution alone to \([2T]\): an
+occurring point-resolution support gives \(\mathsf{Supp}_{\varepsilon}(X)\),
+and \(\mathsf{Supp}_{2T}\) co-realizes only after the additional
+candidate-independent core constructor plus the Paper-II-A domain bridge, or
+a direct core-constructor occurrence; no attachment from \(m_p=1\), no
+labelled representative, and no physical interpretation of the weights \\
+Optional tower grammar
+& the mathematical family \(\mathcal H_m\), word stages, component ceilings,
+shells, and Peter--Weyl recovery structures developed below
+& no premise for the initial momentum-seed theorem; TWR/SPEX/FIT and
+\(\mathsf P_{\rm sli}\) are optional tower conditions rather than
+momentum-selection axioms \\
+\bottomrule
+\end{longtable}
+\endgroup
+\addtocounter{table}{-1}%
+Everything else proved below is native to II-B.  In particular, later
+Paper-II dynamics, reciprocal-position growth, normalization, and freezing
+conditions are neither premises nor proof sources for the momentum seed.
+
+\paragraph{Physical occurrence boundary.}
+All physical interfaces below are role-specific specializations of
+Paper~II-A's stage-safe G0 geometric-actualization certificate.  Whenever an
+interface is asserted to occur, its certificate must exhibit a contingent
+token of a geometrically licensed, claim-relative invariant distinction with
+result-independent provenance.  The interface tag alone asserts no occurrence
+and supplies no independent actualization principle.  No instance reopens the
+frozen upstream geometry; a new role enters only through a separately declared
+downstream dependency frontier.  Analytic, regularity, continuation, and
+reconstruction hypotheses remain separately displayed.  The transfer parent
+and the host theorem below are generated descendants of the already occurring
+operation role, so neither needs a second occurrence witness.
+
+\subparagraph{Role-local rank boundary.}
+All operational rank-one statements in this paper concern the single primitive
+momentum role.  They neither remove the independently retained scalar
+\(U(1)\) role nor exclude higher-rank products of separately constituted
+reciprocal roles.
+
+\section{Round SU(2) momentum geometry and Spin(4) lift}
+\label{paper2b:sec:organized-round}
+
+\subsection{Round momentum geometry and spinorial seeds}
+\label{p2:sec:classical-momentum-geometry-operation-first}
+
+Theorem~\ref{p2:thm:dependency-complete-parent-allocation} allocates the
+generated connected noncommutative transfer role, and
+Definition~\ref{p2:def:momentum-branch-specialization} records the derived
+relation-exact \(SU(2)\) parent used by the remaining Paper-II
+construction.  Its sphere topology and rank-one geometry are the II-A results
+in Theorems~\ref{p2:thm:rank-one-topology-spin} and
+\ref{p2:thm:rank-one-space-form-einstein}.  From
+this point onward, \emph{momentum space} means
+\[
+        M_p\cong S^3_A(\Rmom)\cong SU(2).
+\]
+The circle \(S^1_A\cong U(1)\) is exported as the compact scalar succession
+parent but is not part of the Paper-II momentum construction.  The round
+metric, its \(SO(4)\) isometry group, and the lifted \(\Spin(4)\) symmetry are
+consequences of the derived \(SU(2)\) branch.
+The compatible Hopf fibrations form a conjugacy class with no preferred
+member; one left/common-phase Hopf/contact representative and its normalization
+are now fixed from the Paper-I-A atlas.  This convention does not constitute the
+independent scalar parent.  The finite momentum seed is derived below from the constructor-relative host
+signature and finite generated-image inheritance.  The generic \(\Spin(4)\)-equivariant
+tower is retained only as secondary mathematical infrastructure.  Coordinate
+actions form the unresolved family \(\mathfrak M_{\rm coord}\), while
+\(\mathsf C_{\rm PI}\) is the normalized Paper-I-A representative used when
+its numerical formulas are quoted.
+The center-blind \(SO(3)\) alternative has the same local geometry but is excluded
+at the preceding GP2 exact/host-faithful globalization step.
+
+\begin{theorem}[Derived isometry completion of the single \(SU(2)\) parent]
+\label{p2:thm:single-su2-derived-spin4-isometries}
+Let
+\[
+ G_{\rm op}=M_p\cong SU(2)\cong S^3(\Rmom)
+\]
+be the single nonabelian operation parent selected above, and equip it with
+the canonical automorphism-invariant negative-Killing metric of
+Theorem~\ref{p2:thm:master-compact-role-allocation}.  Then
+this metric is round up to its radius scale, and
+\[
+ \operatorname{Isom}_0(M_p)
+ \cong
+ \frac{SU(2)_L\times SU(2)_R}{\Delta\ZZ_2}
+ \cong SO(4).
+\]
+The universal spin cover of this connected isometry group is
+\[
+ \Spin(4)\cong SU(2)_L\times SU(2)_R,
+\]
+acting by
+\[
+ (a,b)\cdot q=a q b^{-1}.
+\]
+The point stabilizer is \(SU(2)_{\rm diag}\), and therefore
+\[
+ M_p\cong
+ \frac{\Spin(4)}{SU(2)_{\rm diag}}
+ \cong S^3.
+\]
+In particular,
+\[
+ \operatorname{Lie}(G_{\rm op})=\mathfrak{su}(2),
+ \qquad
+ \operatorname{Lie}(\operatorname{Isom}_0(M_p))
+ =\mathfrak{so}(4)
+ \cong\mathfrak{su}(2)_L\oplus\mathfrak{su}(2)_R.
+\]
+The second algebra is the Killing algebra of the derived metric, not the Lie
+algebra of two momentum-role carriers.
+\end{theorem}
+
+\begin{proof}
+For the simple compact Lie algebra \(\mathfrak{su}(2)\), every positive
+\(\operatorname{Ad}\)-invariant inner product is a positive multiple of the
+negative Killing form.  Hence the derived bi-invariant metric is the round
+metric after fixing \(\Rmom\).  Left and right translations are isometries,
+so the displayed action defines a homomorphism
+\[
+ SU(2)_L\times SU(2)_R\longrightarrow\operatorname{Isom}_0(M_p).
+\]
+If \(a q b^{-1}=q\) for every \(q\), evaluation at \(q=1\) gives \(a=b\),
+and then \(a\) must be central.  The kernel is therefore
+\(\{(1,1),(-1,-1)\}=\Delta\ZZ_2\).  The isometry group of the round \(S^3\)
+is \(O(4)\), whose identity component is \(SO(4)\); the containment
+\(\operatorname{Isom}_0\subseteq SO(4)\) used next follows because an isometry
+of a connected Riemannian manifold is determined by its value and differential
+at one point, and the displayed action is already transitive on oriented
+orthonormal frames of \(S^3\).  Since the domain is compact, its image is
+a compact and hence closed subgroup of \(SO(4)\).  The quotient by the discrete kernel has dimension six, equal to
+\(\dim SO(4)\); its image therefore has full Lie algebra and is open in the
+connected group \(SO(4)\), so it is all of \(SO(4)\).  The stabilizer of
+\(q=1\) is the diagonal subgroup, proving the homogeneous presentation and
+the Lie algebra statements.
+\end{proof}
+
+\begin{remark}[Carrier, symmetry, and finite-module boundary]
+\label{p2:rem:carrier-symmetry-module-boundary}
+The identities
+\(S^3\cong SU(2)\) and
+\(\Spin(4)\cong SU(2)_L\times SU(2)_R\cong S^3\times S^3\) refer to
+different objects.  The former is the three-dimensional carrier.  The latter
+is the six-dimensional lifted isometry group acting on that carrier.  A
+\(\Spin(4)\)-module used below is a representation of the lifted symmetry
+group; it is not a second geometric carrier.
+\end{remark}
+
+\begin{proposition}[Finite sector grammar and the exact descent boundary]
+\label{p2:prop:algebra-sector-grammar}
+Let a GP1-finite, GP2-host-faithful complex Hilbert realization of the momentum
+host carry the derived connected isometry symmetry of
+Theorem~\ref{p2:thm:single-su2-derived-spin4-isometries}.  The resulting
+finite-dimensional unitary representation integrates to the universal lift
+\(\Spin(4)\), and its irreducible complex sectors are, up to unitary
+equivalence,
+\[
+ V_{j_L}\otimes V_{j_R},
+ \qquad
+ (j_L,j_R)\in
+ \tfrac12\ZZ_{\ge0}\times\tfrac12\ZZ_{\ge0}.
+\]
+Every such Lie-algebra representation integrates uniquely to the simply
+connected derived symmetry group
+\(\Spin(4)=SU(2)_L\times SU(2)_R\).  This integration introduces neither a
+second momentum parent nor a choice of deck data on \(M_p\).
+
+Let \(z=(-1,-1)\) be the kernel of
+\(\Spin(4)\to SO(4)\).  On \(V_{j_L}\otimes V_{j_R}\),
+\[
+ \pi_{j_L,j_R}(z)
+ =
+ (-1)^{2(j_L+j_R)}\mathbf1.
+\]
+Consequently conjugation on the endomorphisms of any single irreducible sector
+descends to \(SO(4)\).  On a direct sum of sectors, conjugation on an
+inter-sector block descends precisely when its source and target have the same
+central character.  The generated operator doctrine used in this paper is
+within that descent domain: Killing generators and equivariant projectors are
+block diagonal, while the coordinate type
+\((\tfrac12,\tfrac12)\) changes \(j_L+j_R\) by an integer and therefore
+preserves the central character.  No descent statement is made for arbitrary
+endomorphisms mixing the two central-character classes.
+\end{proposition}
+
+\begin{proof}
+Finite-dimensional unitary representations of a compact semisimple Lie
+algebra are completely reducible
+\cite{fulton1991representation,Hall2015lie}.  The irreducibles of a direct sum
+are outer tensor products of irreducibles of its two factors, and the
+irreducibles of \(\mathfrak{su}(2)\) are indexed by
+\(j\in\tfrac12\ZZ_{\ge0}\) \cite{fulton1991representation}.  Lie's
+integration theorem \cite{Hall2015lie} gives a unique
+representation of the simply connected group \(\Spin(4)\).
+
+The central element \(-1\in SU(2)\) acts on \(V_j\) by
+\((-1)^{2j}\), giving the displayed central character.  On
+\(\operatorname{Hom}(V_\lambda,V_\mu)\), conjugation by \(z\) is the quotient
+of the two central characters, so it is trivial exactly when they agree.
+Finally, a coordinate channel has
+\((\Delta j_L,\Delta j_R)=(\pm\tfrac12,\pm\tfrac12)\), hence changes
+\(j_L+j_R\) by \(0\) or \(\pm1\).  This proves the stated descent boundary.
+\end{proof}
+
+\begin{remark}[Constitution status of the rotation--transvection sextet]
+\label{p2:rem:identity-anchored-split}
+The rotation--transvection split
+\(\mathfrak{so}(4)=\mathfrak{so}(3)_J\oplus\mathfrak p\) is anchored at the
+identity of the operation parent: \(\mathfrak{so}(3)_J\) is the isotropy
+algebra at \(e\), and \(\mathfrak p\) is its invariant Killing complement.
+The identity and the operation law are already constituted, so this split
+does not select an external basepoint or a second operation family.  Inner
+automorphisms \(q\mapsto aqa^{-1}\) are derived covariance transformations,
+as follows directly from the constituted group law.
+The finite-dimensional unitary carrier action in
+Proposition~\ref{p2:prop:algebra-sector-grammar} is the realized form of the
+derived host symmetry required by GP1 finiteness and GP2 host faithfulness.
+The additional faithful six-operator realization assumed in
+Theorem~\ref{p2:thm:compact_selection} remains an explicit hypothesis of that
+algebraic classification theorem.
+\end{remark}
+
+\subsubsection{Quantized compact momentum algebra}
+\label{p2:subsec:quantized-algebra}
+
+Once the parent-allocation and round-geometry theorems have identified the
+classical momentum manifold with the round \(3\)-sphere,
+Theorem~\ref{p2:thm:single-su2-derived-spin4-isometries} identifies its
+six-dimensional Killing algebra.  The following theorem classifies that
+isometry algebra in the rotation--transvection basis; it does not replace the
+three-dimensional operation-parent algebra by two parent algebras.
+
+\begin{remark}[Compact branch used in the positive chain]
+\label{p2:rem:compact-branch}
+The round parent already fixes the compact Killing algebra, so the positive
+construction uses
+\[
+ \varkappa=\frac{1}{\Rmom^2}>0,
+ \qquad
+ \mathfrak g\cong\mathfrak{so}(4)
+ \cong\mathfrak{su}(2)_L\oplus\mathfrak{su}(2)_R.
+\]
+The flat and Lorentzian algebraic alternatives, together with the general
+two-parameter covariant bracket reduction, are not needed in the positive
+proof and are deferred to Paper~II-F, Section~\ref{p2b:app:algebraic-branch-diagnostics}.
+The carrier group itself remains \(SU(2)\), with Lie algebra
+\(\mathfrak{su}(2)\).
+\end{remark}
+
+Defining dimensionless generators $L_i^\pm$ by
+\[
+\frac{\hat J_i}{\hbar}=L_i^+ + L_i^-,
+\qquad
+\hat P_i = \frac{\hbar}{\Rmom}\bigl(L_i^+ - L_i^-\bigr),
+\]
+the commutation relations become
+\begin{equation}
+\label{p2:eq:pp-correct}
+[\hat P_i,\hat P_j] = \frac{i\hbar}{\Rmom^2}\,\epsilon_{ijk}\hat J_k,
+\qquad
+[\hat J_i,\hat P_j] = i\hbar\,\epsilon_{ijk}\hat P_k.
+\end{equation}
+
+\subsubsection{Bounded momentum components and the finite equivariant module package}
+\label{p2:sec:fuzzy-truncation}
+
+Paper~I-A~\cite{Kugelmann2026a} introduces a mathematical finite-dimensional
+\(\Spin(4)\)-equivariant family, termed the ``finite Toeplitz \(S^3\)''
+regulator.  Proposition~\ref{p2:prop:algebra-sector-grammar} supplies its
+sector grammar.  The structural momentum-role carrier type-support is fixed by
+Theorem~\ref{p2:thm:momentum-host-H1}, and conditional carrier rigidity of GP3-irreducible
+endpoints is supplied by Theorem~\ref{p2b:thm:momentum-carrier-rigidity}; the optional
+\(\mathsf P_{\rm sli}\) package merely organizes a larger lower-ideal tower,
+and \(\mathsf C_{\rm PI}\) separately equips chosen members with normalized
+Toeplitz coordinate maps.  Only diagonal subspaces are scalar Peter--Weyl
+cutoffs; non-diagonal sectors have the module/bundle interpretation stated
+below.
+
+\begin{proposition}[Component Spectrum]
+\label{p2:prop:component_spectrum}
+Let $(j_L,j_R)$ be an irreducible $\Spin(4)$ sector, i.e., a tensor product $V_{j_L}\otimes V_{j_R}$ with $j_L,j_R\in\frac12\ZZ_{\ge0}$. Then:
+\begin{enumerate}[label=(\roman*), leftmargin=*, itemsep=6pt]
+    \item \textbf{Eigenvalues of $\hat P_3$:}
+    \begin{equation}
+    \begin{aligned}
+    \Spec(\hat P_3)\big|_{(j_L,j_R)}
+    =\Bigl\{&\frac{\hbar}{\Rmom}(m_L-m_R)\;\Big|\\
+             &m_L\in\{-j_L,\ldots,j_L\},\quad
+              m_R\in\{-j_R,\ldots,j_R\}\Bigr\}.
+    \end{aligned}
+    \end{equation}
+    \item \textbf{Operator norm:}
+    \begin{equation}
+    \|\hat P_3\|_{(j_L,j_R)}=
+    \frac{\hbar}{\Rmom}(j_L+j_R)=\Punit(j_L+j_R).
+    \end{equation}
+    \item \textbf{Rotational symmetry:}
+    \begin{equation}
+    \|\hat P_i\|_{(j_L,j_R)}=\Punit(j_L+j_R),\qquad i=1,2,3.
+    \end{equation}
+    \item \textbf{\(\Spin(4)\)-Casimir / kinematic kinetic eigenvalue:}
+    \begin{equation}
+    \begin{aligned}
+    \mathscr C_{\rm kin}
+    &:=\frac{2}{\Rmom^2}\sum_{i=1}^3
+       \bigl[(L_i^+)^2+(L_i^-)^2\bigr],\\
+    \lambda_{j_L,j_R}
+    &=\frac{2}{\Rmom^2}\bigl[j_L(j_L+1)+j_R(j_R+1)\bigr].
+    \end{aligned}
+    \end{equation}
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The weight basis diagonalizes $L_3^\pm$, and
+$\hat P_3=\Punit(L_3^+-L_3^-)$ gives the spectrum directly.  The extremal
+weights give the norm, and rotational symmetry implies the same norm for
+each component.  The displayed kinetic eigenvalue belongs to the
+\(\Spin(4)\)-Casimir \(\mathscr C_{\rm kin}\).  Since the two spin triples
+commute and \(\hat J_i=\hbar(L_i^++L_i^-)\),
+\[
+ \sum_{i=1}^3\hat P_i^2
+ =\hbar^2\mathscr C_{\rm kin}
+  -\frac{1}{\Rmom^2}\sum_{i=1}^3\hat J_i^2.
+\]
+Thus the Casimir must be distinguished from the transvection-square operator
+on both diagonal and non-diagonal sectors.  On scalar diagonal sectors
+\((j,j)\), \(\mathscr C_{\rm kin}\) agrees with the positive round-$S^3$
+scalar Laplacian; this does not remove the displayed angular-momentum term.
+\end{proof}
+
+\begin{remark}[Scalar Laplacian versus full module Casimir]
+\label{p2:rem:scalar-vs-full-carrier-casimir}
+The scalar Hilbert space \(L^2(S^3)\) contains only diagonal Peter--Weyl
+sectors \((j,j)\).  With the integer level convention used here, its finite
+subspace is
+\[
+ \mathcal H_m^{\rm sc}
+ =
+ \bigoplus_{\substack{j\in\frac12\ZZ_{\ge0}\\2j\le m}}
+ V_j\otimes V_j^*.
+\]
+Since every \(SU(2)\) irreducible is self-dual, \(V_j\otimes V_j^*\) is the
+\((j,j)\) sector \(V_j\otimes V_j\) of the labelling used elsewhere in this
+paper; the dual notation records the Peter--Weyl origin.
+The integer coordinate-stable module family
+\(\mathcal H_m=\bigoplus_{j_L+j_R\le m}V_{j_L}\otimes V_{j_R}\)
+also keeps non-diagonal \(\Spin(4)\) sectors.  Those sectors are not scalar
+functions generated by \(S^3\); they require specified bundle-valued field
+types or remain abstract symmetry modules.  In particular,
+\[
+ \dim\mathcal H_1^{\rm sc}=5,
+ \qquad
+ \dim\mathcal H_1=15.
+\]
+On a non-diagonal sector the displayed second-order quantity is the chosen
+\(\Spin(4)\)-Casimir kinetic normalization, not a scalar Laplacian eigenvalue.
+\end{remark}
+
+\begin{remark}[Constitution versus scale and kinetic interpretation]
+\label{p2b:rem:carrier-scale-kinetic-firewall}
+The derived GP2 structural type-support \(\mathcal G^{\rm car}_{\Sigma_p}\cong\mathcal H_1\) and \(m_p=1\)
+do not determine a numerical value of \(\Rmom\), do not identify the protected
+coordinate scale with the parent radius, do not constitute a physical kinetic
+Hamiltonian, and do not actualize a measurement or calibration token.  In
+particular,
+\[
+ \boxed{
+ \mathcal G^{\rm car}_{\Sigma_p},\ m_p
+ \ \not\Rightarrow\
+ \Rmom^{\rm numerical},\
+ \rho_{\rm prot}=\Rmom,\
+ H_{\rm kin},\
+ \text{measurement/calibration token}.}
+\]
+The component spectrum and the displayed Casimir are parameterized kinematic
+mathematics until a later role supplies the corresponding scale, dynamical
+operator, or token occurrence.
+\end{remark}
+
+\subsubsection{Intrinsic spinor seed, canonical host images, and intrinsic word length}
+\label{p2:subsec:constructor-grammar-word-length}
+
+Let \(S_+\) and \(S_-\) denote the two intrinsic \(k=0\) chiral
+Dirac/Killing-spinor spaces of the round host, and put
+\[
+ F_L:=S_+,\qquad F_R:=S_-,\qquad S:=S_+\oplus S_-.
+\]
+
+\begin{theorem}[Canonical lowest spinor seed and weight classification]
+\label{p2b:thm:seed-atomicity}
+For the round momentum parent and its derived universal lift \(\Spin(4)\), the
+intrinsic lowest two chiral Dirac/Killing-spinor spaces supplied by the round
+spin geometry satisfy
+\[
+ \boxed{S_+\cong V_{\frac12,0},\qquad S_-\cong V_{0,\frac12}.}
+\]
+Their direct sum \(S=S_+\oplus S_-\) is faithful and the unordered pair is
+stable under factor interchange.  After this geometric generation, their
+highest weights are the two fundamental weights \(\omega_L,\omega_R\), which
+are the atoms of the mathematical dominant-weight monoid
+\[
+ P^+(\Spin(4))\cong\mathbb Z_{\ge0}\omega_L\oplus
+ \mathbb Z_{\ge0}\omega_R.
+\]
+This last statement classifies the already generated spinor seed; it does not
+identify the physical construction monoid with the whole dominant-weight
+monoid and is not the selector of \(S_\pm\).
+\end{theorem}
+
+\begin{proof}
+The \(k=0\) cases of the Paper-I-A spinor harmonic theorem give the two intrinsic
+lowest chiral spaces and their \(\Spin(4)\)-types.  The center of one factor
+acts nontrivially on one chiral module and trivially on the other, so the
+kernels of the two factor actions intersect trivially and \(S\) is faithful.
+Factor interchange exchanges the two chiral spaces.  The final dominant-weight
+statement is the standard classification of irreducible
+\(SU(2)_L\times SU(2)_R\)-modules and is used here only after the geometric
+objects have been generated.
+\end{proof}
+
+\begin{remark}[Word monoid versus physical constructor monoid]
+\label{p2b:rem:seed-semantic-revision}
+For representation-theoretic bookkeeping define the free word monoid
+\[
+ M_{\rm word}:=\mathbb N[F_L]\oplus\mathbb N[F_R].
+\]
+It records tensor-word length built from the already generated spinor seed.
+It is not asserted to equal the GP2 physical construction monoid of the
+momentum host.  In particular, the former non-atomic seed countermodels remain
+useful diagnostics of weaker generation-based definitions, but they do not
+compete with the geometrically fixed lowest spinor spaces above.  Their
+detailed comparison is deferred to Paper~II-F, Section~\ref{p2b:app:legacy-selector}.
+\end{remark}
+
+\begin{lemma}[Minimal tensor-word length]
+\label{p2b:lem:minimal-word-length}
+For an irreducible \(V_{j_L,j_R}\), define the representation-theoretic word
+length
+\[
+ \ell(V_{j_L,j_R})
+ :=\min\{r\ge0:V_{j_L,j_R}\prec(F_L\oplus F_R)^{\otimes r}\}.
+\]
+Then
+\[
+ \boxed{\ell(V_{j_L,j_R})=2j_L+2j_R.}
+\]
+\end{lemma}
+
+\begin{proof}
+A word with \(r_L\) left and \(r_R\) right fundamentals has every constituent
+satisfying \(j_L\le r_L/2\) and \(j_R\le r_R/2\), so
+\(r\ge2j_L+2j_R\).  Conversely, \(V_{j_L}\) occurs as the highest-spin
+constituent of \((V_{1/2})^{\otimes2j_L}\), and similarly on the right.
+\end{proof}
+
+\begin{corollary}[Intrinsic word length and half-level normalization]
+\label{p2b:cor:word-degree-derived}
+The half-level convention is the derived representation label
+\[
+ m(V_{j_L,j_R})=\frac12\ell(V_{j_L,j_R})=j_L+j_R.
+\]
+At fixed integer word length \(N\), the multiplicity-free shell and cumulative
+prefix have dimensions
+\[
+ \binom{N+3}{3},\qquad \binom{N+4}{4},
+\]
+respectively.  This is classification data; it does not make unrestricted
+tensor powers physical GP2-generated content.
+\end{corollary}
+
+\begin{proof}
+The length identity is Lemma~\ref{p2b:lem:minimal-word-length}.  At fixed
+\(N=a+b\), sum \((a+1)(b+1)\) over \(a+b=N\), then sum the shells.
+\end{proof}
+
+\section{Generated six-type momentum host and GP3 comparison}
+\label{paper2b:sec:generated-six-type-host}
+\label{p2b:subsec:unconditional-momentum-host}
+\subsection{Intrinsic bracket-image constructor and typed closure}
+
+Paper~II-A freezes the initial momentum-seed dependency frontier in
+Definition~\ref{p2:def:momentum-seed-frontier}.  This paper verifies its
+round-host provenance.  Let \(E_k\) denote the scalar harmonic level \(k\) of
+the round parent.  By the Paper-I-A representation-harmonic package,
+\[
+ E_0\cong(0,0),\qquad E_1\cong(\tfrac12,\tfrac12),
+\]
+and the intrinsic lowest two spinor objects are
+\(S_+\cong(\tfrac12,0)\) and \(S_-\cong(0,\tfrac12)\).  The round gradient and
+the vector-field Lie bracket are host-natural constructors available before
+any finite representation level is chosen.  By Paper~II-A's parent-geometric
+object typing, \(\Gamma(TS^3)_{\rm sec,obj}\) is the tangent-section object
+sort of the same momentum parent, whereas the induced derivation action is a
+distinct operation-typed output co-realized by the same licensed constructor
+word.  No tensor-word boundary,
+compression map, component ceiling, or pointwise scalar multiplication as a
+finite carrier constructor belongs to this seed frontier.
+
+\begin{lemma}[Canonical bracket linearization and bivector--Killing bridge]
+\label{p2b:lem:canonical-bracket-image}
+Identify the real first harmonic space \(E_1^{\mathbb R}\) with the ambient
+vector space \(\mathbb R^4\) by
+\[
+ u\longmapsto f_u,\qquad f_u(x):=\langle u,x\rangle,
+ \qquad x\in S^3(\Rmom).
+\]
+Then
+\[
+ \nabla f_u=u-\frac{f_u}{\Rmom^2}x
+\]
+and
+\[
+ [\nabla f_u,\nabla f_v]
+ =\frac1{\Rmom^2}\bigl(f_u v-f_v u\bigr).
+\]
+Thus the constituted bilinear constructor
+\[
+ \beta:E_1^{\mathbb R}\times E_1^{\mathbb R}
+ \longrightarrow\Gamma(TS^3)_{\rm sec,obj},\qquad
+ \beta(f_u,f_v):=[\nabla f_u,\nabla f_v],
+\]
+has a canonical real linear hull.  Because \(\beta\) is alternating, its
+unique mathematical linearization is
+\[
+ \bar\beta:\Lambda^2E_1^{\mathbb R}
+ \longrightarrow\Gamma(TS^3)_{\rm sec,obj},
+ \qquad
+ \bar\beta(u\wedge v):=[\nabla f_u,\nabla f_v].
+\]
+It satisfies
+\[
+ Z_\beta:=\operatorname{span}_{\mathbb R}\operatorname{im}\beta
+ =\operatorname{im}\bar\beta
+ =\mathcal K_{\rm Kill}.
+\]
+Equivalently,
+\[
+ \Theta:=\Rmom^2\bar\beta:
+ \Lambda^2E_1^{\mathbb R}\longrightarrow\mathcal K_{\rm Kill},
+ \qquad
+ \Theta(u\wedge v):=\Rmom^2[\nabla f_u,\nabla f_v]
+\]
+is a canonical \(SO(4)\)-equivariant isomorphism onto the six-dimensional
+Killing-field module.  After complexification,
+\[
+ (\mathcal K_{\rm Kill})_{\mathbb C}
+ \cong\Lambda^2_{\mathbb C}
+ \cong(1,0)\oplus(0,1).
+\]
+\end{lemma}
+
+\begin{proof}
+The displayed gradient is the orthogonal projection of the constant ambient
+vector \(u\) to \(T_xS^3\).  Differentiating it in the ambient space and
+antisymmetrizing gives the bracket formula.  The vector field
+\[
+ x\longmapsto\langle u,x\rangle v-\langle v,x\rangle u
+\]
+is the infinitesimal rotation associated with the ambient bivector
+\(u\wedge v\).  The standard map \(\Lambda^2\mathbb R^4\to\mathfrak{so}(4)\)
+is an isomorphism, so \(\Theta\), and hence \(\bar\beta\), is injective and
+has image all of \(\mathcal K_{\rm Kill}\).  Since the image of the induced
+linear map is exactly the real span of the outputs of the original bilinear
+map, this proves the displayed identity for \(Z_\beta\).  Naturality of the
+ambient inner product makes \(\Theta\) equivariant.  The Paper-I-A
+quadratic-shell theorem gives the same linear-image identity and the displayed
+\(\Spin(4)\)-type.
+\end{proof}
+
+
+\begin{lemma}[Canonical normalized first-harmonic gradient port]
+\label{p2b:lem:gradient-port}
+On the round host, the gradient is a natural, \(\Spin(4)\)-equivariant
+isomorphism of object modules
+\[
+ \nabla:E_1\xrightarrow{\ \sim\ }\nabla E_1
+ \subset\Gamma(TS^3)_{\rm sec,obj}.
+\]
+For the round \(L^2\) scalar and vector-field inner products,
+\[
+ \langle\nabla f,\nabla g\rangle_{L^2}
+ =\frac3{\Rmom^2}\langle f,g\rangle_{L^2},\qquad
+ U_\nabla:=\frac{\Rmom}{\sqrt3}\nabla,
+ \qquad U_\nabla^{-1}=-\frac{\Rmom}{\sqrt3}\operatorname{div}
+ \quad\text{on }\nabla E_1.
+\]
+This unitary object-port map identifies the two isomorphic four-dimensional
+representations inside a one-copy presentation.  Their source/target roles
+remain distinct; it does not identify a section object with an induced
+operation occurrence or add a physical gradient-evaluation constructor.
+\end{lemma}
+\begin{proof}
+With the positive Laplacian convention
+\(\Delta=-\operatorname{div}\nabla\), every \(f\in E_1\) satisfies
+\(\Delta f=3f/\Rmom^2\).  Integration by parts on the compact round
+sphere gives the inner-product identity and the displayed inverse.
+The metric and Laplacian commute with the derived \(\Spin(4)\) action,
+so the map is equivariant and independent of a chosen basis.
+\end{proof}
+
+\begin{proposition}[Conformal-field Lie closure, in the smooth host]
+\label{p2b:prop:conformal-host-closure}
+For \(u,v\in\mathbb R^4\) put \(G_u:=\nabla f_u\), and for
+\(A\in\mathfrak{so}(4)\) put \(K_A(x):=Ax\).  Their ordinary
+vector-field brackets obey
+\[
+ [G_u,G_v]=K_{(vu^\top-uv^\top)/\Rmom^2},\quad
+ [K_A,G_u]=-G_{Au},\quad
+ [K_A,K_B]=K_{BA-AB}.
+\]
+Consequently
+\(\mathfrak c:=\operatorname{span}_{\mathbb R}\{G_u,K_A\}\)
+is a ten-dimensional Lie algebra isomorphic to \(\mathfrak{so}(4,1)\).
+As a representation of the \emph{compact} derived \(\Spin(4)\),
+\[
+ \mathfrak c_{\mathbb C}
+ \cong(\tfrac12,\tfrac12)\oplus(1,0)\oplus(0,1)
+ \cong\operatorname{Sym}^2(S_+\oplus S_-),
+ \qquad \mathcal H_1\cong\mathbf1\oplus S\oplus\mathfrak c_{\mathbb C}.
+\]
+Thus \(15=1+4+10\) is an intrinsic host-classification of the
+already generated six types.  Neither \(\mathfrak{so}(4,1)\) nor
+its noncompact finite-dimensional action is introduced as a new physical
+momentum group or a faithful unitary finite-carrier operation constructor.
+\end{proposition}
+\begin{proof}
+The first bracket is Lemma~\ref{p2b:lem:canonical-bracket-image}.
+Direct differentiation of \(K_A\) and \(G_u\) gives the other two.
+The injective map
+\[
+ K_A\longmapsto\begin{pmatrix}-A&0\\0&0\end{pmatrix},\qquad
+ G_u\longmapsto\begin{pmatrix}0&u/\Rmom\\u^\top/\Rmom&0\end{pmatrix}
+\]
+preserves the three brackets, and its image is the standard
+\(\mathfrak{so}(4,1)\) block presentation.  The four gradients have
+\((\tfrac12,\tfrac12)\)-type; the six Killing fields decompose as
+\((1,0)\oplus(0,1)\).  Expanding the symmetric square of the two
+chiral defining modules proves the final representation identity.
+\end{proof}
+
+\begin{remark}[Coordinate-algebra blocks versus geometric type blocks]
+\label{p2b:rem:conformal-block-compatibility}
+The geometric decomposition
+\(\mathbf1\oplus\mathfrak c_{\mathbb C}\oplus S\)
+organizes \(\mathcal H_1\) into dimensions \(11+4\).
+Where the separately constituted intrinsic coordinate tuple and its
+completion hypotheses produce
+\(\mathcal A_D\cong M_{11}(\mathbb C)\oplus M_4(\mathbb C)\),
+those block sizes agree with the geometric organization.  Matrix
+simplicity and the dimension \(137=11^2+4^2\) depend on the separate
+coordinate-intertwiner/word calculation, not on the decomposition
+\(11+4\) alone, and do not select a physical operation or state.
+\end{remark}
+
+\begin{proposition}[Maximal exact unital scalar derivation subalgebra]
+\label{p2b:prop:maximal-finite-scalar-action}
+Set \(\mathcal P_1:=E_0\oplus E_1\subset C^\infty(S^3(\Rmom))\).
+For a smooth-host field \(X\in\mathfrak c\), let
+\(\delta_X(h)=X(h)\) be its \emph{ordinary} scalar derivation.  Then
+\[
+ \delta_X(\mathcal P_1)\subseteq\mathcal P_1
+ \quad\Longleftrightarrow\quad X\in\mathcal K_{\rm Kill}.
+\]
+This is the maximal exact action \emph{among fields in}
+\(\mathfrak c\), conditional only on taking \(\mathcal P_1\) as the
+specified scalar-operation target; the proposition does not assert that
+the physical operation grammar has selected that target.
+\end{proposition}
+\begin{proof}
+Write \(X=K_A+G_u\).  A Killing field preserves \(E_0\) and
+\(E_1\), since \(K_A(f_v)=-f_{Av}\).
+On the other hand,
+\[
+ G_u(f_v)=u\cdot v-\frac{f_uf_v}{\Rmom^2}.
+\]
+If \(u\ne0\), take \(v=u\).  The traceless quadratic harmonic part of
+\(f_u^2\) is nonzero; the Killing term has degree one and cannot
+cancel it.  Thus \(X\) fails to preserve \(\mathcal P_1\).
+\end{proof}
+
+\begin{proposition}[Conditional infinite tower under retained gradient evaluation]
+\label{p2b:prop:gradient-evaluation-no-go}
+Consider a \emph{different, enlarged} physical grammar that (i) licenses
+ordinary scalar evaluation by \(G=\nabla f\), \(f=x_1\),
+(ii) retains each output in a scalar carrier sort, and (iii) licenses
+repeated evaluation on those outputs.  Its scalar carrier closure is
+infinite-dimensional.
+\end{proposition}
+\begin{proof}
+Let \(F_0=f\), \(F_{n+1}=G(F_n)\).  On functions of \(f\),
+\(G=(1-f^2/\Rmom^2)d/df\).  Inductively \(F_n\) has degree
+\(n+1\) with leading coefficient
+\((-1)^n n!/\Rmom^{2n}\ne0\).  Therefore the
+\(F_n\) are linearly independent as functions on the sphere.  This
+is an obstruction only to the explicitly enlarged retention/reuse grammar,
+not to the frozen Paper-II-A momentum seed.
+\end{proof}
+
+\begin{remark}[Typed constructor and evaluation boundary]
+\label{p2b:rem:typed-momentum-operation-grammar}
+The frozen seed licenses the \emph{object} words
+\(E_1\xrightarrow{\nabla}\Gamma(TS^3)_{\rm sec,obj}\) and
+\(E_1\times E_1\xrightarrow{\beta}\Gamma(TS^3)_{\rm sec,obj}\),
+with section-object linear-span retention for \(Z_\beta\).  An induced
+operation \(K\mapsto\delta_K\) remains a distinct port and is physically
+co-realized only on the action target and evaluations explicitly licensed by
+the parent constructor signature.  Neither ambient pointwise multiplication,
+nor arbitrary \(G(h)\), nor reuse of a scalar evaluation output as a new
+finite-carrier seed follows from these object words.  The host Lie closure
+of Proposition~\ref{p2b:prop:conformal-host-closure} is a mathematical
+classification, not a recursive enlargement of the physical constructor
+signature.  A conformal-density Lie derivative would change the typed
+operation and is not silently substituted for \(\delta_X\).
+\end{remark}
+
+\begin{remark}[Literal bilinear image versus generated linear image]
+\label{p2b:rem:beta-set-image-linear-hull}
+The literal set image \(\operatorname{im}\beta\) consists of fields
+corresponding to decomposable bivectors \(u\wedge v\) and is a proper subset
+of \(\mathcal K_{\rm Kill}\).  For example,
+\(e_1\wedge e_2+e_3\wedge e_4\) is not decomposable because its exterior
+square is nonzero.  No equality
+\(\operatorname{im}\beta=\mathcal K_{\rm Kill}\) is claimed.  The
+six-dimensional object used below is the generated real linear subspace
+\(Z_\beta=\operatorname{span}_{\mathbb R}\operatorname{im}\beta\).
+\end{remark}
+
+\begin{lemma}[Sharp literal two-bracket realization of every round Killing section]
+\label{p2b:lem:v264-two-bracket-surjection}
+On the declared round momentum host, with the \emph{already constituted}
+addition in the real vector-space section-object target, the composite
+\[
+ \mathfrak B:(E_1^{\mathbb R})^4\longrightarrow
+ \Gamma(TS^3)_{\rm sec,obj},\qquad
+ \mathfrak B(f,g,h,k)=[\nabla f,\nabla g]+[\nabla h,\nabla k]
+\]
+has literal set image precisely $\mathcal K_{\rm Kill}$.  Under the
+isomorphism $\Theta:\Lambda^2E_1^{\mathbb R}\to\mathcal K_{\rm Kill}$
+of Lemma~\ref{p2b:lem:canonical-bracket-image}, a Killing section
+$\Theta(A)$ belongs to the \emph{single}-bracket set image exactly when
+\[
+ A\wedge A=0,
+ \quad\text{equivalently}\quad
+ \|A_+\|=\|A_-\|
+\]
+for the self-dual/anti-self-dual decomposition of real two-forms.
+The bound of two brackets is sharp.  This uses only finite composition
+and addition in the frozen target object sort; $\Lambda^2E_1$ is a
+\emph{classification} device, not a newly physicalized constructor.
+\end{lemma}
+\begin{proof}
+Every real alternating $4\times4$ matrix admits an orthonormal skew
+normal form $A=\lambda e_1\wedge e_2+\mu e_3\wedge e_4$.
+Since $u\mapsto f_u$ is real linear, each coefficient can be absorbed
+into one harmonic argument, so $\Theta(A)$ is the sum of two bracket
+outputs. Conversely each such sum is Killing by the preceding lemma.
+A nonzero real bivector in dimension four is decomposable if and only if
+$A\wedge A=0$ (the vanishing Pfaffian criterion). As
+$A\wedge A=(\|A_+\|^2-\|A_-\|^2)\operatorname{vol}$ with the same
+Hodge normalization on the two halves, the norm criterion is equivalent.
+The form $e_1\wedge e_2+e_3\wedge e_4$ is not decomposable, proving
+that one bracket cannot always suffice.
+\end{proof}
+\begin{remark}[Finite-image inheritance without a span/image ambiguity]
+\label{p2b:rem:v264-literal-inheritance}
+The preceding literal surjection makes the premise of
+Lemma~\ref{p2:lem:gp2-finite-generated-image-inheritance} directly
+applicable to $\operatorname{im}\mathfrak B$ whenever the previously
+frozen vector-space section-object addition is consumed. It strengthens
+Corollary~\ref{p2b:cor:bracket-image-same-carrier}; it does not infer
+that addition is physical merely from a computed image and does not
+supply the distinct GP3 whole-candidate comparison certificate.
+\end{remark}
+
+\begin{corollary}[Inherited same-role typing of the canonical bracket linear image]
+\label{p2b:cor:bracket-image-same-carrier}
+The finite-dimensional real section-object subspace
+\[
+ Z_\beta
+ =\operatorname{span}_{\mathbb R}\operatorname{im}\beta
+ =\operatorname{im}\bar\beta
+ =\mathcal K_{\rm Kill}
+\]
+belongs to the momentum role's generated object closure.  Its complexification
+\((Z_\beta)_{\mathbb C}=(\mathcal K_{\rm Kill})_{\mathbb C}\) belongs to the
+momentum carrier.  The corresponding infinitesimal Killing action remains
+a distinct operation-typed node and is co-realized, not independently
+actualized.
+\end{corollary}
+
+\begin{proof}
+The constituted composite
+\[
+ \beta:E_1^{\mathbb R}\times E_1^{\mathbb R}
+ \longrightarrow\Gamma(TS^3)_{\rm sec,obj}
+\]
+lands in the same-role parent geometric object sort fixed by Paper~II-A.
+That target sort is a real vector-space object sort, so its already
+constituted addition and scalar multiplication force every generated object
+subspace containing all \(\beta\)-outputs to contain their real linear hull
+\(Z_\beta\).  This is closure within the target's object typing; it neither
+constitutes \(\Lambda^2E_1^{\mathbb R}\) as a new physical constructor nor
+adds arbitrary tensor or polynomial closure.
+
+By Lemma~\ref{p2b:lem:canonical-bracket-image}, the resulting linear image
+\(Z_\beta=\operatorname{im}\bar\beta=\mathcal K_{\rm Kill}\) is
+finite-dimensional, candidate-independent, intrinsically characterized,
+nonredundant, invariant, and carries the induced \(\Spin(4)\) transformation
+law.  Paper~II-A's constructor-relative generated closure and finite
+generated-image inheritance
+Lemma~\ref{p2:lem:gp2-finite-generated-image-inheritance} therefore preserve
+the section-object typing of \(Z_\beta\); retaining only its induced
+derivation/Killing-operation occurrence would violate GP2 typed host
+faithfulness and no-omission.
+
+The frozen frontier generates no autonomous role label, separate carrier,
+cross-role variance, or separating test that would split this inherited
+linear object image from the momentum role.  Paper~II-A's same-role
+no-splitting Lemma~\ref{p2:lem:gp2-same-role-no-splitting} therefore places
+its finite-dimensional object copy, after complexification, in the momentum
+carrier.  GP2 sort faithfulness keeps the induced operation occurrence
+separate.  The conclusion objectifies only this canonical generated linear
+subspace, not the ambient infinite-dimensional section space
+\(\Gamma(TS^3)\).
+\end{proof}
+
+\subsection{Exact GP2 type-support and multiplicity-blind observables}
+
+\begin{theorem}[Exact momentum carrier type-support]
+\label{p2:thm:momentum-host-H1}
+Relative to the frozen momentum-seed frontier of Paper~II-A, the GP2 generated
+carrier type-support is exactly
+\[
+ \begin{aligned}
+ \mathcal G^{\rm car}_{\Sigma_p}
+ &=E_0\oplus S_+\oplus S_-\oplus E_1
+   \oplus(\mathcal K_{\rm Kill})_{\mathbb C}\\
+ &\cong
+ (0,0)\oplus(\tfrac12,0)\oplus(0,\tfrac12)
+ \oplus(\tfrac12,\tfrac12)\oplus(1,0)\oplus(0,1)\\
+ &=\boxed{\mathcal H_1}.
+ \end{aligned}
+\]
+Equivalently,
+\[
+ \mathcal H_1\cong\mathbf1\oplus S\oplus\operatorname{Sym}^2S,
+ \qquad \dim_{\mathbb C}\mathcal H_1=15,
+\]
+where the symmetric-square identity classifies the already generated content;
+\(\operatorname{Sym}^2\) is not invoked as a physical constructor.
+
+Thus every GP2-exact/host-faithful finite momentum realization has precisely
+this irreducible carrier type-support, up to unmarked implementation
+multiplicity.  GP2 no-omission excludes proper supports such as the former
+\(\mathcal E_9\) countermodel, while constructor-relative no-insertion
+excludes higher irreducible types not produced by the frozen seed frontier.
+\end{theorem}
+
+\begin{proof}
+The scalar, spinor, and first-coordinate sectors are the verified frontier
+objects above.  Corollary~\ref{p2b:cor:bracket-image-same-carrier} supplies the
+complexified generated linear object sector
+\((Z_\beta)_{\mathbb C}=(\mathcal K_{\rm Kill})_{\mathbb C}
+\cong(1,0)\oplus(0,1)\).  Assembling
+these independently generated invariant sectors is the exact type-support
+required by the host signature, not a new direct-sum constructor.
+Paper~I-A Proposition~\ref{p1:prop:h1-symmetric-exterior-form}
+identifies the resulting module with \(\mathcal H_1\) and gives its dimension.
+
+No other carrier-generating constructor belongs to the frozen momentum-seed
+frontier of Definition~\ref{p2:def:momentum-seed-frontier}.  In particular, arbitrary tensor powers and ordinary pointwise
+multiplication of coordinate harmonics remain parent mathematics rather than
+finite carrier generation at this stage.  Hence their possible outputs, such
+as the symmetric \((1,1)\) quadratic sector, are not inserted.  Conversely,
+omitting any displayed generated sector violates GP2 exactness or sort
+faithfulness.  In particular, the former \(\mathcal E_9\) branch is not a
+complete GP2 realization: it retains the induced Killing operations but omits
+the independently generated finite-dimensional linear section-object subspace required by
+Corollary~\ref{p2b:cor:bracket-image-same-carrier}.
+\end{proof}
+
+\begin{corollary}[Exact multiplicity detectors for the frozen six-type momentum support]
+\label{p2b:cor:v279-six-type-multiplicity-detectors}
+Let \(\mathcal H\) be any finite-dimensional complex \(\Spin(4)\)-module whose
+irreducible \emph{type-support} is exactly the six-type set \(T_p\) of
+Theorem~\ref{p2:thm:momentum-host-H1}.  Write
+\[
+ \mathcal H=\bigoplus_{\lambda\in T_p}V_\lambda\otimes\mathbb C^{m_\lambda},
+ \qquad m_\lambda\in\mathbb Z_{\ge1},\qquad
+ \mathcal H_1=\bigoplus_{\lambda\in T_p}V_\lambda.
+\]
+With the six type dimensions \(d_\lambda=1,2,2,4,3,3\), respectively,
+the exact carrier-dimension excess is
+\[
+ \boxed{\Delta_{\rm dim}:=\dim_{\mathbb C}\mathcal H-15
+   =\sum_{\lambda\in T_p}d_\lambda(m_\lambda-1)\ge0.}
+\]
+The equivariant-commutant excess and normalized character mismatch are
+\[
+ \boxed{\begin{aligned}
+ \Delta_{\rm com}&:=\dim_{\mathbb C}\End_{\Spin(4)}(\mathcal H)-6
+                   =\sum_{\lambda\in T_p}(m_\lambda^2-1)\ge0,\\
+ \Delta_{\chi}&:=\int_{\Spin(4)}
+                |\chi_{\mathcal H}(g)-\chi_{\mathcal H_1}(g)|^2\,dg
+                   =\sum_{\lambda\in T_p}(m_\lambda-1)^2\ge0.
+ \end{aligned}}
+\]
+Here \(dg\) is normalized Haar measure.  The three conditions
+\(\Delta_{\rm dim}=0\), \(\Delta_{\rm com}=0\), and
+\(\Delta_\chi=0\) are equivalent to \(m_\lambda=1\) for every
+\(\lambda\in T_p\).  Thus an \emph{independently established} exact value
+\(\dim\mathcal H=15\), commutant dimension six, or vanishing character
+mismatch certifies multiplicity one for that particular carrier without
+requiring the universal whole-candidate GP3 comparison of
+Theorem~\ref{p2b:thm:momentum-carrier-rigidity}.
+
+These are conditional mathematical diagnostics of an already specified
+\(\Spin(4)\)-module, \emph{not} new GP2 constructors, an automatically
+realized character measurement, nor a proof that the physical momentum
+endpoint universally attains any of the three equality values.
+\end{corollary}
+\begin{proof}
+The six representation dimensions in Theorem~\ref{p2:thm:momentum-host-H1} give the first identity.  The
+\(\Spin(4)\) commutant decomposition by Schur's lemma is
+\(\End_{\Spin(4)}(\mathcal H)\cong\bigoplus_\lambda M_{m_\lambda}(\mathbb C)\),
+which gives the second.  The irreducible characters are orthonormal in
+\(L^2(\Spin(4),dg)\), hence
+\(\chi_{\mathcal H}-\chi_{\mathcal H_1}
+ =\sum_\lambda(m_\lambda-1)\chi_\lambda\) proves the third.
+Each summand in each expression is nonnegative, and all coefficients
+\(d_\lambda\) are strictly positive; therefore any one zero defect
+forces every \(m_\lambda-1=0\).  No implication invokes GP3 leastness or
+constructs a physical trace/measurement merely from this identity.
+\end{proof}
+
+\begin{proposition}[Unmarked multiplicity does not supply a canonical copy selector]
+\label{p2b:prop:v279-no-canonical-copy-selector}
+Let \(V\ne0\) be an irreducible \(\Spin(4)\)-module and let
+\(M\cong\mathbb C^m\) with \(m>1\). Suppose the frozen structure on
+\(V\otimes M\) carries no distinguished line, subspace, or multiplicity
+label, so every \(I_V\otimes U\) for \(U\in U(M)\) is a symmetry of the
+\emph{multiplicity-slot data}.  Then no one-dimensional complex subspace
+of \(M\) is invariant under all these symmetries, and there is no
+nonzero \(U(M)\)-invariant linear functional \(M\to\mathbb C\) (with
+trivial target action).  In particular a projector choosing a single
+copy \(V\otimes\mathbb C\subset V\otimes M\), or a nonzero linear
+retraction to such an unmarked copy, is not canonically generated
+from the multiplicity-slot data alone.
+
+This obstruction concerns \emph{copy selection/compression}. It does not
+exclude a separately proved generated whole-structured GP3 comparison
+between distinct admissible candidates; that is exactly the independent
+certificate of Theorem~\ref{p2b:thm:momentum-carrier-rigidity}.
+\end{proposition}
+\begin{proof}
+The unitary group \(U(m)\) acts transitively on complex lines in
+\(M\), so no proper nonzero line is invariant under every unitary.
+If \(L:M\to\mathbb C\) were invariant, applying a central unitary
+\(e^{it}I_M\) would give
+\(L(e^{it}v)=L(v)=e^{it}L(v)\) for every \(t\), hence \(L=0\).
+Any equivariant reduction obtained by selecting a copy would require
+such an invariant line or a nonzero invariant functional; neither
+is supplied by an unmarked multiplicity slot.  The argument does not
+address the separate, non-compression notion of a generated comparison
+of complete candidate presentations.
+\end{proof}
+
+\begin{theorem}[Canonical observable quotient without choosing a multiplicity copy]
+\label{p2b:thm:v293-operational-multiplicity-quotient}
+Let $K=\Spin(4)$ and let a finite unitary carrier have the isotypic
+presentation
+\[
+ \mathcal H=\bigoplus_{\lambda\in T}V_\lambda\otimes M_\lambda,
+ \qquad 1\le\dim M_\lambda=m_\lambda<\infty,
+\]
+where the $V_\lambda$ are pairwise inequivalent. Assume the specified
+\emph{observable test algebra} is precisely the multiplicity-blind
+unital $C^*$-algebra
+\[
+ \mathcal A_{\rm bl}
+ =\bigoplus_{\lambda\in T}
+   \bigl(\operatorname{End}(V_\lambda)\otimes I_{M_\lambda}\bigr)
+ \subset\operatorname{End}(\mathcal H).
+\]
+Let $\mathcal H_0=\bigoplus_{\lambda\in T}V_\lambda$ and
+$\mathcal A_0=\bigoplus_\lambda\operatorname{End}(V_\lambda)$,
+represented block diagonally on $\mathcal H_0$. Then the following
+statements hold, canonically relative to the isotypic presentation (and
+independently of every multiplicity-space basis):
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+\item The map $j:\mathcal A_0\to\mathcal A_{\rm bl}$,
+$j((a_\lambda))=\bigoplus_\lambda a_\lambda\otimes I_{M_\lambda}$,
+is a unital $*$-isomorphism.
+\item Every density matrix $\rho$ on $\mathcal H$ induces the
+block-diagonal density
+\[
+ Q(\rho)=\bigoplus_\lambda
+ \operatorname{Tr}_{M_\lambda}(P_\lambda\rho P_\lambda)
+ \quad\text{on }\mathcal H_0,
+\]
+with $P_\lambda$ the isotypic projector, and for all
+$a\in\mathcal A_0$,
+\[
+ \operatorname{Tr}_{\mathcal H}(\rho j(a))
+ =\operatorname{Tr}_{\mathcal H_0}(Q(\rho)a).
+\]
+The map $Q$ is an affine surjection onto the block-diagonal density
+matrices. It has the canonical mixed-state right inverse
+\[
+ S((\sigma_\lambda)_\lambda)
+ =\bigoplus_\lambda\sigma_\lambda\otimes\frac{I_{M_\lambda}}{m_\lambda},
+ \qquad Q\circ S=\mathrm{id}.
+\]
+This is a \emph{state/effect quotient}, not a projector choosing a Hilbert
+subspace isomorphic to $\mathcal H_0$.
+\item A Hermitian effect candidate $E\in\operatorname{End}(\mathcal H)$
+passes through $Q$ for \emph{every} density matrix, in the sense that
+$\operatorname{Tr}(\rho E)$ depends only on $Q(\rho)$, if and only if
+$E\in\mathcal A_{\rm bl}$. Thus the complete multiplicity-blind
+observable content has an exact converse test.
+\item If a specified exact process has a unital completely positive
+Heisenberg map $\Phi^*$ on $\operatorname{End}(\mathcal H)$, its state
+transition descends to the above observable quotient for all states
+and all effects in $\mathcal A_{\rm bl}$ if and only if
+$\Phi^*(\mathcal A_{\rm bl})\subseteq\mathcal A_{\rm bl}$. When this
+holds, the induced map
+$\widetilde\Phi^*=j^{-1}\circ\Phi^*\circ j$
+is uniquely defined and unital completely positive, with
+$Q\circ\Phi=\widetilde\Phi\circ Q$ on states.
+\end{enumerate}
+In particular, observational multiplicity redundancy has an exact
+basis-free quotient even when
+Proposition~\ref{p2b:prop:v279-no-canonical-copy-selector}
+forbids an invariant one-copy \emph{subspace} selector. This theorem does
+\emph{not} establish that the quotient is an occurring generated GP2
+construction or a proper GP3 comparison of complete candidates: those
+claims still require all frozen objects, source labels, transformations,
+relations, tests, and occurrence ports to be preserved.
+\end{theorem}
+\begin{proof}
+The direct-sum block map $j$ preserves products, adjoints, the unit,
+and operator norms and has inverse obtained by reading one coefficient
+from each multiplicity-blind block; hence it is a $*$-isomorphism.
+The partial-trace identity gives the stated equality of expectations.
+Each $Q(\rho)$ is positive, block diagonal, and has trace one. For any
+such $\sigma$ the displayed $S(\sigma)$ is positive of trace one and
+$Q(S(\sigma))=\sigma$. The identity on each $M_\lambda$ makes $S$
+independent of a multiplicity basis.
+
+For (iii), if $E=j(a)$, the trace identity proves the claim. Conversely,
+let $\mathsf P_{\mathcal A}$ be the orthogonal projection onto
+$\mathcal A_{\rm bl}$ for the Hilbert--Schmidt real inner product on
+Hermitian matrices, and suppose $E\notin\mathcal A_{\rm bl}$. Put
+$X=E-\mathsf P_{\mathcal A}E$. Then $X=X^*$, $X\ne0$, and $X$ is
+orthogonal to all Hermitian elements of $\mathcal A_{\rm bl}$, including
+$I$; thus $\operatorname{Tr}X=0$. For sufficiently small $\varepsilon>0$,
+\[
+ \rho_\pm=\frac{I_\mathcal H}{\dim\mathcal H}
+                 \pm\varepsilon X
+\]
+are density matrices with identical $Q$-image, while
+$\operatorname{Tr}[(\rho_+-\rho_-)E]
+=2\varepsilon\operatorname{Tr}(X^2)>0$.
+
+For (iv), invariance of $\mathcal A_{\rm bl}$ defines the displayed
+conjugated unital completely positive map; complete positivity is
+preserved by the $*$-isomorphism. Duality against every $j(a)$ gives
+the state intertwining identity. Conversely, if a descended process
+exists for all states and multiplicity-blind readouts, then each
+$\rho\mapsto\operatorname{Tr}(\Phi(\rho)j(a))$
+depends only on $Q(\rho)$. Part (iii) forces
+$\Phi^*(j(a))\in\mathcal A_{\rm bl}$ for every $a$, proving invariance.
+No step selects a line in any $M_\lambda$ or supplies an unproved
+GP3 whole-candidate comparison.
+\end{proof}
+
+
+\subsection{Derived momentum level and structured GP3 comparison}
+
+\begin{corollary}[Level one from GP2 exact type-support, independently of GP3]
+\label{p2:thm:m1-component}
+Let \(\mathfrak M\) be any GP1-admissible, GP2-exact finite structured
+realization of the frozen momentum-seed frontier, with the six irreducible
+types of Theorem~\ref{p2:thm:momentum-host-H1} and arbitrary positive
+implementation multiplicities.  Then
+\[
+ \max_{V_{j_L,j_R}\subset\mathcal H_{\mathfrak M}}
+ \ell(V_{j_L,j_R})=2,\qquad
+ \boxed{m_p:=\tfrac12\max\ell=1}.
+\]
+This level is a type-support descriptor and does not determine the total
+carrier dimension, multiplicities, states, measurements, or a level selector.
+\end{corollary}
+\begin{proof}
+The six types have word lengths \(0,1,1,2,2,2\) by
+Lemma~\ref{p2b:lem:minimal-word-length}.  Repeating a representation
+changes neither its highest weight nor its minimal tensor-word length.
+\end{proof}
+
+\begin{proposition}[Explicit one-copy geometric module, without GP3]
+\label{p2b:prop:one-copy-geometric-module}
+There is a fifteen-dimensional \(\Spin(4)\)-equivariant one-copy
+\emph{mathematical carrier presentation}
+\[
+ \mathcal H_1=E_0\oplus S_+\oplus S_-\oplus E_1
+ \oplus(\mathcal K_{\rm Kill})_{\mathbb C}
+\]
+carrying the parent-generated object ports \(\nabla\), \(\beta\), and
+their canonical linear-image incidence.  Its abstract representation
+and these object diagrams require no GP3 conclusion.  Certification that
+this presentation is a \emph{complete GP2-exact structured endpoint}
+for every applicable operation, relation and test remains a separate
+hypothesis in Theorem~\ref{p2b:thm:momentum-carrier-rigidity}.
+\end{proposition}
+\begin{proof}
+Use the six inequivalent irreducibles supplied by
+Theorem~\ref{p2:thm:momentum-host-H1}, each once.  The scalar and section
+ports are identified equivariantly by Lemma~\ref{p2b:lem:gradient-port};
+the bilinear bracket is fixed by Lemma~\ref{p2b:lem:canonical-bracket-image}.
+These maps are independent of implementation multiplicity.  They prove
+existence of the displayed mathematical realization, without presupposing
+the additional universal structured-comparison property.
+\end{proof}
+
+The explicit native coordinate presentation contains auxiliary pair
+creation/annihilation and degree-preserving terms. Paper~II-F, Section~\ref{p2b:app:v2174-geometric-pair-presentation}
+evaluates that presentation and its scoped linear-port comparison; it
+supplies no physical occupation boundary or quantum field constructor.
+
+
+\begin{remark}[Momentum package and geometric host]
+\label{p2b:rem:m8-momentum-package-scope}
+The derived \(S_1^3\) denotes the enriched physical momentum package
+on smooth support \(S_p^3\).  The latter is its support in the
+completed reciprocal host, not a second sphere containing a
+smaller momentum sphere.  The fifteen-dimensional \(\mathcal H_1\)
+carrier is not replaced by functions on the twenty-four Hurwitz
+points.  Finite support atlases and the intrinsic coordinate class
+are separately typed descendants; II-C transports the intrinsic
+class and its joint comparisons in those precise roles.
+\end{remark}
+
+
+\begin{theorem}[GP3 carrier rigidity under a complete structured-comparison certificate]
+\label{p2b:thm:momentum-carrier-rigidity}
+Let \(\mathfrak M\) range over GP1-admissible, GP2-exact/host-faithful
+structured realizations of the frozen momentum-seed signature, with
+\[
+ \mathcal H_{\mathfrak M}=\bigoplus_{\lambda\in T_p}
+ V_\lambda\otimes M_\lambda,
+ \qquad T_p=\{(0,0),(\tfrac12,0),(0,\tfrac12),
+ (\tfrac12,\tfrac12),(1,0),(0,1)\}.
+\]
+Assume the following \emph{additional whole-structured certificates}:
+\begin{enumerate}[label=(\roman*),leftmargin=2em]
+\item The mathematical one-copy model
+\(\mathfrak M_1\) of
+Proposition~\ref{p2b:prop:one-copy-geometric-module} has a
+complete GP1-admissible, GP2-exact and host-faithful presentation of
+\emph{all} frozen object, operation, constructor, relation and test diagrams.
+\item For every such \(\mathfrak M\) there exists a \emph{generated}
+role-faithful whole-candidate comparison
+\(\mathfrak M_1\preceq_{\Sigma_p}\mathfrak M\) satisfying
+Paper~II-A Postulate~\ref{p2:post:GP3}.  The witness preserves all
+frozen diagrams, including typed section-to-operation incidence,
+and does not use a non-generated projector, compression or
+candidate-specific label as a selection mark.
+\item The comparison is proper whenever
+\(\dim M_\lambda>1\) for at least one \(\lambda\).
+\end{enumerate}
+Then every GP3-irreducible endpoint satisfies
+\[
+ \boxed{\dim M_\lambda=1\ (\lambda\in T_p),\qquad
+ \mathcal H_{\mathfrak M}\cong\mathcal H_1,\quad
+ \dim_{\mathbb C}\mathcal H_{\mathfrak M}=15.}
+\]
+This theorem does not assert uniqueness of the entire structured endpoint.
+Its three comparison hypotheses are \emph{not} consequences of type-support
+or the absence of frozen copy labels alone.  Until a universal certificate
+is supplied, the unconditional conclusion is the common six-type GP2
+support and \(m_p=1\), not universal endpoint multiplicity-one.
+\end{theorem}
+\begin{proof}
+GP2 no-omission gives \(\dim M_\lambda\ge1\) for every
+\(\lambda\in T_p\).  Under (i)--(ii), the one-copy model is a complete
+admissible competitor with a generated comparison to every source candidate.
+Under (iii), any source candidate with a surplus multiplicity admits a
+proper role-faithful comparison and is not GP3-irreducible.  Hence its
+multiplicities are all at most one, and the displayed equality follows.
+No source candidate is compressed to an ungenerated copy.  If a candidate
+has a multiplicity-sensitive, role-essential operation or test, its
+compatibility with (ii) must be proved separately; it cannot be discarded
+by this proof or by the commutant theorem alone.
+\end{proof}
+
+\begin{remark}[The remaining universal GP3 comparison obligation]
+\label{p2b:rem:gp3-structured-certificate-obligation}
+The decisive outstanding calculation is the source-candidate-independent
+incidence witness for hypothesis (ii), with the strictness test (iii),
+\emph{after} proving candidate-internal exactness (i).  The common generated
+six-type support, canonical gradient port and bracket-image objectification
+are necessary diagram components, but do not by themselves certify an
+arbitrary candidate's other frozen operations or tests.  Paper~II-F,
+Proposition~\ref{p2:prop:gp3-multiplicity-bound}, gives the conditional
+unmarked-multiplicity reduction when all generated transformations and
+separating tests are trivial on that multiplicity factor; the hypothesis
+must not be presumed for every admissible candidate.
+\end{remark}
+
+\begin{theorem}[Generated-carrier identification with the retained smooth model]
+\label{p2b:thm:canonical-retained-smooth-realization}
+Paper~I-B, Theorem~\ref{p1:thm:canonical-retained-smooth-model}, defines the
+canonical equivariant unitary class as follows.  Let
+\(V_R:=\operatorname{Vol}(S^3(\Rmom))\), let
+\(x_a\), \(a=1,\ldots,4\), be the round embedding-coordinate module, and put
+\[
+ e_0:=V_R^{-1/2},\qquad
+ u_a:=\frac{2}{\sqrt{3V_R}}\,dx_a,\qquad
+ w_{ab}:=\sqrt{\frac{2}{V_R}}\,dx_a\wedge dx_b
+ \quad(a<b).
+\]
+With \(S_+\) and \(S_-\) the two lowest Dirac eigenspaces already belonging
+to the generated seed, define
+\[
+ \mathcal L_R
+ :=\operatorname{span}\{e_0\}
+ \oplus\operatorname{span}\{u_a\}_{a=1}^4
+ \oplus\operatorname{span}\{w_{ab}\}_{a<b}
+ \oplus S_+\oplus S_-.
+\]
+Then the displayed modes are orthonormal, \(\dim_{\mathbb C}\mathcal L_R=15\),
+and the explicit one-copy model of
+Proposition~\ref{p2b:prop:one-copy-geometric-module} admits the natural unitary
+\(\Spin(4)\)-equivariant identification
+\[
+ J_R:\mathcal H_1\xrightarrow{\ \simeq\ }\mathcal L_R.
+\]
+It sends \(E_0\) to the constant line, \(E_1\) to the exact first-one-form
+module, and \((\mathcal K_{\rm Kill})_{\mathbb C}\) to its Hodge-dual
+two-form module.  It is unique up to the already unmarked phases on the six
+multiplicity-one irreducible sectors.  Reversing orientation exchanges the
+self-dual and anti-self-dual bivector labels but does not change the unitary
+class.
+\end{theorem}
+
+\begin{proof}
+Paper~I-B, Theorem~\ref{p1:thm:canonical-retained-smooth-model}, proves the
+orthonormality, representation types, orientation covariance, and
+phase-qualified uniqueness.  Theorem~\ref{p2:thm:momentum-host-H1} fixes the six generated
+types, and Proposition~\ref{p2b:prop:one-copy-geometric-module}
+constructs their one-copy module without a GP3 premise.  The metric
+musical map followed by Hodge star identifies the
+generated Killing-field module of
+Lemma~\ref{p2b:lem:canonical-bracket-image} with Paper~I-A's retained two-form
+summand.  Hence the upstream unitary class applies to the complete generated
+carrier, with no omitted or inserted type.
+\end{proof}
+
+\begin{corollary}[Constituent-level co-realization of the momentum seed]
+\label{p2b:cor:momentum-seed-constituent-corealization}
+Relative to the G0-occurring transfer-operation root and the frozen
+momentum-seed frontier, the complete nonredundant generated constituent family
+co-realizes:
+\[
+ \PhysOcc(\mathscr O_{\rm tr})
+ \Longrightarrow
+ \operatorname{CoReal}\!\left(
+ E_0,S_+,S_-,E_1,(\mathcal K_{\rm Kill})_{\mathbb C}
+ \mid \mathscr O_{\rm tr}\right).
+\]
+Thus the two chiral spinor sectors and the two adjoint irreducible types inside
+\((\mathcal K_{\rm Kill})_{\mathbb C}\cong(1,0)\oplus(0,1)\) are not
+alternative momentum realizations from which one may be selected.  They are
+nonredundant generated constituents of the same occurring momentum composite.
+This constituent-level co-realization does not assert occurrence of an
+arbitrary state, vector, measurement outcome, or labelled representative in
+any constituent.
+\end{corollary}
+
+\begin{proof}
+Theorem~\ref{p2:thm:momentum-host-H1} identifies exactly the complete generated
+carrier family required by GP2 no-omission.  Paper~II-A
+Theorem~\ref{p2:thm:generated-constituent-corealization} then applies to these
+generated constituents of the already occurring transfer-operation composite.
+No additional selector or occurrence root is introduced.
+\end{proof}
+
+\begin{corollary}[Common momentum type-support co-realization and conditional endpoint rigidity]
+\label{p2b:cor:physical-momentum-carrier-corealization}
+If the transfer-operation root occurs in the Paper-II-A G0 sense, the
+round parent and the complete generated momentum constituent family
+co-realize without a second momentum G0 witness:
+\[
+ \PhysOcc(\mathscr O_{\rm tr})\Longrightarrow
+ \operatorname{CoReal}\!\left(
+ S^3_A(\Rmom),\mathcal G^{\rm car}_{\Sigma_p}
+ \mid\mathscr O_{\rm tr}\right),\qquad
+ \mathcal G^{\rm car}_{\Sigma_p}\cong\mathcal H_1,
+ \quad m_p=1.
+\]
+If, in addition, all hypotheses of
+Theorem~\ref{p2b:thm:momentum-carrier-rigidity} are certified, this
+co-realization identifies the full carrier of every GP3-irreducible
+structured endpoint with \(\mathcal H_p\cong\mathcal H_1\) and its
+corresponding exact represented operation envelope.  No measurement,
+calibration, normalized state or independent momentum-occurrence claim
+is part of either conclusion.
+\end{corollary}
+\begin{proof}
+Paper~II-A's generated-role and generated-constituent co-realization
+theorems transport the parent and its frozen generated seed objects from
+the occurring transfer root.  Theorem~\ref{p2:thm:momentum-host-H1}
+identifies their complete GP2 type-support, and
+Corollary~\ref{p2:thm:m1-component} derives its level.  Physical
+endpoint multiplicity-one uses the additional whole-structured
+comparison hypotheses exactly as stated in
+Theorem~\ref{p2b:thm:momentum-carrier-rigidity}; it is not inferred
+from the common type-support alone.
+\end{proof}
+
+\begin{corollary}[Same-parent status of the retained smooth realization]
+\label{p2b:cor:retained-smooth-realization-corealization}
+The realization \((\mathcal L_R,J_R)\) is a natural derived presentation of
+the common generated one-copy module over the already co-realized round
+momentum parent.  It needs no second G0 occurrence witness for the common
+generated object content.  Identifying it with the full underlying carrier
+of every structured physical endpoint is conditional on the GP3
+comparison certificate.  This conclusion actualizes neither an ambient
+coordinate lift nor a physical kinetic operator; those are separate target
+sorts.
+\end{corollary}
+
+\begin{proof}
+Every operation used in Theorem~\ref{p2b:thm:canonical-retained-smooth-realization}
+is an oriented-round-metric constructor on the already occurring parent:
+normalization, exterior differentiation, the metric musical map, Hodge star,
+and passage to the lowest spectral subspaces.  Its exact image is the
+explicit one-copy generated type-support of
+Theorem~\ref{p2b:thm:canonical-retained-smooth-realization}; the remaining
+sector phases are unmarked equivalences.  The occurrence of the common
+generated constituents follows from
+Corollary~\ref{p2b:cor:physical-momentum-carrier-corealization}.  Paper~II-A's generated-role and
+derived-constructor witness-transport rules therefore preserve occurrence in
+this declared presentation sort.  No ambient coefficient or dynamical owner
+appears in the constructor.
+\end{proof}
+
+\subparagraph{After-the-fact word classification.}
+The already derived one-copy type-support satisfies
+\(\mathcal H_1\cong\mathcal C^{\rm word}(1)\), so \(m_p=1\) is its
+constructor-length descriptor and not a selector.  The general word-budget
+identity and optional tower machinery are in
+Paper~II-F, Section~\ref{p2b:app:optional-tower-machinery}.
+
+\begin{theorem}[Intrinsic first-coordinate sector and exact orbit-retention criterion]
+\label{p2:thm:intrinsic-coordinate-sector}
+On the generated round \(S^3(\Rmom)\), the first nonconstant scalar
+Laplace eigenspace is the intrinsically defined four-dimensional
+\(\Spin(4)\)-irreducible object
+\[
+ E_1\cong V_{\frac12,\frac12},\qquad
+ \lambda_1=\frac3{\Rmom^2}.
+\]
+If a finite reciprocal role has a frozen \emph{object-typed} coordinate
+port with nonzero image of \(E_1\), and that port is faithful and
+closed under the full inherited \(\Spin(4)\)-action and linear
+object operations, then it must retain the entire one-copy image of
+\(E_1\).  It cannot retain just one axis or a proper nonzero part of
+that irreducible object.  A scalar readout without the coordinate-object
+port, or a role inheriting only a proper symmetry subgroup, does not by
+itself imply this full-sector retention.  This statement determines
+irreducible \emph{type support}, not unmarked multiplicity in a larger
+realization or an independently prepared coordinate basis.
+\end{theorem}
+\begin{proof}
+For round \(S^3\), the scalar eigenvalues are
+\(n(n+2)/\Rmom^2\) and the degree-one eigenspace is the real
+coordinate module \(E_1^{\mathbb R}\cong\mathbb R^4\) (or its
+complexification).  Its spectral projector is a function of the
+intrinsic Laplacian and requires no frame.  The standard
+\(SO(4)\)-module \(\mathbb R^4\) is irreducible: the orbit of each
+nonzero vector is the full sphere of its radius and its linear span is
+all of \(\mathbb R^4\).  Equivalently the complex representation is
+\((\frac12,\frac12)\), irreducible under the full
+\(SU(2)_L\times SU(2)_R\) action.
+
+A nonzero faithful generated coordinate-object output and the frozen
+full-group action therefore generate the whole image by group-orbit
+span and the already constituted object-linear operations.  GP2 typed
+no-omission retains that image in its coordinate-object sort.  This
+argument is stronger than invoking
+Lemma~\ref{p2:lem:equivariant-truncation-no-insertion}: that lemma
+allows an arbitrary multiplicity projector in a non-multiplicity-free
+ambient carrier, whereas the orbit argument establishes the
+\emph{specific} inherited E1 image without choosing a copy or
+imposing ambient multiplicity-freeness.  Without the declared object
+port or full group action the orbit premise is missing, as claimed.
+\end{proof}
+
+\begin{proposition}[Frame-independent rank-four orbit certificate]
+\label{p2b:prop:v281-e1-orbit-frame-certificate}
+On the real first scalar-harmonic space \(E_1^{\mathbb R}\) of the
+round \(S^3(\Rmom)\), let \(U(g)\) denote the orthogonal
+\(\Spin(4)\) action and let \(0\ne f\in E_1^{\mathbb R}\).
+With normalized Haar measure and the round \(L^2\) pairing,
+\[
+ \mathscr P_f:=\int_{\Spin(4)}
+ |U(g)f\rangle\langle U(g)f|\,d\mu(g)
+ =\frac{\|f\|_{L^2}^2}{4}\,I_{E_1^{\mathbb R}}.
+\]
+In particular \(\operatorname{rank}\mathscr P_f=4\), and the group
+orbit of any nonzero generated first-coordinate object spans the entire
+sector.  The constant \(1/4\) is fixed by dimension and trace, not by
+an independently selected coordinate normalization.
+\end{proposition}
+\begin{proof}
+By invariance of Haar measure \(\mathscr P_f\) commutes with the
+full orthogonal \(SO(4)\) action.  It is self-adjoint and nonnegative.
+The real standard representation is orthogonally irreducible, so every
+invariant self-adjoint endomorphism is a real scalar multiple of the
+identity.  Taking traces gives
+\(\operatorname{tr}\mathscr P_f=\|f\|_{L^2}^2\) and hence the
+factor \(1/4\).  Since \(f\neq0\), the operator has strictly
+positive eigenvalues and rank four.  The Haar integral is a
+mathematical orbit certificate; it is not a new finite physical
+averaging or test constructor.
+\end{proof}
+
+\begin{remark}[Sharpness of full-symmetry inheritance]
+\label{p2b:rem:v281-subgroup-coordinate-counterexample}
+If only the subgroup \(SO(3)\subset SO(4)\) fixing one ambient
+coordinate direction is constituted, the one-dimensional coordinate
+line spanned by \(x\mapsto x_4\) is invariant.  Thus equivariance
+under an unspecified proper subgroup, even with a nonzero coordinate
+object, cannot force full \(E_1\) retention.  The group and typed-port
+hypotheses above are necessary to the claimed orbit implication.
+\end{remark}
+
+\subsection{Optional mathematical towers and coordinate interfaces}
+
+\begin{remark}[Integer coordinate-stable tower details]
+\label{p2:rem:integer-coordinate-stable-deferred}
+The Paper-I-A integer coordinate-stable subfamily is a later optional tower
+interface and is not used to derive the momentum seed.  Its relation to the
+half-integral component envelope and scalar-seeded integer boundaries is
+deferred to Paper~II-F, Section~\ref{p2b:app:integer-coordinate-stable-details}.
+\end{remark}
+
+\begin{remark}[Optional lower-ideal classification and sharp countermodels]
+\label{p2:rem:legacy-lower-ideal-pointer}
+Within the optional \(\mathsf P_{\rm sli}\) grammar, finite supports are
+complete total-weight lower ideals.  Under a weaker host signature,
+the proper modules \(\mathcal E_5\), \(\mathcal E_7^{L/R}\), and
+\(\mathcal E_9\) show sharply that coordinate content, faithfulness, chirality,
+and left--right symmetry do not by themselves force \(\mathcal H_1\).  The
+revised momentum theorem excludes these models for a different reason:
+\((Z_\beta)_{\mathbb C}=(\mathcal K_{\rm Kill})_{\mathbb C}\), where
+\(Z_\beta=\operatorname{span}_{\mathbb R}\operatorname{im}\beta\), inherits
+the same-role section-object typing and, by the same-role no-splitting rule,
+belongs to the momentum carrier; deleting it violates GP2 no-omission.  The full optional
+lower-ideal classification and countermodel calculations are deferred to
+Paper~II-F, Section~\ref{p2b:app:legacy-lower-ideal}.
+\end{remark}
+
+\label{p2:part:minimal-bookkeeping}
+
+The mathematical interfaces below begin from the GP2-derived momentum type-support
+\(\mathcal G^{\rm car}_{\Sigma_p}\cong\mathcal H_1\) and its
+derived label \(m_p=1\).  It records
+finite-state, spectral, and Clifford consequences of that seed and records
+only the interfaces required by later-role and recovery analysis.  Detailed
+optional word/lower-ideal and component-ceiling machinery is deferred to the
+appendices.  The tower is not used to select the momentum carrier, and
+\(\mathsf C_{\rm PI}\) is invoked only for the additional normalized
+coordinate and protected Clifford data.
+
+\section{Finite representation and operator interfaces of the carrier}
+\label{paper2b:sec:organized-carrier}
+
+\subsection{Generated-carrier consequences and downstream interfaces}
+\label{p2:sec:uniqueness-m1}
+
+The GP2-required momentum carrier type-support and its intrinsic level have
+already been derived, without a GP3 endpoint-multiplicity premise:
+\[
+ \boxed{\mathcal G^{\rm car}_{\Sigma_p}\cong\mathcal H_1,\qquad m_p=1.}
+\]
+This section records the downstream consequences and the compact interfaces
+consumed later in the series.  Detailed optional tower and ceiling analysis is
+deferred to Paper~II-F, Section~\ref{p2b:app:optional-tower-machinery}.
+
+\begingroup
+\small
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{1.14}
+\begin{longtable}{|
+  L{0.18\linewidth}|
+  L{0.37\linewidth}|
+  L{0.18\linewidth}|
+  L{0.19\linewidth}|}
+\caption[Momentum constitution and selector-status interfaces]{Momentum constitution and selector-status interfaces.}
+\label{p2:tab:truncation-minimal-bookkeeping}\\
+\hline
+\textbf{Item} & \textbf{Conclusion} & \textbf{Source} & \textbf{Boundary} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Item} & \textbf{Conclusion} & \textbf{Source} & \textbf{Boundary} \\
+\hline
+\endhead
+Momentum type-support / endpoint
+& \(\mathcal G^{\rm car}_{\Sigma_p}\cong\mathcal H_1\), \(\dim_{\mathbb C}\mathcal H_1=15\)
+& Theorems~\ref{p2:thm:momentum-host-H1}
+  and~\ref{p2b:thm:momentum-carrier-rigidity}
+& GP2 common type-support unconditionally relative to the II-A frontier; universal GP3 endpoint multiplicity-one requires the comparison certificate. \\
+\hline
+Derived level
+& \(m_p=1\) from \(\ell_{\max}=2\)
+& Corollary~\ref{p2:thm:m1-component}
+& GP2 type-support descriptor independent of GP3; not a selector. \\
+\hline
+Optional component ceiling
+& \(j_L+j_R\le s_\rho\) for a declared \(P_{\rm ceil}\)
+& Theorem~\ref{p2:thm:truncation}
+& Restricts allowed labels only; not used for the momentum seed. \\
+\hline
+Generic word tower
+& \(\begin{gathered}
+ \mathcal C^{\rm word}(m)\\[-2pt]
+ {}=\bigoplus_{j_L+j_R\le m}V_{j_L,j_R}
+ \end{gathered}\)
+& Theorem~\ref{p2:thm:finite-spectral-exhaustivity}
+& Mathematical/\allowbreak later-role grammar; not universal GP2 closure. \\
+\hline
+Invariant finite states
+& commutant classification; normalized trace only under stronger hypotheses
+& Theorem~\ref{p2:thm:no-insertion-finite-trace-weight}
+& Symmetry alone leaves sector/multiplicity weights free. \\
+\hline
+Clifford package
+& \(\dim_{\mathbb R}A_{\rm ev}=8\), traceless part dimension \(7\)
+& Theorem~\ref{p2:thm:minimal-hilbert-structural-15}
+& Specializes to \(\mathsf C_{\rm PI}\); does not follow from \(m_p=1\). \\
+\hline
+Finite supports
+& octet/septet/trimer invariant weights
+& Corollary~\ref{p2:cor:paper1-octet-descendant-weight-closure}
+& Requires a constituted \(\mathsf{Supp}_{2T}\) output: direct core occurrence, or point resolution plus the II-A core-\allowbreak constructor/\allowbreak domain bridge. \\
+\hline
+\end{longtable}
+\endgroup
+
+\paragraph{Logical classification of the mathematical interfaces.}
+The entries above are not one undifferentiated selector list.  They fall into
+four logically distinct groups:
+\begin{enumerate}[label=(\arabic*), leftmargin=2.2em]
+\item \textbf{generated/co-realized momentum content:}
+\(SU(2)\), the complete generated seed constituents and their
+six-type \(\mathcal H_1\) model, and the derived label \(m_p=1\);
+universal endpoint multiplicity-one remains proof-gated;
+\item \textbf{conditional realization or optional branch data:}
+the raw coordinate-completion cone outside an already derived ancestry
+branch, the generic invariant-state simplex when a physical preparation is
+claimed, and a specified/generated quotient spin or twist member only when a
+nontrivial quotient branch is actually asserted;
+\item \textbf{G0 occurrences and calibrations:}
+actual preparations, point readouts, separately constituted finite supports,
+numerical calibration, and other named experimental or dynamical tokens;
+\item \textbf{mathematical/presentation infrastructure:}
+Hopf representatives, the word tower, lower-ideal and ceiling arithmetic,
+integer-boundary conventions, and Casimir normalization.
+\end{enumerate}
+The second group is branch-conditional rather than part of the active
+through-Paper-VI-B structural frontier.  The third group is occurrence or
+calibration data, not a structural selector.  Membership in neither group
+reopens the derived momentum seed.
+
+\subsubsection{Momentum level as a derived constructor-length label}
+\label{p2:subsec:m1-kinematic}
+The natural momentum unit \(\Punit=\hbar/\Rmom\) and any independently
+declared component ceiling remain useful for later bounded-spectrum questions,
+but they do not determine the initial momentum carrier.  The structural
+statement is instead the GP2 constructor-relative result
+\[
+ \mathcal G^{\rm car}_{\Sigma_p}\cong\mathcal H_1,
+ \qquad
+ m_p=1,
+\]
+proved above.  Optional ceilings may subsequently be checked for compatibility
+with this carrier.
+
+\begin{remark}[Optional level-one tower checks deferred]
+The optional consistency statements that recover \(\mathcal H_1\) after an
+independent \(\mathsf P_{\rm sli}\) lower-ideal grammar and a level-one
+ceiling have been imposed are supplementary checks, not part of the positive
+momentum derivation.  They are recorded in
+Paper~II-F, Section~\ref{p2b:app:optional-tower-machinery}.
+\end{remark}
+
+\begin{corollary}[Structural momentum-role handoff]
+\label{p2:cor:neutral-level-one-handoff}
+The constructor-relative momentum theorem supplies directly the generated
+GP2 type-support and its descriptor
+\[
+ \boxed{\mathcal G^{\rm car}_{\Sigma_p}\cong\mathcal H_1,\qquad m_p=1.}
+\]
+Every later result requiring only this generated support and level may use
+them without GP3 endpoint multiplicity-one.  The stronger handoff
+\(\mathfrak F_p\cong\mathcal H_1\) for every structured physical
+endpoint uses the whole-candidate comparison certificate in
+Theorem~\ref{p2b:thm:momentum-carrier-rigidity}.  No second momentum witness is required.
+This handoff selects neither a point of \(\mathfrak M_{\rm coord}\) nor a
+point-reference readout token.  An occurring point-resolution token generates
+only the generic finite-resolution support role
+\(\mathsf{Supp}_{\varepsilon}(X)\).  The exceptional unmarked
+\([2T]\) core-support orbit is co-realized without a second support witness
+only after the additional candidate-independent core constructor and the
+Paper-II-A exceptional-domain bridge are available, or after a direct
+core-constructor occurrence, as stated in
+Corollary~\ref{p2:cor:core-support-inheritance-no-duplicate-witness}.
+\end{corollary}
+
+\begin{remark}[Finite-family mathematics and physical selection boundary]
+\label{p2:rem:paper1-truncation-data}
+The geometric and representation atlases of Papers~I-A and I-B classify the mathematical family \(\mathcal H_m\), its dimensions, and
+the low-degree representation identities.  Paper~II-A plus the host
+closure theorem above supplies the six-type generated content
+\(\mathcal H_1\) for the momentum-role signature and Paper~II-A's
+generated-role theorem supplies its constituent co-realization.  Universal
+endpoint multiplicity-one is subject to the separate GP3 comparison proof.  The raw normalized coordinate intertwiners and the particular protected
+Euclidean Clifford vector used for the conditional calculation below belong to
+the representative \(\mathsf C_{\rm PI}\); the carrier itself leaves the three
+completion moduli unresolved.  This conditional presentation is compatible
+with the later completion-independent normalized protected even-algebra result
+recorded by Paper~II-A.
+\end{remark}
+
+\subsubsection{Invariant finite states and finite-orbit weights}
+\label{p2:subsec:finite-carrier-trace-weight-closure}
+
+Two notions must be kept separate.  A state on a matrix algebra is constrained
+by the commutant of the represented symmetry; a probability weight invariant
+under the constituted action on a finite transitive orbit is fixed by
+transitivity.  Neither statement licenses replacing the constituted symmetry
+by the full unitary group.
+
+\subparagraph{Optional finite-orbit means.}
+Uniform weights on separately actualized finite transitive supports and the
+octet/septet/trimer consequences are deferred to
+Paper~II-F, Section~\ref{p2b:app:optional-finite-support}.  The invariant matrix-state
+classification below remains in the main chain.
+
+\begin{theorem}[Classification of invariant positive normalized functionals]
+\label{p2:thm:no-insertion-finite-trace-weight}
+Let \(G\) be compact.  On a finite-dimensional complex unitary \(G\)-module,
+write the isotypic decomposition as
+\[
+V=\bigoplus_{\lambda}V_\lambda\otimes M_\lambda,
+\]
+with pairwise inequivalent irreducible modules \(V_\lambda\).
+A functional \(\tau:\End_{\mathbb C}(V)\to\mathbb C\) is positive,
+normalized, and invariant under conjugation by \(G\) if and only if
+\[
+\tau(A)=\Tr_V(\rho A),
+\qquad
+\rho=\bigoplus_\lambda
+I_{V_\lambda}\otimes B_\lambda,
+\qquad
+B_\lambda\ge0,
+\]
+with the single normalization condition
+\[
+\sum_\lambda
+(\dim_{\mathbb C}V_\lambda)\Tr_{M_\lambda}(B_\lambda)=1.
+\]
+Consequently:
+\begin{enumerate}[label=(\roman*), leftmargin=2em]
+\item on a single irreducible carrier \(V_\lambda\), the invariant state is
+the normalized trace
+\[
+\tau(A)=\frac1{\dim V_\lambda}\Tr(A);
+\]
+\item on a reducible multiplicity-free carrier, invariant states are
+\[
+\tau(A)=\sum_\lambda p_\lambda
+\frac{\Tr(A_{\lambda\lambda})}{\dim V_\lambda},
+\qquad
+p_\lambda\ge0,\quad\sum_\lambda p_\lambda=1,
+\]
+so the sector weights \(p_\lambda\) remain free;
+\item on an isotypic component with \(\dim M_\lambda>1\), the positive
+operator \(B_\lambda\) may also distinguish multiplicity directions;
+\item the normalized trace on all of \(\End(V)\) follows if one additionally
+requires traciality, or invariance under the full unitary group \(U(V)\).
+\end{enumerate}
+Invariant states on a tensor product need not factor: on
+\(V_{\frac12}\otimes V_{\frac12}\) under the \emph{diagonal} \(SU(2)\)
+action the singlet state is invariant and is not a product state, its
+reduced state on either factor having rank two.  (Under a factorwise
+\(G_1\times G_2\) action on irreducibles the commutant is scalar and every
+invariant state does factor.)  When the normalized
+trace is explicitly selected on each factor, their product state has the
+familiar multiplicative rank-one weights.
+\end{theorem}
+
+\begin{proof}
+Finite-dimensional positivity gives a unique density operator
+\(\rho\ge0\), \(\Tr\rho=1\), with
+\[
+\tau(A)=\Tr(\rho A).
+\]
+This is the finite-dimensional density-matrix representation of a state;
+see \cite{BratteliRobinson1987,HornJohnson2013}.
+Conjugation invariance is equivalent, by cyclicity and nondegeneracy of the
+trace pairing, to
+\[
+\rho\,U(g)=U(g)\rho
+\]
+for every \(g\in G\).  The commutant theorem for the displayed isotypic
+decomposition gives
+\[
+\End_G(V)
+=
+\bigoplus_\lambda
+I_{V_\lambda}\otimes\End(M_\lambda),
+\]
+which proves the asserted form; positivity and normalization give the stated
+conditions on \(B_\lambda\)
+\cite{fulton1991representation,Hall2015lie}.  The irreducible and
+multiplicity-free formulas are its special cases.  If \(\tau\) is tracial, then
+\(\Tr(\rho[A,B])=0\) for all \(A,B\), so \(\rho\) is central in
+\(\End(V)\) and hence scalar.  Full \(U(V)\)-invariance gives the same
+conclusion from its scalar commutant.  Normalization then yields
+\(\rho=I_V/\dim V\).  Finally,
+\[
+\frac{\Tr_{V\otimes W}(A\otimes B)}{\dim V\,\dim W}
+=
+\frac{\Tr_V(A)}{\dim V}\,
+\frac{\Tr_W(B)}{\dim W},
+\]
+which proves the final conditional statement.
+\end{proof}
+
+
+\begin{proposition}[Converse limitation of normalized unmarked momentum moments]
+\label{p2b:prop:normalized-multiplicity-indistinguishability}
+For each positive integer \(k\), let
+\(\mathcal H^{(k)}=\mathcal H_1\otimes\mathbb C^k\), with an unmarked
+replicated momentum operator \(X_k=X\otimes I_k\).  Then for any
+nonnegative integer \(n\),
+\[
+ \frac{\Tr_{\mathcal H^{(k)}}(X_k^n)}{15k}
+ =\frac{\Tr_{\mathcal H_1}(X^n)}{15}.
+\]
+For the dimensionless component
+\(X=\hat P_3/(\hbar/\Rmom)=L_3^+-L_3^-\) on the explicit
+\(\mathcal H_1\) module, these give
+\[
+ \frac{\Tr_{\mathcal H_1}(X^2)}{15}=\frac7{15},\qquad
+ \frac{\Tr_{\mathcal H_1}(X^4)}{15}=\frac5{12}.
+\]
+Thus \(m_p=1\) and normalized unmarked spectral moments are not
+converse certificates of \(\dim\mathcal H_p=15\): they cannot exclude
+uniform replicated implementations.  This does not make those replicas
+GP3-admissible minima, nor constitute a measurement that distinguishes them.
+\end{proposition}
+\begin{proof}
+The factorization
+\(\Tr_{\mathcal H_1\otimes\mathbb C^k}(X^n\otimes I_k)
+=k\Tr_{\mathcal H_1}(X^n)\)
+proves the general identity.  For the explicit six types, sum the
+weight powers from Proposition~\ref{p2:prop:component_spectrum}:
+\(\Tr(X^2)=7\), \(\Tr(X^4)=25/4\).  Dividing by fifteen
+gives the stated values.
+\end{proof}
+
+\begin{remark}[Support diagnostics are not a multiplicity selector]
+\label{p2b:rem:casimir-difference-support-diagnostic}
+The mathematical Casimir difference \(D=C_L-C_R\), where \(C_L,C_R\)
+have eigenvalues \(j_L(j_L+1),j_R(j_R+1)\), has eigenvalues
+\(+2\) and \(-2\) on the two adjoint three-dimensional summands,
+respectively.  It can detect missing adjoint \emph{types} under a
+separately licensed observable interpretation, but it does not detect
+uniform implementation replication from its support alone and it
+is not a new physical cutoff or state-selection rule.
+\end{remark}
+
+\begin{corollary}[Invariant preparations for the native operation algebras]
+\label{p2b:cor:v233-native-invariant-states}
+For the mixed scalar-position/enriched-momentum carrier
+\(\mathcal P_m\otimes\mathcal H_1\), let the represented algebra be
+generated by the factor actions and all native nonzero coordinate
+edges. With \(d_m=\dim\mathcal P_m\), its full block algebra is
+\(M_{11d_m}\oplus M_{4d_m}\).
+The densities invariant under all of its unitary conjugations are
+exactly
+\[
+ \rho_p=\frac{p}{11d_m}P_{\rm geo}
+       +\frac{1-p}{4d_m}P_{\rm sp},\qquad 0\le p\le1.
+\]
+On the matched enriched product with Born exchange, the algebra is
+\(M_{121}\oplus M_{88}\oplus M_{16}\), and these densities are
+\[
+ \rho_{a,b,c}=\frac a{121}P_{gg}
+       +\frac b{88}(P_{gs}+P_{sg})+\frac c{16}P_{ss},
+ \qquad a,b,c\ge0,\quad a+b+c=1.
+\]
+The normalized full traces have \(p=11/15\) and
+\((a,b,c)=(121,88,16)/225\), respectively; the stated operation
+invariances do not select those points.
+\end{corollary}
+\begin{proof}
+The connected coordinate-graph blocks calculated in Paper~I-C,
+\ref{p1b:der:g03:s11:sub2}, \ref{p1b:der:g03:s11:sub3} and
+\ref{p1b:der:g03:s17}, give the algebras. Explicitly, sandwiching
+a nonzero edge between the group matrix units gives every rectangular
+map between its endpoints; products give the full matrix algebra
+on each connected component. The native component dimensions are
+eleven and four. Tensor products give \(121,44,44,16\);
+exchange joins the two middle components.
+Invariance under all algebra unitaries is membership in its commutant.
+Each full block has scalar commutant, so positivity and trace one
+give precisely the displayed simplex.
+\end{proof}
+
+The free geometric/protected population is distinguishable without selecting
+a preferred preparation.  Paper~II-C,
+Corollary~\ref{p2c:cor:v2211-tagged-intrinsic-populations}, constructs a
+central-sector refinement of the intrinsic localization POVM using the
+already generated block projectors.  It preserves the exact coordinate
+moments and reads the two populations.  Its untagged predecessor is blind to
+that population difference.  This is an available mathematical readout;
+an actual tagged measurement still requires its occurrence certificate and
+does not select the population before the measurement.
+
+\begin{remark}[A specified loop and a specified ground-state preparation]
+Corollary~\ref{p2a:cor:v233-loop-coefficients} fixes a canonical
+closed-word readout without preparing any of these invariant states.
+For the precise \(K_{\rm LC}\), a zero-energy preparation is uniquely
+the scalar projector and the normalized heat family converges to it
+at the rate in Corollary~\ref{p1:cor:v233-geometric-ground-state}.
+That branch retains the physical operator owner and preparation
+condition: the identical principal symbol and coordinate class can
+have a different ground space
+(Appendix~\ref{p1:app:v233-square-owner}).
+\end{remark}
+
+
+\begin{remark}[Preparation status of invariant-state specialization]
+\label{p2b:rem:invariant-state-selector-status}
+For the multiplicity-free momentum carrier \(\mathcal H_1\),
+\(\Spin(4)\)-invariance alone leaves the simplex
+\[
+ p_\lambda\ge0,\qquad \sum_\lambda p_\lambda=1
+\]
+of sector probabilities.  This proves that momentum constitution alone does
+not actualize a generic physical preparation.  On a physically constituted zero-energy branch for the precise
+\(K_{\rm LC}\) of Corollary~\ref{p1:cor:v233-geometric-ground-state},
+and on a branch whose specified ergodic dynamics uniquely fixes the
+central weights, the state follows from those preparation conditions.
+The symbol alone does not select that branch.  Outside those branches, an actual choice of
+\((p_\lambda)\) belongs to the single preparation/measurement occurrence
+package of G0.  It is not an additional structural root.
+
+If a later theorem uses the normalized trace on all of
+\(\End(\mathcal H_1)\), it must cite the corresponding canonical closed-word, tracial,
+dynamical, or occurrence antecedent. The closed-word case is
+Corollary~\ref{p2a:cor:v233-loop-coefficients}; it is a readout,
+not an assertion that a maximally mixed state was prepared.  Sector-conditioned normalized traces do not by
+themselves determine the global preparation weights.
+\end{remark}
+
+\begin{remark}[Scope of the generated tests on a finite carrier]
+\label{p2:rem:generated-test-scope}
+The theorem above classifies invariant positive normalized functionals on the
+full algebra \(\End(V)\).  For the block embedding
+\(\iota_\lambda(A)\), equal to
+\(A\otimes\mathbf1_{M_\lambda}\) on the \(\lambda\)-block and zero on all
+other blocks, put
+\[
+ P_\lambda:=\iota_\lambda(I_{V_\lambda}),
+ \qquad
+ p_\lambda:=\tau(P_\lambda)
+ =(\dim V_\lambda)\Tr_{M_\lambda}(B_\lambda).
+\]
+Then the exact block formula is
+\[
+ \tau\!\left(\iota_\lambda(A)\right)
+ =p_\lambda\frac{\Tr_{V_\lambda}(A)}{\dim V_\lambda}.
+\]
+Only after conditioning on a sector of positive weight does the sector weight
+cancel:
+\[
+ \frac{\tau(\iota_\lambda(A))}{\tau(P_\lambda)}
+ =\frac{\Tr_{V_\lambda}(A)}{\dim V_\lambda},
+ \qquad p_\lambda>0.
+\]
+
+The unmarked finite-role doctrine of
+Proposition~\ref{p2:prop:gp3-multiplicity-bound} uses the observable algebra
+\[
+ \mathcal A_{\rm unmarked}
+ =\bigoplus_\lambda
+ \End(V_\lambda)\otimes\mathbf1_{M_\lambda}.
+\]
+Restrictions of invariant states to this algebra retain the free sector
+weights \(p_\lambda\) but cannot distinguish directions inside
+\(M_\lambda\).  A state on the full \(\End(V)\) can distinguish such
+directions only through observables acting nontrivially on \(M_\lambda\); the
+unmarked hypothesis excludes those observables rather than silently replacing
+the sector weight by one.  Finally, \(\tau(\mathbf1)=1\) for every state, so
+normalization alone does not return the carrier dimension.  This fixes the
+scope of ``generated test'' used in that proposition.
+\end{remark}
+
+\begin{remark}[Full basis neutrality is an additional hypothesis]
+\label{p2:rem:no-insertion-basis-neutrality}
+The absence of a preferred basis does not enlarge a constituted symmetry
+group to \(U(V)\).  Full-unitary invariance is a sufficient extra hypothesis
+for the normalized trace; it is not a consequence of \(G\)-equivariance on a
+reducible carrier.
+\end{remark}
+
+\subparagraph{Conditional protected-completion outcome.}
+The unconditional GP2 main-text result is the six-type generated support
+\(\mathcal G^{\rm car}_{\Sigma_p}\cong\mathcal H_1\), with
+\(m_p=1\) and one-copy complex dimension
+\(15\).  Under the optional coordinate-completion specialization
+\(\mathsf C_{\rm PI}\), the protected real even Clifford algebra has dimension
+\(8\), its matrix-traceless part has dimension \(7\), and the resulting
+coordinate algebra is noncommutative on the protected block.  These are
+conditional completion consequences, not part of the positive momentum-seed
+derivation.  Their complete statements, scope guards, and proofs are deferred
+to Paper~II-F, Section~\ref{p2b:app:conditional-clifford-package}.
+\subparagraph{Deferred optional geometric developments.}
+Quotient restrictions, total-weight shell filtration, and Hopf
+phase--direction coupling are valid conditional or supplementary structures
+but are not used to derive the momentum seed.  Their full statements and
+proofs are in Paper~II-F, Section~\ref{p2b:app:optional-finite-support}.
+
+\subsubsection{Momentum-generator convention}
+
+The left- and right-invariant differential generators are retained as auxiliary
+spectral tools.  The kinematic momentum triple is
+\[
+\hat P_i=\frac{\hbar}{\Rmom}(L_i^+-L_i^-),
+\]
+the transvection complement of the diagonal rotation algebra.  All later
+operator and commutator statements use this convention unless a left- or
+right-invariant generator is named explicitly.
+
+
+\section{Recovery maps and continuum comparison}
+\label{paper2b:sec:organized-recovery}
+
+\subsection{\texorpdfstring{Continuum Limit and Relation to Classical $S^3$}{Continuum Limit and Relation to Classical S³}}
+
+\subsubsection{\texorpdfstring{The Limit $m \to \infty$}{The Limit m}}
+
+\begin{definition}[Retained Peter--Weyl symbol spaces]
+\label{p2:def:retained-pw-symbols}
+For each level $m$, define
+\[
+\mathcal P_m
+:=
+\operatorname{span}\Bigl\{D^j_{ab}: j\in \tfrac12\ZZ_{\ge0},\; 2j\le m,\; -j\le a,b\le j\Bigr\}
+\subset C^\infty(S^3),
+\]
+where $D^j_{ab}$ are the matrix coefficients of the spin-$j$ irreducible
+representation of $SU(2)\cong S^3$.  This is exactly the retained scalar
+diagonal coefficient space
+\(\mathcal H_m^{\rm sc}\); it is not the full \(\mathcal H_m\),
+\(\mathcal A_m\), or \(\End(\mathcal H_m)\).  Its precise finite-operator
+relation is the section/retraction proved next.
+\end{definition}
+
+\begin{proposition}[Exact scalar Toeplitz section and symbol retraction]
+\label{p2:prop:scalar-toeplitz-symbol-retraction}
+Use the scalar diagonal identification
+\[
+ \mathcal H_m^{\rm sc}=\mathcal P_m
+ \subset L^2(S^3),
+\]
+and let \(\Pi_m^{\rm sc}:L^2(S^3)\to\mathcal H_m^{\rm sc}\) be
+the orthogonal projector.  Let
+\(\iota_m^{\rm sc}:\mathcal H_m^{\rm sc}\hookrightarrow\mathcal H_m\)
+be the diagonal-sector inclusion and
+\(r_m^{\rm sc}:\mathcal H_m\to\mathcal H_m^{\rm sc}\) its orthogonal
+projection.  For \(f\in\mathcal P_m\), define the scalar-block Toeplitz
+section
+\[
+ Q_m^{\rm sc}(f)
+ :=
+ \iota_m^{\rm sc}\Pi_m^{\rm sc}M_f r_m^{\rm sc}
+ \in\End(\mathcal H_m),
+\]
+where \(M_f\) is scalar multiplication on \(L^2(S^3)\).  For
+\(A\in\End(\mathcal H_m)\), define the scalar symbol evaluated at the
+constant unit
+\[
+ \sigma_m^{\rm sc}(A)
+ :=
+ r_m^{\rm sc}A\iota_m^{\rm sc}(1)
+ \in\mathcal P_m.
+\]
+Here \(1\) is the algebraic constant unit.  It has norm one for
+probability-normalized Haar measure, whereas for Riemannian volume its norm
+is \(\sqrt{V_R}\), with
+\(V_R=\operatorname{Vol}(S^3(\Rmom))\).  The written map uses \(1\) in
+either convention.  Using the normalized constant \(e_0=V_R^{-1/2}\)
+under Riemannian volume instead would require a compensating factor
+\(\sqrt{V_R}\) in the symbol map.
+Then both maps are linear and \(\Spin(4)\)-equivariant, and
+\[
+ \sigma_m^{\rm sc}\!\circ Q_m^{\rm sc}
+ =
+ \operatorname{id}_{\mathcal P_m}.
+\]
+Consequently \(Q_m^{\rm sc}\) is injective and
+\(\sigma_m^{\rm sc}\) is surjective.  This is an exact bridge between the
+retained scalar coefficient space and a scalar-supported linear operator
+space in
+\(\End(\mathcal H_m)\).  It is not a multiplicative embedding, it does not
+identify \(\mathcal P_m\) with \(\mathcal A_m\) or
+\(\End(\mathcal H_m)\), and it supplies no scalar symbols for the
+non-diagonal bundle sectors.
+\end{proposition}
+
+\begin{proof}
+The invariant constant function \(1\) belongs to \(\mathcal P_m\), and
+\(\Pi_m^{\rm sc}\) fixes every element of \(\mathcal P_m\).  Therefore, for
+each \(f\in\mathcal P_m\),
+\[
+\begin{aligned}
+ \sigma_m^{\rm sc}\!\left(Q_m^{\rm sc}(f)\right)
+ &=
+ r_m^{\rm sc}\iota_m^{\rm sc}
+ \Pi_m^{\rm sc}M_f
+ r_m^{\rm sc}\iota_m^{\rm sc}(1)\\
+ &=
+ \Pi_m^{\rm sc}(f\cdot1)
+ =f.
+\end{aligned}
+\]
+This proves the retraction identity, injectivity, and surjectivity.  The
+left--right action preserves the scalar diagonal sector and its orthogonal
+complement, fixes \(1\), commutes with \(\Pi_m^{\rm sc}\), and satisfies
+\(U_gM_fU_g^{-1}=M_{U_gf}\).  Hence both displayed maps intertwine the
+\(\Spin(4)\)-actions.  The remaining boundary statements follow directly
+from the types of the maps: no injectivity of the retraction and no
+product-preservation property has been imposed.
+\end{proof}
+
+\begin{theorem}[Peter--Weyl parent-symbol density from the finite tower]
+\label{p2:thm:continuum_limit}
+Let $\mathcal P_m$ be the retained Peter--Weyl coefficient space of Definition~\ref{p2:def:retained-pw-symbols}. Then
+\[
+\mathcal P_{\mathrm{poly}}:=\bigcup_{m\ge0}\mathcal P_m
+\]
+is the Peter--Weyl polynomial algebra on $SU(2)$ and is uniformly dense in
+$C(S^3)$.  Equivalently, for every \(f\in C(S^3)\),
+\[
+ \lim_{m\to\infty}
+ \inf_{p\in\mathcal P_m}\|f-p\|_\infty=0.
+\]
+The exact maps in
+Proposition~\ref{p2:prop:scalar-toeplitz-symbol-retraction} type the
+finite-level scalar coefficient bridge.  The limit is a statement about the
+parent presentation and the directed family of finite symbols; no realized
+stage has \(m=\infty\).  The conclusion is coefficient-space density only.  It
+does not identify finite matrix algebras as literal subalgebras of
+\(C(S^3)\), and it is neither an operator-norm nor a dynamical convergence
+theorem.
+\end{theorem}
+
+\begin{proof}
+For every spin \(j\in\frac12\ZZ_{\ge0}\), choosing any integer \(m\ge 2j\)
+places all matrix coefficients \(D^j_{ab}\) in \(\mathcal P_m\).  Hence
+\[
+\bigcup_m\mathcal P_m
+=
+\operatorname{span}\{D^j_{ab}:j\in\tfrac12\ZZ_{\ge0},\,-j\le a,b\le j\},
+\]
+which is precisely the Peter--Weyl polynomial algebra of the compact group
+\(SU(2)\).  The Peter--Weyl uniform-density theorem
+\cite{Peter1927,helgason1984groups} states that this algebra is dense in
+\(C(SU(2))\) in the uniform norm.  After the identification
+\(SU(2)\cong S^3\), this gives
+\[
+\overline{\mathcal P_{\mathrm{poly}}}^{\|\cdot\|_\infty}=C(S^3).
+\]
+Because the spaces are nested, this closure statement is equivalent to the
+displayed limit of best uniform-approximation errors.  The section and
+retraction of
+Proposition~\ref{p2:prop:scalar-toeplitz-symbol-retraction} do not change the
+type of this result: it is not an operator-norm convergence theorem for
+\(\mathcal A_m\) or \(\End(\mathcal H_m)\).
+\end{proof}
+
+\begin{remark}[Mode of convergence]
+\label{p2:rem:continuum-mode}
+The theorem establishes density of the retained Peter--Weyl symbols in the
+classical commutative algebra $C(S^3)$.  This parent-symbol density statement concerns the scalar Peter--Weyl symbol content and is typed as a presentation recovery, not an ontic continuum.  The additional non-diagonal
+$(j_L,j_R)$ sectors of the full finite module package require their separate
+vector/spinor/bundle interpretation and should not be identified with scalar
+functions on $S^3$.  Their share is the larger one: since
+$\dim\mathcal P_m=(m+1)(m+2)(2m+3)/6$ and
+$\dim\mathcal H_m=\binom{2m+4}{4}$,
+\[
+ \frac{\dim\mathcal P_m}{\dim\mathcal H_m}=\frac{1}{2m+1},
+\]
+so the density statement addresses a fraction of the carrier that falls to
+zero as the level grows.  More refined semiclassical convergence statements require
+additional product, norm, and asymptotic estimates; the exact finite-level
+section/retraction above does not supply them by itself.
+\end{remark}
+
+
+\section{Finite products and exact retained support}
+\label{paper2b:sec:organized-finite}
+
+\subsection{Quantitative product-word retention at the frozen seed}
+\label{p2b:sec:v2210-lit-product-retention}
+The generated $\mathcal H_1$ remains the frozen linear/bracket momentum
+carrier.  The following result extends the multiplication-defect identity
+already proved in Paper~I-C to a quantitative test for a consumed finite
+word.  It does not license a pointwise multiplication constructor or a new
+physical momentum level.
+
+\begin{theorem}[Exact ordered-word defect and its bound]
+\label{p2b:thm:v2210-lit-word-defect}
+Let $P=P^\dagger=P^2$, $Q=I-P$, and let $A_1,\ldots,A_n$ be bounded
+operators on a supplied common parent, $n\ge2$.  On $P\mathcal H$, put
+\[
+ W_P=(PA_1P)\cdots(PA_nP),\qquad W=P A_1\cdots A_n P.
+\]
+Then exactly
+\[
+ W-W_P=\sum_{j=1}^{n-1}
+ (PA_1P)\cdots(PA_{j-1}P)\,PA_jQ A_{j+1}\cdots A_nP,
+\]
+where the prefix is the identity on $P\mathcal H$ when $j=1$.  Consequently
+\[
+ \|W-W_P\|\le\sum_{j=1}^{n-1}
+ \left(\prod_{i<j}\|A_i\|\right)
+ \|PA_jQ\|\,\|QA_{j+1}\cdots A_nP\|.
+\]
+For a supplied isometry $Z$ with $P=ZZ^\dagger$, define
+$\pi_Z(A)=Z^\dagger AZ$.  Its positive square defect and mixed defect obey
+\[
+ D_Z(A):=\pi_Z(A^\dagger A)-\pi_Z(A)^\dagger\pi_Z(A)
+ =(QAZ)^\dagger(QAZ),
+ \qquad \|D_Z(A)\|=\|QAZ\|^2,
+\]
+\[
+ \|\pi_Z(AB)-\pi_Z(A)\pi_Z(B)\|
+ \le\|QA^\dagger Z\|\,\|QBZ\|.
+\]
+\end{theorem}
+\begin{proof}
+Insert $I=P+Q$ at the first internal interface of $W$, and repeat only on
+the term whose retained prefix still ends in $P$.  This partitions the
+difference by the first omitted intermediate image, giving the exact sum.
+Submultiplicativity gives the bound.  The square and mixed identities
+follow by inserting $ZZ^\dagger=P$ between the compressed factors, as in
+Paper~I-C, Lemma~\ref{p1b:lem:v2167-compression-multiplication}.
+For the square, $T^\dagger T$ has norm $\|T\|^2$; for the mixed defect
+use $Z^\dagger AQBZ=(QA^\dagger Z)^\dagger(QBZ)$.
+\end{proof}
+
+\begin{corollary}[A consumed comparison needs only its visible defect]
+\label{p2b:cor:v2210-lit-visible-word-defect}
+For normalized source vectors $u,v\in P\mathcal H$ or a density operator
+$\sigma$ on that range,
+\[
+ |u^\dagger(W-W_P)v|\le\|W-W_P\|,
+ \qquad |\operatorname{Tr}\sigma(W-W_P)|\le\|W-W_P\|.
+\]
+Exact reduction of the consumed parent algebra makes all defects zero.
+An observable-specific zero contraction can suffice for that comparison
+without proving reduction of every mathematically available parent word.
+If source derivatives are consumed, the same test applies separately to
+the actual differentiated word, including derivatives of $P$ or $Z$ when
+the retained chart moves.
+\end{corollary}
+\begin{proof}
+The first inequality is the operator norm estimate, and the second follows
+from positivity and unit trace.  Reduction annihilates $PAQ$ and $QAP$.
+The final assertion is application of the same identities to the fully
+differentiated supplied word, not deletion of chart-derivative terms.
+\end{proof}
+The $SU(2)$ Fourier/Duflo construction
+\cite{LitGEOFreidelMajid2008Fourier} provides a useful explicit comparison
+between group composition, star multiplication and ordinary symbols, but
+its $2+1$-dimensional Euclidean model and ambient function algebra are not
+an identification of this finite carrier.  Any such comparison uses its
+licensed map and the defect above.  Full pointwise scalar products still
+have the additional harmonic outputs proved in
+Section~\ref{p2b:sec:v2201-derived-d01}; no Fourier name removes those
+outputs or changes $m_p=1$.
+
+
+\section{Physical scope and downstream handoff}
+\label{paper2b:sec:organized-scope-exports}
+
+\subsection{Geometry-first consequences and physical scope}
+\label{p2b:sec:v2201-geometry-first-consequences}
+\subparagraph{Geometry ancestry.}
+Round Hopf harmonics $\to$ frozen momentum seeds and linear/bracket carrier $\to$ explicitly licensed product outputs.
+\subparagraph{Hypotheses and occurrence boundary.}
+These are consequences on the domains stated below.
+A mathematical certificate or an executed restriction retains every
+physical source, state, clock and readout hypothesis of its inputs.
+
+\subsubsection{First multiplicative extension of the frozen carrier}
+\label{p2b:sec:v2201-derived-d01}
+
+\begin{proposition}[Degree-two output under licensed full pointwise multiplication]
+\label{p2b:prop:derived-d01-pointwise-extension}
+The scalar constant and degree-one harmonics occur in the retained carrier.
+If a downstream constructor licenses their \emph{full pointwise product},
+it must retain the nine-dimensional degree-two scalar harmonic output.
+For ambient scalar coordinates on $S^3(R)$,
+\[
+ x_ax_b=\frac{R^2}{4}\delta_{ab}
+ +\left(x_ax_b-\frac{R^2}{4}\delta_{ab}\right),\qquad
+ \dim E_2=9.
+\]
+The second term is the symmetric traceless quadratic sector. More generally,
+products of at most $r$ degree-one functions span
+\[
+ \bigoplus_{\ell=0}^r E_\ell,
+ \qquad \dim=\sum_{\ell=0}^r(\ell+1)^2
+ =\frac{(r+1)(r+2)(2r+3)}6.
+\]
+Here $E_\ell$ is the degree-$\ell$ scalar harmonic eigenspace.
+It is not the full auxiliary module $\mathcal H_\ell$; in particular
+$\dim E_2=9$ whereas $\dim\mathcal H_2=\binom84=70$.
+\end{proposition}
+\begin{proof}
+Restrict homogeneous polynomials to the sphere and remove their
+Euclidean traces. Each polynomial decomposes into harmonic polynomials times
+powers of $|x|^2$, which become constants on the sphere. Conversely the
+coordinate monomials generate every such polynomial. The symmetric
+quadratic tensors have dimension ten, with one trace.
+\end{proof}
+Thus linear/bracket closure of the 15-dimensional one-copy module is not closure
+under all pointwise products. Projected operator composition and full
+function multiplication are different words; a finite matrix algebra can
+close under the former without acquiring the latter's harmonic outputs.
+This is a capacity result, not a license to enlarge the physical carrier. The exact omitted-image error for each actually licensed retained word is now given by Theorem~\ref{p2b:thm:v2210-lit-word-defect}; its source-visible contraction remains the application calculation.
+\par\noindent\textit{Inherited inputs:} \ref{p2:thm:momentum-host-H1}, \ref{p2b:thm:momentum-carrier-rigidity}, \ref{p3f:thm:v180-incidence-harmonic-resolution}.
+
+\begin{theorem}[No finite covariant multiplicative sphere realization]
+\label{p2b:thm:finite-covariant-classical-algebra-obstruction}
+Let a group $G$ act transitively by homeomorphisms on an infinite compact Hausdorff space $X$,
+and let $U$ be a unitary representation on a nonzero finite-dimensional
+complex Hilbert space $H$.  There is no unital $G$-equivariant
+$*$-homomorphism
+\[
+ \pi:C(X)\longrightarrow\operatorname{End}(H),\qquad
+ \pi(f\circ g^{-1})=U_g\pi(f)U_g^*.
+\]
+In particular, the round $\Spin(4)$ action on $S^3$ admits no such finite
+realization.  Every finite unital covariant positive linear map from its
+full continuous function algebra must therefore fail multiplicativity on
+some pair of functions.
+\end{theorem}
+
+\begin{proof}
+The finite-dimensional commutative $C^*$-algebra $\pi(C(X))$ is simultaneously
+diagonalizable.  Its distinct characters are evaluations at finitely many
+points $x_1,\ldots,x_N\in X$, so
+\[
+ \pi(f)=\sum_{j=1}^N f(x_j)P_j,
+ \qquad P_j\ne0,\quad \sum_jP_j=I.
+\]
+The kernel consists precisely of functions vanishing on the nonempty finite
+support $F=\{x_1,\ldots,x_N\}$.  Equivariance preserves this kernel and hence
+preserves $F$.  Transitivity forces every nonempty invariant subset to equal
+$X$, contradicting its infinitude.  A unital positive map on $C(X)$ respects
+complex conjugation; if it were multiplicative everywhere, it would be the
+forbidden $*$-homomorphism.
+\end{proof}
+
+\begin{remark}[Structural defect and the frozen carrier]
+\label{p2b:rem:finite-covariant-defect-scope}
+The obstruction explains why the product outputs in D01 and the word defect
+in Theorem~\ref{p2b:thm:v2210-lit-word-defect} cannot all disappear in a finite
+round-covariant function realization.  It does not prohibit exactness on a
+specified finite test space, finite sampling without the full continuous
+group action, or closure under matrix multiplication.  Nor does it select a
+particular POVM map or enlarge the frozen momentum carrier.  Paper II-C's
+optimal coordinate POVMs realize the positive-map alternative; their
+remaining family freedom must be retained by a downstream prediction that
+consumes classical quadratic readouts.
+\end{remark}
+
+
+\subsection{Finite coordinate-word closure on the frozen momentum seed}
+\label{p2b:sec:v226-coordinate-words}
+\begin{corollary}[Degree six is an operation bound, not a momentum level]
+\label{p2b:cor:v226-coordinate-word-degree}
+On the generated intrinsic class define
+$\mathcal W_d=\operatorname{span}_{\mathbb C}\{I,Y_{a_1}\cdots Y_{a_s}:s\le d\}$.
+Then $\dim\mathcal W_5=136$ and
+$\mathcal W_6=\mathcal A_D$ has dimension 137. The intrinsic coordinate-word calculation here acts on the explicit
+one-copy module $\mathcal H_1$ of dimension fifteen; universal
+identification with every GP3 physical endpoint retains the additional
+comparison hypothesis of Theorem~\ref{p2b:thm:momentum-carrier-rigidity}.
+The label $d$ here is not the carrier tensor-word level $m$.
+\end{corollary}
+\begin{proof}
+The degree-six identity and explicit degree-five obstruction are
+Theorem~\ref{p1:thm:v226-chirality}; the exact rank certificate gives the
+lower dimension 136. These are products of represented endomorphisms on
+one carrier, not an insertion of a new representation sector. The frozen
+seed frontier and its no-insertion theorem therefore retain their domain.
+\end{proof}
+The 137-outcome native measurement is a finite effect construction on that
+same algebra (Theorem~\ref{p1:thm:v226-tomography}). Its cardinality is not
+a site count, particle species count or new occupation ceiling. Exact
+moment-preserving localization still has its separate radius and finite
+support constraints, including the universal chirality-information bound
+of Theorem~\ref{p2c:thm:v226-chirality-radius}.
+
+
+\section{Finite-algebra capacity and native multiplicity limits}
+\label{p2b:sec:v352-capacity-topology}
+Here the finite algebra is first taken as an \emph{already constituted
+abstract test algebra}.  Reconstructing its minimum module must not
+be reversed into an independent proof that GP2 necessarily generates
+that abstract algebra from bare G0.
+
+\begin{theorem}[Faithful module and commutant characterization]
+\label{p2b:thm:v352-minimal-faithful}
+For $\mathcal A=\bigoplus_{i=1}^{r}M_{d_i}(\mathbb C)$, every
+finite-dimensional faithful unital $*$-representation is of the form
+\[
+ \pi(\mathcal A)=\bigoplus_{i=1}^{r}
+     \bigl(M_{d_i}(\mathbb C)\otimes I_{m_i}\bigr),\quad m_i\geq1,
+ \qquad \dim_{\mathbb C}\mathcal H=\sum_i d_i m_i.
+\]
+The minimum is $\sum_i d_i$, achieved precisely when every $m_i=1$.
+The minimum faithful module is unique up to a unitary intertwiner
+preserving the labeled central blocks.  Moreover
+\[
+ \pi(\mathcal A)'=\bigoplus_i
+  I_{d_i}\otimes M_{m_i}(\mathbb C),\qquad
+ \pi(\mathcal A)'=Z(\pi(\mathcal A))
+ \quad\Longleftrightarrow\quad m_i=1\ \text{for all }i.
+\]
+\end{theorem}
+\begin{proof}
+A full complex matrix algebra has, up to equivalence, one irreducible
+unital representation, its defining module.  Restrict a faithful
+representation to every central simple summand to obtain the displayed
+multiplicities, which must all be positive.  Compute the commutant
+block by block using matrix units.  The inequality and equality
+criterion follow immediately.
+\end{proof}
+
+\paragraph{Constructive matrix-unit verification of Theorem~\ref{p2b:thm:v352-minimal-faithful}.}
+For each central summand choose matrix units $e_{ab}^{(i)}$ and put
+$P_a^{(i)}=\pi(e_{aa}^{(i)})$.  These are pairwise orthogonal
+projections.  The $\pi(e_{ab}^{(i)})$ identify their ranges unitarily,
+so each block has a common positive rank $m_i$ (faithfulness makes
+$m_i\geq1$).  Choosing an orthonormal basis in the range of
+$P_1^{(i)}$ and transporting it by $\pi(e_{a1}^{(i)})$ constructs
+$\mathcal H_i\cong\mathbb C^{d_i}\otimes\mathbb C^{m_i}$ explicitly.
+The matrices commuting with all these units are precisely
+$I_{d_i}\otimes M_{m_i}(\mathbb C)$, and central projections forbid
+inter-block commutant terms.  Hence $\dim\mathcal H=\sum_i d_i m_i$
+and $\pi(\mathcal A)'=Z(\pi(\mathcal A))$ exactly when all $m_i=1$.
+This proof does not invoke the classification of irreducible representations
+as an external starting result.  It nevertheless presupposes the same
+already constituted block algebra; it provides no new GP2 generation,
+physical preparation, or universal GP3 endpoint certificate.
+
+\begin{theorem}[Single-shot distinguishability and pure-state Euler invariant]
+\label{p2b:thm:v352-capacity-euler}
+Let $C_1(\mathcal A)$ be the maximum number of algebraic states
+perfectly discriminated by \emph{one} POVM with effects in
+$\mathcal A$, and let $\mathcal P(\mathcal A)$ denote the abstract
+pure-state space with its weak-$*$ topology.  Then
+\[
+ \boxed{C_1(\mathcal A)=\sum_i d_i
+ =\chi(\mathcal P(\mathcal A))
+ =\dim_{\mathbb C}\mathcal H_{\min}},\qquad
+ \mathcal P(\mathcal A)\simeq\bigsqcup_i\mathbb{CP}^{d_i-1}.
+\]
+Both quantities are independent of all faithful-representation
+multiplicities $m_i$ as long as the \emph{same abstract effects}
+constitute the test algebra.
+\end{theorem}
+\begin{proof}
+A rank-one orthogonal basis of each summand, assembled across all
+summands, gives $\sum_i d_i$ states and a single perfectly
+discriminating POVM.  Conversely, for such a POVM
+$\{e_j\}$ and perfectly discriminated density functionals
+$\rho_j$, positivity implies that $e_j$ equals the identity on
+the support of $\rho_j$ and vanishes on every other support.
+The nonzero supports are pairwise orthogonal; their total rank is at
+most $\sum_i d_i$.  A pure state of a finite direct sum belongs
+to exactly one simple summand, whose pure states are rank-one
+projectors $\mathbb{CP}^{d_i-1}$.  Finally
+$\chi(\mathbb{CP}^{n})=n+1$ and the Euler characteristic is
+additive over finite disjoint unions.  Apply the previous theorem.
+\end{proof}
+
+\begin{corollary}[Invariant fifteen-state capacity across the three algebra stages]
+\label{p2b:cor:v352-three-stage-capacity}
+For the already generated abstract stages
+\[
+ \mathcal A_{\rm kin}=\mathbb C\oplus M_2\oplus M_2\oplus
+ M_4\oplus M_3\oplus M_3,\quad
+ \mathcal A_D=M_{11}\oplus M_4,\quad
+ \mathcal A_{\rm full}=M_{15},
+\]
+\[
+ \boxed{C_1(\mathcal A_{\rm kin})=C_1(\mathcal A_D)
+  =C_1(\mathcal A_{\rm full})=15},\qquad
+ \chi(\mathcal P(\mathcal A_j))=15.
+\]
+The algebra dimensions are $43,137,225$, the minimal-module
+commutant dimensions are $6,2,1$, and the numbers of connected
+pure-state components are $6,2,1$, respectively.  The maximum
+single-shot classical alphabet carries $\log_2(15)$ bits of
+\emph{distinguishability capacity}; this is not a physical bit rate.
+The third algebra and its state/effect role remain conditional on
+licensing the full field/event test domain.
+\end{corollary}
+\begin{proof}
+Apply the preceding two theorems to the displayed block sizes.
+The component count is the number of central simple summands, not
+the Euler characteristic.
+\end{proof}
+
+\begin{proposition}[Normalized-copy no-go for universal multiplicity one]
+\label{p2b:prop:v352-normalized-amplification}
+For any $k\geq1$ and a finite $*$-polynomial $p$ in canonical
+algebra elements $a_1,\ldots,a_n$,
+\[
+ \boxed{\frac{\operatorname{Tr}_{15k}
+   p(a_1\otimes I_k,\ldots,a_n\otimes I_k)}{15k}
+ =\frac{\operatorname{Tr}_{15}p(a_1,\ldots,a_n)}{15}.}
+\]
+The same algebraic effect statistics of a state are obtained by
+partial trace over the unmarked multiplicity factor.  Thus normalized
+trace words and these multiplicity-blind protocols cannot force
+$k=1$.  A full GP3 whole-candidate comparison, independently
+licensed multiplicity-resolving role, or absolute capacity witness
+for an \emph{enlarged} algebra is still required to assert a
+universally one-copy physical Hilbert carrier.
+\end{proposition}
+\begin{proof}
+Polynomial evaluation commutes with tensoring by $I_k$ and
+$\operatorname{Tr}(T\otimes I_k)=k\operatorname{Tr}(T)$.
+For a density $\rho$ and effect $a\otimes I_k$, the partial-trace
+identity is $\operatorname{Tr}[\rho(a\otimes I_k)]
+=\operatorname{Tr}[(\operatorname{Tr}_k\rho)a]$.
+\end{proof}
+
+\begin{remark}[Scope of the capacity closure]
+\label{p2b:rem:v352-capacity-occurrence}
+The algebraic maximum presumes the role allows every mathematical
+state and effect used in its definition; an actually performed
+preparation, instrument and outcome require their original G0/GP2
+certificates.  The new statement fixes the \emph{15-state capacity
+of the constituted observable algebra} without claiming that all
+physical carriers or all experimental instruments have Hilbert
+space dimension fifteen.  The constitutional axiom GP3 is unchanged.
+\end{remark}
+
+
+\subsection{Process-level native multiplicity descent with finite ancillas}
+\label{p2b:sec:v355-native-multitime}
+The following theorems strengthen the preceding normalized-trace
+obstruction. Here \emph{native} means that every readout and instrument
+branch is a completely positive map of the specified abstract constituted
+test algebra; no dynamics in the otherwise invisible multiplicity commutant
+is admitted. In particular, the universal GP3 same-role comparison is \emph{not}
+proved by the process-equivalence statements.
+
+
+\begin{theorem}[Finite native-instrument histories descend under amplification]
+\label{p2b:thm:v353-multitime-amplification}
+Let $\mathcal A$ be a finite-dimensional unital $C^*$-algebra and
+$\pi_k(a)=\pi(a)\otimes I_k$ an unmarked common amplification of a
+faithful finite-dimensional unital $*$-representation
+$\pi:\mathcal A\to B(\mathcal H)$, with
+$\pi(1_{\mathcal A})=I_{\mathcal H}$. For any finite sequence of completely
+positive Heisenberg instrument branches
+$\mathcal J_{s_j,x_j}:\mathcal A\to\mathcal A$ with
+$\sum_x\mathcal J_{s,x}(1)=1$, the joint probability of a history
+in an initial density matrix $\rho$ is
+\[
+p(x_1,\ldots,x_n\mid s_1,\ldots,s_n)
+=\omega_\rho\!\left(
+\mathcal J_{s_1,x_1}\circ\cdots\circ
+\mathcal J_{s_n,x_n}(1)\right),\quad
+\omega_\rho(a)=\operatorname{Tr}[\rho\,\pi_k(a)].
+\]
+Every such history distribution agrees with that of a state on the
+minimum faithful module of $\mathcal A$, independently of $k$;
+the claim extends to classical-adaptive choices of settings.
+This is a theorem about the abstract native instrument algebra, not about
+all possible amplified-system apparatus interactions.
+\end{theorem}
+\begin{proof}
+The specified composition takes values in $\mathcal A$, so all history
+probabilities depend only on the restricted positive normalized functional
+$\omega_\rho$. Every finite-dimensional $C^*$-algebra state has a density
+operator in its minimum faithful representation, proving equivalence for
+all histories. Adaptivity only chooses a branch-dependent CP word.
+\end{proof}
+
+
+\begin{theorem}[Ancilla-stable native equivalence of all faithful multiplicities]
+\label{p2b:thm:v354-ancilla-stable-descent}
+Let $\mathcal A=\bigoplus_{\lambda}M_{d_\lambda}(\mathbb C)$.
+Every finite-dimensional faithful unital $*$-representation has the form
+$\pi_{\mathbf m}(a)=\bigoplus_\lambda(a_\lambda\otimes I_{m_\lambda})$
+with $m_\lambda\ge1$. For any finite reference Hilbert space $\mathcal K$
+and any density on the amplified representation tensored with
+$\mathcal K$, sectorwise partial trace of the unmarked multiplicity
+factors yields a canonical density reproducing all tests of
+$\mathcal A\otimes B(\mathcal K)$. This equivalence persists through
+all finite adaptive histories of CP instruments defined on that
+abstract joint algebra. Therefore no such native protocol, even with
+entangled finite ancillas, can infer $\mathbf m$.
+\end{theorem}
+\begin{proof}
+Decompose the state by central sectors and trace out each
+$\mathbb C^{m_\lambda}$. The resulting canonical block density gives
+identical expectations for every abstract joint observable.
+Each $\pi_{\mathbf m}\otimes\operatorname{id}_{M_n}$ is a
+complete-order isomorphism onto its image. Composing CP Heisenberg
+instrument maps in the abstract algebra preserves the equality
+on each outcome-history branch. No operation outside the native algebra
+is included.
+\end{proof}
+
+
+\begin{remark}[GP3 and physical-operation boundary]
+\label{p2b:rem:v355-native-operation-firewall}
+The canonical minimum faithful representation determines the complete
+operator-algebraic native test capacity, but neither the actual microscopic
+Hilbert-space multiplicities nor whether a multiplicity-sensitive operation
+occurs. These theorems do not remove GP3 as a primitive principle or replace
+its universal whole-candidate comparison certificate. Finite entangled
+ancillas change none of the abstract-native statistics, even though an
+independently licensed commutant-sensitive channel would change the test
+algebra and invalidate that no-go's premises.
+\end{remark}
+
+\section{Inverse diagnostics and conditional action interfaces}
+\label{p2b:sec:v264-reverse-certificates}
+\noindent
+This section uses mathematical inputs from Papers~I-A, I-B, II-C, II-D
+and III-F to derive converses and obstructions on their stated domains.
+None of these inputs is used to select the momentum
+parent, the frozen constructor frontier, or the level $m_p=1$.
+A canonical mathematical operator is not, without its own stage-safe
+consumer, an occurring physical event, action, process, or test.
+Detailed supporting calculations and counterexamples belong to the
+technical verification record, not to the assumptions of these results.
+
+\begin{theorem}[Reverse rigidity of the native $15/137$ data]
+\label{p2b:thm:v264-algebra-rigidity}
+If $\mathcal A\subseteq M_{15}(\CC)$ is a \emph{unital complex
+finite-dimensional $C^*$-subalgebra} with
+$\dim_{\CC}\mathcal A=137$, then its represented form is, up to a
+unitary change of basis,
+\[
+ \boxed{\mathcal A=M_{11}(\CC)\oplus M_4(\CC)}
+\]
+with each simple block represented once.  Neither the original
+coordinate-graph constructor nor its occurring action/readout ownership
+follows from these two numbers alone.
+\end{theorem}
+\begin{proof}
+Write the faithful unital representation as
+$\mathcal A\cong\bigoplus_i M_{n_i}(\CC)$ on
+$\bigoplus_i(\CC^{n_i}\otimes\CC^{m_i})$, where $m_i\ge1$.
+Then $\sum_i n_i^2=137$ and $\sum_i n_im_i=15$.
+If every $n_i\le9$, then
+$137=\sum_i n_i^2\le9\sum_i n_i\le135$, impossible.
+Also $n_i\le11$ because $12^2>137$. If a largest block has
+$n_i=10$, the remaining blocks have total defining dimension at most
+five and therefore total squared dimension at most $5^2=25$, whereas
+$137-100=37$ is required. Hence a largest block is $11$.
+The remaining blocks have total defining dimension at most four and
+squared dimension $137-121=16$, which forces precisely one block of
+size four. These two blocks exhaust the $15$ representation dimensions,
+so both multiplicities are one.
+\end{proof}
+
+\begin{proposition}[Inverse quadratic fingerprint within the coordinate atlas]
+\label{p2b:prop:v264-quadratic-inversion}
+Fix the normalized Hermitian equivariant coordinate-completion atlas
+of Paper~I-A with $R_{\rm mom}>0$ and nonnegative reduced magnitudes
+$(r_{1,0},r_{0,1},\varrho_{\rm sp})$. Denote the scalar, vector, left
+bivector, right bivector, and spinor eigenvalues of
+$Q=\sum_{a=1}^{4}X_a^2$ by $(q_0,q_V,q_L,q_R,q_S)$.
+Within this declared atlas, their exact inverse is
+\[
+\begin{gathered}
+ \boxed{\begin{gathered}
+  R_{\rm mom}=\sqrt{q_0},\qquad r_{1,0}=\sqrt{q_L/2},\\
+  r_{0,1}=\sqrt{q_R/2},\qquad \varrho_{\rm sp}=\tfrac12\sqrt{q_S}
+ \end{gathered}},\\[5pt]
+ \boxed{q_V=\tfrac14q_0+\tfrac34(q_L+q_R)}.
+\end{gathered}
+\]
+Thus nonnegative sector data satisfying the last identity reconstruct
+all reduced magnitudes modulo the atlas's phase equivalence. Outside
+the stipulated atlas, neither the same fingerprint nor the same abstract
+algebra reconstructs the coordinate operator or its action provenance.
+\end{proposition}
+\begin{proof}
+The fixed scalar/vector edge and outgoing-path trace identities
+of Paper~I-A give
+$q_0=R_{\rm mom}^2$, $q_L=2r_{1,0}^2$,
+$q_R=2r_{0,1}^2$, $q_S=4\varrho_{\rm sp}^2$ and
+$q_V=R_{\rm mom}^2/4+\tfrac32(r_{1,0}^2+r_{0,1}^2)$.
+Solving gives the claimed necessary and sufficient algebraic relations
+inside that atlas. Existence and phase classification are inherited
+from the specified atlas, not inferred for arbitrary operator tuples.
+\end{proof}
+
+\begin{corollary}[Explicit central grading as a coordinate word]
+\label{p2b:cor:v264-central-polynomial}
+On the \emph{already generated} intrinsic fixed-radius class of
+Paper~II-C, put $q=Q_D/R_{\rm mom}^2$. Then
+\[
+ q=P_0+\frac{11}{12}P_V+\frac49P_B+\frac34P_S,
+\quad
+\boxed{P_S=\frac{864}{11}(q-I)
+ (q-\tfrac{11}{12}I)(q-\tfrac49I),\quad
+ \Gamma_c=I-2P_S.}
+\]
+Consequently $P_S$ and $\Gamma_c$ are polynomials of coordinate-word
+degree at most six; no new operator \emph{choice} is needed on this branch.
+A performed measurement of $P_S$ still needs an actual readout/test token.
+\end{corollary}
+\begin{proof}
+The fingerprint is Paper~II-C's intrinsic coordinate theorem.
+Its four distinct eigenvalues permit Lagrange interpolation at
+$3/4$, with denominator
+$(3/4-1)(3/4-11/12)(3/4-4/9)=11/864$.
+The grading acts as $+1$ on the rank-$11$ complement and $-1$ on
+its rank-$4$ spinor block. Each $Q_D$ uses two coordinate factors.
+\end{proof}
+
+\begin{theorem}[Full spinorial representation content of the odd bridge]
+\label{p2b:thm:v264-odd-bridge-types}
+For the derived carrier, write
+\[
+\begin{split}
+\mathcal H_g&=(0,0)\oplus(\tfrac12,\tfrac12)
+  \oplus(1,0)\oplus(0,1),\\
+\mathcal H_s&=(\tfrac12,0)\oplus(0,\tfrac12).
+\end{split}
+\]
+Then as $\Spin(4)$ modules,
+\[
+\boxed{\begin{aligned}
+\operatorname{Hom}(\mathcal H_s,\mathcal H_g)
+ \cong{}&3(\tfrac12,0)\oplus3(0,\tfrac12)\\
+ &\oplus2(1,\tfrac12)\oplus2(\tfrac12,1)\\
+ &\oplus(\tfrac32,0)\oplus(0,\tfrac32).
+\end{aligned}}
+\]
+It has complex dimension $44$ and no trivial or ordinary-vector
+$(\tfrac12,\tfrac12)$ summand. The self-adjoint off-block operators
+form an $88$-real-dimensional space. In particular the irreducible
+\emph{type} of a spinorial input leaves three possible channels per
+chirality and does not select an action coefficient.
+\end{theorem}
+\begin{proof}
+Take the tensor product of $\mathcal H_g$ with the dual of each
+half-spinor; all $SU(2)$ finite irreducibles are self-dual. The
+Clebsch--Gordan rule
+$V_j\otimes V_{1/2}=V_{j-1/2}\oplus V_{j+1/2}$
+(with the negative term omitted) gives the displayed multiplicities.
+The dimension check is $3(2)+3(2)+2(6)+2(6)+4+4=44$.
+The Hermitian odd block is uniquely specified by one $11\times4$
+complex matrix and its adjoint, thus has $2(44)=88$ real parameters.
+\end{proof}
+
+\begin{theorem}[Central-even input obstruction and its sharpness]
+\label{p2b:thm:v264-central-even-no-go}
+Let $z=(-I,-I)\in\Spin(4)$ and let $V$ be any $\Spin(4)$-space on
+which $z$ acts trivially. Every $\Spin(4)$-equivariant map
+\[
+ F:V\longrightarrow
+ \mathcal O:=\operatorname{Hom}(\mathcal H_s,\mathcal H_g)
+ \oplus\operatorname{Hom}(\mathcal H_g,\mathcal H_s)
+\]
+is zero, even if $F$ is nonlinear. Thus wholly central-even
+coordinate, tensor, curvature, or bosonic-jet inputs cannot alone
+generate a central-odd \emph{one-system} bridge by an equivariant rule.
+The obstruction is sharp: for any actual spinorial datum
+$0\ne\chi\in\mathcal H_s$ and normalized invariant scalar
+$e_0\in\mathcal H_g$, the family
+\[
+ B_\chi=|e_0\rangle\langle\chi|+|\chi\rangle\langle e_0|
+\]
+is nonzero, self-adjoint, central-odd and $\Spin(4)$-covariant.
+This is mathematical availability only, not physical occurrence.
+\end{theorem}
+\begin{proof}
+The central element acts as $+I$ on $\mathcal H_g$ and $-I$ on
+$\mathcal H_s$, hence as $-I$ on $\mathcal O$. Equivariance gives
+$F(v)=F(zv)=z\cdot F(v)=-F(v)$. For $B_\chi$, the two terms are
+adjoint and exchange the blocks; $\Spin(4)$ fixes $e_0$ and sends
+$\chi$ to $\rho(g)\chi$, so the claimed covariance follows.
+\end{proof}
+
+\begin{theorem}[No parallel central-odd section for the canonical Born holonomy]
+\label{p2b:thm:v264-no-parallel-odd}
+On the associated $\mathcal H_1$ representation bundle for the
+\emph{already generated correlated fibre-spin connection} of
+Paper~III-F, restrict to its established full $SU(2)_{\rm diag}$
+holonomy. Then
+\[
+\mathcal H_g\!\downarrow_{SU(2)_{\rm diag}}
+ =2V_0\oplus3V_1,
+\qquad
+\mathcal H_s\!\downarrow_{SU(2)_{\rm diag}}=2V_{1/2},
+\]
+\[
+ \operatorname{Hom}(\mathcal H_s,\mathcal H_g)
+ \!\downarrow_{SU(2)_{\rm diag}}
+ =10V_{1/2}\oplus6V_{3/2}.
+\]
+On any connected domain carrying this holonomy, every parallel odd
+section vanishes. This does not rule out nonparallel sections or
+create a physical $\mathcal H_1$ interaction bundle from the
+fibre connection alone.
+\end{theorem}
+\begin{proof}
+Under the diagonal embedding $(j_L,j_R)\downarrow SU(2)$ the vector
+$(\tfrac12,\tfrac12)$ is $V_0\oplus V_1$ and each bivector triplet
+is $V_1$. Thus $\mathcal H_g=2V_0\oplus3V_1$;
+the chiral doublets are each $V_{1/2}$. Tensoring with two copies
+of $V_{1/2}$ gives $2(2V_{1/2}+3(V_{1/2}\oplus V_{3/2}))
+=10V_{1/2}\oplus6V_{3/2}$. No trivial summand exists.
+A parallel section corresponds to a holonomy-fixed vector, hence is zero.
+\end{proof}
+
+\begin{proposition}[Chiral action oddness is not central-oddness]
+\label{p2b:prop:v264-chiral-central-distinction}
+The rooted nonzero $W_L\leftrightarrow W_R$ Dirac coefficient of
+Paper~V-A is odd for its \emph{internal chiral} grading but even
+under diagonal-center conjugation, since
+$\rho_W(z)=-I_W$ on both halves. Moreover its printed action domain
+is $\operatorname{End}(W\otimes Q\otimes G)$, not the mixed block
+$\operatorname{Hom}(\mathcal H_s,\mathcal H_g)$.
+Therefore its rooted nonzero action incidence by itself does not
+discharge the $\mathsf{FENV}$ central-odd bridge or supply a two-carrier
+exchange Hessian. This is a type distinction, not a contradiction of
+Paper~V-A's nonzero chiral source theorem.
+\end{proposition}
+\begin{proof}
+For every $D_W\in\operatorname{End}(W)$,
+$(-I_W)D_W(-I_W)=D_W$; the internal chiral grading need not commute
+with $D_W$. The declared source and target spaces of the two
+operator owners are distinct, so a nonzero coefficient in the first
+is no incidence certificate for the second.
+\end{proof}
+
+\begin{theorem}[Basis-free even paired-odd exchange]
+\label{p2b:thm:v264-canonical-paired-exchange}
+On the \emph{mathematical} two-copy carrier
+$\mathcal H_1\otimes\mathcal H_1$, let $F(u\otimes v)=v\otimes u$
+be the tensor flip, $P_g,P_s$ the central rank-$11$ and rank-$4$
+projectors, and put
+\[
+ Q_{\times}=P_g\otimes P_s+P_s\otimes P_g,
+ \qquad K=FQ_{\times}.
+\]
+Then
+\[
+ K^*=K,\quad K^2=Q_{\times},\quad
+ \operatorname{rank}K=88,\quad
+ [K,\rho(g)\otimes\rho(g)]=0,
+\]
+\[
+ [K,\Gamma_c\otimes\Gamma_c]=0,
+ \qquad [K,P_g\otimes I]\ne0.
+\]
+Thus a symmetry-invariant \emph{total-even} operator can change an
+individual carrier's $11/4$ population. It is not in the native
+$\mathcal A_{\rm ev}\otimes\mathcal A_{\rm ev}$ test algebra, and
+the mathematical tensor construction alone does not actualize a
+second carrier, its identification, or an interaction/process token.
+The exact conditional population evolution is proved at its
+physical-owner boundary in Paper~IV-A.
+\end{theorem}
+\begin{proof}
+The flip commutes with the symmetric crossed projector $Q_{\times}$;
+both are self-adjoint and $F^2=I$. Therefore $K^*=K$,
+$K^2=Q_{\times}$ and its rank is twice $11\cdot4=44$.
+The diagonal symmetry and total central parity commute with both
+factors. On a vector $u_g\otimes v_s$, $K$ exchanges it with
+$v_s\otimes u_g$, so it does not commute with the first system's
+$P_g\otimes I$. Every native even tensor-product test does commute
+with $P_g\otimes I$, hence $K$ is not one of them.
+\end{proof}
+
+\begin{remark}[Non-converses preserved by this reverse audit]
+\label{p2b:rem:v264-converse-firewall}
+The derived carrier implies $m_p=1$, not conversely: for example
+$\mathcal E_9=(0,0)\oplus(\tfrac12,\tfrac12)\oplus
+(\tfrac12,0)\oplus(0,\tfrac12)$ also has maximal half-level one.
+Likewise $\mathcal H_1$ can be produced abstractly by different
+mathematical tensor-prefix/lower-ideal grammars and hence does not
+identify its \emph{physical} bracket ancestry. The $15/137$ algebra
+and exact quadratic fingerprint are independent reconstruction tests,
+not G0 provenance certificates. Nor does a covariant mathematical
+exchange imply an action-owned $\mathsf{PROC}$, $\mathsf{DYN}$,
+$\mathsf{FENV}$ or $\mathsf{ENV}$ occurrence.
+\end{remark}
+
+
+\section{Exceptional finite-support comparison and nonidentification}
+\label{p2b:sec:v318-petersen-momentum-firewall}
+
+\begin{proposition}[No dimension-based carrier identification]
+\label{p2b:prop:v318-petersen-vs-h1}
+On the conditional embedded $2I$ support of Paper~II-A, the real
+Petersen-edge module $W_P\cong\mathbb R^{15}$ has an $A_5$ action and
+a finite decomposition
+\[
+ W_P\cong\mathbf4\oplus\mathbf5\oplus\mathbf3\oplus\mathbf3'.
+\]
+It is not the independently generated fifteen-complex-dimensional
+round-host momentum carrier
+\[
+ \mathcal H_1\cong\mathbf1\oplus S\oplus\mathfrak c_{\mathbb C}
+ \quad(15=1+4+10)
+\]
+and it is not the distinct fifteen-dimensional Bose--Mesner block
+inside $\mathbb C^{2T}$.  The central binary element $-1\in2I$ acts
+trivially on $W_P$; the signed Hopf-axis and quaternionic-fibre
+lifts must be retained separately if spinorial central parity is to
+be detected.  Neither matching dimension nor restriction of a
+continuous representation to a finite subgroup supplies a canonical
+intertwining map between these three carriers.
+\end{proposition}
+\begin{proof}
+The three spaces are defined on different source objects and with
+different actions.  Paper~I-B gives the Petersen representation, and
+the round-parent generator/gradient/field-bracket construction here
+gives $\mathcal H_1$ independently of any finite subgroup selection.
+The $A_5$ permutation action factors through the quotient by the
+binary center.  Without a separately owned action-intertwiner, no
+identification is licensed by GP2's exact/faithful requirement.
+\end{proof}
+
+\begin{remark}[No changed momentum frontier]
+\label{p2b:rem:v318-petersen-momentum-scope}
+The intrinsic result $\mathcal H_p\cong\mathcal H_1$ and the derived
+label $m_p=1$, the coordinate-completion moduli and all existing
+normalized momentum scales remain as before.  The Petersen packet is
+an extra finite comparison structure on a separately constituted
+exceptional support role, not a new level-one momentum constructor,
+component ceiling or physical Hilbert-space multiplicity.
+\end{remark}
+
+
+\section{Conclusions and export boundary}
+\subsection{Conclusion}
+The inverse mathematical certificates of Section~\ref{p2b:sec:v264-reverse-certificates} sharpen the already generated carrier and its observability boundary without altering the frozen GP2 frontier or discharging the separate action/physical-occurrence obligations.
+
+Paper~II-B completes the constructor-relative momentum constitution required by
+Paper~II-A.  The single momentum parent is
+\(SU(2)\cong S^3(\Rmom)\); its connected isometry completion is \(SO(4)\),
+with derived universal spin lift \(\Spin(4)\).  The finite carrier is not
+selected by a numerical cutoff or by minimizing a word-stage label.
+
+The round host supplies the intrinsic lowest spinor objects
+\(S_+\cong V_{\frac12,0}\) and \(S_-\cong V_{0,\frac12}\), together with
+\(E_0\), \(E_1\cong V_{\frac12,\frac12}\), and the canonical bracket linear image
+\[
+ \begin{aligned}
+  Z_\beta
+  &:=\operatorname{span}_{\mathbb R}\operatorname{im}
+  \bigl(\beta:E_1^{\mathbb R}\times E_1^{\mathbb R}
+      \to\Gamma(TS^3)_{\rm sec,obj}\bigr)\\
+  &=\operatorname{im}\bar\beta=\mathcal K_{\rm Kill},\\
+  (\mathcal K_{\rm Kill})_{\mathbb C}
+  &\cong(1,0)\oplus(0,1).
+ \end{aligned}
+\]
+The literal bilinear set image is only the decomposable locus; the equality is
+for its generated real linear hull.  Paper~II-A finite generated-image
+inheritance applies to this finite-dimensional section-object subspace, and
+its same-role no-splitting lemma places the inherited complexified object copy
+in the momentum carrier because the frozen seed frontier generates no
+autonomous role split.
+Therefore GP2 exactness and host faithfulness fix the carrier type-support
+\[
+ E_0\oplus S_+\oplus S_-\oplus E_1
+ \oplus(\mathcal K_{\rm Kill})_{\mathbb C}
+ =\mathcal H_1.
+\]
+Equivalently, the six irreducible summands have dimensions
+\(1,2,2,4,3,3\), so
+\[
+ \mathcal H_1\cong
+ V_{0,0}\oplus V_{\frac12,0}\oplus V_{0,\frac12}
+ \oplus V_{\frac12,\frac12}\oplus V_{1,0}\oplus V_{0,1},
+ \qquad
+ \dim_{\mathbb C}\mathcal H_1=15.
+\]
+This records the sectorwise dimension check inside the conclusion; it is not
+a second theorem independent of the host derivation.
+The canonical smooth-model theorem of Paper~I-B supplies the retained
+presentation
+\[
+ \mathcal L_R
+ =\operatorname{span}\{V_R^{-1/2}\}
+ \oplus\operatorname{span}\!\left\{
+   \frac{2}{\sqrt{3V_R}}dx_a\right\}
+ \oplus\operatorname{span}\!\left\{
+   \sqrt{\frac2{V_R}}dx_a\wedge dx_b\right\}
+ \oplus S_+\oplus S_-,
+\]
+The smooth-model theorem identifies the explicit one-copy GP2 type-support
+with that upstream model by \(J_R\), without invoking universal GP3
+rigidity.  It is a natural same-parent presentation of the generated
+constituents and needs no second occurrence witness for those constituents.  It does not select a
+coordinate completion, ambient lift, or kinetic operator.
+These five generated sectors co-realize as constituents of the same occurring
+momentum composite; they are not competing branches.  No-omission excludes the
+former \(\mathcal E_9\)-type countermodels, while constructor-relative
+no-insertion prevents arbitrary tensor products or coordinate polynomial
+products from generating higher carrier sectors.  GP3 removes unmarked implementation/multiplicity redundancy where the
+whole-structured comparison certificate is proved.  Only under the additional
+hypotheses of Theorem~\ref{p2b:thm:momentum-carrier-rigidity} does it follow
+that
+\[
+ \forall\mathfrak M\in\mathcal M_p^{\rm GP3},\qquad
+ \mathcal H_{\mathfrak M}\cong\mathcal H_1,
+\]
+without any assertion that \(|\mathcal M_p^{\rm GP3}|=1\).
+
+Independently of the GP3 comparison, the representation-theoretic word
+length is read off from the GP2 type-support.  Since the terminal sectors of \(\mathcal H_1\) have
+\(\ell=2\), the structural momentum-role label is
+\[
+ \boxed{m_p=1}.
+\]
+Thus the strongest verified type-support chronology is
+\[
+ \boxed{\mathcal G^{\rm car}_{\Sigma_p}\cong\mathcal H_1\Longrightarrow m_p=1,}
+\]
+not the reverse.  Equivalently, the GP2-generated momentum support obeys
+\[
+ \boxed{
+ \mathcal G^{\rm car}_{\Sigma_p}\cong\mathcal H_1
+ \quad\text{independently of}\quad
+ \mathsf P_{\rm sli},\ \mathrm{TWR},\ \mathrm{SPEX},\ \mathrm{FIT},\
+ \mathsf P_{\rm lvl},\ P_{\rm ceil},\ \mathsf C_{\rm PI},}
+\]
+where \(\mathsf C_{\rm PI}\) is relevant only to later completion-specific
+coordinate statements.
+
+The generic family \(\mathcal H_m\), optional lower-ideal and component-ceiling
+grammars, shell filtration, invariant-state classification, and Peter--Weyl
+parent-symbol recovery remain available mathematics and later-role
+infrastructure.  They no longer explain the initial momentum seed.
+The coordinate-completion family and the point-reference role remain
+logically separate: neither a completion point nor a point-reference readout
+token follows from \(\mathcal H_1\) or the integer equation \(m_p=1\).  Raw
+ambient coordinate actions remain parameterized by
+\(\mathfrak M_{\rm coord}(\mathcal H_1)/\!\sim\cong\mathbb R_{\ge0}^3\),
+although current Paper~II-C later proves the normalized protected even
+\(\Cl(0,3)\) algebra completion-independent on the nondegenerate protected
+stratum.  An occurring point-resolution readout generates only
+\(\mathsf{Supp}_{\varepsilon}(X)\); the exceptional \([2T]\) support
+co-realizes only with the additional II-A core constructor/domain bridge or a
+direct core-constructor occurrence.  Likewise the carrier label fixes no
+numerical \(\Rmom\), no equality \(\rho_{\rm prot}=\Rmom\), no physical
+kinetic Hamiltonian, and no measurement or calibration token.
+
+G0 supplies the common semantic boundary.  Its original transfer-operation
+occurrence co-realizes the parent and the generated seed constituent family,
+without a second G0 momentum witness.  Universality of the multiplicity-free
+physical endpoint still requires the GP3 structured comparison certificate.  A later named test, process, trajectory,
+bridge, readout, or calibration that is not already a generated constituent
+requires its own stage-safe, result-independent token witness.  Such a token
+does not reopen the carrier theorem.
+
+
+\printbibliography
+\end{document}

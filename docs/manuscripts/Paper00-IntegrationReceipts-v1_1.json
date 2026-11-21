@@ -1,0 +1,43 @@
+{
+  "parent": "Paper00-PapersMinimal-v3_076(1).zip",
+  "parent_sha256": "019ed8e92377ec101f9e433d9582b2781b22dbb96cfa128593b5ab7850de6d71",
+  "proposal": "Paper00-UnconditionalFrameworkUpdates-v1_1.zip",
+  "changed": [
+    {
+      "paper": "Paper1B",
+      "old": "Paper1B-ExceptionalGeometry-v1_26.tex",
+      "new": "Paper1B-ExceptionalGeometry-v1_27.tex",
+      "sha_before": "a50d54d5a91f0b68c2737330f3f8c9c7235cd81feac7a56f81179a296fb041ec",
+      "sha_after": "c908291ac05e0aab8b3c7de8a298aa362011766e9b63baed7a32995be5502183"
+    },
+    {
+      "paper": "Paper2C",
+      "old": "Paper2C-ReciprocalLocalization-v2_176.tex",
+      "new": "Paper2C-ReciprocalLocalization-v2_177.tex",
+      "sha_before": "38947d84cf33f0bc12a4b3a8c80bbc167893c7e9c4c27e80bdc430a09bf6f5bb",
+      "sha_after": "bf9b9dec2df27d1964d6b031b2ebe4c13af306c695bc2edead7b2f416fb9d843"
+    },
+    {
+      "paper": "Paper3F",
+      "old": "Paper3F-CompleteDynamics-v1_280.tex",
+      "new": "Paper3F-CompleteDynamics-v1_281.tex",
+      "sha_before": "1994c1b2b4230eb592e9393101cba5a1fbc4ade4d15096473b5dbc5cd4daa167",
+      "sha_after": "33e57bc94a18c8b9d0104b4592b02308bb27b08ed6c8b4834a4e5f353f1ed14c"
+    },
+    {
+      "paper": "Paper7A",
+      "old": "Paper7A-QCDKernel-v1_184.tex",
+      "new": "Paper7A-QCDKernel-v1_185.tex",
+      "sha_before": "829eca87903910b25b44a1bd981cc534ec5395a86caaf9efe4ede4e10618ee4e",
+      "sha_after": "c13dcca9574c140d6c4441f25e5ce535380db27e87833d16076e0dfd27e8a5fb"
+    },
+    {
+      "paper": "Paper7B",
+      "old": "Paper7B-QCDReadouts-v1_168.tex",
+      "new": "Paper7B-QCDReadouts-v1_169.tex",
+      "sha_before": "9aaec21e4f572f32390f1493046ee424b9b2ba9771b21a4620681eda602d4cf0",
+      "sha_after": "f97fb939c854b57540321d4dbf1ece0ef96c6444e157308ccb1630c4c8908a99"
+    }
+  ],
+  "verification": "source-level; PDF build/E3-E4 follow"
+}

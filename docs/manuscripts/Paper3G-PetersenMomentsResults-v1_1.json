@@ -1,0 +1,10 @@
+{
+  "scope": "axis moments only; not two-core action/operator replay",
+  "num_axes": 10,
+  "axis_norms": "10/10 exactly one",
+  "second_moment": "10 r^2/3",
+  "fourth_moment": "2 r^4",
+  "sixth_harmonic_laplacian": "0",
+  "sixth_harmonic_at_all_axes": "160/1701",
+  "pass": true
+}

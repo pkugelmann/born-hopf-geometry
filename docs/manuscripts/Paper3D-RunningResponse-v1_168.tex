@@ -1,0 +1,3634 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usetikzlibrary{arrows,positioning,calc,decorations.pathmorphing}
+
+\input{Macros-v2_198.tex}
+\hypersetup{hidelinks}
+
+\usepackage{xr-hyper}
+
+\title{\textbf{Born--Hopf Geometry III-D: Rank Valuation, Running Response, and Laurent Jets}\\[0.5em]
+\large Hopf contact residues, positive mathematical providers, and incidence limits}
+
+\author{Peter Kugelmann\thanks{\texttt{pkugelmann@proton.me}}}
+\date{Version 1.168 --- 20 November 2026 \\ Framework v3.072}
+\setlength{\emergencystretch}{3em}
+\begin{document}
+\maketitle
+\begin{abstract}
+Paper III-D establishes the Hopf contact-residue rank valuation,
+reciprocal running response and fixed-depth Laurent-jet relations. Positive
+measure/Schur providers are sharply separated from physical source incidence
+and from a complete metric variation. Longer auxiliary calculations and
+negative countermodels are in Paper~III-G.
+\end{abstract}
+\tableofcontents
+\clearpage
+
+\section{Inputs and protected contact valuation}
+\label{paper3d:sec:organized-scope}
+\subsection{Introduction and Paper-III series allocation}
+\label{p3d:sec:series-allocation}
+Paper~III-D imports the protected filtration and matched contact construction
+of Paper~III-C and the loop-derived sectorwise spectral form class \(\Dcl\) of
+Paper~III-B.  It proves native rank and quotient identities inside the
+restricted branch \((\mathrm{RED})\), records ultraviolet and infrared
+calibrations separately, and derives the exact two-root response together with
+its Riccati/secant and neutral entropy consequences.  Paper~III-E owns any
+later signed metric-action placement and distinguishes the auxiliary
+secant-matched state from the co-realized hierarchy-active state.
+
+\subparagraph{Imported fixed momentum seed and reciprocal role.}
+The theorem-level generated momentum-role seed is the one-copy
+six-type carrier \(\mathcal H_1\) imported from Paper~II-B.
+Its structural role is co-realized with the upstream transfer-operation
+root; this paper needs no additional generated-seed witness.  The
+stronger identification of every complete physical momentum endpoint
+with \(\mathcal H_1\) is conditional on the GP3 role-faithful
+whole-candidate comparison and is not used in the reduced-response proof.
+Paper~III-D does not consume \(\mathsf P_{\rm sli}\), momentum-side
+TWR/SPEX/FIT, a component ceiling, or a fixed-action selector.  Alternative
+momentum-selector routes are external to this reduced-response proof and are treated in
+the Paper~II-B constitutional momentum theorem.  Physical reciprocal-role statements
+consume the premise-minimal Paper-II-C intrinsic-evaluation/GP2 closure, which
+supplies the Born/GP2-generated reciprocal role, universal relation-free product, and
+Born exchange involution.  Paper~III-A's metric-curry construction is an
+optional stronger G0 full-profile test realization.  The upstream certification tags
+\((\mathrm{BR}_{\rm ind})\) and \((\mathrm{IND}_{xp})\) therefore record
+upstream certification status rather than independent III-D hypotheses.
+Neither this reciprocal constitution nor any III-D response construction
+reopens the fixed momentum-seed theorem or supplies the separate local
+position--momentum comparison or dimensionful reciprocal calibration.
+
+\subparagraph{Imported G0 actualization boundary.}
+All physical interfaces below specialize Paper~II-A's stage-safe G0.  Each
+asserted occurrence requires a contingent token of a geometrically licensed,
+claim-relative invariant distinction with result-independent provenance; its
+tag alone supplies no witness, and no instance reopens frozen upstream
+geometry.  A new role or standard enters only through a declared downstream
+frontier.
+Any later ``physical momentum'' language uses that co-realized role.  A
+particular momentum process or readout remains a token-level occurrence.
+An alternative or physically actualized support profile
+\((\mathrm{ACT}_{\rm Cl})\), the conditioned response readout
+\((\mathrm{UNIT})\), and a
+realized reduced leaf \((\mathrm{RED})\) are G0 process, occurrence, or
+readout certificates.  The tag \((\mathrm{NEUT}_7)\) denotes the generated
+visibility family; when it is a constituent of an occurring response,
+co-realization supplies its occurrence.  The endpoint roots
+\((\mathrm{UV})+(\mathrm{IR})\) and every later dimensionful hierarchy placement are G0
+calibrations of already constituted invariants.  The smooth completion retains the separate analytic realization family
+\[
+ \mathfrak A_{\rm REG}
+ =\{\mathrm{REG}_{\sigma}:\sigma_{\rm fin}\in\mathbb R\};
+\]
+G0 neither selects \(\sigma_{\rm fin}\) nor derives the regularity assumptions
+of a scheme member, and it does not select the occurring spectral process
+represented by the loop-derived class \(\Dcl\).  The source member
+\(\mathrm{REG}_0\) is a declared prescription, not a GP-selected endpoint.
+
+\subparagraph{Protected Clifford and infrared boundary.}
+The normalized physical protected real Clifford block requires only the
+Paper~II-C nondegenerate stratum
+\[
+ (\mathrm{ND}_{\rm sp}):\qquad \varrho_{\rm sp}>0,
+\]
+not a particular point of the unresolved coordinate-completion moduli.  On a
+G0-occurring Hurwitz-even Hopf/contact branch, Paper~III-C constructs the
+equivariant orbit family of finite active-depth operators and proves that the
+common terminal spectral projector is the unique scalar Haar projector.
+Denote this orbit-level output by
+\[
+ \mathsf C_{\rm IR}^{\rm der}
+ :=\{(\mathrm{ND}_{\rm sp}),\ \text{occurring active orbit family},\
+       \ P_{\rm term}=P_0\}.
+\]
+The displayed braces abbreviate derived provenance; they are not a new
+assumption package.  Finite functional calculus, equivariant descent, and GP2
+co-realization pass the active composite's G0 witness to the orbit-invariant
+terminal projector without selecting a diagonal.  Thus the native
+protected endpoint
+\[
+ A_{\rm prot}\cong\Cl(0,3),
+ \qquad
+ \Cl(0,3)=\mathbb R\mathbf1\oplus W,
+ \qquad
+ \dim_{\mathbb R}W=7,
+\]
+is understood on \(\mathsf C_{\rm IR}^{\rm der}\).  The tag
+\((\mathrm{IR}_{O(3)})\) merely certifies this derived endpoint.  Parity
+evenness and full \(O(3)\)-equivariance are conclusions.  The native active
+support has depths \(q=0,4,5,7\), so its final step is the rank jump
+\(3\to1\) from \(q=5\) to \(q=7\); Paper~III-C,
+Theorem~\ref{p3c:thm:active-depth-six-obstruction}, proves that no nested
+rank-two carrier occurs.  Separately, an \(SO(3)\)-only average would retain
+the pseudoscalar and have a rank-two endpoint at \(q=6\).  That is a
+datum-enlarged counterfactual, not the missing native active stage.
+The real rank-one scalar-corner tag \((\mathrm{CORN})\) records Paper~III-B's
+derived ambient-constituent theorem and is used only when that particular
+\(1/8\) coefficient is invoked; it is not needed for the normalized regular
+support trace used in the \((\mathrm{UNIT})\) response below.
+
+\subparagraph{Hierarchy and response interfaces.}
+Write \((\mathrm{HT})\) only for certification that the relevant physical
+readout has already been placed, by a proved generated ancestry morphism, in
+Paper~III-C's determinant-dual owner.  It adds no normalization or
+scale-by-scale occurrence premise, but it neither proves nor replaces that
+ancestry morphism.  The neutral dual character itself requires no physical
+owner.  The topological rank valuation does not require any member of the smooth
+scheme family.  When the smooth determinant-shell correction is included,
+retain the complete current Paper-III-C realization family
+\[
+ \boxed{\mathfrak A_{\rm REG}
+ =\{\mathrm{REG}_{\sigma}:\sigma_{\rm fin}\in\mathbb R\}},
+ \qquad
+ \delta_\sigma:=\frac1{6\sqrt2}+\sigma_{\rm fin}.
+\]
+For a frozen member write
+\[
+ \alpha_\sigma:=\alpha_{\rm hier}(\sigma_{\rm fin}),
+ \qquad
+ H_{56}^{(\sigma)}:=\alpha_\sigma^{\,7}.
+\]
+The source prescription is the declared member
+\((\mathrm{REG}_0):\sigma_{\rm fin}=0\), with
+\(\delta_0=1/(6\sqrt2)\),
+\(\alpha_0=\alpha_{\rm hier}(0)\), and
+\(H_{56}^{(0)}=\alpha_0^7\).  No bare \(\alpha_{\rm hier}\) denotes a
+scheme-independent number, and no generated discriminator selects
+\(\mathrm{REG}_0\) from \(\mathfrak A_{\rm REG}\).
+Write
+\((\mathrm{FLAG})\) for an explicitly supplied ordered rank-one refinement of
+\(W\).  The split \(1\oplus7\) itself is derived on
+\(\mathsf C_{\rm IR}^{\rm der}\); it is not produced by an
+\(O(7)\) symmetry.  Parity/full-\(O(3)\) status is already certified by the
+rank-one terminal projector and is not an additional convention.
+Paper~III-C now derives the canonical decreasing, left-continuous upper
+spectral family
+\[
+ \mathsf P_u(s)=\mathbf1_{[s,7]}(\mathcal Q_{\rm act}(u))
+\]
+and its pullback along the smooth trace-defect coordinate.  Write
+\((\mathrm{ACT}_{\rm Cl})\) only for an alternative protected-projector law or
+for adoption of such a law as an actual external-scale process.  It is
+unnecessary for the canonical dimensionless filtration or when a theorem
+conditions on one fixed support.  Orbit-invariant generated supports inherit their
+occurrence, whereas a representative-dependent member inherits occurrence
+only together with its mark; an arbitrary additional support remains a G0
+boundary datum.  Write \((\mathrm{UNIT})\) for the adopted
+readout that uses the canonical conditioned trace state.  Write
+\((\mathrm{NEUT}_7)\) for the already-proved Paper~III-C common-rate
+\(O(7)\)-neutral semigroup and its generated visibility/entropy family on the
+constituted complement \(W\); it does not reconstruct or constitute the
+\(1\oplus7\) split.  Its occurrence follows with any occurring composite that
+contains it in a frozen generated-constituent presentation.  The reduced response further uses
+\((\mathrm{RED})\) and its two abstract endpoint calibrations
+\((\mathrm{UV})+(\mathrm{IR})\).  Native III-D does not identify those roots
+with an absolute dimensionful hierarchy reference.  Once a later occurring
+response contains a generated ancestry morphism from its upper-root owner to
+the weight-one determinant-dual owner, the lower root and every intermediate
+ratio are generated, not separately matched.
+The residual absolute placement is recorded in
+Appendix~\ref{p3d:app:hierarchy-placement} of Paper~III-G.  No MON
+occurrence tag is needed: tensor-product independence, when used, remains a
+separate composition-domain statement and is not required for the one-shell
+active state.
+
+\subparagraph{Derived and conditional interface classification.}
+For the present paper the structural outputs
+\(\mathcal H_1\) (generated one-copy seed), the protected active orbit and its invariant
+supports, the rank valuation, the positive determinant character, its neutral
+dual depth character, the
+Born role scalarizer, and the \((\mathrm{NEUT}_7)\) visibility family are
+derived or generated/co-realized.  G0 occurrence data include an arbitrary
+additional fixed support, \((\mathrm{UNIT})\), the realized
+\((\mathrm{RED})\) response class, and its endpoint tokens.  Calibrations
+include \(C,U\) and any absolute hierarchy reference; a physical hierarchy
+placement additionally contains the typed owner-ancestry port.  The unanchored native family is \(\mathfrak A_{\rm REG}\); the occurring Hurwitz branch instead imports the derived \(\mathrm{REG}_0\) of III-C; the stronger
+\((\mathrm{FLAG})\) interface and any noncanonical or physically actualized
+\((\mathrm{ACT}_{\rm Cl})\) profile remain conditional.  If owner inheritance and the strictly ordered response roots
+are jointly imposed, Proposition~\ref{p3d:prop:ordered-owner-joint-locus}
+derives \(\mathrm{REG}_\sigma\in\mathfrak A_{\rm REG}^{+}\); membership in
+that positive-character subfamily is not a second selector on that branch.
+A later independently constituted discriminator may discharge
+one of these families only at that later stage; it does not retroactively make
+the earlier family unique.
+
+\subparagraph{Terminology.}
+A \emph{primitive rank event} in this paper means a real rank-one quotient of
+the protected complement.  It is a local dynamical term and is unrelated to
+the Paper-II notion of a primitive constructor atom.
+
+
+\paragraph{Technical proof ownership and constituted scope.}
+Every extended auxiliary derivation, explicit matrix verification,
+and optional comparison moved during this reorganization is
+preserved in Paper~III-G, Section~\ref{p3g:sec:laurent}.
+The generated momentum seed \(\mathcal H_1\) is inherited from
+Paper~II-B, without later scalar, action, regulator, or source data
+reselecting it.  Universal full-endpoint multiplicity-one remains a
+separate GP3 comparison obligation.
+
+\section{Hopf contact residues and rank-multiplicative descent}
+\label{paper3d:sec:organized-contact}
+\subsection{Ordering and Hopf contact-residue valuation}
+\label{p3:sec:reeb-universality}
+
+Shell-dependent damping data may determine sharp projector thresholds; they
+are separate from the integrated rank valuation derived below.  The
+normalized Hopf contact residue supplies the additive rank-proportional
+weight, exponentiation supplies its unique positive character, and the
+generated common-rate depth supplies its ordered dual scale action.
+
+\begin{definition}[Effective damping rate as ordering parameter]
+\label{p3:def:effective-damping-ordering}
+A shell flow may assign distinct effective rates to distinct active supports.
+These rates determine when a support crosses its threshold, but not the
+integrated geometric weight assigned to the completed removal.
+\end{definition}
+
+\begin{definition}[Reeb phase and Hopf contact residue]
+\label{p3:def:reeb-phase-contact-residue-distance}
+For the normalized Hopf connection,
+\[
+S_{\rm Reeb}^{(0)}=\oint_{S^1}\eta_0=2\pi,
+\]
+whereas the primitive hierarchy residue is
+\[
+\Vlogcap
+=\int_{S^3}\eta_0\wedge d\eta_0
+=\left(\oint_{S^1}\eta_0\right)\left(\int_{S^2}\omega\right)
+=(2\pi)^2=4\pi^2.
+\]
+The metric-scaled orbit action is \(2\pi\Rmom\), but the hierarchy valuation
+uses the dimensionless principal connection and its unweighted contact
+residue.
+\end{definition}
+
+\subsubsection{The Hopf Structure Provides an Intrinsic Rank Valuation}
+\label{p3:sec:hopf-rank-valuation}
+
+The previous endpoint result gives the rank drop \(8\to 1\).  The matched
+contact residue makes the integrated weight additive in the unresolved
+protected rank, with the rank-one atom normalized by the Hopf contact residue.
+Paper~III-C's determinant-character theorem and generated dual-depth theorem
+give its multiplicative character and exact neutral orientation trichotomy.
+The point is
+deliberately not that the seven non-scalar directions
+are seven distinguished equal channels.  After the scalar coarse-graining of
+Proposition~\ref{p3:prop:reeb-selection}, such channel labels are not present in the declared
+reduced dynamics.  The physically visible datum is the rank of the quotient removed at a threshold.
+
+\begin{definition}[Unresolved protected rank quotient]
+\label{p3:def:protected-rank-quotient}
+On \(\mathsf C_{\rm IR}^{\rm der}\), let
+\(W=\ker\mathbb E_{\mathrm{IR}}\) be the seven-dimensional non-scalar
+complement of Theorem~\ref{p3:thm:hopf-decomposition}.  A completed
+shell-removal event is represented by a
+finite-dimensional quotient
+\[
+Q=F_{\mathrm{before}}/F_{\mathrm{after}}
+\]
+of the active protected non-scalar space.  Its \emph{protected rank} is
+\[
+\rank_{\mathrm{prot}}(Q):=\dim_{\RR}Q.
+\]
+A primitive event is an event with \(\rank_{\mathrm{prot}}(Q)=1\).
+\end{definition}
+
+\begin{remark}[Abstract orthogonal rank diagnostics deferred]
+A general full-orthogonal rank-only valuation theorem is mathematically
+available, but the physical protected complement retains generated
+Clifford/\(O(3)\) structure and the positive proof does not need that stronger
+abstract symmetry assumption.  The diagnostic lemmas are deferred to
+Appendix~\ref{p3d:app:supplementary-valuations} of Paper~III-G.
+\end{remark}
+
+\begin{lemma}[Matched tensor residue for protected rank atoms]
+\label{p3:lem:rank-atom-hopf-trace-localization}
+On \(\mathsf C_{\rm IR}^{\rm der}\), let
+\(Q\) be any finite real protected quotient, and use the matched tensor
+extension exported by Paper~III-C,
+\[
+ A_Q:=A_{\rm H}\otimes I_Q,
+ \qquad A_{\rm H}=8\Delta_{b,0}^{-2}.
+\]
+Then
+\[
+ \boxed{\operatorname{Res}_{H}(A_Q)
+ =\dim_{\mathbb R}(Q)\,\Vlogcap},
+ \qquad \Vlogcap=4\pi^2.
+\]
+This is a tensor-factorized smooth contact statement, not an identification of
+a Clifford line with a Hopf fibre and not an application of the finite
+spectral-action class \(\Dcl\).
+\end{lemma}
+
+\begin{proof}
+Paper~III-C supplies the matched operator and its factorized residue.  The
+Heisenberg residue acts on the geometric factor and the finite trace on the
+multiplicity factor, hence
+\[
+ \operatorname{Res}_{H}(A_Q)
+ =\operatorname{Res}_{H}(A_{\rm H})\Tr_Q(I_Q)
+ =\Vlogcap\dim_{\mathbb R}Q.
+\]
+The normalization \(\operatorname{Res}_{H}(A_{\rm H})=4\pi^2\) is the
+imported Hopf contact-residue theorem.  No finite-Hilbert \(\Dcl\)
+classification is used.
+\end{proof}
+
+\begin{lemma}[Principal unit-Chern Hopf residue and scheme-labelled smooth completion]
+\label{p3:lem:primitive-hopf-cell-normalization}
+The proven topological logarithmic weight of one primitive protected rank atom is
+\[
+L_{1,{\rm top}}=\Vlogcap=(2\pi)^2=4\pi^2.
+\]
+For any frozen member \(\mathrm{REG}_{\sigma}\in\mathfrak A_{\rm REG}\), the
+scheme-labelled completed logarithmic weight is
+\[
+ L_{1,\sigma}=\Vlogcap+\delta_\sigma,
+ \qquad
+ \delta_\sigma=\frac1{6\sqrt2}+\sigma_{\rm fin}.
+\]
+The source determinant-shell prescription is the member
+\(\mathrm{REG}_0\), for which the local calculation and
+Theorem~\ref{p3:thm:D1-primitive-smooth-uniqueness} give
+\[
+ \delta_0=\delta_{\rm loc}=\frac1{6\sqrt2}.
+\]
+No statement here selects \(\sigma_{\rm fin}=0\) from the fixed-shell scheme
+family.
+\end{lemma}
+
+\begin{proof}
+A primitive protected rank atom is, by
+Definition~\ref{p3:def:protected-rank-quotient}, a real rank-one nonzero
+quotient of the already constituted protected complement on the fixed momentum
+seed of Theorem~\ref{p3:thm:factor-local-momentum-shape}.
+It is not itself a Hopf cell.  By Lemma~\ref{p3:lem:rank-atom-hopf-trace-localization},
+its topological logarithmic threshold contribution is one trace copy of the
+principal unit-Chern Hopf contact residue,
+\[
+\mathcal L_{\rm top}(Q)=\Vlogcap.
+\]
+By Theorem~\ref{p3:thm:Vlog}, on the provenance-fixed principal unit-Chern
+Hopf contact branch,
+\[
+\Vlogcap=\int_{S^3}\eta_0\wedge d\eta_0=(2\pi)^2=4\pi^2.
+\]
+This proves the primitive topological step.  Paper~III-C separately retains
+the finite-part coordinate \(\sigma_{\rm fin}\), so a frozen smooth member
+adds \(\delta_\sigma=1/(6\sqrt2)+\sigma_{\rm fin}\).  The local calculation
+in Theorem~\ref{p3:thm:delta_rigorous} and
+Theorem~\ref{p3:thm:D1-primitive-smooth-uniqueness} identify the source member
+\(\mathrm{REG}_0\) with \(\delta_0=1/(6\sqrt2)\); they do not collapse the
+larger fixed-shell scheme family.
+\end{proof}
+
+
+\begin{theorem}[Matched protected-rank residue and hierarchy readout]
+\label{p3:thm:reeb-universal}
+On \(\mathsf C_{\rm IR}^{\rm der}\), let
+\(Q\) be a completed protected quotient with matched tensor operator
+\(A_Q=A_{\rm H}\otimes I_Q\).  The contact logarithmic weight is
+\[
+ \boxed{\mathcal L_{\rm top}(Q)
+ =\dim_{\mathbb R}(Q)\,\Vlogcap},
+ \qquad \Vlogcap=4\pi^2,
+\]
+independently of the smooth scheme family.  For a frozen
+\(\mathrm{REG}_{\sigma}\in\mathfrak A_{\rm REG}\), the normalized
+scheme-labelled smooth completion is
+\[
+ \boxed{\mathcal L_{\sigma}(Q)
+ =\dim_{\mathbb R}(Q)
+ \left(\Vlogcap+\frac1{6\sqrt2}+\sigma_{\rm fin}\right)}.
+\]
+The source member \(\mathrm{REG}_0\) reduces this to
+\(\mathcal L_0(Q)=\dim_{\mathbb R}(Q)(\Vlogcap+1/(6\sqrt2))\).
+Exponentiation gives the unique positive determinant character for each frozen
+scheme member, and algebraic duality gives the generated neutral ratio
+\[
+ \chi_{\sigma,w}(q)=\alpha_\sigma^{-wq}.
+\]
+For every \(w>0\), this ratio is strictly decreasing, constant, or strictly
+increasing according as
+\(L_1^{(\sigma)}=4\pi^2+1/(6\sqrt2)+\sigma_{\rm fin}\) is positive, zero,
+or negative.  Hence decrease holds precisely on
+\(\mathfrak A_{\rm REG}^{+}\), equivalently
+\(\sigma_{\rm fin}>-4\pi^2-1/(6\sqrt2)\).  A physical scale law
+\(X_w/X_0=\chi_{\sigma,w}\) additionally requires the owner-ancestry
+hypothesis of Paper~III-C's owner-typed corollary.  For
+\(\dim_{\mathbb R}W=7\),
+\[
+ H_{56}^{\rm top}=\alpha_{\rm top}^{7},
+ \qquad
+ H_{56}^{(\sigma)}=\alpha_\sigma^{7}
+ \quad\text{for the frozen }\mathrm{REG}_\sigma.
+\]
+No dimensionful radius or curvature scale is assigned here.
+\end{theorem}
+
+\begin{proof}
+Lemma~\ref{p3:lem:rank-atom-hopf-trace-localization} gives the matched
+rank-proportional contact residue.  Paper~III-C's scheme-labelled smooth completion is separately rank-additive
+for each frozen \(\mathrm{REG}_\sigma\).  Paper~III-C's positive-character
+theorem exponentiates the additive logarithmic weight.  Its generated
+dual-depth theorem constructs the neutral dual ratio and proves the sign
+trichotomy by differentiating its logarithm.  The physical formula is then
+exactly the conclusion of Paper~III-C's owner-typed inheritance corollary when
+its ancestry premise is met.  The certification \((\mathrm{HT})\) label adds neither
+that premise nor a normalization.
+The endpoint exponent is seven because \(\dim_{\mathbb R}W=7\).
+\end{proof}
+
+\begin{definition}[Fixed protected support and conditioned trace state]
+\label{p3:def:active-support-response}
+On \(\mathsf C_{\rm IR}^{\rm der}\), let
+\(A_{\rm prot}\cong\Cl(0,3)\) be the protected real regular module, and let
+\[
+ P\in\End_{\mathbb R}(A_{\rm prot})
+\]
+be one fixed nonzero orthogonal projection of rank
+\(k\in\{1,\ldots,8\}\).  If \(P\) is one of the orbit-invariant generated
+supports \(\Pi_8,\Pi_4,\Pi_1=P_0\), or the generated complement
+\(P_W=1-P_0\), its occurrence is inherited from the III-C active composite by
+finite functional calculus and generated-constituent co-realization.  A
+rank-three member \(\Pi_3(u)\) is generated only in the equivariant orbit
+family and can be used as this particular \(P\) only after the diagonal
+\(u\) is marked.  Any
+other fixed support used here is an explicit G0 boundary/support occurrence.
+No general physical scale-dependent provenance of \(P\) is asserted.
+Paper~III-C's canonical profile
+\[
+ P_{\rm spec}(\tau;u)
+ =\mathbf1_{[q_{\rm sp}(\tau),7]}(\mathcal Q_{\rm act}(u))
+\]
+is nevertheless a generated dimensionless spectral filtration.  Its complete
+orbit family requires no \((\mathrm{ACT}_{\rm Cl})\), while a particular
+rank-three member still requires \(u\), and an alternative or physically
+actualized external-scale family still requires \((\mathrm{ACT}_{\rm Cl})\).
+
+Use the normalized regular trace
+\[
+ \tau_{\rm reg}(P):=\frac18\Tr_{A_{\rm prot}}(P).
+\]
+The conditioned regular trace state is
+\[
+ \omega_P(A):=\frac{\Tr_{A_{\rm prot}}(PAP)}{\Tr_{A_{\rm prot}}(P)},
+\]
+with density \(h_P\) relative to \(\tau_{\rm reg}\).  The optional readout
+\((\mathrm{UNIT})\) adopts this canonical conditioned state as the reduced
+scalar response on the fixed support.  Its support projector and unit-trace
+normalization make it an \(\Rbdry\) readout, not the extensive unmarked
+\(\Dcl\) loop from which the underlying trace operation is imported.
+\end{definition}
+
+\begin{lemma}[Unique conditioned density; basis neutrality is automatic]
+\label{p3:lem:unit-trace-forces-reciprocal-active-fraction}
+For every fixed support projection \(P\) of protected rank \(k\), the conditioned regular trace
+state has the unique density relative to the faithful normalized regular trace,
+\[
+h_P=\frac{P}{\tau_{\rm reg}(P)}=\frac{8}{k}P,
+\qquad
+\theta(P)=\frac8k.
+\]
+This density is automatically invariant under every orthogonal change of basis
+that preserves the support.  No basis-neutrality premise is needed for its
+existence or uniqueness.
+\end{lemma}
+
+\begin{proof}
+If \(P\) has rank \(k\), then
+\[
+ \tau_{\rm reg}(P)=\frac18\Tr_{A_{\rm prot}}(P)=\frac{k}{8}.
+\]
+Set
+\[
+ h_0:=\frac8kP.
+\]
+For every \(A\in\End_{\mathbb R}(A_{\rm prot})\), cyclicity and \(P^2=P\)
+give
+\[
+ \tau_{\rm reg}(h_0A)
+ =\frac1k\Tr(PA)
+ =\frac1k\Tr(PAP)
+ =\omega_P(A).
+\]
+Thus \(h_0\) represents the conditioned state.  If another density \(h\)
+represents the same state, faithful trace duality gives
+\[
+ \tau_{\rm reg}\bigl((h-h_0)A\bigr)=0
+ \qquad\text{for every }A.
+\]
+Taking \(A=(h-h_0)^*\) yields
+\[
+ \Tr\bigl((h-h_0)(h-h_0)^*\bigr)=0,
+\]
+so \(h=h_0\).  This proves uniqueness without a commutant assumption.
+
+Finally, if \(O\) is orthogonal and preserves the support, then
+\(OPO^{-1}=P\), hence
+\[
+ Oh_PO^{-1}=\frac8kOPO^{-1}=h_P.
+\]
+Basis neutrality is therefore a consequence of the unique density rather than
+an additional premise.  The uniqueness asserted here is not linearity of the
+conditioning map \(P\mapsto h_P\).
+\end{proof}
+
+\begin{corollary}[Canonical rank coefficient, support-indexed state, and \((\mathrm{UNIT})\) specialization]
+\label{p3:thm:eight-mode-harmonic-response}
+Assume \(\mathsf C_{\rm IR}^{\rm der}\) and let \(P\) be a fixed
+rank-\(k\) support.  Before any response-role assumption is made, the unique
+conditioned trace-state density has scalar support coefficient
+\begin{equation}
+\label{p3:eq:eight-mode-harmonic-response}
+ \boxed{\theta_k=\frac8k},
+ \qquad k=1,\ldots,8.
+\end{equation}
+If \((\mathrm{UNIT})\) is additionally supplied, this already derived density
+is adopted as the reduced scalar response on that support.  Thus
+\((\mathrm{UNIT})\) supplies the role identification, not the coefficient or
+its normalization.  The coefficient \(\theta_k=8/k\) is rank-indexed, whereas the density
+\(h_P=\theta_kP\) remains support-indexed.  Equal rank therefore does not
+select or identify a support.  No probability distribution over different
+ranks and no scale-dependent support family is asserted.
+\end{corollary}
+
+\begin{proof}
+The protected regular module has real rank eight.  For the fixed projection
+\(P\) of rank \(k\),
+Lemma~\ref{p3:lem:unit-trace-forces-reciprocal-active-fraction} gives
+\(h_P=(8/k)P\) from faithful trace duality, without using basis neutrality or
+\((\mathrm{UNIT})\).  The optional
+\((\mathrm{UNIT})\) readout supplies only the response interpretation.
+\end{proof}
+
+\begin{corollary}[Equivariant active-support inheritance]
+\label{p3d:cor:generated-active-support-inheritance}
+On the occurring III-C active branch, the invariant supports and the
+rank-three orbit family
+\[
+ \Pi_8,\qquad \Pi_4,\qquad
+ \{\Pi_3(u):u\in\mathcal O_{\rm diag}\},\qquad \Pi_1=P_0,
+ \qquad P_W=1-P_0
+\]
+are generated constituents in their native operator and orbit-family sorts.
+Hence every invariant member, and the rank-three formula equivariantly for
+each \(u\), may be
+inserted into Lemma~\ref{p3:lem:unit-trace-forces-reciprocal-active-fraction}
+without a second constructor witness, giving
+\[
+ h_P=\frac8{\operatorname{rank}P}P.
+\]
+A physical use of one particular \(\Pi_3(u)\) nevertheless requires the
+marked diagonal \(u\); orbit generation alone does not select it.
+For an arbitrary orthogonal support outside this generated family, the generic
+fixed-support theorem remains parameterized by the separately occurring
+support.  In particular, equality of ranks never selects an ungenerated
+projector.
+\end{corollary}
+
+\begin{remark}[Uniform-rank averaging is supplementary]
+A uniform average over the eight possible rank values gives
+\(H_8=761/280\), but no such probability measure is generated by the
+fixed-support theorem.  The calculation and its status are deferred to
+Appendix~\ref{p3d:app:supplementary-valuations} of Paper~III-G.
+\end{remark}
+
+\begin{remark}[Conditioning, not an inverse-trace action law]
+\label{p3:rem:no-hidden-inverse-trace-axiom}
+The reciprocal factor is canonical after a support is conditioned:
+\[
+ h_P=\frac{P}{\tau_{\rm reg}(P)}.
+\]
+Conditioning preserves linearity in the observable \(A\mapsto\omega_P(A)\),
+but it is nonlinear in \(P\).  For orthogonal rank-one supports \(P_1,P_2\),
+\[
+ h_{P_1}=8P_1,\qquad h_{P_2}=8P_2,\qquad
+ h_{P_1+P_2}=4(P_1+P_2).
+\]
+Thus the factor \(8/k\) is not inferred as a block-additive coefficient of
+the uninserted \(\Dcl\) action.  Its physical response use is exactly the
+separately displayed \(({\rm UNIT})\) readout.
+\end{remark}
+
+\begin{corollary}[Boundary normal form of \((\mathrm{UNIT})\)]
+\label{p3d:cor:unit-boundary-normal-form}
+For a fixed rank-\(k\) projection \(P\), put
+\[
+ \rho_P:=\frac{P}{\operatorname{Tr}P}=\frac{P}{k}.
+\]
+Then \(\rho_P\ge0\), \(\operatorname{Tr}\rho_P=1\), and
+\[
+ \boxed{\omega_P(A)=\operatorname{Tr}(\rho_P A).}
+\]
+Thus \((\mathrm{UNIT})\) is the state/effect specialization of the
+boundary-conditioned role \(\Rbdry\).  The extensive loop
+\(A\mapsto\operatorname{Tr}A\) remains in \(\Rloop\); dividing by
+\(\operatorname{Tr}P\) changes the provenance type by retaining the prepared
+support state.
+\end{corollary}
+
+\begin{proof}
+Orthogonal projection gives \(P=P^*=P^2\ge0\) and
+\(\operatorname{Tr}P=k\).  Cyclicity and \(P^2=P\) yield
+\[
+ \operatorname{Tr}(\rho_PA)
+ =\frac1k\operatorname{Tr}(PA)
+ =\frac1k\operatorname{Tr}(PAP)=\omega_P(A).
+\]
+This is exactly the finite state boundary normal form; the projector is
+retained before evaluation and therefore cannot be erased by rewriting the
+coefficient as a trace.
+\end{proof}
+
+\begin{remark}[Scope of the universal primitive step]
+The theorem does not require \(\mathrm O(3)\) to act transitively on the seven non-scalar directions;
+it does not.  Nor does it claim that vector, bivector, and pseudoscalar components have identical
+linearized damping rates.  The equality of primitive step weights follows from a different fact:
+the matched tensor extension \(A_Q=A_{\rm H}\otimes I_Q\) makes every
+real rank-one multiplicity factor contribute the same finite trace
+\(\Tr_Q(I_Q)=1\) to the same Hopf residue.  This does not assert equal damping
+rates or other channel-resolved dynamics.  The proven analytic value is the
+rank-one residue \(\Vlogcap\).  The topological factor
+\(\alpha_{\rm top}=e^{\Vlogcap}\) follows directly from the positive
+determinant character and does not use \((\mathrm{HT})\).  A scheme-labelled
+completed step \(\alpha_\sigma\) additionally uses only the frozen member
+\(\mathrm{REG}_\sigma\).
+\end{remark}
+
+\begin{proposition}[Ordering versus step size]
+\label{p3:prop:ordering-versus-step-size}
+On \(\mathsf C_{\rm IR}^{\rm der}\), different non-scalar shells may cross at different response parameters, but
+every unresolved primitive rank-one quotient has the same contact residue.
+For a frozen \(\mathrm{REG}_\sigma\), this gives the common
+scheme-labelled completed factor \(\alpha_\sigma\).  Ordering and the
+conditional step readout are logically distinct.  The neutral character needs
+no \((\mathrm{HT})\); physical inheritance needs an ancestry map that the
+certification label may only certify.
+\end{proposition}
+
+\begin{proof}
+Different supplied shells or supports may cross at different response
+parameters; a channel-resolved model with independently labelled thresholds
+would be a datum enlargement.  Theorem~\ref{p3:thm:reeb-universal} gives the common rank-one
+residue \(\Vlogcap=4\pi^2\); the positive determinant character turns it into
+a multiplicative factor.  A frozen \(\mathrm{REG}_\sigma\) supplies only the
+scheme-labelled smooth additive completion.
+\end{proof}
+
+
+\subsubsection{Rank-Multiplicative Protected Descent}
+
+\begin{theorem}[Rank-multiplicative protected endpoint descent]\label{p3:thm:sequential}
+On \(\mathsf C_{\rm IR}^{\rm der}\), Theorem~\ref{p3:thm:hopf-decomposition}
+and the rank valuation of
+Theorem~\ref{p3:thm:reeb-universal}, the ultraviolet-to-infrared hierarchy
+carried by the protected non-scalar endpoint has the topological form
+\begin{equation}
+\text{Total topological hierarchy}
+=
+\alpha_{\rm top}^{\dim_{\RR}W}
+=
+\alpha_{\rm top}^7
+=
+\exp(28\pi^2).
+\end{equation}
+For any frozen \(\mathrm{REG}_\sigma\), the scheme-labelled completed
+hierarchy is
+\begin{equation}
+\text{Total completed hierarchy}(\sigma_{\rm fin})
+=
+\alpha_\sigma^{\dim_{\RR}W}
+=
+\alpha_\sigma^7.
+\end{equation}
+The source determinant-shell member \(\mathrm{REG}_0\) is obtained by setting
+\(\sigma_{\rm fin}=0\); it is not selected by the hierarchy theorem.
+Paper~III-C's generated common-rate depth hits the first six ordered scalar
+levels \(q=1,\ldots,6\), equivalently
+\(\Ksh=8,16,\ldots,48\), at finite flow parameter and approaches the seventh
+level \((q,\Ksh)=(7,56)\) only as its asymptotic endpoint.  If
+\((\mathrm{FLAG})\) and a cutoff intertwiner realizing that flag are
+additionally supplied, the same labels can represent seven successive
+primitive projector losses.  Without those data, the scalar hitting
+hierarchy, endpoint rank drop, exponent seven, and the active Clifford
+landmarks \((q,\Ksh)=(0,0),(4,32),(5,40),(7,56)\) remain canonical, but no
+rank-one projector chronology is asserted.
+\end{theorem}
+
+\begin{proof}
+Theorem~\ref{p3:thm:hopf-decomposition} identifies the protected
+ultraviolet-to-infrared endpoint rank drop as
+\[
+        \dim_{\RR}W=8-1=7.
+\]
+Theorem~\ref{p3:thm:reeb-universal} proves that each primitive rank-one
+protected quotient carries the same topological logarithmic weight
+\(\Vlogcap=4\pi^2\), equivalently the same multiplicative factor
+\(\alpha_{\rm top}\), under the matched tensor extension.
+
+By the matched tensor residue and the positive determinant character, a
+rank-\(r\) protected non-scalar quotient has \(r\) times the primitive
+additive logarithmic weight and therefore the \(r\)-fold multiplicative
+factor.  Therefore the protected complement \(W\)
+contributes
+\[
+        \alpha_{\rm top}^{\dim_{\RR}W}
+        =
+        \alpha_{\rm top}^{7}.
+\]
+The common-rate depth orders the scalar character values without resolving
+the seven-dimensional eigenspace.  If \((\mathrm{FLAG})\) is supplied, this
+product may additionally be read as seven ordered rank-one quotient factors.
+An actual sharp spectral realization further
+requires an intertwiner from its eigenspaces to that flag.  In its absence,
+the exact Dirac staircase of Theorem~\ref{p3:thm:exact-rg} is a separate
+spinorial count and cannot be used to order directions in \(W\).  Degenerate
+losses may skip intermediate projector ranks while leaving the additive
+endpoint valuation unchanged.
+
+For a frozen \(\mathrm{REG}_\sigma\), the completed form follows by replacing
+each primitive topological factor with the scheme-labelled
+\(\alpha_\sigma\).  The source theorem
+Theorem~\ref{p3:thm:D1-primitive-smooth-uniqueness} supplies the
+\(\sigma_{\rm fin}=0\) member only.  The surviving scalar channel is the
+infrared remnant described in Proposition~\ref{p3:prop:reeb-selection}.
+\end{proof}
+
+\begin{remark}[Generated common-rate readout]
+The already-proved Paper~III-C common-rate semigroup is co-realized from the
+protected split and certified by \((\mathrm{NEUT}_7)\).  It has one sevenfold-degenerate
+non-scalar block.  This readout does not generate seven projector-rank events
+and is not a hypothesis of Theorem~\ref{p3:thm:sequential} or an additional
+III-D process occurrence.
+\end{remark}
+
+\begin{remark}[Why the terminal rank excludes the pseudoscalar]
+\label{p3:rem:pseudoscalar-diagnostic-pointer}
+An \(SO(3)\)-only average would also retain the orientation pseudoscalar.  The detailed obstruction is
+recorded in Appendix~\ref{p3d:app:protected-diagnostics} of Paper~III-G.  The positive chain
+uses the already constituted
+\(\mathsf C_{\rm IR}^{\rm der}\) scalar remnant.  The excluded
+\(SO(3)\)-only pseudoscalar branch would terminate at rank two and is not an
+alternative endpoint of the active response.  The actual active obstruction
+is stronger and differently typed: its rank-two invariant plane excludes the
+scalar endpoint, so it cannot lie between \(P_0\) and \(\Pi_3\).
+\end{remark}
+
+
+\begin{mdframed}[nobreak=true]
+\noindent\textbf{Constitution status of the reduced scalar response.}
+The reduced scalar coupling \(g_{\eff}\), reciprocal-sector valuation, and
+one-parameter scalar-trace response are not consequences of topology or Born
+reciprocity alone.  They arise after the finite sector traces in the
+spectral-action class \(\Dcl\) are passed through the Paper-III-B role-valued
+map \(\mathfrak T_{\rm sec}\), and the resulting response class is restricted
+by \((\mathrm{RED})\) and the abstract endpoint
+calibration pair \((\mathrm{UV})+(\mathrm{IR})\).  The reduced object is a response curve, not autonomous time evolution.  Native III-D uses no
+dimensionful reciprocal-radius calibration in this reduction.
+\end{mdframed}
+
+\begin{definition}[Reduced response branch \((\mathrm{RED})\)]
+\label{p3:def:reduced-response-branch}
+The reduced response branch is a declared response-class domain, not a
+GP3-selected universal dynamics.  It extends the already derived
+reciprocal-role domain
+\[
+ \Sigma_{\rm recip}^{\rm II-C/GP2}+\mathrm{G0}+\Dcl
+\]
+where \(\Sigma_{\rm recip}^{\rm II-C/GP2}\) denotes the premise-minimal
+reciprocal closure (including the relation-free product and Born exchange),
+by fixing, throughout the reduced leaf, the single common spectral profile
+\(f\), its common cutoff/profile scale \(\Lcut\), and any common overall
+normalization not absorbed into the scalar response conversion below.  The
+branch also fixes the scalar phase/ground-channel projection, shellwise
+\(\Spin(4)\)-equivariant coarse graining, and one Born product leaf.
+
+After scalar projection, ordinary sector traces first feed the native finite
+two-derivative response through the role-valued map
+\(\mathfrak T_{\rm sec}\) of
+Paper~III-B, Definition~\ref{p3b:def:sector-trace-born-state}.  Its two
+scalar role outputs are
+represented by positive typed weights
+\[
+ a>0,\qquad b>0,
+\]
+which Born exchange interchanges.  Before the product leaf is fixed they are
+independent; on the leaf their product is fixed and their ratio supplies one
+coordinate.  No continuum heat-kernel \(a_2\) interpretation is asserted for
+these exact finite response weights.  Such an interpretation, when desired,
+belongs to a separately stated smooth/semiclassical comparison.
+
+Alternative process profiles, channel resolutions, coarse-graining packages,
+or moving product leaves are datum-enlarged response classes rather than
+hidden realizations rejected by GP3.
+
+A later interpretation in terms of dimensionful reciprocal radii requires the
+separate calibration \((\mathrm{CAL}_{xp})\); the dimensionful phase-cell
+equality requires \((\mathrm{CAL}_{\hbar})\).  Neither calibration is used in
+the native one-parameter theorem.  The normalized scalar phase generators of
+Paper~III-B remain dimensionless comparison representatives and are not
+assembled here into a dimensionful \(S^3\times S^1\) metric Dirac operator.
+\end{definition}
+
+
+\section{Born reciprocal roles, calibrated two-root response, and Laurent structure}
+\label{paper3d:sec:organized-response}
+\subsection{One-parameter reduction and reduced Born reciprocity}
+\label{p3:sec:reduced_reciprocity}
+
+The one-parameter reduction is the restricted branch \((\mathrm{RED})\) of
+Definition~\ref{p3:def:reduced-response-branch}.  Unitary invariance and block
+additivity follow from the closed loop; evenness comes from its generated
+\(D^2\) process; valuation continuity is regularity of the occurring profile.
+The conditioned-state normalization is theorem-level before
+\((\mathrm{UNIT})\); \((\mathrm{UNIT})\) supplies only the physical
+response-role adoption, while \((\mathrm{RED})\) supplies the reduced-leaf
+data.  The typed
+round sectors, scalar projection, and shellwise coarse graining are additional
+conditions.  The scalar phase pair contributes no additional metric modulus
+because only its normalized comparison generators are retained.
+
+\begin{theorem}[One-parameter scalar-trace reduction on \((\mathrm{RED})\)]
+\label{p3:prop:one_parameter_reduction}
+\label{p3:thm:one-parameter-reduction}
+For the completed package restricted by \((\mathrm{RED})\), every scalar
+observable carried by the fixed-profile, fixed-cutoff role-valued sector-trace
+output on a fixed
+Born product leaf depends on the single Born-odd coordinate
+\[
+ u=\frac12\log(a/b),
+\]
+where \(a,b>0\) are the typed scalar role outputs.
+Once \(f\), \(\Lcut\), the common normalization, and \(ab\) are fixed, no
+transverse scalar role-output coordinate occurs in this reduced datum.  A larger class with an endomorphism, independent channel profile,
+anisotropic deformation, moving product scale, additional metric modulus, or
+unprojected scalar-circle datum may have additional coordinates.
+\end{theorem}
+
+\begin{proof}
+\ProofPlan{We separate typed sector symmetry, scalar phase completion, the
+channel-profile boundary, and the fixed Born product leaf.}
+\begin{proofsteps}
+\item \textbf{Typed sector symmetry leaves one scalar role output per reciprocal sector.}
+The Paper-I-A/II kinematic package and Paper~III-A reciprocal-role constitution
+fix the two typed round sectors.  Shellwise coarse graining is by complete
+\(\Spin(4)\)-equivariant shells and preserves those sector types.  In the
+scalar two-derivative part of the occurring closed action, the retained information is
+therefore one positive scalar role output \(a\) in one sector and one output
+\(b\) in the reciprocal sector.  Born exchange swaps them.
+
+\item \textbf{The compact scalar phase pair contributes no new metric modulus.}
+Paper~III-B's \(D_{\Sone_t}=-i\partial_\theta\) and
+\(D_{\Sone_E}=-i\partial_\phi\) are normalized dimensionless phase-product
+comparison generators.  Within \((\mathrm{RED})\), no scalar-circle metric modulus is retained; the
+normalized phase generators are comparison representatives.  Introducing a
+physical scalar-circle metric would enlarge the datum.  We do
+not use the dimensionful equality \(\tper\Eper=2\pi\hbar\), and we do not
+construct a dimensionful product Dirac operator from these normalized phase
+representatives.
+
+\item \textbf{No hidden channel-resolving coefficient occurs in \(\Dcl\).}
+The sectorwise uninserted spectral action admits no natural non-scalar inserted
+profile \(\Tr(Bf(D^2/\Lcut^2))\) without additional channel-resolving data.
+A grade-resolved or anisotropic action is therefore a datum-enlarged class,
+not another coordinate of \((\mathrm{RED})\).
+
+\item \textbf{A fixed Born product leaf has one ratio.}
+The leaf condition fixes \(ab=\scal_B^2\).  Hence
+\[
+ u=\frac12\log(a/b),
+ \qquad
+ a=\scal_B e^u,
+ \qquad
+ b=\scal_B e^{-u}.
+\]
+Every retained scalar-trace observable on that leaf is consequently a function
+of this one coordinate.  No dimensionful reciprocal-radius interpretation is
+needed for the reduction.
+\end{proofsteps}
+\end{proof}
+
+\begin{remark}[Scope of the one-parameter branch]
+\label{p3:rem:no-hidden-beta-system}
+Theorem~\ref{p3:prop:one_parameter_reduction} is global only on a fixed Born
+product leaf inside the loop-derived class \(\Dcl\).  Larger theories with
+channel projectors, anisotropic deformations, a moving product scale, or
+independent cutoff profiles are different datum classes; the detailed
+exclusion ledger is deferred to Appendix~\ref{p3d:app:response-diagnostics} of Paper~III-G.
+\end{remark}
+
+\begin{definition}[Reciprocal quotient coordinate]
+
+\label{p3:def:reciprocal-quotient-coordinate}
+Let the unreduced Born pair be represented on a fixed invariant product leaf by two positive
+reciprocal sector response weights
+\[
+        (a,b)\in\RR_{>0}^2,
+        \qquad
+        \mathcal B(a,b)=(b,a),
+\]
+where \(a\) and \(b\) are the two sectoral response weights before quotienting by
+Born exchange.  The Born-even response midpoint and Born-odd quotient coordinate are
+\[
+        \scal_B:=\sqrt{ab},
+        \qquad
+        u:=\frac12\log\frac{a}{b}.
+\]
+Equivalently,
+\[
+        a=\scal_B e^u,
+        \qquad
+        b=\scal_B e^{-u}.
+\]
+After one-parameter reduction, the positive reduced response coordinate is the representative
+\[
+        \scal:=\scal_B e^u .
+\]
+\end{definition}
+
+\begin{lemma}[Reduced Born reciprocity as an equivariant quotient]
+\label{p3:lem:reduced-born-reciprocity}
+Using the one-parameter reduction of Theorem~\ref{p3:prop:one_parameter_reduction}, on each fixed product leaf of the
+unreduced reciprocal pair \((a,b)\), the quotient-coordinate constructor is
+Born-unmarked.  Paper~II-A,
+Theorem~\ref{p2a:thm:generated-born-inheritance}, therefore transports the
+microscopic Born exchange to the quotient target; the induced action is exactly
+\[
+        u\longmapsto -u
+\]
+on the quotient coordinate of Definition~\ref{p3:def:reciprocal-quotient-coordinate}.  Therefore
+on the positive reduced response representative it induces
+\[
+        \scal\longmapsto \frac{\scal_B^2}{\scal}.
+\]
+The fixed point on that reduced leaf is unique and is
+\[
+        u=0,
+        \qquad
+        a=b,
+        \qquad
+        \scal=\scal_B .
+\]
+\end{lemma}
+
+\begin{proof}
+The quotient map is not an additional dynamical assumption; it is the decomposition of the two
+positive reciprocal response weights into their symmetric and antisymmetric logarithmic parts.  The inherited
+Born-equivariance follows from Paper~II-A; the following calculation identifies
+the target action explicitly.  Applying the microscopic Born exchange gives
+\[
+        u(\mathcal B(a,b))
+        =\frac12\log\frac{b}{a}
+        =-\frac12\log\frac{a}{b}
+        =-u(a,b).
+\]
+The response midpoint is Born-even:
+\[
+        \sqrt{ba}=\sqrt{ab}=\scal_B .
+\]
+Hence, if \(\scal=\scal_B e^u\), then after Born exchange
+\[
+        \mathcal B\cdot\scal
+        =\scal_B e^{-u}
+        =\frac{\scal_B^2}{\scal_B e^u}
+        =\frac{\scal_B^2}{\scal}.
+\]
+The fixed-point equation on the reduced leaf is \(u=-u\), hence \(u=0\).  Equivalently
+\(a=b\), and therefore \(\scal=\scal_B\).  This proves both the descent and the uniqueness of the
+fixed point on the reduced Born quotient line.
+\end{proof}
+
+\begin{theorem}[Born reflection of the seven-step response depth]
+\label{p3d:thm:born-seven-depth-reflection}
+On the owner-placed weight-one response branch for which
+\[
+ \frac{\scal(q)}{U}=\alpha_\sigma^{-q},
+ \qquad 0\le q\le7,
+ \qquad
+ \frac{C}{U}=\alpha_\sigma^{-7},
+ \qquad \alpha_\sigma>1,
+\]
+use the reduced Born reciprocity
+$\scal\mapsto\scal_B^2/\scal$ with
+$\scal_B^2=UC$.  Then
+\[
+ \boxed{B:q\longmapsto7-q},
+ \qquad
+ \boxed{q_B=\frac72},
+ \qquad
+ \boxed{\scal_B=U\alpha_\sigma^{-7/2}}.
+\]
+Thus the response endpoints $q=0$ and $q=7$ are reciprocal partners and the
+response depth $7/2$ is the unique self-dual midpoint.  This is the response
+reflection; it is not the protected-octet rank reflection $j\mapsto8-j$.
+\end{theorem}
+
+\begin{proof}
+By Lemma~\ref{p3:lem:reduced-born-reciprocity},
+\[
+ B\scal(q)=\frac{UC}{\scal(q)}
+ =\frac{U^2\alpha_\sigma^{-7}}{U\alpha_\sigma^{-q}}
+ =U\alpha_\sigma^{-(7-q)}=\scal(7-q).
+\]
+The displayed response character is injective because $\alpha_\sigma>1$, so
+the depth transforms as stated.  Its unique fixed point is $q=7/2$, and the
+midpoint response follows by substitution.
+\end{proof}
+
+\begin{corollary}[Born inversion of the same-owner operational scale]
+\label{p3d:cor:born-operational-scale-inversion}
+Assume additionally the typed determinant-root ancestry of Paper~III-C on this
+same response branch, so that
+\[
+ \frac{\mu(q)}{\mu_U}=\alpha_\sigma^{-q/4}.
+\]
+Define
+\[
+ \mu_B:=\mu_U\alpha_\sigma^{-7/8},
+ \qquad
+ \ell:=\log(\mu/\mu_B).
+\]
+Then
+\[
+ \boxed{B\mu=\frac{\mu_B^2}{\mu}},
+ \qquad
+ \boxed{B\ell=-\ell},
+ \qquad
+ \boxed{u=4\ell}
+\]
+for $u=\log(\scal/\scal_B)$.  A quantum cutoff $k$ inherits these formulas
+only after a separately proved same-owner matching $k=c_\mu\mu$ with fixed
+Born-even $c_\mu>0$.
+\end{corollary}
+
+\begin{proof}
+The depth reflection gives
+$\mu(7-q)=\mu_U\alpha_\sigma^{-(7-q)/4}$, while
+$\mu_B^2/\mu(q)$ is the same expression.  The logarithmic parity follows.
+Finally
+$u=(7/2-q)\log\alpha_\sigma$ and
+$\ell=(7/2-q)\log\alpha_\sigma/4$.
+The cutoff statement is only substitution after the declared owner match.
+\end{proof}
+
+
+\begin{definition}[Visible reciprocal sector weights]
+\label{p3:def:visible-reciprocal-sector-weights}
+After one-parameter reduction and Born quotienting, let
+\(\scal_{\rm resp}>0\) be an as-yet undetermined response-conversion scale.
+The two microscopic reciprocal sectors then give the positive dimensionless
+weights
+\[
+        X(\scal):=\frac{\scal}{\scal_{\rm resp}},
+        \qquad
+        Y(\scal):=\frac{\scal_B^2}{\scal_{\rm resp}\,\scal},
+\]
+The reduced Born involution exchanges them:
+\[
+        \scal\longmapsto \frac{\scal_B^2}{\scal}
+        \quad\Longleftrightarrow\quad
+        X\longleftrightarrow Y .
+\]
+Let \(Z_{\rm role}\), its idempotents \(e_x,e_p\), the role-valued trace
+\(\mathfrak T_{\rm sec}\), and the normalized reciprocal role scalarizer \(\lambda_{\rm B}\)
+be exactly those of Paper~III-B,
+Definition~\ref{p3b:def:sector-trace-born-state}.  In particular, the
+idempotents label scalar sector outputs and are not block identities in the
+unequal finite matrix carrier.  Set
+\begin{equation}
+       W_{\rm scal}(\scal):=X(\scal)e_x+Y(\scal)e_p.
+       \label{p3:eq:visible-reciprocal-central-element}
+\end{equation}
+A reduced two-derivative scalar coupling is called a
+\emph{reciprocal-sector valuation} when it is the evaluation of this
+role-valued element by the normalized reciprocal role scalarizer on \(Z_{\rm role}\).
+Equivalently, on independent copies of the role-label algebra it obeys
+\[
+        G(X_1+X_2,Y_1+Y_2)=G(X_1,Y_1)+G(X_2,Y_2),
+        \qquad X_i,Y_i\ge 0 .
+\]
+The map \(\mathfrak T_{\rm sec}\) first converts ordinary matrix-sector
+traces into the scalar outputs assembled in \(W_{\rm scal}\); only then does
+the role scalarizer act.  This is a statement about the role-valued finite
+two-derivative response, not an assertion that every nonlinear function of
+\(\scal\) is additive.
+\end{definition}
+
+\begin{lemma}[Normalized reciprocal role scalarizer induces the reciprocal-sector valuation]
+\label{p3:lem:spectral-trace-sector-valuation}
+In the loop-derived uninserted sectorwise spectral action of
+Definition~\ref{p3:def:D1}, ordinary sector traces first produce the
+role-valued output \(W_{\rm scal}\in Z_{\rm role}\).  The inherited normalized reciprocal role scalarizer on that role-label algebra is
+\begin{equation}
+       \lambda_{\rm B}(W_{\rm scal})=\frac{X+Y}{2}.
+       \label{p3:eq:reciprocal-central-normalized-trace}
+\end{equation}
+It is therefore a reciprocal-sector valuation of the exact finite
+role-valued response in the sense of
+Definition~\ref{p3:def:visible-reciprocal-sector-weights}.
+\end{lemma}
+
+\begin{proof}
+Paper~III-B's two-stage interface is
+\[
+ \mathfrak T_{\rm sec}(A_x\oplus A_p)
+ =\Tr_{\mathcal H_x}(A_x)e_x
+  +\Tr_{\mathcal H_p}(A_p)e_p,
+ \qquad
+ \mathcal S_{\rm B}=\lambda_{\rm B}\circ\mathfrak T_{\rm sec}.
+\]
+Thus the fixed scalar-sector outputs \(X,Y\) are assembled as
+\(W_{\rm scal}=Xe_x+Ye_p\) before the role scalarizer acts.  A positive
+normalized scalarizer on \(Z_{\rm role}\) has
+\[
+        \lambda(e_x)=a,\qquad \lambda(e_p)=b,
+        \qquad a+b=1.
+\]
+Paper~III-B, Lemma~\ref{p3b:lem:equal-born-role-weights}, gives \(a=b\) from hereditary Born covariance of the licensed scalarization, while unit normalization gives \(a+b=1\); hence \(a=b=1/2\).  Substitution of
+\eqref{p3:eq:visible-reciprocal-central-element} proves
+\eqref{p3:eq:reciprocal-central-normalized-trace}.  Additivity is the
+combination of ordinary sector-trace additivity in \(\mathfrak T_{\rm sec}\)
+and linearity of \(\lambda_{\rm B}\) on \(Z_{\rm role}\), so no
+Cauchy-extension argument in the response variable is required.
+
+This normalization is not imposed on the unequal finite matrix blocks.  On
+the current \(5\oplus15\) seed, the extensive composite instead gives
+\[
+ \mathcal S_{\rm B}(I_5\oplus0)=\frac52,
+ \qquad
+ \mathcal S_{\rm B}(0\oplus I_{15})=\frac{15}{2}.
+\]
+These values are compatible with the half weights of \(\lambda_{\rm B}\)
+because the latter belong to the normalized role scalarizer, not to normalized
+matrix traces or a prepared state.
+\end{proof}
+\begin{remark}[Extensive weights versus arbitrary nonlinear profiles]
+Here \(X\) and \(Y\) are the visible scalar role outputs obtained after
+scalar projection, direct-sum coarse-graining, and the sector traces encoded
+by \(\mathfrak T_{\rm sec}\).  The valuation law applies to these extensive
+outputs.  If one instead allowed a nonlinear function of the reduced response
+coordinate as a new scalar profile, that profile would be an additional
+datum-enlarged reduced structure beyond the uninserted direct-sum trace.
+\end{remark}
+
+
+\begin{remark}[General Cauchy/additivity lemma deferred]
+Finite-dimensional role-label linearity, together with the sectorwise trace
+map, already proves the linear reciprocal-sector valuation used here.  The more general continuous
+Cauchy/additivity lemma is supplementary and is deferred to
+Appendix~\ref{p3d:app:supplementary-valuations} of Paper~III-G.
+\end{remark}
+
+\subsection{Response normalization, endpoint calibrations, and two-root coupling}
+\begin{definition}[Scalar response normalization representative]
+\label{p3:def:scalar-response-readout-normalization}
+For the reduced role-valued element
+\(W_{\rm scal}=Xe_x+Ye_p\in Z_{\rm role}\), let
+\[
+ g_\kappa(\scal):=\kappa\,\lambda_{\rm B}(W_{\rm scal}),
+ \qquad \kappa>0.
+\]
+Before endpoint calibration, only the ratio between the positive scalar
+normalization \(\kappa\) and the response-conversion scale is observable in
+this one-parameter formula.  Thus \(\kappa\) is a normalization
+representative, not a generated physical selector.  We adopt the convenient
+representative \(\kappa=2\) and write
+\[
+ \boxed{g_{\rm eff}(\scal):=g_2(\scal)
+ =2\lambda_{\rm B}(W_{\rm scal})=X(\scal)+Y(\scal).}
+\]
+This convention does not renormalize the extensive matrix action and is not a
+third primitive readout role.
+\end{definition}
+
+\begin{definition}[Upper and lower root calibrations]
+\label{p3:def:uv-ir-calibration-pair}
+Let \(0<C<U\) be the declared lower and upper response roots.  With
+\(g_{\rm eff}\) already defined by
+Definition~\ref{p3:def:scalar-response-readout-normalization}, the upper
+calibration \((\mathrm{UV})\) requires \(g_{\rm eff}(U)=1\), while the lower
+calibration \((\mathrm{IR})\) requires \(g_{\rm eff}(C)=1\).  The reciprocal role response retains an undetermined Born response
+midpoint \(\scal_B>0\); the response-conversion scale
+\(\scal_{\rm resp}>0\) has already been declared in
+Definition~\ref{p3:def:visible-reciprocal-sector-weights}.
+Theorem~\ref{p3:thm:geff_from_reciprocity} proves
+\[
+ \scal_B^2=CU,
+ \qquad
+ \scal_{\rm resp}=C+U.
+\]
+Neither root is identified natively with \(\Rp\), a hierarchy radius, or any
+other dimensionful scale.
+\end{definition}
+
+\begin{theorem}[Exact two-root effective coupling on \(({\rm RED})\)]
+\label{p3:thm:geff_from_reciprocity}
+Let \(g_{\eff}(\scal)\) be the reduced dimensionless two-derivative scalar
+coupling on \(({\rm RED})\).  The one-parameter reduction, the reduced Born involution, the normalized
+role scalarizer, and the response readout normalization give
+\[
+ g_{\eff}(\scal)
+ =\frac{\scal}{\scal_{\rm resp}}
+  +\frac{\scal_B^2}{\scal_{\rm resp}\scal}.
+\]
+For declared roots \(0<C<U\), the calibration pair
+\(({\rm UV})+({\rm IR})\),
+\[
+ g_{\eff}(U)=g_{\eff}(C)=1,
+\]
+uniquely forces
+\[
+ \boxed{\scal_B^2=CU,\qquad \scal_{\rm resp}=C+U}
+\]
+and hence
+\[
+\boxed{
+ g_{\eff}(\scal)
+ =\frac{\scal^2+CU}{(C+U)\scal}.
+}
+\]
+\end{theorem}
+
+\begin{proof}
+Lemma~\ref{p3:lem:spectral-trace-sector-valuation} gives
+\(\lambda_{\rm B}(W_{\rm scal})=(X+Y)/2\), and
+Definition~\ref{p3:def:scalar-response-readout-normalization} therefore gives
+\[
+ g_{\eff}=X+Y
+ =\frac{\scal}{\scal_{\rm resp}}
+  +\frac{\scal_B^2}{\scal_{\rm resp}\scal}.
+\]
+The endpoint equations are
+\[
+ U+\frac{\scal_B^2}{U}=\scal_{\rm resp},
+ \qquad
+ C+\frac{\scal_B^2}{C}=\scal_{\rm resp}.
+\]
+Subtracting and using \(U\ne C\) gives
+\[
+ (U-C)\left(1-\frac{\scal_B^2}{UC}\right)=0,
+ \qquad
+ \scal_B^2=UC.
+\]
+Substitution gives \(\scal_{\rm resp}=U+C\), proving uniqueness and the
+displayed response.  With this calibration established, its mathematical
+consequences are those of Paper~I-D,
+Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1D}, with
+\(R=\scal\) and \(h=g_{\eff}\).
+\end{proof}
+
+\begin{corollary}[Primitive unit-quadratic two-root response]
+\label{p3d:cor:primitive-unit-quadratic-response}
+On \((\mathrm{RED})+(\mathrm{UV})+(\mathrm{IR})\), define the typed
+response polynomial
+\[
+ \mathscr Q_{C,U}(\scal)
+ :=(C+U)\scal\,g_{\rm eff}(\scal).
+\]
+Then
+\[
+ \boxed{\mathscr Q_{C,U}(\scal)=\scal^2+CU,\qquad
+        \mathscr Q_{C,U}''(\scal)=2.}
+\]
+Thus the occurring two-root response carries a unit primitive quadratic
+coefficient and one zero-order endpoint term, but no linear constituent.
+This is a response-role theorem.  It does not by itself place
+\(\mathscr Q_{C,U}\) in a Lorentzian gravitational action or identify its
+owner with a determinant associated line.
+\end{corollary}
+
+\begin{proof}
+Multiply the exact formula of
+Theorem~\ref{p3:thm:geff_from_reciprocity} by
+\((C+U)\scal\), then differentiate twice.  The final scope statement is the
+existing response/action type boundary of \((\mathrm{RED})\).
+\end{proof}
+
+
+\begin{corollary}[Separated primitive and finite two-scale response normalizations]
+\label{p3d:cor:two-scale-response-normalizations}
+On the same calibrated branch define
+\[
+ \boxed{\mathscr H_{C,U}(\scal):=\scal\,g_{\rm eff}(\scal)
+ =\frac{\scal^2+CU}{C+U}
+ =\frac{\mathscr Q_{C,U}(\scal)}{C+U}.}
+\]
+Then
+\[
+ \boxed{\mathscr H_{C,U}''(\scal)=\frac{2}{C+U}},
+ \qquad
+ \frac{\mathscr H_{C,U}(\scal)}{\scal}
+ =\frac1{C+U}\left(\scal+\frac{CU}{\scal}\right),
+\]
+and the last normalized ratio is invariant under the reduced Born inversion
+\(\scal\mapsto CU/\scal\).
+Thus \(\mathscr Q_{C,U}\) and \(\mathscr H_{C,U}\) are not competing
+responses: \(\mathscr Q_{C,U}\) is the unit-quadratic primitive obtained by
+multiplying by the response-conversion scale \(C+U\), whereas
+\(\mathscr H_{C,U}\) is the finite UV/IR interpolation before that
+multiplication.  A downstream Einstein--Hilbert action normalization must
+therefore be applied to \(\mathscr H_{C,U}\), not silently identified with
+the unit primitive \(\mathscr Q_{C,U}\).
+\end{corollary}
+\begin{proof}
+Divide Corollary~\ref{p3d:cor:primitive-unit-quadratic-response} by
+\(C+U\), differentiate twice, and use
+Theorem~\ref{p3:thm:geff_from_reciprocity}.  For the reciprocal statement,
+substitute \(CU/\scal\) in the displayed Laurent sum.
+\end{proof}
+
+\begin{corollary}[Full reciprocal primitive and its odd coefficient]
+\label{p3d:cor:born-euler-response-pair}
+On the same reduced and endpoint-calibrated branch, put \(B=CU\),
+\(u_B=\log(\scal/\sqrt B)\), and
+\(v_B=\mathrm d\log g_{\rm eff}/\mathrm d\log\scal\). Then
+\[
+ \mathscr A_B:=(C+U)g_{\rm eff}v_B
+   =\scal-B/\scal,\qquad
+ \mathrm d\mathscr A_B=(\mathscr Q_{C,U}/\scal)\,\mathrm du_B.
+\]
+In the scalar-function calculus of Paper~I-D,
+Theorem~\ref{p1b:thm:born-euler-anticommutation},
+\[
+ \mathcal E\mathscr Q_{C,U}=\scal^2-B,\qquad
+ \mathcal E(\scal^2-B)=\mathscr Q_{C,U},\qquad
+ \mathcal E=\scal\partial_{\scal}-1.
+\]
+These are complete response identities, including the constant \(B\).
+They neither identify \(\mathscr A_B\) with a metric-action coefficient nor
+identify the response primitive with that action's Legendre potential.
+\end{corollary}
+\begin{proof}
+Apply Paper~I-D, Theorem~\ref{p1b:thm:laurent-family} and
+Theorem~\ref{p1b:thm:born-euler-anticommutation}, with \(R=\scal\).
+The action comparison must retain the complete same-action zero-order
+combination of Paper~III-F,
+Proposition~\ref{p3f:prop:complete-action-legendre-potential}; a second
+variation alone does not preserve this constant datum.
+\end{proof}
+
+
+\subsection{Born-invariant Laurent characterization and midpoint relations}
+\begin{theorem}[Minimal Born-invariant Laurent characterization]
+\label{p3d:thm:minimal-born-laurent-characterization}
+Put
+\[
+ x:=\frac{\scal}{U},\qquad c:=\frac CU\in(0,1),
+\]
+and consider the real degree-one Laurent class
+\[
+ L(x)=a x+b x^{-1}+d.
+\]
+Require:
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item invariance under the reduced Born exchange
+      \(\mathcal B_c:x\mapsto c/x\);
+\item the upper endpoint calibration \(L(1)=1\); and
+\item no additional linear action constituent, meaning that multiplication
+      by the curvature scale does not introduce a term proportional to
+      \(\scal\) besides the separately owned Einstein--Hilbert line.
+\end{enumerate}
+Then the response is unique:
+\begin{equation}
+\label{p3d:eq:minimal-born-laurent}
+ \boxed{
+ L_c(x)=\frac{x+c/x}{1+c}
+ =\frac{\scal^2+CU}{(C+U)\scal}
+ =g_{\rm eff}(\scal).}
+\end{equation}
+Equivalently, the unnormalized minimal Laurent numerator is
+\[
+ \mathcal I_c(x):=x+\frac c x,
+\]
+and the factor \((1+c)^{-1}\) is fixed by endpoint calibration rather than
+being an independent interpolation function.
+\end{theorem}
+
+\begin{proof}
+Born invariance gives
+\[
+ a\frac c x+b\frac x c+d=ax+\frac b x+d
+ \qquad(x>0),
+\]
+so coefficient comparison forces \(b=ac\).  Multiplication by \(\scal=Ux\)
+maps the constant Laurent coefficient to \(d\scal\), which is precisely an
+additional linear Einstein--Hilbert-type constituent; condition
+\textup{(iii)} therefore gives \(d=0\).  The endpoint condition is then
+\(a(1+c)=1\), hence \(a=(1+c)^{-1}\) and
+\(b=c(1+c)^{-1}\).  This proves uniqueness and
+Eq.~\eqref{p3d:eq:minimal-born-laurent}.  Multiplication by
+\((1+c)\scal\) recovers the already derived primitive polynomial
+\(\mathscr Q_{C,U}=\scal^2+CU\), so the characterization introduces no
+new action term.
+\end{proof}
+
+\begin{corollary}[Raw rank-character Laurent secants and protected-octet reflection]
+\label{p3d:cor:rank-character-laurent-family}
+Suppose an owner-typed hierarchy placement realizes the rank-character ratios
+\[
+ c_j:=\alpha_\sigma^{-j},\qquad
+ C_j:=Uc_j,\qquad j=1,\ldots,7.
+\]
+For every such realized descendant define
+\begin{align}
+\label{p3d:eq:rank-character-laurent-family}
+ g_j(\scal)
+ &:=\frac{\scal^2+UC_j}{(U+C_j)\scal}
+   =\frac{x+c_j/x}{1+c_j},\\
+ n_j^{\rm L}(\scal)
+ &:=\frac{\ln g_j(\scal)}{\ln(\scal/U)}
+ \qquad(\scal\ne U),
+\end{align}
+with the removable value
+\[
+ n_j^{\rm L}(U)=\frac{1-c_j}{1+c_j}.
+\]
+Equivalently, with
+\[
+ A_\sigma:=\ln\alpha_\sigma>0,
+ \qquad
+ q:=-\frac{\ln(\scal/U)}{A_\sigma},
+ \qquad K:=8q,
+\]
+the same Laurent interpolation is
+\begin{equation}
+\label{p3d:eq:rank-character-log-clock-form}
+ \boxed{
+ n_j^{\rm L}(q)
+ =\frac{\ln\cosh(jA_\sigma/2)
+       -\ln\cosh[(j/2-q)A_\sigma]}
+       {qA_\sigma},}
+\end{equation}
+with its removable value at \(q=0\).  Thus the Born fixed point is
+\(q=j/2\), while the exact nonnegative endpoint is \(q=j\), or \(K=8j\).
+Then
+\[
+ g_j(\scal)=\left(\frac{\scal}{U}\right)^{n_j^{\rm L}(\scal)},
+ \qquad
+ n_j^{\rm L}(C_j)=0,
+ \qquad
+ \scal_{B,j}=\sqrt{UC_j}=U\alpha_\sigma^{-j/2}.
+\]
+The raw logarithmic secant has the exact sign table
+\begin{equation}
+\label{p3d:eq:raw-laurent-index-sign}
+ n_j^{\rm L}(\scal)
+ \begin{cases}
+ >0,&\scal>C_j,\\
+ =0,&\scal=C_j,\\
+ <0,&0<\scal<C_j,
+ \end{cases}
+ \qquad
+ \lim_{\scal\downarrow0}n_j^{\rm L}(\scal)=-1.
+\end{equation}
+Thus \([C_j,\infty)\) is the maximal nonnegative domain of the raw secant,
+but the formula by itself does not supply a frozen continuation.
+Independently, the protected-octet trace reflection on
+\(\mathbb R\mathbf1\oplus W_7\) has rank involution
+\(j\mapsto8-j\) and therefore the endpoint pair
+\[
+ \boxed{j_{\rm first}=1,\qquad j_{\rm term}=7}
+\]
+and
+\begin{equation}
+\label{p3d:eq:one-seven-complement-product}
+ C_1C_7
+ =U^2\alpha_\sigma^{-8}
+ =\bigl(U\alpha_\sigma^{-4}\bigr)^2.
+\end{equation}
+This is a rank and endpoint symmetry.  It neither selects the coefficient
+dressing used in a metric action nor asserts the false pointwise relation
+\(n_1^{\rm L}+n_7^{\rm L}=1\).
+\end{corollary}
+
+\begin{proof}
+Theorem~\ref{p3d:thm:minimal-born-laurent-characterization} identifies
+the response at \(C=C_j\).  Paper~I-D,
+Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1D}, then
+gives the logarithmic-clock form, removable value, Born fixed point,
+strict sign table and maximal nonnegative domain, with
+\(R=\scal\), \(A=A_\sigma\) and \(n_j=n_j^{\rm L}\).
+The limit at zero follows from
+\(g_j(\scal)\sim UC_j/[(U+C_j)\scal]\).
+Paper~III-C's protected decomposition has ranks one and seven.  Under
+their common octet owner, complementary ranks sum to eight, so the
+nontrivial pair containing the terminal rank-seven constituent is
+\((1,7)\).  Multiplicativity of the positive rank character gives
+Eq.~\eqref{p3d:eq:one-seven-complement-product}.  This rank symmetry
+does not imply a functional sum rule or assign the action dressing.
+\end{proof}
+
+\begin{theorem}[Calibration-free midpoint and endpoint-slope consistency of rank-character responses]
+\label{p3d:thm:v285-calibration-free-hierarchy-dip}
+On a single owner-placed positive-character rank-response branch of
+Corollary~\ref{p3d:cor:rank-character-laurent-family}, let
+\(L_\sigma=\log\alpha_\sigma>0\), \(j\in\{1,\ldots,7\}\),
+\(c_j=e^{-jL_\sigma}\in(0,1)\), and
+\[
+ x=\frac{\scal}{U}>0,\qquad
+ g_j(x)=\frac{x+c_j/x}{1+c_j}.
+\]
+The unique global minimum, the two logarithmic endpoint slopes, and their
+normalization-free identity are
+\begin{align}
+\label{p3d:eq:v285-dip-and-slopes}
+ x_{\min,j}&=\sqrt{c_j},&
+ m_j:=g_j(x_{\min,j})
+ &=\operatorname{sech}\!\left(\frac{jL_\sigma}{2}\right),\\
+ v_j^+&:=\left.\frac{d\log g_j}{d\log\scal}\right|_{\scal=U}
+ =\tanh\!\left(\frac{jL_\sigma}{2}\right),&
+ v_j^-&:=\left.\frac{d\log g_j}{d\log\scal}\right|_{\scal=C_j}
+ =-v_j^+,\\
+ \boxed{m_j^2+(v_j^+)^2}&=1,&
+ \boxed{L_\sigma}&=\frac2j\operatorname{arcosh}(m_j^{-1}).
+\end{align}
+Consequently, if two distinct levels \(j,k\) actually occur in the
+\emph{same} determinant/response owner, their dimensionless minima satisfy
+\[
+ \boxed{\frac1j\operatorname{arcosh}(m_j^{-1})
+       =\frac1k\operatorname{arcosh}(m_k^{-1})},
+ \qquad
+ m_k=\operatorname{sech}\!\left(\frac{k}{j}
+       \operatorname{arcosh}(m_j^{-1})\right).
+\]
+These are consistency constraints, not new calibration parameters.  They
+require neither an absolute value of \(U\) nor an SI scale.  Their
+\emph{physical} use requires actual response readouts at the indicated
+levels, plus a generated common-owner ancestry identification; neither
+those occurrences nor a common temporal flow is supplied by this theorem.
+\end{theorem}
+\begin{proof}
+The exact Laurent family is Corollary~\ref{p3d:cor:rank-character-laurent-family}.
+Differentiate with respect to \(x\):
+\[
+ g_j'(x)=\frac{1-c_j/x^2}{1+c_j},\qquad
+ g_j''(x)=\frac{2c_j}{(1+c_j)x^3}>0.
+\]
+The unique critical point is \(x=\sqrt{c_j}\), where
+\(m_j=2\sqrt{c_j}/(1+c_j)\).  Substituting
+\(c_j=e^{-jL_\sigma}\) gives the hyperbolic-secant expression.
+The logarithmic derivative is
+\[
+ \frac{d\log g_j}{d\log\scal}
+ =\frac{x^2-c_j}{x^2+c_j}.
+\]
+Evaluating at \(x=1\) and \(x=c_j\), respectively, yields
+\(v_j^\pm=\pm(1-c_j)/(1+c_j)
+ =\pm\tanh(jL_\sigma/2)\).
+The identity \(\operatorname{sech}^2 z+\tanh^2 z=1\) proves the
+normalization-free constraint.  Since \(L_\sigma>0\), the inverse of
+\(\cosh\) on \([0,\infty)\) yields the unique reconstruction of
+\(L_\sigma\).  Equating the recovered logarithm for two levels proves
+the cross-level relation.  All steps use only the declared rank-character
+response, not a physical owner-placement theorem.
+\end{proof}
+
+\begin{corollary}[Born-midpoint curvature-shell coordinate]
+\label{p3d:cor:born-midpoint-shell-coordinate}
+On the realized rank-character leaf of
+Corollary~\ref{p3d:cor:rank-character-laurent-family}, let
+\[
+ \mathcal B_j(\scal):=\frac{UC_j}{\scal},
+ \qquad
+ K_R(\scal):=16\log_{\alpha_\sigma}\!\frac{U}{\scal}.
+\]
+Then
+\begin{equation}
+\label{p3d:eq:born-midpoint-shell-reflection}
+ \boxed{
+ K_R\!\left(\mathcal B_j(\scal)\right)=16j-K_R(\scal),
+ \qquad
+ K_R(\scal_{B,j})=8j,}
+\end{equation}
+where
+\[
+ \scal_{B,j}=\sqrt{UC_j}=U\alpha_\sigma^{-j/2}
+\]
+is the unique Born fixed point on that leaf.  In particular the first realized
+cell has
+\[
+ \boxed{\scal_{B,1}=U\alpha_\sigma^{-1/2},\qquad K_R(\scal_{B,1})=8.}
+\]
+The corresponding normalized Born-even slack is
+\begin{equation}
+\label{p3d:eq:born-midpoint-shell-slack}
+ \boxed{
+ \mathfrak S_j(\scal)
+ :=\frac12\left(\frac{\scal}{\scal_{B,j}}
+ +\frac{\scal_{B,j}}{\scal}\right)-1
+ =\cosh\!\left[\frac{A_\sigma}{16}\bigl(K_R-8j\bigr)\right]-1\ge0,}
+\end{equation}
+with equality only at the Born midpoint.
+
+The symbol \(K_R\) is a curvature-shell coordinate on the realized positive
+response variable.  It is not Paper~III-C's structural common-rate clock
+\(\Ksh=8q_{\rm sp}\), and no cosmological epoch name is assigned here.
+\end{corollary}
+
+\begin{proof}
+Using \(C_j=U\alpha_\sigma^{-j}\),
+\[
+ \frac{U}{\mathcal B_j(\scal)}
+ =\frac{\scal}{C_j}
+ =\alpha_\sigma^j\frac{\scal}{U}.
+\]
+Taking \(16\log_{\alpha_\sigma}\) gives the reflection law.  Evaluating at
+\(\scal_{B,j}=U\alpha_\sigma^{-j/2}\) gives \(K_R=8j\).  Finally write
+\(u=\log(\scal/\scal_{B,j})=-(A_\sigma/16)(K_R-8j)\); the displayed slack is
+\(\cosh u-1\), so strict positivity away from the fixed point follows from
+strict convexity of \(\cosh\).
+\end{proof}
+
+\subsection{Positive-part Laurent junction and finite carrier dressing}
+\begin{theorem}[Canonical positive-part Laurent projection and endpoint trace]
+\label{p3d:thm:canonical-nonnegative-laurent-projection}
+For a real scalar \(y\), let
+\begin{equation}
+\label{p3d:eq:positive-part-projector}
+ \boxed{
+ \Pi_+(y):=\frac{y+\sqrt{y^2}}{2}=\max\{y,0\}.}
+\end{equation}
+It is the unique Euclidean metric projection of the real line onto the closed
+convex cone \(\mathbb R_{\ge0}\):
+\[
+ \Pi_+(y)=\underset{z\ge0}{\operatorname{argmin}}\,(z-y)^2.
+\]
+For every realized Laurent rank descendant define
+\begin{equation}
+\label{p3d:eq:laurent-positive-part-projection}
+ \boxed{
+ n_j^+(\scal)
+ :=\Pi_+\!\left(n_j^{\rm L}(\scal)\right)
+ =\frac{n_j^{\rm L}(\scal)
+ +\sqrt{(n_j^{\rm L}(\scal))^2}}{2}.}
+\end{equation}
+Then
+\begin{equation}
+\label{p3d:eq:nonnegative-laurent-index-properties}
+ 0\le n_j^+(\scal)\le1,\qquad
+ n_j^+(\scal)=0\ \Longleftrightarrow\ 0<\scal\le C_j,
+\end{equation}
+while \(n_j^+=n_j^{\rm L}\) on \([C_j,\infty)\).  Thus the projection is
+exactly zero, rather than the reflected positive value
+\(\lvert n_j^{\rm L}\rvert\), wherever the raw Laurent index is negative.
+It is continuous but, for the simple zero at \(C_j\), not \(C^1\).
+
+On the active Laurent domain \(\scal\ge C_j\), the nonlinear response remains
+\begin{equation}
+\label{p3d:eq:active-laurent-response-and-trace}
+ \boxed{
+ \mathcal H_j^{\rm act}(\scal)
+ :=\scal\left(\frac{\scal}{U}\right)^{n_j^+(\scal)}
+ =\frac{\scal^2+UC_j}{U+C_j},\qquad \scal\ge C_j,}
+ \qquad
+ \boxed{\operatorname{ev}_{C_j}\mathcal H_j^{\rm act}=C_j.}
+\end{equation}
+The last expression is a boundary trace.  It does not define
+\(\scal(\scal/U)^0=\scal\) as a freely varied nonlinear action constituent
+for \(0<\scal<C_j\).  For the sole purpose of defining a distributional junction on the positive
+real axis, assemble the \emph{continuous glued representative}
+\begin{equation}
+\label{p3d:eq:laurent-trace-glued-representative}
+ \boxed{\mathcal H_j^{\rm junc}(\scal):=
+ \begin{cases}
+ C_j,&0<\scal\le C_j,\\
+ (\scal^2+UC_j)/(U+C_j),&\scal>C_j.
+ \end{cases}}
+\end{equation}
+Its two traces agree at \(C_j\), while its first derivative has jump
+\(2C_j/(U+C_j)\). On \((0,\infty)\), in the sense of distributions,
+\begin{equation}
+\label{p3d:eq:endpoint-trace-positive-hessian-measure}
+ \boxed{d\bigl((\mathcal H_j^{\rm junc})'\bigr)
+ =\frac{2}{U+C_j}\mathbf1_{(C_j,\infty)}\,d\scal
+  +\frac{2C_j}{U+C_j}\,\delta_{C_j}.}
+\end{equation}
+This is a nonnegative measure. The terminal trace \(C_j\) by itself is
+constant and has zero distributional Hessian. The glued representative is
+\emph{bookkeeping}, not a new physical off-shell action or a proof of an
+actual crossing history.
+\end{theorem}
+
+\begin{proof}
+If \(y\ge0\), the unconstrained minimizer \(z=y\) is admissible.  If
+\(y<0\), the strictly convex objective is increasing on \([0,\infty)\), so
+its unique constrained minimizer is \(z=0\).  Since
+\(\sqrt{y^2}=\lvert y\rvert\) for real \(y\), this proves
+Eq.~\eqref{p3d:eq:positive-part-projector}.  Apply Paper~I-D,
+Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1D}, with
+\(R=\scal\) and \(C=C_j\): its exact sign and range give
+Eqs.~\eqref{p3d:eq:laurent-positive-part-projection}
+and~\eqref{p3d:eq:nonnegative-laurent-index-properties}.
+On every \(\scal\ge C_j\), \(n_j^+=n_j^{\rm L}\), and the logarithmic
+definition gives \(\scal(\scal/U)^{n_j^{\rm L}}=\scal g_j(\scal)\)
+for \(\scal\ne U\), with equality at \(U\) by continuity.
+Thus Eq.~\eqref{p3d:eq:active-laurent-response-and-trace} holds also for
+\(\scal>U\), beyond the displayed interval of the 1B active identity.
+Evaluation at \(\scal=C_j\) gives \(C_j\).  The constant left branch of
+Eq.~\eqref{p3d:eq:laurent-trace-glued-representative} has derivative zero;
+the active right branch has derivative \(2\scal/(U+C_j)\).
+The branches agree in value at \(C_j\), so the distributional first
+derivative has no delta term. Its ordinary traces are \(0\) and
+\(2C_j/(U+C_j)\), respectively. Differentiating this piecewise
+first derivative against a compactly supported smooth test function on
+\((0,\infty)\) yields the regular density and the positive Dirac
+mass of Eq.~\eqref{p3d:eq:endpoint-trace-positive-hessian-measure}.
+The distribution does \emph{not} arise from differentiating the constant
+terminal trace alone.
+\end{proof}
+
+\begin{theorem}[Least-support Laurent dressing index]
+\label{p3d:thm:least-support-n2-dressing}
+Fix a decreasing-curvature clock
+\(q=-\ln(\scal/U)/\ln\alpha_\sigma\) and a completed inflationary end
+\(q_{\rm end}\) satisfying
+\[
+ \frac12<q_{\rm end}<1.
+\]
+Within the already realized positive-part Laurent family, impose only the
+following dressing-role requirements:
+\begin{enumerate}[label=\textup{(D\arabic*)}]
+\item the Born turnover center \(q=j/2\) lies strictly after inflation,
+      \(j/2>q_{\rm end}\);
+\item the dressing is exactly absent no later than the protected midpoint
+      \(K=32\), equivalently its endpoint \(q=j\) obeys \(j\le4\); and
+\item among complete candidates satisfying \textup{(D1)--(D2)}, GP3 retains
+      the unique least active support.
+\end{enumerate}
+Then
+\begin{equation}
+\label{p3d:eq:least-support-n2-selection}
+ \boxed{j_{\rm dress}=2,\qquad
+        C_{\rm dress}=C_2=U\alpha_\sigma^{-2},\qquad
+        \{R\in(0,U]:n_2^+(R)\ne0\}=(C_2,U].}
+\end{equation}
+Its Born center is \(q=1\), or \(K=8\), and its exact freeze is \(q=2\),
+or \(K=16\).  The protected-octet rank reflection still gives the separate
+\(1\leftrightarrow7\) endpoint symmetry; it is not the selector used here.
+Likewise \(C_1^2/U=C_2\) is a corroborating equality of hierarchy values, not
+by itself a theorem identifying tensor grade with response depth.
+\end{theorem}
+
+\begin{proof}
+Because \(q_{\rm end}>1/2\), condition \textup{(D1)} excludes \(j=1\) and
+forces \(j\ge2\).  Condition \textup{(D2)} forces \(j\le4\), so the complete
+candidate set is exactly \(\{2,3,4\}\).  Since
+\(C_4<C_3<C_2<U\), their nontrivial active supports are strictly nested:
+\[
+ (C_2,U]\subsetneq(C_3,U]\subsetneq(C_4,U].
+\]
+Therefore the unique least support is the \(j=2\) member.  The center and
+freeze follow from Eq.~\eqref{p3d:eq:rank-character-log-clock-form} and the
+positive-part zero set.  Neither the octet reflection nor the value identity
+\(C_1^2/U=C_2\) enters the minimization, proving the scope statements.
+\end{proof}
+
+\begin{remark}[Occurrence boundary of the \(n_2\) selector]
+Theorem~\ref{p3d:thm:least-support-n2-dressing} compares realizations only
+after the coefficient-dressing role and its two support requirements have
+been stated.  It does not make a coefficient dressing occur in a Lorentzian
+metric action.  That action-role occurrence remains an explicit Paper--III-E
+premise; its least-support tie-break applies only to its own
+optional comparison rule and is distinguished from the active-carrier rule of
+Theorem~\ref{p3d:thm:v2219-carrier-four-dressing}.
+\end{remark}
+
+
+\begin{theorem}[Carrier-constrained ultraviolet dressing selection]
+\label{p3d:thm:v2219-carrier-four-dressing}
+Assume the dressing index is in the previously certified comparison set
+$j\in\{2,3,4\}$, but replace the least-active-support condition (D3) by
+the \emph{first actual carrier rule}: the coefficient source is represented
+by the first nonzero spectral grade of the same protected finite carrier,
+$\mathcal Q_{\rm act}$. On the existing positive PQTI coefficient
+line take its canonical positive character
+$\rho_Q(s):=\exp(s\log Q_\sigma)$, $Q_\sigma=8\sqrt{\alpha_\sigma}>1$,
+and evaluate it on the selected Laurent exponent (without asserting a
+metric-action insertion). Then the unique selected rank and its dependent
+mathematical coefficient pullback are
+\[
+ \boxed{j_{\rm dress}=4,\qquad P_2=P_3=0,\quad P_4\ne0,
+ \qquad D_4(R)=Q_\sigma^{n_4^+(R)}.}
+\]
+Its reciprocal Born involution and fixed point are
+\[
+ \mathcal B_4(R)=\frac{UC_4}{R},\qquad
+ R_{B,4}=\sqrt{UC_4}=U\alpha_\sigma^{-2}=C_2.
+\]
+On the dimension-weighted physical scale dictionary,
+$C_2=E_{32}^{\,2}$, and rank four is also the unique protected-octet
+reflection fixed grade $J(4)=4$.  The Laurent midpoint is a balance
+condition, \emph{not} the scalaron frequency equality $m_s=E_{32}$.
+\end{theorem}
+\begin{proof}
+The first actual active grade above zero is four by
+Proposition~\ref{p3c:prop:v2219-first-actual-carrier}. Intersecting
+\(\{2,3,4\}\) with \(\operatorname{spec}\mathcal Q_{\rm act}\setminus\{0\}\)
+gives exactly \(\{4\}\). Since \(Q_\sigma>0\), positive functional calculus constructs
+\(\rho_Q(s)=\exp(s\log Q_\sigma)=Q_\sigma^s\) on the generated
+one-dimensional coefficient line. It is multiplicative and continuous,
+with \(\rho_Q(1)=Q_\sigma\); any other such character has continuous
+additive logarithm and thus coincides with this one.
+Its scalar evaluation at the already defined \(n_4^+(R)\) therefore
+yields \(D_4(R)=\rho_Q(n_4^+(R))\).
+This uses the same character mathematics later formalized in Paper~III-F,
+but does not import the later depth-two pullback as an upstream premise.
+This is an exact character pullback, not a proof that \(P_4\) has
+entered the physical gravitational action. The unique positive fixed point
+of the reciprocal involution solves \(R^2=UC_4\). The native energy
+identity and \(J(4)=4\) follow from the independent hierarchy and octet
+involution.
+\end{proof}
+\begin{remark}[Scope of the optional least-support selection]
+Theorem~\ref{p3d:thm:least-support-n2-dressing} still proves $j=2$
+\emph{if} its optional least-support criterion (D3) is imposed.  It no
+longer selects the active physical UV coefficient: a formal Laurent index
+with no actual carrier cannot satisfy the first-actual-carrier selection
+premise.  The incidence of $P_4$ into the gravitational coefficient remains
+a common-action coupling certificate to be checked independently.
+\end{remark}
+
+
+\begin{remark}[Normalization-representative invariance]
+\label{p3d:rem:response-normalization-invariance}
+If one keeps a general \(\kappa>0\) in
+Definition~\ref{p3:def:scalar-response-readout-normalization}, then before
+choosing the representative \(\kappa=2\) the response is
+\[
+ g_\kappa(\scal)
+ =\frac{\kappa}{2\scal_{\rm resp}}
+  \left(\scal+\frac{\scal_B^2}{\scal}\right).
+\]
+The two endpoint equations imply
+\[
+ \scal_B^2=CU,
+ \qquad
+ \scal_{\rm resp}^{(\kappa)}=\frac\kappa2(C+U),
+\]
+and therefore every positive normalization representative gives the same
+calibrated invariant curve
+\[
+ g_\kappa(\scal)
+ =\frac{\scal^2+CU}{(C+U)\scal}.
+\]
+Thus the factor \(2\) is a convenient convention, not a surviving physical
+selector.  The notation \(\scal_{\rm resp}=C+U\) used in the main text is the
+\(\kappa=2\) representative.
+\end{remark}
+
+
+\begin{remark}[Logical status of the reduced coupling]
+\label{p3:rem:geff_status}
+Within \(({\rm RED})\), the reduced involution
+\(\scal\mapsto \scal_B^2/\scal\) and the reciprocal-sector valuation give
+the form \(X+Y\) after normalized role-label conversion.  The calibration
+pair fixes \(\scal_B^2=CU\) and \(\scal_{\rm resp}=C+U\).  A nonlinear
+self-dual response is a different reduced action datum, not something
+excluded by GP1--GP3.
+\end{remark}
+
+\subsection{Normalized Born-symmetric curves and endpoint factorization}
+\begin{corollary}[Exact Born-symmetric one-parameter response curve]
+\label{p3:cor:fully_derived_one_parameter_trajectory}
+On each reduced Born quotient leaf define
+\[
+        u:=\ln(\scal/\scal_B).
+\]
+Then the reduced response curve is the single global line
+\[
+        g_{\eff}(u)=\frac{2\scal_B}{C+U}\cosh u,
+\]
+with Born exchange acting by \(u\mapsto -u\).  The instantaneous logarithmic index is
+\[
+        \upsilon(u)=\frac{d\ln g_{\eff}}{du}=\tanh u,
+\]
+so
+\[
+        \frac{d\upsilon}{d\ln\scal}=1-\upsilon^2.
+\]
+The \(\tanh\) and Riccati formulas are algebraic identities of this curve.
+They do not supply an autonomous time evolution or beta function without an
+additional law specifying how the curve is traversed.
+\end{corollary}
+
+\begin{proof}
+Theorem~\ref{p3:thm:geff_from_reciprocity} gives
+\[
+ g_{\eff}(\scal)
+ =\frac{\scal}{C+U}+\frac{\scal_B^2}{(C+U)\scal}.
+\]
+Substitute
+\[
+  \scal=\scal_B e^u .
+\]
+This gives the hyperbolic-cosine form.  Born exchange is
+Lemma~\ref{p3:lem:reduced-born-reciprocity}, hence \(u\mapsto -u\).
+
+Differentiating
+\[
+  \ln(2\scal_B\cosh u/(C+U))
+\]
+gives \(\upsilon=\tanh u\).  Since \(u=\ln(\scal/\scal_B)\), differentiation
+with respect to \(\ln\scal\) gives
+\[
+  \frac{d\upsilon}{d\ln\scal}=1-\upsilon^2.
+\]
+The only coordinate in the declared \((\mathrm{RED})\) fixed-leaf class is
+\(u\).  A second coordinate requires datum that enlarges this class, for
+example channel resolution, a moving product scale, anisotropy, or another
+metric/profile modulus.
+\end{proof}
+
+\begin{remark}[Immediate consequence for the running index]
+\label{p3:rem:riccati_from_geff}
+Corollary~\ref{p3:cor:fully_derived_one_parameter_trajectory} immediately yields the Riccati identity for the instantaneous index later recorded in Theorem~\ref{p3:thm:riccati}.
+\end{remark}
+
+
+\begin{remark}[Dimensionless hierarchy handoff]
+\label{p3d:rem:dimensionless-hierarchy-handoff}
+The native hierarchy data imported from Paper~III-C are the dimensionless
+positive character and its neutral dual scalar-depth ratios
+\[
+ H_{56}^{(\sigma)}=\alpha_\sigma^{7},
+ \qquad
+ \frac{X_w(q)}{X_w(0)}=\alpha_\sigma^{-wq}.
+\]
+The second formula denotes the neutral character and is generated without
+\((\mathrm{HT})\).  It does not identify the abstract response-root owner
+with the determinant-dual owner, or \(U\) with \(\Rp\) or another
+dimensionful standard.  Once a response composite contains a generated
+nonzero ancestry morphism from the upper-root owner to the determinant-dual
+owner, however, Paper~III-C's owner-inheritance theorem fixes its lower root
+and intermediate ratios without a further normalization.  The residual
+typed placement and absolute calibration are
+deferred to Appendix~\ref{p3d:app:hierarchy-placement} of Paper~III-G.
+\end{remark}
+
+\begin{remark}[Anchored hierarchy and its physical uses]
+\label{p3d:rem:anchored-reg-hierarchy-import}
+On the occurring Hurwitz/Hopf branch,
+Theorem~\ref{p3c:thm:occurring-hurwitz-reg-origin} fixes
+\(\mathrm{REG}_0\) and \(\alpha_0\).  The generic
+rank-character Laurent formulas retain their unanchored
+\(\alpha_\sigma\) version.  An absolute scale, physical
+running or pole map, and an actual history are separate
+inputs to claims consuming them.  In particular a
+hierarchy-depth difference is not a physical clock duration.
+\end{remark}
+
+
+\begin{theorem}[Exact two-root endpoint factorization]
+\label{p3:thm:exact-reciprocal-freeze-interface}
+For the native response roots \(0<C<U\),
+\[
+ g_{\eff}(\scal)=\frac{\scal^2+CU}{(C+U)\scal}
+\]
+and
+\begin{equation}
+\label{p3:eq:exact-freeze-equation}
+ \boxed{g_{\eff}(\scal)-1
+ =\frac{(\scal-C)(\scal-U)}{(C+U)\scal}.}
+\end{equation}
+Thus \(g_{\eff}(C)=g_{\eff}(U)=1\) and the Born fixed point is
+\(\scal_B=\sqrt{CU}\).  The secant value at the lower root is established
+only after the secant index is defined in the next section.  These are native
+two-root identities and require no hierarchy-scale placement.
+\end{theorem}
+
+\begin{proof}
+Subtract one from Theorem~\ref{p3:thm:geff_from_reciprocity} and factor the
+numerator.  The roots and fixed point follow immediately.
+\end{proof}
+
+\begin{remark}[Forward transport normalization]
+\label{p3:rem:forward-transport-normalization}
+Any downstream use of the exact response must retain
+\[
+ \scal_{\rm resp}\,\scal\,g_{\eff}(\scal)=\scal^2+CU,
+ \qquad \scal_{\rm resp}=C+U.
+\]
+Replacing \(C+U\) by either endpoint separately is not exact.
+\end{remark}
+
+\newpage
+
+
+\subsection{Born conjugation of the Hopf--Clifford scale character}
+\label{p3d:sec:v222-phase-born-duality}
+
+The unitary companion of the positive rank character is constructed in
+Paper~III-C, Theorem~\ref{p3c:thm:v222-rank-character-unitary-companion}.
+The statement below is entirely on the \emph{reduced hierarchy scale}
+$\scal$; it is not an assertion that a spacetime Ricci scalar and
+$\scal$ are already identified in a given gravitational action.
+
+\begin{theorem}[Exact Born conjugation and rank-seven antiphase]
+\label{p3d:thm:v222-born-phase-conjugation}
+On the owner-placed response branch of
+Theorem~\ref{p3d:thm:born-seven-depth-reflection}, write
+\[
+ L_\sigma=\log\alpha_\sigma>0,\qquad
+ C_\sigma=Ue^{-7L_\sigma},\qquad
+ \chi_\sigma(\scal)
+ =\exp\!\left(\frac{2\pi i}{L_\sigma}\log\frac{\scal}{U}\right).
+\]
+For the reduced Born involution $\mathcal B\scal=UC_\sigma/\scal$,
+\begin{equation}
+\label{p3d:eq:v222-born-conjugation}
+ \boxed{\chi_\sigma(\mathcal B\scal)
+       =\overline{\chi_\sigma(\scal)}}.
+\end{equation}
+Thus $F_\sigma=\operatorname{Re}\chi_\sigma$ is Born-even and
+$S_\sigma=\operatorname{Im}\chi_\sigma$ is Born-odd.
+At the unique Born-fixed scale $\scal_B=\sqrt{UC_\sigma}$,
+\[
+ \boxed{\chi_\sigma(\scal_B)=-1,\qquad
+        F_\sigma(\scal_B)=-1,\qquad S_\sigma(\scal_B)=0.}
+\]
+All completed rank depths $j\in\{0,\ldots,7\}$ are phase returns:
+$\chi_\sigma(U\alpha_\sigma^{-j})=1$.
+\end{theorem}
+
+\begin{proof}
+Write $\scal=U\alpha_\sigma^{-q}$.
+The inherited reduced Born involution is $q\mapsto7-q$.
+Consequently
+\[
+ \chi_\sigma(\mathcal B\scal)
+ =e^{-2\pi i(7-q)}=e^{2\pi iq}
+ =\overline{e^{-2\pi iq}}
+ =\overline{\chi_\sigma(\scal)}.
+\]
+Taking real and imaginary parts proves the stated parity.  The fixed
+point $q=7/2$ has character $e^{-7\pi i}=-1$; at any integer $j$ the
+value is $e^{-2\pi i j}=1$.
+\end{proof}
+
+\begin{theorem}[Primitive contact phase and the completed Born twist]
+\label{p3d:thm:v222-primitive-phase-twist}
+Assume $(\mathrm{REG})$, so $L_\sigma=L_{\rm top}+\delta_{\rm loc}$
+with $L_{\rm top}=4\pi^2$.  In addition to the completed character
+above, retain the \emph{undressed} primitive character
+\[
+ \chi_{\rm top}(\scal)
+   :=\exp\!\left(\frac{2\pi i}{L_{\rm top}}
+                         \log\frac{\scal}{U}\right).
+\]
+At the stabilized rank depths
+$\scal_j=Ue^{-j(L_{\rm top}+\delta_{\rm loc})}$ one has
+\begin{equation}
+\label{p3d:eq:v222-primitive-phase-drift}
+ \boxed{\chi_{\rm top}(\scal_j)
+       =e^{-i j\delta_{\rm loc}/(2\pi)}}.
+\end{equation}
+For the \emph{completed} Born reflection
+$\mathcal B\scal=UC_\sigma/\scal$, the primitive character obeys the
+fixed-twist law
+\begin{equation}
+\label{p3d:eq:v222-primitive-born-twist}
+ \boxed{\chi_{\rm top}(\mathcal B\scal)
+    =e^{-i7\delta_{\rm loc}/(2\pi)}
+                         \overline{\chi_{\rm top}(\scal)}}.
+\end{equation}
+At the completed Born midpoint this gives
+\[
+ \chi_{\rm top}(\scal_B)
+    =-e^{-i7\delta_{\rm loc}/(4\pi)},\qquad
+ F_{\rm top}(\scal_B)
+    =-\cos\!\left(\frac{7\delta_{\rm loc}}{4\pi}\right).
+\]
+These equations are exact algebraic consequences of the positive
+hierarchy character and do not require a gravitational action.
+\end{theorem}
+
+\begin{proof}
+Direct substitution gives
+\[
+ \frac{2\pi}{L_{\rm top}}\log\frac{\scal_j}{U}
+   =-2\pi j-\frac{j\delta_{\rm loc}}{2\pi}.
+\]
+For the Born reflection,
+$\log(\mathcal B\scal/U)=\log(C_\sigma/U)-\log(\scal/U)$;
+therefore
+\[
+ \chi_{\rm top}(\mathcal B\scal)
+ =\exp\!\left[-2\pi i7
+    \frac{L_{\rm top}+\delta_{\rm loc}}{L_{\rm top}}\right]
+      \overline{\chi_{\rm top}(\scal)}.
+\]
+The integer $7$ contributes a unit factor, leaving
+Eq.~\eqref{p3d:eq:v222-primitive-born-twist}.  At
+$\scal_B=Ue^{-7L_\sigma/2}$ the same substitution gives the
+midpoint formulas.
+\end{proof}
+
+\begin{remark}[A winding theorem is not a physical phase-selector]
+\label{p3d:rem:v222-phase-nonaction-firewall}
+On the completed interval $U\to C_\sigma$ the completed character
+winds seven times and returns to $1$.  The \emph{primitive} character
+on the same completed interval ends at
+$e^{-i7\delta_{\rm loc}/(2\pi)}\ne1$; that open phase curve does
+not itself define an integer winding number without an additional
+closure convention.  The primitive and completed circles must not be
+conflated.  Moreover, the normalized contact residue and Clifford rank
+fix the periodic \emph{representation}, but a physical phase selection
+requires a separately generated operator/coupling.  The framework
+continues to derive active depths $0,4,5,7$ without $(\mathrm{FLAG})$.
+Neither the cosine nor the sine is inserted into the gravity action.
+Any comparison to the four-dimensional de Sitter Ricci curvature,
+including a condition $7\delta_{\rm loc}=\log2$, is a new endpoint
+matching hypothesis rather than a consequence of this theorem.
+\end{remark}
+
+\subsection{Conditional curvature-clock chart and capped comparison}
+\label{p3d:sec:v223-cap-clock}
+\begin{proposition}[Phase curvature chart and finite Clifford endpoint]
+\label{p3d:prop:v223-curvature-clock}
+Use the completed logarithmic phase on its stated shell, with
+$L=\log\alpha=4\pi^2+\delta$, $\delta=1/(6\sqrt2)$.
+On the candidate comparison identifying its scale variable with
+$R=R[g]>0$ and its upper anchor with $P$, define
+\[
+ q(R)=\frac{\log(P/R)}{L},\quad C_j=P\alpha^{-j},\quad
+ R_s=P\alpha^{-7/2},\quad x=R/R_s=\alpha^{7/2-q}.
+\]
+Completed phase returns occur at $q=j$; the protected Clifford endpoint
+is $C_7>0$.  For retained cap anchors
+\[
+ B_U=\alpha^{1/2+\delta/2},\quad
+ B_I=\alpha^{7/2-\delta/2},\quad \Delta=B_I-B_U,
+ \quad \sigma=B_IR_s,
+\]
+the profile $B(R)=B_U+2\Delta/(1+\sqrt{1+x^2})$ obeys
+\[
+ B(q)=B_U+\frac{2\Delta}{1+\sqrt{1+\alpha^{7-2q}}}.
+\]
+Writing $d=1-B_U/B_I$ and $\epsilon_B=1-B(C_7)/B_I$ gives
+\[
+ \epsilon_B=\frac{d\alpha^{-7}}{(1+\sqrt{1+\alpha^{-7}})^2}
+ \le\frac d4\alpha^{-7}.
+\]
+For $D=\sigma^2/B^2$ its terminal relative error from $R_s^2$ is
+$D(C_7)/R_s^2-1=(1-\epsilon_B)^{-2}-1$.
+\end{proposition}
+\begin{proof}
+Substitute $R=P\alpha^{-q}$ and rationalize
+$1-2/(1+\sqrt{1+x^2})=x^2/(1+\sqrt{1+x^2})^2$ at $x^2=\alpha^{-7}$.
+The source formula follows from $\sigma=B_IR_s$.
+\end{proof}
+Numerically the coefficient bound is approximately $1.05403\,10^{-121}$
+and the source bound approximately $2.10806\,10^{-121}$.  They are
+nonzero controlled endpoint errors.  A domain endpoint does not itself
+introduce a freeze outside that domain or new junction conditions.
+
+\begin{remark}[Logarithmic depth is not an auxiliary hyperbolic chart]
+\label{p3d:rem:v223-log-asinh}
+On this candidate branch
+\[
+ \ell_{\rm hier}=\log(R/R_s)=L(7/2-q),\qquad
+ \zeta=\operatorname{arsinh}(R/R_s),\qquad
+ e^{\ell_{\rm hier}}=\sinh\zeta.
+\]
+Thus $\ell_{\rm hier}$ and $\zeta$ must not be identified.  In
+particular $R=0$ is not the Clifford endpoint and is not forced to lie
+at $q=7/2$ by the phase hierarchy.  The latter location belongs to a
+different optional odd-coordinate identification.  It is not an
+obstruction to the declared positive curvature clock.
+Here $q=q(R[g])$ is derived: $q_R=-1/(LR)$ and $q_{RR}=1/(LR^2)$.
+It has no independent Euler equation or externally prescribed clock
+force.  All chain-rule contacts belong to the metric variation.
+\end{remark}
+The native phase theorem remains a representation on a reduced scale.
+Its identification with metric Ricci curvature, its upper dimensional
+normalization and the cap anchors above are stated comparison premises,
+not consequences of winding alone.  The primitive and completed
+characters retain their distinct periods and twist.  No phase cosine
+is inserted into the action.  Under the declared reciprocal comparison
+$q\mapsto7-q$, $x\mapsto1/x$, the cap chart transforms by
+Theorem~\ref{p1b:thm:v223-born-pencil}; it does not transform by $t\mapsto-t$.
+
+
+\section{Rank-seven Laurent jets and local-to-global scope}
+\label{paper3d:sec:organized-laurent}
+\subsection{Reciprocal and spectral response indices}
+
+\begin{definition}[Declared two-root response and running indices]
+Within \(({\rm RED})+({\rm UV})+({\rm IR})\), let \(0<C<U\) and define
+\begin{equation}
+\label{p3:eq:geff_def}
+ g_{\eff}(\scal)
+ :=\frac{\scal^2+CU}{(C+U)\scal}.
+\end{equation}
+The instantaneous index is
+\begin{equation}
+\upsilon(\scal)
+:=\frac{d\ln g_{\eff}}{d\ln\scal}.
+\label{p3:eq:upsilon_def}
+\end{equation}
+For \(\scal\ne U\), the scale-averaged secant index based at the exact upper
+root is
+\begin{equation}
+\label{p3:eq:n_secant_def}
+ n_{\rm sec}(\scal)
+ :=\frac{\ln g_{\eff}(\scal)}{\ln(\scal/U)}.
+\end{equation}
+At \(\scal=U\) it is defined by its continuous limit,
+\[
+ n_{\rm sec}(U):=\frac{U-C}{U+C}.
+\]
+Thus \(g_{\eff}(\scal)=(\scal/U)^{n_{\rm sec}(\scal)}\) away from the base and by
+continuous extension at the base.
+\end{definition}
+
+\begin{remark}[Status of the reduced variables]
+\label{p3:rem:reduced_variables_status}
+The variable \(\upsilon\) is the instantaneous logarithmic slope, whereas
+\(n_{\rm sec}\) is a secant exponent.  The Riccati law below is an identity obeyed by
+\(\upsilon\), not an autonomous evolution equation for \(n_{\rm sec}\).  The secant
+index is not additive under shell concatenation.  If successive intervals
+have logarithmic lengths \(\lambda_i\) and secant indices \(n_{{\rm sec},i}\), then
+\[
+ n_{{\rm sec},12}
+ =\frac{n_{{\rm sec},1}\lambda_1+n_{{\rm sec},2}\lambda_2}
+        {\lambda_1+\lambda_2}.
+\]
+The additive object is the logarithmic transport
+\(n_{\rm sec}\lambda\).  This response exponent is not the active entropy
+index of the hierarchy-scale state used later.
+\end{remark}
+
+\begin{remark}[Exponent-space character evaluation is not secant concatenation]
+\label{p3d:rem:v263-exponent-character-pullback}
+The preceding nonadditivity statement concerns concatenation of physical
+logarithmic intervals.  It does not obstruct evaluation of an independently
+constituted positive one-parameter coefficient character on the generated
+Laurent exponent.  Concretely, if
+\[
+ \rho:(\mathbb R,+)\longrightarrow\mathbb R_{>0},
+ \qquad \rho(s+t)=\rho(s)\rho(t),
+\]
+is already generated on its own coefficient owner, then
+\[
+ R\longmapsto \rho\!\left(n_j^+(R)\right)
+\]
+is only the pullback of that character along the scalar exponent readout.
+No statement
+\[
+ n_j^+(q_1+q_2)=n_j^+(q_1)+n_j^+(q_2)
+\]
+is implied or required.  Thus the additive parameter of a coefficient
+representation and the nonadditive physical secant coordinate remain
+separately typed.
+\end{remark}
+
+\begin{theorem}[Riccati identity for the instantaneous index]
+\label{p3:thm:riccati}
+Let \(\scal_B:=\sqrt{CU}\).  The instantaneous index satisfies
+\begin{equation}
+\boxed{\frac{d\upsilon}{d\ln \scal} = 1 - \upsilon^2}
+\end{equation}
+with solution
+\begin{equation}
+\label{p3:eq:upsilon_solution}
+\upsilon(\scal)
+=\frac{\scal^2-\scal_B^2}{\scal^2+\scal_B^2}
+=\tanh\!\bigl(\ln(\scal/\scal_B)\bigr).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The calibrated response of Theorem~\ref{p3:thm:geff_from_reciprocity}
+is \(h\) in Paper~I-D,
+Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1D}.
+With \(R=\scal\), \(v=\upsilon\) and \(\scal_B=\sqrt{CU}\), that
+theorem gives both the Riccati identity and
+Eq.~\eqref{p3:eq:upsilon_solution}.
+\end{proof}
+
+\begin{proposition}[Closed form and continuous base value for the secant index]
+\label{p3:prop:n_closed}
+For \(\scal>0\), \(\scal\ne U\),
+\begin{equation}
+\boxed{
+n_{\rm sec}(\scal)
+=
+\frac{\ln\!\big[(\scal^2+CU)/((C+U)\scal)\big]}
+     {\ln(\scal/U)}.
+}
+\end{equation}
+At \(\scal=U\), the removable value is
+\[
+ n_{\rm sec}(U)=\frac{U-C}{U+C}.
+\]
+\end{proposition}
+
+\begin{proof}
+Substituting the calibrated response \eqref{p3:eq:geff_def} into
+\eqref{p3:eq:n_secant_def} identifies \(n_{\rm sec}\) with \(n\) in
+Paper~I-D, Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1D},
+for \(R=\scal\).  Its smooth removable value at \(U\) is the one displayed.
+\end{proof}
+
+\begin{proposition}[Maximal nonnegative secant branch]
+\label{p3:def:active-reduced-window}
+For the continuous secant index of Proposition~\ref{p3:prop:n_closed},
+\[
+ \boxed{\{\scal>0:n_{\rm sec}(\scal)\ge0\}=[C,\infty).}
+\]
+This set is the intrinsic nonnegative secant branch
+\(\mathcal I_{\rm sec}\).  The upper root \(U\) is an interior removable base
+point of the secant quotient, not a boundary or singularity of the response.
+\end{proposition}
+
+\begin{proof}
+For the calibrated pair \(0<C<U\), Paper~I-D,
+Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1D}, gives
+\(n_{\rm sec}(\scal)\ge0\) exactly when \(\scal\ge C\), and smoothness
+at \(\scal=U\).  This identifies the local branch
+\(\mathcal I_{\rm sec}\) with \([C,\infty)\).
+\end{proof}
+
+\begin{theorem}[Exact secant range on the intrinsic nonnegative branch]
+\label{p3:thm:exact-calibrated-secant-range}
+\label{p3:thm:entropy-domain-obstruction-active-branches}
+On the intrinsic nonnegative secant branch
+\(\mathcal I_{\rm sec}=[C,\infty)\), the secant index is continuous and
+strictly increasing, with
+\[
+ n_{\rm sec}(C)=0,
+ \qquad
+ n_{\rm sec}(U)=\frac{U-C}{U+C},
+ \qquad
+ \lim_{\scal\to\infty}n_{\rm sec}(\scal)=1.
+\]
+Consequently
+\[
+ 0\le n_{\rm sec}(\scal)<1
+ \quad\text{for every finite }\scal\ge C.
+\]
+The whole nonnegative secant branch therefore lies in the numerical entropy
+range of the protected octet.  This range comparison does not identify the
+secant exponent with the hierarchy-active entropy index.
+\end{theorem}
+
+\begin{proof}
+Paper~I-D, Theorem~\ref{p1b:thm:laurent-family}~\cite{Kugelmann2026Paper1D},
+with \(R=\scal\), gives smoothness, strict monotonicity, both finite
+endpoint values and \(0\le n_{\rm sec}<1\) on \([C,\infty)\).
+Since \(g_{\eff}(\scal)\sim\scal/(C+U)\) as \(\scal\to\infty\),
+the quotient of logarithms tends to one.  The displayed numerical range
+is therefore contained in the protected-octet entropy range; this
+comparison of ranges makes no identification of the two indices.
+\end{proof}
+
+\begin{definition}[Generated neutral visibility family \((\mathrm{NEUT}_7)\)]
+\label{p3:def:neutral-visibility-readout}
+On the protected split derived by
+\(\mathsf C_{\rm IR}^{\rm der}\), the theorem-status certification
+\((\mathrm{NEUT}_7)\) denotes the already-generated and co-realized Paper~III-C
+basis-neutral common-rate semigroup
+\[
+ V_\tau=P_0+e^{-\tau}P_W.
+\]
+Paper~I-C, Proposition~\ref{p1b:prop:trace-coordinate}
+\cite{Kugelmann2026Paper1C}, is the mathematical owner of this common-rate
+semigroup and its trace-defect coordinate; the III-C construction supplies
+the generated role/provenance used here.  Thus the owner citation does not
+add a second process occurrence.  III-D does not
+reconstruct the semigroup or use it to generate the projectors \(P_0,P_W\).
+Its extensive value
+\(Z(\tau)=\operatorname{Tr}V_\tau=1+7e^{-\tau}\) is a closed heat loop.
+The entropy branch first forms the boundary state
+\(\rho_\tau=V_\tau/Z(\tau)\) and then applies the generated state-decorated
+loop \(-\operatorname{Tr}(\rho_\tau\log\rho_\tau)\).  Thus
+\((\mathrm{NEUT}_7)\) is a generated mixed-role construction in \(\Rgen\),
+not a primitive third role.  Whenever an occurring composite contains this
+frozen family, Paper~III-C
+Corollary~\ref{p3c:cor:corealized-protected-visibility-family} realizes all
+of these constituents without a separate neutral-state occurrence tag.
+\end{definition}
+
+\begin{theorem}[Unique basis-neutral entropy lift]
+\label{p3:thm:basis-neutral-entropy-lift}
+On \(\mathsf C_{\rm IR}^{\rm der}\), use the generated family certified by
+\((\mathrm{NEUT}_7)\).
+Let \(P_0\) and \(P_W=1-P_0\) be the scalar and seven-dimensional
+non-scalar projectors, and use the imported \((\mathrm{NEUT}_7)\) semigroup
+\[
+ V_\tau=P_0+e^{-\tau}P_W,
+ \qquad
+ \rho_\tau:=\frac{V_\tau}{1+7e^{-\tau}},
+ \qquad \tau\in[0,\infty].
+\]
+Its entropy is
+\begin{equation}
+\label{p3:eq:neutral-entropy-lift}
+ S(\rho_\tau)
+ =\ln(1+7e^{-\tau})
+  +\frac{7\tau e^{-\tau}}{1+7e^{-\tau}}.
+\end{equation}
+It decreases strictly from \(\ln8\) to \(0\).  Hence for every
+\(\scal\in[C,\infty)\) there is a unique
+\(\tau_{\rm sec}(\scal)\in[0,\infty]\) satisfying
+\[
+ S(\rho_{\tau_{\rm sec}(\scal)})
+ =n_{\rm sec}(\scal)\ln8.
+\]
+This proves existence and uniqueness of an auxiliary secant-matched state
+within the \((\mathrm{NEUT}_7)\) family.  That family does not
+constitute the \(1\oplus7\) split; it acts on the split already derived by
+\(\mathsf C_{\rm IR}^{\rm der}\).  No physical shell-transport
+identification is asserted in this theorem.  The auxiliary matching sends
+\(\scal=C\) to the scalar state and
+\(\scal\to\infty\) to the maximally mixed octet.  The upper response root
+\(\scal=U\) is an interior point of this response/entropy branch; identifying
+it with the maximally mixed endpoint would require an additional endpoint
+map and is not asserted.
+\end{theorem}
+
+\begin{proof}
+The spectrum of \(\rho_\tau\) consists of
+\[
+ p_0=\frac1{1+7e^{-\tau}},
+ \qquad
+ p_W=\frac{e^{-\tau}}{1+7e^{-\tau}}
+\]
+with multiplicities one and seven.  Direct substitution into
+\(-\Tr(\rho\ln\rho)\) gives
+\eqref{p3:eq:neutral-entropy-lift}.  Its derivative is
+\[
+ \frac{d}{d\tau}S(\rho_\tau)
+ =-\frac{7\tau e^{-\tau}}{(1+7e^{-\tau})^2}<0
+ \qquad(\tau>0).
+\]
+At \(\tau=0\), \(\rho_0=I_8/8\) and \(S=\ln8\); as
+\(\tau\to\infty\), \(\rho_\tau\to P_0\) and \(S\to0\).
+Theorem~\ref{p3:thm:entropy-domain-obstruction-active-branches} places
+\(n_{\rm sec}(\scal)\ln8\) in this exact range, so continuity and strict
+monotonicity give the unique \(\tau_{\rm sec}(\scal)\).  No forward
+Paper~III-E theorem is used in this proof.
+\end{proof}
+
+\begin{remark}[Chronological status of the physical hierarchy-active state]
+\label{p3d:rem:mresp-derived-later-state}
+The state \(\rho_{\tau_{\rm sec}(\scal)}\) above is an auxiliary
+secant-matched comparison state only.  At the III-D stage no physical
+response-scale state is selected by that matching.  On the later independently
+constituted Paper~III-E \((\mathrm{MRESP})\) branch, the occurring response
+composite contains the generated visibility family and its own scale map, so
+its hierarchy-active state \(\sigma_{\rm act}(\scal)\) is
+\emph{derived later} by constituent co-realization.  This does not identify
+\(\sigma_{\rm act}\) with the secant-matched state and does not derive the
+later state-to-Hessian transport law, which remains part of the declared
+response class.
+\end{remark}
+
+
+\subsection{Fixed-depth rank-seven Laurent jet}
+\label{p3d:sec:v173-n7-local-jet}
+Put $C:=C_7$ and
+\[
+ \mathscr H_7(R):=\frac{R^2+UC}{U+C},\qquad
+ n_7(R):=\Pi_+\!\left(n_7^{\rm L}(R)\right).
+\]
+The exact secant identity is
+$\mathscr H_7(R)=R(R/U)^{n_7(R)}$ on the active nonnegative branch, but
+$n_7$ is a coefficient/depth readout and is not differentiated by a local
+configuration variation.
+
+\begin{theorem}[Actual excess-source derivative and exact local-character certificate]
+\label{p3d:thm:v2211-excess-character-certificate}
+Fix an active background $\bar R>C$, its fixed scheme/depth coefficient
+$n=n_7(\bar R)$, $w=1+n$, and
+$\Delta=\mathscr H_7(\bar R)-C>0$. Let $E_{\bar R}(r)$ be the
+\emph{actual} $C^1$ local Euler/source excess readout obtained from an
+independently supplied complete action/source word, on a positive local
+configuration interval about $r=\bar R$, with scheme/depth and the
+terminal coefficient $C$ held fixed. Its diagonal-value port is
+$E_{\bar R}(\bar R)=\Delta$. Define the evaluable Ward defect
+\begin{equation}
+\label{p3d:eq:v2211-excess-ward-residual}
+ \boxed{\mathcal W_{\bar R}(r)
+ :=r\partial_rE_{\bar R}(r)-wE_{\bar R}(r).}
+\end{equation}
+Then the complete source is exactly
+\begin{equation}
+\label{p3d:eq:v2211-excess-ward-reconstruction}
+ \boxed{E_{\bar R}(r)=
+ \Delta(r/\bar R)^w+
+ r^w\int_{\bar R}^{r}s^{-w-1}\mathcal W_{\bar R}(s)\,ds.}
+\end{equation}
+Consequently the pure excess-character germ holds if and only if
+$\mathcal W_{\bar R}=0$ on that interval. For only its consumed local
+susceptibility the exact weaker necessary and sufficient test is
+\begin{equation}
+\label{p3d:eq:v2211-excess-local-jet-certificate}
+ \boxed{\chi_{\rm act}(\bar R)
+ :=\frac{\partial_rE_{\bar R}(\bar R)}{\bar R}
+ =\frac{w\Delta+\mathcal W_{\bar R}(\bar R)}{\bar R^2}.}
+\end{equation}
+We denote an actual normalized diagonal-value port together with an evaluated
+$\mathcal W_{\bar R}(\bar R)=0$ by $(\mathrm{EXJET}_7)$; the stronger
+interval condition is $(\mathrm{EXCHAR}_7)$. These tags certify a result
+of the actual source calculation; they are not axioms setting its defect to
+zero. If the independently owned one-variable coefficient is $f_{\bar R}$
+and its complete Euler readout is $r f'_{\bar R}-f_{\bar R}$, then
+\[
+ E_{\bar R}=r f'_{\bar R}-f_{\bar R}-C,\qquad
+ \mathcal W_{\bar R}=r^2f''_{\bar R}
+ -w(rf'_{\bar R}-f_{\bar R}-C).
+\]
+The calculation must retain actual operator, density/localizer, field, source
+and boundary derivatives. Reconstructing $f$ from the proposed $\chi$ and
+then checking this equation is not an independent certificate.
+\end{theorem}
+\begin{proof}
+Differentiate $r^{-w}E_{\bar R}(r)$ at fixed $w$ and $\bar R$:
+\[
+ \partial_r(r^{-w}E_{\bar R})
+ =r^{-w-1}\mathcal W_{\bar R}.
+\]
+Integrating from $\bar R$ proves the complete formula and the interval
+if-and-only-if statement. Evaluation of the defining defect at $\bar R$
+gives the local-jet identity. Finally
+$\partial_r(rf'_{\bar R}-f_{\bar R})=rf''_{\bar R}$ gives the displayed
+actual-action version. No diagonal derivative of $n_7(R)$ is taken.
+\end{proof}
+
+\begin{theorem}[Conditional fixed-depth Laurent excess jet]
+\label{p3d:thm:v173-fixed-depth-laurent-excess-jet}
+On the actual local source domain of
+Theorem~\ref{p3d:thm:v2211-excess-character-certificate}, suppose
+$(\mathrm{EXJET}_7)$ has been evaluated successfully. Its local
+susceptibility is then
+\begin{equation}
+\label{p3d:eq:v173-n7-local-susceptibility}
+ \boxed{\chi_7^{\rm jet}(\bar R)
+ =\frac{(1+n_7(\bar R))(\bar R^2-C^2)}{(U+C)\bar R^2}.}
+\end{equation}
+Under the stronger evaluated $(\mathrm{EXCHAR}_7)$ the unique excess germ
+is
+\[
+ \Delta^{\rm loc}_{7,\bar R}(r)
+ =\Delta_7(\bar R)(r/\bar R)^{1+n}.
+\]
+The supplied susceptibility extends continuously by $\chi_7^{\rm jet}(C)=0$
+and obeys
+\[
+ 0<\chi_7^{\rm jet}(R)\le\frac2{U+C}\quad(R>C),\qquad
+ \lim_{R\to\infty}\chi_7^{\rm jet}(R)=\frac2{U+C},
+\]
+and
+\begin{equation}
+\label{p3d:eq:v173-n7-terminal-jet}
+ \boxed{\chi_7^{\rm jet}(C+\delta)
+ =\frac{2\delta}{C(U+C)}+O(\delta^2).}
+\end{equation}
+Without the actual source certificate these are a valid candidate-response
+model and its exact consequences, rather than a derivation of a physical
+local Hessian from the finite-scale secant alone.
+\end{theorem}
+\begin{proof}
+The zero local Ward defect gives $\chi=w\Delta/\bar R^2$.
+Substitute $\Delta=(\bar R^2-C^2)/(U+C)$ to obtain the formula.
+The interval certificate gives the stronger unique germ by the preceding
+theorem. The bounds use $0\le n_7<1$ and $0<1-C^2/R^2<1$; its upper
+limit follows from $n_7\to1$. Smoothness of the active Laurent secant at
+$C$, with $n_7(C)=0$, gives $n_7(C+\delta)=O(\delta)$ and the stated
+expansion. No value/character theorem evaluates the actual Ward defect.
+\end{proof}
+
+\begin{proposition}[Exact nonuniqueness before the excess-source port]
+\label{p3d:prop:v2211-excess-jet-counterfamily}
+Put $H=\mathscr H_7(\bar R)$. The germs
+\[
+ E_A(r)=(H-C)(r/\bar R)^w,\qquad
+ E_B(r)=H(r/\bar R)^w-C
+\]
+have the same diagonal excess, fixed coefficient $n$, and terminal constant,
+but their defects are $\mathcal W_A=0$ and $\mathcal W_B=wC$.
+Their inverse-Euler jets differ by $wC/\bar R^2$.
+Moreover for every fixed $\beta>0$,
+\[
+ E_\beta(r)=\Delta(r/\bar R)^\beta,\qquad
+ \chi_\beta(\bar R)=\frac{\beta(\bar R^2-C^2)}{(U+C)\bar R^2}
+\]
+is a single positive local character with the same diagonal value and
+terminal Hessian decay. The member $\beta=2$ also has the printed
+high-curvature limit. Thus the exact secant, tangent-sort distinction,
+positivity and terminal decay do not by themselves select $w=1+n$ as the
+\emph{excess} representation. An actual Ward/source evaluation is required.
+\end{proposition}
+\begin{proof}
+Direct differentiation gives $rE_A'=wE_A$ and
+$rE_B'=w(E_B+C)$. For $E_\beta$ the defect is
+$(\beta-w)E_\beta$, giving the stated jets. Their common diagonal data
+therefore leave the local derivative unresolved. These functions show the
+missing information; they are not promoted to additional physical actions.
+\end{proof}
+
+\begin{remark}[Secant, visibility and local jet are distinct]
+\label{p3d:rem:v173-three-n7-sorts}
+The exact secant exponent $n_7^{\rm L}$, the normalized unresolved trace
+$\nu_7$, and the local susceptibility $\chi_7^{\rm jet}$ are three distinct
+readouts.  The first fixes the finite-scale Laurent character, the second is
+a visibility trace, and the third is the fixed-depth local configuration
+second jet.  No equality among these sorts is used.
+\end{remark}
+
+\subsection{Complete action jets and the local/global response distinction}
+\label{p3d:sec:v2216-complete-action-jets}
+
+A fixed-background configuration derivative and a derivative after pulling
+background coefficients back to curvature are different operations. The
+following tests retain this distinction without modifying the Laurent
+response or its terminal data. They apply in one common physical pairing
+after the operator, density, localizer, source and boundary maps have been
+supplied. Co-realization alone does not supply those maps; see
+Theorem~\ref{p3a:thm:v2216-common-action-consumption}.
+
+\begin{theorem}[Complete action jets and exact matching residual]
+\label{p3d:thm:v2216-complete-action-jets}
+Let $I=(C,R_+)$ with $C>0$, let $B$ be a regular finite coefficient chart,
+and let $A\in C^2(B\times I)$ be an independently supplied scalar action
+coefficient in a fixed physical unit and density chart. Let $b:I\to B$ be
+the actual $C^2$ coefficient map and put
+$f_{\rm act}(R)=A(b(R),R)$. Then
+\begin{align}
+ f_{\rm act}''&=A_{rr}+\mathcal G,\notag\\
+ \mathcal G&=2A_{rb}[b']+A_{bb}[b',b']+A_b[b''],
+ \label{p3d:eq:v2216-full-pullback}
+\end{align}
+where all partial derivatives are evaluated at $(b(R),R)$.
+For a supplied continuous target $K$, integrable at $C$, define
+\[
+ f_K(R)=R-C+\int_C^R(R-t)K(t)\,dt.
+\]
+Suppose $f_{\rm act},f_{\rm act}'$ extend to $C$ and the following
+integral exists. With
+$\delta_0=f_{\rm act}(C)$, $\delta_1=f_{\rm act}'(C)-1$ and
+$\mathcal M=f_{\rm act}''-K$, the exact residual is
+\begin{equation}
+ \boxed{f_{\rm act}-f_K=\delta_0+\delta_1(R-C)+
+          \int_C^R(R-t)\mathcal M(t)\,dt.}
+ \label{p3d:eq:v2216-action-residual}
+\end{equation}
+Thus equality holds on $I$ if and only if both endpoint ports agree and
+$\mathcal M=0$. For $K=A_{rr}(b(R),R)$, the latter test is exactly
+$\mathcal G=0$.
+
+In a scalar background chart define the frozen diagonal jets
+$a(R)=A(R,R)$, $p(R)=A_r(R,R)$ and $k(R)=A_{rr}(R,R)$. They are the
+complete two-jet of one function exactly when
+\[
+ a'=p,\qquad p'=k,
+ \quad\hbox{equivalently}\quad A_b(R,R)=A_{br}(R,R)=0.
+\]
+Agreement only of the diagonal Hessian with $k$ is the weaker condition
+$2A_{br}+A_{bb}=0$ on that diagonal.
+\end{theorem}
+\begin{proof}
+Differentiate $A(b(R),R)$ twice to obtain
+\eqref{p3d:eq:v2216-full-pullback}. Twice integrating
+$(f_{\rm act}-f_K)''=\mathcal M$ with its two endpoint values gives
+\eqref{p3d:eq:v2216-action-residual} and its equivalence. For the last
+statement the chain rule gives $a'=A_r+A_b$ and
+$p'=A_{rr}+A_{rb}$. Necessity follows from the definition of a two-jet;
+conversely the two identities make $a$ the required function. The weaker
+condition follows by differentiating $a$ twice directly.
+\end{proof}
+
+\begin{remark}[Density and two-endpoint tests of the same action]
+\label{p3d:rem:v2217-density-matching-import}
+The density derivatives in Paper~III-C,
+Proposition~\ref{p3c:prop:v2217-determinant-density-jets}, are included in
+$A$ and its complete pullback above. Paper~III-E,
+Theorem~\ref{p3e:thm:v2217-uv-ir-moment-nonuniqueness}, supplies the exact
+two-endpoint moment and chart-gluing tests. Neither determinant scaling nor
+smooth UV/IR endpoint data substitute for evaluating the independent
+same-action residual; the existing global EXJET obstruction is retained.
+\end{remark}
+
+
+\begin{remark}[Full physical matching retains more than the scalar port]
+The theorem compares one scalar coefficient. Equality of complete physical
+actions additionally requires every retained metric, matter, mixed-source
+and boundary variation, together with the same domain and pairing. For
+$\Gamma(q)=\mathcal S(\iota(q))$ the general second-variation rule is
+\[
+ D^2\Gamma[u,v]=D^2\mathcal S[D\iota u,D\iota v]
+                    +D\mathcal S[D^2\iota(u,v)].
+\]
+Thus a field/source map carries a second contact even when its linearized
+map is known. Multiplying or dividing an action by a moving density carries
+the corresponding product-rule terms. Coefficients that are external
+marks remain fixed in a physical variation; substituting $b=b(R)$ is
+licensed only by an actual pullback. Endpoint matching and a supplied
+Hessian give uniqueness of a reconstruction, not an origin certificate for
+an independently owned action.
+\end{remark}
+
+\begin{theorem}[Terminal global action obstruction for a bounded EXJET character]
+\label{p3d:thm:v2216-exjet-global-obstruction}
+Let $f\in C^2([C,R_1])$ satisfy $f(C)=0$, $f'(C)=1$, and let $w$ be
+continuous. If its \emph{same global} Euler excess
+$E(R)=Rf'(R)-f(R)-C$ obeys
+\[
+ RE'(R)-w(R)E(R)=0
+\]
+at every point, then $E\equiv0$ and $f''\equiv0$.
+
+In particular let $w=1+n_7$, $D=U+C$, and
+\[
+ \Delta(R)=\frac{R^2-C^2}{D},\qquad
+ \chi_7(R)=\frac{w(R)\Delta(R)}{R^2}.
+\]
+The terminally normalized integral coefficient and its excess are
+\[
+ f_{\rm gl}=R-C+\int_C^R(R-t)\chi_7(t)\,dt,\qquad
+ E_{\rm gl}=\int_C^R t\chi_7(t)\,dt.
+\]
+On every finite active interval $R>C$,
+\begin{equation}
+ \boxed{\mathcal W_{\rm gl}:=R^2\chi_7-wE_{\rm gl}
+     =w(\Delta-E_{\rm gl})>0.}
+ \label{p3d:eq:v2216-global-exjet-residual}
+\end{equation}
+Consequently the original bounded-character EXJET relation cannot be imposed
+on this same global metric action at every background. Local certification
+of a separate frozen source family remains meaningful, but its consumption
+as a global Hessian requires a separately supplied second-jet transport.
+\end{theorem}
+\begin{proof}
+The endpoint data give $E(C)=0$. Since $w/R$ is continuous for $C>0$,
+the integrating factor gives
+$E(R)=E(C)\exp\{\int_C^R w(t)\,dt/t\}=0$. The identity
+$E'=Rf''$ then proves the first statement. On the native active branch,
+$0\le n_7<1$ and $0<\chi_7<2/D$. Integration against $t>0$ gives
+\[
+ 0<E_{\rm gl}(R)<\int_C^R\frac{2t}{D}\,dt=\Delta(R).
+\]
+Substitution of $R^2\chi_7=w\Delta$ proves the strict residual. This
+obstruction does not differentiate a fixed depth during a local variation:
+it tests whether the entire family can be one ordinary global function.
+\end{proof}
+
+\begin{corollary}[Raw Laurent Euler values do not glue with the local Hessian]
+\label{p3d:cor:v2216-raw-euler-nongluing}
+No $C^2$ coefficient on a nonempty undressed active interval can satisfy
+both
+\[
+ Rf'-f=\frac{R^2+UC}{U+C},\qquad f''=\chi_7.
+\]
+\end{corollary}
+\begin{proof}
+Differentiating the first identity forces $f''=2/(U+C)$, whereas the
+strict inequality in the preceding proof gives $\chi_7<2/(U+C)$.
+An affine correction changes neither second derivative.
+\end{proof}
+
+\subsection{Finite coefficient tests of complete running-response jets}
+\label{p3d:sec:v226-response-coefficients}
+\begin{proposition}[A finite native jet identity has complete scalar tests]
+\label{p3d:prop:v226-response-coefficients}
+Let $A(r),\widetilde A(r)$ be actual $C^k$ native response matrices in the
+same generated level-one momentum frame. Their jets through order $k$ agree at
+$r_*$ exactly when
+\[
+ \left.\partial_r^\ell\operatorname{Tr}
+       [E_j(\widetilde A(r)-A(r))]\right|_{r_*}=0,
+ \quad j=1,\ldots,137,\quad 0\le\ell\le k.
+\]
+In a transported unitary frame use the covariant derivatives of
+Corollary~\ref{p1b:cor:v226-source-jets}.
+\end{proposition}
+\begin{proof}
+Apply the fixed linear dual inverse of
+Theorem~\ref{p1b:thm:v226-dual-coefficients} to every derivative of the
+actual difference. Vanishing of all coefficients is necessary and sufficient.
+\end{proof}
+A tested scalar trace can close a smaller consumed quotient; it need not
+reconstruct an unused matrix. Conversely a scalar profile match does not
+prove this complete native jet identity. Source incidence, density,
+localizer and boundary derivatives remain in the actual matrix words.
+This finite test leaves the current Laurent/capped profile and selected
+excess-character obligations on their existing physical domains.
+
+
+\subsection{Global energy comparison from local source jets}
+\label{p3d:sec:v227-running-frequency}
+\begin{corollary}[Finite energy tests close the consumed local running jets]
+\label{p3d:cor:v227-running-frequency}
+At a fixed running/source point, two actual finite Hermitian response
+families in one fixed kinetic frame have identical consumed jets through
+order $k$ as functions of all meromorphic energies if those jets agree at
+$\lfloor(k+1)(m_1+m_2)/2\rfloor+1$ distinct upper-half-plane energies.
+\end{corollary}
+\begin{proof}
+Apply Corollary~\ref{p1b:cor:v227-response-jets} to the actual running
+source derivatives. The degree bound is in the spectral energy variable.
+\end{proof}
+This strengthens the fixed-energy coefficient tests of the preceding
+section. It does not extrapolate arbitrary $C^k$ curvature dependence
+away from the source point, identify the hierarchy index with energy,
+or provide an uncomputed capped/Laurent profile. A curvature-dependent
+energy frame consumes its actual frame/clock derivatives before applying
+the comparison theorem in a common normalization.
+
+
+\section{Positive mathematical providers and fixed-momentum sources}
+\label{paper3d:sec:organized-providers}
+\subsection{Positive mathematical providers for the Born second jet}
+\label{p3d:sec:v2216-positive-born-provider}
+
+The conditional response has two explicit positive mathematical providers.
+They establish existence and useful approximation results. Neither identifies
+the physical action by fitting it to the proposed susceptibility. In this
+section $0<C<U$, $D=U+C$, and $n=n_7$ on its active nonnegative branch.
+The physical constructor and complete-source requirements of
+Theorem~\ref{p3d:thm:v2216-complete-action-jets} remain in force.
+
+\begin{theorem}[Positive resolvent measure and terminal-null Schur provider]
+\label{p3d:thm:v2216-positive-born-provider}
+Put $a_0=U^2$, $b_0=UC$, $c_0=C^2$, and define
+\[
+ F_{\rm B}(x)=\frac{\log[(x+b_0)/(a_0+b_0)]}{\log(x/a_0)}.
+\]
+The value at $x=a_0$ is removable. There is a unique atom-free probability
+measure $\mu$ on $(0,\infty)$ such that
+\begin{equation}
+ F_{\rm B}(x)=\int\frac{x}{x+s}\,\mu(ds),\qquad
+ \chi_7(R)=\frac2D\int\frac{R^2-c_0}{R^2+s}\,\mu(ds).
+ \label{p3d:eq:v2216-born-resolvent}
+\end{equation}
+Its density is
+\[
+ \frac{d\mu}{ds}=
+ \begin{cases}
+ \displaystyle\frac{\log[(a_0+b_0)/(b_0-s)]}
+ {s[(\log(s/a_0))^2+\pi^2]},&0<s<b_0,\\[6pt]
+ \displaystyle\frac{\log[s(a_0+b_0)/(a_0(s-b_0))]}
+ {s[(\log(s/a_0))^2+\pi^2]},&s>b_0.
+ \end{cases}
+\]
+It has $F_{\rm B}(c_0)=1/2$ and infinite first moment.
+
+Let $h_\infty=2/D$, $\mathcal H=L^2(\mu)$ and
+\[
+ \mathcal V=\{z:\int(c_0+s)|z|^2\,d\mu<\infty\}.
+\]
+For $R\ge C$ the closed nonnegative form on
+$\mathbb R\oplus\mathcal V$
+\[
+ Q_R(H,z)=\frac{h_\infty H^2}{2}
+ +\frac12\int(R^2+s)z^2\,d\mu
+ +H\sqrt{h_\infty}\int\sqrt{c_0+s}\,z\,d\mu
+\]
+has exact stationary reduction
+$\inf_z Q_R(H,z)=\chi_7(R)H^2/2$. Its interior remains gapped at $C$,
+while the full form has the terminal null direction
+$z_C=-H\sqrt{h_\infty}/\sqrt{c_0+s}$.
+\end{theorem}
+\begin{proof}
+Use principal logarithms on $\mathbb C\setminus(-\infty,0]$ and put
+$G(z)=F_{\rm B}(z)/z$. At $z=-s+i0$ its Stieltjes inversion density
+$-\operatorname{Im}G(-s+i0)/\pi$ is exactly the displayed positive
+function. For $s<b_0$ the numerator logarithm is real and negative; for
+$s>b_0$ it has imaginary part $\pi$. Division by
+$\log(s/a_0)+i\pi$ gives the two formulas. Their numerators are positive,
+in the second case because $s(a_0+b_0)>a_0(s-b_0)$.
+
+A keyhole Cauchy contour gives $G(z)=\int(z+s)^{-1}\mu(ds)$.
+Its inner circle vanishes because $G(z)=O(1/(z\log z))$ near zero;
+the outer circle vanishes because $G(z)=O(1/z)$ at infinity. The
+logarithmic singularity at $-b_0$ has zero indentation contribution, and
+the point $a_0$ is removable. There are therefore no omitted atoms or
+affine terms. Stieltjes inversion proves uniqueness. Multiplication by
+$x$ gives the first representation, and $F_{\rm B}(x)\to1$ plus
+monotone convergence gives total mass one. Algebra in the native secant
+gives $1+n(R)=2F_{\rm B}(R^2)$ and hence the second representation.
+Direct substitution gives $F_{\rm B}(c_0)=1/2$. The density is asymptotic
+to $\log(1+b_0/a_0)/(s[\log(s/a_0)]^2)$ at infinity, proving that its
+first moment diverges.
+
+Weighted Cauchy--Schwarz makes the loading a bounded functional on
+$\mathcal V$. Completing the square gives
+\[
+ Q_R=\frac{\chi_7(R)H^2}{2}
+ +\frac12\int(R^2+s)
+ \left(z+\frac{H\sqrt{h_\infty}\sqrt{c_0+s}}{R^2+s}\right)^2d\mu.
+\]
+The shift belongs to $\mathcal V$, since
+$\int(c_0+s)/(R^2+s)\,d\mu\le1$. This triangular shift is bounded and
+invertible in the form norm on each bounded $R$ interval; the displayed
+square together with the underlying Hilbert norm is complete. The form is
+therefore closed and nonnegative. Its unique stationary shift proves the
+reduction and the stated null direction. The interior multiplication
+operator is bounded below by $C^2>0$ throughout.
+\end{proof}
+
+\begin{corollary}[Positive finite approximations and exact terminal slope]
+\label{p3d:cor:v2216-born-positive-approximation}
+Partition a central interval $[s_-,s_+]$ into cells of length at most
+$\epsilon(c_0+\inf I_j)$, keep both tails as cells, and assign each its
+actual mass $m_j=\mu(I_j)$. Positive finite nodes yield
+\[
+ \chi_N(R)=h_\infty\sum_jm_j\frac{R^2-c_0}{R^2+s_j},\qquad
+ \sup_{R\ge C}|\chi_N-\chi_7|
+ \le h_\infty(\eta+\epsilon/4),
+\]
+where $\eta$ is the total tail mass. Each positive-mass cell can use its
+harmonic node
+\[
+ \frac1{c_0+s_j}=\frac1{m_j}\int_{I_j}\frac{d\mu}{c_0+s}.
+\]
+Then probability, terminal zero and
+$\chi_N'(C)=\chi_7'(C)=2/[C(U+C)]$ hold exactly.
+\end{corollary}
+\begin{proof}
+For $X=R^2-c_0\ge0$,
+$|\partial_s[X/(X+c_0+s)]|\le1/[4(c_0+s)]$ uniformly in $X$.
+The central oscillation is at most $\epsilon/4$ and each tail oscillation
+at most one. Sum against the actual cell masses. The harmonic mean lies
+inside its cell and is finite even on the unbounded upper tail. It
+preserves $\int(c_0+s)^{-1}d\mu=1/(2c_0)$, which gives the derivative
+identity by differentiating the finite and integral response kernels.
+\end{proof}
+
+\begin{remark}[Provider and measure scope]
+The loading $\sqrt{h_\infty}\sqrt{c_0+s}$ is in the form dual, not in
+$\mathcal H$, because the first moment diverges. The theorem therefore
+does not posit a bounded off-diagonal Hilbert matrix. Nor does it posit a
+trace-class Radon Gaussian covariance on this continuous $L^2$ space.
+Classical Schur reduction and a Gaussian log-determinant are different
+operations. Each finite conditional Gaussian has a positive interior pivot,
+but its unrestricted joint endpoint Gaussian requires a specified null
+quotient. No finite fixed quadratic pencil gives the exact logarithmic
+function: its response would be rational in $R^2$, whereas
+$F_{\rm B}$ has a genuine logarithmic branch at $-UC$. This excludes
+that finite-pencil replacement, not finite nonlinear providers. The measure
+is a dilation of a scalar response and is not a particle-mass distribution
+or a physically promoted infinite carrier.
+\end{remark}
+
+\begin{theorem}[Finite nonlinear Born second-jet provider]
+\label{p3d:thm:v2216-finite-born-second-jet}
+Put $L=\log(U/C)$, $a=L/2$, $s=\log(R/\sqrt{UC})$ and let
+$\Psi(0)=0$, $\Psi'(x)=x+\log\cosh x$. The native secant is
+\[
+ n(R)=\frac{\log\cosh s-\log\cosh a}{s-a},
+\]
+with its removable value at $s=a$. On
+$\mathbb Re_0\oplus W$, $\dim W=7$, take the normalized trace
+$\tau_8=\operatorname{Tr}/8$ and set
+\[
+ A_R=aP_0+sP_W,\qquad B(v)=e_0v^{\mathsf T}+ve_0^{\mathsf T},
+\]
+\[
+ \mathcal F_R(v)=\beta_R\tau_8
+   [\Psi(A_R+\kappa_RB(v))-\Psi(A_R)],\qquad \beta_R\ge0.
+\]
+This is an $O(W)$-invariant, even, nonnegative finite scalar word with
+\begin{equation}
+ \mathcal F_R(0)=0,\quad D_v\mathcal F_R(0)=0,\quad
+ D_v^2\mathcal F_R(0)=\frac{\beta_R\kappa_R^2}{4}(1+n(R))I_W.
+ \label{p3d:eq:v2216-finite-born-hessian}
+\end{equation}
+Writing its scalar orbit function as $\varphi_R(|v|^2)$, the frozen
+local curvature germ
+\[
+ f_R(r)=a_Rr+b_R+\varphi_R(\log^2(r/R))
+\]
+has
+\begin{equation}
+ f_R''(R)=\frac{\beta_R\kappa_R^2}{4R^2}(1+n(R)),\qquad
+ f_R'''(R)=-\frac3R f_R''(R).
+ \label{p3d:eq:v2216-finite-born-third-jet}
+\end{equation}
+Its second jet is the proposed $\chi_7$ exactly when the independent
+source-Gram comparison is $\beta_R\kappa_R^2=4\Delta(R)$. With that
+comparison, the original EXJET diagonal-value and local Ward ports further
+require $b_R=-C-\Delta(R)$.
+\end{theorem}
+\begin{proof}
+The only two moving eigenvalues are
+\[
+ \lambda_\pm=\frac{a+s}{2}\pm
+       \sqrt{\frac{(a-s)^2}{4}+\kappa_R^2|v|^2};
+\]
+the other six remain $s$. The relative trace is therefore
+$\beta_R[\Psi(\lambda_+)+\Psi(\lambda_-)-\Psi(a)-\Psi(s)]/8$.
+It is even and invariant, and nonnegative because
+$\Psi''=1+\tanh x>0$ and the moving pair has fixed sum with increasing
+separation. Its Hessian is
+\[
+ \frac{\beta_R\kappa_R^2}{4}
+       \frac{\Psi'(s)-\Psi'(a)}{s-a}I_W.
+\]
+The divided difference is $1+n(R)$, including its removable value at
+$s=a$. The first two configuration jets follow since the orbit word is
+even in $z=\log(r/R)$, with $z'=1/R$, $z''=-1/R^2$ at $r=R$.
+The third derivative is $3D_z^2\mathcal F_R(0)z'z''$, proving
+\eqref{p3d:eq:v2216-finite-born-third-jet}. At the center the Euler
+excess is $Rf_R'-f_R-C=-b_R-C$. Equating it to $\Delta$ fixes $b_R$;
+the Gram identity then gives $R^2f_R''=w\Delta$, the local Ward test.
+\end{proof}
+
+\begin{proposition}[Finite-word profile, equivariance and higher-jet limits]
+\label{p3d:prop:v2216-finite-born-limits}
+The finite construction proves a second-jet existence result, not a unique
+action profile or equality of complete source germs with $f_{\rm gl}$.
+Indeed:
+\begin{enumerate}
+\item The strictly convex profiles
+\[
+ \Psi_\lambda(x)=\tfrac12x^2+
+       \lambda\int_0^x\log\cosh t\,dt,\qquad -1\le\lambda\le1,
+\]
+all have $\Psi_\lambda(x)+\Psi_\lambda(-x)=x^2$ but give a divided
+difference $1+\lambda n$. Positivity and reciprocal reflection therefore
+do not select $\lambda=1$.
+\item No nonzero scalar-to-$W$ lift is $O(W)$-equivariant when the scalar
+has the trivial action. The scalar orbit prescription above is invariant,
+but its use as a physical curvature source remains an incidence to prove.
+\item With the matching Gram, the complete finite logarithmic germs cannot
+be restrictions of a single $C^3$ global coefficient having Hessian
+$\chi_7$, even after arbitrary affine corrections to each germ.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+The first statement follows from
+$\Psi_\lambda''=1+\lambda\tanh x>0$ at finite $x$ and oddness of the
+integral of the even function $\log\cosh t$. For the second, an
+equivariant lift of a fixed scalar must be fixed by every orthogonal
+transformation; the only such vector is zero. Taking an orbit function
+avoids choosing a vector and does not prove a field map.
+
+For the last claim write $F(s)=\log\cosh s$ and
+$n=[F(s)-F(a)]/(s-a)$. Strict convexity gives
+\[
+ n_s=\frac{F'(s)-[F(s)-F(a)]/(s-a)}{s-a}>0
+\]
+for $s\ne a$, with positive limit $F''(a)/2$. Thus $n_R>0$ and
+both positive factors in
+$\chi_7=(1+n)(1-C^2/R^2)/D$ increase, so $\chi_7'(R)>0$ for $R>C$.
+A global coefficient with this Hessian has third derivative
+$\chi_7'>0$. The frozen germ instead has $f_R'''=-3\chi_7/R<0$ by
+\eqref{p3d:eq:v2216-finite-born-third-jet}. Affine corrections change
+neither jet. At $C$ a zero Gram makes the entire frozen nonlinear word
+zero, whereas the global third derivative is $2/(CD)>0$.
+\end{proof}
+
+\begin{remark}[Native profile and terminal source comparison]
+The required $\Psi''=1+\tanh x$ increases strictly. A positive proper-time
+mixture on this same spectral coordinate, with fixed real shift, has
+$\widetilde\Psi''(x)=\int t^2e^{-tx}\,d\rho(t)$, $\rho\ge0$,
+which is nonincreasing wherever it exists. Thus this finite word is not
+identified with the native heat constructor by a positive heat mixture.
+Changing the operator, allowing signed subtractions or supplying another
+effective constructor would change the claim and requires its own license.
+At $R=C$, reciprocal reflection gives exactly
+$\mathcal F_C(v)=\beta_C\kappa_C^2|v|^2/8$: the secant factor is one,
+so its terminal response zero comes from the source Gram. A possible
+factorization $\kappa_R^2=1-C^2/R^2$, $\beta_R=4R^2/D$ meets that
+mathematical Gram identity, but its matrix lift is not $C^1$ at $C$.
+The invariant trace is regular in $\kappa_R^2|v|^2$; a physical quotient
+domain and the affine value/slope ports still have to be evaluated.
+\end{remark}
+
+\begin{corollary}[Unique scalar transgression and its physical premise]
+\label{p3d:cor:v2216-second-jet-transgression}
+An independently generated scalar Hessian $K$ in the actual curvature
+coordinate has the unique terminal-normalized primitive
+\[
+ \mathcal T_C[K](R)=R-C+(R-C)^2
+       \int_0^1(1-u)K(C+u(R-C))\,du.
+\]
+It has $\mathcal T_C[K]''=K$, value zero and slope one at $C$.
+For the matched finite second jet this is $f_{\rm gl}$. Its construction
+consumes only that second jet and supplied endpoint data; it is not an
+identity of the finite source germs, a profile-selection theorem or a
+retroactive origin proof for the heat action.
+\end{corollary}
+\begin{proof}
+The substitution $t=C+u(R-C)$ gives
+$\int_C^R(R-t)K(t)\,dt$. Differentiate twice. The difference of any two
+such primitives has zero second derivative and is affine; the endpoint
+data set its two coefficients to zero. The nonidentity follows from
+Proposition~\ref{p3d:prop:v2216-finite-born-limits} and
+Theorem~\ref{p3d:thm:v2216-exjet-global-obstruction}.
+\end{proof}
+
+
+\subsection{Fixed-momentum finite source words and a composed interpolation}
+\label{p3d:sec:v2218-fixed-momentum-source}
+
+The generated level-one momentum seed and radius remain fixed in
+this section: $\mathcal H_1$ and $R_{\rm mom}$ are not varied.
+This is a finite-seed response construction, not a proof of universal
+physical full-endpoint multiplicity-one.  The depth-dependent coefficients below are response/readout data
+on that fixed structure, not a change of momentum representation or a
+spatial-radius homothety.  A different middle profile is allowed when
+testing inflation and late Einstein gravity with its vacuum scale.
+Consequently the exact-profile exclusions above are not general
+exclusions of a common interpolating action.  They do, however, require
+the complete finite value and its source contacts to be evaluated before
+a frozen susceptibility is identified with a metric coefficient.
+
+\begin{definition}[Exact finite Born orbit value]
+\label{p3d:def:v2218-finite-orbit-value}
+Keep $0<C<U$, $D=U+C$, $H=\log(U/C)$, $a=H/2$, and the existing
+profile $\Psi$ of Theorem~\ref{p3d:thm:v2216-finite-born-second-jet}.
+For $s\in\mathbb R$ and $y\ge0$ define
+\begin{align}
+ d(s,y)&=\sqrt{(a-s)^2/4+y},\qquad
+ \lambda_\pm(s,y)=(a+s)/2\pm d(s,y),\nonumber\\
+ \Phi(s,y)&=\frac18\bigl[
+ \Psi(\lambda_+)+\Psi(\lambda_-)-\Psi(a)-\Psi(s)\bigr].
+ \label{p3d:eq:v2218-finite-orbit-value}
+\end{align}
+Thus the complete finite source word is
+$\mathcal F_R(v)=\beta_R\Phi(s_R,\kappa_R^2|v|^2)$, with
+$s_R=\log(R/\sqrt{UC})$.  No additional spectral profile has been
+introduced.  The normalized trace is still the real eight-channel
+readout of that theorem; its identification with an ordinary physical
+finite-Hilbert action trace is not supplied by this notation.
+\end{definition}
+
+\begin{proposition}[Complete orbit contacts and terminal reflection]
+\label{p3d:prop:v2218-finite-orbit-contacts}
+Let an actual scalar source section supply twice differentiable
+$\beta(R)$ and $y(R)$, and put
+$\mathscr W(R)=\beta(R)\Phi(s_R,y(R))$.  The complete derivatives are
+\begin{align}
+ \mathscr W'&=\beta'\Phi+
+       \beta(\Phi_s/R+\Phi_y y'),\nonumber\\
+ \mathscr W''&=\beta''\Phi+
+ 2\beta'(\Phi_s/R+\Phi_y y')\nonumber\\
+ &\quad+\beta\left[
+ \frac{\Phi_{ss}-\Phi_s}{R^2}
+ +\frac{2\Phi_{sy}y'}R+\Phi_{yy}(y')^2+\Phi_y y''\right].
+ \label{p3d:eq:v2218-complete-orbit-jets}
+\end{align}
+At $y=0$, write
+$w(s)=[\Psi'(s)-\Psi'(a)]/(s-a)=1+n(s)$.  Then
+\begin{gather}
+ \Phi(s,0)=\Phi_s(s,0)=\Phi_{ss}(s,0)=0,
+ \qquad \Phi_y(s,0)=w(s)/8,\nonumber\\
+ \Phi_{yy}(s,0)=
+ \frac{\Psi''(s)+\Psi''(a)-2w(s)}{8(s-a)^2},
+ \qquad
+ \boxed{\Phi(-a,y)=y/8.}
+ \label{p3d:eq:v2218-orbit-zero-jets}
+\end{gather}
+The removable value of $\Phi_{yy}(a,0)$ is $\Psi''''(a)/48$.
+\end{proposition}
+\begin{proof}
+The two moving eigenvalues give
+\eqref{p3d:eq:v2218-finite-orbit-value}; the other six cancel.
+The chain rule uses $s_R'=1/R$ and $s_R''=-1/R^2$ and gives
+\eqref{p3d:eq:v2218-complete-orbit-jets}.  Differentiating the symmetric
+eigenvalue pair with respect to $y$ at zero gives the displayed divided
+differences.  Taylor expansion at $s=a$ gives the removable value.
+At $s=-a$ the pair is
+$\pm\sqrt{a^2+y}$, so
+$\Psi(x)+\Psi(-x)=x^2$ proves the exact last identity.
+Symmetric spectral calculus makes the orbit value smooth in $y$ at the
+removable eigenvalue coincidence.  Thus these formulas also apply to
+the regular invariant quotient when a chosen square-root matrix lift
+itself is not differentiable at a terminal zero.
+\end{proof}
+
+\begin{proposition}[The natural frozen diagonal and free elimination]
+\label{p3d:prop:v2218-diagonal-cancellation}
+For the frozen germ of
+Theorem~\ref{p3d:thm:v2216-finite-born-second-jet}, write its nonlinear
+part as
+\[
+ \mathscr W(b,r)=\mathcal F_b(e\log(r/b)),\qquad |e|=1,
+ \quad K_{\rm loc}(b)=\partial_r^2\mathscr W(b,r)|_{r=b}.
+\]
+At every regular background, including all coefficient derivatives,
+\begin{equation}
+ \boxed{\mathscr W(b,b)=0,\qquad
+ \nabla^2_{(b,r)}\mathscr W|_{r=b}
+ =K_{\rm loc}(b)
+ \begin{pmatrix}1&-1\\-1&1\end{pmatrix}.}
+ \label{p3d:eq:v2218-diagonal-cancellation}
+\end{equation}
+The complete pullback along $b=r=R$ therefore has zero nonlinear
+Hessian.  Moreover, minimizing this isolated nonnegative word over
+$v$ gives zero for every $b$; when $\beta_b\kappa_b^2>0$ the minimum
+is attained only at $v=0$.
+\end{proposition}
+\begin{proof}
+For every $b$, both $\mathcal F_b(0)$ and its first source derivative
+are zero.  Coefficient derivatives consequently vanish at that source.
+The first derivatives of $\log(r/b)$ at the diagonal are $1/b$ and
+$-1/b$.  Their tensor square gives the matrix in
+\eqref{p3d:eq:v2218-diagonal-cancellation}; contraction with $(1,1)$
+is zero.  Strict convexity of $\Psi$ gives strict positivity of its
+trace second variation along each nonzero off-diagonal source line.
+The relative word is consequently positive away from zero when its
+prefactor and source scaling are nonzero.  If either vanishes the
+entire word is zero, with no unique minimizing source asserted.
+\end{proof}
+
+The preceding proposition concerns the nonlinear source word, not
+independently supplied affine background terms.  A different actual
+source section, a constraint, state preparation or elimination in a
+larger common action can change the result.  Those data must be
+evaluated; the positive frozen probe response cannot replace them.
+
+\begin{definition}[Fixed-momentum visibility-norm candidate]
+\label{p3d:def:v2218-fixed-momentum-candidate}
+Fix a positive hierarchy scheme, write
+$\alpha=\alpha_{\rm hier}(\sigma_{\rm fin})>1$,
+$C=U\alpha^{-7}$ and $Q=8\sqrt\alpha$, and retain the existing
+upper quadratic coupling $Q$ as a constant in the following composed
+candidate.  For $C\le R\le U$, set
+\begin{gather}
+ \zeta(R)=\frac{\log(R/C)}{H},\qquad
+ k(R)=1-C^2/R^2,\nonumber\\
+ y(R)=k(R)\zeta(R)^2,\qquad
+ \beta_Q(R)=4QR^2/D,\nonumber\\
+ \boxed{f_Q(R)=R-C+
+     \frac{4QR^2}{D}\Phi\bigl(s_R,k(R)\zeta(R)^2\bigr).}
+ \label{p3d:eq:v2218-fixed-momentum-candidate}
+\end{gather}
+The scalar orbit norm is constructible from the already generated
+visibility process: $q=7(1-e^{-\tau})$ and $R=U\alpha^{-q}$ give
+\begin{equation}
+ \boxed{\zeta=e^{-\tau},\qquad
+ \zeta^2=\frac17\operatorname{Tr}_W(V_\tau^2).}
+ \label{p3d:eq:v2218-visibility-source-norm}
+\end{equation}
+The sufficient Gram factorization is
+$\kappa_R^2=k(R)$, $\beta_R=\beta_Q(R)$, and hence
+$\beta_R\kappa_R^2=4Q\Delta(R)$,
+$\Delta(R)=(R^2-C^2)/D$.  It is the existing possible factorization
+with one fixed upper coupling, not a consequence that the Gram
+comparison selects $\beta_R$ and $\kappa_R$ separately.  Extending
+that coupling as a constant and using the visibility norm as this
+finite source section define the candidate; their physical incidence
+is not inferred from the availability of the ingredients.
+\end{definition}
+
+No nonzero scalar-to-$W$ equivariant vector lift has been introduced.
+The invariant orbit value is independent of a chosen vector
+representative, but this does not prove an actual field coupling.
+Likewise, using the existing finite $\Psi$ word does not identify it
+with the selected ordinary heat action.  These distinctions keep
+\eqref{p3d:eq:v2218-fixed-momentum-candidate} separate from the
+previously reconstructed active Laurent branch and its physical
+matching conditions.
+
+For direct evaluation of all source contacts in the candidate, one may
+use \eqref{p3d:eq:v2218-complete-orbit-jets} with
+\begin{align}
+ y'&=\frac{2C^2\zeta^2}{R^3}
+           +\frac{2k\zeta}{HR},\nonumber\\
+ y''&=-\frac{6C^2\zeta^2}{R^4}
+       +\frac{8C^2\zeta}{HR^4}
+       +\frac{2k}{R^2}(H^{-2}-\zeta/H),\nonumber\\
+ \beta_Q'/\beta_Q&=2/R,
+ \qquad \beta_Q''/\beta_Q=2/R^2.
+ \label{p3d:eq:v2218-fixed-candidate-source-jets}
+\end{align}
+
+\begin{theorem}[Terminal activation and controlled ultraviolet value]
+\label{p3d:thm:v2218-fixed-candidate-endpoints}
+The invariant candidate \eqref{p3d:eq:v2218-fixed-momentum-candidate}
+is smooth on its one-sided terminal domain and satisfies, with
+$x=R-C$,
+\begin{equation}
+ \boxed{\begin{gathered}
+ f_Q(R)=R-C+\frac{Qx^3}{H^2CD}+O(x^4),\\
+ f_Q(C)=0,\quad f_Q'(C)=1,\quad f_Q''(C)=0,\quad
+ f_Q'''(C)=\frac{6Q}{H^2CD}.
+ \end{gathered}}
+ \label{p3d:eq:v2218-fixed-candidate-terminal}
+\end{equation}
+For any band on which the moving pair has
+$\lambda_-(s_R,y(R))\ge m_0>0$, put
+$\delta=(1+e^{2m_0})^{-1}$.  Its complete nonlinear value obeys
+\begin{equation}
+ \boxed{(1-\delta)\frac{Q(R^2-C^2)\zeta^2}{D}
+ \le f_Q-(R-C)
+ \le\frac{Q(R^2-C^2)\zeta^2}{D}.}
+ \label{p3d:eq:v2218-fixed-candidate-UV-bound}
+\end{equation}
+In particular, $0\le\sqrt{k}\,\zeta\le1$ gives
+$\lambda_-\ge\min(a,s_R)-1$, providing a uniform value bound on
+any band with $\min(a,s_R)>1$.  This is a finite-band estimate, not
+a limit beyond the physical ceiling.
+\end{theorem}
+\begin{proof}
+At the terminal, $\zeta=x/(HC)+O(x^2)$ and
+$k=2x/C+O(x^2)$, so
+$y=2x^3/(H^2C^3)+O(x^4)$.  Since
+$s_C=-a$, \eqref{p3d:eq:v2218-orbit-zero-jets} gives
+$\Phi(s_R,y)=y/8+O(xy)+O(y^2)$.
+Multiplication by $\beta_Q(C)=4QC^2/D$ proves
+\eqref{p3d:eq:v2218-fixed-candidate-terminal}.  Smoothness uses the
+invariant variable $y$, not the non-differentiable square-root lift.
+
+For the second claim let $M=\operatorname{diag}(a,s_R)$ and let $J$
+be the off-diagonal two-by-two source with entries $\sqrt y$.
+The whole segment $M+\theta J$, $0\le\theta\le1$, has spectrum
+at least $m_0$: its endpoints do, and positivity of the shifted
+matrices is convex.  On that spectral interval
+$2(1-\delta)\le\Psi''\le2$.  The divided-difference formula for
+the trace Hessian therefore bounds its second variation by these
+constants times $\operatorname{Tr}J^2=2y$.
+The first trace variation at $\theta=0$ is zero.  Twice integrating
+in $\theta$ gives
+\[
+ 2(1-\delta)y\le
+ \operatorname{Tr}[\Psi(M+J)-\Psi(M)]\le2y.
+\]
+Multiplication by $\beta_Q/8$ and
+$\beta_Qy/4=Q(R^2-C^2)\zeta^2/D$ proves the bound.
+The last estimate is the elementary eigenvalue perturbation bound
+$\lambda_{\min}(M+J)\ge\min(a,s_R)-\|J\|$.
+\end{proof}
+
+The ultraviolet estimate is a bound on the finite value.  Its use for
+metric slow-roll derivatives consumes the complete jets
+\eqref{p3d:eq:v2218-complete-orbit-jets} and
+\eqref{p3d:eq:v2218-fixed-candidate-source-jets}, rather than
+differentiating an error bound without further control.  Also, the
+coefficient is proportional to $\zeta^2$, not an exactly constant
+$R^2$ coefficient.  The location and stability of its finite
+stationary points must be evaluated for this composed candidate.
+
+\begin{proposition}[A direct finite-value dressing has a first-jet jump]
+\label{p3d:prop:v2218-finite-value-junction}
+Let $\mathscr W_0=(f_Q-(R-C))/Q$ and consider instead the direct
+finite-value multiplication
+\[
+ \widetilde f(R)=R-C+D_2(R)\mathscr W_0(R),\qquad
+ D_2(R)=Q^{n_2^+(R)}.
+\]
+At $B=C_2=U\alpha^{-2}$, the full first derivative has the nonzero jump
+\begin{equation}
+ \boxed{\widetilde f'(B+)-\widetilde f'(B-)
+ =\log Q\,\frac{U-B}{2\log\alpha\,B(U+B)}
+       \mathscr W_0(B)>0.}
+ \label{p3d:eq:v2218-finite-value-junction}
+\end{equation}
+Thus this direct multiplication is not an ordinary $C^1$ metric
+coefficient without an actual junction prescription.  The result concerns
+the full nonzero finite value; it does not change the separate
+susceptibility-integral construction in which $D_2$ multiplies a
+Hessian.
+\end{proposition}
+\begin{proof}
+At $B$, $n_2^{\rm L}=0$.  Differentiating the printed Laurent secant
+gives
+$n_2^{\rm L\,\prime}(B)=(U-B)/[2\log\alpha\,B(U+B)]>0$.
+The positive-part branch has derivative zero below $B$ and that value
+above it.  Since $D_2(B)=1$, only $D_2'\mathscr W_0$ jumps in
+the product derivative.  The finite word is strictly positive there:
+$C<B<U$, $\zeta(B)>0$, $k(B)>0$, and $\Psi$ is strictly convex.
+This proves the formula, irrespective of the numerical size of the jump.
+\end{proof}
+
+\begin{remark}[Physical status of the composed candidate]
+\label{p3d:rem:v2218-fixed-candidate-status}
+The results above derive a finite scalar constructor and its complete
+contacts from existing fixed-momentum data.  They neither select a
+physical source section from all admissible sections nor establish a
+new action-origin theorem.  A physical identification must still
+evaluate the actual source/trace and Gram factorization, its metric
+and density transport, the comparison of the finite $\Psi$ word with
+the complete native operator/effective action, and its endpoint and
+vacuum normalization.  Quantum elimination additionally retains its
+actual determinant and measure terms; no such determinant is added to
+a classical stationary word by notation.  A source orbit computable
+from $V_\tau$ and a common action that physically consumes that orbit
+are distinct claims.  The candidate does not replace the existing
+active Laurent branch or assert a cosmological history connecting its
+regimes.
+\end{remark}
+
+\section{Geometric response limits and gravitational action incidence}
+\label{paper3d:sec:response-incidence}
+\subsection{Grade-four carrier versus gravitational action incidence}
+\label{p3d:sec:v229-actual-carrier-port}
+\begin{remark}[The first actual carrier is not yet the consumed gravitational port]
+\label{p3d:rem:v229-actual-gravitational-incidence}
+The protected spectrum $\operatorname{spec}\mathcal Q_{\rm act}
+=\{0,4,5,7\}$ gives $P_2=P_3=0$ and $P_4\ne0$.
+Theorem~\ref{p3d:thm:v2219-carrier-four-dressing} selects $j=4$
+within $\{2,3,4\}$ \emph{under its declared first-actual-carrier
+rule}.  This is a valid finite geometric selection, not a derivation
+that the physical metric coefficient consumes $P_4$.  That further
+claim requires a typed, nonzero, preterminal insertion of the actual
+$P_4$ sector into the gravitating action and the complete variation
+of its curvature and interior blocks, in the sense of
+Definition~\ref{p2a:def:v229-action-incidence-certificate}.
+The two-port Cap Schur calculation admits distinct independent,
+Born-antisymmetric and shared-symmetric incidence patterns; their
+stationary returns are respectively $B_I(1-u^2)r^2$ and $B_Ir^2$.
+A generic positivity/terminal-zero theorem does not choose between
+them unless its required-output premise is proved for the actual
+physical owner.  The resulting gravitational susceptibility is an
+observable-facing question, not an index fitted to a desired action.
+\end{remark}
+
+
+\begin{corollary}[The exact grade-four heat-response test has an incidence input]
+\label{p3d:cor:v286-protected-grade-four-incidence-test}
+On the protected branch $P_4\ne0$, a fixed finite grade-four
+compression $A_4>0$ and an actual, licensed scalar curvature/source
+tangent $B_4$ on that same block define the positive mathematical
+heat Gram of
+Theorem~\ref{p3b:thm:v286-finite-heat-incidence-gram}. In the
+locally affine, stationary finite-heat owner with complete interior
+tangents $C_{4,i}$, its reduced grade-four second response is strictly
+positive if and only if
+\[
+ B_4\notin\operatorname{span}_{\mathbb R}\{C_{4,i}\}.
+\]
+Its value is the Gram-distance square and determinant ratio of that
+theorem.  If the action operator/metric incidence is nonlinear,
+Proposition~\ref{p3b:prop:v286-heat-incidence-contact-obstruction}
+requires its complete second contact.  Thus $P_4\ne0$ determines
+neither a nonzero $B_4$ nor its nonzero \emph{reduced} action response,
+and the abstract finite test alone does not identify the physical
+coefficient $f_{RR}$.
+\end{corollary}
+\begin{proof}
+Compress to the specified finite block and apply the positive Gram
+and Schur formulas of
+Theorem~\ref{p3b:thm:v286-finite-heat-incidence-gram}.
+The strict-positivity equivalence follows from
+orthogonal projection in that Gram. For a nonlinear insertion the
+additional $-\tfrac12\operatorname{Tr}(e^{-A_4}X''_{4})$ term can
+cancel the positive Gram by
+Proposition~\ref{p3b:prop:v286-heat-incidence-contact-obstruction}. Actual action/density and variation
+licensing are the separate requirements of
+Definition~\ref{p2a:def:v229-action-incidence-certificate}.
+\end{proof}
+
+
+\subsection{Petersen finite invariants and the running-source firewall}
+\label{p3d:sec:v319-petersen-running}
+\begin{proposition}[Geometric ratios do not determine a beta function]
+\label{p3d:prop:v319-petersen-no-running}
+The signed Petersen eigenvalues $\pm\sqrt5,0$, the two-core polar
+ratios $2:1/2$, and the complementary cycle flux ratio $\phi$
+are invariants of a fixed finite marked geometry.  They do not depend
+on a renormalization scale $\mu$ and, without a licensed action and a
+specified renormalization prescription, imply neither
+$\mu\,d g/d\mu$ nor a running mass or an anomalous dimension.
+A uniform whole-orbit quadratic or quartic directional source is
+isotropic by Theorem~\ref{p3b:thm:v319-petersen-moment-six}; its
+first allowed nonconstant finite icosahedral directional invariant
+within this moment family is the sextic $H_6$.
+\end{proposition}
+\begin{proof}
+All numerical factors are eigenvalues or invariant ratios of finite
+matrices with fixed entries in $\mathbb Q(\sqrt5)$.  Scale
+derivatives vanish for those fixed matrices.  The assertion for
+uniform directional sources is the exact moment identity in Paper~III-B.
+No equality with an RG coupling or a momentum-dependent action
+coefficient has been proved.
+\end{proof}
+\begin{remark}[Full-jet condition]
+A marked finite source inserted into a nonlinear response must retain
+its first and second background contacts.  In particular a nonzero
+protected finite Gram response cannot substitute for the physical
+reduced action Hessian: the complete-contact obstruction of
+Proposition~\ref{p3b:prop:v286-heat-incidence-contact-obstruction}
+and the common-action rule of
+Theorem~\ref{p3d:thm:v2216-complete-action-jets} still apply.
+\end{remark}
+
+\subsection{Static radius homothety and physical curvature compatibility}
+\label{p3d:sec:v229-radius-curvature}
+\begin{proposition}[Static geometric compatibility of the proposed homothety]
+\label{p3d:prop:v229-static-radius-test}
+If the round radius $a_R=a_0/G(R)$ required by
+Theorem~\ref{p1b:thm:v229-coupled-homothety} is also identified with
+the physical static $S^3$ radius, its curvature obeys
+$R=R_0[1+(R/R_s)^2]$, $R_0=6/a_0^2$.
+This cannot hold on an open interval of $R$.
+\end{proposition}
+\begin{proof}
+Static product curvature is $6/a_R^2$. Substitution gives a nonzero
+quadratic polynomial in $R$, whose zero set contains no open interval.
+\end{proof}
+For closed FLRW, $R=6(\dot H+2H^2+a^{-2})$ in proper time, so the
+static substitution is unavailable. An internal or auxiliary round
+factor is likewise not automatically this physical spatial factor.
+The comparison homothety does not vary the framework's fixed primitive
+momentum radius. Its actual incidence with physical curvature remains
+part of the same-action comparison, with all moving source contacts.
+
+
+\section{Conclusions}
+\label{paper3d:sec:organized-conclusion}
+\label{p3d:sec:conclusion}
+Paper~III-D has derived the protected rank valuation and exact two-root
+response on the current fixed-seed constitutional stack.  The generated one-copy momentum seed \(\mathcal H_1\) is imported
+upstream and is not re-selected here.  Universal full-endpoint
+multiplicity-one remains conditional on the GP3 comparison.  The protected rank endpoint is
+the theorem-level output
+\(\mathsf C_{\rm IR}^{\rm der}\).  The matched
+contact tensor gives the additive rank valuation.  Smooth completion retains
+the explicit fixed-shell family
+\(\mathfrak A_{\rm REG}=\{\mathrm{REG}_\sigma\}\); each frozen member gives
+its own scheme-labelled completed weight, while \(\mathrm{REG}_0\) is only
+the source prescription.  The positive determinant character and its
+generated neutral dual character supply the dimensionless multiplicative
+hierarchy directly.  The resulting native output is
+dimensionless:
+\[
+ H_{56}^{(\sigma)}=\alpha_\sigma^{7}.
+\]
+The common-rate scalar coordinate gives seven ordered hierarchy levels,
+including six finite hits and one asymptotic endpoint.  Seven ordered
+rank-one projector events additionally require \((\mathrm{FLAG})\); without
+it the scalar hierarchy, active depths \(q=0,4,5,7\), endpoint rank drop, and
+exponent seven remain canonical.
+
+For one fixed protected support, the exact \(8/k\)
+conditioned-state density is theorem-level.  When the support is
+orbit-invariant in the III-C generated active family, its occurrence is
+inherited rather than resupplied; a particular rank-three member requires the
+marked diagonal, and an arbitrary additional support remains a G0 boundary
+occurrence.
+The coefficient \(8/k\) is rank-indexed but the density remains support-indexed.
+\((\mathrm{UNIT})\) only types that already derived state as a
+boundary-conditioned response, not an extensive loop action.  The canonical
+dimensionless spectral filtration is inherited from Paper~III-C without
+\((\mathrm{ACT}_{\rm Cl})\); only an alternative or physically actualized
+external-scale support law requires that interface.  Inside the
+reduced class \((\mathrm{RED})\), the native variables are the two positive
+scalar role outputs; no dimensionful reciprocal-radius or
+scalar-circle metric is constructed.  The normalized role scalarizer and the two
+abstract endpoint calibrations give the normalization-representative invariant
+curve
+\[
+ g_{\rm eff}(\scal)=\frac{\scal^2+CU}{(C+U)\scal},
+ \qquad
+ \scal_B^2=CU.
+\]
+In the adopted \(\kappa=2\) representative,
+\(\scal_{\rm resp}=C+U\); another positive response normalization is absorbed
+into the corresponding conversion scale and gives the same calibrated curve.
+The hyperbolic-cosine, \(\tanh\), Riccati, factorization, and secant formulas
+are exact identities of this two-root response curve, not autonomous evolution
+laws.  Identifying \(U\) with an absolute physical standard is an optional
+later calibration.  Once the occurring response contains the required
+generated owner-ancestry morphism and \(U\) is its upper reference section,
+the ratios
+\(C/U=\alpha_\sigma^{-7}\) and
+\(X_w(q)/X_w(0)=\alpha_\sigma^{-wq}\) are inherited from the generated
+neutral character rather than independently matched.  Their physical
+orientation is decreasing only on \(\mathfrak A_{\rm REG}^{+}\).  On the
+owner-placed branch with \(0<C<U\), this positive-character condition is not
+an extra input: Proposition~\ref{p3d:prop:ordered-owner-joint-locus} proves it
+is the exact joint co-realizability locus.  The critical and negative-character
+members remain REG realizations elsewhere but cannot realize that ordered
+owner-placed response.
+
+On the common-rate neutral family \((\mathrm{NEUT}_7)\), the
+closed heat loop is normalized to a boundary state and then passed through
+the generated entropy functional, producing a unique basis-neutral
+secant-matched comparison state.  The adopted response representative
+\(g_{\rm eff}=2\lambda_{\rm B}(W_{\rm scal})\)
+is scalar postprocessing; the factor \(2\) is normalization convention rather
+than a physical selector.  When the later Paper-III-E \((\mathrm{MRESP})\)
+composite occurs, constituent co-realization supplies its hierarchy-active
+normalized state at that response's own scale parameter as a genuine
+\emph{derived-later} specialization.  No equality with the secant-matched
+comparison state is inferred, and the later state-to-Hessian coupling remains
+an explicit response-class law.  Physical reciprocal-role statements consume the
+premise-minimal Paper-II-C/GP2 reciprocal closure; \(\mathsf P_{\rm mc}\) is
+only an optional G0 full-profile test certificate.
+\((\mathrm{BR}_{\rm ind})\) and \((\mathrm{IND}_{xp})\) are upstream
+certification labels, not native III-D antecedents.  Any later dimensionful
+reciprocal-radius interpretation additionally carries its own calibration
+boundary.  No optional \(\mathsf P_{\rm sli}\)/fixed-action momentum selector
+is a native III-D antecedent.
+The physical action, conditioned response, response-scale token, and
+endpoint or hierarchy calibrations are all typed by G0; the family
+\(\mathfrak A_{\rm REG}\) remains explicit analytic scheme data rather than a
+consequence of G0, and no current discriminator selects its source member.
+\printbibliography
+\end{document}

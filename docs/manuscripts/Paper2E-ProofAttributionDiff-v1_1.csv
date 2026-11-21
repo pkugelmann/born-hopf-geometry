@@ -1,0 +1,8 @@
+original_start,similarity,edits
+"\begin{proof} Paper~I-A, Theorem~\ref{p1:thm:intrinsic-tangential-coordinate-class}, gives the displayed tuple, its nonz",0.99884,'A' -> 'B'
+"\begin{proof} Branches (i)--(iii) are the direct, bridged and optimal-support constructions of Paper~II-A, including its",0.9988,'C' -> 'B'
+"\begin{proof} These are the regular-representation and trimer-pair support statements of Paper~I-A, Theorem~\ref{p1:thm:",0.95116,'A' -> 'B' | '' -> 'P' | '' -> 'per1BExceptional'
+"\begin{proof} This is Paper~I-A, Theorem~\ref{p1:thm:cyclic-trimer-operator-grammar}, restated in Paper-II notation~\cit",0.94006,'A' -> 'B' | '' -> 'P' | '' -> 'per1BExceptional'
+\begin{proof} These are the Paper-I-A finite Weyl and trimer-defect identities following from Theorem~\ref{p1:thm:cyclic,0.9496,'A' -> 'B' | '' -> 'P' | '' -> 'per1BExceptional'
+"\begin{proof} By the Paper-I-A commutant theorem imported in Theorem~\ref{p2:prop:kin-u1-commutant}, \(Q=aP_L+bP_R\) wit",0.99751,'A' -> 'B'
+"\begin{proof} The stabilizer in $A_5$ of a two-label subset $\{i,j\}$ has order $60/10=6$; for every permutation of the ",0.9982,'A' -> 'B'

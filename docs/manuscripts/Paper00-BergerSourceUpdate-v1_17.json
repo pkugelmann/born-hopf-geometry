@@ -1,0 +1,143 @@
+{
+  "revision": "v1_17",
+  "paper_release": "v3_066",
+  "parent_release": "v3_065",
+  "changes": [
+    {
+      "stem": "Paper1A",
+      "from": "Paper1A-Geometry-v5_180.tex",
+      "to": "Paper1A-Geometry-v5_181.tex",
+      "sha256": "d27ed084e7d0b11e8e6a6f6b7937573476449d4282fab6a1714cfc71fb23ea87",
+      "added_labels": [
+        "bh:berger:v117:p1a:shape",
+        "bh:berger:v117:p1a:spectral-heat",
+        "bh:berger:v117:p1a:firewall"
+      ],
+      "add_bytes": 2597
+    },
+    {
+      "stem": "Paper1B",
+      "from": "Paper1B-ExceptionalGeometry-v1_22.tex",
+      "to": "Paper1B-ExceptionalGeometry-v1_23.tex",
+      "sha256": "9f19c75d384113a7905f09bcfc6384bb1ace70ee23d11505048d981b5fe844bf",
+      "added_labels": [
+        "bh:berger:v117:p1b:quadrupoles",
+        "bh:berger:v117:p1b:cubic",
+        "bh:berger:v117:p1b:scope"
+      ],
+      "add_bytes": 2029
+    },
+    {
+      "stem": "Paper1C",
+      "from": "Paper1C-M8Geometry-v1_144.tex",
+      "to": "Paper1C-M8Geometry-v1_145.tex",
+      "sha256": "8155b71008020a006bfb44239b63c3c15c0a3f4b1d44c4375cf36487e7ecc0d7",
+      "added_labels": [
+        "bh:berger:v117:p1c:reciprocal-scope",
+        "bh:berger:v117:p1c:fixed-momentum"
+      ],
+      "add_bytes": 1144
+    },
+    {
+      "stem": "Paper3C",
+      "from": "Paper3C-ProtectedHierarchy-v1_193.tex",
+      "to": "Paper3C-ProtectedHierarchy-v1_194.tex",
+      "sha256": "05d02b8cdca516c1ddda4c13409ab3ff907ac056f0203643c576dbc673d33cdd",
+      "added_labels": [
+        "bh:berger:v117:p3c:fiveframe-shear",
+        "bh:berger:v117:p3c:projectors",
+        "bh:berger:v117:p3c:source-scope"
+      ],
+      "add_bytes": 1823
+    },
+    {
+      "stem": "Paper3F",
+      "from": "Paper3F-CompleteDynamics-v1_276.tex",
+      "to": "Paper3F-CompleteDynamics-v1_277.tex",
+      "sha256": "142791a51e852703726b509d3a20f5a05de71ab27534e25ba5e003c18bad58a9",
+      "added_labels": [
+        "bh:berger:v117:p3f:section",
+        "bh:berger:v117:p3f:twojet",
+        "bh:berger:v117:p3f:transport",
+        "bh:berger:v117:p3f:ownership",
+        "bh:berger:v117:p3f:holonomy"
+      ],
+      "add_bytes": 6092
+    },
+    {
+      "stem": "Paper4B",
+      "from": "Paper4B-QuantumResponse-v1_54.tex",
+      "to": "Paper4B-QuantumResponse-v1_55.tex",
+      "sha256": "699da7522504ee3fb989a2955b3ccf60d59e86c62e1aa087f2ed084e739e4ad3",
+      "added_labels": [
+        "bh:berger:v117:p4b:state-shear",
+        "bh:berger:v117:p4b:packet",
+        "bh:berger:v117:p4b:occupation-gates"
+      ],
+      "add_bytes": 1774
+    },
+    {
+      "stem": "Paper5C",
+      "from": "Paper5C-InteractionResponse-v2_182.tex",
+      "to": "Paper5C-InteractionResponse-v2_183.tex",
+      "sha256": "fdeaa7f2f88b4f5c049c4263e427528c7bba4c0821550f9e06982c611b45459f",
+      "added_labels": [
+        "bh:berger:v117:p5c:photon-shear",
+        "bh:berger:v117:p5c:maxwell-triplet",
+        "bh:berger:v117:p5c:production"
+      ],
+      "add_bytes": 2681
+    },
+    {
+      "stem": "Paper6A",
+      "from": "Paper6A-GravityCosmology-v2_267.tex",
+      "to": "Paper6A-GravityCosmology-v2_268.tex",
+      "sha256": "ea72d07db6078fb907790c685b097ad9c80b4c3e74058f325d2a25f76368d87f",
+      "added_labels": [
+        "bh:berger:v117:p6a:shape-response",
+        "bh:berger:v117:p6a:scalar-branch",
+        "bh:berger:v117:p6a:static-gate"
+      ],
+      "add_bytes": 3074
+    },
+    {
+      "stem": "Paper6B",
+      "from": "Paper6B-CosmologyReadouts-v1_214.tex",
+      "to": "Paper6B-CosmologyReadouts-v1_215.tex",
+      "sha256": "84169370e6477e7cd7bcb5de3b8d2ac2c80d4592185320d886f02ea1476bff94",
+      "added_labels": [
+        "bh:berger:v117:p6b:readout",
+        "bh:berger:v117:p6b:heat-gauge",
+        "bh:berger:v117:p6b:t6"
+      ],
+      "add_bytes": 1840
+    },
+    {
+      "stem": "Paper7A",
+      "from": "Paper7A-QCDKernel-v1_180.tex",
+      "to": "Paper7A-QCDKernel-v1_181.tex",
+      "sha256": "232645fe27aa2433d278e1df5f8618b140449cc32f1a15b011836ac3b1234fec",
+      "added_labels": [
+        "bh:berger:v117:p7a:shear-source",
+        "bh:berger:v117:p7a:source-data",
+        "bh:berger:v117:p7a:source-hessian",
+        "bh:berger:v117:p7a:instability"
+      ],
+      "add_bytes": 2982
+    },
+    {
+      "stem": "Paper7B",
+      "from": "Paper7B-QCDReadouts-v1_165.tex",
+      "to": "Paper7B-QCDReadouts-v1_166.tex",
+      "sha256": "13deb7206ba640cc7c9c593349df2d53bf96bdfb59bc6d2374a54b0a3a78ad93",
+      "added_labels": [
+        "bh:berger:v117:p7b:observable-gate",
+        "bh:berger:v117:p7b:spectral-gate"
+      ],
+      "add_bytes": 1303
+    }
+  ],
+  "status": "source-integrated with scoped algebraic replay; independent global proof-chain audit pending",
+  "physical_promotions": 0,
+  "DAG_issues_closed": 0
+}

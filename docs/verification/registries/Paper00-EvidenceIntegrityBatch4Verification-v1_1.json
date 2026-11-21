@@ -1,0 +1,106 @@
+{
+  "name": "Paper00-EvidenceIntegrityBatch4Verification-v1_1",
+  "date": "2026-11-18",
+  "checks": [
+    {
+      "id": "named-file-Paper00-NativeExactInertiaChecks-v1_1.py",
+      "pass": true,
+      "scope": "Only filenames in four actually supplied source archives; cannot negate existence elsewhere",
+      "archive_matches": {
+        "Paper00-PapersMinimal-v3_033.zip": [],
+        "Paper00-DAGAtlas-v1_183.zip": [],
+        "Paper00-ProofChainAudits-v1_75.zip": [],
+        "Paper00-S3StructureNetwork-v1_36.zip": []
+      }
+    },
+    {
+      "id": "named-file-Paper00-NativeExactInertiaManifest-v1_1.json",
+      "pass": true,
+      "scope": "Only filenames in four actually supplied source archives; cannot negate existence elsewhere",
+      "archive_matches": {
+        "Paper00-PapersMinimal-v3_033.zip": [],
+        "Paper00-DAGAtlas-v1_183.zip": [],
+        "Paper00-ProofChainAudits-v1_75.zip": [],
+        "Paper00-S3StructureNetwork-v1_36.zip": []
+      }
+    },
+    {
+      "id": "named-file-Paper00-NativePhase05ExactInertia-v1_1.json",
+      "pass": true,
+      "scope": "Only filenames in four actually supplied source archives; cannot negate existence elsewhere",
+      "archive_matches": {
+        "Paper00-PapersMinimal-v3_033.zip": [],
+        "Paper00-DAGAtlas-v1_183.zip": [],
+        "Paper00-ProofChainAudits-v1_75.zip": [],
+        "Paper00-S3StructureNetwork-v1_36.zip": []
+      }
+    },
+    {
+      "id": "named-file-Paper00-MomentumCartanChiralDensityChecks-v1_0.py",
+      "pass": true,
+      "scope": "Only filenames in four actually supplied source archives; cannot negate existence elsewhere",
+      "archive_matches": {
+        "Paper00-PapersMinimal-v3_033.zip": [],
+        "Paper00-DAGAtlas-v1_183.zip": [],
+        "Paper00-ProofChainAudits-v1_75.zip": [],
+        "Paper00-S3StructureNetwork-v1_36.zip": []
+      }
+    },
+    {
+      "id": "named-file-Paper00-ChiralSourceMomentChecks-v1_0.py",
+      "pass": true,
+      "scope": "Only filenames in four actually supplied source archives; cannot negate existence elsewhere",
+      "archive_matches": {
+        "Paper00-PapersMinimal-v3_033.zip": [],
+        "Paper00-DAGAtlas-v1_183.zip": [],
+        "Paper00-ProofChainAudits-v1_75.zip": [],
+        "Paper00-S3StructureNetwork-v1_36.zip": []
+      }
+    },
+    {
+      "id": "named-file-Paper00-ChiralFourPointChecks-v1_0.py",
+      "pass": true,
+      "scope": "Only filenames in four actually supplied source archives; cannot negate existence elsewhere",
+      "archive_matches": {
+        "Paper00-PapersMinimal-v3_033.zip": [],
+        "Paper00-DAGAtlas-v1_183.zip": [],
+        "Paper00-ProofChainAudits-v1_75.zip": [],
+        "Paper00-S3StructureNetwork-v1_36.zip": []
+      }
+    },
+    {
+      "id": "named-file-Paper00-InteractingChiralCertificateChecks-v1_0.py",
+      "pass": true,
+      "scope": "Only filenames in four actually supplied source archives; cannot negate existence elsewhere",
+      "archive_matches": {
+        "Paper00-PapersMinimal-v3_033.zip": [],
+        "Paper00-DAGAtlas-v1_183.zip": [],
+        "Paper00-ProofChainAudits-v1_75.zip": [],
+        "Paper00-S3StructureNetwork-v1_36.zip": []
+      }
+    },
+    {
+      "id": "incidence-algebra-conditional",
+      "pass": true,
+      "scope": "Eigenvalue premise only; not spectral existence of actual incidence operator"
+    },
+    {
+      "id": "source-exact-dyadic-premise",
+      "pass": true,
+      "scope": "Source statement guard only"
+    },
+    {
+      "id": "source-exact-chiral-guard",
+      "pass": true,
+      "scope": "Source guard"
+    },
+    {
+      "id": "current-source-label-parity",
+      "pass": true,
+      "scope": "Exact source anchors"
+    }
+  ],
+  "passed": 11,
+  "failed": 0,
+  "note": "File absence is established only for named paths within four provided archives, not for unknown external repositories. The finite numerical theorem itself has not been independently replayed."
+}

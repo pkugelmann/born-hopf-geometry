@@ -1,0 +1,4 @@
+similarity,textual_difference,original_proof_opening
+0.996078,'A' -> 'B' | 'A' -> 'B',Part~(i) is the Paper-I-A optimal-kissing identification transported by Corollary~\ref{p2:cor:core-support-inheritance-n
+0.995434,'A' -> 'B' | 'A' -> 'B' | 'A' -> 'B',Paper-I-A Theorem~\ref{p1:thm:trimer-axis-binary-support-range} proves the exact four-class range from the stated bridge
+0.997238,'A' -> 'B',"Every core label belongs to four pairs and each two distinct labels share one pair, giving $D^{\mathsf T}D=3I+J$. The pr"

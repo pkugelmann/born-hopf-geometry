@@ -1,0 +1,18 @@
+{
+  "original_sha256": "81ed2c9c568103bdc4824be8ac68b98b04424db8811607fe5d4189e94e031939",
+  "revised_sha256": "a7d091ce67c74dc3ddb5a477a99a68d7e02d2e9805ccad4472b3be27f8ee8a8c",
+  "old_source_lines": 9671,
+  "new_source_lines": 9560,
+  "formal_count": 226,
+  "proof_count": 179,
+  "original_labels": 306,
+  "new_labels": 309,
+  "removed_comments": 110,
+  "ownership_attributions_corrected": 15,
+  "unchanged_proofs": 176,
+  "attribution_or_narrative_only_proof_edits": 3,
+  "section_count_before": 11,
+  "section_count_after": 14,
+  "old_external_import_count": 10,
+  "final_external_import_count": 0
+}

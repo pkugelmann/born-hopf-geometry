@@ -1,0 +1,50 @@
+{
+  "version": "v1_1",
+  "source_release": "Paper00-PapersMinimal-v3_067.zip",
+  "source_sha256": "7e164b877483a3b9c303a3b7d5cc828e4637099266a95b71e43ed66b27a2bed2",
+  "parent_release": "Paper00-PapersMinimal-v3_066.zip",
+  "changed_papers": {
+    "Paper2C": {
+      "file": "Paper2C-ReciprocalLocalization-v2_175.tex",
+      "label_count": 281,
+      "tex_sha256": "ef371069b59d2bee4f271d73d2ba19af2afffdc7361c900cf2e3101e79682a04"
+    },
+    "Paper3F": {
+      "file": "Paper3F-CompleteDynamics-v1_278.tex",
+      "label_count": 1028,
+      "tex_sha256": "d6a91aac28fbad55d7ac953f70324a9bf3d51cc7f039b5bef86b4a540c80e262"
+    },
+    "Paper4A": {
+      "file": "Paper4A-FiniteQuantumMechanics-v4_217.tex",
+      "label_count": 350,
+      "tex_sha256": "4b50334ca1677dd08f1ab493fb30096f1deaa2623ca180b642bd453a5624d053"
+    }
+  },
+  "unchanged_current_pdf_tex_pairs_verified": 28,
+  "current_source_label_count": 14252,
+  "new_label_count": 19,
+  "compiled_changed_pdfs": {
+    "Paper2C": 121,
+    "Paper3F": 333,
+    "Paper4A": 109
+  },
+  "verification_command": "OPENBLAS_NUM_THREADS=1 python Paper00-SharpFrontierOccurrence-v1_5.py",
+  "verification_exit": 0,
+  "audit_status": "SOURCE_INTEGRATED_E1_MATHEMATICAL__E3_E4_PENDING",
+  "full_independent_global_reaudit": false,
+  "new_physical_occurrence_promotions": 0,
+  "new_issue_closures": 0,
+  "frozen_historical_audit_files_modified": 0,
+  "explicit_open": [
+    "SF_{Lambda_F} physical test frontier",
+    "same-host actual DYN controlled pulses",
+    "actual finite test host and apparatus",
+    "physical nonzero scalar field seed/solution",
+    "coupled scalar-gravity backreaction"
+  ],
+  "new_label_by_paper": {
+    "Paper2C": 8,
+    "Paper3F": 7,
+    "Paper4A": 4
+  }
+}

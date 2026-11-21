@@ -34,6 +34,12 @@ The strong-interaction challenge concerns measured hadron masses, binding energi
 
 [Paper VII](papers.html?volume=VII) develops these layers, including a conditional continuum limit with a fixed ultraviolet momentum bound. The finite geometry does **not**, by itself, certify a uniform Yang–Mills mass gap, an asymptotic string tension or an entire table of observed hadronic quantities.
 
+## New transition results: what they do and do not determine
+
+The most recent [Paper VII–B](paper.html?paper=Paper7B) source contains an exact symmetry chart for decuplet–octet axial comparisons. It also states conditional restrictions on threshold and P-wave channels and makes explicit why a scalar overlap or mass hierarchy alone cannot determine the full physical transition strength. The geometric structure is more restrictive than an arbitrary channel-by-channel weight table, but **observed branching ratios and lifetimes still require a dynamically selected current and open-channel calculation**.
+
+This is a useful place to see the programme's methodological distinction in action. Search the [55 new source labels](research.html?type=labels&latest=1) and compare the precise statements with the [retained audit obligations](research.html?type=obligations).
+
 ## What would make a result especially convincing?
 
 A strong result would derive an observable **without choosing new channel-specific weights or importing the measured answer**, state all mathematical conditions, and yield a prediction that can be checked on independent data. One successful number is less persuasive than a consistent family of related results—especially if the same source, action and normalization work across multiple sectors.

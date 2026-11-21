@@ -1,0 +1,160 @@
+original_line,classification,text
+1,scope-or-evidence note; check corresponding theorem text,"% Integration 2026-11-20: exact 7/22/136 outcome closure, source v2_173; physical occurrence unchanged."
+2,historical/editorial,% Source update: Born--Hopf Framework v3.053 -- integrated graph closures with v3.041 Newton rebase.
+3,historical/editorial,% Current integrated paper source: Paper2C-ReciprocalLocalization-v2_170.tex (v3_017).
+4,scope-or-evidence note; check corresponding theorem text,"% Prior source: Paper2C-ReciprocalLocalization-v2_169.tex. New cross-DAG mathematics is scoped, not physical-occurrence certified."
+5,historical/editorial,% Paper-series v2.381: complete algebraic exceptional torsion atlas and all-cocycle twist-stability; original claims retained.
+6,historical/editorial,"% Paper-series v2.380: unified bibliography, exact exceptional double/length/gauge mathematics in I-B; previous theorem labels retained."
+7,historical/editorial,% Paper-series v2.379: full equivariant Dirac/Hodge/eta/torsion atlas in Paper I-B; paper-root references synchronized.
+8,historical/editorial,% Paper-series v2.378: 2026 exceptional literature consolidation and reference synchronization. The mathematical additions are located in Paper I-B.
+9,historical/editorial,% Paper-series v2.377: reference-only rebind to current Paper I-B v1.1; original mathematics retained except new Paper I-B comparison chapter.
+10,historical/editorial,% Framework v2.370: derived exceptional-root/Hurwitz comparison in I-A/I-C; other papers reference-only synchronized.
+11,historical/editorial,% Framework v2.368: preserve prior II-B convention/unital fixes and verified II-D corrections; current references synchronized.
+12,historical/editorial,"% Framework v2.358: current 30-root source reference synchronization; selectively updated III-E, III-F, VI-B, VI-C."
+13,historical/editorial,% Framework v2.356: bibliography/source-registry synchronization; mathematical body unchanged.
+14,historical/editorial,% Framework v2.355: sharp minimum direct readout and endpoint quotient tomography; source and detector scopes preserved.
+15,scope-or-evidence note; check corresponding theorem text,% Framework v2.352: integrated mathematical/operational closure; physical occurrence boundaries preserved.
+16,historical/editorial,% Framework v2.349: integrated exact conditional mathematical closures; G0 and GP1--GP3 retained as axioms.
+17,historical/editorial,% Framework v2.345: F40 native three-readout and source-visibility integration.
+18,historical/editorial,"% Framework v2.318: conditional 2I/Petersen incidence descent, exact ten-axis quadrupole comparison, readout and symmetry limits."
+19,historical/editorial,"% Framework v2.275: exact positive dense-twin word cubature, finite repeatability and eighth-moment classification, nested sampling frames, joint action and POVM-jet exports; preserves v2.274."
+20,historical/editorial,"% Framework v2.274: two-scalar positive convolution certificates, first-leaked exceptional coset detection, branch-symmetric twin mixing, and finite endpoint moments; all v2.273 branches preserved."
+21,scope-or-evidence note; check corresponding theorem text,"% Framework v2.273: restored missing Problem 3 theorems from v2.268; exact exceptional frames, twin geometry, convolution repeatability and projector/occurrence firewalls; merged on v2.272 without overwriting independent branches."
+22,historical/editorial,% Framework v2.272: merged v2.270 covariant native-readout mathematics with v2.271 Problem 4 finite-action Hopf hypercharge/holonomy corrections; no universal bulk-gauge uniqueness claim.
+23,historical/editorial,% Independent branches: v2.270 readout/guard exports and v2.270 K16 action-consumed charge closure; all prior scoped assumptions retained.
+24,scope-or-evidence note; check corresponding theorem text,% Framework v2.270: single-scalar exact and quantitative guard-band certificate; kept actual-frontier occurrence conditional.
+25,historical/editorial,"% Framework v2.267: exact Paper II-A converse/observable certificates, III-F action tests, V-B right orbit and V-C native gauge scope; prior v2.266 preserved."
+26,historical/editorial,% Framework v2.266: exact Paper II-C outcome-count/readout converse results and scoped downstream imports; 30-root references synchronized.
+27,historical/editorial,% Framework v2.265: II-C coordinate-stage constitution and exact first-symbol host inheritance; prior mathematical domains retained.
+28,historical/editorial,% Framework v2.264: II-B reverse and action-bridge integration; preserves prior mathematical domains; active 30-root references synchronized.
+29,historical/editorial,% Framework v2.263: Paper I-D adds bridge-controlled root-carry parity and source-relative old-cap cancellation; other root mathematical bodies retained; active 30-root references synchronized.
+30,historical/editorial,"% Framework v2.262: merges Paper II-F three-gap closure from v2.260 into v2.261, preserving newer II-B/II-D repairs; 30-root references synchronized."
+31,historical/editorial,% Framework v2.261: merged Paper II-B GP2-level/geometric repairs; preserves v2.260 II-D repairs; active references synchronized.
+32,historical/editorial,"% Framework v2.260: Paper II-D signed RS, finite-symbol typing, and conditional curvature/Jordan repairs; references synchronized."
+33,historical/editorial,% Framework v2.259: conditional native SU(2) atlas and explicit later discharge; v2.258 mathematical bodies retained elsewhere.
+34,historical/editorial,% Framework v2.258: preserves parallel II-A/dynamics update and adds complete readout/frequency closures.
+35,historical/editorial,% Framework v2.257: exact minimal complete position readout and arbitrary-preparation frequency law.
+36,historical/editorial,% Framework v2.256: exact native inertia and sharp bounded ordered-source closure; preserves concurrent v2.255 work.
+37,historical/editorial,% Framework v2.255: preserves parallel detector integration and adds exact finite readout closures.
+38,historical/editorial,% Framework v2.254: seven-outcome intrinsic readout and sharp stationary event-frequency criterion.
+39,historical/editorial,% Framework v2.253: typed raw coordinate defect in I-A and synchronized VI-A import; active references synchronized.
+40,historical/editorial,% Framework v2.252: optional shell-frame source-return calculation in III-G; active references synchronized.
+41,historical/editorial,"% Framework v2.251: forward common-action execution, joint source jets and scoped coupled control."
+42,historical/editorial,"% Framework v2.251: exact full-heat variations, fermion source jets and explicit physical completion frontier."
+43,historical/editorial,"% Framework v2.251: certified interacting source jets, pole stability and scoped completion proofs."
+44,historical/editorial,% Framework v2.251: interacting finite-source evaluation and coupled local vacuum classification.
+45,historical/editorial,% Framework v2.251: exact finite source execution and native causal common-parent bridge.
+46,historical/editorial,% Framework v2.251: constructive parent and scoped source-incidence audit; see release report.
+47,historical/editorial,"% Framework v2.251: common-action two-jet, corrected source/response closure and synchronized references."
+48,historical/editorial,% Framework v2.244: scoped rooted source-order Schur diagnostics and synchronized paper references.
+49,historical/editorial,"% Framework v2.242: signed rooted phase lift, complete transverse return and exact family cubic."
+50,historical/editorial,"% Framework v2.241: proved rooted conormal geometry, conditional cap realization and scoped action tests."
+51,historical/editorial,% Framework v2.239: coherent 30-paper reference rebinding; selective new proofs on established owners.
+52,historical/editorial,% Framework v2.238: source registry synchronized; existing mathematical body retained except declared insertions.
+54,historical/editorial,"% v2.280: first-band stabilizer rigidity, harmonic leakage converse and semigroup distinction, with licensed-dual boundary."
+55,historical/editorial,"% v2.9 imports G0, types physical test/readout, trajectory, and local/global"
+56,historical/editorial,"% bridge witnesses under it, and makes metric-curry an optional full-profile"
+57,scope-or-evidence note; check corresponding theorem text,% test-occurrence certificate rather than a reciprocal-role premise.
+58,historical/editorial,% v2.8: retains the v2.7 algebra and graph theorem and types its connected
+59,historical/editorial,"% closure as an operator envelope; observable, odd-field, and parity-breaking"
+60,historical/editorial,% meanings remain later role-specific questions.
+61,historical/editorial,% v2.6: derives the reciprocal role directly from the intrinsic E_1 evaluation
+62,historical/editorial,"% spectrum, replaces the optional full position-carrier tower by the scalar"
+63,historical/editorial,"% harmonic-resolution filtration P_x(m), proves the five-dimensional level-one"
+64,historical/editorial,"% reciprocal seed and chronological persistence of m_p=1, and isolates the"
+65,historical/editorial,% exact higher-harmonic trigger still required for nontrivial unfolding.
+77,historical/editorial,% The shared macro file automatically owns the series bibliography and
+78,historical/editorial,% external-reference registry.
+91,historical/editorial,% Cross-DAG current-series import for the new source-owned mathematical bridge.
+1350,historical/editorial,% BEGIN P2C COREALIZATION / ORIGIN AUDIT v2.265
+1451,historical/editorial,% END P2C COREALIZATION / ORIGIN AUDIT v2.265
+1523,historical/editorial,% BEGIN M8 v1.78 KIN01
+1580,historical/editorial,% END M8 v1.78 KIN01
+1804,historical/editorial,% BEGIN v2.294: MULTIPLICITY-STABLE NATIVE TEST AND PROCESS CERTIFICATES
+1959,historical/editorial,% END v2.294: MULTIPLICITY-STABLE NATIVE TEST AND PROCESS CERTIFICATES
+1961,historical/editorial,% BEGIN v2.295: COMPLETE-PORT COMMUTANT-TWIRL CERTIFICATES
+2044,historical/editorial,% END v2.295: COMPLETE-PORT COMMUTANT-TWIRL CERTIFICATES
+4168,historical/editorial,% BEGIN INLINE SOURCE: Paper2C-PremiseClosure-Stage-v1_0.tex
+4202,historical/editorial,% END INLINE SOURCE: Paper2C-PremiseClosure-Stage-v1_0.tex
+4205,historical/editorial,% BEGIN FRAMEWORK v2.268: SHARP OBSERVABLE GUARD-BAND EQUIVALENCE
+4296,historical/editorial,% END FRAMEWORK v2.268: SHARP OBSERVABLE GUARD-BAND EQUIVALENCE
+4298,historical/editorial,% BEGIN FRAMEWORK v2.269: SINGLE-SCALAR GUARD DEFECT AND STABILITY
+4419,historical/editorial,% END FRAMEWORK v2.269: SINGLE-SCALAR GUARD DEFECT AND STABILITY
+4466,historical/editorial,% BEGIN FRAMEWORK v2.270: HOMOGENEOUS OBSERVABLE GUARDS AND SHARP GLOBAL SCALAR NO-GO
+4589,historical/editorial,% END FRAMEWORK v2.270: HOMOGENEOUS OBSERVABLE GUARDS AND SHARP GLOBAL SCALAR NO-GO
+4857,historical/editorial,% BEGIN RESTORED FRAMEWORK v2.268 PROBLEM 3: CANONICAL NATIVE QUADRATIC
+4934,historical/editorial,% END RESTORED FRAMEWORK v2.268 PROBLEM 3
+5053,historical/editorial,% BEGIN INLINE SOURCE: Paper2C-PremiseClosure-Maps-v1_0.tex
+5161,historical/editorial,% END INLINE SOURCE: Paper2C-PremiseClosure-Maps-v1_0.tex
+5206,historical/editorial,% BEGIN SC v1.80 CLOCK-COMPARISON
+5315,historical/editorial,% END SC v1.80 CLOCK-COMPARISON
+5317,historical/editorial,% BEGIN v2.210 VERIFIED GEOMETRY LITERATURE TRANSFERS
+5592,historical/editorial,% END v2.210 VERIFIED GEOMETRY LITERATURE TRANSFERS
+5943,historical/editorial,% BEGIN FINITE-BORN-C3-INVERSION v2.69
+6005,historical/editorial,% END FINITE-BORN-C3-INVERSION v2.69
+6007,historical/editorial,% BEGIN FRAMEWORK v2.226: KINEMATIC CLOSURES
+6606,historical/editorial,% END FRAMEWORK v2.226: KINEMATIC CLOSURES
+6608,historical/editorial,% BEGIN FRAMEWORK v2.270 COVARIANT POSITION/DIRECTION CAPACITY
+6609,historical/editorial,% Mathematical theorem insert for Born--Hopf Geometry Paper II-C (Framework v2.270).
+6610,scope-or-evidence note; check corresponding theorem text,"% Proposed only, not integrated; has no occurrence/selection claims."
+6798,historical/editorial,% END FRAMEWORK v2.270 COVARIANT POSITION/DIRECTION CAPACITY
+6800,historical/editorial,% BEGIN FRAMEWORK v2.227: DOWNWARD CLOSURES
+6801,historical/editorial,% BEGIN FRAMEWORK v2.266: CONVERSE-DERIVED FINITE READOUT AND DOWNSTREAM RESOURCE CLOSURES
+6936,historical/editorial,% BEGIN SOURCE-INTEGRATED Paper2C-UniversalGeometricRank6Radius-v1_1.tex
+7085,historical/editorial,% END SOURCE-INTEGRATED Paper2C-UniversalGeometricRank6Radius-v1_1.tex
+7124,historical/editorial,% BEGIN FRAMEWORK v3.053: Paper II-C intrinsic endpoint mathematical exclusions
+7125,historical/editorial,% BEGIN SOURCE-INTEGRATED Paper2C-SixOutcomeEndpointRigidity-v1_1.tex
+7126,historical/editorial,% Proposed insert following p2c:cor:v266-outcome-count in Paper II-C.
+7127,scope-or-evidence note; check corresponding theorem text,% Exact mathematical endpoint rigidity; not source-integrated or physically promoted.
+7227,historical/editorial,% END SOURCE-INTEGRATED Paper2C-SixOutcomeEndpointRigidity-v1_1.tex
+7228,historical/editorial,% BEGIN SOURCE-INTEGRATED Paper2C-AntipodalTetraClosure-v1_1.tex
+7229,historical/editorial,% Proposed theorem insertion into Paper2C-ReciprocalLocalization-v2_170.tex.
+7230,scope-or-evidence note; check corresponding theorem text,% Mathematical fixed-support result. Does not assert physical apparatus occurrence.
+7369,historical/editorial,% END SOURCE-INTEGRATED Paper2C-AntipodalTetraClosure-v1_1.tex
+7370,historical/editorial,% BEGIN SOURCE-INTEGRATED Paper2C-AntipodalFreeEndpointClosure-v1_1.tex
+7371,historical/editorial,% Proposed insertion: Paper2C-ReciprocalLocalization-v2_170.tex.
+7372,historical/editorial,"% Place after the already proposed v1.8/v1.9 endpoint-rigidity results,"
+7373,historical/editorial,% or include those elementary Parseval statements within this proof.
+7374,scope-or-evidence note; check corresponding theorem text,% No claim of physical apparatus realization.
+7559,historical/editorial,% END SOURCE-INTEGRATED Paper2C-AntipodalFreeEndpointClosure-v1_1.tex
+7560,historical/editorial,% END FRAMEWORK v3.053
+7720,historical/editorial,% END FRAMEWORK v2.266: CONVERSE-DERIVED FINITE READOUT AND DOWNSTREAM RESOURCE CLOSURES
+7750,historical/editorial,% END FRAMEWORK v2.227: DOWNWARD CLOSURES
+7754,historical/editorial,% BEGIN FRAMEWORK v2.318: TEN-AXIS COMPARISON AND REAL TOMOGRAPHY
+7895,historical/editorial,% END FRAMEWORK v2.318: TEN-AXIS COMPARISON AND REAL TOMOGRAPHY
+8089,historical/editorial,% BEGIN FRAMEWORK v2.298: AMPLIFIED INTRINSIC COORDINATE READOUT CERTIFICATE
+8128,historical/editorial,% END FRAMEWORK v2.298: AMPLIFIED INTRINSIC COORDINATE READOUT CERTIFICATE
+8131,historical/editorial,% BEGIN FRAMEWORK v2.299: EXACT COVARIANCE AND CONTINUOUS IC EVENT BASIS
+8218,historical/editorial,% END FRAMEWORK v2.299: EXACT COVARIANCE AND CONTINUOUS IC EVENT BASIS
+8220,historical/editorial,% BEGIN FRAMEWORK v2.300: INSTRUMENT EXISTENCE FOR THE DIRECTED-TANGENT PORT
+8299,historical/editorial,% END FRAMEWORK v2.300: INSTRUMENT EXISTENCE FOR THE DIRECTED-TANGENT PORT
+8301,historical/editorial,% BEGIN FRAMEWORK v2.301: UNMARKED MULTIPLICITY GAUGE FIXED POINTS
+8338,historical/editorial,% END FRAMEWORK v2.301: UNMARKED MULTIPLICITY GAUGE FIXED POINTS
+8343,historical/editorial,"% BEGIN FRAMEWORK v2.352: CENTRAL WITNESSES, BRIDGE, AND COMMUTANT SOURCE"
+8434,historical/editorial,% END FRAMEWORK v2.352
+8438,historical/editorial,"% BEGIN SOURCE-INTEGRATED CROSS-PAPER MATHEMATICS v3_017, 15 November 2026."
+8439,scope-or-evidence note; check corresponding theorem text,%  Derived geometric comparison modules; physical source occurrence not promoted.
+8440,historical/editorial,%  E3/E4 independent audit of these NEW results remains pending; inherited source statements retained.
+8443,historical/editorial,% -------- Research module Paper2C-ChiralReadoutCompletion-v1_1 (latest supplied version) --------
+8444,historical/editorial,% PROPOSED source insert; not yet in canonical Paper II-C.
+8445,historical/editorial,"% Inputs: p2c:thm:v318-real-petersen-povm,"
+8446,historical/editorial,"% p2c:thm:v318-quadrupole-tomography, and proposed Paper I-B"
+8447,historical/editorial,% theorem p1:thm:cc12-directed-coherent-gram.
+8448,scope-or-evidence note; check corresponding theorem text,"% AUXILIARY C^3 readout only, not native A_D measurement occurrence."
+8636,historical/editorial,% -------- Research module Paper2C-DirectedTomographyStability-v1_1 (latest supplied version) --------
+8637,historical/editorial,% CROSS-DAG RESEARCH v1.6. Proposed Paper II-C insertion.
+8638,historical/editorial,% Consumes proposed p1:thm:cc12-directed-coherent-gram and
+8639,historical/editorial,"% p2c:thm:cc12-twenty-complex-povm, not yet canonical."
+8640,scope-or-evidence note; check corresponding theorem text,"% The qutrit POVM is AUXILIARY, not a physical meson measurement."
+8725,historical/editorial,% END SOURCE-INTEGRATED CROSS-PAPER MATHEMATICS v3_017.
+8729,historical/editorial,% BEGIN FRAMEWORK v2.345: F40 NATIVE READOUT CAPACITY
+8761,historical/editorial,% END FRAMEWORK v2.345
+8763,historical/editorial,% BEGIN FRAMEWORK v2.349: F40 OBSERVABLE-COMPATIBILITY EXPORT
+8805,historical/editorial,% END FRAMEWORK v2.349
+8819,historical/editorial,% BEGIN FRAMEWORK v2.355: FROM VERIFIED v2_353 MATHEMATICAL READOUT SUPPLEMENT
+8877,historical/editorial,% BEGIN FRAMEWORK v2.355: EXACT ENDPOINT QUOTIENT TOMOGRAPHY
+8878,historical/editorial,% Imported proof-owner text from research supplement v2_354
+8879,scope-or-evidence note; check corresponding theorem text,% Source-integrated as exact finite operator theorems; physical detector occurrence excluded.
+8880,scope-or-evidence note; check corresponding theorem text,"% Assumptions: canonical intrinsic X^D on C^11+ C^4, r_0=sqrt(3) R_mom,"
+8881,historical/editorial,"% the existing exact seven-outcome endpoint POVM, and finite native C*-algebra."
+9090,historical/editorial,% END FRAMEWORK v2.355: EXACT ENDPOINT QUOTIENT TOMOGRAPHY

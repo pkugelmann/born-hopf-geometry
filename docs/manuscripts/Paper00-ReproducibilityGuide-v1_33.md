@@ -1,0 +1,8 @@
+# Reproducibility guide v1.33 — PapersMinimal v3.077
+
+1. Baseline is the exact user-uploaded `Paper00-PapersMinimal-v3_076(1).zip` (SHA in Release Notes). Retrieve the integrated current `.tex` sources from v3.077; do not copy older research-branch PDFs over these paper versions.
+2. The active paper registry is `Paper00-PaperInventory-v1_36.csv`. For each edited paper run `latexmk -g -pdf -interaction=nonstopmode -halt-on-error -outdir=build/<stem> <stem>.tex` from archive root (or the equivalent pdfLaTeX → BibTeX → pdfLaTeX twice). `bibtex.original` is a compatible BibTeX executable if the `bibtex` alias is absent.
+3. Copy the five edited build AUX files into `xref/<stem>.aux`, and execute `python Paper00-MaterializeXrefAliases-v1_36.py .`. The alias generator has an exact 31-root check and writes manifest `Paper00-XrefAliasManifest-v1_36.json`.
+4. Recompile the affected sources after alias regeneration to resolve cross-paper references. Check final source logs, explicit theorem labels, `Paper00-SourceAnchorDelta-v3_077.json`, `Paper00-UnconditionalIntegrationVerification-v1_1.json`, the inventory and checksums.
+5. Source preservation: all 26 unmodified paper TeX/PDF pairs match the exact v3.076 parent. `Macros-v2_203.tex` changes only five current `\BHExternalRefs` bindings; older macro files are retained because unmodified papers import them.
+6. An E3/E4 independent mathematical audit must take place under the currently supplied rigorous verification DAG protocol before any new claims receive canonical proof-edge promotion. The present release does not change DAG v1.222 or ProofChainAudits v1.83.

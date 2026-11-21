@@ -1,0 +1,384 @@
+[
+  {
+    "proof_id": "P3G-P-0006",
+    "original_line_start": 577,
+    "revised_line_start": 527,
+    "linked_claim_labels": [
+      "p3:thm:constitutive-residue-closure"
+    ],
+    "original_sha256": "9004b95dc70f1849f840dc8db1cac85eb560da9cd1db6d6893d164697d932d44",
+    "revised_sha256": "b86c893da632c3ee8a062af9646dfae91537ba3d2c28d7c1420c466efeff959b",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -7,6 +7,6 @@\n structure as an unannounced axiom and violate GP2 bookkeeping.  An explicitly\n declared enlargement is logically admissible but does not become a theorem of\n-the smaller domain.  The superseded \\(\\mathsf P_{\\rm sli}\\) package is retained\n-only as historical selector bookkeeping.  By contrast,\n+the smaller domain.  The optional \\(\\mathsf P_{\\rm sli}\\) package is used\n+only as a conditional comparison.  By contrast,\n \\(\\mathsf C_{\\rm PI}\\) is a representative of an unresolved coordinate\n completion family.  Generic point-resolution readout generates only the\n@@ -28,5 +28,5 @@\n member being selected.  If the enlarged generated signature makes exactly one\n old realization compatible, that later result has status \\emph{derived later}.\n-The earlier stage remains historically unresolved and is not rewritten as\n+The smaller-domain conclusion is not retrospectively strengthened as\n though \\(D\\) had already existed.  If the later consumer instead depends only\n on an invariant common to the whole surviving family, no member selector is"
+  },
+  {
+    "proof_id": "P3G-P-0008",
+    "original_line_start": 701,
+    "revised_line_start": 651,
+    "linked_claim_labels": [
+      "p3:cor:forced-sector-succession"
+    ],
+    "original_sha256": "080ae3fd359aaba61f68cab4eddab527a9d573deaaebb7fc0c12de84cd96d3f5",
+    "revised_sha256": "c816f3931246cc94216efd12fd8f432703c804a5ecaea2fab09bd82a799bdcf7",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -22,5 +22,5 @@\n single-process subclass of the closed branch and classifies its finite\n spectral members.  Paper~III-E then derives the least gravitational heat role\n-\\(F_g(u)=e^{-u}\\) from the protected scalar-Laplace signature; the historical\n+\\(F_g(u)=e^{-u}\\) from the protected scalar-Laplace signature; the auxiliary\n \\((\\mathrm{GRAV}_{\\circ})\\) and \\((\\mathrm{GRAV\\!-\n \\!HEAT})\\) labels certify that generated role rather than supply a later"
+  },
+  {
+    "proof_id": "P3G-P-0009",
+    "original_line_start": 976,
+    "revised_line_start": 926,
+    "linked_claim_labels": [
+      "p3a:prop:v212-scalar-line-spectrum-handoff"
+    ],
+    "original_sha256": "54bd8a3cf4b2f60c086d9553a9317ed5fd6aff5e2709b322868f29672232228c",
+    "revised_sha256": "7b0f671910e70d0235e33cb6e1bcceee906b2bd8611bf39540c03c623323dbf2",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -5,5 +5,5 @@\n Proposition~\\ref{p1b:prop:g13-dirac}, and\n Proposition~\\ref{p1b:prop:relational-scalar-line-operators}\n-\\cite{Kugelmann2026Paper1B}, apply to that same degree-\\(q\\) line.\n+\\cite{Kugelmann2026Paper1C}, apply to that same degree-\\(q\\) line.\n The last proposition fixes the operator typing used here: the nonzero-degree\n sector lies outside the untwisted scalar-function operator algebra.  The degree definition in the statement absorbs the dual-line"
+  },
+  {
+    "proof_id": "P3G-P-0013",
+    "original_line_start": 1374,
+    "revised_line_start": 1324,
+    "linked_claim_labels": [
+      "p3b:thm:typed-pair-groupoid-relative-cocycle"
+    ],
+    "original_sha256": "1b7f8fcc5d67289f8598dff7d37dbef2cd935ea93b2e2d21feb63fd49d350291",
+    "revised_sha256": "84db01ba24a672a236b14075ef9f580e8c24d3a1e38d8aaea21b9211b5a23842",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,4 +1,4 @@\n \n-Transport the pair-groupoid and cocycle of Paper~1B,\n+Transport the pair-groupoid and cocycle of Paper~I-C,\n Theorem~\\ref{p1b:thm:groupoids}, through the frozen\n \\(\\iota_x,\\iota_p\\).  This gives precisely the displayed maps and"
+  },
+  {
+    "proof_id": "P3G-P-0014",
+    "original_line_start": 1420,
+    "revised_line_start": 1370,
+    "linked_claim_labels": [
+      "p3b:cor:born-even-odd-jets"
+    ],
+    "original_sha256": "9dd8ab4a49424a2aab1b1d435f106edc61ec80bfbb7d88e91b0099075f7f67a3",
+    "revised_sha256": "adf431aa54ab7ba19a3554b35b3f998c1fcc68d212a1cfb413812a2da1458f3b",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,4 +1,4 @@\n \n-Apply the inversion-even jet conclusion of Paper~1B,\n+Apply the inversion-even jet conclusion of Paper~I-C,\n Corollary~\\ref{p1b:cor:second-order}, in exponential coordinates at the\n identity of the same relative group."
+  },
+  {
+    "proof_id": "P3G-P-0017",
+    "original_line_start": 1868,
+    "revised_line_start": 1818,
+    "linked_claim_labels": [
+      "p3:cor:spectral-lower-ideal-sharpness"
+    ],
+    "original_sha256": "1ebbd94ce196ac8e1bf05fdaf0c364afc485638f4bf4fe87b28906769473f490",
+    "revised_sha256": "45d2ef6c614b46e75cdc37b1bbbd6ce033acdf3eb07b49f57b7dcdd446a3b831",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,4 +1,4 @@\n \n-This is the reciprocal-stage restatement of Paper~II-B,\n+This is the reciprocal-stage restatement of Paper~II-F,\n Proposition~\\ref{p2:prop:spectral-lower-ideal-sharpness}; taking independently\n tagged \\(A\\)- and \\(B\\)-copies preserves the same conclusions."
+  },
+  {
+    "proof_id": "P3G-P-0023",
+    "original_line_start": 2133,
+    "revised_line_start": 2083,
+    "linked_claim_labels": [
+      "p3b:thm:legacy-finite-role-realization"
+    ],
+    "original_sha256": "370250d2c1303701b9873f0d69b4f8972d54b6cd4539bb99e84d2c91ce419151",
+    "revised_sha256": "d884454a163d256e8d13cd20528c6eaa2eb610edadda42d297f44395b962b92d",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -10,5 +10,5 @@\n \\(\\mathfrak F_{1,1}\\).\n \n-In that former signature, the proper modules of Corollary~\\ref{p3:cor:spectral-lower-ideal-sharpness} remained countermodels outside \\(\\mathsf P_{\\rm sli}\\).  They are not countermodels to the current GP2 host-closure theorem.  At terminal weight one the Paper-II\n+Under those auxiliary premises, the proper modules of Corollary~\\ref{p3:cor:spectral-lower-ideal-sharpness} remained countermodels outside \\(\\mathsf P_{\\rm sli}\\).  They are not countermodels to the current GP2 host-closure theorem.  At terminal weight one the Paper-II\n component spectrum has maximum \\(\\Punit\\), so\n Definition~\\ref{p3:def:cell-ratio} gives \\(\\chi=1\\) and \\(q=0\\)."
+  },
+  {
+    "proof_id": "P3G-P-0026",
+    "original_line_start": 2255,
+    "revised_line_start": 2205,
+    "linked_claim_labels": [
+      "p3:prop:first-symmetric-finite-cell-correction"
+    ],
+    "original_sha256": "af704b43f86563373d1d85ad5c520fb336bf96eee7ea0479dd411194aa1148a6",
+    "revised_sha256": "8827e9129193baf49f8a218d7e3452ac4988ace509e09b9b51b41f9f7faec0df",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,4 +1,4 @@\n \n-Paper~I-A records two purely mathematical facts about the constituted Hurwitz support.  First, the \\(24\\)-cell is a spherical \\(5\\)-design, so finite averaging over \\(2T\\) agrees with round \\(S^3\\) averaging for all polynomials of degree at most five.  Second, the full \\(F_4\\) invariant ring has generator degrees \\(2,6,8,12\\); on the unit sphere the degree-two generator is the constant \\(r^2=1\\).  Hence no nonconstant fully cell-symmetric scalar correction is available before degree six.  Directly,\n+Paper~I-B records two purely mathematical facts about the constituted Hurwitz support.  First, the \\(24\\)-cell is a spherical \\(5\\)-design, so finite averaging over \\(2T\\) agrees with round \\(S^3\\) averaging for all polynomials of degree at most five.  Second, the full \\(F_4\\) invariant ring has generator degrees \\(2,6,8,12\\); on the unit sphere the degree-two generator is the constant \\(r^2=1\\).  Hence no nonconstant fully cell-symmetric scalar correction is available before degree six.  Directly,\n \\[\n \\sum_{q\\in2T}x_1(q)^6=2+16\\left(\\frac12\\right)^6=\\frac94,"
+  },
+  {
+    "proof_id": "P3G-P-0038",
+    "original_line_start": 3083,
+    "revised_line_start": 3029,
+    "linked_claim_labels": [
+      "p3b:prop:v193-relative-cohomology-pullback"
+    ],
+    "original_sha256": "e556461a203960c792a7e108e9a95eac76983a26f2d5375897b78276bb88dd57",
+    "revised_sha256": "6f713284fa06781318b909c98127432c6f4e5ef992b1046dd0d129a42f3ba1ce",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,3 +1,3 @@\n \n-This is Paper~1B, Proposition~\\ref{p1b:prop:relative-cohomology}, with\n+This is Paper~I-C, Proposition~\\ref{p1b:prop:relative-cohomology}, with\n the primitive classes and labelled factor order displayed above."
+  },
+  {
+    "proof_id": "P3G-P-0040",
+    "original_line_start": 3126,
+    "revised_line_start": 3072,
+    "linked_claim_labels": [
+      "p3b:prop:v193-full-born-quotient-singularity"
+    ],
+    "original_sha256": "ad7a685d4315789a75ef36de71255166a58d16f3757f6e2b40f3cf49e51aaa8b",
+    "revised_sha256": "caa59e32337e8c958add36a5b9a4ed373853166f2f2335c2ce96d95d5364a1dc",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,4 +1,4 @@\n \n-The full-product local model and singularity are Paper~1B,\n+The full-product local model and singularity are Paper~I-C,\n Proposition~\\ref{p1b:prop:fixed}.  The separate scalar quotient retains\n the one-dimensional normal half-line model stated here."
+  },
+  {
+    "proof_id": "P3G-P-0041",
+    "original_line_start": 3154,
+    "revised_line_start": 3100,
+    "linked_claim_labels": [
+      "p3b:prop:v193-born-cohomology-eigenspaces"
+    ],
+    "original_sha256": "511f2c1a9a22232d4280d1bc4e99630bb1267d6a745624004e0699080079e0c2",
+    "revised_sha256": "5f1fcd725692806431fcb903d2d6b0a145589608ed16f5b1376831899b1f5b43",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,4 +1,4 @@\n \n-Apply the integral exchange-eigensublattice table of Paper~1B,\n+Apply the integral exchange-eigensublattice table of Paper~I-C,\n Theorem~\\ref{p1b:thm:intersection}, with the same labelled exterior\n basis.  Its signs give all three stated parity consequences."
+  },
+  {
+    "proof_id": "P3G-P-0042",
+    "original_line_start": 3171,
+    "revised_line_start": 3117,
+    "linked_claim_labels": [
+      "p3b:prop:v193-generic-commuting-locus"
+    ],
+    "original_sha256": "cc8ed4f92957bb386ea310d15d92fd807659f893e5887d8cedd100aef00de869",
+    "revised_sha256": "b5ac4f08ef4c6a7075331b2721fb7080eb2b2ac56a3bebf2b194eb12fae8fb4e",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,4 +1,4 @@\n \n-This is the regular-locus dimension calculation in Paper~1B,\n+This is the regular-locus dimension calculation in Paper~I-C,\n Proposition~\\ref{p1b:prop:commutator}, with the two free scalar\n coordinates retained; the smaller central strata remain separate."
+  },
+  {
+    "proof_id": "P3G-P-0043",
+    "original_line_start": 3221,
+    "revised_line_start": 3167,
+    "linked_claim_labels": [
+      "p3b:thm:v203-reciprocal-transgression"
+    ],
+    "original_sha256": "f250d45429a4dab8b0d7361a8617ad59affca76d2a0577f29d0033074807f28f",
+    "revised_sha256": "68030ad399b1d5ee55dd9cd72bf18067d45aa1f65c0f47e0d22964c60b8611bc",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,4 +1,4 @@\n \n-This is Paper~1B, Theorem~\\ref{p1b:thm:transgression}, with the same\n+This is Paper~I-C, Theorem~\\ref{p1b:thm:transgression}, with the same\n fundamental trace, \\(X,Y\\) order and dimensionless scalar orientation\n \\(d\\theta_t\\wedge d\\theta_E\\).  Choose each vector-sphere orientation"
+  },
+  {
+    "proof_id": "P3G-P-0044",
+    "original_line_start": 3248,
+    "revised_line_start": 3194,
+    "linked_claim_labels": [
+      "p3b:thm:v203-exact-twisted-dirac"
+    ],
+    "original_sha256": "c100347c10fe1c50d461087ebfc67bb809db9cb1201b0e70903b91251292e674",
+    "revised_sha256": "bbef16a886834caa25f15662ad0615e50ad4e1df59223b06aaa9c71523657899",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,4 +1,4 @@\n \n-Apply Paper~1B, Theorem~\\ref{p1b:thm:dirac-graph}, with\n+Apply Paper~I-C, Theorem~\\ref{p1b:thm:dirac-graph}, with\n \\(H=-d\\Omega\\).  Its bracket and \\(e^{-\\Omega}\\) conventions are\n exactly those displayed here, so the graph, untwisting and cohomology"
+  },
+  {
+    "proof_id": "P3G-P-0046",
+    "original_line_start": 3363,
+    "revised_line_start": 3309,
+    "linked_claim_labels": [
+      "p3:cor:delta-e6-root-denominator-strengthened",
+      "p3:eq:delta-2O-shell-value-match",
+      "p3:eq:delta-e6-rank-coxeter",
+      "p3:eq:delta-2O-representation-factorization"
+    ],
+    "original_sha256": "779553c7eca79bce46d96b8e3a2b0deeaa3ed965cfce264552faaf4854cc5f3f",
+    "revised_sha256": "7f37cbc3a8d33deb9f6935da1303867460d0277f2cebe583eef65c5332011953",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -2,5 +2,5 @@\n Theorem~\\ref{p3:thm:delta_rigorous} derives\n \\(\\delta_{\\rm loc}=1/(6\\sqrt2)\\) from the reduced determinant anomaly and\n-the Levi-to-round first-order conversion.  Paper~I-A gives\n+the Levi-to-round first-order conversion.  Paper~I-B gives\n \\[\n  |S_{2O}|=6,\\qquad"
+  },
+  {
+    "proof_id": "P3G-P-0048",
+    "original_line_start": 3481,
+    "revised_line_start": 3423,
+    "linked_claim_labels": [
+      "p3:thm:protected-clifford-master-index"
+    ],
+    "original_sha256": "171d7405238111644a9a621b480e04b9350dce8016949af56e35822ff29aa61a",
+    "revised_sha256": "1c908c92bec33c83e5ac07e4aebcb1588b2175180557f667fd8c875f9c21e569",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -4,4 +4,4 @@\n \\(\\dim_{\\mathbb R}A_{\\rm prot}=8\\).  The Hom-space dimension is therefore\n \\(7\\cdot8=56\\).  This is the same scalar-free resolution-data module imported\n-from Paper~I-A; no additional Clifford refinement block \\(B_{\\rm Cl}\\) is\n+from Paper~I-B; no additional Clifford refinement block \\(B_{\\rm Cl}\\) is\n introduced."
+  },
+  {
+    "proof_id": "P3G-P-0064",
+    "original_line_start": 5020,
+    "revised_line_start": 4957,
+    "linked_claim_labels": [
+      "p3e:lem:unique-character-dressing",
+      "p3e:eq:unique-character-dressing"
+    ],
+    "original_sha256": "c3a4005f002034a361210b7d06298da0dddc9e15b141651f340b44a1b6095924",
+    "revised_sha256": "1e2c74af230c79c5e226dde8014d3df1183ac5755e134737099620c58d3c315a",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,5 +1,5 @@\n \n-The positive-character classification of Paper~1B,\n-Proposition~\\ref{p1b:prop:trace-coordinate}~\\cite{Kugelmann2026Paper1B},\n+The positive-character classification of Paper~I-C,\n+Proposition~\\ref{p1b:prop:trace-coordinate}~\\cite{Kugelmann2026Paper1C},\n on \\([0,1]\\), with \\(D(1)=Q_\\sigma\\), gives \\(D(s)=Q_\\sigma^s\\).\n Since \\(Q_\\sigma>1\\), its exponential is injective, so any expression"
+  },
+  {
+    "proof_id": "P3G-P-0066",
+    "original_line_start": 5142,
+    "revised_line_start": 5079,
+    "linked_claim_labels": [
+      "p3e:cor:rank-one-exit-quadratic-grade",
+      "p3e:eq:rank-one-exit-depth-two-scale",
+      "p3e:eq:depth-two-corroborating-identity",
+      "p3e:eq:rank-one-exit-exact-response"
+    ],
+    "original_sha256": "87c5b66615667e9108e1ca23dfb96a867d13b842c2a165d2578248ee41b31465",
+    "revised_sha256": "0efb2ca11ac4043cbf6201e95e7504bbbc63ae8769330c16a4d9a40fe09fd50b",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,4 +1,4 @@\n \n-Paper~1B, Theorem~\\ref{p1b:thm:laurent-family}~\\cite{Kugelmann2026Paper1B},\n+Paper~I-D, Theorem~\\ref{p1b:thm:laurent-family}~\\cite{Kugelmann2026Paper1D},\n at \\(j=2\\) gives \\(n_2^+(C_2)=0\\), hence \\(D_2(C_2)=1\\).  Substitution into\n Eq.~\\eqref{p3e:eq:raw-complementary-laurent-expanded} yields the first two"
+  },
+  {
+    "proof_id": "P3G-P-0067",
+    "original_line_start": 5185,
+    "revised_line_start": 5122,
+    "linked_claim_labels": [
+      "p3e:thm:depth-two-transverse-event",
+      "p3e:eq:depth-two-event-functional",
+      "p3e:eq:depth-two-event-unique-zero",
+      "p3e:eq:depth-two-event-q-derivative",
+      "p3e:eq:depth-two-event-clock-crossing"
+    ],
+    "original_sha256": "079d1e3369a3dfd28eaafb350393f1b382734cc62bb383617a171a8d22188c01",
+    "revised_sha256": "21ff7f5ae3eb549456a19b1eebfd795df62bd6f7ead6fd5100f9c96ca2b8b015",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,6 +1,6 @@\n \n-Paper~1B, Theorem~\\ref{p1b:thm:laurent-family}, gives the unique zero\n+Paper~I-D, Theorem~\\ref{p1b:thm:laurent-family}, gives the unique zero\n \\(q=2\\); the endpoint calculation in\n-Theorem~\\ref{p1b:thm:dressed-convexity}~\\cite{Kugelmann2026Paper1B}\n+Theorem~\\ref{p1b:thm:dressed-convexity}~\\cite{Kugelmann2026Paper1D}\n gives \\((n_2^{\\rm L})'(2)=-\\tfrac12\\tanh A_\\sigma\\).\n For the generated clock, the common-rate formula in"
+  },
+  {
+    "proof_id": "P3G-P-0072",
+    "original_line_start": 5887,
+    "revised_line_start": 5799,
+    "linked_claim_labels": [
+      "p3f:prop:m8td-heat-curvature",
+      "p3f:eq:m8td-heat-trace",
+      "p3f:eq:m8td-heat-curvature"
+    ],
+    "original_sha256": "adcf0c5a171a195c13b5688c945f306a4acc2eba0744a56b9be1381153a05532",
+    "revised_sha256": "681f7acaee51b9d12a6f1d72fb90fb7390a8ad0fa6f33926164cc3e45ce3f203",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,8 +1,8 @@\n \n-The exact series is Paper~I-C,\n+The exact series is Paper~I-D,\n Proposition~\\ref{p1b:result:exact-heat-trace-and-parameter-evolution};\n its differentiated-series sign and both quantitative bounds are\n Proposition~\\ref{p1b:prop:heat-curvature}\n-\\cite{Kugelmann2026Paper1B}. The definitions of \\(h\\), \\(\\delta\\),\n+\\cite{Kugelmann2026Paper1D}. The definitions of \\(h\\), \\(\\delta\\),\n \\(b_n\\) and \\(c_n\\) coincide, and both results concern this uninserted\n spatial doublet trace."
+  },
+  {
+    "proof_id": "P3G-P-0077",
+    "original_line_start": 6300,
+    "revised_line_start": 6208,
+    "linked_claim_labels": [
+      "p3f:prop:v199-affine-schur-remainder"
+    ],
+    "original_sha256": "c1d2bc9d329e634b037d93acd24391c666dcbaf40e2286e494eab0fd42447141",
+    "revised_sha256": "73122c3e46e8bc7f56f2ff9d7605becdca1fe519f5034ae1fe1309d5f4d50509",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,5 +1,5 @@\n \n-In Paper~I-C, Theorem~\\ref{p1b:thm:all-order-schur}\n-\\cite{Kugelmann2026Paper1B}, this affine family has residual\n+In Paper~I-D, Theorem~\\ref{p1b:thm:all-order-schur}\n+\\cite{Kugelmann2026Paper1D}, this affine family has residual\n \\(R_0(y)=yr\\) and fixed-lift value \\(\\lambda_0+d_0y\\), giving the\n exact identity. Moreover \\(\\lambda''(0)=-2r^\\dagger C_0^{-1}r\\);"
+  },
+  {
+    "proof_id": "P3G-P-0078",
+    "original_line_start": 6315,
+    "revised_line_start": 6223,
+    "linked_claim_labels": [
+      "p3f:prop:v199-reciprocal-concavity"
+    ],
+    "original_sha256": "28599f3de0f74e9d213ebd76383970f4a06d0cc3ca1eb53ad231da1847b36874",
+    "revised_sha256": "48f169331afdb572e23bdd3bc431441e1f7d85e03ab50a6a6be2eb1084017710",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,5 +1,5 @@\n \n-Apply the scalar case of Paper~I-C,\n-Theorem~\\ref{p1b:thm:matrix-rigidity} \\cite{Kugelmann2026Paper1B},\n+Apply the scalar case of Paper~I-D,\n+Theorem~\\ref{p1b:thm:matrix-rigidity} \\cite{Kugelmann2026Paper1D},\n on every finite reciprocal window to obtain \\(\\lambda(y)=y\\).\n The affine parent supplies the needed concavity because its Schur response"
+  },
+  {
+    "proof_id": "P3G-P-0079",
+    "original_line_start": 6338,
+    "revised_line_start": 6246,
+    "linked_claim_labels": [
+      "p3f:thm:v203-matrix-reciprocal-rigidity"
+    ],
+    "original_sha256": "bdb9412d391992012d8cc51a64d6b93b432165116143a68f03dc9f6d632db3ce",
+    "revised_sha256": "531856b1efd01a3e98c0ec003d7e5b571d0b6ed1944310109dfd8c2fb667a0e4",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,5 +1,5 @@\n \n-This is Paper~I-C, Theorem~\\ref{p1b:thm:matrix-rigidity}\n-\\cite{Kugelmann2026Paper1B}, on the stated normalized reciprocal window.\n+This is Paper~I-D, Theorem~\\ref{p1b:thm:matrix-rigidity}\n+\\cite{Kugelmann2026Paper1D}, on the stated normalized reciprocal window.\n The fixed positive kinetic metric enters by the displayed congruence.\n If the hypotheses hold on every finite window, the corresponding"
+  },
+  {
+    "proof_id": "P3G-P-0096",
+    "original_line_start": 7617,
+    "revised_line_start": 7499,
+    "linked_claim_labels": [
+      "p3f:thm:m8td-covariant-casimir",
+      "p3f:eq:m8td-casimir",
+      "p3f:eq:m8td-adjoint-gap"
+    ],
+    "original_sha256": "e8de8c6abe2bc9ab17b35b097e065da55872d4790fa2c7d83b0d24f1136423f0",
+    "revised_sha256": "a0bdcfc949b6375d44b6a4eecde24ee8b9f0baa562fe0254df0b3f7d5ccb7779",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,5 +1,5 @@\n \n Paper~I-C, Theorem~\\ref{p1b:thm:covariant-spectrum} and\n-Corollary~\\ref{p1b:cor:adjoint-gap} \\cite{Kugelmann2026Paper1B}, give\n+Corollary~\\ref{p1b:cor:adjoint-gap} \\cite{Kugelmann2026Paper1C}, give\n respectively the Casimir spectrum and the adjoint kernel, gap and inverse.\n The coframe, radius \\(R\\), and embedding \\(\\mathbf2\\oplus\\mathbf1\\)"
+  },
+  {
+    "proof_id": "P3G-P-0097",
+    "original_line_start": 7651,
+    "revised_line_start": 7533,
+    "linked_claim_labels": [
+      "p3f:cor:m8td-gauss-response",
+      "p3f:eq:m8td-gauss-energy"
+    ],
+    "original_sha256": "0c77f5a0d5fe85521c3082267057e0ce743cd0defc58a773ddf971644c611687",
+    "revised_sha256": "b7827a7787896c62cb0232235f4c9817689936b522912248d3891176593e17a5",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -4,5 +4,5 @@\n \\(d_f^\\dagger E=Q_\\rho^\\sharp*\\rho_3=j\\).\n Apply Paper~I-C, Corollary~\\ref{p1b:cor:adjoint-gap}\n-\\cite{Kugelmann2026Paper1B}, for solvability, the orthogonal transverse\n+\\cite{Kugelmann2026Paper1C}, for solvability, the orthogonal transverse\n projection and the minimal squared norm. Multiplication by the same-action\n electric coefficient \\(c_{\\rm op}/2\\) gives"
+  },
+  {
+    "proof_id": "P3G-P-0099",
+    "original_line_start": 7701,
+    "revised_line_start": 7582,
+    "linked_claim_labels": [
+      "p3f:prop:m8td-local-gauge-inverse",
+      "p3f:eq:m8td-gauge-inverse-bound"
+    ],
+    "original_sha256": "7cc025fc6e72c2a560a0be557a629b78a77ea11e998a253ffba3ee28e3a627cb",
+    "revised_sha256": "f1b204e635094218ee1e5616b1f9ee5b9e01cde2135f33722e63c8dc65be17a9",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -2,5 +2,5 @@\n Apply Paper~I-C,\n Proposition~\\ref{p1b:result:a-controlled-local-gauge-slice}\n-\\cite{Kugelmann2026Paper1B}, on \\(Q_cL^2\\), with\n+\\cite{Kugelmann2026Paper1C}, on \\(Q_cL^2\\), with\n \\(\\lambda_*=3/(4R^2)\\) and the displayed multiplier bound \\(\\beta\\).\n The range of \\(d_{\\rm B}^\\dagger\\) is already orthogonal to"
+  },
+  {
+    "proof_id": "P3G-P-0100",
+    "original_line_start": 7734,
+    "revised_line_start": 7615,
+    "linked_claim_labels": [
+      "p3f:thm:m8td-hodge-dirac",
+      "p3f:eq:m8td-hodge-dirac",
+      "p3f:eq:m8td-variable-cartan-dirac"
+    ],
+    "original_sha256": "0628c9239fa8c96ed2c9463a12f07f4ce552e4e293b95536615aa516af30ab7d",
+    "revised_sha256": "13c9accf4996fe7ca57183e416003671b3ef7f1951281a32c17e4a9c83b78e35",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -6,5 +6,5 @@\n \\(R\\mathcal D_f=4S\\cdot J+4fS\\cdot I+3/2\\).\n Paper~I-C, Theorem~\\ref{p1b:thm:dirac-spectrum}\n-\\cite{Kugelmann2026Paper1B}, identifies this midpoint with the displayed\n+\\cite{Kugelmann2026Paper1C}, identifies this midpoint with the displayed\n Hodge operator and its kernel. The unitary map in the present convention is\n \\((\\phi,\\alpha)\\mapsto(\\phi I+c(\\alpha))/\\sqrt2\\) in Hilbert--Schmidt norm."
+  },
+  {
+    "proof_id": "P3G-P-0101",
+    "original_line_start": 7775,
+    "revised_line_start": 7656,
+    "linked_claim_labels": [
+      "p3f:cor:m8td-dirac-spectrum",
+      "p3f:eq:m8td-dirac-spectrum"
+    ],
+    "original_sha256": "cb3e188c5d74226bca54d9e54acff4a7ff01bc8555cb92d0cb8ee8614347c970",
+    "revised_sha256": "22f85098b1d5a4b8d427f644c7924a945248802233c4d0e46686a275fdfecee3",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -2,5 +2,5 @@\n The doublet table, midpoint gap, crossing and eta invariants are\n Paper~I-C, Theorem~\\ref{p1b:thm:dirac-spectrum}\n-\\cite{Kugelmann2026Paper1B}, with the same \\(R\\) and \\(\\delta\\).\n+\\cite{Kugelmann2026Paper1C}, with the same \\(R\\) and \\(\\delta\\).\n The \\(SU(3)\\) singlet is untwisted, so Paper~I-A,\n Theorem~\\ref{p1:thm:representation-harmonic-package}, gives its free spinor"
+  },
+  {
+    "proof_id": "P3G-P-0102",
+    "original_line_start": 7818,
+    "revised_line_start": 7699,
+    "linked_claim_labels": [
+      "p3f:thm:m8td-low-mode",
+      "p3f:eq:m8td-partial-trace",
+      "p3f:eq:m8td-feshbach"
+    ],
+    "original_sha256": "542f5584f2e9c6966f0087a4a9d4d8123b465d8a0bfbe3635f4adc5846dcecfa",
+    "revised_sha256": "89931a1705b62c185cea6134d0ce7c1cde3838f55951c878e34b281e41c7a137",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,5 +1,5 @@\n \n-Paper~I-C, Proposition~\\ref{p1b:prop:feshbach}\n-\\cite{Kugelmann2026Paper1B}, gives the singlet contraction and the\n+Paper~I-D, Proposition~\\ref{p1b:prop:feshbach}\n+\\cite{Kugelmann2026Paper1D}, gives the singlet contraction and the\n complementary resolvent calculation. Tensoring the singlet density\n \\(I_E/2\\) by \\(1_K\\) gives the displayed operator-valued partial trace."
+  },
+  {
+    "proof_id": "P3G-P-0103",
+    "original_line_start": 7852,
+    "revised_line_start": 7733,
+    "linked_claim_labels": [
+      "p3f:thm:m8td-protected-zero",
+      "p3f:eq:m8td-protected-gap",
+      "p3f:eq:m8td-nonhomogeneous-gap"
+    ],
+    "original_sha256": "d142e49b225ebecc8c9fc198a509ae3693cbb08901f8a374a7f80ee5bbe27e4b",
+    "revised_sha256": "d86ea1644d68c2e7935ea63a64595c495efaf4a7d2c39f2e996d1a4da0488a35",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,5 +1,5 @@\n \n Apply Paper~I-C, Theorem~\\ref{p1b:thm:dirac-reciprocity}\n-\\cite{Kugelmann2026Paper1B}, with the same \\(\\mathcal U\\), doublet\n+\\cite{Kugelmann2026Paper1C}, with the same \\(\\mathcal U\\), doublet\n Hilbert space and bounded self-adjoint perturbation \\(V\\). It gives the\n odd Fredholm index, simple kernel and quantitative gap on this domain."
+  },
+  {
+    "proof_id": "P3G-P-0104",
+    "original_line_start": 7895,
+    "revised_line_start": 7776,
+    "linked_claim_labels": [
+      "p3f:cor:m8td-constructive-protected-zero",
+      "p3f:eq:m8td-constructive-zero",
+      "p3f:eq:m8td-zero-truncation"
+    ],
+    "original_sha256": "3ea4543b6ad4a321f3b928a69d3a86068bf4d4f7c462e8818bfe18e97ac1110b",
+    "revised_sha256": "db847526e05ade726083493efb90c7662ab4d6a165e765322bd8bd89575ddc64",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,5 +1,5 @@\n \n This is Paper~I-C, Theorem~\\ref{p1b:thm:dirac-zero-resolvent}\n-\\cite{Kugelmann2026Paper1B}, with the same midpoint operator, reciprocal\n+\\cite{Kugelmann2026Paper1C}, with the same midpoint operator, reciprocal\n involution and Cartan multiplier. Since \\(\\|G_B\\|\\le R/\\sqrt3\\) and\n \\(\\|M_u\\|=3\\|u\\|_\\infty/(2R)\\), the Neumann norm is bounded by \\(\\rho\\)."
+  },
+  {
+    "proof_id": "P3G-P-0106",
+    "original_line_start": 8040,
+    "revised_line_start": 7917,
+    "linked_claim_labels": [
+      "p3f:cor:m8td-transverse-zero-response",
+      "p3f:eq:m8td-transverse-response",
+      "p3f:eq:m8td-transverse-onset",
+      "p3f:eq:m8td-shell-generation",
+      "p3f:eq:m8td-shell-cross-response"
+    ],
+    "original_sha256": "c7609740181c42bb4738efa5ff693cfaad1b6d83ee6cddeead8744533c0ed84c",
+    "revised_sha256": "960280fa2f69b1ee635c37cc1ec7da6dc458aac8db8a27335e8e962752fff2ba",
+    "full_unified_diff": "--- v1_57\n+++ v1_58\n@@ -1,5 +1,5 @@\n \n-Paper~I-C, Theorem~\\ref{p1b:thm:dirac-transverse-generation}\n-\\cite{Kugelmann2026Paper1B}, gives all displayed formulas and the\n+Paper~I-D, Theorem~\\ref{p1b:thm:dirac-transverse-generation}\n+\\cite{Kugelmann2026Paper1D}, gives all displayed formulas and the\n surjectivity statement on the same round spatial restriction. The final\n sentence is a type statement: the Hodge identification represents the"
+  }
+]

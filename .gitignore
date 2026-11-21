@@ -1,0 +1,10 @@
+# Do not accidentally commit full original release assets (while permitting <100 MB archives under docs/data)
+/Paper00-DAGAtlas-*.zip
+/Paper00-PapersMinimal-*.zip
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.log
+.DAG-originals/
+site-preview/

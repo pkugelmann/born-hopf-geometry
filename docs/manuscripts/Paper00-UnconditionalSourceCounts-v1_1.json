@@ -1,0 +1,11 @@
+{
+  "framework": "v3.077",
+  "current_paper_roots": 31,
+  "source_labels": 14366,
+  "duplicate_label_owners": {},
+  "parsed_references": 11646,
+  "unresolved_static_references": {},
+  "unchanged_paper_pairs": 26,
+  "xref_aliases": 204,
+  "note": "Parsed references include source-only unescaped macro contexts; source build logs are authority for unresolved reference statements."
+}

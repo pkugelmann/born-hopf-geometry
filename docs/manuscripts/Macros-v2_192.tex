@@ -1,0 +1,923 @@
+% Macros-v2_188: re-based current paper identities and A--G family; no change to geometry.
+% Macros-v2_184: active Paper III-E v1.200/III-F v1.267 binding for framework v3.031; mathematical macros unchanged.
+% Macros-v2_183: updated shared cross-reference bindings for Paper1B/III-E/III-F v3.030; mathematical macros unchanged.
+% Macros-v2_182: active Paper II-F/V-A cross-references for framework v3.029; definitions unchanged.
+% Paper-series v2.381: new I-B torsion/modular results, bibliography and current source roots.
+% Paper-series v2.380: new exceptional bibliography and synchronized paper references.
+% Paper-series v2.379 current 31-paper macro/aux registry.
+% Paper-series v2.378: current 31-paper AUX/bibliography registry updated for Paper I-B v1.2 literature additions.
+% Framework v2.371: current-source reference registry refreshed; old theorem labels retained.
+% Framework v2.370: current 30-paper source/AUX root rebinding; native mathematical macros unchanged.
+% Framework v2.368: synchronized merged 30-root registry; mathematical notation unchanged.
+% Framework v2.358: active 30-paper source registry synchronized; existing mathematical macros unchanged.
+% Framework v2.357: selective new source-owned certificates; active reference roots updated for five revised papers.
+% Framework v2.356: active 30-root registry synchronized to the 30 papers in this release.
+% Framework v2.275: exact positive dense-twin word cubature, finite repeatability and eighth-moment classification, nested sampling frames, joint action and POVM-jet exports; preserves v2.274.
+% Framework v2.274: filename and root-source synchronization.
+% Framework v2.273: restored missing Problem 3 theorems from v2.268; exact exceptional frames, twin geometry, convolution repeatability and projector/occurrence firewalls; merged on v2.272 without overwriting independent branches.
+% Framework v2.272: merged v2.270 covariant native-readout mathematics with v2.271 Problem 4 finite-action Hopf hypercharge/holonomy corrections; no universal bulk-gauge uniqueness claim.
+% Independent branches: v2.270 readout/guard exports and v2.270 K16 action-consumed charge closure; all prior scoped assumptions retained.
+% Framework v2.269: synchronized 30 active AUX roots; mathematics and bibliography preserved from Macros-v2_161.
+% Framework v2.266: Paper II-C converse-derived outcome resources; II-E, III-C, IV-A/B, V-A and VI-B downstream mathematical closures; 30-root registry synchronized.
+% Framework v2.265: II-C coordinate-stage constitution and exact first-symbol host inheritance; prior mathematical domains retained.
+% Framework v2.264: paper II-B reverse/audit and IV-A observable-minimal exchange; synchronized external references to 30 active roots.
+% Framework v2.263: Paper I-C adds bridge-controlled root-carry parity and source-relative old-cap cancellation; other root mathematical bodies retained; active 30-root references synchronized.
+% Framework v2.262: integrates Paper II-F radius, Casimir and readout results; active 30-root references synchronized.
+% Framework v2.261: merged Paper II-B GP2-level/geometric repairs; preserves v2.260 II-D repairs; active references synchronized.
+% Framework v2.260: Paper II-D signed RS, finite-symbol typing, and conditional curvature/Jordan repairs; references synchronized.
+% Framework v2.259: conditional native SU(2) atlas and explicit later discharge; v2.258 mathematical bodies retained elsewhere.
+% Framework v2.258: preserves parallel II-A/dynamics update and adds complete readout/frequency closures.
+% Framework v2.257: exact minimal complete position readout and arbitrary-preparation frequency law.
+% Framework v2.256: exact native inertia and sharp bounded ordered-source closure; preserves concurrent v2.255 work.
+% Framework v2.255: preserves parallel detector integration and adds exact finite readout closures.
+% Framework v2.254: Pasterski bibliography and synchronized 30-paper external-reference registry.
+% Framework v2.253: typed raw coordinate defect in I-A and synchronized VI-A import; active references synchronized.
+% Framework v2.252: synchronized source registry; optional III-G shell-frame calculation.
+% Framework v2.251: forward common-action execution, joint source jets and scoped coupled control.
+% Framework v2.251: exact full-heat variations, fermion source jets and explicit physical completion frontier.
+% Framework v2.251: certified interacting source jets, pole stability and scoped completion proofs.
+% Framework v2.251: synchronized active source registry; mathematical notation unchanged.
+% Framework v2.251: synchronized active source registry; mathematical notation unchanged.
+% Framework v2.251: synchronized active source registry; mathematical notation unchanged.
+% Framework v2.251: synchronized source registry; no mathematical notation changes.
+% Framework v2.244: synchronized 30-paper AUX registry and rooted phase-source action-order tests.
+% Framework v2.242: signed rooted phase lift, complete transverse return and exact family cubic.
+% Framework v2.241: proved rooted conormal geometry, conditional cap realization and scoped action tests.
+% Framework v2.239: all 30 active source roots synchronized; no mathematical macro changes.
+% Framework v2.238: Paper IV A/B/C split and 30-root reference registry.
+% Framework v2.237: Paper VII-D technical split and 28-root reference registry.
+% Framework v2.236: Paper VI-C technical-volume reference added; all current root bindings advanced.
+% Framework v2.235: 26-root AUX and bibliography bindings synchronized; mathematical macros unchanged.
+% BEGIN INLINE SOURCE: Paper00-TeXBuildCompatibility-v1_0.tex
+% Rendering-only repairs for inherited long appendices and bitmap text fonts.
+% Integer counters through 26 retain the original labels; later values use AA,
+% AB, ... . This file changes no action coefficient, state or theorem premise.
+\RequirePackage{alphalph}
+\makeatletter
+\let\BHPrimitiveAlph\@Alph
+\newalphalph{\BHExtendedAlph}{\BHPrimitiveAlph}{26}
+\let\@Alph\BHExtendedAlph
+\AtBeginDocument{%
+  \@ifpackageloaded{microtype}{\microtypesetup{expansion=false}}{}%
+}
+\makeatother
+
+% END INLINE SOURCE: Paper00-TeXBuildCompatibility-v1_0.tex
+
+% Framework v2.164: current reference/bibliography profile; mathematical definitions retained.
+% Framework v2.162: finite metric, functional Hilbert and scoped Ward integration.
+% Framework v2.161: inherits Macros-v2_57.tex exactly except the current external-reference binding.
+% Macros v2.57 / framework v2.156: current reference registry only; mathematical definitions unchanged.
+% Framework v2.143 / Macros v2.55: current external-reference bindings; mathematical notation unchanged.
+% Framework v2.110 / Macros v2.54: current external-reference registry and bibliography; mathematical notation inherited.
+% Framework v2.67 / Macros-v2_53: adds Born-action-cell and joint-EH readout symbols; absolute unit realization is metrological; MATCH_{J/scal}^{EH} remains the sole G24 normalization bridge.
+% Framework v2.35 / Macros-v2_52: grouped paper numbering, active AUX registry, and Born-v6_20 bibliography binding synchronized; notation unchanged.
+% Framework v2.26: active-source AUX and bibliography bindings synchronized; notation unchanged.
+% Framework v2.09: reviewed early-reciprocity integration; scoped physical imports.
+% Framework v2.08: Born--Euler mathematics and conditional complete-action potential criterion.
+% Framework v2.07: active AUX registry includes Paper I-B v1.2; shared bibliography Born-v6_18.
+% Macros-v2_46 / framework v2.04: mathematical atlas and downstream realization correction.
+% Macros-v2_46 / framework v2.03: scoped structure integration and current dependency bindings.
+% Macros-v2_46 / framework v2.01: shared source bindings; prior revision comments are historical.
+% v2.42 / framework v1.99: Synchronized RG/AS owner and bibliography bindings.
+% v2.41 / framework v1.99: active manuscript AUX bindings and geometric-closure bibliography synchronized.
+% Release-v1.80 centralized source synchronization for scalar-circle/comparison-band integration.
+% Release v1.79: Hurwitz hierarchy and kinetic-normalized action response integration; physical mass matching remains conditional.
+% Release v1.78: approved M8 closure-batch integration; physical and analytic domains retained.
+% Current v1.78 registry: all active TeX roots are synchronized below.
+% Earlier release comments are historical scope records, not current status.
+% Release-v1.77 synchronization: native same-owner Noether closure, generator--flow/history typing, analytic-certification firewalls, scalaron/K16, LF/QCD, quantum-Ward, and RAR boundary-owner transport are registered; shared mathematical notation is unchanged.
+% Release-v1.76 synchronization: registry points to the v1.76 active paper roots.
+% Release-v1.76 synchronization: registers the local A+Phi+g Noether/constraint closure and dynamics-frontier propagation; shared mathematical notation is unchanged.
+% Release-v1.75 synchronization: registry points to the v1.75 active paper roots.
+% Release-v1.75 synchronization: integrates the joint-Dirac Einstein bulk real form and the local odd-scalar heat-coefficient action on explicit analytic first-jet/interior domains; v1.74 Yang--Mills closure is retained. Fermionic reality, pure-metric curvature-squared/exact-nonlocal terms, noncanonical boundaries, physical vacuum selection, and actual solution-history tokens remain open.
+% Release-v1.74 synchronization: registry points to the v1.74 active paper roots and retains the v1.73 theorem labels.
+% Release-v1.74 synchronization: canonical Macros-v2_34.tex; generated local nonlinear Yang--Mills action, constrained connection-field phase space, source-free Gauss momentum map, and Legendre closure are integrated on their proved domains. The remaining non-gauge ACT_cl sectors and actual solution-history selection remain open.
+% Release-v1.71 synchronization: closes the former JOINT_x/JOINT_5
+% connection-occurrence gap by canonical structure-group extension of the
+% nonflat Born connection, faithful associated representation, and the local
+% cotangent--Clifford operator constructor.  Actual fluctuation members,
+% actions, vacua, solutions, calibrations, and analytic QFT domains remain
+% separately typed.  The active-AUX registry is advanced once.
+% Release-v1.71 canonical macro and active-AUX registry.
+% ======================================================================
+% Macros-v2_39.tex -- canonical publication macro file
+% Release v1.71 retains the v1.70 null-ray/QCD boundaries and additionally
+% removes the duplicate structural connection actuality premise.  It does not
+% claim global bundle topology, select a gauge/Higgs member, or promote the
+% finite construction to an interacting continuum theory.
+% Release v1.68 constructs the finite light-front total-fraction operators and
+% parton number/momentum operator measures, proves their simplex and Hausdorff-limit
+% theorems, and separates positive cut measures from scheme-renormalized
+% light-ray distributions.  It also separates finite real Schur poles, stable
+% norm-resolvent/Riesz pole-residue limits, and continued resonance
+% pole/residue limits.  The Paper-VII-C scattering package is claim-indexed:
+% local QFT and spectral claims import no S-matrix or infrared premise, while
+% asymptotic amplitudes, LSZ, S-matrix poles, completeness, and cross sections
+% import only their named massive or massless/long-range clauses.
+% Release v1.67 factorizes BND48_H into a same-action Hessian/Schur
+% descendant and still-open typed boundary-trace, critical-lift, and
+% refinement-limit conditions.  It proves the finite-collar Dirichlet-to-
+% Neumann law sqrt(y)tanh(L sqrt(y)), its nonuniform critical limit, and the
+% finite-return ultra-infrared turnover.  The Paper-I-A Hardy constant mode is
+% an exact geometric near-hit, not yet the physical metric boundary mode.
+% The current local f(R) Hessian remains massive and therefore still refutes
+% a RAR prediction on the minimal action branch.
+% Release v1.66 derives the transverse depth-six normalizer bridge from the
+% already generated C6 Reynolds image and Paper-I-A binary-dihedral normalizer.
+% The bridge is the unique least 2D3-stable scalar-containing realization of
+% the faithful quotient 2D3/C6=C2, has trace defect six and hence K=48, but is
+% transverse to the nested active carrier.  Exact K=44 and K=52 contraction,
+% semigroup, and energy-midpoint identities are registered as structural
+% readouts rather than projector events.  The active E48 carrier gap remains
+% unchanged.  A same-action boundary-symbol/Calderon intertwiner is isolated
+% as the necessary and still unproved owner bridge to the static DtN sort;
+% representation equivalence alone neither derives RAR nor creates a K=48
+% action junction, pole, occupation, or cosmological transition.
+% Release v1.65 derives the native E_48-centered carrier mass gap from the
+% GP1--GP3-generated active spectrum, distinguishes its carrier-free interval
+% from a particle located at E_48, and withdraws the unsupported promotion to
+% a positive continuum Yang--Mills mass gap.  The latter remains a valid
+% conditional transfer theorem on an enlarged continuum branch, but it is not
+% an active framework prediction or an unfinished native-gap proof.
+% Release v1.64 synchronizes Derivation Batches 14--22.  It registers the
+% GP1--GP3 heat-profile orbit, same-Hessian electroweak response and pole
+% ownership, K16/K48 action-response corrections, perturbation state and
+% non-Gaussianity typing, finite-vacuum/gap/QCD limit repairs, factorized
+% position-area ownership, the actual static metric response, and the ordered
+% Wilson/string-tension limits.  Strict continuum convergence, positive
+% physical gap, surviving higher cumulants, and positive tension remain open.
+% Release v1.61 closes TIMEWIDTH16 as an independent direct-production datum.
+% JUNC_{2|7} continues to own the finite intrinsic microscopic profile/width,
+% while the actual same-action background/production history determines its
+% physical-time pullback, support, and duration.  The current Paper-I-A--VII-C AUX
+% registry is advanced once; shared mathematical notation is unchanged.
+% Release v1.60 derives the final-octet primitive-remnant depletion, canonical
+% Hopf-current representative, exact Hopf descent to dOmega/(4pi), and
+% closed-FLRW a^{-3} neutral-current shape.  It retypes K=48 as the onset
+% of the final one-unit geometric transfer and records cDM/RAR as distinct
+% physical projections of that common neutral parent while preserving
+% occurrence, Hilbert-owner, stress-matching, and static-kernel premises.
+% Release v1.59 transports the v1.58 exceptional-shell/K16 closure through
+% Papers III-F and VI-B--VII-C.  It replaces Paper VI-B's obsolete mixed-Hessian
+% output typing by the third-variation pair vertex and Bogoliubov occupation
+% support, derives the post-seed Higgs-pair feedback vertex and its exact
+% alpha--delta kernel factors, propagates the unique K16/K48 action-junction
+% split, identifies the QCD delta count with the upstream 2O shell atom only
+% as a common-scalar numerical compatibility, and narrows THERM16 to dynamical
+% approach/beta selection because the finite Gibbs/KMS target is already
+% unique on a supplied simple observable algebra once its Hamiltonian and
+% inverse temperature are supplied; direct-sum central weights remain typed.
+% Release v1.58 registers the exceptional nearest-shell closure, the derived
+% transverse K=16 action event, the unique interior action junction, the
+% type-correct ordered pair vertex, the thin-layer squeeze law, and the
+% radiation-like/matter-like kinematic split.  REG_0, transfer magnitude,
+% physical layer width, and thermalization remain explicitly conditional.
+% Release v1.57 registers the active-depth-six obstruction, the native
+% K=48 carrier desert, the typed 7|9 owner reduction, and the dynamical
+% reheating handoff across Papers III-B--VI-B.
+% Release v1.56 registers the least-support n_2 inflation dressing of the
+% persistent n_7 Laurent response, the analytic global-convexity and positive
+% endpoint-measure proofs, the derived inflation core and K=16 coefficient
+% freeze, and the no-particle dark-sector split into static RAR plus the
+% conditional homogeneous effective-curvature response at reflected K=48.
+% There is no n_6 action, scalaron-DM mass, or second Einstein--Hilbert term.
+% Release v1.55 registers the protected-octet resolved/residual reflection
+% q_sp+Z_W=8, its j<->8-j and K<->64-K scale covariance, and the derived
+% rank-one-exit quadratic grade C_1^2/U=C_2 in Papers III-C, III-E, and VIII.
+% The reflection is a typed trace/scale theorem, not a time reversal or a
+% physical event-occurrence theorem; reheating transfer remains conditional.
+% Release v1.54 registers the exact positive-part Laurent indices, the
+% active-domain/terminal-endpoint action split, the no-second-EH firewall, and
+% the q_DM=6/K_DM=48 scalaron readout typing across Papers III-D/E/F, VI,
+% VIII, and IX.
+% Release v1.53 registers the common nonnegative Laurent obstacle projection
+% for n_1^+ and n_7^+, discharges the three former exit/freeze assumptions,
+% and advances the Paper-III-D/E/F, VIII, and IX consumers.  Shared notation
+% and bibliography ownership are unchanged.
+% Release v1.51 registers the PQTI derivation batch and its updated
+% Paper-III-A/C/D/E/F, VIII, and IX consumers.  Shared notation and
+% bibliography ownership are unchanged.
+% Release v1.50 advances the Paper-III-B AUX target to v1.40 after the
+% rigorous audit repair; shared notation and bibliography ownership are unchanged.
+% Release v1.49 advances the Paper-II-E/F AUX target to v3.14 after the
+% minimal audit repair; shared notation and bibliography ownership are unchanged.
+% Release v1.46 synchronizes Paper II-A's minimal frozen constructor-origin
+% theorem and its five dependent AUX targets.  Shared notation is unchanged.
+% Release v1.45 updates the Paper-II-B AUX target to v2.23 after the
+% GP3-rigidity and appendix-placement repair; shared notation is unchanged.
+% Release v1.44 advances the centralized Paper-I-A--VII-C AUX registry after the
+% Paper-I-A v5.16 protected-completion scope repair.  Every current
+% paper imports this one file; no paper-level opt-in or \externaldocument list
+% is permitted.  The bibliography remains centralized here through Born-v6_13.
+% Shared bibliography, theorem infrastructure, colors, notation alignment,
+% and current Paper-I-A--VII-C external-reference registration.
+% This file centralizes common imports, bibliography sorting, colors, theorem
+% infrastructure, and the notation shared by the complete series.
+% v2.9 (release v1.43) made the Paper-I-A--VII-C AUX registry automatic and
+% centralized the bibliography and all external-reference ownership.
+% v2.8 release-registry refresh (v1.33) registers the rooted generated-parent
+% cascade and the POL/REG/free-law/11+4/Born-group closure revisions.  No
+% shared mathematical notation or Paper-II-A fundamental principle is changed.
+% v2.8 release-registry refresh (v1.32) registers the universal generated-
+% continuation revisions in Papers II-A, III-A, III-C, IV, and VIII.  No
+% shared mathematical notation or Paper-II-A fundamental principle is changed.
+% v2.8 release-registry refresh (v1.30) registers the CRP4/projective-state
+% source revisions and their direct registry-only consumers.  No shared
+% mathematical notation or Paper-II-A axiom is changed.
+% v2.7 release-registry refresh (v1.27) updates only the current external
+% Paper-I-A--VII-C basenames after the placement/assumption synchronization; no
+% shared mathematical notation or Paper-II-A axiom is changed.
+% v2.7 synchronizes the geometric defect-repair revision: Paper-II-A v3.42,
+% Paper-III-C v1.26, Paper-III-D v1.27, Paper-III-E v1.32, and Paper-III-F
+% v1.34.  It registers the common trace-defect/spectral-filtration theorem,
+% its owner-typed response pullback, and the reduced GRED and TERM interfaces.
+% No shared mathematical notation is changed.
+% v2.6 synchronizes Paper-III-E v1.31's cone-type repair, minimal-response
+% classification, and explicit classical action-role boundary, together with
+% Paper-III-F v1.32's downstream response-atlas synchronization.  No shared
+% mathematical notation is changed.
+% v2.5 synchronizes the Paper-III-D v1.26 faithful-trace-duality proof,
+% exact ordered-owner joint locus, and typed alternative-presentation
+% bookkeeping repair, together with its Paper-III-E and closure-frontier
+% references.  No shared mathematical notation is changed.
+% v2.4 synchronizes the Paper-III-C v1.25 orbit/process/owner repair, its
+% downstream Papers III-B--F, V, VI, VIII, and IX revisions, and Born-v6_13.
+% v2.3 synchronizes the Paper-II-A v3.41 witness/support/principal inheritance
+% layer, the Paper-III-A v1.24 joint-realizability/readout firewall, all dependent
+% host-rate revisions, and the current Paper-I-A--VII-B source registry.
+% v2.2 synchronizes the generated active-realization, determinant-depth,
+% dimension-weighted hierarchy, and typed cosmological-event interfaces.
+% v2.1 synchronizes the exceptional-support interface revisions: Paper I-A
+% v5.9, Paper II-A v3.30, Paper II-E/F v3.7, and Paper IV v4.16.
+% v2.0 introduces the stage-safe G0 occurrence notation, synchronizes the
+% active Paper-I-A--IV source registry (current rigorous Paper-III closure:
+% III-A v1.17, III-B v1.22, III-C--E v1.17, III-F v1.14, IV v4.14), and makes
+% external-reference self-skip depend on logical paper role rather than a
+% versioned job name.
+% ======================================================================
+
+% ======================================================================
+% macros.tex — Shared macros for the Born Geometry series
+% ======================================================================
+
+% ======================================================================
+% 1. PACKAGES, BIBLIOGRAPHY, COLORS, AND UNIT DEFINITIONS
+% ======================================================================
+% Core packages shared across the complete Paper-I-A--VII-C series.  Loading them here makes
+% the macro file a genuine series preamble while remaining compatible with existing
+% paper preambles that load the same packages before \input.
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\makeatletter
+\@ifpackageloaded{geometry}{}{\usepackage{geometry}\geometry{margin=1in}}
+\makeatother
+\usepackage{mdframed}
+
+% Shared support packages required by the macros below and by most papers.
+\usepackage{ragged2e}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+
+% Series-wide numeric bibliography convention using the portable BibTeX path.
+% All Papers I-A--VII-C use the ordinary \cite interface.
+\usepackage[numbers,sort&compress]{natbib}
+\providecommand{\printbibliography}{%
+  \bibliographystyle{plainnat}%
+  \bibliography{Born-v6_59}%
+}
+
+% Shared colors.  \providecolor avoids clobbering a paper-specific override.
+\providecolor{postulatecolor}{RGB}{230,242,255}
+\providecolor{compare}{RGB}{230,245,230}
+\providecolor{definitioncolor}{RGB}{230,242,255}
+
+\providecolor{openriskcolor}{RGB}{255,235,235}
+\providecolor{bridgecolor}{RGB}{240,240,255}
+\providecolor{gold}{RGB}{255,215,0}
+
+% ======================================================================
+% 2. CUSTOM ENVIRONMENTS
+% ======================================================================
+% Common table column types used in all papers.  Guarded so that a paper may
+% define its own versions before loading this file.
+\makeatletter
+\@ifundefined{NC@find@L}{%
+  \newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}%
+}{}
+\@ifundefined{NC@find@C}{%
+  \newcolumntype{C}[1]{>{\Centering\arraybackslash}p{#1}}%
+}{}
+\@ifundefined{NC@find@Y}{%
+  \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}%
+}{}
+\makeatother
+
+% ======================================================================
+% 3. THEOREM STYLES AND ENVIRONMENTS
+% ======================================================================
+% Custom underlined theorem style (useful for remarks or notes)
+\newtheoremstyle{underlined}
+  {3pt}   % Space above
+  {3pt}   % Space below
+  {}      % Body font (empty means normal/roman text, typical for remarks)
+  {}      % Indent amount
+  {}      % Theorem head font (can be \itshape, \bfseries, etc.)
+  {.}     % Punctuation after theorem head
+  { }     % Space after theorem head
+  {\underline{\thmname{#1}\thmnumber{ #2}}\thmnote{ (#3)}} % Theorem head formatting
+
+% Standard plain theorem style environments.  Each environment is guarded so
+% the shared macro file can be loaded after a paper-specific theorem setup.
+\theoremstyle{plain}
+\makeatletter
+\@ifundefined{theorem}{\newtheorem{theorem}{Theorem}[section]}{}
+\@ifundefined{lemma}{\newtheorem{lemma}{Lemma}[section]}{}
+\@ifundefined{proposition}{\newtheorem{proposition}{Proposition}[section]}{}
+\@ifundefined{corollary}{\newtheorem{corollary}{Corollary}[section]}{}
+\makeatother
+
+% Definition style environments (typically non-italicized body)
+\theoremstyle{definition}
+\makeatletter
+\@ifundefined{definition}{\newtheorem{definition}{Definition}[section]}{}
+\@ifundefined{postulate}{\newtheorem{postulate}{Postulate}[section]}{}
+\@ifundefined{closure}{\newtheorem{closure}{Closure}[section]}{}
+\makeatother
+
+% Applying the custom underlined style
+\theoremstyle{underlined}
+\makeatletter
+\@ifundefined{remark}{\newtheorem{remark}{Remark}[section]}{}
+\@ifundefined{convention}{\newtheorem{convention}{Convention}[section]}{}
+\@ifundefined{principle}{\newtheorem{principle}{Principle}[section]}{}
+\makeatother
+
+% Framed proof environment.
+% Every \begin{proof} ... \end{proof} is automatically framed/shaded.
+% This avoids mdframed/trivlist nesting, which can drop the top border after
+% theorem-like environments.
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{%
+  \par\addvspace{6pt}%
+  \noindent
+  \begin{tcolorbox}[%
+    enhanced,
+    breakable,
+    colback=black!4,
+    colframe=black!35,
+    boxrule=0.35pt,
+    arc=1pt,
+    left=6pt,
+    right=6pt,
+    top=4pt,
+    bottom=4pt,
+    boxsep=0pt,
+    before skip=0pt,
+    after skip=6pt,
+    parbox=false
+  ]%
+  \pushQED{\qed}%
+  \normalfont\itshape #1\@addpunct{.}\enspace
+  \normalfont\ignorespaces
+}{%
+  \unskip\nobreak\hfill\popQED
+  \end{tcolorbox}%
+  \par\addvspace{2pt}%
+}
+\makeatother
+
+\mdfdefinestyle{postulatebox}{
+  backgroundcolor=yellow!10,
+  linecolor=black,
+  linewidth=0.4pt,
+  skipabove=\baselineskip,
+  skipbelow=\baselineskip,
+  nobreak=true
+}
+
+% ======================================================================
+% PROOF-READABILITY HELPERS
+% ======================================================================
+
+\newcommand{\ProofPlan}[1]{%
+  \par\smallskip
+  \noindent\textbf{Proof plan. }#1%
+  \par\smallskip
+}
+
+\newlist{proofsteps}{enumerate}{2}
+\setlist[proofsteps,1]{
+  label=\textbf{(\alph*)},
+  ref=\alph*,
+  leftmargin=2.2em,
+  itemsep=0.45\baselineskip,
+  topsep=0.35\baselineskip
+}
+\setlist[proofsteps,2]{
+  label=\textbf{(\roman*)},
+  ref=\roman*,
+  leftmargin=2.0em,
+  itemsep=0.25\baselineskip,
+  topsep=0.2\baselineskip
+}
+
+
+% ======================================================================
+% 4. NUMBER SYSTEMS AND ALPHABETS
+% ======================================================================
+\providecommand{\RR}{\mathbb{R}} % Real numbers
+\providecommand{\PP}{\mathbb{P}} % Projective space / Probability
+\providecommand{\CC}{\mathbb{C}} % Complex numbers
+\providecommand{\ZZ}{\mathbb{Z}} % Integers
+\providecommand{\NN}{\mathbb{N}} % Natural numbers
+\providecommand{\HH}{\mathbb{H}} % Quaternions / Hyperbolic space
+\providecommand{\LFRayGeom}{\mathsf{LF\!\mbox{-}RAY\!\mbox{-}GEOM}}
+\providecommand{\LFRep}{\mathsf{LF\!\mbox{-}REP}}
+\providecommand{\LFState}{\mathsf{LF\!\mbox{-}STATE}}
+\providecommand{\LFLim}{\mathsf{LF\!\mbox{-}LIM}}
+\providecommand{\LFScat}{\mathsf{LF\!\mbox{-}SCAT}}
+% Number systems / projective spaces
+\providecommand{\CP}{\mathbb{CP}}
+\providecommand{\RP}{\mathbb{RP}}
+
+% ======================================================================
+% 5. GROUPS AND LIE THEORY
+% ======================================================================
+\providecommand{\SO}{\ensuremath{\mathrm{SO}}}     % Special Orthogonal group
+\providecommand{\SU}{\ensuremath{\mathrm{SU}}}     % Special Unitary group
+\providecommand{\Spin}{\ensuremath{\mathrm{Spin}}} % Spin group
+\providecommand{\CS}{\ensuremath{\mathrm{CS}}}     % Chern-Simons (capitalized)
+\providecommand{\cs}{\ensuremath{\mathrm{cs}}}     % Chern-Simons (lowercase)
+
+% ======================================================================
+% 6. COMMON MANIFOLDS AND TOPOLOGY
+% ======================================================================
+\providecommand{\Sone}{S^1}                 % Standard circle
+
+% ======================================================================
+% 7. MATH OPERATORS (Declared via \DeclareMathOperator)
+% ======================================================================
+\DeclareMathOperator{\End}{End}   % Endomorphisms
+\DeclareMathOperator{\Aut}{Aut}   % Automorphisms
+\DeclareMathOperator{\spec}{spec} % Lowercase spectrum
+\DeclareMathOperator{\tr}{tr}     % Lowercase trace (if you already have \Tr)
+\DeclareMathOperator{\supp}{supp} % Support
+\DeclareMathOperator{\TrA}{Tr_{A}} % Partial trace over subsystem A
+\DeclareMathOperator{\TrB}{Tr_{B}} % Partial trace over subsystem B
+% Lie/algebra operators
+\DeclareMathOperator{\Ad}{Ad}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\su}{su}
+% ======================================================================
+% 8. STANDARD OPERATOR-LIKE SYMBOLS (Safe definitions via \providecommand)
+% ======================================================================
+\providecommand{\vol}{\operatorname{vol}}   % Volume form
+\providecommand{\Vol}{\operatorname{Vol}}   % Total volume
+\providecommand{\Ric}{\operatorname{Ric}}   % Ricci tensor
+\providecommand{\Rm}{\operatorname{Rm}}     % Riemann tensor
+\providecommand{\Tr}{\operatorname{Tr}}     % Uppercase trace
+\providecommand{\Spec}{\operatorname{Spec}} % Uppercase spectrum
+\providecommand{\diag}{\operatorname{diag}} % Diagonal matrix
+\providecommand{\rank}{\operatorname{rank}} % Rank
+\providecommand{\scal}{\mathcal R} % Scalar curvature
+\providecommand{\Cl}{\operatorname{Cl}}     % Clifford algebra
+\providecommand{\diam}{\operatorname{diam}} % Diameter
+
+% ======================================================================
+% 9. FUNCTIONS, TRIGONOMETRY, AND CALCULUS
+% ======================================================================
+
+% Codifferential naming conventions
+% (Avoid \ddag: commonly defined by physics.sty and symbol packages)
+\providecommand{\codiff}{\mathrm{d}^{\dagger}} % Codifferential operator
+
+% Quantum mechanics bra-ket notation (needed for basis tables)
+\providecommand{\ket}[1]{\lvert #1 \rangle}
+\providecommand{\bra}[1]{\langle #1 \rvert}
+\providecommand{\braket}[2]{\langle #1 \mid #2 \rangle}
+
+% ======================================================================
+% 10. PHYSICAL SCALES AND CONSTANTS (Paper 1c / Born Geometry)
+% ======================================================================
+\providecommand{\Rp}{\ensuremath{R_{\mathrm P}}}     % matched common EH curvature scale (not defined from observed G)
+\providecommand{\hBorn}{\ensuremath{h_{\mathrm B}}} % physical representative 2\pi\hbar of one primitive Born scalar action cell
+\providecommand{\UEHjoint}{\ensuremath{U_{J}}} % joint-Dirac EH curvature-coordinate scale 8 kappa_J
+\providecommand{\Gread}{\ensuremath{G_{\rm scal}}} % scalar-action coordinate c_op^3/(h_B U); physical matching explicit
+\providecommand{\GreadJoint}{\ensuremath{G_{J,\mathrm{raw}}}} % raw ordinary-trace coordinate = G_scal/96
+\providecommand{\Rds}{R_{\mathrm{dS}}}    % de Sitter Curvature
+\providecommand{\Mpl}{M_{\mathrm{Pl}}}    % Planck mass
+\providecommand{\lp}{\ell_{\mathrm{Pl}}}  % Planck length
+\providecommand{\Pmax}{P_{\mathrm{max}}}  % Maximum momentum
+\providecommand{\Mplbar}{\bar{M}_{\mathrm{Pl}}} % Reduced Planck mass
+\providecommand{\eff}{\mathrm{eff}}       % Subscript for effective quantities
+\providecommand{\Cosmo}{\ensuremath{\Lambda}}                % Cosmological constant (use \Cosmo in source)
+\providecommand{\LCDM}{\ensuremath{\Cosmo\mathrm{CDM}}}  % \LambdaCDM (typesets with \Cosmo)
+\providecommand{\Lcut}{\ensuremath{\Lambda_{\mathrm{cut}}}}  % Cutoff scale (brace when used as script)
+\providecommand{\Rcs}{\ensuremath{R_{\mathrm{cs}}}}      % Configuration-space radius
+\providecommand{\CosmoEff}{\ensuremath{\Cosmo_{\eff}}}   % Effective cosmological constant
+
+% Disambiguation: \Rmom is the momentum-space (S^3) radius. 
+% Reserve plain R for the 4D curvature scalar in f(R).
+\providecommand{\Rmom}{\ensuremath{R_{\mathrm{mom}}}} 
+\providecommand{\Punit}{P_{0}} % Momentum unit set by \Rmom (= \hbar/\Rmom)
+\providecommand{\Rvec}{\ensuremath{R_{\mathrm{vec}}}} % invariant vector-space radius in the reduced round sector
+% Specific numeric values and expressions
+\providecommand{\Vlogcap}{L_{\mathrm{Hopf}}^{(1)}}
+\providecommand{\Hopf}{\operatorname{Hopf}}
+% Scalar phase (S^1) sector + universal cover notation (Paper I-A)
+\providecommand{\tper}{T_\star}      % Time period/scale
+\providecommand{\Eper}{E_\star}      % Energy period/scale
+\providecommand{\ttilde}{\tilde t}   % Universal cover time
+\providecommand{\Etilde}{\tilde E}   % Universal cover energy
+
+% ======================================================================
+% 10A. SERIES-WIDE LOGICAL / NOTATIONAL DISAMBIGUATIONS
+% ======================================================================
+% Use these symbols to avoid collisions among: (i) the Paper--III
+% no-insertion/geometric-closure class, (ii) Paper--I-A trimer diagonals,
+% (iii) Paper--V-A/V-C family-space diagonals, (iv) scalar-index running,
+% and (v) protected shell-clock labels.
+\providecommand{\Rprim}{\ensuremath{\mathsf R_{\mathrm{prim}}^{\Sigma}}} % primitive finite structural readouts
+\providecommand{\Rloop}{\ensuremath{\mathsf R_{\circ}^{\Sigma}}} % closed-loop readout role
+\providecommand{\Rbdry}{\ensuremath{\mathsf R_{\partial}^{\Sigma}}} % boundary-conditioned readout role
+\providecommand{\Rgen}{\ensuremath{\mathsf R_{\mathrm{fin}}^{\Sigma}}} % finite generated closure of primitive roles
+\providecommand{\PhysOcc}{\operatorname{PhysOcc}}
+\providecommand{\Actual}{\operatorname{Actual}}
+\providecommand{\GeomLic}{\operatorname{GeomLic}}
+\providecommand{\InvDist}{\operatorname{InvDist}}
+\providecommand{\Dcl}{\ensuremath{\mathsf{D}_1}}      % unmarked positive Dirac-even closed spectral-readout form class
+\providecommand{\Dheat}{\ensuremath{\mathsf D_{\mathrm{heat}}}} % one-parameter heat-semigroup subclass
+\providecommand{\DtriI}{\ensuremath{D^{\mathrm{tri}}_1}} % Paper--I-A cyclic-trimer diagonal
+\providecommand{\DtriII}{\ensuremath{D^{\mathrm{tri}}_2}}
+\providecommand{\DfamI}{\ensuremath{D^{\mathrm{fam}}_1}} % Family-space diagonal selector
+\providecommand{\DfamII}{\ensuremath{D^{\mathrm{fam}}_2}}
+\providecommand{\alpharun}{\ensuremath{\alpha_{\mathrm{run}}}} % scalar spectral-index running
+\providecommand{\Ksh}{\ensuremath{K_{\mathrm{sh}}}} % protected shell-clock coordinate
+\providecommand{\ddef}{\ensuremath{\delta_{\mathrm{def}}}} % universal defect scalar after Paper--III realization
+
+% ======================================================================
+% 10B. SERIES-WIDE LOGICAL STATUS TAGS
+% ======================================================================
+% Upright small-caps wrapper for audit/status labels.  It prevents LaTeX from
+% trying to use unavailable small-caps italic font shapes inside theorem bodies
+% such as TU/lmr/m/scit.
+\providecommand{\AuditLabel}[1]{}
+\renewcommand{\AuditLabel}[1]{{\normalfont\scshape #1}}
+
+% These tags are bookkeeping labels for consistency audits. They do not
+% create new mathematical hypotheses; they record how a datum is being used
+% in the proof chain.
+\providecommand{\StatusPrimitive}{}
+\renewcommand{\StatusPrimitive}{\AuditLabel{Primitive}}
+\providecommand{\StatusDerived}{}
+\renewcommand{\StatusDerived}{\AuditLabel{Derived}}
+\providecommand{\StatusImported}{}
+\renewcommand{\StatusImported}{\AuditLabel{Imported}}
+\providecommand{\StatusConditional}{}
+\renewcommand{\StatusConditional}{\AuditLabel{Conditional}}
+\providecommand{\StatusBridge}{}
+\renewcommand{\StatusBridge}{\AuditLabel{Bridge-derived}}
+\providecommand{\StatusComparison}{}
+\renewcommand{\StatusComparison}{\AuditLabel{Comparison-only}}
+
+% ======================================================================
+% 10C. SERIES-WIDE CLAIM-WORDING AUDIT LABELS
+% ======================================================================
+% These are textual audit labels used to keep modal language consistent
+% across the series.  They introduce no new mathematical assumptions.
+\providecommand{\ClaimForced}{}
+\renewcommand{\ClaimForced}{\AuditLabel{forced}}
+\providecommand{\ClaimUnique}{}
+\renewcommand{\ClaimUnique}{\AuditLabel{unique}}
+\providecommand{\ClaimCanonical}{}
+\renewcommand{\ClaimCanonical}{\AuditLabel{canonical}}
+\providecommand{\ClaimMinimal}{}
+\renewcommand{\ClaimMinimal}{\AuditLabel{minimal}}
+\providecommand{\ClaimClosed}{}
+\renewcommand{\ClaimClosed}{\AuditLabel{closed}}
+\providecommand{\ClaimPrediction}{}
+\renewcommand{\ClaimPrediction}{\AuditLabel{prediction}}
+
+% ======================================================================
+% 10D. SERIES-WIDE THEOREM-CHAIN AUDIT LABELS
+% ======================================================================
+% These labels mark the direction of load-bearing theorem chains. They are
+% audit annotations only; they introduce no new mathematical assumptions.
+\providecommand{\ChainInput}{}
+\renewcommand{\ChainInput}{\AuditLabel{Chain input}}
+\providecommand{\ChainOutput}{}
+\renewcommand{\ChainOutput}{\AuditLabel{Chain output}}
+\providecommand{\ChainGuard}{}
+\renewcommand{\ChainGuard}{\AuditLabel{Chain guard}}
+\providecommand{\ChainNoBackflow}{}
+\renewcommand{\ChainNoBackflow}{\AuditLabel{No backflow}}
+
+% ======================================================================
+% 10E. SERIES-WIDE LOCAL THEOREM-AUDIT LABELS
+% ======================================================================
+% These labels mark a statement-level dependency audit around individual
+% theorem/definition nodes. They are bookkeeping labels only.
+\providecommand{\LocalAudit}{}
+\renewcommand{\LocalAudit}{\AuditLabel{Local audit}}
+\providecommand{\UsesOnly}{}
+\renewcommand{\UsesOnly}{\AuditLabel{Uses only}}
+\providecommand{\Exports}{}
+\renewcommand{\Exports}{\AuditLabel{Exports}}
+\providecommand{\DoesNotUse}{}
+\renewcommand{\DoesNotUse}{\AuditLabel{Does not use}}
+
+% ======================================================================
+% 10F. SERIES-WIDE NUMERICAL-ROW AUDIT LABELS
+% ======================================================================
+% These labels classify individual rows in numerical, benchmark, status,
+% and comparison tables.  They are audit annotations only and do not change
+% any theorem, value, formula, or comparison number.
+\providecommand{\RowAudit}{}
+\renewcommand{\RowAudit}{\AuditLabel{Numerical-row audit}}
+\providecommand{\RowTheorem}{}
+\renewcommand{\RowTheorem}{\AuditLabel{Theorem-fixed row}}
+\providecommand{\RowBridge}{}
+\renewcommand{\RowBridge}{\AuditLabel{Bridge-fixed row}}
+\providecommand{\RowRepresentative}{}
+\renewcommand{\RowRepresentative}{\AuditLabel{Representative row}}
+\providecommand{\RowComparison}{}
+\renewcommand{\RowComparison}{\AuditLabel{Comparison row}}
+\providecommand{\RowCalibrated}{}
+\renewcommand{\RowCalibrated}{\AuditLabel{Calibrated row}}
+\providecommand{\RowEstimate}{}
+\renewcommand{\RowEstimate}{\AuditLabel{Estimate row}}
+\providecommand{\RowOpen}{}
+\renewcommand{\RowOpen}{\AuditLabel{Open row}}
+\providecommand{\RowNoSelector}{}
+\renewcommand{\RowNoSelector}{\AuditLabel{No selector}}
+
+% ======================================================================
+% 10G. TABLE HELPERS
+% ======================================================================
+% Table helpers used by Paper V-C.  The unused readout-label preset has been
+% removed; only active table helpers remain.
+\providecommand{\gpsection}[1]{%
+  \addlinespace[0.55em]
+  \multicolumn{3}{@{}l}{\textsc{#1}}\\[-0.25em]
+  \midrule
+}
+\providecommand{\mathcell}[1]{%
+  \(\begin{gathered}#1\end{gathered}\)%
+}
+
+\newcommand{\DerBy}[1]{%
+  \begin{tabular}[t]{@{}l@{}}#1\end{tabular}%
+}
+
+\newcommand{\TableNotes}[1]{%
+  \par\medskip
+  \begin{minipage}{0.94\linewidth}
+  \footnotesize\emph{Notes.} #1
+  \end{minipage}\par
+}
+% ======================================================================
+% 10H. PAPER VI-A / QCD NOTATION
+% ======================================================================
+% Shared symbols used by Paper VI-A and downstream QCD/Yang--Mills handoffs.
+\providecommand{\Pqcd}{\mathfrak P_{\rm VIII}^{\rm QCD}}
+\providecommand{\Iqcd}{\mathfrak I_{\rm QCD}^{(7)}}
+\providecommand{\muQCD}{\mu_{\rm QCD}^{\rm int}}
+\providecommand{\LambdaQCD}{\Lambda_{\rm QCD}}
+\providecommand{\LambdaBH}{\Lambda_{\rm BH}^{\rm QCD}}
+\providecommand{\HQCD}{\mathcal H_{\rm QCD}^{\rm BH}}
+\providecommand{\HQCDfin}{H_{\rm QCD}^{\rm fin}}
+\providecommand{\Hraw}{\mathcal H_{\rm raw}}
+\providecommand{\HphysQCD}{\mathcal H_{\rm phys}^{\rm QCD}}
+\providecommand{\Vcol}{V_C}
+\providecommand{\Ps}{P_{\rm sing}}
+\providecommand{\PiOct}{\Pi_8}
+\providecommand{\MSbar}{\overline{\rm MS}}
+\providecommand{\YM}{\mathrm{YM}}
+\providecommand{\Ktri}{K_{\triangle}}
+\providecommand{\KYM}{K_{\YM}^{\rm BH}}
+\providecommand{\aBH}{a_{\rm BH}}
+\providecommand{\epsBH}{\varepsilon_{\rm BH}}
+\newcommand{\RowConstructive}{\textnormal{\textsc{Constructive}}}
+\newcommand{\RowObligation}{\textnormal{\textsc{Bridge obligation}}}
+\newcommand{\RowTarget}{\textnormal{\textsc{Target row}}}
+\newcommand{\RowValidation}{\textnormal{\textsc{Validation row}}}
+\providecommand{\slashed}[1]{\not{#1}}
+
+% ======================================================================
+% 10I. PAPER VI-B / CONTINUOUS-QFT NOTATION
+% ======================================================================
+% Shared symbols used by Paper VI-B and any downstream continuous-QFT or
+% Yang--Mills handoff paper.  All definitions are guarded so individual
+% papers may override them locally before loading this file if needed.
+\providecommand{\A}{\mathfrak A}
+\providecommand{\Hphys}{\mathcal H_{\rm phys}}
+\providecommand{\QCD}{\mathrm{QCD}}
+\providecommand{\BH}{\mathrm{BH}}
+\providecommand{\loc}{\mathrm{loc}}
+
+\providecommand{\RBH}{\mathcal R_{\rm BH}}
+\providecommand{\DG}{\mathfrak D_G}
+\providecommand{\PW}{\mathcal{P\!W}} % Peter--Weyl spectral-symbol subspace
+\providecommand{\Toe}{\operatorname{Toe}} % Toeplitz compression/representative
+\providecommand{\Hol}{\operatorname{Hol}} % Holonomy
+
+% ======================================================================
+% 11. LATE-LOADED PACKAGES (Must be at the end of the preamble)
+% ======================================================================
+% Load late packages only if a paper has not already loaded them, avoiding
+% option clashes in paper-specific preambles.
+\makeatletter
+\@ifpackageloaded{hyperref}{}{\usepackage{hyperref}}
+\makeatother
+% --- Series-wide disambiguations (Pass 3) ---
+\providecommand{\diracdelta}{\delta_{\rm D}} % Dirac delta distribution (delta reserved for hierarchy)
+\providecommand{\Hg}{H_{\mathrm g}} % Hodge harmonic projector (keep H for Hubble)
+\providecommand{\Gr}{G_{\mathrm r}} % Green operator (keep G for Newton)
+\providecommand{\FD}{\mathrm{D}} % functional/variational derivative symbol (delta reserved)
+\providecommand{\Id}{\mathbf{1}} % identity/Kronecker tensor (avoid \delta_{ij})
+
+
+% BEGIN INLINE SOURCE: Paper00-ActiveExternalReferences-v2_130.tex
+% Framework v2.191: current reference binding; existing definitions retained.
+% Framework v2.190: current22-root registry with native clock-evolution proofs.
+% Framework v2.189: exact current22-root external registry, including retained v2.188 hardening owners.
+% Framework v2.187: current registry synchronization only; source release v2.186 preserved.
+% Framework v2.186: authoritative current 22-paper registry.
+% Framework v2.182: all current 22 logical paper AUX bindings.
+% Framework v2.170: current I-B v1.43 external AUX binding.
+% Framework v2.167: exact current 22-root registry after CP--BL2 integration.
+% Framework v2.166: exact current 22-root compact-release AUX registry.
+% Framework v2.165: authoritative current root bindings.
+% Framework v2.164: exact current 22 manuscript AUX bindings.
+% Framework v2.162: finite metric, functional Hilbert and scoped Ward integration.
+% Framework v2.161: current 22 manuscript AUX bindings; source only.
+% Framework v2.156 / registry v2.113: synchronized current 22 manuscript roots; source-only registry.
+% Framework v2.143 / registry v2.111: active manuscript AUX basenames; no generated AUX or PDF included.
+% ======================================================================
+% Central external-reference imports, numbers only, no PDF jumping
+% ======================================================================
+
+% xr-hyper is loaded centrally so that papers may retain their existing
+% \usepackage{xr-hyper} lines without redefining \externaldocument after this
+% registry is installed.  If plain xr was loaded earlier, retain it.
+\makeatletter
+\@ifpackageloaded{xr-hyper}{}{%
+  \@ifpackageloaded{xr}{}{\usepackage{xr-hyper}}%
+}
+\makeatother
+
+% Make external-document registration idempotent.  The registry identifies a
+% logical paper by its Paper<number><optional letter> prefix.  Prefix-qualified
+% imports remain independent.  Current paper roots contain no local
+% \externaldocument calls; this guard also makes accidental duplicates harmless.
+\ExplSyntaxOn
+\prop_new:N \g_bh_external_refs_prop
+\cs_new_eq:NN \BHOriginalExternalDocument \externaldocument
+
+\cs_new_protected:Npn \bh_external_document:nnnn #1#2#3#4
+ {
+  \tl_set:Nn \l_tmpa_tl {#3}
+  \regex_replace_once:nnN
+   { \A (?: xref/ )? (Paper[0-9]+[A-G]?) .* \Z }
+   { \1 }
+   \l_tmpa_tl
+  \tl_set:Nx \l_tmpb_tl { #1 | \tl_use:N \l_tmpa_tl }
+  \prop_if_in:NVTF \g_bh_external_refs_prop \l_tmpb_tl
+   {
+    \PackageInfo{BornHopf}
+     {Skipping~duplicate~external~refs~for~#3}
+   }
+   {
+    \prop_gput:NVn \g_bh_external_refs_prop \l_tmpb_tl {#3}
+    \IfNoValueTF{#4}
+     { \BHOriginalExternalDocument[#1][#2]{#3} }
+     { \BHOriginalExternalDocument[#1][#2]{#3}[#4] }
+   }
+ }
+
+\RenewDocumentCommand{\externaldocument}{O{} O{} m o}
+ { \bh_external_document:nnnn {#1}{#2}{#3}{#4} }
+
+\NewDocumentCommand{\BHExternalRefs}{m}
+ {
+  % Do not import the aux file of the logical paper currently being compiled,
+  % even when the job and registry use different version suffixes.
+  \tl_set:Nx \l_tmpa_tl { \c_sys_jobname_str }
+  \regex_replace_once:nnN
+   { \A (Paper[0-9]+[A-G]?) .* \Z }
+   { \1 }
+   \l_tmpa_tl
+  \tl_set:Nn \l_tmpb_tl { #1 }
+  \regex_replace_once:nnN
+   { \A (Paper[0-9]+[A-G]?) .* \Z }
+   { \1 }
+   \l_tmpb_tl
+  \str_if_eq:eeTF { \tl_use:N \l_tmpa_tl } { \tl_use:N \l_tmpb_tl }
+   {
+    \PackageInfo{BornHopf}
+     {Skipping~external~refs~for~#1~because~this~is~the~current~document}
+   }
+   {
+    \IfFileExists{xref/#1.aux}
+     { \externaldocument[][nocite]{xref/#1}[#1.pdf] }
+     {
+      \IfFileExists{#1.aux}
+       { \externaldocument[][nocite]{#1} }
+       {
+        \PackageInfo{BornHopf}
+         {External~aux~file~#1.aux~not~found;~no~labels~imported}
+       }
+     }
+   }
+ }
+\ExplSyntaxOff
+
+% External references are automatic.  This file is the sole owner of both the
+% bibliography and the current Paper-I-A--VII-D AUX registry (30 roots including I-C).  Missing auxiliaries
+% are informational on the first pass and are populated by the source-only
+% two-pass series build.  Basenames deliberately omit temporary download/copy
+% suffixes such as ``(1)'' or ``-1''.
+  % Paper I-A: round S3 compendium.
+  \BHExternalRefs{Paper1A-Geometry-v5_180}
+
+  % Paper I-B: complete exceptional geometry and finite spectral structures.
+  \BHExternalRefs{Paper1B-ExceptionalGeometry-v1_22}
+  % Paper I-D: technical companion of I-A through I-C.
+  \BHExternalRefs{Paper1D-TechnicalMaterial-v1_69}
+  % Paper I-C: reciprocal M8 compendium.
+  \BHExternalRefs{Paper1C-M8Geometry-v1_144}
+
+\ifdefined\BHMathOnly
+  % Papers I-A and I-B import only the mathematical atlas labels.
+\else
+  % Paper II: five physical-mathematical main papers plus one technical proof volume.
+  \BHExternalRefs{Paper2A-GeometricConstitution-v3_227}
+  \BHExternalRefs{Paper2B-MomentumCarrier-v2_147}
+  \BHExternalRefs{Paper2C-ReciprocalLocalization-v2_174}
+  \BHExternalRefs{Paper2D-SymmetrySpectra-v2_144}
+  % The former II-F export labels remain in II-E; current II-F is the technical volume.
+  \BHExternalRefs{Paper2E-KinematicExports-v3_139}
+  % Paper II-F: complete technical proof and calculation owner for II-A--II-E.
+  \BHExternalRefs{Paper2F-TechnicalMaterial-v1_70}
+
+  % Paper III: Dynamics and Intrinsic Geometric Constitution (six components).
+  \BHExternalRefs{Paper3A-GeneratedDynamics-v1_180}
+  \BHExternalRefs{Paper3B-SpectralAction-v1_191}
+  \BHExternalRefs{Paper3C-ProtectedHierarchy-v1_193}
+  \BHExternalRefs{Paper3D-RunningResponse-v1_167}
+  \BHExternalRefs{Paper3E-GravityAction-v1_203}
+  \BHExternalRefs{Paper3F-CompleteDynamics-v1_276}
+  % Paper III-G: complete preserved technical proof owner.
+  \BHExternalRefs{Paper3G-TechnicalMaterial-v1_57}
+
+  % Paper IV-A: generated finite quantum mechanics.
+  \BHExternalRefs{Paper4A-FiniteQuantumMechanics-v4_216}
+  % Paper IV-B: complete finite quantum processes and physical response.
+  \BHExternalRefs{Paper4B-QuantumResponse-v1_54}
+  % Paper IV-C: extended proofs and finite technical calculations.
+  \BHExternalRefs{Paper4C-TechnicalMaterial-v1_50}
+
+  % Paper V-A: The Standard Model.
+  \BHExternalRefs{Paper5A-FiniteMatterGeometry-v3_218}
+
+  % Paper V-B: Finite Spectrum and Flavor Closure.
+  \BHExternalRefs{Paper5B-TerminalSpectrum-v5_202}
+
+  % Paper V-C: Finite Interaction Boundaries of the Standard Model.
+  \BHExternalRefs{Paper5C-InteractionResponse-v2_182}
+  % Paper V-D: preserved technical proof and calculation owner.
+  \BHExternalRefs{Paper5D-TechnicalMaterial-v1_58}
+
+  % Paper VI-A: Gravity and Closed Cosmology.
+  \BHExternalRefs{Paper6A-GravityCosmology-v2_267}
+
+  % Paper VI-B: Geometric Dark Sector and Cosmological Readouts.
+  \BHExternalRefs{Paper6B-CosmologyReadouts-v1_214}
+
+  % Paper VI-C: complete technical proof and comparison owner.
+  \BHExternalRefs{Paper6C-TechnicalMaterial-v1_53}
+
+  % Paper VII-A: Finite QCD Kernel and Nonperturbative Closure.
+\BHExternalRefs{Paper7A-QCDKernel-v1_180}
+
+  % Paper VII-B: Hadronic, Thermal, and Nuclear QCD Readouts.
+  \BHExternalRefs{Paper7B-QCDReadouts-v1_165}
+
+  % Paper VII-C: Continuous Quantum Field Theory.
+  \BHExternalRefs{Paper7C-ContinuousQFT-v2_208}
+
+  % Paper VII-D: complete technical material for VII-A through VII-C.
+  \BHExternalRefs{Paper7D-TechnicalMaterial-v1_60}
+
+\fi
+
+% END INLINE SOURCE: Paper00-ActiveExternalReferences-v2_130.tex
+

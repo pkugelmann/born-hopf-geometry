@@ -1,0 +1,71 @@
+{
+  "name": "Paper2C-EndpointReadoutVerification-v1_1",
+  "date": "2026-11-20",
+  "current_source": "Paper2C-ReciprocalLocalization-v2_173.tex",
+  "current_source_sha256": "a12329288cbe79350a201e702331fc8feac276f3406a544936f93f29f47ed54b",
+  "source_math_status": "EXACT_THEOREMS_INTEGRATED; LOCAL_REPLAY_PASS; GLOBAL_E3_E4_PENDING",
+  "issues": {
+    "BH-IIC-G-002": {
+      "target": "p2c:cor:v266-outcome-count",
+      "result": "Seven effects at sqrt(3)R<=r<sqrt(34)R/3; full outcome-count radius diagram exact.",
+      "proof": "p2c:lem:universal-rank6-exterior-kernel -> p2c:thm:universal-geometric-rank6-radius -> p2c:cor:v266-outcome-count",
+      "mathematical_status": "MATH_CLOSED_SOURCE_INTEGRATED",
+      "physical_occurrence_promoted": false
+    },
+    "BH-IIC-G-003": {
+      "target": "p2c:cor:v354-protected-22",
+      "result": "Exact minimum 22 positive effects for pure 15-dimensional protected endpoint target.",
+      "proof": "p2c:thm:universal-geometric-rank6-radius + protected Clifford equality + rank-nullity + existing 22-effect construction",
+      "mathematical_status": "MATH_CLOSED_SOURCE_INTEGRATED",
+      "physical_occurrence_promoted": false
+    },
+    "BH-IIC-G-004": {
+      "target": "p2c:thm:v354-exact-native-rank",
+      "result": "Exact minimum 136 positive effects for full native endpoint chiral-orthogonal real operator hyperplane.",
+      "proof": "Eight strictly positive 11-dimensional geometric parents with independent native effects + 15-dimensional rank-two protected support span + positive refinement",
+      "mathematical_status": "MATH_CLOSED_SOURCE_INTEGRATED",
+      "physical_occurrence_promoted": false
+    }
+  },
+  "proof_reference_labels": [
+    "p2c:lem:universal-rank6-exterior-kernel",
+    "p2c:thm:universal-geometric-rank6-radius",
+    "p2c:cor:v266-outcome-count",
+    "p2c:cor:v354-protected-22",
+    "p2c:thm:v354-exact-native-rank"
+  ],
+  "independent_replay": "Paper2C-EndpointQuotientMinimum-v1_6.py",
+  "replay_output": [
+    "Parent count:  8",
+    "Parent rank:   8",
+    "Protected local support codimension:  1",
+    "Geometric local Hermitian dimension:  121",
+    "Native local Hermitian dimension:  136",
+    "Contrasts:  128",
+    "Refined effects:  136",
+    "Min/Max frame singular values:  2.724763e-07 0.3324249249083",
+    "PASS: positive 136-effect exact-moment endpoint quotient POVM",
+    "PASS: exact-support C4 x C3 and Q8 A4 x inversion covariance",
+    "Seven-support geometric rank: 7  protected tagged optimum: 22",
+    "Quaternion-axis geometric rank: 8  protected tagged optimum: 23",
+    "PASS: source seven-parent and Q8 eight-parent minimal protected refinements",
+    "PASS: 24-element K geometric transport and diagonal commutant",
+    "PASS: exact seven-support resource minors and opposite/concordant order",
+    "PASS: exact positive cubic identity; arbitrary-effects 7-rank proof certificate",
+    "PASS: Radon-Clifford equal 3+3  witness balance 0.0  negative dual objective -0.973450585",
+    "PASS: Radon-Clifford unequal 3+3 A  witness balance 0.0  negative dual objective -0.990820642",
+    "PASS: Radon-Clifford unequal 3+3 B  witness balance 0.0  negative dual objective -1.473536268",
+    "PASS: Radon-Clifford two-level 2+4  witness balance 0.0  negative dual objective -1.124043915",
+    "PASS: symbolic strict negativity and unrestricted six-outcome dual proof premises",
+    "PASS: exact symbolic optimized \u221a34/3 radial certificate",
+    "PASS: full 11x11 dual-kernel checks (6/7/10 labels, zero coefficients, collisions)",
+    "PASS: geometric rank 6 and native PSD six-orthogonal-trine saturation at r6"
+  ],
+  "pdf_rebuilt": true,
+  "pdf_pages": 122,
+  "unresolved_tex_references": 0,
+  "duplicate_corpus_labels": 0,
+  "full_independent_global_audit": false,
+  "whole_framework_verified": false,
+  "physical_occurrence_promoted": false
+}

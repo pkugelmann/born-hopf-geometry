@@ -1,0 +1,19 @@
+{
+  "vertices": 24,
+  "edges": 96,
+  "triangular_faces": 96,
+  "all_96_edges_three_face_solution_counts": {
+    "1": 96
+  },
+  "zero_boundary_face_chains_1_2_3": [
+    0,
+    0,
+    0
+  ],
+  "unique_minimal_chain_faces": 3,
+  "haar_contraction_exact": "1/27",
+  "three_fundamental_heat_coefficients": "(3*exp(-2t/3))^3",
+  "full_ensemble_baryon_W_leading_coefficient": "1",
+  "asymptotic": "<W_e>_t = exp(-2t) + O(exp(-8t/3)) as t->infinity, homogeneous 96-face heat branch",
+  "scope": "heat/Haar gauge-reference state on native 24-cell, not physical interacting QCD vacuum"
+}
