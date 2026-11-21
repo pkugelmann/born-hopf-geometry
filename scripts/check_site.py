@@ -23,7 +23,7 @@ def need(ok,msg):
     if not ok:bad(msg)
 
 m=json.loads((DOC/'data/manifest.json').read_text(encoding='utf-8'))
-need(m['site']=='Paper00-GitHubPage-v1_4','Unexpected website package marker')
+need(m['site']=='Paper00-GitHubPage-v1_5','Unexpected website package marker')
 need(len(m['papers'])==31 and len({p['code'] for p in m['papers']})==31,'Not 31 distinct primary papers')
 need(len(m['audits'])==45,'Not 45 Markdown audit reports')
 need(len(m['diagrams'])==13,'Not 13 SVG diagrams')

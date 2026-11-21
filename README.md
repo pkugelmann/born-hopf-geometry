@@ -12,7 +12,7 @@ Author: **Peter Kugelmann**. This repository hosts both the public research webs
 | Proof-chain audits | **v1.83** | 45 readable Markdown/HTML reports, 130 retained obligation rows |
 | Dependency graph | **DAG Atlas v1.223** | 14,366 current source labels; 7,667 inherited nodes |
 | S³ exact finite-geometry network | **v1.49** | 13 diagrams, complete network ZIP |
-| Website | **Paper00-GitHubPage-v1_4** | Editable Markdown + browser indexes |
+| Website | **Paper00-GitHubPage-v1_5** | Editable Markdown + browser indexes |
 
 The v3.077 source adds **55 scoped mathematical source labels** across five papers. The current DAG source overlay links these statements to their new line numbers but does **not** promote them to independently verified global E3/E4 status or physical occurrence. The audit archive is versioned and source-dependent; not every new paper has been independently re-audited.
 

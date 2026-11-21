@@ -1,3 +1,11 @@
+# Paper00-GitHubPage-v1_5 — hierarchy curvatures and Einstein–Hilbert bridge
+
+- Expanded the seven-rung Key Ideas hierarchy table with C_j curvature coordinates in m⁻² alongside existing energy coordinates, preserving all seven physical-role labels.
+- Stated the R_p ≡ U primitive-curvature and E_{8j} = ℏc (R_p C_j)^(1/4) normalization explicitly; numerical curvatures are rounded using the currently published terminal C_7 and hierarchy factor.
+- Added a short Einstein–Hilbert R_p·R explanation with the inherited scalar-normalized coefficient ℏc/8, and the dimensional/structural connection to the Starobinsky R² response.
+- Explicitly distinguished the fixed primitive curvature R_p from the variable spacetime curvature R: the EH term alone does not derive a quadratic term, and exact constant-coefficient UV continuation has separate hypotheses.
+- Updated the website version metadata; current PapersMinimal v3.077, audits v1.83, DAG Atlas v1.223 and S³ Structure Network v1.49 are unchanged.
+
 # Paper00-GitHubPage-v1_4 — exceptional matter and hadron geometry
 
 - Added `content/matter.md` and generated `docs/matter.html` explaining the 2T / 2O / 2I fork, all three Hurwitz split types, and current hadron-source physics boundaries.

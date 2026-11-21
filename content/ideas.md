@@ -61,19 +61,35 @@ On the selected hierarchy convention, its common factor is
 
 The 4π² term comes from the normalized Hopf/contact geometry; the additional term belongs to the stated finite comparison/normalizer convention. With that factor, the root-to-terminal action-density ratio is **αₕᵢₑᵣ⁷ ≈ 2.372 × 10¹²⁰**. This provides a geometric scale hierarchy of the order familiar from the cosmological-constant problem.
 
-| Hierarchy index | Energy coordinate | Proposed physical role |
-| --- | --- | --- |
-| K = 8 | ≈ 2.45 × 10¹⁴ GeV | Inflationary boundary |
-| K = 16 | ≈ 1.23 × 10¹⁰ GeV | Reheating interface |
-| K = 24 | ≈ 6.17 × 10⁵ GeV | B−L / baryogenesis bridge |
-| K = 32 | ≈ 30.98 GeV | Electroweak and heavy-particle anchor |
-| K = 40 | ≈ 1.556 MeV | Light charged-matter anchor |
-| K = 48 | ≈ 78.15 eV | Cosmic-response separator, **not** a particle mass |
-| K = 56 | ≈ 3.925 meV | Terminal gravity and light-neutral anchor |
+The seven rungs have **both** curvature and energy coordinates. Write **Rₚ ≡ U ≈ 6.09 × 10⁶⁸ m⁻²** for the primitive/root curvature (not the momentum-sphere radius), and **Cⱼ = Rₚ αₕᵢₑᵣ⁻ʲ** for the rung at **K = 8j**. The energy uses the same action-density owner: **E₈ⱼ = ℏc · (Rₚ Cⱼ)¹⁄⁴**. Thus energy scales with the fourth root of the curvature product, not with √Cⱼ alone.
+
+| Hierarchy index | Curvature Cⱼ (m⁻²) | Energy coordinate | Proposed physical role |
+| --- | ---: | ---: | --- |
+| K = 8 | ≈ 3.87 × 10⁵¹ | ≈ 2.45 × 10¹⁴ GeV | Inflationary boundary |
+| K = 16 | ≈ 2.46 × 10³⁴ | ≈ 1.23 × 10¹⁰ GeV | Reheating interface |
+| K = 24 | ≈ 1.57 × 10¹⁷ | ≈ 6.17 × 10⁵ GeV | B−L / baryogenesis bridge |
+| K = 32 | ≈ 0.997 | ≈ 30.98 GeV | Electroweak and heavy-particle anchor |
+| K = 40 | ≈ 6.34 × 10⁻¹⁸ | ≈ 1.556 MeV | Light charged-matter anchor |
+| K = 48 | ≈ 4.04 × 10⁻³⁵ | ≈ 78.15 eV | Cosmic-response separator, **not** a particle mass |
+| K = 56 | ≈ 2.567 × 10⁻⁵² | ≈ 3.925 meV | Terminal gravity and light-neutral anchor |
+
+The curvature entries are rounded from **C₇ ≈ 2.567 × 10⁻⁵² m⁻² = 2Λ** and the common hierarchy factor; the corresponding root is **Rₚ ≈ 6.09 × 10⁶⁸ m⁻²**. The energy column retains the established source-unit convention. Neither column by itself is a measured particle mass or an event time.
 
 These are **hierarchy coordinates**, not seven independently observed event dates, temperatures or particle rest masses. Different physical readouts require different action/source interfaces. The ratio alone is also **not** a derivation of the complete renormalized quantum vacuum energy.
 
 **Read:** [Paper III-C](paper.html?paper=Paper3C) · [Paper V-B](paper.html?paper=Paper5B) · [Paper VI-A](paper.html?paper=Paper6A).
+
+## Why does the Einstein–Hilbert term make R² gravity natural?
+
+Ordinary Einstein gravity is linear in the spacetime scalar curvature **R**. In Born–Hopf Geometry, the leading *Einstein–Hilbert curvature term* can be written on the stated scalar-normalized branch as
+
+**Einstein–Hilbert: (ℏc / 8) · Rₚ · R.**
+
+Here **Rₚ ≡ U** is the already constituted primitive curvature, not the dynamical spacetime curvature **R** and not the momentum-sphere radius. Both **Rₚ** and **R** have units of **m⁻²**, so their product has the curvature-squared dimension **m⁻⁴**. This is why a higher-curvature term proportional to **R²** is a natural geometric extension: curvature is already the coefficient scale of the leading term.
+
+The distinction matters: **Rₚ · R is not equal to R²**. A quadratic response needs an additional curvature-dependent contribution, not a substitution of **R = Rₚ**. The framework's nonlinear scalaron response provides a **Starobinsky-type R² regime** on its stated branch; an exact constant-coefficient quadratic UV continuation has additional conditions. The complete running gravitational function is more general. No full action is needed to see this structural connection.
+
+**Read:** [Einstein–Hilbert normalization, Paper III-E](paper.html?paper=Paper3E) · [Nonlinear scalar response, Paper III-F](paper.html?paper=Paper3F) · [Inflation and gravity, Paper VI-A](paper.html?paper=Paper6A).
 
 ## How could geometry connect the cosmological constant and galaxy rotation?
 
