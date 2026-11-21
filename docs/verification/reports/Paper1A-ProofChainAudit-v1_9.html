@@ -1,0 +1,1368 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper1A-ProofChainAudit-v1_9 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper1A-ProofChainAudit-v1_9 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper1A ProofChainAudit v1_9</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper1A-ProofChainAudit-v1_9.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Paper I-A — Source-repaired mathematical issue closure (audit addendum v1_9)</h1>
+<p><strong>Current source:</strong> <code>Paper1A-Geometry-v5_178.tex</code> (Paper00-PapersMinimal-v3_021). <strong>Prior audit:</strong> v1_8, source-frozen v5_177 and reproduced verbatim below, not globally re-audited. <strong>Current resolution layer:</strong> <code>DAG/AuditLayer/Paper1Resolution-v1_1/Index.json</code>.</p>
+<p><strong>BH-IA-SRC-000003 — RESOLVED (source and exact mathematical obstruction).</strong> The nonformal rigidity table no longer asserts an ambiguous “level-one closure property”; it gives <em>first spinor–vector cutoff support</em>. After <code>p1:cor:H1-structure</code>, the repaired paper calculates</p>
+<p>[(\tfrac12,0)\otimes(\tfrac12,\tfrac12)=(0,\tfrac12)\oplus(1,\tfrac12),\qquad \Pi_1(\cdot)=(0,\tfrac12).]</p>
+<p>Unprojected tensor closure fails. The explicitly projected fusion is generally <strong>nonassociative</strong>, with <code>(A⋆A)⋆B = 2B</code> and <code>A⋆(A⋆B) = B</code> at <code>A=(1,0)</code>, <code>B=(1/2,0)</code>. The independent script <code>Paper1A-Level1CGScopeChecks-v1_1.py</code> checks the complete six-sector census, the 15-dimensional H1 and 43-dimensional block algebra, all 36 projected pair supports and both parenthesizations (<strong>47 exact assertions, PASS</strong>). This is a substantive counterexample to a stronger closure operation, not a change to the existing H1 or mp=1 theorem. No outstanding Paper I-A source issue from this audit remains.</p>
+<p>No new physical/GP3 theorem is asserted. Historical 179-statement grade counts are unchanged for their source-matched claims; the source edit was not a full re-audit.</p>
+<hr />
+<h2>Frozen prior audit for provenance (v1_8)</h2>
+<h1>Born–Hopf Paper I-A — Complete Current Proof-Chain Audit</h1>
+<p><strong>Audit artifact:</strong> <code>Paper1A-ProofChainAudit-v1_8.md</code> (16 November 2026).
+<strong>Frozen authoritative paper:</strong> <code>Paper1A-Geometry-v5_177.tex</code>, source 7,327 lines, SHA256 <code>0ddd521f70f237830ff4f018c8eebedb4bde43b62a0c9b92eb8c3ec3348f9f17</code> (PapersMinimal v3.018).
+<strong>Protocols:</strong> RigorousVerificationDAG v2.4 (correctness verification only, no new theory or source edits); ProofChainAudit v1.1 as evidence-ancestry guard.
+<strong>Audit:</strong> Six cumulative batches, all <strong>179 of 179</strong> formal objects dispositioned, plus material uncensused text/tables (including summary table row line 6017).
+<strong>Classification:</strong> <code>FULLY_AUDITED_NO_CONFIRMED_OPEN_MATHEMATICAL_GAPS</code> for the 179 formal claims, <strong>WITH_ONE_OPEN_NONFORMAL_SOURCE_SCOPE_ISSUE</strong>. This is not a claim the whole Born–Hopf framework has been globally proved.</p>
+<h2>Outcome by evidence level</h2>
+<table>
+<thead>
+<tr>
+  <th>Audit property</th>
+  <th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Formal source objects</td>
+  <td>179/179</td>
+</tr>
+<tr>
+  <td>VERIFIED</td>
+  <td>100 source-replayed with applicable independent evidence</td>
+</tr>
+<tr>
+  <td>REPRODUCED</td>
+  <td>31 source-replayed or imported, limited independent control; global imported proofs not independently reconstructed</td>
+</tr>
+<tr>
+  <td>FORMALIZED</td>
+  <td>48 definitions, conventions and scoped remarks</td>
+</tr>
+<tr>
+  <td>UNRESOLVED among formally censused objects</td>
+  <td>0</td>
+</tr>
+<tr>
+  <td>Independently exercised batch checks</td>
+  <td>B1 2,112; B2 10,201; B3 49,363; B4 5,857; B5 7,982; B6 12,122, all with zero final failures</td>
+</tr>
+<tr>
+  <td>New or confirmed source theorem refutations</td>
+  <td>0 within audited scope</td>
+</tr>
+<tr>
+  <td>Open nonformal table interpretation</td>
+  <td>BH-IA-SRC-000003</td>
+</tr>
+<tr>
+  <td>DAG-only integration defects</td>
+  <td>BH-IA-DAG-000001 and BH-IA-DAG-000002, resolved in the v1.153 global graph</td>
+</tr>
+<tr>
+  <td>Other papers</td>
+  <td>No independent re-audit; no automatic physical status promotion</td>
+</tr>
+</tbody>
+</table>
+<h2>Audit trace and proof boundary</h2>
+<p><strong>Batches 1–2 (#1–40):</strong> Marked Hopf normalization, general left-invariant scalar/Hodge/Dirac spectral compiler; Carnot–Carathéodory/sub-Riemannian theory, charges, horizontal heat, Hodge and spinor spectra. Independent checks reproduce exact operator and representation identities; imported CC and same-ball Poincaré results retain source hypotheses.</p>
+<p><strong>Batch 3 (#41–75):</strong> CK/TT/Rarita–Schwinger signed spectrum, curl decomposition, global geodesics and Clifford-torus geometry, CR and basic Dolbeault. Independent group/spin checks and primary cited imported theorem matching; no assumption added.</p>
+<p><strong>Batch 4 (#76–116):</strong> Clifford and quaternionic algebras, Spin(4) truncation, dimensions <code>dim H1=15</code>, sector algebra <code>43</code>, shell symbol, cone and Sobolev/heat. A false material edge from standard 3-Sasakian <strong>example</strong> to universal rigidity theorem was detected and quarantined.</p>
+<p><strong>Batch 5 (#117–153):</strong> Scalar-band POVM versus full Spin(4) carrier, Chern–Simons, Hopf/Reeb normalizations, contact/CS orientation, linking/helicity, round spectral eta and heat coefficients. A source table calls level-one support “closed”; the projected-cutoff vs unprojected-CG distinction is explicitly left unresolved, without casting doubt on H1 or mp=1.</p>
+<p><strong>Batch 6 (#154–179):</strong> Berger canonical variation, curvature budget (selected inequality; not physical axiom), GH collapse and fixed-cutoff spectral decoupling, Einstein TT gap and gauge, 3D spinor quaternionic doublets, finite binary SU(2) subgroups and normalizer fork. Primary literature checks for Hamilton and Fang–Levitin–Vassiliev; symbolic Koszul/Spin4, finite spectral and A4-normalizer controls.</p>
+<h2>Every issue found in this six-batch run</h2>
+<p><strong><code>BH-IA-DAG-000001</code> — <code>DAG_INTEGRITY</code>, minor with moderate integration risk; resolved in v1.153.</strong> Prior active README had wrong version/source hash, old active combined-graph pointers, and former Berger-decoupling source locator. Current reference is <code>p1:cor:berger-decoupling</code> at 6782–6815; new layer uses source SHA256 above and current atlas references. Mathematical impact: none. No confirmed cross-paper proof consequence.</p>
+<p><strong><code>BH-IA-DAG-000002</code> — <code>DAG_COVERAGE</code>, moderate; resolved by quarantine in v1.153.</strong> Edge <code>BH-IA-V176-EDGE-0030</code> incorrectly declared the <em>round S³ 3-Sasakian example</em> an indispensable premise of universal compact 3-dimensional 3-Sasakian rigidity (<code>p1:cor:3sasakian-rigidity</code>, 4606–4614). The source actually imports the general rigidity theorem. The spurious edge is removed from material ancestry AND-inputs and retained only as an issue-linked rejected candidate. The source theorem remains REPRODUCED at its stated scope; no certified downstream cross-paper descendants.</p>
+<p><strong><code>BH-IA-SRC-000003</code> — <code>TYPE_OR_DOMAIN / SOURCE_EVIDENCE_SCOPE</code>, moderate; open for source clarification.</strong> The nonformal summary-table row at 6017 uses “Level-1 closure property.” True: the defined cutoff retains only <code>jL+jR≤1</code>. Strong unprojected tensor-product closure is false, because <code>(1/2,0) ⊗ (1/2,1/2) = (0,1/2) ⊕ (1,1/2)</code> with exterior component total spin 3/2. The row does not specify a projection/constructor operation, and cannot be used as an independent physical closure proof. This <strong>does not affect</strong> the H1=15 dimension theorem or the separate mp=1 selection derivation. Verified downstream material path: none; possible unconfirmed interpretations only. Exact obligation: clarify or source-prove the operation implicit in the table row; no paper edits made.</p>
+<p><strong>Math / imported / DAG separation:</strong> no current formal theorem was refuted. Imported global results are valid only within explicit hypotheses and sometimes remain REPRODUCED. Two DAG graph integrity failures are corrected, while one scope claim is unclarified in the frozen TeX. The artifact does not silently replace source interpretations.</p>
+<h2>Complete current claim census</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">#</th>
+  <th>Exact source ID</th>
+  <th style="text-align:right">Source lines</th>
+  <th>Current verdict</th>
+  <th>Evidence / scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">1</td>
+  <td><code>p1:prop:hopf-scale-dictionary</code></td>
+  <td style="text-align:right">125–181</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">2</td>
+  <td><code>p1:prop:contact-normalization</code></td>
+  <td style="text-align:right">431–476</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">3</td>
+  <td><code>p1:conv:global-orientation-signs</code></td>
+  <td style="text-align:right">487–498</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">4</td>
+  <td><code>p1:prop:marked-hopf-inversion-transport</code></td>
+  <td style="text-align:right">500–566</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">5</td>
+  <td><code>p1:prop:base_fiber_ratio</code></td>
+  <td style="text-align:right">600–611</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">6</td>
+  <td><code>p1a:theorem:atlas-hopf-map-as-a-riemannian-submersion-b3988b5</code></td>
+  <td style="text-align:right">633–654</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">7</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:663</code></td>
+  <td style="text-align:right">663–667</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">8</td>
+  <td><code>p1:rem:euler-complex-dictionary</code></td>
+  <td style="text-align:right">695–728</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">9</td>
+  <td><code>p1:lem:hopf-penalty</code></td>
+  <td style="text-align:right">752–757</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">10</td>
+  <td><code>p1a:proposition:atlas-milnor-normal-form-0d88235</code></td>
+  <td style="text-align:right">797–824</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">11</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:846</code></td>
+  <td style="text-align:right">846–858</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">12</td>
+  <td><code>p1:def:general-spectral-frame</code></td>
+  <td style="text-align:right">869–895</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">13</td>
+  <td><code>p1:thm:general-left-invariant-scalar-spectrum</code></td>
+  <td style="text-align:right">897–936</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">14</td>
+  <td><code>p1:cor:general-spectral-consistency-and-recovery</code></td>
+  <td style="text-align:right">964–999</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">15</td>
+  <td><code>p1:thm:general-left-invariant-hodge-dirac-compiler</code></td>
+  <td style="text-align:right">1011–1063</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">16</td>
+  <td><code>p1:prop:general-spectral-cutoff-all-operators</code></td>
+  <td style="text-align:right">1121–1152</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">17</td>
+  <td><code>p1:thm:general-spectral-heat-and-limits</code></td>
+  <td style="text-align:right">1197–1248</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">18</td>
+  <td><code>p1:rem:general-spectral-compiler-scope</code></td>
+  <td style="text-align:right">1334–1346</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">19</td>
+  <td><code>p1a:proposition:atlas-full-isotropy-forces-roundness-b0fac04</code></td>
+  <td style="text-align:right">1351–1366</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">20</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:1385</code></td>
+  <td style="text-align:right">1385–1387</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">21</td>
+  <td><code>UNLABELED:Paper1A:definition:v5_177:1396</code></td>
+  <td style="text-align:right">1396–1409</td>
+  <td>FORMALIZED</td>
+  <td>Convention/definition: not applicable.</td>
+</tr>
+<tr>
+  <td style="text-align:right">22</td>
+  <td><code>p1:thm:marked-cc-distance</code></td>
+  <td style="text-align:right">1434–1455</td>
+  <td>REPRODUCED</td>
+  <td>E3 scoped: independent path-class inclusion and right-translation check; source-matched imported optimal sy…</td>
+</tr>
+<tr>
+  <td style="text-align:right">23</td>
+  <td><code>p1:thm:marked-cc-global</code></td>
+  <td style="text-align:right">1479–1485</td>
+  <td>VERIFIED</td>
+  <td>The 2008 Boscain–Rossi global theorem names cut locus a full maximal vertical circle less identity; indepen…</td>
+</tr>
+<tr>
+  <td style="text-align:right">24</td>
+  <td><code>p1:prop:nilpotent-approx</code></td>
+  <td style="text-align:right">1549–1562</td>
+  <td>REPRODUCED</td>
+  <td>Independent symbolic Heisenberg vector-field bracket and grading; global Gromov–Hausdorff convergence still…</td>
+</tr>
+<tr>
+  <td style="text-align:right">25</td>
+  <td><code>p1:cor:hausdorff-dim</code></td>
+  <td style="text-align:right">1631–1634</td>
+  <td>VERIFIED</td>
+  <td>Independent Carnot degree sum Q=1+1+2, along with standard equiregular dimension theorem.</td>
+</tr>
+<tr>
+  <td style="text-align:right">26</td>
+  <td><code>p1:thm:sr-poincare</code></td>
+  <td style="text-align:right">1696–1705</td>
+  <td>VERIFIED</td>
+  <td>Independent cross-read H–K theorem 9.7 and Cor 9.8 with the stronger Jerison same-ball remark following the…</td>
+</tr>
+<tr>
+  <td style="text-align:right">27</td>
+  <td><code>p1:thm:sr-sobolev</code></td>
+  <td style="text-align:right">1771–1779</td>
+  <td>VERIFIED</td>
+  <td>Independent s=4,p=2 Sobolev exponent calculation and measure/mean factors; audited source applications of H–K.</td>
+</tr>
+<tr>
+  <td style="text-align:right">28</td>
+  <td><code>p1a:theorem:atlas-l-evy-gromov-concentration-on-the-round-3-sphe-59aa4cc</code></td>
+  <td style="text-align:right">1807–1819</td>
+  <td>REPRODUCED</td>
+  <td>Limited exact hemisphere cap calculation only; it is not an all-measurable-set isoperimetric proof.</td>
+</tr>
+<tr>
+  <td style="text-align:right">29</td>
+  <td><code>p1a:theorem:atlas-spectral-resolution-8f48b6f</code></td>
+  <td style="text-align:right">1831–1841</td>
+  <td>VERIFIED</td>
+  <td>E3 ALL k: harmonic bihomogeneous polynomials P_(a,b) on C² restrict to S³, degree k=a+b, Hopf q=a-b. Harmon…</td>
+</tr>
+<tr>
+  <td style="text-align:right">30</td>
+  <td><code>p1:thm:horizontal-spectral-dimensions</code></td>
+  <td style="text-align:right">1848–1867</td>
+  <td>VERIFIED</td>
+  <td>E3 ALL SPECTRUM: direct divisor Dirichlet generating series Σ_(u,v odd) (u+v)/2 (uv)^(-z)=(1-2^(1-z))(1-2^(…</td>
+</tr>
+<tr>
+  <td style="text-align:right">31</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:1894</code></td>
+  <td style="text-align:right">1894–1908</td>
+  <td>FORMALIZED</td>
+  <td>This is only the explicitly defined factor-of-two Hopf-weight convention.</td>
+</tr>
+<tr>
+  <td style="text-align:right">32</td>
+  <td><code>p1:thm:scalar-spectrum-by-hopf-charge</code></td>
+  <td style="text-align:right">1910–1924</td>
+  <td>VERIFIED</td>
+  <td>E3 ALL k and q: homogeneous harmonic bihomogeneous polynomial kernel dimension k+1, q=a-b, k=a+b; parity an…</td>
+</tr>
+<tr>
+  <td style="text-align:right">33</td>
+  <td><code>p1:cor:hopf-charge-gap</code></td>
+  <td style="text-align:right">1936–1944</td>
+  <td>VERIFIED</td>
+  <td>Independent direct monotonicity of k(k+2), k≥/q/, q≠0.</td>
+</tr>
+<tr>
+  <td style="text-align:right">34</td>
+  <td><code>p1:prop:hopf-charge-line-bundle</code></td>
+  <td style="text-align:right">1951–1961</td>
+  <td>VERIFIED</td>
+  <td>E3 ALL q: in local Hopf sections s_j=e^{i alpha_ij}s_i, a weight-q equivariant function has coefficients ph…</td>
+</tr>
+<tr>
+  <td style="text-align:right">35</td>
+  <td><code>p1a:theorem:atlas-hodge-decomposition-a115d4d</code></td>
+  <td style="text-align:right">2003–2013</td>
+  <td>REPRODUCED</td>
+  <td>Source Green decomposition and integration by parts independently checked at the formal operator level; ker…</td>
+</tr>
+<tr>
+  <td style="text-align:right">36</td>
+  <td><code>p1a:corollary:atlas-cohomology-e382521</code></td>
+  <td style="text-align:right">2050–2060</td>
+  <td>VERIFIED</td>
+  <td>Independent CW complex one 0-cell and one 3-cell; H0=H3=R and H1=H2=0, then standard Hodge identification.</td>
+</tr>
+<tr>
+  <td style="text-align:right">37</td>
+  <td><code>p1:thm:hodge-one-form-spectrum</code></td>
+  <td style="text-align:right">2071–2080</td>
+  <td>VERIFIED</td>
+  <td>E3 ALL j: for orthonormal SU2 frame [E_i,E_j]=(2/R) ε_ijk E_k, on 1-forms ∇_i=-(i/R)(2J_i+S_i), S spin1. We…</td>
+</tr>
+<tr>
+  <td style="text-align:right">38</td>
+  <td><code>p1:thm:representation-harmonic-package</code></td>
+  <td style="text-align:right">2109–2136</td>
+  <td>VERIFIED</td>
+  <td>E3 ALL j: same Hodge Casimir coupling and Hopf opposite-of-frame orientation give curl=(2/R)(J·S+1), i.e. +…</td>
+</tr>
+<tr>
+  <td style="text-align:right">39</td>
+  <td><code>p1:thm:lichnerowicz-s3</code></td>
+  <td style="text-align:right">2145–2163</td>
+  <td>VERIFIED</td>
+  <td>E3 OPERATOR IDENTITY ALL j: (σ·J)^2=J²−σ·J. D=(2σ·J+3/2)/R ⇒ D²=(4J²+2σ·J+9/4)/R²; spin ∇*∇=(4J²+2σ·J+3/4)/…</td>
+</tr>
+<tr>
+  <td style="text-align:right">40</td>
+  <td><code>p1:prop:scalar-weyl-law</code></td>
+  <td style="text-align:right">2173–2197</td>
+  <td>VERIFIED</td>
+  <td>Independent finite-square summation and exact integer floor threshold; series expansion k=R sqrt(lambda)+O(…</td>
+</tr>
+<tr>
+  <td style="text-align:right">41</td>
+  <td><code>p1:lem:conformal-killing-exhaustion</code></td>
+  <td style="text-align:right">2206–2225</td>
+  <td>VERIFIED</td>
+  <td>Independent ambient-coordinate Hessian, 6+4 decomposition and bracket check, with analytic divergence right…</td>
+</tr>
+<tr>
+  <td style="text-align:right">42</td>
+  <td><code>p1:thm:tt-lichnerowicz-spectrum</code></td>
+  <td style="text-align:right">2265–2291</td>
+  <td>VERIFIED</td>
+  <td>Independent spin-j ⊗ spin-2 Casimir block matrices for j=0..8 in half steps, plus closed algebraic Casimir …</td>
+</tr>
+<tr>
+  <td style="text-align:right">43</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:2416</code></td>
+  <td style="text-align:right">2416–2426</td>
+  <td>FORMALIZED</td>
+  <td>For a conventional definition/remark E3 not applicable.</td>
+</tr>
+<tr>
+  <td style="text-align:right">44</td>
+  <td><code>p1:cor:tt-counting</code></td>
+  <td style="text-align:right">2428–2451</td>
+  <td>VERIFIED</td>
+  <td>Sympy exact all-M summation and occupancy ratio, with 3,000 threshold-edge checks over five radii.</td>
+</tr>
+<tr>
+  <td style="text-align:right">45</td>
+  <td><code>p1:thm:quadratic-shell-conformal-killing</code></td>
+  <td style="text-align:right">2476–2517</td>
+  <td>VERIFIED</td>
+  <td>Independent ambient Lie-bracket calculation in 400 sampled points and direct Sym²(2⊕2) representation decom…</td>
+</tr>
+<tr>
+  <td style="text-align:right">46</td>
+  <td><code>p1:rem:symmetric-pair-bracket</code></td>
+  <td style="text-align:right">2558–2569</td>
+  <td>FORMALIZED</td>
+  <td>For a conventional definition/remark E3 not applicable.</td>
+</tr>
+<tr>
+  <td style="text-align:right">47</td>
+  <td><code>p1:thm:rarita-schwinger-spectrum</code></td>
+  <td style="text-align:right">2571–2596</td>
+  <td>VERIFIED</td>
+  <td>Primary signed Theorem 1 of Bures--Soucek n=3,j=1 matched to both branches; independent SU2×SU2 dimensions …</td>
+</tr>
+<tr>
+  <td style="text-align:right">48</td>
+  <td><code>p1a:proposition:atlas-triple-overlap-coefficients-9f2b958</code></td>
+  <td style="text-align:right">2644–2658</td>
+  <td>REPRODUCED</td>
+  <td>Imported theorem or global analytic classification scoped to cited primary mathematical result; not indepen…</td>
+</tr>
+<tr>
+  <td style="text-align:right">49</td>
+  <td><code>p1a:proposition:atlas-the-coexact-eigenspaces-of-1-further-decompose-59450fa</code></td>
+  <td style="text-align:right">2673–2678</td>
+  <td>VERIFIED</td>
+  <td>Direct Stokes pairing and d†=<em>d</em> on two-forms, as an all-form algebraic Hodge identity.</td>
+</tr>
+<tr>
+  <td style="text-align:right">50</td>
+  <td><code>p1a:theorem:atlas-spectrum-of-curl-d9aaa10</code></td>
+  <td style="text-align:right">2696–2706</td>
+  <td>VERIFIED</td>
+  <td>All-j SU2 spin-1 curl Casimir C=(2/R)(J·S+1) gives positive, zero and negative branches; 105 additional bra…</td>
+</tr>
+<tr>
+  <td style="text-align:right">51</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:2762</code></td>
+  <td style="text-align:right">2762–2774</td>
+  <td>FORMALIZED</td>
+  <td>For a conventional definition/remark E3 not applicable.</td>
+</tr>
+<tr>
+  <td style="text-align:right">52</td>
+  <td><code>p1:rem:beltrami-not-eta-source</code></td>
+  <td style="text-align:right">2776–2783</td>
+  <td>FORMALIZED</td>
+  <td>For a conventional definition/remark E3 not applicable.</td>
+</tr>
+<tr>
+  <td style="text-align:right">53</td>
+  <td><code>p1:prop:adiabatic-decoupling</code></td>
+  <td style="text-align:right">2920–2932</td>
+  <td>VERIFIED</td>
+  <td>Independent q≠0 spectral bound; q=0 fixed eigenvalues and multiplicities at Hopf base radius R/2. Corollary…</td>
+</tr>
+<tr>
+  <td style="text-align:right">54</td>
+  <td><code>p1:prop:killing-implies-einstein</code></td>
+  <td style="text-align:right">2942–2961</td>
+  <td>VERIFIED</td>
+  <td>Independent Clifford contraction e_i R(X,e_i)=-Ric(X)/2 recovers factor 4(n−1)lambda²; nonzero c(v) inverti…</td>
+</tr>
+<tr>
+  <td style="text-align:right">55</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:3002</code></td>
+  <td style="text-align:right">3002–3014</td>
+  <td>FORMALIZED</td>
+  <td>For a conventional definition/remark E3 not applicable.</td>
+</tr>
+<tr>
+  <td style="text-align:right">56</td>
+  <td><code>p1:prop:symmetry-scalar-multiplicity</code></td>
+  <td style="text-align:right">3019–3031</td>
+  <td>VERIFIED</td>
+  <td>Independent harmonic polynomial dimension and irreducible Spin(4) module dimension argument, all k.</td>
+</tr>
+<tr>
+  <td style="text-align:right">57</td>
+  <td><code>p1a:theorem:atlas-explicit-geodesics-9c8c444</code></td>
+  <td style="text-align:right">3075–3084</td>
+  <td>VERIFIED</td>
+  <td>Extrinsic ODE verification for 650 normalized random geodesics at varying radii.</td>
+</tr>
+<tr>
+  <td style="text-align:right">58</td>
+  <td><code>p1a:corollary:atlas-periodicity-62e926f</code></td>
+  <td style="text-align:right">3091–3100</td>
+  <td>VERIFIED</td>
+  <td>Explicit trigonometric least period and geodesic-return differentiation.</td>
+</tr>
+<tr>
+  <td style="text-align:right">59</td>
+  <td><code>p1a:theorem:atlas-cut-locus-and-conjugate-locus-4ac018a</code></td>
+  <td style="text-align:right">3119–3129</td>
+  <td>VERIFIED</td>
+  <td>Direct normal Jacobi equation y″+y/R²=0 with first positive root πR in each of two normal directions.</td>
+</tr>
+<tr>
+  <td style="text-align:right">60</td>
+  <td><code>UNLABELED:Paper1A:definition:v5_177:3146</code></td>
+  <td style="text-align:right">3146–3149</td>
+  <td>FORMALIZED</td>
+  <td>For a conventional definition/remark E3 not applicable.</td>
+</tr>
+<tr>
+  <td style="text-align:right">61</td>
+  <td><code>p1a:proposition:atlas-the-fibers-of-the-hopf-fibration-constitute-a-1e29697</code></td>
+  <td style="text-align:right">3151–3160</td>
+  <td>VERIFIED</td>
+  <td>Independent parametric first/second fundamental forms at 700 randomly sampled Clifford tubes, including mea…</td>
+</tr>
+<tr>
+  <td style="text-align:right">62</td>
+  <td><code>p1a:theorem:atlas-comparison-theorems-and-model-identities-12bca99</code></td>
+  <td style="text-align:right">3194–3222</td>
+  <td>REPRODUCED</td>
+  <td>Imported theorem or global analytic classification scoped to cited primary mathematical result; not indepen…</td>
+</tr>
+<tr>
+  <td style="text-align:right">63</td>
+  <td><code>p1a:corollary:atlas-volume-of-a-geodesic-ball-in-s-3-700f05e</code></td>
+  <td style="text-align:right">3229–3242</td>
+  <td>VERIFIED</td>
+  <td>Independent numerical polar integration for 400 radii/geodesic balls plus Taylor coefficient.</td>
+</tr>
+<tr>
+  <td style="text-align:right">64</td>
+  <td><code>p1:thm:round-extremal-facts</code></td>
+  <td style="text-align:right">3259–3266</td>
+  <td>REPRODUCED</td>
+  <td>Imported theorem or global analytic classification scoped to cited primary mathematical result; not indepen…</td>
+</tr>
+<tr>
+  <td style="text-align:right">65</td>
+  <td><code>p1a:theorem:atlas-s-3-t-1-0-s-3-is-a-strictly-pseudoconvex-cr-ma-885227d</code></td>
+  <td style="text-align:right">3286–3291</td>
+  <td>VERIFIED</td>
+  <td>Complex Hessian of defining function ρ=Σ/z_i/²−R² is identity, positive on all nonzero complex tangents; 50…</td>
+</tr>
+<tr>
+  <td style="text-align:right">66</td>
+  <td><code>p1a:theorem:atlas-for-the-standard-cr-sphere-equipped-with-the-c-5c675bb</code></td>
+  <td style="text-align:right">3297–3301</td>
+  <td>VERIFIED</td>
+  <td>U(2) transitivity and preservation of the chosen form eta0 provides an elementary all-point invariance argu…</td>
+</tr>
+<tr>
+  <td style="text-align:right">67</td>
+  <td><code>p1a:theorem:atlas-the-cr-automorphism-group-of-s-3-is-pu-2-1-90b1123</code></td>
+  <td style="text-align:right">3307–3312</td>
+  <td>REPRODUCED</td>
+  <td>Imported theorem or global analytic classification scoped to cited primary mathematical result; not indepen…</td>
+</tr>
+<tr>
+  <td style="text-align:right">68</td>
+  <td><code>p1:rem:cr-structure</code></td>
+  <td style="text-align:right">3318–3324</td>
+  <td>FORMALIZED</td>
+  <td>For a conventional definition/remark E3 not applicable.</td>
+</tr>
+<tr>
+  <td style="text-align:right">69</td>
+  <td><code>p1:thm:hopf-sasakian-dolbeault-hodge</code></td>
+  <td style="text-align:right">3327–3360</td>
+  <td>REPRODUCED</td>
+  <td>Imported theorem or global analytic classification scoped to cited primary mathematical result; not indepen…</td>
+</tr>
+<tr>
+  <td style="text-align:right">70</td>
+  <td><code>p1:thm:hopf-basic-dolbeault-index</code></td>
+  <td style="text-align:right">3384–3419</td>
+  <td>VERIFIED</td>
+  <td>CP1 cohomology and base S2 spectral formula, 2,505 independent mode/gap sample controls.</td>
+</tr>
+<tr>
+  <td style="text-align:right">71</td>
+  <td><code>p1:rem:basic-dolbeault-zero-mode-boundary</code></td>
+  <td style="text-align:right">3435–3441</td>
+  <td>FORMALIZED</td>
+  <td>For a conventional definition/remark E3 not applicable.</td>
+</tr>
+<tr>
+  <td style="text-align:right">72</td>
+  <td><code>p1:thm:hardy-szego-projection</code></td>
+  <td style="text-align:right">3450–3457</td>
+  <td>REPRODUCED</td>
+  <td>Imported theorem or global analytic classification scoped to cited primary mathematical result; not indepen…</td>
+</tr>
+<tr>
+  <td style="text-align:right">73</td>
+  <td><code>p1:rem:szego-not-finite-carrier</code></td>
+  <td style="text-align:right">3465–3472</td>
+  <td>FORMALIZED</td>
+  <td>For a conventional definition/remark E3 not applicable.</td>
+</tr>
+<tr>
+  <td style="text-align:right">74</td>
+  <td><code>p1a:theorem:atlas-paneitz-positivity-on-the-standard-cr-three-sp-8fa6a91</code></td>
+  <td style="text-align:right">3477–3483</td>
+  <td>REPRODUCED</td>
+  <td>Imported theorem or global analytic classification scoped to cited primary mathematical result; not indepen…</td>
+</tr>
+<tr>
+  <td style="text-align:right">75</td>
+  <td><code>p1a:theorem:atlas-cr-sphere-rigidity-package-38671ac</code></td>
+  <td style="text-align:right">3491–3500</td>
+  <td>REPRODUCED</td>
+  <td>Imported theorem or global analytic classification scoped to cited primary mathematical result; not indepen…</td>
+</tr>
+<tr>
+  <td style="text-align:right">76</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:3512</code></td>
+  <td style="text-align:right">3512–3517</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">77</td>
+  <td><code>p1a:theorem:atlas-the-3-sphere-admits-a-unique-spin-structure-as-7608b1a</code></td>
+  <td style="text-align:right">3527–3535</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">78</td>
+  <td><code>p1a:theorem:atlas-algebraic-structure-b08f94a</code></td>
+  <td style="text-align:right">3548–3566</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">79</td>
+  <td><code>p1:def:quaternions</code></td>
+  <td style="text-align:right">3611–3614</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">80</td>
+  <td><code>p1:prop:scaled-unit-quaternions</code></td>
+  <td style="text-align:right">3616–3632</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">81</td>
+  <td><code>p1:prop:isom-s3-so4</code></td>
+  <td style="text-align:right">3642–3647</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">82</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:3691</code></td>
+  <td style="text-align:right">3691–3696</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">83</td>
+  <td><code>p1:prop:unit-quaternion-left-right-actions</code></td>
+  <td style="text-align:right">3700–3708</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">84</td>
+  <td><code>p1:thm:quat-projline</code></td>
+  <td style="text-align:right">3752–3763</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">85</td>
+  <td><code>p1:thm:borel-weil-cp1</code></td>
+  <td style="text-align:right">3780–3788</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">86</td>
+  <td><code>p1:cor:cp1-geometric-quantization</code></td>
+  <td style="text-align:right">3795–3813</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">87</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:3819</code></td>
+  <td style="text-align:right">3819–3826</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">88</td>
+  <td><code>p1:prop:hopf-marked-diagonal-base-comparison</code></td>
+  <td style="text-align:right">3828–3855</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">89</td>
+  <td><code>p1:thm:hopf-marked-diagonal-shell-symbol</code></td>
+  <td style="text-align:right">3868–3918</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">90</td>
+  <td><code>p1:rem:shell-symbol-not-hopf-pullback</code></td>
+  <td style="text-align:right">3956–3969</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">91</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:3971</code></td>
+  <td style="text-align:right">3971–3973</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">92</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:3991</code></td>
+  <td style="text-align:right">3991–3996</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">93</td>
+  <td><code>p1:thm:hyperbolic-normal-form</code></td>
+  <td style="text-align:right">4011–4020</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">94</td>
+  <td><code>p1:thm:z3-elliptic</code></td>
+  <td style="text-align:right">4036–4044</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">95</td>
+  <td><code>p1:thm:cayley</code></td>
+  <td style="text-align:right">4075–4088</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">96</td>
+  <td><code>p1:thm:unit-quaternion-double-cover-so3</code></td>
+  <td style="text-align:right">4101–4109</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">97</td>
+  <td><code>p1:cor:left-invariant-global-frame-s3</code></td>
+  <td style="text-align:right">4118–4140</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">98</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:4147</code></td>
+  <td style="text-align:right">4147–4155</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">99</td>
+  <td><code>p1:def:spin4-truncation</code></td>
+  <td style="text-align:right">4175–4188</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">100</td>
+  <td><code>p1:rem:scalar-vs-spin4</code></td>
+  <td style="text-align:right">4190–4195</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">101</td>
+  <td><code>p1:prop:dimHm</code></td>
+  <td style="text-align:right">4197–4205</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">102</td>
+  <td><code>p1:prop:block-algebra-dimensions</code></td>
+  <td style="text-align:right">4222–4243</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">103</td>
+  <td><code>p1:cor:H1-structure</code></td>
+  <td style="text-align:right">4267–4277</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">104</td>
+  <td><code>p1:prop:spin4-low-degree-dictionary</code></td>
+  <td style="text-align:right">4284–4319</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">105</td>
+  <td><code>p1:thm:round-s3-3sasakian-model</code></td>
+  <td style="text-align:right">4579–4591</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">106</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:4601</code></td>
+  <td style="text-align:right">4601–4604</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">107</td>
+  <td><code>p1:cor:3sasakian-rigidity</code></td>
+  <td style="text-align:right">4606–4610</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">108</td>
+  <td><code>p1:thm:hyperkahler-cone</code></td>
+  <td style="text-align:right">4620–4628</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">109</td>
+  <td><code>p1:cor:flat-cone-canonical-scale</code></td>
+  <td style="text-align:right">4658–4666</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">110</td>
+  <td><code>p1:cor:flat-cone-four-density-homothety</code></td>
+  <td style="text-align:right">4672–4691</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">111</td>
+  <td><code>p1:thm:beckner-sobolev-s3</code></td>
+  <td style="text-align:right">4709–4730</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">112</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:4773</code></td>
+  <td style="text-align:right">4773–4775</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">113</td>
+  <td><code>p1:thm:hopf-harmonic-morphism</code></td>
+  <td style="text-align:right">4781–4791</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">114</td>
+  <td><code>p1:thm:heat-kernel-s3</code></td>
+  <td style="text-align:right">4803–4823</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">115</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:4852</code></td>
+  <td style="text-align:right">4852–4860</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">116</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:4862</code></td>
+  <td style="text-align:right">4862–4865</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">117</td>
+  <td><code>p1:thm:scalar-band-evaluation-povm</code></td>
+  <td style="text-align:right">4867–4896</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">118</td>
+  <td><code>p1:thm:isotypic-commutant</code></td>
+  <td style="text-align:right">4971–4986</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">119</td>
+  <td><code>p1:prop:homothetic-scaling-laws</code></td>
+  <td style="text-align:right">4998–5061</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">120</td>
+  <td><code>p1:prop:standard-contact-fill-tight</code></td>
+  <td style="text-align:right">5233–5260</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">121</td>
+  <td><code>p1:def:cs-normalized</code></td>
+  <td style="text-align:right">5283–5295</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">122</td>
+  <td><code>p1:prop:cs-gauge-ambiguity</code></td>
+  <td style="text-align:right">5297–5312</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">123</td>
+  <td><code>p1:thm:mc-generator</code></td>
+  <td style="text-align:right">5326–5338</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">124</td>
+  <td><code>p1:cor:cs-volume-relation</code></td>
+  <td style="text-align:right">5351–5359</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">125</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:5366</code></td>
+  <td style="text-align:right">5366–5368</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">126</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:5374</code></td>
+  <td style="text-align:right">5374–5388</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">127</td>
+  <td><code>p1:thm:boothby-wang-hopf</code></td>
+  <td style="text-align:right">5393–5410</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">128</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:5423</code></td>
+  <td style="text-align:right">5423–5426</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">129</td>
+  <td><code>p1:thm:hopf-homotopy-exact-sequence</code></td>
+  <td style="text-align:right">5431–5450</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">130</td>
+  <td><code>p1:prop:hopf-ensemble-isotropy</code></td>
+  <td style="text-align:right">5476–5493</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">131</td>
+  <td><code>p1:cor:hopf-class-no-axis</code></td>
+  <td style="text-align:right">5520–5536</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">132</td>
+  <td><code>p1:thm:canonical-hopf-u1</code></td>
+  <td style="text-align:right">5549–5569</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">133</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:5589</code></td>
+  <td style="text-align:right">5589–5599</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">134</td>
+  <td><code>p1:thm:hopf-normalization-package</code></td>
+  <td style="text-align:right">5600–5632</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">135</td>
+  <td><code>p1:cor:positive-reeb-lattice</code></td>
+  <td style="text-align:right">5638–5660</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">136</td>
+  <td><code>p1:prop:unit-cotangent-double-cover</code></td>
+  <td style="text-align:right">5673–5680</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">137</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:5686</code></td>
+  <td style="text-align:right">5686–5689</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">138</td>
+  <td><code>p1:thm:poincare-topological-uniqueness</code></td>
+  <td style="text-align:right">5693–5696</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">139</td>
+  <td><code>p1:thm:gysin-hopf-bundle</code></td>
+  <td style="text-align:right">5804–5816</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">140</td>
+  <td><code>p1:prop:hopf-linking-helicity</code></td>
+  <td style="text-align:right">5827–5846</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">141</td>
+  <td><code>p1:thm:positive-hopf-link-open-book</code></td>
+  <td style="text-align:right">5874–5879</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">142</td>
+  <td><code>p1:thm:hopf-fibers-great-circles</code></td>
+  <td style="text-align:right">5889–5894</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">143</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:5902</code></td>
+  <td style="text-align:right">5902–5907</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">144</td>
+  <td><code>p1:rem:great-circle-contact-rigidity</code></td>
+  <td style="text-align:right">5909–5918</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">145</td>
+  <td><code>p1:thm:whitehead-integral-formula</code></td>
+  <td style="text-align:right">5924–5944</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">146</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:5953</code></td>
+  <td style="text-align:right">5953–5957</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">147</td>
+  <td><code>p1:prop:hopf-reeb-beltrami</code></td>
+  <td style="text-align:right">5959–5966</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">148</td>
+  <td><code>p1:prop:chirality-factor-exchange</code></td>
+  <td style="text-align:right">6040–6047</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">149</td>
+  <td><code>p1:thm:yamabe-round-sphere</code></td>
+  <td style="text-align:right">6125–6128</td>
+  <td>REPRODUCED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">150</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:6134</code></td>
+  <td style="text-align:right">6134–6136</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">151</td>
+  <td><code>p1:prop:eta-round-zero</code></td>
+  <td style="text-align:right">6143–6167</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">152</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:6183</code></td>
+  <td style="text-align:right">6183–6185</td>
+  <td>FORMALIZED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">153</td>
+  <td><code>p1:prop:integrated-heat-coefficients-s3</code></td>
+  <td style="text-align:right">6203–6211</td>
+  <td>VERIFIED</td>
+  <td>Source statement checked at stated scope</td>
+</tr>
+<tr>
+  <td style="text-align:right">154</td>
+  <td><code>p1:def:berger-canonical-variation</code></td>
+  <td style="text-align:right">6293–6300</td>
+  <td>FORMALIZED</td>
+  <td>Berger canonical variation sets only the vertical metric coefficient, not a new physical selector.</td>
+</tr>
+<tr>
+  <td style="text-align:right">155</td>
+  <td><code>p1:prop:submersion-fiber-length</code></td>
+  <td style="text-align:right">6302–6316</td>
+  <td>VERIFIED</td>
+  <td>Horizontal submersion is exact; Hopf psi-period 4pi gives fiber length 2pi R epsilon, intrinsic diameter pi…</td>
+</tr>
+<tr>
+  <td style="text-align:right">156</td>
+  <td><code>p1:lem:fibers-geodesic</code></td>
+  <td style="text-align:right">6344–6346</td>
+  <td>VERIFIED</td>
+  <td>Constant-length Killing vector integral curves satisfy ∇_K K=0.</td>
+</tr>
+<tr>
+  <td style="text-align:right">157</td>
+  <td><code>p1:thm:berger-sectional</code></td>
+  <td style="text-align:right">6394–6405</td>
+  <td>VERIFIED</td>
+  <td>Independent Koszul-symbolic derivation yields horizontal K=(4−3ε²)/R² and mixed K=ε²/R².</td>
+</tr>
+<tr>
+  <td style="text-align:right">158</td>
+  <td><code>p1:cor:berger-ricci</code></td>
+  <td style="text-align:right">6437–6454</td>
+  <td>VERIFIED</td>
+  <td>Ricci entries are sums of sectional curvatures; positivity thresholds and Einstein iff ε=1 follow exactly.</td>
+</tr>
+<tr>
+  <td style="text-align:right">159</td>
+  <td><code>p1:cor:berger-primitive-cap-rigidity</code></td>
+  <td style="text-align:right">6471–6510</td>
+  <td>VERIFIED</td>
+  <td>Curvature budget factor (ε²−1)(11ε²−13)/3 verified symbolically; collapse half-family 0&lt;ε≤1 has only round …</td>
+</tr>
+<tr>
+  <td style="text-align:right">160</td>
+  <td><code>p1:rem:berger-primitive-cap-scope</code></td>
+  <td style="text-align:right">6537–6543</td>
+  <td>FORMALIZED</td>
+  <td>Scope remark correctly limits cap to the canonical Berger/Hopf variation.</td>
+</tr>
+<tr>
+  <td style="text-align:right">161</td>
+  <td><code>p1:cor:spinframe-hopf-shape-descendant</code></td>
+  <td style="text-align:right">6545–6592</td>
+  <td>VERIFIED</td>
+  <td>Spin(2) frame double-cover gives c1=1 from Euler=2; spherical shape normalization is homothety invariant; o…</td>
+</tr>
+<tr>
+  <td style="text-align:right">162</td>
+  <td><code>p1:rem:spinframe-hopf-shape-scope</code></td>
+  <td style="text-align:right">6623–6629</td>
+  <td>FORMALIZED</td>
+  <td>Radius b remains arbitrary; R enters comparison normalization, not a derived microscopic radius.</td>
+</tr>
+<tr>
+  <td style="text-align:right">163</td>
+  <td><code>p1:cor:berger-vol-diam</code></td>
+  <td style="text-align:right">6631–6640</td>
+  <td>VERIFIED</td>
+  <td>Volume scales ε; base horizontal lift plus fiber arc yields stated diameter upper bound.</td>
+</tr>
+<tr>
+  <td style="text-align:right">164</td>
+  <td><code>p1:thm:berger-gh</code></td>
+  <td style="text-align:right">6653–6660</td>
+  <td>VERIFIED</td>
+  <td>Graph of π is a correspondence with distortion ≤πRε; GH ≤(πRε)/2 in standard correspondence convention, so …</td>
+</tr>
+<tr>
+  <td style="text-align:right">165</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:6691</code></td>
+  <td style="text-align:right">6691–6695</td>
+  <td>FORMALIZED</td>
+  <td>Bounded curvature follows from explicit K formula for ε∈(0,1].</td>
+</tr>
+<tr>
+  <td style="text-align:right">166</td>
+  <td><code>p1:thm:berger-spectrum</code></td>
+  <td style="text-align:right">6719–6733</td>
+  <td>VERIFIED</td>
+  <td>Peter–Weyl Casimir and doubled vertical charges give λ_{ℓ,q}=[ℓ(ℓ+2)+(ε⁻²−1)q²]/R² with per-charge multipli…</td>
+</tr>
+<tr>
+  <td style="text-align:right">167</td>
+  <td><code>p1:cor:berger-first-positive-eigenvalue</code></td>
+  <td style="text-align:right">6751–6763</td>
+  <td>VERIFIED</td>
+  <td>First modes (ℓ,q)=(2,0) and (1,±1) cross at ε=1/√6, multiplicities 3,4,7; no omitted ℓ≥2 mode is lower.</td>
+</tr>
+<tr>
+  <td style="text-align:right">168</td>
+  <td><code>p1:cor:berger-decoupling</code></td>
+  <td style="text-align:right">6782–6795</td>
+  <td>VERIFIED</td>
+  <td>For q≠0 lower bound (ε⁻²−1)/R² diverges; q=0 only even ℓ and precisely base spectrum and multiplicities sur…</td>
+</tr>
+<tr>
+  <td style="text-align:right">169</td>
+  <td><code>p1:thm:einstein-uniqueness-s3</code></td>
+  <td style="text-align:right">6822–6826</td>
+  <td>VERIFIED</td>
+  <td>In dimension 3 Einstein implies constant sectional curvature; compact simply connected positive-curvature S…</td>
+</tr>
+<tr>
+  <td style="text-align:right">170</td>
+  <td><code>p1:thm:hamilton-ricci-flow-convergence</code></td>
+  <td style="text-align:right">6848–6856</td>
+  <td>REPRODUCED</td>
+  <td>Hamilton’s normalized-flow theorem source checked under compactness and initial Ric&gt;0. No claim for Ric≤0.</td>
+</tr>
+<tr>
+  <td style="text-align:right">171</td>
+  <td><code>p1:cor:ricci-flow-round-stability</code></td>
+  <td style="text-align:right">6863–6866</td>
+  <td>REPRODUCED</td>
+  <td>Positive Ricci is C²-open, so Hamilton theorem applies to small round perturbations.</td>
+</tr>
+<tr>
+  <td style="text-align:right">172</td>
+  <td><code>p1:prop:infinitesimal-einstein-deformations</code></td>
+  <td style="text-align:right">6877–6911</td>
+  <td>VERIFIED</td>
+  <td>TT deformation Hessian, gap at 4/R² and gauge-Killing kernel checked; source Bianchi gauge solves and remov…</td>
+</tr>
+<tr>
+  <td style="text-align:right">173</td>
+  <td><code>p1:thm:lowest-dirac-pair-stability</code></td>
+  <td style="text-align:right">6985–7003</td>
+  <td>VERIFIED</td>
+  <td>Quaternionic C²=−I and [C,D]=0 force retained complex rank-two doublets; conformal covariance independently…</td>
+</tr>
+<tr>
+  <td style="text-align:right">174</td>
+  <td><code>p1a:theorem:atlas-finite-subgroup-classification-b4f160f</code></td>
+  <td style="text-align:right">7073–7093</td>
+  <td>REPRODUCED</td>
+  <td>SO(3) finite rotation classification lifts to binary cyclic/dicyclic and T/O/I; subgroup orders and odd-ord…</td>
+</tr>
+<tr>
+  <td style="text-align:right">175</td>
+  <td><code>p1:def:finite-support-atlases</code></td>
+  <td style="text-align:right">7099–7122</td>
+  <td>FORMALIZED</td>
+  <td>Finite epsilon-net atlas and finite subgroup-closed atlas are distinct; notation includes cyclic overlaps e…</td>
+</tr>
+<tr>
+  <td style="text-align:right">176</td>
+  <td><code>p1:prop:2O-two-cosets-not-product</code></td>
+  <td style="text-align:right">7174–7191</td>
+  <td>VERIFIED</td>
+  <td>Index-two H=2T in 2O yields two cosets; no involution outside H in SU2 =&gt; extension does not split.</td>
+</tr>
+<tr>
+  <td style="text-align:right">177</td>
+  <td><code>UNLABELED:Paper1A:remark:v5_177:7201</code></td>
+  <td style="text-align:right">7201–7206</td>
+  <td>FORMALIZED</td>
+  <td>Left–right Spin(4) 2T×2T is a different ambient carrier than one-sided SU2 subgroup.</td>
+</tr>
+<tr>
+  <td style="text-align:right">178</td>
+  <td><code>p1:prop:exceptional-nesting</code></td>
+  <td style="text-align:right">7243–7250</td>
+  <td>VERIFIED</td>
+  <td>Displayed groups give H⊂2O and H⊂2I; 2O⊄2I since 24 does not divide 60 after central quotient.</td>
+</tr>
+<tr>
+  <td style="text-align:right">179</td>
+  <td><code>p1:thm:exceptional-normalizer-fork</code></td>
+  <td style="text-align:right">7264–7290</td>
+  <td>VERIFIED</td>
+  <td>Permutation-group normalizers computed: N_{S4}(A4)=S4, N_{A5}(A4)=A4; hence N_SU2(H)=2O and N_I(H)=H, inter…</td>
+</tr>
+</tbody>
+</table>
+<h2>Historical issue provenance (not re-opened)</h2>
+<ul>
+<li><code>BH-IA-G-000102</code>, <code>000103</code>, <code>000104</code>, <code>000111</code>: earlier evidence gaps were closed in current v5.177 source via cited global CC/Poincaré, signed Rarita–Schwinger and all-spin compiler proofs. Imported literature remains correctly marked as imported rather than new Born–Hopf axioms.</li>
+<li><code>BH-IA-G-000105</code>, <code>000106</code>: historical source type/global-projector defects resolved in earlier v5.176 geometry edits, retained as antecedent provenance.</li>
+<li>Obsolete exceptional-chamber source branches from earlier Paper1A versions were removed from the present 179-object census and are not retroactively declared proved.</li>
+</ul>
+<h2>DAG route and archive validation</h2>
+<ul>
+<li>All 179 IDs have source-matched original statement spans, fixed source SHA, E1 status and scoped E3/E4 lineage; one formal object is one canonical layer claim entry, not many copies in batch ledgers.</li>
+<li>Imported constraints remain canonical/typed and conditional; no new physical axioms or physical realizations were introduced.</li>
+<li>False <code>BH-IA-V176-EDGE-0030</code> was excluded from live material paths, AND inputs and transitive closure; unrelated cross-paper records are preserved.</li>
+<li>The next DAG Atlas is v1.153 built on the latest supplied v1.152; the companion archive is v1.66 built on v1.65. Keep one current Paper1A proofchain audit v1.8; every other paper audit remains the latest inherited version.</li>
+<li>Files are mathematical source/proof-chain objects; neither source TeX, macros, bibliography nor any PDFs were edited/generated.</li>
+</ul>
+<p><strong>Audit release:</strong> source-complete within the specified paper; one unresolved table-scope clarification remains. Do not infer wider physical laws or closure of downstream framework claims from these mathematical checks.</p>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

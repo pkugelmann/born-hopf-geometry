@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper1B-ExceptionalGeometryProofChainAudit-v1_5 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper1B-ExceptionalGeometryProofChainAudit-v1_5 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper1B ExceptionalGeometryProofChainAudit v1_5</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper1B-ExceptionalGeometryProofChainAudit-v1_5.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Paper I-B — Exact Petersen/Desargues/Reye proof completion (audit addendum v1_5)</h1>
+<p><strong>Current source:</strong> <code>Paper1B-ExceptionalGeometry-v1_13.tex</code> (Paper00-PapersMinimal-v3_021). <strong>Prior audit:</strong> v1_4 including historical v1_10 full census; retained below. <strong>Current resolution layer:</strong> <code>DAG/AuditLayer/Paper1Resolution-v1_1/Index.json</code>.</p>
+<p><strong>BH-IBX-EV-0009 — FINITE MATHEMATICAL CLAIMS DISCHARGED BY NEW INDEPENDENT E3 CERTIFICATES.</strong> Four independent, self-contained scripts reconstruct the mathematical groups, graph, incidence and matrix systems rather than importing the audited implementation: <code>Paper1B-PetersenSL4ExactProof-v1_1.py</code> (5,555 exact assertions), <code>Paper1B-ReyeExactProof-v1_1.py</code> (45), <code>Paper1B-DesarguesWalkExactProof-v1_1.py</code> (2,719), and <code>Paper1B-ThreeCycleExactProof-v1_1.py</code> (469). <strong>All 8,788 exact assertions pass.</strong> They test 120 signed S5 actions; all 60×60 A5 group-element-pair projector identities; every 200 cyclic C3 coset type; 36×70 and 36×80 Reye incidence ranks; explicit dodecahedral distance-two isomorphism; 120 relabelings of Desargues faces; complete three-cycle matrix and class-frame identities; Lie closure of all 120 triples; fivefold contrast <code>K_W=-15D5</code>. The source now records the finite identities in a dedicated proof-certificate paragraph.</p>
+<p><strong>Exactly eleven source claim labels covered:</strong></p>
+<ul>
+<li><code>p1:thm:v339-petersen-sl4-isometry</code></li>
+<li><code>p1:cor:v339-petersen-matrix-symmetric-pair</code></li>
+<li><code>p1:thm:v339-petersen-projector-strata</code></li>
+<li><code>p1:cor:v340-reye-dodeca-second-neighbour</code></li>
+<li><code>p1:thm:v341-desargues-rp2-parity</code></li>
+<li><code>p1:prop:v341-walk-kernel-no-petersen-isomorphism</code></li>
+<li><code>p1:thm:v342-three-cycle-petersen-overlap</code></li>
+<li><code>p1:thm:v342-triangle-petersen-cycle-isometry</code></li>
+<li><code>p1:thm:v342-class-frame-three-cycle-tomography</code></li>
+<li><code>p1:thm:v342-minimal-path-lie-generators</code></li>
+<li><code>p1:prop:v343-fivefold-signed-contrast</code></li>
+</ul>
+<p><strong>Scope:</strong> Each new certificate is a reproducible exact proof of the stated <strong>finite mathematical</strong> relationship within the source-supplied marked A5/2I graph/permutation packet. It independently closes the earlier E3 evidentiary deficit for these eleven finite source claims, including the full finite intertwiner. The scripts do <strong>not</strong> prove that the packet occurs physically, that it is selected by GP3 from all possible realizations, or that an unmentioned universal geometric uniqueness theorem holds. Those stronger claims are not certified or silently relabeled as verified.</p>
+<p><strong>BH-IBX-EV-0012 — OPEN.</strong> The historical 43 <code>REPRODUCED</code> and 7 <code>VERIFIED-CONDITIONAL</code> statements (v1_10) keep their specific non-E3/imported or conditional guards. The subsequent CC18/CC20 mathematical additions to v1_13 are source-integrated but not fully re-audited by this targeted repair. No general Paper I-B formal-claim grade or physical status is promoted. The frozen prior report remains below as history.</p>
+<hr />
+<h2>Frozen prior audit for provenance (v1_4)</h2>
+<h1>Paper1B — CC18 current-source scope rebase (Paper1B-ExceptionalGeometryProofChainAudit-v1_4.md)</h1>
+<p><strong>Latest source:</strong> <code>Paper1B-ExceptionalGeometry-v1_11.tex</code>; SHA-256 <code>9fedbf89e465b56ff384848ebd732a8e7b678d20e7a1d4beba5b2059afe16ec5</code>.  <strong>Framework release:</strong> <code>Paper00-PapersMinimal-v3_019.zip</code> based on v3.018.  <strong>DAG release:</strong> <code>Paper00-DAGAtlas-v1_155.zip</code> based on v1.154.  <strong>Audit collection:</strong> <code>Paper00-ProofChainAudits-v1_68.zip</code> based on v1.67.</p>
+<p><strong>Scope and grade:</strong> <code>SOURCE_INTEGRATED_LOCAL_MATH_CHECKS / NEW_CLAIMS_NOT_FULLY_AUDITED</code>.  The historical audit below remains valid only for the original source body and the exact original manuscript version it names.  The added CC18 proof statements have formal source labels, precise dependency owners and reproducible finite/exact checks, but <strong>not a fresh exhaustive E3/E4 audit for this entire revised paper</strong>.  No old issue, open physical obligation, or conditional status is silently closed.  No physical occurrence/observable was promoted.</p>
+<p>New source-labelled mathematical result(s):</p>
+<ul>
+<li><code>p1b:thm:cc18-hopf-150-rule</code> — source-integrated auxiliary comparison, no physical-owner certificate.</li>
+<li><code>p1b:thm:cc18-angular-selection</code> — source-integrated auxiliary comparison, no physical-owner certificate.</li>
+<li><code>p1b:cor:cc18-angular-memory</code> — source-integrated auxiliary comparison, no physical-owner certificate.</li>
+<li><code>p1b:thm:cc18-degree-six-sector-split</code> — source-integrated auxiliary comparison, no physical-owner certificate.</li>
+</ul>
+<p><strong>Local evidence:</strong> <code>DAG/SourceUpdates/DAGCrossConnections-v1_9/</code> contains the independent exact-cubature, exact-block, independent facet-geometry and independent nonet reconstruction scripts from supplement v1.9; the release manifest records their replay status and the exact updated source anchors.  The predecessor audit, source text before the appended CC18 block, and all predecessor issue ledgers are preserved as provenance; source hash changed and must not be mistaken for E0 equality to the old manuscript.</p>
+<hr />
+<h2>Historical audit retained verbatim (not current-version re-certification)</h2>
+<h1>Born–Hopf Geometry I-B — Final Rigorous Proof-Chain Audit (current v1.10)</h1>
+<p><strong>Audit file:</strong> <code>Paper1B-ExceptionalGeometryProofChainAudit-v1_3.md</code><br />
+<strong>Target manuscript:</strong> <code>Paper1B-ExceptionalGeometry-v1_10.tex</code><br />
+<strong>SHA-256:</strong> <code>e02e868b02dc3e22bbfae8b4563d7586646f2dc0f215145674dff5fea10854d5</code><br />
+<strong>Current supplied papers:</strong> <code>Paper00-PapersMinimal-v3_018.zip</code><br />
+<strong>Current paired outputs:</strong> <code>Paper00-DAGAtlas-v1_154.zip</code>; <code>Paper00-ProofChainAudits-v1_67.zip</code><br />
+<strong>Protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code> plus ProofChain Audit Protocol v1.1.</p>
+<h2>Bounded scope and completeness</h2>
+<p>One manuscript, 506/506 formal current statements. 483 inherited claims source-normalized with their earlier theorem and proof blocks, and 23 new v1.10 formal claims freshly audited. Other papers checked only as specific imported prerequisites or reference owners; no other manuscript claimed re-audited. Source is unchanged and the audits integrate mathematical certificates only.</p>
+<table>
+<thead>
+<tr>
+  <th>Final claim status</th>
+  <th style="text-align:right">Count</th>
+  <th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>VERIFIED</td>
+  <td style="text-align:right">341</td>
+  <td>Matched previous or fresh verification under the exact finite mathematical statement scope</td>
+</tr>
+<tr>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:right">7</td>
+  <td>Verification is restricted by explicitly documented hypotheses, including 600-chamber register source assumptions</td>
+</tr>
+<tr>
+  <td>REPRODUCED</td>
+  <td style="text-align:right">43</td>
+  <td>Source argument/computation replays but full independent/global imported-scope evidence is not established</td>
+</tr>
+<tr>
+  <td>FORMALIZED</td>
+  <td style="text-align:right">115</td>
+  <td>Definitions and formal scope/owner statements</td>
+</tr>
+<tr>
+  <td><strong>TOTAL</strong></td>
+  <td style="text-align:right"><strong>506</strong></td>
+  <td><strong>Full source disposition; not universal physical completion</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>Six-batch coverage</h3>
+<table>
+<thead>
+<tr>
+  <th>Audit batch</th>
+  <th>Claimed ordinal range</th>
+  <th style="text-align:right">Statements</th>
+  <th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td>484–506 (v1.10 new)</td>
+  <td style="text-align:right">23</td>
+  <td>12 verified, 5 verified-conditional, 6 formalized</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>1–100</td>
+  <td style="text-align:right">100</td>
+  <td>83 verified (six newly supplied evidence certificates), 17 formalized</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>101–200</td>
+  <td style="text-align:right">100</td>
+  <td>73 verified, 27 formalized</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>201–300</td>
+  <td style="text-align:right">100</td>
+  <td>75 verified, 25 formalized</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>301–400</td>
+  <td style="text-align:right">100</td>
+  <td>62 verified, 17 reproduced, 21 formalized</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>401–483</td>
+  <td style="text-align:right">83</td>
+  <td>36 verified, 26 reproduced, 19 formalized, 2 verified-conditional</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Historical source lineage:</strong> <code>Paper1B-ExceptionalGeometry-v1_9.tex</code> (483 formal claims) from previous audit v1.2, with older proof certificates retained and checked for source continuity. The older <code>Paper1B-M8Geometry</code> audit has a distinct manuscript identity and is not a second active Exceptional Geometry audit.</p>
+<h2>Mathematical verification highlights and falsification boundaries</h2>
+<ul>
+<li>Exact Petersen and (\mathfrak{sl}_4) finite projectors: previous <code>EV-0009</code> evidence gap materially narrowed by 2,370 new passing finite tests in Batch 5, but the stronger geometric uniqueness/intertwiner remains an open issue.</li>
+<li>Six previously lost portable certificates <code>BH-IBX-EV-0001</code>–<code>0006</code> are now rebuilt as self-contained source-matched arithmetic scripts with 66 passing checks in Batch 2; they are marked resolved for this <strong>finite evidence portability obligation</strong>, not as new physical mechanisms.</li>
+<li>New v1.10 results: coherent nonet Gram rank, non-Markovian 25-register exact memory, 41-dimensional <em>linear</em> realization, low-band harmonic sampling, 720-point positive cubature. Results remain marked by their existing finite carrier and do not create extra GP3-selected particle states.</li>
+<li>Batch 6: <strong>2145/2145 new non-tautological exact checks</strong> over 21 exact source claims; 19,687 historical controls were earlier replayed and matched to this batch. Tested 24-cell/Fourier incidence, cross-core five-cycles, ADE/Seifert/McKay counts, eta values, quantum-double modular phases, conditional register resistances and Born-even symmetry.</li>
+<li>Two external mathematical references in Batch 6 have confirmed owners in latest sources: <code>p1:thm:general-left-invariant-hodge-dirac-compiler</code> in Paper I-A v5.177 and <code>p1c:prop:v370-e8-finite-certificate</code> in Paper I-D v1.67. This checks referential ownership, <strong>not independent proof of their full results</strong>.</li>
+<li>Historical v1.9 five-cycle sign erratum is preserved: the incorrect sign was refuted and source corrected; no fresh refutation of current source in this run.</li>
+</ul>
+<h2>Issue ledger (19 persistent / registered identifiers)</h2>
+<table>
+<thead>
+<tr>
+  <th>Issue ID</th>
+  <th>Outcome</th>
+  <th>Exact scope / remaining work</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-IBX-DAG-0001</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>RESOLVED_WITH_SCOPED_EVIDENCE</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-DAG-0002</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>RESOLVED_WITH_SCOPED_EVIDENCE</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-EV-0001</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>Self-contained source-matched finite E3 verifier and exact controls added in Batch 2; original mathematical scope and provenance retained.</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-EV-0002</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>Self-contained source-matched finite E3 verifier and exact controls added in Batch 2; original mathematical scope and provenance retained.</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-EV-0003</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>Self-contained source-matched finite E3 verifier and exact controls added in Batch 2; original mathematical scope and provenance retained.</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-EV-0004</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>Self-contained source-matched finite E3 verifier and exact controls added in Batch 2; original mathematical scope and provenance retained.</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-EV-0005</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>Self-contained source-matched finite E3 verifier and exact controls added in Batch 2; original mathematical scope and provenance retained.</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-EV-0006</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>Self-contained source-matched finite E3 verifier and exact controls added in Batch 2; original mathematical scope and provenance retained.</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-EV-0007</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>RESOLVED_WITH_SCOPED_EVIDENCE</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-EV-0008</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>RESOLVED_WITH_SCOPED_EVIDENCE</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-EV-0009</code></td>
+  <td><strong>OPEN</strong></td>
+  <td>Claim-matched Petersen finite controls for all 11 named claims added in Batch 5, but full geometric uniqueness / intertwiner remains unverified.</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-EV-0010</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>RESOLVED_WITH_SCOPED_EVIDENCE</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-EV-0011</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>RESOLVED_WITH_SCOPED_EVIDENCE</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-SRC-0001</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>RESOLVED_WITH_SCOPED_EVIDENCE</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-MATH-0001</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>RESOLVED_WITH_SCOPED_EVIDENCE</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-META-0001</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>RESOLVED_WITH_SCOPED_EVIDENCE</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-DAG-0003</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>Current 23 new claims, material edges and exact-check references integrated in current 506-node audit layer and global graph.</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-DAG-0004</code></td>
+  <td><strong>RESOLVED</strong></td>
+  <td>600-chamber legacy completion records reconciled with dependent conditional/reproduced statuses: only specifically evidenced finite identities are discharged.</td>
+</tr>
+<tr>
+  <td><code>BH-IBX-EV-0012</code></td>
+  <td><strong>OPEN</strong></td>
+  <td>43 remaining REPRODUCED and 7 VERIFIED-CONDITIONAL current claims retain exact, claim-specific imported theorem / complete E3/E4 or conditional realization obligations; see AuditClaimLedger status/evidence fields; not a mathematical refutation.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Current open issues:</strong> 2 — <code>BH-IBX-EV-0009</code> (broader uniqueness/intertwiner), <code>BH-IBX-EV-0012</code> (43 reproduced and 7 verified-conditional claim scopes). <strong>Resolved/reconciled:</strong> 17, with all historical records retained. <code>DAG-0003</code> is closed by 23-source-node integration; <code>DAG-0004</code> is closed as a provenance/status reconciliation <strong>without promoting any 600-chamber dependent claim</strong>.</p>
+<h2>Dependency and assumption control</h2>
+<p>Each current claim maps to one canonical <code>BH-IBX-EXG::</code> ID with explicit source location, proof route and status. The original reviewed source-material proof edges remain as E1 links, while the 23 new v1.10 statements add only the independently inspected 30 material edges recorded in Batch 1; no reference-only or citation-only link is promoted automatically. Existing marked geometric assumptions/conditions reuse canonical origins; no second GP3 axiom or physical-source hypothesis introduced.</p>
+<p>The two <code>VERIFIED-CONDITIONAL</code> inherited chamber statements and five new conditional memory statements retain the chamber/source hypothesis, normalization, linear versus positive realization distinction, and nonphysicality boundary. An exact closed finite 600-chamber transfer does <strong>not</strong> imply physical transition rates or hadronic decay widths.</p>
+<h2>Audit method and limitations</h2>
+<p>E0 source/ZIP hashes and label-owner checks are integrity, <strong>not mathematics</strong>. E1 is line/definition/quantifier replay of current source, E3 consists of exactly scoped independent scripts or genuinely different calculations, and E4 records normalization/domain/selection attacks. The historical evidence scripts replayed in later batches are not counted as fresh independent proof. External ADE, McKay, topology, representation and spectral theorems remain imports where not fully proved afresh; a finite check of their consequence does not certify their global applicability. This audit ran in a single execution with separately recorded evidence functions; <strong>multiple genuinely independent agents are not claimed</strong>.</p>
+<h2>Archive release contract</h2>
+<p>The updated DAG Atlas v1.154 contains the complete source-matched 506-claim layer at <code>DAG/AuditLayer/Paper1B-ExceptionalGeometry-v1_3/</code> and registration in the canonical graph. It replaces the superseded active Exceptional Geometry layer, retains the historical distinct M8 audit under its separate namespace, and preserves all other current paper audit data. The accompanying ProofChain Audits v1.67 retains one latest audit per current paper and uses I-B v1.3. Readback validation and manifests are in the DAG release.</p>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper1C-ProofChainAudit-v1_7 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper1C-ProofChainAudit-v1_7 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper1C ProofChainAudit v1_7</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper1C-ProofChainAudit-v1_7.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Paper I-C — Contact and energy normalization proof repairs (audit addendum v1_7)</h1>
+<p><strong>Current source:</strong> <code>Paper1C-M8Geometry-v1_142.tex</code> (Paper00-PapersMinimal-v3_021). <strong>Prior audit:</strong> v1_6 source-frozen v1_140; retained below. <strong>Current resolution layer:</strong> <code>DAG/AuditLayer/Paper1Resolution-v1_1/Index.json</code>.</p>
+<p><strong>BH-IC-139-OR-0001 — RESOLVED BY CORRECT MATHEMATICAL SIGN AND PROOF.</strong> In <code>p1b:thm:g17-contact</code>, under fibre-first orientation, residual fibre inversion sends <code>η→−η</code>, <code>F→−F</code>, <code>c1→−c1</code>, <strong>and reverses the total-space orientation</strong>. Hence <code>∫_{-T}(−η)∧(d(−η))² = ∫_T η∧(dη)²</code>, and <code>c1²</code> is unchanged. The previous assertion that the normalized characteristic integral changes sign under a <em>consistent</em> reorientation was incorrect. The source theorem and its proof now state the correct invariant. Holding total-space orientation fixed is a different convention and does produce sign reversal of the raw form integral.</p>
+<p><strong>BH-IC-139-NM-0002 — RESOLVED BY METRIC-NORMALIZED ENERGY IDENTITY.</strong> In <code>p1b:thm:v2217-nonconstant-cartan-dirac</code>, the dimensionless derivative is now displayed as <code>R²|∇^{g_R}u|²</code>, equivalently <code>|∇^{g_1}u|²</code>. For <code>h=q1²−1/4</code>, <code>R²⟨|∇^{g_R}h|²⟩=8⟨h²⟩=1/2</code> and the quadratic coefficient is <code>1/12−1/32=5/96</code>. This repairs the radius ambiguity and supplies the missing derivative proof; other polynomial coefficients are checked independently.</p>
+<p><code>Paper1C-ContactEnergyExactChecks-v1_1.py</code> supplies <strong>109 independent exact assertions (PASS)</strong>, including full rational <code>S³</code> coordinate moments, the energy/CS coefficients, contact criterion and all 49 integer orientation cases with <code>(a,b)∈{−3,…,3}²</code>.</p>
+<p><strong>Still open:</strong> the eleven prior inherited evidence/global topology obligations remain guarded, along with other I-D original-data and global certificates. These source corrections do not certify the unrelated Dirac perturbation coefficient, every global bundle classification, or any physical occurrence theorem. No full fresh I-C audit of CC20 is claimed.</p>
+<hr />
+<h2>Frozen prior audit for provenance (v1_6)</h2>
+<h1>Paper I-C — Proof-chain audit v1_6 (current source v1_140)</h1>
+<p><strong>Current authoritative manuscript:</strong> <code>Paper1C-M8Geometry-v1_140.tex</code> · SHA256 <code>b26b32973091d56b3ae87321f598245fca17850c35718c36627a70cc033143ed</code> (PapersMinimal v3_019).
+<strong>Protocol:</strong> RigorousVerificationDAGWorkProtocol v2_4 and ProofChainAuditProtocol v1_1.
+<strong>Updated DAG:</strong> Paper00-DAGAtlas-v1_156 · <strong>Audit collection:</strong> Paper00-ProofChainAudits-v1_69.</p>
+<h2>Current source review and grading</h2>
+<p><strong>506/506 current formal source objects source-bound audited</strong>, including all named formal statements, formal remarks and the CC14–CC18 inserted comparison sections. First 490 source statements and adjacent proof bodies match the earlier frozen audit; first 505 match v1_139 exactly. The newly added 506th tomography proposition was read and boundedly independently checked. None of these text matches is a mathematical E3 proof in itself.</p>
+<p>Historical grades of original 490 statements retained. New 16 source objects graded at E1-only (and E3-bounded where listed), <strong>no unconditional proof status promotion</strong>. Current census grade counts: <strong>{'FORMALIZED': 55, 'REPRODUCED': 163, 'VERIFIED': 214, 'VERIFIED-CONDITIONAL': 74}</strong>. Batched E3 scoped controls: Batch1=10, Batch2=30, Batch3=250, Batch4=177, a total of <strong>467 bounded checks</strong>, not 467 complete independent theorem proofs. Complete source proof obligations and conditions are recorded in DAG AuditLayer <code>Paper1C-M8Geometry-v1_3</code>.</p>
+<h2>Open issue registry (all identifiers)</h2>
+<ul>
+<li><strong>BH-IB-EV-0001</strong> (verification evidence only; MISSING_INDEPENDENT_PROOF_EVIDENCE): p1b:thm:g15-unstable ([1527, 1549]); p1b:thm:g20-rank2-existence ([1638, 1652]); p1b:thm:g20-rank3-existence ([1771, 1787]); p1b:thm:g20-rank3-fibre ([1800, 1833]). Reconstruct the source-specific obstruction/desuspension and fixed-rank bundle existence implications independently, including the adopted Čadek–Crabb–Vanžura and Yang hypotheses. The I-C appendices give a substantive source proof; current finite Chern and Smith tests are narrower.</li>
+<li><strong>BH-IB-EV-0002</strong> (verification evidence only; MISSING_INDEPENDENT_PROOF_EVIDENCE): p1b:thm:g20-rank2-fibre-even ([1670, 1736]); p1b:thm:v2170-ordinary-counts ([2097, 2124]); p1b:thm:v2170-ordinary-born ([2180, 2201]). Independently reconstruct the full level-12 mapping-component group, its affine determinant-unframing action on all relative filling torsors, and every claimed orbit count. The exact finite F2 shear and zero-Chern checks confirm only specified components.</li>
+<li><strong>BH-IB-EV-0003</strong> (verification evidence only; MISSING_INDEPENDENT_PROOF_EVIDENCE): p1b:thm:g21-born-fixed-count ([2301, 2338]); p1b:thm:g21-index-obstruction ([2363, 2387]); p1b:thm:g21-exotic-lift ([2506, 2519]); p1b:thm:g21-exotic-nogo ([2533, 2538]); p1b:thm:g21-principal-descent ([2589, 2624]). Independently verify the equivariant Hopf target representation/underlying class and the coarse symmetric-square no-go; recheck the Dirac Lefschetz fixed-point application and the full principal descent classification. Arithmetic congruence checks are not the complete equivariant proof.</li>
+<li><strong>BH-IB-EV-0004</strong> (verification evidence only; MISSING_INDEPENDENT_PROOF_EVIDENCE): p1b:prop:v2170-mixed-gluing ([3004, 3020]); p1b:lem:v2170-w-cohomology ([3046, 3081]); p1b:thm:v2170-mixed-quotient ([3258, 3283]); p1b:thm:complete-mixed-rank-two ([4069, 4131]). Independent equivariant Thom/Cartan–Leray calculation for W; actual global determinant-one/odd-winding gauge realizations and normalized boundary restrictions; independent source-specific I-C natural joining carry and torsor/forgetful orbit proofs.</li>
+<li><strong>BH-IB-EV-0005</strong> (verification evidence only; MISSING_INDEPENDENT_PROOF_EVIDENCE): p1b:thm:v273-triple-icosahedral-nineteen-design ([5009, 5022]); p1b:thm:v274-branch-symmetric-twin-convolution ([5086, 5128]). Exact Vandermonde signed support, F12/F20 gcd, unique real F12 root in allowed interval, conditional two-projector eigenvalues and norm constants; exact peer theorem and dense-generation proof source labels were located.</li>
+<li><strong>BH-IB-EV-0006</strong> (verification evidence only; MISSING_INDEPENDENT_PROOF_EVIDENCE): p1b:thm:g22-global-complex ([7028, 7051]); p1b:thm:g16-model ([7219, 7247]); p1b:thm:g14-generalized ([7151, 7178]). Complex-structure parameter dimensions, two model Dolbeault Hodge polynomials and Frölicher E1→E2 ranks in an exact prime-field specialization, Bismut period normalization; both I-C controlling appendix anchors located.</li>
+<li><strong>BH-IB-EV-0007</strong> (verification evidence only; MISSING_INDEPENDENT_PROOF_EVIDENCE): p1b:thm:v214-full-skt-locus ([7415, 7442]); p1b:cor:v214-canonical-kodaira ([7487, 7503]). The exact rank-one and rank-two ddbar algebra, positivity-condition reduction, and negative O(-2m,-2m) section count agree; complete compact holomorphic averaging and the global classification remain source-dependent.</li>
+<li><strong>BH-IB-EV-0008</strong> (verification evidence only; MISSING_INDEPENDENT_PROOF_EVIDENCE): p1b:thm:all-level-sampling ([9083, 9118]). Paper I-C gives an explicit T_{a,b} coisometry plus Schur orthogonality and compact convex-hull argument; independent combinatorial rank, degree-frontier, graph and tensor controls pass, but a full globally implemented bundle evaluation was not rerun for arbitrary m.</li>
+<li><strong>BH-IB-EV-0009</strong> (verification evidence only; MISSING_INDEPENDENT_PROOF_EVIDENCE): p1b:prop:g08-product ([13357, 13378]). Explicit 16-spinor Cl8 model, 112 gamma-traceless fibre, squared-symbol speeds 1 (96) and 9/16 (16), rank-35 trace-free symmetric fibre, and selected full Dirac multiplicity arithmetic.</li>
+<li><strong>BH-IB-EV-0010</strong> (verification evidence only; MISSING_INDEPENDENT_PROOF_EVIDENCE): p1b:prop:g10-product ([14530, 14552]). Reynolds projection for a faithful finite unitary model, Riemann–Hurwitz total ramification of a degree-12 map, 144 product degree, 288 Chern square, and 2T/2O/2I branch-order consistency.</li>
+<li><strong>BH-IB-EV-0011</strong> (minor; MISSING_EVIDENCE): None (None). Independently derive and convention-match the native midpoint covariant derivative, curvature Weitzenboeck Hessian, and positive ghost/gauge projection to the complete quotient spectral operator; preserve the actual compact gauge slice and normalization.</li>
+<li><strong>BH-IC-139-OR-0001</strong> (minor; NORMALIZATION_OR_READOUT): p1b:thm:g17-contact (1094). State which normalized fibre orientation and integration convention changes when residual fibre orientation reverses; Chern square and compatible fibre-first contact integral stay unchanged.</li>
+<li><strong>BH-IC-139-NM-0002</strong> (minor; NORMALIZATION_OR_READOUT): p1b:thm:v2217-nonconstant-cartan-dirac (16573). Identify the unit-sphere metric used by the proof in the displayed gradient energy on S^3_R, or insert the equivalent R² factor if expressing gradients using g_R.</li>
+</ul>
+<p>The <strong>11 inherited E3/E4 obligations</strong> are independent-proof/evidence limits rather than confirmed mathematical refutations. <strong>2 minor current-source ambiguities</strong> are orientation wording and radius-gradient normalization. The new tomography statement, 720-dimensional evaluation, and the 600-chamber kernel comparisons passed bounded controls; no new mathematical counterexample was demonstrated. Physical carrier/observable identities remain typed and conditional as in source.</p>
+<h2>Final audit classification and artifact integrity</h2>
+<p><code>FULLY_AUDITED_WITH_OPEN_GAPS</code>: all 506 source formal statements have an identified source and evidence status, while precise global independent proof tasks remain. Canonical graph theorem/assumption identities and inherited statuses are preserved. Current Paper1C audit layer: <code>DAG/AuditLayer/Paper1C-M8Geometry-v1_3/Index.json</code>; source archive <code>Sources-v3_019/</code> unmodified; only latest Paper1C audit report is present in ProofChainAudits v1_69.</p>
+<hr />
+<h2>Historical report v1_5, retained as embedded provenance, NOT an active v1_5 file</h2>
+<h1>Paper1C — CC18 current-source scope rebase (Paper1C-ProofChainAudit-v1_5.md)</h1>
+<p><strong>Latest source:</strong> <code>Paper1C-M8Geometry-v1_140.tex</code>; SHA-256 <code>b26b32973091d56b3ae87321f598245fca17850c35718c36627a70cc033143ed</code>.  <strong>Framework release:</strong> <code>Paper00-PapersMinimal-v3_019.zip</code> based on v3.018.  <strong>DAG release:</strong> <code>Paper00-DAGAtlas-v1_155.zip</code> based on v1.154.  <strong>Audit collection:</strong> <code>Paper00-ProofChainAudits-v1_68.zip</code> based on v1.67.</p>
+<p><strong>Scope and grade:</strong> <code>SOURCE_INTEGRATED_LOCAL_MATH_CHECKS / NEW_CLAIMS_NOT_FULLY_AUDITED</code>.  The historical audit below remains valid only for the original source body and the exact original manuscript version it names.  The added CC18 proof statements have formal source labels, precise dependency owners and reproducible finite/exact checks, but <strong>not a fresh exhaustive E3/E4 audit for this entire revised paper</strong>.  No old issue, open physical obligation, or conditional status is silently closed.  No physical occurrence/observable was promoted.</p>
+<p>New source-labelled mathematical result(s):</p>
+<ul>
+<li><code>p1c:prop:cc18-720-tomography-bound</code> — source-integrated auxiliary comparison, no physical-owner certificate.</li>
+</ul>
+<p><strong>Local evidence:</strong> <code>DAG/SourceUpdates/DAGCrossConnections-v1_9/</code> contains the independent exact-cubature, exact-block, independent facet-geometry and independent nonet reconstruction scripts from supplement v1.9; the release manifest records their replay status and the exact updated source anchors.  The predecessor audit, source text before the appended CC18 block, and all predecessor issue ledgers are preserved as provenance; source hash changed and must not be mistaken for E0 equality to the old manuscript.</p>
+<hr />
+<h2>Historical audit retained verbatim (not current-version re-certification)</h2>
+<h1>Paper I-C — Proof-chain audit and integrated independent-evidence update — v1_4</h1>
+<p><strong>Source currently registered:</strong> <code>Paper1C-M8Geometry-v1_138.tex</code> · SHA-256 <code>d953a7b07bec0909ee4d8396e5a727de4ab6367d50a56078baec123a8f63ff33</code>.
+<strong>Controlling technical appendix:</strong> <code>Paper1D-TechnicalMaterial-v1_66.tex</code> · SHA-256 <code>653482c0e4aa3013c015573a50d0350f136c5ef62da31bfd6c536daafcd9d020</code>.
+<strong>Framework archive:</strong> <code>Paper00-PapersMinimal-v3_013.zip</code>. <strong>DAG archive:</strong> <code>Paper00-DAGAtlas-v1_138.zip</code>.
+<strong>Verification protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code>; <code>Paper00-ProofChainAuditProtocol-v1_1.md</code>.</p>
+<h2>Current disposition, 2026-11-15</h2>
+<p>The source-integrated supplement adds independent derivation evidence for the <strong>same 490 formal statements</strong>, not new claimed theorems. All prior theorem labels, quantified statements and original proof bodies are preserved. This is a <strong>source/evidence rebase</strong>, not a new 490-statement independent re-audit. The prior 490/490 statement audit from <code>v1_3</code> remains the frozen historical baseline and is reproduced below.</p>
+<table>
+<thead>
+<tr>
+  <th>Evidence status</th>
+  <th>Canonical issue roots</th>
+  <th style="text-align:right">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Candidate full independent certificates; adjudication pending</td>
+  <td><code>BH-IB-EV-0005</code>, <code>BH-IB-EV-0007</code>, <code>BH-IB-EV-0008</code>, <code>BH-IB-EV-0011</code></td>
+  <td style="text-align:right">4</td>
+</tr>
+<tr>
+  <td>Partial independent derivations; explicit global steps remain</td>
+  <td><code>BH-IB-EV-0001</code>, <code>BH-IB-EV-0002</code>, <code>BH-IB-EV-0003</code>, <code>BH-IB-EV-0004</code>, <code>BH-IB-EV-0006</code>, <code>BH-IB-EV-0009</code>, <code>BH-IB-EV-0010</code></td>
+  <td style="text-align:right">7</td>
+</tr>
+<tr>
+  <td>Established mathematical counterexamples from this update</td>
+  <td>—</td>
+  <td style="text-align:right">0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rechecks:</strong> All five independently supplied verification scripts executed successfully in this update. They test exact icosahedral character moments, quotient/Morse low-spin algebra, mapping and boundary finite quotients, TT heat coefficients, and the physical gamma-traceless constant-orbital Rarita operator. They do not establish the missing global gauge or orbit classifications. Specifically, the ambient 16-dimensional projected Rarita kernel is <em>not</em> a physical 112-dimensional gamma-traceless zero mode.</p>
+<p><strong>Open proof boundaries:</strong> EV-0001 rank-two/fixed-Chern classification; EV-0002 full affine unframing; EV-0003 fixed-class/principal equivariant orbit enumeration; EV-0004 global gauge-image realization and relative spectral sequence; EV-0006 full global normal-form and twisted bracket; EV-0009 all-orbital constrained Rarita spectrum; EV-0010 correlated/nonfree stabilizer strata. The four candidate obligations remain open until a complete source-and-convention adjudication is performed.</p>
+<p><strong>DAG action:</strong> The canonical issues are source-rebased to <code>Paper1C-M8Geometry-v1_138.tex</code> and supplemented with reproducible evidence and scoped status fields. <strong>No theorem proof status is promoted and no issue is deleted.</strong> The historical theorem DAG and 490 existing statement hashes retain their identities. The release manifest and current audit-layer links refer to the updated archive versions.</p>
+<hr />
+<h2>Frozen original four-batch audit record, v1_3 (provenance)</h2>
+<h1>Paper I-C — Consolidated rigorous proof-chain audit — v1_3</h1>
+<p><strong>Authoritative current manuscript:</strong> <code>Paper1C-M8Geometry-v1_137.tex</code> (source archive <code>Paper00-PapersMinimal-v3_012.zip</code>)<br />
+<strong>Source SHA-256:</strong> <code>c09f2f8b49860114e0eb840c5414528efd16ff588e2e99f6d48aa03cb529b029</code><br />
+<strong>Current Atlas:</strong> <code>Paper00-DAGAtlas-v1_137.zip</code><br />
+<strong>Audit result:</strong> <code>FULLY_AUDITED_WITH_OPEN_GAPS</code> — <strong>490 / 490 formal-source objects reviewed; 11 open independent-proof E3/E4 evidence obligations; 0 established source-matched mathematical refutations</strong>.</p>
+<p>This replaces the migration-only <code>Paper1C-ProofChainAudit-v1_2.md</code>. Previous Paper I-B M8Geometry and Paper I-C TechnicalMaterial audit records are <strong>historical provenance</strong>; the current Paper I-C mathematical contents were source-rescoped in four current-source audit batches. <strong>No modification to the TeX paper</strong> occurred. Proof status never upgrades merely because a control script passes.</p>
+<h1>Paper I-C — Rigorous verification, Batch 4 (final), v1_1</h1>
+<p><strong>Source:</strong> <code>Paper1C-M8Geometry-v1_137.tex</code> · SHA-256 <code>c09f2f8b49860114e0eb840c5414528efd16ff588e2e99f6d48aa03cb529b029</code> · source release <code>Paper00-PapersMinimal-v3_012</code><br />
+<strong>Protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4</code> and proof-chain audit protocol.<br />
+<strong>Scope:</strong> formal objects <strong>375–490</strong> inclusive (zero-based indices 374–489); <strong>116 / 116</strong> source-bound objects.<br />
+<strong>Classification:</strong> <code>FULLY_AUDITED_WITH_OPEN_GAPS</code> as formal-object dispositions; <strong>NOT</strong> independent end-to-end proof certification for every global assertion.</p>
+<h2>Summary and exact scope</h2>
+<ul>
+<li><strong>109 historical</strong> statements rebound to exact current TeX, <strong>7 newly inserted</strong> statements individually classified, <strong>zero missing</strong> objects, <strong>101</strong> adjacent formal proof environments for this slice; a missing adjacent proof is not automatically an error for definitions and remarks or for material proved in adjacent section text.</li>
+<li><strong>284/284 new scope-limited checks passed:</strong> 272 restricted exact algebraic controls, six finite numerical/spectral controls, six E0 source/scope/domain checks. <strong>36 distinct statements</strong> directly targeted by new mathematical checks; the remaining statements were source-adjudicated and carry specifically marked earlier provenance, not newly proved from scratch.</li>
+<li><strong>2,916 / 2,916 historical checks rerun</strong>, in three separate independent-control suites (batches 8, 9, 10 from the predecessor manuscript). These are <em>reruns</em> on earlier inputs, <strong>not</strong> 2,916 new source-version mathematical certifications.</li>
+<li><strong>46</strong> previously reviewed material edges with targets in this batch rebound to current current source, of which eight are mathematically semantic rather than literal reference edges. <strong>Five new</strong> source-witnessed material edges for the newly inserted statements; others are not invented merely because they have cross-references.</li>
+<li><strong>69</strong> distinct literal source reference labels resolve across the current 31-paper corpus. <strong>One</strong> inherited formal statement and <strong>two</strong> proof bodies change paper <em>ownership / appendix-pointer wording only</em>. No changed mathematical formula or quantifier was detected in those three historical matches.</li>
+<li><strong>No exact in-domain counterexample established.</strong> Eleven previously open evidence obligations remain open; they are <em>not</em> proven false statements. No new axiom, paper edit, geometry, particle identity, or physical readout was introduced.</li>
+</ul>
+<h2>New source formal claims (seven)</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">Current index</th>
+  <th>Label</th>
+  <th>Source lines</th>
+  <th>Disposition</th>
+  <th>Verified boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">448</td>
+  <td><code>p1:thm:v188-exceptional-defect-residues</code></td>
+  <td>23613–23634</td>
+  <td>REPRODUCED</td>
+  <td>Derived-subgroup and exceptional quotient arithmetic; no new carrier states</td>
+</tr>
+<tr>
+  <td style="text-align:right">449</td>
+  <td><code>p1:cor:v188-trimer-as-2t-abelianization</code></td>
+  <td>23645–23661</td>
+  <td>REPRODUCED</td>
+  <td>2T/Q8 C₃ quotient / oriented trimer</td>
+</tr>
+<tr>
+  <td style="text-align:right">450</td>
+  <td><code>p1:cor:v188-square-pairs-2t-orientations</code></td>
+  <td>23670–23680</td>
+  <td>REPRODUCED</td>
+  <td>Square operation on C₃ quotient; not a group homomorphism on 2T</td>
+</tr>
+<tr>
+  <td style="text-align:right">451</td>
+  <td><code>p1:cor:v188-unique-exceptional-sign-residue</code></td>
+  <td>23690–23703</td>
+  <td>REPRODUCED</td>
+  <td>Real sign characters of exceptional groups; no particle identification</td>
+</tr>
+<tr>
+  <td style="text-align:right">452</td>
+  <td><code>p1:rem:v188-operation-carrier-firewall</code></td>
+  <td>23711–23719</td>
+  <td>FORMALIZED</td>
+  <td>Operation vs carrier explicitly distinguished</td>
+</tr>
+<tr>
+  <td style="text-align:right">453</td>
+  <td><code>p1:thm:v357-normal-jet-exact</code></td>
+  <td>23723–23752</td>
+  <td>REPRODUCED</td>
+  <td>Exact formal normal-jet sequence for declared splitting, tested on polynomial comparison models</td>
+</tr>
+<tr>
+  <td style="text-align:right">454</td>
+  <td><code>p1:rem:v357-normal-jet-scope</code></td>
+  <td>23767–23776</td>
+  <td>FORMALIZED</td>
+  <td>Normal-jet result does not imply physical action or gauge dynamics</td>
+</tr>
+</tbody>
+</table>
+<h3>Nontrivial mathematical controls</h3>
+<p>The 120-element binary icosahedral group is generated and multiplied with exact algebraic (golden-ratio) arithmetic; derived subgroup, abelianization and unique real-sign character claims are cross-checked with independently constructed 2T and 2O. Normal-jet exactness is tested on 20 polynomial/matrix instances, explicitly separating an additive comparison of jets from multiplicative constructions. Further finite exact tests cover F₇ quotient arithmetic, weighted residues, noncommuting resolvent compressions, 81 matrix-unit coefficients, balanced finite odd heat, and Born-exchange selection.</p>
+<p>These checks verify the <strong>stated algebraic identities in their tested domain</strong>. They do not prove global theorem hypotheses or select a physical measure or field dynamics. Source proof locations and their cryptographic hashes are in <code>Paper1C-RigorousVerificationBatch4Evidence-v1_1.json</code>.</p>
+<h2>All unresolved independent-verification issue roots</h2>
+<p>No issue ID is duplicated for a new source occurrence. Eleven historical issue identities are preserved as <em>evidence-only</em> obligations at their earliest established source origins:</p>
+<table>
+<thead>
+<tr>
+  <th>Issue</th>
+  <th>Exact remaining independent-proof obligation</th>
+  <th>Current origin excerpts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-IB-EV-0001</code></td>
+  <td>Reconstruct the source-specific obstruction/desuspension and fixed-rank bundle existence implications independently, including the adopted Čadek–Crabb–Vanžura and Yang hypotheses. The I-C appendices give a substantive source proof; current finite Chern and Smith tests are narrower.</td>
+  <td><code>p1b:thm:g15-unstable</code> L1521, <code>p1b:thm:g20-rank2-existence</code> L1632</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0002</code></td>
+  <td>Independently reconstruct the full level-12 mapping-component group, its affine determinant-unframing action on all relative filling torsors, and every claimed orbit count. The exact finite F2 shear and zero-Chern checks confirm only specified components.</td>
+  <td><code>p1b:thm:g20-rank2-fibre-even</code> L1664, <code>p1b:thm:v2170-ordinary-counts</code> L2091</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0003</code></td>
+  <td>Independently verify the equivariant Hopf target representation/underlying class and the coarse symmetric-square no-go; recheck the Dirac Lefschetz fixed-point application and the full principal descent classification. Arithmetic congruence checks are not the complete equivariant proof.</td>
+  <td><code>p1b:thm:g21-born-fixed-count</code> L2295, <code>p1b:thm:g21-index-obstruction</code> L2357</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0004</code></td>
+  <td>Independent equivariant Thom/Cartan–Leray calculation for W; actual global determinant-one/odd-winding gauge realizations and normalized boundary restrictions; independent source-specific I-C natural joining carry and torsor/forgetful orbit proofs.</td>
+  <td><code>p1b:prop:v2170-mixed-gluing</code> L2998, <code>p1b:lem:v2170-w-cohomology</code> L3040</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0005</code></td>
+  <td>Reconstruct the full degree-12 and degree-20 binary-icosahedral character overlaps and exact sibling Reynolds-projector geometry directly from fixed source coordinates, independently of the polynomial identities and the imported Paper II-F calculation. Confirm spectral multiplicities and source-specific dense-generation hypothesis.</td>
+  <td><code>p1b:thm:v273-triple-icosahedral-nineteen-design</code> L5003, <code>p1b:thm:v274-branch-symmetric-twin-convolution</code> L5080</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0006</code></td>
+  <td>Independently match the full Magnin normal-form hypotheses to u(2)⊕u(2), verify the global Fourier-character Dolbeault contraction and filtered quasi-isomorphism in I-C, and reconstruct the H-twisted generalized Kähler bracket integrability with exact convention.</td>
+  <td><code>p1b:thm:g22-global-complex</code> L7022, <code>p1b:thm:g16-model</code> L7213</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0007</code></td>
+  <td>Independently verify for every global invariant-complex-structure normal form the holomorphic left/right compact action required for SKT metric averaging, and the global holomorphic relative torus-tangent frame/connected-fibre descent used in the canonical-bundle claim.</td>
+  <td><code>p1b:thm:v214-full-skt-locus</code> L7409, <code>p1b:cor:v214-canonical-kodaira</code> L7481</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0008</code></td>
+  <td>Independently reconstruct the all-m homogeneous Spin(4)/SU(2)<em>diag section-model isometry and its polynomial degree bound for every retained U</em>{a,b}, and confirm the positive quadrature transports each specified finite coefficient function without identifying untransported operators.</td>
+  <td><code>p1b:thm:all-level-sampling</code> L9077</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0009</code></td>
+  <td>Independently reproduce the full global constrained transverse-traceless and Rarita–Schwinger eigenspaces/multiplicities, their domain restrictions and resulting product heat/zeta coefficients, rather than only the gamma-projected principal symbol and finite Dirac labels.</td>
+  <td><code>p1b:prop:g08-product</code> L13351</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0010</code></td>
+  <td>Independently verify the global finite quotient kernel normalization, selected free/nonfree quotient stabilizer cases, and the source-specific degree-twelve reference pencil ramification/branch-locus geometry beyond the general Riemann–Hurwitz and Chern-class calculations.</td>
+  <td><code>p1b:prop:g10-product</code> L14524</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0011</code></td>
+  <td>Independently derive and convention-match the native midpoint covariant derivative, curvature Weitzenboeck Hessian, and positive ghost/gauge projection to the complete quotient spectral operator; preserve the actual compact gauge slice and normalization.</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<h2>Registration repair and graph status</h2>
+<p><code>BH-IC-DAG-0001</code>: The predecessor <code>Paper1B-M8Geometry</code> historical audit and <code>Paper1C-TechnicalMaterial</code> historical audit have been treated as predecessor provenance, not as the <strong>current</strong> Paper I-C / I-D owners. In the successor Atlas, the authoritative new <code>Paper1C-M8Geometry-v1_1</code> audit layer names <code>Paper1C-M8Geometry-v1_137.tex</code>, preserving the older layers as historical traceability. This is <strong>RESOLVED in the final archive</strong>, not a mathematical failure. The inherited <code>p1b:</code> labels remain canonical; they are not renamed, since labels are identities independent of the paper filename. A small set of assertions already present in Paper I-B / I-A is linked as additional occurrences rather than given duplicate foundational owners.</p>
+<p><strong>Registration limitations:</strong> The current source has seven added formal objects compared with the 483-statement historical paper, but four of the group-theoretic labels also occur at their prior source-owner; do not create duplicate graph nodes. Two truly new normal-jet labels require new global claim nodes. Source-normalized matching alone does not independently prove the global spectral assertions; the eleven issue roots remain open.</p>
+<h2>Complete four-batch census</h2>
+<table>
+<thead>
+<tr>
+  <th>Batch</th>
+  <th style="text-align:right">Claims</th>
+  <th style="text-align:right">New passing controls</th>
+  <th>Source-review position</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td style="text-align:right">126</td>
+  <td style="text-align:right">24</td>
+  <td>Reciprocal topology, bundle, Born exchange and initial finite sampling</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td style="text-align:right">124</td>
+  <td style="text-align:right">84</td>
+  <td>Finite representations, complex and spectral geometry</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td style="text-align:right">124</td>
+  <td style="text-align:right">174</td>
+  <td>Morse, response, torsion/Dirac and singular spectral construction</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td style="text-align:right">116</td>
+  <td style="text-align:right">284</td>
+  <td>Exceptional algebra, normal-jet, boundary response and positive sources</td>
+</tr>
+<tr>
+  <td><strong>Total</strong></td>
+  <td style="text-align:right"><strong>490</strong></td>
+  <td style="text-align:right"><strong>566</strong></td>
+  <td><strong>490/490 dispositions, 11 unresolved independent-proof roots</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Full-source statuses comprise <strong>214 VERIFIED, 74 VERIFIED-CONDITIONAL, 152 REPRODUCED, 50 FORMALIZED</strong>. 483 inherited statuses are historical dispositions with explicit source reconciliation, not new certification. Of 490 statements, 419 have an immediately associated formal proof, while 420 proof environments are present; remaining definitions, remarks and section derivations receive source-specific classification rather than automated failure.</p>
+<p><strong>Evidence grading:</strong> E0 anchors/hashes/label check are administrative, E1 replay means source-same argument, E2 a bounded numerical attack, E3 exact independent calculation in a restricted domain; no E4 externally independent global proof for all open roots has been obtained. No separate parallel agents took part in this session.</p>
+<h2>Outputs and provenance</h2>
+<ul>
+<li><code>Paper1C-RigorousVerificationBatch4Evidence-v1_1.json</code>: 116 source-linked formal objects, exact source proof texts, labels, hashes, changed wording, reviewed edge witnesses, and E0/E1/E2/E3 provenance.</li>
+<li><code>Paper1C-IndependentControlsBatch4-v1_1.py</code> + <code>...Batch4Results-v1_1.json</code>: the direct reproducibility of all new restricted controls.</li>
+<li><code>Paper1C-ProofChainAudit-v1_3.md</code>: current-source consolidated replacement for the formerly migration-only v1_2 report, with all 11 issue IDs and complete four-batch evidence lineage.</li>
+<li>Final Atlas and ProofChainAudits versions increment <strong>once</strong>: <code>Paper00-DAGAtlas-v1_137.zip</code> and <code>Paper00-ProofChainAudits-v1_53.zip</code>. Sources remain byte-unchanged and historical audit layers retain their own provenance.</li>
+</ul>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

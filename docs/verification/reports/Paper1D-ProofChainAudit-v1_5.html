@@ -1,0 +1,2942 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper1D-ProofChainAudit-v1_5 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper1D-ProofChainAudit-v1_5 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper1D ProofChainAudit v1_5</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper1D-ProofChainAudit-v1_5.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Paper I-D — Proof-Chain Audit v1.5: Full Source-Reconciled Rigorous DAG Assessment</h1>
+<p><strong>Current source:</strong> <code>Paper1D-TechnicalMaterial-v1_67.tex</code> (SHA-256 <code>3cd6ae8bb286536ef7bc871d359996309e53ac3a6aed89917a5a82c53b6dcb2a</code>), 26,561 TeX lines. <strong>Current archive:</strong> <code>Paper00-PapersMinimal-v3_019</code>; <strong>protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code>. <strong>Audit date:</strong> 2026-11-16.</p>
+<p><strong>Final classification: <code>FULLY_AUDITED_WITH_OPEN_GAPS</code></strong>. All 279 formal environments and 39 indexed substantive unnamed modules source-bound; current dispositions: 72 <code>VERIFIED</code>, 111 <code>VERIFIED-CONDITIONAL</code>, 82 <code>REPRODUCED</code>, 11 <code>FORMALIZED</code>, 3 <code>UNRESOLVED-EVIDENCE</code>. <strong>These are adjudicated historical/source dispositions, not 279 newly independently re-proved theorems.</strong></p>
+<p>Batch reviews: 1–50 (B1), 51–117 (B2), 118–151 (B3), 152–200 (B4), 201–279 (B5). Current complete source statements and byte hashes are in linked <code>DAG/AuditLayer/Paper1D-TechnicalMaterial-v1_2/AuditClaimLedger.json</code>. The full current source, not v1.66 historical excerpts, controls all claims.</p>
+<p>The four earlier independently observed issue roots and their limits are retained. The new <code>BH-ID-EV-0002</code> remains conditional on whole original paired-bigon global homotopy. The 279-object missing DAG-registration root <code>BH-ID-DAG-0002</code> is <strong>resolved at the DAG level only</strong>, without theorem promotion. Original 490-simplex cochains, directed-rounding NZ.4 boxes and F40 chamber/E8 predecessor artifacts remain absent; four available archived finite-geometry scripts were replayed.</p>
+<p><strong>All open roots:</strong> <code>BH-IB-EV-0001</code>, <code>BH-IB-EV-0002</code>, <code>BH-IB-EV-0003</code>, <code>BH-IB-EV-0004</code>, <code>BH-IB-EV-0006</code>, <code>BH-IB-EV-0009</code>, <code>BH-IB-EV-0010</code>, <code>BH-IC-EV-0001</code>, <code>BH-IC-EV-0002</code>, <code>BH-ID-EV-0001</code>, <code>BH-ID-EV-0002</code>.</p>
+<p><strong>Scoped closings:</strong> <code>BH-IB-EV-0005</code>, <code>BH-IB-EV-0007</code>, <code>BH-IB-EV-0008</code>, <code>BH-IB-EV-0011</code>, <code>BH-ID-DAG-0001</code>, <code>BH-ID-DAG-0002</code>. These do not license unconditional global classification or physical occurrence.</p>
+<p><strong>This report supersedes the previous active audit, but preserves its full text below for evidence/provenance only.</strong></p>
+<h2>New current-source batch 5 and integration report</h2>
+<h1>Paper I-D — Rigorous Verification DAG Audit, Final Batch 5 (v1.1)</h1>
+<p><strong>Frozen source:</strong> <code>Paper1D-TechnicalMaterial-v1_67.tex</code>, SHA-256 <code>3cd6ae8bb286536ef7bc871d359996309e53ac3a6aed89917a5a82c53b6dcb2a</code>, 26,561 lines in <code>Paper00-PapersMinimal-v3_019(1).zip</code>.
+<strong>Protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code>. <strong>One-paper remit:</strong> I-D only. No manuscript repair or new theory.
+<strong>Scope:</strong> claim objects 201–279 inclusive (79); cumulative 279/279 formal environments, plus 39 source-indexed substantive unnamed paragraph modules. No global framework verification claim.</p>
+<h2>Frozen target and status</h2>
+<p>The source contains 272 previously indexed formal objects, six IC19 propositions/theorem and a final unlabeled scope remark; the 279-object count is the directly extracted TeX environment count. Earlier reports sometimes counted the closing remark only as prose. <strong>Current evidence statuses are inherited or source-guarded</strong>, not promoted from finite calculations.</p>
+<table>
+<thead>
+<tr>
+  <th>Disposition</th>
+  <th style="text-align:right">Number of current formal statements</th>
+  <th>Source of assessment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>REPRODUCED</code></td>
+  <td style="text-align:right">82</td>
+  <td>historical source-matched disposition and guarded IC19 integration</td>
+</tr>
+<tr>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td style="text-align:right">111</td>
+  <td>historical source-matched disposition and guarded IC19 integration</td>
+</tr>
+<tr>
+  <td><code>VERIFIED</code></td>
+  <td style="text-align:right">72</td>
+  <td>historical source-matched disposition and guarded IC19 integration</td>
+</tr>
+<tr>
+  <td><code>FORMALIZED</code></td>
+  <td style="text-align:right">11</td>
+  <td>historical source-matched disposition and guarded IC19 integration</td>
+</tr>
+<tr>
+  <td><code>UNRESOLVED-EVIDENCE</code></td>
+  <td style="text-align:right">3</td>
+  <td>historical source-matched disposition and guarded IC19 integration</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Classification:</strong> <code>FULLY_AUDITED_WITH_OPEN_GAPS</code>; no new source-matched mathematical counterexample established. The phrase <strong>fully audited</strong> means every source result has an explicit recorded disposition and evidence limit, not that all claims were independently E3/E4 certified.</p>
+<h2>Batch 5 independent E2/E3/E4 checks</h2>
+<p><strong>1,507 successful scoped assertions</strong> across 13 families from <code>Paper1D-Batch5IndependentControls-v1_1.py</code> and its machine-readable result. Family-level provenance distinguishes exact symbolic evidence from bounded examples and E2 corroboration; see JSON. Fresh source checks include:</p>
+<ul>
+<li>Weighted reciprocal involution and Euler anticommutation; exact conjugate pairs and quotient-type reductions under their stated regularity/domain.</li>
+<li>Schur-complement Gaussian return kernel and Dirichlet-to-Neumann matrix relations, with positivity/linear-invertibility guards retained.</li>
+<li>Independent 600-cell coordinate reconstruction over Q(√5): 120 vertices, 720 graph edges, 600 tetrahedral facets, degree 12; this is not a full executable chamber-transporter certificate.</li>
+<li>Hurwitz exact quadrature average 1/12 versus round 1/16; their discrepancy is 1/48 on the source-selected test polynomial, not a universal physical correction.</li>
+<li>F40 minimal-polynomial and formal reciprocal inverse, not the full source-specific gluings or every relevant eigenvector.</li>
+<li>Pauli–Dirac polynomial matrix controls for Fischer kernel dimensions at degrees 1–4, not an all-degree global spectral certificate.</li>
+<li>Additional reciprocal contact, convexity, zeta-formal and parity checks; numerical examples cannot prove a continuous-domain statement.</li>
+</ul>
+<p><strong>Archived executables:</strong> 4 independently rerun and passed: <code>HadronScaleTest-v1_10</code>, <code>PetersenBridges-v1_3</code>, <code>ReciprocalSignedCoupling-v1_1</code>, and <code>ThreeCycleReconstruction-v1_2</code>. <code>F40MirrorGluing-v1_1</code> did not replay because required <code>PetersenHodgePlucker-v1_10</code> is absent from the archive; record it as a <em>missing evidence dependency</em>, not a mathematical contradiction. Other chamber and NZ.4 certificate sources are likewise not present.</p>
+<h2>Current source objects 201–279</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">No.</th>
+  <th>Source label</th>
+  <th style="text-align:right">TeX line(s)</th>
+  <th>Prior/source disposition</th>
+  <th>Scoped check families</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">201</td>
+  <td><code>p1b:def:weighted-born-pullback</code></td>
+  <td style="text-align:right">20692–20703</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">202</td>
+  <td><code>p1b:thm:born-euler-anticommutation</code></td>
+  <td style="text-align:right">20705–20736</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_EULER_</td>
+</tr>
+<tr>
+  <td style="text-align:right">203</td>
+  <td><code>p1b:prop:born-hessian-quotient-obstruction</code></td>
+  <td style="text-align:right">20752–20764</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_QUADRATIC_</td>
+</tr>
+<tr>
+  <td style="text-align:right">204</td>
+  <td><code>p1b:thm:reciprocal-readout-refinement</code></td>
+  <td style="text-align:right">20779–20790</td>
+  <td><code>VERIFIED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">205</td>
+  <td><code>p1b:thm:paired-hessian-euler</code></td>
+  <td style="text-align:right">20805–20818</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_EULER_, E3_QUADRATIC_</td>
+</tr>
+<tr>
+  <td style="text-align:right">206</td>
+  <td><code>p1b:cor:born-euler-quadratic-reconstruction</code></td>
+  <td style="text-align:right">20837–20855</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_QUADRATIC_</td>
+</tr>
+<tr>
+  <td style="text-align:right">207</td>
+  <td><code>p1b:prop:evaluation-legendre-contact-lift</code></td>
+  <td style="text-align:right">20874–20889</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_CONTACT_</td>
+</tr>
+<tr>
+  <td style="text-align:right">208</td>
+  <td><code>p1b:prop:reciprocal-connection-lifts</code></td>
+  <td style="text-align:right">20903–20912</td>
+  <td><code>VERIFIED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">209</td>
+  <td><code>p1b:prop:reciprocal-affine-contact-lifts</code></td>
+  <td style="text-align:right">20924–20943</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_CONTACT_</td>
+</tr>
+<tr>
+  <td style="text-align:right">210</td>
+  <td><code>p1b:cor:eh-fixed-affine-reciprocity</code></td>
+  <td style="text-align:right">20959–20970</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_QUADRATIC_</td>
+</tr>
+<tr>
+  <td style="text-align:right">211</td>
+  <td><code>p1b:thm:reciprocal-convexity-test</code></td>
+  <td style="text-align:right">20988–21007</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_LAURENT_</td>
+</tr>
+<tr>
+  <td style="text-align:right">212</td>
+  <td><code>p1b:cor:reciprocal-cubic-window</code></td>
+  <td style="text-align:right">21021–21033</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_LAURENT_, E4_CONVEXITY_</td>
+</tr>
+<tr>
+  <td style="text-align:right">213</td>
+  <td><code>p1b:thm:global-integer-laurent-rigidity</code></td>
+  <td style="text-align:right">21046–21054</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_LAURENT_, E4_CONVEXITY_</td>
+</tr>
+<tr>
+  <td style="text-align:right">214</td>
+  <td><code>p1b:prop:euler-response-dressing-compatibility</code></td>
+  <td style="text-align:right">21074–21090</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_EULER_</td>
+</tr>
+<tr>
+  <td style="text-align:right">215</td>
+  <td><code>p1b:thm:dressed-convexity</code></td>
+  <td style="text-align:right">21108–21140</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">216</td>
+  <td><code>p1b:thm:trace-calculus</code></td>
+  <td style="text-align:right">21170–21212</td>
+  <td><code>VERIFIED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">217</td>
+  <td><code>p1b:thm:uniform-trace-bound</code></td>
+  <td style="text-align:right">21233–21254</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">218</td>
+  <td><code>p1b:cor:quadratic-response</code></td>
+  <td style="text-align:right">21291–21306</td>
+  <td><code>VERIFIED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">219</td>
+  <td><code>p1b:thm:conformal-hessian</code></td>
+  <td style="text-align:right">21329–21359</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">220</td>
+  <td><code>p1b:thm:all-order-schur</code></td>
+  <td style="text-align:right">21382–21405</td>
+  <td><code>VERIFIED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">221</td>
+  <td><code>p1b:thm:v124-boundary-tangent-groupoid</code></td>
+  <td style="text-align:right">21433–21457</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">222</td>
+  <td><code>p1b:def:v124-gaussian-return-kernel</code></td>
+  <td style="text-align:right">21470–21490</td>
+  <td><code>FORMALIZED</code></td>
+  <td>E3_GAUSSIAN_</td>
+</tr>
+<tr>
+  <td style="text-align:right">223</td>
+  <td><code>p1b:thm:v124-return-coordinate-collar</code></td>
+  <td style="text-align:right">21492–21517</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_GAUSSIAN_, E4_GAUSSIAN_SCOPE_</td>
+</tr>
+<tr>
+  <td style="text-align:right">224</td>
+  <td><code>p1b:thm:v124-return-gluing</code></td>
+  <td style="text-align:right">21536–21547</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_GAUSSIAN_</td>
+</tr>
+<tr>
+  <td style="text-align:right">225</td>
+  <td><code>p1b:cor:v124-capped-dtn-cayley</code></td>
+  <td style="text-align:right">21559–21573</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_GAUSSIAN_</td>
+</tr>
+<tr>
+  <td style="text-align:right">226</td>
+  <td><code>p1b:cor:v124-boundary-riccati</code></td>
+  <td style="text-align:right">21587–21603</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_GAUSSIAN_</td>
+</tr>
+<tr>
+  <td style="text-align:right">227</td>
+  <td><code>p1b:def:v124-boundary-gluing-constructor</code></td>
+  <td style="text-align:right">21614–21623</td>
+  <td><code>FORMALIZED</code></td>
+  <td>E3_GAUSSIAN_</td>
+</tr>
+<tr>
+  <td style="text-align:right">228</td>
+  <td><code>p1b:rem:v124-boundary-gluing-owner-firewall</code></td>
+  <td style="text-align:right">21625–21628</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">229</td>
+  <td><code>p1b:prop:heat-curvature</code></td>
+  <td style="text-align:right">21683–21694</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">230</td>
+  <td><code>p1b:prop:g11-transgression</code></td>
+  <td style="text-align:right">22654–22671</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">231</td>
+  <td><code>p1b:thm:g11-functional</code></td>
+  <td style="text-align:right">22693–22714</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">232</td>
+  <td><code>p1b:prop:g11-fluctuations</code></td>
+  <td style="text-align:right">22735–22751</td>
+  <td><code>VERIFIED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">233</td>
+  <td><code>p1b:thm:full-kink-hessian</code></td>
+  <td style="text-align:right">22788–22815</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">234</td>
+  <td><code>p1b:thm:compactified-kink-kernel</code></td>
+  <td style="text-align:right">22841–22858</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">235</td>
+  <td><code>p1b:lem:g13-theta</code></td>
+  <td style="text-align:right">23119–23144</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">236</td>
+  <td><code>p1b:prop:g13-ladder</code></td>
+  <td style="text-align:right">23175–23190</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">237</td>
+  <td><code>p1b:prop:g13-magnetic</code></td>
+  <td style="text-align:right">23219–23238</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">238</td>
+  <td><code>p1b:prop:g18-dilations</code></td>
+  <td style="text-align:right">23674–23689</td>
+  <td><code>VERIFIED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">239</td>
+  <td><code>p1b:prop:g18-second-fundamental</code></td>
+  <td style="text-align:right">23695–23718</td>
+  <td><code>VERIFIED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">240</td>
+  <td><code>p1b:prop:cyclic-associator-closure</code></td>
+  <td style="text-align:right">24226–24237</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">241</td>
+  <td><code>p1b:prop:ordinary-born-component-translation</code></td>
+  <td style="text-align:right">24265–24279</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">242</td>
+  <td><code>p1b:prop:exotic-born-square-obstruction</code></td>
+  <td style="text-align:right">24330–24343</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">243</td>
+  <td><code>p1c:prop:v242-native-family-cubic</code></td>
+  <td style="text-align:right">24662–24684</td>
+  <td><code>VERIFIED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">244</td>
+  <td><code>Paper1D:unlabeled:0244:L24734</code></td>
+  <td style="text-align:right">24734–24742</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">245</td>
+  <td><code>p1c:prop:v243-reynolds-character-replay</code></td>
+  <td style="text-align:right">24752–24778</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">246</td>
+  <td><code>p1c:prop:v243-four-atom-moment-proof</code></td>
+  <td style="text-align:right">24804–24827</td>
+  <td><code>VERIFIED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">247</td>
+  <td><code>p1c:prop:v243-icosian-sextic-riesz-proof</code></td>
+  <td style="text-align:right">24852–24862</td>
+  <td><code>VERIFIED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">248</td>
+  <td><code>p1c:prop:v243-neutral-boundary-source-proof</code></td>
+  <td style="text-align:right">24882–24906</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">249</td>
+  <td><code>p1c:thm:v340-hp2-edge-orbits</code></td>
+  <td style="text-align:right">24993–25017</td>
+  <td><code>REPRODUCED</code></td>
+  <td>E3_PETERSEN_</td>
+</tr>
+<tr>
+  <td style="text-align:right">250</td>
+  <td><code>p1c:prop:v340-hp2-local-coeff-obstruction</code></td>
+  <td style="text-align:right">25036–25059</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_PETERSEN_</td>
+</tr>
+<tr>
+  <td style="text-align:right">251</td>
+  <td><code>p1:prop:v203-quadratic-alias-witness</code></td>
+  <td style="text-align:right">25143–25152</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_2T_QUADRATURE_</td>
+</tr>
+<tr>
+  <td style="text-align:right">252</td>
+  <td><code>p1:cor:v203-geometric-positive-polar</code></td>
+  <td style="text-align:right">25162–25173</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">253</td>
+  <td><code>p1:thm:HS-invariance</code></td>
+  <td style="text-align:right">25242–25252</td>
+  <td><code>VERIFIED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">254</td>
+  <td><code>p1:thm:tensor-trace</code></td>
+  <td style="text-align:right">25259–25269</td>
+  <td><code>VERIFIED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">255</td>
+  <td><code>p1:thm:commutant-trace-mult</code></td>
+  <td style="text-align:right">25275–25283</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">256</td>
+  <td><code>p1c:prop:v341-coefficient-rank-and-topology</code></td>
+  <td style="text-align:right">25297–25320</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">257</td>
+  <td><code>p1c:prop:v342-threecycle-exact-certificate</code></td>
+  <td style="text-align:right">25339–25355</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">258</td>
+  <td><code>p1c:prop:v343-signed-coupling-certificate</code></td>
+  <td style="text-align:right">25375–25392</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">259</td>
+  <td><code>p1c:prop:v344-hurwitz-petersen-verification</code></td>
+  <td style="text-align:right">25414–25431</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">260</td>
+  <td><code>p1c:prop:v345-f40-certificate</code></td>
+  <td style="text-align:right">25449–25471</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">261</td>
+  <td><code>p1c:thm:v349-f40-23-equations</code></td>
+  <td style="text-align:right">25485–25516</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">262</td>
+  <td><code>p1c:prop:v349-f40-rational-frame-inverse</code></td>
+  <td style="text-align:right">25532–25549</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_F40_POLYNOMIAL_</td>
+</tr>
+<tr>
+  <td style="text-align:right">263</td>
+  <td><code>p1c:prop:v349-comparison-proof-register</code></td>
+  <td style="text-align:right">25558–25567</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">264</td>
+  <td><code>p1c:thm:v357-spinor-fischer</code></td>
+  <td style="text-align:right">25575–25601</td>
+  <td><code>VERIFIED</code></td>
+  <td>E3_FISCHER_</td>
+</tr>
+<tr>
+  <td style="text-align:right">265</td>
+  <td><code>p1c:thm:v357-spinor-filtration</code></td>
+  <td style="text-align:right">25615–25642</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>E3_FISCHER_</td>
+</tr>
+<tr>
+  <td style="text-align:right">266</td>
+  <td><code>p1c:rem:v357-spinor-filtration-scope</code></td>
+  <td style="text-align:right">25658–25667</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">267</td>
+  <td><code>p1c:rem:v365-hurwitz-candidate-quarantine</code></td>
+  <td style="text-align:right">25697–25710</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">268</td>
+  <td><code>p1c:prop:v366-exact-coordinate-chamber</code></td>
+  <td style="text-align:right">25725–25761</td>
+  <td><code>UNRESOLVED-EVIDENCE</code></td>
+  <td>E3_600CELL_</td>
+</tr>
+<tr>
+  <td style="text-align:right">269</td>
+  <td><code>p1c:prop:v366-cumulative-hurwitz-certificates</code></td>
+  <td style="text-align:right">25774–25799</td>
+  <td><code>UNRESOLVED-EVIDENCE</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">270</td>
+  <td><code>p1c:rem:v366-hurwitz-source-corrections</code></td>
+  <td style="text-align:right">25810–25823</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">271</td>
+  <td><code>p1c:prop:v370-e8-finite-certificate</code></td>
+  <td style="text-align:right">25837–25873</td>
+  <td><code>UNRESOLVED-EVIDENCE</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">272</td>
+  <td><code>p1c:rem:v370-e8-provenance</code></td>
+  <td style="text-align:right">25889–25897</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">273</td>
+  <td><code>p1d:prop:ic19-stable-rank-three</code></td>
+  <td style="text-align:right">26309–26321</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">274</td>
+  <td><code>p1d:prop:ic19-compatible-seeds</code></td>
+  <td style="text-align:right">26334–26350</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">275</td>
+  <td><code>p1d:prop:ic19-first-postnikov-action</code></td>
+  <td style="text-align:right">26377–26392</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>E2_IC19_PARITY_</td>
+</tr>
+<tr>
+  <td style="text-align:right">276</td>
+  <td><code>p1d:prop:ic19-lens-torsion</code></td>
+  <td style="text-align:right">26402–26420</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+<tr>
+  <td style="text-align:right">277</td>
+  <td><code>p1d:prop:ic19-top-transgression</code></td>
+  <td style="text-align:right">26444–26456</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>E2_IC19_PARITY_</td>
+</tr>
+<tr>
+  <td style="text-align:right">278</td>
+  <td><code>p1d:thm:ic19-natural-determinant-route</code></td>
+  <td style="text-align:right">26467–26484</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>E2_IC19_PARITY_</td>
+</tr>
+<tr>
+  <td style="text-align:right">279</td>
+  <td><code>Paper1D:unlabeled:0279:L26533</code></td>
+  <td style="text-align:right">26533–26554</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Source/proof review; no fresh full-E3</td>
+</tr>
+</tbody>
+</table>
+<p>The complete, byte-source-extracted unabridged statements, proof spans and SHA-256 per object are in <code>AuditClaimLedger.json</code>. All 39 unnamed mathematical module anchors are recorded in <code>UnnamedMaterialDerivations.json</code> and are not falsely counted as extra formal theorem environments.</p>
+<h2>Complete open issue root register (11)</h2>
+<table>
+<thead>
+<tr>
+  <th>Issue</th>
+  <th>Class / severity</th>
+  <th>Source locus</th>
+  <th>Precise remaining obligation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-IB-EV-0001</code></td>
+  <td><code>CONDITIONAL_FRONTIER</code> / major</td>
+  <td>273; 26309–26332</td>
+  <td>Fixed-stable-class rank-three realizability is source-proved; rank-two fixed-Chern unstable fibre multiplicities and complete equivariant classification are not. <strong>Needed:</strong> Complete source-matched unstable rank-two fibre enumeration, preserving fixed stable class and Chern coordinates.</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0002</code></td>
+  <td><code>MISSING_EVIDENCE</code> / major</td>
+  <td>275; 26377–26401</td>
+  <td>Printed first Postnikov/retract determinant formula is limited to the first stage; full eight-dimensional secondary affine action is not certified. <strong>Needed:</strong> Construct/source-verify all higher-stage determinant orbit actions on full M8; do not extrapolate from retract.</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0003</code></td>
+  <td><code>CONDITIONAL_FRONTIER</code> / major</td>
+  <td>274,278; 26334–26375,26467–26531</td>
+  <td>Principal SU(2) exotic lift no-go is checked in its domain, but complete mixed/equivariant lift and gauge comparison remains conditional. <strong>Needed:</strong> Exact global mixed and equivariant lift classification with matching isotropy and boundary frames.</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0004</code></td>
+  <td><code>CONDITIONAL_FRONTIER</code> / major</td>
+  <td>274–278; 26334–26531</td>
+  <td>The local G20/G21 seeds and natural joining route have named premises; complete global image of every boundary gauge has not been shown. <strong>Needed:</strong> Full global boundary-gauge image/exhaustiveness certificate, not just explicit representatives.</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0006</code></td>
+  <td><code>MISSING_EVIDENCE</code> / moderate</td>
+  <td>historical audit; closing scope remark 279 lines 26533–26554</td>
+  <td>Declared Hermitian-family subresults do not establish an entire unrestricted global normal-form and generalized-Kähler classification. <strong>Needed:</strong> Independent full-domain global normal-form/classification check at original quantifiers.</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0009</code></td>
+  <td><code>MISSING_EVIDENCE</code> / moderate</td>
+  <td>historical audit; scope remark 279</td>
+  <td>Partial finite-mode checks do not certify the complete all-orbital TT/Rarita–Schwinger zeta/heat spectrum. <strong>Needed:</strong> Source-matched all-orbital spectral and heat/zeta completeness certificate.</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0010</code></td>
+  <td><code>MISSING_EVIDENCE</code> / moderate</td>
+  <td>historical audit; scope remark 279</td>
+  <td>Global quotient stabilizers and orbifold kernel structure have not been exhaustively reconstructed. <strong>Needed:</strong> Full stabilizer/kernel/orbit calculation with exact quotient domain and isotropy.</td>
+</tr>
+<tr>
+  <td><code>BH-IC-EV-0001</code></td>
+  <td><code>MISSING_EVIDENCE</code> / moderate</td>
+  <td>NZ.4 source proof; historical batch 3</td>
+  <td>NZ.4 Hessian 50-decimal directed-rounding interval certificate is absent; local inverse/cap alternative does not replay that certificate. <strong>Needed:</strong> Original directed-rounding all-domain boxes, round mode and executable certificate.</td>
+</tr>
+<tr>
+  <td><code>BH-IC-EV-0002</code></td>
+  <td><code>MISSING_EVIDENCE</code> / major</td>
+  <td>260–261, 268–271; historical audit</td>
+  <td>Original F40, Hurwitz chamber and E8 source-matched finite certificate suite is incomplete. Four available neighboring geometry scripts passed, but the F40 mirror replay stops at a missing predecessor. <strong>Needed:</strong> Complete original raw source-matched executables/data, including the missing Petersen Hodge-Plücker v1_10 predecessor and chamber/E8 certificates.</td>
+</tr>
+<tr>
+  <td><code>BH-ID-EV-0001</code></td>
+  <td><code>MISSING_EVIDENCE</code> / moderate</td>
+  <td>RT.57/RT.59; historical batch 2</td>
+  <td>490-simplex/triangulation and cochain calibration original raw data are absent; finite group controls do not reproduce the calibrated cup-product test. <strong>Needed:</strong> Supply original simplicial facets, incidence/cochains and exact executable with checksums.</td>
+</tr>
+<tr>
+  <td><code>BH-ID-EV-0002</code></td>
+  <td><code>CONDITIONAL_FRONTIER</code> / moderate</td>
+  <td>278 lines 26467–26531</td>
+  <td>A checked odd-degree/factor arithmetic and final 4/14 count do not on their own independently reproduce the original global paired-bigon homotopy and joining class. <strong>Needed:</strong> Independent source-exact original paired-bigon and based homotopy proof including both inverse K factors and entire noncommutative difference word.</td>
+</tr>
+</tbody>
+</table>
+<h3>Resolved or scope-closed roots — without stronger inference</h3>
+<ul>
+<li><code>BH-IB-EV-0005</code> — Marked 2I character, cubature and finite sample scope only.</li>
+<li><code>BH-IB-EV-0007</code> — Declared pluriclosed Hermitian family only.</li>
+<li><code>BH-IB-EV-0008</code> — Finite homogeneous and positive-sampling family only.</li>
+<li><code>BH-IB-EV-0011</code> — Classical spatial midpoint YM Hessian only.</li>
+<li><code>BH-ID-DAG-0001</code> — Previous I-D registration discrepancy resolved in inherited audit.</li>
+<li><code>BH-ID-DAG-0002</code> — Current full 279-object DAG coverage and formal closure remark reconciled in v1.156.</li>
+</ul>
+<h2>Dependency and propagation integrity</h2>
+<ul>
+<li>20 newly source-reviewed <em>local</em> material proof-use edges in Batch 5; 8 additional source-reviewed local links from Batch 4. Each is typed with use locator, AND-route and scope guard. Only cycle-free, ID-resolved edges are registered in the global combined material graph.</li>
+<li>408 distinct current-corpus cross-references are <strong>CANDIDATE_LINK/CITATION_ONLY</strong> and quarantined, rather than being bulk promoted to proof ancestry; both source-reported and imported scopes remain attached.</li>
+<li>Existing global canonical assumption nodes are reused; this run adds no G0/GP1–GP3 or hypothetical new axiom. Named G15/G20/G21, exchange, framing, root-cap and relative Thom prerequisites are guarded use records, not newly assumed unconditional facts.</li>
+<li>Material downstream impacts are path-queried from actual direct edges. Citation resemblance is tagged <code>POSSIBLY_AFFECTED</code>; no remote-paper theorem or physical decay rate is refuted or certified by association.</li>
+<li>The initial <code>BH-ID-DAG-0002</code> census/integration gap is closed: registered 279 exact current I-D claims and 11 missing canonical formal-object nodes while preserving prior 268 canonical nodes and source statuses. Historical stage remains as provenance only.</li>
+</ul>
+<h2>Final source-specific interpretation</h2>
+<p>The IC19 natural determinant theorem asserts <code>(h_t,w_t,r_J,ζ_nat)=(1,1,0,0)</code> <strong>subject to its written G20/G21 and RT.53.4/NY–NZ/OB–OL geometric premises</strong>. The independent finite parity, lens and determinant counts support only their scoped steps. An enumeration of four extending boundary configurations from fourteen possibilities does <strong>not</strong> determine the named h_t and w_t bits. No physical decay occurrence is concluded.</p>
+<p><strong>Final archive action:</strong> increment active DAG Atlas to <code>Paper00-DAGAtlas-v1_156.zip</code>, and current ProofChain Audits to <code>Paper00-ProofChainAudits-v1_69.zip</code> with one active I-D report <code>Paper1D-ProofChainAudit-v1_5.md</code>; do not include superseded active I-D audit in the current audits ZIP. Runtime validation details are in the resulting release sidecars.</p>
+<hr />
+<h2>Historical proof-chain audit, v1.4, retained unchanged</h2>
+<h1>Paper I-D — Proof-Chain Audit v1.4: Source Closure Integration</h1>
+<p><strong>Current source:</strong> <code>Paper1D-TechnicalMaterial-v1_67.tex</code>, SHA-256 <code>3cd6ae8bb286536ef7bc871d359996309e53ac3a6aed89917a5a82c53b6dcb2a</code>, 26,561 source lines, within <code>Paper00-PapersMinimal-v3_018.zip</code>.  <strong>Release:</strong> 16 November 2026. <strong>Audit origin:</strong> the six-batch v1.3 assessment on v1.66 and the independent issue-closure research v1.2–v1.18. <strong>Classification:</strong> <code>SOURCE_INTEGRATED_WITH_DECLARED_OPEN_GAPS</code>, not an unqualified proof of every global gauge action.</p>
+<h2>What changed in the source</h2>
+<p>Only Paper I-D was changed. The new <code>sec:p1d-ic19-closures</code> source section has <strong>six new formal proof objects</strong> (five propositions, one theorem) and a concluding explicit issue-status guard; all 272 preexisting formal objects and their earlier audit findings are retained. The original source remains preserved in release provenance. New source labels:</p>
+<table>
+<thead>
+<tr>
+  <th>Source label</th>
+  <th>Precise scope</th>
+  <th>Current status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>p1d:prop:ic19-stable-rank-three</code></td>
+  <td>In a <strong>fixed stable K-class</strong>, rank-three realizability iff 6 divides BC−AD+2nm</td>
+  <td>Proved using BU(4)→BU and top Chern obstruction, under source's Chern-coordinate calculation</td>
+</tr>
+<tr>
+  <td><code>p1d:prop:ic19-compatible-seeds</code></td>
+  <td>Compatible G15 mixed U(2) seed for every A and both sectors; two-piece W census and fifth bit</td>
+  <td>Source-relative proof conditional on actual G20/G21 exchange/pushout models</td>
+</tr>
+<tr>
+  <td><code>p1d:prop:ic19-first-postnikov-action</code></td>
+  <td>Mod-two affine determinant action at first Postnikov stage</td>
+  <td>Mathematically derived at declared stage; <strong>not the complete eight-dimensional action</strong></td>
+</tr>
+<tr>
+  <td><code>p1d:prop:ic19-lens-torsion</code></td>
+  <td>Unpointed lens evaluation, supported torsion-primary gauge and j_eta=t</td>
+  <td>Within specified pointed lens homotopy-fibre and product-framed G20/G21 joining</td>
+</tr>
+<tr>
+  <td><code>p1d:prop:ic19-top-transgression</code></td>
+  <td>Relative eight-cell t parity switch</td>
+  <td>Within stated W cohomology and product framing; does not select h_t,w_t from extension totals</td>
+</tr>
+<tr>
+  <td><code>p1d:thm:ic19-natural-determinant-route</code></td>
+  <td>Actual original ND/PI/SC/CI→FS/TN/BG normalized gauge route, [Z(c)]=mu</td>
+  <td><strong>Proved within named RT.53.4/G20/G21/NY–NZ/OB–OL upstream geometric inputs</strong>, not all-components/unconditional</td>
+</tr>
+</tbody>
+</table>
+<p>The top theorem's strict scope guard is material. The source-matched research directly verified the ND.7 positive-line bound &gt;=5/8, both noncommutative second-cut factors, the +/-2N parity null, the original cap-clutch nonzero eta_3 eta_4, and the complete paired-map comparison. It did <strong>not</strong> reprove all inherited global G20/G21 gauge-classification inputs from first principles. In particular the 4 YES/10 NO count is independent of the possible (h_t,w_t) bits, so it cannot determine them.</p>
+<h2>Existing issue roots — disposition after source integration</h2>
+<p>The following four <em>originally candidate</em> independent-evidence roots are <strong>closed at their named mathematical scope</strong> by the separately recorded exact/symbolic proofs: <code>BH-IB-EV-0005</code> (marked 2I character and finite sampling geometry), <code>BH-IB-EV-0007</code> (pluriclosed existence in declared Hermitian family), <code>BH-IB-EV-0008</code> (all-m homogeneous realization and <strong>specified finite</strong> coefficient-space positive sampling), and <code>BH-IB-EV-0011</code> (classical <strong>spatial</strong> midpoint Yang–Mills quotient Morse index/gap). No physical or unrestricted model-selection claim is closed by these results.</p>
+<p>The other <strong>ten</strong> original evidence/reproducibility issues retain an unresolved component:</p>
+<table>
+<thead>
+<tr>
+  <th>Canonical issue</th>
+  <th>Precise remaining obligation after integration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-IB-EV-0001</code></td>
+  <td>Rank-three stable-class existence discharged; rank-two and full unstable fixed-Chern fibre counting beyond verified model remains</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0002</code></td>
+  <td>Full eight-dimensional <em>secondary</em> affine determinant action and its orbit structure remain; only first Postnikov layer/retract complete</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0003</code></td>
+  <td>Principal SU(2) exotic lift no-go confirmed; full equivariant/mixed-lift global comparison remains</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0004</code></td>
+  <td>Source-relative compatible seeds, low gauge existence, lens/top maps, and natural paired comparison strengthened; <strong>whole-image global closure</strong> still pending, upstream model dependencies retained</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0006</code></td>
+  <td>Entire global normal-form and generalized-Kähler classification not independently reproduced</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0009</code></td>
+  <td>Full all-orbital TT/Rarita–Schwinger spectrum and zeta/heat completeness not certified</td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0010</code></td>
+  <td>Global quotient stabilizer/orbifold kernels not reconstructed fully</td>
+</tr>
+<tr>
+  <td><code>BH-IC-EV-0001</code></td>
+  <td>Specific 50-decimal NZ.4 directed-rounding Hessian numerical certificate remains absent; small-cap inverse-function alternative supports needed topology only</td>
+</tr>
+<tr>
+  <td><code>BH-IC-EV-0002</code></td>
+  <td>Original F40/Hurwitz/E8 source-matched executable certificates remain absent</td>
+</tr>
+<tr>
+  <td><code>BH-ID-EV-0001</code></td>
+  <td>490-simplex triangulation/cochain raw data and exact replay artifacts remain absent</td>
+</tr>
+</tbody>
+</table>
+<p><code>BH-ID-DAG-0001</code> is a <strong>registration issue</strong>, resolved by the v1.151 current-source overlay and proof-route layer; it was never a mathematical contradiction. No new mathematical contradiction was found in the verification runs. No new physical realization claim, axiom, GP3 selection or particle decay rate was introduced.</p>
+<h2>Evidentiary rules and quantitative provenance</h2>
+<p><code>Paper1D-IssueClosureResearch-v1_18.md</code> and <code>Paper1D-IssueClosureProofRoute-v1_18.json</code> remain immutable original proof-route evidence. The v1.18 executable reports <strong>21,408 scoped assertions passed</strong> in its run; historical v1.2–v1.17 runs were not all rerun together, so the cumulative total must never be described as simultaneous independent full-proof tests. The new TeX was compiled successfully with BibTeX8 and three PDF passes; PDF rendering checks include the appended propositions and theorem. The six new formal objects are registered in the DAG current-source map and guarded proof routes; they are not retroactively treated as part of the original 272-claim audit.</p>
+<p>The historical audit below remains the authoritative claim-by-claim audit of the 272 unchanged inherited formal statements; this v1.4 integration is the new evidence/status supplement. Original citations to older source snapshots below are <strong>historical provenance only</strong>.</p>
+<hr />
+<h2>Preserved historical six-batch audit v1.3 (source v1.66)</h2>
+<h1>Paper I-D — Final Rigorous Proof-Chain Audit v1.3</h1>
+<p><strong>Canonical report:</strong> <code>Paper1D-ProofChainAudit-v1_3.md</code><br />
+<strong>Protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code><br />
+<strong>Authoritative current manuscript:</strong> <code>Paper1D-TechnicalMaterial-v1_66.tex</code><br />
+<strong>Source SHA-256:</strong> <code>653482c0e4aa3013c015573a50d0350f136c5ef62da31bfd6c536daafcd9d020</code><br />
+<strong>Papers corpus:</strong> <code>Paper00-PapersMinimal-v3_014</code>, matching <code>DAGAtlas-v1_139/Sources-v3_014/</code> byte-for-byte for Paper1D.<br />
+<strong>Completed:</strong> 2026-11-15<br />
+<strong>Source original files edited:</strong> NO.<br />
+<strong>Final classification:</strong> <code>FULLY_AUDITED_WITH_OPEN_GAPS</code>; no verified mathematical contradiction, and no unconditional global certificate for all source results.</p>
+<h2>Bounded object and coverage ledger</h2>
+<p>The 26,295-line manuscript was audited in <strong>six contiguous batches, totaling 272/272 formal statement dispositions</strong>, including definitions, conditional theorems and relevant formal remarks. Substantial unnamed mathematical constructions were inspected with their consuming proofs, notably the relative root/gauge surgery, annular comparisons, Dirac/Schur formulas and final 600-cell graph/resistor certificate. The terminal eleven-paragraph evidence supplement is included even though its clauses are not 11 additional <code>theorem</code> environments.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">Batch</th>
+  <th style="text-align:right">Formal claims</th>
+  <th style="text-align:right">Scoped assertions passed</th>
+  <th>Independent scope and residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1–50</td>
+  <td style="text-align:right">6,121</td>
+  <td>6,121 exact finite checks; finite group classifications and gauge conditionality.</td>
+</tr>
+<tr>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">51–117</td>
+  <td style="text-align:right">31,763</td>
+  <td>31,763 scoped checks, including 13,387 historical reruns; RT.57/59 absent triangulation data.</td>
+</tr>
+<tr>
+  <td style="text-align:right">3</td>
+  <td style="text-align:right">118–151</td>
+  <td style="text-align:right">10,310</td>
+  <td>4,797 fresh and 5,513 historical checks; natural sphere and determinant frame, NZ.4 missing directed rounding.</td>
+</tr>
+<tr>
+  <td style="text-align:right">4</td>
+  <td style="text-align:right">152–160</td>
+  <td style="text-align:right">12,458</td>
+  <td>8,341 independent and 4,117 historical checks; signed -1 winding and odd degree; paired bigon global comparison still open.</td>
+</tr>
+<tr>
+  <td style="text-align:right">5</td>
+  <td style="text-align:right">161–220</td>
+  <td style="text-align:right">6,863</td>
+  <td>6,863 fresh controls; Dirac/overlap/Schur/root frames; global quotient scope retained.</td>
+</tr>
+<tr>
+  <td style="text-align:right">6</td>
+  <td style="text-align:right">221–272</td>
+  <td style="text-align:right">3,244</td>
+  <td>2,799 fresh and 445 historical checks; 600-cell exact checker, eleven supplemental upstream evidence obligations.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sum of reported batch assertions: 70,759</strong>, mixing fresh and historical scoped checks, potentially repeated between batches. It is <strong>not</strong> 70,759 different independent full proofs. Claims 1–220 carry their recorded earlier dispositions; 221–272 have Batch6 source-based current dispositions. Earlier Paper I-C statement/proof correspondence is <em>provenance</em>, not a mathematical E3 certificate. Five current statements are new (#251–255), with six reviewed reference changes in Batch 6 and two additional earlier source deltas recorded in the complete ledger. Fully audited means every object has a recorded disposition, <strong>not</strong> fully verified unconditionally.</p>
+<h3>High-value verified subresults</h3>
+<ul>
+<li>Exact rank-two finite group and fiber arithmetic under prescribed gauge action, but <strong>actual</strong> equivariant bundle/normal-frame realization remains conditionally sourced (<code>BH-IB-EV-0002/0004</code>).</li>
+<li>Source signed PC.4 winding −1 and original BG axis-map odd degree, with endpoint C₂ degree −2, do <strong>not</strong> alone certify global paired-closing <code>[Z]=μ</code>.</li>
+<li>Dirac restricted coexact ranks 3/8/15/24, source-fixed E8/E7/E6 root counts 240/126/72, spectral Schur and finite overlap algebra; <strong>all-orbital completeness and physical gauge sources remain distinct requirements</strong>.</li>
+<li>New exact finite 2T quadrature discrepancy 1/48 and positive spectral polar/trace identities in claims 251–255.</li>
+<li>Exact 600-cell graph: 120 vertices, 720 edges, 147,600 candidate five-cycles, no Petersen copy in the ordinary 600-cell 1-skeleton; rational circuit comparison adjacent R=2057/12600, nonadjacent R=32/175, split 1/450. Unoriented scalar circuits are not asserted equal to oriented Clifford flux, coupling constants or decay rates.</li>
+</ul>
+<h2>Complete canonical open evidence register</h2>
+<p>There are <strong>14 unique inherited currently open source/evidence roots</strong>, <strong>zero newly established mathematical counterexamples</strong>, and <strong>zero newly introduced canonical assumptions</strong>. No evidence problem was cloned for a repeated downstream citation. All 11 <code>BH-IB</code> roots remain source-explicit: four <code>CANDIDATE</code> (0005/0007/0008/0011) and seven <code>PARTIAL</code> (0001/0002/0003/0004/0006/0009/0010). The additional three roots are both <code>BH-IC</code> reproducibility obligations and the Paper I-D 490-simplex cochain evidence issue.</p>
+<table>
+<thead>
+<tr>
+  <th>Canonical issue</th>
+  <th>Original source/evidence location</th>
+  <th>Exact outstanding proof/reproducibility obligation</th>
+  <th>Lifecycle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-IB-EV-0001</code></td>
+  <td>Paper1D supplement EV-0001, lines 26024–26043</td>
+  <td>Stable desuspension conditional on original stable representative; rank-two existence/fiber sizes remain unproved.</td>
+  <td><code>OPEN</code></td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0002</code></td>
+  <td>EV-0002, lines 26046–26062</td>
+  <td>Full 8D affine gauge action and orbit counts not established from restricted model.</td>
+  <td><code>OPEN</code></td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0003</code></td>
+  <td>EV-0003, lines 26064–26085</td>
+  <td>Coherent exchange complex lift not a principal SU(2) lift; fixed isotropy/descent unresolved.</td>
+  <td><code>OPEN</code></td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0004</code></td>
+  <td>EV-0004, lines 26087–26106</td>
+  <td>Global gauge extensions/relative equivariant Thom data not independently established.</td>
+  <td><code>OPEN</code></td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0005</code></td>
+  <td>EV-0005, lines 26108–26134</td>
+  <td>Character overlap polynomial candidate requires original 2I embedding convention adjudication.</td>
+  <td><code>OPEN</code></td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0006</code></td>
+  <td>EV-0006, lines 26136–26156</td>
+  <td>Vertical Fourier contraction established; external full global complex-structure/classification proof remains.</td>
+  <td><code>OPEN</code></td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0007</code></td>
+  <td>EV-0007, lines 26158–26183</td>
+  <td>SKT canonical descent candidate still requires source-matched global convention review.</td>
+  <td><code>OPEN</code></td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0008</code></td>
+  <td>EV-0008, lines 26185–26212</td>
+  <td>Finite normalized homogeneous sampling candidate, not all-operator physical transport.</td>
+  <td><code>OPEN</code></td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0009</code></td>
+  <td>EV-0009, lines 26214–26237</td>
+  <td>TT/Rarita constant-block check does not prove all-orbital transverse constrained spectrum.</td>
+  <td><code>OPEN</code></td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0010</code></td>
+  <td>EV-0010, lines 26239–26251</td>
+  <td>Degree-12 pencil algebra checked; nonfree quotient stabilizer/orbifold kernels remain.</td>
+  <td><code>OPEN</code></td>
+</tr>
+<tr>
+  <td><code>BH-IB-EV-0011</code></td>
+  <td>EV-0011, lines 26253–26281</td>
+  <td>Midpoint Yang–Mills Hessian candidate; globally sourced gauge/ghost quotient still needs final review.</td>
+  <td><code>OPEN</code></td>
+</tr>
+<tr>
+  <td><code>BH-IC-EV-0001</code></td>
+  <td>source NZ.4 lines 10424–10463</td>
+  <td>Absent independently reproducible directed-rounding Hessian certificate.</td>
+  <td><code>OPEN</code></td>
+</tr>
+<tr>
+  <td><code>BH-IC-EV-0002</code></td>
+  <td>Paper1D claims 260–261, 268–269, 271</td>
+  <td>Absent original source-matched predecessor scripts/complete Hurwitz, chamber and E8 numerical certificates.</td>
+  <td><code>OPEN</code></td>
+</tr>
+<tr>
+  <td><code>BH-ID-EV-0001</code></td>
+  <td>Paper1D RT.57/RT.59 (Batch 2)</td>
+  <td>Absent 490-simplex triangulation and exact cochain executable for finite cup-product counts.</td>
+  <td><code>OPEN</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Administrative DAG-only root <code>BH-ID-DAG-0001</code>:</strong> <code>RESOLVED</code> by creation/registration of the Paper1D-v1_1 current source-matched audit layer and combined indices. It was not a source mathematical defect. Historical earlier Paper I-A <code>BH-G-000108</code> and <code>BH-G-000109</code> remain historical scope references, and are <strong>not</strong> silently counted as two current open Paper I-D issues.</p>
+<h2>E0/E1/E3/E4 boundaries and physical-role guard</h2>
+<p><strong>E0:</strong> exact current TeX frozen SHA; 272 formal source statements with current source spans and proof hashes recorded. The 11-terminal-obligation source is independently indexed as unnamed evidence modules. All 25 refs/equation refs in Batch 6 resolve within the current Paper I/peer corpus; other batches retain their own reference checks.</p>
+<p><strong>E1:</strong> source derivations assessed at declared premise/quantifier and constructor scope, with inherited proof replay used only when text matches and current peer references checked for differences. No experimental decay or flux observable is asserted solely from finite graph likeness.</p>
+<p><strong>E3:</strong> specific exact, symbolic, finite-domain, noncommutative, and historical source-locked calculations are catalogued; not all infinite/global topology/spectral or physical claims have independent full-domain E3. Missing exact 490-facet cochain data, NZ.4 directed-rounding interval certificate, F40/Hurwitz/E8 predecessor executables, 11 global Paper I-B obligations are explicitly not treated as closed.</p>
+<p><strong>E4:</strong> domain-matched negative controls include nonidentity seams, omitted commutator, global selector inference, false no-missing-spectral-gap claims and oriented/unoriented circuit conflation. No submitted or constructed counterexample meets all hypotheses of a current Paper I-D claim to demonstrate refutation.</p>
+<p><strong>Prohibition respected:</strong> no new principle, mass equation, physical mechanism, alternative theory development, source revision or PDF generation.</p>
+<h2>Formal claim-by-claim ledger</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">#</th>
+  <th>Current exact source label (synthetic where unnamed)</th>
+  <th>Statement lines</th>
+  <th>Audit status</th>
+  <th>Residual guard</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">1</td>
+  <td><code>p1b:rt:lemma128</code></td>
+  <td>324–330</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">2</td>
+  <td><code>p1b:rt:theorem129</code></td>
+  <td>345–353</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">3</td>
+  <td><code>p1b:rt:theorem130</code></td>
+  <td>391–396</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">4</td>
+  <td><code>p1b:rt:corollary131</code></td>
+  <td>425–441</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">5</td>
+  <td><code>p1b:rt:lemma30-transfer</code></td>
+  <td>514–524</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">6</td>
+  <td><code>p1b:rt:lemma30-local</code></td>
+  <td>551–560</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">7</td>
+  <td><code>p1b:rt:theorem30-column</code></td>
+  <td>644–655</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">8</td>
+  <td><code>p1b:rt:corollary30-counts</code></td>
+  <td>694–713</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">9</td>
+  <td><code>p1b:rt:lemma31-primary</code></td>
+  <td>785–800</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">10</td>
+  <td><code>p1b:rt:lemma31-gluing</code></td>
+  <td>826–839</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">11</td>
+  <td><code>p1b:rt:theorem31-columns</code></td>
+  <td>868–883</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">12</td>
+  <td><code>p1b:rt:theorem31-even</code></td>
+  <td>921–946</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">13</td>
+  <td><code>p1b:rt:theorem31-sphere</code></td>
+  <td>975–994</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">14</td>
+  <td><code>p1b:rt:lemma32-primary</code></td>
+  <td>1057–1068</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">15</td>
+  <td><code>p1b:rt:lemma32-loop</code></td>
+  <td>1137–1148</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">16</td>
+  <td><code>p1b:rt:theorem32-sector0</code></td>
+  <td>1180–1198</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">17</td>
+  <td><code>p1b:rt:theorem32-count</code></td>
+  <td>1247–1273</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">18</td>
+  <td><code>p1b:rt:lemma33-cover</code></td>
+  <td>1332–1345</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">19</td>
+  <td><code>p1b:rt:theorem33-sphere</code></td>
+  <td>1370–1385</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">20</td>
+  <td><code>p1b:rt:lemma33-homogeneous</code></td>
+  <td>1410–1420</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">21</td>
+  <td><code>p1b:rt:theorem33-evenfibres</code></td>
+  <td>1458–1479</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">22</td>
+  <td><code>p1b:rt:theorem33-oddfibres</code></td>
+  <td>1498–1514</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">23</td>
+  <td><code>p1b:rt:lemma34-surgery</code></td>
+  <td>1605–1621</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">24</td>
+  <td><code>p1b:rt:lemma34-transport</code></td>
+  <td>1666–1679</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">25</td>
+  <td><code>p1b:rt:theorem34-kappa</code></td>
+  <td>1738–1753</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">26</td>
+  <td><code>p1b:rt:theorem35-images</code></td>
+  <td>1797–1822</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">27</td>
+  <td><code>p1b:rt:theorem35-fibres</code></td>
+  <td>1840–1869</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">28</td>
+  <td><code>p1b:rt:theorem35-type</code></td>
+  <td>1894–1923</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">29</td>
+  <td><code>p1b:rt:lemma36-conjugation</code></td>
+  <td>1981–1993</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">30</td>
+  <td><code>p1b:rt:theorem36-transport</code></td>
+  <td>2034–2054</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">31</td>
+  <td><code>p1b:rt:corollary36-even</code></td>
+  <td>2076–2086</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">32</td>
+  <td><code>p1b:rt:theorem37-generator</code></td>
+  <td>2130–2164</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">33</td>
+  <td><code>p1b:rt:theorem37-kernels</code></td>
+  <td>2190–2213</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">34</td>
+  <td><code>p1b:rt:corollary37-test</code></td>
+  <td>2249–2262</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">35</td>
+  <td><code>p1b:rt:theorem38-sequence</code></td>
+  <td>2302–2328</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">36</td>
+  <td><code>p1b:rt:lemma38-insertions</code></td>
+  <td>2352–2367</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">37</td>
+  <td><code>p1b:rt:theorem38-pure</code></td>
+  <td>2387–2401</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">38</td>
+  <td><code>p1b:rt:theorem39-final</code></td>
+  <td>2457–2477</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">39</td>
+  <td><code>p1b:rt:theorem39-matched</code></td>
+  <td>2514–2530</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">40</td>
+  <td><code>p1b:rt:corollary39-pairing</code></td>
+  <td>2550–2568</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">41</td>
+  <td><code>p1b:rt:lemma40-Q</code></td>
+  <td>2605–2624</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">42</td>
+  <td><code>p1b:rt:lemma40-central</code></td>
+  <td>2673–2678</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">43</td>
+  <td><code>p1b:rt:lemma40-retraction</code></td>
+  <td>2726–2753</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">44</td>
+  <td><code>p1b:rt:lemma40-kernel</code></td>
+  <td>2797–2801</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">45</td>
+  <td><code>p1b:rt:theorem40-e</code></td>
+  <td>2822–2834</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">46</td>
+  <td><code>p1b:rt:theorem41-type</code></td>
+  <td>2910–2928</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">47</td>
+  <td><code>p1b:rt:corollary41-fibres</code></td>
+  <td>2970–2982</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">48</td>
+  <td><code>p1b:rt:theorem41-stages</code></td>
+  <td>3005–3041</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">49</td>
+  <td><code>p1b:rt:lemma42-normal</code></td>
+  <td>3075–3092</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">50</td>
+  <td><code>p1b:rt:theorem42-top</code></td>
+  <td>3140–3159</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">51</td>
+  <td><code>p1b:rt:corollary42-relative</code></td>
+  <td>3197–3215</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">52</td>
+  <td><code>p1b:rt:theorem43-comparison</code></td>
+  <td>3264–3280</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">53</td>
+  <td><code>p1b:rt:corollary43-transport</code></td>
+  <td>3327–3338</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">54</td>
+  <td><code>p1b:rt:lemma44-lift</code></td>
+  <td>3418–3426</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">55</td>
+  <td><code>p1b:rt:theorem44-shear</code></td>
+  <td>3459–3477</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">56</td>
+  <td><code>p1b:rt:corollary44-band</code></td>
+  <td>3521–3527</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">57</td>
+  <td><code>p1b:rt:theorem45-bits</code></td>
+  <td>3581–3602</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">58</td>
+  <td><code>p1b:rt:corollary45-orbits</code></td>
+  <td>3628–3642</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">59</td>
+  <td><code>p1b:rt:theorem45-profiles</code></td>
+  <td>3651–3688</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">60</td>
+  <td><code>p1b:rt:theorem46-pushout</code></td>
+  <td>3761–3773</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">61</td>
+  <td><code>p1b:rt:lemma46-matrices</code></td>
+  <td>3836–3858</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">62</td>
+  <td><code>p1b:rt:corollary46-tau</code></td>
+  <td>3915–3932</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">63</td>
+  <td><code>p1b:rt:theorem47-boundary</code></td>
+  <td>3980–4005</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">64</td>
+  <td><code>p1b:rt:theorem47-clutch</code></td>
+  <td>4046–4074</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">65</td>
+  <td><code>p1b:rt:theorem47-gauges</code></td>
+  <td>4099–4122</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">66</td>
+  <td><code>p1b:rt:corollary47-top</code></td>
+  <td>4148–4174</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">67</td>
+  <td><code>p1b:rt:theorem48-components</code></td>
+  <td>4222–4243</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">68</td>
+  <td><code>p1b:rt:theorem48-matching</code></td>
+  <td>4275–4295</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">69</td>
+  <td><code>p1b:rt:theorem49-loops</code></td>
+  <td>4358–4376</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">70</td>
+  <td><code>p1b:rt:theorem49-paths</code></td>
+  <td>4432–4453</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">71</td>
+  <td><code>p1b:rt:theorem49-boundary</code></td>
+  <td>4475–4493</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">72</td>
+  <td><code>p1b:rt:lemma50-operation</code></td>
+  <td>4549–4568</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">73</td>
+  <td><code>p1b:rt:theorem50-bundles</code></td>
+  <td>4604–4614</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">74</td>
+  <td><code>p1b:rt:theorem50-gauges</code></td>
+  <td>4647–4661</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">75</td>
+  <td><code>p1b:rt:lemma51-monodromy</code></td>
+  <td>4764–4776</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">76</td>
+  <td><code>p1b:rt:theorem51-Ygauges</code></td>
+  <td>4799–4813</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">77</td>
+  <td><code>p1b:rt:lemma51-toggle</code></td>
+  <td>4856–4864</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">78</td>
+  <td><code>p1b:rt:theorem51-targets</code></td>
+  <td>4885–4906</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">79</td>
+  <td><code>p1b:rt:lemma52-twisted</code></td>
+  <td>4967–4987</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">80</td>
+  <td><code>p1b:rt:theorem52-Ynormal</code></td>
+  <td>5002–5009</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">81</td>
+  <td><code>p1b:rt:corollary52-targets</code></td>
+  <td>5027–5043</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">82</td>
+  <td><code>p1b:rt:lemma53-paths</code></td>
+  <td>5093–5106</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">83</td>
+  <td><code>p1b:rt:theorem53-joining</code></td>
+  <td>5134–5146</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">84</td>
+  <td><code>p1b:rt:corollary53-matched</code></td>
+  <td>5169–5190</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">85</td>
+  <td><code>p1b:rt:lemma53-Zroot</code></td>
+  <td>5212–5218</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">86</td>
+  <td><code>p1b:rt:theorem53-Wnormal</code></td>
+  <td>5230–5251</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">87</td>
+  <td><code>p1b:rt:lemma54-factors</code></td>
+  <td>5327–5343</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">88</td>
+  <td><code>p1b:rt:theorem54-transport</code></td>
+  <td>5397–5415</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">89</td>
+  <td><code>p1b:rt:corollary54-top</code></td>
+  <td>5427–5446</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">90</td>
+  <td><code>p1b:rt:theorem55-cancel</code></td>
+  <td>5488–5504</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">91</td>
+  <td><code>p1b:rt:theorem55-source</code></td>
+  <td>5523–5552</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">92</td>
+  <td><code>p1b:rt:corollary55-test</code></td>
+  <td>5589–5617</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">93</td>
+  <td><code>p1b:rt:lemma56-parity</code></td>
+  <td>5664–5676</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">94</td>
+  <td><code>p1b:rt:theorem56-detector</code></td>
+  <td>5693–5717</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">95</td>
+  <td><code>p1b:rt:theorem56-relative</code></td>
+  <td>5748–5781</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">96</td>
+  <td><code>p1b:rt:theorem57-cupone</code></td>
+  <td>5839–5860</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">97</td>
+  <td><code>p1b:rt:proposition57-calibration</code></td>
+  <td>5890–5903</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">98</td>
+  <td><code>p1b:rt:proposition58-section</code></td>
+  <td>5968–6015</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">99</td>
+  <td><code>p1b:rt:lemma58-chart</code></td>
+  <td>6059–6076</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">100</td>
+  <td><code>p1b:rt:theorem58-frame</code></td>
+  <td>6106–6139</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">101</td>
+  <td><code>p1b:rt:proposition58-scope</code></td>
+  <td>6168–6175</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">102</td>
+  <td><code>p1b:rt:proposition59-lastcolumn</code></td>
+  <td>6207–6223</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">103</td>
+  <td><code>p1b:rt:theorem59-cone</code></td>
+  <td>6248–6268</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">104</td>
+  <td><code>p1b:rt:proposition59-positive</code></td>
+  <td>6349–6366</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">105</td>
+  <td><code>p1b:rt:lemma60-chart</code></td>
+  <td>6438–6457</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">106</td>
+  <td><code>p1b:rt:theorem60-frames</code></td>
+  <td>6471–6492</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">107</td>
+  <td><code>p1b:rt:theorem60-clutch</code></td>
+  <td>6519–6540</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">108</td>
+  <td><code>p1b:rt:theorem61-homotopy</code></td>
+  <td>6606–6640</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">109</td>
+  <td><code>p1b:rt:theorem61-degree</code></td>
+  <td>6668–6688</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">110</td>
+  <td><code>p1b:rt:theorem61-top</code></td>
+  <td>6743–6773</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">111</td>
+  <td><code>p1b:rt:lemma62-cap</code></td>
+  <td>6857–6874</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">112</td>
+  <td><code>p1b:rt:theorem62-roots</code></td>
+  <td>6918–6946</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">113</td>
+  <td><code>p1b:rt:corollary62-seam</code></td>
+  <td>6967–6979</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">114</td>
+  <td><code>p1b:rt:theorem63-closing</code></td>
+  <td>7009–7028</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">115</td>
+  <td><code>p1b:rt:theorem63-joining</code></td>
+  <td>7087–7104</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">116</td>
+  <td><code>p1b:rt:corollary63-Z</code></td>
+  <td>7129–7145</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">117</td>
+  <td><code>p1b:rt:lemma63-toggle</code></td>
+  <td>7166–7195</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">118</td>
+  <td><code>p1b:lemma:natural-sphere-joining</code></td>
+  <td>7289–7304</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">119</td>
+  <td><code>p1b:lemma:natural-coherent-frame</code></td>
+  <td>7349–7372</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">120</td>
+  <td><code>p1b:lemma:natural-odd-boundary-frame</code></td>
+  <td>7396–7443</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">121</td>
+  <td><code>p1b:theorem:natural-sphere-input</code></td>
+  <td>7478–7503</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">122</td>
+  <td><code>p1b:lemma:natural-sphere-split</code></td>
+  <td>7563–7574</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">123</td>
+  <td><code>p1b:lemma:natural-clutch-reduction</code></td>
+  <td>7590–7605</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">124</td>
+  <td><code>p1b:theorem:natural-clutch-parity</code></td>
+  <td>7688–7699</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">125</td>
+  <td><code>p1b:theorem:natural-closing-input</code></td>
+  <td>7756–7774</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">126</td>
+  <td><code>p1b:proposition:natural-determinant-local</code></td>
+  <td>7868–7897</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">127</td>
+  <td><code>p1b:proposition:natural-determinant-toggle</code></td>
+  <td>7925–7938</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">128</td>
+  <td><code>p1b:proposition:natural-determinant-joining</code></td>
+  <td>7970–7982</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">129</td>
+  <td><code>p1b:lemma:natural-closing-projective</code></td>
+  <td>8100–8112</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">130</td>
+  <td><code>p1b:theorem:natural-closing-full-branch</code></td>
+  <td>8123–8161</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">131</td>
+  <td><code>p1b:proposition:natural-closing-branch-preimages</code></td>
+  <td>8216–8242</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">132</td>
+  <td><code>p1b:lemma:natural-sphere-factor</code></td>
+  <td>8309–8343</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">133</td>
+  <td><code>p1b:lemma:natural-sphere-two-cell</code></td>
+  <td>8367–8389</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">134</td>
+  <td><code>p1b:theorem:natural-sphere-top-comparison</code></td>
+  <td>8416–8434</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">135</td>
+  <td><code>p1b:lemma:natural-sphere-source-top</code></td>
+  <td>8513–8523</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">136</td>
+  <td><code>p1b:theorem:natural-sphere-bit</code></td>
+  <td>8552–8559</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">137</td>
+  <td><code>p1b:lemma:natural-determinant-shift</code></td>
+  <td>8630–8648</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">138</td>
+  <td><code>p1b:proposition:natural-determinant-exterior</code></td>
+  <td>8682–8713</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">139</td>
+  <td><code>p1b:theorem:natural-determinant-patch-input</code></td>
+  <td>8740–8763</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">140</td>
+  <td><code>p1b:proposition:natural-determinant-side-fill</code></td>
+  <td>8866–8890</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">141</td>
+  <td><code>p1b:theorem:natural-determinant-bottom-homotopy</code></td>
+  <td>8927–8977</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">142</td>
+  <td><code>p1b:proposition:natural-determinant-V5-lift</code></td>
+  <td>9132–9143</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">143</td>
+  <td><code>p1b:theorem:natural-determinant-V7-map</code></td>
+  <td>9333–9347</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">144</td>
+  <td><code>p1b:theorem:natural-determinant-transported-bottom</code></td>
+  <td>9445–9458</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">145</td>
+  <td><code>p1b:proposition:natural-quaternion-frame</code></td>
+  <td>10223–10266</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">146</td>
+  <td><code>p1b:proposition:natural-quaternion-factor</code></td>
+  <td>10289–10308</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">147</td>
+  <td><code>p1b:proposition:natural-inverse-source</code></td>
+  <td>10424–10435</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">148</td>
+  <td><code>p1b:proposition:natural-exterior-factors</code></td>
+  <td>10567–10602</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">149</td>
+  <td><code>p1b:theorem:natural-intrinsic-closing</code></td>
+  <td>10676–10701</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">150</td>
+  <td><code>p1b:proposition:natural-parameter-lower</code></td>
+  <td>10794–10800</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">151</td>
+  <td><code>p1b:theorem:natural-projective-null</code></td>
+  <td>11157–11169</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">152</td>
+  <td><code>p1b:proposition:natural-exterior-exchange</code></td>
+  <td>12500–12516</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">153</td>
+  <td><code>p1b:theorem:natural-bridge-elimination</code></td>
+  <td>14887–14905</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">154</td>
+  <td><code>p1b:theorem:natural-sewn-annular-parity</code></td>
+  <td>15848–15862</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">155</td>
+  <td><code>p1c:lem:v263-bridge-controlled-carry</code></td>
+  <td>16554–16570</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">156</td>
+  <td><code>p1c:cor:v263-old-cap-cancellation</code></td>
+  <td>16595–16615</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">157</td>
+  <td><code>p1b:proposition:second-cut-phase-zero</code></td>
+  <td>17145–17160</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">158</td>
+  <td><code>p1b:proposition:second-cut-conjugation-zero</code></td>
+  <td>17256–17269</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">159</td>
+  <td><code>p1b:lemma:paired-joining-null-independence</code></td>
+  <td>17859–17863</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">160</td>
+  <td><code>p1b:thm:natural-rank-two-completion</code></td>
+  <td>18744–18764</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">161</td>
+  <td><code>p1b:thm:dirac-transverse-generation</code></td>
+  <td>18810–18855</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">162</td>
+  <td><code>p1b:cor:dirac-helicity-balance</code></td>
+  <td>18913–18932</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">163</td>
+  <td><code>p1b:prop:feshbach</code></td>
+  <td>18959–18977</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">164</td>
+  <td><code>p1b:result:exact-heat-trace-and-parameter-evolution</code></td>
+  <td>19011–19042</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">165</td>
+  <td><code>p1b:cor:ko</code></td>
+  <td>19064–19077</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">166</td>
+  <td><code>p1b:prop:lcs</code></td>
+  <td>19095–19110</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">167</td>
+  <td><code>p1b:thm:twisted-k</code></td>
+  <td>19140–19151</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">168</td>
+  <td><code>p1b:result:compatibility-test-for-the-two-declared-groupoids</code></td>
+  <td>19184–19191</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">169</td>
+  <td><code>p1b:thm:cartan-links</code></td>
+  <td>19204–19225</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">170</td>
+  <td><code>p1b:thm:overlap</code></td>
+  <td>19272–19317</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">171</td>
+  <td><code>p1b:prop:cover-transfer</code></td>
+  <td>19347–19363</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">172</td>
+  <td><code>p1b:thm:locality</code></td>
+  <td>19402–19424</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">173</td>
+  <td><code>p1b:thm:invariant-pencil</code></td>
+  <td>19467–19498</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">174</td>
+  <td><code>p1b:result:opposite-hopf-lines-and-lifted-axial-characters</code></td>
+  <td>19549–19570</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">175</td>
+  <td><code>p1b:result:angular-moments-and-comparison-heat</code></td>
+  <td>19588–19604</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">176</td>
+  <td><code>p1b:thm:theta</code></td>
+  <td>19627–19643</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">177</td>
+  <td><code>p1b:prop:local-coframe</code></td>
+  <td>19670–19692</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">178</td>
+  <td><code>p1b:prop:kink</code></td>
+  <td>19711–19731</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">179</td>
+  <td><code>p1b:prop:kinetic</code></td>
+  <td>19777–19798</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">180</td>
+  <td><code>p1b:thm:schur-jets</code></td>
+  <td>19814–19840</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">181</td>
+  <td><code>p1b:thm:partial-elimination-legendre-duality</code></td>
+  <td>19861–19883</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">182</td>
+  <td><code>p1b:thm:matrix-rigidity</code></td>
+  <td>19924–19936</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">183</td>
+  <td><code>p1b:result:determinant-derivatives-and-relative-frame-stationarity</code></td>
+  <td>19957–19970</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">184</td>
+  <td><code>p1b:thm:rank-three</code></td>
+  <td>19988–20022</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">185</td>
+  <td><code>p1b:result:explicit-chiral-bundle-charts</code></td>
+  <td>20053–20069</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">186</td>
+  <td><code>p1b:cor:certified-chart</code></td>
+  <td>20087–20100</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">187</td>
+  <td><code>p1b:result:compression-defect</code></td>
+  <td>20112–20121</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">188</td>
+  <td><code>p1b:prop:positive-massive-branch</code></td>
+  <td>20132–20147</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">189</td>
+  <td><code>p1b:thm:exroot-response-norms</code></td>
+  <td>20174–20206</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">190</td>
+  <td><code>p1b:cor:exroot-unit-hs-rows</code></td>
+  <td>20225–20232</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">191</td>
+  <td><code>p1b:prop:exroot-native-240</code></td>
+  <td>20241–20253</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">192</td>
+  <td><code>p1b:prop:exroot-project-retain</code></td>
+  <td>20266–20277</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">193</td>
+  <td><code>p1b:prop:exroot-repeated-presentation</code></td>
+  <td>20287–20298</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">194</td>
+  <td><code>p1b:thm:finite-flow</code></td>
+  <td>20322–20359</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">195</td>
+  <td><code>p1b:cor:invariant-legendre-vertex-parity</code></td>
+  <td>20388–20410</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">196</td>
+  <td><code>p1b:thm:blocking</code></td>
+  <td>20429–20452</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">197</td>
+  <td><code>p1b:prop:heat-block</code></td>
+  <td>20480–20506</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">198</td>
+  <td><code>p1b:result:bounded-complex-sources</code></td>
+  <td>20539–20551</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">199</td>
+  <td><code>p1b:thm:dyadic-trace</code></td>
+  <td>20575–20604</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">200</td>
+  <td><code>p1b:thm:laurent-family</code></td>
+  <td>20630–20663</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">201</td>
+  <td><code>p1b:def:weighted-born-pullback</code></td>
+  <td>20691–20702</td>
+  <td><code>FORMALIZED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">202</td>
+  <td><code>p1b:thm:born-euler-anticommutation</code></td>
+  <td>20704–20735</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">203</td>
+  <td><code>p1b:prop:born-hessian-quotient-obstruction</code></td>
+  <td>20751–20763</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">204</td>
+  <td><code>p1b:thm:reciprocal-readout-refinement</code></td>
+  <td>20778–20789</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">205</td>
+  <td><code>p1b:thm:paired-hessian-euler</code></td>
+  <td>20804–20817</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">206</td>
+  <td><code>p1b:cor:born-euler-quadratic-reconstruction</code></td>
+  <td>20836–20854</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">207</td>
+  <td><code>p1b:prop:evaluation-legendre-contact-lift</code></td>
+  <td>20873–20888</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">208</td>
+  <td><code>p1b:prop:reciprocal-connection-lifts</code></td>
+  <td>20902–20911</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">209</td>
+  <td><code>p1b:prop:reciprocal-affine-contact-lifts</code></td>
+  <td>20923–20942</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">210</td>
+  <td><code>p1b:cor:eh-fixed-affine-reciprocity</code></td>
+  <td>20958–20969</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">211</td>
+  <td><code>p1b:thm:reciprocal-convexity-test</code></td>
+  <td>20987–21006</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">212</td>
+  <td><code>p1b:cor:reciprocal-cubic-window</code></td>
+  <td>21020–21032</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">213</td>
+  <td><code>p1b:thm:global-integer-laurent-rigidity</code></td>
+  <td>21045–21053</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">214</td>
+  <td><code>p1b:prop:euler-response-dressing-compatibility</code></td>
+  <td>21073–21089</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">215</td>
+  <td><code>p1b:thm:dressed-convexity</code></td>
+  <td>21107–21139</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">216</td>
+  <td><code>p1b:thm:trace-calculus</code></td>
+  <td>21169–21211</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">217</td>
+  <td><code>p1b:thm:uniform-trace-bound</code></td>
+  <td>21232–21253</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">218</td>
+  <td><code>p1b:cor:quadratic-response</code></td>
+  <td>21290–21305</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">219</td>
+  <td><code>p1b:thm:conformal-hessian</code></td>
+  <td>21328–21358</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">220</td>
+  <td><code>p1b:thm:all-order-schur</code></td>
+  <td>21381–21404</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">221</td>
+  <td><code>p1b:thm:v124-boundary-tangent-groupoid</code></td>
+  <td>21432–21456</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">222</td>
+  <td><code>p1b:def:v124-gaussian-return-kernel</code></td>
+  <td>21469–21489</td>
+  <td><code>FORMALIZED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">223</td>
+  <td><code>p1b:thm:v124-return-coordinate-collar</code></td>
+  <td>21491–21516</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">224</td>
+  <td><code>p1b:thm:v124-return-gluing</code></td>
+  <td>21535–21546</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">225</td>
+  <td><code>p1b:cor:v124-capped-dtn-cayley</code></td>
+  <td>21558–21572</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">226</td>
+  <td><code>p1b:cor:v124-boundary-riccati</code></td>
+  <td>21586–21602</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">227</td>
+  <td><code>p1b:def:v124-boundary-gluing-constructor</code></td>
+  <td>21613–21622</td>
+  <td><code>FORMALIZED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">228</td>
+  <td><code>p1b:rem:v124-boundary-gluing-owner-firewall</code></td>
+  <td>21624–21627</td>
+  <td><code>FORMALIZED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">229</td>
+  <td><code>p1b:prop:heat-curvature</code></td>
+  <td>21682–21693</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">230</td>
+  <td><code>p1b:prop:g11-transgression</code></td>
+  <td>22653–22670</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">231</td>
+  <td><code>p1b:thm:g11-functional</code></td>
+  <td>22692–22713</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">232</td>
+  <td><code>p1b:prop:g11-fluctuations</code></td>
+  <td>22734–22750</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">233</td>
+  <td><code>p1b:thm:full-kink-hessian</code></td>
+  <td>22787–22814</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">234</td>
+  <td><code>p1b:thm:compactified-kink-kernel</code></td>
+  <td>22840–22857</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">235</td>
+  <td><code>p1b:lem:g13-theta</code></td>
+  <td>23118–23143</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">236</td>
+  <td><code>p1b:prop:g13-ladder</code></td>
+  <td>23174–23189</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">237</td>
+  <td><code>p1b:prop:g13-magnetic</code></td>
+  <td>23218–23237</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">238</td>
+  <td><code>p1b:prop:g18-dilations</code></td>
+  <td>23673–23688</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">239</td>
+  <td><code>p1b:prop:g18-second-fundamental</code></td>
+  <td>23694–23717</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">240</td>
+  <td><code>p1b:prop:cyclic-associator-closure</code></td>
+  <td>24225–24236</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">241</td>
+  <td><code>p1b:prop:ordinary-born-component-translation</code></td>
+  <td>24264–24278</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">242</td>
+  <td><code>p1b:prop:exotic-born-square-obstruction</code></td>
+  <td>24329–24342</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">243</td>
+  <td><code>p1c:prop:v242-native-family-cubic</code></td>
+  <td>24661–24683</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">244</td>
+  <td><code>Paper1D:unnamed:0244</code></td>
+  <td>24733–24741</td>
+  <td><code>FORMALIZED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">245</td>
+  <td><code>p1c:prop:v243-reynolds-character-replay</code></td>
+  <td>24751–24777</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">246</td>
+  <td><code>p1c:prop:v243-four-atom-moment-proof</code></td>
+  <td>24803–24826</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">247</td>
+  <td><code>p1c:prop:v243-icosian-sextic-riesz-proof</code></td>
+  <td>24851–24861</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">248</td>
+  <td><code>p1c:prop:v243-neutral-boundary-source-proof</code></td>
+  <td>24881–24905</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">249</td>
+  <td><code>p1c:thm:v340-hp2-edge-orbits</code></td>
+  <td>24992–25016</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">250</td>
+  <td><code>p1c:prop:v340-hp2-local-coeff-obstruction</code></td>
+  <td>25035–25058</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">251</td>
+  <td><code>p1:prop:v203-quadratic-alias-witness</code></td>
+  <td>25142–25151</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">252</td>
+  <td><code>p1:cor:v203-geometric-positive-polar</code></td>
+  <td>25161–25172</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">253</td>
+  <td><code>p1:thm:HS-invariance</code></td>
+  <td>25241–25251</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">254</td>
+  <td><code>p1:thm:tensor-trace</code></td>
+  <td>25258–25268</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">255</td>
+  <td><code>p1:thm:commutant-trace-mult</code></td>
+  <td>25274–25282</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">256</td>
+  <td><code>p1c:prop:v341-coefficient-rank-and-topology</code></td>
+  <td>25296–25319</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">257</td>
+  <td><code>p1c:prop:v342-threecycle-exact-certificate</code></td>
+  <td>25338–25354</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">258</td>
+  <td><code>p1c:prop:v343-signed-coupling-certificate</code></td>
+  <td>25374–25391</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">259</td>
+  <td><code>p1c:prop:v344-hurwitz-petersen-verification</code></td>
+  <td>25413–25430</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">260</td>
+  <td><code>p1c:prop:v345-f40-certificate</code></td>
+  <td>25448–25470</td>
+  <td><code>REPRODUCED</code></td>
+  <td>BH-IC-EV-0002</td>
+</tr>
+<tr>
+  <td style="text-align:right">261</td>
+  <td><code>p1c:thm:v349-f40-23-equations</code></td>
+  <td>25484–25515</td>
+  <td><code>REPRODUCED</code></td>
+  <td>BH-IC-EV-0002</td>
+</tr>
+<tr>
+  <td style="text-align:right">262</td>
+  <td><code>p1c:prop:v349-f40-rational-frame-inverse</code></td>
+  <td>25531–25548</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">263</td>
+  <td><code>p1c:prop:v349-comparison-proof-register</code></td>
+  <td>25557–25566</td>
+  <td><code>FORMALIZED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">264</td>
+  <td><code>p1c:thm:v357-spinor-fischer</code></td>
+  <td>25574–25600</td>
+  <td><code>VERIFIED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">265</td>
+  <td><code>p1c:thm:v357-spinor-filtration</code></td>
+  <td>25614–25641</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">266</td>
+  <td><code>p1c:rem:v357-spinor-filtration-scope</code></td>
+  <td>25657–25666</td>
+  <td><code>FORMALIZED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">267</td>
+  <td><code>p1c:rem:v365-hurwitz-candidate-quarantine</code></td>
+  <td>25696–25709</td>
+  <td><code>FORMALIZED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">268</td>
+  <td><code>p1c:prop:v366-exact-coordinate-chamber</code></td>
+  <td>25724–25760</td>
+  <td><code>UNRESOLVED-EVIDENCE</code></td>
+  <td>BH-IC-EV-0002</td>
+</tr>
+<tr>
+  <td style="text-align:right">269</td>
+  <td><code>p1c:prop:v366-cumulative-hurwitz-certificates</code></td>
+  <td>25773–25798</td>
+  <td><code>UNRESOLVED-EVIDENCE</code></td>
+  <td>BH-IC-EV-0002</td>
+</tr>
+<tr>
+  <td style="text-align:right">270</td>
+  <td><code>p1c:rem:v366-hurwitz-source-corrections</code></td>
+  <td>25809–25822</td>
+  <td><code>FORMALIZED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">271</td>
+  <td><code>p1c:prop:v370-e8-finite-certificate</code></td>
+  <td>25836–25872</td>
+  <td><code>UNRESOLVED-EVIDENCE</code></td>
+  <td>BH-IC-EV-0002</td>
+</tr>
+<tr>
+  <td style="text-align:right">272</td>
+  <td><code>p1c:rem:v370-e8-provenance</code></td>
+  <td>25888–25896</td>
+  <td><code>FORMALIZED</code></td>
+  <td>source-stated conditions retained</td>
+</tr>
+</tbody>
+</table>
+<h2>DAG integration and reproducibility</h2>
+<p>The active source-matched audit layer is <code>DAG/AuditLayer/Paper1D-v1_1/Index.json</code>. It registers 272 audited claims, typed proof-route edges (with candidate references quarantined), one source alias per actual formal label, reused canonical open issue roots and conditional source scope, plus evidence ledgers and generated impact indices. The combined material, route, and forward/backward indices are versioned together and referenced from the canonical DAG's <code>graph_layers</code> and the active audit-layer registry. Historical audit and old source snapshots remain provenance, never claimed to be re-audited in this run.</p>
+<p><strong>Next step is theory repair ONLY by separate instruction:</strong> the present protocol reports evidence obligations, and does not insert missing source proofs or select a physical readout. This is a completed correctness audit with open gaps, not a completed mathematical proof of all stated claims.</p>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

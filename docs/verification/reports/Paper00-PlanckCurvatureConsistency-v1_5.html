@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper00-PlanckCurvatureConsistency-v1_5 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper00-PlanckCurvatureConsistency-v1_5 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Framework-wide audit / status record</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper00 PlanckCurvatureConsistency v1_5</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper00-PlanckCurvatureConsistency-v1_5.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Born–Hopf Geometry — Planck-curvature consistency and framework source integration v1.5</h1>
+<p><strong>Date:</strong> 18 November 2026<br />
+<strong>Source release:</strong> <code>Paper00-PapersMinimal-v3_036.zip</code><br />
+<strong>Graph release:</strong> <code>Paper00-DAGAtlas-v1_186.zip</code><br />
+<strong>Audit release:</strong> <code>Paper00-ProofChainAudits-v1_77.zip</code><br />
+<strong>Supersedes focused report:</strong> <code>Paper00-PlanckCurvatureConsistency-v1_4.md</code> (its original frozen-source references remain historical in the preserved text below).<br />
+<strong>Status:</strong> <code>SOURCE-INTEGRATED; SCOPED-MATH-CHECKED; COMPLETE PHYSICAL NEWTON MATCH STILL OPEN</code>.</p>
+<h2>Effective current-source changes</h2>
+<ul>
+<li><code>Paper3F-CompleteDynamics-v1_269.tex</code>: new exact invariance of canonical quadratic source exchange and bounded regular-gapped Schur-residue result; these do not prove full physical matching.</li>
+<li><code>Paper5A-FiniteMatterGeometry-v3_214.tex</code>: positive trace-two weak-gauge bound, including exact primitive 1/96 comparison; no physical gauge compensator generated.</li>
+<li><code>Paper6A-GravityCosmology-v2_264.tex</code>: scalar Einstein variation explicitly identified as a representative; physical common-action source realization kept conditional on the inherited complete metric/source/gauge/boundary comparison.</li>
+<li><code>Paper6B-CosmologyReadouts-v1_211.tex</code>: downstream late-density and static source owner caveat, terminal affine Lambda coefficient distinguished from actual nearby active metric-f(R) root.</li>
+<li><code>Macros-v2_187.tex</code>: active cross-paper version links for all 31 manuscripts; xref aux for changed manuscripts updated.</li>
+</ul>
+<p><strong>Numerical result:</strong> the primitive <code>U=1/(2 pi ell_scal^2)</code>, scalar comparison coefficient <code>hbar c U/8</code>, native ordinary-trace coefficient <code>12 hbar c U</code>, and tested downstream arithmetic remain unchanged. <code>Paper00-PlanckCurvatureConsistencyChecks-v1_4.py</code> rerun produced <strong>91/91</strong> scoped passing checks. All four new PDFs compiled and the affected pages were rendered and inspected. This is not an independent global E3/E4 paper audit.</p>
+<p><strong>Earliest still-open dependency:</strong> actual physical projection of the native joint action to the primitive canonically sourced massless tensor exchange while retaining native absolute gauge/matter response and boundary/measure jets. It is registered once at the pre-existing <code>p3f:prop:v2211-newton-owner-matching</code> interface, not as a new G0/GP axiom. Neither the pure-metric marked trace nor the conditional numerical readouts certify this source-normalized physical identification. No gap status is changed to CLOSED.</p>
+<hr />
+<h2>Previous mathematical report v1.4 (preserved as historical derivation)</h2>
+<h1>Born–Hopf Geometry — primitive-owner Newton projection derivation and obstruction audit v1.4</h1>
+<p><strong>Artifact:</strong> <code>Paper00-PlanckCurvatureConsistency-v1_4.md</code><br />
+<strong>Date:</strong> 18 November 2026<br />
+<strong>Supersedes:</strong> <code>Paper00-PlanckCurvatureConsistency-v1_3.md</code><br />
+<strong>Frozen source:</strong> <code>Paper00-PapersMinimal-v3_034.zip</code>; exact source <code>.tex</code> extracted from that ZIP.<br />
+<strong>Scope:</strong> targeted mathematical <em>development</em> and independent counterchecks of the physical source/metric Newton-normalization bridge; not a formal release-wide single-paper DAG audit.<br />
+<strong>Code:</strong> <code>Paper00-PlanckCurvatureConsistencyChecks-v1_4.py</code> (91/91 scoped checks; 69 previous preserved, 22 new).<br />
+<strong>Original framework ZIPs:</strong> unchanged; no unproved physical action projection is promoted to certified status.</p>
+<h2>Executive result</h2>
+<p>An <strong>already generated geometric scalar-owner retraction</strong> produces the desired gravitational coefficient exactly, without fitting:</p>
+<p>[
+\mathcal H=\mathbb S\otimes F,\quad \dim\mathbb S=4,;\dim F=48,
+\quad \Gamma=\gamma_x\otimes\Gamma_W,\quad
+P_+=(I+\Gamma)/2,\quad Z_{\rm rp}=P_+/48.
+]</p>
+<p>Then (\operatorname{Tr}Z_{\rm rp}=2) and</p>
+<p>[
+\boxed{\forall Q_g\in\operatorname{End}(\mathbb S),\qquad
+\operatorname{Tr}[Z_{\rm rp}(Q_g\otimes I_F)]
+=\frac1{96}\operatorname{Tr}[Q_g\otimes I_F].}
+]</p>
+<p>Thus, <strong>as a pure-metric coefficient readout</strong>, (\kappa_{\rm rp}=\kappa_J/96=U/8), whence <strong>if the physical action and canonical source actually realize this marked readout</strong>,</p>
+<p>[
+G_{\mu\nu}=\frac4{\hbar cU}T_{\mu\nu}^{\rm can},\qquad
+G_N=\frac{c^3}{2\pi\hbar U}.
+]</p>
+<p><strong>Physical-closure verdict: NOT YET DERIVED.</strong> Source papers explicitly state that the native common action uses an ordinary additive trace and raw coefficient (\kappa_J=12U). The primitive marked readout is mathematically generated, but its <strong>complete physical adoption</strong>, especially gauge/canonical fermion/mixed source and boundary transport, is not established. New no-go results below show why a uniform projected trace, an invertible field reparametrization, or a gapped analytic Schur complement do not by themselves close the physical Newton observable.</p>
+<p>The user's primitive (U=R_p=1/(2\pi\ell_{\rm scal}^2)) remains unchanged. The 96 is a distinct represented-action multiplicity.</p>
+<h2>1. Actual source chain</h2>
+<table>
+<thead>
+<tr>
+  <th>Source</th>
+  <th>Exact source location in 18 Nov release</th>
+  <th>Result / role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Paper I-C</td>
+  <td><code>Paper1C-M8Geometry-v1_142.tex:17873–17948</code>, <code>p1b:thm:v130-canonical-owner-retraction</code></td>
+  <td>(\epsilon_F=\operatorname{Tr}_F/48) uniquely unital under full internal-unitary conjugation, with amplification-invariant <em>scalar owner</em>; theorem does not select a spectral action</td>
+</tr>
+<tr>
+  <td>Paper I-C</td>
+  <td><code>Paper1C-M8Geometry-v1_142.tex:19492–19523</code>, <code>p1b:prop:v224-retained-primitive</code></td>
+  <td>(P_+/48) trace two; exact 1/96 pure-metric trace; <strong>graded correction</strong> survives on interactions/boundaries; physical adoption still an action comparison</td>
+</tr>
+<tr>
+  <td>Paper V-A</td>
+  <td><code>Paper5A-FiniteMatterGeometry-v3_213.tex:8012–8115</code>, <code>p5:thm:least-self-adjoint-heat-carrier</code>, <code>p5:thm:g24-raw-eh-transport</code></td>
+  <td>Native common heat 192, ordinary raw (U_J^{\rm raw}=96U)</td>
+</tr>
+<tr>
+  <td>Paper V-A</td>
+  <td><code>Paper5A-FiniteMatterGeometry-v3_213.tex:8129–8211</code>, <code>p5:prop:v2211-raw-newton-coupled-rescaling</code> and <code>p5:cor:common-heat-absolute-gauge-normalization</code></td>
+  <td>Ordinary native gauge (\operatorname{Tr}_F(T_i^aT_i^b)=3k_i\delta^{ab}), (k_2=2), (g_2^2=2\pi^2); uniform action scaling changes canonical gauge couplings</td>
+</tr>
+<tr>
+  <td>Paper III-F</td>
+  <td><code>Paper3F-CompleteDynamics-v1_268.tex:6349–6427</code>, <code>p3:thm:common-position-spectral-origin</code></td>
+  <td>One generated common position action; full pure-metric and nonmetric/fermion role weights; native Dirac-EH is the physical local action <strong>on its stated scope</strong>, not identical to scalar heat coefficient</td>
+</tr>
+<tr>
+  <td>Paper III-F</td>
+  <td><code>Paper3F-CompleteDynamics-v1_268.tex:5142–5184</code>, <code>p3f:prop:v2211-newton-owner-matching</code></td>
+  <td>Scalar coefficient is necessary for scalar Newton identification, but the physical full-action/source projection is outstanding</td>
+</tr>
+<tr>
+  <td>Paper III-F</td>
+  <td><code>Paper3F-CompleteDynamics-v1_268.tex:12659–12788</code>, <code>p3f:prop:v224-native-tensor</code> and <code>p3f:prop:v224-normalization-transport</code></td>
+  <td>Raw tensor terms, primitive metric normalization dictionary; whole-action marked trace is not a free gravity-only choice</td>
+</tr>
+<tr>
+  <td>Paper III-F</td>
+  <td><code>Paper3F-CompleteDynamics-v1_268.tex:12971–13026</code>, mixed-boundary weighting test</td>
+  <td>Fixed boundary trace-two insertion's canonical Einstein/GHY ratio and nonlinear Dirichlet response select incompatible Neumann populations in that restricted mixed collar model</td>
+</tr>
+<tr>
+  <td>Paper III-E</td>
+  <td><code>Paper3E-GravityAction-v1_200.tex:6524–6675</code>, <code>p3e:prop:v356-whole-action-jet-criterion</code> and <code>p3e:prop:v358-finite-reduction-covariance</code></td>
+  <td>Matching EH coefficient does not match all jets; finite quantum Gaussian reduction has determinant/source-measure correction</td>
+</tr>
+<tr>
+  <td>Paper VI-A</td>
+  <td><code>Paper6A-GravityCosmology-v2_263.tex:828–927</code>, <code>p8:thm:reciprocal-position-source-normalization</code></td>
+  <td>Consumer inserts (\hbar cU/8) into Einstein variation; physical origin is conditional on previous action projection</td>
+</tr>
+</tbody>
+</table>
+<h2>2. Rigorous coefficient extraction from existing primitive geometry</h2>
+<p>Assume only the source's fixed dimensions, involutive relative grading, and trace neutrality (\operatorname{Tr}<em>F\Gamma_W=0). The projector (P</em>+=(I+\Gamma)/2) has rank 96, so its normalized insertion (Z_{\rm rp}=P_+/48) has trace 2. For any pure metric endomorphism (Q_g\otimes I_F),</p>
+<p>[
+\begin{aligned}
+\operatorname{Tr}<em>{\mathbb S\otimes F}\left[\frac{P</em>+}{48}(Q_g\otimes I_F)\right]
+&amp;=\frac1{96}\bigl[\operatorname{Tr}<em>{\mathbb S}Q_g\operatorname{Tr}_F I_F
++\operatorname{Tr}</em>{\mathbb S}(\gamma_x Q_g)\operatorname{Tr}<em>F\Gamma_W\bigr]\
+&amp;=\frac12\operatorname{Tr}</em>{\mathbb S}Q_g
+=\frac1{96}\operatorname{Tr}_{\mathbb S\otimes F}(Q_g\otimes I_F).
+\end{aligned}
+]</p>
+<p>The source-native EH coefficient is (\kappa_J=12U). By linearity of the pure metric heat coefficient in the trace:</p>
+<p>[
+\boxed{\kappa_{\rm rp}=\frac1{96}(12U)=\frac U8.}
+]</p>
+<p>On a chart where (S_{g,\rm phys}=(\hbar cU/8)\int\sqrt{-g}R) and the same actual action has the canonical Hilbert source (\delta S_{m,\rm phys}=-\tfrac12\int\sqrt{-g},T_{\mu\nu}^{\rm can}\delta g^{\mu\nu}), stationarity gives (G_{\mu\nu}=4T_{\mu\nu}^{\rm can}/(\hbar cU)). Thus (G_N=c^3/(2\pi\hbar U)) in the source's SI normalization. <strong>This final implication has the explicit physical-action antecedent; it is not proof that the actual native ordinary-trace action has that metric/source owner.</strong></p>
+<h3>Important: the complete marked word is not a constant scaling</h3>
+<p>The primitive readout in Paper I-C is exactly</p>
+<p>[
+\boxed{\mathcal I_{\rm rp}=\frac1{96}(\mathcal I_{\rm raw}+\mathcal I_{\rm graded}),\qquad
+\mathcal I_{\rm graded}=\operatorname{Tr}(\Gamma_{\rm rel} L e^{-D^2/\Lambda_g^2}).}
+]</p>
+<p>The graded term is generally nonzero for interacting and boundary words. A physical projection must also differentiate its moving insertion: for source/metric parameters (q^a,q^b),</p>
+<p>[
+\begin{aligned}
+\partial_{ab}\operatorname{Tr}[Z(q)H(q)]
+=\operatorname{Tr}[&amp;Z H_{,ab}+ Z_{,a}H_{,b}+ Z_{,b}H_{,a}+Z_{,ab}H],
+\end{aligned}
+]</p>
+<p>plus the source-dependent measure and moving domain/boundary terms when present. Equality of the zeroth-order (R) coefficient alone is not equality of the physical Hessian, source vertex, or quantum response.</p>
+<h2>3. New no-go: positive trace-two retraction cannot preserve native weak gauge normalization</h2>
+<p><strong>Scope:</strong> a single <em>positive fixed insertion</em> on the existing 192-dimensional heat carrier, acting on the same Euclidean parity-even generator quadratic as the original ordinary heat action; unchanged weak generators and cutoff, without additional independently generated terms. This is not a no-go for every conceivable nonlocal or sector-selective physical projection.</p>
+<p>Let (T=T_2^a) be a conventional normalized (SU(2)_L) fundamental generator on the source's already generated weak doublets, zero on weak singlets. Then (|T^2|=1/4). Paper V-A gives the exact index (\operatorname{Tr}_F(T^2)=3k_2=6), hence</p>
+<p>[
+Q_2=I_{\mathbb S}\otimes T^2\succeq0,\quad
+|Q_2|=\tfrac14,\quad
+\operatorname{Tr}_{\mathcal H}Q_2=4\cdot6=24.
+]</p>
+<p>For any positive (Z\succeq0) with (\operatorname{Tr}Z=2), the operator inequality (0\le Q_2\le\tfrac14I) yields</p>
+<p>[
+0\le\operatorname{Tr}(ZQ_2)\le\frac14\operatorname{Tr}Z=\frac12.
+]</p>
+<p>Therefore</p>
+<p>[
+\boxed{\frac{\operatorname{Tr}(ZQ_2)}{\operatorname{Tr}Q_2}\le\frac1{48}&lt;1.}
+]</p>
+<p>In particular, the actual primitive insertion (Z_{\rm rp}=P_+/48) gives</p>
+<p>[
+\boxed{\operatorname{Tr}(Z_{\rm rp}Q_2)=\tfrac14,\quad
+\frac{\operatorname{Tr}(Z_{\rm rp}Q_2)}{\operatorname{Tr}Q_2}=\tfrac1{96}.}
+]</p>
+<p>For the ordinary parity-even vector heat coefficient, the spin chirality insertion instead contracts the antisymmetric (\epsilon_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}) tensor (a separate parity-odd/graded packet) and cannot replenish the parity-even (F_{\mu\nu}F^{\mu\nu}) coefficient. Thus a simple marked heat substitution would change the canonical parity-even gauge coupling squares to (g_{i,\rm rp}^2=96g_{i,\rm heat}^2). The parity-odd contact and boundary term must still be accounted for, not erased.</p>
+<p>This is a <strong>strictly stronger test than a common constant rescaling</strong>: any positive trace-two insertion fails to preserve even the native weak generator quadratic under the stated unchanged-generator assumptions. A physical projection preserving the native gauge coupling therefore needs either a separately generated compensating gauge sector or a nonuniform/sector-aware reduction that is not equivalent to simply inserting (Z_{\rm rp}) in every heat term.</p>
+<p>The required <strong>parity-even gauge restoration target</strong> under the simple retained-heat comparison, at fixed native source/gauge generators, is (\Delta S_{\rm YM,even}=(95/96) S_{\rm YM,raw,even}), plus the appropriate marked contact/boundary terms. This is a <em>necessary target equation</em>, <strong>not</strong> an assertion that such a compensator exists or can be inserted.</p>
+<h2>4. New no-go: invertible metric coordinate change cannot change the physical Newton exchange</h2>
+<p>Fix a regular quadratic graviton/source subspace with (S^{(2)}=\tfrac12 h^TKh-h^TJ). For any invertible (A), put (h'=Ah). The <strong>same action</strong> becomes</p>
+<p>[
+K'=A^{-T}KA^{-1},\qquad J'=A^{-T}J.
+]</p>
+<p>Thus the normalized source-to-source exchange is <strong>exactly invariant</strong>:</p>
+<p>[
+\boxed{J'^T(K')^{-1}J'=J^TK^{-1}J.}
+]</p>
+<p>As a one-component example, take the raw kinetic coefficient (K=12U) and (h'=\sqrt{96},h). Then (K'=U/8), but (J'=J/\sqrt{96}), so (J'^2/K'=J^2/(12U)). A metric-variable redefinition can make the coefficient <em>look</em> correct without changing a canonically measured force. A complete metric-and-source map must be judged on the exchange amplitude, not the graviton coefficient in isolation.</p>
+<h2>5. New bounded Schur test: regular gapped elimination cannot change the leading massless pole residue</h2>
+<p>For a local weak-field transverse-tensor sector with momentum (k), consider a source-native Hessian with (K_{hh}=\kappa_J k^2+O(k^4)), an eliminated block (C(k)=C_0+O(k^2)) invertible at (k=0), and a metric-to-interior mixing (B(k)=O(k^2)). These are explicit assumptions (typical of derivative/curvature mixing with a gapped internal sector), not a general property asserted of every Born–Hopf boundary or nonlocal operator. The exact Schur reduction is</p>
+<p>[
+K_{\rm eff}=K_{hh}-BC^{-1}B^\dagger
+=\kappa_J k^2+O(k^4).
+]</p>
+<p>Therefore it does <strong>not</strong> replace (\kappa_J) by (\kappa_J/96) in the massless spin-two (1/k^2) residue. More singular mixing, an extra massless carrier, a nonanalytic boundary kernel, a nontrivial metric/source-incidence map, or a genuinely marked physical action are separate candidates requiring their <strong>actual</strong> native construction and source jets. This result does not exclude them.</p>
+<p>For the source's ordinary local metric-f(R) scalaron, the already established conditional weaker bound (v1.3) also prevents a factor-96 Newton rescue from its at-most-4/3 Yukawa enhancement.</p>
+<h2>6. Precise remaining physical bridge, now narrowed</h2>
+<p><strong>TARGET:</strong> physical Newton response measured by one canonical generated test body on the source's common clocked low-curvature chart; Paper VI-A <code>p8:thm:reciprocal-position-source-normalization</code> as the affected consumer.</p>
+<p><strong>EXACT EXISTING INPUTS:</strong></p>
+<ol>
+<li>Native additive common-heat action (S_J), with (\kappa_J=12U), native YM indices/canonical couplings and canonically normalized matter source.</li>
+<li>Natural primitive-owner retraction (Z_{\rm rp}=P_+/48), yielding (\kappa_{\rm rp}=U/8) on pure-metric words.</li>
+<li>Valid same-action Schur rules, source/metric mixed-jet and quantum-measure criteria; they <strong>do not select the physical application</strong> of that retraction by themselves.</li>
+</ol>
+<p><strong>MISSING EDGE:</strong> a <em>generated, claim-complete physical action/observable map</em> from the native ordinary joint action to one actual physical metric, source, gauge and boundary response that simultaneously realizes</p>
+<p>[
+\begin{gathered}
+\lim_{k^2\to0}\left[k^2,\Pi_{\rm TT},K_{\rm phys}^{-1}(k)J_{B,\rm phys}(k)\right]
+\quad\text{with precisely the scalar-owned canonical Newton residue }G_{\rm scal},\
+\text{the native canonical gauge current/kinetic residues},\qquad
+\text{and the same canonical test-body rest energy/clock}.
+\end{gathered}
+]</p>
+<p>Here the actual physical projection must transport the <strong>complete</strong> action/metric/source/boundary/measure jets, not merely produce a matching number in (\kappa_{\rm rp}). For a regular stationary reduction, the physical quadratic data are</p>
+<p>[
+K_{\rm phys}=K_{hh}-K_{h\xi}K_{\xi\xi}^{-1}K_{\xi h},\qquad
+J_{B,\rm phys}=J_{hB}-K_{h\xi}K_{\xi\xi}^{-1}J_{\xi B},
+]</p>
+<p>with gauge quotients, zero modes, determinant/contact terms and source normalization included on their actual domains. For a nontrivial marked readout, source derivatives of (P_+) and the graded term must also be kept.</p>
+<p><strong>WHY STILL OPEN:</strong> Paper I-C:19521–19523 explicitly says physical adoption is an action comparison; Paper III-F:12783–12788 and Paper V-A:8138–8163 explicitly preserve the gauge/source/firewall; Paper III-E:6554–6563 and 6666–6674 explicitly preserve the physical first/mixed-jet and quantum-measure bridge. No source-derived selector for a <em>sector-aware complete physical action</em> meeting all these constraints was established in this run. Thus we cannot infer physical (G_{\rm scal}) unconditionally from the current raw action.</p>
+<p><strong>HOW TO CLOSE IT WITHOUT NEW FUNDAMENTAL PRINCIPLES:</strong> identify the <strong>already generated</strong> actual source-cyclic/projected observable in the source-native joint packet whose complete response has the primitive EH residue and native gauge/matter residues. Compute its full spectral metric/source/gauge two-jet—including graded pieces and boundary/measure terms—and compare physical source-to-source exchange; if a derived boundary or stationary Schur operator provides an additional 95/96 gauge-even contribution or altered metric incidence, calculate it explicitly instead of postulating it. This is one missing action-equality/observable-owner certificate, not a request for a new GP axiom.</p>
+<h3>Status table</h3>
+<table>
+<thead>
+<tr>
+  <th>Statement</th>
+  <th>Finding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1/96 primitive metric coefficient</td>
+  <td><strong>EXACT, SOURCE-DERIVED</strong> (replayed)</td>
+</tr>
+<tr>
+  <td>2π primitive curvature (U)</td>
+  <td><strong>PRESERVED</strong></td>
+</tr>
+<tr>
+  <td>Native gauge absolute couplings unchanged under uniform marked heat replacement</td>
+  <td><strong>FALSE in that comparison</strong>, and ruled out by new positive trace-two upper bound</td>
+</tr>
+<tr>
+  <td>Invertible metric reparametrization can change canonical Newton exchange</td>
+  <td><strong>FALSE</strong> (exact exchange invariance)</td>
+</tr>
+<tr>
+  <td>Regular gapped analytic Schur sector can reduce massless EH pole by 96</td>
+  <td><strong>FALSE under stated k² mixing/gap hypotheses</strong></td>
+</tr>
+<tr>
+  <td>A generated nonuniform physical action map exists with required scalar EH plus native gauge/matter</td>
+  <td><strong>NOT ESTABLISHED</strong> (not refuted globally)</td>
+</tr>
+<tr>
+  <td>Paper VI-A scalar Einstein variation</td>
+  <td><strong>ALGEBRAICALLY VALID, PHYSICALLY CONDITIONAL</strong> pending owner equality</td>
+</tr>
+<tr>
+  <td>Inflation/late-cosmology physical absolute scale</td>
+  <td><strong>CONDITIONAL</strong> on same action/observable matching; dimensionless ratios may cancel normalization</td>
+</tr>
+</tbody>
+</table>
+<h2>7. Verification and provenance</h2>
+<p><code>Paper00-PlanckCurvatureConsistencyChecks-v1_4.py</code> independently builds a (192\times192) relative-graded projector and explicit 12-doublet weak-generator quadratic with (\operatorname{Tr}_F T^2=6), checks the 1/96 exact trace and 1/48 upper bound, source-preserving field reparametrization, gapped-Schur residue, and preserves 69 prior numerical/scoped checks. All 91 checks pass. These finite checks verify the displayed algebra in their declared scope; they do not construct a physical Born–Hopf projection or certify quantum gravity.</p>
+<p><strong>Do not update the canonical DAG owner status to CLOSED from this report.</strong> The proposal is a focused source-linked result for a subsequent targeted proof-chain repair or physical projection construction.</p>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

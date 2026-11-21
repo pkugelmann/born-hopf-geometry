@@ -1,0 +1,2278 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper5A-ProofChainAudit-v1_8 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper5A-ProofChainAudit-v1_8 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper5A ProofChainAudit v1_8</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper5A-ProofChainAudit-v1_8.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Paper Paper5A current-source normalization integration — 18 November 2026</h1>
+<p><strong>Current paper:</strong> <code>Paper5A-FiniteMatterGeometry-v3_214.tex</code> (SHA-256 <code>183fd43ff87d0783fce58e62e761a5ac14e7f20555ec8903cef71b01212842ca</code>).<br />
+<strong>Framework:</strong> <code>Paper00-PapersMinimal-v3_036.zip</code>; <strong>scope:</strong> TARGETED SOURCE INTEGRATION AND BOUNDED MATH CHECKS, NOT A FULL NEW PAPER AUDIT.<br />
+<strong>Source claims:</strong> <code>p5:prop:v3036-positive-trace-two-weak-bound; p5:rem:v3036-gauge-restoration-obligation</code>.<br />
+<strong>Disposition:</strong> Exact positivity/norm bound for unchanged-generator positive trace-two heat insertions; graded, boundary and complete-source matching are separate.<br />
+<strong>Evidence:</strong> <code>Paper00-PlanckCurvatureConsistency-v1_5.md</code> and <code>Paper00-PlanckCurvatureConsistencyChecks-v1_4.py</code> (91/91 scoped checks, independently rerun).<br />
+<strong>Ownership:</strong> The earliest unresolved source-native physical source/metric bridge remains <code>p3f:prop:v2211-newton-owner-matching</code>; no new axioms, no independent issue duplicate, no physical closure promotion. Historical issue status and prior proofs are preserved verbatim below.</p>
+<hr />
+<h2>Historical audits and prior scoped updates (unchanged content)</h2>
+<h1>Source migration and repair-integration addendum — Paper5A-ProofChainAudit-v1_7.md</h1>
+<p><strong>Integration release:</strong> <code>Paper00-PapersMinimal-v3_007.zip</code>, 14 November 2026.
+<strong>Current paper source:</strong> <code>Paper5A-FiniteMatterGeometry-v3_210.tex</code>.
+<strong>Status:</strong> <code>SOURCE_INTEGRATED; GLOBAL_SOURCE_REAUDIT_PENDING</code>. An inherited historical audit is not a correctness certificate for the newer current manuscript.
+<strong>Evidence policy:</strong> Local algebraic proofs and scoped tests do not discharge physical source/observable interfaces or automatically alter the canonical proof DAG.</p>
+<hr />
+<h2>Historical source-bound audit: Paper5A-ProofChainAudit-v1_6.md</h2>
+<h1>Repair addendum — Paper5A / 13 November 2026</h1>
+<p><strong>Current manuscript:</strong> <code>Paper5A-FiniteMatterGeometry-v3_203.tex</code> (SHA-256 <code>8a643cf145ad405e7e5f0aca5668c7198cb9154662b5220c5ac64297f9797160</code>)<br />
+<strong>Historical report preserved:</strong> <code>Paper5A-ProofChainAudit-v1_5.md</code> verbatim below.<br />
+<strong>Disposition:</strong> Scoped source repairs, not complete independent mathematical re-audit; all prior DAG proof/physical statuses unchanged.</p>
+<table>
+<thead>
+<tr>
+  <th>Issue</th>
+  <th>Current source line(s)</th>
+  <th>Change</th>
+  <th>Disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-IIIE-G-0001</code></td>
+  <td><code>Paper5A-FiniteMatterGeometry-v3_203.tex:805</code>, <code>Paper5A-FiniteMatterGeometry-v3_203.tex:2569</code></td>
+  <td>Separated seven-real-dimensional Clifford response W_7 from complex spin W_spin and corrected J_Delta codomain and V-A consumers.</td>
+  <td>SOURCE_CORRECTED; REAUDIT PENDING / IMPORTED GATE RETAINED</td>
+</tr>
+</tbody>
+</table>
+<p>See <code>Paper00-AuditRepairBatch-v1_3.md</code> and the 28/28 scoped controls in the current atlas. Source hashes and line numbers appearing in the original text below refer to its <strong>previous source edition</strong>; original OPEN flags are historical and have not been changed or globally promoted.</p>
+<hr />
+<h2>Historical audit baseline (unaltered original text)</h2>
+<h1>Born–Hopf Geometry — Paper V-A rigorous verification DAG audit, Batch 5 (final)</h1>
+<p><strong>Audit classification:</strong> <code>FULLY_AUDITED_WITH_OPEN_GAPS</code> for the 260 named/formal environments; <strong>not</strong> a global proof of the framework or an independent multi-agent certification.
+<strong>Current source:</strong> <code>Paper5A-FiniteMatterGeometry-v3_202.tex</code>; SHA256 <code>3a39ab471307ceadab5af16384c547520c0e8d64f28e67daaf60c4fd1ef73a8c</code>. <strong>Corpus:</strong> <code>Paper00-PapersMinimal-v2_371</code>. <strong>Protocol:</strong> RigorousVerificationDAG v2.4. Source and input archives unmodified.
+<strong>Incoming latest atlas / audits:</strong> <code>Paper00-DAGAtlas-v1_109(2).zip</code> and <code>Paper00-ProofChainAudits-v1_26(1).zip</code>; outputs: <code>Paper00-DAGAtlas-v1_110.zip</code> and <code>Paper00-ProofChainAudits-v1_27.zip</code> (latest-only).
+<strong>Final segment:</strong> P5A-192–P5A-260, source lines 6565–8740 (69 formal claims). <strong>Cumulative:</strong> 260/260 reviewed, 0 named unexamined. Four prior batches add 191 claims.
+<strong>Evidence disclosure:</strong> one-model sequential E1 source import/proof replay, independently implemented E3 exact algebra/symbolic checks and scoped E4 countercase/physical-boundary review. No independent delegated agents. Exact calculations do not prove occurrence, required outputs, or same-action incidence.</p>
+<h2>Final disposition and verification</h2>
+<table>
+<thead>
+<tr>
+  <th>Formal status</th>
+  <th style="text-align:right">Claims</th>
+  <th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>VERIFIED</code></td>
+  <td style="text-align:right">45</td>
+  <td>Exact claim-aligned mathematical verification in stated scope</td>
+</tr>
+<tr>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td style="text-align:right">76</td>
+  <td>Proof/identity verified with explicit unfulfilled or conditional premise retained</td>
+</tr>
+<tr>
+  <td><code>REPRODUCED</code></td>
+  <td style="text-align:right">54</td>
+  <td>Source proof and required cited material replayed; not globally independently re-proved</td>
+</tr>
+<tr>
+  <td><code>FORMALIZED</code></td>
+  <td style="text-align:right">74</td>
+  <td>Definition, remark, or bounded/negative theorem scope recorded</td>
+</tr>
+<tr>
+  <td><code>UNRESOLVED</code></td>
+  <td style="text-align:right">11</td>
+  <td>Material source transition remains under one of the eight root issue certificates</td>
+</tr>
+<tr>
+  <td><strong>Total</strong></td>
+  <td style="text-align:right"><strong>260</strong></td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<p>Scoped direct check passes by batch: <strong>9 + 17 + 17 + 19 + 30 = 92/92</strong>; scoped checks are local tests, not an independent reproof of 260 physical claims. Batch 5 independently verifies the 24 Yukawa-sector effective-rank bound, exact Higgs/heat normalization algebra, Haar sextic moments, one-loop threshold coefficients within the declared finite/QFT domain, Clifford heat factors, Petersen A5-module decomposition, antiprism singular spectrum and root mass no-go. All check details retained in <code>DAG/AuditLayer/Paper5A-v1_1/ProofEvidenceLedger.json</code> and <code>ExactChecks-Batch5-v1_1.py</code>.</p>
+<p><strong>Unresolved claims vs root findings:</strong> 11 of the 260 source claims are marked <code>UNRESOLVED</code>, but they descend from <strong>eight</strong> distinct root issues G0001–G0008 (no new independent root in Batch 5). The exact algebra survives where noted; missing physical-owner outputs are not disproven or silently supplied.</p>
+<h2>Eight source-located root issues (all OPEN)</h2>
+<h3>BH-VA-G-0001 · CONDITIONAL_FRONTIER · major · OPEN</h3>
+<p><strong>First location:</strong> <code>p5:thm:generated-coordinate-higgs</code> at <code>Paper5A-FiniteMatterGeometry-v3_202.tex:605-609</code>. <strong>Statement:</strong> SOURCE-AS-PRINTED.
+<strong>What is not established:</strong> Algebraic existence of a 48-dimensional minimal faithful module does not by itself certify the actual physical whole-candidate has no unmarked extra copies; this affects claims of representation-sector physical uniqueness, not algebra closure.
+<strong>Required proof/certificate:</strong> For the specific scalar and combined matter whole-candidate signatures actually frozen here, establish that any r&gt;1 unmarked implementation admits a GP1-admissible GP2-exact host-faithful candidate and a generated, role-faithful, proper whole-candidate GP3 comparison preserving all occurring operations, relations, tests and scalar readouts.
+<strong>Imported / inherited input:</strong> <code>p2:prop:gp3-multiplicity-bound</code>.
+<strong>Verified route exemplars:</strong> <code>p5:thm:generated-coordinate-higgs</code> → <code>p5:thm:component-independence-composition</code>; <code>p5:thm:componentwise-no-deletion</code> → <code>p5:thm:component-independence-composition</code>; <code>p5:thm:component-independence-composition</code> → <code>p5:thm:canonical-color-family</code>.
+<strong>Batch-5 inherited uses:</strong> <code>P5A-227</code>, <code>P5A-228</code>, <code>P5A-231</code>, <code>P5A-235</code>, <code>P5A-237</code>, <code>P5A-245</code>. These uses are conditionally inherited, <strong>not new independent gap origins</strong>.
+<strong>POSSIBLY AFFECTED; unconfirmed source-specific effect:</strong> ['later Paper5A normalized traces / observables not yet reviewed']</p>
+<h3>BH-VA-G-0002 · MISSING_CONDITION · major · OPEN</h3>
+<p><strong>First location:</strong> <code>p5:cor:yfix-hypercharge</code> at <code>Paper5A-FiniteMatterGeometry-v3_202.tex:745-761</code>. <strong>Statement:</strong> SOURCE-AS-PRINTED.
+<strong>What is not established:</strong> A nowhere-zero tensor on its generated geometric orbit plus a nonzero projection does not alone certify the physical target action. The upstream export explicitly cautions against that identification.
+<strong>Required proof/certificate:</strong> Produce the source-licensed equivariant parent→physical target-action/base-map diagram for the projected (L0*)² member, including the complete retained parent companions, or delimit structural hypercharge to the geometric candidate character line. Check identity/occurrence of both actions, not only equality of weights.
+<strong>Imported / inherited input:</strong> <code>p2a:thm:v187-pcad</code>, <code>p2c:cor:intrinsic-joint-comparison-role-export</code>, <code>p5:prop:commuting-hopf-color-comparison-projections</code>.
+<strong>Verified route exemplars:</strong> <code>p5:prop:v187-pcad-yfix</code> → <code>p5:prop:three-generation-content</code>; <code>p5:prop:v187-pcad-yfix</code> → <code>p5:thm:v3103-generated-bl2-family-coefficient</code>.
+<strong>Batch-5 inherited uses:</strong> <code>P5A-206</code>, <code>P5A-226</code>, <code>P5A-231</code>, <code>P5A-235</code>, <code>P5A-245</code>. These uses are conditionally inherited, <strong>not new independent gap origins</strong>.
+<strong>POSSIBLY AFFECTED; unconfirmed source-specific effect:</strong> ['Later Paper V-A asserted physical hypercharge and Y-covariant action descendants beyond claim 092']</p>
+<h3>BH-VA-G-0003 · MISSING_CONDITION · major · OPEN</h3>
+<p><strong>First location:</strong> <code>p5:def:v3105-rooted-bl2-pair-member</code> at <code>Paper5A-FiniteMatterGeometry-v3_202.tex:3508-3523</code>. <strong>Statement:</strong> SOURCE-AS-PRINTED.
+<strong>What is not established:</strong> A symmetric family coefficient represents a permitted Majorana flavor tensor, but a CAR pair creation coefficient is skew on full fermionic mode space. Inserting a symmetric three-mode matrix directly gives zero, while a spin-skew extension can be nonzero: type map is the missing certificate, not a mathematical contradiction.
+<strong>Required proof/certificate:</strong> Construct or cite a frozen, licensed, gauge/role-covariant injection iota_pair:Sym²G<em>→Λ²K</em> on the actual complete neutral-right CAR one-particle modes and demonstrate iota_pair(M) is skew and nonzero on that physical support.
+<strong>Imported / inherited input:</strong> <code>p4:cor:v4101-generated-pair-member-handoff</code>.
+<strong>Verified route exemplars:</strong> <code>p5:def:v3105-rooted-bl2-pair-member</code> → <code>p5:thm:v3105-k16-bl2-pair-corealization</code> → <code>p5:thm:v270-k16-action-hypercharge-ward</code>.
+<strong>POSSIBLY AFFECTED; unconfirmed source-specific effect:</strong> ['K16 action source and no-free-efficiency assertions later in Paper V-A']</p>
+<h3>BH-VA-G-0004 · MISSING_CONDITION · major · OPEN</h3>
+<p><strong>First location:</strong> <code>p5:thm:v3105-k16-bl2-pair-corealization</code> at <code>Paper5A-FiniteMatterGeometry-v3_202.tex:3533-3548,3573-3584</code>. <strong>Statement:</strong> SOURCE-AS-PRINTED.
+<strong>What is not established:</strong> An occurring physical K16 owner plus an allowed pair coordinate does not imply a particular generated pair is a required existing output; Paper II-A explicitly makes this a hypothesis of its co-realization theorem.
+<strong>Required proof/certificate:</strong> Identify the frozen independently occurring K16 owner constructor schema, its physical target T and proof that the specific rooted Δ_BL2 image is REQUIRED NONREDUNDANT output on the same domain, rather than an available optional pairing slot. This is separate from proving Δ is a skew nonzero member.
+<strong>Imported / inherited input:</strong> <code>p2a:thm:v3109-generated-member-owner-corealization</code>, <code>p4:cor:v4101-generated-pair-member-handoff</code>.
+<strong>Verified route exemplars:</strong> <code>p5:thm:v3105-k16-bl2-pair-corealization</code> → <code>p5:thm:v270-k16-action-hypercharge-ward</code>.
+<strong>POSSIBLY AFFECTED; unconfirmed source-specific effect:</strong> ['Boundary-action occurrence closure and any downstream source terms using co-realized K16 pair']</p>
+<h3>BH-VA-G-0005 · MISSING_CONDITION · major · OPEN</h3>
+<p><strong>First location:</strong> <code>p5:thm:v392-rooted-srcval-incidence</code> at <code>Paper5A-FiniteMatterGeometry-v3_202.tex:5012-5055</code>. <strong>Statement:</strong> SOURCE-AS-PRINTED.
+<strong>What is not established:</strong> A nonzero rooted Clifford contraction is a mathematical operator, not automatically the required physical fermionic action source. The cited v375 handoff takes Occ(nonzero source) as premise, so using it to conclude that premise would loop unless another independent route is established.
+<strong>Required proof/certificate:</strong> Identify an independently licensed rooted constructor (e.g. Paper I-B triality restriction on the occurring Hurwitz root), freeze its action-owned required output D_F,* without invoking P5A v375 consumption theorem that already assumes an occurring nonzero odd source, and verify the Paper III-F fermion jet consumes that required output on the exact same root/target. Check whether this complete chain is already closed upstream before adding any specialized condition.
+<strong>Imported / inherited input:</strong> <code>p5:thm:v375-d4-triality-source-consumption</code>, <code>p1b:cor:v126-triality-restriction-is-clifford</code>, <code>p3f:cor:v1122-root-generated-fermion-member-handoff</code>, <code>p2a:thm:v3109-generated-member-owner-corealization</code>.
+<strong>Verified route exemplars:</strong> <code>p5:thm:v392-rooted-srcval-incidence</code> → <code>p5:cor:v392-primitive-source-boundary-retired</code>.
+<strong>Batch-5 inherited uses:</strong> <code>P5A-192</code>, <code>P5A-193</code>, <code>P5A-199</code>, <code>P5A-200</code>, <code>P5A-201</code>, <code>P5A-204</code>, <code>P5A-205</code>. These uses are conditionally inherited, <strong>not new independent gap origins</strong>.
+<strong>POSSIBLY AFFECTED; unconfirmed source-specific effect:</strong> ['Later P5A primitive-rooted same-action claims until independent required output proof supplied']</p>
+<h3>BH-VA-G-0006 · MISSING_CONDITION · major · OPEN</h3>
+<p><strong>First location:</strong> <code>p5:thm:v398-charged-rooted-comparison-owner-consumption</code> at <code>Paper5A-FiniteMatterGeometry-v3_202.tex:5390-5417</code>. <strong>Statement:</strong> SOURCE-AS-PRINTED.
+<strong>What is not established:</strong> 25-label eta_H=24/25 is a valid exact geometric expectation but a physical same-action comparison factor used in charged mass/source readouts must be connected to an actually consumed physical owner. The earlier Paper V-B source explicitly leaves Higgs/Yukawa consumption conditional.
+<strong>Required proof/certificate:</strong> Show that the specific occurring charged Higgs/Yukawa mixed action/physical source owner has a predeclared and actually consumed relation carrier on X=(2I)/(2T) with the rooted identity deletion and full retained 25 labels; link this source-operator insertion to the quartic scalar comparison without equating quadrature availability with a required same-action output.
+<strong>Imported / inherited input:</strong> <code>p1:cor:v569-unique-quartic-comparison-support</code>, <code>p2a:cor:v3104-rooted-relation-corealization</code>, <code>p6:cor:v181-conditional-higgs-exclusion-value</code>.
+<strong>Verified route exemplars:</strong> <code>p5:thm:v398-charged-rooted-comparison-owner-consumption</code> → <code>p5:cor:v398-charged-exclusion-owner-dependent</code>; <code>p5:thm:v398-charged-rooted-comparison-owner-consumption</code> → <code>p5:prop:v221-charged-comparison-source-scope</code>.
+<strong>POSSIBLY AFFECTED; unconfirmed source-specific effect:</strong> ['Paper V-B v5.91 nine role-specific polar grades and later mass coefficients if their physical owner-route consumes this comparison; not independently reaudited']</p>
+<h3>BH-VA-G-0007 · CONDITIONAL_FRONTIER · major · OPEN</h3>
+<p><strong>First location:</strong> <code>p5:prop:v221-charged-comparison-source-scope</code> at <code>Paper5A-FiniteMatterGeometry-v3_202.tex:5440-5476</code>. <strong>Statement:</strong> SOURCE-AS-PRINTED.
+<strong>What is not established:</strong> The comparison scalar eta alone leaves two distinct normalized action responses (factor 1 vs sqrt(eta)); source itself recognizes this missing preterminal action incidence, so the issue is a conditional physical mass-owner frontier, not an error in the geometric scalar.
+<strong>Required proof/certificate:</strong> For each actual charged source role, independently evaluate the preterminal mixed action derivative or a licensed preterminal contraction to fix which normalized comparison frames (common or relative) and exterior/reciprocal owner sorts the physical left/right source legs consume; certify comparison grades without reading them from the already produced mass coefficients.
+<strong>Imported / inherited input:</strong> <code>p1b:cor:v221-hurwitz-principal-angle</code>, <code>p3f:prop:v221-relative-chiral-comparison-frame</code>.
+<strong>Verified route exemplars:</strong> <code>p1b:cor:v221-hurwitz-principal-angle</code> → <code>p3f:prop:v221-relative-chiral-comparison-frame</code> → <code>p5:prop:v221-charged-comparison-source-scope</code>.
+<strong>Batch-5 inherited uses:</strong> <code>P5A-193</code>. These uses are conditionally inherited, <strong>not new independent gap origins</strong>.
+<strong>POSSIBLY AFFECTED; unconfirmed source-specific effect:</strong> ['Paper V-B v5.91 nine mass-grade owner assignments and pole/source-residue projections need action-specific mixed-jet checks; cross-paper grade dependency not independently reaudited']</p>
+<h3>BH-VA-G-0008 · MISSING_CONDITION · major · OPEN</h3>
+<p><strong>First location:</strong> <code>p5:thm:v375-d4-triality-source-consumption</code> at <code>Paper5A-FiniteMatterGeometry-v3_202.tex:6041-6071</code>. <strong>Statement:</strong> SOURCE-AS-PRINTED.
+<strong>What is not established:</strong> The theorem assumes a nonzero source, unlike G0005, which concerns generating primitive source actuality. The additional claim that this source must consume a particular normalized triality port depends on a frozen action-constructor output; upstream exact/no-idle rules are conditional on such output. The mathematics of triality and C3 is not disputed.
+<strong>Required proof/certificate:</strong> In the specific already occurring fermion source/Hessian, identify a typed constructor whose frozen required nonredundant output is the normalized protected C_TRI contraction of the generated signed triality tensor, and show its nonzero contribution to the same action/source jet. Do not infer this merely from existence of some nonzero odd source and of an independently generated geometric tensor.
+<strong>Imported / inherited input:</strong> <code>p1b:cor:v126-triality-restriction-is-clifford</code>, <code>p2a:thm:v3109-generated-member-owner-corealization</code>, <code>p3a:cor:v183-action-coconsumption</code>.
+<strong>Verified route exemplars:</strong> <code>p5:thm:v375-d4-triality-source-consumption</code> → <code>p5:cor:v375-g15-source-occurrence-retired</code>; <code>p5:thm:v375-d4-triality-source-consumption</code> → <code>p5:thm:v381-c3-source-cell-corealization</code> → <code>p5:cor:v381-g15-transport-closed</code>; <code>p5:thm:v375-d4-triality-source-consumption</code> → <code>p5:thm:v382-upstream-generated-source-cell</code> → <code>p5:cor:v382-g15-closure-hardened</code>.
+<strong>POSSIBLY AFFECTED; unconfirmed source-specific effect:</strong> ['physical same-action C3 transport and G15 structural closure; later source-member and family predictions require route-specific action evidence']</p>
+<h2>Batch 5: existing vs unresolved interfaces</h2>
+<p>The finite Yukawa projector, character/invariant and Dirac decomposition are checked in their declared algebraic domains, without creating a physical Higgs VEV or scalar mass member. One-loop coefficients and gauge coupling normalizations are QFT-conditional; no claim of unconditional continuum physics was certified. The physical closure ledger at P5A-235 and the asserted primitive source occurrences at P5A-199–204 inherit existing G0001/G0002/G0005, as recorded in the issue registry. The terminal no-go P5A-259–260 correctly separates a full-rank Clifford solder from an observed interacting charged-mass/pole spectrum.</p>
+<p>No new theory was written; no revised TeX, extra physical action, new principle or repaired theorem entered either ZIP. Mathematical source identities are not treated as automatically occurring action outputs. No independent full audit of imported Paper I–IV or V-B–VII is claimed.</p>
+<h2>Batch 5 complete 69-object claim/evidence ledger</h2>
+<table>
+<thead>
+<tr>
+  <th>Claim</th>
+  <th style="text-align:right">Lines</th>
+  <th>Statement label</th>
+  <th>Status</th>
+  <th>Independent check(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>P5A-192</code></td>
+  <td style="text-align:right">6565–6576</td>
+  <td><code>p5:thm:v387-actual-source-unique-owner-member</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-193</code></td>
+  <td style="text-align:right">6588–6598</td>
+  <td><code>p5:cor:v387-downstream-source-ownership</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-194</code></td>
+  <td style="text-align:right">6600–6606</td>
+  <td><code>p5:rem:v387-no-vev-reentry</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-195</code></td>
+  <td style="text-align:right">6613–6620</td>
+  <td><code>p5:def:v389-srcport-srcval</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-196</code></td>
+  <td style="text-align:right">6622–6633</td>
+  <td><code>p5:thm:v389-factorized-family-source</code></td>
+  <td><code>REPRODUCED</code></td>
+  <td><code>factorized_sector_gram_and_kernel</code></td>
+</tr>
+<tr>
+  <td><code>P5A-197</code></td>
+  <td style="text-align:right">6640–6662</td>
+  <td><code>p5:prop:v389-primitive-rooted-owner-member</code></td>
+  <td><code>VERIFIED</code></td>
+  <td><code>primitive_root_unit_clifford_full_rank</code></td>
+</tr>
+<tr>
+  <td><code>P5A-198</code></td>
+  <td style="text-align:right">6664–6676</td>
+  <td><code>p5:cor:v389-family-factor-gap-criterion</code></td>
+  <td><code>VERIFIED</code></td>
+  <td><code>factorized_sector_gram_and_kernel</code></td>
+</tr>
+<tr>
+  <td><code>P5A-199</code></td>
+  <td style="text-align:right">6678–6687</td>
+  <td><code>p5:rem:v389-open-srcval-incidence</code></td>
+  <td><code>UNRESOLVED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-200</code></td>
+  <td style="text-align:right">6695–6710</td>
+  <td><code>p5:def:v390-two-fermion-obligations</code></td>
+  <td><code>UNRESOLVED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-201</code></td>
+  <td style="text-align:right">6712–6720</td>
+  <td><code>p5:prop:v390-no-downstream-source-repair</code></td>
+  <td><code>UNRESOLVED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-202</code></td>
+  <td style="text-align:right">6722–6733</td>
+  <td><code>p5:rem:v390-same-parent-family-target</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-203</code></td>
+  <td style="text-align:right">6740–6753</td>
+  <td><code>p5:prop:v391-antiprism-frame-port</code></td>
+  <td><code>VERIFIED</code></td>
+  <td><code>antiprism_full_rank_spectrum_import</code></td>
+</tr>
+<tr>
+  <td><code>P5A-204</code></td>
+  <td style="text-align:right">6755–6764</td>
+  <td><code>p5:rem:v391-no-cross-sort-premise-minimization</code></td>
+  <td><code>UNRESOLVED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-205</code></td>
+  <td style="text-align:right">6766–6773</td>
+  <td><code>p5:rem:v391-narrowed-family-obligation</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-206</code></td>
+  <td style="text-align:right">6823–6845</td>
+  <td><code>p5:thm:part1-yukawa-majorana-unique</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>four_yukawa_slots_charge_weights</code></td>
+</tr>
+<tr>
+  <td><code>P5A-207</code></td>
+  <td style="text-align:right">6869–6885</td>
+  <td><code>p5:cor:yukawa-matrices-interface-data</code></td>
+  <td><code>REPRODUCED</code></td>
+  <td><code>four_yukawa_slots_charge_weights</code></td>
+</tr>
+<tr>
+  <td><code>P5A-208</code></td>
+  <td style="text-align:right">6887–6941</td>
+  <td><code>p5:cor:v175-yukawa-scalar-action-family</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>yukawa_48_operator_trace_moments</code>, <code>canonical_higgs_mass_and_moments</code></td>
+</tr>
+<tr>
+  <td><code>P5A-209</code></td>
+  <td style="text-align:right">6944–6980</td>
+  <td><code>p5:thm:v179-canonical-higgs-direction</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>canonical_higgs_mass_and_moments</code></td>
+</tr>
+<tr>
+  <td><code>P5A-210</code></td>
+  <td style="text-align:right">7000–7038</td>
+  <td><code>p5:prop:v215-sextic-radial-evaluation</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>independent_sextic_dirichlet_Haar_moments</code></td>
+</tr>
+<tr>
+  <td><code>P5A-211</code></td>
+  <td style="text-align:right">7048–7064</td>
+  <td><code>P5A-211</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td><code>independent_sextic_dirichlet_Haar_moments</code></td>
+</tr>
+<tr>
+  <td><code>P5A-212</code></td>
+  <td style="text-align:right">7066–7088</td>
+  <td><code>p3f:cor:v215-sextic-heat-parity</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>independent_sextic_dirichlet_Haar_moments</code></td>
+</tr>
+<tr>
+  <td><code>P5A-213</code></td>
+  <td style="text-align:right">7097–7113</td>
+  <td><code>P5A-213</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td><code>icosian_exactness_domain_and_12_degree_guard</code></td>
+</tr>
+<tr>
+  <td><code>P5A-214</code></td>
+  <td style="text-align:right">7118–7132</td>
+  <td><code>p5:cor:v181-yukawa-participation-invariant</code></td>
+  <td><code>VERIFIED</code></td>
+  <td><code>yukawa_participation_24_support_bound</code></td>
+</tr>
+<tr>
+  <td><code>P5A-215</code></td>
+  <td style="text-align:right">7141–7158</td>
+  <td><code>p5:cor:v2211-yukawa-ray-moment</code></td>
+  <td><code>VERIFIED</code></td>
+  <td><code>yukawa_participation_24_support_bound</code></td>
+</tr>
+<tr>
+  <td><code>P5A-216</code></td>
+  <td style="text-align:right">7169–7178</td>
+  <td><code>p5:cor:v2217-color-participation</code></td>
+  <td><code>VERIFIED</code></td>
+  <td><code>quark_color_tripling_participation</code></td>
+</tr>
+<tr>
+  <td><code>P5A-217</code></td>
+  <td style="text-align:right">7201–7227</td>
+  <td><code>p5:prop:v2211-scalar-gauge-shape-certificate</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>scalar_gauge_shape_certificate</code></td>
+</tr>
+<tr>
+  <td><code>P5A-218</code></td>
+  <td style="text-align:right">7237–7251</td>
+  <td><code>p5:def:v355-yukawa-left-right-grams</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td><code>projective_Yukawa_Gram_factorization</code></td>
+</tr>
+<tr>
+  <td><code>P5A-219</code></td>
+  <td style="text-align:right">7253–7285</td>
+  <td><code>p5:cor:v355-yukawa-projective-participation</code></td>
+  <td><code>VERIFIED</code></td>
+  <td><code>projective_Yukawa_Gram_factorization</code></td>
+</tr>
+<tr>
+  <td><code>P5A-220</code></td>
+  <td style="text-align:right">7301–7320</td>
+  <td><code>p5:cor:v355-common-yukawa-scale-cancellation</code></td>
+  <td><code>VERIFIED</code></td>
+  <td><code>common_Yukawa_scale_cancellation</code></td>
+</tr>
+<tr>
+  <td><code>P5A-221</code></td>
+  <td style="text-align:right">7326–7352</td>
+  <td><code>p5:cor:v179-canonical-fermion-comparison</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>canonical_fermion_comparison_mass_moments</code></td>
+</tr>
+<tr>
+  <td><code>P5A-222</code></td>
+  <td style="text-align:right">7379–7395</td>
+  <td><code>p5:rem:flavor-presentation-occurrence-firewall</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-223</code></td>
+  <td style="text-align:right">7403–7414</td>
+  <td><code>p5:post:part4-bridge-criterion</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-224</code></td>
+  <td style="text-align:right">7417–7447</td>
+  <td><code>p5:thm:part4-standard-one-loop-bridge</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>heat_a4_graded_one_loop_weights</code></td>
+</tr>
+<tr>
+  <td><code>P5A-225</code></td>
+  <td style="text-align:right">7533–7541</td>
+  <td><code>P5A-225</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-226</code></td>
+  <td style="text-align:right">7558–7569</td>
+  <td><code>p5:prop:part4-sm-vector</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>standard_model_unbroken_beta_vector</code></td>
+</tr>
+<tr>
+  <td><code>P5A-227</code></td>
+  <td style="text-align:right">7595–7624</td>
+  <td><code>p5:thm:least-self-adjoint-heat-carrier</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>relative_grading_clifford_partner_192</code></td>
+</tr>
+<tr>
+  <td><code>P5A-228</code></td>
+  <td style="text-align:right">7641–7672</td>
+  <td><code>p5:thm:g24-raw-eh-transport</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>Einstein_heat_raw_ratio_96</code></td>
+</tr>
+<tr>
+  <td><code>P5A-229</code></td>
+  <td style="text-align:right">7700–7710</td>
+  <td><code>p5:rem:g24-raw-eh-owner-firewall</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-230</code></td>
+  <td style="text-align:right">7712–7737</td>
+  <td><code>p5:prop:v2211-raw-newton-coupled-rescaling</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>Einstein_heat_raw_ratio_96</code>, <code>common_action_rescale_coupled</code></td>
+</tr>
+<tr>
+  <td><code>P5A-231</code></td>
+  <td style="text-align:right">7749–7781</td>
+  <td><code>p5:cor:common-heat-absolute-gauge-normalization</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>gauge_trace_weights_and_common_heat_normalization</code></td>
+</tr>
+<tr>
+  <td><code>P5A-232</code></td>
+  <td style="text-align:right">7796–7803</td>
+  <td><code>p5:rem:no-pct-trace-doubling</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-233</code></td>
+  <td style="text-align:right">7811–7838</td>
+  <td><code>p5:cor:v180-exact-icosian-higgs-profile-action</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>icosian_exactness_domain_and_12_degree_guard</code></td>
+</tr>
+<tr>
+  <td><code>P5A-234</code></td>
+  <td style="text-align:right">7845–7864</td>
+  <td><code>p5:prop:retained-comparison-action-handoff</code></td>
+  <td><code>REPRODUCED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-235</code></td>
+  <td style="text-align:right">7904–7939</td>
+  <td><code>p5:thm:reconstruction-package-sufficiency</code></td>
+  <td><code>UNRESOLVED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-236</code></td>
+  <td style="text-align:right">7950–7960</td>
+  <td><code>p5:lem:minimal-sector-enlargement-trichotomy</code></td>
+  <td><code>REPRODUCED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-237</code></td>
+  <td style="text-align:right">7970–7981</td>
+  <td><code>p5:thm:part1-minimal-sector-algebra</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-238</code></td>
+  <td style="text-align:right">7996–8004</td>
+  <td><code>p5:rem:finite-algebra-uniqueness-scope</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-239</code></td>
+  <td style="text-align:right">8019–8046</td>
+  <td><code>p5:prop:representation-trace-weights</code></td>
+  <td><code>VERIFIED</code></td>
+  <td><code>gauge_trace_weights_and_common_heat_normalization</code></td>
+</tr>
+<tr>
+  <td><code>P5A-240</code></td>
+  <td style="text-align:right">8056–8082</td>
+  <td><code>p5:cor:conditional-common-kinetic-normalization</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>gauge_trace_weights_and_common_heat_normalization</code></td>
+</tr>
+<tr>
+  <td><code>P5A-241</code></td>
+  <td style="text-align:right">8096–8118</td>
+  <td><code>p5:cor:conditional-gauge-cone-export</code></td>
+  <td><code>REPRODUCED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-242</code></td>
+  <td style="text-align:right">8131–8148</td>
+  <td><code>p5:cor:born-spherical-left-right-normalization</code></td>
+  <td><code>REPRODUCED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-243</code></td>
+  <td style="text-align:right">8159–8174</td>
+  <td><code>p5:rem:born-gauge-trace-support</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-244</code></td>
+  <td style="text-align:right">8176–8194</td>
+  <td><code>p5:rem:weak-angle-normalization-status</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td><code>gauge_trace_weights_and_common_heat_normalization</code></td>
+</tr>
+<tr>
+  <td><code>P5A-245</code></td>
+  <td style="text-align:right">8196–8216</td>
+  <td><code>p5:thm:conditional-sm-representation</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-246</code></td>
+  <td style="text-align:right">8278–8295</td>
+  <td><code>p5:prop:v246-boundary-elimination-no-kernel</code></td>
+  <td><code>VERIFIED</code></td>
+  <td><code>boundary_only_Schur_kernel_nogo</code></td>
+</tr>
+<tr>
+  <td><code>P5A-247</code></td>
+  <td style="text-align:right">8314–8325</td>
+  <td><code>p5:cor:v266-protected-observation</code></td>
+  <td><code>REPRODUCED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-248</code></td>
+  <td style="text-align:right">8356–8375</td>
+  <td><code>p5:thm:v321-induced-local-edge-module</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>Petersen_A5_induced_5_by_3_and_A4_regular</code></td>
+</tr>
+<tr>
+  <td><code>P5A-249</code></td>
+  <td style="text-align:right">8390–8419</td>
+  <td><code>p5:thm:v321-rooted-3plus12-matter</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>Petersen_A5_induced_5_by_3_and_A4_regular</code>, <code>rooted_module_intertwiner_dimension</code></td>
+</tr>
+<tr>
+  <td><code>P5A-250</code></td>
+  <td style="text-align:right">8433–8443</td>
+  <td><code>p5:cor:v321-petersen-nospurious-matter</code></td>
+  <td><code>REPRODUCED</code></td>
+  <td><code>Petersen_A5_induced_5_by_3_and_A4_regular</code></td>
+</tr>
+<tr>
+  <td><code>P5A-251</code></td>
+  <td style="text-align:right">8445–8454</td>
+  <td><code>p5:rem:v321-crosscore-matter-frontier</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td>E1 source replay</td>
+</tr>
+<tr>
+  <td><code>P5A-252</code></td>
+  <td style="text-align:right">8467–8484</td>
+  <td><code>p5:thm:v338-oriented-pair-rooted-scalar</code></td>
+  <td><code>VERIFIED</code></td>
+  <td><code>oriented_pair_rooted_frame_4D_tight</code></td>
+</tr>
+<tr>
+  <td><code>P5A-253</code></td>
+  <td style="text-align:right">8495–8523</td>
+  <td><code>p5:thm:v338-quadratic-cyclic-source</code></td>
+  <td><code>VERIFIED</code></td>
+  <td><code>cyclic_quadratic_Pfaffian_and_fourier_bounds</code></td>
+</tr>
+<tr>
+  <td><code>P5A-254</code></td>
+  <td style="text-align:right">8537–8554</td>
+  <td><code>p5:thm:v338-triple-clifford-edge-module</code></td>
+  <td><code>VERIFIED</code></td>
+  <td><code>three_15_edge_Hodge_A5_equivariant_chars</code></td>
+</tr>
+<tr>
+  <td><code>P5A-255</code></td>
+  <td style="text-align:right">8566–8588</td>
+  <td><code>p5:prop:v338-bilinear-edge-map</code></td>
+  <td><code>VERIFIED</code></td>
+  <td><code>bilinear_Petersen_projection_spectrum</code></td>
+</tr>
+<tr>
+  <td><code>P5A-256</code></td>
+  <td style="text-align:right">8600–8608</td>
+  <td><code>P5A-256</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td><code>bilinear_Petersen_projection_spectrum</code>, <code>rooted_module_intertwiner_dimension</code></td>
+</tr>
+<tr>
+  <td><code>P5A-257</code></td>
+  <td style="text-align:right">8617–8631</td>
+  <td><code>p5a:cor:v352-static-source-obstruction</code></td>
+  <td><code>REPRODUCED</code></td>
+  <td><code>block_central_static_source_commutant</code></td>
+</tr>
+<tr>
+  <td><code>P5A-258</code></td>
+  <td style="text-align:right">8671–8688</td>
+  <td><code>p5:prop:v345-core-fivefold-transport</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>fivefold_chart_support_and_coset_cycle</code></td>
+</tr>
+<tr>
+  <td><code>P5A-259</code></td>
+  <td style="text-align:right">8704–8722</td>
+  <td><code>p5a:thm:v348-root-involution-mass-nogo</code></td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td><code>primitive_root_unit_clifford_full_rank</code>, <code>root_involution_scalar_functional_mass_nogo</code></td>
+</tr>
+<tr>
+  <td><code>P5A-260</code></td>
+  <td style="text-align:right">8732–8740</td>
+  <td><code>p5a:rem:v348-source-mass-firewall</code></td>
+  <td><code>FORMALIZED</code></td>
+  <td><code>root_involution_scalar_functional_mass_nogo</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Cumulative 260-object audited claim ledger (source first)</h2>
+<p>Every row carries <code>claim_id</code>, exact current source line window, source-locus hash, <code>SOURCE-AS-PRINTED</code> summary, status, proof span, typed imported source-use edges and scoped E3/E4 references in the machine-readable <code>AuditClaimLedger.json</code>/checkpoint; the table below is a compact index to those source-bound records.</p>
+<table>
+<thead>
+<tr>
+  <th>ID</th>
+  <th style="text-align:right">Lines</th>
+  <th>Kind</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>P5A-001</td>
+  <td style="text-align:right">204–214</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-002</td>
+  <td style="text-align:right">293–313</td>
+  <td>theorem</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-003</td>
+  <td style="text-align:right">315–321</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-004</td>
+  <td style="text-align:right">466–478</td>
+  <td>theorem</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-005</td>
+  <td style="text-align:right">480–493</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-006</td>
+  <td style="text-align:right">495–506</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-007</td>
+  <td style="text-align:right">523–545</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-008</td>
+  <td style="text-align:right">557–596</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-009</td>
+  <td style="text-align:right">615–636</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-010</td>
+  <td style="text-align:right">653–677</td>
+  <td>theorem</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-011</td>
+  <td style="text-align:right">701–727</td>
+  <td>theorem</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-012</td>
+  <td style="text-align:right">745–756</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-013</td>
+  <td style="text-align:right">763–792</td>
+  <td>theorem</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-014</td>
+  <td style="text-align:right">803–816</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-015</td>
+  <td style="text-align:right">829–840</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-016</td>
+  <td style="text-align:right">842–851</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-017</td>
+  <td style="text-align:right">853–869</td>
+  <td>theorem</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-018</td>
+  <td style="text-align:right">892–912</td>
+  <td>proposition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-019</td>
+  <td style="text-align:right">914–921</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-020</td>
+  <td style="text-align:right">932–944</td>
+  <td>lemma</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-021</td>
+  <td style="text-align:right">957–973</td>
+  <td>lemma</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-022</td>
+  <td style="text-align:right">984–1002</td>
+  <td>lemma</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-023</td>
+  <td style="text-align:right">1015–1048</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-024</td>
+  <td style="text-align:right">1082–1100</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-025</td>
+  <td style="text-align:right">1102–1121</td>
+  <td>lemma</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-026</td>
+  <td style="text-align:right">1132–1147</td>
+  <td>lemma</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-027</td>
+  <td style="text-align:right">1168–1175</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-028</td>
+  <td style="text-align:right">1177–1190</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-029</td>
+  <td style="text-align:right">1192–1233</td>
+  <td>theorem</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-030</td>
+  <td style="text-align:right">1235–1249</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-031</td>
+  <td style="text-align:right">1259–1294</td>
+  <td>theorem</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-032</td>
+  <td style="text-align:right">1340–1352</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-033</td>
+  <td style="text-align:right">1372–1396</td>
+  <td>theorem</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-034</td>
+  <td style="text-align:right">1410–1434</td>
+  <td>theorem</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-035</td>
+  <td style="text-align:right">1446–1469</td>
+  <td>theorem</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-036</td>
+  <td style="text-align:right">1497–1523</td>
+  <td>theorem</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-037</td>
+  <td style="text-align:right">1535–1543</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-038</td>
+  <td style="text-align:right">1546–1558</td>
+  <td>theorem</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-039</td>
+  <td style="text-align:right">1568–1589</td>
+  <td>corollary</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-040</td>
+  <td style="text-align:right">1600–1610</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-041</td>
+  <td style="text-align:right">1614–1630</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-042</td>
+  <td style="text-align:right">1639–1642</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-043</td>
+  <td style="text-align:right">1646–1651</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-044</td>
+  <td style="text-align:right">1758–1771</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-045</td>
+  <td style="text-align:right">1799–1827</td>
+  <td>corollary</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-046</td>
+  <td style="text-align:right">1839–1878</td>
+  <td>remark</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-047</td>
+  <td style="text-align:right">1888–1913</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-048</td>
+  <td style="text-align:right">2046–2066</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-049</td>
+  <td style="text-align:right">2073–2089</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-050</td>
+  <td style="text-align:right">2107–2124</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-051</td>
+  <td style="text-align:right">2130–2138</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-052</td>
+  <td style="text-align:right">2350–2364</td>
+  <td>proposition</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-053</td>
+  <td style="text-align:right">2384–2400</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-054</td>
+  <td style="text-align:right">2454–2464</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-055</td>
+  <td style="text-align:right">2466–2671</td>
+  <td>definition</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-056</td>
+  <td style="text-align:right">2516–2542</td>
+  <td>proposition</td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>P5A-057</td>
+  <td style="text-align:right">2673–2682</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-058</td>
+  <td style="text-align:right">2684–2699</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-059</td>
+  <td style="text-align:right">2701–2712</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-060</td>
+  <td style="text-align:right">2714–2723</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-061</td>
+  <td style="text-align:right">2725–2736</td>
+  <td>proposition</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-062</td>
+  <td style="text-align:right">2746–2754</td>
+  <td>proposition</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-063</td>
+  <td style="text-align:right">2781–2795</td>
+  <td>theorem</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-064</td>
+  <td style="text-align:right">2842–2865</td>
+  <td>theorem</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-065</td>
+  <td style="text-align:right">2881–2897</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-066</td>
+  <td style="text-align:right">2904–2930</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-067</td>
+  <td style="text-align:right">2932–2946</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-068</td>
+  <td style="text-align:right">2948–2959</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-069</td>
+  <td style="text-align:right">2961–2981</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-070</td>
+  <td style="text-align:right">2985–3011</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-071</td>
+  <td style="text-align:right">3021–3034</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-072</td>
+  <td style="text-align:right">3042–3050</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-073</td>
+  <td style="text-align:right">3056–3070</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-074</td>
+  <td style="text-align:right">3106–3119</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-075</td>
+  <td style="text-align:right">3169–3197</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-076</td>
+  <td style="text-align:right">3213–3227</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-077</td>
+  <td style="text-align:right">3244–3261</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-078</td>
+  <td style="text-align:right">3295–3304</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-079</td>
+  <td style="text-align:right">3305–3323</td>
+  <td>proposition</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-080</td>
+  <td style="text-align:right">3346–3368</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-081</td>
+  <td style="text-align:right">3372–3384</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-082</td>
+  <td style="text-align:right">3424–3460</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-083</td>
+  <td style="text-align:right">3470–3489</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-084</td>
+  <td style="text-align:right">3491–3499</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-085</td>
+  <td style="text-align:right">3506–3525</td>
+  <td>definition</td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>P5A-086</td>
+  <td style="text-align:right">3527–3570</td>
+  <td>theorem</td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>P5A-087</td>
+  <td style="text-align:right">3586–3594</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-088</td>
+  <td style="text-align:right">3597–3607</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-089</td>
+  <td style="text-align:right">3611–3651</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-090</td>
+  <td style="text-align:right">3671–3688</td>
+  <td>proposition</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-091</td>
+  <td style="text-align:right">3700–3707</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-092</td>
+  <td style="text-align:right">3709–3720</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-093</td>
+  <td style="text-align:right">3746–3753</td>
+  <td>lemma</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-094</td>
+  <td style="text-align:right">3763–3808</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-095</td>
+  <td style="text-align:right">3823–3836</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-096</td>
+  <td style="text-align:right">3865–3881</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-097</td>
+  <td style="text-align:right">3899–3920</td>
+  <td>corollary</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-098</td>
+  <td style="text-align:right">3932–3941</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-099</td>
+  <td style="text-align:right">3946–3963</td>
+  <td>theorem</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-100</td>
+  <td style="text-align:right">3973–3995</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-101</td>
+  <td style="text-align:right">4005–4026</td>
+  <td>lemma</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-102</td>
+  <td style="text-align:right">4037–4061</td>
+  <td>lemma</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-103</td>
+  <td style="text-align:right">4104–4129</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-104</td>
+  <td style="text-align:right">4145–4161</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-105</td>
+  <td style="text-align:right">4206–4246</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-106</td>
+  <td style="text-align:right">4277–4286</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-107</td>
+  <td style="text-align:right">4288–4303</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-108</td>
+  <td style="text-align:right">4313–4325</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-109</td>
+  <td style="text-align:right">4408–4415</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-110</td>
+  <td style="text-align:right">4436–4459</td>
+  <td>theorem</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-111</td>
+  <td style="text-align:right">4474–4483</td>
+  <td>proposition</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-112</td>
+  <td style="text-align:right">4493–4505</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-113</td>
+  <td style="text-align:right">4515–4530</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-114</td>
+  <td style="text-align:right">4540–4551</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-115</td>
+  <td style="text-align:right">4578–4590</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-116</td>
+  <td style="text-align:right">4602–4612</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-117</td>
+  <td style="text-align:right">4626–4644</td>
+  <td>proposition</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-118</td>
+  <td style="text-align:right">4664–4681</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-119</td>
+  <td style="text-align:right">4717–4727</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-120</td>
+  <td style="text-align:right">4774–4791</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-121</td>
+  <td style="text-align:right">4793–4830</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-122</td>
+  <td style="text-align:right">4862–4880</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-123</td>
+  <td style="text-align:right">4882–4900</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-124</td>
+  <td style="text-align:right">4920–4936</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-125</td>
+  <td style="text-align:right">4955–4974</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-126</td>
+  <td style="text-align:right">4976–4986</td>
+  <td>proposition</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-127</td>
+  <td style="text-align:right">4988–5010</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-128</td>
+  <td style="text-align:right">5012–5037</td>
+  <td>theorem</td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>P5A-129</td>
+  <td style="text-align:right">5057–5072</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-130</td>
+  <td style="text-align:right">5074–5080</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-131</td>
+  <td style="text-align:right">5082–5092</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-132</td>
+  <td style="text-align:right">5104–5116</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-133</td>
+  <td style="text-align:right">5118–5134</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-134</td>
+  <td style="text-align:right">5147–5151</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-135</td>
+  <td style="text-align:right">5164–5183</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-136</td>
+  <td style="text-align:right">5185–5196</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-137</td>
+  <td style="text-align:right">5211–5217</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-138</td>
+  <td style="text-align:right">5231–5244</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-139</td>
+  <td style="text-align:right">5246–5275</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-140</td>
+  <td style="text-align:right">5295–5309</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-141</td>
+  <td style="text-align:right">5311–5328</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-142</td>
+  <td style="text-align:right">5330–5343</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-143</td>
+  <td style="text-align:right">5347–5368</td>
+  <td>proposition</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-144</td>
+  <td style="text-align:right">5388–5418</td>
+  <td>theorem</td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>P5A-145</td>
+  <td style="text-align:right">5420–5427</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-146</td>
+  <td style="text-align:right">5429–5435</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-147</td>
+  <td style="text-align:right">5440–5466</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-148</td>
+  <td style="text-align:right">5467–5477</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-149</td>
+  <td style="text-align:right">5486–5495</td>
+  <td>theorem</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-150</td>
+  <td style="text-align:right">5497–5505</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-151</td>
+  <td style="text-align:right">5507–5512</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-152</td>
+  <td style="text-align:right">5557–5571</td>
+  <td>theorem</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-153</td>
+  <td style="text-align:right">5591–5600</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-154</td>
+  <td style="text-align:right">5618–5624</td>
+  <td>proposition</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-155</td>
+  <td style="text-align:right">5649–5663</td>
+  <td>proposition</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-156</td>
+  <td style="text-align:right">5678–5688</td>
+  <td>proposition</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-157</td>
+  <td style="text-align:right">5725–5744</td>
+  <td>proposition</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-158</td>
+  <td style="text-align:right">5819–5832</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-159</td>
+  <td style="text-align:right">5834–5849</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-160</td>
+  <td style="text-align:right">5851–5867</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-161</td>
+  <td style="text-align:right">5879–5895</td>
+  <td>theorem</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-162</td>
+  <td style="text-align:right">5904–5921</td>
+  <td>corollary</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-163</td>
+  <td style="text-align:right">5923–5936</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-164</td>
+  <td style="text-align:right">5956–5978</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-165</td>
+  <td style="text-align:right">5980–5988</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-166</td>
+  <td style="text-align:right">5995–6004</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-167</td>
+  <td style="text-align:right">6016–6037</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-168</td>
+  <td style="text-align:right">6039–6053</td>
+  <td>theorem</td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>P5A-169</td>
+  <td style="text-align:right">6074–6090</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-170</td>
+  <td style="text-align:right">6092–6101</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-171</td>
+  <td style="text-align:right">6103–6115</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-172</td>
+  <td style="text-align:right">6117–6126</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-173</td>
+  <td style="text-align:right">6139–6160</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-174</td>
+  <td style="text-align:right">6169–6187</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-175</td>
+  <td style="text-align:right">6196–6202</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-176</td>
+  <td style="text-align:right">6216–6236</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-177</td>
+  <td style="text-align:right">6238–6258</td>
+  <td>lemma</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-178</td>
+  <td style="text-align:right">6267–6280</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-179</td>
+  <td style="text-align:right">6293–6308</td>
+  <td>corollary</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-180</td>
+  <td style="text-align:right">6310–6324</td>
+  <td>corollary</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-181</td>
+  <td style="text-align:right">6326–6347</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-182</td>
+  <td style="text-align:right">6349–6363</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-183</td>
+  <td style="text-align:right">6365–6383</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-184</td>
+  <td style="text-align:right">6385–6392</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-185</td>
+  <td style="text-align:right">6417–6434</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-186</td>
+  <td style="text-align:right">6451–6463</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-187</td>
+  <td style="text-align:right">6465–6473</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-188</td>
+  <td style="text-align:right">6493–6500</td>
+  <td>theorem</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-189</td>
+  <td style="text-align:right">6517–6532</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-190</td>
+  <td style="text-align:right">6534–6541</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-191</td>
+  <td style="text-align:right">6543–6551</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-192</td>
+  <td style="text-align:right">6565–6576</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-193</td>
+  <td style="text-align:right">6588–6598</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-194</td>
+  <td style="text-align:right">6600–6606</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-195</td>
+  <td style="text-align:right">6613–6620</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-196</td>
+  <td style="text-align:right">6622–6633</td>
+  <td>theorem</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-197</td>
+  <td style="text-align:right">6640–6662</td>
+  <td>proposition</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-198</td>
+  <td style="text-align:right">6664–6676</td>
+  <td>corollary</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-199</td>
+  <td style="text-align:right">6678–6687</td>
+  <td>remark</td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>P5A-200</td>
+  <td style="text-align:right">6695–6710</td>
+  <td>definition</td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>P5A-201</td>
+  <td style="text-align:right">6712–6720</td>
+  <td>proposition</td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>P5A-202</td>
+  <td style="text-align:right">6722–6733</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-203</td>
+  <td style="text-align:right">6740–6753</td>
+  <td>proposition</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-204</td>
+  <td style="text-align:right">6755–6764</td>
+  <td>remark</td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>P5A-205</td>
+  <td style="text-align:right">6766–6773</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-206</td>
+  <td style="text-align:right">6823–6845</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-207</td>
+  <td style="text-align:right">6869–6885</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-208</td>
+  <td style="text-align:right">6887–6941</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-209</td>
+  <td style="text-align:right">6944–6980</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-210</td>
+  <td style="text-align:right">7000–7038</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-211</td>
+  <td style="text-align:right">7048–7064</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-212</td>
+  <td style="text-align:right">7066–7088</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-213</td>
+  <td style="text-align:right">7097–7113</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-214</td>
+  <td style="text-align:right">7118–7132</td>
+  <td>corollary</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-215</td>
+  <td style="text-align:right">7141–7158</td>
+  <td>corollary</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-216</td>
+  <td style="text-align:right">7169–7178</td>
+  <td>corollary</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-217</td>
+  <td style="text-align:right">7201–7227</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-218</td>
+  <td style="text-align:right">7237–7251</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-219</td>
+  <td style="text-align:right">7253–7285</td>
+  <td>corollary</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-220</td>
+  <td style="text-align:right">7301–7320</td>
+  <td>corollary</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-221</td>
+  <td style="text-align:right">7326–7352</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-222</td>
+  <td style="text-align:right">7379–7395</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-223</td>
+  <td style="text-align:right">7403–7414</td>
+  <td>definition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-224</td>
+  <td style="text-align:right">7417–7447</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-225</td>
+  <td style="text-align:right">7533–7541</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-226</td>
+  <td style="text-align:right">7558–7569</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-227</td>
+  <td style="text-align:right">7595–7624</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-228</td>
+  <td style="text-align:right">7641–7672</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-229</td>
+  <td style="text-align:right">7700–7710</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-230</td>
+  <td style="text-align:right">7712–7737</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-231</td>
+  <td style="text-align:right">7749–7781</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-232</td>
+  <td style="text-align:right">7796–7803</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-233</td>
+  <td style="text-align:right">7811–7838</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-234</td>
+  <td style="text-align:right">7845–7864</td>
+  <td>proposition</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-235</td>
+  <td style="text-align:right">7904–7939</td>
+  <td>theorem</td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>P5A-236</td>
+  <td style="text-align:right">7950–7960</td>
+  <td>lemma</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-237</td>
+  <td style="text-align:right">7970–7981</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-238</td>
+  <td style="text-align:right">7996–8004</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-239</td>
+  <td style="text-align:right">8019–8046</td>
+  <td>proposition</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-240</td>
+  <td style="text-align:right">8056–8082</td>
+  <td>corollary</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-241</td>
+  <td style="text-align:right">8096–8118</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-242</td>
+  <td style="text-align:right">8131–8148</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-243</td>
+  <td style="text-align:right">8159–8174</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-244</td>
+  <td style="text-align:right">8176–8194</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-245</td>
+  <td style="text-align:right">8196–8216</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-246</td>
+  <td style="text-align:right">8278–8295</td>
+  <td>proposition</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-247</td>
+  <td style="text-align:right">8314–8325</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-248</td>
+  <td style="text-align:right">8356–8375</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-249</td>
+  <td style="text-align:right">8390–8419</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-250</td>
+  <td style="text-align:right">8433–8443</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-251</td>
+  <td style="text-align:right">8445–8454</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-252</td>
+  <td style="text-align:right">8467–8484</td>
+  <td>theorem</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-253</td>
+  <td style="text-align:right">8495–8523</td>
+  <td>theorem</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-254</td>
+  <td style="text-align:right">8537–8554</td>
+  <td>theorem</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-255</td>
+  <td style="text-align:right">8566–8588</td>
+  <td>proposition</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>P5A-256</td>
+  <td style="text-align:right">8600–8608</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>P5A-257</td>
+  <td style="text-align:right">8617–8631</td>
+  <td>corollary</td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td>P5A-258</td>
+  <td style="text-align:right">8671–8688</td>
+  <td>proposition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-259</td>
+  <td style="text-align:right">8704–8722</td>
+  <td>theorem</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>P5A-260</td>
+  <td style="text-align:right">8732–8740</td>
+  <td>remark</td>
+  <td>FORMALIZED</td>
+</tr>
+</tbody>
+</table>
+<h2>Typed graph and source integrity</h2>
+<ul>
+<li><strong>169</strong> reviewed typed imported/local material or guard edges; new Batch5 <strong>30</strong>. Source-use locators and proof-route IDs recorded. Scope guards and any unresolved physical prerequisites do not by themselves promote a theorem to unconditional physics.</li>
+<li><strong>354</strong> E1/E3/E4 evidence records; <strong>90</strong> source import certificates, <strong>25</strong> typed constructor/realization boundaries, 8 open issue origins.</li>
+<li>Canonical global conditions are inherited or specialized using cross-references, not duplicated into fresh axioms. No unreviewed citation-only edge was made material. Existing unrelated atlas evidence and statuses remain preserved.</li>
+<li>Full source-claim census complete; coverage is limited to the named/formal object universe and their source-consumed material prose/equations as reviewed, not an independent line-by-line rederivation of each equation by multiple agents.</li>
+<li>Archive integration lives at <code>DAG/AuditLayer/Paper5A-v1_1/Index.json</code> linked from <code>DAG/Paper00-TheoremDAG.json</code> and updated combined route/material/forward/backward indices. Post-write readback/ZIP validation must pass before an atlas release is certified.</li>
+</ul>
+<h2>Batch5 exact tests</h2>
+<ul>
+<li><code>PASS</code> <strong>primitive_root_unit_clifford_full_rank</strong> — T*T=I24; D^2=I48 and rank48.</li>
+<li><code>PASS</code> <strong>factorized_sector_gram_and_kernel</strong> — Sector-restricted ker(T) = ker(R), excluding complementary P-kernel.</li>
+<li><code>PASS</code> <strong>four_yukawa_slots_charge_weights</strong> — All four Dirac slot U(1) weights cancel exactly.</li>
+<li><code>PASS</code> <strong>yukawa_48_operator_trace_moments</strong> — 48x48 odd block, a=101, b=707, Tr Phi^2=2 a|H|^2, Tr Phi^4=2 b|H|^4.</li>
+<li><code>PASS</code> <strong>canonical_higgs_mass_and_moments</strong> — Tr XH^2=8π²; λ=8π²b/a²; m_h²=2λv².</li>
+<li><code>PASS</code> <strong>independent_sextic_dirichlet_Haar_moments</strong> — H6 Haar moments 0, 1/7, 0, 61/1001; 7²EH6⁴=427/143.</li>
+<li><code>PASS</code> <strong>yukawa_participation_24_support_bound</strong> — Example N=121/39; Cauchy and positivity endpoints 1≤N≤24.</li>
+<li><code>PASS</code> <strong>quark_color_tripling_participation</strong> — Quark-only example Neff=54/7; color repetition lower limit 3.</li>
+<li><code>PASS</code> <strong>scalar_gauge_shape_certificate</strong> — Neff=224/17 matches 17/7; Neff=24 gives 4/3.</li>
+<li><code>PASS</code> <strong>projective_Yukawa_Gram_factorization</strong> — Projective factorization Σρ_s²/(w_sp_s)=b/a² and Σρ_s=1.</li>
+<li><code>PASS</code> <strong>common_Yukawa_scale_cancellation</strong> — Uniform positive r cancels in Neff, λ and canonical Ys.</li>
+<li><code>PASS</code> <strong>canonical_fermion_comparison_mass_moments</strong> — Clocked jet c cancels; Σw tr M²=4π²v²; 4 Σw tr M⁴/Σw tr M² = m_h².</li>
+<li><code>PASS</code> <strong>heat_a4_graded_one_loop_weights</strong> — {'complex_scalar': Fraction(1, 3), 'Weyl': Fraction(2, 3), 'gauge': Fraction(-11, 3)}.</li>
+<li><code>PASS</code> <strong>standard_model_unbroken_beta_vector</strong> — One-loop (b1,b2,b3)=[Fraction(41, 10), Fraction(-19, 6), Fraction(-7, 1)].</li>
+<li><code>PASS</code> <strong>relative_grading_clifford_partner_192</strong> — rank P+=96, complementary rank96, least Clifford-stable full rank192.</li>
+<li><code>PASS</code> <strong>Einstein_heat_raw_ratio_96</strong> — κ=L²/(8π²), Uraw=8κ=L²/π²=96U.</li>
+<li><code>PASS</code> <strong>common_action_rescale_coupled</strong> — Rescaling by 1/96 fixes Uraw/U but changes every gauge g² by x96.</li>
+<li><code>PASS</code> <strong>gauge_trace_weights_and_common_heat_normalization</strong> — (k3,k2,kY)=(2,2,10/3); (g3²,g2²,gY²)/π²=(2,2,6/5); sin²=3/8; αs=π/2.</li>
+<li><code>PASS</code> <strong>icosian_exactness_domain_and_12_degree_guard</strong> — 2I 11-design is exact for quartic degree2 and sextic aliases ≤8; does not automatically cover degree12 sextic fourth moment.</li>
+<li><code>PASS</code> <strong>boundary_only_Schur_kernel_nogo</strong> — Boundary-factorized reduced action has exact kernel-annihilating Schur complement.</li>
+<li><code>PASS</code> <strong>Petersen_A5_induced_5_by_3_and_A4_regular</strong> — Petersen edges 5x3=15, A4 orbit12 regular; Vroot character {1: {3}, 3: {0}, 2: {-1}}.</li>
+<li><code>PASS</code> <strong>oriented_pair_rooted_frame_4D_tight</strong> — 5 unit w_r, cross overlap −1/4, tight 4D span eigenvalue 5/4.</li>
+<li><code>PASS</code> <strong>cyclic_quadratic_Pfaffian_and_fourier_bounds</strong> — Normal form P(x)=2ab e5 and (2ab)^2 ≤ (a²+b²)²; qω extremal a=b=1/√2.</li>
+<li><code>PASS</code> <strong>three_15_edge_Hodge_A5_equivariant_chars</strong> — A5-equivariant Hodge split E15/O15± with identical chars {'id': (15, 15, 15), 'double': (-1, -1, -1), 'three': (0, 0, 0), 'five': (0, 0, 0)}.</li>
+<li><code>PASS</code> <strong>bilinear_Petersen_projection_spectrum</strong> — J†J = rank15 idempotent on Λ²U; 15 ones, 30 zeros.</li>
+<li><code>PASS</code> <strong>rooted_module_intertwiner_dimension</strong> — Multiplicity count dim Hom_A4(U,Q⊗G)=1+9=10.</li>
+<li><code>PASS</code> <strong>block_central_static_source_commutant</strong> — Comm(M11⊕M4)=C I11⊕C I4; at most two distinct singular magnitudes.</li>
+<li><code>PASS</code> <strong>fivefold_chart_support_and_coset_cycle</strong> — A5 point-stabilizer index5; 5-cycle lies outside root stabilizer and permutes all 5 charts.</li>
+<li><code>PASS</code> <strong>root_involution_scalar_functional_mass_nogo</strong> — 48 singular values all1; f(D²)=f(1) I48 for any scalar spectral function.</li>
+<li><code>PASS</code> <strong>antiprism_full_rank_spectrum_import</strong> — Canonical antiprism characteristic (λ+2)(λ²−2λ−4), singular spectrum (√5−1,2,√5+1), det modulus8.</li>
+</ul>
+<p><strong>Final verdict:</strong> <code>FULLY_AUDITED_WITH_OPEN_GAPS</code> (scope and limitations above); no new Batch5 root gap, no basis to certify the physical completion steps as unconditional. The DAG and audit ZIPs contain only the newest current registered Paper5A layer/reports and preserve all prior unique paper audits and proof provenance.</p>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

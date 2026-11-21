@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper00-RigorousVerificationDAGWorkProtocol-v2_4 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper00-RigorousVerificationDAGWorkProtocol-v2_4 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html#protocols" class="micro-link">← Verification protocols</a></div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper00-RigorousVerificationDAGWorkProtocol-v2_4</h1><a class="btn btn-secondary" href="verification/protocols/Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md" download>Download original protocol ↗</a></div></section><div class="container page-section"><article class="prose report-prose"><h1>Born–Hopf Geometry — Single-Paper Multi-Agent Correctness Audit and Global DAG Completion Protocol</h1>
+<p><strong>Protocol file:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code><br />
+<strong>Protocol revision:</strong> 2.4 — Work-mode adaptation of the supplied rigorous verification/adjudication protocol v2.3<br />
+<strong>Operating environment:</strong> ChatGPT Work mode, using multiple coordinated agents when available<br />
+<strong>Audit unit:</strong> exactly <strong>one user-designated paper/manuscript</strong> per run<br />
+<strong>Persistent artifact:</strong> one updated, backward-compatible Born–Hopf <strong>DAG Atlas ZIP</strong><br />
+<strong>User-visible report:</strong> <strong>all issues found, in chat</strong><br />
+<strong>Mathematical remit:</strong> verify existing claims rigorously; <strong>do not develop or repair the theory</strong><br />
+<strong>Presentation remit:</strong> source-level correctness only; <strong>no PDF compilation, rendering, or appearance review</strong><br />
+<strong>Source authority:</strong> the most recent corpus explicitly supplied/designated for this run; source contents outrank filenames and old summaries.</p>
+<blockquote>
+<p><strong>Binding mission.</strong> Conduct a rigorous, full mathematical/physical correctness audit of <strong>one selected paper</strong>, while multiple agents work on distinct evidence functions for that <em>same</em> paper. Maintain a single global theorem/constructor/assumption/gap DAG covering the already-audited framework. Verify existing proof steps, including independent and adversarial checks; do <strong>not</strong> derive new framework results, introduce new axioms, add mechanisms, close gaps by inventing lemmas, or rewrite papers. Introduce each distinct condition/assumption <strong>once</strong>, at its earliest established occurrence. All later uses inherit it through verifiable dependency paths. After adjudication, deliver <strong>(1) every identified issue in chat and (2) an updated DAG Atlas ZIP</strong>. A genuine open mathematical gap does not prevent finishing the audit; it must be represented accurately in both outputs.</p>
+</blockquote>
+<h2>A. Activation, boundaries, and priority</h2>
+<ol>
+<li>This protocol activates only when the user's <strong>current request</strong> explicitly asks to audit/verify a <strong>specified paper</strong> using it. Uploading, discussing, or revising the protocol alone does <strong>not</strong> activate an audit.</li>
+<li>A run audits <strong>one paper</strong> (normally one <code>PaperXA</code>/<code>PaperXB</code>/... <code>.tex</code> manuscript and its directly controlling included mathematical inputs). “Paper III” does not silently authorize a full audit of III-A through III-G. If the user explicitly designates a combined manuscript as one unit, freeze that bounded unit in the run record; never add other manuscripts opportunistically.</li>
+<li>Other papers may be read to trace or verify <strong>specific imported prerequisites, exact downstream references, and affected interfaces</strong>, but are <strong>not</strong> independently declared audited. A remote imported theorem can be checked to the extent indispensable for the target; log that narrower coverage.</li>
+<li>Retain the full rigorous correctness standard from protocol v2.3: source-first theorem object, statement layers, type/quantifier/domain checks, constitutional boundary, physical constructor grammar, independent <code>E3</code> evidence, applicable adversarial <code>E4</code>, issue/challenge adjudication, and propagation. Restrictions in this protocol take precedence over v2.3 passes that otherwise generate new theory.</li>
+<li><strong>Disabled:</strong> frontier-consequence discovery/closure (<code>Pass 5C</code> as derivation work), optional extensions (<code>Pass 6</code>), speculation, new hypotheses, new proofs of previously unstated physical claims, and mathematical gap-repair activity. <strong>Enabled:</strong> alternative computations, exact checks, independent proof <em>of an existing claimed result</em>, and counterexample searches necessary to determine whether that existing result is correct.</li>
+<li>Do not modify any supplied paper, TeX source, mathematical content, macro, bibliography, or original ZIP. Update the DAG archive only. Record recommended repairs as <strong>issues</strong>, never implement them without a separate instruction.</li>
+<li>No PDF generation/compilation, visual inspection, typography, or document-design work. Existing PDFs inside the incoming archive may be retained unchanged as <em>historical</em> files; do not present them as regenerated or recertified by this audit.</li>
+<li>Work within the actual claimed mathematical and physical domains. Do not demand that a result reproduce a conventional mechanism merely because the framework is nonstandard. Ask which defined <strong>observable or theorem</strong> is claimed and whether the existing proof justifies that claim.</li>
+</ol>
+<h3>Nonnegotiable distinction</h3>
+<ul>
+<li><strong>Verification</strong> can replay a derivation, independently check the same mathematical proposition by a different route, test a claimed numerical identity, and search for counterexamples.</li>
+<li><strong>Theory development</strong> would add a new theorem, independent physical mechanism, stronger conclusion, new axiom, or replacement proof to repair missing mathematics. <strong>It is forbidden in this run.</strong></li>
+<li>An unproved edge is reported as a <strong>gap with source evidence</strong>. The agents never silently fill it, weaken the conclusion, drop the original result, or redefine the target.</li>
+<li>Missing DAG linkage, missing source location, missing verification evidence, and genuine logical failure are <strong>four different issue classes</strong>. None implies another without proof.</li>
+</ul>
+<h2>B. Supplied data and source precedence</h2>
+<p>The usual project inputs are:</p>
+<ol>
+<li>Current papers archive (for example <code>Paper00-PapersMinimal-v2_356.zip</code>): the <strong>authoritative current <code>.tex</code> source</strong>, includes/macros, bibliography, and claim definitions.</li>
+<li>Current DAG archive (for example <code>Paper00-DAGAtlas-v1_12.zip</code>): <code>DAG/Paper00-TheoremDAG.json</code>, its <code>.schema.json</code>, <code>DAG/CurrentSourceAnchorMap-*.json</code>, proof/constructor/strict/citation/scope edges, derived records, observables, issue/review material, scripts, manifests and provenance.</li>
+<li>The current rigorous verification/adjudication protocol v2.3, incorporated here for technical correctness gates.</li>
+<li><code>Paper00-ProofChainAuditProtocol-v1_1.md</code> and earlier audit artifacts, used to prevent false gap creation and to locate existing checked proof chains; their <strong>gap-closing instructions are overridden</strong> by this no-new-theory protocol.</li>
+</ol>
+<p><strong>Source rule.</strong> The user-designated current <code>.tex</code> controls what the theorem states. The latest source-anchor map is a locator, not proof. In the provided DAG v1_12 archive, <code>Sources-v2_356/</code> is current and <code>Sources/</code> is historical; the canonical <code>DAG/Paper00-TheoremDAG.json</code> was carried forward without a global mathematical reproof. Do not silently use old <code>Sources/</code> to judge new <code>Sources-v2_356/</code> results. On a later input archive, <strong>re-discover</strong> the current source directory rather than hardcoding these names.</p>
+<p><strong>Authority ordering:</strong> (i) selected current manuscript and its controlling files, (ii) its exact imported theorem statements and proofs in current peer corpus, (iii) existing DAG/evidence ledgers as traceability guides, (iv) previous audit reports and scripts as evidence subject to rechecking, (v) external primary mathematical literature for checking imported claims, (vi) secondary sources only as explicitly qualified support. Prior conversations and summaries are leads, never proof substitutes.</p>
+<p>Before audit, inventory all available files, source roles, target identity, label/alias map, archive structure, schema, source anchors, and existing audit evidence. Hashes may be retained for reproducibility, not used as mathematical correctness evidence. A mismatch in a historical filename or revision marker is not a mathematical issue. Missing <strong>controlling mathematical content</strong> is an issue.</p>
+<h3>Foundational interpretation guard</h3>
+<p>Read G0, GP1–GP3, dimensional normalization, constituted seeds, canonical classes and the actual role/constructor vocabulary from current source. The intended G0 formulation in the project's proof-chain protocol is <em>“Nontrivial complete geometry exists”</em>; the framework's GP1 (finite and bounded), GP2 (exact and faithful), GP3 (irreducible and least) have source-specific <strong>typed</strong> meanings. Do not replace GP3's comparison preorder by naive smallest-dimension selection, GP2's licensed closure by ambient closure, or constituted geometry by an unstructured host. Treat previously checked <code>S^1/S^3</code>, <code>\mathcal H_1</code> on <code>S^3_1</code>, and <code>m_p=1</code> statements as <strong>source-verification checkpoints</strong>, not an invitation to reconstruct them from scratch. A source-established status is preserved until contrary <strong>claim-matched evidence</strong> warrants a challenge.</p>
+<h2>C. Single-paper coverage contract</h2>
+<p>An audit is <strong>full for the target</strong> only if every mathematically substantive result in that paper has a source-bound disposition:</p>
+<ul>
+<li>Explicit definitions, constitutive clauses, assumptions and theorem scope.</li>
+<li>All named theorem, proposition, lemma, corollary, claim and relevant formal remark statements.</li>
+<li>Material unnamed results and equations <strong>consumed by a proof</strong>.</li>
+<li>Calculations, numerical constants, normalization/readout steps and physical claims actually asserted.</li>
+<li>Every indispensable imported premise, proof step, cross-reference, constructor/physical-realization clause and observables interface used by those results.</li>
+<li>Source-proved alternatives, conditional results and explicit exclusions, without treating conditions as automatic defects.</li>
+</ul>
+<p>A statement-only citation is not a proof-use edge. A paper's claims may be <strong>audited but unresolved</strong>; that does not make the audit incomplete. Conversely, unexamined claims must remain explicitly <strong>not audited</strong> and bar the label “full audit.”</p>
+<p>For each selected claim freeze the exact <strong>SOURCE-AS-PRINTED</strong>, any distinct <strong>INTERPRETED</strong> branches, and any already-present <strong>REPAIRED</strong> wording <em>as separate objects</em>. No agent writes a new repair theorem. Record type signature, logical form, exact quantifiers, domain, side conditions, boundary/regularity, approximation regime, selection status, normalization, and physical-identification status.</p>
+<h2>D. Agent architecture in Work mode</h2>
+<p>Use separate agents for <strong>different evidence functions</strong> on the <strong>same target paper</strong>. The coordinator may subdivide one function by theorem groups, but all results must be merged by one registry. If true separate agents are unavailable in a given Work execution, use separately recorded review passes and disclose the limitation; do <strong>not</strong> claim simulated independent agents.</p>
+<table>
+<thead>
+<tr>
+  <th>Responsibility</th>
+  <th>Authorized work</th>
+  <th>Required return object</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Coordinator / registry owner</strong></td>
+  <td>Freeze paper, sources, work packages, IDs, acceptance gates; adjudicate integration</td>
+  <td>Run manifest and central registries</td>
+</tr>
+<tr>
+  <td><strong>Source and claims extractor</strong></td>
+  <td>Exhaustive target-source inventory, labels, proof spans, macros, source premises</td>
+  <td>Claim/definition manifest with coverage</td>
+</tr>
+<tr>
+  <td><strong>Proof replayer</strong></td>
+  <td>Check the exact source argument line by line, types and consumed hypotheses</td>
+  <td><code>E1</code> replay/evidence records and candidate gaps</td>
+</tr>
+<tr>
+  <td><strong>Independent verifier</strong></td>
+  <td><code>E3</code>: distinct mathematical checks of <strong>existing</strong> claims; no new theoretical results</td>
+  <td>Independent certificates with lineage</td>
+</tr>
+<tr>
+  <td><strong>Adversarial verifier</strong></td>
+  <td><code>E4</code>: exact-negation attacks, boundary cases, counterexamples matched to actual hypothesis/grammar</td>
+  <td>Valid/invalid/unresolved witness records</td>
+</tr>
+<tr>
+  <td><strong>Assumption and boundary registrar</strong></td>
+  <td>Canonicalize first appearance of every actual assumption/condition, trace discharges and scopes, <code>BND</code> semantics</td>
+  <td>One global premise register + typed use edges</td>
+</tr>
+<tr>
+  <td><strong>Dependency and interface mapper</strong></td>
+  <td>Confirm proof-use edges, conditional routes, cross-paper imports, observed descendants</td>
+  <td>Provenance-backed graph edge proposals</td>
+</tr>
+<tr>
+  <td><strong>Graph integrator / release verifier</strong></td>
+  <td>Merge reviewed records and evidence, test schema/graph completeness, verify ZIP after writing</td>
+  <td>Updated DAG ZIP, integrity and coverage report</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Independence is epistemic, not a headcount.</strong> Two agents that import the same disputed step do not furnish independent <code>E3</code> evidence. Keep independent-verifier inputs to the theorem object, necessary source definitions and declared premises—not the earlier agent's verdict or expected test output—until a provisional result is recorded. The adversarial agent attacks the <em>same</em> theorem object and domain. Every proposed adverse finding is reviewed against the exact current source before adjudication.</p>
+<h3>Safe parallelism and integration</h3>
+<ol>
+<li>The coordinator makes <strong>read-only snapshots</strong> of input files and allocates <strong>globally unique IDs</strong> and disjoint work packages.</li>
+<li>Parallel agents create <strong>proposal files</strong>; they do not independently edit the canonical graph or source ZIP.</li>
+<li>The assumption registrar has single-writer authority for canonical condition identities; other agents propose aliases/uses.</li>
+<li>Graph integration is single-writer and deterministic. Resolve overlapping records, alternative proof routes, duplicate claims, contradictory status proposals and stale source locators <strong>before</strong> writing the new archive.</li>
+<li>The coordinator records who checked each proposition, what evidence each agent used, conflicts, and the eventual verdict. No consensus/majority vote can replace a proof or refutation certificate.</li>
+</ol>
+<h2>E. Correctness evidence, statuses and mandatory challenge gates</h2>
+<p>Preserve the v2.3 epistemic statuses:</p>
+<p><code>REPORTED</code>, <code>FORMALIZED</code>, <code>REPRODUCED</code>, <code>VERIFIED</code>, <code>VERIFIED-CONDITIONAL</code>, <code>INCONSISTENT</code>, <code>REFUTED</code>, <code>UNRESOLVED</code>, <code>OUT-OF-SCOPE</code>.</p>
+<p>Track lifecycle separately: <code>ACTIVE</code>, <code>UNDER-CHALLENGE</code>, <code>STALE</code>, <code>SUPERSEDED</code>, <code>RETIRED</code>. An inherited status remains evidence-backed only if its source and proof lineage remain applicable. New source-content changes invalidate affected evidence, not unrelated established results.</p>
+<p>Use these evidence levels, <strong>not</strong> a vote or confidence percentage:</p>
+<ul>
+<li><code>E0 INTEGRITY</code>: file, label, edge/index, archive or state checks; <strong>not mathematical verification</strong>.</li>
+<li><code>E1 REPLAY</code>: reproduce the source proof/calculation; not independent.</li>
+<li><code>E2 CORROBORATION</code>: special cases, dimensional checks or supporting literature sharing the disputed premise; not sufficient alone.</li>
+<li><code>E3 INDEPENDENT</code>: a separate exact calculation, theorem application, representation, independent oracle or proof of the <strong>same stated result</strong> that does not import the disputed step.</li>
+<li><code>E4 ADVERSARIAL</code>: exact-negation attack, structurally valid counterexample search, boundary or mutation test, and scrutiny of premise/quantifier/normalization.</li>
+</ul>
+<p>A material ordinary central claim may be called <code>VERIFIED</code> only with a complete <code>E1</code> replay and applicable <code>E3</code>. High-impact nodes—default: three or more central downstream results, constitution/physical-realization bottlenecks, or observables boundaries—also require an adequate <code>E4</code> challenge. The auditor may not self-certify by checking that a script reprints the intended status. Preserve valid and invalid attack histories. If a decisive check cannot be completed, use the appropriate lower status, record the exact missing evidence, and <strong>still include the finding in the DAG</strong>.</p>
+<h3>Mandatory theorem-boundary gate</h3>
+<p>Before alleging a hidden assumption, illegitimate selector, false finiteness claim, missing seed, overgeneration, or an unlicensed operation, create/refresh a source-anchored <code>BND-nnn</code> record:</p>
+<ol>
+<li>Source clause that <strong>constitutes</strong>, <strong>generates</strong>, <strong>realizes</strong>, <strong>minimizes</strong>, <strong>classifies</strong>, <strong>derives</strong>, <strong>interprets</strong>, or <strong>calibrates</strong> the disputed item.</li>
+<li>Its chronological stage, exact mathematical/physical sort, frozen prior inventory, actual candidate class and relevant completeness scope.</li>
+<li>What constructors and partial evaluations are licensed, their domains/codomains, output retention/reuse/iteration, and what belongs only to the <strong>ambient host mathematics</strong>.</li>
+<li>Separation of existence <code>E</code>, uniqueness <code>U</code>, canonicality <code>C</code>, physical realization <code>R</code>, and interpretation <code>I</code>; no arrow among these is automatic.</li>
+<li>Exact quantifier domain (global/stage, fixed/varying carrier/action, boundary and equivalence classes) of both theorem and downstream consumer.</li>
+<li>Whether a word such as “first,” “lowest,” or “intrinsic” is a descriptor, actual physical selector, constructor, classification, or host-only fact.</li>
+</ol>
+<p>Use provenance tags <code>[CONST]</code>, <code>[FROZEN]</code>, <code>[GEN]</code>, <code>[REAL]</code>, <code>[MIN]</code>, <code>[DER]</code>, <code>[CLASS]</code>, <code>[HOST]</code>, <code>[ID]</code>, <code>[CAL]</code> with ordered histories. Do not demand a downstream rule regenerate explicitly constituted content; do not promote ambient mathematics to a physical constructor; do not accept “intrinsic” as proof of a bridge theorem. For leakage/closure disputes, require a <strong>typed physical-constructor word</strong> with licensed retention and reuse at each step. Without such a record, classify the issue <code>UNRESOLVED / boundary review required</code>, not established refutation.</p>
+<h3>Mathematical and physical checks</h3>
+<p>For every material proof: exact statement, quantifiers, premises, types and codomains; algebra/signs/factors; local/global and limit exchanges; convergence, boundary conditions and regularity; circularity; exact/approximate distinctions; equality/isomorphism; conditions for imported theorems; calibrated versus predicted constants; gauge/symmetry and physical occurrence; normalization, trace carrier and denominator; operator versus scalar and projection versus multiplication; finite-carrier versus ambient host. Independently test edge cases and known soluble controls where applicable. A proof of a conditional result is not a proof of its antecedent, but is not a defect merely for being conditional.</p>
+<p><strong>Refutation rule.</strong> A <code>REFUTED</code> verdict requires a certificate identifying the exact target and negation, witness type, valid hypotheses/domain, matching seeds/constructors/completeness scope, explicit failure calculation, positive control and independent replay. A counterexample to a stronger or different proposition must <strong>not</strong> refute the source claim.</p>
+<h2>F. Canonical assumptions and conditions — <strong>one introduction only</strong></h2>
+<h3>F1. Single-node rule</h3>
+<p><strong>Each distinct mathematical/physical condition, hypothesis, constitutive principle or restriction is a first-class DAG node introduced exactly once</strong> at its earliest identifiable <strong>logical</strong> appearance in the current source-verified framework. This is the one canonical occurrence; later papers may have <strong>use edges</strong> to it but must never redefine it as another assumption node.</p>
+<p>Identity is based on the <strong>normalized predicate together with its types, quantified domain, parameter regime, strength, and provenance</strong>, not on spelling. An assumption such as <code>compactness of X</code>, <code>compactness of X under Y</code>, and a stronger global compactness claim are not automatically identical. Conversely, notational aliases of the <strong>same</strong> fully typed premise are one node. Merge only when equivalence is already supported by checkable evidence; otherwise flag <code>POSSIBLE-ALIAS</code> and do not silently equate distinct predicates.</p>
+<p>The canonical assumption registry is <strong>global across papers and audits</strong>, not recreated in each paper's report. Stable IDs (e.g. <code>BH-A-000123</code>) are never reused. Source aliases and local labels map to the canonical ID.</p>
+<h3>F2. Required assumption record</h3>
+<p>For the <strong>single introduction node</strong>, store:</p>
+<ul>
+<li>canonical ID and normalized statement (prefer logical or mathematical notation, not just a prose label);</li>
+<li>precise type, variables, quantifiers, value/domain ranges, regularity, boundary and stage/role scope;</li>
+<li>earliest validated source identifier, label, equation/proof span and, if partial ordering is insufficient, <code>FIRST-KNOWN</code> rather than falsely claiming absolute priority;</li>
+<li>category: <code>FOUNDATIONAL</code>, <code>CONSTITUTIVE</code>, <code>MATHEMATICAL</code>, <code>DOMAIN</code>, <code>REGULARITY</code>, <code>BOUNDARY</code>, <code>SELECTION</code>, <code>NORMALIZATION</code>, <code>APPROXIMATION</code>, <code>PHYSICAL-IDENTIFICATION</code>, <code>EMPIRICAL-CALIBRATION</code>, <code>EXTERNAL-THEOREM</code>, or other explicitly typed kind;</li>
+<li>epistemic status: <code>STIPULATED</code>, <code>PROVED-UPSTREAM</code>, <code>DERIVED-FROM-RECORDED-CLAIM</code>, <code>CONDITIONAL</code>, <code>UNRESOLVED</code>, <code>REFUTED</code>, or <code>NOT-YET-LOCATED</code>; with separate lifecycle;</li>
+<li>whether assumed, asserted, proved, independently verified, calibrated, or merely scoped, and the exact evidence for that classification;</li>
+<li>its <strong>direct</strong> prerequisites, existing proof of discharge (if any), alternative established discharge paths, and relevant <code>BND</code> record;</li>
+<li>assumptions/claims explicitly depending on it as <strong>direct</strong> edges; all <strong>transitive</strong> influence must be computed, not stored as repeated assumption declarations;</li>
+<li>any unverified equivalence, stronger/weaker variant, or source-provenance conflict.</li>
+</ul>
+<p>A condition logically introduced by a verified earlier theorem may have status <code>PROVED-UPSTREAM</code> and remain visible as its own node; it must <strong>not</strong> be counted as an <em>open</em> assumption. G0 and GP1–GP3 have explicit constitutional provenance, not default missing-proof classifications. A later proof relying on a previously discharged condition gets a path to the upstream proof, not a new condition.</p>
+<h3>F3. First-appearance and inheritance algorithm</h3>
+<ol>
+<li>Collect explicit and <strong>actually consumed implicit</strong> conditions from every step of the target paper, plus the necessary imported scopes. Do not invent hypothetical conditions unrelated to an actual proof use.</li>
+<li>Normalize their exact types, strength and scope; look up the global canonical registry and all proven aliases.</li>
+<li>When already registered, attach an explicit <strong>direct <code>REQUIRES</code>/<code>USES-CONDITION</code> edge only where the dependency is not already carried by the actual proof path</strong>. The same condition node remains the sole source.</li>
+<li>When new, locate the first occurrence in the framework's established dependency ancestry. Do not infer a logical order merely from filename or paper number. Record <code>FIRST-KNOWN</code> and a relocation/alias action if earlier evidence is not presently accessible.</li>
+<li>Distinguish an explicitly stated hypothesis from an inference prerequisite implicit in a computation; link the latter to the exact step and mark it <code>INFERRED-CONDITION</code> for adjudication.</li>
+<li>Compute the <strong>condition ancestry</strong> for every target claim/observable by following <strong>verified material dependency edges</strong> and per-proof-route guards. Never duplicate assumptions as downstream nodes or paste their full statements onto every descendant.</li>
+<li>If a claim has <strong>alternative proofs (OR)</strong>, list assumptions <strong>per certified proof route</strong>. An assumption required by only one route is not globally necessary when a valid independent bypass exists. All inputs to a single proof route/constructor (AND) must be satisfied together.</li>
+<li>A verified upstream theorem may discharge a condition, but cite the <strong>specific discharge edge</strong>; never infer discharge from matching words, repeated use, or status flags.</li>
+<li>When a source introduces a distinct <strong>stronger</strong>, <strong>weaker</strong>, or <strong>specialized</strong> predicate, allocate a distinct canonical node, and record the mathematically supported implication, if any. Unproved equivalences remain issues, not automatic merges.</li>
+<li>After each correction, recompute inherited conditions for all affected downstream routes; do not alter unaffected upstream meanings.</li>
+</ol>
+<p><strong>Invariant:</strong> for a downstream observable <code>O</code>, the DAG query <code>conditions(O)</code> produces exactly the union of active conditions on each source-supported proof route, with scopes and discharge status. <code>descendants(A)</code> enumerates all currently known claims whose <strong>actual</strong> dependency routes use assumption <code>A</code>, including cross-paper consumers. The graph must support a concrete trace from <code>A</code> to <code>O</code>; resemblance or citation alone does not establish that trace.</p>
+<h2>G. Typed DAG: existing atlas + auditable new layer</h2>
+<h3>G1. Preserve the existing canonical graph</h3>
+<p>Start from the supplied <code>DAG/Paper00-TheoremDAG.json</code> and schema. Preserve existing graph IDs, proof flags, claim statuses, constructors, source manifolds, role nodes, legacy proof/strict/constructor/scope/derivation/citation edges, and historical source locators. Use the source-anchor map for <strong>current</strong> locations. The current archive contains separate evidence classes; they must <strong>not</strong> be flattened into one undifferentiated <code>depends_on</code> edge set.</p>
+<p><strong>Historical rule:</strong> a citation edge is navigation, a source-reported proof-use link is a <strong>candidate</strong> until semantically reviewed, and an <code>E0</code> synchronization success is not <code>E3</code> verification. Existing quarantined candidates remain quarantined unless <em>this audit</em> resolves them with a real source-matched certificate. Never upgrade all inherited graph edges or statuses as a bulk convenience.</p>
+<h3>G2. Add a namespaced audit layer, not a competing DAG</h3>
+<p>The successor archive MUST integrate a current <strong>audit layer</strong> into the global graph while preserving backward compatibility of its documented core keys. Prefer machine-readable files under <code>DAG/AuditLayer/</code>, registered from the canonical graph by a backward-compatible <code>graph_layers</code>/audit-index entry (or an equivalent documented extension that existing validators tolerate):</p>
+<ul>
+<li><code>AssumptionRegistry.json</code>: single canonical node per condition plus aliases and first-appearance evidence;</li>
+<li><code>GapRegistry.json</code>: single canonical gap/issue origin with material dependency and effect paths;</li>
+<li><code>AuditClaimLedger.json</code>: target-paper claims, precise status/lifecycle, evidence lineage and coverage;</li>
+<li><code>TypedDependencyEdges.json</code>: <code>from</code>, <code>to</code>, typed relation, proof route, AND/OR group, source evidence, review status and domain guard;</li>
+<li><code>ProofEvidenceLedger.json</code>: exact source locators, replay, <code>E3</code>, <code>E4</code>, negative and failed checks;</li>
+<li><code>AuditRuns.json</code>: selected target, source freeze, agent assignments, challenges, adjudications, provenance and version ancestry;</li>
+<li><code>ImpactIndex.json</code>: derived direct/transitive affected routes, verified bypasses and unresolved remote coverage;</li>
+<li><code>CoverageAndValidation.json</code>: coverage denominator, excluded items, graph checks, artifact write certificate and archive integrity.</li>
+</ul>
+<p>Names may adapt to the actual existing schema, but <strong>the semantic objects and graph links are mandatory</strong>. These sidecars MUST be indexable as <strong>one combined DAG</strong> with the existing theorem graph, not unlinked reports. Prefer updating existing canonical records/indices <strong>only</strong> when semantically justified and when backward-compatible validation succeeds. If a legacy renderer cannot accept assumption/gap node types, retain them in the linked typed audit layer and update the query/index integration rather than corrupting the old schema. Record precisely which layer is authoritative for which edge kind.</p>
+<h3>G3. Edge semantics and proof-route logic</h3>
+<p>Every edge MUST specify its type and provenance. At minimum distinguish:</p>
+<table>
+<thead>
+<tr>
+  <th>Edge</th>
+  <th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>PREMISE_OF</code> / <code>REQUIRES</code></td>
+  <td>Indispensable premise actually consumed by a specific proof route</td>
+</tr>
+<tr>
+  <td><code>PROVES</code> / <code>DISCHARGES</code></td>
+  <td>An identified proof establishes a condition/target at the recorded scope</td>
+</tr>
+<tr>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Target proof uses a specific earlier theorem, with source-use evidence</td>
+</tr>
+<tr>
+  <td><code>CONSTRUCTOR_INPUT</code></td>
+  <td>Licensed physical constructor argument, with its contract and retention policy</td>
+</tr>
+<tr>
+  <td><code>SCOPE_GUARD</code></td>
+  <td>The theorem is valid only within this condition/domain/branch</td>
+</tr>
+<tr>
+  <td><code>NORMALIZATION_CHOICE</code></td>
+  <td>Explicit readout, measure, trace or coefficient branch</td>
+</tr>
+<tr>
+  <td><code>INTERPRETATION_OF</code></td>
+  <td>A physical label assigned to a mathematical result, <em>not</em> a proof edge</td>
+</tr>
+<tr>
+  <td><code>EVIDENCE_FOR</code></td>
+  <td>Replay, independent check or attack supporting a verdict</td>
+</tr>
+<tr>
+  <td><code>ALTERNATIVE_ROUTE</code></td>
+  <td>Independently checked proof/constructor path with explicit OR semantics</td>
+</tr>
+<tr>
+  <td><code>ISSUE_AT</code> / <code>BLOCKS_ROUTE</code></td>
+  <td>Gap located at a precise step, affecting only routes that consume it</td>
+</tr>
+<tr>
+  <td><code>CITATION_ONLY</code> / <code>CANDIDATE_LINK</code></td>
+  <td>Reference or suspected dependency <strong>not authorized</strong> for theorem propagation</td>
+</tr>
+</tbody>
+</table>
+<p>Orient material edges consistently (premise/source <code>→</code> consumer/target); for a formal hyperedge with several required inputs, use an explicit route/constructor object and an <strong>AND</strong> input group. Distinct routes for one target form <strong>OR</strong> alternatives. The graph must not infer that one of several hypothetical possibilities is physically selected. Cross-paper links must have a source-use witness and quantifier/type compatibility check.</p>
+<h3>G4. Graph invariants</h3>
+<ol>
+<li>Every new claim, assumption, issue and reviewed edge has a stable, unique ID and current source/evidence locator.</li>
+<li>Every activated status has a supporting evidence record and lineage; status labels alone are not certificates.</li>
+<li>Every <strong>material</strong> edge has a typed, claim-matched proof-use witness and explicit scope guard. Citation/candidate edges cannot promote a claim.</li>
+<li>Every assumption is introduced once; aliases are references, never independent copies. Every downstream inherited condition is reachable by graph traversal in the correct proof route.</li>
+<li>Every unresolved issue has an exact target step and an upstream/backward plus downstream/forward path <strong>as far as verified records permit</strong>.</li>
+<li>Every direct edge imported from another paper has source/current-label resolution; missing or ambiguous imports are separate coverage/locator issues.</li>
+<li>Alternative routes are never collapsed into one conjunction; one route's weakness does not automatically invalidate a valid bypass.</li>
+<li>Every mathematical cycle among supposed foundational proof dependencies is flagged for review; definitional equivalences, simultaneous systems and citations must not be mislabeled as ordinary acyclic proof ancestry.</li>
+<li>No unsupported status promotion, no automatic global closure, no duplicate assumption node, no dangling required material edge, no silent overwrite of a source claim or earlier adjudication.</li>
+<li>Every issue's listed downstream effects can be regenerated from paths in the graph; speculative effects are explicitly tagged <code>POSSIBLE / UNCONFIRMED</code>, not asserted dependencies.</li>
+</ol>
+<h2>H. Gaps, issues and downstream impact</h2>
+<p><strong>Every found issue becomes a uniquely located, persistent, typed DAG object.</strong> The issue first appears at the <strong>earliest demonstrably defective/unresolved material step</strong>, not at each later theorem that inherits the problem. Preserve later occurrences as affected paths or separate issues only if they introduce a distinct defect.</p>
+<p>Mandatory issue classes include:</p>
+<ul>
+<li><code>LOGICAL_GAP</code>: indispensable implication missing or not validly supported.</li>
+<li><code>INCORRECT_STEP</code>: algebra, sign, factor, theorem application, circularity or logical invalidity.</li>
+<li><code>COUNTEREXAMPLE</code>: exact in-domain refutation, with full certificate.</li>
+<li><code>MISSING_CONDITION</code>: consumed hypothesis not stated or discharged.</li>
+<li><code>CONDITIONAL_FRONTIER</code>: valid result with open antecedent or a not-yet-established physical realization.</li>
+<li><code>TYPE_OR_DOMAIN</code>: object/operation, quantifier, boundary, action/carrier or local/global mismatch.</li>
+<li><code>NORMALIZATION_OR_READOUT</code>: choice of trace, measure, physical coefficient, calibration or unproved identification.</li>
+<li><code>CONSTITUTION_OR_SELECTION</code>: source-demonstrated boundary/role or canonicality/realization issue, only after <code>BND</code> warrant.</li>
+<li><code>CROSS_PAPER_CONFLICT</code>: true content conflict after checking types, domains, macros and conventions.</li>
+<li><code>MISSING_EVIDENCE</code>: source proof not rechecked, missing independent check, absent controlling mathematical data.</li>
+<li><code>DAG_COVERAGE</code>: missing or wrong graph edge/node, historical anchor, alias, source location or unsupported status.</li>
+<li><code>DAG_INTEGRITY</code>: stale index, collision, invalid schema, broken source link or cycle.</li>
+</ul>
+<p>Do <strong>not</strong> conflate a legitimate assumption with a gap. A theorem is not defective for making its conditional scope explicit; the unresolved antecedent remains a graph-visible condition and, where applicable, a <strong>frontier obligation</strong> for the stronger downstream physical claim.</p>
+<h3>H1. Issue certificate — required for every finding</h3>
+<p>Each <code>BH-G-xxxxxx</code> / <code>I-nnn</code> record must include:</p>
+<pre><code class="language-yaml">issue_id: BH-G-000001
+class: LOGICAL_GAP
+severity: critical | major | moderate | minor
+lifecycle: OPEN | UNDER_CHALLENGE | RESOLVED | SUPERSEDED
+first_origin:
+  paper: PaperXY
+  theorem_id: exact-source-label
+  step_locator: source-file:lines-or-equation-label
+  source_excerpt: short-exact-quotation
+statement_layer: SOURCE-AS-PRINTED | INTERPRETED | EXISTING-REPAIRED
+exact_obligation: &quot;Premise P -&gt; conclusion Q, in source's domain&quot;
+source_replayed: true | false
+independent_evidence: [EV-id]
+adversarial_evidence: [EV-id]
+constitution_boundary: BND-id | null
+conditions_consumed: [BH-A-id]
+conditions_open: [BH-A-id]
+issue_status: established | unresolved | conditional | invalidated
+upstream_material_paths: [explicit-node-paths]
+downstream_verified_paths: [explicit-node-paths]
+other_papers_affected: [paper-and-node-ids]
+possible_unconfirmed_impacts: [node-ids]
+verified_bypass_routes: [route-ids]
+why_it_matters: &quot;what source claim or observable is affected&quot;
+resolution_requirement: &quot;exact missing proof/evidence/choice; NO invented repair&quot;
+audit_scope_limit: &quot;what was not checked&quot;
+</code></pre>
+<p>Severity is determined by logical/physical consequence and verified reach, not by how surprising the finding sounds. A missing documented proof edge is <strong>not</strong> proof that the mathematical implication fails. All attempted counterexamples that do not meet the target hypothesis go in the negative evidence ledger; they cannot support a <code>REFUTED</code> status.</p>
+<h3>H2. Impact propagation</h3>
+<p>For an issue or open condition, trace all <strong>certified</strong> downstream material paths already in the global DAG. Classify each result/route as:</p>
+<ul>
+<li><code>DIRECTLY_BLOCKED</code> — every currently certified indispensable route consumes a failed/unresolved step;</li>
+<li><code>INHERITS_CONDITION</code> — a live proof route remains correct only under a specific condition;</li>
+<li><code>INDEPENDENT_BYPASS</code> — an established route avoids the issue;</li>
+<li><code>POSSIBLY_AFFECTED</code> — plausible or citation-only connection <strong>not</strong> certified as a dependency;</li>
+<li><code>NO_PROVEN_IMPACT</code> — no current evidence-backed path.</li>
+</ul>
+<p>If a problem in the selected paper reaches an earlier or later paper, display the exact <strong>path</strong>, affected claim IDs, and limits of remote audit coverage. Do <strong>not</strong> label an unaudited remote theorem <code>REFUTED</code> simply because a possible dependency exists; place it under impact/challenge if the particular route is verified. When an alternative route exists, preserve it and its own conditions. Propagate assumption and epistemic statuses per <strong>route</strong>, not by indiscriminately taking the minimum over all incoming edges.</p>
+<h2>I. Mandatory run sequence (single paper, multiple agents)</h2>
+<h3>Pass 0 — Freeze target and archive</h3>
+<ul>
+<li>Record the one target manuscript, requested coverage, current authoritative files, macros/includes, bibliography and matching current source anchors.</li>
+<li>Read DAG README, schema, existing status/evidence conventions, known quarantined candidates and review history. A previously indexed claim or a green synchronization test is not presumed reverified.</li>
+<li>Allocate central IDs, create read-only source snapshot and assign parallel agent packages.</li>
+<li>Establish a <strong>baseline ledger/count</strong> of existing nodes/edges/assumptions/gaps and current source identities. Never begin by rewriting the whole graph.</li>
+</ul>
+<h3>Pass 1 — Exhaustive target claim census</h3>
+<ul>
+<li>Source-extractor inventories all substantive statements and relevant unnamed proof inputs in <strong>the selected paper</strong>; include technical appendices and source-defined physical readouts if part of that manuscript.</li>
+<li>Coordinator assigns proof groups so every census item has an audit owner and independent challenge allocation where required.</li>
+<li>Mark any unlocated/missing controlling text. The paper cannot be declared fully audited while a substantive item has no disposition.</li>
+</ul>
+<h3>Pass 2 — Source-bound formalization + boundary mapping</h3>
+<ul>
+<li>Freeze exact statement layer, types, quantifiers, mathematical conventions and precise scope for each target claim.</li>
+<li>Resolve the source's constitution/realization hierarchy and typed constructor grammar before criticizing missing selectors, generated closures or physical occurrence.</li>
+<li>Assumption registrar inventories <strong>all actually used</strong> conditions and links them to existing canonical nodes, or creates a <strong>single first-occurrence record</strong> after checking global ancestry.</li>
+<li>Graph mapper proposes each candidate dependency from source proof-use evidence—not from a bare citation.</li>
+</ul>
+<h3>Pass 3 — Parallel correctness checks</h3>
+<ul>
+<li>Replayer verifies source derivation step by step (<code>E1</code>).</li>
+<li>Independent verifier seeks source-independent check <strong>of the identical existing target</strong>, not a new theorem (<code>E3</code>).</li>
+<li>Adversarial verifier targets the same formal negation, actual seeds/operators/conditions and boundary (<code>E4</code>).</li>
+<li>Record every unresolved indispensable step and every invalid as well as valid attack. No new theory, gap repair, optional generalization or observable prediction work.</li>
+</ul>
+<h3>Pass 4 — Imported dependencies and precise cross-paper interfaces</h3>
+<ul>
+<li>Verify or read the <strong>specific</strong> prerequisite and exact scope needed by the selected target, consulting other papers only within this bounded task.</li>
+<li>Classify prior dependency as <code>FOUNDATION</code>, <code>CONSTITUTED</code>, <code>EARLIER_PROVED</code>, <code>DEFINITION</code>, <code>CONDITION_DISCHARGED</code>, <code>CONDITION_OPEN</code>, <code>EVIDENCE_MISSING</code>, <code>INVALID</code>, or <code>NOT_RELEVANT_TO_TARGET_SCOPE</code>.</li>
+<li>Reconcile imported assumptions through the global canonical register and attach only necessary direct use edges.</li>
+<li>Follow forward paths into other papers <strong>for impact mapping only</strong>, without auditing those papers as a new target.</li>
+</ul>
+<h3>Pass 5 — Adjudication and gap certification</h3>
+<ul>
+<li>Independently assess each proposed <code>VERIFIED</code>, <code>VERIFIED-CONDITIONAL</code>, <code>INCONSISTENT</code>, <code>REFUTED</code>, or <code>UNRESOLVED</code> result.</li>
+<li>Require full constitution/typed-word certificates before accepting a closure/selector refutation; distinguish source-as-printed and interpretation branches.</li>
+<li>For every issue, identify the <strong>earliest actual</strong> missing/failed material transition and exact necessary conditions. Check it was not already discharged by an earlier framework proof or bypass.</li>
+<li>Resolve contested status proposals by checkable evidence, never by consensus. Preserve rejected allegations and reasons in the audit history.</li>
+</ul>
+<h3>Pass 6 — DAG completion and assumption inheritance</h3>
+<ul>
+<li>Integrator adds the target claims and reviewed dependencies, condition identities, scope guards, evidence, gap nodes and per-route proof semantics to the <strong>existing global DAG</strong>.</li>
+<li>Preserve source identities, correct previously erroneous links <strong>only with source-matched evidence</strong>, and leave unrelated historical material untouched.</li>
+<li>Regenerate backward (<code>prerequisites</code>), forward (<code>descendants</code>), assumption-inheritance and gap-impact indices across the combined graph.</li>
+<li>Record issue impacts on other papers without promoting or retroactively auditing their claims.</li>
+</ul>
+<h3>Pass 7 — Independent audit-completeness and graph-consistency review</h3>
+<p>A reviewer independent of the graph integrator compares the final candidate against the <strong>original target source and baseline</strong>:</p>
+<ol>
+<li>Every substantive target claim has a status, exact source locator, relevant evidence and audit coverage.</li>
+<li>Every actually consumed assumption/condition has precisely one canonical origin and a reachable use/discharge path.</li>
+<li>Every target dependency edge agrees with a material source proof use, typed domain and relevant branch; no citation was promoted by accident.</li>
+<li>E3/E4 proof independence is real, not inherited verdicts or self-confirming scripts.</li>
+<li>Every candidate gap is correctly distinguished from a documented conditional theorem, missing graph link or ambient-host-only construction.</li>
+<li>Every confirmed gap has a single source origin, known ancestry, impacted descendants and a defined next resolution requirement.</li>
+<li>Cross-paper effects and observable ancestry follow the <strong>real</strong> routes, including verified bypasses and <code>POSSIBLE</code> branches.</li>
+<li>The archive can be queried to show the complete per-route inherited conditions for any checked claim and observable.</li>
+<li>Existing unrelated statuses, proof flags, source files and historical provenance have not been corrupted.</li>
+<li>The new archive passes JSON/schema, references, uniqueness, index-reconciliation, archive-integrity and applicable existing validator checks. <strong>Do not run PDF-dependent/visual checks as a release gate.</strong></li>
+</ol>
+<h3>Pass 8 — Release artifacts and post-write verification</h3>
+<ul>
+<li>Generate the next DAG Atlas archive version according to <code>PaperXY-Theme-vU_W</code>, increasing <code>W</code> by <strong>one</strong> for each successor of that artifact. Example: input <code>Paper00-DAGAtlas-v1_12.zip</code> → output <code>Paper00-DAGAtlas-v1_13.zip</code>. Never overwrite the supplied ZIP or silently skip a revision.</li>
+<li>Preserve all relevant original archive contents; include the integrated global graph and linked audit layer with source anchors, evidence and validation files. Preserve unchanged source copies and historical PDFs as historical—not newly audited or rebuilt.</li>
+<li>Reopen the <strong>exact newly written ZIP</strong>, read back every mandatory entry, validate JSON, issue counts, registries, source/edge locators, first-occurrence uniqueness, changed nodes/edges and a sample of forward/backward impact queries. Record <code>WRT-nnn</code>/artifact-write certificate including the actual output identity and archive hash.</li>
+<li>Deliver <strong>every found issue in chat</strong>, then the verified download link to the new <strong>DAG ZIP</strong>. The audit report and the archive must contain matching issue IDs and counts. Do not substitute an issue-file link for the chat report.</li>
+</ul>
+<h2>J. Release output contract — exactly two primary user deliverables</h2>
+<h3>J1. Chat: <strong>all identified issues</strong></h3>
+<p>The final Work response MUST contain:</p>
+<ol>
+<li>The one paper audited; current source set; coverage count (substantive claims checked/total); outcome counts by evidence-backed status, separately from issue counts.</li>
+<li><strong>Every found issue</strong>, even minor ones, in chat. Each entry gives its stable issue ID, category, severity, exact theorem/equation/source locator, explanation of the failure or uncertainty, conditions/assumptions involved (using canonical IDs), immediate upstream source, proven cross-paper/observable impact paths, and precise remaining obligation. Group related manifestations under their <strong>one earliest-root issue</strong>, but show all distinct defects. Include link-free <code>POSSIBLY_AFFECTED</code> items separately from proven impact.</li>
+<li>A separate concise distinction between (a) mathematical defects, (b) valid but conditional claims/open assumptions or physical interfaces, (c) verification/evidence gaps, and (d) DAG-only integrity/coverage defects. A condition is not called a mathematical error just because its antecedent remains open.</li>
+<li>The target paper's final audit classification: <code>FULLY_AUDITED</code> or <code>PARTIALLY_AUDITED</code>, and separately <code>WITH_OPEN_GAPS</code> / <code>WITHOUT_CONFIRMED_OPEN_GAPS</code>. Do not call the framework globally verified after one paper.</li>
+<li>A direct link to the <strong>one updated DAG ZIP</strong> and a compact statement of its validation result. No mandatory standalone PDF, paper rewrite, second audit archive, or separate downloadable issue report.</li>
+</ol>
+<p><strong>No summary-only issue list.</strong> If there are many findings, use compact entries and grouped sections but enumerate <strong>all distinct issue IDs in chat</strong>. Reflect every ID verbatim inside the ZIP's <code>GapRegistry.json</code>. Do not substitute “see attached file for other issues.” If the chat channel imposes an actual message-length limit, send the remaining enumerated issues in the available continuation mechanism rather than falsely claiming a complete report.</p>
+<h3>J2. ZIP: complete <strong>updated DAG Atlas</strong></h3>
+<p>The ZIP MUST contain the <strong>revised global graph</strong>, not just a standalone paper-level audit addendum. It MUST preserve existing graph/provenance data, make target audit changes queryable, and include at minimum:</p>
+<ul>
+<li>updated canonical graph/index or a documented backward-compatible global graph + registered audit-layer combination;</li>
+<li>all checked claims/steps and their source/evidence status;</li>
+<li>all existing and newly found canonical assumptions and scoped condition edges, <strong>without duplicating assumptions downstream</strong>;</li>
+<li>all identified gap nodes with exact origin, assumptions and impact paths;</li>
+<li>verified material dependencies, alternative routes/bypasses and non-promoting citation/candidate references;</li>
+<li>cross-paper interfaces and observable-impact traversals supported by real graph paths;</li>
+<li>audit coverage, challenge/revision history, evidence-lineage registry and integrity checks;</li>
+<li>README documenting how to query assumptions for any theorem/observable, forward impacts of any gap, and which graph layer contains each kind of node/edge;</li>
+<li>preservation of original archives' mathematically controlling source content and named provenance where applicable, with versioned artifact-write verification.</li>
+</ul>
+<p>A DAG archive with only a list of issues, a graph picture, an unlinked <code>audit.json</code>, or unchecked generated edges <strong>fails</strong> this requirement.</p>
+<h3>J3. Honest completion states</h3>
+<ul>
+<li><code>FULLY_AUDITED_WITH_OPEN_GAPS</code>: every target claim has been examined/classified, and precise unresolved proof obligations remain. <strong>Valid completion</strong>.</li>
+<li><code>FULLY_AUDITED_NO_CONFIRMED_GAPS</code>: every target claim was examined/classified; <strong>does not imply global mathematical completeness</strong> or absence of possible undetected error.</li>
+<li><code>PARTIALLY_AUDITED</code>: some target claims, evidence gates, or controlling sources could not be examined. Report exact omissions; do not label the audit complete. Still produce an appropriately labeled updated DAG ZIP whenever safe.</li>
+<li><code>ARTIFACT_NOT_VERIFIED</code>: ZIP write/readback/schema validation failed. Do <strong>not</strong> claim an updated ZIP was delivered; report the precise failure and retain available issue findings in chat.</li>
+</ul>
+<h2>K. Minimal machine-readable record rules</h2>
+<p>These are semantic field requirements; actual serialization may follow the incoming atlas structure.</p>
+<pre><code class="language-json">{
+  &quot;assumption&quot;: {
+    &quot;id&quot;: &quot;BH-A-000001&quot;,
+    &quot;statement&quot;: &quot;fully typed and quantified predicate&quot;,
+    &quot;category&quot;: &quot;DOMAIN&quot;,
+    &quot;status&quot;: &quot;CONDITIONAL&quot;,
+    &quot;first_occurrence&quot;: {&quot;paper&quot;: &quot;PaperXY&quot;, &quot;source_label&quot;: &quot;exact label&quot;, &quot;locator&quot;: &quot;source:line&quot;},
+    &quot;canonical_aliases&quot;: [],
+    &quot;proved_or_discharged_by&quot;: [],
+    &quot;direct_prerequisites&quot;: [],
+    &quot;lifecycle&quot;: &quot;ACTIVE&quot;
+  },
+  &quot;material_edge&quot;: {
+    &quot;from&quot;: &quot;BH-A-000001&quot;,
+    &quot;to&quot;: &quot;Pxx-Cnnn&quot;,
+    &quot;kind&quot;: &quot;REQUIRES&quot;,
+    &quot;proof_route_id&quot;: &quot;ROUTE-0001&quot;,
+    &quot;logic_group&quot;: &quot;AND&quot;,
+    &quot;scope_guard&quot;: &quot;exact bounded claim scope&quot;,
+    &quot;source_use_locator&quot;: &quot;proof label/line&quot;,
+    &quot;reviewed&quot;: true,
+    &quot;evidence_id&quot;: &quot;EV-0001&quot;
+  },
+  &quot;gap&quot;: {
+    &quot;id&quot;: &quot;BH-G-000001&quot;,
+    &quot;first_origin&quot;: &quot;exact theorem/step&quot;,
+    &quot;issue_class&quot;: &quot;MISSING_CONDITION&quot;,
+    &quot;condition_ids&quot;: [&quot;BH-A-000001&quot;],
+    &quot;affected_route_ids&quot;: [&quot;ROUTE-0001&quot;],
+    &quot;proven_impact_paths&quot;: [],
+    &quot;possible_unconfirmed_impacts&quot;: [],
+    &quot;status&quot;: &quot;OPEN&quot;,
+    &quot;source_evidence&quot;: [&quot;EV-0002&quot;],
+    &quot;next_required_certificate&quot;: &quot;specific proof, source evidence, or decision&quot;
+  }
+}
+</code></pre>
+<p>For any graph algorithm, <strong>prove its input edge class</strong>: <code>CITATION_ONLY</code>, candidate, scope, and interpreted bridges cannot accidentally enter theorem proof ancestry. Use the current source anchors for location repair, not as evidence that a new proof edge is mathematically sound. Record exact negative results: missing edges from an automated extractor are not automatically missing theorem premises.</p>
+<h2>L. Final acceptance scenarios</h2>
+<p>A run fails the protocol if any of the following happens:</p>
+<ol>
+<li>An agent starts a full audit of an untargeted neighboring paper or launches an open-ended mathematical extension.</li>
+<li>An E3 agent develops a new physical theorem rather than independently checking the target's existing claim.</li>
+<li><code>m_p=1</code>, <code>\mathcal H_1</code>, S¹/S³, or another source-established checkpoint is reopened on the basis of a remembered objection rather than the actual matched proof.</li>
+<li>A constitution/seed claim is challenged by a host-only mathematical operation that has no licensed physical-constructor word.</li>
+<li>A valid conditional theorem is treated as false solely because the antecedent has not yet been established for physical occurrence.</li>
+<li>The same assumption is inserted as a new node in Papers IV, V, and VII when its canonical first appearance is in Paper II; downstream links must resolve to that one node.</li>
+<li>A more restrictive condition is silently merged with a weaker assumption, or an inferred assumption is silently labeled as source-stipulated.</li>
+<li>A target with two verified alternative routes is marked blocked even though one route bypasses the challenged assumption.</li>
+<li>A citation/reference to another paper is promoted to a proof edge without semantic proof-use and domain evidence.</li>
+<li>A gap is reported independently at ten descendant claims rather than once at its real origin with ten traceable effect paths.</li>
+<li>A source locator is stale but the theorem is declared refuted without resolving what the current source says.</li>
+<li>Every target result is called verified because the JSON/schema and scripts passed.</li>
+<li>The issue report in chat omits minor, conditional, evidence or DAG integrity findings that were recorded in the archive.</li>
+<li>The supplied atlas is returned unchanged with a new name, a paper-local delta only, or a ZIP whose edited contents were not read back and verified.</li>
+<li>A revised Atlas PDF is advertised despite no mathematical and source-identity-compatible regeneration (PDFs are not produced by this protocol).</li>
+</ol>
+<h3>Satisfying end-to-end scenario</h3>
+<p>Select one paper (e.g. a <code>Paper5C</code> manuscript). Multiple Work agents independently extract, replay, verify and attack <strong>all its material claims</strong>, checking only the exact imported theorem scopes from other papers. <code>BH-A-...</code> conditions already constituted or introduced in Paper II are <strong>referenced, not reintroduced</strong>. One missing step in Paper5C becomes one gap node with the exact failed edge and condition IDs. The new DAG exposes every supported path from that gap into later Paper VI/VII targets and observable readouts, while retaining source-limited uncertainty and any alternative bypasses. The final <strong>chat lists all issues</strong>, and <code>Paper00-DAGAtlas-v1_13.zip</code> (when v1_12 was the input) is read back and verified with its updated global graph and linked auditable records. No new mathematics or paper edits are produced.</p>
+<h2>M. Suggested Work-mode invocation</h2>
+<blockquote>
+<p>Apply <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code> to <strong>[exactly one selected paper]</strong> from the attached current Born–Hopf papers archive, using the attached current DAG Atlas ZIP. Coordinate multiple agents to verify the existing mathematics and physics, including independent and adversarial checks, while completing the paper's global dependency mappings. Do <strong>not</strong> derive new framework results or repair the paper. Create every genuinely new assumption/condition node only at its earliest verified logical appearance and inherit it downstream through typed DAG paths. For each gap, record its exact first failed/undischarged step and supported impact paths to the rest of the framework and its observables. Deliver <strong>all found issues directly in chat</strong> and <strong>one updated, validated, version-incremented DAG Atlas ZIP</strong>. Do not compile PDFs or alter paper sources.</p>
+</blockquote>
+<hr />
+<p><strong>Binding final instruction:</strong> <strong>Audit exactly one paper. Verify existing claims rigorously; do not extend the theory. Store every condition exactly once at first occurrence, trace all downstream dependencies through the global proof-route-aware DAG, retain every identified gap at its origin, propagate only evidenced cross-paper impacts, and finish with <em>all issues in chat</em> plus <em>one post-write-verified updated DAG ZIP</em>.</strong></p>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

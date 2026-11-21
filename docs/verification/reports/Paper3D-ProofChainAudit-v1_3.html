@@ -1,0 +1,2205 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper3D-ProofChainAudit-v1_3 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper3D-ProofChainAudit-v1_3 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper3D ProofChainAudit v1_3</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper3D-ProofChainAudit-v1_3.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Source migration and repair-integration addendum — Paper3D-ProofChainAudit-v1_3.md</h1>
+<p><strong>Integration release:</strong> <code>Paper00-PapersMinimal-v3_007.zip</code>, 14 November 2026.
+<strong>Current paper source:</strong> <code>Paper3D-RunningResponse-v1_166.tex</code>.
+<strong>Status:</strong> <code>SOURCE_INTEGRATED; GLOBAL_SOURCE_REAUDIT_PENDING</code>. An inherited historical audit is not a correctness certificate for the newer current manuscript.
+<strong>Evidence policy:</strong> Local algebraic proofs and scoped tests do not discharge physical source/observable interfaces or automatically alter the canonical proof DAG.</p>
+<hr />
+<h2>Historical source-bound audit: Paper3D-ProofChainAudit-v1_2.md</h2>
+<h1>Paper 3D — current source repair addendum (v1.2)</h1>
+<p>Date: 13 November 2026. Repair batch 5. Historical proof-chain audit is preserved verbatim below; the old line positions and OPEN/disposition assertions apply to their original frozen source, not the revised manuscript.</p>
+<ul>
+<li><strong>Repaired current source:</strong> <code>Paper3D-RunningResponse-v1_160.tex</code> (SHA-256 <code>fd67ab4b01b49c1f90e840d100703f76f3a2c2954a10fba7cfa172dd610ef4d8</code>).</li>
+<li><strong>Original finding IDs addressed:</strong> <code>BH-IIID-HATJUNC-001</code>, <code>BH-IIID-DCHARPORT-002</code>.</li>
+<li><strong>Verification:</strong> <code>Proofs/Paper00-AuditRepairBatch5-v1_1-verify.py</code> (41/41 scoped exact checks, one execution environment); full standalone derivations in <code>DAG/RepairLayer/Paper00-AuditRepairBatch-v1_5.md</code>.</li>
+<li><strong>Provenance:</strong> no new whole-paper independent-audit assertion, no original statuses changed, no global DAG status promotion.</li>
+<li><strong>Conditional physical matters retained:</strong> action-owned P4 incidence and physical junction (III-D); solder occurrence, actual full neutral-current amplitudes and baryon source/history (V-C).</li>
+</ul>
+<h2>Source repair summary</h2>
+<p>The constant terminal Laurent trace still has zero distributional Hessian; an explicit, separately typed piecewise representative produces the positive Dirac jump. The grade-four coefficient is a positive character evaluation on the existing PQTI coefficient line; no physical metric-action insertion is inferred.</p>
+<hr />
+<h2>Historical original audited report (unchanged below this heading)</h2>
+<h1>Paper III-D — cumulative rigorous verification and proof-chain DAG audit</h1>
+<h2>Controlling sources and scope</h2>
+<ul>
+<li><strong>Paper:</strong> <code>Paper3D-RunningResponse-v1_159.tex</code> from unchanged <code>Paper00-PapersMinimal-v2_370(1).zip</code>, SHA-256 <code>573e1830d1b486e7842743e9cb4141f0c25ef11e6e49ef27c97e54c84fc146b4</code>.</li>
+<li><strong>Method:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4(1).md</code>, three sequential comprehensive batches. Source-level proof E1, independent analytical/numerical E3, adversarial E4; upstream imports checked at exact consumed clauses.</li>
+<li><strong>Base global DAG:</strong> <code>Paper00-DAGAtlas-v1_101(1).zip</code>; <strong>base audit archive:</strong> <code>Paper00-ProofChainAudits-v1_19(1).zip</code>. Both are frozen inputs, not source repairs.</li>
+<li><strong>Final classification:</strong> <strong>FULLY_AUDITED_WITH_OPEN_GAPS</strong>. No source modifications or inferred physical-occurrence certifications.</li>
+</ul>
+<h2>Coverage and disposition census</h2>
+<ul>
+<li><strong>3,674/3,674</strong> manuscript lines; <strong>98/98</strong> source objects; <strong>68/68</strong> formal declarations (23 theorems, 12 propositions, 5 lemmas, 15 corollaries, 13 definitions) and <strong>30/30</strong> remarks.</li>
+<li><strong>54/54</strong> printed proof environments checked; <strong>55</strong> proof-bearing formal results (one explicitly without separate proof environment).</li>
+<li>Source dispositions: VERIFIED=14, VERIFIED-CONDITIONAL=39, FORMALIZED=43, UNRESOLVED=2.</li>
+<li>97 source-reviewed typed premise/scope edges; 13 distinct first-origin condition nodes; 2 open source-local issue certificates.</li>
+<li>All 137 cross-paper reference uses (91 distinct labels) resolved in the current source anchor map; no unresolved local bibliography labels in source-reference scan.</li>
+<li>Three batches: lines 1–1,236; 1,237–2,501; 2,502–3,674. All reviewed source objects have explicit dispositions.</li>
+</ul>
+<h2>Finding 1 — <code>BH-IIID-HATJUNC-001</code> (minor, open)</h2>
+<ul>
+<li><strong>Origin:</strong> lines 1743–1753, <code>p3d:thm:canonical-nonnegative-laurent-projection</code>.</li>
+<li>The text assigns nonzero distributional Hessian/junction measure to <code>\widehat{\mathcal H}_j</code> while identifying it with the constant terminal trace <code>C_j</code>. A constant has zero distributional derivatives. A separate piecewise-glued representative is needed for the displayed jump.</li>
+<li><strong>Safe subclaims:</strong> positive-part Laurent algebra and the active-sector Hessian remain independently verified.</li>
+<li><strong>Repair obligation:</strong> define the piecewise function and one-sided derivatives in the paper itself; no audit-only replacement counts as a source repair.</li>
+<li><strong>Dependency status:</strong> later Paper VI-A cites algebraic/active pieces; no defective downstream path established for the ambiguous junction clause.</li>
+</ul>
+<h2>Finding 2 — <code>BH-IIID-DCHARPORT-002</code> (moderate, open)</h2>
+<ul>
+<li><strong>Origin:</strong> lines 1835–1862, <code>p3d:thm:v2219-carrier-four-dressing</code>.</li>
+<li>The grade-four actual-carrier selection <code>j=4</code> is supported by the exact upstream III-C carrier statement. The additional coefficient amplitude <code>D_4(R)=Q_\sigma^{n_4^+(R)}</code> requires a typed coefficient owner and normalization not defined or discharged within the III-D theorem.</li>
+<li><strong>Safe subclaims:</strong> carrier selection and rank-character exponents; Paper III-F/III-G contain separately scoped coefficient-owner material, not retroactive unconditional proofs of this source clause.</li>
+<li><strong>Repair obligation:</strong> import the exact coefficient-owner premise at the origin, or type the displayed amplitude as conditional.</li>
+<li><strong>Dependency status:</strong> no verified propagation of the missing coefficient as an unconditional physical prediction; conditional downstream carrier use remains valid.</li>
+</ul>
+<h2>Previously open issue retained without duplication</h2>
+<ul>
+<li><code>BH-IIIC-DEPTHARG-002</code> remains an upstream Paper III-C issue. III-D explicitly uses a depth coordinate; the earlier flow/depth parameter confusion is not independently recreated.</li>
+</ul>
+<h2>Every source object (canonical ID, lines, disposition)</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">#</th>
+  <th style="text-align:right">Batch</th>
+  <th>Claim/remark ID</th>
+  <th>Kind</th>
+  <th style="text-align:right">Source lines</th>
+  <th>Disposition</th>
+  <th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:def:effective-damping-ordering</code></td>
+  <td>definition</td>
+  <td style="text-align:right">291–296</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1:definition-scope-type-read</td>
+</tr>
+<tr>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:def:reeb-phase-contact-residue-distance</code></td>
+  <td>definition</td>
+  <td style="text-align:right">298–314</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1:definition-scope-type-read, E3-HOPF-C2</td>
+</tr>
+<tr>
+  <td style="text-align:right">3</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:def:protected-rank-quotient</code></td>
+  <td>definition</td>
+  <td style="text-align:right">330–345</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1:definition-scope-type-read</td>
+</tr>
+<tr>
+  <td style="text-align:right">4</td>
+  <td style="text-align:right">1</td>
+  <td><code>Paper3D:unnamed:remark:347</code></td>
+  <td>remark</td>
+  <td style="text-align:right">347–353</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td style="text-align:right">5</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:lem:rank-atom-hopf-trace-localization</code></td>
+  <td>lemma</td>
+  <td style="text-align:right">355–373</td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1-IIID-B1-001, E3-HOPF-C2, E3-MULT-CHAR</td>
+</tr>
+<tr>
+  <td style="text-align:right">6</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:lem:primitive-hopf-cell-normalization</code></td>
+  <td>lemma</td>
+  <td style="text-align:right">389–410</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B1-002, E3-HOPF-C2, E3-MULT-CHAR, E3-SCHEME-SIGN</td>
+</tr>
+<tr>
+  <td style="text-align:right">7</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:thm:reeb-universal</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">438–479</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B1-003, E3-MULT-CHAR, E3-SCHEME-SIGN</td>
+</tr>
+<tr>
+  <td style="text-align:right">8</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:def:active-support-response</code></td>
+  <td>definition</td>
+  <td style="text-align:right">494–534</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1:definition-scope-type-read</td>
+</tr>
+<tr>
+  <td style="text-align:right">9</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:lem:unit-trace-forces-reciprocal-active-fraction</code></td>
+  <td>lemma</td>
+  <td style="text-align:right">536–548</td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1-IIID-B1-004, E3-TRACE-DENSITY, E4-STATE-NONLINEAR</td>
+</tr>
+<tr>
+  <td style="text-align:right">10</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:thm:eight-mode-harmonic-response</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">589–606</td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1-IIID-B1-005, E3-TRACE-DENSITY, E4-STATE-NONLINEAR</td>
+</tr>
+<tr>
+  <td style="text-align:right">11</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3d:cor:generated-active-support-inheritance</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">617–640</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B1-006, E3-TRACE-DENSITY, E4-SCOPE-TESTS</td>
+</tr>
+<tr>
+  <td style="text-align:right">12</td>
+  <td style="text-align:right">1</td>
+  <td><code>Paper3D:unnamed:remark:642</code></td>
+  <td>remark</td>
+  <td style="text-align:right">642–647</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td style="text-align:right">13</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:rem:no-hidden-inverse-trace-axiom</code></td>
+  <td>remark</td>
+  <td style="text-align:right">649–664</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td style="text-align:right">14</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3d:cor:unit-boundary-normal-form</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">666–681</td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1-IIID-B1-007, E3-TRACE-DENSITY</td>
+</tr>
+<tr>
+  <td style="text-align:right">15</td>
+  <td style="text-align:right">1</td>
+  <td><code>Paper3D:unnamed:remark:696</code></td>
+  <td>remark</td>
+  <td style="text-align:right">696–709</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td style="text-align:right">16</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:prop:ordering-versus-step-size</code></td>
+  <td>proposition</td>
+  <td style="text-align:right">711–720</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B1-008, E3-MULT-CHAR, E4-SCOPE-TESTS</td>
+</tr>
+<tr>
+  <td style="text-align:right">17</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:thm:sequential</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">734–769</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B1-009, E3-MULT-CHAR, E3-CLOCK-DEPTH, E4-SCOPE-TESTS</td>
+</tr>
+<tr>
+  <td style="text-align:right">18</td>
+  <td style="text-align:right">1</td>
+  <td><code>Paper3D:unnamed:remark:810</code></td>
+  <td>remark</td>
+  <td style="text-align:right">810–816</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td style="text-align:right">19</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:rem:pseudoscalar-diagnostic-pointer</code></td>
+  <td>remark</td>
+  <td style="text-align:right">818–828</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td style="text-align:right">20</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:def:reduced-response-branch</code></td>
+  <td>definition</td>
+  <td style="text-align:right">843–884</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1:definition-scope-type-read</td>
+</tr>
+<tr>
+  <td style="text-align:right">21</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:prop:one_parameter_reduction</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">906–921</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B1-010, E3-BORN-REFLECTION, E4-SCOPE-TESTS</td>
+</tr>
+<tr>
+  <td style="text-align:right">22</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:rem:no-hidden-beta-system</code></td>
+  <td>remark</td>
+  <td style="text-align:right">966–973</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td style="text-align:right">23</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:def:reciprocal-quotient-coordinate</code></td>
+  <td>definition</td>
+  <td style="text-align:right">975–1002</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1:definition-scope-type-read</td>
+</tr>
+<tr>
+  <td style="text-align:right">24</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:lem:reduced-born-reciprocity</code></td>
+  <td>lemma</td>
+  <td style="text-align:right">1004–1027</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B1-011, E3-BORN-REFLECTION</td>
+</tr>
+<tr>
+  <td style="text-align:right">25</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3d:thm:born-seven-depth-reflection</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">1056–1079</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B1-012, E3-BORN-REFLECTION, E4-SCOPE-TESTS</td>
+</tr>
+<tr>
+  <td style="text-align:right">26</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3d:cor:born-operational-scale-inversion</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">1093–1117</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B1-013, E3-BORN-REFLECTION</td>
+</tr>
+<tr>
+  <td style="text-align:right">27</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:def:visible-reciprocal-sector-weights</code></td>
+  <td>definition</td>
+  <td style="text-align:right">1130–1170</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1:definition-scope-type-read</td>
+</tr>
+<tr>
+  <td style="text-align:right">28</td>
+  <td style="text-align:right">1</td>
+  <td><code>p3:lem:spectral-trace-sector-valuation</code></td>
+  <td>lemma</td>
+  <td style="text-align:right">1172–1184</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B1-014, E3-ROLE-TRACE, E4-SCOPE-TESTS</td>
+</tr>
+<tr>
+  <td style="text-align:right">29</td>
+  <td style="text-align:right">1</td>
+  <td><code>Paper3D:unnamed:remark:1220</code></td>
+  <td>remark</td>
+  <td style="text-align:right">1220–1227</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td style="text-align:right">30</td>
+  <td style="text-align:right">1</td>
+  <td><code>Paper3D:unnamed:remark:1230</code></td>
+  <td>remark</td>
+  <td style="text-align:right">1230–1235</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td></td>
+</tr>
+<tr>
+  <td style="text-align:right">31</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:def:scalar-response-readout-normalization</code></td>
+  <td>definition</td>
+  <td style="text-align:right">1237–1256</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">32</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:def:uv-ir-calibration-pair</code></td>
+  <td>definition</td>
+  <td style="text-align:right">1258–1276</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">33</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:thm:geff_from_reciprocity</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">1278–1304</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-ROOT-CAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">34</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:cor:primitive-unit-quadratic-response</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">1334–1352</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-EULER</td>
+</tr>
+<tr>
+  <td style="text-align:right">35</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:cor:two-scale-response-normalizations</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">1362–1386</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-EULER</td>
+</tr>
+<tr>
+  <td style="text-align:right">36</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:cor:born-euler-response-pair</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">1394–1414</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-EULER</td>
+</tr>
+<tr>
+  <td style="text-align:right">37</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:thm:minimal-born-laurent-characterization</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">1426–1459</td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-LAUR-UNIQUE</td>
+</tr>
+<tr>
+  <td style="text-align:right">38</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:cor:rank-character-laurent-family</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">1479–1556</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-SECANT</td>
+</tr>
+<tr>
+  <td style="text-align:right">39</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:thm:v285-calibration-free-hierarchy-dip</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">1576–1614</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-DIP</td>
+</tr>
+<tr>
+  <td style="text-align:right">40</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:cor:born-midpoint-shell-coordinate</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">1642–1682</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-DIP</td>
+</tr>
+<tr>
+  <td style="text-align:right">41</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:thm:canonical-nonnegative-laurent-projection</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">1698–1754</td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-TRACE-JUNC</td>
+</tr>
+<tr>
+  <td style="text-align:right">42</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:thm:least-support-n2-dressing</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">1778–1808</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-DRESS</td>
+</tr>
+<tr>
+  <td style="text-align:right">43</td>
+  <td style="text-align:right">2</td>
+  <td><code>Paper3D:unnamed:remark:1824</code></td>
+  <td>remark</td>
+  <td style="text-align:right">1824–1832</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">44</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:thm:v2219-carrier-four-dressing</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">1835–1855</td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-DRESS</td>
+</tr>
+<tr>
+  <td style="text-align:right">45</td>
+  <td style="text-align:right">2</td>
+  <td><code>Paper3D:unnamed:remark:1864</code></td>
+  <td>remark</td>
+  <td style="text-align:right">1864–1871</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">46</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:rem:response-normalization-invariance</code></td>
+  <td>remark</td>
+  <td style="text-align:right">1874–1899</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">47</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:rem:geff_status</code></td>
+  <td>remark</td>
+  <td style="text-align:right">1902–1910</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">48</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:cor:fully_derived_one_parameter_trajectory</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">1912–1933</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-DIP</td>
+</tr>
+<tr>
+  <td style="text-align:right">49</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:rem:riccati_from_geff</code></td>
+  <td>remark</td>
+  <td style="text-align:right">1963–1966</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">50</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:rem:dimensionless-hierarchy-handoff</code></td>
+  <td>remark</td>
+  <td style="text-align:right">1969–1987</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">51</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:rem:anchored-reg-hierarchy-import</code></td>
+  <td>remark</td>
+  <td style="text-align:right">1990–2000</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">52</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:thm:exact-reciprocal-freeze-interface</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">2005–2021</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-ROOT-CAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">53</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:rem:forward-transport-normalization</code></td>
+  <td>remark</td>
+  <td style="text-align:right">2028–2036</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">54</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:thm:v222-born-phase-conjugation</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">2051–2076</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-PHASE</td>
+</tr>
+<tr>
+  <td style="text-align:right">55</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:thm:v222-primitive-phase-twist</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">2093–2128</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-PHASE</td>
+</tr>
+<tr>
+  <td style="text-align:right">56</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:rem:v222-phase-nonaction-firewall</code></td>
+  <td>remark</td>
+  <td style="text-align:right">2151–2167</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">57</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:prop:v223-curvature-clock</code></td>
+  <td>proposition</td>
+  <td style="text-align:right">2173–2201</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-CAP</td>
+</tr>
+<tr>
+  <td style="text-align:right">58</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:rem:v223-log-asinh</code></td>
+  <td>remark</td>
+  <td style="text-align:right">2212–2228</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">59</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:eq:geff_def</code></td>
+  <td>definition</td>
+  <td style="text-align:right">2245–2271</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">60</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:rem:reduced_variables_status</code></td>
+  <td>remark</td>
+  <td style="text-align:right">2273–2288</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">61</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3d:rem:v263-exponent-character-pullback</code></td>
+  <td>remark</td>
+  <td style="text-align:right">2290–2312</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">62</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:thm:riccati</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">2314–2327</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-DIP</td>
+</tr>
+<tr>
+  <td style="text-align:right">63</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:prop:n_closed</code></td>
+  <td>proposition</td>
+  <td style="text-align:right">2338–2353</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-SECANT</td>
+</tr>
+<tr>
+  <td style="text-align:right">64</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:def:active-reduced-window</code></td>
+  <td>proposition</td>
+  <td style="text-align:right">2362–2371</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-SECANT</td>
+</tr>
+<tr>
+  <td style="text-align:right">65</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:thm:exact-calibrated-secant-range</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">2381–2402</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-SECANT</td>
+</tr>
+<tr>
+  <td style="text-align:right">66</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:def:neutral-visibility-readout</code></td>
+  <td>definition</td>
+  <td style="text-align:right">2414–2439</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B2-SCOPE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">67</td>
+  <td style="text-align:right">2</td>
+  <td><code>p3:thm:basis-neutral-entropy-lift</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">2441–2477</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B2-SOURCE-REPLAY, E3-IIID-B2-ENTROPY</td>
+</tr>
+<tr>
+  <td style="text-align:right">68</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:rem:mresp-derived-later-state</code></td>
+  <td>remark</td>
+  <td style="text-align:right">2502–2514</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B3-CLAUSE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">69</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:thm:v2211-excess-character-certificate</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">2532–2577</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-EXCESS-ODE, E3-IIID-B3-EXCESS-JET, E4-IIID-B3-LOCAL-GLOBAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">70</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:thm:v173-fixed-depth-laurent-excess-jet</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">2591–2623</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-LOCAL-JET-BOUND, E3-IIID-B3-LOCAL-JET-END, E4-IIID-B3-LOCAL-GLOBAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">71</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:prop:v2211-excess-jet-counterfamily</code></td>
+  <td>proposition</td>
+  <td style="text-align:right">2634–2654</td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-EXCESS-JET, E3-IIID-B3-EXCESS-ODE</td>
+</tr>
+<tr>
+  <td style="text-align:right">72</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:rem:v173-three-n7-sorts</code></td>
+  <td>remark</td>
+  <td style="text-align:right">2663–2670</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B3-CLAUSE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">73</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:thm:v2216-complete-action-jets</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">2684–2723</td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-ACTION-CHAIN, E3-IIID-B3-DIAG-TWOJET</td>
+</tr>
+<tr>
+  <td style="text-align:right">74</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:rem:v2217-density-matching-import</code></td>
+  <td>remark</td>
+  <td style="text-align:right">2736–2745</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B3-CLAUSE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">75</td>
+  <td style="text-align:right">3</td>
+  <td><code>Paper3D:unnamed:remark:2748</code></td>
+  <td>remark</td>
+  <td style="text-align:right">2748–2764</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B3-CLAUSE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">76</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:thm:v2216-exjet-global-obstruction</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">2766–2796</td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-EXJET-GLOBAL, E4-IIID-B3-LOCAL-GLOBAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">77</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:cor:v2216-raw-euler-nongluing</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">2811–2818</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-EXJET-GLOBAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">78</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:prop:v226-response-coefficients</code></td>
+  <td>proposition</td>
+  <td style="text-align:right">2827–2839</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-DIAG-TWOJET, E3-IIID-B3-TOMOGRAPHY-DUAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">79</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:cor:v227-running-frequency</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">2857–2863</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-DIAG-TWOJET, E3-IIID-B3-ENERGY-SAMPLES</td>
+</tr>
+<tr>
+  <td style="text-align:right">80</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:thm:v2216-positive-born-provider</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">2892–2932</td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-MEASURE-MASS, E3-IIID-B3-MEASURE-RESOLVENT, E3-IIID-B3-MEASURE-TERMINAL, E3-IIID-B3-MEASURE-INFINMOM, E3-IIID-B3-SCHUR-MIN, E4-IIID-B3-NOT-ACTION</td>
+</tr>
+<tr>
+  <td style="text-align:right">81</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:cor:v2216-born-positive-approximation</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">2971–2988</td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-FINITE-SLOPE</td>
+</tr>
+<tr>
+  <td style="text-align:right">82</td>
+  <td style="text-align:right">3</td>
+  <td><code>Paper3D:unnamed:remark:2999</code></td>
+  <td>remark</td>
+  <td style="text-align:right">2999–3013</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B3-CLAUSE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">83</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:thm:v2216-finite-born-second-jet</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">3015–3053</td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-FINITE-PHI-NONNEG, E3-IIID-B3-PHI-FIRST-JET, E3-IIID-B3-FINITE-THIRD-JET, E4-IIID-B3-NEUTRAL-SOURCE, E4-IIID-B3-NOT-ACTION</td>
+</tr>
+<tr>
+  <td style="text-align:right">84</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:prop:v2216-finite-born-limits</code></td>
+  <td>proposition</td>
+  <td style="text-align:right">3078–3099</td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-FINITE-THIRD-JET, E3-IIID-B3-FINITE-PHI-NONNEG, E3-IIID-B3-FROZEN-GLOBAL-SIGN</td>
+</tr>
+<tr>
+  <td style="text-align:right">85</td>
+  <td style="text-align:right">3</td>
+  <td><code>Paper3D:unnamed:remark:3123</code></td>
+  <td>remark</td>
+  <td style="text-align:right">3123–3138</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B3-CLAUSE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">86</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:cor:v2216-second-jet-transgression</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">3140–3153</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-ACTION-CHAIN, E3-IIID-B3-TRANS-INTEGRAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">87</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:def:v2218-finite-orbit-value</code></td>
+  <td>definition</td>
+  <td style="text-align:right">3179–3197</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B3-CLAUSE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">88</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:prop:v2218-finite-orbit-contacts</code></td>
+  <td>proposition</td>
+  <td style="text-align:right">3199–3226</td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-PHI-FIRST-JET, E3-IIID-B3-PHI-SECOND-JET, E3-IIID-B3-PHI-COINCIDENCE, E3-IIID-B3-FINITE-REFLECTION</td>
+</tr>
+<tr>
+  <td style="text-align:right">89</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:prop:v2218-diagonal-cancellation</code></td>
+  <td>proposition</td>
+  <td style="text-align:right">3243–3264</td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-FINITE-THIRD-JET, E3-IIID-B3-FINITE-PHI-NONNEG, E3-IIID-B3-DIAGONAL-TANGENT</td>
+</tr>
+<tr>
+  <td style="text-align:right">90</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:def:v2218-fixed-momentum-candidate</code></td>
+  <td>definition</td>
+  <td style="text-align:right">3284–3316</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B3-CLAUSE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">91</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:thm:v2218-fixed-candidate-endpoints</code></td>
+  <td>theorem</td>
+  <td style="text-align:right">3340–3366</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-CANDIDATE-CUBIC, E3-IIID-B3-FINITE-REFLECTION, E3-IIID-B3-UV-TRACE-BOUND, E4-IIID-B3-UV-RESTRICTION</td>
+</tr>
+<tr>
+  <td style="text-align:right">92</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:prop:v2218-finite-value-junction</code></td>
+  <td>proposition</td>
+  <td style="text-align:right">3406–3426</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-DRESS-JUMP</td>
+</tr>
+<tr>
+  <td style="text-align:right">93</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:rem:v2218-fixed-candidate-status</code></td>
+  <td>remark</td>
+  <td style="text-align:right">3438–3454</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B3-CLAUSE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">94</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:rem:v229-actual-gravitational-incidence</code></td>
+  <td>remark</td>
+  <td style="text-align:right">3552–3571</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B3-CLAUSE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">95</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:cor:v286-protected-grade-four-incidence-test</code></td>
+  <td>corollary</td>
+  <td style="text-align:right">3576–3596</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-GRADE4-GRAM, E4-IIID-B3-GRADE4</td>
+</tr>
+<tr>
+  <td style="text-align:right">96</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:prop:v319-petersen-no-running</code></td>
+  <td>proposition</td>
+  <td style="text-align:right">3617–3629</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-GRADE4-GRAM, E3-IIID-B3-RG-DISCONNECT</td>
+</tr>
+<tr>
+  <td style="text-align:right">97</td>
+  <td style="text-align:right">3</td>
+  <td><code>Paper3D:unnamed:remark:3638</code></td>
+  <td>remark</td>
+  <td style="text-align:right">3638–3646</td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E1-IIID-B3-CLAUSE-READ</td>
+</tr>
+<tr>
+  <td style="text-align:right">98</td>
+  <td style="text-align:right">3</td>
+  <td><code>p3d:prop:v229-static-radius-test</code></td>
+  <td>proposition</td>
+  <td style="text-align:right">3653–3660</td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1-IIID-B3-SOURCE-REPLAY, E3-IIID-B3-STATIC-OBSTRUCTION, E4-IIID-B3-REG-ROLE</td>
+</tr>
+</tbody>
+</table>
+<h2>Canonical scoped conditions — one first origin each</h2>
+<table>
+<thead>
+<tr>
+  <th>Condition ID</th>
+  <th>Status and sort</th>
+  <th>Source first origin</th>
+  <th>Exact requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-IIID-A-0001</code></td>
+  <td>SOURCE-DECLARED / DOMAIN / G0-BOUNDARY</td>
+  <td><code>p3:def:active-support-response</code>:494–531</td>
+  <td>For a fixed protected-state conditioning use a nonzero orthogonal P∈End_R(A_prot), rank(P)=k∈{1,...,8}; a physical fixed P has its supported G0 occurrence/mark when not an invariant generated constituent.</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-A-0002</code></td>
+  <td>CONDITIONAL / PHYSICAL-IDENTIFICATION</td>
+  <td><code>p3:def:active-support-response</code>:524–531</td>
+  <td>(UNIT): on a fixed physical support P, adopt the unique normalized conditioned regular trace state as the reduced scalar-response readout; no inverse-trace action law asserted.</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-A-0003</code></td>
+  <td>CONDITIONAL / DOMAIN / RESPONSE-CLASS</td>
+  <td><code>p3:def:reduced-response-branch</code>:843–886</td>
+  <td>(RED): fixed common f, Λ, overall normalization, phase/ground projection, Spin(4)-equivariant shellwise coarse graining, one fixed Born product leaf ab=s_B²&gt;0, positive scalar role outputs a,b.</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-A-0004</code></td>
+  <td>CONDITIONAL / NORMALIZATION / OWNER-SCOPE</td>
+  <td><code>p3d:thm:born-seven-depth-reflection</code>:1056–1080</td>
+  <td>For the owner-placed physical response-root reflection, positive common U,C with U&gt;C and α_σ&gt;1; C/U=α_σ^{-7}, s_B²=UC and same-owner ancestry of generated determinant depth.</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-A-0005</code></td>
+  <td>SOURCE-DECLARED / CALIBRATION / RED</td>
+  <td><code>p3:def:uv-ir-calibration-pair</code>:1258–1276</td>
+  <td>Two-root endpoint calibration: fixed reduced response owner, positive distinct roots 0&lt;C&lt;U and g_eff(C)=g_eff(U)=1; physical occurrence/scale choice separate from algebraic uniqueness.</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-A-0006</code></td>
+  <td>CONDITIONAL / OWNER-PLACEMENT / RESPONSE</td>
+  <td><code>p3d:cor:rank-character-laurent-family</code>:1479–1486</td>
+  <td>Optional rank-character response placement of all designated C_j/U=alpha_sigma^-j on a single owner, alpha_sigma&gt;1, j=1..7; no claim that every j is an actual nonzero spectral carrier.</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-A-0007</code></td>
+  <td>CONDITIONAL / OPTIONAL-ROLE-COMPARISON</td>
+  <td><code>p3d:thm:least-support-n2-dressing</code>:1778–1795</td>
+  <td>Optional coefficient-role selector conditions D1 (turnover after inflation), D2 (freeze no later than K32), D3 (least support among complete admissible candidates), with 1/2&lt;q_end&lt;1.</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-A-0008</code></td>
+  <td>CONDITIONAL / COEFFICIENT-ROLE-SELECTOR</td>
+  <td><code>p3d:thm:v2219-carrier-four-dressing</code>:1835–1844</td>
+  <td>First actual nonzero carrier in active protected spectrum is required as coefficient-source rank; this rule replaces optional D3 and consumes the generated III-C spectral grades {0,4,5,7}.</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-A-0009</code></td>
+  <td>CONDITIONAL / METRIC-COMPARISON / CAP-ANCHOR</td>
+  <td><code>p3d:prop:v223-curvature-clock</code>:2173–2201</td>
+  <td>Optional metric curvature comparison R=R[g]&gt;0, fixed positive upper anchor P, anchored REG0 L, declared cap anchors B_U,B_I and sigma=B_I R_s.</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-A-0010</code></td>
+  <td>CONDITIONAL / ACTUAL-SOURCE-JET / CONDITION</td>
+  <td><code>p3d:thm:v2211-excess-character-certificate</code>:2532–2565</td>
+  <td>(EXJET_7): independently owned and evaluated C¹ local action-source excess with E_barR(barR)=Delta(barR), frozen w=1+n7(barR), and actual Ward defect W_barR(barR)=0 at a specified active barR&gt;C.</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-A-0011</code></td>
+  <td>CONDITIONAL / ACTUAL-SOURCE-INTERVAL / STRONGER CONDITION</td>
+  <td><code>p3d:thm:v2211-excess-character-certificate</code>:2554–2565</td>
+  <td>(EXCHAR_7): on the actual local positive source interval, W_barR(r)=0 throughout (not merely at barR), with fixed w and independently owned E_barR; stronger than EXJET_7.</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-A-0012</code></td>
+  <td>CONDITIONAL / SOURCE-GRAM / PHYSICAL-NORMALIZATION</td>
+  <td><code>p3d:thm:v2216-finite-born-second-jet</code>:3049–3052</td>
+  <td>For a chosen finite invariant Born source word, the independently evaluated Gram/source incidence satisfies beta_R*kappa_R^2=4 Delta(R) in the actual local configuration chart; matching cannot be defined by retrofitting the proposed susceptibility.</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-A-0013</code></td>
+  <td>SOURCE-DECLARED / DEFINED-CANDIDATE / BRANCH</td>
+  <td><code>p3d:def:v2218-fixed-momentum-candidate</code>:3284–3316</td>
+  <td>Fixed-momentum composed candidate branch: choose positive alpha&gt;1 and U&gt;C=U alpha^-7, Q=8sqrt(alpha) held constant across C≤R≤U, and choose the generated visibility norm k(R)*zeta(R)^2 as the finite invariant source section.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Non-equivalence:</strong> <code>(EXCHAR_7)</code> at one background/source interval implies the local <code>(EXJET_7)</code> at that background, not conversely. <code>(RED)</code>, <code>(UNIT)</code>, <code>(FLAG)</code>, <code>(PQTI)</code> and physical source/action incidence are separately typed and are not imported as universal truths.</p>
+<h2>Explicit source-consumed dependency and branch ledger</h2>
+<table>
+<thead>
+<tr>
+  <th>Edge ID</th>
+  <th>Premise/source</th>
+  <th>Consuming claim</th>
+  <th>Kind</th>
+  <th>Exact use location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0001</code></td>
+  <td><code>p3:thm:rank-one-hopf-localization</code></td>
+  <td><code>p3:lem:rank-atom-hopf-trace-localization</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D:375-385</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0002</code></td>
+  <td><code>p3:thm:Vlog</code></td>
+  <td><code>p3:lem:primitive-hopf-cell-normalization</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D:418-426</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0003</code></td>
+  <td><code>p3:thm:D1-primitive-smooth-uniqueness</code></td>
+  <td><code>p3:lem:primitive-hopf-cell-normalization</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D:425-432</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0004</code></td>
+  <td><code>p3:lem:rank-atom-hopf-trace-localization</code></td>
+  <td><code>p3:lem:primitive-hopf-cell-normalization</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D:416-419</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0005</code></td>
+  <td><code>p3:lem:rank-atom-hopf-trace-localization</code></td>
+  <td><code>p3:thm:reeb-universal</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D:481-485</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0006</code></td>
+  <td><code>p3:thm:determinant-rank-character</code></td>
+  <td><code>p3:thm:reeb-universal</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D:482-488</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0007</code></td>
+  <td><code>p3c:thm:generated-dual-depth-hierarchy</code></td>
+  <td><code>p3:thm:reeb-universal</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D:484-488</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0008</code></td>
+  <td><code>p3:lem:unit-trace-forces-reciprocal-active-fraction</code></td>
+  <td><code>p3:thm:eight-mode-harmonic-response</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D:608-614</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0009</code></td>
+  <td><code>p3:lem:unit-trace-forces-reciprocal-active-fraction</code></td>
+  <td><code>p3d:cor:generated-active-support-inheritance</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D:617-636</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0010</code></td>
+  <td><code>p3:cor:derived-infrared-projector</code></td>
+  <td><code>p3d:cor:generated-active-support-inheritance</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D:617-636</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0011</code></td>
+  <td><code>p3:thm:reeb-universal</code></td>
+  <td><code>p3:prop:ordering-versus-step-size</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D:722-729</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0012</code></td>
+  <td><code>p3:thm:hopf-decomposition</code></td>
+  <td><code>p3:thm:sequential</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D:771-782</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0013</code></td>
+  <td><code>p3:thm:reeb-universal</code></td>
+  <td><code>p3:thm:sequential</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D:773-799</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0014</code></td>
+  <td><code>p3c:thm:generated-dual-depth-hierarchy</code></td>
+  <td><code>p3:thm:sequential</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D:734-808</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0015</code></td>
+  <td><code>p3b:def:sector-trace-born-state</code></td>
+  <td><code>p3:prop:one_parameter_reduction</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D:926-953</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0016</code></td>
+  <td><code>p3:prop:one_parameter_reduction</code></td>
+  <td><code>p3:lem:reduced-born-reciprocity</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D:1004-1053</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0017</code></td>
+  <td><code>p3:def:reciprocal-quotient-coordinate</code></td>
+  <td><code>p3:lem:reduced-born-reciprocity</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D:1004-1053</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0018</code></td>
+  <td><code>p2a:thm:generated-born-inheritance</code></td>
+  <td><code>p3:lem:reduced-born-reciprocity</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D:1005-1034</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0019</code></td>
+  <td><code>p3:lem:reduced-born-reciprocity</code></td>
+  <td><code>p3d:thm:born-seven-depth-reflection</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D:1081-1091</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0020</code></td>
+  <td><code>p3d:thm:born-seven-depth-reflection</code></td>
+  <td><code>p3d:cor:born-operational-scale-inversion</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D:1093-1128</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0021</code></td>
+  <td><code>p3b:def:sector-trace-born-state</code></td>
+  <td><code>p3:lem:spectral-trace-sector-valuation</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D:1186-1196</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0022</code></td>
+  <td><code>p3b:lem:equal-born-role-weights</code></td>
+  <td><code>p3:lem:spectral-trace-sector-valuation</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D:1197-1204</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0023</code></td>
+  <td><code>p3:def:visible-reciprocal-sector-weights</code></td>
+  <td><code>p3:lem:spectral-trace-sector-valuation</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D:1172-1218</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0024</code></td>
+  <td><code>p3:lem:spectral-trace-sector-valuation</code></td>
+  <td><code>p3:def:scalar-response-readout-normalization</code></td>
+  <td><code>DEFINITION_DEPENDS</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1237-1256</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0025</code></td>
+  <td><code>p3:def:visible-reciprocal-sector-weights</code></td>
+  <td><code>p3:thm:geff_from_reciprocity</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1306-1332</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0026</code></td>
+  <td><code>p3:lem:spectral-trace-sector-valuation</code></td>
+  <td><code>p3:thm:geff_from_reciprocity</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1306-1332</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0027</code></td>
+  <td><code>p3:def:scalar-response-readout-normalization</code></td>
+  <td><code>p3:thm:geff_from_reciprocity</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1306-1332</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0028</code></td>
+  <td><code>p3:def:uv-ir-calibration-pair</code></td>
+  <td><code>p3:thm:geff_from_reciprocity</code></td>
+  <td><code>CALIBRATION_PREMISE</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1306-1332</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0029</code></td>
+  <td><code>p3:thm:geff_from_reciprocity</code></td>
+  <td><code>p3d:cor:primitive-unit-quadratic-response</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1354-1359</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0030</code></td>
+  <td><code>p3d:cor:primitive-unit-quadratic-response</code></td>
+  <td><code>p3d:cor:two-scale-response-normalizations</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1387-1392</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0031</code></td>
+  <td><code>p3:thm:geff_from_reciprocity</code></td>
+  <td><code>p3d:cor:born-euler-response-pair</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1415-1422</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0032</code></td>
+  <td><code>p1b:thm:born-euler-anticommutation</code></td>
+  <td><code>p3d:cor:born-euler-response-pair</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1415-1422</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0033</code></td>
+  <td><code>p3:thm:geff_from_reciprocity</code></td>
+  <td><code>p3d:thm:minimal-born-laurent-characterization</code></td>
+  <td><code>CLAIM_IDENTIFICATION</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1461-1477</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0034</code></td>
+  <td><code>p3d:thm:minimal-born-laurent-characterization</code></td>
+  <td><code>p3d:cor:rank-character-laurent-family</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1558-1573</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0035</code></td>
+  <td><code>p1b:thm:laurent-family</code></td>
+  <td><code>p3d:cor:rank-character-laurent-family</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1558-1573</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0036</code></td>
+  <td><code>p3d:cor:rank-character-laurent-family</code></td>
+  <td><code>p3d:thm:v285-calibration-free-hierarchy-dip</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1615-1639</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0037</code></td>
+  <td><code>p3d:cor:rank-character-laurent-family</code></td>
+  <td><code>p3d:cor:born-midpoint-shell-coordinate</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1684-1696</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0038</code></td>
+  <td><code>p3d:cor:rank-character-laurent-family</code></td>
+  <td><code>p3d:thm:canonical-nonnegative-laurent-projection</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1756-1776</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0039</code></td>
+  <td><code>p1b:thm:laurent-family</code></td>
+  <td><code>p3d:thm:canonical-nonnegative-laurent-projection</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1756-1776</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0040</code></td>
+  <td><code>p3d:thm:canonical-nonnegative-laurent-projection</code></td>
+  <td><code>p3d:thm:least-support-n2-dressing</code></td>
+  <td><code>PREMISE_OF-POSITIVEPART-ONLY</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1810-1822</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0041</code></td>
+  <td><code>p3d:cor:rank-character-laurent-family</code></td>
+  <td><code>p3d:thm:least-support-n2-dressing</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1810-1822</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0042</code></td>
+  <td><code>p3c:prop:v2219-first-actual-carrier</code></td>
+  <td><code>p3d:thm:v2219-carrier-four-dressing</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1856-1863</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0043</code></td>
+  <td><code>p3d:cor:rank-character-laurent-family</code></td>
+  <td><code>p3d:thm:v2219-carrier-four-dressing</code></td>
+  <td><code>PREMISE_OF-RANK-MIDPOINT</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1856-1863</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0044</code></td>
+  <td><code>p3:thm:geff_from_reciprocity</code></td>
+  <td><code>p3:cor:fully_derived_one_parameter_trajectory</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1935-1961</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0045</code></td>
+  <td><code>p3:lem:reduced-born-reciprocity</code></td>
+  <td><code>p3:cor:fully_derived_one_parameter_trajectory</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:1935-1961</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0046</code></td>
+  <td><code>p3:thm:geff_from_reciprocity</code></td>
+  <td><code>p3:thm:exact-reciprocal-freeze-interface</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2023-2026</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0047</code></td>
+  <td><code>p3d:thm:born-seven-depth-reflection</code></td>
+  <td><code>p3d:thm:v222-born-phase-conjugation</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2078-2091</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0048</code></td>
+  <td><code>p3c:thm:v222-rank-character-unitary-companion</code></td>
+  <td><code>p3d:thm:v222-born-phase-conjugation</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2078-2091</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0049</code></td>
+  <td><code>p3d:thm:born-seven-depth-reflection</code></td>
+  <td><code>p3d:thm:v222-primitive-phase-twist</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2130-2149</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0050</code></td>
+  <td><code>p3:thm:geff_from_reciprocity</code></td>
+  <td><code>p3:thm:riccati</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2329-2336</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0051</code></td>
+  <td><code>p1b:thm:laurent-family</code></td>
+  <td><code>p3:thm:riccati</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2329-2336</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0052</code></td>
+  <td><code>p3:thm:geff_from_reciprocity</code></td>
+  <td><code>p3:prop:n_closed</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2355-2360</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0053</code></td>
+  <td><code>p1b:thm:laurent-family</code></td>
+  <td><code>p3:prop:n_closed</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2355-2360</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0054</code></td>
+  <td><code>p3:prop:n_closed</code></td>
+  <td><code>p3:def:active-reduced-window</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2373-2379</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0055</code></td>
+  <td><code>p1b:thm:laurent-family</code></td>
+  <td><code>p3:def:active-reduced-window</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2373-2379</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0056</code></td>
+  <td><code>p3:def:active-reduced-window</code></td>
+  <td><code>p3:thm:exact-calibrated-secant-range</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2404-2412</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0057</code></td>
+  <td><code>p1b:thm:laurent-family</code></td>
+  <td><code>p3:thm:exact-calibrated-secant-range</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2404-2412</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0058</code></td>
+  <td><code>p1b:prop:trace-coordinate</code></td>
+  <td><code>p3:def:neutral-visibility-readout</code></td>
+  <td><code>IMPORTED_CONSTRUCTOR</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2414-2439</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0059</code></td>
+  <td><code>p3c:cor:corealized-protected-visibility-family</code></td>
+  <td><code>p3:def:neutral-visibility-readout</code></td>
+  <td><code>IMPORTED_OCCURRENCE</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2414-2439</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0060</code></td>
+  <td><code>p3:def:neutral-visibility-readout</code></td>
+  <td><code>p3:thm:basis-neutral-entropy-lift</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2479-2500</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0061</code></td>
+  <td><code>p3:thm:exact-calibrated-secant-range</code></td>
+  <td><code>p3:thm:basis-neutral-entropy-lift</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2479-2500</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-B12-0062</code></td>
+  <td><code>p3c:cor:corealized-protected-visibility-family</code></td>
+  <td><code>p3:thm:basis-neutral-entropy-lift</code></td>
+  <td><code>IMPORTED_OWNER</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2479-2500</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0001</code></td>
+  <td><code>p3d:thm:v2211-excess-character-certificate</code></td>
+  <td><code>p3d:thm:v173-fixed-depth-laurent-excess-jet</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2593-2632</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0002</code></td>
+  <td><code>BH-IIID-A-0010</code></td>
+  <td><code>p3d:thm:v173-fixed-depth-laurent-excess-jet</code></td>
+  <td><code>REQUIRES</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2593-2632</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0003</code></td>
+  <td><code>BH-IIID-A-0011</code></td>
+  <td><code>p3d:thm:v173-fixed-depth-laurent-excess-jet</code></td>
+  <td><code>SCOPE_GUARD</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2593-2632</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0004</code></td>
+  <td><code>p3d:thm:v2211-excess-character-certificate</code></td>
+  <td><code>p3d:prop:v2211-excess-jet-counterfamily</code></td>
+  <td><code>DEFINITIONAL_CONTEXT</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2655-2661</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0005</code></td>
+  <td><code>p3d:thm:v2211-excess-character-certificate</code></td>
+  <td><code>p3d:thm:v2216-exjet-global-obstruction</code></td>
+  <td><code>DEFINITIONAL_CONTEXT</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2797-2809</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0006</code></td>
+  <td><code>p3:thm:exact-calibrated-secant-range</code></td>
+  <td><code>p3d:thm:v2216-exjet-global-obstruction</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2797-2809</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0007</code></td>
+  <td><code>p3d:thm:v2216-exjet-global-obstruction</code></td>
+  <td><code>p3d:cor:v2216-raw-euler-nongluing</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2819-2823</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0008</code></td>
+  <td><code>p1b:thm:v226-dual-coefficients</code></td>
+  <td><code>p3d:prop:v226-response-coefficients</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2840-2844</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0009</code></td>
+  <td><code>p1b:cor:v226-source-jets</code></td>
+  <td><code>p3d:prop:v226-response-coefficients</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2840-2844</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0010</code></td>
+  <td><code>p1b:cor:v227-response-jets</code></td>
+  <td><code>p3d:cor:v227-running-frequency</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2864-2867</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0011</code></td>
+  <td><code>p3:prop:n_closed</code></td>
+  <td><code>p3d:thm:v2216-positive-born-provider</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2933-2969</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0012</code></td>
+  <td><code>p3d:thm:v2216-positive-born-provider</code></td>
+  <td><code>p3d:cor:v2216-born-positive-approximation</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2989-2997</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0013</code></td>
+  <td><code>p3:prop:n_closed</code></td>
+  <td><code>p3d:thm:v2216-finite-born-second-jet</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3054-3076</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0014</code></td>
+  <td><code>p3d:thm:v2216-finite-born-second-jet</code></td>
+  <td><code>p3d:prop:v2216-finite-born-limits</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3100-3121</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0015</code></td>
+  <td><code>p3d:thm:v2216-exjet-global-obstruction</code></td>
+  <td><code>p3d:cor:v2216-second-jet-transgression</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3154-3161</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0016</code></td>
+  <td><code>p3d:prop:v2216-finite-born-limits</code></td>
+  <td><code>p3d:cor:v2216-second-jet-transgression</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3154-3161</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0017</code></td>
+  <td><code>p3d:thm:v2216-finite-born-second-jet</code></td>
+  <td><code>p3d:def:v2218-finite-orbit-value</code></td>
+  <td><code>DEFINITIONAL_CONTEXT</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3179-3197</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0018</code></td>
+  <td><code>p3d:def:v2218-finite-orbit-value</code></td>
+  <td><code>p3d:prop:v2218-finite-orbit-contacts</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3227-3241</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0019</code></td>
+  <td><code>p3d:thm:v2216-finite-born-second-jet</code></td>
+  <td><code>p3d:prop:v2218-diagonal-cancellation</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3265-3276</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0020</code></td>
+  <td><code>p3d:def:v2218-finite-orbit-value</code></td>
+  <td><code>p3d:def:v2218-fixed-momentum-candidate</code></td>
+  <td><code>DEFINITIONAL_CONTEXT</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3284-3316</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0021</code></td>
+  <td><code>BH-IIID-A-0013</code></td>
+  <td><code>p3d:thm:v2218-fixed-candidate-endpoints</code></td>
+  <td><code>SCOPE_GUARD</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3367-3395</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0022</code></td>
+  <td><code>p3d:def:v2218-fixed-momentum-candidate</code></td>
+  <td><code>p3d:thm:v2218-fixed-candidate-endpoints</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3367-3395</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0023</code></td>
+  <td><code>p3d:prop:v2218-finite-orbit-contacts</code></td>
+  <td><code>p3d:thm:v2218-fixed-candidate-endpoints</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3367-3395</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0024</code></td>
+  <td><code>p3d:def:v2218-fixed-momentum-candidate</code></td>
+  <td><code>p3d:prop:v2218-finite-value-junction</code></td>
+  <td><code>PREMISE_OF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3427-3436</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0025</code></td>
+  <td><code>p3d:cor:rank-character-laurent-family</code></td>
+  <td><code>p3d:prop:v2218-finite-value-junction</code></td>
+  <td><code>PREMISE_OF-POSITIVEPART_ONLY</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3427-3436</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0026</code></td>
+  <td><code>p3c:prop:v2219-first-actual-carrier</code></td>
+  <td><code>p3d:cor:v286-protected-grade-four-incidence-test</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3598-3608</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0027</code></td>
+  <td><code>p3b:thm:v286-finite-heat-incidence-gram</code></td>
+  <td><code>p3d:cor:v286-protected-grade-four-incidence-test</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3598-3608</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0028</code></td>
+  <td><code>p3b:prop:v286-heat-incidence-contact-obstruction</code></td>
+  <td><code>p3d:cor:v286-protected-grade-four-incidence-test</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3598-3608</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0029</code></td>
+  <td><code>p2a:def:v229-action-incidence-certificate</code></td>
+  <td><code>p3d:cor:v286-protected-grade-four-incidence-test</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3598-3608</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0030</code></td>
+  <td><code>BH-IIIB-A-0009</code></td>
+  <td><code>p3d:cor:v286-protected-grade-four-incidence-test</code></td>
+  <td><code>REQUIRES</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3598-3608</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0031</code></td>
+  <td><code>p3b:thm:v319-petersen-moment-six</code></td>
+  <td><code>p3d:prop:v319-petersen-no-running</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3630-3637</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0032</code></td>
+  <td><code>p1b:thm:v229-coupled-homothety</code></td>
+  <td><code>p3d:prop:v229-static-radius-test</code></td>
+  <td><code>IMPORTED_PROOF</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3661-3664</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0033</code></td>
+  <td><code>BH-IIID-A-0012</code></td>
+  <td><code>p3d:thm:v2216-finite-born-second-jet</code></td>
+  <td><code>NORMALIZATION_CHOICE</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3054-3076</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0034</code></td>
+  <td><code>BH-IIID-A-0003</code></td>
+  <td><code>p3d:thm:v2216-exjet-global-obstruction</code></td>
+  <td><code>SCOPE_GUARD</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:2797-2809</td>
+</tr>
+<tr>
+  <td><code>BH-IIID-EDGE-0035</code></td>
+  <td><code>BH-IIID-A-0013</code></td>
+  <td><code>p3d:prop:v2218-finite-value-junction</code></td>
+  <td><code>SCOPE_GUARD</code></td>
+  <td>Paper3D-RunningResponse-v1_159.tex:3427-3436</td>
+</tr>
+</tbody>
+</table>
+<h2>E1 proof replay register</h2>
+<table>
+<thead>
+<tr>
+  <th>Proof replay ID</th>
+  <th>Claim</th>
+  <th>Proof lines</th>
+  <th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>E1-IIID-B1-001</code></td>
+  <td><code>p3:lem:rank-atom-hopf-trace-localization</code></td>
+  <td>375–387</td>
+  <td>REPRODUCED_WITH_DECLARED_SCOPE</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B1-002</code></td>
+  <td><code>p3:lem:primitive-hopf-cell-normalization</code></td>
+  <td>412–435</td>
+  <td>REPRODUCED_WITH_DECLARED_SCOPE</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B1-003</code></td>
+  <td><code>p3:thm:reeb-universal</code></td>
+  <td>481–492</td>
+  <td>REPRODUCED_WITH_DECLARED_SCOPE</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B1-004</code></td>
+  <td><code>p3:lem:unit-trace-forces-reciprocal-active-fraction</code></td>
+  <td>550–587</td>
+  <td>REPRODUCED_WITH_DECLARED_SCOPE</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B1-005</code></td>
+  <td><code>p3:thm:eight-mode-harmonic-response</code></td>
+  <td>608–615</td>
+  <td>REPRODUCED_WITH_DECLARED_SCOPE</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B1-006</code></td>
+  <td><code>p3d:cor:generated-active-support-inheritance</code></td>
+  <td>617–640</td>
+  <td>REPRODUCED_WITH_DECLARED_SCOPE</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B1-007</code></td>
+  <td><code>p3d:cor:unit-boundary-normal-form</code></td>
+  <td>683–694</td>
+  <td>REPRODUCED_WITH_DECLARED_SCOPE</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B1-008</code></td>
+  <td><code>p3:prop:ordering-versus-step-size</code></td>
+  <td>722–729</td>
+  <td>REPRODUCED_WITH_DECLARED_SCOPE</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B1-009</code></td>
+  <td><code>p3:thm:sequential</code></td>
+  <td>771–808</td>
+  <td>REPRODUCED_WITH_DECLARED_SCOPE</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B1-010</code></td>
+  <td><code>p3:prop:one_parameter_reduction</code></td>
+  <td>923–964</td>
+  <td>REPRODUCED_WITH_DECLARED_SCOPE</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B1-011</code></td>
+  <td><code>p3:lem:reduced-born-reciprocity</code></td>
+  <td>1029–1054</td>
+  <td>REPRODUCED_WITH_DECLARED_SCOPE</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B1-012</code></td>
+  <td><code>p3d:thm:born-seven-depth-reflection</code></td>
+  <td>1081–1091</td>
+  <td>REPRODUCED_WITH_DECLARED_SCOPE</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B1-013</code></td>
+  <td><code>p3d:cor:born-operational-scale-inversion</code></td>
+  <td>1119–1127</td>
+  <td>REPRODUCED_WITH_DECLARED_SCOPE</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B1-014</code></td>
+  <td><code>p3:lem:spectral-trace-sector-valuation</code></td>
+  <td>1186–1219</td>
+  <td>REPRODUCED_WITH_DECLARED_SCOPE</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-001</code></td>
+  <td><code>p3:thm:geff_from_reciprocity</code></td>
+  <td>1306–1332</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-002</code></td>
+  <td><code>p3d:cor:primitive-unit-quadratic-response</code></td>
+  <td>1354–1359</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-003</code></td>
+  <td><code>p3d:cor:two-scale-response-normalizations</code></td>
+  <td>1387–1392</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-004</code></td>
+  <td><code>p3d:cor:born-euler-response-pair</code></td>
+  <td>1415–1422</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-005</code></td>
+  <td><code>p3d:thm:minimal-born-laurent-characterization</code></td>
+  <td>1461–1477</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-006</code></td>
+  <td><code>p3d:cor:rank-character-laurent-family</code></td>
+  <td>1558–1573</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-007</code></td>
+  <td><code>p3d:thm:v285-calibration-free-hierarchy-dip</code></td>
+  <td>1615–1639</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-008</code></td>
+  <td><code>p3d:cor:born-midpoint-shell-coordinate</code></td>
+  <td>1684–1696</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-009</code></td>
+  <td><code>p3d:thm:canonical-nonnegative-laurent-projection</code></td>
+  <td>1756–1776</td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-010</code></td>
+  <td><code>p3d:thm:least-support-n2-dressing</code></td>
+  <td>1810–1822</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-011</code></td>
+  <td><code>p3d:thm:v2219-carrier-four-dressing</code></td>
+  <td>1856–1863</td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-012</code></td>
+  <td><code>p3:cor:fully_derived_one_parameter_trajectory</code></td>
+  <td>1935–1961</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-013</code></td>
+  <td><code>p3:thm:exact-reciprocal-freeze-interface</code></td>
+  <td>2023–2026</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-014</code></td>
+  <td><code>p3d:thm:v222-born-phase-conjugation</code></td>
+  <td>2078–2091</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-015</code></td>
+  <td><code>p3d:thm:v222-primitive-phase-twist</code></td>
+  <td>2130–2149</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-016</code></td>
+  <td><code>p3d:prop:v223-curvature-clock</code></td>
+  <td>2202–2206</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-017</code></td>
+  <td><code>p3:thm:riccati</code></td>
+  <td>2329–2336</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-018</code></td>
+  <td><code>p3:prop:n_closed</code></td>
+  <td>2355–2360</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-019</code></td>
+  <td><code>p3:def:active-reduced-window</code></td>
+  <td>2373–2379</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-020</code></td>
+  <td><code>p3:thm:exact-calibrated-secant-range</code></td>
+  <td>2404–2412</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B2-021</code></td>
+  <td><code>p3:thm:basis-neutral-entropy-lift</code></td>
+  <td>2479–2500</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-001</code></td>
+  <td><code>p3d:thm:v2211-excess-character-certificate</code></td>
+  <td>2578–2589</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-002</code></td>
+  <td><code>p3d:thm:v173-fixed-depth-laurent-excess-jet</code></td>
+  <td>2624–2632</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-003</code></td>
+  <td><code>p3d:prop:v2211-excess-jet-counterfamily</code></td>
+  <td>2655–2661</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-004</code></td>
+  <td><code>p3d:thm:v2216-complete-action-jets</code></td>
+  <td>2724–2733</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-005</code></td>
+  <td><code>p3d:thm:v2216-exjet-global-obstruction</code></td>
+  <td>2797–2809</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-006</code></td>
+  <td><code>p3d:cor:v2216-raw-euler-nongluing</code></td>
+  <td>2819–2823</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-007</code></td>
+  <td><code>p3d:prop:v226-response-coefficients</code></td>
+  <td>2840–2844</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-008</code></td>
+  <td><code>p3d:cor:v227-running-frequency</code></td>
+  <td>2864–2867</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-009</code></td>
+  <td><code>p3d:thm:v2216-positive-born-provider</code></td>
+  <td>2933–2969</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-010</code></td>
+  <td><code>p3d:cor:v2216-born-positive-approximation</code></td>
+  <td>2989–2997</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-011</code></td>
+  <td><code>p3d:thm:v2216-finite-born-second-jet</code></td>
+  <td>3054–3076</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-012</code></td>
+  <td><code>p3d:prop:v2216-finite-born-limits</code></td>
+  <td>3100–3121</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-013</code></td>
+  <td><code>p3d:cor:v2216-second-jet-transgression</code></td>
+  <td>3154–3161</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-014</code></td>
+  <td><code>p3d:prop:v2218-finite-orbit-contacts</code></td>
+  <td>3227–3241</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-015</code></td>
+  <td><code>p3d:prop:v2218-diagonal-cancellation</code></td>
+  <td>3265–3276</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-016</code></td>
+  <td><code>p3d:thm:v2218-fixed-candidate-endpoints</code></td>
+  <td>3367–3395</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-017</code></td>
+  <td><code>p3d:prop:v2218-finite-value-junction</code></td>
+  <td>3427–3436</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-018</code></td>
+  <td><code>p3d:cor:v286-protected-grade-four-incidence-test</code></td>
+  <td>3597–3608</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-019</code></td>
+  <td><code>p3d:prop:v319-petersen-no-running</code></td>
+  <td>3630–3637</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td><code>E1-IIID-B3-020</code></td>
+  <td><code>p3d:prop:v229-static-radius-test</code></td>
+  <td>3661–3664</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+</tbody>
+</table>
+<h2>Independent checks (verbatim outcomes from check ledgers)</h2>
+<h3><code>Paper3D-ExactChecks-v1_1.json</code> — 10 recorded source controls</h3>
+<ul>
+<li><code>E3-HOPF-C2</code>: 4*pi**2</li>
+<li><code>E3-MULT-CHAR</code>: diagonalize arbitrary multiplicity basis; residue trace becomes r independent copies</li>
+<li><code>E3-TRACE-DENSITY</code>: exact matrix-unit basis test for all 64 independent observables in End_R(R^8), at each tested rank; nontrivial orthogonal conjugates</li>
+<li><code>E4-STATE-NONLINEAR</code>: support density is not additive; theorem explicitly does not claim otherwise</li>
+<li><code>E3-CLOCK-DEPTH</code>:</li>
+<li><code>E3-SCHEME-SIGN</code>:</li>
+<li><code>E3-BORN-REFLECTION</code>: log coordinate bijection and exact exponential identities; alpha&gt;1</li>
+<li><code>E3-ROLE-TRACE</code>: independent diagonal trace on unequal 5/15-dimensional matrices followed by Born-unmarked label scalarizer</li>
+<li><code>E4-SCOPE-TESTS</code>: [{'test': 'scheme below positive threshold', 'witness': 'sigma = critical-1', 'outcome': 'dual ratio increases; theorem trichotomy explicitly permits it'}, {'test': 'alpha=1 in reflection proof', 'witness': 'log_alpha=0', 'outcome': 'all depths same response; unique midpoint requires alpha&gt;1 as explicitly assumed'}, {'test': 'moving product leaf', 'witness': 'a=exp(t), b=exp(2t), ab variable', 'outcome': 'one-coordinate fixed-product claim inapplicable; RED excludes it'}, {'test': 'unmarked rank-three projector', 'witness': 'Pi3(u) with u not specified', 'outcome': 'particular P not selected; generated orbit only, as theorem states'}, {'test': 'non-Born-invariant label scalarizer', 'witness': 'lambda(e_x)=1/3, lambda(e_p)=2/3', 'outcome': 'fails inherited Born-unmarked owner premise; not a counterexample'}, {'test': 'semigroup tau versus depth q', 'witness': 'q_sp(1)=7(1-exp(-1)) != 1', 'outcome': 'upstream III-C deptharg issue; III-D uses explicit q coordinate, no automatic promotion'}]</li>
+<li><code>E3-HARMONIC-REM</code>:</li>
+</ul>
+<h3><code>Paper3D-Batch02ExactChecks-v1_1.json</code> — 15 recorded source controls</h3>
+<ul>
+<li><code>E3-IIID-B2-ROOT-CAL</code>: UV/IR rank-two linear system and full kappa&gt;0 gauge cancellation</li>
+<li><code>E3-IIID-B2-LAUR-UNIQUE</code>: Coefficient comparison in Laurent basis with explicit constant-no-EH condition</li>
+<li><code>E3-IIID-B2-EULER</code>: Affine and quadratic identities: constant B retained</li>
+<li><code>E3-IIID-B2-DIP</code>: Unique minimum and m^2+v^2=1, Born-exchanged endpoint slopes</li>
+<li><code>E3-IIID-B2-TRACE-JUNC</code>: Distributional Hessian valid for two-piece junction F=C on r&lt;C, Hact on r&gt;C; NOT valid for globally constant hat-H=C</li>
+<li><code>E3-IIID-B2-DRESS</code>: D3 selects j=2 while actual carrier rule selects j=4; separate predicates do not conflict</li>
+<li><code>E3-IIID-B2-PHASE</code>: Completed phase conjugation and primitive twist directly verified with integer-depth phase quotient</li>
+<li><code>E3-IIID-B2-CAP</code>: Direct mp 190-digit endpoint ratio and positive nonzero cap errors</li>
+<li><code>E3-IIID-B2-SECANT</code>: High precision independent logarithmic secant and strict convexity domain sampling</li>
+<li><code>E3-IIID-B2-ENTROPY</code>: Multiplicity-one-plus-seven state entropy and derivative; endpoint τ=∞</li>
+<li><code>E4-IIID-B2-JUNC-LITERAL</code>:</li>
+<li><code>E4-IIID-B2-QSIG</code>:</li>
+<li><code>E4-IIID-B2-ROLE</code>:</li>
+<li><code>E4-IIID-B2-ENTROPY</code>:</li>
+<li><code>E4-IIID-B2-REG</code>:</li>
+</ul>
+<h3><code>Paper3D-Batch03ExactChecks-v1_1.json</code> — 31/31 recorded passes</h3>
+<ul>
+<li><code>E3-IIID-B3-EXCESS-ODE</code> <strong>E3</strong>: actual local frozen excess W(r)=rE'-wE; EA=0 and EB=wC</li>
+<li><code>E3-IIID-B3-EXCESS-JET</code> <strong>E3</strong>: two same diagonal-value germs yield different local susceptibilities</li>
+<li><code>E3-IIID-B3-LOCAL-JET-BOUND</code> <strong>E3</strong>: positive branch bounded strictly below 2/(U+C)</li>
+<li><code>E3-IIID-B3-LOCAL-JET-END</code> <strong>E3</strong>: terminal χ(C+δ)/δ→2/[C(U+C)]</li>
+<li><code>E3-IIID-B3-EXJET-GLOBAL</code> <strong>E3</strong>: Egl integral strictly 0&lt;Egl&lt;Delta; Wglob=w(Delta-Egl)&gt;0 for R&gt;C, with terminal E(C)=0</li>
+<li><code>E3-IIID-B3-ACTION-CHAIN</code> <strong>E3</strong>: full second derivative includes A_rr,2A_rb b', A_bb(b')², A_b b''</li>
+<li><code>E3-IIID-B3-DIAG-TWOJET</code> <strong>E3</strong>: diagonal a'-p, p'-k, a''-k equations independently checked</li>
+<li><code>E3-IIID-B3-MEASURE-MASS</code> <strong>E3</strong>: inversion density integrates to 1 (mass=1.0)</li>
+<li><code>E3-IIID-B3-MEASURE-POS</code> <strong>E3</strong>: density strictly positive on both sides of s=b</li>
+<li><code>E3-IIID-B3-MEASURE-ATOMFREE</code> <strong>E3</strong>: zero/zero at x=a removable</li>
+<li><code>E3-IIID-B3-MEASURE-RESOLVENT</code> <strong>E3</strong>: five quadrature x values reproduce F_B from positive atom-free density within 3e-24 relative</li>
+<li><code>E3-IIID-B3-MEASURE-TERMINAL</code> <strong>E3</strong>: F_B(C²)=1/2 and weighted inverse mass 1/(2 C²)</li>
+<li><code>E3-IIID-B3-MEASURE-INFINMOM</code> <strong>E3</strong>: density tail ~ log(1+b/a)/[s log²(s/a)]; first moment diverges</li>
+<li><code>E3-IIID-B3-SCHUR-MIN</code> <strong>E3</strong>: explicit stationary shift reduces quadratic form to χ(R)H²/2 including Q_C=0</li>
+<li><code>E3-IIID-B3-FINITE-SLOPE</code> <strong>E3</strong>: 5-cell positive harmonic-node discretization preserves total mass and χ'(C) exactly</li>
+<li><code>E3-IIID-B3-FINITE-PHI-NONNEG</code> <strong>E3</strong>: finite 2×2 spectral trace phi≥0, zero at y=0 across s</li>
+<li><code>E3-IIID-B3-FINITE-REFLECTION</code> <strong>E3</strong>: exact Phi(-a,y)=y/8 from Ψ(x)+Ψ(-x)=x²</li>
+<li><code>E3-IIID-B3-PHI-FIRST-JET</code> <strong>E3</strong>: Phi_y(s,0)=(Psi'(s)-Psi'(a))/(8(s-a)), including removable s=a</li>
+<li><code>E3-IIID-B3-PHI-SECOND-JET</code> <strong>E3</strong>: Phi_yy(s,0) checked by independent spectral derivative vs divided-difference expression</li>
+<li><code>E3-IIID-B3-PHI-COINCIDENCE</code> <strong>E3</strong>: eigenvalue-coincidence limit Phi_yy(a,0)=fourth derivative of Psi(a)/48</li>
+<li><code>E3-IIID-B3-FINITE-THIRD-JET</code> <strong>E3</strong>: finite frozen second and third curvature jets independently differentiated</li>
+<li><code>E3-IIID-B3-CANDIDATE-CUBIC</code> <strong>E3</strong>: finite candidate terminal cubic coefficient Q/[H² C (U+C)] confirmed at three decreasing positive increments</li>
+<li><code>E3-IIID-B3-DRESS-JUMP</code> <strong>E3</strong>: finite differenced jump 0.1049020311 vs exact 0.1049013585</li>
+<li><code>E3-IIID-B3-GRADE4-GRAM</code> <strong>E3</strong>: positive Schur complement iff B outside interior span, zero on B=C</li>
+<li><code>E3-IIID-B3-STATIC-OBSTRUCTION</code> <strong>E3</strong>: R=R0(1+(R/Rs)^2) is a nonzero quadratic, cannot hold on interval</li>
+<li><code>E4-IIID-B3-E4-LOCAL-GLOBAL</code> <strong>E4</strong>: positive frozen EXCHAR not same global action: endpoint zero forces global ODE trivial; no contradiction with local germ</li>
+<li><code>E4-IIID-B3-E4-NOT-ACTION</code> <strong>E4</strong>: finite source/Schur realization is mathematical unless field action, metric-source incidence, density and physical norm separately shown</li>
+<li><code>E4-IIID-B3-E4-NEUTRAL-SOURCE</code> <strong>E4</strong>: native source 8-channel real trace ≠ automatically physical ordinary finite-Hilbert trace; no type promotion</li>
+<li><code>E4-IIID-B3-E4-GRADE4</code> <strong>E4</strong>: positive P4 or Gram positive before elimination does not imply nonzero actual metric Hessian; B4 may vanish or lie in C span</li>
+<li><code>E4-IIID-B3-E4-UV-RESTRICTION</code> <strong>E4</strong>: upper finite-value estimate applies only on bands with pair spectral lower bound, not global slow-roll Hessian</li>
+<li><code>E4-IIID-B3-E4-REG-ROLE</code> <strong>E4</strong>: homothety static-radius contradiction does not apply FLRW or auxiliary round factor</li>
+</ul>
+<h3>Additional manual source-separated controls</h3>
+<ul>
+<li><code>E3-IIID-B3-TOMOGRAPHY-DUAL</code> E3 <strong>PASS</strong>: Using Tr(I)=15, Tr(Bi)=0, Tr(BiBj)=1 if i=j and -1/136 otherwise, Tr(Ei Dj)=[1+136 Tr(BiBj)]/137=delta_ij, hence derivative reconstruction in the common native algebra.</li>
+<li><code>E3-IIID-B3-ENERGY-SAMPLES</code> E3 <strong>PASS</strong>: At k-th source derivative, common-denominator degree ≤(k+1)(m1+m2); Hermitian reality pairs every upper-half-plane zero with its lower-half-plane conjugate. More than half the degree distinct upper-plane zeros forces identically zero numerator.</li>
+<li><code>E3-IIID-B3-TRANS-INTEGRAL</code> E3 <strong>PASS</strong>: F(R)=R-C+integral_C^R (R-t)K(t)dt satisfies F(C)=0, F'(C)=1 and F''(R)=K(R); difference of two primitives affine and vanishes by two endpoint conditions.</li>
+<li><code>E3-IIID-B3-RG-DISCONNECT</code> E3 <strong>PASS</strong>: For a fixed finite matrix M, ∂_{log μ} eig(M)=0 absent an actually supplied μ-dependent insertion. The referenced III-B theorem supplies M2 and M4 isotropy and first sextic anisotropy on the 10-axis orbit, not a running coupling.</li>
+<li><code>E3-IIID-B3-FROZEN-GLOBAL-SIGN</code> E3 <strong>PASS</strong>: For R&gt;C, strict convexity of log cosh gives n_R&gt;0 and χ'_7(R)&gt;0; the frozen logarithmic germ gives f_R'''(R)=-3χ_7(R)/R&lt;0. No single C³ function with Hessian χ_7 matches all these third jets.</li>
+<li><code>E3-IIID-B3-DIAGONAL-TANGENT</code> E3 <strong>PASS</strong>: F_b(0)=D_vF_b(0)=0 identically; at b=r the Hessian is K_loc(b) ∇log(r/b)⊗∇log(r/b)=K_loc [[1,-1],[-1,1]], whose diagonal pullback is zero.</li>
+<li><code>E3-IIID-B3-UV-TRACE-BOUND</code> E3 <strong>PASS</strong>: On λ_min(M+J)≥m0, 2(1-δ)≤Ψ''≤2. The trace Hessian of an off-diagonal J with Tr(J²)=2y bounds the complete value between (1-δ)βy/4 and βy/4; this is a value bound only.</li>
+</ul>
+<h2>Cross-paper exact consumed clauses</h2>
+<ul>
+<li><code>p1b:thm:laurent-family</code> at <code>Paper1C-TechnicalMaterial-v1_58.tex:20624-20675</code>: scope-matched Laurent/secant theorem independently replayed.</li>
+<li><code>p1b:thm:born-euler-anticommutation</code> at <code>Paper1C-TechnicalMaterial-v1_58.tex:20698-20741</code>: Euler pair verified.</li>
+<li><code>p3c:prop:v2219-first-actual-carrier</code> at <code>Paper3C-ProtectedHierarchy-v1_179.tex:354-372</code>: grade 4 actual proved upstream; role-incidence remains separate.</li>
+<li><code>p3c:thm:v222-rank-character-unitary-companion</code> at <code>Paper3C-ProtectedHierarchy-v1_179.tex:4739-4795</code>: character period/winding as mathematical interpolation, not physical phase law.</li>
+<li><code>p3c:cor:corealized-protected-visibility-family</code> at <code>Paper3C-ProtectedHierarchy-v1_179.tex:3326-3355</code>: NEUT7 is generated on co-realized parent; no new occurrence tag.</li>
+<li><code>p1b:prop:trace-coordinate</code> at <code>Paper1B-M8Geometry-v1_131.tex:6080-6102</code>: 1+7 common-rate semigroup mathematical owner.</li>
+<li><code>p3e:eq:laur17-Q</code> at <code>Paper3G-TechnicalMaterial-v1_47.tex:4938-4944</code>: Q_sigma fixed there on PQTI only; not imported in III-D coefficient clause.</li>
+<li><code>p3f:thm:v263-laurent-coefficient-character</code> at <code>Paper3F-CompleteDynamics-v1_256.tex:14857-14907</code>: full coefficient character derived later on its own owner; cannot silently retroactively count as III-D premise.</li>
+<li><code>p1b:thm:v226-dual-coefficients</code> at <code>Paper1B-M8Geometry-v1_131.tex:22044-22074</code>: 137-effect inverse: source-matched E1 and independent simplex biorthogonality E3.</li>
+<li><code>p1b:cor:v226-source-jets</code> at <code>Paper1B-M8Geometry-v1_131.tex:22076-22103</code>: common native frame derivative and covariant transport, physical matrix input separate.</li>
+<li><code>p1b:cor:v227-response-jets</code> at <code>Paper1B-M8Geometry-v1_131.tex:22190-22215</code>: energy sample count: fixed-source Hermitian rational parent, not running curvature extrapolation.</li>
+<li><code>p3b:thm:v286-finite-heat-incidence-gram</code> at <code>Paper3B-SpectralAction-v1_181.tex:3743-3823</code>: positive finite Gram-Schur proof only with complete actual licensed B4 and stationary interior.</li>
+<li><code>p3b:prop:v286-heat-incidence-contact-obstruction</code> at <code>Paper3B-SpectralAction-v1_181.tex:3825-3858</code>: nonlinear second contact can cancel positive finite Gram.</li>
+<li><code>p3b:thm:v319-petersen-moment-six</code> at <code>Paper3B-SpectralAction-v1_181.tex:5875-5903</code>: uniform ten-axis moments second/quartic isotropic, first sextic H6.</li>
+<li><code>p1b:thm:v229-coupled-homothety</code> at <code>Paper1B-M8Geometry-v1_131.tex:24075-24094</code>: a_R=a0/G; static curvature identification is an additional condition.</li>
+<li><code>p2a:def:v229-action-incidence-certificate</code> at <code>Paper2A-GeometricConstitution-v3_215.tex:11451+</code>: typed physical B4 insertion necessary, not supplied by a nonzero carrier.</li>
+</ul>
+<h2>Constituted versus not-derived boundaries</h2>
+<ul>
+<li><code>BH-IIID-BND-001</code> lines 105–260: <strong>Constituted:</strong> III-C active orbit and terminal P0 on ND_sp, G0-occurring Hurwitz branch. <strong>Not inferred:</strong> arbitrary scale-dependence, arbitrary support P, FLAG chronology.</li>
+<li><code>BH-IIID-BND-002</code> lines 116–136: <strong>Constituted:</strong> δ_sigma=δ0+sigma_fin; III-C anchor under same-operator 2O owner selects REG0 only there. <strong>Not inferred:</strong> uniform scheme-free origin; dimensionful hierarchy reference.</li>
+<li><code>BH-IIID-BND-003</code> lines 843–1220: <strong>Constituted:</strong> III-B T_sec and Born unmarked λ_B; III-D RED excludes channel-rich responses. <strong>Not inferred:</strong> full independent sector dynamics or β function, dimensional phase Dirac geometry.</li>
+<li><code>BH-IIID-BND-004</code> lines 1056–1128: <strong>Constituted:</strong> s(q)/U=α^-q and C/U=α^-7 assumed; μ(q)/μ_U=α^-q/4 requires matched owner. <strong>Not inferred:</strong> absolute curvature radius or cutoff k without matching.</li>
+<li><code>BH-IIID-BND-005</code> lines 1237–1776: <strong>Constituted:</strong> normalized role trace and RED+UV+IR plus explicit owner-typed rank placement. <strong>Not inferred:</strong> full spacetime action normalization, coefficient dressing law or off-shell continuation.</li>
+<li><code>BH-IIID-BND-006</code> lines 1778–1900: <strong>Constituted:</strong> j4 actual grade from III-C, role selector explicit. <strong>Not inferred:</strong> Q_sigma coefficient base or physical action incidence from carrier criterion alone.</li>
+<li><code>BH-IIID-BND-007</code> lines 2051–2237: <strong>Constituted:</strong> completed character and its phase return; algebraic cap errors conditional on anchor. <strong>Not inferred:</strong> phase insertion into action or cap freeze/metric dynamics.</li>
+<li><code>BH-IIID-BND-008</code> lines 2245–2501: <strong>Constituted:</strong> RED+UV+IR two-root g, NEUT7 scalar plus seven mixed state. <strong>Not inferred:</strong> evolution/beta law, secant=physical entropy index, physical time-shell matching.</li>
+<li><code>BH-IIID-BND-009</code> lines 2502–2684: <strong>Constituted:</strong> exact Ward defect test and necessary/sufficient EXJET/EXCHAR certificates. <strong>Not inferred:</strong> a physical source with W=0 from secant alone, or global EXJET on terminal-normalized action.</li>
+<li><code>BH-IIID-BND-010</code> lines 2684–3161: <strong>Constituted:</strong> exact chain rule, residual tests, analytic mathematical providers and source Gram comparison. <strong>Not inferred:</strong> native heat-action origin, arbitrary field metric second contact, physical fRR or action equality from matched finite jets.</li>
+<li><code>BH-IIID-BND-011</code> lines 3179–3454: <strong>Constituted:</strong> defined source section and its mathematical complete jets/UV bound. <strong>Not inferred:</strong> physical source-section selection, native heat-action identification, unique profile, smooth dressed action.</li>
+<li><code>BH-IIID-BND-012</code> lines 3552–3674: <strong>Constituted:</strong> geometric grade 4 availability and mathematical finite positive Gram test; static comparison polynomial. <strong>Not inferred:</strong> nonzero actual B4/fRR from carrier alone, RG flow from Petersen data, FLRW/static identification without hypothesis.</li>
+</ul>
+<h2>Proof-chain limits and integrity</h2>
+<p>The typed edges are source-matched premises, not automatic proof of a physical mechanism. Citation-only/candidate links do not imply graph ancestry. The issue impact index records verified consumers separately from unconfirmed possible propagation. No new physical finite-incidence claim is asserted from this audit. Source and upstream audits were not edited or reopened. This file is the single current Paper III-D cumulative audit; per-batch records are evidence retained in the integrated DAG layer, not competing audit versions.</p>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

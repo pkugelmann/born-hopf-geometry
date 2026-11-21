@@ -1,0 +1,2781 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper5C-ProofChainAudit-v1_4 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper5C-ProofChainAudit-v1_4 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper5C ProofChainAudit v1_4</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper5C-ProofChainAudit-v1_4.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Source migration and repair-integration addendum — Paper5C-ProofChainAudit-v1_3.md</h1>
+<p><strong>Integration release:</strong> <code>Paper00-PapersMinimal-v3_007.zip</code>, 14 November 2026.
+<strong>Current paper source:</strong> <code>Paper5C-InteractionResponse-v2_178.tex</code>.
+<strong>Status:</strong> <code>SOURCE_INTEGRATED; GLOBAL_SOURCE_REAUDIT_PENDING</code>. An inherited historical audit is not a correctness certificate for the newer current manuscript.
+<strong>Evidence policy:</strong> Local algebraic proofs and scoped tests do not discharge physical source/observable interfaces or automatically alter the canonical proof DAG.</p>
+<hr />
+<h2>Historical source-bound audit: Paper5C-ProofChainAudit-v1_2.md</h2>
+<h1>Paper 5C — current source repair addendum (v1.2)</h1>
+<p>Date: 13 November 2026. Repair batch 5. Historical proof-chain audit is preserved verbatim below; the old line positions and OPEN/disposition assertions apply to their original frozen source, not the revised manuscript.</p>
+<ul>
+<li><strong>Repaired current source:</strong> <code>Paper5C-InteractionResponse-v2_172.tex</code> (SHA-256 <code>f16fc473af9b3e7f3d16598575e8e38cdb10b23b98fcebbb1e8bfb28168cb7ed</code>).</li>
+<li><strong>Original finding IDs addressed:</strong> <code>BH-VC-G-0001</code>, <code>BH-VC-G-0003</code>, <code>BH-VC-G-0006</code>.</li>
+<li><strong>Verification:</strong> <code>Proofs/Paper00-AuditRepairBatch5-v1_1-verify.py</code> (41/41 scoped exact checks, one execution environment); full standalone derivations in <code>DAG/RepairLayer/Paper00-AuditRepairBatch-v1_5.md</code>.</li>
+<li><strong>Provenance:</strong> no new whole-paper independent-audit assertion, no original statuses changed, no global DAG status promotion.</li>
+<li><strong>Conditional physical matters retained:</strong> action-owned P4 incidence and physical junction (III-D); solder occurrence, actual full neutral-current amplitudes and baryon source/history (V-C).</li>
+</ul>
+<h2>Source repair summary</h2>
+<p>The raw stabilizer and canonically kinetic-whitened mass-kernel are connected by the positive square-root transport, and the Goldstone Hessian shares the same scalar whitening. The 3ΣQ² result is photon-only, with a separate full neutral-current helicity sum. The charge derivative explicitly carries i/ħ.</p>
+<hr />
+<h2>Historical original audited report (unchanged below this heading)</h2>
+<h1>Paper V-C — Rigorous proof-chain audit (consolidated)</h1>
+<p><strong>Source freeze:</strong> <code>Paper5C-InteractionResponse-v2_171.tex</code> · framework v2.371 · SHA256 <code>55a94a2ed099bee3288e098018a673ba255cf0275e0528b3af70d0715146b9b7</code> · 7690 lines.</p>
+<p><strong>Protocol:</strong> Rigorous Verification DAG Work Protocol v2.4; ProofChain Audit Protocol v1.1.  <strong>Audit classification:</strong> <code>FULLY_AUDITED_WITH_OPEN_GAPS</code> (not <code>FULLY_VERIFIED</code>).  No paper/source ZIP edited.</p>
+<h2>Outcome and coverage</h2>
+<ul>
+<li>All <strong>198/198</strong> theorem/lemma/proposition/corollary/definition/remark environments have source-located dispositions in four contiguous source batches (1–1623, 1625–3390, 3392–5544, 5545–7690).</li>
+<li>Status counts: FORMALIZED: 40, REPORTED: 2, REPRODUCED: 41, UNRESOLVED: 6, VERIFIED: 33, VERIFIED-CONDITIONAL: 76. These are <strong>audit disposition statuses</strong>, not universal theorem proof certificates.</li>
+<li>Six new V-C issue roots: three moderate type/condition issues (G-0001, 0003, 0005); two minor missing numerical-evidence issues (G-0002, 0004); one minor type/units issue (G-0006). Four inherited V-A source/pair-condition roots retained without duplication.</li>
+<li>Exact/direct mathematical checks reported by batches: 30+60+32+29=151/151 passed, with additional targeted adversarial and Fock checks. No distinct verifier agents were employed; do not mislabel this independent multi-agent certification.</li>
+<li>Machine layer: <code>DAG/AuditLayer/Paper5C-v1_1/Index.json</code>, full claim/evidence/assumption/gap/proof-route ledgers and combined material graph.</li>
+</ul>
+<h2>All six new V-C issue certificates</h2>
+<h3>BH-VC-G-0001 — TYPE_OR_DOMAIN (moderate)</h3>
+<p><strong>Origin:</strong> <code>p7v2:thm:v245-gauge-hessian-kernel-clock-lock</code> — <code>Paper5C-InteractionResponse-v2_171.tex:1216-1224;1235-1243</code>.  <strong>Lifecycle:</strong> OPEN.</p>
+<p><strong>Exact obligation:</strong> Specify whether M_G² acts on raw gauge-algebra vectors or canonically kinetic-whitened vectors. If canonical, verify the source-displayed untransported equality of kernels under arbitrary positive invertible gauge kinetic metric.</p>
+<p><strong>Reason:</strong> The observable dimension and masslessness are insensitive to invertible kinetic whitening, but the raw generator and normalized mass eigenvector cannot be identified as the same coordinate vector.</p>
+<p><strong>Resolution certificate needed:</strong> Make representation and mass-operator coordinates explicit using the transport already present at lines 856-879; distinguish equality of raw stabilizers from isomorphism/transport of canonical kernels. No new theoretical premise needed.</p>
+<p><strong>Proven material downstream IDs:</strong> p7v2:thm:v247-goldstone-hessian-transfer.  <strong>Remote cross-paper impact:</strong> NO_PROVEN_CROSS_PAPER_IMPACT. Speculative links excluded.</p>
+<h3>BH-VC-G-0002 — MISSING_EVIDENCE (minor)</h3>
+<p><strong>Origin:</strong> <code>P5C-UNLABELED-031</code> — <code>Paper5C-InteractionResponse-v2_171.tex:1601-1609</code>.  <strong>Lifecycle:</strong> OPEN.</p>
+<p><strong>Exact obligation:</strong> Reconstruct numerical crossings (2.39–3.26)×10^14 GeV and inverse-coupling spread 0.22050 from explicit frozen historical one-loop boundary vectors, proposed Λ8, correction vector, scheme and threshold choices.</p>
+<p><strong>Reason:</strong> The status-B illustrative numerical diagnostic is not independently checkable from currently specified source inputs; it is not evidence of exact unification or failed unification.</p>
+<p><strong>Resolution certificate needed:</strong> Supply prior-edition input vector, scheme and Λ8 numerical values; run independent arithmetic and attach a reproducible numeric certificate. Do not reinterpret this as a missing physical law.</p>
+<p><strong>Proven material downstream IDs:</strong> NO_PROVEN_IMPACT.  <strong>Remote cross-paper impact:</strong> NO_PROVEN_CROSS_PAPER_IMPACT. Speculative links excluded.</p>
+<h3>BH-VC-G-0003 — TYPE_OR_DOMAIN (moderate)</h3>
+<p><strong>Origin:</strong> <code>p7v2:prop:inclusive-rgamma</code> — <code>Paper5C-InteractionResponse-v2_171.tex:2801-2822</code>.  <strong>Lifecycle:</strong> OPEN.</p>
+<p><strong>Exact obligation:</strong> For a full experimentally inclusive e+e- cross-section ratio, show Z exchange and interference negligible, explicitly project to photon-exchange current, or include neutral-current corrections. Being away from the Z pole alone does not imply photon dominance, especially for n_f=6.</p>
+<p><strong>Reason:</strong> The claimed measured inclusive observable may differ even at Born order in an explicitly included six-flavor kinematic domain, despite the exact color charge sum.</p>
+<p><strong>Resolution certificate needed:</strong> Explicitly type R_gamma as the photon-only or electroweak-subtracted ratio, or provide actual full neutral-current terms and an appropriately restricted comparison. Do not change the underlying 3ΣQ² color calculation.</p>
+<p><strong>Proven material downstream IDs:</strong> NO_PROVEN_IMPACT.  <strong>Remote cross-paper impact:</strong> NO_PROVEN_CROSS_PAPER_IMPACT. Speculative links excluded.</p>
+<h3>BH-VC-G-0004 — MISSING_EVIDENCE (minor)</h3>
+<p><strong>Origin:</strong> <code>P5C-UNLABELED-091</code> — <code>Paper5C-InteractionResponse-v2_171.tex:3335-3345</code>.  <strong>Lifecycle:</strong> OPEN.</p>
+<p><strong>Exact obligation:</strong> Reproduce both stationary roots and hard-shift ratio from complete frozen previous-edition inputs, gauge/Goldstone prescription, chosen subtraction and numerical stationarity equation. The printed difference alone is insufficient.</p>
+<p><strong>Reason:</strong> The numerical difference -0.4962299 GeV checks arithmetically, but two stationary scales and multiplicative shift cannot be reproduced from the current source alone.</p>
+<p><strong>Resolution certificate needed:</strong> Supply unrounded previous-edition input table, renormalization scheme and stationary equation/solver script; independently recompute roots and ratio.</p>
+<p><strong>Proven material downstream IDs:</strong> NO_PROVEN_IMPACT.  <strong>Remote cross-paper impact:</strong> NO_PROVEN_CROSS_PAPER_IMPACT. Speculative links excluded.</p>
+<h3>BH-VC-G-0005 — MISSING_CONDITION (moderate)</h3>
+<p><strong>Origin:</strong> <code>p5c:cor:v269-visible-primitivity</code> — <code>Paper5C-InteractionResponse-v2_171.tex:6553-6559</code>.  <strong>Lifecycle:</strong> OPEN.</p>
+<p><strong>Exact obligation:</strong> Demonstrate that the actual microscopic jump/Hamiltonian operators generate a scalar-commutant algebra on EACH fixed-charge component (or import a sufficient irreducibility theorem); mere connectivity of coarse species-block nodes is insufficient.</p>
+<p><strong>Reason:</strong> Block connectivity does not imply microscopic irreducibility and unique ergodic dynamics; source claims primitivity modulo charges.</p>
+<p><strong>Resolution certificate needed:</strong> Exhibit source-matched action jumps and Hamiltonian on each exact-charge component and compute full commutant, or state and prove a stronger sufficient condition.</p>
+<p><strong>Proven material downstream IDs:</strong> NO_PROVEN_IMPACT.  <strong>Remote cross-paper impact:</strong> NO_PROVEN_CROSS_PAPER_IMPACT. Speculative links excluded.</p>
+<h3>BH-VC-G-0006 — TYPE_OR_DOMAIN (minor)</h3>
+<p><strong>Origin:</strong> <code>p5c:sec:v2201-derived-d25</code> — <code>Paper5C-InteractionResponse-v2_171.tex:7224-7229</code>.  <strong>Lifecycle:</strong> OPEN.</p>
+<p><strong>Exact obligation:</strong> Declare hbar=1 in this local statement, define H as Hphys/hbar, or restore i[H,Q]/hbar with physical energy H; same manuscript explicitly includes hbar in its BL2 Ward formula.</p>
+<p><strong>Reason:</strong> The otherwise exact entropy/charge paragraph mixes a dimensional Hamiltonian identity with an unspecified natural-unit convention.</p>
+<p><strong>Resolution certificate needed:</strong> Specify the local unit convention or consistent generator type, with no new dynamics.</p>
+<p><strong>Proven material downstream IDs:</strong> NO_PROVEN_IMPACT.  <strong>Remote cross-paper impact:</strong> NO_PROVEN_CROSS_PAPER_IMPACT. Speculative links excluded.</p>
+<h2>Source and physical-interface guardrails</h2>
+<ul>
+<li>The lepton incidence/current coefficient is not thereby the measured PMNS transition probability; prepared source, propagation, pole, source/detector and coherent boundary contracts remain required.</li>
+<li>K16 paired charge-current identities do not evaluate a physically selected signed baryon yield; retained Paper V-A roots own unresolved occurrence/action injection obligations.</li>
+<li>Electromagnetic candidate determinant/Thomson, vacuum, thermal and reheating calculations remain conditional on named source and owner inputs, not fitted into independent physical evidence.</li>
+<li>Equality at fixed gauge kinetic coordinates differs from equality after canonical whitening; physical rank conclusion may survive even though the literal equality is under challenge.</li>
+<li>An explicit formal-stage historical OPEN tag is not an unresolved contemporary gap when a later source stage supersedes it; audit ledger records stage chronology.</li>
+</ul>
+<h2>All 198 source-anchored formal results</h2>
+<table>
+<thead>
+<tr>
+  <th>Claim</th>
+  <th>Source label</th>
+  <th>Lines</th>
+  <th>Disposition</th>
+  <th>Review conclusion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>P5C-001</code></td>
+  <td><code>p7:rem:m8-batch-interaction-inputs</code></td>
+  <td>227–242</td>
+  <td>FORMALIZED</td>
+  <td>Anchored regulator/scope is a source condition; not proof of REG admissibility.</td>
+</tr>
+<tr>
+  <td><code>P5C-002</code></td>
+  <td><code>p7v2:def:claim-status</code></td>
+  <td>303–339</td>
+  <td>FORMALIZED</td>
+  <td>Status distinctions T/Q/A/B/O read as definitions; claims are not promoted.</td>
+</tr>
+<tr>
+  <td><code>P5C-003</code></td>
+  <td><code>p7v2:def:interface-hypotheses</code></td>
+  <td>351–414</td>
+  <td>FORMALIZED</td>
+  <td>Physical interfaces H_gauge, H_vac, H_qft, H_em, H_cp, H_nu, H_kin typed as scoped conditions, not demonstrated occurrences.</td>
+</tr>
+<tr>
+  <td><code>P5C-004</code></td>
+  <td><code>p7v2:def:selector-status-partition</code></td>
+  <td>416–460</td>
+  <td>FORMALIZED</td>
+  <td>Constructed roles, interpretations, calibrations are separated by explicit status criteria.</td>
+</tr>
+<tr>
+  <td><code>P5C-005</code></td>
+  <td><code>p5c:thm:v2167-mixed-family-coefficient</code></td>
+  <td>534–551</td>
+  <td>VERIFIED</td>
+  <td>Marked CP-family source-current contraction Z=(-7/288+i/12) and simultaneous presentation invariance checked exactly.</td>
+</tr>
+<tr>
+  <td><code>P5C-006</code></td>
+  <td><code>p5c:prop:v2167-generated-coefficient-algebras</code></td>
+  <td>565–583</td>
+  <td>VERIFIED</td>
+  <td>All nonzero ray-matrix entries give 9 family matrix units and 81 port tensor units; only local coefficient algebra is claimed.</td>
+</tr>
+<tr>
+  <td><code>P5C-007</code></td>
+  <td><code>p5c:cor:v2167-cpbl2-handoff-frontier</code></td>
+  <td>597–620</td>
+  <td>REPRODUCED</td>
+  <td>Actual K16 pair/source co-realization is expressly not provided by the coefficient algebra; conditional frontier inherits VA-3/4.</td>
+</tr>
+<tr>
+  <td><code>P5C-008</code></td>
+  <td><code>p5c:cor:v2186-direct-signed-charge-target</code></td>
+  <td>634–663</td>
+  <td>REPRODUCED</td>
+  <td>Exact signed charge-history integral identity, requiring a licensed actual action generator; no nonzero charge asymmetry follows.</td>
+</tr>
+<tr>
+  <td><code>P5C-009</code></td>
+  <td><code>p5c:prop:v226-even-odd-tests</code></td>
+  <td>690–698</td>
+  <td>VERIFIED</td>
+  <td>Even/odd real Hermitian dimension 137+88=225, distinguished from restricted even-only tests.</td>
+</tr>
+<tr>
+  <td><code>P5C-010</code></td>
+  <td><code>p5c:prop:v227-odd-offset</code></td>
+  <td>718–729</td>
+  <td>VERIFIED</td>
+  <td>Energy-offset shift contributes (c_a-c_b)q_ab; cannot silently delete it from a generic odd source.</td>
+</tr>
+<tr>
+  <td><code>P5C-011</code></td>
+  <td><code>p7v2:lem:defect-counts</code></td>
+  <td>752–772</td>
+  <td>VERIFIED</td>
+  <td>Defect count D_+=72, D_-=56 and totals 128/16 algebraically correct.</td>
+</tr>
+<tr>
+  <td><code>P5C-012</code></td>
+  <td><code>p7v2:prop:strong-seed-status</code></td>
+  <td>782–810</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Common-heat k3=2 and α3=π/2 exact within source-native branch; arbitrary t remains calibration, not fixed derivation.</td>
+</tr>
+<tr>
+  <td><code>P5C-013</code></td>
+  <td><code>P5C-UNLABELED-013</code></td>
+  <td>823–831</td>
+  <td>FORMALIZED</td>
+  <td>Correct firewall: matching μ_h to mass pole scales or determinant conditions needs independent interface.</td>
+</tr>
+<tr>
+  <td><code>P5C-014</code></td>
+  <td><code>p7v2:thm:v258-native-ew-solder-reduction</code></td>
+  <td>836–873</td>
+  <td>UNRESOLVED</td>
+  <td>Gram rank=3 and Qρ^(1/2) transported photon null direction correct conditional on an ACTUALLY occurring odd solder; rooted-source physical occurrence inherits VA-5/8.</td>
+</tr>
+<tr>
+  <td><code>P5C-015</code></td>
+  <td><code>p7v2:cor:v2109-rooted-ew-occurrence</code></td>
+  <td>894–908</td>
+  <td>UNRESOLVED</td>
+  <td>No second primitive G0 source postulate needed <em>if</em> the claimed rooted-source generation is established; baseline VA-5 leaves that upstream occurrence unverified.</td>
+</tr>
+<tr>
+  <td><code>P5C-016</code></td>
+  <td><code>p7v2:thm:ew-mass-dictionary</code></td>
+  <td>931–970</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Conventional mass dictionary algebra valid only with single-doublet H_vac, positive scalar/gauge metrics, and physical action matching.</td>
+</tr>
+<tr>
+  <td><code>P5C-017</code></td>
+  <td><code>p7:rem:v179-hurwitz-action-comparison</code></td>
+  <td>983–997</td>
+  <td>FORMALIZED</td>
+  <td>Explicit comparison of canonical mass operator vs geometric response; no unconditional mass readout asserted.</td>
+</tr>
+<tr>
+  <td><code>P5C-018</code></td>
+  <td><code>p7:thm:physical-seven-nine-owner-reduction</code></td>
+  <td>1002–1044</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Exact block Hilbert-Schmidt Gram weights 7|a|²,9|b|²; W/Z mass ratio needs one physical owner/common normalization and EQAMP79.</td>
+</tr>
+<tr>
+  <td><code>P5C-019</code></td>
+  <td><code>p7:cor:common-heat-tree-shell-firewall</code></td>
+  <td>1061–1080</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Common-heat sin²θW=3/8, W/Z mass²=5/8; 7/9 is incompatible at identical scale and scheme, correctly stated.</td>
+</tr>
+<tr>
+  <td><code>P5C-020</code></td>
+  <td><code>p7v2:thm:electroweak-characteristic-cone-inheritance</code></td>
+  <td>1090–1119</td>
+  <td>REPRODUCED</td>
+  <td>Internal Weinberg basis change and zero-order mass term preserve the source-inherited principal characteristic set; no group speed/observed value prediction.</td>
+</tr>
+<tr>
+  <td><code>P5C-021</code></td>
+  <td><code>p7v2:thm:v244-transverse-ew-wave-operators</code></td>
+  <td>1136–1190</td>
+  <td>REPRODUCED</td>
+  <td>Coexact round-S3 spectra and photon curl factorization replayed against source imports, but no fully independent representation-theoretic E3 for entire operator theorem.</td>
+</tr>
+<tr>
+  <td><code>P5C-022</code></td>
+  <td><code>p7v2:thm:v245-gauge-hessian-kernel-clock-lock</code></td>
+  <td>1206–1247</td>
+  <td>UNRESOLVED</td>
+  <td>Literal ker M_G²=ker J_h is representation-dependent: a canonically whitened operator has ker M²=Q^(1/2)ker J; exact countercase. Rank and clock logic remain distinct.</td>
+</tr>
+<tr>
+  <td><code>P5C-023</code></td>
+  <td><code>p7v2:thm:v247-goldstone-hessian-transfer</code></td>
+  <td>1266–1333</td>
+  <td>REPRODUCED</td>
+  <td>Polar decomposition, stationary Ward null and 3 Goldstone/longitudinal transfer replayed; physical source occurrence and stationarity remain conditional.</td>
+</tr>
+<tr>
+  <td><code>P5C-024</code></td>
+  <td><code>p7v2:thm:v247-longitudinal-vector-spectrum</code></td>
+  <td>1348–1404</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Positive longitudinal Proca quadratic reduction and transverse-longitudinal E² splitting confirmed under static round-S3 stationary Proca branch.</td>
+</tr>
+<tr>
+  <td><code>P5C-025</code></td>
+  <td><code>p7v2:cor:v247-gauge-mass-spectral-reconstruction</code></td>
+  <td>1420–1448</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Gauge mass eigenvalues algebraically reconstructable by subtracting fixed transverse spectral tower, within stipulated background/normalization.</td>
+</tr>
+<tr>
+  <td><code>P5C-026</code></td>
+  <td><code>p7v2:cor:tree-shell-numerics</code></td>
+  <td>1450–1478</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Tree-shell numerical values reproduced only under H_vac plus physical owner/EQAMP79; not independently established shell selection.</td>
+</tr>
+<tr>
+  <td><code>P5C-027</code></td>
+  <td><code>P5C-UNLABELED-027</code></td>
+  <td>1486–1493</td>
+  <td>FORMALIZED</td>
+  <td>Source explicitly notes prior convention mismatch removed; no extra proof conclusion.</td>
+</tr>
+<tr>
+  <td><code>P5C-028</code></td>
+  <td><code>p7v2:thm:conditional-one-loop-running</code></td>
+  <td>1498–1516</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Usual SM one-loop b=(41/10,-19/6,-7) independently recomputed under stated continuum perturbative/renormalization premise.</td>
+</tr>
+<tr>
+  <td><code>P5C-029</code></td>
+  <td><code>p7:cor:conditional-common-heat-shell-transport</code></td>
+  <td>1528–1555</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Formal crossing log(μ79/μh)=-88/215 exact with common-heat boundary and conventional one-loop equations, before thresholds.</td>
+</tr>
+<tr>
+  <td><code>P5C-030</code></td>
+  <td><code>p7v2:prop:threshold-obligation</code></td>
+  <td>1575–1590</td>
+  <td>REPRODUCED</td>
+  <td>Heavy threshold corrections depend on actual fluctuation determinant, not arbitrary geometric edge length.</td>
+</tr>
+<tr>
+  <td><code>P5C-031</code></td>
+  <td><code>P5C-UNLABELED-031</code></td>
+  <td>1601–1609</td>
+  <td>REPORTED</td>
+  <td>Historical near-unification figures 2.39–3.26e14 GeV and spread 0.22050 are not independently reproducible from specified prior edge-vector correction inputs in current source.</td>
+</tr>
+<tr>
+  <td><code>P5C-032</code></td>
+  <td><code>p7v2:lem:absolute-scale</code></td>
+  <td>1611–1616</td>
+  <td>VERIFIED</td>
+  <td>Dimensional rescaling argument verifies ratios/carrier dimensions cannot determine absolute Λ.</td>
+</tr>
+<tr>
+  <td><code>P5C-033</code></td>
+  <td><code>p7v2:def:normalized-determinant</code></td>
+  <td>1628–1648</td>
+  <td>FORMALIZED</td>
+  <td>Ordinary rank-one and normalized-trace determinants are different; exp(Tr log /8) gives the eighth root, verified from spectrum.</td>
+</tr>
+<tr>
+  <td><code>P5C-034</code></td>
+  <td><code>p7v2:def:em-selector-family</code></td>
+  <td>1650–1664</td>
+  <td>FORMALIZED</td>
+  <td>Endpoint family explicitly retains operator, trace, branch, angular factor and analytic remainder; no physical selection.</td>
+</tr>
+<tr>
+  <td><code>P5C-035</code></td>
+  <td><code>p7v2:def:em-candidate</code></td>
+  <td>1666–1690</td>
+  <td>FORMALIZED</td>
+  <td>Finite EM candidate explicitly defined as status A; numerical agreement does not establish equality to a physical Thomson response.</td>
+</tr>
+<tr>
+  <td><code>P5C-036</code></td>
+  <td><code>p7v2:prop:em-candidate-conditional</code></td>
+  <td>1692–1708</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Under four declared endpoint inputs, determinant multiplication and outer octet readout exactly give the candidate; formal log does not prove exact operator.</td>
+</tr>
+<tr>
+  <td><code>P5C-037</code></td>
+  <td><code>p7v2:thm:em-nonclosure</code></td>
+  <td>1726–1746</td>
+  <td>REPRODUCED</td>
+  <td>Nonclosure correctly follows for carrier-only data, branches and formal truncations; no stronger no-go for a complete physical effective action inferred.</td>
+</tr>
+<tr>
+  <td><code>P5C-038</code></td>
+  <td><code>p7v2:cor:em-same-gamma-limit-route</code></td>
+  <td>1758–1780</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>With generated Gamma, stable nonzero vacuum, Q embedding and all licensed IR routes convergent, limit uniqueness is valid; physical occurrence and limit not established.</td>
+</tr>
+<tr>
+  <td><code>P5C-039</code></td>
+  <td><code>p7v2:thm:em-owner-contraction</code></td>
+  <td>1782–1797</td>
+  <td>REPRODUCED</td>
+  <td>II-A no-independent-owner conclusion applies after the same generated source owner and admissible descendant map are fixed; not a computed endpoint coefficient.</td>
+</tr>
+<tr>
+  <td><code>P5C-040</code></td>
+  <td><code>p7v2:rem:em-numerics</code></td>
+  <td>1807–1828</td>
+  <td>VERIFIED</td>
+  <td>Three displayed inverse-alpha values, delta^10 and omitted-log-coefficient sensitivity reproduced at high precision.</td>
+</tr>
+<tr>
+  <td><code>P5C-041</code></td>
+  <td><code>p7v2:prop:em-running-interface</code></td>
+  <td>1833–1851</td>
+  <td>REPRODUCED</td>
+  <td>Vacuum polarization parameterization conventional under H_qft and selected scheme; hadronic correlator remains imported, not evaluated here.</td>
+</tr>
+<tr>
+  <td><code>P5C-042</code></td>
+  <td><code>p7v2:cor:no-alpha-mz</code></td>
+  <td>1861–1869</td>
+  <td>REPRODUCED</td>
+  <td>Paper V-C correctly declines a closed alpha(MZ) from an uncomputed hadronic vacuum-polarization input.</td>
+</tr>
+<tr>
+  <td><code>P5C-043</code></td>
+  <td><code>p7v2:thm:v2141-em-same-source-hessian</code></td>
+  <td>1876–1910</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Exact blocked-source Hessian/contact–connected-current identity and 4pi Z_Q convention valid with source-natural action, physical Ward and IR assumptions.</td>
+</tr>
+<tr>
+  <td><code>P5C-044</code></td>
+  <td><code>p7v2:cor:v2141-em-one-loop-tangent</code></td>
+  <td>1912–1930</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>b_em=11/3 and derivative -11/(6pi) and charged-piece decomposition checked in stated unthresholded one-loop branch.</td>
+</tr>
+<tr>
+  <td><code>P5C-045</code></td>
+  <td><code>p7v2:prop:v2141-common-heat-strong-obstruction</code></td>
+  <td>1932–1953</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>For every real one-loop log L at least one inverse EW coupling ≤2/pi; extrapolation is explicitly only an invalid weak-coupling diagnostic.</td>
+</tr>
+<tr>
+  <td><code>P5C-046</code></td>
+  <td><code>p7v2:cor:v2141-em-candidate-retyping</code></td>
+  <td>1955–1966</td>
+  <td>REPRODUCED</td>
+  <td>Subtracted running does not supply absolute Thomson normalization; finite candidate remains a same-action representation only if separately shown.</td>
+</tr>
+<tr>
+  <td><code>P5C-047</code></td>
+  <td><code>p5c:thm:v2210-lit-thomson-response</code></td>
+  <td>1998–2033</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Schur complement t[a-t b(C+td)^-1 b†] and positive IR limit give e_Q=g0/sqrt(kappa0); actual Thomson/charged-leg certificate remains conditional.</td>
+</tr>
+<tr>
+  <td><code>P5C-048</code></td>
+  <td><code>p5c:prop:v2210-lit-thomson-uniform</code></td>
+  <td>2045–2066</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Uniform mean-value error bound with kappa≥kappa*&gt;0 proves joint and iterated limit uniqueness under the declared directed-family controls.</td>
+</tr>
+<tr>
+  <td><code>P5C-049</code></td>
+  <td><code>p5c:cor:v2210-lit-thomson-ward</code></td>
+  <td>2075–2088</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Regular Ward identity and normalized charged legs recover e_Q Q at zero transfer; source itself excludes bare pole and unfurnished IR continuity.</td>
+</tr>
+<tr>
+  <td><code>P5C-050</code></td>
+  <td><code>p5c:thm:v2210-lit-detector-kernel</code></td>
+  <td>2109–2132</td>
+  <td>VERIFIED</td>
+  <td>Finite source–unitary–effect contraction lies in [0,1], is presentation covariant, and reduces to exact two-phase survival under equal pure boundaries.</td>
+</tr>
+<tr>
+  <td><code>P5C-051</code></td>
+  <td><code>p5c:cor:v2210-lit-reactor-obstruction</code></td>
+  <td>2148–2162</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Old equal pure-boundary weights yield amplitudes 3/4 or 1; q, projective angle and pure trace distance reproduce; not bound on unequal mixed states.</td>
+</tr>
+<tr>
+  <td><code>P5C-052</code></td>
+  <td><code>p5c:prop:v2210-lit-scalar-coordinate</code></td>
+  <td>2183–2197</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Soft scalar derivative invariant under orientation-preserving coordinate maps with transported metric/source; finite three-point vertex not inferred from mass.</td>
+</tr>
+<tr>
+  <td><code>P5C-053</code></td>
+  <td><code>p5c:thm:v275-no-free-em-matching</code></td>
+  <td>2240–2266</td>
+  <td>REPRODUCED</td>
+  <td>No free rescaling follows if source line exactly retained and independent normalization deformation excluded; does not forbid quantum response renormalization.</td>
+</tr>
+<tr>
+  <td><code>P5C-054</code></td>
+  <td><code>p5c:cor:v275-em-heat-reference</code></td>
+  <td>2287–2313</td>
+  <td>VERIFIED</td>
+  <td>Common-heat inverse electromagnetic coefficient 16/(3pi) and Z_heat=4/(3pi²) verified in GUT and 4pi conventions.</td>
+</tr>
+<tr>
+  <td><code>P5C-055</code></td>
+  <td><code>p5c:cor:v275-g17-endpoint-identity</code></td>
+  <td>2315–2335</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Endpoint response identity is exact definition of DeltaZ; no numerical IR/threshold/hadronic value derived.</td>
+</tr>
+<tr>
+  <td><code>P5C-056</code></td>
+  <td><code>p5c:cor:v275-g17-match-retired</code></td>
+  <td>2337–2353</td>
+  <td>FORMALIZED</td>
+  <td>Status retyping keeps source normalization closed only conditionally and endpoint response analytic/readout explicitly open; no silent G17 closure.</td>
+</tr>
+<tr>
+  <td><code>P5C-057</code></td>
+  <td><code>p7:thm:v164-renormalized-response-owner</code></td>
+  <td>2360–2387</td>
+  <td>REPRODUCED</td>
+  <td>Complete effective Hessian inverse and separate core-minus-Sigma convention correctly distinguish exact return from double subtraction.</td>
+</tr>
+<tr>
+  <td><code>P5C-058</code></td>
+  <td><code>p7:cor:v261-no-independent-vertex-selector</code></td>
+  <td>2405–2423</td>
+  <td>REPRODUCED</td>
+  <td>Third effective-action derivative is a determined proper vertex after same-owner complete action, quotient and domain; no rates or widths established.</td>
+</tr>
+<tr>
+  <td><code>P5C-059</code></td>
+  <td><code>p5c:prop:v371-petersen-rooted-action-diagnostic</code></td>
+  <td>2427–2454</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Hilbert–Schmidt projection residual identity exact when the geometric and action blocks have one licensed inner-product embedding; existence not proved by geometry.</td>
+</tr>
+<tr>
+  <td><code>P5C-060</code></td>
+  <td><code>p7:thm:v164-scalar-gauge-source</code></td>
+  <td>2463–2495</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Formal one-loop breathing-source F² coefficient and (41/40,-19/24,-7/4) at common heat verified; no physical high-coupling production rate inferred.</td>
+</tr>
+<tr>
+  <td><code>P5C-061</code></td>
+  <td><code>p7:rem:v2216-weyl-source-map</code></td>
+  <td>2497–2522</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Weyl sigma=phi_c/(sqrt6 M), tau=sqrt6 alpha^(-1/2)sigma and hierarchy ratio ≈6.17810e-9 checked; physical source pullback not provided.</td>
+</tr>
+<tr>
+  <td><code>P5C-062</code></td>
+  <td><code>p7:thm:v2216-gauge-total-variation</code></td>
+  <td>2524–2556</td>
+  <td>VERIFIED</td>
+  <td>Canonical oscillator squeezing equation and total-variation asinh bound replayed with independent quench saturation; occupation inequality and weighted Cauchy hold.</td>
+</tr>
+<tr>
+  <td><code>P5C-063</code></td>
+  <td><code>p7:thm:v2217-gauge-force-work</code></td>
+  <td>2581–2609</td>
+  <td>VERIFIED</td>
+  <td>Quadratic oscillator b-flow, scalar force expectation, energy derivative, and a-weighted work identity independently checked with state-independent commutators.</td>
+</tr>
+<tr>
+  <td><code>P5C-064</code></td>
+  <td><code>p7:rem:v262-k16-commonheat-plasma-firewall</code></td>
+  <td>2632–2641</td>
+  <td>FORMALIZED</td>
+  <td>Common-heat alpha_s=pi/2 is a boundary datum, not a perturbatively controlled K16 plasma input.</td>
+</tr>
+<tr>
+  <td><code>P5C-065</code></td>
+  <td><code>p7:cor:v2217-pair-target-incidence</code></td>
+  <td>2644–2656</td>
+  <td>REPRODUCED</td>
+  <td>Schur rank ≤5 from scalar plus vector source survives only when actual native pair vertex intertwines the same Spin(4) actions; not a generic source nullity.</td>
+</tr>
+<tr>
+  <td><code>P5C-066</code></td>
+  <td><code>p7v2:thm:color-dictionary</code></td>
+  <td>2682–2710</td>
+  <td>VERIFIED</td>
+  <td>Color 3⊗3bar=1⊕8, Casimirs CA=3 CF=4/3 TR=1/2 and curvature connection dictionary verified.</td>
+</tr>
+<tr>
+  <td><code>P5C-067</code></td>
+  <td><code>p7v2:prop:color-channels</code></td>
+  <td>2722–2756</td>
+  <td>VERIFIED</td>
+  <td>Short-distance q-qbar and qq Casimir eigenvalues -4/3,1/6,-2/3,1/3 checked; sign-as-potential uses one-gluon exchange.</td>
+</tr>
+<tr>
+  <td><code>P5C-068</code></td>
+  <td><code>p7v2:prop:qcd-running</code></td>
+  <td>2770–2790</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>QCD one/two-loop beta coefficients match conventional SU(3) with nf light flavors; scale threshold and seed remain conditional.</td>
+</tr>
+<tr>
+  <td><code>P5C-069</code></td>
+  <td><code>p7v2:prop:inclusive-rgamma</code></td>
+  <td>2801–2822</td>
+  <td>UNRESOLVED</td>
+  <td>Photon-channel Born counts are correct, but the displayed inclusive total-sigma definition does not exclude Z exchange; high-energy nf=6 countercheck yields 34/5 instead of 5.</td>
+</tr>
+<tr>
+  <td><code>P5C-070</code></td>
+  <td><code>P5C-UNLABELED-070</code></td>
+  <td>2831–2837</td>
+  <td>REPRODUCED</td>
+  <td>Strong coupling order-one handoff does not prove confining or hadronic nonperturbative outputs.</td>
+</tr>
+<tr>
+  <td><code>P5C-071</code></td>
+  <td><code>p7v2:prop:singlet-not-pdf</code></td>
+  <td>2839–2844</td>
+  <td>VERIFIED</td>
+  <td>Explicit family of longitudinal wavefunctions at fixed color singlet proves parton distributions cannot follow from color support alone.</td>
+</tr>
+<tr>
+  <td><code>P5C-072</code></td>
+  <td><code>p7v2:def:qcd-boundary-ansatz</code></td>
+  <td>2861–2868</td>
+  <td>FORMALIZED</td>
+  <td>QCD valence/fragmentation models are explicitly status A ansatz rather than native generated nonperturbative boundary.</td>
+</tr>
+<tr>
+  <td><code>P5C-073</code></td>
+  <td><code>p7v2:prop:dglap-erbl</code></td>
+  <td>2870–2879</td>
+  <td>REPRODUCED</td>
+  <td>Spacelike/timelike DGLAP and ERBL are standard scheme-dependent evolution imports; no initial parton/hadron measure is derived.</td>
+</tr>
+<tr>
+  <td><code>P5C-074</code></td>
+  <td><code>p7v2:thm:bare-theta</code></td>
+  <td>2892–2910</td>
+  <td>REPRODUCED</td>
+  <td>Finite native strong action admits no extra free theta character under declared complete generated action grammar; not yet a continuum regulated strong-CP certificate.</td>
+</tr>
+<tr>
+  <td><code>P5C-075</code></td>
+  <td><code>p7v2:prop:physical-strong-cp</code></td>
+  <td>2919–2928</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Rooted orientation cores conjugate and positive polar radial factors imply det(Du Dd)&gt;0 on nonzero full-rank source branch; upstream V-A source theorem checked.</td>
+</tr>
+<tr>
+  <td><code>P5C-076</code></td>
+  <td><code>p7v2:cor:v259-native-strong-cp</code></td>
+  <td>2935–2950</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Native finite zeta_CP=e^(iθ)det/|det|=1 combines theta_native=0 with determinant positivity; regulated chiral continuum remains separate.</td>
+</tr>
+<tr>
+  <td><code>P5C-077</code></td>
+  <td><code>P5C-UNLABELED-077</code></td>
+  <td>2952–2959</td>
+  <td>FORMALIZED</td>
+  <td>No arbitrary Standard-Model theta selector imported; later quantum measure/phase transport not asserted solved.</td>
+</tr>
+<tr>
+  <td><code>P5C-078</code></td>
+  <td><code>p7:prop:v190-index-determinant-phase</code></td>
+  <td>2976–2987</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Finite sector character zeta^nu=1 follows on native branch; sector dynamics and topological susceptibility are not fixed by this phase.</td>
+</tr>
+<tr>
+  <td><code>P5C-079</code></td>
+  <td><code>p7:prop:global-chiral-measure-trivialization-test</code></td>
+  <td>2989–3001</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Flat determinant-line connection and trivial holonomy give global parallel measure ray on admitted continuum presentation; finite vectorlike measure needs no new global chiral line.</td>
+</tr>
+<tr>
+  <td><code>P5C-080</code></td>
+  <td><code>p7:prop:cp-fixed-positive-sector</code></td>
+  <td>3003–3011</td>
+  <td>REPRODUCED</td>
+  <td>Positive native primitive-sector populations imported from VII-A but no additional strong-CP selector or finite susceptibility value is proven here.</td>
+</tr>
+<tr>
+  <td><code>P5C-081</code></td>
+  <td><code>p7:cor:finite-equilibrium-state-descendant</code></td>
+  <td>3020–3033</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Finite Gibbs state is unique given H and beta on the simple finite algebra; preparation, washout and cosmological history remain independent inputs.</td>
+</tr>
+<tr>
+  <td><code>P5C-082</code></td>
+  <td><code>p7v2:def:vacuum-selector-family</code></td>
+  <td>3046–3058</td>
+  <td>FORMALIZED</td>
+  <td>Scalar stationary family is claim-scoped and not a premise for the already occurring solder/stabilizer.</td>
+</tr>
+<tr>
+  <td><code>P5C-083</code></td>
+  <td><code>p7v2:thm:conditional-potential</code></td>
+  <td>3060–3081</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Renormalizable doublet potential with supplied v&gt;0 and lambda&gt;0 gives mu_H²=-lambda v² and m_h²=2lambda v² at tree level.</td>
+</tr>
+<tr>
+  <td><code>P5C-084</code></td>
+  <td><code>p7v2:rem:v258-scalar-stationary-diagnostics</code></td>
+  <td>3091–3098</td>
+  <td>FORMALIZED</td>
+  <td>Scalar positive-heat and symmetry diagnostics are not promoted to proof of non-occurrence of the chiral solder.</td>
+</tr>
+<tr>
+  <td><code>P5C-085</code></td>
+  <td><code>p7:thm:sufficient-stable-broken-vacuum</code></td>
+  <td>3100–3121</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Strict convex derivative criterion ensures unique positive radial global minimizer, but not occurrence or full-direction stability.</td>
+</tr>
+<tr>
+  <td><code>P5C-086</code></td>
+  <td><code>p7:prop:v2211-bare-terminal-scalar-contact-target</code></td>
+  <td>3131–3180</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Bare Einstein radial W0 first/second derivatives A+Bx and 3A+B+2Bx are exact and strictly negative on specified x∈[0,1); required DeltaW contact derivatives not generated.</td>
+</tr>
+<tr>
+  <td><code>P5C-087</code></td>
+  <td><code>p7v2:cor:stable-vacuum-orbit-closure</code></td>
+  <td>3204–3225</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Singleton stable-stationary quotient removes any further orbit selection only if actual complete stable set and full physical G-equivalence exist.</td>
+</tr>
+<tr>
+  <td><code>P5C-088</code></td>
+  <td><code>p7v2:cor:ewsb-status</code></td>
+  <td>3227–3235</td>
+  <td>FORMALIZED</td>
+  <td>Native gauge solder and additional stationary-vacuum hypotheses remain distinct source scopes.</td>
+</tr>
+<tr>
+  <td><code>P5C-089</code></td>
+  <td><code>p7v2:thm:charged-slot-physical-later</code></td>
+  <td>3237–3296</td>
+  <td>REPRODUCED</td>
+  <td>Charged row embedding follows on frozen F simple-spectrum+lookup+occurring solder/source branch, with degenerate subspace caveat; no neutral Ynu lift generated.</td>
+</tr>
+<tr>
+  <td><code>P5C-090</code></td>
+  <td><code>p7v2:prop:one-loop-ew-diagnostic</code></td>
+  <td>3316–3324</td>
+  <td>REPRODUCED</td>
+  <td>One-loop stationary potentials test an imported orbit but do not select it when built from its own v, gauge and scheme choices.</td>
+</tr>
+<tr>
+  <td><code>P5C-091</code></td>
+  <td><code>P5C-UNLABELED-091</code></td>
+  <td>3335–3345</td>
+  <td>REPORTED</td>
+  <td>Arithmetic difference -0.4962299 GeV confirmed, but two stationary roots and hard-shift ratio lack unrounded historical numerical inputs and solving prescription in current paper.</td>
+</tr>
+<tr>
+  <td><code>P5C-092</code></td>
+  <td><code>p7v2:def:mass-boundary-diagnostics</code></td>
+  <td>3350–3362</td>
+  <td>FORMALIZED</td>
+  <td>Finite shell/pole mass-squared quotient D_V is explicitly a diagnostic, not a coupling modifier.</td>
+</tr>
+<tr>
+  <td><code>P5C-093</code></td>
+  <td><code>p7v2:prop:mass-ratio-not-kappa</code></td>
+  <td>3364–3373</td>
+  <td>VERIFIED</td>
+  <td>Two response families with identical pole value and different background derivatives/reflection residues show mass ratio does not determine hVV coupling.</td>
+</tr>
+<tr>
+  <td><code>P5C-094</code></td>
+  <td><code>p5c:lem:v2167-ordered-branch-signs</code></td>
+  <td>3408–3417</td>
+  <td>VERIFIED</td>
+  <td>Cyclic singlet-plane sign rederived with symbolic C2 and x+y+z=0; swapping singlet branches reverses quartet sign, with fixed role order.</td>
+</tr>
+<tr>
+  <td><code>P5C-095</code></td>
+  <td><code>p5c:cor:v2167-literal-current-quartet</code></td>
+  <td>3427–3441</td>
+  <td>VERIFIED</td>
+  <td>Exact rooted frame is unitary; direct ordered quartet is -1/16-i/12, J=-1/12, independent of lemma substitution.</td>
+</tr>
+<tr>
+  <td><code>P5C-096</code></td>
+  <td><code>p5c:rem:v2217-quartet-inclusive-test</code></td>
+  <td>3449–3458</td>
+  <td>FORMALIZED</td>
+  <td>Nonzero current quartet and its separate physical inclusive-use condition are explicitly distinguished; later comparison is in technical material.</td>
+</tr>
+<tr>
+  <td><code>P5C-097</code></td>
+  <td><code>p5c:rem:v2201-quartet-observation-scope</code></td>
+  <td>3462–3468</td>
+  <td>FORMALIZED</td>
+  <td>Physical PMNS interpretation explicitly excluded pending current/pole/detector readout; not an assertion of observed mixing.</td>
+</tr>
+<tr>
+  <td><code>P5C-098</code></td>
+  <td><code>p5c:cor:v277-native-lepton-cp-value</code></td>
+  <td>3505–3523</td>
+  <td>VERIFIED</td>
+  <td>Native CP -1/12 follows on tau-singlet branch using zeta=sqrt3/2; full matrix replay independently verifies.</td>
+</tr>
+<tr>
+  <td><code>P5C-099</code></td>
+  <td><code>P5C-UNLABELED-099</code></td>
+  <td>3533–3538</td>
+  <td>FORMALIZED</td>
+  <td>Finite native current value does not determine terminal mass poles, propagation or Majorana source; material scope guard reviewed.</td>
+</tr>
+<tr>
+  <td><code>P5C-100</code></td>
+  <td><code>p5c:prop:v2168-native-charged-vertices</code></td>
+  <td>3566–3593</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Exact Weinberg rotation, s2=3/8, e2=3pi2/4 and normalized Z/e left/right couplings verified; native common-heat, not infrared e.</td>
+</tr>
+<tr>
+  <td><code>P5C-101</code></td>
+  <td><code>p5c:prop:v267-native-gauge-right-fibre</code></td>
+  <td>3608–3638</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Block conjugation with constant right unitary U_R proves left Schur invariance when K_R commutes and all source/terminal data transport; not a physical right-fibre assignment.</td>
+</tr>
+<tr>
+  <td><code>P5C-102</code></td>
+  <td><code>p5c:thm:v267-finite-right-orbit-converse</code></td>
+  <td>3646–3677</td>
+  <td>VERIFIED</td>
+  <td>Hermitian centralizer of J is exactly 3-real-dimensional; n finite moments by Cayley-Hamilton and n+1 regular rational samples suffice; no continuum inference.</td>
+</tr>
+<tr>
+  <td><code>P5C-103</code></td>
+  <td><code>p5c:prop:v2168-weak-receiver-columns</code></td>
+  <td>3774–3788</td>
+  <td>REPRODUCED</td>
+  <td>Normal CAR monomial identity produces weak neutral columns; orthogonality applies on factor-preserving tensor CAR chart, before arbitrary physical quotient.</td>
+</tr>
+<tr>
+  <td><code>P5C-104</code></td>
+  <td><code>p5c:thm:v2168-complete-weak-memory</code></td>
+  <td>3846–3871</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Full four-kernel Schur return and S’=I+Bdagger(z-C)^-2 B checked; residue factor and normalized physical tag tested on a full Hermitian block.</td>
+</tr>
+<tr>
+  <td><code>P5C-105</code></td>
+  <td><code>p5c:cor:v2168-positive-weak-return</code></td>
+  <td>3894–3904</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Upper-plane resolvent negative-imaginary Gram is positive and strictly positive exactly on full F rank; separate rank-deficient attack passed.</td>
+</tr>
+<tr>
+  <td><code>P5C-106</code></td>
+  <td><code>p5c:thm:v240-memory-krylov-diagonality</code></td>
+  <td>3922–3937</td>
+  <td>VERIFIED</td>
+  <td>All first d Krylov moments iff global diagonality for Hermitian d-dimensional complement, including a zero-Gram-but-nondiagonal negative control.</td>
+</tr>
+<tr>
+  <td><code>P5C-107</code></td>
+  <td><code>p5c:thm:v240-electron-memory-variance</code></td>
+  <td>3949–3977</td>
+  <td>VERIFIED</td>
+  <td>Electron line leakage exact projected variance for arbitrary nonnormal complex K; 1/16,1/8,1/8 weight pair-difference special case checked.</td>
+</tr>
+<tr>
+  <td><code>P5C-108</code></td>
+  <td><code>p5c:cor:v240-weak-return-cp-and-residual</code></td>
+  <td>3988–4013</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Exact cubic commutator Jarlskog sign/Delta check and large-z condition B_R=0; only weak marked part, diagonal real-return condition is explicit.</td>
+</tr>
+<tr>
+  <td><code>P5C-109</code></td>
+  <td><code>p5c:prop:v2168-coherent-family-return</code></td>
+  <td>4061–4073</td>
+  <td>VERIFIED</td>
+  <td>P rank two with inverse/direct null, C-conjugation full injectivity, diagonal charged and neutral equivalence checked.</td>
+</tr>
+<tr>
+  <td><code>P5C-110</code></td>
+  <td><code>p5c:lem:v2174-bosonic-grading-word</code></td>
+  <td>4108–4128</td>
+  <td>REPRODUCED</td>
+  <td>Bose grading adjoint commutator and full H_R term retained by source; claimed identity is direct operator algebra.</td>
+</tr>
+<tr>
+  <td><code>P5C-111</code></td>
+  <td><code>p5c:v2169:b7:prop:weakgram</code></td>
+  <td>4166–4182</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Normalized finite tensor trace gives common neutral-role receiver Gram kappa I and no physical state selection; requires identical external/occupation slots.</td>
+</tr>
+<tr>
+  <td><code>P5C-112</code></td>
+  <td><code>p5c:v2169:b8:thm:weaksecond</code></td>
+  <td>4244–4261</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Second CAR/finite Bose commutator gives exactly q_r D-Z_r K with sign and order; supported by direct Fock construction.</td>
+</tr>
+<tr>
+  <td><code>P5C-113</code></td>
+  <td><code>p5c:v2169:b8:thm:densitygram</code></td>
+  <td>4289–4316</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Centered neutral density Fock Gram 3/4, finite charge commutator witness and strict bound reproduced on finite charged X; state/compressed quotient separately guarded.</td>
+</tr>
+<tr>
+  <td><code>P5C-114</code></td>
+  <td><code>p5c:v2169:b13:thm:vacuumreturn</code></td>
+  <td>4460–4476</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Cap N=1,2,3 direct occupation matrices reproduce first two coordinate returns and boundary-sensitive fourth-moment defect.</td>
+</tr>
+<tr>
+  <td><code>P5C-115</code></td>
+  <td><code>p5c:v2169:b13:thm:ladder</code></td>
+  <td>4518–4535</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Exact 3(N+1) block tridiagonal ladder and Schur continued fraction; collective cyclicity follows invertible links for chi nonzero on bare constituent.</td>
+</tr>
+<tr>
+  <td><code>P5C-116</code></td>
+  <td><code>p5c:cor:v2174-highest-degree-weak-word</code></td>
+  <td>4549–4571</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Highest-degree 2k and 2k+1 upward products fixed by unitary C, factorial and sqrt(k+1); no full-H polynomial claim.</td>
+</tr>
+<tr>
+  <td><code>P5C-117</code></td>
+  <td><code>p5c:v2171:thm:positive</code></td>
+  <td>4657–4674</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Positive joint-support equivalence and lower bound are exact HS norms on factored R&gt;=0; singular R/B counterexample confirms necessary overlap guard.</td>
+</tr>
+<tr>
+  <td><code>P5C-118</code></td>
+  <td><code>p5c:v2171:thm:pairreceiver</code></td>
+  <td>4762–4781</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Full three E-family 14-CAR sparse Fock replay yields 25/576 pure, 5/96 centered, zero cross; pair/density operator decomposition checked.</td>
+</tr>
+<tr>
+  <td><code>P5C-119</code></td>
+  <td><code>p5c:v2171:thm:markedmixed</code></td>
+  <td>4843–4858</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Independent full 12-CAR double five-mark commutator with nonzero finite charge-lowering X gives Z B_X/4 with exact complex phase.</td>
+</tr>
+<tr>
+  <td><code>P5C-120</code></td>
+  <td><code>p5c:v2171:cor:spinoverlap</code></td>
+  <td>4903–4914</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Common spin K factor reduces complete return to det(KdagK) times bosonic coefficient; independent generic complex finite-coefficient tests passed.</td>
+</tr>
+<tr>
+  <td><code>P5C-121</code></td>
+  <td><code>p5c:v2171:thm:matrixweak</code></td>
+  <td>4964–4987</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Full 24-word table equals compact noncommutative R; five direct CAR/Fock graded-boson examples including negative R agree. General positivity appropriately not asserted.</td>
+</tr>
+<tr>
+  <td><code>P5C-122</code></td>
+  <td><code>p5c:v2171:cor:complementaryslots</code></td>
+  <td>5003–5014</td>
+  <td>VERIFIED</td>
+  <td>b=c=0 substitution gives four Hilbert-Schmidt norms and nonzero criterion.</td>
+</tr>
+<tr>
+  <td><code>P5C-123</code></td>
+  <td><code>p5c:v2171:cor:rowreturn</code></td>
+  <td>5021–5030</td>
+  <td>VERIFIED</td>
+  <td>c=d=0 substitution gives squared commutator; noncommuting finite charge-lowering example checked.</td>
+</tr>
+<tr>
+  <td><code>P5C-124</code></td>
+  <td><code>p5c:v2171:cor:cap-row-cp</code></td>
+  <td>5039–5049</td>
+  <td>REPRODUCED</td>
+  <td>Exact N/(dB+1) cap coefficient follows from cited IV cap norm if same physical complete two-port boundary is instantiated; not assumed generic.</td>
+</tr>
+<tr>
+  <td><code>P5C-125</code></td>
+  <td><code>p5c:thm:next187-completed-local-pair-current</code></td>
+  <td>5074–5103</td>
+  <td>VERIFIED</td>
+  <td>Three native rank-one Xi values 0,2/9,1/18 checked exactly; trace of Hermitian product real and positive coincident X square HS identity verified.</td>
+</tr>
+<tr>
+  <td><code>P5C-126</code></td>
+  <td><code>p5c:thm:next187-complete-coupling-covariance</code></td>
+  <td>5118–5155</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Schur first and all nine mixed-derivative terms checked by separate finite-difference oracles; common unitary transport cancels internal generators.</td>
+</tr>
+<tr>
+  <td><code>P5C-127</code></td>
+  <td><code>p5c:thm:next187-matched-charge-orbit</code></td>
+  <td>5185–5205</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Exact charge orbit unitary transport preserves whole packet with state matched; charge fixed-state corollary requires Q-invariant rho.</td>
+</tr>
+<tr>
+  <td><code>P5C-128</code></td>
+  <td><code>p5c:thm:next187-complete-nontracial-charge-jet</code></td>
+  <td>5222–5246</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Complete pair-graded initial charge jets from exact CAR commutator and invariant state, including correct vacuum sign and nontracial weighted trace.</td>
+</tr>
+<tr>
+  <td><code>P5C-129</code></td>
+  <td><code>p5c:cor:next187-complete-graded-charge-evaluation</code></td>
+  <td>5270–5288</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>All same-charge insertions must be summed before commutator; grade-selection yields 2r[V_r dagger,V_r] and direct full-history route remains distinct.</td>
+</tr>
+<tr>
+  <td><code>P5C-130</code></td>
+  <td><code>p5c:v2188:thm:completegibbsjet</code></td>
+  <td>5333–5347</td>
+  <td>VERIFIED</td>
+  <td>Any exact fixed finite H spectral Gibbs or ground projection commutes with H; first and second full charge jets vanish by cyclicity, without Q-invariance.</td>
+</tr>
+<tr>
+  <td><code>P5C-131</code></td>
+  <td><code>p5c:v2188:thm:spectralpairjet</code></td>
+  <td>5362–5380</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Complete prepair Hc-Gibbs state spectral weights yield weighted transition difference and negative energy-raising sign; no interacting K16 preparation inferred.</td>
+</tr>
+<tr>
+  <td><code>P5C-132</code></td>
+  <td><code>p5c:v2188:thm:chiralchronologicalzero</code></td>
+  <td>5394–5419</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Static chiral involution and real η time profile cancel integrated pair coefficient for both filled-negative and Gibbs, independently tested with complex T and asymmetric η; complex-η mutant does not.</td>
+</tr>
+<tr>
+  <td><code>P5C-133</code></td>
+  <td><code>p5c:v2188:cor:primitivealltimezero</code></td>
+  <td>5438–5455</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Particle-hole canonical automorphism produces invariant complete primitive unitary evolution and constant N=2; three rooted complex g choices tested with moving real m,η.</td>
+</tr>
+<tr>
+  <td><code>P5C-134</code></td>
+  <td><code>p7v2:def:v266-lepton-current-map</code></td>
+  <td>5550–5562</td>
+  <td>FORMALIZED</td>
+  <td>Defines an incidence between two canonically evaluated terminal roles; no masses or PMNS element arise by definition.</td>
+</tr>
+<tr>
+  <td><code>P5C-135</code></td>
+  <td><code>p7v2:prop:v266-oscillation-current-kernel</code></td>
+  <td>5564–5576</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Algebraic phase sandwich is exact for supplied role phases and equal coherent source/detector boundaries; physical probability identification remains separate.</td>
+</tr>
+<tr>
+  <td><code>P5C-136</code></td>
+  <td><code>P5C-UNLABELED-136</code></td>
+  <td>5578–5585</td>
+  <td>FORMALIZED</td>
+  <td>External Casas--Ibarra and Takagi dictionaries are explicitly non-native comparison structures.</td>
+</tr>
+<tr>
+  <td><code>P5C-137</code></td>
+  <td><code>p7v2:thm:v267-generated-lepton-current-incidence</code></td>
+  <td>5594–5616</td>
+  <td>REPRODUCED</td>
+  <td>Finite weak-current composition from V-A/V-B is clear; older closure phrase must be read with the later v2.77 native finite evaluation and separate physical pole/phase bridge.</td>
+</tr>
+<tr>
+  <td><code>P5C-138</code></td>
+  <td><code>p7v2:cor:v267-former-pmns-target-exhausted</code></td>
+  <td>5618–5630</td>
+  <td>REPRODUCED</td>
+  <td>Retires the Dirac-PMNS mass-frame ontology only at structural level; a physical mixing observable still needs complete source/propagation/detector.</td>
+</tr>
+<tr>
+  <td><code>P5C-139</code></td>
+  <td><code>p7v2:thm:v267-neutral-propagation-phase</code></td>
+  <td>5632–5670</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Positive-frequency neutral phase follows on the explicitly assumed terminal-energy/pole rest bridge and one-particle block, not a native unconditioned pole equality.</td>
+</tr>
+<tr>
+  <td><code>P5C-140</code></td>
+  <td><code>p7v2:cor:v267-n56-gap-ratio</code></td>
+  <td>5672–5686</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>N56 x^3=192 squared-gap ratio x^4/(x^2+1)=32.31051155615794 independently and exactly reproduced; depends on rest/pole bridge.</td>
+</tr>
+<tr>
+  <td><code>P5C-141</code></td>
+  <td><code>p7v2:thm:v268-generated-quark-current</code></td>
+  <td>5694–5716</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Family-blind charged weak current W_u†W_d follows from supplied full-rank action evaluations; actual quark table and physical CKM comparison require the cited output certificate.</td>
+</tr>
+<tr>
+  <td><code>P5C-142</code></td>
+  <td><code>p7v2:cor:v268-flavor-sensitive-current-rule</code></td>
+  <td>5718–5726</td>
+  <td>REPRODUCED</td>
+  <td>A domain-consistent rule consuming native C_ud/C_eν rather than independent CKM/PMNS; not a new mass derivation.</td>
+</tr>
+<tr>
+  <td><code>P5C-143</code></td>
+  <td><code>p7v2:rem:v268-majorana-seesaw-scope</code></td>
+  <td>5728–5735</td>
+  <td>FORMALIZED</td>
+  <td>Type-I seesaw and Majorana formulas remain external comparison branches, not native mass constructors.</td>
+</tr>
+<tr>
+  <td><code>P5C-144</code></td>
+  <td><code>p5c:cor:v276-tau-singlet-zeta-jarlskog</code></td>
+  <td>5758–5776</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Tau-singlet row transposition reverses the historic mu-singlet Jarlskog sign; sign in formula is correct, historical scalar-open status superseded by v2.77.</td>
+</tr>
+<tr>
+  <td><code>P5C-145</code></td>
+  <td><code>P5C-UNLABELED-145</code></td>
+  <td>5787–5792</td>
+  <td>FORMALIZED</td>
+  <td>Source correctly withholds a charge-plane orientation value from unconsumed R_G data; no physical prior premise silently created.</td>
+</tr>
+<tr>
+  <td><code>P5C-146</code></td>
+  <td><code>p5c:cor:v229-complete-family-reality-obstruction</code></td>
+  <td>5801–5820</td>
+  <td>REPRODUCED</td>
+  <td>Real-structure iff is an exact conditional on the specified common charged chart and imported Y=±X proof, not a cosmological CP/charge inference.</td>
+</tr>
+<tr>
+  <td><code>P5C-147</code></td>
+  <td><code>p5c:cor:v229-neutral-gap-odd-trace-signature</code></td>
+  <td>5829–5847</td>
+  <td>REPRODUCED</td>
+  <td>Linear odd-normal image substitutions and Xi=2 delta^2 are source-matched; the one-dimensional restriction is not generalized to all odd normals.</td>
+</tr>
+<tr>
+  <td><code>P5C-148</code></td>
+  <td><code>p5c:rem:v229-k16-charge-firewall</code></td>
+  <td>5856–5870</td>
+  <td>REPRODUCED</td>
+  <td>Nonzero family odd coefficient is not itself charge production; given δK(s) has a yτ=yμ zero despite δ≠0.</td>
+</tr>
+<tr>
+  <td><code>P5C-149</code></td>
+  <td><code>p7v2:thm:thermal-trace-nonunique</code></td>
+  <td>5887–5927</td>
+  <td>VERIFIED</td>
+  <td>Every U7⊕U9 invariant full matrix state has density (w/7)P7+((1-w)/9)P9; only w=7/16 is tracial on all M16.</td>
+</tr>
+<tr>
+  <td><code>P5C-150</code></td>
+  <td><code>P5C-UNLABELED-150</code></td>
+  <td>5929–5943</td>
+  <td>FORMALIZED</td>
+  <td>Correctly separates block-algebra traces, full-algebra invariant states, and actual thermal preparation.</td>
+</tr>
+<tr>
+  <td><code>P5C-151</code></td>
+  <td><code>p7v2:cor:rank-one-overlap</code></td>
+  <td>5968–5980</td>
+  <td>VERIFIED</td>
+  <td>I16/16 rank-one projection overlap is 1/16 exactly, without kinetic-efficiency identification.</td>
+</tr>
+<tr>
+  <td><code>P5C-152</code></td>
+  <td><code>p7v2:cor:rank-one-overlap-shell-origin</code></td>
+  <td>5988–6002</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Tracial 1/16 equals the imported finite Hurwitz shell counting atom only on matched shell-order 16; no thermal abundance follows.</td>
+</tr>
+<tr>
+  <td><code>P5C-153</code></td>
+  <td><code>P5C-UNLABELED-153</code></td>
+  <td>6004–6018</td>
+  <td>REPRODUCED</td>
+  <td>Relativistic MB and FD yields differ from 1/(16g*); source does not equate projector rank with equilibrium yield.</td>
+</tr>
+<tr>
+  <td><code>P5C-154</code></td>
+  <td><code>p7v2:def:kinetic-system</code></td>
+  <td>6020–6040</td>
+  <td>FORMALIZED</td>
+  <td>Defines conditional two-state kinetics, collisional and washout inputs and cosmological initial-value problem; nothing solved.</td>
+</tr>
+<tr>
+  <td><code>P5C-155</code></td>
+  <td><code>p7v2:thm:efficiency-output</code></td>
+  <td>6042–6048</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Changing washout while holding projector rank fixed gives different finite-time or late outcomes; no rank-only efficiency formula.</td>
+</tr>
+<tr>
+  <td><code>P5C-156</code></td>
+  <td><code>p7v2:prop:gstar</code></td>
+  <td>6062–6082</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Standard 24 vector helicities + 4 Higgs =28; 90 fermions at 7/8 gives 427/4 on stated occupied-bath assumptions.</td>
+</tr>
+<tr>
+  <td><code>P5C-157</code></td>
+  <td><code>p7:cor:v2211-right-neutral-bath-count</code></td>
+  <td>6091–6105</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>An occupied right-neutral Weyl+anti pair contributes 7/4 each; all three give 112, with no population/temperature selection.</td>
+</tr>
+<tr>
+  <td><code>P5C-158</code></td>
+  <td><code>p7v2:prop:standard-conversions</code></td>
+  <td>6113–6131</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Imported 28/79 sphaleron and approximate 7.04 conversion valid on SM chemical-equilibrium/late entropy domains, not native charge yield.</td>
+</tr>
+<tr>
+  <td><code>P5C-159</code></td>
+  <td><code>p7:prop:v2211-right-neutral-spectator-domain</code></td>
+  <td>6142–6165</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Chemical-potential system solved independently: h=-12q/7, Ltot=-36q, B=12q, ratio 1/4; stored nonactive L_R branch retains 28/79.</td>
+</tr>
+<tr>
+  <td><code>P5C-160</code></td>
+  <td><code>p7v2:prop:baryon-benchmark</code></td>
+  <td>6194–6227</td>
+  <td>VERIFIED</td>
+  <td>Five declared benchmark inputs give Y_B-L, Y_B, eta_B exactly at printed precision; this is status B arithmetic, not a prediction.</td>
+</tr>
+<tr>
+  <td><code>P5C-161</code></td>
+  <td><code>p7v2:prop:dark-radiation-boundary</code></td>
+  <td>6240–6249</td>
+  <td>REPRODUCED</td>
+  <td>Finite three-active light role count is conditional on Urole and compatible member; N_eff requires actual distribution, decoupling and reheating.</td>
+</tr>
+<tr>
+  <td><code>P5C-162</code></td>
+  <td><code>p5c:prop:v272-bl2-owner-corealized</code></td>
+  <td>6261–6274</td>
+  <td>UNRESOLVED</td>
+  <td>Physical K16 pair co-realization is imported from V-A as a closure but upstream audit records BH-VA-G-0003/0004; dependent V-C occurrence not independently discharged.</td>
+</tr>
+<tr>
+  <td><code>P5C-163</code></td>
+  <td><code>p5c:cor:v272-native-baryogenesis-phase-frontier</code></td>
+  <td>6276–6290</td>
+  <td>REPRODUCED</td>
+  <td>Historic initial BL2 phase-lock frontier is superseded later by v2.74/80; no physical pair self-phase inferred.</td>
+</tr>
+<tr>
+  <td><code>P5C-164</code></td>
+  <td><code>p5c:rem:v272-heavy-neutral-still-conditional</code></td>
+  <td>6292–6298</td>
+  <td>FORMALIZED</td>
+  <td>Optional heavy-neutral branch is kept distinct from native K16 pair owner.</td>
+</tr>
+<tr>
+  <td><code>P5C-165</code></td>
+  <td><code>p5c:thm:v273-bl2-charge-response</code></td>
+  <td>6306–6339</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Finite CAR [Q,A]=-2A gives d&lt;Q&gt;/dt=-2 Im&lt;A&gt;/hbar and conditional phase Ward response; occurrence, connection and history remain open.</td>
+</tr>
+<tr>
+  <td><code>P5C-166</code></td>
+  <td><code>p5c:cor:v273-bl2-relative-phase-target</code></td>
+  <td>6351–6374</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Radial parallel Delta=eta Delta* gives J_K=0; general covariant phase formula is valid as conditional identity, later retired as active physical phase target.</td>
+</tr>
+<tr>
+  <td><code>P5C-167</code></td>
+  <td><code>p5c:rem:v273-bl2-response-scope</code></td>
+  <td>6376–6389</td>
+  <td>FORMALIZED</td>
+  <td>No broad conclusion from vanishing radial pair self-trajectory; full charge state/history and support normalization still required.</td>
+</tr>
+<tr>
+  <td><code>P5C-168</code></td>
+  <td><code>p5c:cor:v280-native-baryogenesis-frontier</code></td>
+  <td>6400–6460</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Source says CP_BL2 kinetic incidence OPEN and identifies same-parent complete interaction word as next actual obligation; cyclic state inheritance is conditional, not yield.</td>
+</tr>
+<tr>
+  <td><code>P5C-169</code></td>
+  <td><code>p5c:rem:v2187-native-charge-yield-scope</code></td>
+  <td>6462–6480</td>
+  <td>REPRODUCED</td>
+  <td>Complete finite charge and baryon export are distinct same-history operators; no additive generator/current double count or numerical yield.</td>
+</tr>
+<tr>
+  <td><code>P5C-170</code></td>
+  <td><code>p5c:rem:v280-heavy-neutral-generic-scope</code></td>
+  <td>6482–6489</td>
+  <td>FORMALIZED</td>
+  <td>Generic and optional heavy neutral histories retain initial-state/owner conditions outside cyclic lineage.</td>
+</tr>
+<tr>
+  <td><code>P5C-171</code></td>
+  <td><code>p5c:thm:v269-visible-interaction-graph</code></td>
+  <td>6534–6551</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Visible QCD, EW, hypercharge and charged Yukawa interaction block incidence connects listed named coarse blocks, as graph-theoretic result.</td>
+</tr>
+<tr>
+  <td><code>P5C-172</code></td>
+  <td><code>p5c:cor:v269-visible-primitivity</code></td>
+  <td>6553–6560</td>
+  <td>UNRESOLVED</td>
+  <td>Positive spanning adjacency of coarse block graph does not imply scalar commutant of complete interaction algebra or primitive Lindbladian; missing irreducibility across internal multiplicities, source issue G-0005.</td>
+</tr>
+<tr>
+  <td><code>P5C-173</code></td>
+  <td><code>p5c:rem:v269-heavy-neutral-firewall</code></td>
+  <td>6562–6572</td>
+  <td>FORMALIZED</td>
+  <td>Gauge singlet heavy neutral does not join gauge-visible graph without a separately occurring neutral/Yukawa interaction.</td>
+</tr>
+<tr>
+  <td><code>P5C-174</code></td>
+  <td><code>p5c:prop:v270-native-baryogenesis-first-owner</code></td>
+  <td>6579–6593</td>
+  <td>REPRODUCED</td>
+  <td>Historical v2.70 OPEN_ACTION_OWNER status is expressly superseded by later v2.72 co-realization claim; not an active contradiction.</td>
+</tr>
+<tr>
+  <td><code>P5C-175</code></td>
+  <td><code>p5c:rem:v270-heavy-neutral-conditional-branch</code></td>
+  <td>6595–6604</td>
+  <td>FORMALIZED</td>
+  <td>Heavy-neutral seesaw construction is explicitly optional and not asserted to constitute native charge-two pair.</td>
+</tr>
+<tr>
+  <td><code>P5C-176</code></td>
+  <td><code>p5c:cor:v274-lepton-current-formal-open</code></td>
+  <td>6612–6629</td>
+  <td>REPRODUCED</td>
+  <td>Historical v2.74 formal-open lepton evaluation is superseded by v2.77 normalized finite charged frame; distinct pole/readout gap persists.</td>
+</tr>
+<tr>
+  <td><code>P5C-177</code></td>
+  <td><code>p5c:thm:v274-native-lepton-cp-invariant</code></td>
+  <td>6631–6655</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Cubic current commutator is gauge/frame invariant; Vandermonde identity matches native matrix; physical poles and source map not implied.</td>
+</tr>
+<tr>
+  <td><code>P5C-178</code></td>
+  <td><code>p5c:cor:v274-zeta-jarlskog-reduction</code></td>
+  <td>6663–6686</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Singlet-plane J=+zeta/(6sqrt3) correct for mu-singlet historic branch; tau-singlet sign transposition and v2.77 numeric closure applied.</td>
+</tr>
+<tr>
+  <td><code>P5C-179</code></td>
+  <td><code>p5c:cor:v274-bl2-phase-lock-retired</code></td>
+  <td>6697–6716</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Fixed parallel radial pair self-phase vanishes; an extra scalar phase would be a new deformation, no prohibition of other CP owners claimed.</td>
+</tr>
+<tr>
+  <td><code>P5C-180</code></td>
+  <td><code>p5c:cor:v274-native-baryogenesis-frontier</code></td>
+  <td>6718–6731</td>
+  <td>REPRODUCED</td>
+  <td>Historical v2.74 owner frontier later superseded by actual v2.80 complete-parent CP/BL2 incidence obligation.</td>
+</tr>
+<tr>
+  <td><code>P5C-181</code></td>
+  <td><code>p7v2:def:thermal-export</code></td>
+  <td>6742–6772</td>
+  <td>FORMALIZED</td>
+  <td>Thermal export packet explicitly typed as dependent interfaces; native C_eν does not select reheating or eta_B.</td>
+</tr>
+<tr>
+  <td><code>P5C-182</code></td>
+  <td><code>p7v2:prop:no-reheating-backflow</code></td>
+  <td>6774–6781</td>
+  <td>REPRODUCED</td>
+  <td>Cycle-free no-backflow chronology is valid as DAG direction policy; independent later reheating may be compared, not used to justify own prior premise.</td>
+</tr>
+<tr>
+  <td><code>P5C-183</code></td>
+  <td><code>P5C-UNLABELED-183</code></td>
+  <td>6790–6798</td>
+  <td>FORMALIZED</td>
+  <td>Later background geometry only discharges that component of kinetic interface; no thermal initial condition/collisions inferred.</td>
+</tr>
+<tr>
+  <td><code>P5C-184</code></td>
+  <td><code>p7:thm:v236-five-interface-types</code></td>
+  <td>7015–7052</td>
+  <td>REPRODUCED</td>
+  <td>Five EM,VAC,CP,NU,KIN labels retyped as claim-scoped interfaces, not five physical axioms or five independently proved observables.</td>
+</tr>
+<tr>
+  <td><code>P5C-185</code></td>
+  <td><code>p7:cor:v236-baryogenesis-ancestry</code></td>
+  <td>7054–7066</td>
+  <td>REPRODUCED</td>
+  <td>High-energy source ancestry excludes independent EM endpoint and 1/16 efficiency; actual action-generated vertices remain conditional.</td>
+</tr>
+<tr>
+  <td><code>P5C-186</code></td>
+  <td><code>P5C-UNLABELED-186</code></td>
+  <td>7093–7104</td>
+  <td>FORMALIZED</td>
+  <td>Historical selector firewall preserves chronology; no later output retroactively selects earlier geometry.</td>
+</tr>
+<tr>
+  <td><code>P5C-187</code></td>
+  <td><code>p5c:prop:v321-petersen-color-arrows</code></td>
+  <td>7369–7385</td>
+  <td>VERIFIED</td>
+  <td>SU3 Hom(3,(1+3)⊗G) ≅G of complex dimension 3 follows by Schur and trivial family action.</td>
+</tr>
+<tr>
+  <td><code>P5C-188</code></td>
+  <td><code>p5c:prop:v321-petersen-no-automatic-insertion</code></td>
+  <td>7396–7407</td>
+  <td>REPRODUCED</td>
+  <td>A5 mirror and central Z2 are not generated color gauge insertions; source explicitly requires same-action coupling certificate before any physical modification.</td>
+</tr>
+<tr>
+  <td><code>P5C-189</code></td>
+  <td><code>P5C-UNLABELED-189</code></td>
+  <td>7419–7428</td>
+  <td>FORMALIZED</td>
+  <td>Petersen action test is explicitly proposed and unexecuted; no physical hadron/vertex claim.</td>
+</tr>
+<tr>
+  <td><code>P5C-190</code></td>
+  <td><code>p5c:prop:v338-intertwiner-ambiguity</code></td>
+  <td>7444–7461</td>
+  <td>VERIFIED</td>
+  <td>A4 restrictions 1+3×3 and regular 1+1prime+1doubleprime+3×3 give Hom dimension 1+9=10; isometric intertwiner remains nonunique.</td>
+</tr>
+<tr>
+  <td><code>P5C-191</code></td>
+  <td><code>P5C-UNLABELED-191</code></td>
+  <td>7469–7476</td>
+  <td>FORMALIZED</td>
+  <td>Isometric projector and ratio 25/2 are not pole masses; no arbitrary rest energy inserted.</td>
+</tr>
+<tr>
+  <td><code>P5C-192</code></td>
+  <td><code>p5c:thm:v348-ew-gram-eigenvalues</code></td>
+  <td>7484–7519</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Gauge orbit Gram matrix, null photon direction, nonzero masses and 8/5 heat ratio checked after canonical kinetic whitening; quadratic response not interacting poles.</td>
+</tr>
+<tr>
+  <td><code>P5C-193</code></td>
+  <td><code>p5c:thm:v348-weak-memory-coherence-norm</code></td>
+  <td>7532–7558</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Frobenius off-diagonal weak memory law and sharp 11/12–1 bounds independently checked for arbitrary complex k on N=I, diagonal KW.</td>
+</tr>
+<tr>
+  <td><code>P5C-194</code></td>
+  <td><code>p5c:cor:v348-coherent-diagonal-blindness</code></td>
+  <td>7581–7594</td>
+  <td>VERIFIED</td>
+  <td>Left and right null lines of stochastic P checked; full coherent current remains invertible, phase-averaged and diagonal-memory losses differ.</td>
+</tr>
+<tr>
+  <td><code>P5C-195</code></td>
+  <td><code>p5c:rem:v348-weak-memory-physical-guard</code></td>
+  <td>7603–7618</td>
+  <td>FORMALIZED</td>
+  <td>Actual K_W generally nondiagonal and complete Schur return carries B_R blocks; corrected one-loop weights recorded, no physical neutrino inference.</td>
+</tr>
+<tr>
+  <td><code>P5C-196</code></td>
+  <td><code>p5c:prop:v365-family-decay-factor</code></td>
+  <td>7634–7647</td>
+  <td>VERIFIED</td>
+  <td>Row unitarity gives independent two-neutrino sum 1 and coherent orthogonality; no physical decay rates or daughter spectra.</td>
+</tr>
+<tr>
+  <td><code>P5C-197</code></td>
+  <td><code>p5c:def:v365-decay-source-contract</code></td>
+  <td>7654–7676</td>
+  <td>FORMALIZED</td>
+  <td>Complete Fock-channel action/source contraction is a definition; decay widths require actual pole, source, state, normalization and asymptotic limit.</td>
+</tr>
+<tr>
+  <td><code>P5C-198</code></td>
+  <td><code>p5c:rem:v365-channel-physical-firewall</code></td>
+  <td>7678–7687</td>
+  <td>FORMALIZED</td>
+  <td>Physical branching firewall: current coefficients and 25-cell measures are not by themselves two-vertex proper decay rates.</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional source statements beyond the 198 formal environments</h2>
+<ul>
+<li><code>P5C-U-B2-01</code> · lines [1968, 1980] · <strong>REPRODUCED</strong> — G17 source/vacuum/matching/IR decomposition and warning not to promote source ownership into IR closure</li>
+<li><code>P5C-U-B2-02</code> · lines [1981, 1986] · <strong>REPRODUCED</strong> — Finite retained current-weighted measure depends on source/state; zero atom and uniformity remain conditions</li>
+<li><code>P5C-U-B2-03</code> · lines [2099, 2107] · <strong>REPRODUCED</strong> — No isolated bare charged pole or automatic continuum q²-&gt;0 from compact spectrum</li>
+<li><code>P5C-U-B2-04</code> · lines [2171, 2181] · <strong>VERIFIED-CONDITIONAL (source number treated as quoted input)</strong> — Daya Bay 0.0851±0.0024 input and equal-pure-boundary numerical comparison</li>
+<li><code>P5C-U-B2-05</code> · lines [2217, 2232] · <strong>FORMALIZED</strong> — Actual source, neutral origin, BL2 kinetic and decay-rate open interfaces explicitly distinguished</li>
+<li><code>P5C-U-B2-06</code> · lines [2663, 2670] · <strong>REPRODUCED</strong> — Parity-balanced source helicities remain equal only for equal ODE/initial data; no unconditional gauge-pair rank inferred</li>
+<li><code>P5C-U-B2-07</code> · lines [2965, 2974] · <strong>VERIFIED-CONDITIONAL</strong> — Conventional zeta_CP export coordinate and its finite-native value; no free theta member from the dictionary</li>
+<li><code>P5C-U-B2-08</code> · lines [3035, 3037] · <strong>REPRODUCED</strong> — Nonequilibrium initial conditions, collisions and cosmology not determined by equilibrium Gibbs state</li>
+<li><code>P5C-U-B3-01</code> · lines [3396, 3404] · <strong>REPRODUCED</strong> — Rooted X_G, C2, fixed neutral ordering and quartet direction; no spontaneous physical PMNS identification</li>
+<li><code>P5C-U-B3-02</code> · lines [3553, 3564] · <strong>REPRODUCED</strong> — Q=-I on e_L and e_R at source heat datum; family-identity gauge action</li>
+<li><code>P5C-U-B3-03</code> · lines [3715, 3749] · <strong>VERIFIED-CONDITIONAL</strong> — Explicit unitary C and P, native charged-current strength pi and no pole promise</li>
+<li><code>P5C-U-B3-04</code> · lines [3799, 3833] · <strong>REPRODUCED</strong> — Stationary source normalization N^-1/2 and correct physical tag t=N^1/2 e_r</li>
+<li><code>P5C-U-B3-05</code> · lines [3835, 3844] · <strong>REPRODUCED</strong> — Complete memory K_W,L_WR,L_RW,K_R use one full C_mem and common z</li>
+<li><code>P5C-U-B3-06</code> · lines [4025, 4059] · <strong>VERIFIED</strong> — Three upper coherent C diag(k) Cdag contractions; no conjugating z at complex frequency</li>
+<li><code>P5C-U-B3-07</code> · lines [4093, 4101] · <strong>FORMALIZED</strong> — Fixed epsilon root with source visibility not implied by scalar memory or terminal neutral entries</li>
+<li><code>P5C-U-B3-08</code> · lines [4347, 4370] · <strong>REPRODUCED</strong> — Bare marked fourth moment pi^4 (tau D2 + 3/4 tau K2) and positive fourth defect, not complete-H moment</li>
+<li><code>P5C-U-B3-09</code> · lines [4372, 4404] · <strong>REPRODUCED</strong> — Multi-slot second-commutator retains noncommuting same-charge Bose terms and full other H marks</li>
+<li><code>P5C-U-B3-10</code> · lines [4406, 4424] · <strong>FORMALIZED</strong> — Physical quotient/closure application remains unevaluated, no state- or cancellation assumption made</li>
+<li><code>P5C-U-B3-11</code> · lines [4491, 4516] · <strong>REPRODUCED</strong> — Bare ladder alternating charged neutral 3(N+1) dimension and W_{2k},W_{2k+1} coefficient exact</li>
+<li><code>P5C-U-B3-12</code> · lines [4580, 4621] · <strong>FORMALIZED</strong> — Highest degree cap and bare ladder not promoted to full physical H or terminal mass roots</li>
+<li><code>P5C-U-B3-13</code> · lines [4721, 4759] · <strong>REPRODUCED</strong> — Oriented primitive pair+current marks retain actual X, source spin and family projectors</li>
+<li><code>P5C-U-B3-14</code> · lines [4829, 4840] · <strong>VERIFIED-CONDITIONAL</strong> — Full mathematical trace norm of two marked receivers and nonzero finite charge commutator</li>
+<li><code>P5C-U-B3-15</code> · lines [4942, 4963] · <strong>REPRODUCED</strong> — Oriented spin weak word all K_alpha X_alpha† combined before source coefficient contraction</li>
+<li><code>P5C-U-B3-16</code> · lines [4999, 5001] · <strong>VERIFIED-CONDITIONAL</strong> — Common factor K Xdag is specialization, not generic positivity condition</li>
+<li><code>P5C-U-B3-17</code> · lines [5164, 5183] · <strong>REPRODUCED</strong> — Moving spectral argument, source jets and stationary cross contacts are retained in complete generator</li>
+<li><code>P5C-U-B3-18</code> · lines [5214, 5219] · <strong>FORMALIZED</strong> — Matched charge orbit is not relative CP history or physical K16 phase</li>
+<li><code>P5C-U-B3-19</code> · lines [5261, 5268] · <strong>REPRODUCED</strong> — Empty/half/filled support initial jet sign and operator-valued coefficient exclusion</li>
+<li><code>P5C-U-B3-20</code> · lines [5348, 5360] · <strong>VERIFIED-CONDITIONAL</strong> — For moving full H, explicit dot H commutator survives; no instantaneous Gibbs reset</li>
+<li><code>P5C-U-B3-21</code> · lines [5476, 5489] · <strong>FORMALIZED</strong> — Physical charge history and baryon export require complete same-action and state/history; local CP marker is not physical yield</li>
+<li><code>P5C-U-B3-22</code> · lines [5516, 5534] · <strong>VERIFIED-CONDITIONAL</strong> — K diag(t,-t,0) hides all diagonal returns while upper mixed terms remain, regular gap/visibility needed for short-root bracket</li>
+<li><code>P5C-D07</code> · lines [7169, 7218] · <strong>VERIFIED-CONDITIONAL</strong> — Nine oscillation probabilities and CP envelope derived exactly from fixed C with equal coherent boundaries; 30 independent random phase comparisons and analytic CP envelope pass.</li>
+<li><code>P5C-D25</code> · lines [7220, 7250] · <strong>UNRESOLVED</strong> — Unitary entropy and quasifree one-body entropy ceiling verified, but charge derivative uses i[H,Q] without 1/hbar or local natural-unit declaration; issue BH-VC-G-0006.</li>
+<li><code>P5C-A1</code> · lines [7252, 7351] · <strong>VERIFIED-CONDITIONAL</strong> — Dephasing transfer matrix/eigenvectors and severe same-current experimental conditional compatibility test checked; actual source/pole/detector bridge remains unexecuted.</li>
+<li><code>P5C-U-PRODUCTION</code> · lines [5874, 5880] · <strong>FORMALIZED</strong> — Native current becomes physical probability only via P_D=Tr E_D V rho_P V† with source/detector states and phases.</li>
+<li><code>P5C-U-QUOTIENT</code> · lines [6492, 6529] · <strong>REPRODUCED</strong> — Normal h_c=Z†h_b Z and pair Γ_c=Z†Δ_b bar Z are different pulled-back kinetic sorts; raw η⁴ quartet not physical after arbitrary normalization.</li>
+<li><code>P5C-U-COSMIC</code> · lines [6802, 6822] · <strong>REPRODUCED</strong> — Weyl-versus-breathing scalar source coordinates separated; conditional conformal photon nonproduction and no CP implication from pair production.</li>
+<li><code>P5C-U-LEDGER</code> · lines [6827, 7011] · <strong>FORMALIZED</strong> — Results and selector ledger preserve source statuses including EM/VAC/NU/KIN and conditional benchmarks, not new mathematical evidence.</li>
+<li><code>P5C-U-REACTION</code> · lines [7295, 7351] · <strong>VERIFIED-CONDITIONAL</strong> — Equal-boundary weights yield disappearance amplitude ≥3/4 while stated Daya Bay input is about 0.0851; direct identification fails conditionally, without disproving the native current.</li>
+</ul>
+<h2>Batchwise protocol checkpoints and evidence scope</h2>
+<h3>Batch 1: original source-bound report</h3>
+<h1>Paper V-C — rigorous verification DAG audit, Batch 1</h1>
+<p>Source: <code>Paper5C-InteractionResponse-v2_171.tex</code> (SHA-256 <code>55a94a2ed099bee3288e098018a673ba255cf0275e0528b3af70d0715146b9b7</code>), PapersMinimal v2.371.</p>
+<p>Protocol: <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code> (verification-only); original input papers/ZIPs unchanged.</p>
+<p>Status: <strong>PARTIALLY_AUDITED_WITH_OPEN_GAPS</strong> (batch checkpoint only, NOT final release).</p>
+<h2>Coverage</h2>
+<ul>
+<li>Lines <strong>1–1623</strong> of <strong>7690</strong> (next boundary: EM finite sum rule at 1625).</li>
+<li>Formal environments source-reviewed <strong>32/198</strong>. Status distribution: FORMALIZED: 7, REPORTED: 1, REPRODUCED: 6, UNRESOLVED: 3, VERIFIED: 6, VERIFIED-CONDITIONAL: 9.</li>
+<li><strong>30/30 independently programmed exact controls passed</strong>, with checks by one model, not by delegated independent agents. Physical occurrence and conditional scale matching are not certified by algebraic tests.</li>
+<li>New issue roots <strong>BH-VC-G-0001</strong>, <strong>BH-VC-G-0002</strong>; separately inherited previous open issues <strong>BH-VA-G-0003/0004/0005/0008</strong>.</li>
+<li>Conditional identification predicates introduced once: <code>BH-VC-A-OWNER79-001</code>, <code>BH-VC-A-EQAMP79-001</code>; earlier generic obligations acknowledged without falsely identifying them as same fully typed predicate.</li>
+</ul>
+<h2>Formal claim/source replay ledger</h2>
+<table>
+<thead>
+<tr>
+  <th>ID</th>
+  <th>Source label / env</th>
+  <th style="text-align:right">Source lines</th>
+  <th>Disposition</th>
+  <th>Source-bounded reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>P5C-001</td>
+  <td><code>p7:rem:m8-batch-interaction-inputs</code> (remark)</td>
+  <td style="text-align:right">227–242</td>
+  <td>FORMALIZED</td>
+  <td>Anchored regulator/scope is a source condition; not proof of REG admissibility.</td>
+</tr>
+<tr>
+  <td>P5C-002</td>
+  <td><code>p7v2:def:claim-status</code> (definition)</td>
+  <td style="text-align:right">303–339</td>
+  <td>FORMALIZED</td>
+  <td>Status distinctions T/Q/A/B/O read as definitions; claims are not promoted.</td>
+</tr>
+<tr>
+  <td>P5C-003</td>
+  <td><code>p7v2:def:interface-hypotheses</code> (definition)</td>
+  <td style="text-align:right">351–414</td>
+  <td>FORMALIZED</td>
+  <td>Physical interfaces H_gauge, H_vac, H_qft, H_em, H_cp, H_nu, H_kin typed as scoped conditions, not demonstrated occurrences.</td>
+</tr>
+<tr>
+  <td>P5C-004</td>
+  <td><code>p7v2:def:selector-status-partition</code> (definition)</td>
+  <td style="text-align:right">416–460</td>
+  <td>FORMALIZED</td>
+  <td>Constructed roles, interpretations, calibrations are separated by explicit status criteria.</td>
+</tr>
+<tr>
+  <td>P5C-005</td>
+  <td><code>p5c:thm:v2167-mixed-family-coefficient</code> (theorem)</td>
+  <td style="text-align:right">534–551</td>
+  <td>VERIFIED</td>
+  <td>Marked CP-family source-current contraction Z=(-7/288+i/12) and simultaneous presentation invariance checked exactly.</td>
+</tr>
+<tr>
+  <td>P5C-006</td>
+  <td><code>p5c:prop:v2167-generated-coefficient-algebras</code> (proposition)</td>
+  <td style="text-align:right">565–583</td>
+  <td>VERIFIED</td>
+  <td>All nonzero ray-matrix entries give 9 family matrix units and 81 port tensor units; only local coefficient algebra is claimed.</td>
+</tr>
+<tr>
+  <td>P5C-007</td>
+  <td><code>p5c:cor:v2167-cpbl2-handoff-frontier</code> (corollary)</td>
+  <td style="text-align:right">597–620</td>
+  <td>REPRODUCED</td>
+  <td>Actual K16 pair/source co-realization is expressly not provided by the coefficient algebra; conditional frontier inherits VA-3/4.</td>
+</tr>
+<tr>
+  <td>P5C-008</td>
+  <td><code>p5c:cor:v2186-direct-signed-charge-target</code> (corollary)</td>
+  <td style="text-align:right">634–663</td>
+  <td>REPRODUCED</td>
+  <td>Exact signed charge-history integral identity, requiring a licensed actual action generator; no nonzero charge asymmetry follows.</td>
+</tr>
+<tr>
+  <td>P5C-009</td>
+  <td><code>p5c:prop:v226-even-odd-tests</code> (proposition)</td>
+  <td style="text-align:right">690–698</td>
+  <td>VERIFIED</td>
+  <td>Even/odd real Hermitian dimension 137+88=225, distinguished from restricted even-only tests.</td>
+</tr>
+<tr>
+  <td>P5C-010</td>
+  <td><code>p5c:prop:v227-odd-offset</code> (proposition)</td>
+  <td style="text-align:right">718–729</td>
+  <td>VERIFIED</td>
+  <td>Energy-offset shift contributes (c_a-c_b)q_ab; cannot silently delete it from a generic odd source.</td>
+</tr>
+<tr>
+  <td>P5C-011</td>
+  <td><code>p7v2:lem:defect-counts</code> (lemma)</td>
+  <td style="text-align:right">752–772</td>
+  <td>VERIFIED</td>
+  <td>Defect count D_+=72, D_-=56 and totals 128/16 algebraically correct.</td>
+</tr>
+<tr>
+  <td>P5C-012</td>
+  <td><code>p7v2:prop:strong-seed-status</code> (proposition)</td>
+  <td style="text-align:right">782–810</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Common-heat k3=2 and α3=π/2 exact within source-native branch; arbitrary t remains calibration, not fixed derivation.</td>
+</tr>
+<tr>
+  <td>P5C-013</td>
+  <td><code>P5C-UNLABELED-013</code> (remark)</td>
+  <td style="text-align:right">823–831</td>
+  <td>FORMALIZED</td>
+  <td>Correct firewall: matching μ_h to mass pole scales or determinant conditions needs independent interface.</td>
+</tr>
+<tr>
+  <td>P5C-014</td>
+  <td><code>p7v2:thm:v258-native-ew-solder-reduction</code> (theorem)</td>
+  <td style="text-align:right">836–873</td>
+  <td>UNRESOLVED</td>
+  <td>Gram rank=3 and Qρ^(1/2) transported photon null direction correct conditional on an ACTUALLY occurring odd solder; rooted-source physical occurrence inherits VA-5/8.</td>
+</tr>
+<tr>
+  <td>P5C-015</td>
+  <td><code>p7v2:cor:v2109-rooted-ew-occurrence</code> (corollary)</td>
+  <td style="text-align:right">894–908</td>
+  <td>UNRESOLVED</td>
+  <td>No second primitive G0 source postulate needed <em>if</em> the claimed rooted-source generation is established; baseline VA-5 leaves that upstream occurrence unverified.</td>
+</tr>
+<tr>
+  <td>P5C-016</td>
+  <td><code>p7v2:thm:ew-mass-dictionary</code> (theorem)</td>
+  <td style="text-align:right">931–970</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Conventional mass dictionary algebra valid only with single-doublet H_vac, positive scalar/gauge metrics, and physical action matching.</td>
+</tr>
+<tr>
+  <td>P5C-017</td>
+  <td><code>p7:rem:v179-hurwitz-action-comparison</code> (remark)</td>
+  <td style="text-align:right">983–997</td>
+  <td>FORMALIZED</td>
+  <td>Explicit comparison of canonical mass operator vs geometric response; no unconditional mass readout asserted.</td>
+</tr>
+<tr>
+  <td>P5C-018</td>
+  <td><code>p7:thm:physical-seven-nine-owner-reduction</code> (theorem)</td>
+  <td style="text-align:right">1002–1044</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Exact block Hilbert-Schmidt Gram weights 7|a|²,9|b|²; W/Z mass ratio needs one physical owner/common normalization and EQAMP79.</td>
+</tr>
+<tr>
+  <td>P5C-019</td>
+  <td><code>p7:cor:common-heat-tree-shell-firewall</code> (corollary)</td>
+  <td style="text-align:right">1061–1080</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Common-heat sin²θW=3/8, W/Z mass²=5/8; 7/9 is incompatible at identical scale and scheme, correctly stated.</td>
+</tr>
+<tr>
+  <td>P5C-020</td>
+  <td><code>p7v2:thm:electroweak-characteristic-cone-inheritance</code> (theorem)</td>
+  <td style="text-align:right">1090–1119</td>
+  <td>REPRODUCED</td>
+  <td>Internal Weinberg basis change and zero-order mass term preserve the source-inherited principal characteristic set; no group speed/observed value prediction.</td>
+</tr>
+<tr>
+  <td>P5C-021</td>
+  <td><code>p7v2:thm:v244-transverse-ew-wave-operators</code> (theorem)</td>
+  <td style="text-align:right">1136–1190</td>
+  <td>REPRODUCED</td>
+  <td>Coexact round-S3 spectra and photon curl factorization replayed against source imports, but no fully independent representation-theoretic E3 for entire operator theorem.</td>
+</tr>
+<tr>
+  <td>P5C-022</td>
+  <td><code>p7v2:thm:v245-gauge-hessian-kernel-clock-lock</code> (theorem)</td>
+  <td style="text-align:right">1206–1247</td>
+  <td>UNRESOLVED</td>
+  <td>Literal ker M_G²=ker J_h is representation-dependent: a canonically whitened operator has ker M²=Q^(1/2)ker J; exact countercase. Rank and clock logic remain distinct.</td>
+</tr>
+<tr>
+  <td>P5C-023</td>
+  <td><code>p7v2:thm:v247-goldstone-hessian-transfer</code> (theorem)</td>
+  <td style="text-align:right">1266–1333</td>
+  <td>REPRODUCED</td>
+  <td>Polar decomposition, stationary Ward null and 3 Goldstone/longitudinal transfer replayed; physical source occurrence and stationarity remain conditional.</td>
+</tr>
+<tr>
+  <td>P5C-024</td>
+  <td><code>p7v2:thm:v247-longitudinal-vector-spectrum</code> (theorem)</td>
+  <td style="text-align:right">1348–1404</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Positive longitudinal Proca quadratic reduction and transverse-longitudinal E² splitting confirmed under static round-S3 stationary Proca branch.</td>
+</tr>
+<tr>
+  <td>P5C-025</td>
+  <td><code>p7v2:cor:v247-gauge-mass-spectral-reconstruction</code> (corollary)</td>
+  <td style="text-align:right">1420–1448</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Gauge mass eigenvalues algebraically reconstructable by subtracting fixed transverse spectral tower, within stipulated background/normalization.</td>
+</tr>
+<tr>
+  <td>P5C-026</td>
+  <td><code>p7v2:cor:tree-shell-numerics</code> (corollary)</td>
+  <td style="text-align:right">1450–1478</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Tree-shell numerical values reproduced only under H_vac plus physical owner/EQAMP79; not independently established shell selection.</td>
+</tr>
+<tr>
+  <td>P5C-027</td>
+  <td><code>P5C-UNLABELED-027</code> (remark)</td>
+  <td style="text-align:right">1486–1493</td>
+  <td>FORMALIZED</td>
+  <td>Source explicitly notes prior convention mismatch removed; no extra proof conclusion.</td>
+</tr>
+<tr>
+  <td>P5C-028</td>
+  <td><code>p7v2:thm:conditional-one-loop-running</code> (theorem)</td>
+  <td style="text-align:right">1498–1516</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Usual SM one-loop b=(41/10,-19/6,-7) independently recomputed under stated continuum perturbative/renormalization premise.</td>
+</tr>
+<tr>
+  <td>P5C-029</td>
+  <td><code>p7:cor:conditional-common-heat-shell-transport</code> (corollary)</td>
+  <td style="text-align:right">1528–1555</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Formal crossing log(μ79/μh)=-88/215 exact with common-heat boundary and conventional one-loop equations, before thresholds.</td>
+</tr>
+<tr>
+  <td>P5C-030</td>
+  <td><code>p7v2:prop:threshold-obligation</code> (proposition)</td>
+  <td style="text-align:right">1575–1590</td>
+  <td>REPRODUCED</td>
+  <td>Heavy threshold corrections depend on actual fluctuation determinant, not arbitrary geometric edge length.</td>
+</tr>
+<tr>
+  <td>P5C-031</td>
+  <td><code>P5C-UNLABELED-031</code> (remark)</td>
+  <td style="text-align:right">1601–1609</td>
+  <td>REPORTED</td>
+  <td>Historical near-unification figures 2.39–3.26e14 GeV and spread 0.22050 are not independently reproducible from specified prior edge-vector correction inputs in current source.</td>
+</tr>
+<tr>
+  <td>P5C-032</td>
+  <td><code>p7v2:lem:absolute-scale</code> (lemma)</td>
+  <td style="text-align:right">1611–1616</td>
+  <td>VERIFIED</td>
+  <td>Dimensional rescaling argument verifies ratios/carrier dimensions cannot determine absolute Λ.</td>
+</tr>
+</tbody>
+</table>
+<h2>New source-root issues (not silently duplicated downstream)</h2>
+<h3>BH-VC-G-0001 — TYPE_OR_DOMAIN, moderate</h3>
+<p>At <code>Paper5C-InteractionResponse-v2_171.tex:1216–1243</code>, <code>p7v2:thm:v245-gauge-hessian-kernel-clock-lock</code> writes literal <code>ker M_G² = ker J_h = g_h</code> with a positive invertible kinetic metric. Earlier this same target (lines 836–887) correctly derives a <strong>transported</strong> canonical kernel <code>ker M² = Q_ρ^(1/2) ker J</code>. For the in-domain test <code>J=[1,-1]</code>, <code>Q=diag(1,4)</code>, raw stabilizer is <code>span(1,1)</code> while canonical Gram null is <code>span(1,2)</code>. Thus literal untransported identification is false in canonical coordinates; the equation <strong>could</strong> hold for a mass operator represented on raw vectors, so the exact source representation is unresolved. Rank, photon masslessness, and unbroken abstract algebra remain verified under the positive normalization, and the later Goldstone theorem independently introduces a whitened orbit map. Obligation: clarify the representation/transport; <strong>not</strong> a refutation of electroweak rank or observable masslessness.</p>
+<h3>BH-VC-G-0002 — MISSING_EVIDENCE, minor</h3>
+<p><code>Paper5C-InteractionResponse-v2_171.tex:1601–1609</code> repeats prior-edition numerical near-unification crossings <code>(2.39–3.26)×10^14 GeV</code> and inverse-coupling spread <code>0.22050</code> without giving its historical boundary vector, correction vector, scale Λ₈ and scheme inputs in the verified current source. Source explicitly marks it status B and <strong>not exact unification</strong>. No in-domain counterexample found; merely cannot independently reproduce the given numerical values. Obligation: supply the historical numeric inputs and an independent evaluation, not a new physical law.</p>
+<h2>Inherited upstream open interfaces (no new V-C roots)</h2>
+<ul>
+<li><code>BH-VA-G-0003</code>: coefficient M does not independently construct the required physical CAR/skew pair injection. Affects V-C 597–632.</li>
+<li><code>BH-VA-G-0004</code>: independently occurring physical K16 owner/co-realization not established by the local algebra. Affects V-C 597–673.</li>
+<li><code>BH-VA-G-0005</code>: original rooted source incidence required-output chain remains open in V-A; V-C 836–920 inherits it when saying an actual nonzero chiral solder is sourced.</li>
+<li><code>BH-VA-G-0008</code>: actual action/source consumption of the generated triality contraction remains open in V-A; it can affect the same occurrence branch but not the purely algebraic stabilizer conditional.</li>
+</ul>
+<h2>Valid conditional frontiers and important negative conclusions</h2>
+<ol>
+<li><strong>No derived physical 7/9 ratio</strong> from rank alone: V-C proves <code>7|a|² : 9|b|²</code>; the W/Z interpretation needs one owner and equal amplitude. The exact typed conditions are tracked separately.</li>
+<li><strong>No same-scale reconciliation</strong> of native common-heat <code>5/8</code> with shell <code>7/9</code>. The paper explicitly identifies this as RG/threshold matching, not an algebraic identity.</li>
+<li><strong>No derived absolute EW mass or threshold</strong> from a dimensionless ratio alone; H_vac and one-loop/threshold data remain explicitly scoped.</li>
+<li>The Proca mode split on a stationary round S³ is an exact <strong>quadratic spectral observable</strong> conditional on the physical mass Hessian; it does not independently establish a pole mass/width or physical source occurrence.</li>
+<li>Characteristic front speed and massive group velocity are explicitly distinct; no measured photon speed identified here.</li>
+</ol>
+<h2>Evidence and handoff</h2>
+<ul>
+<li>Exact controls: <code>Paper5C-ExactChecksBatch1-v1_1.py/json</code> (19) and <code>Paper5C-IndependentControlsBatch1-v1_1.py/json</code> (11). No external computational or human agent was delegated.</li>
+<li>Machine-readable 32-result ledger + issue certificates: <code>Paper5C-AuditBatch1-v1_1.json</code>. Proposed typed dependencies and canonical conditions are retained separately until final global integration.</li>
+<li>Existing DAG baseline v1_110 and proofchain-audits baseline v1_27 remain unmodified. The two cleaned successor ZIPs will be produced <strong>only after the final batch</strong>, incorporating all batch ledgers, latest-only audit versions, and readback validation.</li>
+<li>Next source position: line <strong>1625</strong>, start of electromagnetic finite sum rule.</li>
+</ul>
+<h3>Batch 2: original source-bound report</h3>
+<h1>Paper V-C — rigorous verification DAG audit, Batch 2</h1>
+<p>Source: <code>Paper5C-InteractionResponse-v2_171.tex</code> (SHA-256 <code>55a94a2ed099bee3288e098018a673ba255cf0275e0528b3af70d0715146b9b7</code>), PapersMinimal v2.371. Protocol: <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code>.</p>
+<p>Status: <strong>PARTIALLY_AUDITED_WITH_OPEN_GAPS</strong> — intermediate checkpoint, not global atlas release. Baseline archives and sources remain unmodified.</p>
+<h2>Coverage and evidence</h2>
+<ul>
+<li>Batch 2 source lines <strong>1625–3390</strong>, through scalar/pole-vertex boundary; next section starts at <strong>3392</strong>.</li>
+<li>Newly source-reviewed <strong>61</strong> formal environments, <strong>93/198 cumulative</strong>; source-reading progress 3390/7690 lines. Status counts: <code>FORMALIZED</code>=11, <code>REPORTED</code>=1, <code>REPRODUCED</code>=15, <code>UNRESOLVED</code>=1, <code>VERIFIED</code>=9, <code>VERIFIED-CONDITIONAL</code>=24.</li>
+<li>Exact controls: <strong>44/44</strong>; separate-method controls: <strong>16/16</strong>; adversarial probes: <strong>10</strong> (one material total-cross-section scope counterexample, nine negative/acknowledged controls). All performed in one execution environment; <strong>no separate review agents were used</strong>.</li>
+<li>Existing Batch 1 roots <code>BH-VC-G-0001/0002</code> preserved, and upstream <code>BH-VA-G-0003/0004/0005/0008</code> inherited without duplicating their earliest source.</li>
+</ul>
+<h2>New identified issues</h2>
+<h3>BH-VC-G-0003 — TYPE_OR_DOMAIN (moderate)</h3>
+<p><strong>Origin:</strong> <code>Paper5C-InteractionResponse-v2_171.tex:2801–2829</code>, <code>p7v2:prop:inclusive-rgamma</code>. The familiar photon-current result <code>R_gamma=3 Σ_f Q_f²[1+α_s/π+…]</code> and the displayed Born values <code>(2,10/3,11/3,5)</code> are correct <strong>for the photon-mediated channel</strong>. However, the numerator and denominator are written as inclusive <code>e+e-</code> cross sections without a photon-only projection, and being away from the Z pole does not make the full electroweak neutral current photon dominated. In the high-energy, six-active-flavor, mass-negligible, resonance-free domain take <code>sin² theta_W=1/4</code>, yielding <code>chi_Z=4/3</code>, <code>C_u=46/81</code>, <code>C_d=22/81</code>, and <code>C_mu=10/9</code>. Then the full tree-level ratio is <code>3[3 C_u+3 C_d]/C_mu=34/5=6.8</code>, not 5. The six-flavor case itself is above the Z threshold. This is an <strong>in-domain counterexample to the unprojected total-sigma interpretation</strong>, not a refutation of the photon-channel color sum.</p>
+<p><strong>Obligation:</strong> restrict R_gamma explicitly to photon-current / Z-subtracted cross sections or include the full neutral-current terms with a compatible comparison domain. Direct issue target is V-C inclusive ratio; Paper VII-B has a similar physical inclusive formula but no direct material proof-use edge has yet been certified, so downstream impact is <code>POSSIBLE/UNCONFIRMED</code>. E4 <code>VCB2-E4-01</code>, photon-only bypass E4 <code>VCB2-E4-10</code>.</p>
+<h3>BH-VC-G-0004 — MISSING_EVIDENCE (minor)</h3>
+<p><strong>Origin:</strong> <code>Paper5C-InteractionResponse-v2_171.tex:3335–3345</code> (unlabelled historical auxiliary-shell remark). The difference <code>221.0882021−221.5844320=−0.4962299 GeV</code> is arithmetically exact. Reproducing the two stationary roots and reported <code>1.019031986119</code> hard-shift ratio would require the stated previous-edition <strong>unrounded inputs, scheme, stationary equation and prescription</strong>, absent from the controlling current TeX corpus. This is a status-B diagnostic, not an assertion or contradiction about physical vacuum occurrence.</p>
+<p><strong>Obligation:</strong> publish historical numeric input table/solver prescription and independently replay; no proof conclusion is invalidated solely by this documentation gap.</p>
+<h2>All formal claims in this batch</h2>
+<p>| ID | Source label and type | Lines | Disposition | Source-bounded audit reason |
+|---|---|---:|---|---|
+| P5C-033 | <code>p7v2:def:normalized-determinant</code> (definition) | 1628–1648 | FORMALIZED | Ordinary rank-one and normalized-trace determinants are different; exp(Tr log /8) gives the eighth root, verified from spectrum. |
+| P5C-034 | <code>p7v2:def:em-selector-family</code> (definition) | 1650–1664 | FORMALIZED | Endpoint family explicitly retains operator, trace, branch, angular factor and analytic remainder; no physical selection. |
+| P5C-035 | <code>p7v2:def:em-candidate</code> (definition) | 1666–1690 | FORMALIZED | Finite EM candidate explicitly defined as status A; numerical agreement does not establish equality to a physical Thomson response. |
+| P5C-036 | <code>p7v2:prop:em-candidate-conditional</code> (proposition) | 1692–1708 | VERIFIED-CONDITIONAL | Under four declared endpoint inputs, determinant multiplication and outer octet readout exactly give the candidate; formal log does not prove exact operator. |
+| P5C-037 | <code>p7v2:thm:em-nonclosure</code> (theorem) | 1726–1746 | REPRODUCED | Nonclosure correctly follows for carrier-only data, branches and formal truncations; no stronger no-go for a complete physical effective action inferred. |
+| P5C-038 | <code>p7v2:cor:em-same-gamma-limit-route</code> (corollary) | 1758–1780 | VERIFIED-CONDITIONAL | With generated Gamma, stable nonzero vacuum, Q embedding and all licensed IR routes convergent, limit uniqueness is valid; physical occurrence and limit not established. |
+| P5C-039 | <code>p7v2:thm:em-owner-contraction</code> (theorem) | 1782–1797 | REPRODUCED | II-A no-independent-owner conclusion applies after the same generated source owner and admissible descendant map are fixed; not a computed endpoint coefficient. |
+| P5C-040 | <code>p7v2:rem:em-numerics</code> (remark) | 1807–1828 | VERIFIED | Three displayed inverse-alpha values, delta^10 and omitted-log-coefficient sensitivity reproduced at high precision. |
+| P5C-041 | <code>p7v2:prop:em-running-interface</code> (proposition) | 1833–1851 | REPRODUCED | Vacuum polarization parameterization conventional under H_qft and selected scheme; hadronic correlator remains imported, not evaluated here. |
+| P5C-042 | <code>p7v2:cor:no-alpha-mz</code> (corollary) | 1861–1869 | REPRODUCED | Paper V-C correctly declines a closed alpha(MZ) from an uncomputed hadronic vacuum-polarization input. |
+| P5C-043 | <code>p7v2:thm:v2141-em-same-source-hessian</code> (theorem) | 1876–1910 | VERIFIED-CONDITIONAL | Exact blocked-source Hessian/contact–connected-current identity and 4pi Z_Q convention valid with source-natural action, physical Ward and IR assumptions. |
+| P5C-044 | <code>p7v2:cor:v2141-em-one-loop-tangent</code> (corollary) | 1912–1930 | VERIFIED-CONDITIONAL | b_em=11/3 and derivative -11/(6pi) and charged-piece decomposition checked in stated unthresholded one-loop branch. |
+| P5C-045 | <code>p7v2:prop:v2141-common-heat-strong-obstruction</code> (proposition) | 1932–1953 | VERIFIED-CONDITIONAL | For every real one-loop log L at least one inverse EW coupling ≤2/pi; extrapolation is explicitly only an invalid weak-coupling diagnostic. |
+| P5C-046 | <code>p7v2:cor:v2141-em-candidate-retyping</code> (corollary) | 1955–1966 | REPRODUCED | Subtracted running does not supply absolute Thomson normalization; finite candidate remains a same-action representation only if separately shown. |
+| P5C-047 | <code>p5c:thm:v2210-lit-thomson-response</code> (theorem) | 1998–2033 | VERIFIED-CONDITIONAL | Schur complement t[a-t b(C+td)^-1 b†] and positive IR limit give e_Q=g0/sqrt(kappa0); actual Thomson/charged-leg certificate remains conditional. |
+| P5C-048 | <code>p5c:prop:v2210-lit-thomson-uniform</code> (proposition) | 2045–2066 | VERIFIED-CONDITIONAL | Uniform mean-value error bound with kappa≥kappa*&gt;0 proves joint and iterated limit uniqueness under the declared directed-family controls. |
+| P5C-049 | <code>p5c:cor:v2210-lit-thomson-ward</code> (corollary) | 2075–2088 | VERIFIED-CONDITIONAL | Regular Ward identity and normalized charged legs recover e_Q Q at zero transfer; source itself excludes bare pole and unfurnished IR continuity. |
+| P5C-050 | <code>p5c:thm:v2210-lit-detector-kernel</code> (theorem) | 2109–2132 | VERIFIED | Finite source–unitary–effect contraction lies in [0,1], is presentation covariant, and reduces to exact two-phase survival under equal pure boundaries. |
+| P5C-051 | <code>p5c:cor:v2210-lit-reactor-obstruction</code> (corollary) | 2148–2162 | VERIFIED-CONDITIONAL | Old equal pure-boundary weights yield amplitudes 3/4 or 1; q, projective angle and pure trace distance reproduce; not bound on unequal mixed states. |
+| P5C-052 | <code>p5c:prop:v2210-lit-scalar-coordinate</code> (proposition) | 2183–2197 | VERIFIED-CONDITIONAL | Soft scalar derivative invariant under orientation-preserving coordinate maps with transported metric/source; finite three-point vertex not inferred from mass. |
+| P5C-053 | <code>p5c:thm:v275-no-free-em-matching</code> (theorem) | 2240–2266 | REPRODUCED | No free rescaling follows if source line exactly retained and independent normalization deformation excluded; does not forbid quantum response renormalization. |
+| P5C-054 | <code>p5c:cor:v275-em-heat-reference</code> (corollary) | 2287–2313 | VERIFIED | Common-heat inverse electromagnetic coefficient 16/(3pi) and Z_heat=4/(3pi²) verified in GUT and 4pi conventions. |
+| P5C-055 | <code>p5c:cor:v275-g17-endpoint-identity</code> (corollary) | 2315–2335 | VERIFIED-CONDITIONAL | Endpoint response identity is exact definition of DeltaZ; no numerical IR/threshold/hadronic value derived. |
+| P5C-056 | <code>p5c:cor:v275-g17-match-retired</code> (corollary) | 2337–2353 | FORMALIZED | Status retyping keeps source normalization closed only conditionally and endpoint response analytic/readout explicitly open; no silent G17 closure. |
+| P5C-057 | <code>p7:thm:v164-renormalized-response-owner</code> (theorem) | 2360–2387 | REPRODUCED | Complete effective Hessian inverse and separate core-minus-Sigma convention correctly distinguish exact return from double subtraction. |
+| P5C-058 | <code>p7:cor:v261-no-independent-vertex-selector</code> (corollary) | 2405–2423 | REPRODUCED | Third effective-action derivative is a determined proper vertex after same-owner complete action, quotient and domain; no rates or widths established. |
+| P5C-059 | <code>p5c:prop:v371-petersen-rooted-action-diagnostic</code> (proposition) | 2427–2454 | VERIFIED-CONDITIONAL | Hilbert–Schmidt projection residual identity exact when the geometric and action blocks have one licensed inner-product embedding; existence not proved by geometry. |
+| P5C-060 | <code>p7:thm:v164-scalar-gauge-source</code> (theorem) | 2463–2495 | VERIFIED-CONDITIONAL | Formal one-loop breathing-source F² coefficient and (41/40,-19/24,-7/4) at common heat verified; no physical high-coupling production rate inferred. |
+| P5C-061 | <code>p7:rem:v2216-weyl-source-map</code> (remark) | 2497–2522 | VERIFIED-CONDITIONAL | Weyl sigma=phi_c/(sqrt6 M), tau=sqrt6 alpha^(-1/2)sigma and hierarchy ratio ≈6.17810e-9 checked; physical source pullback not provided. |
+| P5C-062 | <code>p7:thm:v2216-gauge-total-variation</code> (theorem) | 2524–2556 | VERIFIED | Canonical oscillator squeezing equation and total-variation asinh bound replayed with independent quench saturation; occupation inequality and weighted Cauchy hold. |
+| P5C-063 | <code>p7:thm:v2217-gauge-force-work</code> (theorem) | 2581–2609 | VERIFIED | Quadratic oscillator b-flow, scalar force expectation, energy derivative, and a-weighted work identity independently checked with state-independent commutators. |
+| P5C-064 | <code>p7:rem:v262-k16-commonheat-plasma-firewall</code> (remark) | 2632–2641 | FORMALIZED | Common-heat alpha_s=pi/2 is a boundary datum, not a perturbatively controlled K16 plasma input. |
+| P5C-065 | <code>p7:cor:v2217-pair-target-incidence</code> (corollary) | 2644–2656 | REPRODUCED | Schur rank ≤5 from scalar plus vector source survives only when actual native pair vertex intertwines the same Spin(4) actions; not a generic source nullity. |
+| P5C-066 | <code>p7v2:thm:color-dictionary</code> (theorem) | 2682–2710 | VERIFIED | Color 3⊗3bar=1⊕8, Casimirs CA=3 CF=4/3 TR=1/2 and curvature connection dictionary verified. |
+| P5C-067 | <code>p7v2:prop:color-channels</code> (proposition) | 2722–2756 | VERIFIED | Short-distance q-qbar and qq Casimir eigenvalues -4/3,1/6,-2/3,1/3 checked; sign-as-potential uses one-gluon exchange. |
+| P5C-068 | <code>p7v2:prop:qcd-running</code> (proposition) | 2770–2790 | VERIFIED-CONDITIONAL | QCD one/two-loop beta coefficients match conventional SU(3) with nf light flavors; scale threshold and seed remain conditional. |
+| P5C-069 | <code>p7v2:prop:inclusive-rgamma</code> (proposition) | 2801–2822 | UNRESOLVED | Photon-channel Born counts are correct, but the displayed inclusive total-sigma definition does not exclude Z exchange; high-energy nf=6 countercheck yields 34/5 instead of 5. |
+| P5C-070 | <code>P5C-UNLABELED-070</code> (remark) | 2831–2837 | REPRODUCED | Strong coupling order-one handoff does not prove confining or hadronic nonperturbative outputs. |
+| P5C-071 | <code>p7v2:prop:singlet-not-pdf</code> (proposition) | 2839–2844 | VERIFIED | Explicit family of longitudinal wavefunctions at fixed color singlet proves parton distributions cannot follow from color support alone. |
+| P5C-072 | <code>p7v2:def:qcd-boundary-ansatz</code> (definition) | 2861–2868 | FORMALIZED | QCD valence/fragmentation models are explicitly status A ansatz rather than native generated nonperturbative boundary. |
+| P5C-073 | <code>p7v2:prop:dglap-erbl</code> (proposition) | 2870–2879 | REPRODUCED | Spacelike/timelike DGLAP and ERBL are standard scheme-dependent evolution imports; no initial parton/hadron measure is derived. |
+| P5C-074 | <code>p7v2:thm:bare-theta</code> (theorem) | 2892–2910 | REPRODUCED | Finite native strong action admits no extra free theta character under declared complete generated action grammar; not yet a continuum regulated strong-CP certificate. |
+| P5C-075 | <code>p7v2:prop:physical-strong-cp</code> (proposition) | 2919–2928 | VERIFIED-CONDITIONAL | Rooted orientation cores conjugate and positive polar radial factors imply det(Du Dd)&gt;0 on nonzero full-rank source branch; upstream V-A source theorem checked. |
+| P5C-076 | <code>p7v2:cor:v259-native-strong-cp</code> (corollary) | 2935–2950 | VERIFIED-CONDITIONAL | Native finite zeta_CP=e^(iθ)det/\|det\|=1 combines theta_native=0 with determinant positivity; regulated chiral continuum remains separate. |
+| P5C-077 | <code>P5C-UNLABELED-077</code> (remark) | 2952–2959 | FORMALIZED | No arbitrary Standard-Model theta selector imported; later quantum measure/phase transport not asserted solved. |
+| P5C-078 | <code>p7:prop:v190-index-determinant-phase</code> (proposition) | 2976–2987 | VERIFIED-CONDITIONAL | Finite sector character zeta^nu=1 follows on native branch; sector dynamics and topological susceptibility are not fixed by this phase. |
+| P5C-079 | <code>p7:prop:global-chiral-measure-trivialization-test</code> (proposition) | 2989–3001 | VERIFIED-CONDITIONAL | Flat determinant-line connection and trivial holonomy give global parallel measure ray on admitted continuum presentation; finite vectorlike measure needs no new global chiral line. |
+| P5C-080 | <code>p7:prop:cp-fixed-positive-sector</code> (proposition) | 3003–3011 | REPRODUCED | Positive native primitive-sector populations imported from VII-A but no additional strong-CP selector or finite susceptibility value is proven here. |
+| P5C-081 | <code>p7:cor:finite-equilibrium-state-descendant</code> (corollary) | 3020–3033 | VERIFIED-CONDITIONAL | Finite Gibbs state is unique given H and beta on the simple finite algebra; preparation, washout and cosmological history remain independent inputs. |
+| P5C-082 | <code>p7v2:def:vacuum-selector-family</code> (definition) | 3046–3058 | FORMALIZED | Scalar stationary family is claim-scoped and not a premise for the already occurring solder/stabilizer. |
+| P5C-083 | <code>p7v2:thm:conditional-potential</code> (theorem) | 3060–3081 | VERIFIED-CONDITIONAL | Renormalizable doublet potential with supplied v&gt;0 and lambda&gt;0 gives mu_H²=-lambda v² and m_h²=2lambda v² at tree level. |
+| P5C-084 | <code>p7v2:rem:v258-scalar-stationary-diagnostics</code> (remark) | 3091–3098 | FORMALIZED | Scalar positive-heat and symmetry diagnostics are not promoted to proof of non-occurrence of the chiral solder. |
+| P5C-085 | <code>p7:thm:sufficient-stable-broken-vacuum</code> (theorem) | 3100–3121 | VERIFIED-CONDITIONAL | Strict convex derivative criterion ensures unique positive radial global minimizer, but not occurrence or full-direction stability. |
+| P5C-086 | <code>p7:prop:v2211-bare-terminal-scalar-contact-target</code> (proposition) | 3131–3180 | VERIFIED-CONDITIONAL | Bare Einstein radial W0 first/second derivatives A+Bx and 3A+B+2Bx are exact and strictly negative on specified x∈[0,1); required DeltaW contact derivatives not generated. |
+| P5C-087 | <code>p7v2:cor:stable-vacuum-orbit-closure</code> (corollary) | 3204–3225 | VERIFIED-CONDITIONAL | Singleton stable-stationary quotient removes any further orbit selection only if actual complete stable set and full physical G-equivalence exist. |
+| P5C-088 | <code>p7v2:cor:ewsb-status</code> (corollary) | 3227–3235 | FORMALIZED | Native gauge solder and additional stationary-vacuum hypotheses remain distinct source scopes. |
+| P5C-089 | <code>p7v2:thm:charged-slot-physical-later</code> (theorem) | 3237–3296 | REPRODUCED | Charged row embedding follows on frozen F simple-spectrum+lookup+occurring solder/source branch, with degenerate subspace caveat; no neutral Ynu lift generated. |
+| P5C-090 | <code>p7v2:prop:one-loop-ew-diagnostic</code> (proposition) | 3316–3324 | REPRODUCED | One-loop stationary potentials test an imported orbit but do not select it when built from its own v, gauge and scheme choices. |
+| P5C-091 | <code>P5C-UNLABELED-091</code> (remark) | 3335–3345 | REPORTED | Arithmetic difference -0.4962299 GeV confirmed, but two stationary roots and hard-shift ratio lack unrounded historical numerical inputs and solving prescription in current paper. |
+| P5C-092 | <code>p7v2:def:mass-boundary-diagnostics</code> (definition) | 3350–3362 | FORMALIZED | Finite shell/pole mass-squared quotient D_V is explicitly a diagnostic, not a coupling modifier. |
+| P5C-093 | <code>p7v2:prop:mass-ratio-not-kappa</code> (proposition) | 3364–3373 | VERIFIED | Two response families with identical pole value and different background derivatives/reflection residues show mass ratio does not determine hVV coupling. |</p>
+<h2>Mathematical checks that survive without physical promotion</h2>
+<ol>
+<li>Normalized determinant and order-a^8 EM log expansion, all three inverse-alpha numbers and a^10 remainder sensitivity. This validates the <strong>arithmetic</strong>, not the selected physical endpoint trace/operator/branch or analytic remainder.</li>
+<li>Thomson Schur reduction, Ward/charge normalization, uniform positive-error estimate, source-detector trace probability and exact pure-state projective displacement. Actual Gamma, charged source/detector and q²→0 limit remain separate.</li>
+<li>Single-owner heat normalization <code>alpha_Q,h^-1=16/(3pi)</code>, <code>Z_Q,h=4/(3pi²)</code> and G17 response difference are exact identities; no absolute measured Thomson number or RG/collision history computed.</li>
+<li>Scalar-gauge one-loop source weights, total-variation Bogoliubov bound, state-dependent force/work identity, SU3 color Casimirs and finite determinant orientation are exact within source domains. They do <strong>not</strong> fix a decay width, hadron measure or continuum strong-CP phase.</li>
+<li>Strict-convex radial sufficient criterion and bare-terminal negative W0'/W0'' calculation are both valid and <strong>do not contradict one another</strong>: they concern different supplied effective-action branches. This neither closes nor reopens physical solder existence.</li>
+<li>Charged physical slot embeddings need the frozen F lookup and occurring solder/source branch; V-A current upstream gaps are inherited only where consumed, not duplicated.</li>
+</ol>
+<h2>Claim-scoped unnamed checkpoints</h2>
+<ul>
+<li><code>1968–1980</code>: G17 source/vacuum/matching/IR decomposition and warning not to promote source ownership into IR closure — REPRODUCED.</li>
+<li><code>1981–1986</code>: Finite retained current-weighted measure depends on source/state; zero atom and uniformity remain conditions — REPRODUCED.</li>
+<li><code>2099–2107</code>: No isolated bare charged pole or automatic continuum q²-&gt;0 from compact spectrum — REPRODUCED.</li>
+<li><code>2171–2181</code>: Daya Bay 0.0851±0.0024 input and equal-pure-boundary numerical comparison — VERIFIED-CONDITIONAL (source number treated as quoted input).</li>
+<li><code>2217–2232</code>: Actual source, neutral origin, BL2 kinetic and decay-rate open interfaces explicitly distinguished — FORMALIZED.</li>
+<li><code>2663–2670</code>: Parity-balanced source helicities remain equal only for equal ODE/initial data; no unconditional gauge-pair rank inferred — REPRODUCED.</li>
+<li><code>2965–2974</code>: Conventional zeta_CP export coordinate and its finite-native value; no free theta member from the dictionary — VERIFIED-CONDITIONAL.</li>
+<li><code>3035–3037</code>: Nonequilibrium initial conditions, collisions and cosmology not determined by equilibrium Gibbs state — REPRODUCED.</li>
+</ul>
+<h2>Graph handoff and next batch</h2>
+<ul>
+<li>Eight distinct <strong>proposed</strong> typed condition nodes, 46 source-use typed edge proposals and two issue-root certificates with E1/E3/E4 lineage; canonical atlas deduplication and verified route integration remain a single-writer final-stage task.</li>
+<li>Exact SOURCE-AS-PRINTED environments and adjacent proof bodies are stored in <code>Paper5C-AuditBatch2-v1_2.json</code>; positive/negative adversarial witnesses preserved in <code>Paper5C-AdversarialChecksBatch2-v1_2.json</code>.</li>
+<li>Original two incoming ZIPs remain unchanged. <strong>Do not release cleaned DAG/Audit ZIPs before the last batch</strong>. On completion retain latest versions of each audit, no superseded duplicates, and read back/archive-validate both.</li>
+<li>Next line <strong>3392</strong>, the weak-current/complete coherent receiver section.</li>
+</ul>
+<h3>Batch 3: original source-bound report</h3>
+<h1>Paper V-C — Rigorous verification DAG audit, Batch 3</h1>
+<p><strong>Frozen source:</strong> <code>Paper5C-InteractionResponse-v2_171.tex</code> (SHA-256 <code>55a94a2ed099bee3288e098018a673ba255cf0275e0528b3af70d0715146b9b7</code>), PapersMinimal v2.371. <strong>Protocol:</strong> RigorousVerificationDAGWorkProtocol v2.4.</p>
+<p><strong>Outcome:</strong> <code>PARTIALLY_AUDITED_WITH_OPEN_GAPS</code> — checkpoint only, not final DAG release. No source or baseline ZIP modified.</p>
+<h2>Coverage and verification evidence</h2>
+<ul>
+<li>Lines <strong>3392–5544</strong>, formal claims <strong>P5C-094 through P5C-133</strong>: <strong>40</strong> new formal results; <strong>133/198</strong> cumulative, through <strong>5544/7690</strong> source lines.</li>
+<li>Source proof, type/quantifier/physical-guard review for each claim. Status totals: {'FORMALIZED': 3, 'REPRODUCED': 3, 'VERIFIED': 11, 'VERIFIED-CONDITIONAL': 23}.</li>
+<li>Exact symbolic/finite controls <strong>32/32</strong>, adversarial domain controls <strong>14/14</strong>, 12-mode CAR marked double-return <strong>passed</strong>, 14-mode exact density Gram <strong>passed</strong>, complete 2-spin CAR <strong>5/5</strong>.</li>
+<li>Independent verification methods were used (distinct symbolic, spectral, sparse CAR and finite matrix representations), but <strong>no separate review agents</strong> participated.</li>
+</ul>
+<h2>New issues and inherited roots</h2>
+<p><strong>No new root issue was established in this batch.</strong> Adversarial checks that leave a theorem's declared domain (complex pair-time profile, deficient receiver rank, singular overlap, negative general multiport R) were recorded as <strong>scope controls</strong>, not invented in-domain refutations.</p>
+<p>Earlier V-C findings remain open, without duplication: <code>BH-VC-G-0001</code> (normalized gauge-kernel coordinates), <code>BH-VC-G-0002</code> (historic EW numerical reproduction), <code>BH-VC-G-0003</code> (photon-only inclusive ratio domain), and <code>BH-VC-G-0004</code> (historic stationary numeric reproduction). Inherited V-A physical-source roots <code>BH-VA-G-0003</code>, <code>0004</code>, <code>0005</code>, <code>0008</code> remain conditions; this batch neither invalidates nor discharges them.</p>
+<h2>Key independent certificates</h2>
+<ul>
+<li><strong>Current quartet (lines 3408–3531):</strong> exact charged-frame contraction is <code>-1/16-i/12</code>, ordered <code>J=-1/12</code>; direct sympy replay checks the frozen role ordering.</li>
+<li><strong>EW coefficients (lines 3566–3593):</strong> direct canonical change of gauge variables gives <code>s²=3/8</code>, <code>gZ²=16π²/5</code>, <code>e²=3π²/4</code> and the stated left/right electron couplings, conditional at native common heat.</li>
+<li><strong>Schur/memory (lines 3646–4081):</strong> three-dimensional Hermitian commutant and finite <code>n+1</code>-sample converse, corrected physical tag <code>t=N^1/2 e_r</code>, full four-block Schur return, positive Herglotz sign, exact Krylov diagonality and general nonnormal electron variance tested.</li>
+<li><strong>Finite Bose and density (lines 4108–4621):</strong> second CAR commutator retains centered neutral density, finite-charge witness, cap-dependent occupation return and factorial highest-degree words; none is promoted into the full physical mass root.</li>
+<li><strong>Pair/current (lines 4657–5053):</strong> positive joint-support is conditional. Sparse 14-mode fermionic Fock trace reproduces <code>(25/576, 5/96, 0)</code> pure/density/cross; independent 12-mode two-time 10-commutator replay yields <code>Θ=π⁴ Z B_X/4</code>. The full 2-spin 24-cyclic-word expression reproduces five graded-CAR examples, including <code>R=-1/16</code> permitted by the source.</li>
+<li><strong>Complete source/charge jets (lines 5074–5468):</strong> completed Xi values, full nine placements of mixed resolvent jets, nontracial source-charge sign, spectral Gibbs weighted transitions, static chiral chronological zero and primitive particle-hole all-time zero checked at claimed domains. The physical K16 inherited interacting state is not selected by these subcases.</li>
+</ul>
+<h2>All 40 formal claims</h2>
+<table>
+<thead>
+<tr>
+  <th>Claim</th>
+  <th>Source / environment</th>
+  <th style="text-align:right">Lines</th>
+  <th>Disposition</th>
+  <th>Source-bound reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>P5C-094</td>
+  <td><code>p5c:lem:v2167-ordered-branch-signs</code> (lemma)</td>
+  <td style="text-align:right">3408–3417</td>
+  <td>VERIFIED</td>
+  <td>Cyclic singlet-plane sign rederived with symbolic C2 and x+y+z=0; swapping singlet branches reverses quartet sign, with fixed role order.</td>
+</tr>
+<tr>
+  <td>P5C-095</td>
+  <td><code>p5c:cor:v2167-literal-current-quartet</code> (corollary)</td>
+  <td style="text-align:right">3427–3441</td>
+  <td>VERIFIED</td>
+  <td>Exact rooted frame is unitary; direct ordered quartet is -1/16-i/12, J=-1/12, independent of lemma substitution.</td>
+</tr>
+<tr>
+  <td>P5C-096</td>
+  <td><code>p5c:rem:v2217-quartet-inclusive-test</code> (remark)</td>
+  <td style="text-align:right">3449–3458</td>
+  <td>FORMALIZED</td>
+  <td>Nonzero current quartet and its separate physical inclusive-use condition are explicitly distinguished; later comparison is in technical material.</td>
+</tr>
+<tr>
+  <td>P5C-097</td>
+  <td><code>p5c:rem:v2201-quartet-observation-scope</code> (remark)</td>
+  <td style="text-align:right">3462–3468</td>
+  <td>FORMALIZED</td>
+  <td>Physical PMNS interpretation explicitly excluded pending current/pole/detector readout; not an assertion of observed mixing.</td>
+</tr>
+<tr>
+  <td>P5C-098</td>
+  <td><code>p5c:cor:v277-native-lepton-cp-value</code> (corollary)</td>
+  <td style="text-align:right">3505–3523</td>
+  <td>VERIFIED</td>
+  <td>Native CP -1/12 follows on tau-singlet branch using zeta=sqrt3/2; full matrix replay independently verifies.</td>
+</tr>
+<tr>
+  <td>P5C-099</td>
+  <td><code>P5C-UNLABELED-099</code> (remark)</td>
+  <td style="text-align:right">3533–3538</td>
+  <td>FORMALIZED</td>
+  <td>Finite native current value does not determine terminal mass poles, propagation or Majorana source; material scope guard reviewed.</td>
+</tr>
+<tr>
+  <td>P5C-100</td>
+  <td><code>p5c:prop:v2168-native-charged-vertices</code> (proposition)</td>
+  <td style="text-align:right">3566–3593</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Exact Weinberg rotation, s2=3/8, e2=3pi2/4 and normalized Z/e left/right couplings verified; native common-heat, not infrared e.</td>
+</tr>
+<tr>
+  <td>P5C-101</td>
+  <td><code>p5c:prop:v267-native-gauge-right-fibre</code> (proposition)</td>
+  <td style="text-align:right">3608–3638</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Block conjugation with constant right unitary U_R proves left Schur invariance when K_R commutes and all source/terminal data transport; not a physical right-fibre assignment.</td>
+</tr>
+<tr>
+  <td>P5C-102</td>
+  <td><code>p5c:thm:v267-finite-right-orbit-converse</code> (theorem)</td>
+  <td style="text-align:right">3646–3677</td>
+  <td>VERIFIED</td>
+  <td>Hermitian centralizer of J is exactly 3-real-dimensional; n finite moments by Cayley-Hamilton and n+1 regular rational samples suffice; no continuum inference.</td>
+</tr>
+<tr>
+  <td>P5C-103</td>
+  <td><code>p5c:prop:v2168-weak-receiver-columns</code> (proposition)</td>
+  <td style="text-align:right">3774–3788</td>
+  <td>REPRODUCED</td>
+  <td>Normal CAR monomial identity produces weak neutral columns; orthogonality applies on factor-preserving tensor CAR chart, before arbitrary physical quotient.</td>
+</tr>
+<tr>
+  <td>P5C-104</td>
+  <td><code>p5c:thm:v2168-complete-weak-memory</code> (theorem)</td>
+  <td style="text-align:right">3846–3871</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Full four-kernel Schur return and S’=I+Bdagger(z-C)^-2 B checked; residue factor and normalized physical tag tested on a full Hermitian block.</td>
+</tr>
+<tr>
+  <td>P5C-105</td>
+  <td><code>p5c:cor:v2168-positive-weak-return</code> (corollary)</td>
+  <td style="text-align:right">3894–3904</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Upper-plane resolvent negative-imaginary Gram is positive and strictly positive exactly on full F rank; separate rank-deficient attack passed.</td>
+</tr>
+<tr>
+  <td>P5C-106</td>
+  <td><code>p5c:thm:v240-memory-krylov-diagonality</code> (theorem)</td>
+  <td style="text-align:right">3922–3937</td>
+  <td>VERIFIED</td>
+  <td>All first d Krylov moments iff global diagonality for Hermitian d-dimensional complement, including a zero-Gram-but-nondiagonal negative control.</td>
+</tr>
+<tr>
+  <td>P5C-107</td>
+  <td><code>p5c:thm:v240-electron-memory-variance</code> (theorem)</td>
+  <td style="text-align:right">3949–3977</td>
+  <td>VERIFIED</td>
+  <td>Electron line leakage exact projected variance for arbitrary nonnormal complex K; 1/16,1/8,1/8 weight pair-difference special case checked.</td>
+</tr>
+<tr>
+  <td>P5C-108</td>
+  <td><code>p5c:cor:v240-weak-return-cp-and-residual</code> (corollary)</td>
+  <td style="text-align:right">3988–4013</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Exact cubic commutator Jarlskog sign/Delta check and large-z condition B_R=0; only weak marked part, diagonal real-return condition is explicit.</td>
+</tr>
+<tr>
+  <td>P5C-109</td>
+  <td><code>p5c:prop:v2168-coherent-family-return</code> (proposition)</td>
+  <td style="text-align:right">4061–4073</td>
+  <td>VERIFIED</td>
+  <td>P rank two with inverse/direct null, C-conjugation full injectivity, diagonal charged and neutral equivalence checked.</td>
+</tr>
+<tr>
+  <td>P5C-110</td>
+  <td><code>p5c:lem:v2174-bosonic-grading-word</code> (lemma)</td>
+  <td style="text-align:right">4108–4128</td>
+  <td>REPRODUCED</td>
+  <td>Bose grading adjoint commutator and full H_R term retained by source; claimed identity is direct operator algebra.</td>
+</tr>
+<tr>
+  <td>P5C-111</td>
+  <td><code>p5c:v2169:b7:prop:weakgram</code> (proposition)</td>
+  <td style="text-align:right">4166–4182</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Normalized finite tensor trace gives common neutral-role receiver Gram kappa I and no physical state selection; requires identical external/occupation slots.</td>
+</tr>
+<tr>
+  <td>P5C-112</td>
+  <td><code>p5c:v2169:b8:thm:weaksecond</code> (theorem)</td>
+  <td style="text-align:right">4244–4261</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Second CAR/finite Bose commutator gives exactly q_r D-Z_r K with sign and order; supported by direct Fock construction.</td>
+</tr>
+<tr>
+  <td>P5C-113</td>
+  <td><code>p5c:v2169:b8:thm:densitygram</code> (theorem)</td>
+  <td style="text-align:right">4289–4316</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Centered neutral density Fock Gram 3/4, finite charge commutator witness and strict bound reproduced on finite charged X; state/compressed quotient separately guarded.</td>
+</tr>
+<tr>
+  <td>P5C-114</td>
+  <td><code>p5c:v2169:b13:thm:vacuumreturn</code> (theorem)</td>
+  <td style="text-align:right">4460–4476</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Cap N=1,2,3 direct occupation matrices reproduce first two coordinate returns and boundary-sensitive fourth-moment defect.</td>
+</tr>
+<tr>
+  <td>P5C-115</td>
+  <td><code>p5c:v2169:b13:thm:ladder</code> (theorem)</td>
+  <td style="text-align:right">4518–4535</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Exact 3(N+1) block tridiagonal ladder and Schur continued fraction; collective cyclicity follows invertible links for chi nonzero on bare constituent.</td>
+</tr>
+<tr>
+  <td>P5C-116</td>
+  <td><code>p5c:cor:v2174-highest-degree-weak-word</code> (corollary)</td>
+  <td style="text-align:right">4549–4571</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Highest-degree 2k and 2k+1 upward products fixed by unitary C, factorial and sqrt(k+1); no full-H polynomial claim.</td>
+</tr>
+<tr>
+  <td>P5C-117</td>
+  <td><code>p5c:v2171:thm:positive</code> (theorem)</td>
+  <td style="text-align:right">4657–4674</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Positive joint-support equivalence and lower bound are exact HS norms on factored R&gt;=0; singular R/B counterexample confirms necessary overlap guard.</td>
+</tr>
+<tr>
+  <td>P5C-118</td>
+  <td><code>p5c:v2171:thm:pairreceiver</code> (theorem)</td>
+  <td style="text-align:right">4762–4781</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Full three E-family 14-CAR sparse Fock replay yields 25/576 pure, 5/96 centered, zero cross; pair/density operator decomposition checked.</td>
+</tr>
+<tr>
+  <td>P5C-119</td>
+  <td><code>p5c:v2171:thm:markedmixed</code> (theorem)</td>
+  <td style="text-align:right">4843–4858</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Independent full 12-CAR double five-mark commutator with nonzero finite charge-lowering X gives Z B_X/4 with exact complex phase.</td>
+</tr>
+<tr>
+  <td>P5C-120</td>
+  <td><code>p5c:v2171:cor:spinoverlap</code> (corollary)</td>
+  <td style="text-align:right">4903–4914</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Common spin K factor reduces complete return to det(KdagK) times bosonic coefficient; independent generic complex finite-coefficient tests passed.</td>
+</tr>
+<tr>
+  <td>P5C-121</td>
+  <td><code>p5c:v2171:thm:matrixweak</code> (theorem)</td>
+  <td style="text-align:right">4964–4987</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Full 24-word table equals compact noncommutative R; five direct CAR/Fock graded-boson examples including negative R agree. General positivity appropriately not asserted.</td>
+</tr>
+<tr>
+  <td>P5C-122</td>
+  <td><code>p5c:v2171:cor:complementaryslots</code> (corollary)</td>
+  <td style="text-align:right">5003–5014</td>
+  <td>VERIFIED</td>
+  <td>b=c=0 substitution gives four Hilbert-Schmidt norms and nonzero criterion.</td>
+</tr>
+<tr>
+  <td>P5C-123</td>
+  <td><code>p5c:v2171:cor:rowreturn</code> (corollary)</td>
+  <td style="text-align:right">5021–5030</td>
+  <td>VERIFIED</td>
+  <td>c=d=0 substitution gives squared commutator; noncommuting finite charge-lowering example checked.</td>
+</tr>
+<tr>
+  <td>P5C-124</td>
+  <td><code>p5c:v2171:cor:cap-row-cp</code> (corollary)</td>
+  <td style="text-align:right">5039–5049</td>
+  <td>REPRODUCED</td>
+  <td>Exact N/(dB+1) cap coefficient follows from cited IV cap norm if same physical complete two-port boundary is instantiated; not assumed generic.</td>
+</tr>
+<tr>
+  <td>P5C-125</td>
+  <td><code>p5c:thm:next187-completed-local-pair-current</code> (theorem)</td>
+  <td style="text-align:right">5074–5103</td>
+  <td>VERIFIED</td>
+  <td>Three native rank-one Xi values 0,2/9,1/18 checked exactly; trace of Hermitian product real and positive coincident X square HS identity verified.</td>
+</tr>
+<tr>
+  <td>P5C-126</td>
+  <td><code>p5c:thm:next187-complete-coupling-covariance</code> (theorem)</td>
+  <td style="text-align:right">5118–5155</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Schur first and all nine mixed-derivative terms checked by separate finite-difference oracles; common unitary transport cancels internal generators.</td>
+</tr>
+<tr>
+  <td>P5C-127</td>
+  <td><code>p5c:thm:next187-matched-charge-orbit</code> (theorem)</td>
+  <td style="text-align:right">5185–5205</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Exact charge orbit unitary transport preserves whole packet with state matched; charge fixed-state corollary requires Q-invariant rho.</td>
+</tr>
+<tr>
+  <td>P5C-128</td>
+  <td><code>p5c:thm:next187-complete-nontracial-charge-jet</code> (theorem)</td>
+  <td style="text-align:right">5222–5246</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Complete pair-graded initial charge jets from exact CAR commutator and invariant state, including correct vacuum sign and nontracial weighted trace.</td>
+</tr>
+<tr>
+  <td>P5C-129</td>
+  <td><code>p5c:cor:next187-complete-graded-charge-evaluation</code> (corollary)</td>
+  <td style="text-align:right">5270–5288</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>All same-charge insertions must be summed before commutator; grade-selection yields 2r[V_r dagger,V_r] and direct full-history route remains distinct.</td>
+</tr>
+<tr>
+  <td>P5C-130</td>
+  <td><code>p5c:v2188:thm:completegibbsjet</code> (theorem)</td>
+  <td style="text-align:right">5333–5347</td>
+  <td>VERIFIED</td>
+  <td>Any exact fixed finite H spectral Gibbs or ground projection commutes with H; first and second full charge jets vanish by cyclicity, without Q-invariance.</td>
+</tr>
+<tr>
+  <td>P5C-131</td>
+  <td><code>p5c:v2188:thm:spectralpairjet</code> (theorem)</td>
+  <td style="text-align:right">5362–5380</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Complete prepair Hc-Gibbs state spectral weights yield weighted transition difference and negative energy-raising sign; no interacting K16 preparation inferred.</td>
+</tr>
+<tr>
+  <td>P5C-132</td>
+  <td><code>p5c:v2188:thm:chiralchronologicalzero</code> (theorem)</td>
+  <td style="text-align:right">5394–5419</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Static chiral involution and real η time profile cancel integrated pair coefficient for both filled-negative and Gibbs, independently tested with complex T and asymmetric η; complex-η mutant does not.</td>
+</tr>
+<tr>
+  <td>P5C-133</td>
+  <td><code>p5c:v2188:cor:primitivealltimezero</code> (corollary)</td>
+  <td style="text-align:right">5438–5455</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Particle-hole canonical automorphism produces invariant complete primitive unitary evolution and constant N=2; three rooted complex g choices tested with moving real m,η.</td>
+</tr>
+</tbody>
+</table>
+<h2>Selected nonformal but consumed results</h2>
+<ul>
+<li><code>3396–3404</code> — Rooted X_G, C2, fixed neutral ordering and quartet direction; no spontaneous physical PMNS identification <strong>[REPRODUCED]</strong>.</li>
+<li><code>3553–3564</code> — Q=-I on e_L and e_R at source heat datum; family-identity gauge action <strong>[REPRODUCED]</strong>.</li>
+<li><code>3715–3749</code> — Explicit unitary C and P, native charged-current strength pi and no pole promise <strong>[VERIFIED-CONDITIONAL]</strong>.</li>
+<li><code>3799–3833</code> — Stationary source normalization N^-1/2 and correct physical tag t=N^1/2 e_r <strong>[REPRODUCED]</strong>.</li>
+<li><code>3835–3844</code> — Complete memory K_W,L_WR,L_RW,K_R use one full C_mem and common z <strong>[REPRODUCED]</strong>.</li>
+<li><code>4025–4059</code> — Three upper coherent C diag(k) Cdag contractions; no conjugating z at complex frequency <strong>[VERIFIED]</strong>.</li>
+<li><code>4093–4101</code> — Fixed epsilon root with source visibility not implied by scalar memory or terminal neutral entries <strong>[FORMALIZED]</strong>.</li>
+<li><code>4347–4370</code> — Bare marked fourth moment pi^4 (tau D2 + 3/4 tau K2) and positive fourth defect, not complete-H moment <strong>[REPRODUCED]</strong>.</li>
+<li><code>4372–4404</code> — Multi-slot second-commutator retains noncommuting same-charge Bose terms and full other H marks <strong>[REPRODUCED]</strong>.</li>
+<li><code>4406–4424</code> — Physical quotient/closure application remains unevaluated, no state- or cancellation assumption made <strong>[FORMALIZED]</strong>.</li>
+<li><code>4491–4516</code> — Bare ladder alternating charged neutral 3(N+1) dimension and W_{2k},W_{2k+1} coefficient exact <strong>[REPRODUCED]</strong>.</li>
+<li><code>4580–4621</code> — Highest degree cap and bare ladder not promoted to full physical H or terminal mass roots <strong>[FORMALIZED]</strong>.</li>
+<li><code>4721–4759</code> — Oriented primitive pair+current marks retain actual X, source spin and family projectors <strong>[REPRODUCED]</strong>.</li>
+<li><code>4829–4840</code> — Full mathematical trace norm of two marked receivers and nonzero finite charge commutator <strong>[VERIFIED-CONDITIONAL]</strong>.</li>
+<li><code>4942–4963</code> — Oriented spin weak word all K_alpha X_alpha† combined before source coefficient contraction <strong>[REPRODUCED]</strong>.</li>
+<li><code>4999–5001</code> — Common factor K Xdag is specialization, not generic positivity condition <strong>[VERIFIED-CONDITIONAL]</strong>.</li>
+<li><code>5164–5183</code> — Moving spectral argument, source jets and stationary cross contacts are retained in complete generator <strong>[REPRODUCED]</strong>.</li>
+<li><code>5214–5219</code> — Matched charge orbit is not relative CP history or physical K16 phase <strong>[FORMALIZED]</strong>.</li>
+<li><code>5261–5268</code> — Empty/half/filled support initial jet sign and operator-valued coefficient exclusion <strong>[REPRODUCED]</strong>.</li>
+<li><code>5348–5360</code> — For moving full H, explicit dot H commutator survives; no instantaneous Gibbs reset <strong>[VERIFIED-CONDITIONAL]</strong>.</li>
+<li><code>5476–5489</code> — Physical charge history and baryon export require complete same-action and state/history; local CP marker is not physical yield <strong>[FORMALIZED]</strong>.</li>
+<li><code>5516–5534</code> — K diag(t,-t,0) hides all diagonal returns while upper mixed terms remain, regular gap/visibility needed for short-root bracket <strong>[VERIFIED-CONDITIONAL]</strong>.</li>
+</ul>
+<h2>DAG proposal, propagation and source boundary</h2>
+<ul>
+<li><strong>12</strong> scoped condition candidate nodes; each marked <code>FIRST-KNOWN_PENDING_GLOBAL_CANONICAL_SEARCH</code>, not globally asserted canonical or physically occurring. They must be matched against existing upstream condition nodes before final merge.</li>
+<li><strong>50</strong> typed dependency proposals, including nonpromoting <code>SOURCE_CONTEXT</code> edges; all source labels resolve within the current .tex corpus. No citation-only edge was upgraded into a theorem proof.</li>
+<li><strong>5</strong> exact source-boundary records preserve generated native coefficient versus actual physical state/port/limit scope.</li>
+<li>No new gap root; the four prior V-C root IDs carry forward, with proposed relations but no fabricated cross-paper observable impact.</li>
+</ul>
+<h2>Evidence files and reproducibility</h2>
+<p><code>Paper5C-AuditBatch3-v1_3.json</code> includes full SOURCE-AS-PRINTED and proof text for each of the 40 result objects, typed source scopes, status, evidence IDs and proposed dependencies.
+<code>Paper5C-ExactChecksBatch3-v1_3.py/.json</code> reproduces 32 checks; <code>Paper5C-AdversarialChecksBatch3-v1_3.py/.json</code> reproduces 14; the two sparse CAR sources and Gram replays include independent finite-operator matrix tests. Checks are proof evidence only for the propositions they target, not source selection.
+<strong>Checkpoint validation:</strong> {'paper': 'Paper5C', 'batch': 3, 'source_sha256_verified': True, 'formal_total': 198, 'formal_new': 40, 'cumulative': 133, 'expected_source_line_boundary': 5545, 'source_last_line': 7690, 'unique_claim_ids': True, 'source_exact_span_count': 40, 'exact_pass': True, 'adversarial_pass': True, 'fock_pass': True, 'edges_proposed': 50, 'material_edges_qualified': 48, 'conditions_proposed_for_global_dedup': 12, 'old_findings_preserved': True, 'no_source_edited': True, 'archive_zip_not_written': True, 'verification_level_limit': 'No separate review agents; exact/fock checks performed by one executor; only partial manuscript coverage'}.</p>
+<h2>Next boundary</h2>
+<p><strong>Line 5545</strong> — neutral source, propagation and experimental comparison, followed by signed charge/baryon history. The final DAG and audit ZIPs remain intentionally deferred until the last batch; when released only the latest archive members/versions will be retained.</p>
+<h3>Batch 4: original source-bound report</h3>
+<h1>Paper V-C — rigorous verification DAG audit, Batch 4 (final source batch)</h1>
+<p><strong>Source freeze:</strong> <code>Paper5C-InteractionResponse-v2_171.tex</code> SHA-256 <code>55a94a2ed099bee3288e098018a673ba255cf0275e0528b3af70d0715146b9b7</code>; Framework v2.371. <strong>Scope:</strong> lines 5545–7690, claims P5C-134 through P5C-198 (65); all 198/198 formal environments now reviewed.</p>
+<p><strong>Verdict:</strong> <code>FULLY_AUDITED_WITH_OPEN_GAPS</code> (all source claims have a disposition; mathematical and physical closure are not asserted). Status counts in this batch: {'FORMALIZED': 19, 'VERIFIED-CONDITIONAL': 20, 'REPRODUCED': 17, 'VERIFIED': 7, 'UNRESOLVED': 2}.</p>
+<p><strong>Checks:</strong> 29 exact/matrix/adversarial controls all passed, including in-domain refutation of the overly broad <em>coarse graph → scalar commutant</em> inference and physical-units challenge for D25. Single executor, not separate agents.</p>
+<h2>New root issues</h2>
+<p><strong>BH-VC-G-0005 — MISSING_CONDITION (moderate)</strong>: lines 6553–6559, <code>p5c:cor:v269-visible-primitivity</code>. The visible interaction graph is connected at the named coarse block level. But connectivity of represented block labels does not establish scalar commutant of the full transition algebra on each exact-charge sector. An explicit reversible detailed-balanced three-block positive-jump system with an unexchanged two-state spectator has connected block edges but non-scalar commutant <code>I_3 ⊗ M_2</code>. It cannot be primitive. Actual action source may add the missing mixing, but this corollary has not proved it. Requires exact generated jump/Hamiltonian commutant analysis for each active kinetic sector. Earliest source origin is this corollary; no unproved physical nonprimitivity is inferred.</p>
+<p><strong>BH-VC-G-0006 — TYPE_OR_DOMAIN (minor)</strong>: lines 7224–7229, <code>p5c:sec:v2201-derived-d25</code>. The displayed charge derivative uses <code>i[H,Q]</code> without a local <code>hbar=1</code> declaration, while 6466 and 6326 restore <code>i[H,Q]/hbar</code>. On a two-state physical Hamiltonian example with <code>hbar=2</code> the printed expression is twice the real derivative. The expression remains true in declared natural units or when <code>H</code> means frequency generator <code>H_phys/hbar</code>; this is a unit/typing qualification, not a defect in the entropy bound or the proper Ward identity.</p>
+<h2>Inherited prior findings</h2>
+<p>V-C earlier roots 0001–0004 retained with their original line-level certificates; V-A prior roots 0003/0004 (BL2 physical pair insertion/occurring owner), 0005/0008 (actual odd-root source and triality source action) inherited on their actual material consumers. Source explicitly supersedes old v2.70/74 statuses by v2.77/80; historical claims are not counted as contemporary contradictions.</p>
+<h2>Source-bound claim ledger</h2>
+<table>
+<thead>
+<tr>
+  <th>Claim</th>
+  <th>Label</th>
+  <th>Lines</th>
+  <th>Verdict</th>
+  <th>Source-matched review</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>P5C-134</td>
+  <td><code>p7v2:def:v266-lepton-current-map</code></td>
+  <td>5550–5562</td>
+  <td>FORMALIZED</td>
+  <td>Defines an incidence between two canonically evaluated terminal roles; no masses or PMNS element arise by definition.</td>
+</tr>
+<tr>
+  <td>P5C-135</td>
+  <td><code>p7v2:prop:v266-oscillation-current-kernel</code></td>
+  <td>5564–5576</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Algebraic phase sandwich is exact for supplied role phases and equal coherent source/detector boundaries; physical probability identification remains separate.</td>
+</tr>
+<tr>
+  <td>P5C-136</td>
+  <td><code>P5C-UNLABELED-136</code></td>
+  <td>5578–5585</td>
+  <td>FORMALIZED</td>
+  <td>External Casas--Ibarra and Takagi dictionaries are explicitly non-native comparison structures.</td>
+</tr>
+<tr>
+  <td>P5C-137</td>
+  <td><code>p7v2:thm:v267-generated-lepton-current-incidence</code></td>
+  <td>5594–5616</td>
+  <td>REPRODUCED</td>
+  <td>Finite weak-current composition from V-A/V-B is clear; older closure phrase must be read with the later v2.77 native finite evaluation and separate physical pole/phase bridge.</td>
+</tr>
+<tr>
+  <td>P5C-138</td>
+  <td><code>p7v2:cor:v267-former-pmns-target-exhausted</code></td>
+  <td>5618–5630</td>
+  <td>REPRODUCED</td>
+  <td>Retires the Dirac-PMNS mass-frame ontology only at structural level; a physical mixing observable still needs complete source/propagation/detector.</td>
+</tr>
+<tr>
+  <td>P5C-139</td>
+  <td><code>p7v2:thm:v267-neutral-propagation-phase</code></td>
+  <td>5632–5670</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Positive-frequency neutral phase follows on the explicitly assumed terminal-energy/pole rest bridge and one-particle block, not a native unconditioned pole equality.</td>
+</tr>
+<tr>
+  <td>P5C-140</td>
+  <td><code>p7v2:cor:v267-n56-gap-ratio</code></td>
+  <td>5672–5686</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>N56 x^3=192 squared-gap ratio x^4/(x^2+1)=32.31051155615794 independently and exactly reproduced; depends on rest/pole bridge.</td>
+</tr>
+<tr>
+  <td>P5C-141</td>
+  <td><code>p7v2:thm:v268-generated-quark-current</code></td>
+  <td>5694–5716</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Family-blind charged weak current W_u†W_d follows from supplied full-rank action evaluations; actual quark table and physical CKM comparison require the cited output certificate.</td>
+</tr>
+<tr>
+  <td>P5C-142</td>
+  <td><code>p7v2:cor:v268-flavor-sensitive-current-rule</code></td>
+  <td>5718–5726</td>
+  <td>REPRODUCED</td>
+  <td>A domain-consistent rule consuming native C_ud/C_eν rather than independent CKM/PMNS; not a new mass derivation.</td>
+</tr>
+<tr>
+  <td>P5C-143</td>
+  <td><code>p7v2:rem:v268-majorana-seesaw-scope</code></td>
+  <td>5728–5735</td>
+  <td>FORMALIZED</td>
+  <td>Type-I seesaw and Majorana formulas remain external comparison branches, not native mass constructors.</td>
+</tr>
+<tr>
+  <td>P5C-144</td>
+  <td><code>p5c:cor:v276-tau-singlet-zeta-jarlskog</code></td>
+  <td>5758–5776</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Tau-singlet row transposition reverses the historic mu-singlet Jarlskog sign; sign in formula is correct, historical scalar-open status superseded by v2.77.</td>
+</tr>
+<tr>
+  <td>P5C-145</td>
+  <td><code>P5C-UNLABELED-145</code></td>
+  <td>5787–5792</td>
+  <td>FORMALIZED</td>
+  <td>Source correctly withholds a charge-plane orientation value from unconsumed R_G data; no physical prior premise silently created.</td>
+</tr>
+<tr>
+  <td>P5C-146</td>
+  <td><code>p5c:cor:v229-complete-family-reality-obstruction</code></td>
+  <td>5801–5820</td>
+  <td>REPRODUCED</td>
+  <td>Real-structure iff is an exact conditional on the specified common charged chart and imported Y=±X proof, not a cosmological CP/charge inference.</td>
+</tr>
+<tr>
+  <td>P5C-147</td>
+  <td><code>p5c:cor:v229-neutral-gap-odd-trace-signature</code></td>
+  <td>5829–5847</td>
+  <td>REPRODUCED</td>
+  <td>Linear odd-normal image substitutions and Xi=2 delta^2 are source-matched; the one-dimensional restriction is not generalized to all odd normals.</td>
+</tr>
+<tr>
+  <td>P5C-148</td>
+  <td><code>p5c:rem:v229-k16-charge-firewall</code></td>
+  <td>5856–5870</td>
+  <td>REPRODUCED</td>
+  <td>Nonzero family odd coefficient is not itself charge production; given δK(s) has a yτ=yμ zero despite δ≠0.</td>
+</tr>
+<tr>
+  <td>P5C-149</td>
+  <td><code>p7v2:thm:thermal-trace-nonunique</code></td>
+  <td>5887–5927</td>
+  <td>VERIFIED</td>
+  <td>Every U7⊕U9 invariant full matrix state has density (w/7)P7+((1-w)/9)P9; only w=7/16 is tracial on all M16.</td>
+</tr>
+<tr>
+  <td>P5C-150</td>
+  <td><code>P5C-UNLABELED-150</code></td>
+  <td>5929–5943</td>
+  <td>FORMALIZED</td>
+  <td>Correctly separates block-algebra traces, full-algebra invariant states, and actual thermal preparation.</td>
+</tr>
+<tr>
+  <td>P5C-151</td>
+  <td><code>p7v2:cor:rank-one-overlap</code></td>
+  <td>5968–5980</td>
+  <td>VERIFIED</td>
+  <td>I16/16 rank-one projection overlap is 1/16 exactly, without kinetic-efficiency identification.</td>
+</tr>
+<tr>
+  <td>P5C-152</td>
+  <td><code>p7v2:cor:rank-one-overlap-shell-origin</code></td>
+  <td>5988–6002</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Tracial 1/16 equals the imported finite Hurwitz shell counting atom only on matched shell-order 16; no thermal abundance follows.</td>
+</tr>
+<tr>
+  <td>P5C-153</td>
+  <td><code>P5C-UNLABELED-153</code></td>
+  <td>6004–6018</td>
+  <td>REPRODUCED</td>
+  <td>Relativistic MB and FD yields differ from 1/(16g*); source does not equate projector rank with equilibrium yield.</td>
+</tr>
+<tr>
+  <td>P5C-154</td>
+  <td><code>p7v2:def:kinetic-system</code></td>
+  <td>6020–6040</td>
+  <td>FORMALIZED</td>
+  <td>Defines conditional two-state kinetics, collisional and washout inputs and cosmological initial-value problem; nothing solved.</td>
+</tr>
+<tr>
+  <td>P5C-155</td>
+  <td><code>p7v2:thm:efficiency-output</code></td>
+  <td>6042–6048</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Changing washout while holding projector rank fixed gives different finite-time or late outcomes; no rank-only efficiency formula.</td>
+</tr>
+<tr>
+  <td>P5C-156</td>
+  <td><code>p7v2:prop:gstar</code></td>
+  <td>6062–6082</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Standard 24 vector helicities + 4 Higgs =28; 90 fermions at 7/8 gives 427/4 on stated occupied-bath assumptions.</td>
+</tr>
+<tr>
+  <td>P5C-157</td>
+  <td><code>p7:cor:v2211-right-neutral-bath-count</code></td>
+  <td>6091–6105</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>An occupied right-neutral Weyl+anti pair contributes 7/4 each; all three give 112, with no population/temperature selection.</td>
+</tr>
+<tr>
+  <td>P5C-158</td>
+  <td><code>p7v2:prop:standard-conversions</code></td>
+  <td>6113–6131</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Imported 28/79 sphaleron and approximate 7.04 conversion valid on SM chemical-equilibrium/late entropy domains, not native charge yield.</td>
+</tr>
+<tr>
+  <td>P5C-159</td>
+  <td><code>p7:prop:v2211-right-neutral-spectator-domain</code></td>
+  <td>6142–6165</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Chemical-potential system solved independently: h=-12q/7, Ltot=-36q, B=12q, ratio 1/4; stored nonactive L_R branch retains 28/79.</td>
+</tr>
+<tr>
+  <td>P5C-160</td>
+  <td><code>p7v2:prop:baryon-benchmark</code></td>
+  <td>6194–6227</td>
+  <td>VERIFIED</td>
+  <td>Five declared benchmark inputs give Y_B-L, Y_B, eta_B exactly at printed precision; this is status B arithmetic, not a prediction.</td>
+</tr>
+<tr>
+  <td>P5C-161</td>
+  <td><code>p7v2:prop:dark-radiation-boundary</code></td>
+  <td>6240–6249</td>
+  <td>REPRODUCED</td>
+  <td>Finite three-active light role count is conditional on Urole and compatible member; N_eff requires actual distribution, decoupling and reheating.</td>
+</tr>
+<tr>
+  <td>P5C-162</td>
+  <td><code>p5c:prop:v272-bl2-owner-corealized</code></td>
+  <td>6261–6274</td>
+  <td>UNRESOLVED</td>
+  <td>Physical K16 pair co-realization is imported from V-A as a closure but upstream audit records BH-VA-G-0003/0004; dependent V-C occurrence not independently discharged.</td>
+</tr>
+<tr>
+  <td>P5C-163</td>
+  <td><code>p5c:cor:v272-native-baryogenesis-phase-frontier</code></td>
+  <td>6276–6290</td>
+  <td>REPRODUCED</td>
+  <td>Historic initial BL2 phase-lock frontier is superseded later by v2.74/80; no physical pair self-phase inferred.</td>
+</tr>
+<tr>
+  <td>P5C-164</td>
+  <td><code>p5c:rem:v272-heavy-neutral-still-conditional</code></td>
+  <td>6292–6298</td>
+  <td>FORMALIZED</td>
+  <td>Optional heavy-neutral branch is kept distinct from native K16 pair owner.</td>
+</tr>
+<tr>
+  <td>P5C-165</td>
+  <td><code>p5c:thm:v273-bl2-charge-response</code></td>
+  <td>6306–6339</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Finite CAR [Q,A]=-2A gives d&lt;Q&gt;/dt=-2 Im&lt;A&gt;/hbar and conditional phase Ward response; occurrence, connection and history remain open.</td>
+</tr>
+<tr>
+  <td>P5C-166</td>
+  <td><code>p5c:cor:v273-bl2-relative-phase-target</code></td>
+  <td>6351–6374</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Radial parallel Delta=eta Delta* gives J_K=0; general covariant phase formula is valid as conditional identity, later retired as active physical phase target.</td>
+</tr>
+<tr>
+  <td>P5C-167</td>
+  <td><code>p5c:rem:v273-bl2-response-scope</code></td>
+  <td>6376–6389</td>
+  <td>FORMALIZED</td>
+  <td>No broad conclusion from vanishing radial pair self-trajectory; full charge state/history and support normalization still required.</td>
+</tr>
+<tr>
+  <td>P5C-168</td>
+  <td><code>p5c:cor:v280-native-baryogenesis-frontier</code></td>
+  <td>6400–6460</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Source says CP_BL2 kinetic incidence OPEN and identifies same-parent complete interaction word as next actual obligation; cyclic state inheritance is conditional, not yield.</td>
+</tr>
+<tr>
+  <td>P5C-169</td>
+  <td><code>p5c:rem:v2187-native-charge-yield-scope</code></td>
+  <td>6462–6480</td>
+  <td>REPRODUCED</td>
+  <td>Complete finite charge and baryon export are distinct same-history operators; no additive generator/current double count or numerical yield.</td>
+</tr>
+<tr>
+  <td>P5C-170</td>
+  <td><code>p5c:rem:v280-heavy-neutral-generic-scope</code></td>
+  <td>6482–6489</td>
+  <td>FORMALIZED</td>
+  <td>Generic and optional heavy neutral histories retain initial-state/owner conditions outside cyclic lineage.</td>
+</tr>
+<tr>
+  <td>P5C-171</td>
+  <td><code>p5c:thm:v269-visible-interaction-graph</code></td>
+  <td>6534–6551</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Visible QCD, EW, hypercharge and charged Yukawa interaction block incidence connects listed named coarse blocks, as graph-theoretic result.</td>
+</tr>
+<tr>
+  <td>P5C-172</td>
+  <td><code>p5c:cor:v269-visible-primitivity</code></td>
+  <td>6553–6560</td>
+  <td>UNRESOLVED</td>
+  <td>Positive spanning adjacency of coarse block graph does not imply scalar commutant of complete interaction algebra or primitive Lindbladian; missing irreducibility across internal multiplicities, source issue G-0005.</td>
+</tr>
+<tr>
+  <td>P5C-173</td>
+  <td><code>p5c:rem:v269-heavy-neutral-firewall</code></td>
+  <td>6562–6572</td>
+  <td>FORMALIZED</td>
+  <td>Gauge singlet heavy neutral does not join gauge-visible graph without a separately occurring neutral/Yukawa interaction.</td>
+</tr>
+<tr>
+  <td>P5C-174</td>
+  <td><code>p5c:prop:v270-native-baryogenesis-first-owner</code></td>
+  <td>6579–6593</td>
+  <td>REPRODUCED</td>
+  <td>Historical v2.70 OPEN_ACTION_OWNER status is expressly superseded by later v2.72 co-realization claim; not an active contradiction.</td>
+</tr>
+<tr>
+  <td>P5C-175</td>
+  <td><code>p5c:rem:v270-heavy-neutral-conditional-branch</code></td>
+  <td>6595–6604</td>
+  <td>FORMALIZED</td>
+  <td>Heavy-neutral seesaw construction is explicitly optional and not asserted to constitute native charge-two pair.</td>
+</tr>
+<tr>
+  <td>P5C-176</td>
+  <td><code>p5c:cor:v274-lepton-current-formal-open</code></td>
+  <td>6612–6629</td>
+  <td>REPRODUCED</td>
+  <td>Historical v2.74 formal-open lepton evaluation is superseded by v2.77 normalized finite charged frame; distinct pole/readout gap persists.</td>
+</tr>
+<tr>
+  <td>P5C-177</td>
+  <td><code>p5c:thm:v274-native-lepton-cp-invariant</code></td>
+  <td>6631–6655</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Cubic current commutator is gauge/frame invariant; Vandermonde identity matches native matrix; physical poles and source map not implied.</td>
+</tr>
+<tr>
+  <td>P5C-178</td>
+  <td><code>p5c:cor:v274-zeta-jarlskog-reduction</code></td>
+  <td>6663–6686</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Singlet-plane J=+zeta/(6sqrt3) correct for mu-singlet historic branch; tau-singlet sign transposition and v2.77 numeric closure applied.</td>
+</tr>
+<tr>
+  <td>P5C-179</td>
+  <td><code>p5c:cor:v274-bl2-phase-lock-retired</code></td>
+  <td>6697–6716</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Fixed parallel radial pair self-phase vanishes; an extra scalar phase would be a new deformation, no prohibition of other CP owners claimed.</td>
+</tr>
+<tr>
+  <td>P5C-180</td>
+  <td><code>p5c:cor:v274-native-baryogenesis-frontier</code></td>
+  <td>6718–6731</td>
+  <td>REPRODUCED</td>
+  <td>Historical v2.74 owner frontier later superseded by actual v2.80 complete-parent CP/BL2 incidence obligation.</td>
+</tr>
+<tr>
+  <td>P5C-181</td>
+  <td><code>p7v2:def:thermal-export</code></td>
+  <td>6742–6772</td>
+  <td>FORMALIZED</td>
+  <td>Thermal export packet explicitly typed as dependent interfaces; native C_eν does not select reheating or eta_B.</td>
+</tr>
+<tr>
+  <td>P5C-182</td>
+  <td><code>p7v2:prop:no-reheating-backflow</code></td>
+  <td>6774–6781</td>
+  <td>REPRODUCED</td>
+  <td>Cycle-free no-backflow chronology is valid as DAG direction policy; independent later reheating may be compared, not used to justify own prior premise.</td>
+</tr>
+<tr>
+  <td>P5C-183</td>
+  <td><code>P5C-UNLABELED-183</code></td>
+  <td>6790–6798</td>
+  <td>FORMALIZED</td>
+  <td>Later background geometry only discharges that component of kinetic interface; no thermal initial condition/collisions inferred.</td>
+</tr>
+<tr>
+  <td>P5C-184</td>
+  <td><code>p7:thm:v236-five-interface-types</code></td>
+  <td>7015–7052</td>
+  <td>REPRODUCED</td>
+  <td>Five EM,VAC,CP,NU,KIN labels retyped as claim-scoped interfaces, not five physical axioms or five independently proved observables.</td>
+</tr>
+<tr>
+  <td>P5C-185</td>
+  <td><code>p7:cor:v236-baryogenesis-ancestry</code></td>
+  <td>7054–7066</td>
+  <td>REPRODUCED</td>
+  <td>High-energy source ancestry excludes independent EM endpoint and 1/16 efficiency; actual action-generated vertices remain conditional.</td>
+</tr>
+<tr>
+  <td>P5C-186</td>
+  <td><code>P5C-UNLABELED-186</code></td>
+  <td>7093–7104</td>
+  <td>FORMALIZED</td>
+  <td>Historical selector firewall preserves chronology; no later output retroactively selects earlier geometry.</td>
+</tr>
+<tr>
+  <td>P5C-187</td>
+  <td><code>p5c:prop:v321-petersen-color-arrows</code></td>
+  <td>7369–7385</td>
+  <td>VERIFIED</td>
+  <td>SU3 Hom(3,(1+3)⊗G) ≅G of complex dimension 3 follows by Schur and trivial family action.</td>
+</tr>
+<tr>
+  <td>P5C-188</td>
+  <td><code>p5c:prop:v321-petersen-no-automatic-insertion</code></td>
+  <td>7396–7407</td>
+  <td>REPRODUCED</td>
+  <td>A5 mirror and central Z2 are not generated color gauge insertions; source explicitly requires same-action coupling certificate before any physical modification.</td>
+</tr>
+<tr>
+  <td>P5C-189</td>
+  <td><code>P5C-UNLABELED-189</code></td>
+  <td>7419–7428</td>
+  <td>FORMALIZED</td>
+  <td>Petersen action test is explicitly proposed and unexecuted; no physical hadron/vertex claim.</td>
+</tr>
+<tr>
+  <td>P5C-190</td>
+  <td><code>p5c:prop:v338-intertwiner-ambiguity</code></td>
+  <td>7444–7461</td>
+  <td>VERIFIED</td>
+  <td>A4 restrictions 1+3×3 and regular 1+1prime+1doubleprime+3×3 give Hom dimension 1+9=10; isometric intertwiner remains nonunique.</td>
+</tr>
+<tr>
+  <td>P5C-191</td>
+  <td><code>P5C-UNLABELED-191</code></td>
+  <td>7469–7476</td>
+  <td>FORMALIZED</td>
+  <td>Isometric projector and ratio 25/2 are not pole masses; no arbitrary rest energy inserted.</td>
+</tr>
+<tr>
+  <td>P5C-192</td>
+  <td><code>p5c:thm:v348-ew-gram-eigenvalues</code></td>
+  <td>7484–7519</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Gauge orbit Gram matrix, null photon direction, nonzero masses and 8/5 heat ratio checked after canonical kinetic whitening; quadratic response not interacting poles.</td>
+</tr>
+<tr>
+  <td>P5C-193</td>
+  <td><code>p5c:thm:v348-weak-memory-coherence-norm</code></td>
+  <td>7532–7558</td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Frobenius off-diagonal weak memory law and sharp 11/12–1 bounds independently checked for arbitrary complex k on N=I, diagonal KW.</td>
+</tr>
+<tr>
+  <td>P5C-194</td>
+  <td><code>p5c:cor:v348-coherent-diagonal-blindness</code></td>
+  <td>7581–7594</td>
+  <td>VERIFIED</td>
+  <td>Left and right null lines of stochastic P checked; full coherent current remains invertible, phase-averaged and diagonal-memory losses differ.</td>
+</tr>
+<tr>
+  <td>P5C-195</td>
+  <td><code>p5c:rem:v348-weak-memory-physical-guard</code></td>
+  <td>7603–7618</td>
+  <td>FORMALIZED</td>
+  <td>Actual K_W generally nondiagonal and complete Schur return carries B_R blocks; corrected one-loop weights recorded, no physical neutrino inference.</td>
+</tr>
+<tr>
+  <td>P5C-196</td>
+  <td><code>p5c:prop:v365-family-decay-factor</code></td>
+  <td>7634–7647</td>
+  <td>VERIFIED</td>
+  <td>Row unitarity gives independent two-neutrino sum 1 and coherent orthogonality; no physical decay rates or daughter spectra.</td>
+</tr>
+<tr>
+  <td>P5C-197</td>
+  <td><code>p5c:def:v365-decay-source-contract</code></td>
+  <td>7654–7676</td>
+  <td>FORMALIZED</td>
+  <td>Complete Fock-channel action/source contraction is a definition; decay widths require actual pole, source, state, normalization and asymptotic limit.</td>
+</tr>
+<tr>
+  <td>P5C-198</td>
+  <td><code>p5c:rem:v365-channel-physical-firewall</code></td>
+  <td>7678–7687</td>
+  <td>FORMALIZED</td>
+  <td>Physical branching firewall: current coefficients and 25-cell measures are not by themselves two-vertex proper decay rates.</td>
+</tr>
+</tbody>
+</table>
+<h2>Additional substantive statements</h2>
+<ul>
+<li><strong>P5C-D07</strong>, lines 7169–7218 (VERIFIED-CONDITIONAL): Nine oscillation probabilities and CP envelope derived exactly from fixed C with equal coherent boundaries; 30 independent random phase comparisons and analytic CP envelope pass.</li>
+<li><strong>P5C-D25</strong>, lines 7220–7250 (UNRESOLVED): Unitary entropy and quasifree one-body entropy ceiling verified, but charge derivative uses i[H,Q] without 1/hbar or local natural-unit declaration; issue BH-VC-G-0006.</li>
+<li><strong>P5C-A1</strong>, lines 7252–7351 (VERIFIED-CONDITIONAL): Dephasing transfer matrix/eigenvectors and severe same-current experimental conditional compatibility test checked; actual source/pole/detector bridge remains unexecuted.</li>
+<li><strong>P5C-U-PRODUCTION</strong>, lines 5874–5880 (FORMALIZED): Native current becomes physical probability only via P_D=Tr E_D V rho_P V† with source/detector states and phases.</li>
+<li><strong>P5C-U-QUOTIENT</strong>, lines 6492–6529 (REPRODUCED): Normal h_c=Z†h_b Z and pair Γ_c=Z†Δ_b bar Z are different pulled-back kinetic sorts; raw η⁴ quartet not physical after arbitrary normalization.</li>
+<li><strong>P5C-U-COSMIC</strong>, lines 6802–6822 (REPRODUCED): Weyl-versus-breathing scalar source coordinates separated; conditional conformal photon nonproduction and no CP implication from pair production.</li>
+<li><strong>P5C-U-LEDGER</strong>, lines 6827–7011 (FORMALIZED): Results and selector ledger preserve source statuses including EM/VAC/NU/KIN and conditional benchmarks, not new mathematical evidence.</li>
+<li><strong>P5C-U-REACTION</strong>, lines 7295–7351 (VERIFIED-CONDITIONAL): Equal-boundary weights yield disappearance amplitude ≥3/4 while stated Daya Bay input is about 0.0851; direct identification fails conditionally, without disproving the native current.</li>
+</ul>
+<h2>DAG proposal and evidence integrity</h2>
+<ul>
+<li>Condition candidates: 5; typed proof/citation proposals: 60; material candidate edges: 22, each with an exact source-use scope.</li>
+<li>E0 source checksum and 198 formal-environment census match all prior checkpoints; no .tex, original ZIP or earlier checkpoint rewritten.</li>
+<li>Important conditional boundaries: generated lepton current is not a physical PMNS matrix; 1/16 is not efficiency; BL2 Ward law is not a positive baryon yield; Petersen Hom is not a physical vertex; daughter channels require full same-action Fock transition.</li>
+<li>Final global DAG integration, one-introduction condition de-duplication, exact release ZIP reopen and proofchain archive dedupe are performed in a separate single-writer release step.</li>
+</ul>
+<h2>Release and issue propagation</h2>
+<p>The global DAG is preserved and extended as a namespaced audit overlay. <code>PREMISE_OF</code>/<code>IMPORTED_PROOF</code> routes with matched proof uses enter the material index; <code>CITATION_ONLY</code>, <code>CANDIDATE_LINK</code>, ambiguous domain and disputed implications stay outside proof traversal. New conditions have a single global registry entry each after exact predicate matching, with no new axioms or automatic physical-discharge claims. The graph is acyclic, the ZIP is read back, and the imported upstream issues are not misattributed to V-C.</p>
+<hr />
+<h2>Current-source issue-specific repair addendum — 18 November 2026 (batch 3)</h2>
+<p><strong>Current source:</strong> <code>Paper5C-InteractionResponse-v2_180.tex</code>; <strong>SHA256:</strong> <code>bd95ca6ab26719d276f3f610ace398dcdd6ff33f411575d06272aeb09343d0ee</code>. Original audit history retained above, not erased. This addendum supersedes the named defects only at the corrected theorem-statement scope, never an unconditional global E3/E4/physical statement.</p>
+<h3>BH-VC-G-0005 — <code>p5c:cor:v269-visible-primitivity</code></h3>
+<ul>
+<li><strong>Effective status:</strong> <code>SOURCE_CLAIM_CORRECTED__PHYSICAL_OWNER_OR_GLOBAL_AUDIT_PENDING</code>.</li>
+<li><strong>Exact source:</strong> <code>Paper5C-InteractionResponse-v2_180.tex:6626</code>, SHA above.</li>
+<li><strong>Original defect:</strong> Demonstrate that the actual microscopic jump/Hamiltonian operators generate a scalar-commutant algebra on EACH fixed-charge component (or import a sufficient irreducibility theorem); mere connectivity of coarse species-block nodes is insufficient.</li>
+<li><strong>Correction:</strong> Replaced the false coarse species-graph connectivity =&gt; microscopic primitive QMS inference with conditional scalar-commutant/matrix-unit criterion and explicit spectator counterexample.</li>
+<li><strong>Retained owner / limit:</strong> Actual jumps on each physical fixed-charge sector, faithful invariant state and primitive semigroup still require direct owner proofs.</li>
+<li><strong>Local evidence:</strong> <code>Paper00-MathematicalRepairBatch3Verification-v1_1.json</code> (26 bounded checks overall). No complete replacement proof-chain audit or new global theorem certificate asserted.</li>
+</ul>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

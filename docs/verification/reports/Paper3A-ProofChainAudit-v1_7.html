@@ -1,0 +1,1206 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper3A-ProofChainAudit-v1_7 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper3A-ProofChainAudit-v1_7 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper3A ProofChainAudit v1_7</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper3A-ProofChainAudit-v1_7.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Source migration and repair-integration addendum — Paper3A-ProofChainAudit-v1_7.md</h1>
+<p><strong>Integration release:</strong> <code>Paper00-PapersMinimal-v3_007.zip</code>, 14 November 2026.
+<strong>Current paper source:</strong> <code>Paper3A-GeneratedDynamics-v1_176.tex</code>.
+<strong>Status:</strong> <code>SOURCE_INTEGRATED; GLOBAL_SOURCE_REAUDIT_PENDING</code>. An inherited historical audit is not a correctness certificate for the newer current manuscript.
+<strong>Evidence policy:</strong> Local algebraic proofs and scoped tests do not discharge physical source/observable interfaces or automatically alter the canonical proof DAG.</p>
+<hr />
+<h2>Historical source-bound audit: Paper3A-ProofChainAudit-v1_6.md</h2>
+<h1>Paper3A — v2.372 source repair addendum (13 November 2026)</h1>
+<p><strong>Successor:</strong> <code>Paper3A-ProofChainAudit-v1_6.md</code>.<br />
+<strong>Current source:</strong> <code>Paper3A-GeneratedDynamics-v1_170.tex</code>.<br />
+<strong>Current SHA-256:</strong> <code>d284204d07be684985d3b1c63eb561b40c0c7cafd2c131b58dd1a6f97f8519a8</code>.<br />
+<strong>Historical audit:</strong> <code>Paper3A-ProofChainAudit-v1_5.md</code>.<br />
+<strong>Source repair scope:</strong> 1 distinct issue(s); 1 textual corrections.<br />
+<strong>Disposition:</strong> <code>SOURCE_REPAIRED_WITH_SCOPED_CHECKS; FORMAL_REAUDIT_PENDING</code> for only the listed IDs. Other issues and all original evidence statuses unchanged.</p>
+<table>
+<thead>
+<tr>
+  <th>Issue ID</th>
+  <th>New source line(s)</th>
+  <th>Repaired issue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-IIIA-G-0008</code></td>
+  <td>5507</td>
+  <td>Omitting Hessian contact breaks the actual scalar Hessian chain law but not associativity of a truncated tensor congruence.</td>
+</tr>
+</tbody>
+</table>
+<p>The historical report below refers to the previous source version and explicitly marks those same issue IDs as <code>OPEN</code> <strong>as of that old version</strong>. Those specific historical labels are superseded only as source-edit dispositions by the addendum above; the original audit text is retained to prevent loss of evidence or false global certification. Other issues are unchanged. Recheck the updated source theorem and its proof/use dependencies before promoting an issue to closed in the canonical DAG.</p>
+<hr />
+<h2>Historical predecessor audit (unchanged text; former source version)</h2>
+<h1>Born–Hopf Geometry Paper III-A — completed rigorous correctness audit, Batches 1–5</h1>
+<p><strong>Artifact:</strong> <code>Paper3A-ProofChainAudit-v1_5.md</code><br />
+<strong>Source:</strong> <code>Paper3A-GeneratedDynamics-v1_169.tex</code>, SHA-256 <code>af384df88772019a94329f4d06d86a80e8ea103b38fc03282f4e80de5127abce</code><br />
+<strong>Corpus:</strong> <code>Paper00-PapersMinimal-v2_370.zip</code><br />
+<strong>Protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code><br />
+<strong>Atlas:</strong> <code>Paper00-DAGAtlas-v1_99.zip</code><br />
+<strong>Coverage:</strong> 185/185 substantive source objects, 152/152 formal declarations, 84 proof environments and 304 exact displays. All substantive target content and summary aliases dispositioned; no target item remains NOT_AUDITED.<br />
+<strong>Classification:</strong> FULLY_AUDITED_WITH_OPEN_GAPS.<br />
+<strong>Cumulative outcomes:</strong> {&quot;FORMALIZED&quot;: 66, &quot;VERIFIED-CONDITIONAL&quot;: 93, &quot;VERIFIED&quot;: 22, &quot;UNRESOLVED&quot;: 4}.<br />
+<strong>Batch5 outcomes:</strong> {&quot;FORMALIZED&quot;: 4, &quot;VERIFIED-CONDITIONAL&quot;: 5, &quot;UNRESOLVED&quot;: 1, &quot;VERIFIED&quot;: 5}.</p>
+<p>Full audit means every claim was examined and classified; it does not mean every claim is proved or every conditional physical antecedent established. The current source census now mirrors the authoritative current ledger statuses; older extraction snapshots remain historical.</p>
+<h2>All current findings</h2>
+<p><strong>BH-IIIA-G-0001 — OPEN, moderate source-scope ambiguity (inherited).</strong> Introductory lines95–99 summarize full H_p≅H1 without the whole-endpoint comparison certificates qualified in II-B and III-A510–530/1146–1169. Existing CMP-I/II/III apply only to the full-endpoint branch. Generated support and m_p=1 remain verified. No downstream failed proof or observable consequence is certified. Clarify the summary or supply the exact stronger certificates.</p>
+<p><strong>BH-IIIA-G-0002 — RESOLVED, minor DAG integrity (inherited).</strong> Three stale active source/condition pointers were corrected in Batch1. No mathematical change.</p>
+<p><strong>BH-IIIA-G-0003 — OPEN/UNRESOLVED, moderate type/domain (inherited).</strong> C65 at2139–2141 uses the spatial scalar band m_cmp=P_x(2) as a scalar deck-even sampling window without a declared typed comparison. P_x(2) contains E1 and odd primitive Hopf charges, while the q± quotient character lattice requires n+w even. A0024 records the missing interface as INFERRED/NOT-YET-LOCATED. Parent retention remains verified. No source-defined physical countermodel or remote failed consumption is certified. Specify the intended window/map; no repair is inserted.</p>
+<p><strong>BH-IIIA-G-0004 — OPEN, minor cited-route scope mismatch (inherited).</strong> C80 at2736–2741 cites reciprocal-status-discharge, whose current III-G provider requires P_mc. Keep that guard on its full-profile route. The native CHAR/product T2 proof through C20/C24/C60 is independently valid without P_mc. Qualify the citation or cite that native route.</p>
+<p><strong>BH-IIIA-G-0005 — OPEN/UNRESOLVED, moderate vector-map normalization ambiguity (inherited from Batch3).</strong> The unnamed relative-solder paragraph at3282–3295 uses su(2)* --(tau<em>)^-1--&gt; p</em> --Phi_v--&gt; T_b<em>S_B3 but does not define tau:su(2)→p. II-C619–660 gives evaluation ev(X,-X)=2X and Phi_v=(ev</em>)^-1. Choosing tau=ev^-1 yields the full Maurer–Cartan form; choosing the anti-diagonal inclusion yields half that form, matching the displayed III-B relative solder on the labelled section. Both are isomorphisms, but their exact normalizations differ. A0063 records only this unlocated definition, not a new physical axiom. The scalar character (n,-n)→n is already fixed; vector/scalar rank, rank4, a^4 and the positive H^(1/4) response remain independently verified. Only C99 VECTOR_EXACT_NORMALIZATION is blocked. No source-as-printed numerical refutation, failed observable or cross-paper failed consumption is certified. Define/cite tau with its exact normalization and verify the displayed composition; no replacement map is supplied.</p>
+<p><strong>BH-IIIA-G-0006 — OPEN/UNRESOLVED, moderate exact-interface verification gap (inherited from Batch4).</strong> In the unnamed K16 source-localization paragraph4562–4571, the retained carrier for the primitive scalar source a and the exact normalized map rho16src are not specified by a located provider. The asserted rho16src(2X_(a,u))=(a omega)_A e^A is a factor-two cotangent/source identification; current II-C first-symbol pairing supplies a different precisely typed harmonic/transvection quotient, while III-C supplies Clifford block/grade calculations. Neither exact consumed composite has been located. A0103 records the unverified map/carrier/normalization certificate, not a new physical axiom. The displayed equation may define a readout convention; that does not independently verify its asserted generated source ancestry or K16 grade. No false formula, E44 contradiction, missing fermion/action constructor or physical countermodel is certified. Self-adjointness of X and source/tangent/fermion/projectability firewalls remain valid on their own domains. III-G6408ff repeats the source/tangent distinction without using this exact coefficient, so no failed remote proof or observable path is established. Locate and replay the existing precise source map, carrier and normalization; no map or repair is inserted.</p>
+<p><strong>BH-IIIA-G-0007 — RESOLVED, minor DAG-only integrity defect (inherited from Batch4).</strong> The inherited raw material index contained240 rows already excluded by the proof query:155 EVIDENCE_FOR,51 SCOPE_GUARD,1 SCOPE_REFERENT and33 other scope/candidate-named rows. They are preserved in Paper00-InheritedNonmaterialEdges-v1_1.json and in all original typed layers. Derived proof-only adjacency and reachability now apply the existing query filter consistently; core mathematical data, sources and earlier statuses are unchanged. This corrects indexing, not a source proof.</p>
+<p><strong>BH-IIIA-G-0008 — OPEN/UNRESOLVED, minor source-property ambiguity (new).</strong> C174 at 5507–5509 says dropping the Hessian contact term generally destroys the preceding coherence. Complete actual two-jet pullbacks do associate and the contact term is generally required to obtain the actual Hessian. However pure tensor congruence H→Dg*HDg also associates for every composable smooth map: T_g(T_f(H))=T_(f∘g)(H) by the ordinary first-derivative chain rule. The independent nonaffine positive-chart control gives truncated sequential=direct 3456, while actual/full 4704 at x=1; affine controls agree. Thus the literal algebraic-nonassociativity interpretation is disproved, while actual-Hessian compatibility is a valid reading. Only the final property reference remains ambiguous; C174 overall is UNRESOLVED, with its full formula, full associativity and actual-Hessian consistency branches separately verified. No new assumption can make tensor pullback nonassociative. Clarify which coherence is meant; no source edit or replacement theorem is supplied. No failed cross-paper/observable path is established.</p>
+<p><strong>BH-IIIA-G-0009 — OPEN, minor cited-provider scope mismatch (new).</strong> C185 at 5721–5725 attributes general complete Petersen action-jet/source-mark retention to C150. That provider at 4783–4834 assumes finite positive shared-interior quadratic blocks and proves Schur variance plus limited terminal consequences; it does not by itself establish arbitrary complete graded/background jet retention. C118→C145, C147 and C146 already provide the correct generic claim-complete owner/reuse/firewall route under actual licensed Petersen incidence A0128 and existing owner/physical-sum scope A0041/A0083. The generic branch remains verified conditional and acquires no positive-pivot assumption. The cited quadratic specialization is separately recorded and cannot serve as the sole generic proof. Cite/qualify the existing generic route; no repair implemented. No theorem, finite Petersen identity, no-action-insertion firewall or downstream observable is refuted.</p>
+<p><strong>BH-IIIA-G-0010 — RESOLVED, minor inherited DAG boundary-ID collision (new).</strong> Seven Batch2 IDs were each assigned to both a registrar boundary and an adversarial boundary. They are not interchangeable: B2-BND-0005 denoted both the causal envelope (2442–2474) and the deck-readout boundary (2135–2142). The seven adversarial objects now have distinct B2-E4-BND IDs; all 116 records and original evidence are retained. All 36 current E4 references and G0003’s boundary pointer are qualified. An explicit identity adjudication preserves the historical mapping. No source claim, condition, material proof edge or mathematical status changes.</p>
+<p>Ten current issues: seven open and three resolved. No unambiguous source-wide mathematical refutation or failed physical observable is certified. The stronger C174 tensor-nonassociativity interpretation is explicitly disproved as an INTERPRETED object, not silently identified with the correct actual-jet statement. Source-scope ambiguities, missing typed interfaces, missing verification certificates, cited-route defects and resolved DAG-only defects remain distinct. Conditional hypotheses are not called mathematical errors.</p>
+<h2>Complete source coverage</h2>
+<table>
+<thead>
+<tr>
+  <th>Audit alias</th>
+  <th style="text-align:right">Source lines</th>
+  <th>Owner</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>BH-IIIA-C-0001</td>
+  <td style="text-align:right">124–136</td>
+  <td><code>Reciprocal configuration metric scale CAL_xp</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0002</td>
+  <td style="text-align:right">141–165</td>
+  <td><code>Metric-curry scope and historical BR/IND status aliases</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0003</td>
+  <td style="text-align:right">166–175</td>
+  <td><code>Scalar phase action-unit calibration CAL_hbar</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0004</td>
+  <td style="text-align:right">176–187</td>
+  <td><code>Primitive scalar-turn clock calibration CAL_t</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0005</td>
+  <td style="text-align:right">189–234</td>
+  <td><code>Framework-prefix definition and premise-minimal/profile separation</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0006</td>
+  <td style="text-align:right">255–325</td>
+  <td><code>Paper-II import theorem-package and domain ledger</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0007</td>
+  <td style="text-align:right">327–340</td>
+  <td><code>Selector-status classes and nonpromotion between sorts</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0008</td>
+  <td style="text-align:right">342–362</td>
+  <td><code>Finite-role, coordinate-class and exceptional-support boundary</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0009</td>
+  <td style="text-align:right">369–386</td>
+  <td><code>p3:g0-actualization</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0010</td>
+  <td style="text-align:right">388–423</td>
+  <td><code>p3a:lem:generated-role-occurrence-inheritance</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0011</td>
+  <td style="text-align:right">425–428</td>
+  <td><code>p3:def:constitutive-datum</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0012</td>
+  <td style="text-align:right">430–436</td>
+  <td><code>p3:gp1-finiteness</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0013</td>
+  <td style="text-align:right">438–445</td>
+  <td><code>p3:gp2-geometric-primacy</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0014</td>
+  <td style="text-align:right">447–454</td>
+  <td><code>p3:gp3-faithful-closure</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0015</td>
+  <td style="text-align:right">456–494</td>
+  <td><code>p3a:thm:v166-reciprocal-interface-summary</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0016</td>
+  <td style="text-align:right">498–508</td>
+  <td><code>p3:def:constitutive-residue-main</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0017</td>
+  <td style="text-align:right">510–530</td>
+  <td><code>p3:def:imported-vector-momentum-constitution</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0018</td>
+  <td style="text-align:right">538–608</td>
+  <td><code>p3:lem:rank-one-lattice-dual-spectrum</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0019</td>
+  <td style="text-align:right">610–653</td>
+  <td><code>p3a:def:scalar-loop-character-constructor</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0020</td>
+  <td style="text-align:right">655–724</td>
+  <td><code>p3a:thm:g0-derived-scalar-character-role</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0021</td>
+  <td style="text-align:right">726–748</td>
+  <td><code>p3a:cor:s1-universal-corealization-bridge</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0022</td>
+  <td style="text-align:right">758–780</td>
+  <td><code>p3a:rem:relation-free-readout-firewall</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0023</td>
+  <td style="text-align:right">782–792</td>
+  <td><code>p3:rem:born-reciprocity-lorentzian-recovery</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0024</td>
+  <td style="text-align:right">798–860</td>
+  <td><code>p3:thm:scalar_classification_import</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0025</td>
+  <td style="text-align:right">865–883</td>
+  <td><code>p3:def:reciprocal-vector-bookkeeping-package</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0026</td>
+  <td style="text-align:right">886–889</td>
+  <td><code>Closure theorem uniqueness/least/minimal proof convention</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0027</td>
+  <td style="text-align:right">892–929</td>
+  <td><code>p3:rem:dimensionful-calibration-boundary</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0028</td>
+  <td style="text-align:right">934–953</td>
+  <td><code>p3a:def:dynamical-readout-occurrences</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0029</td>
+  <td style="text-align:right">955–990</td>
+  <td><code>p3a:thm:two-branch-dynamical-handoff</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0030</td>
+  <td style="text-align:right">992–1001</td>
+  <td><code>p3a:cor:no-gp3-readout-profile</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0031</td>
+  <td style="text-align:right">1008–1019</td>
+  <td><code>p3a:rem:scalar-evaluation-carrier-window-dictionary</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0032</td>
+  <td style="text-align:right">1021–1032</td>
+  <td><code>p3a:cor:clocked-position-character-support</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0033</td>
+  <td style="text-align:right">1034–1045</td>
+  <td><code>p3a:cor:clock-family-scalar-kinetic-identity</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0034</td>
+  <td style="text-align:right">1131–1144</td>
+  <td><code>Reciprocal \(S^3\) notation and physical scale</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0035</td>
+  <td style="text-align:right">1146–1169</td>
+  <td><code>p3:thm:momentum</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0036</td>
+  <td style="text-align:right">1170–1184</td>
+  <td><code>The imported branch is already the constituted simply connected one</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0037</td>
+  <td style="text-align:right">1186–1236</td>
+  <td><code>p3:thm:born-reciprocity-exhaustion</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0038</td>
+  <td style="text-align:right">1238–1252</td>
+  <td><code>Typed unequal-level finite Born branch exchange</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0039</td>
+  <td style="text-align:right">1258–1271</td>
+  <td><code>Dimensionless chiral and dimensionful physical operator conventions</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0040</td>
+  <td style="text-align:right">1275–1301</td>
+  <td><code>p3:lem:born</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0041</td>
+  <td style="text-align:right">1304–1332</td>
+  <td><code>p3:thm:position</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0042</td>
+  <td style="text-align:right">1334–1342</td>
+  <td><code>p3:rem:reciprocal-scale-calibration</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0043</td>
+  <td style="text-align:right">1344–1358</td>
+  <td><code>p3:rem:p2-to-p3-position</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0044</td>
+  <td style="text-align:right">1360–1405</td>
+  <td><code>p3:cor:hopf-abelian-line</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0045</td>
+  <td style="text-align:right">1407–1420</td>
+  <td><code>Status of the abelian slot</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0046</td>
+  <td style="text-align:right">1422–1442</td>
+  <td><code>p3:lem:primitive-contact-speed-normalization</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0047</td>
+  <td style="text-align:right">1445–1471</td>
+  <td><code>p3:cor:doubled-vector</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0048</td>
+  <td style="text-align:right">1476–1500</td>
+  <td><code>p3:thm:vector-sector-not-symplectic</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0049</td>
+  <td style="text-align:right">1502–1567</td>
+  <td><code>p3:lem:no-intrinsic-vector-scalar</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0050</td>
+  <td style="text-align:right">1569–1585</td>
+  <td><code>p3:cor:no-intrinsic-scalar-pair</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0051</td>
+  <td style="text-align:right">1588–1596</td>
+  <td><code>p3:rem:provisional-scalar-labels</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0052</td>
+  <td style="text-align:right">1598–1642</td>
+  <td><code>p3:thm:transported-scalar-orientation</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0053</td>
+  <td style="text-align:right">1644–1693</td>
+  <td><code>p3:thm:scalar-born-residue</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0054</td>
+  <td style="text-align:right">1695–1743</td>
+  <td><code>p3:thm:minimal-symplectic-completion</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0055</td>
+  <td style="text-align:right">1745–1805</td>
+  <td><code>p3a:thm:canonical-generator-germ-localization</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0056</td>
+  <td style="text-align:right">1807–1835</td>
+  <td><code>p3a:cor:calibrated-reciprocal-position-momentum-unit</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0057</td>
+  <td style="text-align:right">1837–1864</td>
+  <td><code>p3a:cor:local-cotangent-born-compatibility</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0058</td>
+  <td style="text-align:right">1867–1883</td>
+  <td><code>p3:cor:missing-sector-one-pair</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0059</td>
+  <td style="text-align:right">1885–1941</td>
+  <td><code>p3:lem:minimal-phase-torus-quantization</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0060</td>
+  <td style="text-align:right">1946–1972</td>
+  <td><code>p3:def:separable-scalar-compactification</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0061</td>
+  <td style="text-align:right">1974–2014</td>
+  <td><code>p3:thm:scalars</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0062</td>
+  <td style="text-align:right">2017–2070</td>
+  <td><code>p3a:thm:v190-scalar-born-eigenphase-cover</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0063</td>
+  <td style="text-align:right">2072–2106</td>
+  <td><code>p3a:cor:v190-scalar-deck-grading</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0064</td>
+  <td style="text-align:right">2108–2133</td>
+  <td><code>p3a:cor:v190-scalar-mutual-moments</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0065</td>
+  <td style="text-align:right">2135–2142</td>
+  <td><code>p3a:rem:v190-scalar-parent-retention</code></td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0066</td>
+  <td style="text-align:right">2144–2250</td>
+  <td><code>p3a:def:clocked-hopf-propagation-doctrine</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0067</td>
+  <td style="text-align:right">2252–2295</td>
+  <td><code>p3a:cor:clocked-hopf-corealization</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0068</td>
+  <td style="text-align:right">2297–2323</td>
+  <td><code>p3a:cor:clock-half-turn-antipode</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0069</td>
+  <td style="text-align:right">2327–2354</td>
+  <td><code>p3a:cor:clock-joint-orbit-monodromy</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0070</td>
+  <td style="text-align:right">2367–2440</td>
+  <td><code>p3:thm:gp1-speed-calibration</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0071</td>
+  <td style="text-align:right">2442–2474</td>
+  <td><code>p3:cor:gp1-round-causal-envelope</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0072</td>
+  <td style="text-align:right">2476–2503</td>
+  <td><code>p3a:cor:v177-three-dimensional-causal-determinant</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0073</td>
+  <td style="text-align:right">2505–2587</td>
+  <td><code>p3:thm:gp1-operation-generator-polar-dual</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0074</td>
+  <td style="text-align:right">2589–2625</td>
+  <td><code>p3a:thm:causal-cone-determinant-root-isomorphism</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0075</td>
+  <td style="text-align:right">2627–2654</td>
+  <td><code>p3a:cor:causal-root-quadratic-half-character</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0076</td>
+  <td style="text-align:right">2656–2663</td>
+  <td><code>p3a:rem:determinant-root-bundle-scope</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0077</td>
+  <td style="text-align:right">2665–2693</td>
+  <td><code>p3a:lem:causal-homothety</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0078</td>
+  <td style="text-align:right">2695–2717</td>
+  <td><code>p3:rem:polar-dual-not-global-pair</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0079</td>
+  <td style="text-align:right">2719–2731</td>
+  <td><code>Notation for \(dt\) and \(dE\) on the scalar circles</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0080</td>
+  <td style="text-align:right">2733–2746</td>
+  <td><code>Why the scalar compact role space is a torus</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0081</td>
+  <td style="text-align:right">2749–2778</td>
+  <td><code>p3:thm:scalar-pair-no-modulus</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0082</td>
+  <td style="text-align:right">2780–2806</td>
+  <td><code>p3a:cor:calibrated-scalar-m8-scale-chain</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0083</td>
+  <td style="text-align:right">2808–2821</td>
+  <td><code>p3a:cor:momentum-unit-normal-form</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0084</td>
+  <td style="text-align:right">2825–2879</td>
+  <td><code>p3a:thm:v245-massless-gauge-clock-lock</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0085</td>
+  <td style="text-align:right">2881–2891</td>
+  <td><code>Second quantization and the vacuum-energy phase</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0086</td>
+  <td style="text-align:right">2895–2911</td>
+  <td><code>p3a:def:v247-affine-spectral-defect</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0087</td>
+  <td style="text-align:right">2913–2987</td>
+  <td><code>p3a:thm:v247-conformal-clock-hierarchy</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0088</td>
+  <td style="text-align:right">2989–2998</td>
+  <td><code>p3a:rem:v247-conformal-matching-scope</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0089</td>
+  <td style="text-align:right">3000–3027</td>
+  <td><code>p3a:cor:normalized-m8-cone-evaluation</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0090</td>
+  <td style="text-align:right">3029–3140</td>
+  <td><code>p3a:thm:complete-joint-zero-defect-locus</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0091</td>
+  <td style="text-align:right">3142–3163</td>
+  <td><code>p3a:cor:joint-locus-neutral-speed-extension</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0092</td>
+  <td style="text-align:right">3165–3179</td>
+  <td><code>p3a:rem:hopf-character-energy-lattice</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0093</td>
+  <td style="text-align:right">3181–3189</td>
+  <td><code>p3:rem:time-energy-upgrade</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0094</td>
+  <td style="text-align:right">3191–3198</td>
+  <td><code>p3:rem:scalar-closure</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0095</td>
+  <td style="text-align:right">3200–3220</td>
+  <td><code>p3:thm:full-compact-carrier-no-symplectic-a</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0096</td>
+  <td style="text-align:right">3225–3248</td>
+  <td><code>p3a:cor:primitive-scalar-unchanged-descent</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0097</td>
+  <td style="text-align:right">3250–3269</td>
+  <td><code>p3a:cor:faithful-clock-real-cover</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0098</td>
+  <td style="text-align:right">3271–3276</td>
+  <td><code>Scalar action cell versus spatial volume and energy bounds</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0099</td>
+  <td style="text-align:right">3282–3295</td>
+  <td><code>Rank-four relative-solder generator-germ localization map</code></td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0100</td>
+  <td style="text-align:right">3297–3309</td>
+  <td><code>p3a:cor:v187-rank-four-parent-root</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0101</td>
+  <td style="text-align:right">3318–3320</td>
+  <td><code>Universal continuation rule has sector-dependent carriers and laws</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0102</td>
+  <td style="text-align:right">3322–3369</td>
+  <td><code>p3a:def:generated-exact-continuation-signature</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0103</td>
+  <td style="text-align:right">3371–3405</td>
+  <td><code>p3a:def:exact-continuation-moduli</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0104</td>
+  <td style="text-align:right">3407–3456</td>
+  <td><code>p3a:thm:universal-generated-exact-continuation</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0105</td>
+  <td style="text-align:right">3460–3472</td>
+  <td><code>p3a:def:v236-dynamics-atlas-status</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0106</td>
+  <td style="text-align:right">3474–3481</td>
+  <td><code>p3a:cor:v236-unresolved-common-content</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0107</td>
+  <td style="text-align:right">3485–3503</td>
+  <td><code>p3a:lem:v166-continuation-certificate-transport</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0108</td>
+  <td style="text-align:right">3505–3543</td>
+  <td><code>p3a:cor:rooted-dynamical-parent-cascade</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0109</td>
+  <td style="text-align:right">3547–3560</td>
+  <td><code>p3a:def:v149-law-flow-history</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0110</td>
+  <td style="text-align:right">3562–3610</td>
+  <td><code>p3a:thm:v149-law-flow-history-separation</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0111</td>
+  <td style="text-align:right">3613–3649</td>
+  <td><code>p3a:thm:v204-action-law-transport</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0112</td>
+  <td style="text-align:right">3656–3670</td>
+  <td><code>p3a:cor:v204-moving-presentation</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0113</td>
+  <td style="text-align:right">3675–3685</td>
+  <td><code>p3a:rem:v149-generator-flow-families</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0114</td>
+  <td style="text-align:right">3693–3705</td>
+  <td><code>p3a:def:claim-complete-action-owner</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0115</td>
+  <td style="text-align:right">3707–3729</td>
+  <td><code>p3a:thm:claim-complete-action-descent</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0116</td>
+  <td style="text-align:right">3731–3768</td>
+  <td><code>p3a:cor:boundary-trivial-same-action-reclosure</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0117</td>
+  <td style="text-align:right">3770–3780</td>
+  <td><code>p3a:def:frozen-preaction-signature</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0118</td>
+  <td style="text-align:right">3782–3818</td>
+  <td><code>p3a:thm:generated-action-constructor-closure</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0119</td>
+  <td style="text-align:right">3820–3832</td>
+  <td><code>p3a:cor:preaction-no-self-witness</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0120</td>
+  <td style="text-align:right">3834–3845</td>
+  <td><code>p3a:cor:bare-effective-action-firewall</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0121</td>
+  <td style="text-align:right">3847–3872</td>
+  <td><code>p3a:cor:born-equivariant-constructor-descent</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0122</td>
+  <td style="text-align:right">3874–3896</td>
+  <td><code>p3a:thm:variational-sort-firewall</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0123</td>
+  <td style="text-align:right">3898–3925</td>
+  <td><code>p3a:thm:unique-solution-history-descent</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0124</td>
+  <td style="text-align:right">3927–3947</td>
+  <td><code>p3a:cor:transverse-crossing-descendant</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0125</td>
+  <td style="text-align:right">3959–3978</td>
+  <td><code>p3a:lem:regular-constraint-ideal</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0126</td>
+  <td style="text-align:right">3980–4100</td>
+  <td><code>p3a:thm:v149-native-noether-frontier</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0127</td>
+  <td style="text-align:right">4102–4125</td>
+  <td><code>p3a:cor:v176-noether-constrained-one-ray</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0128</td>
+  <td style="text-align:right">4127–4134</td>
+  <td><code>p3a:rem:v176-constraint-history-clock-firewall</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0129</td>
+  <td style="text-align:right">4137–4171</td>
+  <td><code>p3a:cor:identity-survival-oriented-nonstationarity</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0130</td>
+  <td style="text-align:right">4173–4199</td>
+  <td><code>p3a:cor:common-process-invariant</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0131</td>
+  <td style="text-align:right">4201–4288</td>
+  <td><code>p3a:thm:finite-generator-one-ray-rigidity</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0132</td>
+  <td style="text-align:right">4290–4315</td>
+  <td><code>p3a:prop:v2211-clock-affinity-certificate</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0133</td>
+  <td style="text-align:right">4317–4327</td>
+  <td><code>p3a:cor:v166-finite-normal-form-certificate</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0134</td>
+  <td style="text-align:right">4330–4350</td>
+  <td><code>p3a:cor:v149-finite-unitary-generator</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0135</td>
+  <td style="text-align:right">4352–4360</td>
+  <td><code>p3a:rem:v149-finite-continuum-semigroup-status</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0136</td>
+  <td style="text-align:right">4362–4375</td>
+  <td><code>p3a:rem:continuation-generator-boundary</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0137</td>
+  <td style="text-align:right">4377–4425</td>
+  <td><code>p3a:thm:generated-process-projectability</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0138</td>
+  <td style="text-align:right">4427–4459</td>
+  <td><code>p3a:cor:v166-smooth-process-descent</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0139</td>
+  <td style="text-align:right">4461–4557</td>
+  <td><code>p3a:thm:threshold-event-descent</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0140</td>
+  <td style="text-align:right">4562–4582</td>
+  <td><code>Balanced K16 source localization and fibre-constant scalar projection</code></td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0141</td>
+  <td style="text-align:right">4586–4593</td>
+  <td><code>p3a:rem:v182-k16-fermion-sort-firewall</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0142</td>
+  <td style="text-align:right">4602–4631</td>
+  <td><code>p3a:thm:v184-normalized-successor-residual</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0143</td>
+  <td style="text-align:right">4633–4644</td>
+  <td><code>p3a:cor:v184-width-eight-cell</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0144</td>
+  <td style="text-align:right">4650–4669</td>
+  <td><code>p3a:cor:v226-coordinate-continuation</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0145</td>
+  <td style="text-align:right">4683–4716</td>
+  <td><code>p3a:cor:v183-action-coconsumption</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0146</td>
+  <td style="text-align:right">4718–4724</td>
+  <td><code>p3a:rem:v183-action-coconsumption-firewall</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0147</td>
+  <td style="text-align:right">4725–4752</td>
+  <td><code>p3a:cor:complete-parent-descendant-reuse</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0148</td>
+  <td style="text-align:right">4753–4758</td>
+  <td><code>Complete-parent reuse with critical directions retained before elimination</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0149</td>
+  <td style="text-align:right">4768–4781</td>
+  <td><code>Common physical action assembly and single allocation of overlap</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0150</td>
+  <td style="text-align:right">4783–4834</td>
+  <td><code>p3a:thm:v2216-common-action-consumption</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0151</td>
+  <td style="text-align:right">4836–4852</td>
+  <td><code>p3a:rem:v2216-multiaction-scope</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0152</td>
+  <td style="text-align:right">4856–4869</td>
+  <td><code>p3a:prop:v245-common-action-two-jet-equality</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0153</td>
+  <td style="text-align:right">4870–4881</td>
+  <td><code>p3a:rem:v245-two-jet-owner-firewall</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0154</td>
+  <td style="text-align:right">4887–4924</td>
+  <td><code>p3a:thm:v246-integrable-parent-reconstruction</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0155</td>
+  <td style="text-align:right">4926–4947</td>
+  <td><code>p3a:cor:v246-sector-restriction-kernel</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0156</td>
+  <td style="text-align:right">4949–4965</td>
+  <td><code>p3a:rem:v246-parent-reconstruction-scope</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0157</td>
+  <td style="text-align:right">4968–4986</td>
+  <td><code>p3a:par:v245-common-action-rigor-frontier</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0158</td>
+  <td style="text-align:right">4992–5010</td>
+  <td><code>p3a:cor:v223-cap-consumption</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0159</td>
+  <td style="text-align:right">5025–5031</td>
+  <td><code>Complete reference-cap source translation j_r</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0160</td>
+  <td style="text-align:right">5033–5040</td>
+  <td><code>Off-shell collar transport and actual shared-interior incidence</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0161</td>
+  <td style="text-align:right">5042–5051</td>
+  <td><code>Primitive-owner retraction and complete native-cap chronology</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0162</td>
+  <td style="text-align:right">5063–5088</td>
+  <td><code>p3a:def:v188-native-claim-data</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0163</td>
+  <td style="text-align:right">5090–5128</td>
+  <td><code>p3a:thm:v188-native-observable-fibre</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0164</td>
+  <td style="text-align:right">5130–5166</td>
+  <td><code>p3a:cor:v188-claim-relative-completeness</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0165</td>
+  <td style="text-align:right">5168–5188</td>
+  <td><code>p3a:def:v188-native-completion-certificate</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0166</td>
+  <td style="text-align:right">5198–5224</td>
+  <td><code>p3a:cor:v185-projective-cone-protection</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0167</td>
+  <td style="text-align:right">5226–5234</td>
+  <td><code>p3a:rem:v185-constants-speed-firewall</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0168</td>
+  <td style="text-align:right">5243–5270</td>
+  <td><code>Typed local Lorentzian coframe homothety/shear/rotation descent</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0169</td>
+  <td style="text-align:right">5272–5285</td>
+  <td><code>p3a:cor:v189-spatial-shear-decomposition</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0170</td>
+  <td style="text-align:right">5290–5305</td>
+  <td><code>Finite complete visible-response quotient and dark-data boundary</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0171</td>
+  <td style="text-align:right">5439–5445</td>
+  <td><code>Licensed finite common-action word and additional global gluing domain</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0172</td>
+  <td style="text-align:right">5448–5476</td>
+  <td><code>p3a:v251:eq:full-pullback-hessian</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0173</td>
+  <td style="text-align:right">5478–5493</td>
+  <td><code>Anchored coefficient Hessian integrability and radial primitive</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0174</td>
+  <td style="text-align:right">5495–5509</td>
+  <td><code>Full two-jet transition pullback and triple-overlap coherence</code></td>
+  <td>UNRESOLVED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0175</td>
+  <td style="text-align:right">5512–5537</td>
+  <td><code>Positive shared-interior Schur response and variance defect identity</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0176</td>
+  <td style="text-align:right">5539–5584</td>
+  <td><code>p3a:v251:thm:shared-second-jet</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0177</td>
+  <td style="text-align:right">5586–5590</td>
+  <td><code>Background response jets versus ordinary fixed-point action two-jets</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0178</td>
+  <td style="text-align:right">5592–5608</td>
+  <td><code>paper3a:corollary:atlas-frame-covariance-of-the-second-jet-defect-220dfda</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0179</td>
+  <td style="text-align:right">5610–5628</td>
+  <td><code>paper3a:proposition:atlas-first-nonzero-higher-order-response-mismatch-4fe1b0f</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0180</td>
+  <td style="text-align:right">5630–5634</td>
+  <td><code>Regular positive-pivot domain and unlicensed endpoint limits</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0181</td>
+  <td style="text-align:right">5637–5650</td>
+  <td><code>Two vanishing separate reductions with nonzero shared response second jet</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0182</td>
+  <td style="text-align:right">5653–5677</td>
+  <td><code>Raw 96-fold joint normalization versus uniformly transported Newton branch</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0183</td>
+  <td style="text-align:right">5685–5691</td>
+  <td><code>Embedded 2I Petersen packet and momentum-carrier nonidentification</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0184</td>
+  <td style="text-align:right">5693–5713</td>
+  <td><code>p3a:prop:v319-petersen-marked-jet</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIA-C-0185</td>
+  <td style="text-align:right">5715–5726</td>
+  <td><code>p3a:prop:v319-petersen-action-firewall</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+</tbody>
+</table>
+<h2>Final-batch evidence and scope</h2>
+<p>15 E1 replay records, 16 active independent mathematical certificates plus one E0 summary reconciliation, 24 adversarial attacks and source-bound boundary records cover the final 15 objects. The latest independent certificate file v1_2 includes its post-freeze C185 citation clarification and preserves the original mathematical records/lineage; superseded v1_1 certificate/notes are omitted from this release. 71 independent and 17 adversarial exact controls pass. Controls support the separately recorded general arguments and never replace them; E0 counts/schema/ZIP checks are not mathematical E3.</p>
+<p>The independent final census reads every current source declaration/proof/display and maps 16 closing-summary blocks plus 15 other summary/scope ranges to their actual owners. Abstract 64–73 and nonmathematical preamble/bibliography boundaries are explicitly disposed. No supplementary substantive claim had to be invented, and no claim was dropped to reach completion. Existing source-qualified H1 support and m_p=1 remain checkpoints; source summaries do not become new proof edges or unqualified full-endpoint certificates.</p>
+<p>C171 begins with a supplied licensed common action and actual incidence/once-only overlap allocation; no interaction follows from merely co-realizing sectors. C172 retains all pullback/contact/ordered odd-coefficient/source-frame terms. Admitted derivatives of S_int are an explicit inferred conditional scope, not automatic consequences of generated provenance. C173 uses arbitrary coefficient anchors for construction; pairwise existing-action equality is only a locally discharged uniqueness test. Independent physical action origin remains separate from self-reconstruction.</p>
+<p>C175 has source-supported real and complex positive-variance cases. The real source import is only its complete-square algebra; terminal PSD/slope, physical assembly and unrelated normalizations are not silently imported. C176 real/complex proofs of each same mathematical clause are OR cases, never a demand for both carrier sorts. C2 background coefficient regularity and regular-point centre agreement are distinct predicates; neither follows from C3 action maps alone or from terminal-port compatibility. The second-jet iff/finite HS criterion does not assume the derivative equality it characterizes.</p>
+<p>C178 frame-derivative terms vanish at compatible Delta=0; no off-compatible simplification is made. C179 retains adequate smoothness for its actual r and asserted 2r derivative, including a valid r=0 boundary; inherited C2 is not enough for every higher-order derivative. C180 excludes singular/changing-domain/closing-gap endpoints. C181 is a direct scalar polynomial diagnostic with locally checked matrix data, no native physical occurrence or physical-sum word assumed. Background jets of the retained Hessian and ordinary fixed-point action two-jets are kept distinct.</p>
+<p>C182 preserves actual raw joint coupling and the separate stronger certified whole-action normalization branch. Gphys=Gscal/96 is allowed when the actual final action is raw; equality with Gscal requires an already certified uniform full-word map and z=1/96. Rescaling a gravity trace alone supplies no such map. A scalar coordinate is not a fermion first-order pairing, and no observed Newton datum enters this verification.</p>
+<p>C183 imports only an already occurring embedded 2I support when used physically; C184 mathematical cancellation/complement parity uses the supplied marked finite packet. The mathematical marked-packet predicate is not merged with actual physical marking. Exact I-A coordinate and Gram identities are checked at their stated field/representation scope. Neither the 15-channel count nor a finite A5 rotation action creates H1 identification, a continuous Noether family, a new field or an action coefficient. C185 generic co-consumption uses its earlier full-owner route, with the narrow printed citation separately challenged.</p>
+<p>16 genuinely new typed predicates A0113–A0128 are indexed once at their earliest validated source appearances, with reused predicates referenced rather than duplicated. Interaction/higher-jet regularity remains conditional; no new physical axiom, constructor, normalization projection or repair theorem is introduced. A0102 remains withdrawn and unreused. The 240-row inherited nonmaterial provenance file remains byte-identical, and no such row re-enters proof ancestry.</p>
+<h2>Queries and completion</h2>
+<p>Run <code>python3 Paper00-DAGQuery-v1_99.py summary</code>, <code>issues</code>, <code>claim BH-IIIA-C-0174</code>, <code>conditions BH-IIIA-C-0174:TRIPLE_ASSOCIATIVITY</code>, <code>conditions BH-IIIA-C-0174:OMITTED_CONTACT_COHERENCE_AS_PRINTED</code>, <code>conditions BH-IIIA-C-0176:SECOND_JET_FORMULA</code>, <code>conditions BH-IIIA-C-0182:RAW_PHYSICAL_BRANCH</code>, <code>conditions BH-IIIA-C-0185:ACTUAL_OPERATOR_COCONSUMPTION</code>, or <code>impact BH-IIIA-G-0009</code>.</p>
+<p>Paper3A source audit is complete, with its audited open obligations retained. No next unaudited target batch remains. Other papers are only source-checked at exact consumed interfaces; this release does not certify the whole framework.</p>
+<p>The paired audit ZIP contains exactly seven latest Markdown reports: six byte-identical existing Paper-II audits and current III-A v1_5. The DAG has one current III-A v1_5 layer and current source tree. Distinct earlier evidence/named provenance remains history; no superseded current report/layer, PDF, nested ZIP or build/debug artifact is added. All paper/macro/bibliography sources remain unchanged.</p>
+<h2>Independent release review</h2>
+<p>PASS: 80 pre-write integrity checks; complete final-remainder source/evidence/branch review and full-paper census/scope reconciliation; 56 independent actual CLI queries; coordinator 41 clause queries and scoped-discharge tests. All 170 earlier statuses and 32 controlling sources remain unchanged. G0008 retains only the printed coherence ambiguity, with the stronger tensor-nonassociativity interpretation separately disproved; G0009 has its earlier generic owner bypass. G0010 resolves seven inherited boundary-ID collisions, preserving all original records and all 116 distinct boundaries. G0006 remains an exact-interface evidence gap; G0007 preserves its 240 original quarantined rows byte-for-byte. No global framework verification is claimed.</p>
+<h2>Exact post-write certificate WRT-IIIA-B5-0001</h2>
+<p>Final DAG archive: <code>Paper00-DAGAtlas-v1_99.zip</code>, SHA-256 <code>566727ce43b0f11900d24a41b3acad5e835f1f4f7ce56ab73d3a56493d3f7477</code>; 822 unique entries, 19018628 bytes. Exact written bytes were reopened: CRC, every JSON, every payload hash, 32 controlling source files, current source/condition indexes, and latest-only contents passed. This E0 result is distinct from mathematical evidence. The archive hash is stored here to avoid a self-referential hash inside that archive.</p>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

@@ -1,0 +1,2124 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper4A-ProofChainAudit-v1_2 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper4A-ProofChainAudit-v1_2 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper4A ProofChainAudit v1_2</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper4A-ProofChainAudit-v1_2.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Source migration and repair-integration addendum — Paper4A-ProofChainAudit-v1_2.md</h1>
+<p><strong>Integration release:</strong> <code>Paper00-PapersMinimal-v3_007.zip</code>, 14 November 2026.
+<strong>Current paper source:</strong> <code>Paper4A-FiniteQuantumMechanics-v4_214.tex</code>.
+<strong>Status:</strong> <code>SOURCE_INTEGRATED; GLOBAL_SOURCE_REAUDIT_PENDING</code>. An inherited historical audit is not a correctness certificate for the newer current manuscript.
+<strong>Evidence policy:</strong> Local algebraic proofs and scoped tests do not discharge physical source/observable interfaces or automatically alter the canonical proof DAG.</p>
+<hr />
+<h2>Historical source-bound audit: Paper4A-ProofChainAudit-v1_1.md</h2>
+<h1>Paper IV-A — Complete Rigorous Verification DAG Proof-Chain Audit (v1_1)</h1>
+<p><strong>Target:</strong> <code>Paper4A-FiniteQuantumMechanics-v4_208.tex</code> · source SHA-256 <code>125220dcced44202b5bb91308afaaf3b7181ebf34b1d64a9d79ca69f8eca10da</code>.<br />
+<strong>Current source:</strong> <code>Paper00-PapersMinimal-v2_370</code> (unaltered).<br />
+<strong>Protocols:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4</code> and <code>Paper00-ProofChainAuditProtocol-v1_1</code>.</p>
+<h2>Completion and evidence summary</h2>
+<ul>
+<li><strong>Source coverage:</strong> complete lines 1–7,814, six consecutive source-frozen batches.</li>
+<li><strong>Formal audit dispositions:</strong> 162/162 unique named claims/definitions/remarks; <strong>84</strong> additional substantive units.</li>
+<li><strong>Formal status split:</strong> 38 VERIFIED, 75 VERIFIED-CONDITIONAL, 47 FORMALIZED, 2 REPRODUCED.</li>
+<li><strong>Mathematical counterexamples within the actual stated domains:</strong> none confirmed in the six batches.</li>
+<li><strong>Source-precision issues:</strong> 3, and <strong>verification-evidence caveats:</strong> 2. These are separately tracked and are <strong>not</strong> physical occurrence or source-matched mathematical refutations.</li>
+<li><strong>Independent agents:</strong> not available. E1 replay, E3 independent calculations and E4 adversarial tests were separate passes in one coordinated execution, not a multi-agent independent consensus.</li>
+<li><strong>Framework core preserved:</strong> m_p=1 and the constituted level-one carrier are not reopened from a host-only counterexample. No new theory or physical mechanism was introduced.</li>
+</ul>
+<h2>Complete issue and evidence-limitation index</h2>
+<table>
+<thead>
+<tr>
+  <th>ID</th>
+  <th>Kind</th>
+  <th>Source anchor</th>
+  <th>Adjudication / remaining obligation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-IVA-B4-ISSUE-001</code></td>
+  <td>SOURCE_NOTATION_PRECISION</td>
+  <td>IV-A line 5665</td>
+  <td>For local self-containment use c_op consistently in the subtracted rest-energy term or state c:=c_op at this identity; no new theorem/axiom is needed.</td>
+</tr>
+<tr>
+  <td><code>BH-IVA-B4-ISSUE-002</code></td>
+  <td>IMPORTED_RESULT_SCOPE_PRECISION</td>
+  <td>IV-A line 4967</td>
+  <td>Clarify the two limit types in the next editorial revision; retain the valid typed-momentum dictionary and no mp-flow distinction.</td>
+</tr>
+<tr>
+  <td><code>BH-IVA-B5-ISSUE-001</code></td>
+  <td>CROSS_PAPER_SOURCE_PROVENANCE_PRECISION</td>
+  <td>Paper4A-FiniteQuantumMechanics-v4_208.tex:7153–7160</td>
+  <td>Add explicit II-C density/radius provenance to the audited proof-use mapping; no theory repair or new hypothesis, no original paper edited.</td>
+</tr>
+<tr>
+  <td><code>BH-IVA-EVIDENCE-001</code></td>
+  <td>PROOF_EVIDENCE_GATE</td>
+  <td>Paper4A-FiniteQuantumMechanics-v4_208.tex:698-739</td>
+  <td>Provide a claim-wide independent certificate for the sweeping finite-core no-hidden-interface summary; individual component theorems were checked, but the universal meta-status was not promoted from source replay.</td>
+</tr>
+<tr>
+  <td><code>BH-IVA-EVIDENCE-002</code></td>
+  <td>SOURCE_PROOF_PRESENTATION_EVIDENCE</td>
+  <td>Paper4A-FiniteQuantumMechanics-v4_208.tex:4117-4126</td>
+  <td>The theorem has no expanded local proof in source IV-A; the standard matrix-unit argument independently supports the claim but the complete source-level E1 gate is absent.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interpretation:</strong> No identified issue disproves a theorem under its own hypotheses. Source-precision items do not add physical selectors. EVIDENCE-001 and EVIDENCE-002 keep their stated theorems at REPRODUCED, without promoting them to VERIFIED merely because other finite checks passed.</p>
+<h2>Batch-by-batch full audit dossiers</h2>
+<p>The following reproduce the latest complete report for each batch without dropping theorem-census tables or adversarial histories. Machine-readable batch ledgers and exact-check scripts reside inside the DAG Atlas audit layer, not the proof-chain ZIP.</p>
+<hr />
+<h2>Detailed dossier: Batch 1 (source lines 1–1632)</h2>
+<h1>Paper IV-A — Rigorous Verification DAG Audit, Batch 1 (v1_1)</h1>
+<p><strong>Target:</strong> <code>Paper4A-FiniteQuantumMechanics-v4_208.tex</code> (SHA-256 <code>125220dcced44202b5bb91308afaaf3b7181ebf34b1d64a9d79ca69f8eca10da</code>).
+<strong>Protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4</code>.
+<strong>Source range:</strong> 1–1632 of 7814. <strong>Formal source objects examined:</strong> 30/162 across paper; <strong>unnamed substantive source units:</strong> 12.</p>
+<p><strong>Statuses for this batch:</strong> FORMALIZED 15, REPRODUCED 1, VERIFIED 6, VERIFIED-CONDITIONAL 8.  Not a full-paper or whole-framework audit.</p>
+<h2>Batch verdict</h2>
+<p>The finite-core 43-dimensional test algebra, the 225-dimensional mathematical envelope, event/field typing, carrier-resolving graph closure, normalized Born pairing, strict frequency frontier formula, and finite Toeplitz/Peter–Weyl bridge have passed claim-matched source replay and the stated independent checks, within their exact conditions. The no-hidden-interface summary theorem remains REPRODUCED until its deferred downstream CP, tensor and instrument proofs pass their separate audit.</p>
+<p><strong>Confirmed new mathematical defects: none in this batch.</strong> <strong>Confirmed new open issues: none.</strong> One adversarial repeated-energy objection was examined and DISCHARGED by existing Paper IV-C theorem (details below), not added to the gap registry. No physical occurrence, field-event or full-carrier tomography was promoted without a certificate.</p>
+<h2>Claim dispositions (all 30 formal items)</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">Source line</th>
+  <th>Exact label</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">152</td>
+  <td><code>p4:rem:profile-scale-ledger</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">318</td>
+  <td><code>p4:prop:structure-does-not-entail-occurrence</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">349</td>
+  <td><code>p4:rem:selector-status-partition</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">386</td>
+  <td><code>p4:rem:v2187-claim-relative-finite-prerequisites</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">521</td>
+  <td><code>p4:cor:exact-reciprocal-position-resolution</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">592</td>
+  <td><code>p4:def:structural-criterion</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">611</td>
+  <td><code>p4:thm:boundary-conditioned-readout-specialization</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">662</td>
+  <td><code>p4:cor:pure-amplitude-born-square</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">698</td>
+  <td><code>p4:thm:no-hidden-interface-hypotheses</code></td>
+  <td>REPRODUCED</td>
+</tr>
+<tr>
+  <td style="text-align:right">746</td>
+  <td><code>p4:prop:central-proof-discharge</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">794</td>
+  <td><code>p4:def:exhaustion-readout-ledger</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">825</td>
+  <td><code>p4:def:resolved-vs-accessible-algebra</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">867</td>
+  <td><code>p4:lem:unitary-naturality-resolved-events</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">895</td>
+  <td><code>p4:lem:proper-subalgebras-require-selectors</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">931</td>
+  <td><code>p4a:remark:line-931</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">939</td>
+  <td><code>p4:def:carrier-resolving-event-role</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">962</td>
+  <td><code>p4:lem:event-separation-full-envelope</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">1000</td>
+  <td><code>p4:thm:full-finite-observable-algebra</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">1048</td>
+  <td><code>p4:cor:operational-symmetry-state-dimensions</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">1086</td>
+  <td><code>p4:thm:test-graph-env-discharge</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">1144</td>
+  <td><code>p4:cor:one-effect-env-discharge</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">1183</td>
+  <td><code>p4:def:graded-field-envelope</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">1198</td>
+  <td><code>p4:thm:odd-bridge-field-envelope</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">1239</td>
+  <td><code>p4:rem:covariant-odd-bridge-frontier</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">1263</td>
+  <td><code>p4:rem:finite-resolution-selection-status</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">1287</td>
+  <td><code>p4:rem:finite-scope</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">1302</td>
+  <td><code>p4:thm:three-map-bridge</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">1466</td>
+  <td><code>p4:rem:three-map-bridge-export</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">1473</td>
+  <td><code>p4:rem:series-selected-finite-operator-imports</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">1619</td>
+  <td><code>p4:rem:reeb-geometry-no-shell-selector</code></td>
+  <td>FORMALIZED</td>
+</tr>
+</tbody>
+</table>
+<h2>Explicit E1, E3 and adversarial evidence</h2>
+<h3><code>p4:prop:structure-does-not-entail-occurrence</code> — VERIFIED</h3>
+<p>Two expansions of same structural model interpret a new unconstrained Occ_R predicate as empty/nonempty; no structural theorem can distinguish them; not a physical occurrence claim.</p>
+<h3><code>p4:cor:exact-reciprocal-position-resolution</code> — VERIFIED-CONDITIONAL</h3>
+<p>Imported III-F p3:thm:exact-spectral-resolution-staircase, at nondecreasing SF_LambdaF; square inequalities invert cutoff thresholds for every m&gt;=2; E3 numerical 2..59 and exact monotone inverse.</p>
+<h3><code>p4:thm:boundary-conditioned-readout-specialization</code> — VERIFIED-CONDITIONAL</h3>
+<p>Paper II-A p2:thm:loop-boundary-readout-exhaustion plus p2:thm:canonical-finite-state-test-evaluation; IV-A p4:thm:density-matrix and p4:thm:born (source inspected forward). Cauchy-Schwarz/spectral order proves 0&lt;=Tr(E Phi(rho))&lt;=1 for supplied CPTP Phi.</p>
+<h3><code>p4:cor:pure-amplitude-born-square</code> — VERIFIED</h3>
+<p>Exact rank-one product and cyclic trace: Tr(|phi&gt;&lt;phi| T |psi&gt;&lt;psi| T*) = |&lt;phi,T psi&gt;|^2. For a proper contraction this is instrument weight, not unconditioned trace-preserving channel; source says this.</p>
+<h3><code>p4:thm:no-hidden-interface-hypotheses</code> — REPRODUCED</h3>
+<p>Source E1 dependency list checked against existence/location of downstream finite algebra, CP, monoidality and instrument theorems; full E3/E4 of all downstream clauses deferred to Batch 2. Do not promote beyond REPRODUCED yet.</p>
+<h3><code>p4:prop:central-proof-discharge</code> — VERIFIED</h3>
+<p>Finite-dimensionality does not imply CP, semigroup law, reflection positivity, KMS, or convergence. Independent controls include partial transpose negative eigenvalue and non-group alpha_t=Ad e^(it^2H).</p>
+<h3><code>p4:lem:unitary-naturality-resolved-events</code> — VERIFIED</h3>
+<p>u End(H) u^-1=End(H); simultaneous tuple conjugation preserves equations, but fixed-tuple symmetry is stabilizer only.</p>
+<h3><code>p4:lem:proper-subalgebras-require-selectors</code> — VERIFIED</h3>
+<p>Finite-dimensional Wedderburn decomposition of an embedded unital *-subalgebra; selector is embedding data (possibly already constituted), not an extra ad hoc physical postulate.</p>
+<h3><code>p4:lem:event-separation-full-envelope</code> — VERIFIED</h3>
+<p>Hilbert-Schmidt orthogonal nonzero traceless Hermitian h gives rho±=I/N±eps h with same B-expectations, so carrier separation implies B=B(H); explicit diagonal B adversarial control.</p>
+<h3><code>p4:thm:full-finite-observable-algebra</code> — VERIFIED-CONDITIONAL</h3>
+<p>Imports current II-C p2c:thm:exact-level-one-kinematic-algebra and p2c:cor:contained-quantum-kinematic-existence; 43 native, 225 mathematical envelope. Full event role only on generated carrier resolution/ENV.</p>
+<h3><code>p4:cor:operational-symmetry-state-dimensions</code> — VERIFIED-CONDITIONAL</h3>
+<p>Current II-C p2c:thm:operational-symmetry-filtration; dims 43-1,137-1,225-1 and central population conserved by block Kraus. M15 action only if test role generated.</p>
+<h3><code>p4:thm:test-graph-env-discharge</code> — VERIFIED-CONDITIONAL</h3>
+<p>Current II-C p2c:thm:sector-coupling-graph-closure; connected test-typed blocks -&gt; M_N; test role retained only for constituted physical tests. M2⊕M1 plus one bridge explicit E3 span dimension 9.</p>
+<h3><code>p4:cor:one-effect-env-discharge</code> — VERIFIED-CONDITIONAL</h3>
+<p>Each P_lambda E_v P_mu rank-one nonzero; A0 left/right multiplication generates all cross-block matrix units; open dense complement of finite union of coordinate subspaces.</p>
+<h3><code>p4:thm:odd-bridge-field-envelope</code> — VERIFIED-CONDITIONAL</h3>
+<p>II-C graph closure plus II-D diagonal center grading. One central-odd field bridge links two internally full parity blocks; Theta fixed point M11⊕M4. Field odd is NOT automatically an event.</p>
+<h3><code>p4:thm:three-map-bridge</code> — VERIFIED-CONDITIONAL</h3>
+<p>(i) finite linear Toeplitz map quotient by its kernel; (ii) Peter-Weyl/Stone-Weierstrass uniform density; (iii) positive finite spectral sum defines H&gt;=0 and unitary U. Repeated energies challenged and discharged by explicit post-null quotient in IV-A and IV-C p4:thm:finite-euclidean-hamiltonian-reconstruction, lines 2094-2095: combine equal energies first. No literal M15 -&gt; C(S3) or physical real-time actualization asserted.</p>
+<h2>Rejected E4 challenge — repeated energies are already quotiented</h2>
+<p>For <code>p4:thm:three-map-bridge</code> (lines 1385–1417, 1448–1459), the positive scalar kernel with two labels <code>Z1=Z2=1</code>, <code>E1=E2=1</code> has reflection Gram kernel <code>C(s+t)=2e^{-(s+t)}</code>, rank one. Keeping two independent post-quotient vectors would be wrong. But IV-A states explicitly <strong>“After quotienting possible reflection-null vectors”</strong> (1393), and the existing owner <code>p4:thm:finite-euclidean-hamiltonian-reconstruction</code> in <code>Paper4C-TechnicalMaterial-v1_42.tex</code>, lines 2084–2146, expressly <strong>combines equal energies first</strong> at 2094–2095. The reconstructed cyclic spectral space therefore has one vector at that energy. The source claim of <em>existence</em> of a positive finite Hamiltonian is intact. This is a rejected challenge, not a gap or a request to add a new lemma.</p>
+<h2>Canonical boundaries and inherited conditions</h2>
+<p><code>BND-IVA-001</code>: native 43-block test role versus mathematical 225-envelope, graded FENV field algebra and optional ENV event role. A field-only odd bridge is not a physical observable. <code>BND-IVA-002</code>: scalar Toeplitz readout, PW exhaustion, and finite spectral Euclidean reconstruction are three different maps, neither imposing full-matrix event meaning nor general continuum QFT.</p>
+<p>Upstream source imports are typed and claim-matched in the companion JSON. In particular <code>BH-IIC-A-SF-PHYSICAL-001</code> is an existing canonical prior condition; the G0 token labels are <em>scope-role references</em>, not newly created assumptions.</p>
+<h2>Scope and cross-batch continuation</h2>
+<p><code>p4:thm:no-hidden-interface-hypotheses</code> (698–739) and the SUB/PROC summary in lines 1585–1601 rely on downstream same-paper results, which are not certified as a whole until Batch 2. No external paper was independently audited here. No verified material path from the rejected spectral challenge to a downstream observable was found; the sole same-paper later occurrence is a scope remark/citation, not a proof-use edge.</p>
+<p><strong>Next batch:</strong> source lines 1633–2680, covering states, effects, finite CP/Kraus, certified composition and non-signaling preparation; recheck the dependent summary theorem before status promotion.</p>
+<p><strong>Artifact policy:</strong> source papers, input DAG ZIP, and input proof-chain ZIP unchanged. New interim evidence is versioned; the next final ZIP versions are reserved for the last batch only.</p>
+<hr />
+<h2>Detailed dossier: Batch 2 (source lines 1633–2723)</h2>
+<h1>Paper IV-A — Rigorous Verification DAG Audit, Batch 2 (v1_1)</h1>
+<p><strong>Target:</strong> <code>Paper4A-FiniteQuantumMechanics-v4_208.tex</code> (SHA-256 <code>125220dcced44202b5bb91308afaaf3b7181ebf34b1d64a9d79ca69f8eca10da</code>).<br />
+<strong>Source authority:</strong> <code>Paper00-PapersMinimal-v2_370</code>; protocol <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4</code>; DAG snapshot <code>Paper00-DAGAtlas-v1_105</code>; prior proof-chain audit snapshot <code>Paper00-ProofChainAudits-v1_23</code>.<br />
+<strong>Source range:</strong> <strong>1,633–2,723</strong> of 7,814. The planned 1,633–2,680 range was extended by 43 lines to finish the self-contained non-signaling subsection before the next major section.</p>
+<p><strong>Coverage this batch:</strong> <strong>22 formal objects</strong>, <strong>9 other substantive source units</strong>. Source-level counts (formal): <strong>8 FORMALIZED, 5 VERIFIED, 9 VERIFIED-CONDITIONAL</strong>. Cumulative formal coverage with Batch 1: <strong>52/162 objects</strong>, with full-paper certification still pending.<br />
+<strong>Confirmed new defects:</strong> <strong>0</strong>. <strong>New undischarged source-matched proof gaps:</strong> <strong>0</strong>. All scope conditions, actual process certificates, and existing tensor/import hypotheses are explicitly retained; their presence is not equivalent to an unconditional physical occurrence.</p>
+<h2>Batch result</h2>
+<p>The finite block-state/POVM/Born construction, the factor-local same-type Choi criterion, Choi–Kraus instruments, exact per-outcome process descent, product-operation commutativity, pair-complete tensor monoidality, partial traces, and non-signaling <strong>pass the source replay and the stated independent checks within their actual hypothesis domains</strong>. No valid countermodel satisfying all printed hypotheses was found. The <code>SUB</code>, <code>PROC</code>, <code>PROB</code> and joint occurrence guards are not treated as proofs of physical actualization.</p>
+<h3>Complete formal source-object census (22/22)</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">Source line</th>
+  <th>Label (synthetic for unlabeled remarks)</th>
+  <th>Disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">1687</td>
+  <td><code>p4:def:observable-event</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">1703</td>
+  <td><code>p4:prop:exact-finite-operator-bridge</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">1750</td>
+  <td><code>p4:def:state</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">1785</td>
+  <td><code>p4a:remark:line-1785</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">1792</td>
+  <td><code>p4:prop:symmetry-selected-preparation</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">1824</td>
+  <td><code>p4:prop:no-insertion-finite-readout-uniqueness</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">1846</td>
+  <td><code>p4:thm:density-matrix</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">1937</td>
+  <td><code>p4:cor:state-test-root-equivalence</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">1973</td>
+  <td><code>p4:thm:born</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">2016</td>
+  <td><code>p4:rem:born-evaluation-status</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">2027</td>
+  <td><code>p4:rem:gleason-available</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">2164</td>
+  <td><code>p4:thm:cp-forced</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">2230</td>
+  <td><code>p4:rem:proc-relative-to-sub-dyn</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">2252</td>
+  <td><code>p4:thm:finite-choi-kraus-instruments</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">2338</td>
+  <td><code>p4:thm:v296-outcome-wise-instrument-descent</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">2452</td>
+  <td><code>p4:prop:common-witness-cooccurrence</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">2483</td>
+  <td><code>p4:thm:gp2-product-operation-interchange</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">2532</td>
+  <td><code>p4:rem:product-operation-exactness</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">2545</td>
+  <td><code>p4:thm:independent-finite-composability</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">2597</td>
+  <td><code>p4:thm:tensor-product</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">2664</td>
+  <td><code>p4a:remark:line-2664</code></td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">2685</td>
+  <td><code>p4:thm:nonsignaling</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+</tbody>
+</table>
+<p><code>FORMALIZED</code> here records an accurately reproduced definition, scope remark, or role statement; it does <strong>not</strong> mean that a physical selection claim was verified. The two unlabeled remarks use synthetic IDs for audit indexing only, <strong>not</strong> new theorem labels inserted in TeX.</p>
+<h3>Unnamed substantive source units (9/9)</h3>
+<table>
+<thead>
+<tr>
+  <th>Source lines</th>
+  <th>Stable audit ID</th>
+  <th>Status</th>
+  <th>Material assertion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1640–1679</td>
+  <td><code>P4A-U2-001</code></td>
+  <td>FORMALIZED</td>
+  <td>Scope table: generated quantum identifications and separate process/occurrence marks</td>
+</tr>
+<tr>
+  <td>1736–1747</td>
+  <td><code>P4A-U2-002</code></td>
+  <td>FORMALIZED</td>
+  <td>Full S(A) imported; G0 PROB token selects actual trial, not trace formula</td>
+</tr>
+<tr>
+  <td>1778–1783</td>
+  <td><code>P4A-U2-003</code></td>
+  <td>FORMALIZED</td>
+  <td>Dimension-weighted closed-loop readout differs from arbitrary preparation simplex</td>
+</tr>
+<tr>
+  <td>2045–2060</td>
+  <td><code>P4A-U2-004</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Structural level-one triple H1,Akin,S(Akin) with carrier dimension 15 and algebra dimension 43</td>
+</tr>
+<tr>
+  <td>2071–2109</td>
+  <td><code>P4A-U2-005</code></td>
+  <td>FORMALIZED</td>
+  <td>Structural operator/process table correctly separates algebraic form and token selection</td>
+</tr>
+<tr>
+  <td>2113–2138</td>
+  <td><code>P4A-U2-006</code></td>
+  <td>VERIFIED</td>
+  <td>POVM normalization sum_i E_i=I implies sum_i p_i=1 and 0&lt;=p_i&lt;=1</td>
+</tr>
+<tr>
+  <td>2142–2161</td>
+  <td><code>P4A-U2-007</code></td>
+  <td>FORMALIZED</td>
+  <td>PROC/SUB same-type factor-local process antecedent made explicit; positive joint action not inherited from single marginal positivity</td>
+</tr>
+<tr>
+  <td>2408–2444</td>
+  <td><code>P4A-U2-008</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Joint block density marginal partial trace and local evaluation formula for finite direct sums</td>
+</tr>
+<tr>
+  <td>2672–2677</td>
+  <td><code>P4A-U2-009</code></td>
+  <td>FORMALIZED</td>
+  <td>Native tensor result conditional on SUB and exact GP2 no-cross relation, independent of CP proof</td>
+</tr>
+</tbody>
+</table>
+<h2>Source-matched E1 replay and independent mathematical verification (E3)</h2>
+<h3>1. Finite states/effects/Born evaluation — <strong>VERIFIED</strong> on the full complex finite state grammar</h3>
+<p><strong>Source:</strong> <code>p4:thm:density-matrix</code> (1,846–1,935), <code>p4:thm:born</code> (1,973–2,013), upstream Paper II-A <code>p2:thm:canonical-finite-state-test-evaluation</code> (998–1,070). The current source identifies <code>S(A)</code> as the <strong>full</strong> positive normalized complex-linear dual, not as a projection-only valuation. This matters at dimensions one and two and rules out an invalid Gleason-only gap.</p>
+<p>An independently checked linear-order argument fixes an effect valuation. Finite additivity and nonnegativity on <code>[0,I]</code> imply monotonicity; subdivision then gives rational homogeneity, and monotonicity gives real homogeneity. Scaling extends the map to the positive cone. Every Hermitian matrix is a difference of two positive matrices; the extension is well defined because any two positive decompositions satisfy <code>X+Y'=X'+Y</code>. For each summand <code>M_d</code>, matrix units reconstruct a unique trace-dual <code>rho</code>; positivity on rank-one projections forces <code>rho&gt;=0</code>, and normalization fixes <code>sum Tr rho=1</code>. This is valid also for <code>d=1,2</code>.</p>
+<p>For <code>0&lt;=E&lt;=I</code>, <code>0&lt;=Tr(rho E)&lt;=Tr rho</code>; summing blocks proves both the upper probability bound and <code>sum_i p_i=1</code> for any POVM. The role of a <strong>performed</strong> apparatus test is separate. Schur's lemma also independently confirms that fixed-state invariance under <em>all</em> block unitaries gives only the central simplex <code>rho_lambda=p_lambda I/d_lambda</code>, not a uniquely selected preparation.</p>
+<p><strong>Exact control:</strong> <code>A=M_2⊕C</code>, <code>rho_2=[[1/4,1/8],[1/8,1/4]]</code>, <code>rho_1=1/2</code>, <code>E_2=I/2+X/4</code>, <code>E_1=3/4</code>; the value is <strong>11/16</strong>. This tests a nontracial state and nonprojective effect without silently restricting to a full <code>M_3</code> algebra.</p>
+<h3>2. Factor-local same-type action forces CP — <strong>VERIFIED-CONDITIONAL</strong>, and the conditional is genuine</h3>
+<p><strong>Source:</strong> <code>p4:thm:cp-forced</code> (2,164–2,228), imported representation theorem <code>p4:thm:finite-choi-kraus-instruments</code> (2,252–2,333). An actual affine normalized <code>F:S(A)→S(A)</code> is <strong>supplied</strong>, not derived, and a certified same-type <code>SUB</code> occurrence provides <code>A⊗A</code>. <code>PROC</code> asserts its factor-local lift <code>id_A⊗Phi</code> preserves the full admitted joint state cone. Once that antecedent holds, the positive-cone normalization formula gives a unique positive trace-preserving complex-linear <code>Phi</code>.</p>
+<p>For <code>A=⊕_lambda M_{d_lambda}</code>, restrict the positive <code>id_A⊗Phi</code> to input pair <code>(lambda,lambda)</code> and output pair <code>(lambda,mu)</code>. Then <code>id_{M_{d_lambda}}⊗Phi_{mu,lambda}</code> is positive. On the maximally entangled rank-one input, its output is the Choi matrix <code>C_{mu,lambda}&gt;=0</code>. By the finite Choi criterion, each block map is CP; summing the finite block maps gives complete positivity of <code>Phi</code>, for <strong>every mathematical amplification</strong>, without requiring physical occurrences of all ancillas.</p>
+<p><strong>Adversarial control:</strong> The transpose on <code>M_2</code> is positive and trace preserving but not CP: <code>(id_2⊗transpose)(|Omega&gt;&lt;Omega|)</code> has eigenvalues <code>1/2,1/2,1/2,-1/2</code>. It <strong>violates</strong> the source's explicit same-type joint positivity premise and is thus <strong>not a valid refutation</strong>. The result cannot be strengthened to positivity of <code>Phi</code> on its own algebra.</p>
+<h3>3. Kraus instruments and outcome-by-outcome quotient — <strong>VERIFIED / VERIFIED-CONDITIONAL</strong></h3>
+<p><strong>Source:</strong> <code>p4:thm:finite-choi-kraus-instruments</code> (2,252–2,333) and <code>p4:thm:v296-outcome-wise-instrument-descent</code> (2,338–2,403). On finite direct sums, block Choi positivity gives operators <code>K_{mu,lambda,a}:H_lambda→K_mu</code> and block action <code>Phi(rho)_mu=sum_{lambda,a}K rho_lambda K*</code>. Total trace preservation is <strong>per input block</strong>: <code>sum_{mu,a}K* K=I_{H_lambda}</code>. A finite CP family is an instrument precisely when the aggregate map is TP; the conditional posterior is <code>Phi_i(rho)/p_i</code> for <code>p_i&gt;0</code>.</p>
+<p>The process descent theorem has an independent annihilator verification. If <code>Q</code> is the canonical state quotient to the multiplicity-blind algebra <code>A</code>, the map <code>Q Psi_i</code> factors through <code>Q</code> <strong>if and only if</strong> it vanishes on <code>ker Q</code>. By trace duality this is equivalent to <code>Psi_i^*(A)⊂A</code> for <strong>each</strong> outcome. The reduced outcome maps are CP because their Heisenberg representatives are restrictions of CP maps to the preserved C*-subalgebra. Surjectivity of <code>Q</code> gives uniqueness. Intertwining for any adaptive outcome word follows by induction, with the output label of each previous outcome selecting only the next specified setting.</p>
+<p><strong>Necessary E4 distinction, already explicitly present in source:</strong> For <code>H=C^2⊗C^2</code>, <code>A=M_2⊗I_2</code> and outcomes <code>Psi_i(rho)=(I_2⊗P_i)rho(I_2⊗P_i)</code>, the <strong>sum</strong> dephases multiplicity and preserves <code>A</code>, but <code>Psi_i^*(I_4)=I_2⊗P_i</code> does not belong to <code>A</code>. Two states with the same <code>Q</code> image give different outcome probabilities. The theorem requires and correctly uses <strong>outcome-wise</strong>, not just aggregate, descent. <code>43</code> and <code>137</code> are the correct real dimensions of the two relevant Hermitian test bases imported from II-C (not an assertion that either test algebra is <code>M_15</code>).</p>
+<h3>4. Common-witness versus independent tensor composition — <strong>VERIFIED-CONDITIONAL</strong></h3>
+<p><strong>Source:</strong> <code>p4:prop:common-witness-cooccurrence</code> (2,452–2,480); <code>p4:thm:gp2-product-operation-interchange</code> (2,483–2,530); <code>p4:thm:independent-finite-composability</code> (2,545–2,594); <code>p4:thm:tensor-product</code> (2,597–2,661). These are deliberately <strong>not</strong> the same occurrence statement.</p>
+<p>A single previously occurring witness <code>x</code> can have two licensed host-natural deterministic descendants <code>F(x)</code> and <code>G(x)</code> without a second independent occurrence. The canonical map <code>x↦(F(x),G(x))</code> preserves their <strong>common source relation</strong>, so this does <strong>not</strong> imply a free tensor product. An independent <code>SUB</code> pair is a different source scope: the frozen relation slot must admit all cross-value pairs and preserve both local tests.</p>
+<p>The commuting-product theorem can be independently tested by differentiation: exact preservation of the direct-product unitary group law makes <code>i_A(exp(it h))</code> commute with <code>i_B(exp(is k))</code> for every local Hermitian <code>h,k</code>; differentiating in <code>t,s</code> at zero gives <code>[i_A(h),i_B(k)]=0</code>, hence all local algebra images commute. A <strong>projective</strong> relation with nontrivial cocycle does not meet that exactness hypothesis.</p>
+<p>For finite direct sums, the multiplication homomorphism <code>mu:A⊗B→C</code> is surjective because <code>C</code> is generated by the images. Its kernel is a sum of simple central pair blocks. The explicit no-deleted-pair clause <code>(iv)</code> makes every central product <code>i_A(z_lambda)i_B(w_mu)</code> nonzero, ruling out every nonzero ideal kernel. Hence <code>mu</code> is an isomorphism, with minimal faithful carrier <code>⊕_{lambda,mu} H_{A,lambda}⊗H_{B,mu}</code>. An independent central-corner representation argument gives the same result: the two faithful commuting factors on each surviving simple pair generate <code>M_{d_lambda d_mu}</code>, and relation exactness retains every pair.</p>
+<p><strong>E4 scope test:</strong> <code>A=C⊕M_2</code> and <code>B=C⊕M_3</code> admit a commuting faithful generated quotient that <strong>deletes</strong> the <code>(C,C)</code> central pair; the remaining three sectors still represent each factor faithfully. Such a quotient violates printed condition <code>(iv)</code> and the GP2 relation-free/no-omission clause, so it is a valid test of the necessity of <code>(iv)</code>, <strong>not</strong> a refutation of the theorem. For this pair the full tensor algebra has dimension <code>5·10=50</code>, and its minimal faithful carrier has dimension <code>3·4=12</code>.</p>
+<h3>5. Marginal states and non-signaling — <strong>VERIFIED-CONDITIONAL</strong></h3>
+<p><strong>Source:</strong> block partial-trace identity (2,408–2,444) and <code>p4:thm:nonsignaling</code> (2,685–2,720). The joint state's local expectation is <code>sum_{lambda,mu}Tr[rho_{lambda,mu}(E_{A,lambda}⊗I_{B,mu})]</code>, which equals the trace of the partial-traced <code>A</code> block against <code>E_A</code>. With a local CPTP Kraus family <code>K_i</code> on <code>B</code>, cyclicity under the partial trace yields</p>
+<p><code>Tr_B sum_i (I_A⊗K_i)rho_AB(I_A⊗K_i*) = Tr_B[(I_A⊗sum_i K_i* K_i)rho_AB]=Tr_B rho_AB</code>.</p>
+<p>This is separate from the source's Heisenberg-dual proof and supplies an exact independent route. On a Bell state, an <strong>unconditioned</strong> remote projective measurement leaves <code>rho_A=I_2/2</code>; conditioning on outcome zero produces <code>|0&gt;&lt;0|</code>. The theorem explicitly distinguishes these cases and does <strong>not</strong> claim remote conditional states are unchanged.</p>
+<h2>Adversarial challenges and adjudication (E4)</h2>
+<table>
+<thead>
+<tr>
+  <th>Challenge</th>
+  <th>Target</th>
+  <th>Finding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>CHAL-IVA-B2-001</code></td>
+  <td>CP from same-type process</td>
+  <td>Transpose detects negative Bell partial transpose; excluded by required joint positivity.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B2-002</code></td>
+  <td>Instrument descent</td>
+  <td>Aggregate descent fails to imply individual outcome descent; source includes this exact caveat and counterexample.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B2-003</code></td>
+  <td>Tensor monoidality</td>
+  <td>Deleting a cross-sector pair fails condition (iv).</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B2-004</code></td>
+  <td>Exact GP2 operation interchange</td>
+  <td>Pauli/Weyl anti-commutation violates exact product homomorphism; projective branch excluded.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B2-005</code></td>
+  <td>Non-signaling</td>
+  <td>Selective conditional state can change; unconditioned marginal remains fixed as claimed.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Confirmed issues in this batch: none.</strong> The above adversarial findings are recorded as <strong>rejected challenges / explicit source-boundary tests</strong>, not hidden new gaps. No proof was repaired and no theory was extended.</p>
+<h2>Boundary, source ancestry, and cross-batch impact</h2>
+<ul>
+<li><code>BND-IVA-003</code> — Physical generated <strong>test/state/effect</strong> roles versus <code>PROB</code>-tagged actual preparation, performed test, and empirical outcome. Import IDs: <code>BH-IIA-A-STATEGRAMMAR-001</code>, <code>BH-IIA-A-GENERATED-TEST-SLOT-001</code>; owner Paper II-A <code>p2:thm:canonical-finite-state-test-evaluation</code>.</li>
+<li><code>BND-IVA-004</code> — <strong>PROC/SUB</strong> action occurrence versus mathematically forced CP/Kraus; separate CP <strong>outcome-wise</strong> quotient. Imports <code>p2b:thm:v293-operational-multiplicity-quotient</code> and numerical finite Hermitian basis statement <code>p2c:prop:v294-finite-process-descent</code>.</li>
+<li><code>BND-IVA-005</code> — One generated common-witness pairing <strong>is not</strong> an independent second token; exact GP2 relation-free product retains every cross-pair, unlike a diagonal or braided/phase-identified branch. Upstream source <code>p2:post:GP2</code>, lines 2,897–3,055, especially 3,044–3,054.</li>
+<li><code>BND-IVA-006</code> — <strong>Nonselective</strong> local CPTP no-signaling versus <strong>conditional</strong> remote posterior updates; requires a certified tensor-product application domain and a specified map.</li>
+</ul>
+<p><strong>Backward/source-matched material links:</strong> The companion JSON records the exact <code>from→to</code> proof-use edges. There are no source-authorized claims of independent instrument occurrence, independent second-subsystem occurrence, arbitrary process actualization, full-carrier matrix-event meaning, or additional fermionic odd observables.</p>
+<p><strong>Cross-batch recheck:</strong> Batch 1 theorem <code>p4:thm:no-hidden-interface-hypotheses</code> (698–739) has now had its deferred Born, factor-local CP, Kraus/instrument, and tensor monoidality ingredients checked. Its summary includes native automorphism flows and <code>DYN</code> separation whose proofs begin after line <strong>2,723</strong>; therefore the summary theorem is deliberately <strong>kept REPRODUCED</strong> rather than prematurely upgraded. Source commentary at 1,585–1,601 is confirmed within the explicit <code>SUB/PROC</code> roles just checked. Neither status constitutes an audit of Paper IV-B/IV-C.</p>
+<h2>Validation and next source boundary</h2>
+<ul>
+<li>Freeze SHA-256 agrees with Batch 1. No original paper, supplied DAG archive, or supplied audit archive was edited.</li>
+<li>Exact input/statement/proof evidence for <strong>22/22</strong> named/formal objects and <strong>9/9</strong> unnamed substantive units retained in the companion JSON.</li>
+<li><strong>21</strong> label references in this range resolve uniquely against the current source corpus; no unresolved cross-reference.</li>
+<li><strong>11/11</strong> deterministic exact finite checks passed; five matching adversarial challenges retained with dispositions; the code and results are in the local evidence workspace.</li>
+<li><strong>No consolidated ZIP yet:</strong> following the user's batching instruction, the DAG Atlas ZIP and proof-chain audit ZIP will be generated <strong>only after the final IV-A batch</strong>, each with only the latest version of each constituent artifact.</li>
+</ul>
+<p><strong>Next batch:</strong> lines <strong>2,724–4,146</strong>, comprising finite dynamics, self-adjoint generators, Wigner/Noether, finite GKLS, stationary states, generated process rigidity and central-weight/instrument distinctions. This ends immediately before the next major section, Rays, projective phases and finite sector representations.</p>
+<hr />
+<h2>Detailed dossier: Batch 3 (source lines 2724–4146)</h2>
+<h1>Paper IV-A — Rigorous Verification DAG Audit, Batch 3 (v1_1)</h1>
+<p><strong>Target:</strong> <code>Paper4A-FiniteQuantumMechanics-v4_208.tex</code> (SHA-256 <code>125220dcced44202b5bb91308afaaf3b7181ebf34b1d64a9d79ca69f8eca10da</code>).<br />
+<strong>Authoritative source:</strong> <code>Paper00-PapersMinimal-v2_370</code>; existing global atlas <code>Paper00-DAGAtlas-v1_105</code>; prior audits <code>Paper00-ProofChainAudits-v1_23</code>.<br />
+<strong>Procedure:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4</code> plus the supplied proof-chain audit guardrails. Exactly one target is audited; upstream II-A, II-B, III-A and IV-A earlier sections are consulted only to verify material imports. Original papers and ZIPs were not changed.<br />
+<strong>Frozen range:</strong> <strong>lines 2,724–4,146 of 7,814</strong>, from <em>Finite dynamics, automorphisms, symmetries and generators</em> to the section boundary before <em>Rays, projective phases and finite sector representations</em>.</p>
+<p><strong>Census:</strong> 30/30 source formal objects in this range and <strong>16/16</strong> relevant unnamed substantive units disposed. Formal statuses: <strong>8 VERIFIED</strong>, <strong>15 VERIFIED-CONDITIONAL</strong>, <strong>6 FORMALIZED</strong>, <strong>1 REPRODUCED</strong> (missing source-expanded E1 proof, independently confirmed). <strong>Cumulative audited formal objects: 82/162 (50.6%)</strong> through Batch 3. This is <em>not</em> a certification of the remainder of IV-A.<br />
+<strong>Independent controls:</strong> 29/29 passed (exact symbolic algebra and direct finite numerical matrix checks, including a 225-dimensional two-copy realization). <strong>E4:</strong> 9/9 scope-matched challenges adjudicated; none refutes a theorem on its stated domain.<br />
+<strong>New confirmed mathematical defects:</strong> <strong>0</strong>. <strong>New source-matched open mathematical proof gaps:</strong> <strong>0</strong>. <strong>Source-proof evidence limitation:</strong> 1, at the simple KMS uniqueness statement (lines 4117–4126); it is mathematically established by a separate full matrix-unit argument below, but IV-A has no expanded proof to replay, so <code>REPRODUCED</code> is the conservative evidence status. No false <code>REFUTED</code>/<code>VERIFIED</code> label is assigned from a numerical script alone.</p>
+<h2>1. Formal claim census: all 30 objects in the source range</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">Source lines</th>
+  <th>Exact label</th>
+  <th>Disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">2731–2746</td>
+  <td><code>p4:cor:native-kinematic-flows</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">2772–2794</td>
+  <td><code>p4:cor:central-gauge-closed-generator</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">2806–2821</td>
+  <td><code>p4:prop:bare-algebra-dynamics-no-selector</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">2834–2849</td>
+  <td><code>p4:rem:one-ray-dynamics-criterion</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">2873–2899</td>
+  <td><code>p4:cor:schrodinger-heisenberg-one-corealized-dynamics</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">2974–2995</td>
+  <td><code>p4:thm:inner-flow</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3046–3059</td>
+  <td><code>p4:thm:gkls</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3158–3175</td>
+  <td><code>p4:thm:wigner-finite</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3307–3313</td>
+  <td><code>p4:rem:wigner-status</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3395–3406</td>
+  <td><code>p4:rem:v458-finite-generator-status</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3422–3437</td>
+  <td><code>p4:thm:constants-of-motion</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3454–3474</td>
+  <td><code>p4:cor:noether-finite</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3487–3500</td>
+  <td><code>p4:rem:v458-native-supplied-noether</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3502–3512</td>
+  <td><code>p4:rem:v176-noether-one-two-boundary</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3563–3576</td>
+  <td><code>p4:thm:finite-spectral-evolution</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3597–3612</td>
+  <td><code>p4:thm:stationary-states</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3709–3717</td>
+  <td><code>p4:cor:commuting-split</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3736–3749</td>
+  <td><code>p4:thm:neutral-primitive-qms-rigidity</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3759–3775</td>
+  <td><code>p4:cor:neutral-qms-universal-continuation</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3777–3807</td>
+  <td><code>p4:thm:generated-reversible-mixing-graph</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3829–3842</td>
+  <td><code>p4:cor:reversible-family-common-stationary-state</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3844–3874</td>
+  <td><code>p4:cor:eleven-four-one-edge-relaxation</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3899–3929</td>
+  <td><code>p4:thm:v264-paired-population-law</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3949–3965</td>
+  <td><code>p4:prop:v264-population-converse</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">3981–4003</td>
+  <td><code>p4:prop:v264-covariant-gkls-alternative</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4020–4040</td>
+  <td><code>p4:thm:v264-all-history-native-blindness</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4050–4078</td>
+  <td><code>p4:rem:v264-paired-action-firewall</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4081–4105</td>
+  <td><code>p4:prop:modular-central-weight-blindness</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4117–4126</td>
+  <td><code>p4:thm:finite-simple-kms-uniqueness</code></td>
+  <td><strong>REPRODUCED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4128–4140</td>
+  <td><code>p4:prop:effect-instrument-nonselection</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+</tbody>
+</table>
+<p><code>FORMALIZED</code> applies to an accurately scoped definition/remark, not to a missing physical derivation. <code>VERIFIED-CONDITIONAL</code> preserves the exact supplied process, Hamiltonian, subgroup, graph, bath or instrument antecedents. <code>REPRODUCED</code> means source wording and the mathematical result were independently checked, but the full source-replay E1 criterion was not available. The machine-readable ledger preserves <strong>each exact printed statement and its immediately attached source proof</strong>, the mathematical check route, scope guard, and links.</p>
+<h2>2. Unnamed substantive mathematical/readout units: all 16 covered</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">Source lines</th>
+  <th>Audit unit</th>
+  <th>Claim actually checked</th>
+  <th>Disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">2724–2729</td>
+  <td><code>P4A-U3-001</code></td>
+  <td>Section scoped: generator representations conditional; arbitrary law not algebra-selected</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">2756–2770</td>
+  <td><code>P4A-U3-002</code></td>
+  <td>Finite-center invariance and supplied one-parameter implementation (before central gauge)</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">2851–2872</td>
+  <td><code>P4A-U3-003</code></td>
+  <td>GP2 DYN occurrence split; fixed bath partial trace CP and initial-correlation caveat</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">2917–2966</td>
+  <td><code>P4A-U3-004</code></td>
+  <td>Closed structural quantum output table with ENV/FENV, SUB, PROB, DYN boundaries</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">3091–3126</td>
+  <td><code>P4A-U3-005</code></td>
+  <td>Robertson uncertainty, complementarity and linear no-universal-cloning proof</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">3146–3156</td>
+  <td><code>P4A-U3-006</code></td>
+  <td>Pure-ray transition probability and supplied physical symmetry role</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">3301–3305</td>
+  <td><code>P4A-U3-007</code></td>
+  <td>Wigner phase/type uniqueness does not generate physical symmetry</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">3317–3362</td>
+  <td><code>P4A-U3-008</code></td>
+  <td>Unitary/antiunitary projective group lift, twisted cocycle, identity component</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">3369–3393</td>
+  <td><code>P4A-U3-009</code></td>
+  <td>Finite constituted one-parameter unitary generator and physical symmetry guard</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">3514–3532</td>
+  <td><code>P4A-U3-010</code></td>
+  <td>Good quantum numbers and simultaneous spectral resolution for commuting observables</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">3545–3560</td>
+  <td><code>P4A-U3-011</code></td>
+  <td>Finite H spectral theorem and exact U(t) phase eigenprojectors</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">3585–3594</td>
+  <td><code>P4A-U3-012</code></td>
+  <td>Stationarity defined under a supplied H-flow; degeneracy allowed</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">3631–3660</td>
+  <td><code>P4A-U3-013</code></td>
+  <td>Schr/Heis picture equality and infinitesimal commutator equation</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">3664–3707</td>
+  <td><code>P4A-U3-014</code></td>
+  <td>Interaction picture, noncommuting H0+V(t) ODE, absolute Dyson convergence, split guard</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">3724–3734</td>
+  <td><code>P4A-U3-015</code></td>
+  <td>Finite picture triad and P1/P0 neutral-process decomposition</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">3888–3897</td>
+  <td><code>P4A-U3-016</code></td>
+  <td>v2.264 paired two-copy operator imports and no automatic M15 event upgrade</td>
+  <td>FORMALIZED</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Proof replay (E1) and independent mathematical evidence (E3)</h2>
+<h3>3.1 Native flows, central gauge, naturality, and the supplied-flow boundary</h3>
+<p><strong>Source:</strong> <code>p4:cor:native-kinematic-flows</code> (2731–2754), <code>p4:cor:central-gauge-closed-generator</code> (2772–2804), <code>p4:prop:bare-algebra-dynamics-no-selector</code> (2806–2832), <code>p4:thm:inner-flow</code> (2974–3039).<br />
+For <code>A=⊕_λ M_{d_λ}(C)</code> and <code>X=X*∈A</code>, <code>α_s^X(a)=e^{isX}ae^{-isX}</code> is a norm-continuous automorphism group because the exponential belongs to the same finite algebra. The generator is <code>δ_X(a)=i[X,a]</code>. The flow is nonconstant precisely when <code>X∉Z(A)</code>. A <strong>given</strong> one-parameter automorphism group fixes every minimal central projector, since the permutation map from the connected parameter group to a discrete finite set is constant. On each simple block its bounded *-derivation is inner, and integration gives <code>α_t(a)=e^{itH}ae^{-itH}</code>.</p>
+<p>If <code>H,H'</code> implement the <strong>same parametrized</strong> flow, differentiation at zero gives <code>i[H-H',a]=0</code> for every <code>a</code>; hence <code>H-H'</code> is a blockwise real scalar. Conversely any such central shift cancels from conjugation. Unitary-equivariant naturality of a bare-algebra assignment <code>[H(A)]</code> forces <code>UHU*−H</code> central for all inner automorphisms; taking block traces forces this central difference to vanish. Therefore the candidate <code>H</code> is central. <strong>This is a no-selector result for the bare full algebra</strong>, not a no-go against an already constituted, marked, nontrivially geometric <code>DYN</code> action. The <code>one-ray</code> remark at 2834–2849 is interpreted only as a symmetry reduction criterion: Paper III-A requires a nonempty admissible positive generator ray, sign/orientation and the precise process role before any physical conclusion.</p>
+<p><strong>Independent E3:</strong> finite center/commutant method and explicit noncommuting test; a shift <code>H→H+5I</code> leaves automorphism predictions invariant while changing numerical energy-zero data. The output <em>does not</em> identify the elapsed physical parameter, an actual trajectory or an action-selected Hamiltonian.</p>
+<h3>3.2 GKLS is an exact normal form <strong>only for a supplied semigroup</strong></h3>
+<p><strong>Source:</strong> <code>p4:thm:gkls</code> (3046–3087), dependent on <code>p4:thm:finite-choi-kraus-instruments</code> (2252–2333). If <code>Φ_t</code> is norm-continuous CPTP, <code>Φ_{s+t}=Φ_sΦ_t</code> and <code>Φ_0=id</code> on full <code>M_d</code>, finite generator <code>L</code> exists. The proof's infinitesimal Kraus form has <code>K_0=I+tG+o(t)</code> and <code>K_α=√t L_α+o(√t)</code>; TP imposes <code>G+G*+ΣL_α*L_α=0</code>, yielding the displayed GKLS generator.</p>
+<p><strong>Independent E3 route:</strong> For the Choi matrix <code>C_t=|Ω⟩⟨Ω|+t C_L+o(t)</code>, complete positivity implies the compression of <code>C_L</code> to the orthogonal complement of <code>Ω</code> is positive: <code>Q C_L Q≥0</code>. A finite positive spectral decomposition of this conditional Choi block yields the dissipative jump terms. Trace preservation then fixes the anticommutator and the remaining skew-adjoint term is a Hamiltonian commutator. This does not depend on differentiating the same Kraus eigenvectors as the printed proof. An exact amplitude-damping CPTP semigroup has the source GKLS derivative to O(dt) in a separate numerical control.</p>
+<p><strong>Boundary:</strong> A fixed independent bath preparation and global unitary produce a CPTP map for each time, <strong>not automatically a semigroup</strong>. Correlations may break the all-state CP assignment, and a non-Markov process does not satisfy the theorem hypothesis. <code>PROC</code>, <code>DYN</code>, bath, physical time scale and actual trajectory remain independent occurrence marks.</p>
+<h3>3.3 Wigner, projective group laws, Noether, spectral/stationary evolution</h3>
+<p><strong>Source:</strong> <code>p4:thm:wigner-finite</code> (3158–3299), projective semilinear group law (3317–3362), <code>p4:thm:constants-of-motion</code> (3422–3452), <code>p4:cor:noether-finite</code> (3454–3485), <code>p4:thm:finite-spectral-evolution</code> (3563–3581), <code>p4:thm:stationary-states</code> (3597–3624), and interaction picture (3664–3720).</p>
+<p>The finite Wigner proof correctly normalizes an orthonormal basis, reconstructs each complex affine line as either the identity or conjugation, and uses two-coordinate overlap interference to enforce one global type. Opposite unitary and antiunitary types cannot implement the same ray action at <code>d≥2</code> (the ray <code>[e1+i e2]</code> distinguishes them); at <code>d=1</code> both types implement the unique ray. <strong>Independent E3:</strong> sending rank-one projectors <code>P_ψ</code> to <code>P_{Sψ}</code> preserves the Hilbert–Schmidt inner product <code>Tr(P_ψ P_φ)</code> and uniquely extends, because rank-one projections span Hermitian <code>M_d</code>, to a real-linear unital order isomorphism. Its finite Jordan structure is either unitary conjugation or conjugated transpose. This is independent of the coordinate-line proof. For an antiunitary group element the factor-set law correctly conjugates scalars; the printed cocycle identity uses the twisted rule. No physical action is generated from the classification alone.</p>
+<p>For closed <code>H</code>, all-state expectation invariance of self-adjoint <code>Q</code> is equivalent by state separation to <code>e^{itH}Qe^{-itH}=Q</code> and thus <code>[H,Q]=0</code>. When the supplied, physically licensed unitary symmetry <code>U(s)=e^{-isG}</code> leaves <code>H</code> invariant, differentiation gives <code>[H,G]=0</code>; the converse is only algebraic without a <em>physical symmetry</em> certificate. This is Noether-I; it is not a blanket physical charge inference from local gauge redundancy (Noether-II).</p>
+<p>The finite eigenprojector expansion <code>H=Σ E_αP_α</code> yields <code>A_H(t)=Σe^{it(E_α−E_β)}P_αAP_β</code>. Stationarity of a density is equivalent to <code>[H,ρ]=0</code>, i.e. <strong>block-diagonality across distinct energies</strong>. Arbitrary mixing and coherence inside the same degenerate energy eigenspace is allowed. For <code>H=H0+V(t)</code>, <code>U_I=e^{itH0}U</code> obeys <code>i∂_tU_I=e^{itH0}V(t)e^{-itH0}U_I</code>; finite norm-integrable perturbations have convergent time-ordered solutions on compact time intervals. Only <code>[H0,V]=0</code> gives the closed factorization <code>e^{-it(H0+V)}=e^{-itH0}e^{-itV}</code>. These are picture presentations of one preexisting dynamics, not independently selected processes.</p>
+<h3>3.4 Depolarizing rigidity and graph continuation — family law versus member</h3>
+<p><strong>Source:</strong> <code>p4:thm:neutral-primitive-qms-rigidity</code> (3736–3757), <code>p4:cor:neutral-qms-universal-continuation</code> (3759–3775), <code>p4:thm:generated-reversible-mixing-graph</code> (3777–3827), <code>p4:cor:reversible-family-common-stationary-state</code> (3829–3842).</p>
+<p>Under <strong>full</strong> <code>U(d)</code> conjugation covariance, <code>M_d=C I ⊕ M_d^0</code> with irreducible traceless adjoint part. The commutant of this action forces <code>T_t=P1+b(t)P0</code>. A norm-continuous bistochastic CP semigroup forces <code>b(t)=e^{-κt}</code> with <code>κ≥0</code>. Decay of a nonzero traceless observable excludes <code>κ=0</code>. Thus the stationary density is uniquely <code>I/d</code> on this <strong>declared</strong> semigroup domain, with <code>κ</code> still an unselected positive rate. Dropping full covariance permits nonuniform rates and is not a counterexample.</p>
+<p>For an undirected graph <code>Γ</code> with generated strictly positive vertex weights <code>μ_i</code>, symmetrical conductances <code>c_ij</code> give</p>
+<p><code>〈f,−L_cf〉_μ = Σ_{edges {i,j}} c_ij |f(i)−f(j)|²≥0</code>.</p>
+<p>Its nullspace consists of component-constant functions. Detailed balance holds with <code>π_i=μ_i/Σμ</code>, and connectedness makes <code>π</code> unique. A <code>G</code>-invariant positive conductance is a common scalar per edge orbit. There are <code>q</code> positive parameters, with <code>q−1</code> independent ratios after common clock rescaling for <code>q&gt;1</code>; for one edge orbit, there is one positive ray. If disconnected with <code>r</code> components the state simplex dimension is <code>r−1</code>, not a unique global stationary state. <strong>Independent E3:</strong> symmetric conductance matrix/weighted Laplacian and exact weighted spectral and stationary kernels.</p>
+<p>The Paper III-A common-readout corollary allows the stationary <code>π</code> as constant <em>family content</em> when the generated continuation family is nonempty; it does <strong>not</strong> yield a chosen process or occurring path. This directly blocks an illegitimate inference from the native <code>11⊕4</code> central grading to spontaneous relaxation.</p>
+<h3>3.5 The exact conditional <code>11/15</code> outputs — two different process constructions</h3>
+<p><strong>A. Reversible one-edge model.</strong> <code>p4:cor:eleven-four-one-edge-relaxation</code> (3844–3886) explicitly assumes a <strong>physical transition/process bridge with positive edge</strong> between blocks having weights 11 and 4. For a conductance <code>c&gt;0</code>,</p>
+<pre><code>L_c = [-c/11  c/11]
+      [ c/4  -c/4],    spec(L_c)={0, -15c/44},
+π=(11/15,4/15),       κ=15c/44.
+</code></pre>
+<p>This yields <code>p_g(t)=11/15+(p_g(0)−11/15)e^{-κt}</code> for a physically occurring history <strong>only after its stated antecedent</strong>. The origin of the edge is not derived by the displayed grading.</p>
+<p><strong>B. Paired finite coherent exchange.</strong> <code>p4:thm:v264-paired-population-law</code> (3899–3947) instead imports the <strong>mathematical</strong> two-copy operator of Paper II-B, <code>K=FQ×</code> with <code>Q×=Pg⊗Ps+Ps⊗Pg</code>. On <code>H1⊗H1</code>, <code>K*=K</code>, <code>K²=Q×</code>, <code>K³=K</code>, <code>rank K=88</code>, and <code>Uθ=I+(cosθ−1)Q×−i sinθ K</code>. Assuming an <strong>actual</strong> independent relation-free two-carrier occurrence, a <code>DYN</code> action using this specific K, and an <strong>actually prepared</strong> second carrier in <code>I15/15</code>, the reduced channel obeys, for every <em>full carrier</em> input density including block-off-diagonal coherence,</p>
+<p><code>Tr[Pg Φθ(ρ)] = cos²θ Tr(Pg ρ) + sin²θ · 11/15</code>.</p>
+<p><strong>Independent E3:</strong> directly construct the 225-dimensional sparse cross-sector flip, apply its unitary on each of 15 bath basis states, trace out the bath and compare to the boxed population formula at five angles for a coherent <code>g/s</code> superposition. All matches have numerical error &lt;1e−12. The exact symbolic five-collision recurrence and Poisson generating function match <code>p_g^(n)=11/15+(p_g^(0)−11/15)cos^(2n)θ</code> and <code>p_g(t)=11/15+(p_g(0)−11/15)e^(−r sin²θ t)</code> <strong>with independent refreshed collisions/Poisson occurrence assumed</strong>. At <code>θ=π/2</code> only the <strong>central population</strong> is forced to <code>11/15</code>—not the full density <code>I15/15</code>; an explicit counterexample to that stronger statement is recorded, and IV-A already excludes it.</p>
+<p><strong>C. Population converse and another possible process.</strong> <code>p4:prop:v264-population-converse</code> (3949–3979) is an all-state, not one-state, statement. The trace-dual fixed-effect identity gives exact equivalence between <code>Tr((Pg⊗I)UρU*)</code> constant for <em>every</em> <code>ρ</code> and <code>[H,Pg⊗I]=0</code>. For a CPTP map, nonnegative sums of off-block Kraus norms force <strong>each</strong> Kraus operator to be block diagonal if central population is fixed for every input. <code>p4:prop:v264-covariant-gkls-alternative</code> (3981–4018) gives a different, fully explicit 88-jump mathematical GKLS family on <code>M15</code>, with <strong>chosen</strong> <code>γ&gt;0</code> and four independent decay-mode rates:</p>
+<table>
+<thead>
+<tr>
+  <th>Traceless sector</th>
+  <th style="text-align:right">Decay rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Geometric <code>M_11</code> traceless</td>
+  <td style="text-align:right"><code>4γ</code></td>
+</tr>
+<tr>
+  <td>Protected <code>M_4</code> traceless</td>
+  <td style="text-align:right"><code>11γ</code></td>
+</tr>
+<tr>
+  <td>g/s off-block rectangular coherences</td>
+  <td style="text-align:right"><code>15γ/2</code></td>
+</tr>
+<tr>
+  <td>Central-population difference</td>
+  <td style="text-align:right"><code>15γ</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>I15/15</code> is the unique stationary <em>full density</em> of this <strong>chosen</strong> GKLS example. This does not assert the geometry selects <code>γ</code>, bath, jumps, or this process and does not infer a full <code>M15</code> <em>native event algebra</em>.</p>
+<p><strong>Physical-owner firewall:</strong> <code>p4:rem:v264-paired-action-firewall</code> (4050–4078) explicitly describes <code>X_pair(S*) = ||(Ps⊗Pg) H_act (Pg⊗Ps)||_HS²</code> as an <strong>unexecuted action-Hessian contraction</strong>; no evaluated <code>H_act</code>, physical K selection, bath preparation, or dynamical member is smuggled in. Paper II-B's chiral-versus-central-odd distinction is checked at exactly the source operator-owner boundary.</p>
+<h3>3.6 Complete parity-covariant readout blindness; modular and KMS limits; instrument nonselection</h3>
+<p><strong>Source:</strong> <code>p4:thm:v264-all-history-native-blindness</code> (4020–4048), <code>p4:prop:modular-central-weight-blindness</code> (4081–4115), <code>p4:thm:finite-simple-kms-uniqueness</code> (4117–4126), <code>p4:prop:effect-instrument-nonselection</code> (4128–4140).</p>
+<p>Let <code>Θ(ρ)=Γ_c ρ Γ_c</code>, <code>E=(id+Θ)/2</code>. If every outcome CP map commutes with Θ, it commutes with E. If the final effect <code>F=E(F)</code> is even, moving E through the entire finite outcome word and using trace adjointness proves exactly <code>Tr(F I_n⋯I_1(ρ))=Tr(F I_n⋯I_1(Eρ))</code>. The real kernel of E on Hermitian matrices comprises the two conjugate <code>11×4</code> rectangles and has dimension <code>2·11·4=88</code>. An explicit mixed-parity Kraus-outcome history satisfies the identity. A positive <strong>non-even</strong> effect distinguishes coherent and dephased inputs, as expected, but lies outside the theorem's effect condition.</p>
+<p>For faithful block densities <code>ρ_i=p_i σ_i</code>, modular conjugation satisfies <code>(p_iσ_i)^{it}A_i(p_iσ_i)^{-it}=σ_i^{it}A_iσ_i^{-it}</code>, so central weights cancel. On a nonfaithful block this is a statement only on its support algebra, <strong>not an invertible automorphism of the original full M_d</strong>. The worked modular test confirms central-weight blindness.</p>
+<p><strong>KMS evidence note (not a mathematical refutation):</strong> The simple-algebra β-KMS density <code>e^(−βH)/Tr(e^(−βH))</code> is correct, and for a finite direct sum KMS only fixes each occupied block's normalized Gibbs matrix, leaving arbitrary nonnegative central mixture weights. A <strong>separate complete E3 matrix-unit argument</strong> is: in an eigenbasis of <code>H=diag(E_i)</code>, KMS applied to <code>A=E_ij, B=E_ji</code> yields <code>ρ_j=e^{−β(E_j−E_i)}ρ_i</code>; KMS with diagonal <code>A</code> and off-diagonal <code>B</code> forces off-diagonal entries of <code>ρ</code> to vanish. Hence <code>ρ_i∝e^{−βE_i}</code> and normalization on simple <code>M_d</code> fixes the unique state. The source at 4117–4126 states the conclusion and refers to “the same calculation” without an expanded written proof, therefore <strong>E1 source replay is unavailable</strong> at that theorem; its audit status is conservatively <code>REPRODUCED</code>, supported by an independent exact KMS test. No missing physical transition is inferred from this presentation shortcut.</p>
+<p>Finally an event effect <code>P_i</code> alone does not determine the instrument: both Lüders <code>ρ↦P_iρP_i</code> and measure-and-prepare <code>ρ↦Tr(P_iρ)σ_i</code> (where <code>σ_i</code> is a <em>normalized positive output density</em>) give the same outcome probability. They generally have different posterior states; this is demonstrated on noncommuting <code>2×2</code> input density and effect.</p>
+<h2>4. Adversarial adjudication (E4): nine challenges</h2>
+<table>
+<thead>
+<tr>
+  <th>Challenge</th>
+  <th>Target</th>
+  <th>Disposition</th>
+  <th>Matched-domain reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>CHAL-IVA-B3-001</code></td>
+  <td><code>p4:thm:gkls</code></td>
+  <td>INVALID_AS_COUNTEREXAMPLE</td>
+  <td>Printed premise explicitly assumes a norm-continuous Markov semigroup; arbitrary correlated environment and nondivisible family are excluded.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B3-002</code></td>
+  <td><code>p4:thm:wigner-finite</code></td>
+  <td>SOURCE_ALREADY_EXCEPTS</td>
+  <td>Source states d=1 is one ray and both types possible; d&gt;=2 proof uses e1+i e2 to exclude opposite type.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B3-003</code></td>
+  <td><code>p4:rem:one-ray-dynamics-criterion</code></td>
+  <td>LIMITED_CLAIM_SCOPE</td>
+  <td>Paper III-A exact cone and orientation/occurrence gates control admissibility; IV-A remark not an unconditional process selection theorem.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B3-004</code></td>
+  <td><code>p4:thm:neutral-primitive-qms-rigidity</code></td>
+  <td>INVALID_AS_COUNTEREXAMPLE</td>
+  <td>Unequal traceless decay rates break full U(d) adjoint covariance; require only smaller symmetry.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B3-005</code></td>
+  <td><code>p4:cor:eleven-four-one-edge-relaxation</code></td>
+  <td>SOURCE_ALREADY_EXCEPTS</td>
+  <td>Physical transition/process bridge and positive edge are explicit antecedents.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B3-006</code></td>
+  <td><code>p4:thm:v264-paired-population-law</code></td>
+  <td>NO_REFUTATION</td>
+  <td>Independent direct 225-dimensional partial trace with nonzero complex off-block coherence matches boxed p=cos²p0+sin²11/15 at five angles.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B3-007</code></td>
+  <td><code>p4:thm:v264-paired-population-law</code></td>
+  <td>SOURCE_ALREADY_EXCEPTS</td>
+  <td>The theorem explicitly denies full-density conclusion. Matched pure-state example confirms.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B3-008</code></td>
+  <td><code>p4:thm:v264-all-history-native-blindness</code></td>
+  <td>INVALID_AS_COUNTEREXAMPLE</td>
+  <td>Positive non-even effects can distinguish coherence, but violate printed even-effect and covariant-instrument premises.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B3-009</code></td>
+  <td><code>p4:prop:modular-central-weight-blindness</code></td>
+  <td>SOURCE_ALREADY_EXCEPTS</td>
+  <td>Theorem explicitly restricts to support algebra; no full-algebra invertible flow is claimed.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>All nine were adjudicated rather than silently discarded.</strong> Conditional counterexamples that delete the <code>DYN</code>, <code>PROC</code>, graph-edge, full-covariance, or even-effect hypothesis do not refute an implication that explicitly requires that hypothesis. There is <strong>no proven new source-matched logical gap in Batch 3</strong>.</p>
+<h2>5. Dependency, condition and correctness-issue ledger</h2>
+<p><strong>Verified source-level proof-use edges:</strong> 18 material links, including Paper III-A finite positive ray <code>→</code> IV-A neutral continuation; Paper II-A evaluation dual <code>→</code> IV-A Schrödinger/Heisenberg co-realization; Paper II-A native Noether antecedent <code>→</code> physical Noether interface; Paper III-A common family readout <code>→</code> IV-A graph stationary readout; Paper II-B canonical paired exchange <code>→</code> IV-A population law; IV-A graph mixing <code>→</code> IV-A 11/4 one-edge theorem. All 25 distinct LaTeX references in this range resolve uniquely in the current 30-manuscript source corpus. The ledger explicitly marks <strong>nonpromoting contextual connections</strong> (e.g. preceding Bohr theorem to a stationary-state proof that instead uses the spectral projector formula directly), rather than incorrectly inserting <code>REQUIRES</code> ancestry.</p>
+<p><strong>Scoped boundary records:</strong> <code>BND-IVA-007</code> native flow versus DYN, <code>008</code> Wigner/Noether role typing, <code>009</code> Markov-only GKLS domain, <code>010</code> generated reversible graph and required positive transition, <code>011</code> mathematical paired K versus action/occurrence/bath, <code>012</code> parity-even readouts/modular/instrument selectors. No new G0/GP1–3 axiom or independently duplicated assumption node is created; final atlas integration must inherit earliest actual condition origins and attach the appropriate typed uses.</p>
+<p><strong>Confirmed issues:</strong> <strong>none</strong> in this batch. The one <strong>audit-evidence limitation</strong> is the source-unexpanded KMS proof (not a mathematical counterexample or newly open theoretical premise), recorded as a <code>REPRODUCED</code> item in the JSON and described fully above. <strong>Open role-level antecedents</strong>, not claims of an unconditional solution, include physically occurring DYN/PROC, actual tensor/subsystem occurrence, actual maximally mixed bath, graph-edge provenance, chosen rate, symmetry-of-H bridge, and any parity-breaking measurements. They were already explicitly printed as hypotheses or nonclaims in the source. No certified downstream observable is labeled blocked or unconditionally established by failing to distinguish those sorts.</p>
+<p><strong>Cross-batch:</strong> The Batch 1 theorem <code>p4:thm:no-hidden-interface-hypotheses</code> (698–739), held <code>REPRODUCED</code> pending Batch 2 CP/tensor proofs and the present DYN proofs, now has its stated finite generator and physical flow boundary checked. The final audit-layer integrator can review a promotion of that <strong>claim-matched conditional summary</strong> after consolidating all linked evidence; it is not silently retroactively edited here.</p>
+<h2>6. Validation and next range</h2>
+<ul>
+<li>Frozen IV-A source SHA-256 matches Batches 1 and 2; 30/30 source formal objects and 16/16 unnamed substantive units have source locators and individual dispositions in the companion JSON.</li>
+<li><strong>29/29</strong> source-relevant exact symbolic/finite numerical checks pass (not an assertion that code independently proves the physical occurrence domain); the code plus readback JSON are downloadable.</li>
+<li>25/25 distinct source references uniquely resolve. A separate edge classification prevents citation-as-proof contamination.</li>
+<li>Source originals, supplied paper/DAG/audit ZIPs, and earlier batch reports were not modified. Source does not demand conventional external dynamics machinery where only finite typed observable maps are claimed.</li>
+<li><strong>Cumulative formal coverage:</strong> 82 of 162; remaining 80 IV-A formal objects are explicitly unaudited and must not be stamped verified.</li>
+<li><strong>No consolidated ZIP yet</strong>, per the user's instruction. The updated <strong>global DAG Atlas ZIP</strong> and consolidated <strong>proof-chain audit ZIP</strong> will be generated at the <strong>last IV-A batch</strong> with only the latest version of each constituent artifact in their respective archives.</li>
+</ul>
+<p><strong>Next batch:</strong> lines <strong>4,147 onward</strong>, starting with rays, projective phases, GNS/statistics and finite sector representations. The exact ending point will be chosen at the next coherent major section boundary to keep each batch substantial without stalling.</p>
+<hr />
+<h2>Detailed dossier: Batch 4 (source lines 4147–5727)</h2>
+<h1>Paper IV-A — Rigorous Verification DAG Audit, Batch 4 (v1_1)</h1>
+<p><strong>Target:</strong> <code>Paper4A-FiniteQuantumMechanics-v4_208.tex</code> (SHA-256 <code>125220dcced44202b5bb91308afaaf3b7181ebf34b1d64a9d79ca69f8eca10da</code>).<br />
+<strong>Current supplied sources:</strong> <code>Paper00-PapersMinimal-v2_370</code>; global graph baseline <code>Paper00-DAGAtlas-v1_105</code>; existing proof-chain-audit baseline <code>Paper00-ProofChainAudits-v1_23</code>.<br />
+<strong>Protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4</code> (current strict correctness protocol; first-appearance, no-new-theory and source-as-printed rules) and <code>Paper00-ProofChainAuditProtocol-v1_1</code> for guardrails.<br />
+<strong>Frozen source interval:</strong> <strong>lines 4,147–5,727 of 7,814</strong>. This extends through the native-control and chirality-Fisher corollaries and stops before the Section 5,728 measurement/tomography material.<br />
+<strong>Census:</strong> <strong>34/34</strong> named formal objects plus <strong>16/16</strong> substantive unnamed units within the range. Named statuses: <strong>9 VERIFIED</strong>, <strong>16 VERIFIED-CONDITIONAL</strong>, <strong>9 FORMALIZED</strong>. <strong>Cumulative named-object coverage 116/162 (71.6%)</strong> through Batch 4.<br />
+<strong>Evidence:</strong> <strong>85/85</strong> exact/source-based mathematical controls passed (49 are separate small integer parity examples, not distinct theorems); 11 source-matched adversarial challenges adjudicated; 31 distinct citations/cross-references, 43 uses, each located uniquely.<br />
+<strong>Confirmed new mathematical proof gaps or counterexamples:</strong> <strong>0</strong>. <strong>Source-precision issues:</strong> <strong>2 minor</strong>, enumerated in Section 4. No original TeX, DAG ZIP or proof-chain-audits ZIP was modified. The final global archives remain deferred until the final batch.</p>
+<blockquote>
+<p>Evidence work was carried out as separate source-replay, independent-calculation and adversarial review passes within one execution, <strong>not</strong> as multiple independently running agents. This batch does not constitute a full-audit verdict for the remainder of IV-A.</p>
+</blockquote>
+<h2>1. Source-frozen formal claim census (all 34)</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">Source lines</th>
+  <th>Label</th>
+  <th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">4393–4404</td>
+  <td><code>p4:prop:finite-gns-density</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4452–4497</td>
+  <td><code>p4:thm:hopf-ray-phase</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4499–4513</td>
+  <td><code>p4:rem:ray-comparison-not-charge-selector</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4575–4611</td>
+  <td><code>p4:thm:permutation-sector-decomposition</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4650–4695</td>
+  <td><code>p4:thm:charge-superselection</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4716–4731</td>
+  <td><code>p4:cor:central-parity-superselection</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4743–4749</td>
+  <td><code>p4:rem:central-parity-field-boundary</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4755–4763</td>
+  <td><code>p4:rem:hopf-half-turn-not-central-odd</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4765–4799</td>
+  <td><code>p4:cor:hopf-reeb-superselection</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4817–4827</td>
+  <td><code>p4:rem:dephasing-not-charge-covariance</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4829–4842</td>
+  <td><code>p4:rem:szego-polarization-interface</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4844–4853</td>
+  <td><code>p4:rem:basic-contact-analytic-scope</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4943–4983</td>
+  <td><code>p4:prop:momentum-role-realization-dictionary</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">4985–5017</td>
+  <td><code>p4:thm:fixed-parent-resolvent-convergence</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5027–5118</td>
+  <td><code>p4:thm:expanding-sphere-mosco-interface</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5157–5171</td>
+  <td><code>p4:rem:mp-mx-selection-status</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5173–5187</td>
+  <td><code>p4:rem:mp-mx-compatible-with-p3</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5189–5215</td>
+  <td><code>p4:rem:regime-dictionary</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5232–5279</td>
+  <td><code>p4:thm:finite-heisenberg-contraction</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5348–5365</td>
+  <td><code>p4:lem:scalar-born-character-lattice</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5377–5397</td>
+  <td><code>p4:thm:v190-born-eigencharge-lattice</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5408–5435</td>
+  <td><code>p4:thm:scalar-born-compact-boson-partition</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5451–5466</td>
+  <td><code>p4:cor:v190-selfdual-born-eigencharges</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5468–5483</td>
+  <td><code>p4:cor:scalar-born-modular-invariance</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5492–5501</td>
+  <td><code>p4:cor:scalar-born-t-duality</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5510–5513</td>
+  <td><code>p4:rem:scalar-born-duality-scope</code></td>
+  <td><strong>FORMALIZED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5531–5547</td>
+  <td><code>p4:prop:exact-hopf-charge-state-quotient</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5549–5568</td>
+  <td><code>p4:cor:clock-family-free-hamiltonian</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5570–5584</td>
+  <td><code>p4:cor:matched-spatial-free-energy-window</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5586–5617</td>
+  <td><code>p4:rem:chiral-algebra-inherited-trace-comparison</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5620–5639</td>
+  <td><code>p4:cor:v185-clock-state-space-equivalence</code></td>
+  <td><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5655–5670</td>
+  <td><code>p4:cor:frontier-shell-entry-free-energy</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5677–5693</td>
+  <td><code>p4:cor:v226-native-controls</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+<tr>
+  <td style="text-align:right">5701–5708</td>
+  <td><code>p4:cor:v226-chirality-fisher</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The status <code>FORMALIZED</code> means a remark or role/scope distinction is source-located and type-checked. It does <strong>not</strong> assert a physical selector or occurrence. <code>VERIFIED-CONDITIONAL</code> does <strong>not</strong> mean an admitted antecedent is unproved; it means that the result is verified only for the precise stated supplied domain. The source statements and source proofs, including nonadjacent proof for the Hopf-ray theorem, are captured literally in the JSON ledger.</p>
+<h2>2. Substantive unnamed mathematical/interface units (all 16)</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">Lines</th>
+  <th>Unit</th>
+  <th>Audited statement</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">4147–4184</td>
+  <td><code>P4A-U4-001</code></td>
+  <td>Representation/QFT status ledger, no physical infinite field ontology</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">4191–4369</td>
+  <td><code>P4A-U4-002</code></td>
+  <td>Full Part-II interface ingredient/status inventory and exclusions</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">4378–4390</td>
+  <td><code>P4A-U4-003</code></td>
+  <td>Algebraic-state GNS cyclic inner-product identity and pair</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">4435–4450</td>
+  <td><code>P4A-U4-004</code></td>
+  <td>Full-envelope rank-one projector and geometric scalar-vs-Reeb action separation</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">4547–4554</td>
+  <td><code>P4A-U4-005</code></td>
+  <td>MASA basis diagonalization yields finite wavefunction coordinates; not preferred physical basis</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">4563–4574</td>
+  <td><code>P4A-U4-006</code></td>
+  <td>Permutation U on independently typed tensor occurrences; action definition</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">4634–4647</td>
+  <td><code>P4A-U4-007</code></td>
+  <td>Fock stats discriminator and charge-sector measurement-access boundary</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">4751–4753</td>
+  <td><code>P4A-U4-008</code></td>
+  <td>Superselection as access/dynamics statement rather than collapse postulate</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">4812–4815</td>
+  <td><code>P4A-U4-009</code></td>
+  <td>Reeb weight charge application strictly covariant/accessibility conditional</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">4875–4941</td>
+  <td><code>P4A-U4-010</code></td>
+  <td>Fixed physical momentum mp=1 versus exact/supplied spatial mx refinement and cutoffs</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">5222–5231</td>
+  <td><code>P4A-U4-011</code></td>
+  <td>Finite oscillator ladder operators and terminal zero action</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">5296–5338</td>
+  <td><code>P4A-U4-012</code></td>
+  <td>Canonical low sector and typed Born exchange at unequal finite levels</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">5343–5347</td>
+  <td><code>P4A-U4-013</code></td>
+  <td>Two-circle lattice is native; chiral oscillator tower/Euclidean worldsheet is supplied</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">5518–5530</td>
+  <td><code>P4A-U4-014</code></td>
+  <td>Export/clock readout orientation without automatic process realization</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">5649–5653</td>
+  <td><code>P4A-U4-015</code></td>
+  <td>Trace-density coordinate expression of affine state correspondence</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">5714–5721</td>
+  <td><code>P4A-U4-016</code></td>
+  <td>Native 137-outcome mathematical tomography vs sharp-radius localization and absent instrument</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Source proof replay and independent mathematical verification</h2>
+<h3>3.1 Finite GNS, Hopf-ray comparison and permutation statistics</h3>
+<p><strong>GNS (<code>p4:prop:finite-gns-density</code>, 4393–4428).</strong> For a positive density matrix <code>ρ</code> with support <code>S</code>, <code>Tr(ρ x* x)=0</code> iff <code>x S=0</code>; the null class is a left ideal, and <code>[x]↦xS</code> induces <code>A/N_ω≅A S</code>. If <code>dim H=d</code> and <code>rank(S)=r</code>, the representation space has dimension <code>dr</code>; at <code>r=1</code>, <code>aS↦aψ</code> intertwines with the defining representation on <code>H</code>. Independently tested mixed and pure supports of ranks 1, 2 and 3. <strong>E1 + E3.</strong></p>
+<p><strong>Ray/Hopf theorem (<code>p4:thm:hopf-ray-phase</code>, 4452–4537).</strong> Equality of normalized rank-one projectors is equivalent to equality of their complex lines, so the ray redundancy is a central scalar <code>U(1)</code> action on the full-envelope domain. The new <code>q=+1</code> comparison is fixed by the <strong>explicitly constituted</strong> positive primitive ray-comparison role (<code>q∈Z</code>, <code>|q|=1</code>, <code>q&gt;0</code>) applied to the already proved Paper-II-D associated line atlas; the whole Hopf/Reeb spectrum on the mode carrier need not act by scalar multiplication. Paper-II-D <code>p2:thm:forced-hopf-chern-unit</code> and <code>p2:prop:hopfion-charge</code> were read at their actual source statements/proofs. <strong>Verdict conditional on the stated comparison role; not a physical charge selector.</strong></p>
+<p><strong>Statistics (<code>p4:thm:permutation-sector-decomposition</code>, 4575–4632).</strong> The central idempotent character formula in <code>C[S_n]</code> yields orthogonal isotypic projectors and their direct sum. Exact independent <code>S_3</code> computations on <code>(C²)^⊗3</code> yield ranks <code>4,4,0</code> (trivial, standard, sign), and on <code>(C³)^⊗3</code> ranks <code>10,16,1</code>; all projector and orthogonality identities passed. Permutation symmetry does not choose bosonic versus fermionic physical occupation. The tensor SUB occurrence and statistics selector are not conflated. <strong>E1 + E3 + E4.</strong></p>
+<h3>3.2 Accessible charges, central parity, and Hopf/Reeb conditional covariance</h3>
+<p><strong>Finite superselection (<code>p4:thm:charge-superselection</code>, 4650–4714).</strong> For commuting Hermitian <code>Q_i</code>, every <code>A_acc</code> commuting with the charges also commutes with their joint projectors. Thus <code>A=Σ_q P_q A P_q</code>, and <code>Tr(ρA)=Tr(Δ_Q(ρ)A)</code>. The embedding of <code>A_acc</code> is into the full blockwise direct sum and does not assert every block variable is independently accessible. On channels, <code>ΦΔ=ΔΦΔ</code> preserves the set of block-diagonal states but <strong>does not</strong> require individual population conservation; the stronger commuting identity <code>ΦΔ=ΔΦ</code> is not asserted equivalent to covariance. The meaning of dynamic stability is fixed at this weaker block-diagonal-state level. Independent exact swap-control confirms the distinction. <strong>E1 + E3 + E4 on the actual theorem scope.</strong></p>
+<p><strong>Central parity (<code>p4:cor:central-parity-superselection</code>, 4716–4741).</strong> Paper-II-D <code>p2:thm:diagonal-center-grading</code> proves native effects are even under <code>Γ_c</code>, with <code>11⊕4</code> projectors. All accessible cross-parity trace terms vanish; exact dynamic stability retains the separately stated even-H/channel condition. Neither this grading nor the Hopf half-turn supplies a FENV odd bridge or a spin–statistics theorem.</p>
+<p><strong>Hopf/Reeb (<code>p4:cor:hopf-reeb-superselection</code>, 4765–4810).</strong> Integrating an <strong>assumed genuine U(1) adjoint-covariant channel</strong> over Haar gives <code>ΦΔ_ξ=Δ_ξΦ</code>. The source explicitly distinguishes this from weak block preservation. The <code>C²</code> charge-swap channel commutes with dephasing but sends weight <code>+1</code> coherence to weight <code>−1</code>; our independent matrix test confirmed it fails full circle covariance (<code>p4:rem:dephasing-not-charge-covariance</code>, 4817–4827). The charge action itself must be defined on the stated resolved block; it is not supplied by the scalar ray comparison.</p>
+<h3>3.3 Physical momentum role, fixed-parent resolvents, expanding-sphere Mosco</h3>
+<p><strong>Typed momentum dictionary (<code>p4:prop:momentum-role-realization-dictionary</code>, 4943–4983).</strong> The exact II-C transvection first-symbol/cotangent germ, II-D principal symbol for spatial transport, and VII-C scalar momentum-ball <em>trace-moment law</em> are distinct objects. The source properly denies a common finite-operator equality or <code>m_p→∞</code> process. An imported-result phrasing issue about the <strong>stronger norm convergence of commutators</strong> is documented as <code>BH-IVA-B4-ISSUE-002</code> below. This does not defeat the typed dictionary. Paper VII-C source lines 1184–1236 were checked directly; its trace-moment theorem is not a common-Hilbert-space norm limit.</p>
+<p><strong>Fixed parent (<code>p4:thm:fixed-parent-resolvent-convergence</code>, 4985–5025).</strong> Because a spectral <code>P_N</code> commutes with all resolvents of <code>H</code>, the embedded finite resolvent is <code>P_N(H-z)^{-1}</code>. The defect is <code>(1-P_N)(H-z)^{-1}</code>, strongly zero. Its norm equals the supremum of <code>|λ-z|^{-1}</code> on the omitted spectrum and is norm-small precisely when this tail resolvent vanishes. A source-hypothesis stress test with <code>H=0</code> on infinite <code>ℓ²</code> and increasing finite-rank spectral projections shows that <strong>strong convergence need not be norm convergence</strong>, as the paper already states. <strong>E1 + E3 + E4.</strong></p>
+<p><strong>Expanding sphere (<code>p4:thm:expanding-sphere-mosco-interface</code>, 5027–5155).</strong> On an exponential chart the Jacobian factor <code>vartheta_N^{-1/2}</code> cancels the spherical measure exactly, giving <code>J_N*J_N=χ_N²</code> and norm convergence <code>||J_N f||→||f||</code>; the chart lies inside the injectivity radius since <code>r_N/a_N→0</code>. Let <code>F_N(v)=q_N[v]+α||v||²−2 Re⟨J_N f,v⟩</code>, with <code>α&gt;ω</code>. Its unique minimizer is <code>(H_N+α)^{-1}J_Nf</code>. The common lower bound provides <code>F_N(v)−F_N(u_N)≥(α−ω)||v−u_N||²</code>. Under <strong>both</strong> M1 and M2, weak compactness and recovery sequences make the minima converge to the unique limit minimizer. Applying the displayed coercive inequality to a recovery sequence upgrades to <code>||u_N−J_N u||→0</code>, and the resolvent identity extends the statement to nonreal <code>z</code>. M1 and M2 are separately assumed, not derived merely from <code>a_N→∞</code>; the theorem correctly refrains from norm-resolvent claims. Independent chart-Jacobian cancellations and finite spectral-interface controls passed. <strong>E1 + analytic E3 + E4.</strong></p>
+<h3>3.4 Exact finite CCR and Born compact-boson interface</h3>
+<p><strong>Oscillator (<code>p4:thm:finite-heisenberg-contraction</code>, 5232–5294).</strong> <code>a_d a_d†−a_d† a_d=I_d−d|d−1⟩⟨d−1|</code>. Setting <code>X_d∝a_d+a_d†</code> and <code>P_d∝−i(a_d−a_d†)</code> gives the exact displayed finite commutator. Sandwiching the <strong>ambient commutator</strong> by <code>Q_K</code> (K≤d−2) removes the <code>d</code>-top defect, while commuting <strong>compressed operators</strong> creates a new <code>(K+1)|K⟩⟨K|</code> defect. Our independent <code>d=3,7,13</code> exact matrix controls verify both identities. The nonvanishing full operator norm is explicitly preserved and no exact finite CCR is asserted. <strong>E1 + E3 + E4.</strong></p>
+<p><strong>Native scalar pair (<code>p4:lem:scalar-born-character-lattice</code>, 5348–5374; <code>p4:thm:v190-born-eigencharge-lattice</code>, 5377–5406).</strong> The compact circle-pair has characters <code>Z²</code> (upstream I-B theorem); the eigenphase matrix <code>[[1,1],[1,-1]]</code> has determinant <code>−2</code>, and its image is exactly the integer pairs <code>(p+,p−)</code> of common parity. The axes <code>n=±w</code> have even nonzero eigencharge. Forty-nine independent integer-pair test cases confirmed parity and the inverse integer map. <strong>E1 + E3.</strong></p>
+<p><strong>CFT (<code>p4:thm:scalar-born-compact-boson-partition</code>, 5408–5447 and corollaries 5451–5508).</strong> The native lattice does not imply chiral oscillators, Dedekind eta, torus modulus or the CFT; IV-A explicitly supplies this <strong>additional free-scalar completion</strong>. With <code>p_L=n/R+wR, p_R=n/R−wR</code> the zero-mode summand is <code>exp[−π τ₂(n²/R²+w²R²)+2πiτ₁ nw]</code>. Under <code>T</code>, the phase is <code>e^{2πinw}=1</code>. Two-dimensional Gaussian Poisson summation under <code>S</code> contributes <code>|τ|</code>, canceled by <code>|eta(−1/τ)|²=|τ||eta(τ)|²</code>. Under <code>R↔1/R,n↔w</code>, <code>p_L</code> stays fixed while <code>p_R</code> changes sign. These are also the exact current Paper-I-C proof formulas (<code>p1b:thm:theta</code>, lines 19620–19658), checked against the imported scope; independent high-precision <code>S,T,R</code> evaluations passed. <strong>VERIFIED-CONDITIONAL on the supplied CFT domain.</strong></p>
+<h3>3.5 Free clock, inherited traces, exact controls and localization information</h3>
+<p><strong>Hopf charge quotient (<code>p4:prop:exact-hopf-charge-state-quotient</code>, 5531–5547).</strong> Projector multiplicities <code>(1,3,7,3,1)</code> sum to 15. <code>σ(p)=Σ_q(p_q/d_q)P_q</code> is normalized positive and <code>Rσ(p)=p</code>; for charge effects <code>E=Σ e_q P_q</code>, <code>Tr[σ(Rρ)E]=Tr[ρ E]</code> for any full density. Independent positive <code>15×15</code> matrix control passed. It does not construct a physical preparation or resolve off-charge coherence. <strong>E1 + E3.</strong></p>
+<p><strong>Clock/free energy (<code>p4:cor:clock-family-free-hamiltonian</code>, 5549–5568; <code>p4:cor:matched-spatial-free-energy-window</code>, 5570–5584).</strong> Within an already admitted stationary scalar free block, the source imports <code>ΣG_i²=ℏ²c_op²Δ_a</code>; bi-invariant Casimir commutes with represented spatial charges. The positive square-root function is increasing, so the sharp Laplacian spectral projector is the same free-energy spectral projector at <code>E_F=sqrt(ℏ²c_op² Λ_F²+μ²c_op⁴)</code>. This is a same-operator spectral relation, not a second compact energy-circle cutoff.</p>
+<p><strong>Degree-two trace (<code>p4:rem:chiral-algebra-inherited-trace-comparison</code>, 5586–5617; <code>p4:cor:v185-clock-state-space-equivalence</code>, 5620–5653).</strong> The source inherited traces on abstract <code>C⊕M₂⊕M₃</code> have block coefficients <code>(6,3,1)/15</code> and <code>(1,2,3)/14</code>. Their exact positive ratios are <code>h=(28/5,7/5 I₂,14/45 I₃)</code>. Independent rational arithmetic verified <code>τ_p(a)=τ_{x,2}(ha)</code> and <code>τ_{x,2}(h)=1</code>. Hence the abstract affine state-space equivalence does not identify 15- and 14-dimensional carriers; densities convert by multiplication by this central <code>h</code>. <strong>E1 + E3.</strong></p>
+<p><strong>Frontier-shell (<code>p4:cor:frontier-shell-entry-free-energy</code>, 5655–5670).</strong> From <code>a_k=sqrt(k(k+2))/Λ_F</code> and the preceding free block, <code>E_k(a)²−μ²c_op⁴=(E_F²−μ²c_op⁴)(a_k/a)²</code>. Independent exact algebra and numerical cross-check passed. In this branch the earlier speed import identifies the shorter <code>c</code> with <code>c_op</code>; the source uses <code>c</code> rather than <code>c_op</code> only in the two subtracted rest terms, prompting the minor precision finding below. This identity is <strong>not</strong> an occupation/particle-creation mechanism.</p>
+<p><strong>Native controls (<code>p4:cor:v226-native-controls</code>, 5677–5699).</strong> Built the actual 15-dimensional Paper-I-A intrinsic coordinate matrices (scalar <code>e₀</code>, 4-vector, 6-bivector, 4-spinor) from <code>p1:eq:v226-matrix</code>; verified the exact quadratic fingerprint <code>Q=(1,11/12,4/9,3/4)</code> by block. Working in <code>GF(97)</code> with <code>sqrt2→14</code>, <code>sqrt3→10</code>, <code>i→22</code>, an independent incremental Lie-commutator span calculation gives the exact ranks:</p>
+<table>
+<thead>
+<tr>
+  <th>Generators</th>
+  <th style="text-align:right">Independent GF(97) rank</th>
+  <th style="text-align:right">Paper-I-A real Lie upper bound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Y1…Y4</td>
+  <td style="text-align:right"><strong>65</strong></td>
+  <td style="text-align:right">65</td>
+</tr>
+<tr>
+  <td>Y1…Y4, Q0</td>
+  <td style="text-align:right"><strong>131</strong></td>
+  <td style="text-align:right">131</td>
+</tr>
+<tr>
+  <td>Y1…Y4, Ω4</td>
+  <td style="text-align:right"><strong>135</strong></td>
+  <td style="text-align:right">135</td>
+</tr>
+<tr>
+  <td>Y1…Y4, Q0, Ω4</td>
+  <td style="text-align:right"><strong>136</strong></td>
+  <td style="text-align:right">136</td>
+</tr>
+<tr>
+  <td>Y1…Y4, Q0, Ω4, I</td>
+  <td style="text-align:right"><strong>137</strong></td>
+  <td style="text-align:right">137</td>
+</tr>
+</tbody>
+</table>
+<p>Each modular rank is a characteristic-zero lower-bound certificate, because the mod-97 nonzero minors are also nonzero over the original coefficient field. The independent upper bounds are supplied by the Paper-I-A geometric orthogonal/symplectic block and tracelessness inclusions. The two match at all five stages. Associative-envelope generation does <strong>not</strong> imply the four controls alone supply 137 Hamiltonian directions. Whether the reversible control waveforms and concatenations physically occur is a separately guarded assumption. <strong>E1 + E3 + E4.</strong></p>
+<p><strong>Localization information (<code>p4:cor:v226-chirality-fisher</code>, 5701–5713).</strong> Paper-II-C <code>p2c:thm:v226-chirality-radius</code> applies to finite POVMs with <em>exact intrinsic first moments</em> and outcome radius <code>r≥sqrt3 R_mom</code>, including noncovariant and labeled outcomes. From four Clifford first moments <code>u</code> and chirality <code>v</code>, <code>|u|²+v²≤1</code>, while the exact moment constraint gives <code>Σ w_i|u_i|≥r₀/r</code>. Cauchy–Schwarz yields <code>Iχ(0)=Σw_i v_i²≤1−r₀²/r²</code>. At <code>r=r₀</code> each nonzero effect has <code>v_i=0</code>, so the source states <code>p_i^+=p_i^-</code>. This is not a bound on arbitrary quantum Fisher information or non-position instruments. The complete native algebra can separately support a 137-outcome mathematical reconstruction. <strong>E1 + independent inequality check + E4.</strong></p>
+<h2>4. Every source-level issue found (2 minor, no new proof-gap certificates)</h2>
+<h3>BH-IVA-B4-ISSUE-001 — SOURCE_NOTATION_PRECISION / MINOR</h3>
+<p><strong>Target:</strong> <code>p4:cor:frontier-shell-entry-free-energy</code>, current IV-A source lines 5655–5667.<br />
+<strong>Finding:</strong> In line 5665/5666 the kinetic-shell identity subtracts mu^2 c^4; the same-block H_free and EF definitions in lines 5554-5578 use mu^2 c_op^4.<br />
+<strong>Matched source scope:</strong> IV-A import ledger line 482 calls c the operational speed ceiling; III-A p3:thm:gp1-speed-calibration identifies the same c_op=2pi Rx/Tt. Thus on that source-defined branch the formula is correct under this alias.<br />
+<strong>Disposition:</strong> If c and c_op are incorrectly treated as independent, formula mismatch is mu²(c_op⁴-c⁴)[1-(a_k/a)²], nonzero for a≠a_k, mu&gt;0 and c≠c_op. Such independently varying constants are NOT an allowed counterexample to the source free block.<br />
+<strong>Remaining source-precision action (no manuscript edit made):</strong> For local self-containment use c_op consistently in the subtracted rest-energy term or state c:=c_op at this identity; no new theorem/axiom is needed.<br />
+<strong>Mathematical defect/gap:</strong> none established on the printed domain. <strong>Proven downstream failure:</strong> none established.</p>
+<h3>BH-IVA-B4-ISSUE-002 — IMPORTED_RESULT_SCOPE_PRECISION / MINOR</h3>
+<p><strong>Target:</strong> <code>p4:prop:momentum-role-realization-dictionary</code>, current IV-A source lines 4965–4968.<br />
+<strong>Finding:</strong> IV-A describes the Paper-VII-C transport operators as becoming commuting only in trace moments. The current VII-C source also establishes operator-norm vanishing of their commutators.<br />
+<strong>Matched source scope:</strong> Paper7C-ContinuousQFT-v2_195.tex:1184-1200 has [Pi_i,Pi_j]=2 i hbar epsilon_ijk Pi_k/a and ||Pi_k||=hbar m_x/a. With m_x/a-&gt;Lambda_F, ||[Pi_i,Pi_j]||&lt;=2hbar^2 m_x/a^2-&gt;0. Its separate theorem at 1220-1236 establishes only the limiting joint momentum-ball LAW in trace moments, not a common-space operator-norm limit of Pi_i.<br />
+<strong>Disposition:</strong> The commutators vanish in operator norm, whereas identification with commuting momentum-ball variables and their joint distribution is via trace moments only. No common-Hilbert-space Pi_i norm limit is asserted.<br />
+<strong>Remaining source-precision action (no manuscript edit made):</strong> Clarify the two limit types in the next editorial revision; retain the valid typed-momentum dictionary and no mp-flow distinction.<br />
+<strong>Mathematical defect/gap:</strong> none established on the printed domain. <strong>Proven downstream failure:</strong> none established.</p>
+<h2>5. Adversarial challenge ledger (11 adjudicated)</h2>
+<table>
+<thead>
+<tr>
+  <th>ID</th>
+  <th>Target</th>
+  <th>Attack</th>
+  <th>Adjudication</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>CHAL-IVA-B4-001</code></td>
+  <td><code>p4:thm:hopf-ray-phase</code></td>
+  <td>Try to promote primitive associated q=1 to a unique physical Hopf/particle charge</td>
+  <td><strong>INVALID_DIFFERENT_SCOPE</strong> — Source explicitly constitutes q=1 only for positive comparison role; associated physical charge atlas remains full.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B4-002</code></td>
+  <td><code>p4:thm:permutation-sector-decomposition</code></td>
+  <td>Derive Bose/Fermi choice from permutation covariance alone</td>
+  <td><strong>SOURCE_EXPLICITLY_EXCLUDES</strong> — S3 exact d=2 Young ranks 4,4,0 show multiple nonzero sectors; physical statistics requires extra discriminator.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B4-003</code></td>
+  <td><code>p4:thm:charge-superselection</code></td>
+  <td>Use bit flip preserving dephased states to refute conserved individual charge sectors</td>
+  <td><strong>SCOPE_BOUNDARY</strong> — Block-diagonal state-space preservation does not mean charge-by-charge population conservation; IV-A states the weaker preservation criterion, not population invariance.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B4-004</code></td>
+  <td><code>p4:cor:hopf-reeb-superselection</code></td>
+  <td>Assume merely dephasing-commuting channel and conclude full U(1) covariance</td>
+  <td><strong>SOURCE_EXPLICITLY_EXCLUDES</strong> — Source remark gives charge-swap counterexample; main corollary explicitly assumes stronger U1 covariance.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B4-005</code></td>
+  <td><code>p4:thm:fixed-parent-resolvent-convergence</code></td>
+  <td>Try to infer norm convergence from strong spectral P_N-&gt;I when H bounded</td>
+  <td><strong>SCOPE_EXCLUDED</strong> — H=0 on infinite Hilbert has constant tail resolvent norm; theorem only claims strong, with added escaping-tail premise for norm.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B4-006</code></td>
+  <td><code>p4:thm:expanding-sphere-mosco-interface</code></td>
+  <td>Infer strong resolvent from a_N-&gt;∞ alone without (M1),(M2)</td>
+  <td><strong>SOURCE_EXPLICITLY_EXCLUDES</strong> — Source states both Mosco inequalities are separate premises. Exponential chart alone gives only asymptotic identification.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B4-007</code></td>
+  <td><code>p4:thm:finite-heisenberg-contraction</code></td>
+  <td>Demand uniform full-matrix CCR convergence or suppress compressed top-edge term</td>
+  <td><strong>SOURCE_EXPLICITLY_EXCLUDES</strong> — Finite trace obstruction and d or K+1 boundary defects are in theorem and checked independently.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B4-008</code></td>
+  <td><code>p4:thm:scalar-born-compact-boson-partition</code></td>
+  <td>Infer oscillator eta factor and modularity from the bare T² lattice alone</td>
+  <td><strong>SOURCE_EXPLICITLY_EXCLUDES</strong> — Explicit chiral CFT completion is a separate interface hypothesis, not an unconditional native Born conclusion.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B4-009</code></td>
+  <td><code>p4:cor:frontier-shell-entry-free-energy</code></td>
+  <td>Treat c independent of c_op and test shell law</td>
+  <td><strong>NOT_AN_ADMISSIBLE_SOURCE_COUNTERMODEL</strong> — Printed import ledger c is the operational speed ceiling c_op on this same branch. Notational precision issue logged; algebraic formula holds with this alias.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B4-010</code></td>
+  <td><code>p4:cor:v226-native-controls</code></td>
+  <td>Try to infer full U(11)⊕U(4) Hamiltonian Lie algebra from associative closure of four Y generators alone</td>
+  <td><strong>EXACT_COUNTERCHECK_SUPPORTS_SOURCE</strong> — GF97 independent Lie closure dimension 65 vs full 137, and Q0/Omega yield displayed staged 131/135/136/137 only when added.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B4-011</code></td>
+  <td><code>p4:cor:v226-chirality-fisher</code></td>
+  <td>Use arbitrary non-position POVM to distinguish protected chirality at sharp radius</td>
+  <td><strong>INVALID_DIFFERENT_SCOPE</strong> — The theorem limits to POVM with exact intrinsic first moments and specified radius; arbitrary instruments or non-position effects are not constrained.</td>
+</tr>
+</tbody>
+</table>
+<p>No attack was promoted to <code>REFUTED</code>: each alleged countermodel either violates a printed hypothesis, attacks a deliberately absent physical selector, or (in the two precision cases) tests a stronger/different interpretation. Valid attack histories are retained rather than discarded.</p>
+<h2>6. Source identities, proof dependencies and canonical condition inheritance</h2>
+<p><strong>Current corpus reference integrity:</strong> 31 distinct <code>\ref</code>/<code>\eqref</code> targets with 43 uses; all uniquely resolved across the 30 current source <code>.tex</code> files. Exact imported proof-reference labels checked in the current source include:</p>
+<p><code>p2:thm:forced-hopf-chern-unit</code>, <code>p2:prop:hopfion-charge</code>, <code>p2:thm:diagonal-center-grading</code>, <code>p2c:cor:compact-transvection-cotangent-germ</code>, <code>p1b:thm:group</code>, <code>p1b:thm:eigenphase</code>, <code>p1b:thm:theta</code>, <code>p1b:prop:degree-two</code>, <code>p1b:cor:degree-two-trace-density</code>, <code>p1:thm:v226-control-lie</code>, <code>p1:cor:v226-native-inner-controls</code>, <code>p2c:thm:v226-chirality-radius</code>, <code>p12:prop:scaled-spatial-transport-commutators</code>, and <code>p12:thm:spatial-transport-momentum-ball-trace</code>. These other papers were read only to verify their exact imported premises, not declared fully audited here.</p>
+<p><strong>Direct proof-use edges:</strong> 27 source-matched edges in the ledger; four additional context references deliberately <em>not</em> promoted to material proof edges. They include the distinction between the fixed-parent spectral convergence theorem and the expanding-sphere Mosco theorem, and the distinction between physical <code>m_p</code> no-flow and spatial <code>m_x</code> interfaces.</p>
+<p><strong>The six boundary records</strong> <code>BND-IVA-013</code> through <code>BND-IVA-018</code> separately track representation vs charge selection, Young decomposition vs statistics occurrence, operational sector preservation vs population conservation, fixed-parent vs varying-space resolvents, native Born lattice vs supplied CFT, state-space algebra vs inherited traces, and exact Lie structure vs realized control/instrument. They will be inherited in the final global audit layer, not duplicated as new foundational assumptions.</p>
+<p><strong>Pending first-appearance validation in the final consolidation:</strong> supplier/realization of statistics selection; distinction between block-preserving and charge-covariant channels; analytic Mosco <code>(M1)∧(M2)</code> input; free-scalar chiral-CFT completion; <code>c</code> operational-speed alias on the admitted free block; and reversible control occurrence. No new G0/GP1/GP2/GP3 condition has been invented for this batch. Prior mathematical checkpoint <code>m_p=1</code> remains established.</p>
+<h2>7. Reproducibility, current status and next batch</h2>
+<ul>
+<li><code>Paper4A-Batch4ExactChecks-v1_1.py</code> reconstructs Young-sector permutation matrices, mixed-state GNS quotient, dephasing covariance countercontrol, fixed-parent spectral tails, spherical Jacobian cancellation, finite CCR, Born integer parity, modular CFT partition tests, exact charge quotient, inherited trace ratios, free-shell speed guard and the five independent finite-field Lie-rank cases. Its JSON results file records each test, target and outcome. <strong>85/85 pass; no failures.</strong></li>
+<li><code>Paper4A-AuditBatch4-v1_1.json</code> stores all 34 exact printed formal statements, attached source proofs where present, 16 unnamed units, 27 direct material edges, nonpromoting contextual links, 6 new boundary records, all challenge outcomes, the two minor precision issues, and current reference integrity.</li>
+<li>Audit status after this batch: <code>PARTIALLY_AUDITED</code>, with <strong>116/162 named objects checked</strong>. This batch has <strong>no newly confirmed open mathematical proof gap</strong>; this does not certify the remaining 46 named objects or the final integrated DAG yet.</li>
+<li><strong>Next start:</strong> <code>Paper4A-FiniteQuantumMechanics-v4_208.tex</code> <strong>line 5,728</strong>, beginning measurement, tomography and structural export. The DAG Atlas ZIP and proof-chain audits ZIP are <strong>reserved for the final batch</strong>, and will contain only the latest version of each relevant artifact.</li>
+</ul>
+<hr />
+<h2>Detailed dossier: Batch 5 (source lines 5728–7223)</h2>
+<h1>Paper IV-A — Rigorous Verification DAG Audit, Batch 5 (v1_2)</h1>
+<p><strong>Target:</strong> <code>Paper4A-FiniteQuantumMechanics-v4_208.tex</code> (SHA-256 <code>125220dcced44202b5bb91308afaaf3b7181ebf34b1d64a9d79ca69f8eca10da</code>).
+<strong>Source release:</strong> <code>Paper00-PapersMinimal-v2_370</code>; global DAG baseline <code>Paper00-DAGAtlas-v1_105</code>; proof-chain-audits baseline <code>Paper00-ProofChainAudits-v1_23</code>.
+<strong>Protocols:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code> and <code>Paper00-ProofChainAuditProtocol-v1_1.md</code>, with source-as-printed, first-occurrence, constructor typing, proof-route and no-new-theory guards.
+<strong>Frozen source interval:</strong> <strong>lines 5,728–7,223</strong> of 7,814. This includes full measurement/tomography and exact instrument-descent material up through the complete <code>v301</code> countermodel proof; it stops before the Petersen–Hopf comparison section at line 7,226.
+<strong>Formal census:</strong> <strong>28/28</strong> named formal objects and <strong>15/15</strong> substantive unnamed units in this interval. Statuses: <strong>7 VERIFIED</strong>, <strong>16 VERIFIED-CONDITIONAL</strong>, <strong>5 FORMALIZED</strong>. Cumulative named-object coverage: <strong>144/162 (88.9%)</strong>, with <strong>18</strong> still to audit in the last batch.
+<strong>Independent E3 controls:</strong> <strong>93/93 passed</strong>, including 20 exact rational basin-volume tests, 10 sampled Haar simplex moment controls, full U(11)×U(4) orbit span, 4 finite Lüders history lengths and exact quotient-leak countermodels; <strong>12 adversarial challenges</strong> adjudicated. 34 distinct cross-references/labels (49 uses) uniquely resolve in the current source corpus.
+<strong>Mathematical verdict:</strong> <strong>zero confirmed new proof gaps, invalid steps or in-domain counterexamples</strong>. <strong>One minor provenance/indexing precision issue</strong> (Section 4), not a new physical axiom or obstruction. Original papers, global DAG ZIP and proof-chain ZIP are unchanged; combined final ZIPs are reserved for Batch 6.</p>
+<blockquote>
+<p>The source replay (E1), independent analytic/computational checks (E3), countermodel and scope challenges (E4), and imported-source checks were separately performed within one coordinated execution, <strong>not</strong> by independently running agents. Numerical controls are supporting tests and never substitute for general source proofs. A <code>VERIFIED-CONDITIONAL</code> theorem is valid in its stated domain; it does not claim actual occurrence of an instrument, control, preparation, or readout.</p>
+</blockquote>
+<h2>1. Exact formal claim census (all 28)</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">Lines</th>
+  <th>Label</th>
+  <th>Verdict</th>
+  <th>Matched evidence / domain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">5755–5810</td>
+  <td><code>p4:prop:accessible-algebras-selector-domain</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>For a supplied finite apparatus state/unitary/pointer system, Heisenberg readout is UCP and yields system-side effects; physical algebra closure requires license… (4 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">5859–5866</td>
+  <td><code>p4:cor:channel-specific-readout</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>The apparatus-fixed readout functional is applied to the native finite observable; different channel maps need not agree and none is selected a posteriori. (0 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">5888–5902</td>
+  <td><code>p4:def:finite-readout-support</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Finite readout support is constituted or supplied, with d a channel-support rank rather than compact momentum cutoff. (0 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">5904–5930</td>
+  <td><code>p4:def:projective-hit-simplex</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Complex projective ray quotient, rank-d pointer simplex and squared-amplitude moment map are mathematical definitions. (0 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">5932–5938</td>
+  <td><code>p4:lem:no-insertion-hit-measure</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>A state-independent unresolved probability invariant under all U(d) relabelings is uniquely normalized Fubini–Study measure. (0 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">5949–5957</td>
+  <td><code>p4:lem:fs-simplex-pushforward</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>For normalized Fubini–Study rays, squared amplitudes have uniform Dirichlet(1,…,1) simplex law. (10 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">5984–5996</td>
+  <td><code>p4:def:barycentric-actualization-basins</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Barycentric basin R_i(b) replaces vertex v_i by Born point b; definition does not choose actual hit. (0 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">5998–6006</td>
+  <td><code>p4:lem:barycentric-basin-volume</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Barycentric basins triangulate simplex and normalized volume of basin i equals b_i, including zero-volume boundary degeneracy. (20 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6019–6054</td>
+  <td><code>p4:thm:projective-readout-actualization</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Conditional on fixed state/effects/support/context and invariant unresolved hit law, the deterministic basin rule reproduces finite Born probabilities; no physic… (0 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6077–6093</td>
+  <td><code>p4:cor:unique-ergodic-born-frequencies</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>No continuous CP^(d−1), d&gt;1, self-map has unique invariant non-atomic Fubini–Study probability; actual finite-instrument frequency law instead imports IV-B event… (6 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6113–6126</td>
+  <td><code>p4:rem:actualization-status</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>One-shot selective-readout representation ≠ actual collapse mechanism, hit statistics or noncontextual assignment; frequency requires occurring instrument. (0 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6193–6221</td>
+  <td><code>p4:thm:ic-reconstruction</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Finite POVM informational completeness ⇔ injective trace evaluation ⇔ effects span full matrix algebra; dual linear-frame operators reconstruct all matrices. (4 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6264–6273</td>
+  <td><code>p4:thm:pure-qfi</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>For pure state under unitary encoding, QFI=4 Var(G). (3 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6328–6336</td>
+  <td><code>p4:cor:v227-state-covariance</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Full-ground or Gibbs state of an actual finite H inherits its commuting unitary symmetries; commutator norm yields sourced trace-norm bounds and occupied-block v… (4 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6477–6502</td>
+  <td><code>p4:rem:paper4-selector-count</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Five historical generic interface owners are a status diagnostic; zero is asserted only for active structural roots through the specified framework branch, not u… (0 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6505–6534</td>
+  <td><code>p4:rem:joint-manybody-compatibility</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>One-particle generator on fixed support must commute with projector; stable charge-sector closed H must commute with minimal central projectors, with branchwise … (0 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6622–6637</td>
+  <td><code>p4a:thm:v266-controlled-span</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Assuming full mathematical U(11)×U(4) block inner controls, conjugated exact-five-position effects span I plus both traceless Hermitian blocks (136); one indepen… (2 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6655–6669</td>
+  <td><code>p4a:thm:v266-lueders-blindness</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>For repeated canonical Lüders operation of fixed exact-position five-effect POVM without controls, all protected history effects remain in Clifford spin factor a… (11 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6693–6703</td>
+  <td><code>p4a:cor:v266-small-chirality-readout</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Seven- and six-outcome sharp protected chirality readouts attain the source bounds at stated radii; five-outcome direct readout is blind; arbitrary native-prepar… (0 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6717–6770</td>
+  <td><code>p4a:thm:v297-finite-outcome-word-saturation</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Registered finite Heisenberg effect-word span stabilizes in at most N²−dim O0 rounds; quotient independence iff all stabilized effects lie in A; missing word yie… (3 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6795–6818</td>
+  <td><code>p4a:prop:v297-specific-versus-full-process</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Controlled-Z preserves all registered Z-only terminal words while failing full M2⊗I process descent; an X terminal effect gives postchannel probabilities 1/0 for… (4 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6834–6869</td>
+  <td><code>p4a:thm:v298-ic-one-step-outcome-descent</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>On registered IC frame spanning A_sa, full adaptive outcome-history descent iff one-step Ψ_i*(E_j) belongs to A; nonzero Δ_IC gives single-outcome witness. (3 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6893–6906</td>
+  <td><code>p4a:cor:v298-kinematic-43-effect-frame</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Akin Hermitian real dimension 43 has strictly positive 43-effect mathematical IC POVM and no smaller linearly spanning POVM. (5 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6926–6962</td>
+  <td><code>p4a:thm:v299-continuous-ic-event-test</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>For a specified continuous POVM spanning finite A_sa, d measurable event effects suffice as an IC basis; bd one-step membership checks exactly test all finite re… (1 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">6985–7031</td>
+  <td><code>p4a:thm:v300-covariant-root-instrument</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>For given algebra-valued measurable positive density, square-root instrument is CP/countably additive/covariant under matching action; strict-positive density yi… (5 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">7068–7085</td>
+  <td><code>p4a:prop:v300-swap-instrument-witness</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Original projective Lüders and post-swap instruments have identical effects but only original descends to M2⊗I; one-step witness detects multiplicity. (2 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">7101–7134</td>
+  <td><code>p4a:thm:v301-gauge-natural-instrument-descent</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>For a specified outcome-wise gauge-equivariant CP instrument with gauge-trivial labels, Heisenberg pullbacks preserve fixed algebra A_D and all finite adaptive h… (1 direct scripted checks)</td>
+</tr>
+<tr>
+  <td style="text-align:right">7151–7172</td>
+  <td><code>p4a:prop:v301-spin4-same-povm-leak</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Concrete strict-positive exactly Spin4-covariant directed-tangent IC density admits depolarize-on-one-multiplicity-sector postchannel with identical effects but … (5 direct scripted checks)</td>
+</tr>
+</tbody>
+</table>
+<p>The exact theorem text and explicit proof text, including source range, matched conditions, E1 replay, independent E3 controls and local status scope, are stored claim by claim in <code>Paper4A-AuditBatch5-v1_1.json</code>. A statement-level <code>FORMALIZED</code> entry is not a certified physical selection or an occurrence claim.</p>
+<h2>2. Substantive unnamed units (all 15)</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">Lines</th>
+  <th>Unit</th>
+  <th>Audited material</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">5728–5754</td>
+  <td><code>P4A-U5-001</code></td>
+  <td>Measurement export/role distinction; no automatically occurring apparatus</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">5875–5887</td>
+  <td><code>P4A-U5-002</code></td>
+  <td>Readout hit representation status and its explicit noncollapse limitation</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">6128–6145</td>
+  <td><code>P4A-U5-003</code></td>
+  <td>Imported stationary and nonstationary instrument frequency theorems and their exact hypotheses</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">6147–6173</td>
+  <td><code>P4A-U5-004</code></td>
+  <td>Lüders update is supplied, nonunique even under repeatability; positive-outcome denominator only</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">6182–6191</td>
+  <td><code>P4A-U5-005</code></td>
+  <td>Finite IC Born probabilities and definition before theorem</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">6244–6263</td>
+  <td><code>P4A-U5-006</code></td>
+  <td>QCRB has locally unbiased regular estimator and n independent repetitions as explicit prerequisites</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">6322–6325</td>
+  <td><code>P4A-U5-007</code></td>
+  <td>Metrological variance interpretation without new carrier selector</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">6342–6355</td>
+  <td><code>P4A-U5-008</code></td>
+  <td>Central offsets and finite-response imported scope, not unique pure ground state or automatic charged port</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">6361–6374</td>
+  <td><code>P4A-U5-009</code></td>
+  <td>Part-I finite closure remains within native algebra and physical event/field role boundaries</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">6377–6438</td>
+  <td><code>P4A-U5-010</code></td>
+  <td>Finite closure summary separates classical occurrence, SUB, PROC, DYN, FENV, ENV, ACC and one-shot projective readout</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">6441–6476</td>
+  <td><code>P4A-U5-011</code></td>
+  <td>Scalar CFT, finite bath and remote continuum interfaces require their own guards; m_p fixed</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">6538–6549</td>
+  <td><code>P4A-U5-012</code></td>
+  <td>Concrete apparatus and detector/cross-paper phenomena are downstream specialized uses</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">6552–6615</td>
+  <td><code>P4A-U5-013</code></td>
+  <td>Six family witness ledger; residual physical occurrence; generated connected process vs fixed state</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">6709–6712</td>
+  <td><code>P4A-U5-014</code></td>
+  <td>Algebraic Lie closure does not register continuous controls, outcomes or instruments</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">7223–7223</td>
+  <td><code>P4A-U5-015</code></td>
+  <td>Transition to separate Petersen–Hopf finite comparison scope, reserved for Batch6</td>
+  <td>FORMALIZED</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Full source proof replay, typed premises and independent evidence</h2>
+<h3>3.1 Apparatus operator system versus physically licensed accessible algebra (5,745–5,870)</h3>
+<p>With a <strong>specified</strong> apparatus state <code>σ_A</code>, pointer effects, and joint unitary <code>U_{SA}</code>, the Heisenberg map <code>R_E(X)=Tr_A[(1⊗σ_A) U* X U]</code> is UCP. Decomposing <code>σ_A=Σ_r q_r|r⟩⟨r|</code> gives Kraus maps <code>V_rψ=√q_r ψ⊗r</code>, and <code>Σ_r V_r*V_r=I_S</code>. This immediately verifies positivity and normalization of system effects <code>E_α=R_E(1⊗Π_α)</code> and equality of system and apparatus Born probabilities. Four independent finite-matrix controls confirmed unitality, effect positivity/sum and the probability trace identity. The map has input algebra <code>End(H_S⊗H_A)</code> and output <code>End(H_S)</code>; apparatus pointers are <strong>not</strong> promoted as untransported system operators. <code>S_acc</code> is an operator system. Its generated <code>C*(S_acc)</code> is a physical test algebra <strong>only if</strong> the separate test grammar supplies adjoints and sequential products. The source correctly refrains from treating any proper subalgebra of <code>M_15</code> as a new native structural root. The derived channel functional <code>ℓ_E</code> is fixed independently of outcomes, not retrofitted to data. <strong>E1+E3; VERIFIED-CONDITIONAL.</strong></p>
+<h3>3.2 Canonical projective probability representation and genuine frequency obstruction (5,875–6,145)</h3>
+<p>For fixed finite support <code>R</code> and an orthonormal resolved context, the projective ray quotient <code>P(R)=CP^(d−1)</code> is a compact homogeneous <code>U(d)</code> space. A normalized probability measure independent of state/apparatus and invariant under all unitary relabelings must be the Haar-descended Fubini–Study measure. The squared coordinates <code>|u_i|²/||u||²</code> of a complex Gaussian/Haar ray have exact <code>Dirichlet(1,…,1)</code> law, hence normalized affine-uniform simplex volume; independent seeded sampling for <code>d=2,…,6</code> checked the characteristic first/second moments. For a prescribed Born point <code>b</code>, replacing simplex vertex <code>v_i</code> by <code>b</code> gives a subsimplex of normalized volume <strong>exactly <code>b_i</code></strong>. Twenty exact rational determinant calculations for <code>d=2,…,6</code> with interior Born points passed; zero-volume boundary cases follow from the same determinant identity but were not separately included in the computational suite. Consequently the proposed deterministic basin rule reproduces <code>Tr(ρE_i)</code> <strong>only after</strong> state, channel effects, support/context and unitary-natural unresolved measure are fixed. This is not an actual hidden-variable assignment, hit law, physical collapse, or uniqueness of every measurable partition. <strong>E1+exact E3+E4; no new gap.</strong></p>
+<p>The retired continuous uniquely-ergodic mechanism has a genuine topological obstruction. For any continuous <code>T:CP^n→CP^n</code>, <code>n≥1</code>, the induced integer action on <code>H²</code> is multiplication by <code>k</code>, so <code>L(T²)=Σ_{j=0}^n k^{2j}≥1</code>; Lefschetz guarantees a fixed point of <code>T²</code>. This produces an invariant atomic period-one/two probability, distinct from non-atomic Fubini–Study volume. Therefore <code>T</code> cannot have <strong>FS as its unique invariant probability</strong>. Six independent integer-cohomology checks (<code>n=1,…,6</code>, <code>k=-10,…,10</code>) confirm positivity; the source topological proof supplies the general quantifier. The surviving frequency results import actual stationary CP instruments from Paper IV-B (event-cyclic radius hypothesis for the sufficient law, or the stronger source event-projector condition), and nonstationary time-homogeneous instruments from IV-B with a Cesàro projector. Those imported results have separate real event-record hypotheses and do not follow from this one-shot simplex probability identity. <strong>Topological part independently verified; imported instrument assertions verified at their stated source scope, not remotely re-audited in full.</strong></p>
+<h3>3.3 Lüders conditioning, finite tomography and metrology (6,147–6,355)</h3>
+<p>For an expressly <strong>supplied</strong> Lüders instrument the selective state <code>PρP/Tr(Pρ)</code> is defined only at positive probability; at zero probability there is no conditional state. <code>U PρP U*</code> with <code>U</code> preserving <code>Ran P</code> has the same sharp effect and support but can a different state update, so repeatability does not select a unique instrument. The finite IC theorem proves the full equivalence among (i) state reconstruction, (ii) injective trace-evaluation map on the full matrix space, and (iii) real effect span of all Hermitian matrices. The equivalence uses the fact that differences of states span the traceless Hermitian space, with <code>I</code> already normalized by the POVM. The finite dual frame is a <strong>linear</strong> inverse, not necessarily a POVM. Independent tetrahedral qubit-POVM checks verified positivity, normalization, rank four, and exact inverse-frame reconstruction. For pure unitary encoding the fidelity expansion yields <code>F_Q=4 Var_ψ(G)</code>, checked independently by finite differences. The cited quantum Cramér–Rao bound retains locally unbiased estimators, regularity and independent repetitions, not an unconditional experimental guarantee. Full-ground/Gibbs symmetry bounds were matched to Paper I-B and tested in independent finite three-level models; the full ground projector must be used, not a selected pure vector inside a degenerate ground space. <strong>E1+E3; exact stated domains.</strong></p>
+<h3>3.4 Owner ledger and joint many-body compatibility (6,361–6,615)</h3>
+<p>The review separates the native <code>43</code>-dimensional kinematic algebra, its parity-preserving <code>M_11⊕M_4</code> envelope, an odd-field <code>FENV</code> extension, and an independently justified full event <code>ENV</code> extension. It does not presuppose <code>M_15</code> as an observable algebra. The five old generic interface family labels <code>DYN</code>, <code>ACC</code>, <code>1P</code>, <code>STAT</code>, <code>OCC</code> are explicitly <strong>historical</strong>; the claimed <code>N_active=0</code> is limited to through-IX structural roots, not absence of actual preparations, process realization, control signals or measurement choices. Stability of a supplied reducing one-particle support <code>P</code> under self-adjoint <code>H</code> is equivalent to <code>[P,H]=0</code>; stable central charge blocks likewise require <code>[H,P_q]=0</code> for retained minimal central projectors. The Fermi sector needs no externally chosen numerical occupation cap because <code>Λ^n K=0</code> for <code>n&gt;dim K</code>; a bosonic occupation interface is a separate branch. These are conditional compatibility and owner-record statements; physical occurrence is not inferred from them. <strong>Source role/scope formalized and exact stability linear algebra rechecked.</strong></p>
+<h3>3.5 136/137-dimensional orbit, chirality and repeated Lüders no-go (6,620–6,712)</h3>
+<p>Five exact-position effects have equal <strong>normalized</strong> traces on both intrinsic blocks, so their orbit under independently available mathematical <code>U(11)×U(4)</code> conjugations remains orthogonal to the one central contrast <code>P_G/11−P_S/4</code>. Each nonzero traceless component generates the entire adjoint module of its matrix block, by conjugation irreducibility. Thus the real span is <code>R I ⊕ Herm_0(11) ⊕ Herm_0(4)</code> of dimension <code>1+120+15=136</code>, and an independently tested <code>P_S</code> adds the 137th. An independent random-unitary conjugation computation produced <strong>rank 136</strong> without using precomputed Paper I-A Lie-closure data. The theorem assumes <strong>all</strong> block inner controls as mathematical reversible operations; the paper does not claim their physical time realization. Distinguish this <em>linear</em> observable span from full <code>C*</code> algebra generation. <strong>E1+independent analytic and matrix E3.</strong></p>
+<p>On the protected <code>4×4</code> Clifford block, every exact five-effect POVM has effects <code>w_i I+u_i·γ</code>. Its Lüders square roots have the same scalar-plus-single-Clifford-vector form. The displayed Clifford identity proves that conjugation <code>A↦K_i A K_i</code> preserves the five-dimensional spin factor <code>R{I,γ_1,…,γ_4}</code>. Every word pulled back from the identity remains trace-orthogonal to chirality <code>χ</code>, so <code>ρ±=(I±χ)/4</code> have the same string probabilities at all finite lengths. An independent four-gamma construction tested <strong>all 5^n outcome words for n=1,…,4</strong> (780 nonempty words), checking both exact spin-factor membership and chiral equality. The two-shot quadratic fingerprint <code>Q</code> is a different effect, correctly separated from protected chirality. The imported sharp seven/six readout supports were matched to Paper II-C and retain their distinct radii and protected-versus-arbitrary preparation branches. <strong>E1+E3+E4; no all-instrument no-go claimed.</strong></p>
+<h3>3.6 Exact finite histories versus complete-process descent (6,717–6,921)</h3>
+<p>Given a specified registered finite family of CP outcome maps, the iteration <code>O_{n+1}=O_n+Σ Ψ_i*(O_n)</code> is monotone within the <code>N²</code>-dimensional real Hermitian space. Every strict growth raises dimension by at least one, and once equality occurs it stays equal. Hence stabilization occurs by <strong><code>N²−dim_R O_0</code> rounds</strong>. Iterating the recursion spans precisely all registered pullbacks of identity/terminal effects. The process quotient criterion <code>Q(ρ)</code> is valid for <strong>this registered grammar</strong> iff the stabilized span is inside the retained algebra. Conversely a pulled-back Hermitian <code>T∉A</code> gives nonzero <code>X=T−E_A(T)</code> and positive states <code>I/N±ε X</code> with equal <code>A</code>-restriction but different word probabilities <code>2ε Tr(X²)</code>. The input finite-operator grammar must be actual/registered before physical interpretation. Independent real-linear iterations and the explicit controlled-<code>Z</code> register verified both the bound and the distinction: <code>Z</code>-readouts remain multiplicity blind although <code>X</code> readouts become <code>X⊗Z</code> and distinguish equal-quotient inputs with probabilities <strong>1</strong> and <strong>0</strong>. <strong>E1+E3+admissible countermodel to the stronger, intentionally excluded full-process conclusion.</strong></p>
+<p>If the registered terminal readout effects span <code>A_sa</code> (informational completeness <em>for A</em>), the weaker word condition becomes the one-step test <code>Ψ_i*(E_j)∈A</code> for each outcome and basis effect; linear extension then forces every <code>Ψ_i*(A)⊂A</code> and all histories descend. The finite sum of Hilbert–Schmidt conditional-expectation residuals <code>Δ_IC≥0</code> is zero exactly on this locus; if positive, the source explicitly constructs a two-density single-event witness. A 43-effect strictly positive mathematical POVM was independently built for <code>C ⊕ M_2 ⊕ M_2 ⊕ M_4 ⊕ M_3 ⊕ M_3</code>, with exact dimension <code>1+4+4+16+9+9=43</code>, a positive normalized frame and full real rank 43. The continuous-outcome variant uses <strong>d measurable event effects spanning the finite algebra</strong>, not a replacement finite POVM; its <code>bd</code> test is finite despite uncountably many outcomes. An independent piecewise-constant density example on four intervals validates existence of such an event basis. <strong>E1+E3; all conclusions conditional on <em>registered</em> IC tests.</strong></p>
+<h3>3.7 Continuous covariant root instrument, exact normalizer, gauge-natural descent and leakage counterexample (6,985–7,222)</h3>
+<p>For a specified measurable algebra-valued density <code>D(ω)≥0</code> integrating to identity, positive functional calculus gives <code>K(ω)=√D(ω)∈A</code>. The maps <code>I_B(ρ)=∫_B KρK dµ</code> form a CP instrument; their individual adjoints preserve <code>A</code>, and covariance follows from <code>K(gω)=U_gK(ω)U_g*</code> and invariant measure. This is <strong>mathematical availability</strong>, not a physical instrument selector. With a measurable postunitary field <code>V(ω)</code>, effects remain unchanged. When <code>D(ω)&gt;0</code> a.e., every event pullback preserves <code>A</code> iff <code>V(ω)</code> normalizes <code>A</code> a.e.: membership of all event integrals forces the finite-basis integrand to lie in <code>A</code> a.e.; invertible <code>K∈A</code> then implies <code>V*AV⊂A</code>, and equal matrix-algebra dimension upgrades inclusion to equality. Independent strict-positive 2×2 diagonal examples verified both directions and a nonnormalizer leakage. The paper correctly states that rank-deficient compression can conceal nonnormalizing unitary updates. An explicit two-qubit SWAP example, independently tested, shows identical POVM effects but different process descent. <strong>E1+E3+E4 with strict-positive reverse guard.</strong></p>
+<p>Outcome-wise <strong>multiplicity-gauge equivariance</strong> is stronger than bare <code>Spin(4)</code> covariance. For an outcome map satisfying <code>Ψ_B(WρW*)=WΨ_B(ρ)W*</code> for all gauge <code>W∈U(k_g)×U(k_s)</code> with gauge-trivial outcome labels, its adjoint carries gauge-fixed tests to gauge-fixed tests, so every finite adaptive history descends. This statement requires equivariance of <strong>each</strong> outcome, not just the nonselective sum. The source also gives an exact counterexample to the stronger false implication from geometric covariance/effect equality: a channel that acts identically on one spinorial multiplicity sector and completely depolarizes the other is trace preserving and <code>Spin(4)</code>-covariant, yet maps <code>X⊗I_2</code> to <code>X⊗P_0+(TrX/4)I_4⊗P_1</code>, which is not gauge fixed for traceless nonzero <code>X</code>. Applying it <em>after</em> the covariant root instrument preserves all effects but leaks an event history. An independent 17-Kraus channel implementation verified trace preservation, the displayed dual action, strict positivity of <code>Tr[X F(X)]</code>, and the quotient violation. The chosen multiplicity mark is an <strong>auxiliary mathematical countermodel</strong>, not a generated GP2 physical mark. <strong>E1+E3+E4.</strong></p>
+<h2>4. Every new issue found (one minor; no confirmed mathematical defect)</h2>
+<h3>BH-IVA-B5-ISSUE-001 — Cross-paper source provenance/index guard (<strong>MINOR</strong>, source-precision only)</h3>
+<p><strong>Origin:</strong> <code>p4a:prop:v301-spin4-same-povm-leak</code>, IV-A lines <strong>7,153–7,160</strong>. The statement invokes “the same strict-positive … directed-tangent density” and cites <code>p4a:thm:v300-covariant-root-instrument</code> for its square-root instrument. The IV-A theorem at lines 6,985–7,031 is <strong>generic</strong>: it constructs an instrument <strong>given</strong> an algebra-valued density, but does not itself construct the directed-tangent IC POVM or prescribe its radius.</p>
+<p><strong>Matched controlling source:</strong> Paper II-C <code>p2c:thm:covariant-direction-complete-povm</code>, as used explicitly in current II-C <code>p2c:cor:v299-directed-tangent-137-event-basis</code> (lines 7,570–7,604) and <code>p2c:cor:v300-directed-tangent-luders</code> (7,608–7,644), supplies the concrete six-channel <strong>strictly positive</strong> directed-tangent density on <code>r&gt;√3 R_mom</code>, including its IC property and its mathematical root-instrument specialization. Import the concrete object and radius from II-C, rather than promoting the abstract IV-A v300 theorem into a density-existence or physical detector claim. The ordinary algebraic v301 counterexample is <strong>valid</strong>, as checked independently, so this is <strong>not</strong> an open mathematical proof gap.</p>
+<p><strong>DAG impact:</strong> capture the II-C concrete-density/radius provenance explicitly, retaining the difference between mathematical existence, algebraic normalizer conditions and occurring instruments. This is currently a <strong>source-named inferred link</strong>, not an explicitly numbered cited material proof edge in the IV-A statement; the imported-source locator is recorded without promoting it automatically. Do not create a cycle by treating the II-C corollary <em>as a premise for</em> the generic IV-A v300 theorem that II-C itself invokes. No certified downstream failure path was found. <strong>Needed action:</strong> a clearer exact cross-paper citation/typed DAG locator; no new axiom or mathematical theorem, no manuscript edit in this audit.</p>
+<h2>5. Adversarial E4 challenge ledger (all 12)</h2>
+<table>
+<thead>
+<tr>
+  <th>ID</th>
+  <th>Target</th>
+  <th>Attempt</th>
+  <th>Adjudication</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>CHAL-IVA-B5-001</code></td>
+  <td><code>p4:prop:accessible-algebras-selector-domain</code></td>
+  <td>Infer physical C*(S_acc) from operator system without product grammar</td>
+  <td><strong>SOURCE_EXPLICITLY_EXCLUDES</strong>: IV-A 5792–5808 requires constituted test grammar to multiply.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B5-002</code></td>
+  <td><code>p4:lem:no-insertion-hit-measure</code></td>
+  <td>Make unresolved hit density depend on prepared state yet call it unique FS</td>
+  <td><strong>OUTSIDE_HYPOTHESIS</strong>: Unitary-natural and state-independent premises prohibit such density.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B5-003</code></td>
+  <td><code>p4:thm:projective-readout-actualization</code></td>
+  <td>Infer actual ontic collapse or unique simplex partition from basin-volume equality</td>
+  <td><strong>SOURCE_EXPLICITLY_EXCLUDES</strong>: The theorem is conditional probability representation and explicitly disclaims unique partition and actual hit law.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B5-004</code></td>
+  <td><code>p4:cor:unique-ergodic-born-frequencies</code></td>
+  <td>Try uniquely ergodic continuous selfmap on CP^n without periodic orbit</td>
+  <td><strong>MATHEMATICAL_NO_GO_VERIFIED</strong>: L(T²)=sum k^(2j)&gt;0 enforces period ≤2 atomic invariant law.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B5-005</code></td>
+  <td><code>p4:thm:ic-reconstruction</code></td>
+  <td>Claim that IC dual frame is a positive POVM</td>
+  <td><strong>SOURCE_EXPLICITLY_EXCLUDES</strong>: Dual frame is arbitrary linear left inverse; no positivity or POVM guarantee.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B5-006</code></td>
+  <td><code>p4a:thm:v266-controlled-span</code></td>
+  <td>Promote all C*-generated elements to linearly resolved five-effect one-shot tests</td>
+  <td><strong>SOURCE_REFUTES_STRONGER_INFERENCE</strong>: Conjugation orbit test is rank136 missing central contrast; C* algebra generation is different.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B5-007</code></td>
+  <td><code>p4a:thm:v266-lueders-blindness</code></td>
+  <td>Find chiral leakage in repeated fixed five-effect Lüders histories with no controls</td>
+  <td><strong>TESTED_NEGATIVE</strong>: All words length ≤4 and source Clifford identity remain in five-dimensional spin factor; other instruments excluded.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B5-008</code></td>
+  <td><code>p4a:thm:v297-finite-outcome-word-saturation</code></td>
+  <td>Infer whole process descent from preservation of only registered Z-word effects</td>
+  <td><strong>ADMISSIBLE_COUNTERMODEL_TO_STRONGER_CLAIM</strong>: Controlled-Z preserves Z register but leaks X, explicitly consistent with theorem restriction.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B5-009</code></td>
+  <td><code>p4a:thm:v298-ic-one-step-outcome-descent</code></td>
+  <td>Omit IC readout span but still demand one-step criterion for complete process</td>
+  <td><strong>INVALID_SCOPE_WEAKENING</strong>: Only with the full span E_j of A_sa can membership tests extend to all of A.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B5-010</code></td>
+  <td><code>p4a:thm:v300-covariant-root-instrument</code></td>
+  <td>Drop full-rank K and infer V normalizer from every compressed event</td>
+  <td><strong>SOURCE_EXPLICITLY_EXCLUDES</strong>: Rank-one diagonal PVM can conceal nonnormalizing postunitaries.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B5-011</code></td>
+  <td><code>p4a:prop:v301-spin4-same-povm-leak</code></td>
+  <td>Use Spin4 covariance of effects to infer multiplicity-gauge equivariance of instrument</td>
+  <td><strong>SOURCE_PROVIDES_EXPLICIT_REFUTATION_TO_STRONGER_IMPLICATION</strong>: 17-Kraus channel with P0/P1 multiplicity mark preserves effects and covariance yet leaks A_D.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B5-012</code></td>
+  <td><code>p4a:prop:v301-spin4-same-povm-leak</code></td>
+  <td>Assume IV-A generic root theorem alone constructs the exact directed-tangent IC density</td>
+  <td><strong>PROVENANCE_PRECISION_ONLY</strong>: Concrete density and r&gt;sqrt3 lie in II-C named construction; provenance issue separately recorded, countermodel valid.</td>
+</tr>
+</tbody>
+</table>
+<p>A failed or out-of-scope challenge is not a false negative of source mathematics. Where an exact counterexample exists, it refutes only the explicitly <strong>excluded stronger implication</strong> (for instance, POVM effects determining the full process), not the conditional theorem actually asserted. The one initial failing implementation check in the independent script was a test-harness error in Kraus ordering; it was corrected before the final clean 93/93 run and was never counted as a paper defect.</p>
+<h2>6. Imported dependency check, first-appearance ownership, and typed DAG linkage</h2>
+<p><strong>Current-source reference resolution:</strong> 34 unique labels with 49 total uses in lines 5,728–7,223, <strong>0 unresolved, 0 ambiguous</strong>, across the 30 current source <code>Paper*.tex</code> files. Material imported source objects include <code>p4:thm:v2210-lit-instrument-mixing</code>, <code>p4:cor:v2211-event-frequency-strong-law</code> (IV-B), <code>p1b:thm:v227-state-symmetry</code>, <code>p1b:cor:v227-block-covariance</code> (I-B), <code>p2c:thm:v266-minimal-protected-readout</code>, <code>p2c:thm:v266-sharp-chirality-support</code>, <code>p2c:prop:v266-repeat-fingerprint</code>, <code>p2b:thm:v293-operational-multiplicity-quotient</code>, <code>p2c:thm:v295-complete-port-twirl</code>, and <code>p2c:thm:v301-intrinsic-gauge-fixedpoints</code>. Precise source use is included for <strong>33</strong> reviewed material dependencies. Other cross-references that only orient the text or summarize remote status remain <strong>6 nonpromoting/contextual candidates</strong>, rather than activated proof edges.</p>
+<p><strong>Important condition guards (inherited, not reintroduced as new roots):</strong> registered instrument and actual readout, physical test grammar for product closure, fixed readout context plus invariant FS measure for the <em>representation</em>, actual stationary/nonstationary instrument for <em>frequencies</em>, exact first-moment radius for position POVMs, all mathematical block inner controls for orbit rank, Lüders post-update and no additional controls for spin-factor no-go, informationally complete terminal effects for one-step criterion, strictly positive instrument density for the reverse normalizer direction, and outcome-wise multiplicity-gauge equivariance (not just <code>Spin(4)</code> covariance) for the gauge-natural quotient. Native <code>m_p=1</code> is not reselected, and neither <code>M_15</code> event extension nor an actual detector is inferred from finite linear algebra. Typed boundary records <code>BND-IVA-019</code> through <code>BND-IVA-027</code> are in the machine ledger.</p>
+<p><strong>First-appearance handling:</strong> this batch reuses established conditional roles rather than issuing fresh <code>BH-A</code> IDs without checking their upstream canonical origins. The pending exact canonical origin/alias reconciliation belongs to the final cross-batch global DAG integration. <code>BH-IVA-B5-ISSUE-001</code> remains a <strong>provenance-only</strong> issue; no verified downstream theorem or observable is currently marked blocked by it. Historical citation-only and conjectural edges are not promoted. Original paper sources are untouched.</p>
+<h2>7. Reproducibility, artifact integrity and next interval</h2>
+<p>The exact independent verification script <code>Paper4A-Batch5ExactChecks-v1_1.py</code> uses a fixed random seed, exact <code>sympy</code> rational simplex determinants, deterministic matrix tests and source-hash validation. Results <code>Paper4A-Batch5ExactChecksResults-v1_1.json</code> contain the full 93 item ledger; result <strong>93 pass, 0 fail</strong>, read back after writing. The audit ledger <code>Paper4A-AuditBatch5-v1_1.json</code> stores all 28 source statements and their proofs, 15 unnamed units, 33 material proof-use edges, 6 nonpromoting links, 9 boundary records, 1 minor issue and 12 challenges; machine-readback and census checks passed. These reports do <strong>not</strong> imply the global DAG archive has been updated already.</p>
+<p><strong>Cumulative scope:</strong> Batches 1–5 cover <strong>144/162</strong> formal IV-A objects and source lines 1–7,223. <strong>Final Batch 6:</strong> lines <strong>7,224–7,814</strong>: Petersen–Hopf signed sectors, parity/T operator no-go, exact 43/137/225 distinguishability, two-rate transfer spectra, and ancilla-stable operational quotient. After that source replay, the requested output is <strong>one updated full DAG Atlas ZIP and one proof-chain-audits ZIP</strong>, each with only its latest-version files, plus an all-issues final report. No such consolidated ZIPs are being claimed or generated by this intermediate batch.</p>
+<hr />
+<h2>Detailed dossier: Batch 6 (source lines 7224–7814)</h2>
+<h1>Paper IV-A — Rigorous Verification DAG Audit, Batch 6 / Final Source Interval (v1_1)</h1>
+<p><strong>Source:</strong> <code>Paper4A-FiniteQuantumMechanics-v4_208.tex</code> (SHA-256 <code>125220dcced44202b5bb91308afaaf3b7181ebf34b1d64a9d79ca69f8eca10da</code>); supplied source release <code>Paper00-PapersMinimal-v2_370</code>. <strong>DAG baseline:</strong> <code>Paper00-DAGAtlas-v1_105</code>; <strong>audit baseline:</strong> <code>Paper00-ProofChainAudits-v1_23</code>.
+<strong>Audited interval:</strong> lines <strong>7,224–7,814</strong>, completing source-line coverage <strong>1–7,814</strong> and named-object coverage <strong>162/162</strong> across Batches 1–6. No original source TeX was modified.
+<strong>Final-batch census:</strong> <strong>18/18</strong> formal objects; <strong>16/16</strong> substantive equation/interface units. Statuses: <strong>VERIFIED-CONDITIONAL 11</strong>, <strong>VERIFIED 3</strong>, <strong>FORMALIZED 4</strong>.
+<strong>Evidence:</strong> source proof replay E1, independent E3 suite <strong>866/866</strong>, 13 source-matched E4 challenges, and current-paper cross-reference resolution <strong>13 uses / 11 labels / 0 missing / 0 ambiguous</strong>.
+<strong>Verdict:</strong> No newly confirmed mathematical or physical-domain counterexample; mathematical comparison and physical-occurrence qualifications remain explicit. Two inherited verification limitations and three prior minor source-precision items remain in the cumulative audit; these are not source-matched mathematical refutations.</p>
+<blockquote>
+<p>All E1/E3/E4 passes here were separate review procedures performed in one execution, <strong>not</strong> different independently running agents. Exact controls do not establish every possible physical preparation, selector, instrument, source, or detector.</p>
+</blockquote>
+<h2>1. Exact formal census and result status</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">Lines</th>
+  <th>Object</th>
+  <th>Status</th>
+  <th>Verification / scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">7240–7273</td>
+  <td><code>p4a:thm:v320-signed-projective-test</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Lagrange interpolation and rank-trace use I-A S^3=5S, spectrum and A5 multiplicity-free decomposition. Independent signs and 3+4+3 rank…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7287–7303</td>
+  <td><code>p4a:prop:v320-parity-graded-mirror-exchange</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>For every permuted Petersen edge propagate vertex signs on a spanning tree; six nontree edges are obstruction tests. IV-C certificate and…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7317–7334</td>
+  <td><code>p4a:cor:v320-signed-twirl</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Group average onto Schur commutant gives blockwise scalar weights Tr(Pρ)/rank(P). All 60 signed even lifts independently checked on random…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7345–7369</td>
+  <td><code>p4a:prop:v320-real-axis-blindness</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>The real effects span Sym3(R) and annihilate i times antisymmetric matrices. Both displayed complex states are positive with spectra…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7383–7406</td>
+  <td><code>p4a:thm:v320-complement-kraus-no-go</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>The I-A polar identity gives (T/2)^<em>(T/2)=Pa+Pt/16; complement 15Pt/16. Replacing K by -K does not alter KρK</em>, normalized postselection or…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7417–7447</td>
+  <td><code>p4a:cor:v320-reciprocal-product-blindness</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Real local rank 6 gives product rank 36; standard tensor-symmetric decomposition leaves Λ²R³⊗Λ²R³ rank 9 inside Sym9(R) and 81−36=45…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7463–7474</td>
+  <td><code>p4a:rem:v320-petersen-events-firewall</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Statement limits comparison carriers and explicitly excludes generated physical operator or detector promotion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">7482–7499</td>
+  <td><code>p4a:prop:v340-reye-parity-no-go</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Eigenvalues ±√5 of S map to common T eigenvalue 2, multiplicity 6, and S=0 maps to T=−3, multiplicity 4. T-only functional calculus does…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7513–7530</td>
+  <td><code>p4a:prop:v341-doublecover-parity-response</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Uses exact imported I-A 341 lifted adjacency block spectra, plus IV-A Reye no-go. No actual odd readout inferred from two mathematically…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7551–7592</td>
+  <td><code>p4a:thm:v347-tier-distance</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Six-sector pinching and 11+4 central pinching are nested trace-preserving Hilbert-Schmidt orthogonal UCP expectations. For traceless…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7612–7626</td>
+  <td><code>p4a:cor:v347-tier-witness</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>The two pure-state differences are off-diagonal rank-two Hermitian matrices with eigenvalues ±1. E43 kills both. E137 preserves exactly…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7636–7650</td>
+  <td><code>p4a:rem:v347-tier-license</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>The stated operational interpretation is expressly conditional on corresponding test role and licensed complete effect space; mathematical…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7665–7702</td>
+  <td><code>p4a:thm:v352-two-rate-transfer</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Eighty-eight explicit G↔S rank-one jumps give gain s·Tr(ρS)IG/11 and r·Tr(ρG)IS/4 with loss rPG+sPS. This is a trace-preserving GKLS…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7716–7732</td>
+  <td><code>p4a:thm:v352-transfer-spectrum</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Mode-by-mode independent application of full jump generator to 225 basis matrices confirms 120 G-traceless, 15 S-traceless, 88 cross-…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7744–7756</td>
+  <td><code>p4a:cor:v352-transfer-bistochastic</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>L(I)=(4s/11−r)PG+(11r/4−s)PS. Vanishing iff 11r=4s; r=4γ,s=11γ recovers earlier special case and its stated rates.</td>
+</tr>
+<tr>
+  <td style="text-align:right">7766–7777</td>
+  <td><code>p4a:rem:v352-transfer-physical-frontier</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>The rates are arbitrary mathematical inputs, not derived observables or an actual bath/source/detector; full GKLS dilation is only a…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7783–7793</td>
+  <td><code>p4a:prop:v355-ancilla-stable-process-quotient</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>II-B v354 states sectorwise partial trace of arbitrary faithful amplification with finite ancilla gives a state on minimum faithful…</td>
+</tr>
+<tr>
+  <td style="text-align:right">7803–7811</td>
+  <td><code>p4a:rem:v355-native-quotient-scope</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Separate commutant-sensitive operation or whole GP3 candidate comparison is not supplied by native abstract CP histories.</td>
+</tr>
+</tbody>
+</table>
+<h2>2. Independent E3 verification</h2>
+<p><strong>Petersen signed module / S₅.</strong> From the ten exact five-pair Hopf-axis coordinates, rebuild integer signed S, verify S³=5S and λ⁴(λ²−5)³, three spectral projectors, then exhaust all 120 signed five-label permutation lifts (60 even, 60 odd). Verify A₅ twirling on four independently chosen mixed states and commutant dimension three.</p>
+<p><strong>Real POVM / blind histories.</strong> Verify ten-axis effect normalization, real span dimension six, both conjugate-state spectra, equal probabilities for all ten effects and six random real-Kraus histories. Check subset transfers independently using Galois-conjugate five-core intertwiners for all ten pairs.</p>
+<p><strong>Reciprocal product and Reye limits.</strong> Verify the 100 product effects have rank 36, R± are density operators, every product outcome coincides, the antisymmetric⊗antisymmetric witness differs by exactly 4/9, and T=S²−3I is sign blind with eigenvalue multiplicities 6,4.</p>
+<p><strong>43/137/225 algebra test capacity.</strong> Build six native blocks of dimensions 1,2,2,4,3,3 on C¹⁵. Confirm nested pinching and trace preservation, positive-spectral-effect attainment of Helstrom distances, and both (0,1,1)/(0,0,1) parity witness patterns.</p>
+<p><strong>Two-rate GKLS spectrum.</strong> Construct all 88 cross-block jump operators for two positive pairs of r,s. Check 225 independent invariant eigenmodes (including 120 G, 15 S and 88 odd), their eigenvalues and stationary/population modes; separately test zero-rate boundary, trace preservation, unitality equivalence and r=4γ,s=11γ.</p>
+<p><strong>Ancilla-stable quotient.</strong> Construct an independent sector-varying (m₁=3,m₂=4) faithful representation with an entangled two-state reference; partial trace over multiplicities preserves thirty randomly chosen joint native effects. General history conclusion is supported by II-B’s abstract-algebra proof.</p>
+<p>Evidence files: <code>Proofs/Paper4A-Batch6ExactChecks-v1_1.py</code> and <code>Evidence/Paper4A/Paper4A-Batch6ExactChecksResults-v1_1.json</code>; the executable script and results are also available separately outside the atlas.</p>
+<h2>3. E4 challenges (including deliberately invalid scope weakenings)</h2>
+<table>
+<thead>
+<tr>
+  <th>Challenge</th>
+  <th>Target</th>
+  <th>Adjudication / why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>CHAL-IVA-B6-001</code></td>
+  <td><code>p4a:thm:v320-signed-projective-test</code></td>
+  <td><strong>INVALID_OWNER_PROMOTION</strong> — I-A ten-axis auxiliary L has dim10, Akin has dim15 and 43-dimensional algebra; source forbids identification.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B6-002</code></td>
+  <td><code>p4a:prop:v320-parity-graded-mirror-exchange</code></td>
+  <td><strong>SOURCE_EXPLICITLY_EXCLUDES</strong> — IV-C and IV-A prove only signed graph duality; 120 lifts computed, 60 odd are sign reversing, not selected physical operations.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B6-003</code></td>
+  <td><code>p4a:cor:v320-signed-twirl</code></td>
+  <td><strong>COUNTEREXAMPLE_SEARCH_FAILED</strong> — Independent twirl on 60 even signed lifts equals rank-weight Schur expectation; commutant dimension=3.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B6-004</code></td>
+  <td><code>p4a:prop:v320-real-axis-blindness</code></td>
+  <td><strong>INVALID_DOMAIN</strong> — Antiunitary blind theorem explicitly restricts all Kraus and terminal effects to real matrices; complex intervention is permitted outside.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B6-005</code></td>
+  <td><code>p4a:thm:v320-complement-kraus-no-go</code></td>
+  <td><strong>COUNTEREXAMPLE_SEARCH_FAILED</strong> — KρK* cancels sign for every state; phase-sensitive interferometric reference is an additional operation.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B6-006</code></td>
+  <td><code>p4a:cor:v320-reciprocal-product-blindness</code></td>
+  <td><strong>COUNTEREXAMPLE_SEARCH_FAILED</strong> — All 100 pair probabilities coincide; 4/9 A⊗A witness is outside the product-effect span.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B6-007</code></td>
+  <td><code>p4a:prop:v340-reye-parity-no-go</code></td>
+  <td><strong>INVALID_DOMAIN</strong> — S is not measurable function of T on the degenerate eigenvalue-two space; proposed effect violates T-only hypothesis.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B6-008</code></td>
+  <td><code>p4a:prop:v341-doublecover-parity-response</code></td>
+  <td><strong>SOURCE_EXPLICITLY_EXCLUDES</strong> — An effect on selected physical Hilbert and actual preparation are separate GP2 requirements.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B6-009</code></td>
+  <td><code>p4a:thm:v347-tier-distance</code></td>
+  <td><strong>INVALID_EVENT_PROMOTION</strong> — The theorem is conditional on mathematically available effect set and explicitly distinguishes odd field vs event.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B6-010</code></td>
+  <td><code>p4a:thm:v352-two-rate-transfer</code></td>
+  <td><strong>INVALID_HYPOTHESIS</strong> — Unique fixed state is claimed only for both r,s&gt;0; generator remains CP for either zero rate.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B6-011</code></td>
+  <td><code>p4a:thm:v352-transfer-spectrum</code></td>
+  <td><strong>INVALID_SEMANTIC_INFERENCE</strong> — Source expressly combines coincident numeric eigenvalues without changing eigenspaces; complete 225-mode basis passes.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B6-012</code></td>
+  <td><code>p4a:cor:v352-transfer-bistochastic</code></td>
+  <td><strong>SOURCE_EXPLICITLY_EXCLUDES</strong> — Trace preservation holds for arbitrary nonnegative r,s; L(I)=0 iff 11r=4s.</td>
+</tr>
+<tr>
+  <td><code>CHAL-IVA-B6-013</code></td>
+  <td><code>p4a:prop:v355-ancilla-stable-process-quotient</code></td>
+  <td><strong>INVALID_DOMAIN</strong> — The claim restricts every branch to abstract A⊗B(K); amplified ambient CP maps need not descend.</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Conditions, earliest-owning imports and event firewall</h2>
+<p>Core upstream source owners checked: Paper I-A <code>p1:thm:petersen-signed-and-flux</code>, <code>p1:thm:petersen-subset-polar</code>, <code>p1:thm:v341-desargues-rp2-parity</code>; Paper II-C <code>p2c:thm:v318-real-petersen-povm</code>; Paper IV-C <code>p4c:prop:v320-s5-signed-lift</code>; Paper II-B <code>p2b:thm:v353-multitime-amplification</code> and <code>p2b:thm:v354-ancilla-stable-descent</code>. Their imported mathematical scopes are explicitly compared; no separate entire-paper audit or physical occurrence is claimed.</p>
+<ul>
+<li><code>BND-IVA-028</code>: 10-axis signed comparison module, not automatic constituent or physical Akin block (source lines 7228–7273).</li>
+<li><code>BND-IVA-029</code>: Odd signed lifts may reverse S; no physical odd symmetry or mirror mass degeneracy selected (source lines 7287–7315).</li>
+<li><code>BND-IVA-030</code>: Antiunitary blindness holds only when all interventions and readouts are real (source lines 7345–7381).</li>
+<li><code>BND-IVA-031</code>: K and −K identical CP outcome; coherent reference path not part of operation (source lines 7383–7461).</li>
+<li><code>BND-IVA-032</code>: Same operator T cannot distinguish sign; extra effect or preparation requires occurrence (source lines 7480–7537).</li>
+<li><code>BND-IVA-033</code>: Tier distances require all effects of specified algebra; odd requires FENV/ENV, actual test (source lines 7543–7650).</li>
+<li><code>BND-IVA-034</code>: Even process may transfer populations, while jump dilation neither licenses odd effect nor physical history (source lines 7657–7777).</li>
+<li><code>BND-IVA-035</code>: Ancilla stable only for instruments acting within native abstract joint algebra (source lines 7781–7811).</li>
+</ul>
+<p>Four exact domain/specialization records are given unique first-known or already earlier source locations (<code>BH-IVA-A-0001</code> … <code>BH-IVA-A-0004</code>); source-inherited auxiliaries and GP2/FENV/ENV roles are linked back to their actual owners, <strong>not duplicated as IV-A primitive axioms</strong>. All 11 distinct explicit cross-reference labels resolve uniquely, and the separate unlabeled IV-C source-use witness is resolved by its exact proposition. Citation-only orientations are not promoted.</p>
+<h2>5. Batch 6 issues, remaining evidence distinctions and cumulative release boundary</h2>
+<p><strong>New source-matched mathematical defects:</strong> none. <strong>New source/provenance issues:</strong> none. Previous minor source-precision issues retained for the final report: <code>BH-IVA-B4-ISSUE-001</code> (speed-symbol alias), <code>BH-IVA-B4-ISSUE-002</code> (commutator norm vs trace-moment scope), <code>BH-IVA-B5-ISSUE-001</code> (directed-tangent density provenance). They do not block the checked downstream theorems.</p>
+<p><strong>Inherited verification status guards:</strong> <code>p4:thm:no-hidden-interface-hypotheses</code> (Batch 1) and <code>p4:thm:finite-simple-kms-uniqueness</code> (Batch 3) remain <strong>REPRODUCED</strong>. Their status is a certificate/evidence qualification, not a source-matched logical failure. All 162 formal objects have a recorded disposition; a fully audited paper is not a globally verified framework or confirmation of physical occurrence.</p>
+<p><strong>Release:</strong> The consolidated global DAG Atlas archive must include an indexable Paper4A audit layer and reviewed proof-use edges plus all six batch ledgers. The proof-chain-audit archive must include only the completed Paper4A audit plus the thirteen current prior audits, each at its latest version. Both must pass independent ZIP read-back before release. This intermediate batch report itself does not certify those file writes.</p>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

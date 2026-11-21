@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper3G-ProofChainAudit-v1_8 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper3G-ProofChainAudit-v1_8 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper3G ProofChainAudit v1_8</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper3G-ProofChainAudit-v1_8.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Source migration and repair-integration addendum — Paper3G-ProofChainAudit-v1_8.md</h1>
+<p><strong>Integration release:</strong> <code>Paper00-PapersMinimal-v3_007.zip</code>, 14 November 2026.
+<strong>Current paper source:</strong> <code>Paper3G-TechnicalMaterial-v1_54.tex</code>.
+<strong>Status:</strong> <code>SOURCE_INTEGRATED; GLOBAL_SOURCE_REAUDIT_PENDING</code>. An inherited historical audit is not a correctness certificate for the newer current manuscript.
+<strong>Evidence policy:</strong> Local algebraic proofs and scoped tests do not discharge physical source/observable interfaces or automatically alter the canonical proof DAG.</p>
+<hr />
+<h2>Historical source-bound audit: Paper3G-ProofChainAudit-v1_7.md</h2>
+<h1>Paper III-G — complete rigorous proof-chain audit (all 7 batches)</h1>
+<p><strong>Current audit artifact:</strong> <code>Paper3G-ProofChainAudit-v1_7.md</code>
+<strong>Selected source:</strong> <code>Paper3G-TechnicalMaterial-v1_47.tex</code>, Framework <code>v2.370</code>
+<strong>Source SHA-256:</strong> <code>7a0fe3468c022fbd4a9bace27880f2e02bae4f49c1b52d60f164d15232e54388</code>
+<strong>Protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code> and the supplied proof-chain audit protocol.
+<strong>Final classification:</strong> <strong>FULLY_AUDITED_WITH_OPEN_GAPS</strong> — 179/179 formal source objects disposed; one precise historical quantifier issue remains <code>UNDER_CHALLENGE</code>.
+<strong>Scope:</strong> only Paper III-G; imported papers read at exact dependency points, not re-audited as whole manuscripts; no manuscript sources or physical laws modified.</p>
+<h2>Scope, evidence and final census</h2>
+<p>Coverage: <strong>1–8915 / 8915 lines</strong>, <strong>179/179 formal claims</strong>, <strong>121 local proof environments</strong>, plus explicitly tracked consumed unnamed results. Formal dispositions:</p>
+<table>
+<thead>
+<tr>
+  <th>Status</th>
+  <th style="text-align:right">Claims</th>
+  <th>Evidence meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>VERIFIED</td>
+  <td style="text-align:right">26</td>
+  <td>Printed in-domain theorem supported by replay plus independent controls</td>
+</tr>
+<tr>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:right">100</td>
+  <td>Mathematically supported on stated nontrivial comparison/source/owner hypotheses; does not assert physical occurrence</td>
+</tr>
+<tr>
+  <td>REPRODUCED</td>
+  <td style="text-align:right">16</td>
+  <td>Exact/source computations reproduced; a distinct proof/interpretation scope retained</td>
+</tr>
+<tr>
+  <td>FORMALIZED</td>
+  <td style="text-align:right">36</td>
+  <td>Definition, remark, scoped object or source-retained boundary classified without unproved promotion</td>
+</tr>
+<tr>
+  <td>UNRESOLVED</td>
+  <td style="text-align:right">1</td>
+  <td>Earliest-root quantifier mismatch pending its narrow clarification</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Controls:</strong> earlier six batches 206 passed; final batch 63 passed (E1=3, E2=5, E3=48, E4=7); cumulative <strong>269 scoped checks</strong>. Checks are not each a proof of the whole paper or physical framework.</p>
+<table>
+<thead>
+<tr>
+  <th>Batch</th>
+  <th>Lines</th>
+  <th style="text-align:right">Formal results</th>
+  <th style="text-align:right">New unresolved roots</th>
+  <th style="text-align:right">Scoped checks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td>1–1783</td>
+  <td style="text-align:right">27</td>
+  <td style="text-align:right">0</td>
+  <td style="text-align:right">16</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>1784–3237</td>
+  <td style="text-align:right">41</td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">18</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>3238–4390</td>
+  <td style="text-align:right">33</td>
+  <td style="text-align:right">0</td>
+  <td style="text-align:right">25</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>4391–5235</td>
+  <td style="text-align:right">17</td>
+  <td style="text-align:right">0</td>
+  <td style="text-align:right">32</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>5236–6640</td>
+  <td style="text-align:right">18</td>
+  <td style="text-align:right">0</td>
+  <td style="text-align:right">52</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>6641–8229</td>
+  <td style="text-align:right">29</td>
+  <td style="text-align:right">0</td>
+  <td style="text-align:right">63</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>8230–8915</td>
+  <td style="text-align:right">14</td>
+  <td style="text-align:right">0</td>
+  <td style="text-align:right">63</td>
+</tr>
+</tbody>
+</table>
+<h2>Final Batch 7 — exact source-bound dispositions</h2>
+<p>| ID / exact label | Source lines | Status | What was checked and what remains conditional |
+|---|---:|---|---|
+| <code>BH-IIIG-C-0166</code> / <code>p3f:prop:v229-determinant-scope</code> | 8240–8253 | <strong>VERIFIED-CONDITIONAL</strong> | The fixed-unit positive interval DD/DN/NN determinant and whole spectral zeta-scaling identities agree under fixed spectral unit, k&gt;0 and positive elliptic family. Modewise products and whole regularization are not interchangeable. |
+| <code>BH-IIIG-C-0167</code> / <code>p3f:prop:v229-rooted-product-zeta</code> | 8262–8274 | <strong>VERIFIED-CONDITIONAL</strong> | The local raw a4 trace follows from the specified constant matched rooted Dirac square, flat product normal, midpoint quaternionic contractions and DN/ND bag normal gap. N=4/48 remains a declared representation choice; no physical field/measure determinant or vacuum cancellation follows. |
+| <code>BH-IIIG-C-0168</code> / <code>p3g:prop:v244-rooted-phase-schur-proof</code> | 8310–8342 | <strong>VERIFIED</strong> | For all real t, the explicitly defined 3×3 positive Gram family has the stated exact Schur quotient and Kc second jet, load norm and inverse-plane Schur identity. It is a finite comparison rather than an actual metric Hessian. |
+| <code>BH-IIIG-C-0169</code> / <code>p3g:cor:v244-cyclic-quotient-order</code> | 8363–8393 | <strong>VERIFIED-CONDITIONAL</strong> | Finite C3 averaging differs from Schur-before-averaging for t≠0. Rooted cubic/quartic moments, 7/250 fourth residual and canonically rescaled polynomial check; physical scalar pullback remains separately conditional. |
+| <code>BH-IIIG-C-0170</code> / <code>(unlabeled remark: Finite design and whole-action status)</code> | 8405–8420 | <strong>FORMALIZED</strong> | Source-accurate finite-design sixth-power discrepancy 47/112 and exponential sixth coefficient 47/80640 are imported; the remark explicitly disclaims heat-source or scalaron Hessian occurrence. |
+| <code>BH-IIIG-C-0171</code> / <code>p3g:cor:v245-rooted-schur-terminal-positivity</code> | 8424–8440 | <strong>VERIFIED-CONDITIONAL</strong> | The fixed positive Schur kernel is uniformly bounded below by 5/3, preventing direct equalization (under fixed positive normalization) with the terminal-zero raw χ2|7; subtracted or signed physical kernels are distinct unexcluded claims. |
+| <code>BH-IIIG-C-0172</code> / <code>p3g:prop:v245-cosine-half-angle-mismatch</code> | 8449–8470 | <strong>VERIFIED-CONDITIONAL</strong> | Under the explicitly proposed half-angle t(R), first endpoint derivative matches at 9/(8(U+C)) but the exact second-order difference has strict negative coefficient for all U/C&gt;1. No curvature-to-source map is proved. |
+| <code>BH-IIIG-C-0173</code> / <code>p3g:prop:v245-hurwitz-four-port-moment-comparison</code> | 8488–8509 | <strong>VERIFIED</strong> | The 24 Hurwitz quaternion unit vectors form HHᵀ=6I4; four copies give 24R_s²I4 and trace 96R_s². Traceless 4×4 commuting two-bit contrast products vanish; no physical four-port action or 1/96 transport selected. |
+| <code>BH-IIIG-C-0174</code> / <code>p3g:prop:v252-pointwise-shell-frame</code> | 8533–8565 | <strong>VERIFIED</strong> | The four tetrahedral unoriented axis representatives obey F4=4I3/3; each of 36 x–p shell pairs has direct-sum norm 1/36 and half inverse-frame contraction 1/96. No probability, independent sampling, or physical source owner is inferred. |
+| <code>BH-IIIG-C-0175</code> / <code>p3g:cor:v252-gaussian-boundary-weight</code> | 8578–8602 | <strong>VERIFIED-CONDITIONAL</strong> | For the explicitly supplied positive 7×7 scalar/interior quadratic parent and fixed Lebesgue Gaussian measure, integration yields Schur k&gt;0, normalized source weight N exp(-k/2), and the displayed 1/96 exponent. It is not an actual Newton or inverse-Hessian observable. |
+| <code>BH-IIIG-C-0176</code> / <code>p3g:rem:v252-96-physical-boundary</code> | 8632–8670 | <strong>FORMALIZED</strong> | Statement precisely distinguishes scalar anomaly coincidence, the alpha rewrite, role-normalized Born scalarizer and an actual common-action source/measure/readout certificate. Also distinguishes unit-source Gaussian weight from retained inverse curvature. |
+| <code>BH-IIIG-C-0177</code> / <code>p3g:prop:v346-connection-spectral-flow</code> | 8747–8761 | <strong>VERIFIED-CONDITIONAL</strong> | Gluing the smooth fundamental SU(2) twist with gauge-equivalent winding-one endpoints on the closed spin family gives |c₂|=|index D4|=|SF|=1 by transgression and index/spectral-flow theorem. Mathematical interpolation; no physical time-evolution asserted. |
+| <code>BH-IIIG-C-0178</code> / <code>p3g:prop:v349-meron-one-crossing</code> | 8839–8860 | <strong>VERIFIED-CONDITIONAL</strong> | Direct angular-momentum recoupling of the explicitly specified fundamental test twist yields the two K=l branches and fixed-sign edge branches. Only the l=0 singlet crosses once at λ=1/2; independent calculation of the previous index-based flow. |
+| <code>BH-IIIG-C-0179</code> / <code>p3g:prop:v349-meron-zeta-certificate</code> | 8879–8901 | <strong>VERIFIED</strong> | The meron positive-spectrum zeta binomial expansion and entire k≥2 analytic derivative tail give 3/2−logπ; the resulting ζB(0)=-1, ζB prime and determinant agree with upstream geometric test. The theta resummation establishes full algebraic heat asymptotics; physical logdet weighting is not selected. |</p>
+<h3>Substantive unnamed passages in the final range</h3>
+<ul>
+<li><strong>Lines 8230–8235 — FORMALIZED:</strong> Finite checks are verification diagnostics only, not physical occurrence certificates.</li>
+<li><strong>Lines 8292–8295 — FORMALIZED:</strong> Zeta operator coefficient is unweighted; nonmetric half action weight, other field determinants and physical measure remain separate.</li>
+<li><strong>Lines 8618–8630 — VERIFIED-CONDITIONAL:</strong> Native normalized Gaussian source contraction has logZ[-Z]=1/96, while inverse retained covariance equals 1/k; distinct observables.</li>
+<li><strong>Lines 8674–8717 — REPRODUCED:</strong> Ten-axis exact A5 second/fourth moment and sixth harmonic 160/1701 reproduced; two-core polar and mirror identities have current exact Paper I-A and III-C/III-F proof owners; external cited script absent from this minimal bundle, no independent script attestation claimed.</li>
+<li><strong>Lines 8726–8745 — VERIFIED-CONDITIONAL:</strong> Homogeneous meron F, CS, Wilson -I and YM saddle follow on SU2 path, not an actual four-dimensional gauge sector.</li>
+<li><strong>Lines 8776–8794 — REPRODUCED:</strong> Protected orbit 4+1+2+1 heat trace; determinant exponent varies with separate measure exponent a; Chern class does not select it.</li>
+<li><strong>Lines 8796–8832 — VERIFIED-CONDITIONAL:</strong> Near-terminal f(R) source-free trace root and strict branch separation follow imported III-F theorem for U&gt;5C and C2&gt;3C; physical ports stay open.</li>
+</ul>
+<h3>E3/E4 independent checks and boundary outcomes</h3>
+<ul>
+<li>Exact zeta gluing: DD/DN/NN determinants scale as G⁻¹/1/G for k→Gk,L→L/G. The global zeta derivative gives 2ζF(0)logG with fixed spectral unit, without replacing it by an unregularized modewise product.</li>
+<li>Exact a4 density: normalized product terms combine as 2m⁴+5m²/a²+a⁻⁴, with 4D volume factor NLa³/8; the on-domain DN/ND normal gap excludes zero modes.</li>
+<li>Exact Gram: Gf positive for all t, Kc = 3g(g²−16t²)/(3g²−16t²), Δc = 96t²(1+t²)/(27t⁴+38t²+27), Kc′′(0)=−10/9, and ||Rload||²=32/3.</li>
+<li>Endpoint mismatch: the scale 9/(8(U+C)) matches the first derivative but the second-order coefficient remains strictly negative for U&gt;C; a positive Kc≥5/3 cannot equal terminal χ2|7=0 under fixed positive scaling.</li>
+<li>2T exact 24-vector frame sum is 6I₄; four copies yield W=24Rs²I₄, trace 96Rs², and zero contrast moments.</li>
+<li>2O pointwise x/p shell pair norm=1/36 and half inverse tetrahedral-frame contraction=1/96 for every one of 36 pairs; Gaussian integration yields N exp(−k/2), not the inverse covariance 1/k.</li>
+<li>Exact A₅ ten-axis second/fourth moments and sextic harmonic value 160/1701 reproduced; Petersen two-core polar/mirror contracts imported from exact Paper I-A/III-C sources. The specifically named standalone Petersen script is not included in the supplied minimal+Atlas bundles, so no independent execution of that absent script is claimed.</li>
+<li>Meron CS endpoint difference 1 and homogeneous YM saddle verified; angular-momentum K=l block and all edge signs give one l=0 singlet crossing; the closed-spin family index is a typed mathematical interpolation.</li>
+<li>Meron zeta series and finite product verify the derivative tail 3/2−logπ, ζB(0)=−1, exact determinant derivative and theta heat expansion.</li>
+</ul>
+<p><strong>Reference-resolution gate:</strong> 23 occurrences; 22 distinct exact <code>\ref</code>/<code>\eqref</code> labels in the final range, each located uniquely in the current corpus. Resolving a citation does not alone constitute a material proof dependency.</p>
+<h2>All found issues — exact earliest origin</h2>
+<h3><code>BH-IIIG-G-0001</code> — historical lower-ideal realization quantifier</h3>
+<ul>
+<li><strong>Category:</strong> <code>TYPE_OR_DOMAIN</code>; <strong>severity:</strong> moderate; <strong>state:</strong> <code>UNDER_CHALLENGE</code> / unresolved.</li>
+<li><strong>Origin:</strong> <code>Paper3G-TechnicalMaterial-v1_47.tex:1979–2004</code>, theorem <code>p3b:thm:legacy-factor-local-shape</code>.</li>
+<li><strong>Problem:</strong> “every faithful finite A-realization” can mean all actual faithful finite representations; imported Paper II-F support completeness establishes type support and separately a one-copy canonical representative, not unconditional multiplicity one of every realized module.</li>
+<li><strong>Matched upstream:</strong> <code>Paper2F-TechnicalMaterial-v1_61.tex:3860–3903, 3965–4019, 4538–4552</code> (typed <code>P_sli</code>, <code>COORD</code>, <code>GP3</code>); use canonical conditions <code>BH-IIF-A-0016</code>, <code>BH-IIF-A-0017</code>, <code>BH-IIF-A-0018</code>.</li>
+<li><strong>Challenge:</strong> a support-preserving direct-sum copy remains compatible with the support-only statement; it does <strong>not</strong> defeat the one-copy F_s candidate theorem, and it is not a licensed physical counter-constructor.</li>
+<li><strong>Affected statements:</strong> only the historical optional multiplicity-free interpretation and <em>possible, not certified</em> downstream historical selector readings (<code>p3b:thm:legacy-factor-local-m1</code>, <code>p3b:thm:legacy-finite-role-realization</code>, <code>p3b:thm:legacy-level-one-handoff</code>). There is <strong>no established observable failure</strong>.</li>
+<li><strong>Independent bypass:</strong> the current Paper II-B proof <code>H_p≅H_1</code>, <code>m_p=1</code>; it is <strong>not reopened</strong>.</li>
+<li><strong>Exact remaining obligation:</strong> clarify the printed quantified domain as canonical one-copy F_s candidates, or exhibit an existing generated GP3 whole-candidate multiplicity-comparison proof for the stronger all-actual-realizations reading. No theorem repair was performed in this audit.</li>
+</ul>
+<h2>Conditional but not defective interfaces</h2>
+<p>The optional metric-curry, Hopf comparison, determinant measures, rooted finite phase Hessian, Gaussian 1/96, actual curvature/source map, source-free restored metric reduction, and meron family carry exact declared conditions. A mathematical comparison is never promoted to an occurring action, a Newton observable, an electron/hadron pole, or a new field by matching a number. In particular the raw Laurent/Riccian endpoint, physical Euler/action-contact response and determinant power retain their distinct existing owners.</p>
+<h2>Source matched earlier-batch results and scope inheritance</h2>
+<p>All 165 previous claims, including the single open issue, remain in the cumulative <code>Paper3G-AuditLedger-v1_7.json</code>, now with exact statement slices for the final 14. Batch 1–6 results include the reciprocal isometry, E7 golden frame and inverse, Born topology, Dirac shell bounds, thermal/Clifford/Schur reductions, K16/K48 metric comparisons, exact 5-state matrix source blocks, Gaussian/family moments, free current poles, signed spatial Dirac roots, and fourth-order response. Their previous conditionality and independent checks have <strong>not</strong> been bulk-upgraded or reinterpreted.</p>
+<h2>DAG integration and verification protocol</h2>
+<ul>
+<li>Every target formal object has stable ID <code>BH-IIIG-C-0001</code> through <code>BH-IIIG-C-0179</code>, exact source range and a disposition.</li>
+<li>The Atlas audit layer is registered in the existing global <code>DAG/Paper00-TheoremDAG.json</code> and its successor combined query index. Only source-matched imports are allowed to enter material proof traversal; citations and conditional comparisons remain nonpromoting.</li>
+<li>Assumptions are canonicalized only at their earliest known source occurrence; existing Paper II / III-F conditions are inherited by reference, not cloned. The historical issue stays under <code>BH-IIIG-G-0001</code>, with no fabricated cross-paper failing path.</li>
+<li>Evidence grades: E1=source replay, E2=numeric corroboration, E3=independent algebra, E4=in-domain adversarial/boundary check. Finite checks do not prove broad physical occurrence.</li>
+<li>Final acceptance: <code>FULLY_AUDITED_WITH_OPEN_GAPS</code>, source-only, original paper not edited. Archive readback and hash/schema checks recorded in the release validation sidecar.</li>
+</ul>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

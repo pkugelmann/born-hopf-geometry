@@ -1,0 +1,1965 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper7C-ProofChainAudit-v1_7 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper7C-ProofChainAudit-v1_7 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper7C ProofChainAudit v1_7</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper7C-ProofChainAudit-v1_7.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Source migration and repair-integration addendum — Paper7C-ProofChainAudit-v1_7.md</h1>
+<p><strong>Integration release:</strong> <code>Paper00-PapersMinimal-v3_007.zip</code>, 14 November 2026.
+<strong>Current paper source:</strong> <code>Paper7C-ContinuousQFT-v2_203.tex</code>.
+<strong>Status:</strong> <code>SOURCE_INTEGRATED; GLOBAL_SOURCE_REAUDIT_PENDING</code>. An inherited historical audit is not a correctness certificate for the newer current manuscript.
+<strong>Evidence policy:</strong> Local algebraic proofs and scoped tests do not discharge physical source/observable interfaces or automatically alter the canonical proof DAG.</p>
+<hr />
+<h2>Historical source-bound audit: Paper7C-ProofChainAudit-v1_6.md</h2>
+<h1>Paper7C — v2.372 source repair addendum (13 November 2026)</h1>
+<p><strong>Successor:</strong> <code>Paper7C-ProofChainAudit-v1_6.md</code>.<br />
+<strong>Current source:</strong> <code>Paper7C-ContinuousQFT-v2_196.tex</code>.<br />
+<strong>Current SHA-256:</strong> <code>f5c457a8aac0fc84586ed982602b366b28a102335f943d1efd31fa7cc96e1a32</code>.<br />
+<strong>Historical audit:</strong> <code>Paper7C-ProofChainAudit-v1_5.md</code>.<br />
+<strong>Source repair scope:</strong> 1 distinct issue(s); 3 textual corrections.<br />
+<strong>Disposition:</strong> <code>SOURCE_REPAIRED_WITH_SCOPED_CHECKS; FORMAL_REAUDIT_PENDING</code> for only the listed IDs. Other issues and all original evidence statuses unchanged.</p>
+<table>
+<thead>
+<tr>
+  <th>Issue ID</th>
+  <th>New source line(s)</th>
+  <th>Repaired issue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-VIIC-G-0001</code></td>
+  <td>808, 2891, 2902</td>
+  <td>Transfer contraction acts on complement of complete ground eigenspace; QFT4/OS semigroup passage needs convergence of full-ground-projected matrix elements.</td>
+</tr>
+</tbody>
+</table>
+<p>The historical report below refers to the previous source version and explicitly marks those same issue IDs as <code>OPEN</code> <strong>as of that old version</strong>. Those specific historical labels are superseded only as source-edit dispositions by the addendum above; the original audit text is retained to prevent loss of evidence or false global certification. Other issues are unchanged. Recheck the updated source theorem and its proof/use dependencies before promoting an issue to closed in the canonical DAG.</p>
+<hr />
+<h2>Historical predecessor audit (unchanged text; former source version)</h2>
+<h1>Paper VII-C — Rigorous verification, 5-batch cumulative final audit (v1_5)</h1>
+<p><strong>Audit status:</strong> FULLY_AUDITED_WITH_OPEN_GAPS for the named-claim census and the material source-interface census documented below. No claim that the physical interacting continuum antecedents are all discharged. <strong>Audit unit:</strong> exactly Paper VII-C, not a full re-audit of referenced papers.
+<strong>Authoritative source:</strong> <code>Paper7C-ContinuousQFT-v2_195.tex</code>, <code>Paper00-PapersMinimal-v2_371.zip</code>; source SHA256 <code>723e64201077af9a98fc9dea9ef23669b4543c96005fbf37e92e0ebd7aefed53</code>. <strong>Protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code>. <strong>Final atlas base:</strong> user-uploaded v1_121, merged successor v1_122. <strong>Audit archive base:</strong> user-uploaded v1_38, successor v1_39. Source TeX not modified.
+<strong>Method:</strong> source-bound E1 replay and scope/typing checks of all 227 named environments, separate independent E3 exact computations and E4 counterexamples/mutation controls where applicable; no multi-agent Work deployment was available in this execution, so review functions are separately recorded passes by a single operator, not independent agents.</p>
+<h2>1. Coverage, classification, and limits</h2>
+<table>
+<thead>
+<tr>
+  <th>Evidence-backed disposition</th>
+  <th style="text-align:right">B1</th>
+  <th style="text-align:right">B2</th>
+  <th style="text-align:right">B3</th>
+  <th style="text-align:right">B4</th>
+  <th style="text-align:right">B5</th>
+  <th style="text-align:right">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>VERIFIED</td>
+  <td style="text-align:right">12</td>
+  <td style="text-align:right">3</td>
+  <td style="text-align:right">3</td>
+  <td style="text-align:right">6</td>
+  <td style="text-align:right">16</td>
+  <td style="text-align:right"><strong>40</strong></td>
+</tr>
+<tr>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:right">11</td>
+  <td style="text-align:right">11</td>
+  <td style="text-align:right">17</td>
+  <td style="text-align:right">19</td>
+  <td style="text-align:right">11</td>
+  <td style="text-align:right"><strong>69</strong></td>
+</tr>
+<tr>
+  <td>REPRODUCED</td>
+  <td style="text-align:right">5</td>
+  <td style="text-align:right">9</td>
+  <td style="text-align:right">8</td>
+  <td style="text-align:right">16</td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right"><strong>39</strong></td>
+</tr>
+<tr>
+  <td>FORMALIZED</td>
+  <td style="text-align:right">19</td>
+  <td style="text-align:right">12</td>
+  <td style="text-align:right">11</td>
+  <td style="text-align:right">8</td>
+  <td style="text-align:right">5</td>
+  <td style="text-align:right"><strong>55</strong></td>
+</tr>
+<tr>
+  <td>UNRESOLVED</td>
+  <td style="text-align:right">3</td>
+  <td style="text-align:right">7</td>
+  <td style="text-align:right">7</td>
+  <td style="text-align:right">4</td>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right"><strong>23</strong></td>
+</tr>
+<tr>
+  <td>REFUTED</td>
+  <td style="text-align:right">0</td>
+  <td style="text-align:right">0</td>
+  <td style="text-align:right">0</td>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">0</td>
+  <td style="text-align:right"><strong>1</strong></td>
+</tr>
+<tr>
+  <td><strong>Named claims</strong></td>
+  <td style="text-align:right"><strong>50</strong></td>
+  <td style="text-align:right"><strong>42</strong></td>
+  <td style="text-align:right"><strong>46</strong></td>
+  <td style="text-align:right"><strong>54</strong></td>
+  <td style="text-align:right"><strong>35</strong></td>
+  <td style="text-align:right"><strong>227</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Source lines 1–7,142 were processed through five complementary claim blocks, including explicit definitions, formal remarks, proof environments, unlabeled constructions consumed by proofs, and major physical interface prose. An exact label census was checked against the present paper and companion source owner; externally imported peer theorems were checked only at the scopes necessary for VII-C. A <code>VERIFIED-CONDITIONAL</code> statement verifies its mathematical implication, <strong>not</strong> the occurrence of its antecedent on the interacting native tower; <code>REPRODUCED</code> is imported/source replay, not a second full proof; <code>FORMALIZED</code> is a definition/scope record. 23 unresolved dispositions do not imply 23 distinct defects.
+Independent controls recorded in JSON files: <strong>86 executable/delimited mathematical checks across five batches</strong>; all reported passed their own mathematical tests. E0 integrity of scripts/ZIPs does not upgrade E1/E3 proof statuses. The E4 source-scope test for claim #219 is an exact logical-scope challenge, not a physical native counterexample.</p>
+<h2>2. All distinct root issues, earliest origin and what survives</h2>
+<h3>BH-VIIC-G-0001 — MAJOR / LOGICAL_GAP</h3>
+<p><strong>Earliest source step:</strong> <code>p12:def:transfer-scale-convention</code>, <code>Paper7C-ContinuousQFT-v2_195.tex:791-813</code>. <strong>Lifecycle:</strong> OPEN. <strong>Status:</strong> established.
+<strong>Printed inference/claim:</strong> \|\widehat K_{L,\mathcal S}(t_0)|_{\Omega_L^\perp}\|=e^{-t_0\gamma_L}.
+<strong>Unmet proof/evidence condition:</strong> Uniform finite gap implies transfer contraction on Omega_L^perp without assuming rank(P_0,L)=1..
+<strong>Adversarial witness/attack:</strong> ['VIIC-E4-B1-023'].
+<strong>Independent evidence:</strong> ['VIIC-E3-B1-023'].
+<strong>Verified or conditional bypasses:</strong> ['Use of full P_0 complement yields true finite spectral estimate, but this is not an implemented source repair'].
+<strong>Other potentially affected claims:</strong> ['p12:thm:mass-gap-transfer', 'p12:cor:paper11-pure-glue-gap-floor'].
+<strong>Required certificate:</strong> Document a rank-one ground condition in the claimed sector, or certify the transfer/correlation statement on the complement of the entire ground eigenspace; no source modifications in this audit..
+<strong>Scope limitation:</strong> Later mass-gap theorem impacted routes were inspected only for dependency implications, not yet fully audited..</p>
+<h3>BH-VIIC-G-0002 — MODERATE / MISSING_EVIDENCE</h3>
+<p><strong>Earliest source step:</strong> <code>p12:thm:v283-qft4-cluster-split</code>, <code>Paper7C-ContinuousQFT-v2_195.tex:481-487</code>. <strong>Lifecycle:</strong> OPEN. <strong>Status:</strong> unresolved audit gate; not a mathematical refutation.
+<strong>Printed inference/claim:</strong> the bounded local representatives form a directed compatible family; Banach--Alaoglu and diagonal exhaustion give a cluster state..
+<strong>Unmet proof/evidence condition:</strong> Show that every finite state is a well-defined positive normalized state on one common, compatible local C<em>-completion, including correct product/</em> relations and a genuine null ideal; then compactness follows..
+<strong>Adversarial witness/attack:</strong> ['QFT2 comparison maps are not required to be <em>-homomorphisms; positivity on unrelated finite algebras does not automatically descend through an undefined common null quotient.'].
+<strong>Independent evidence:</strong> ['VIIC-E3-B1-011 (dense tests only on an already common algebra)'].
+<strong>Remaining typed conditions:</strong> ['well-defined same-algebra *-positive quotient and compatible finite-state pullbacks'].
+<strong>Verified or conditional bypasses:</strong> ['The later p12:def:v2210-lit-bounded-os-certificate explicitly assumes an actual isotonic local C</em> net and compatible products/reflections/null quotient; its stronger conditional OS route is not blocked by this evidence gate.'].
+<strong>Other potentially affected claims:</strong> ['p12:thm:canonical-local-state if product/positive quotient compatibility is not actually supplied', 'p12:thm:local-chart-os-reconstruction', 'p12:thm:main-qft without its separately required positive C* net certificate'].
+<strong>Required certificate:</strong> Source-matched construction or imported theorem for the common *-algebra, product/null ideal and unital positive finite pullbacks; distinguish subnets from cofinal sequences..</p>
+<h3>BH-VIIC-G-0003 — MAJOR / INCORRECT_STEP</h3>
+<p><strong>Earliest source step:</strong> <code>p12:prop:graded-chiral-sector-compatibility</code>, <code>Paper7C-ContinuousQFT-v2_195.tex:1675-1679</code>. <strong>Lifecycle:</strong> OPEN. <strong>Status:</strong> established local proof-step failure; theorem with stronger locality input not refuted.
+<strong>Printed inference/claim:</strong> On spacelike separated regions the even subalgebras commute, and odd field operators satisfy graded locality..
+<strong>Unmet proof/evidence condition:</strong> Show geometric support orthogonality/localization and representation-wide graded commutation for the finite/limit field maps; finite CAR alone is only an internal algebraic relation..
+<strong>Adversarial witness/attack:</strong> ['VIIC-E4-B2-054'].
+<strong>Remaining typed conditions:</strong> ['compatible spacelike localization and graded commutation in local net/field representatives'].
+<strong>Verified or conditional bypasses:</strong> ['The later full bounded algebraic OS certificate or direct graded-local CAR localization can supply the property as an independently checked antecedent; not established in this proof.'].
+<strong>Other potentially affected claims:</strong> ['p12:prop:graded-chiral-sector-compatibility graded-local field conclusion', 'later fermion local-net exports that consume this proposition without a separate graded locality proof'].
+<strong>Required certificate:</strong> Identify the actual IV/V one-particle spatial support maps and verify orthogonality/asymptotic graded locality including all GNS sandwich tests, or cite an existing theorem on the same carrier..</p>
+<h3>BH-VIIC-G-0004 — MAJOR / MISSING_CONDITION</h3>
+<p><strong>Earliest source step:</strong> <code>p12:thm:local-chart-os-reconstruction</code>, <code>Paper7C-ContinuousQFT-v2_195.tex:2527-2573</code>. <strong>Lifecycle:</strong> OPEN. <strong>Status:</strong> established insufficiency of the printed early ordinary-net OS proof route.
+<strong>Printed inference/claim:</strong> The preceding steps are exactly the standard OS hypotheses on each compact flat window.
+<strong>Unmet proof/evidence condition:</strong> For the ordinary local Wightman/Haag--Kastler net, exhibit compatible *-products, representation-wide spacelike locality, mixed Euclidean E(4) transport, regularity/growth at the claimed level, and actual time-zero net or a claim-matched equivalent corrected field OS theorem..
+<strong>Adversarial witness/attack:</strong> ['VIIC-E4-B2-082'].
+<strong>Independent evidence:</strong> ['VIIC-E3-B2-079 (RP inheritance only)', 'VIIC-E3-B2-077 (native state covariance only)'].
+<strong>Remaining typed conditions:</strong> ['representation-wide locality from GNS sandwich/product comparison', 'time-zero nontrivial local algebra', 'all Euclidean mixed rotations and field OS conditions for claimed export'].
+<strong>Verified or conditional bypasses:</strong> ['p12:def:v2210-lit-bounded-os-certificate and p12:cor:v2210-lit-bounded-os-reconstruction at 5957–6005 give a separate stronger conditional route; p12:thm:main-qft at 6767 explicitly consumes it.'].
+<strong>Other potentially affected claims:</strong> ['p12:cor:fields-are-outputs to the extent it relies on the earlier bare-QFT OS route'].
+<strong>Required certificate:</strong> Source-matched implication from the listed early hypotheses to each extra bounded OS/net condition, or restrict the early theorem to the actually established RP/Hilbert/semigroup outputs while retaining the stronger later conditional theorem. No paper rewritten by this audit..</p>
+<h3>BH-VIIC-G-0005 — MAJOR / MISSING_CONDITION</h3>
+<p><strong>Earliest source step:</strong> <code>p12:thm:tier3-irrelevant-suppression</code>, <code>Paper7C-ContinuousQFT-v2_195.tex:3623-3665 (crux 3650-3655)</code>. <strong>Lifecycle:</strong> OPEN. <strong>Status:</strong> established missing proof-step; not a demonstrated failure of the actual native SU3 tower.
+<strong>Printed inference/claim:</strong> UCS-stability gives a uniform local insertion bound ... &lt;= C_{A,B,d}..
+<strong>Unmet proof/evidence condition:</strong> From actual Tier-2 and UCS premises, establish sup_L |omega_L(A_L sum_alpha w_alpha,L c_d,alpha,L O_d,alpha,L B_L)| &lt; infinity for each fixed bounded local A,B,d; and justify convergence of any infinite dimension sum with a uniform dominating sequence..
+<strong>Adversarial witness/attack:</strong> ['a_L=1/L, d=6, c_6,L=L^2, one bounded normalized constant mode O_6=I gives all connected cumulants of order&gt;=2 zero yet R_L=I. This attacks the logical step, not the specified native color compiler.'].
+<strong>Independent evidence:</strong> ['VIIC-E4-B3-120'].
+<strong>Remaining typed conditions:</strong> ['uniform coefficient-weighted local insertion / one-point envelope for the actual generated action owner'].
+<strong>Verified or conditional bypasses:</strong> ['For 121 and 122, source directly assumes uniform-in-s insertion estimates for both A and 1, so its own conditional derivative/triangle inequality route remains valid', 'For 123 and 127, a separately established remainder-vanishing certificate avoids relying on the false UCS=&gt;insertion shortcut'].
+<strong>Other potentially affected claims:</strong> ['p12:thm:native-bh-ym-continuum: item (vi) when identifying continuum SD from named irrelevant estimate', 'p12:cor:uniform-action-interpolation-universality: requires a stronger uniform-in-s estimate explicitly, not automatically blocked if independently proved', 'p12:cor:v185-universality-inherits-continuum-state: inherits only the explicit uniform interpolation premise'].
+<strong>Required certificate:</strong> Produce a source-matched uniform bound on the actual coefficient-weighted insertion for the generated action and all requested local probes, plus uniform summability if the d-expansion is infinite; do not insert a new regulator member..
+<strong>Scope limitation:</strong> No actual SU3 native finite action coefficients or their physical Borel/smooth expansion were calculated; this is a defect in the printed abstract implication, not an E4 refutation of existence..</p>
+<h3>BH-VIIC-G-0006 — MODERATE / MISSING_EVIDENCE</h3>
+<p><strong>Earliest source step:</strong> <code>p12:thm:ucs-implies-qft10</code>, <code>Paper7C-ContinuousQFT-v2_195.tex:3400-3410 (step 3409)</code>. <strong>Lifecycle:</strong> OPEN. <strong>Status:</strong> unresolved operator-domain / spectral-affiliation evidence gate, not a scalar-moment refutation.
+<strong>Printed inference/claim:</strong> Local support of the representatives gives affiliation with the reconstructed local net.
+<strong>Unmet proof/evidence condition:</strong> Explain how the convergent mixed Euclidean polynomial moments and finite local support define a common closable field-operator domain and spectral/strong affiliation with the actual reconstructed bounded local von Neumann net, with appropriate field-OS positivity and locality; or specify the weaker operator-valued-distribution notion actually proved..
+<strong>Adversarial witness/attack:</strong> ['Lognormal Stieltjes classes have identical all polynomial moments but distinct spectral laws; this does not disprove uniqueness of scalar moments, but shows scalar moment Cauchy does not on its own fix the strong spectral operator object.', 'Later p12:thm:small-observable-field-reconstruction source 5909-5915 repeats the local-affiliation claim and assumes QFT1-7/QFT10; it is not an independent strong-affiliation theorem.'].
+<strong>Independent evidence:</strong> ['VIIC-E4-B3-112', 'VIIC-E4-B3-112D'].
+<strong>Remaining typed conditions:</strong> ['common field polynomial core/closability and strong locality/affiliation certificate or precise weaker notion of affiliated operator-valued distribution'].
+<strong>Verified or conditional bypasses:</strong> ['Unique distributional scalar moment limits remain valid with the stated mixed Cauchy conditions; an independently proved full field-OS and strong-locality certificate would discharge the stronger affiliation claim'].
+<strong>Other potentially affected claims:</strong> ['p12:thm:native-bh-ym-continuum item (v) when affiliated composite fields specifically claimed', 'p12:thm:small-observable-field-reconstruction (same route, line 5911)'].
+<strong>Required certificate:</strong> Source-bound operator-domain/field OS theorem with precise meaning of affiliation and strong-locality criterion, or register affiliation only under that independently proved extra certificate..
+<strong>Scope limitation:</strong> No counterexample is asserted within a fully certified QFT1-7 + strengthened field-OS class; the lognormal comparison isolates missing uniqueness/strong-domain evidence only..</p>
+<h3>BH-VIIC-G-0007 — MODERATE / MISSING_EVIDENCE</h3>
+<p><strong>Earliest source step:</strong> <code>p12:thm:v164-ordered-static-tension-limits</code>, <code>Paper7C-ContinuousQFT-v2_195.tex:3905-3937 (step 3907-3918)</code>. <strong>Lifecycle:</strong> OPEN. <strong>Status:</strong> unresolved charged static-source reflection/OS factorization evidence; not an actual Wilson-loop refutation.
+<strong>Printed inference/claim:</strong> Cutting the rectangle on its reflection plane gives an OS vector Psi_R and positive spectral measure mu_R.
+<strong>Unmet proof/evidence condition:</strong> Establish that the actual generated Wilson rectangle admits a reflected charged/open-line half-contour vector in a positive static-source transfer Hilbert space (including endpoint color contractions and self-energy), so W(R,T)=&lt;Psi_R,e^{-T(H_R-E0)}Psi_R&gt; with positive measure; then prove appropriate spatial reflection inequalities..
+<strong>Adversarial witness/attack:</strong> [&quot;Bounded positive f(T)=exp(-T^2) is not the Laplace transform of a positive energy measure since f''(0)=-2; bounded positive Wilson expectations alone do not imply a static-source OS vector.&quot;, 'The bounded gauge-invariant local algebra does not by itself define the charged open-half-loop transfer vector.'].
+<strong>Independent evidence:</strong> ['VIIC-E4-B3-133', 'VIIC-E3-B3-133S'].
+<strong>Remaining typed conditions:</strong> ['charged Wilson half-loop reflection-positivity/transfer factorization, or a certified independently equivalent static-sector source theorem', 'spatial reflection positivity for the actual rectangular Wilson family if concavity is used'].
+<strong>Verified or conditional bypasses:</strong> ['A separate genuine static charged-source OS transfer theorem supplies the missing certificate', 'An independent same-owner surface bound may constrain loop decay without deriving the static Laplace representation from mere positivity; positive tension still needs correct ordered limit'].
+<strong>Other potentially affected claims:</strong> ['p10:thm:v164-ordered-wilson-limits source 4601-4619: this result also states positivity but was not audited as a target', 'p12:rem:v2155-confinement-status: slope existence claim if no independent static-source certificate is produced'].
+<strong>Required certificate:</strong> Source-trace actual static-source charged Hilbert/extended net OS factorization, or mark the spectral potential/slope theorem conditional on that certificate; do not add a new action owner..
+<strong>Scope limitation:</strong> The comparator f(T)=exp(-T²) is not an in-domain SU3 Wilson example; no unconditional claim of negative native Wilson expectation or failure of static transfer is made..</p>
+<h3>BH-VIIC-G-0008 — MAJOR / COUNTEREXAMPLE</h3>
+<p><strong>Earliest source step:</strong> <code>p12:cor:born-scale-field-parity-selection</code>, <code>Paper7C-ContinuousQFT-v2_195.tex:4463-4482 (wrong inference at 4480-4481)</code>. <strong>Lifecycle:</strong> OPEN. <strong>Status:</strong> established printed-general-smooth-involution refutation (physical linear branch not refuted).
+<strong>Printed inference/claim:</strong> Apply k field derivatives to the parity identity ... and use D B v_i=epsilon_i v_i..
+<strong>Unmet proof/evidence condition:</strong> For arbitrary smooth local involution B and B-fixed background, show that ordinary D^k of B*F transforms by product of first derivative eigenvalues without D²B,..,D^kB terms. This is false for k&gt;=3 in general..
+<strong>Adversarial witness/attack:</strong> [{'witness': 'h(x)=x+x²; B(x)=(-1+sqrt(1-4(x+x²)))/2 near x=0; f=h²; Gamma_s=f constant', 'calculation': 'B²=id, B(0)=0, Bprime(0)=-1, Gamma_s(Bx)=Gamma_s(x), glued family smooth, D³ Gamma0(0)=12 ≠0 despite sign (-1)^3', 'domain_match': 'Locally invariant open chart around 0 via h^-1((-delta,delta)); smooth involution; C∞ family; n=0,k=3 in printed theorem', 'positive_control': 'Explicit linear J(x)=-x and J-even smooth f has zero odd ordinary derivatives at fixed point'}].
+<strong>Independent evidence:</strong> ['VIIC-E4-B4-147', 'VIIC-E3-B4-144'].
+<strong>Remaining typed conditions:</strong> ['Higher derivatives of B vanish in consumed chart or covariant derivative jets are appropriately controlled (not assumed in printed statement)'].
+<strong>Verified or conditional bypasses:</strong> ['p12:cor:born-vertex-selection on actual linear orthogonal J', 'p12:thm:born-antiequivariant-beta and p12:cor:born-reflected-stability-anticommutation do not differentiate the nonlinear B action as a scalar field vertex'].
+<strong>Other potentially affected claims:</strong> ['Any later physical vertex parity selection using the nonlinear version without an affine chart'].
+<strong>Required certificate:</strong> Establish source-matched affine/linear action (or an existing correct covariant-jet theorem) before applying sign-product rule; no source rewrite in this audit..
+<strong>Scope limitation:</strong> Does not refute actual framework action if its Born operator is known linear in the consumed chart..</p>
+<h3>BH-VIIC-G-0009 — MAJOR / MISSING_CONDITION</h3>
+<p><strong>Earliest source step:</strong> <code>p12:thm:v2177-k16-resonance-scale</code>, <code>Paper7C-ContinuousQFT-v2_195.tex:5646-5662 (crux 5653-5659)</code>. <strong>Lifecycle:</strong> OPEN. <strong>Status:</strong> established missing typed source-resolution identification, not a native K16 counterexample.
+<strong>Printed inference/claim:</strong> Hence the same produced mode supplies the hard resolution consumed by its source vertex: k_<em>(t_</em>)=p_phys(t_<em>)=m_s(t_</em>)/2..
+<strong>Unmet proof/evidence condition:</strong> Provide the actual finite spectral/source constructor or measured equivalence showing the RG heat-shell cutoff k for the same physical K16 gauge vertex is selected to equal p=n/a rather than only defining an allowed evaluation coordinate..
+<strong>Adversarial witness/attack:</strong> [{'witness': 'abstract WKB mode n=1, a=1, m_s=2 gives p=1, while P=1, Lambda=10 shell C_{Lambda,k} positive for both k=1 and k=1/2', 'calculation': 'Different C_{Lambda,1} and C_{Lambda,1/2} satisfy heat-shell definition; resonance p remains 1', 'domain_match': 'Comparator matches independent kinematics and RG-shell hypotheses but is NOT asserted as the full native same-owner BH K16 history'}].
+<strong>Independent evidence:</strong> ['VIIC-E4-B4-183', 'VIIC-E3-B4-184'].
+<strong>Remaining typed conditions:</strong> ['actual same-owner source/spectral-resolution map k_<em>(event)=p_phys(event) or explicit identification as choice rather than uniquely forced physical selector'].
+<strong>Verified or conditional bypasses:</strong> ['Independent physical WKB resonance p=m_s/2', 'Finite ordered production kernel Γ16^ord as physical K16 owner of #189', 'Exact RG/source beta algebra at arbitrary admitted k of #185'].
+<strong>Other potentially affected claims:</strong> ['p12:cor:v2178-continuum-source-descendant precision projection, only its chosen k</em> evaluation'].
+<strong>Required certificate:</strong> Locate and verify an actual native same-owner k/p intertwiner with precise domain and source. Do not add one or substitute conventional scale-setting habit..
+<strong>Scope limitation:</strong> Does not claim k=p is forbidden as a useful evaluation prescription or refute K16 physical resonance..</p>
+<h3>BH-VIIC-G-0010 — MODERATE / MISSING_EVIDENCE</h3>
+<p><strong>Earliest source step:</strong> <code>p12:cor:v2177-exact-k16-gauge-pump</code>, <code>Paper7C-ContinuousQFT-v2_195.tex:5684-5744 (physical insertion at 5723-5725)</code>. <strong>Lifecycle:</strong> OPEN. <strong>Status:</strong> unresolved inherited physical source/action pullback; spurion algebra survives.
+<strong>Printed inference/claim:</strong> Insert Theorem ... exact scalaron--gauge vertex into the KIN16 production kernel ....
+<strong>Unmet proof/evidence condition:</strong> At the actual scalaron/gauge physical K16 source prove the source/action jet pullback from the declared tau=alpha^-1/2 phi_c/MP spurion, distinct from metric Weyl sigma=phi_c/(sqrt6 MP), before treating tau derivative as physical vertex in production rate..
+<strong>Earlier source provenance:</strong> {'paper': 'Paper5C', 'label': 'p7:rem:v2216-weyl-source-map', 'locator': 'Paper5C-InteractionResponse-v2_171.tex:2497-2522', 'excerpt': 'Identifying its derivatives with the physical scalaron vertices requires the actual source/action pullback, including all its jets.'}.
+<strong>Adversarial witness/attack:</strong> ['Upstream Paper V-C explicitly distinguishes tau and sigma and withholds physical identification pending same-action pullback; algebraic formal scale derivative alone is not that pullback.'].
+<strong>Independent evidence:</strong> ['VIIC-E3-B4-185186'].
+<strong>Remaining typed conditions:</strong> ['actual source/action pullback with all consumed jets (first-known in Paper V-C)'].
+<strong>Verified or conditional bypasses:</strong> ['Formal tau spurion derivative identity and beta/g coefficient of #185 remain correct on declared source chart', 'Paper IV/VI-B physical finite ordered production packet independent of this optional continuum spurion projection'].
+<strong>Other potentially affected claims:</strong> ['Continuum RG improved precision-rate evaluation of #189, not finite Γ16^ord owner'].
+<strong>Required certificate:</strong> Identify and verify source/action pullback on the actual scalaron history, retaining distinction from pure geometric sigma; no independent vertex added..
+<strong>Scope limitation:</strong> Does not challenge the algebraic 1/(16pi) coefficient or the separate native finite production law..</p>
+<h3>BH-VIIC-G-0011 — MODERATE / MISSING_CONDITION</h3>
+<p><strong>Earliest source step:</strong> <code>p12:cor:benefit-for-series</code>, <code>Paper7C-ContinuousQFT-v2_195.tex:6788-6802 (overpromotion 6790-6796)</code>. <strong>Lifecycle:</strong> OPEN. <strong>Status:</strong> underjustified over-broad downstream reclassification at printed wording; valid for separately certified, identified bounded/local outputs.
+<strong>Printed inference/claim:</strong> every downstream use of continuum fields, propagators, local operators, Ward identities, or renormalized couplings may be reclassified ... subject only to the declared sector scope.
+<strong>Unmet proof/evidence condition:</strong> Establish the relevant actual source, local field QFT10, pole/residue/propagator, quantum finite Ward/measure/contact, or running/scheme correspondence for each downstream typed observable before promoting that output to derived status; the bounded OS net alone only supports identified bounded products..
+<strong>Adversarial witness/attack:</strong> ['Source theorem 6768-6775 explicitly limits its output to bounded controlled observable families and declares QFT10/Ward/etc claim-scoped; 6790-6796 has no premise certifying the broader examples by individual proof use.'].
+<strong>Independent evidence:</strong> ['VIIC-E4-B5-219-source-scope-attack', 'VIIC-E1-B5-217', 'VIIC-E1-B5-219'].
+<strong>Remaining typed conditions:</strong> ['Actual QFT10 field domain/locality/residue control where unbounded continuum fields are claimed', 'Actual same-action finite quantum measure/contact terms and joint distributional identity convergence for Ward claim', 'Actual source, renormalization, pole/propagator or coupling scheme map for the claimed readout'].
+<strong>Verified or conditional bypasses:</strong> ['Bounded OS/Haag–Kastler net under full bounded algebraic certificate in 6766-6775', 'Each separately certified finite-to-continuum Ward/source/propagator route with own antecedents', 'Claim-scoped QFT10 field bridge when all field OS hypotheses are independently established'].
+<strong>Other potentially affected claims:</strong> ['Any later paper that uses corollary p12:cor:benefit-for-series alone to promote independent fields, propagators, Ward identities or couplings'].
+<strong>Required certificate:</strong> For each claimed promotion, exhibit exact proof-use and additional declared source/field/measure/scheme certificates; do not automatically relabel an independently open downstream assertion..
+<strong>Scope limitation:</strong> Does not refute the bounded QFT net or any independently sourced downstream observable. The phrase subject to declared sector scope can be read narrowly; the issue concerns the insufficiently specified broader reading..</p>
+<h2>3. All 227 named claims and source-bound dispositions</h2>
+<p>Each row has the complete original theorem, source locator, notes, and evidence refs in <code>DAG/AuditLayer/Paper7C-v1_5/AuditClaimLedger.json</code>. The table intentionally reports the exact source label and the audit disposition, without replacing the original theorem text by paraphrase.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">#</th>
+  <th>Lines</th>
+  <th>Source claim</th>
+  <th>Disposition</th>
+  <th>Source-first check / unresolved guard</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">1</td>
+  <td>222–256</td>
+  <td><code>p12:thm:momentum-rooted-finite-structural-provenance</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>Universal 30-paper provenance scope not independently exhausted in batch 1; matched II-B physical m_p=1 source only. Do not demote proven upstream checkpoints.</td>
+</tr>
+<tr>
+  <td style="text-align:right">2</td>
+  <td>277–288</td>
+  <td><code>p12:cor:no-equal-level-ontology</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Exact type distinction; depends on provenance theorem at active-source scope.</td>
+</tr>
+<tr>
+  <td style="text-align:right">3</td>
+  <td>290–314</td>
+  <td><code>p12:cor:v259-resolution-growth-no-internal-species</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Fixed V_int factor means no new structural species; conditional on frozen inherited constructor class.</td>
+</tr>
+<tr>
+  <td style="text-align:right">4</td>
+  <td>329–340</td>
+  <td><code>p12:cor:v2180-mode-density-not-sector-constructor</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Does not infer CAR or Dirac sector from mode density; scoped negative entailment.</td>
+</tr>
+<tr>
+  <td style="text-align:right">5</td>
+  <td>350–359</td>
+  <td><code>p12:def:status-classes</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">6</td>
+  <td>361–366</td>
+  <td><code>p12:prop:momentum-first-no-lattice</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Negative analytic-generator boundary; counterfamilies cited later not fully checked in this batch.</td>
+</tr>
+<tr>
+  <td style="text-align:right">7</td>
+  <td>381–392</td>
+  <td><code>p12:thm:paper11-paper12-acyclic</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Only the Paper7B finite pure-glue export was traced; global acyclicity is not yet graph-wide certified.</td>
+</tr>
+<tr>
+  <td style="text-align:right">8</td>
+  <td>457–465</td>
+  <td><code>p12:thm:v283-fixed-uv-born-continuum</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Fixed p_max and m_x/R_x scaling are direct and consistent with inherited geometry.</td>
+</tr>
+<tr>
+  <td style="text-align:right">9</td>
+  <td>470–479</td>
+  <td><code>p12:def:v283-qft4-existence-canonicity</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">10</td>
+  <td>481–484</td>
+  <td><code>p12:thm:v283-qft4-cluster-split</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>Banach–Alaoglu requires all level states to act positively and compatibly on a common C*-test algebra; later local-cylinder quotient proof reserved for batch 2.</td>
+</tr>
+<tr>
+  <td style="text-align:right">11</td>
+  <td>489–510</td>
+  <td><code>p12:thm:v292-dense-local-test-convergence</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1 source norm density argument; E3 state norm contraction and positive-limit check.</td>
+</tr>
+<tr>
+  <td style="text-align:right">12</td>
+  <td>530–540</td>
+  <td><code>p12:prop:v292-finite-tests-phase-countermodel</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1 m+2-point signed measure; E3 rank-nullity independent control.</td>
+</tr>
+<tr>
+  <td style="text-align:right">13</td>
+  <td>554–557</td>
+  <td><code>p12:cor:v283-cluster-rp-regularity</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Finite RP inequalities survive weak-* limits only on fixed comparison representatives.</td>
+</tr>
+<tr>
+  <td style="text-align:right">14</td>
+  <td>562–573</td>
+  <td><code>p12:thm:v283-local-1pi-transfer</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Finite positive-measure source tuples only; holomorphic convergence and noncritical Hessian are explicit hypotheses.</td>
+</tr>
+<tr>
+  <td style="text-align:right">15</td>
+  <td>578–586</td>
+  <td><code>p12:thm:v283-phase-prediction-transfer</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Multiplicative local representative compatibility is consumed; bounded products only.</td>
+</tr>
+<tr>
+  <td style="text-align:right">16</td>
+  <td>591–594</td>
+  <td><code>p12:cor:v283-qft8-qft10-status</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>QFT8/QFT10 classifications, not proof of occurrence.</td>
+</tr>
+<tr>
+  <td style="text-align:right">17</td>
+  <td>596–598</td>
+  <td><code>remark</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Scattering import is a conditional ownership statement.</td>
+</tr>
+<tr>
+  <td style="text-align:right">18</td>
+  <td>600–606</td>
+  <td><code>p12:cor:v283-continuum-frontier-retyping</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Finite/continuum owner separation, uses main theorem outside this batch.</td>
+</tr>
+<tr>
+  <td style="text-align:right">19</td>
+  <td>621–637</td>
+  <td><code>p12:def:v282-chiral-topological-comparison-certificate</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">20</td>
+  <td>639–645</td>
+  <td><code>p12:cor:v282-no-g20-duplication</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Formal source scope and imported/direct proof-use checked; no unlicensed physical occurrence or stronger interpretation certified.</td>
+</tr>
+<tr>
+  <td style="text-align:right">21</td>
+  <td>725–758</td>
+  <td><code>p12:def:admissible-refinement-set</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">22</td>
+  <td>765–789</td>
+  <td><code>p12:def:finite-bh-qft-datum</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">23</td>
+  <td>791–813</td>
+  <td><code>p12:def:transfer-scale-convention</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>E4 concrete rank-two ground counterexample refutes Omega-perp transfer norm identity as printed (BH-VIIC-G-0001).</td>
+</tr>
+<tr>
+  <td style="text-align:right">24</td>
+  <td>815–826</td>
+  <td><code>p12:def:local-comparison-system</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">25</td>
+  <td>828–830</td>
+  <td><code>remark</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">26</td>
+  <td>837–847</td>
+  <td><code>p12:def:asymptotic-local-commutativity</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">27</td>
+  <td>869–890</td>
+  <td><code>p12:def:qft-obligations</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>QFT1–QFT10 condition ledger; no unconditional interacting continuum claim.</td>
+</tr>
+<tr>
+  <td style="text-align:right">28</td>
+  <td>910–921</td>
+  <td><code>p12:thm:canonical-ucp-coarse-graining</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E3 compression UCP from isometric inclusions; parent Toeplitz compression exact.</td>
+</tr>
+<tr>
+  <td style="text-align:right">29</td>
+  <td>923–942</td>
+  <td><code>p12:def:minimal-source-quotient</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">30</td>
+  <td>944–960</td>
+  <td><code>p12:thm:minimal-source-quotient</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1 quotient isomorphism; E3 direct dual-rank argument.</td>
+</tr>
+<tr>
+  <td style="text-align:right">31</td>
+  <td>972–996</td>
+  <td><code>p12:def:positive-projective-schwinger-functional</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">32</td>
+  <td>998–1020</td>
+  <td><code>p12:thm:generated-schwinger-effective-action-closure</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Conditional finite projective exponential, convex conjugacy and local strict-branch invertibility.</td>
+</tr>
+<tr>
+  <td style="text-align:right">33</td>
+  <td>1032–1040</td>
+  <td><code>p12:rem:effective-action-constructor-firewall</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">34</td>
+  <td>1042–1054</td>
+  <td><code>p12:thm:canonical-limit-descendant</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Unique limit of Hausdorff full directed net; licensed route equivalence read with full-net hypothesis.</td>
+</tr>
+<tr>
+  <td style="text-align:right">35</td>
+  <td>1064–1075</td>
+  <td><code>p12:cor:certified-finite-precision-closure</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Triangle inequality finite tolerance certificate.</td>
+</tr>
+<tr>
+  <td style="text-align:right">36</td>
+  <td>1077–1101</td>
+  <td><code>p12:def:asymptotically-natural-state-action-ray</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">37</td>
+  <td>1103–1114</td>
+  <td><code>p12:thm:projective-state-action-ray-qft4</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Requires genuinely compatible UCP reps; does not establish state/action ray occurrence.</td>
+</tr>
+<tr>
+  <td style="text-align:right">38</td>
+  <td>1129–1137</td>
+  <td><code>p12:rem:projective-ray-occurrence-boundary</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">39</td>
+  <td>1184–1200</td>
+  <td><code>p12:prop:scaled-spatial-transport-commutators</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E3 inherited SU(2) Casimir and bounded scaled commutators.</td>
+</tr>
+<tr>
+  <td style="text-align:right">40</td>
+  <td>1202–1218</td>
+  <td><code>p12:rem:cotangent-meaning-spatial-transport</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>II-D principal symbol import checked as typed physical cotangent role.</td>
+</tr>
+<tr>
+  <td style="text-align:right">41</td>
+  <td>1220–1237</td>
+  <td><code>p12:thm:spatial-transport-momentum-ball-trace</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E3 full polynomial moment proof using Hopf-weight marginals + vanishing commutators + polarization; no m_p ultraviolet flow.</td>
+</tr>
+<tr>
+  <td style="text-align:right">42</td>
+  <td>1239–1259</td>
+  <td><code>p12:cor:free-spectral-density-at-fixed-cutoff</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Massless counting integral equals hbar<em>c</em>Lambda_F^4/(8*pi^2); free-block-only statement.</td>
+</tr>
+<tr>
+  <td style="text-align:right">43</td>
+  <td>1261–1272</td>
+  <td><code>remark</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">44</td>
+  <td>1275–1296</td>
+  <td><code>p12:thm:v260-fixed-cutoff-not-rg</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Fixed cutoff is volume refinement, not QCD RG consequence.</td>
+</tr>
+<tr>
+  <td style="text-align:right">45</td>
+  <td>1298–1332</td>
+  <td><code>p12:cor:v260-internal-trace-resolution-stability</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E3 finite trace factorization only for fixed factorized V_int.</td>
+</tr>
+<tr>
+  <td style="text-align:right">46</td>
+  <td>1334–1362</td>
+  <td><code>p12:thm:v260-frontier-count-weyl-density</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E3 exact k counting and Weyl density.</td>
+</tr>
+<tr>
+  <td style="text-align:right">47</td>
+  <td>1364–1398</td>
+  <td><code>p12:thm:v261-hopf-directional-momentum-ball-marginal</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E3 explicit finite tau(Q3^2), tau(Q3^4) and limiting marginal f=3/4(1-x^2); inherited II-D finite weights.</td>
+</tr>
+<tr>
+  <td style="text-align:right">48</td>
+  <td>1410–1437</td>
+  <td><code>p12:rem:v261-coordinate-versus-transport-classicalization</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>I-B coordinate compression norm defect imported without claiming operator-norm classicalization.</td>
+</tr>
+<tr>
+  <td style="text-align:right">49</td>
+  <td>1462–1468</td>
+  <td><code>p12:prop:two-site-reflection-positive-no-go</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1 RP positive kernel expansion and variance derivative; E4 g=0 Gaussian integrability with m&gt;0.</td>
+</tr>
+<tr>
+  <td style="text-align:right">50</td>
+  <td>1495–1501</td>
+  <td><code>remark</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition/remark scope and type recorded; not an empirical or unconditional assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">51</td>
+  <td>1529–1594</td>
+  <td><code>p12:def:imported-sector-package</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Defines finite sector package and explicitly imports the actual bounded ordinary-net OS certificate; the strong local export is not inferred from finite modes alone.</td>
+</tr>
+<tr>
+  <td style="text-align:right">52</td>
+  <td>1601–1615</td>
+  <td><code>p12:thm:sector-import-qft-compatibility</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Valid conditional delegation to the stronger main theorem and base-QFT-admissibility. Main theorem at 6767-6785 remains outside named target census in this batch; no full E3 for import claimed.</td>
+</tr>
+<tr>
+  <td style="text-align:right">53</td>
+  <td>1626–1649</td>
+  <td><code>p12:prop:controlled-gapless-em-branch</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Source/type matched electromagnetic U(1)_em Q=T3+Y, F=dA, dF=0; only controlled-gapless status, not a positive gap or scattering output. Physical occurrence/IR rates not certified here.</td>
+</tr>
+<tr>
+  <td style="text-align:right">54</td>
+  <td>1664–1673</td>
+  <td><code>p12:prop:graded-chiral-sector-compatibility</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>Proof line 1676 treats spatial even-commutativity and graded odd locality as automatic from finite CAR; source Paper IV expressly says finite matrix/CAR has no localization absent an extra support contract. E4 nonorthogonal two-mode CAR countermodel refutes step, not the fully locality-certified possibility. Issue BH-VIIC-G-0003.</td>
+</tr>
+<tr>
+  <td style="text-align:right">55</td>
+  <td>1686–1712</td>
+  <td><code>p12:prop:v248-finite-quantum-ward-antecedent</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1 differentiation of invariant finite state plus E3 abstract derivation/product-rule check. Requires actual quantum state invariance, distinct from classical source/action invariance.</td>
+</tr>
+<tr>
+  <td style="text-align:right">56</td>
+  <td>1728–1745</td>
+  <td><code>p12:rem:v2106-two-finite-ward-domains</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Correctly distinguishes fixed-invariant-state Ward theorem from transported source-history identity; source labels from IV/VI used only as narrow imports.</td>
+</tr>
+<tr>
+  <td style="text-align:right">57</td>
+  <td>1748–1765</td>
+  <td><code>p12:rem:m8-batch-quantum-inputs</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Finite Berezin/Noether supplies only native finite statements; major continuum/anomaly/physical global J_F claims expressly excluded.</td>
+</tr>
+<tr>
+  <td style="text-align:right">58</td>
+  <td>1770–1781</td>
+  <td><code>p12:thm:finite-identity-preservation</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1 termwise finite identity passage; E3 direct limit of zero when every term/multilinear product pairing converges on common representatives. Does not infer QFT4/QFT10 or anomaly cancellation themselves.</td>
+</tr>
+<tr>
+  <td style="text-align:right">59</td>
+  <td>1797–1824</td>
+  <td><code>p12:rem:v254-static-noise-limit-gate</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>E3 triangle inequality verifies uniform T-to-infinity interchange certificate; the antecedent is labeled not established. Source IV-C finite stationary diagonal-sector retained.</td>
+</tr>
+<tr>
+  <td style="text-align:right">60</td>
+  <td>1827–1842</td>
+  <td><code>p12:cor:v264-current-stress-pdf-sum-rule-transport</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Direct conditional application of finite Ward/stress and Paper-VII-B Mellin identification; full nonlocal light-ray/PDF analytic conditions explicitly remain. No E3 on imported VII-B theorem in this batch.</td>
+</tr>
+<tr>
+  <td style="text-align:right">61</td>
+  <td>1855–1869</td>
+  <td><code>p12:rem:v176-classical-noether-quantum-ward-firewall</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Noether quantum Ward separation source match: symmetry of action alone is weaker than invariant quantum measure and controlled finite regulator residues.</td>
+</tr>
+<tr>
+  <td style="text-align:right">62</td>
+  <td>1872–1893</td>
+  <td><code>p12:cor:d4-a2-selector-survives-qft</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Finite color End_0(C) with dim(C)=3 has complex dimension 8 (2+6), conditional continuum carrier readout; imported V-A and VII-B finite group selection not audited here.</td>
+</tr>
+<tr>
+  <td style="text-align:right">63</td>
+  <td>1928–1938</td>
+  <td><code>p12:prop:renormalized-sector-data-comparison</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Readout classification of renormalized representative coordinates, not a derivation of running couplings or scheme independence. Finite sector/normalization origin remains prior input.</td>
+</tr>
+<tr>
+  <td style="text-align:right">64</td>
+  <td>1944–1951</td>
+  <td><code>p12:prop:scattering-nonclaim</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1 exact OS/local reconstruction produces neither asymptotic comparison wave operators nor detector flux; E3 definitional comparison to SM1-SM7.</td>
+</tr>
+<tr>
+  <td style="text-align:right">65</td>
+  <td>1960–2005</td>
+  <td><code>p12:def:claim-indexed-smat-package</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Seven claim-scoped SMAT hypotheses; does not assert their physical realization. Strong vacuum, isolated mass and asymptotic wave operators are additional hypotheses.</td>
+</tr>
+<tr>
+  <td style="text-align:right">66</td>
+  <td>2007–2030</td>
+  <td><code>p12:def:claim-indexed-infrared-package</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>IR1–IR3 are alternative claim-local long-range/massless routes; no claim that any route currently holds.</td>
+</tr>
+<tr>
+  <td style="text-align:right">67</td>
+  <td>2032–2062</td>
+  <td><code>p12:thm:scattering-hypothesis-firewall</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Clause allocation follows definitions, not independent existence of scattered states, analyticity, or widths. Replay only; no E3 for every imported possible scattering claim.</td>
+</tr>
+<tr>
+  <td style="text-align:right">68</td>
+  <td>2082–2106</td>
+  <td><code>p12:cor:lf-ray-limit-scattering-split</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Paper VII-B LF/PDF fractions and optional LFRep import mapped to source clauses; the detailed VII-B proof not independently audited.</td>
+</tr>
+<tr>
+  <td style="text-align:right">69</td>
+  <td>2120–2128</td>
+  <td><code>p12:cor:paper-iv-scattering-import</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Paper IV finite-window vs asymptotic Moller distinctions matched at conditional scope; no new IV audit.</td>
+</tr>
+<tr>
+  <td style="text-align:right">70</td>
+  <td>2245–2248</td>
+  <td><code>p12:prop:subsequential-states</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>A common positive unital C* state-space representation is consumed before Banach–Alaoglu; literal QFT2-3 bounds do not show the product/null-ideal quotient carries all finite states. Subnet is valid; word subsequential needs a compatible chosen refinement path. Issue BH-VIIC-G-0002, source-origin #10.</td>
+</tr>
+<tr>
+  <td style="text-align:right">71</td>
+  <td>2254–2257</td>
+  <td><code>p12:prop:spectral-symbol-qft123</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E3 Peter–Weyl density and Toeplitz compression norm &lt;=||f||∞; operator-symbol distinction preserved. The common local algebra positive quotient needs its separately typed compatibility check.</td>
+</tr>
+<tr>
+  <td style="text-align:right">72</td>
+  <td>2293–2308</td>
+  <td><code>p12:thm:canonical-local-state</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>QFT4 local-state proof is correct once the common comparison *-algebra, positive state and null ideal are certified; source QFT2--QFT4 alone do not independently discharge those gates. Inherits BH-VIIC-G-0002, not a duplicate root.</td>
+</tr>
+<tr>
+  <td style="text-align:right">73</td>
+  <td>2335–2338</td>
+  <td><code>p12:cor:canonical-local-state-quotient-discharge</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E3 quotient factorization for null representatives if *-ideal compatibility and product limits are actual; inherits open common-algebra construction gate, no independently invalid quotient theorem.</td>
+</tr>
+<tr>
+  <td style="text-align:right">74</td>
+  <td>2352–2370</td>
+  <td><code>p12:rem:v248-analytic-reconstruction-firewall</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Constitutional equivariance is not by itself an interacting-state or cross-owner continuum OS theorem, with full-ground state exception as separately proved.</td>
+</tr>
+<tr>
+  <td style="text-align:right">75</td>
+  <td>2372–2382</td>
+  <td><code>p12:def:os-admissible-limit</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>OS-admissibility definition includes native+full local covariance, RP, permutation, regularity and vacuum-sector condition; bounded ordinary net separately cites v2210 certificate.</td>
+</tr>
+<tr>
+  <td style="text-align:right">76</td>
+  <td>2389–2404</td>
+  <td><code>p12:def:local-flat-chart-os-exhaustion</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Local-flat-chart exhaustion defines rho_L→∞ and rho_L/R_x,L→0 plus transported correlation defect; only local charts, not global flat E4 group.</td>
+</tr>
+<tr>
+  <td style="text-align:right">77</td>
+  <td>2406–2425</td>
+  <td><code>p12:thm:native-bh-covariance</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1 spectral functional calculus; E3 twofold degenerate ground control with symmetry swapping ground modes, normalized full projector invariant exactly.</td>
+</tr>
+<tr>
+  <td style="text-align:right">78</td>
+  <td>2440–2451</td>
+  <td><code>p12:lem:bounded-cylinder-regularity</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1 uniform test seminorm bound and E3 continuity of bounded multilinear limit; only bounded cylinder/Wilson fields, no unbounded curvature-residue claim.</td>
+</tr>
+<tr>
+  <td style="text-align:right">79</td>
+  <td>2464–2471</td>
+  <td><code>p12:lem:rp-survives-limit</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1 fixed reflected cylinder Gram nonnegative; E3 cone of positive semidefinite matrices closed under entrywise limit. Assumes genuine positive same-owner transfer and compatible reflected representatives.</td>
+</tr>
+<tr>
+  <td style="text-align:right">80</td>
+  <td>2506–2516</td>
+  <td><code>p12:rem:v2217-gw-source-os-scope</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Positive GW Hilbert–Schmidt-square from VII-A is explicitly distinct from OS-positive reflected-time form.</td>
+</tr>
+<tr>
+  <td style="text-align:right">81</td>
+  <td>2519–2522</td>
+  <td><code>p12:lem:euc-invariance-survives</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1 finite spectral projector covariance passes through state limits; E3 exact norm-one state bound. Full mixed time-space covariance still requires actual QFT6 representative comparisons and cannot come from native product group alone.</td>
+</tr>
+<tr>
+  <td style="text-align:right">82</td>
+  <td>2527–2530</td>
+  <td><code>p12:thm:local-chart-os-reconstruction</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>Proof claims ordinary OS/net hypotheses from QFT1-7 + RP + clustering + chart exhaustion but fails to consume representation-wide locality, common products/quotient and time-zero algebra required by later explicit v2210 certificate. Issue BH-VIIC-G-0004. Flat mixed rotations must be checked via QFT6 not geometry alone.</td>
+</tr>
+<tr>
+  <td style="text-align:right">83</td>
+  <td>2578–2581</td>
+  <td><code>p12:thm:bh-os-reconstruction</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>Delegates to #82 and therefore inherits its earlier proof-route insufficiency; later main theorem offers an independent stronger-certificate route, not yet audited as a target theorem.</td>
+</tr>
+<tr>
+  <td style="text-align:right">84</td>
+  <td>2610–2613</td>
+  <td><code>p12:cor:os-hypothesis-ledger-discharge</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>Table matches several OS conditions but omits representation-wide locality and time-zero certificate in the earlier route; inherits BH-VIIC-G-0004.</td>
+</tr>
+<tr>
+  <td style="text-align:right">85</td>
+  <td>2618–2631</td>
+  <td><code>p12:cor:fields-are-outputs</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Correct conditional descendants claim if actual complete bounded/field reconstruction certificate holds; not evidence that the analytic antecedent occurs.</td>
+</tr>
+<tr>
+  <td style="text-align:right">86</td>
+  <td>2649–2665</td>
+  <td><code>p12:cor:v227-covariance-provider</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E3 matched finite Paper I-B full-ground trace-norm bound, with actual operator residual and sector gap above full ground projector; no separate selector needed on equivariant branch.</td>
+</tr>
+<tr>
+  <td style="text-align:right">87</td>
+  <td>2696–2714</td>
+  <td><code>p12:cor:v230-sharp-gibbs-provider</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E3 exact Paper I-B quantum-Pinsker/Symmetrized relative-entropy Gibbs coefficient min(2,beta epsilon) plus trace duality, matching VII-C bound.</td>
+</tr>
+<tr>
+  <td style="text-align:right">88</td>
+  <td>2788–2801</td>
+  <td><code>p12:def:uniform-transfer-gap</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>The spectral condition Spec(H_L|S_L) cap (0,Delta*)=empty is meaningful, but claimed equivalence to vacuum-subtracted exponential correlation decay is false with degenerate ground P0 and nontrivial centered P0 A P0. Same root BH-VIIC-G-0001.</td>
+</tr>
+<tr>
+  <td style="text-align:right">89</td>
+  <td>2805–2813</td>
+  <td><code>p12:lem:sector-spectral-measure-gap-discharge</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Printed E1 proof assumes all centered psi have exponentially decaying autocorrelation, false for rank&gt;1 ground. E3 alternative finite spectral support + semigroup Laplace convergence nevertheless proves absence of spectrum in (0,Delta*) at stated reconstructed-sector scope; inherits #0001, no new root.</td>
+</tr>
+<tr>
+  <td style="text-align:right">90</td>
+  <td>2827–2834</td>
+  <td><code>p12:thm:mass-gap-transfer</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Printed proof consumes false gap→correlation-decay equivalence, but E3 alternate spectral support preservation and sector cyclicity checks conditional spectral conclusion. Must not promote to unconditional positive gap or global all-sector gap.</td>
+</tr>
+<tr>
+  <td style="text-align:right">91</td>
+  <td>2865–2880</td>
+  <td><code>p12:cor:paper11-pure-glue-gap-floor</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Exact Paper VII-B finite gap gamma_L is a conditional readout, not derived uniform floor. Printed vacuum-subtracted decay step fails for degenerate ground; E3 semigroup/spectral support proves conditional spectral conclusion when gamma*&gt;0. Same inherited #0001.</td>
+</tr>
+<tr>
+  <td style="text-align:right">92</td>
+  <td>2890–2893</td>
+  <td><code>p12:rem:gapless-sectors</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Correctly separates gapless photon/chiral from conditional positive-gap pure-glue; no blanket mass-gap assertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">93</td>
+  <td>2980–3003</td>
+  <td><code>p12:def:pure-g-wilson-datum</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Typed finite Wilson datum, sector clock versus Euclidean step and large-m_x auxiliary chart; physical existence is not established by definition.</td>
+</tr>
+<tr>
+  <td style="text-align:right">94</td>
+  <td>3006–3023</td>
+  <td><code>p12:lem:contact-plaquette-residue</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1 holonomy expansion, anti-Hermitian trace and SU3 T_F=1/2, d_F=3. E3 exact diagonal SU3 generator yields 1/12; assumes smooth small-loop chart with O(a^3) anti-Hermitian error, not arbitrary rough plaquette.</td>
+</tr>
+<tr>
+  <td style="text-align:right">95</td>
+  <td>3037–3052</td>
+  <td><code>p12:rem:trimer-origin-plaquette-coefficient</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Native color-trimer dimension fixes d_F=3 and standard choice T_F=1/2; an internal representation normalization, not proof that D4 is spacetime lattice.</td>
+</tr>
+<tr>
+  <td style="text-align:right">96</td>
+  <td>3054–3063</td>
+  <td><code>p12:lem:no-hidden-relevant-gauge-branch</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Conditional smooth oriented 4D pure-gauge local invariant classification: F^2 and F tilde F (global/topological term distinct), with conventional canonical engineering dimensions; no physical CP coefficient selection or irrelevant suppression implied.</td>
+</tr>
+<tr>
+  <td style="text-align:right">97</td>
+  <td>3068–3075</td>
+  <td><code>p12:lem:theta-zero-os-selection</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E3 elementary charge-one nonnegative unit phase selects e^(i theta)=1 modulo 2pi under expressly stronger positive-block condition; no claim it replaces native strong-CP action/source result.</td>
+</tr>
+<tr>
+  <td style="text-align:right">98</td>
+  <td>3095–3126</td>
+  <td><code>p12:def:normalized-wilson-residue</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Native spectral residue and plaquette chart are defined; quadrature with w~a^4 reproduces 12 sum f(1-ReW), while smooth a^-4 scaling is a genuine separate uniform-envelope obligation.</td>
+</tr>
+<tr>
+  <td style="text-align:right">99</td>
+  <td>3128–3131</td>
+  <td><code>p12:prop:qft10a-e-closed</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Correct separation of finite contact coefficient/centering/local assignment from uniform normalization, local support, and unique continuum field. Source dependence on #104/#112 is scoped.</td>
+</tr>
+<tr>
+  <td style="text-align:right">100</td>
+  <td>3136–3163</td>
+  <td><code>p12:def:uniform-small-loop-cumulant-susceptibility</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Exact n&gt;=2 UCS weighted connected-cumulant condition, positive weights and chart representation; definition is NOT evidence native amplitudes satisfy uniform constants.</td>
+</tr>
+<tr>
+  <td style="text-align:right">101</td>
+  <td>3165–3176</td>
+  <td><code>p12:rem:ucs-mp-mx-distinction</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Fixed m_p=1 vs m_x-&gt;infty, bandlimited smooth-residue domain; informal O(a^4) statement remains subject to actual coefficient-envelope hypothesis, not asserted for unconstrained lattice rough modes.</td>
+</tr>
+<tr>
+  <td style="text-align:right">102</td>
+  <td>3178–3195</td>
+  <td><code>p12:def:ucs-subladder</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Ten-step source UCS0--UCS9 acceptance ledger, distinguishes exact finite pieces from corridor, tree domination, field-moment uniqueness and tensor/irrelevant estimates.</td>
+</tr>
+<tr>
+  <td style="text-align:right">103</td>
+  <td>3220–3231</td>
+  <td><code>p12:cor:ucs-constants-finite-carrier</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E3 tree count 4^(4-2)=16 and leaf weighted estimate demonstrate C_n&lt;=A_n n^(n-2) I_K^(n-1), but source correctly does not claim actual finite carrier alone fixes envelopes.</td>
+</tr>
+<tr>
+  <td style="text-align:right">104</td>
+  <td>3236–3254</td>
+  <td><code>p12:lem:native-residue-bound</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1 projection norm inequality; E3/E4 P=diag(1,0), r_L=L r0 shows no uniform residue norm from a finite-dimensional symbol space alone.</td>
+</tr>
+<tr>
+  <td style="text-align:right">105</td>
+  <td>3263–3270</td>
+  <td><code>p12:thm:euclidean-corridor-transfer</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1 finite propagation gives N&gt;= (d-c0)/r_step. E4 positive endpoint-coupled spin Hamiltonian shows equal-time local commutativity does not force a spatial transfer corridor.</td>
+</tr>
+<tr>
+  <td style="text-align:right">106</td>
+  <td>3275–3293</td>
+  <td><code>p12:lem:residue-cluster-mixing</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3 q^N transfer estimate valid with explicit rank-one P=|Omega&gt;&lt;Omega|, q&lt;1 and an actual corridor identity; local quadrature summability uses uniform physical R4 volume growth. Does not inherit #0001 because simplicity is printed.</td>
+</tr>
+<tr>
+  <td style="text-align:right">107</td>
+  <td>3303–3315</td>
+  <td><code>p12:lem:finite-cumulant-connectivity</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E4 exact Bernoulli p-&gt;0 family: every split defect O(p), but any connected graph uses &gt;=2 O(p) edges, while kappa4=O(p). Strong valid no-go against split-mixing shortcut.</td>
+</tr>
+<tr>
+  <td style="text-align:right">108</td>
+  <td>3324–3334</td>
+  <td><code>p12:lem:ucs-two-point-susceptibility</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>n=2 instance of explicitly conditional corridor lemma; C2&lt;=B2 IK. No unconditional gap or spatial kernel for native sequence.</td>
+</tr>
+<tr>
+  <td style="text-align:right">109</td>
+  <td>3344–3360</td>
+  <td><code>p12:lem:ucs-tree-bound</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1 leaf-pruning + Cayley; E3 exact 4-vertex weighted two-site kernel satisfies total tree bound. Direct tree estimate remains explicit analytic hypothesis.</td>
+</tr>
+<tr>
+  <td style="text-align:right">110</td>
+  <td>3365–3382</td>
+  <td><code>p12:thm:native-spectral-ucs</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Direct AND conditions symbol envelope, all-order tree domination, uniform kernel summability. E3 proof inherited from #109; actual pure-glue tower conditions not discharged.</td>
+</tr>
+<tr>
+  <td style="text-align:right">111</td>
+  <td>3387–3390</td>
+  <td><code>p12:cor:tensor-oriented-ucs</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Multilinearity and uniform finite contractions control factors at each n only if all coefficient/operator norms and enlarged-family tree premises are uniform.</td>
+</tr>
+<tr>
+  <td style="text-align:right">112</td>
+  <td>3400–3407</td>
+  <td><code>p12:thm:ucs-implies-qft10</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>E1 moment-cumulant formal step and source even/odd variance counterexample confirm Cauchy is necessary for unique scalar moment limits. Claim of operator-valued distribution affiliation with reconstructed local von Neumann net needs a matching strong/closed domain and spectral/OS locality argument not established by scalar moments alone; G-0006 MISSING_EVIDENCE, not a refutation of scalar convergence.</td>
+</tr>
+<tr>
+  <td style="text-align:right">113</td>
+  <td>3440–3459</td>
+  <td><code>p12:def:ym-continuum-obligations</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>BH1-BH10 are an explicit physical/analytic certificate obligations definition, including source matching, gap/non-Gaussian optional, action normalization and fields.</td>
+</tr>
+<tr>
+  <td style="text-align:right">114</td>
+  <td>3461–3464</td>
+  <td><code>p12:prop:bh-implies-qft</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Definition-to-criterion delegation BH=&gt;QFT: antecedent contains its own common local state/OS field provisions. Does not discharge occurrence of any BH condition; early local net route inherits G-0004 and common algebra G-0002 unless strong certificate supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:right">115</td>
+  <td>3538–3541</td>
+  <td><code>p12:lem:wilson-state-compactness</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>BH6 implies uniqueness of local scalar limits on a COMMON compatible local C* algebra; compactness is correct only after that algebra/state pullback is defined. Inherits first-origin G-0002, not a new identical root. BH3/BH4 alone do not determine a unique phase, but BH6 is sufficient for uniqueness.</td>
+</tr>
+<tr>
+  <td style="text-align:right">116</td>
+  <td>3565–3576</td>
+  <td><code>p12:lem:ym-sd-identification</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1 compact-Haar integration by parts exact; E3 U1 test of derivative identity. Continuum Yang-Mills identities conditional on actual source/member matched action, differentiated insertion limits, and controlled remainder.</td>
+</tr>
+<tr>
+  <td style="text-align:right">117</td>
+  <td>3586–3589</td>
+  <td><code>p12:lem:ym-nontriviality</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Nonzero higher connected cumulant excludes Gaussian law on that observable family; Gaussian flux area-exponent counterexample correctly separates area law from non-Gaussianity. Nonlinear composites do not prove underlying interaction.</td>
+</tr>
+<tr>
+  <td style="text-align:right">118</td>
+  <td>3594–3601</td>
+  <td><code>p12:cor:wilson-algebra-nontriviality</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Immediate conditional application of #117 to fixed local cumulant limits, retains separate same-source free comparator for underlying dynamics.</td>
+</tr>
+<tr>
+  <td style="text-align:right">119</td>
+  <td>3614–3621</td>
+  <td><code>p12:def:ucs-stable-curvature-residue-family</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Defines UCS-stable residue family including scalar/oriented/tensor/derivative modes and products; n&gt;=2 connected cumulant bounds alone do not control one-point coefficient-weighted insertion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">120</td>
+  <td>3623–3640</td>
+  <td><code>p12:thm:tier3-irrelevant-suppression</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>E1 line 3651-3655 silently assumes uniform |omega(A sum w c_{d,alpha,L} O_{d,alpha,L} B)|&lt;=C; not implied by connected UCS plus Tier-2 and finite fixed-order expansion. E4 c6,L=L^2 with a=1/L, constant bounded mode yields R_L=1 while connected cumulants vanish. G-0005 missing coefficient-weighted insertion bound; toy abstraction not actual native SU3 source.</td>
+</tr>
+<tr>
+  <td style="text-align:right">121</td>
+  <td>3669–3684</td>
+  <td><code>p12:cor:uniform-action-interpolation-universality</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E3 exact differentiation of normalized positive finite Haar action gives -Cov(A,R). The theorem DIRECTLY assumes uniform-in-s insertion for A and unit, bypassing G-0005 if separately proven; no assertion that #120 produces it unconditionally.</td>
+</tr>
+<tr>
+  <td style="text-align:right">122</td>
+  <td>3694–3706</td>
+  <td><code>p12:cor:v185-universality-inherits-continuum-state</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E3 triangle Cauchy proof exact once #121 uniform interpolation holds at all levels; source exponential extension additionally needs uniform polydisc analyticity/comparison.</td>
+</tr>
+<tr>
+  <td style="text-align:right">123</td>
+  <td>3725–3728</td>
+  <td><code>p12:thm:tier3-sd-from-ucs</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>Actual Haar identity + QFT10 differentiated limits conditionally transfer SD, but cited #120 irrelevant-remainder route needs G-0005 coefficient guard independently checked, or a direct proven negligible remainder.</td>
+</tr>
+<tr>
+  <td style="text-align:right">124</td>
+  <td>3733–3744</td>
+  <td><code>p12:thm:tier3-local-fields-from-ucs</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>QFT10 distributional moment convergence/source action tensor normalization are explicit; strong field affiliation inherits unverified operator-domain certificate G-0006, not refuted by absence of tensor normalization.</td>
+</tr>
+<tr>
+  <td style="text-align:right">125</td>
+  <td>3749–3752</td>
+  <td><code>p12:cor:tier3-closure</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Accurate three-branch implication ledger. Its irrelevant remainder branch inherits #120 condition; its action and local-field branches have distinct extra antecedents.</td>
+</tr>
+<tr>
+  <td style="text-align:right">126</td>
+  <td>3783–3786</td>
+  <td><code>p12:cor:bh1-bh10-su3-discharge</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Correct source status census: BH1--BH3 finite inputs conditional local chart; BH4--BH10 include open analytic/physical claims. Does not upgrade finite transfer to continuum.</td>
+</tr>
+<tr>
+  <td style="text-align:right">127</td>
+  <td>3791–3803</td>
+  <td><code>p12:thm:native-bh-ym-continuum</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>Conditions (i)-(vi) are explicitly contingent; early proof invokes #83 OS route with G-0004 missing locality/time-zero details and QFT10 field branch with G-0006. Alternative later strict bounded OS certificate may bypass if independently supplied. Optional remainder branch inherits G-0005, not mandatory for all local QFT outputs.</td>
+</tr>
+<tr>
+  <td style="text-align:right">128</td>
+  <td>3810–3813</td>
+  <td><code>p12:cor:p11-final-export-compatibility</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Explicit separation of finite Paper VII-B export from continuum state/OS/fields and extra sectors; no single source-to-continuum promotion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">129</td>
+  <td>3826–3835</td>
+  <td><code>p12:thm:tier4-scope-closure</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>General G, native SU3, controlled-gapless alternatives correctly typed as distinct scopes; positive area law outside local QFT existence.</td>
+</tr>
+<tr>
+  <td style="text-align:right">130</td>
+  <td>3846–3864</td>
+  <td><code>p12:thm:v164-finite-vacuum-continuum-state</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Finite normalized full-ground projector Gibbs limit compatible with ground degeneracy; QFT4 state naturality is a genuine separate cofinal estimate, not implied by finite positivity.</td>
+</tr>
+<tr>
+  <td style="text-align:right">131</td>
+  <td>3866–3883</td>
+  <td><code>p12:thm:v164-physical-gap-interaction-witness</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Conditional physical transfer scaling -log(q_L)/a_L is algebraic. If q means complement of single Omega with degenerate ground then q=1; use complete P0 or simplicity, inherited G-0001 not duplicate. No active positive continuum gap claim.</td>
+</tr>
+<tr>
+  <td style="text-align:right">132</td>
+  <td>3885–3903</td>
+  <td><code>p12:thm:v164-fixed-wilson-surface-exhaustion</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E3 flat-chart scaling rho=sqrt(R_x ell0), rho/R_x-&gt;0 and rectangle area rho^2/16-&gt;infinity; fixed compact Wilson expectation follows only with true QFT4 common representative.</td>
+</tr>
+<tr>
+  <td style="text-align:right">133</td>
+  <td>3905–3937</td>
+  <td><code>p12:thm:v164-ordered-static-tension-limits</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>Concavity=&gt;nonincreasing V(R)/R valid once static potential exists with common self-energy and V(0)=0. But printed step from bounded OS Wilson LOOP to positive spectral measure of CUT charged half-line is not constructed from the gauge-invariant local net; static-source reflection-positive OS vector/transfer Hilbert certificate is missing. E4 positive bounded e^-T^2 not completely monotone. G-0007 eviden…</td>
+</tr>
+<tr>
+  <td style="text-align:right">134</td>
+  <td>3939–3971</td>
+  <td><code>p12:thm:v2155-same-owner-apbc-bridge</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Exact same-owner measure/action pullback is a legitimate presentation transport, not primitive position lattice. APBI is explicitly an additional extensive nonlinear action/finite-type supersolution hypothesis; imported VII-A z&gt;1 bound conditional. No automatic area law.</td>
+</tr>
+<tr>
+  <td style="text-align:right">135</td>
+  <td>3995–4010</td>
+  <td><code>p12:rem:v2155-confinement-status</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Confinement boundary honest: no current unconditional positive asymptotic slope absent APBI or direct same-owner surface theorem. Static OS certificate issue #0007 separately applies to printed slope-existence route.</td>
+</tr>
+<tr>
+  <td style="text-align:right">136</td>
+  <td>4012–4038</td>
+  <td><code>p12:rem:v2159-apbi-action-owner-residue</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Licensed complete nonlinear heat action and quadratic Hessian are not identical to fine extensive bounded-incidence realization; imported VII-A nonheat family excludes Hessian-only selector.</td>
+</tr>
+<tr>
+  <td style="text-align:right">137</td>
+  <td>4045–4069</td>
+  <td><code>p12:thm:v165-native-gap-active-prediction</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Paper V-B current lines 2070-2169 explicitly establishes Hcar shell gap and counterfamilies gapped/gapless auxiliary refinements. This is faithful matched import, not a proof of Yang-Mills continuous physical gap.</td>
+</tr>
+<tr>
+  <td style="text-align:right">138</td>
+  <td>4071–4079</td>
+  <td><code>p12:cor:v165-qft9-claim-specific-status</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>QFT9 dual scope: controlled-gapless typing versus optional positive-gap extension, not unfinished native-carrier gap proof.</td>
+</tr>
+<tr>
+  <td style="text-align:right">139</td>
+  <td>4159–4186</td>
+  <td><code>p12:prop:v199-rgas-heat-gaussian</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3: logarithmic positive heat representative solves gradient Hamilton--Jacobi; exact finite Gaussian convolution flow and additive covariance. The scale link and an actual Gaussian splitting of the full Haar action are not inferred.</td>
+</tr>
+<tr>
+  <td style="text-align:right">140</td>
+  <td>4203–4231</td>
+  <td><code>p12:cor:m8td-shell-covariance</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E3 functional calculus including zero spectral eigenvalue, finite-ceiling operator sandwich, inherited Born symmetry only if actual real sector, Gaussian law, interaction and regulator are invariant; spinor/form distinction retained.</td>
+</tr>
+<tr>
+  <td style="text-align:right">141</td>
+  <td>4269–4287</td>
+  <td><code>p12:lem:m8td-affine-support</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3: strictly positive tilt preserves minimal full-measure affine support, variance along each nonconstant affine direction &gt;0. Compact patch covariance lower bound valid for fixed finite positive law; not uniform in refinement.</td>
+</tr>
+<tr>
+  <td style="text-align:right">142</td>
+  <td>4300–4322</td>
+  <td><code>p12:thm:v199-rgas-eaa</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3: exact finite positive-measure modified Legendre trace under invertible Hessian, field-independent differentiable R and dominated source derivatives; indefinite or ghost measure needs independent graded invertibility.</td>
+</tr>
+<tr>
+  <td style="text-align:right">143</td>
+  <td>4343–4368</td>
+  <td><code>p12:cor:m8td-affine-eaa</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3 fixed affine shift j=T^T(J-Ra), constant affine terms cancel in Γ; includes k-dependent shift and exact positive Hessian on E; not nonlinear gauge fixing.</td>
+</tr>
+<tr>
+  <td style="text-align:right">144</td>
+  <td>4393–4408</td>
+  <td><code>p12:cor:born-vertex-selection</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3: strictly linear orthogonal actual Born involution with invariant UV measure/regulator yields odd-grade zero vertex; +-- remains allowed. This valid linear case does not imply #147 for nonlinear B.</td>
+</tr>
+<tr>
+  <td style="text-align:right">145</td>
+  <td>4420–4430</td>
+  <td><code>p12:cor:born-rg-stability-blocks</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Source E1 differentiation of parity-equivariant RG map at a fixed equivariant point yields commuting parity blocks. Not to be combined with reflected signed-scale anti-commuting case without typing scale.</td>
+</tr>
+<tr>
+  <td style="text-align:right">146</td>
+  <td>4435–4454</td>
+  <td><code>p12:thm:born-reflected-family-jet-parity</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1 exact one-sided jet criterion for the C^r glued reflected action family under smooth B<em>. The negative-side nth derivative is (-1)^n B</em> positive-side; no linear-field assumption.</td>
+</tr>
+<tr>
+  <td style="text-align:right">147</td>
+  <td>4463–4477</td>
+  <td><code>p12:cor:born-scale-field-parity-selection</code></td>
+  <td><strong>REFUTED</strong></td>
+  <td>REFUTED at printed smooth-nonlinear B generality: h=x+x², B=h^{-1}(-h), f=h², constant Γ_s=f. B is local smooth involution with derivative -1 at 0; reflected Γ is C∞, but D³Γ_0(0)=12, contradicting n=0,k=3 rule. Higher Faà di Bruno terms absent in printed proof. Valid for affine linear B, not generally smooth.</td>
+</tr>
+<tr>
+  <td style="text-align:right">148</td>
+  <td>4484–4500</td>
+  <td><code>p12:thm:born-antiequivariant-beta</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1 reflected autonomous flow identity differentiates to beta(Bg)=-DB beta(g). Source conditions explicitly require signed-scale reversal; not a fixed-orientation RG theorem.</td>
+</tr>
+<tr>
+  <td style="text-align:right">149</td>
+  <td>4509–4527</td>
+  <td><code>p12:cor:born-reflected-stability-anticommutation</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3 at B-fixed beta-zero point, stability anti-commutes with J and eigenvalues ± pair. Second-derivative DB term drops only at beta=0. Kernel lower bound follows offdiagonal block rank.</td>
+</tr>
+<tr>
+  <td style="text-align:right">150</td>
+  <td>4538–4548</td>
+  <td><code>p12:rem:two-born-rg-types</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Explicit disjoint Born-even scale and Born-reflected scale cases; under fixed orientation A commutes with J, under reversed signed scale A anticommutes. Source does not claim both at once.</td>
+</tr>
+<tr>
+  <td style="text-align:right">151</td>
+  <td>4555–4571</td>
+  <td><code>p12:thm:v199-rgas-moving-eaa</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3 moving invertible field chart: convective derivative and regulator connection derived via Hessian congruence. Includes physical transformed measure, determinant and source transport, not a new fixed point.</td>
+</tr>
+<tr>
+  <td style="text-align:right">152</td>
+  <td>4588–4608</td>
+  <td><code>p12:def:finite-generated-quantum-constructor</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition of finite generated quantum state/action ray and coarse pushforward of positive rays on the licensed branch; existence of finite actual pi and action remains source-typed, no quantum fixed point implied.</td>
+</tr>
+<tr>
+  <td style="text-align:right">153</td>
+  <td>4610–4625</td>
+  <td><code>p12:thm:v199-rgas-fixedpoint-inheritance</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Algebraic fixed-point inheritance valid conditional on exact normalized quantum/geometric intertwiner and a supplied geometric fixed point; finite coarse-map owner alone is not same as complete UV scale intertwiner; source explicitly distinguishes G33-COMP.</td>
+</tr>
+<tr>
+  <td style="text-align:right">154</td>
+  <td>4654–4661</td>
+  <td><code>p12:prop:v199-rgas-uv-limit</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1 continuous coarse map T_s applied to convergent autonomous UV trajectory preserves limit, producing fixed point. No claim that actual essential trajectory converges.</td>
+</tr>
+<tr>
+  <td style="text-align:right">155</td>
+  <td>4670–4686</td>
+  <td><code>p12:cor:rg-trajectory-unique-descendant</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Well-posed beta initial-value problem and complete generated boundary member imply unique solution by standard ODE. Neither beta field nor relevant physical boundary data is claimed auto-generated.</td>
+</tr>
+<tr>
+  <td style="text-align:right">156</td>
+  <td>4688–4699</td>
+  <td><code>p12:prop:v199-rgas-newton</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1/E3 exact logarithmic g_N scaling: beta_g=(d-2+eta_N)g, hence eta=-2 if nonzero fixed g in d=4; identity does not evaluate quantum gravity anomalous dimension.</td>
+</tr>
+<tr>
+  <td style="text-align:right">157</td>
+  <td>4709–4758</td>
+  <td><code>p12:thm:v199-rgas-laurent-balance</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3 chain rule at fixed dimensionful R and inverse Euler p=r fprime-f give 2z(fhat-p-4lambda). Valid under stationary u,alpha,z,lambda and coefficient character; does not prove flow preserves finite profile or other beta functions vanish.</td>
+</tr>
+<tr>
+  <td style="text-align:right">158</td>
+  <td>4783–4798</td>
+  <td><code>p12:rem:v199-rgas-as-scope</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Status remark requires interacting quantum UV class, finite-dimensional essential critical surface and physical IR trajectory in addition to conditional fixed-point inheritance. No automatic asymptotic safety proof.</td>
+</tr>
+<tr>
+  <td style="text-align:right">159</td>
+  <td>4811–4827</td>
+  <td><code>p12:thm:v2141-exact-graded-boundary-flow</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Specific Paper IV-B exact finite graded EAA theorem imported and read on its paired boson/fermion/gauge-quotient domain; supertrace is exact on nonsingular chart, not generic chiral continuum theorem.</td>
+</tr>
+<tr>
+  <td style="text-align:right">160</td>
+  <td>4829–4851</td>
+  <td><code>p12:thm:v2141-blocking-source-naturality</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3 exact blocking tower composition and retained-source derivatives via dominated finite conditional integration. For r&gt;=2 the effective-action derivative contains connected covariance terms; not naive blocking of bare higher derivatives.</td>
+</tr>
+<tr>
+  <td style="text-align:right">161</td>
+  <td>4862–4881</td>
+  <td><code>p12:cor:v299-finite-pole-source-transport</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3 imported Paper III-F analytic Hermitian Schur pole/residue on regular complement with source j_R-B† C^-1 j_C, denominator Sprime. Finite transport not equality of finite terminal energy and physical pole or continuum IR survival.</td>
+</tr>
+<tr>
+  <td style="text-align:right">162</td>
+  <td>4892–4921</td>
+  <td><code>p12:prop:v2141-heat-threshold-coconsumption</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3 primitive massive heat shell e^{-m²/k²}; E1 exponential integral formula derivative verifies sign and 1/(4pi) factor at Gaussian order; not universal beyond representative.</td>
+</tr>
+<tr>
+  <td style="text-align:right">163</td>
+  <td>4923–4942</td>
+  <td><code>p12:cor:v2141-charged-gap-ir</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Under strict charged gap and uniform retained source-vertex/mode envelope, heat suppression is integrable at k=0. Actual hadronic massless/color-singlet response and any refinement-uniform multiplicity summation remain separate.</td>
+</tr>
+<tr>
+  <td style="text-align:right">164</td>
+  <td>4955–5008</td>
+  <td><code>p12:thm:v299-current-weighted-ir</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3 Fourier spectral representation on a fixed normalized vacuum with no zero atom, contact-minus-current sign, positive source measure. Inverse cubic weighted moment sufficient for temporal q0 endpoint; supports gapless laws.</td>
+</tr>
+<tr>
+  <td style="text-align:right">165</td>
+  <td>5028–5053</td>
+  <td><code>p12:cor:v299-current-ir-uniform-transport</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3/E4 compact-middle convergence with explicit IR inverse-cubic UI and UV inverse-first UI yields joint refinement/frequency limit; uniform cubic moment alone does not give IR UI.</td>
+</tr>
+<tr>
+  <td style="text-align:right">166</td>
+  <td>5084–5111</td>
+  <td><code>p12:thm:v2141-projective-cone-rg-invariance</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>E1 principal quadratic cone yields c_Q=c_op sqrt(Z_s/Z_t) and ∂logk log c_Q=(eta_t-eta_s)/2. Nonrunning c only when same-principal-owner symmetry enforces common Z on admitted chart.</td>
+</tr>
+<tr>
+  <td style="text-align:right">167</td>
+  <td>5113–5120</td>
+  <td><code>p12:rem:v2141-kKq-firewall</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Type firewall: protected hierarchy K, exact RG cutoff k and external probe q are distinct and no monotonic coincidence yields an identity; see issue G-0009 on the later proposed K16 bridge.</td>
+</tr>
+<tr>
+  <td style="text-align:right">168</td>
+  <td>5136–5146</td>
+  <td><code>p12:cor:v2109-qroot-ward-state</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Simple zero-energy ground and commuting symmetry yield invariant projector, and equivariant channel maintains it. This is a conditional finite Ward state source; no generic degenerate or continuum gauge Ward promotion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">169</td>
+  <td>5163–5177</td>
+  <td><code>p12:prop:v2109-scalar-vertex-source-derivative</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Exact differentiated invertible propagator identity Λ_S=S^-1(-δS)S^-1=δS^-1, with uniform scalar-mass derivative as special zero momentum insertion. No physical pole asserted.</td>
+</tr>
+<tr>
+  <td style="text-align:right">170</td>
+  <td>5189–5221</td>
+  <td><code>p12:thm:v2123-complete-finite-bh-scalar-response</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3 exact normalized gauge determinant derivative: explicit propagator insertion plus n_q covariance (sea response). Positive massive vectorlike overlap branch imported from Paper VII-D location of moved VII-A result provides accretive S^-1 existence.</td>
+</tr>
+<tr>
+  <td style="text-align:right">171</td>
+  <td>5232–5238</td>
+  <td><code>p12:cor:v2123-finite-g16-constructor</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Finite deterministic G16 scalar source vertex from complete finite action, determinant and source derivative; statement does not evaluate any pole or named scheme conversion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">172</td>
+  <td>5240–5252</td>
+  <td><code>p12:def:v2123-leg-invariant-scalar-response</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition of homogeneity-normalized scalar source projector, invariant under a common fixed external leg factor. Physical normalization/mass-parameter dependence of field renormalization cannot be hidden in the definition.</td>
+</tr>
+<tr>
+  <td style="text-align:right">173</td>
+  <td>5254–5273</td>
+  <td><code>p12:thm:v2123-finite-scheme-comparison-constructor</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3 noncritical finite scheme matrix C=V_S V_BH^-1 unique once same source subspace and kinematics are compared; source transformation contragredient. Does not determine numerical named-scheme C.</td>
+</tr>
+<tr>
+  <td style="text-align:right">174</td>
+  <td>5282–5292</td>
+  <td><code>p12:cor:v2123-g16-controlled-limit</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Conditional limit transport of bounded positive source charts and fixed projections under bounded-source inheritance and 1PI transfer; any canonical phase/path assertion requires QFT4_C, not derivable from finite expression alone.</td>
+</tr>
+<tr>
+  <td style="text-align:right">175</td>
+  <td>5294–5306</td>
+  <td><code>p12:cor:v2123-native-source-blocking</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3 ∂a S_eff=&lt;∂a S&gt;_x under normalized exact finite blocking and differentiation domination. Does not mandate MS-bar coordinate conversion for internal native source readout.</td>
+</tr>
+<tr>
+  <td style="text-align:right">176</td>
+  <td>5313–5321</td>
+  <td><code>p12:thm:v2109-observable-cluster-convergence</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1/E3 compactness + all-cluster equality implies convergence for one fixed bounded observable even with nonunique cluster states; singular/unbounded observables remain excluded.</td>
+</tr>
+<tr>
+  <td style="text-align:right">177</td>
+  <td>5352–5376</td>
+  <td><code>p12:prop:v2168-physical-charged-pole-handoff</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>Finite Schur/source Gram and residue formulas imported from V-C/IV, with actual physical rest/support/tag and visibility explicitly needed. Physical charged pole at terminal epsilon, interpretation and continuum survive are not certified by the listed conditions.</td>
+</tr>
+<tr>
+  <td style="text-align:right">178</td>
+  <td>5417–5433</td>
+  <td><code>p12:prop:v2169-physical-support-root</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Imported exact-support source polynomial/root comparison: once generated from exact consumed support and actual tag, same-support extra overlap test is redundant. On other supports or before physical rest identification no promotion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">179</td>
+  <td>5482–5490</td>
+  <td><code>p12:v2171:prop:baryonexport</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Same-owner regulated vector-current transport is explicitly conditional on actual history Ward map, Jacobian/contact/boundary terms; equality of V-A weak/hypercharge B,L coefficients implies gauge part of B-L cancels only under that map.</td>
+</tr>
+<tr>
+  <td style="text-align:right">180</td>
+  <td>5579–5594</td>
+  <td><code>p12:thm:v296-k16-local-kinetic</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>K16 local H theorem imported on positive microreversible scattering and connected reaction graph; Gamma_vis &gt;&gt; actual H is additionally assumed for expansion-time local equilibration. Not native scattering existence certificate.</td>
+</tr>
+<tr>
+  <td style="text-align:right">181</td>
+  <td>5596–5615</td>
+  <td><code>p12:cor:v296-k16-rate-certificate</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>E3 rate ratio 35.7732 GeV / 5.0457e9 GeV is ~7.09e-9. Merely exceeding this stationary tangent number is not the gamma_vis &gt;&gt; actual post-K16 H proof.</td>
+</tr>
+<tr>
+  <td style="text-align:right">182</td>
+  <td>5625–5644</td>
+  <td><code>p12:thm:v2177-common-heat-resolution-boundary</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>On the same primitive heat representation, matching heat cutoff Lambda_g²=96pi² U gives k_h=Lambda_g, a declared common boundary coordinate. Does not make k cosmological time.</td>
+</tr>
+<tr>
+  <td style="text-align:right">183</td>
+  <td>5646–5662</td>
+  <td><code>p12:thm:v2177-k16-resonance-scale</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>UNRESOLVED: KIN16 equation 2n=a m_s determines produced physical momentum n/a=m_s/2, but no source-matched spectral shell/heat cutoff functional is proved that forces independent k=p. Source itself warns K,k,q distinct (#167); E4 exact Gaussian shell remains defined at multiple k for fixed p. First-origin G-0009.</td>
+</tr>
+<tr>
+  <td style="text-align:right">184</td>
+  <td>5664–5682</td>
+  <td><code>p12:cor:v2177-k16-native-scale-interval</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Conditional arithmetic correct: kstar/kh=(sqrt(U/6)/2)/(sqrt96 pi sqrtU)=1/(48pi)+O(alpha^-2). Its interpretation as uniquely selected physical scale inherits G-0009; no new numeric error.</td>
+</tr>
+<tr>
+  <td style="text-align:right">185</td>
+  <td>5684–5719</td>
+  <td><code>p12:thm:v2177-exact-scalaron-gauge-vertex</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3 formal exact derivative of -F²/(4g(k)²) under <em>assumed</em> tau shift k-&gt;k exp(-tau) gives lambda=2 alpha^-1/2 beta/(MP g), and one-loop tangent matches V-C. Physical scalaron identification needs the source/action pullback explicitly flagged in V-C #p7:rem:v2216-weyl-source-map.</td>
+</tr>
+<tr>
+  <td style="text-align:right">186</td>
+  <td>5721–5744</td>
+  <td><code>p12:cor:v2177-exact-k16-gauge-pump</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>UNRESOLVED as a physical K16 pump: formal source/WKB coefficient m³ sum d_i(lambda)^2/(64pi) and 1/(16pi) factor check, but k=p bridge G-0009, actual tau-source pullback G-0010, true gauge projection and finite production history are separate. Algebraic conditional formula remains correct.</td>
+</tr>
+<tr>
+  <td style="text-align:right">187</td>
+  <td>5746–5761</td>
+  <td><code>p12:rem:v2177-no-long-gaussian-extrapolation</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Scope reminder: Gaussian beta coefficient local tangent need not extrapolate through strong common heat to produced K16 scale; exact finite supertrace source remains evaluation obligation.</td>
+</tr>
+<tr>
+  <td style="text-align:right">188</td>
+  <td>5763–5779</td>
+  <td><code>p12:cor:v2177-rg16-scale-retyped</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>UNRESOLVED physical CLOSED_EXACT label for RG16_scale and scalaron vertex unless G-0009 K16 k/p identification and G-0010 physical tau source pullback are discharged. Algebraically defined scale choice and formal tau vertex remain available.</td>
+</tr>
+<tr>
+  <td style="text-align:right">189</td>
+  <td>5783–5799</td>
+  <td><code>p12:cor:v2178-continuum-source-descendant</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Preserves actual finite ordered kernel, Nambu/Bogoliubov map and Γ16^ord as upstream physical owner; continuum beta/g remains a conditional precision projection, not independent first C06 occurrence. Any kstar evaluation remains guarded.</td>
+</tr>
+<tr>
+  <td style="text-align:right">190</td>
+  <td>5801–5808</td>
+  <td><code>p12:rem:v2178-framework-native-precedence</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Native finite same-action production precedence is a scope/interpretation policy, not a proof that named-scheme continuum calculations are invalid.</td>
+</tr>
+<tr>
+  <td style="text-align:right">191</td>
+  <td>5830–5841</td>
+  <td><code>p12:prop:v323-petersen-no-continuum-gap</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1/E3 multiplicity-free A5 real edge module 4+5+3+3, free coefficients in commutant. Scalar B=b I realizes zero gap; signed Z2 internal loops do not imply Z3 center, spatial Wilson area law or continuum tension.</td>
+</tr>
+<tr>
+  <td style="text-align:right">192</td>
+  <td>5853–5863</td>
+  <td><code>p12:cor:v323-petersen-handoff</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Finite Petersen QCD source requires same color/gauge-compatible action, finite pole/residue, continuum state/domain/refinement/locality as other sectors. No separate field from vertex count or unlicensed beta shift.</td>
+</tr>
+<tr>
+  <td style="text-align:right">193</td>
+  <td>5882–5892</td>
+  <td><code>p12:def:small-observable-family</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition of a renormalized smeared finite local representative; choice Z_L is constrained to native normalization/covariance/previous residue evidence, not by target matching. Does not prove field existence.</td>
+</tr>
+<tr>
+  <td style="text-align:right">194</td>
+  <td>5899–5907</td>
+  <td><code>p12:def:distributional-field-limit</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Definition makes field limit a mixed-moment continuous test distribution plus OS positivity/covariance; scalar moments alone do not certify closed operator affiliation (earlier root G-0006).</td>
+</tr>
+<tr>
+  <td style="text-align:right">195</td>
+  <td>5909–5912</td>
+  <td><code>p12:thm:small-observable-field-reconstruction</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>At exact printed QFT1–7/QFT10 hypotheses the existence of Schwinger/Wightman distributions is conditional, but asserted operator affiliation with local net uses missing closability/domain/localization certificate. Inherits first-origin G-0006 rather than issuing a duplicate.</td>
+</tr>
+<tr>
+  <td style="text-align:right">196</td>
+  <td>5931–5942</td>
+  <td><code>p12:lem:v2210-lit-locality-sandwich</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1+independent M3 adversarial check: if omega(D<em>C</em>C D)=0 for a dense cyclic family, bounded pi(C) vanishes; vacuum control omega(C*C)=0 alone insufficient. No CAR/locality identification is inferred.</td>
+</tr>
+<tr>
+  <td style="text-align:right">197</td>
+  <td>5957–5978</td>
+  <td><code>p12:def:v2210-lit-bounded-os-certificate</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Defines stronger bounded-algebraic OS certificate including isotonic Euclidean C* locality, E(4) covariance/time-space rotations, regularity, time-zero spatial local algebra and common quotient. Stronger than mere finite RP/native Spin(4) covariance.</td>
+</tr>
+<tr>
+  <td style="text-align:right">198</td>
+  <td>5980–5992</td>
+  <td><code>p12:cor:v2210-lit-bounded-os-reconstruction</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Conditional import of algebraic Euclidean OS reconstruction to time-zero net once all certificate hypotheses hold, with observable generation/identification as further guard. No claim that finite native inputs alone realize this certificate; earlier G-0004 remains a separate early proof route.</td>
+</tr>
+<tr>
+  <td style="text-align:right">199</td>
+  <td>6012–6020</td>
+  <td><code>p12:prop:v2210-lit-covariance-scope</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Product time translations and spatial Spin(4) transformations fix dτ, whereas mixed Euclidean rotation does not. Correct exclusion of automatic full E(4) from native product covariance; state may nevertheless acquire larger covariance through separate correlation comparison.</td>
+</tr>
+<tr>
+  <td style="text-align:right">200</td>
+  <td>6037–6052</td>
+  <td><code>p12:prop:v2210-lit-fixed-band-kernel</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1 and E3 spherical radial integral of spatial 3-ball yields [sin(Λr)-Λr cos(Λr)]/(2π²r³); nonzero analytic for generic r&gt;0. This is a <em>free comparison</em>, not a native interacting field.</td>
+</tr>
+<tr>
+  <td style="text-align:right">201</td>
+  <td>6069–6076</td>
+  <td><code>p12:lem:v2210-lit-spectral-support</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1 unique continuation: a finite harmonic sum on connected round S3 vanishing on nonempty open U is zero; hence projections of supported test functions span the entire retained E. Interpretation restricted to projected-mode operator grammar.</td>
+</tr>
+<tr>
+  <td style="text-align:right">202</td>
+  <td>6096–6112</td>
+  <td><code>p12:thm:v2210-lit-source-analyticity</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Normal-family theorem/real-open uniqueness + Cauchy derivatives valid for a common connected complex polydisk and uniformly bounded actual source tuple. Noncommuting single exp sources do not determine ordered words; source identification separate.</td>
+</tr>
+<tr>
+  <td style="text-align:right">203</td>
+  <td>6139–6147</td>
+  <td><code>p12:cor:v2210-lit-source-canonicity</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>If all same-phase source certificates are path-independent and determine a norm-dense local bounded algebra, positive cluster states coincide on it by 2ε norm-density and hence QFT4_C; no full gap needed. Proper source algebra only establishes own readout uniqueness.</td>
+</tr>
+<tr>
+  <td style="text-align:right">204</td>
+  <td>6170–6181</td>
+  <td><code>p12:prop:v2210-lit-composite-cumulant</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Independent Gaussian calculation: E exp[J(X²−v)]=exp(−vJ)(1−2vJ)^(−1/2), κ_n=2^(n−1)(n−1)!v^n (n≥2). Wick square connected three-point function 8 C12 C23 C31. Non-Gaussian observable does not force non-Gaussian underlying dynamics.</td>
+</tr>
+<tr>
+  <td style="text-align:right">205</td>
+  <td>6197–6206</td>
+  <td><code>p12:cor:v2210-lit-interaction-comparator</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Comparator exclusion is logical once actual same-source, licensed noninteracting family and nonzero connected/amputated readout differences are demonstrated; no generic S matrix/interaction conclusion from one nonlinear composite.</td>
+</tr>
+<tr>
+  <td style="text-align:right">206</td>
+  <td>6220–6230</td>
+  <td><code>p12:prop:v2210-lit-chiral-projector</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Differentiable finite Hermitian projector with spectral separation ≥2g has HS derivative bound ||Pdot||_HS ≤||Adot||_HS/(2g); sign-index rank constant. Determinant-line/sector weights and regulator-uniform gap not implied.</td>
+</tr>
+<tr>
+  <td style="text-align:right">207</td>
+  <td>6255–6270</td>
+  <td><code>p12:prop:v2210-lit-ward-budget</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Exact telescope of finite quantum Ward identity with coefficients c_{r,L}, controlled word limits and contact/measure terms yields printed error bound. No quantum measure invariance from classical Noether alone.</td>
+</tr>
+<tr>
+  <td style="text-align:right">208</td>
+  <td>6319–6335</td>
+  <td><code>p12:cor:v199-finite-block-approximation</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1/E3 positivity/relative-error bound for F_L and log, plus normalization readout error ≤2||O||∞ δ/m for a fixed finite block. No growing-block uniformity is claimed.</td>
+</tr>
+<tr>
+  <td style="text-align:right">209</td>
+  <td>6376–6395</td>
+  <td><code>p12:thm:v202-bounded-source-domain</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Pointwise cos Im(S)&gt;cos r and Re(S)≥−r yield normalized positive-weight common half-plane/zero-free logarithm for fixed bounded real sources. Does not handle volume-growing source bounds.</td>
+</tr>
+<tr>
+  <td style="text-align:right">210</td>
+  <td>6403–6428</td>
+  <td><code>p12:thm:v202-source-errors</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Finite log ratio from ||F_L/F−1||≤ε&lt;cos r; Cauchy derivatives; cumulant bound via TV≤ε and ordered-partition combinatorics. Imported theorem p1b:thm:blocking is indeed in current Paper I-C technical companion, lines 20423–20470.</td>
+</tr>
+<tr>
+  <td style="text-align:right">211</td>
+  <td>6448–6457</td>
+  <td><code>p12:cor:v202-native-cumulants</code></td>
+  <td><strong>REPRODUCED</strong></td>
+  <td>Reproduce VII-A positive native heat-tail upper bound at N≤96, relative error &lt;6.35e−76, largest ordered-partition factor 150, yielding &lt;9.6e−74 for n≤4. Fixed block and |O|≤1 only.</td>
+</tr>
+<tr>
+  <td style="text-align:right">212</td>
+  <td>6484–6501</td>
+  <td><code>p12:lem:v256-ordered-evolution-accretivity</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Independent argument: for noncommuting nonselfadjoint B(t), integrated norm β&lt;π/2 controls real Hilbert-space angular displacement and ∥U(T)x∥ from below, implying Re U≥e^−β cosβ I; numerical 2x2 controls confirm. Not a growing-volume uniform statement.</td>
+</tr>
+<tr>
+  <td style="text-align:right">213</td>
+  <td>6538–6583</td>
+  <td><code>p12:thm:v256-bounded-ordered-source</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Ordered source uses one independent parameter per occurrence; exponential product differentiates into exactly ordered word and scalar set partitions give connected ordered cumulants. The noncommuting accretivity lemma guarantees zero-free β&lt;π/2; no equality to separately specified action-source.</td>
+</tr>
+<tr>
+  <td style="text-align:right">214</td>
+  <td>6608–6644</td>
+  <td><code>p12:cor:v256-ordered-source-transfer</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1 exact degree-n multinomial/exponential coefficients ≤r^n/n!, TV of normalized words δ_n≤2 and factorial tail give E_N; straight-segment log in right half-plane and multivariable Cauchy yield printed bound. Fixed finite operator alphabet only.</td>
+</tr>
+<tr>
+  <td style="text-align:right">215</td>
+  <td>6668–6672</td>
+  <td><code>p12:prop:v256-sharp-ordered-budget</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>Exact adversarial optimality: two-level O=diag(1,−1), trace state yields Z(iπ/2)=cosh(iπ/2)=0; universal radius π/2 is sharp, not a statement about smaller selected domains.</td>
+</tr>
+<tr>
+  <td style="text-align:right">216</td>
+  <td>6690–6706</td>
+  <td><code>p12:thm:v202-bounded-source-inheritance</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Termwise polynomial moment convergence with common bounded alphabet yields locally uniform exponential source convergence by dominated factorial tails; Re Z≥c_r protects logarithm/derivative chart. No extensive or independently normalized source uniformity.</td>
+</tr>
+<tr>
+  <td style="text-align:right">217</td>
+  <td>6766–6773</td>
+  <td><code>p12:thm:main-qft</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Main theorem is a valid implication <em>given</em> the full bounded OS certificate (representation-wide locality, full E4, time-zero algebra) and actual phase-selected common local state. Earlier G-0002/0004 are not discharged for actual native sequence by restating this stronger antecedent.</td>
+</tr>
+<tr>
+  <td style="text-align:right">218</td>
+  <td>6778–6781</td>
+  <td><code>p12:cor:v283-canonical-same-phase-export</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Singleton same-phase limit state plus the <em>same certified</em> local net/observable mapping yields path-independent GNS/reconstruction up to appropriate equivalence. Does not select phase or prove singleton.</td>
+</tr>
+<tr>
+  <td style="text-align:right">219</td>
+  <td>6788–6799</td>
+  <td><code>p12:cor:benefit-for-series</code></td>
+  <td><strong>UNRESOLVED</strong></td>
+  <td>UNRESOLVED at printed broad reclassification: main theorem exports bounded net and only controlled identified bounded words, while QFT10 field distributions, propagator/pole readouts, quantum Ward measure/contact transport and renormalized coupling schemes each consume additional source/action conditions. Sentence subject-only-to-sector-scope does not supply these claim-specific certificates; new root G-…</td>
+</tr>
+<tr>
+  <td style="text-align:right">220</td>
+  <td>6938–6952</td>
+  <td><code>p12:thm:v350-common-algebra-cluster</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1 Banach–Alaoglu on a single common unital C* algebra with <em>-representations, positive finite states; RP and fixed bounded identities pass weak-</em> limits. This theorem supplies a conditional sufficient <em>common-algebra</em> rule, not an automatic actual native π_L construction; G-0002 root retained.</td>
+</tr>
+<tr>
+  <td style="text-align:right">221</td>
+  <td>6966–6980</td>
+  <td><code>p12:thm:v350-os-conditional-bridge</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Conditional formal application of full OS field reconstruction when all corrected Euclidean Schwinger distributions/locality/regularity/growth/symmetry/control hypotheses are explicitly supplied. Not a claim finite RP alone suffices.</td>
+</tr>
+<tr>
+  <td style="text-align:right">222</td>
+  <td>6991–7013</td>
+  <td><code>p12:prop:v350-fixed-band-nonlocality-bound</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1/E3 exact fixed-band radial Fourier kernel and detector L1 separation bound; coefficient (1+Λd)/(2π²d³) follows monotone envelope. Applies solely to canonical cutoff free comparison, not to interacting Born–Hopf net.</td>
+</tr>
+<tr>
+  <td style="text-align:right">223</td>
+  <td>7026–7037</td>
+  <td><code>p12:prop:v350-ward-identity-transfer</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>Taking jointly convergent finite ordered distributional identities through common test pairings is valid; operator equality requires all matrix elements on dense invariant domain, not merely vacuum cyclicity. Physical action/measure/contact remain separate inputs.</td>
+</tr>
+<tr>
+  <td style="text-align:right">224</td>
+  <td>7048–7060</td>
+  <td><code>p12:rem:v350-operational-locality-frontier</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Source-bound interface: measurable leakage of actual same-action detector commutator/response kernels is operational target; exact Wightman microcausality additional when claimed. No unlicensed native mechanism inserted.</td>
+</tr>
+<tr>
+  <td style="text-align:right">225</td>
+  <td>7067–7080</td>
+  <td><code>p12:prop:v356-current-time-integral</code></td>
+  <td><strong>VERIFIED</strong></td>
+  <td>E1/E3 positive spectral Tonelli identity ∫_0∞ t² e^(−tΔ)dt=2Δ^−3; current spectral zero-frequency piece separated from same-action local contact term.</td>
+</tr>
+<tr>
+  <td style="text-align:right">226</td>
+  <td>7087–7110</td>
+  <td><code>p12:thm:v356-uniform-current-moment</code></td>
+  <td><strong>VERIFIED-CONDITIONAL</strong></td>
+  <td>E1/E3 IR inverse-cubic uniform integrability via Mδ^ε, UV inverse-first W/R, temporal tail Gamma(3+ε) MT^−ε. Compact-middle convergence plus separately controlled contact yields temporal zero-frequency limit; no spectral gap needed.</td>
+</tr>
+<tr>
+  <td style="text-align:right">227</td>
+  <td>7130–7139</td>
+  <td><code>p12:rem:v356-current-physical-endpoint</code></td>
+  <td><strong>FORMALIZED</strong></td>
+  <td>Source-bound physical endpoint remains open for selected QCD current/Hamiltonian and temporal contact jets; static energy-source Hessian not equated to temporal coefficient by fiat.</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Independent test passes, with evidence and nonclaims</h2>
+<h3>Batch 1: 11 checks</h3>
+<ul>
+<li><code>VIIC-E3-B1-frontier_dimension</code> (E3, claims []): frontier_dimension — <strong>PASS</strong>. Witness: . Scope: .</li>
+<li><code>VIIC-E3-B1-second_directional_moment</code> (E3, claims []): second_directional_moment — <strong>PASS</strong>. Witness: . Scope: .</li>
+<li><code>VIIC-E3-B1-fourth_directional_moment</code> (E3, claims []): fourth_directional_moment — <strong>PASS</strong>. Witness: . Scope: .</li>
+<li><code>VIIC-E3-B1-normalized_second_limit</code> (E3, claims []): normalized_second_limit — <strong>PASS</strong>. Witness: . Scope: .</li>
+<li><code>VIIC-E3-B1-normalized_fourth_limit</code> (E3, claims []): normalized_fourth_limit — <strong>PASS</strong>. Witness: . Scope: .</li>
+<li><code>VIIC-E3-B1-massless_energy_integral</code> (E3, claims []): massless_energy_integral — <strong>PASS</strong>. Witness: . Scope: .</li>
+<li><code>VIIC-E3-B1-one_dimensional_marginal_normalized</code> (E3, claims []): one_dimensional_marginal_normalized — <strong>PASS</strong>. Witness: . Scope: .</li>
+<li><code>VIIC-E3-B1-one_dimensional_second_moment</code> (E3, claims []): one_dimensional_second_moment — <strong>PASS</strong>. Witness: . Scope: .</li>
+<li><code>VIIC-E3-B1-one_dimensional_fourth_moment</code> (E3, claims []): one_dimensional_fourth_moment — <strong>PASS</strong>. Witness: . Scope: .</li>
+<li><code>VIIC-E3-B1-ground_degeneracy_counterexample</code> (E3, claims []): ground_degeneracy_counterexample — <strong>PASS</strong>. Witness: . Scope: .</li>
+<li><code>VIIC-E3-B1-rank_one_positive_control</code> (E3, claims []): rank_one_positive_control — <strong>PASS</strong>. Witness: . Scope: .</li>
+</ul>
+<h3>Batch 2: 15 checks</h3>
+<ul>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+<li><code>E?-unkeyed</code> (E?, claims []): control — <strong>FAIL</strong>. Witness: . Scope: .</li>
+</ul>
+<h3>Batch 3: 16 checks</h3>
+<ul>
+<li><code>VIIC-E3-B3-094</code> (E3, claims [94, 95]): SU(3) fundamental holonomy expansion — <strong>PASS</strong>. Witness: Tr(F^2)=-1/2; a^4 coefficient = -Tr(F^2)/6 = 1/12. Scope: Smooth anti-Hermitian plaquette chart; NOT rough Wilson-loop or Yang-Mills action convergence.</li>
+<li><code>VIIC-E3-B3-097</code> (E3, claims [97]): Blockwise real nonnegative unit phase — <strong>PASS</strong>. Witness: e^(i<em>pi)=-1 and e^(i</em>2pi)=1; unit-circle intersection R_nonnegative={1}. Scope: Assumes explicitly resolved positive charge-one block; not native strong CP selector proof.</li>
+<li><code>VIIC-E3-E4-B3-104</code> (E3/E4, claims [103, 104]): Norm-one compression versus growing fixed-symbol coefficients — <strong>PASS</strong>. Witness: P=diag(1,0), M_r=diag(L,0), ||PM_rP||=||r||_inf=L for any L; membership in one 1-dim span does not bound coefficients. Scope: Abstract symbol test: does not prove the actual native residue envelope is divergent.</li>
+<li><code>VIIC-E4-B3-105</code> (E4, claims [105]): Positive H with direct remote support coupling despite commuting equal-time algebras — <strong>PASS</strong>. Witness: Spec(H)={1: 2, 0: 2}; [H,Z_1] nonzero: [[0, 0, 0, 1], [0, 0, 1, 0], [0, -1, 0, 0], [-1, 0, 0, 0]]. Scope: Two-site model witnesses no inference from equal-time locality alone, not a violation of explicit corridor hypotheses.</li>
+<li><code>VIIC-E3-B3-106</code> (E3, claims [106, 108]): Rank-one transfer expansion and decay — <strong>PASS</strong>. Witness: P rank=1; ||R^5||=32/243; centered e2 matrix element q^5. Scope: Requires a genuine spatial transfer-corridor identity; rank-one is explicit, so no degenerate ground counterclaim.</li>
+<li><code>VIIC-E4-B3-107</code> (E4, claims [107]): Four-Bernoulli split-mixing does not imply a connected-graph bound — <strong>PASS</strong>. Witness: p, kappa4, sum_all_connected_graph_products, ratio=[(1/10, 207/5000, 38470743/5000000000, 1000000/185849), (1/100, 465597/50000000, 4388402635185393/50000000000000000000, 4703000000000000/44327299345307), (1/1000, 496505997/500000000000, 443888395818946296316893/500000000000000000000000000000, 497003000000000000000000/444332728547493790107)]. Scope: Proof uses 4 equal Bernoulli variables and weighted kernel, exactly matching printed counterfamily; not physical SU3 sample.</li>
+<li><code>VIIC-E3-B3-109</code> (E3, claims [103, 109, 110, 111]): Cayley n=4 + explicit finite weighted tree sum — <strong>PASS</strong>. Witness: 16 trees; I_K=7/8; max sum=161/16; bound=343/32. Scope: Exact check at n=4 illustrates general source leaf-pruning proof; direct tree hypothesis is NOT discharged for native residues.</li>
+<li><code>VIIC-E4-B3-112</code> (E4, claims [112]): Uniform cumulant bounds do not force moment convergence — <strong>PASS</strong>. Witness: Even L: symmetric ±1, variance=1. Odd L: symmetric ±sqrt(2), variance=2. All n-th moments |E X^n|&lt;=2^(n/2), all fixed cumulants bounded.. Scope: Only tests necessity of Cauchy condition; no refutation of theorem with its Cauchy premise.</li>
+<li><code>VIIC-E3-B3-116</code> (E3, claims [116, 123]): Finite Haar-type integration by parts identity — <strong>PASS</strong>. Witness: d(A exp(-S))/dx = (dA-A dS) exp(-S); boundary at x=0,2pi both 0. Scope: U(1) Lie group control only; actual SU3 matched action/vacuum and QFT10 limits remain separate premises.</li>
+<li><code>VIIC-E4-B3-120</code> (E4, claims [120, 121, 122, 123, 125, 127]): Coefficient growth defeats claimed irrelevant suppression while connected cumulants vanish — <strong>PASS</strong>. Witness: a_L=1/L, c_(6,L)=L^2, one local mode w=1 O_6=I: R_L=a_L^2 c_(6,L) O_6=I, omega(R)=1 for every L; connected cumulants order&gt;=2 are zero; values [(2, 1), (10, 1), (100, 1), (1000, 1)]. Scope: ABSTRACT LOGICAL counterexample to cumulant=&gt;coefficient-weighted insertion inference, not an explicit member of the native SU3 action family. Proof needs uniform coefficient-weighted insertion envelope..</li>
+<li><code>VIIC-E4-B3-112D</code> (E4, claims [112, 124]): Identical all polynomial moments can coexist with distinct spectral laws — <strong>PASS</strong>. Witness: Stieltjes lognormal family dmu_±(x)=dmu_LN(x)(1±0.5 sin(2pi log x)); all moments e^(n²/2) agree for n=0,1,..., but measures differ on nonzero-measure sets.. Scope: Formal analysis of unbounded moment problem: confirms scalar-moment Cauchy alone need not fix strong/spectral operator realization; NOT a claim-matched refutation of any already supplied full OS field certificate.</li>
+<li><code>VIIC-E3-B3-121</code> (E3, claims [121, 122]): Exact finite action interpolation identity — <strong>PASS</strong>. Witness: 2-state finite family: d E_s[A]/ds = - Cov_s(A,R) = -eps<em>exp(eps</em>s)/(exp(eps*s) + 1)**2. Scope: Requires common positive action measure and uniform-in-s bound for the actual R; no coefficient theorem bypass inferred.</li>
+<li><code>VIIC-E3-B3-137</code> (E3, claims [137, 138]): Imported native finite shell gap coordinate identity — <strong>PASS</strong>. Witness: alpha=2: E56=2<strong>(1/4)/4, E48=sqrt(2)/4, E40=2</strong>(3/4)/4, midpoint^2=E40 E56; compare Paper V-B lines 2070-2121. Scope: This checks terminal source/functional identity, not upstream constitution of spectrum or a continuum Hamiltonian gap.</li>
+<li><code>VIIC-E4-B3-133</code> (E4, claims [133]): Positive bounded Wilson expectation is not by itself positive Laplace semigroup matrix element — <strong>PASS</strong>. Witness: f(T)=exp(-T^2)&gt;0, f(0)=1, but f&quot;(0)=-2; any positive spectral Laplace transform has f&quot;(T)=int E² exp(-TE) dmu &gt;=0 for T&gt;0. Scope: Comparator only: no actual native SU3 Wilson violation alleged; identifies additional charged static-source OS factorization needed before spectral step.</li>
+<li><code>VIIC-E3-B3-133S</code> (E3, claims [133]): Concave V(0)=0 implies V(R)/R nonincreasing — <strong>PASS</strong>. Witness: Example V(R)=sqrt(R), V/R=R^(-1/2) descending; general proof by concavity chord: V(r)/r&gt;=V(R)/R for 0&lt;r&lt;R. Scope: Checks concavity consequence only, not source claim spatial reflection positivity or existence of charged-source Hilbert.</li>
+<li><code>VIIC-E3-B3-132</code> (E3, claims [132]): Local flat chart surface exhaustion asymptotics — <strong>PASS</strong>. Witness: rho=sqrt(R_x ell0); rho/R_x -&gt;0; area(rho/4,rho/4)=R_x ell0/16-&gt;infinity. Scope: Geometric chart limit only; Wilson-limit Cauchy still QFT4.</li>
+</ul>
+<h3>Batch 4: 26 checks</h3>
+<ul>
+<li><code>VIIC-E3-B4-139H</code> (E3, claims [139]): Compact-circle heat representative and Hamilton--Jacobi logarithm — <strong>PASS</strong>. Witness: S_t-Delta(S)/2+|grad S|²/2 = 0. Scope: tau&gt;=0, 0&lt;u&lt;1, smooth positive circle heat data; not spacetime heat/RG identification.</li>
+<li><code>VIIC-E3-B4-139C</code> (E3, claims [139, 140]): Endpoint derivative of heat-shell covariance — <strong>PASS</strong>. Witness: dC/d(log k)=-2*exp(-m/k<strong>2)/k</strong>2. Scope: Positive scalar eigenvalue, special zero eigenvalue separate.</li>
+<li><code>VIIC-E3-B4-139G</code> (E3, claims [139]): Gaussian convolution quadratic interaction satisfies heat nonlinear flow — <strong>PASS</strong>. Witness: V(C,x)=log(1+m C)/2+m x²/[2(1+m C)]. Scope: Assumes m&gt;0 and Gaussian field split; not an exact expression for a general Haar action.</li>
+<li><code>VIIC-E3-B4-140Z</code> (E3, claims [140]): Zero eigenvalue shell and finite-window norm bounds — <strong>PASS</strong>. Witness: C(0)=(Lam<strong>2 - k</strong>2)/(Lam<strong>2*k</strong>2). Scope: Assumes 0&lt;k&lt;Lambda and a fixed finite spectral ceiling.</li>
+<li><code>VIIC-E3-B4-141</code> (E3, claims [141, 143]): Positive non-degenerate affine support covariance, exterior kernel — <strong>PASS</strong>. Witness: For weights p:1 on y=+-1, covariance diag(0,4p/(1+p)^2); kernel spanned by (1,0). Scope: Finite positive tilted law; does not extend to signed/Grassmann measures.</li>
+<li><code>VIIC-E3-B4-142</code> (E3, claims [142, 143]): Finite Gaussian modified Legendre transform flow — <strong>PASS</strong>. Witness: dGamma/dR=1/(2*(R + m))=G/2. Scope: One real Gaussian mode with UV measure e^{-m x²/2} dx, R&gt;0.</li>
+<li><code>VIIC-E3-B4-144</code> (E3, claims [144, 145]): Linear Born vertex parity distinguishes +-- from ++- — <strong>PASS</strong>. Witness: Gamma(x,-y)=Gamma(x,y); Gamma_xy(0)=0; Gamma_xyy(0)=2a ≠0. Scope: J=diag(+1,-1) is LINEAR orthogonal and background is J fixed.</li>
+<li><code>VIIC-E4-B4-147</code> (E4, claims [146, 147]): Smooth nonlinear Born involution invalidates ordinary third-vertex parity — <strong>PASS</strong>. Witness: h(B)+h=0, f(B)-f=0; B(0)=0, Bprime(0)=-1, f'''(0)=12; constant Gamma_s=f makes reflected family C^infinity. Scope: Actual nonlinear B smooth local; DOES NOT attack the linear orthogonal J case of #144; impacts field derivative parity only, not #146 jet parity or beta equivariance.</li>
+<li><code>VIIC-E3-B4-148149</code> (E3, claims [148, 149, 150]): Born-reflected beta anticommutation and symmetric stability spectrum — <strong>PASS</strong>. Witness: A=[[0, 2], [3, 0]], J=[[1, 0], [0, -1]], characteristic polynomial=lambda**2 - 6. Scope: Autonomous flow tangent at a true beta fixed point; no conclusion about physical QG relevance count.</li>
+<li><code>VIIC-E3-B4-151</code> (E3, claims [151]): Moving-field-chart EAA convective derivative and regulator connection — <strong>PASS</strong>. Witness: LHS=b<em>exp(b</em>ell)/(2<em>(m + exp(b</em>ell))), RHS=b<em>exp(b</em>ell)/(2<em>(m + exp(b</em>ell))). Scope: 1d positive Gaussian, S=e^{a ell}, R=e^{b ell}; full transformed measure/Jacobian retained.</li>
+<li><code>VIIC-E3-B4-154156</code> (E3, claims [154, 156]): Autonomous convergent limit and d=4 Newton stationary anomalous dimension — <strong>PASS</strong>. Witness: g_N=q, eta_N=-2, beta_g=0; T_s x=e^s x fixes x=0. Scope: Newton identity is necessary only, not a gravitational fixed-point construction.</li>
+<li><code>VIIC-E3-B4-157</code> (E3, claims [157, 158]): Laurent--Legendre fixed-function Euler scaling — <strong>PASS</strong>. Witness: f=rr<strong>2 + 3*rr + 4; p=rfprime-f=rr</strong>2 - 4; balance residual=0. Scope: Stationary dimensionless profile and couplings; does not prove RG invariance of profile family.</li>
+<li><code>VIIC-E3-B4-160</code> (E3, claims [159, 160, 175]): Exact 2-point conditional blocking: source first and second derivative — <strong>PASS</strong>. Witness: Seff_a=p=exp(-a)/(1 + exp(-a)); Seff_aa=-p(1-p), whereas E[S_aa]=0. Scope: Exact blocking composition; higher responses include connected covariance terms, not a naive linear source-derivative pushforward.</li>
+<li><code>VIIC-E3-B4-161</code> (E3, claims [161, 177]): Simple Schur pole: energy derivative and complement-source term — <strong>PASS</strong>. Witness: D=[[z,1],[1,1]], z<em>=1, j=(1,2); j^T D^-1 j=(4</em>z0 - 3)/(z0 - 1); residue=1. Scope: Finite real Hermitian analytic quadratic branch; NOT an interacting physical electron pole.</li>
+<li><code>VIIC-E3-B4-162</code> (E3, claims [162, 163]): Exponential-integral shell threshold integration — <strong>PASS</strong>. Witness: d/dlogk E1(m²/k²) = 2exp(-m²/k²); residual=0. Scope: Primitive Gaussian heat representative, not universal exact interacting RG function.</li>
+<li><code>VIIC-E3-B4-164</code> (E3, claims [164]): One-current positive spectral measure Fourier/difference quotient — <strong>PASS</strong>. Witness: mu=delta_(Delta=2), chi=4/(4+omega²), (chi0-chi)/omega²=1/(omega**2 + 4), endpoint=1/4. Scope: Finite normalized vacuum; no zero atom, contact held separate.</li>
+<li><code>VIIC-E3-B4-164G</code> (E3, claims [164, 165]): Gapless current spectral law can have finite inverse-cubic moment — <strong>PASS</strong>. Witness: dmu=Delta^4 dDelta on (0,1): int Delta^-1 dmu=1/4, int Delta^-3 dmu=1/2; inf supp=0. Scope: Mathematical non-gapped positive spectral model; no asserted native QCD realization.</li>
+<li><code>VIIC-E4-B4-165</code> (E4, claims [165]): Uniform inverse-cubic moment bound does not imply IR uniform integrability — <strong>PASS</strong>. Witness: dmu_L=(1/L)^3 delta_(1/L), cubic moment=1, inverse first-&gt;0; values=[(2, 1, 1/4), (3, 1, 1/9), (10, 1, 1/100), (100, 1, 1/10000)]. Scope: Confirms printed necessity of UI; not a refutation of #165, which explicitly assumes UI.</li>
+<li><code>VIIC-E3-B4-170</code> (E3, claims [169, 170, 171]): Finite vectorlike scalar derivative includes determinant-weight sea covariance — <strong>PASS</strong>. Witness: two gauge configs D1=m+1 D2=m+3, det weights D_i: mean G=2/(2<em>aa + 4), mean G²=(1/(aa + 3) + 1/(aa + 1))/(2</em>aa + 4), cov(m=1)=1/72; derivative identity residual=0. Scope: One-dimensional positive determinant toy model; tests exact normalized expectation identity, not native overlap source occurrence.</li>
+<li><code>VIIC-E3-B4-173</code> (E3, claims [172, 173, 174]): Unique finite scheme matrix coordinate comparison on noncritical chart — <strong>PASS</strong>. Witness: VBH=[[2, 0], [0, 3]], VS=[[1, 2], [3, 4]], C=[[1/2, 2/3], [3/2, 4/3]]. Scope: Common already-matched scalar source subspace and projection; not a calculation of physical conversion.</li>
+<li><code>VIIC-E3-B4-176</code> (E3, claims [176]): Observable converges despite alternating distinct cluster states — <strong>PASS</strong>. Witness: Alternating pure states |e1&gt;,|e2&gt; on M2, identity observable value 1 in both; sigma_z differs. Scope: Shows theorem scope for a single bounded observable, not unique QFT state.</li>
+<li><code>VIIC-E3-B4-181</code> (E3, claims [180, 181]): Numerical stationary H/T rate benchmark — <strong>PASS</strong>. Witness: 35.7732/(5.0457e9)=29811/4204750000000, decimal=7.08983887270349e-09. Scope: Stationary tangent only, not actual dynamical post-K16 H or sufficient gamma&gt;&gt;H.</li>
+<li><code>VIIC-E4-B4-183</code> (E4, claims [167, 183, 184, 186, 188]): K16 resonance fixes p but does not mathematically select RG shell k — <strong>PASS</strong>. Witness: For a=1,n=1,m_s=2, p=1. Primitive Gaussian shell P=1,Lambda=10 valid at k=1: -exp(-1) + exp(-1/100); at k=1/2: -exp(-4) + exp(-1/100). Nothing in 2n=a m_s selects one.. Scope: Abstract jointly admissible kinematics+independent RG shell comparator; not proof that actual BH same-owner intertwiner cannot exist. Tests missing source-specific k=p map.</li>
+<li><code>VIIC-E3-B4-184</code> (E3, claims [184]): Lower-branch K16 hard/heat scale ratio — <strong>PASS</strong>. Witness: kstar/kh=1/(48<em>pi); log ratio=-log(48pi) to O(alpha^-2). Scope: Assumes separately established k</em>=m/2 and selected common heat normalization.</li>
+<li><code>VIIC-E3-B4-185186</code> (E3, claims [185, 186, 187, 189]): Scale-spurion source derivative and scalar-to-two-vector leading WKB width — <strong>PASS</strong>. Witness: dLcanon/dtau at tau=0=-bet/(2<em>g0); lambda_exact=2</em>bet/(Ms<em>sqrt(alpha)</em>g0); width/per gauge d_i=bet<strong>2*m</strong>3/(16<em>pi</em>Ms<strong>2<em>alpha</em>g0</strong>2). Scope: ALGEBRA ONLY conditional on tau being actual physical scalaron-source pullback; k=p matching separately open; width leading source/WKB domain.</li>
+<li><code>VIIC-E3-B4-191</code> (E3, claims [190, 191, 192]): Petersen real A5 isotypic dimensions and no forced spectral gap — <strong>PASS</strong>. Witness: A5 irreps dimensions 4,5,3,3prime; choosing b4=b5=b3=b3prime gives B=b I with identically zero energy differences. Scope: Tests commutant structure and finite-to-continuum non-promotion; does not claim Petersen geometry never couples to physical QCD.</li>
+</ul>
+<h3>Batch 5: 18 checks</h3>
+<ul>
+<li><code>VIIC-E4-B5-001</code> (E4, claims [196]): GNS vacuum-norm-only locality counterexample — <strong>PASS</strong>. Witness: {'vacuum_C_norm': np.float64(0.0), 'other_cyclic_C_norm': np.float64(2.0), 'commutator_norm': np.float64(2.8284271247461903)}. Scope: Theorem explicitly calls for all dense GNS sandwiches; this shows why vacuum-only is insufficient; not an actual native locality test.</li>
+<li><code>VIIC-E3-B5-002</code> (E3, claims [200, 222]): 3D fixed-band radial cutoff kernel exact normalization — <strong>PASS</strong>. Witness: {'closed': 0.09120951415220274, 'radial_integral': 0.09120951415220271}. Scope: Free canonical fixed-band comparator only, no claim about interacting born observable algebra.</li>
+<li><code>VIIC-E3-B5-003</code> (E3, claims [200, 222]): Fixed-band kernel regular origin normalization — <strong>PASS</strong>. Witness: {'delta_0': 0.263857249068588}. Scope: Regular value of spatial band projector, not local Dirac delta.</li>
+<li><code>VIIC-E3-B5-004</code> (E3, claims [204]): Gaussian Wick-square cumulants via independent differentiation — <strong>PASS</strong>. Witness: {'derivatives': ['4.5', '27.0', '243.0', '2916.0'], 'formula': ['4.5', '27.0', '243.0', '2916.0']}. Scope: Correlated nonlinear composite of a Gaussian distribution; does not prove underlying dynamics interacting.</li>
+<li><code>VIIC-E3-B5-005</code> (E3, claims [206]): Gapped finite spectral projector HS derivative bound — <strong>PASS</strong>. Witness: {'g': 3.0, 'HS_derivative': np.float64(0.23570226039551584), 'bound': np.float64(0.23570226039551587)}. Scope: Two-level saturated control; constant rank on gapped Hermitian C1 source path.</li>
+<li><code>VIIC-E3-B5-006</code> (E3, claims [207]): Finite Ward coefficient telescope — <strong>PASS</strong>. Witness: {'lhs': '4/5', 'rhs': '4/5', 'dL': '0'}. Scope: Fully finite real rational instance, tests algebraic error terms only; quantum measure invariance remains conditional.</li>
+<li><code>VIIC-E3-B5-007</code> (E3, claims [208]): Positive fixed-block logarithm and normalized observable bounds — <strong>PASS</strong>. Witness: {'delta': 0.15000000000000036, 'm': 2.0, 'logerr': 0.05129329438755059, 'logbound': 0.07796154146971206, 'readout_delta': 0.03449328449328451, 'readout_bound': np.float64(0.15000000000000036)}. Scope: Fixed finite boundary block; does not assert growing N control.</li>
+<li><code>VIIC-E3-B5-008</code> (E3, claims [209, 210]): Finite positive source half-plane and logarithm comparison — <strong>PASS</strong>. Witness: {'Re_Z': 5.312326526134271, 'half_plane_lower_bound': np.float64(3.0870282395082285), 'relative_eps': 0.010000000000000009, 'log_diff': 0.0028495152658903487, 'log_bound': 0.020966747939574794}. Scope: Fixed positive scalar-source measure; noncommuting ordered claims separately checked.</li>
+<li><code>VIIC-E3-B5-009</code> (E3, claims [210]): Total-variation fourth cumulant ordered-partition bound — <strong>PASS</strong>. Witness: {'fourth_cumulant_delta': 0.02832345324111486, 'TV': 0.004809619238476892, 'printed_upper': 1.5000000000000013, 'ordered_partitions_n4': 75}. Scope: Single bounded real variable, positive normalized finite weights.</li>
+<li><code>VIIC-E3-B5-010</code> (E3, claims [211]): VII-A N=96 native heat-tail to VII-C n&lt;=4 cumulant margin — <strong>PASS</strong>. Witness: {'epsN': '6.34917621752691733578783e-76', '150_epsN': '9.52376432629037600368175e-74', 'threshold': '9.6e-74'}. Scope: Uses the printed upstream VII-A analytic heat tail and N&lt;=96, not an external free parameter.</li>
+<li><code>VIIC-E3-B5-011</code> (E3, claims [212]): Noncommuting nonnormal evolution accretivity lower bound — <strong>PASS</strong>. Witness: {'beta': np.float64(0.5179540791987416), 'Re_U_min_eigenvalue': 0.8815448252006648, 'lower_bound': 0.5175975111527662, 'U_norm': np.float64(1.2091136232551163)}. Scope: Finite 2x2 noncommuting piecewise ODE control; not complete general proof or native gauge evolution.</li>
+<li><code>VIIC-E4-B5-012</code> (E4, claims [213]): Ordered sources distinguish noncommuting slot order — <strong>PASS</strong>. Witness: {'omega_sx_sz': -0.4j, 'omega_sz_sx': 0.4j, 'budget': 0.34625266550364087, 'ReZ': 1.0191140595646286}. Scope: Actual finite algebra and normalized positive state; no equality with separately declared action-source functional.</li>
+<li><code>VIIC-E3-B5-013</code> (E3, claims [214]): Ordered-word factorial error controls source and log differences — <strong>PASS</strong>. Witness: {'word_delta_n1_to4': [0.0, 0.4, 0.0, 0.4], 'budget': 0.024305729481910347, 'Z_delta': 0.011502648918523081, 'log_delta': 0.011303600310895194, 'log_upper': 0.036530509500159826}. Scope: Two finite positive 2x2 presentations of the same bounded operator alphabet; no refinement claim.</li>
+<li><code>VIIC-E4-B5-014</code> (E4, claims [215]): Sharp universal positive-source chart radius π/2 — <strong>PASS</strong>. Witness: {'cosh_i_pi_2': (6.123233995736766e-17+0j)}. Scope: Universal boundary example, no pointwise claim that every source hits a zero.</li>
+<li><code>VIIC-E3-B5-015</code> (E3, claims [225, 226]): Gapless current-weighted uniform IR and temporal tail sufficient criterion — <strong>PASS</strong>. Witness: {'dmu': 'Delta^4 dDelta on (0,1)', 'eps': 1.0, 'M': 1.0, 'W': 0.2, 'IR_0.1': 0.005000000000000001, 'IR_bound_0.1': 0.1, 'spectral_inverse_cubic': 0.5, 'temporal_tail_T2': 0.834625168363774, 'temporal_bound_T2': 3.0}. Scope: Positive gapless synthetic current distribution only; does not instantiate native interacting QCD current.</li>
+<li><code>VIIC-E3-B5-016</code> (E3, claims [225]): Positive current spectral/Tonelli exact temporal integral — <strong>PASS</strong>. Witness: {'spectral': 0.22962962962962963, 'temporal': 0.22962962962962963}. Scope: Contact term Z_loc is independent and deliberately not counted in the spectral integral.</li>
+<li><code>VIIC-E3-B5-017</code> (E3, claims [219]): Unlabelled D20 inherited one-loop rational group-index arithmetic — <strong>PASS</strong>. Witness: {'bY': '41/6', 'b2': '-19/6', 'b3': '-7', 'b1': '41/10'}. Scope: These coefficients presuppose the inherited representation indices and admissible perturbative threshold interval, not predicted low-energy couplings.</li>
+<li><code>VIIC-E4-B5-219-source-scope-attack</code> (E4, claims [217, 219, 223]): Source-quantifier mismatch between bounded main theorem and downstream generic status reclassification — <strong>PASS</strong>. Witness: Main theorem lines 6768–6775 says field/scattering claim-scoped; downstream corollary lines 6790–6802 quantifies over fields, propagators, Ward and couplings without making each required field/source/measure/scheme certificate part of its theorem antecedent. A narrower reading that retains every claim-specific certificate survives.. Scope: An E4 proof-use/quantifier objection, not a native physical counterexample or a refutation of independently certified sectors..</li>
+</ul>
+<h2>5. Higher-level nonnamed source-interface and provenance checks</h2>
+<ul>
+<li><strong>D20 one-loop rational coefficient check</strong> (source 6873–6896): the inherited three-family/higgs one-loop trace arithmetic returns <code>bY=41/6</code>, <code>b2=−19/6</code>, <code>b3=−7</code>, <code>b1=41/10</code>. This is not a physical low-energy coupling matching claim and does not select perturbative thresholds.</li>
+<li><strong>Two-stage reconstruction status</strong> (source 6927–7060): common C* cluster-state compactness and RP are correct conditional statements, whereas full E(4), local test function distributional support, field OS regularity and/or operational detector leakage remain separate certificates. Do not globally propagate G-0004 into the independently conditional later bounded-OS route.</li>
+<li><strong>Current-weighted gapless path</strong> (source 7063–7140): Tonelli <code>2∫Δ^−3dμ = ∫t² C(t)dt</code>; weighted inverse <code>(3+ε)</code> bound controls IR and long-time tails and finite positive spectral mass controls UV. No full-sector gap is required. Physical current/Hamiltonian and temporal contact remain open for the actual selected QCD member.</li>
+<li><strong>Finite-source math</strong> (source 6312–6731): fixed-block approximation, positive weight source chart, noncommuting ordered-slot generator, and sharp β&lt;π/2 bound independently checked. Growing-volume extensive sources, independently specified action-sources, unbounded/contact insertions and same-phase uniqueness do not follow from that fixed finite budget.</li>
+<li><strong>Physical selection discipline</strong>: finite heat RG shell <code>k</code>, WKB K16 produced momentum <code>p</code>, and physical source/action scalaron τ remain separately typed; K16 resonance does not derive <code>k=p</code> without an actual bridge. The bounded net is not itself an arbitrary unbounded field, Ward measure or 1PI vertex. No conventional mechanism was demanded to replace the native observable.</li>
+<li><strong>Reference-owner correction</strong>: label <code>p1b:thm:blocking</code> actually occurs in the current Paper I-C technical companion, lines 20423–20470; its absence from Paper I-B source alone is not a missing mathematical theorem. Similarly previously located Paper I-C/Paper III-G moved technical labels remain references not new audits.</li>
+</ul>
+<h2>6. Global DAG merge discipline and query contract</h2>
+<p>Final release registers one <code>DAG/AuditLayer/Paper7C-v1_5/</code> with <strong>227 claim dispositions, 11 unique first-origin issues, source and proof evidence, canonical local condition references, typed dependency edges, proof route OR/AND guards and impact paths</strong>. The global combined material graph incorporates reviewed source-use edges only; citation/context edges remain nonpromoting; unresolved inferred condition edges carry explicit undischarged status. Existing canonical mathematical status flags are not bulk-promoted. The atlas source TeX and previous companion audit layers remain unchanged.
+Use <code>DAG/ActiveRelease-v1_122.json</code> to locate <code>CurrentRegisteredAuditLayers-v1_122.json</code>, <code>CombinedGraphIndex-v1_122.json</code>, <code>CombinedMaterialEdges-v1_122.json</code> and <code>CombinedProofRoutes-v1_122.json</code>. Query a label under <code>nodes</code>, walk <code>backward</code> through reviewed material <code>from→to</code> edges, join canonical source-specific conditions in <code>AuditLayer/Paper7C-v1_5/AssumptionRegistry.json</code>, inspect route <code>blocked_by</code> and per-claim <code>status</code>; forward gap impacts are limited to reviewed source-material ancestry with bypass guards, never raw citations. For human-readable details this file is the sole active Paper7C proof-chain audit file.</p>
+<p><strong>Final classification: <code>FULLY_AUDITED_WITH_OPEN_GAPS</code> for the paper source census.</strong> Open analytic and physical certificates are faithfully retained; no paper TeX changes or speculative gap repair were made.</p>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

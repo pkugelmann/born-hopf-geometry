@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper6B-ProofChainAudit-v1_11 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper6B-ProofChainAudit-v1_11 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper6B ProofChainAudit v1_11</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper6B-ProofChainAudit-v1_11.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Paper Paper6B current-source normalization integration — 18 November 2026</h1>
+<p><strong>Current paper:</strong> <code>Paper6B-CosmologyReadouts-v1_211.tex</code> (SHA-256 <code>bf0b223dc2ff43c5a1abc95de725125b4333d22c3edb0e7944920de2a25c5a2b</code>).<br />
+<strong>Framework:</strong> <code>Paper00-PapersMinimal-v3_036.zip</code>; <strong>scope:</strong> TARGETED SOURCE INTEGRATION AND BOUNDED MATH CHECKS, NOT A FULL NEW PAPER AUDIT.<br />
+<strong>Source claims:</strong> <code>p9:thm:late-density-ratio-repaired; p9:rem:v3036-cosmology-newton-dependency</code>.<br />
+<strong>Disposition:</strong> Unchanged conditional cosmology arithmetic, explicit physical Newton source owner dependence, and active-vacuum vs restricted terminal-root distinction.<br />
+<strong>Evidence:</strong> <code>Paper00-PlanckCurvatureConsistency-v1_5.md</code> and <code>Paper00-PlanckCurvatureConsistencyChecks-v1_4.py</code> (91/91 scoped checks, independently rerun).<br />
+<strong>Ownership:</strong> The earliest unresolved source-native physical source/metric bridge remains <code>p3f:prop:v2211-newton-owner-matching</code>; no new axioms, no independent issue duplicate, no physical closure promotion. Historical issue status and prior proofs are preserved verbatim below.</p>
+<hr />
+<h2>Historical audits and prior scoped updates (unchanged content)</h2>
+<h1>Paper6B — current-source repair and bounded-check addendum (18 November 2026)</h1>
+<p><strong>Current source:</strong> <code>Paper6B-CosmologyReadouts-v1_210.tex</code>; SHA-256 <code>65ae84a9f18517b18c7fd2760f0006456e0cdaa58b1baa95187369f1fa9e48a4</code>.
+<strong>Framework:</strong> Paper00-PapersMinimal-v3_032.zip; <strong>DAG:</strong> Paper00-DAGAtlas-v1_182.zip; <strong>Audit:</strong> Paper00-ProofChainAudits-v1_74.zip.
+<strong>Scope:</strong> TARGETED SOURCE REPAIR / SELECTED CLAIM LOCAL RECHECK, <strong>not a new full-paper E3/E4 audit</strong>. Historical text and findings below are preserved. Old open verdicts are not erased; consult the effective status ledger <code>Paper00-ClosedGapCrosswalk-v1_4.json</code>.</p>
+<p><strong>Repair:</strong> 11 issue-specific local math guards, one source-owner pointer correction; K48 final octet vs historical J2, Yukawa beta, BBN and domain fixes.</p>
+<p><strong>Evidence:</strong> <code>Paper00-MultiDomainReverificationBatch2-v1_1.md</code>, source patch diff and 38/38 combined scoped checks. Physical action, state, pole, history and observational occurrence remain conditional unless independently proved from actual owners.</p>
+<hr />
+<h2>Previous audit preserved as historical document</h2>
+<h1>Paper6B — CC18 current-source scope rebase (Paper6B-ProofChainAudit-v1_9.md)</h1>
+<p><strong>Latest source:</strong> <code>Paper6B-CosmologyReadouts-v1_209.tex</code>; SHA-256 <code>2b788b6c1e288f9ac395b24418ffd0a23d3718c34ead645d87e3ec056173876b</code>.  <strong>Framework release:</strong> <code>Paper00-PapersMinimal-v3_019.zip</code> based on v3.018.  <strong>DAG release:</strong> <code>Paper00-DAGAtlas-v1_155.zip</code> based on v1.154.  <strong>Audit collection:</strong> <code>Paper00-ProofChainAudits-v1_68.zip</code> based on v1.67.</p>
+<p><strong>Scope and grade:</strong> <code>SOURCE_INTEGRATED_LOCAL_MATH_CHECKS / NEW_CLAIMS_NOT_FULLY_AUDITED</code>.  The historical audit below remains valid only for the original source body and the exact original manuscript version it names.  The added CC18 proof statements have formal source labels, precise dependency owners and reproducible finite/exact checks, but <strong>not a fresh exhaustive E3/E4 audit for this entire revised paper</strong>.  No old issue, open physical obligation, or conditional status is silently closed.  No physical occurrence/observable was promoted.</p>
+<p>New source-labelled mathematical result(s):</p>
+<ul>
+<li><code>p6b:cor:cc18-degree-six-chamber-bridge</code> — source-integrated auxiliary comparison, no physical-owner certificate.</li>
+</ul>
+<p><strong>Local evidence:</strong> <code>DAG/SourceUpdates/DAGCrossConnections-v1_9/</code> contains the independent exact-cubature, exact-block, independent facet-geometry and independent nonet reconstruction scripts from supplement v1.9; the release manifest records their replay status and the exact updated source anchors.  The predecessor audit, source text before the appended CC18 block, and all predecessor issue ledgers are preserved as provenance; source hash changed and must not be mistaken for E0 equality to the old manuscript.</p>
+<hr />
+<h2>Historical audit retained verbatim (not current-version re-certification)</h2>
+<h1>Source migration and repair-integration addendum — Paper6B-ProofChainAudit-v1_8.md</h1>
+<p><strong>Integration release:</strong> <code>Paper00-PapersMinimal-v3_007.zip</code>, 14 November 2026.
+<strong>Current paper source:</strong> <code>Paper6B-CosmologyReadouts-v1_207.tex</code>.
+<strong>Status:</strong> <code>SOURCE_INTEGRATED; GLOBAL_SOURCE_REAUDIT_PENDING</code>. An inherited historical audit is not a correctness certificate for the newer current manuscript.
+<strong>Evidence policy:</strong> Local algebraic proofs and scoped tests do not discharge physical source/observable interfaces or automatically alter the canonical proof DAG.</p>
+<hr />
+<h2>Historical source-bound audit: Paper6B-ProofChainAudit-v1_7.md</h2>
+<h1>Paper VI-B source repair addendum — 13 November 2026 (v1.7)</h1>
+<p><strong>Current source:</strong> <code>Paper6B-CosmologyReadouts-v1_201.tex</code> SHA256 <code>5635a6651aa02acd0a10542d868e2f41904b349fadcf48fa6c868178146133e9</code> / Framework v2.379. The audit baseline remains <code>FULLY_AUDITED_WITH_OPEN_GAPS</code>. This addendum verifies exactly three source defect repairs; no new all-manuscript audit or physical occurrence is claimed.</p>
+<table>
+<thead>
+<tr>
+  <th>Root finding</th>
+  <th style="text-align:right">New source line</th>
+  <th>Mathematically repaired result</th>
+  <th>Lifecycle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-VIB-K16-FLUX-001</code></td>
+  <td style="text-align:right">507</td>
+  <td>Continuous positive Hessian allows nonzero C1 curvature crossing; inverse-band clock derived from existing VI-A crossing</td>
+  <td>SOURCE_REPAIRED / SCOPED_PROOF</td>
+</tr>
+<tr>
+  <td><code>BH-VIB-OPTICAL-CURVE-004</code></td>
+  <td style="text-align:right">1059</td>
+  <td>Fixed closed-radius damping angle scales with <code>sqrt(T) sin(chi)/sin(Tchi)</code>, not a flat homothety; exact logarithmic derivative</td>
+  <td>SOURCE_REPAIRED / SCOPED_PROOF</td>
+</tr>
+<tr>
+  <td><code>BH-VIB-ABUNDANCE-ELASTICITY-012</code></td>
+  <td style="text-align:right">3726</td>
+  <td>Weighted elasticity is necessary and sufficient for a total product law; arbitrary positive C1 partition of total</td>
+  <td>SOURCE_REPAIRED / SCOPED_PROOF</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Evidence:</strong> <code>Paper00-AuditRepairBatch-v1_8.md</code> and <code>Proofs/Paper00-ObservableRepairBatch8-v1_1-verify.py</code> / <code>.json</code> in DAG Atlas v1.131. Independent 68/68 scoped checks passed. Four new equation labels. All previous source/evidence records and other open conditions are preserved historically, not bulk-upgraded. The <code>T</code> optical diagnostic, actual cosmic scalaron partition, and unrelated physical source conditions remain outside these theorem closures.</p>
+<hr />
+<h2>Historical report, preserved verbatim below</h2>
+<h1>Repair addendum — Paper6B / 13 November 2026</h1>
+<p><strong>Current manuscript:</strong> <code>Paper6B-CosmologyReadouts-v1_200.tex</code> (SHA-256 <code>7075c6e505e490b81455bca2a435e2bf77b1bf930910274ca12f8b0a6db75d84</code>)<br />
+<strong>Historical report preserved:</strong> <code>Paper6B-ProofChainAudit-v1_5.md</code> verbatim below.<br />
+<strong>Disposition:</strong> Scoped source repairs, not complete independent mathematical re-audit; all prior DAG proof/physical statuses unchanged.</p>
+<table>
+<thead>
+<tr>
+  <th>Issue</th>
+  <th>Current source line(s)</th>
+  <th>Change</th>
+  <th>Disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-IIIE-G-0004</code></td>
+  <td><code>Paper6B-CosmologyReadouts-v1_200.tex:2302</code></td>
+  <td>Carrier-four D_4(C_2)/Q is scheme dependent; 0.825729956674 is the REG0 numeric value, propagated to VI-A/VI-B.</td>
+  <td>SOURCE_CORRECTED; REAUDIT PENDING / IMPORTED GATE RETAINED</td>
+</tr>
+</tbody>
+</table>
+<p>See <code>Paper00-AuditRepairBatch-v1_3.md</code> and the 28/28 scoped controls in the current atlas. Source hashes and line numbers appearing in the original text below refer to its <strong>previous source edition</strong>; original OPEN flags are historical and have not been changed or globally promoted.</p>
+<hr />
+<h2>Historical audit baseline (unaltered original text)</h2>
+<h1>Paper VI-B — source-frozen rigorous verification DAG audit, Batches 1–5</h1>
+<p><strong>Artifact:</strong> <code>Paper6B-ProofChainAudit-v1_5.md</code><br />
+<strong>Target:</strong> <code>Paper6B-CosmologyReadouts-v1_199.tex</code> (5,970 lines; framework v2.370) in <code>Paper00-PapersMinimal-v2_371.zip</code>.<br />
+<strong>DAG source freeze:</strong> <code>Paper00-DAGAtlas-v1_113.zip</code> (historical graph flags are not proof certificates).<br />
+<strong>Protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code>, overriding any gap-closure actions in the older ProofChainAuditProtocol.<br />
+<strong>Scope:</strong> Paper VI-B ONLY; the checked imported VI-A/VI-C/III-A/Paper IV/V-C statements are prerequisite verification, not independent audits.<br />
+<strong>Coverage:</strong> full original source lines 86–5970, <strong>136/136 formal environments</strong> (Batches 1–5), plus substantive unnumbered physical/readout and proof-use equations. Includes 24 formal environments from lines 4741–5970 now source-reviewed. Evidence status is claim-specific, not a blanket proof certificate.<br />
+<strong>Evidence method:</strong> one verifier, separate E1 source-replay / E3 independent exact computation / E4 adversarial tests. <strong>No separate independent agents available.</strong> Do not elevate E0 label reconciliation to mathematical verification.</p>
+<h2>Formal-claim census (cumulative)</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">#</th>
+  <th style="text-align:right">Source lines</th>
+  <th>Claim label or synthetic ID</th>
+  <th>Verdict</th>
+  <th>Replay, independence and domain note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">139–155</td>
+  <td><code>p9:cor:v164-local-rar-g26-status</code></td>
+  <td>REPRODUCED</td>
+  <td>Source matches later local-chain theorem at 4184ff: local structural descendant, actual crossing and G26-GLOBAL distinct. Specific physical history not supplied here.</td>
+</tr>
+<tr>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">271–280</td>
+  <td><code>p9:thm:second-dependency-criterion</code></td>
+  <td>REPRODUCED</td>
+  <td>Native-output criterion is a source-type/constructor grammar; conditional on licensed prefix and VI-A packet, not a theorem of cosmological occurrence.</td>
+</tr>
+<tr>
+  <td style="text-align:right">3</td>
+  <td style="text-align:right">291–428</td>
+  <td><code>p9:rem:inherited-residual-frontier</code></td>
+  <td>FORMALIZED</td>
+  <td>Distinct actual certificates: action-contact, excess character, PQTI, cell matching, physical Newton matching; branch/state/kinetic regimes retained. Contradictory unqualified cell rewrites elsewhere are issue 002.</td>
+</tr>
+<tr>
+  <td style="text-align:right">4</td>
+  <td style="text-align:right">432–441</td>
+  <td><code>p9:def:v236-branch-parametric-packet</code></td>
+  <td>REPRODUCED</td>
+  <td>Definition of conditional Γ-packets; does not identify a physically selected exceptional subgroup.</td>
+</tr>
+<tr>
+  <td style="text-align:right">5</td>
+  <td style="text-align:right">443–451</td>
+  <td><code>p9:rem:v237-generated-exceptional-stage-packet</code></td>
+  <td>REPRODUCED</td>
+  <td>Imports mobile-Clifford branch's structured descendants, other Γ atlases remain comparisons. No independent local selection.</td>
+</tr>
+<tr>
+  <td style="text-align:right">6</td>
+  <td style="text-align:right">453–462</td>
+  <td><code>p9:rem:v236-validation-not-reselection</code></td>
+  <td>REPRODUCED</td>
+  <td>Dependency arrow is readout→test, not likelihood→constituted role. Source makes comparison/physical occurrence distinction.</td>
+</tr>
+<tr>
+  <td style="text-align:right">7</td>
+  <td style="text-align:right">466–492</td>
+  <td><code>p9:prop:hierarchy-non-reselection</code></td>
+  <td>REPRODUCED</td>
+  <td>Exact τ_j=−log(1−j/7) inverts q=7(1−e^−τ), and (q_j,K_j)=(j,8j). The imported physical owner and action/cell guard remain prerequisite; observational maps cannot modify these by composition.</td>
+</tr>
+<tr>
+  <td style="text-align:right">8</td>
+  <td style="text-align:right">505–526</td>
+  <td><code>p9:cor:k16-timewidth-retired</code></td>
+  <td>INCONSISTENT</td>
+  <td><strong>Issue 001</strong>: C¹ curvature does NOT force dot R=0; the valid surviving no-intrinsic-width claim remains independent. Explicit native cyclic crossing upstream has dot R&lt;0.</td>
+</tr>
+<tr>
+  <td style="text-align:right">9</td>
+  <td style="text-align:right">528–567</td>
+  <td><code>p9:thm:v148-k16-ward-retained-history-frontier</code></td>
+  <td>REPRODUCED</td>
+  <td>Exact cubic Ward relation traced to III-F 6220–6244; source seed to VI-B 2914–2950, imports VI-A root/history. No proof that every sector/source block is nonzero or fully thermalized.</td>
+</tr>
+<tr>
+  <td style="text-align:right">10</td>
+  <td style="text-align:right">569–593</td>
+  <td><code>p9:rem:v148-k16-sector-aware-thermalization</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>For block-preserving H on M11⊕M4, Gibbs targets ρβ,p have arbitrary conserved central p; no automatic p=11/15. Finite blocks need separate kinetic convergence evidence.</td>
+</tr>
+<tr>
+  <td style="text-align:right">11</td>
+  <td style="text-align:right">595–613</td>
+  <td><code>p9:lem:v180-gibbs-energy-injectivity</code></td>
+  <td>VERIFIED</td>
+  <td>E3 derivative dE/dβ=−Varρβ(H)&lt;0 for finite β when H is not scalar on the chosen block; strict scalar H control has zero variance. Block weights are not selected by E(β) on another block.</td>
+</tr>
+<tr>
+  <td style="text-align:right">12</td>
+  <td style="text-align:right">620–653</td>
+  <td><code>p9:cor:common-history-readout-tuple</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>E1 image of common histories is subset of product of marginal images; E3/E4 example h∈{0,1}, F1=F2=h shows strict inclusion. Licensed tuple and well-posedness are stated conditions; source IV/II-A and III-A ancestry limited to actual scope.</td>
+</tr>
+<tr>
+  <td style="text-align:right">13</td>
+  <td style="text-align:right">795–821</td>
+  <td><code>p9:cor:v1108-full-scalar-readout</code></td>
+  <td>REPRODUCED</td>
+  <td>E3 solve dΨ+3Hχ=−αr, χ=−αq, Ψ−Φ=2απ giving boxed potentials; complete source/metric response and invertible W imported from VI-A 4690–4805, not a universal moving-boundary result.</td>
+</tr>
+<tr>
+  <td style="text-align:right">14</td>
+  <td style="text-align:right">887–907</td>
+  <td><code>p9:prop:v191-kms-to-sky-interface</code></td>
+  <td>REPRODUCED</td>
+  <td>The exact harmonic bridge exists in VI-C 2376ff, not VI-A as claimed: <strong>issue 003</strong>, an attribution defect. LΓL* is a downstream positive covariance for linear L; no kMS=ℓ promotion. Visibility/window state are independent consumed data.</td>
+</tr>
+<tr>
+  <td style="text-align:right">15</td>
+  <td style="text-align:right">909–934</td>
+  <td><code>UNLABELED:Paper6B:remark:909</code></td>
+  <td>FORMALIZED</td>
+  <td>Observer/axis/pivot/likelihood interfaces distinct; Gaussianity and optimized axis statistics not automatically supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:right">16</td>
+  <td style="text-align:right">949–970</td>
+  <td><code>p6b:prop:v322-angular-six</code></td>
+  <td>VERIFIED</td>
+  <td>Independent exact construction of twenty antipodal dodecahedral threefold axes; overlap squares (1, 1/9×6, 5/9×3). Exact Legendre arithmetic yields T6(u)=11/81, T6=(231/160)H6, mean T6²=11/1053 and power 143/(324π); no observed C6 prediction.</td>
+</tr>
+<tr>
+  <td style="text-align:right">17</td>
+  <td style="text-align:right">982–990</td>
+  <td><code>UNLABELED:Paper6B:remark:982</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>H15 orientation/parity follows degree fifteen (importing VI-C invariant-ring theorem); antipodal ν annihilates every odd angular harmonic, irrespective of sky transfer.</td>
+</tr>
+<tr>
+  <td style="text-align:right">18</td>
+  <td style="text-align:right">992–1004</td>
+  <td><code>p6b:cor:v322-sky-firewall</code></td>
+  <td>REPRODUCED</td>
+  <td>The axis-only 5-design cannot furnish ℓ=2/3 amplitudes; conditional source, transfer and observer words remain necessary for CMB claims.</td>
+</tr>
+<tr>
+  <td style="text-align:right">19</td>
+  <td style="text-align:right">1044–1055</td>
+  <td><code>p9:prop:external-optical-homothety-diagnostic</code></td>
+  <td>INCONSISTENT</td>
+  <td>Correct r_D^2∝H^-1 scaling; D_A∝T is false on an S^3 fixed-radius comparison if only H^-1 changes. Exact closed counterexample: χ=π/6,T=2 gives θ_D ratio sqrt(2/3), not 1/sqrt(2). Issue 004 is a missing curvature-homothety condition, not a native prediction.</td>
+</tr>
+<tr>
+  <td style="text-align:right">20</td>
+  <td style="text-align:right">1100–1110</td>
+  <td><code>p9:prop:present-slice-no-go</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Autonomous dust conservation has arbitrary rho_m,P and observation offset d; proof gives no unique present slice. E3 N↔rho_m,P invertible for rho&gt;0; must retain accessible expanding history.</td>
+</tr>
+<tr>
+  <td style="text-align:right">21</td>
+  <td style="text-align:right">1125–1156</td>
+  <td><code>p9:prop:k48-pullback-no-dust-normalization</code></td>
+  <td>REPRODUCED</td>
+  <td>Complement Q_D algebra checked; homogeneous H curvature-fluid owner imported from VI-A 11866–11923. Actual final-octet residence and selected observation remain independent downstream conditions.</td>
+</tr>
+<tr>
+  <td style="text-align:right">22</td>
+  <td style="text-align:right">1170–1189</td>
+  <td><code>p9:cor:v1103-stationary-source-readout</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>VI-A 3978–4029: B’=F-Rχ≥b0&gt;0 on C&lt;R≤C2; inverse differentiates exactly and stationary F response =1/(3m_s²). No time-dependent extension inferred.</td>
+</tr>
+<tr>
+  <td style="text-align:right">23</td>
+  <td style="text-align:right">1197–1226</td>
+  <td><code>p9:cor:v190-native-k48-abundance-history-functional</code></td>
+  <td>REPRODUCED</td>
+  <td>VI-A H-modality co-realization and post16 Schur source are actual imports; diagnostic E48 is not a new Hilbert energy. Numerical abundance remains history/slice dependent.</td>
+</tr>
+<tr>
+  <td style="text-align:right">24</td>
+  <td style="text-align:right">1228–1246</td>
+  <td><code>p9:cor:v190-environment-conditioned-rar-import</code></td>
+  <td>REPRODUCED</td>
+  <td>VI-A 10105–10183 supplies identical environment-conditioned RAR and two-environment counterexample. Only static/relaxed branch; no generic galaxy likelihood inferred.</td>
+</tr>
+<tr>
+  <td style="text-align:right">25</td>
+  <td style="text-align:right">1249–1286</td>
+  <td><code>p9:thm:conditional-residual-k48-matching</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>E3 integrate distributional continuity through t*: with bounded H,p and no delta source rho+ = rho−; post-handoff conserved material dust gives a^-3. Only optional K48MATERIAL∧K48MATCH branch.</td>
+</tr>
+<tr>
+  <td style="text-align:right">26</td>
+  <td style="text-align:right">1288–1307</td>
+  <td><code>UNLABELED:Paper6B:remark:1288</code></td>
+  <td>FORMALIZED</td>
+  <td>Finite carrier energy and material Hilbert deposition are distinct typed identities; optional material-current ledger is not native geometric cDM normalization. Its following proof is attached to the preceding optional theorem.</td>
+</tr>
+<tr>
+  <td style="text-align:right">27</td>
+  <td style="text-align:right">1338–1366</td>
+  <td><code>p9:thm:late-density-ratio-repaired</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>E3 rho_m/rhoΛ=2e^-3d; d=1/2 gives r0=0.4462603203, omega_m=0.16349059225. Numerical omegaΛ=0.3663570002 matches stated metrological realization conditionally.</td>
+</tr>
+<tr>
+  <td style="text-align:right">28</td>
+  <td style="text-align:right">1379–1411</td>
+  <td><code>p9:thm:closed-curvature-family-repaired</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>E3 independent closed Friedmann replay gives x=alpha^7e^-2(N+d)/(1+r0), sum Omegas=1; positivity N&gt;Nmin(d); connected early expanding N&gt;Ncrit; no native late source exchange assumed.</td>
+</tr>
+<tr>
+  <td style="text-align:right">29</td>
+  <td style="text-align:right">1431–1442</td>
+  <td><code>p9:cor:flat-clock-fractions</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>At optional d=1/2 exact fractions are 0.6914384540362 and 0.3085615459638. Fractional normalization is a conditional comparison not a generated present event.</td>
+</tr>
+<tr>
+  <td style="text-align:right">30</td>
+  <td style="text-align:right">1444–1469</td>
+  <td><code>p9:cor:kappaU-H0-calibration-status</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Differentiation gives d log Hflat/dd=−3r0/[2(1+r0)]≠0, and matched radius representation consumes upstream CELL_{K→U} (issue 002) and metrological chart.</td>
+</tr>
+<tr>
+  <td style="text-align:right">31</td>
+  <td style="text-align:right">1519–1547</td>
+  <td><code>p9:prop:v2205-redshift-response-map</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>VI-A closed response reconstruction converts dotH=−(1+z)HH_z; the displayed densities and pressures and w=(1+z)beta’/(3beta) follow when beta&gt;0, separately conserved, and observation a* selected.</td>
+</tr>
+<tr>
+  <td style="text-align:right">32</td>
+  <td style="text-align:right">1556–1581</td>
+  <td><code>p9:prop:v2205-mass-weighted-shape-mixture</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>On a derivative-free adiabatic same-action reduction E=sum m_i b_i + E_cross, both beta and pressure are exact derivatives. Physical decomposition and fixed z/source data are explicit predicates.</td>
+</tr>
+<tr>
+  <td style="text-align:right">33</td>
+  <td style="text-align:right">1590–1617</td>
+  <td><code>p9:prop:v2205-apparent-vacuum-evolution</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>Flat-model subtraction yields -3M²a^-2 density and +M²a^-2 pressure; E3 curvature port is separately conserved with w=-1/3. No native apparent-evolution prediction asserted.</td>
+</tr>
+<tr>
+  <td style="text-align:right">34</td>
+  <td style="text-align:right">1666–1699</td>
+  <td><code>p9:thm:finite-bbn-response</code></td>
+  <td>REPRODUCED</td>
+  <td>Radiation-equivalent energy ratio is a definition, and Frechet BBN linear kernel requires a differentiable realized network. Issue 005: extra Neff observable baseline is not specified for ordinary K16-produced radiation.</td>
+</tr>
+<tr>
+  <td style="text-align:right">35</td>
+  <td style="text-align:right">1711–1730</td>
+  <td><code>p9:cor:bbn-network-history-descendant</code></td>
+  <td>REPRODUCED</td>
+  <td>ODE uniqueness on a common interval follows from local Lipschitz IF a solution exists. III-A 3898–3925 additionally requires frozen licensed exact-solution constructor + well-posedness. Issue 006 records this conditional proof-use guard.</td>
+</tr>
+<tr>
+  <td style="text-align:right">36</td>
+  <td style="text-align:right">1732–1759</td>
+  <td><code>p9:lem:first-order-bbn-freezeout</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>E3 differentiating Tf∝(1+delta)^(1/3), tf∝(1+delta)^(-5/3) and tN∝(1+delta)^(-1) yields exactly the (tN-5tf/3)/tau term and deltaYp.</td>
+</tr>
+<tr>
+  <td style="text-align:right">37</td>
+  <td style="text-align:right">1782–1803</td>
+  <td><code>p9:thm:v189-k16-readout-boundary</code></td>
+  <td>REPRODUCED</td>
+  <td>K16 same-action quadratic transfer, state split and local-WKB production imported from VI-A and paper IV; holds only on claimed WKB/kinetic/source/connection domains. χ continuity coexists with earlier issue 001.</td>
+</tr>
+<tr>
+  <td style="text-align:right">38</td>
+  <td style="text-align:right">1822–1832</td>
+  <td><code>p9:prop:v2109-ground-history</code></td>
+  <td>VERIFIED</td>
+  <td>E3 on a fixed finite Hilbert space, zero nonnegative E expectation forces support in instantaneous ker E; commutator then vanishes, rho is constant; common-ground intersection is necessary/sufficient. Moving frame requires covariant version.</td>
+</tr>
+<tr>
+  <td style="text-align:right">39</td>
+  <td style="text-align:right">1868–1899</td>
+  <td><code>p9:cor:v1109-current-baryogenesis-readout</code></td>
+  <td>REPRODUCED</td>
+  <td>Exact V-C ordered J_l=-1/12 imported; open CP_BL2_KINETIC_INCIDENCE, many-body evolution and entropy normalization explicitly retained. No nonzero baryon yield proved.</td>
+</tr>
+<tr>
+  <td style="text-align:right">40</td>
+  <td style="text-align:right">1901–1906</td>
+  <td><code>p9:rem:v1109-heavy-neutral-branch</code></td>
+  <td>FORMALIZED</td>
+  <td>Heavy-neutral/type-I population is an explicitly optional separate branch; not needed to supply native BL2 or cyclic K16 state.</td>
+</tr>
+<tr>
+  <td style="text-align:right">41</td>
+  <td style="text-align:right">1998–2017</td>
+  <td><code>p9:v2171:prop:tailcertificate</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>E3 quotient decomposition and absolute tail variations give exact stated bound as long as δS&lt;S*&gt;0; actual charge/entropy integrability unproved.</td>
+</tr>
+<tr>
+  <td style="text-align:right">42</td>
+  <td style="text-align:right">2112–2126</td>
+  <td><code>p9:v2171:prop:tail</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td>E3 norm bound |dot q|≤||[H,Q]||/hbar integrates to Cauchy finite charge limit; entropy-positive ratio limit is conditional on its own convergence.</td>
+</tr>
+</tbody>
+</table>
+<p>| 43 | 2168–2184 | <code>p9:cor:v2178-k16-finite-production-precedence</code> | REPRODUCED | VI-A 8273ff supplies finite ordered-kernel/Nambu production owner. WKB Q_g is only a controlled continuum/local-rate descendant; complete finite occupation remains open A20/A22. |
+| 44 | 2186–2194 | <code>p9:cor:v2178-scalaron-export-separation</code> | REPRODUCED | Common-action coherent scalaron stiffness, Hubble dilution and ordinary particle deposition have different source and target types; no independent second scalaron or arbitrary energy fraction. |
+| 45 | 2196–2217 | <code>p9:cor:v2178-a20-a22-execution</code> | REPRODUCED | A22.1a first K48 requires complete finite trace/contact stopping certificate, not full occupation history; A22.1b needs full Bogoliubov/state history. Exact scope traced to VI-A 8372–8485. |
+| 46 | 2224–2234 | <code>p9:cor:v2185-c06-e6-readout</code> | REPRODUCED | Conditional exceptional coordinates are algebraic same-history descendant from VI-A p8:thm:v2185-flrw-e6-curvature-response; cannot be independent clock. |
+| 47 | 2236–2256 | <code>p9:cor:v2185-h-response-e6-direction</code> | VERIFIED-CONDITIONAL | E3 solve residual y_A^H=κ(ρ_H+3p_H), y_B^H=2κρ_H; w=p_H/ρ_H and dust/radiation/vacuum rays check. Defined only where y_B^H≠0 and subtraction source is supplied. |
+| 48 | 2262–2272 | <code>p9:cor:v2186-c06-direct-energy-readout</code> | REPRODUCED | VI-A 8403–8429 proves structural fixed total direct packet separate from resolved occupation/bulk-pumping packet; physical full stress equality additionally inherits D19 same-action jet certificate (issue 008). |
+| 49 | 2274–2287 | <code>p9:cor:v2186-c06-three-scope-readout</code> | REPRODUCED | VI-A 8372–8458 conditional complete-trace bound, later full history, then named observer event are distinct arrows; no numerical first reach or present-slice certificate claimed. |
+| 50 | 2313–2325 | <code>paper6b:proposition:atlas-independent-k48-and-direct-packet-energy-ledge-0fe4260</code> | REPRODUCED | Corrected carrier-four comparison: K48 from carrier-free final octet (56−8), not reflecting D4 (J(4)=4); structural packet not double-counted as separate physical work. Preamble scope issue 010. |
+| 51 | 2326–2340 | <code>UNLABELED:Paper6B:remark:2326</code> | FORMALIZED | Conditional MRESP widths and rank-four N=56 numerical comparison acknowledged; closed Friedmann shell uses curvature +a_Γ^-2. No CMB source/transfer calibration or current-cap history inferred. |
+| 52 | 2365–2400 | <code>p9:thm:v187-k16-coupled-evolution</code> | VERIFIED-CONDITIONAL | E1/E3 sum two opposite same-action exchange equations to total conservation; integrating d(a^4ρ_r)/dt=a^4 Q16 yields boxed formula. Conditional on actual Q16/state and coupled regular chart. |
+| 53 | 2402–2420 | <code>p9:cor:v187-k16-state-inheritance</code> | REPRODUCED | Unitary/symplectic pushforward of actual fresh-root state to K16 is unique for supplied complete quadratic Hamiltonian. No independent vacuum re-preparation and no full interacting source inferred. |
+| 54 | 2422–2439 | <code>p9:cor:v187-k48-prop-refinement</code> | REPRODUCED | Imports VI-A source-free/effectively traceless first K48 reach and Jordan bound; explicitly retains Einstein-frame mass chart, source trace, running-mass and actual K48 history dependencies. |
+| 55 | 2721–2766 | <code>p9:def:ordered-realization-retained-geometry</code> | FORMALIZED | Kernel orthogonal split and occupied range Γ16 type check. Vertex output is Nambu pair space, not one-particle state. Principal equivariant E9/L6 identification consumes VI-A generated source operator; no proof of general injectivity asserted. |
+| 56 | 2768–2819 | <code>p9:def:portal-matching-data</code> | FORMALIZED | E3 τ=α^-1/2 φ_c/M and σ=φ_c/(√6 M) distinguished, physical breathing/action incidence explicitly retained; optional ξ thermal and UV MRESP comparisons not combined. Independent ξ^(1/4) temperature arithmetic passes. |
+| 57 | 2821–2841 | <code>p9:lem:two-higgs-anomaly-matching</code> | VERIFIED-CONDITIONAL | E3 independent polynomial/Taylor D²(y²)=2(β_y²+yDβ_y) with fixed T; signs and 1/2 Taylor correct. Requires an admitted RG derivative and selected matching scale, not a physical action-pullback conclusion. |
+| 58 | 2856–2869 | <code>p9:rem:thermal-portal-chronology</code> | REPRODUCED | A_t∝T² vanishes at exact T=0; post-seed thermal portal not first-bath source. Separate zero-temperature gauge pair vertex and finite occupation history retained. |
+| 59 | 2871–2890 | <code>p9:thm:closed-anomaly-portal</code> | VERIFIED-CONDITIONAL | E3 independently substitute τ(φ_c) into first/second spurion terms, dimensions and α powers correct. Physical use requires actual breathing-source pullback; derivative β_y must be evaluated with correct RG system (issue 009). |
+| 60 | 2901–2911 | <code>UNLABELED:Paper6B:remark:2901</code> | INCONSISTENT | Issue 009: source one-loop top Yukawa gauge term −(17/12)g_1 inconsistent with GUT-normalized coupling (correct −(17/20)g_1²); independent published one-loop RGE corroborates. The formal identity defining Dβ_y remains valid. |
+| 61 | 2914–2950 | <code>p9:cor:v180-k16-zeroT-gauge-seed</code> | VERIFIED-CONDITIONAL | E3 b=(41/10,−19/6,−7), g_i²=2π² gives b_i g_i²/(32π²)=(41/160,−19/96,−7/16), nonzero. V-C 2464–2497 owns the breathing-source vertex; physical scalaron pullback, RG and actual occupation are not proved. |
+| 62 | 2952–2967 | <code>p9:rem:v2216-gauge-variation-import</code> | REPRODUCED | Exact finite-mode bound N_vac≤sinh²(TV(log Z)/2) located in V-C 2524ff, applies on absolutely continuous positive Z, not a statement of nonzero production or weak-coupling thermal kinetics. |
+| 63 | 2970–2980 | <code>p9:rem:v2217-free-pair-loading-readout</code> | REPRODUCED | Free-pair upper bound imported from Paper IV under constant-mass monotone-expansion lower-state hypotheses; not conflated with gauge variation or actual occupation source. |
+| 64 | 3021–3058 | <code>p9:prop:v215-post-freeze-chart-bounds</code> | VERIFIED-CONDITIONAL | E3 exact MC.1/MC.2 via symbolic independent differentiation; numeric c0=0.497836895972, H/m upper=8.85877e-6, eps_m upper=1.06305e-4. The f2|7 restored lower-stratum Hessian + current complete-cap root energy is not a certified common physical history without action/lineage comparison (issue 010). |
+| 65 | 3113–3197 | <code>p9:thm:v181-kin16-bogoliubov-backreaction</code> | REPRODUCED | E1 canonical oscillator equation, phase resonance 2n=a m_s, sweep compensation on many-shell transverse WKB domain, conditional Γ=m³Σdλ²/(64π). E3 mass/amplitude estimates pass. Complete kernel, coherent phase, physical RG/window, same-owner history not established. |
+| 66 | 3226–3256 | <code>p9:cor:v181-kin16-universal-equality</code> | VERIFIED-CONDITIONAL | E3 independent DOP853 integration for y0=10^5…10^11 and z0=0 approaches H_eq/Γ=0.580096666 and z_eq=0.504768213; valid only on explicitly defined frozen-mass/flat homogenized comparison, not exact closed dynamical history. |
+| 67 | 3258–3266 | <code>p9:cor:v186-no-inserted-k16-damping</code> | REPRODUCED | Existing same-action scalaron friction/source terms do not permit an independently specified phenomenological Γ; local Γ_g is a conditional output. |
+| 68 | 3268–3300 | <code>p9:thm:v181-mix16-factorization</code> | REPRODUCED | Kinetic/chemical equilibration from EKT on supplied weakly coupled quasiparticle and full scattering network conditions is not exact full interacting KMS convergence; distinct kinetic and analytic prerequisites explicitly retained. No physical convergence rate computed here. |
+| 69 | 3302–3312 | <code>p9:rem:v181-commonheat-rate-firewall</code> | REPRODUCED | E3 numerical control: using LOWER-stratum m_E≈M√(2/3)=1.988e18 GeV (not the distinct UV comparison m_s≈3.53e13) gives Γ_g≈1.15035058 GeV and T_eq≈5.7949674e8 GeV; weak-coupling and RG scale not certified. A_g convention not independently reconstructed. |
+| 70 | 3314–3337 | <code>p9:cor:postseed-higgs-pair-vertex</code> | VERIFIED-CONDITIONAL | E3 complex Hermitian Hessian of coefficient φ H†H yields g1(T,α)||h||²; nonzero requires T&gt;0,y_tβ_y≠0. Does not prove E9 vector/spinor response or physical first bath. |
+| 71 | 3347–3370 | <code>p9:cor:alpha-delta-portal-factors</code> | INCONSISTENT | Issue 011: multiplicative factors exp(−δ/2),exp(−δ) correct, but literal ratios g1(δ)/g1(0), g2(δ)/g2(0) undefined on allowed zero-coefficient branches, e.g. T=0. Source omits required nonzero-denominator scope. |
+| 72 | 3378–3405 | <code>p9:thm:higgs-mode-jump-squeeze-bridge</code> | VERIFIED-CONDITIONAL | E3 positive frequency pairs give sinh²[(1/2)log(Ω_−/Ω_+)]=(Ω_+−Ω_−)²/(4Ω_+Ω_−). Requires fixed common eigenbasis and zero-width commuting-mode limit; actual endpoint process not proved. |
+| 73 | 3415–3448 | <code>p9:thm:closed-j48-scalaron-abundance-trace</code> | INCONSISTENT | Issue 007: legacy selected-depth J(2)=6 and owner {n2,n7} contradict current VI-A 263–270, 444–449, whose grade-four J(4)=4 and current cap are controlling; independently proven K48=56−8 carrier-free/Schur and P48=0 survive unchanged. |</p>
+<p>| 74 | 3462–3476 | <code>p9:cor:v165-reflected-onset-native-mass-gap</code> | REPRODUCED | Native H_car projector vanishes on (E56,E40) and E48 is geometric midpoint; current cosmic final-octet Q_D zero is independent ancestry. No continuum YM mass-gap claim. Old J(2) issue 007 does not contaminate this route. |
+| 75 | 3478–3525 | <code>p9:thm:final-octet-dual-dark-response-parent</code> | VERIFIED-CONDITIONAL | E3 SU(2) Hopf normalization: Ω_H=vol_unit/(2π²), Hodge ζ=Q_D/(2π²a³), Hopf pushforward Q_D dΩ/4π, terminal Q_D=1. Imports VI-A 1893,1957,2027; no Hilbert stress identity inferred. |
+| 76 | 3527–3555 | <code>p9:def:scalaron-stress-energy-split</code> | FORMALIZED | Mode energy/pressure and coherent canonical stress are well-typed finite sums with occupation and state inputs; optional scalaron excitation is a source-side ledger, not the produced ordered Hilbert output or cDM owner. |
+| 77 | 3557–3572 | <code>p9:rem:v148-physical-scalaron-history-firewall</code> | REPRODUCED | Structurally parameterized τ and physically solved R(t) retain distinct time/owner types; VI-A oscillator equilibrium does not force physical terminal arrival. |
+| 78 | 3574–3612 | <code>p9:thm:transported-hot-cold-kinematic-split</code> | INCONSISTENT | Imported VI-C later-rung mass ratio and phase-space radiation inequality valid on uniform produced-energy support; finite-H adiabatic ⟨w_X⟩=0 and a^-3 are leading average laws, not exact without declared averaging/error (issue 013). |
+| 79 | 3614–3645 | <code>p9:thm:scalaron-cold-yield-criterion</code> | VERIFIED-CONDITIONAL | E3 expand sqrt(m²c⁴+p²c²) for all yield-carrying modes at p/(mc)≪1 and p≫mc for radiation; entropy conservation is supplied conditional. No scalaron-particle CDM promotion. |
+| 80 | 3647–3675 | <code>p9:prop:thermal-freezein-not-cold</code> | VERIFIED-CONDITIONAL | E3 thermal p redshift: k_B(2.7255 K)(3.909/106.75)^(1/3)=7.799228976×10^-5 eV; requires stated thermal lower momentum and collisionless entropy history, no generated K48 mass. |
+| 81 | 3677–3698 | <code>p9:cor:closed-abundance-scaling</code> | INCONSISTENT | Logarithmic weighted additive derivative E3 exact; claimed ONLY-IF equality of component elasticities E4 false, F=x+x²/(1+x), M=x/(1+x) positive on x&gt;0, F+M=2x yet distinct elasticities (issue 012). |
+| 82 | 3700–3719 | <code>p9:thm:scalaron-readout-coordinate-conversion</code> | REPRODUCED | Energy split 3/5+2/5=1 and T_vis=(3/5)^(1/4) T0 typed to optional DEM15+Hkin; non-derivation of universal scalaron abundance multiplier survives issue 012. |
+| 83 | 3759–3814 | <code>p9:thm:k48-effective-dust-propagation</code> | INCONSISTENT | Optional λ_D, additive continuous E give μζ, p=0, transfer and terminal a^-3 exact. However μ=0 allowed, so dp/dE is 0/0 rather than defined zero sound speed (issue 014); no native material-current claim. |
+| 84 | 3816–3835 | <code>p9:cor:v179-native-k48-finite-energy-candidate</code> | REPRODUCED | Finite E_car/7(4+α^-1+2α^-5/4) and Q_D/(2π²a³) import VI-A 11980–12029. Momentum-radius absolute rewrite requires existing CELL certificate (issue 002), and finite energy is not physical Hilbert stress. |
+| 85 | 3902–3930 | <code>p9:thm:d4-pure-density-projector</code> | VERIFIED | Independent E3 count 8=2+3+3; E4 exchange matter/vacuum assignments without altering the geometric trimer split. No inherent 1/4/3/4 density labels. |
+| 86 | 3932–3946 | <code>p9:lem:typed-determinant-readout-functor</code> | REPRODUCED | Two declared Paper V-B carrier-dependent comparison overlaps 24/25 vs 4/5 cannot promote one coefficient to a physical optical homothety; upstream numerical carriers not globally reverified here. |
+| 87 | 3957–3983 | <code>p9:lem:s3-green-spectrum</code> | VERIFIED | E3 closed S³ scalar harmonic λ_n=n(n+2)/a²; reciprocal eigenvalue a²/[n(n+2)] for n≥1, unique inverse on orthogonal complement of constants. Not a uniform rank-alternative k^-2 measure. |
+| 88 | 3985–4014 | <code>p9:thm:growth-normalization-boundary</code> | REPRODUCED | Linearized fixed-action operator and growth history require initial data, actual matter response, matching, window; no source-free absolute σ8 number from independent rank character. Full L_pert/source transfer not constructed here. |
+| 89 | 4016–4039 | <code>p9:prop:conditional-protected-log-frequency</code> | REPRODUCED | Former Δlnk=lnα/7 is comparison, not derivation from current depth H_j=α^j. A physical flow relating depth to horizon variable is an explicit unfulfilled bridge, not a new native frequency. |
+| 90 | 4065–4071 | <code>p9:def:imported-finite-sm-cosmology-boundary</code> | FORMALIZED | Baryon, neutrino and thermal inputs are typed conditional imports from Papers V-B/V-C; no cosmological comparison upgrades them. |
+| 91 | 4093–4114 | <code>p9:cor:H0-dens-closed-baryon</code> | VERIFIED-CONDITIONAL | E3 residual ω_m−ω_b−ω_ν−ω_otherdust; source optional numbers give ≈0.14042694 with Σν=59.95 meV. It is an observational target, not a predicted dark-stress occurrence. |
+| 92 | 4119–4147 | <code>p9:thm:massive-neutrino-transfer-growth-lensing</code> | VERIFIED | E3 common adiabatic primordial source: δρ=Σρ_i T_i ℛ gives energy-density weights, and total matter cb/ν partition; mass weights only on equal-number late nonrel branch. |
+| 93 | 4153–4177 | <code>p9:thm:v149-complete-rar-readout-chain</code> | REPRODUCED | Historically local L/Schur chain remains route-specific; text explicitly supersedes its global RAR interpretation by native S+T, no incorrect promotion of old open arrows. |
+| 94 | 4183–4205 | <code>p9:thm:v187-local-structural-rar-chain</code> | REPRODUCED | Source distinguishes generated Clifford parent-collar/PCAD relation from stronger unclosed historical all-order/global route; native terminal RAR chain separately proved in VI-A. |
+| 95 | 4272–4287 | <code>p9:cor:v1104-k48-background-response-readout</code> | REPRODUCED | Historical γ48 unresolved stage and conditional dust continuation. Active γ48 status later superseded by VI-A v2.142 unit and VI-A v2.145 no-native-dust first integral; record RETIRED historical open label. |
+| 96 | 4289–4298 | <code>p9:rem:v1104-k48-rar-no-double-counting</code> | REPRODUCED | Metric response counted once across homogeneous background, perturbation and static readout; no separate particle CDM ledger inferred. |
+| 97 | 4300–4311 | <code>p9:rem:v1104-k48-four-thirds-diagnostic</code> | REPRODUCED | Legacy 4/3 candidate explicitly unpromoted and retired by current unit γ48; no defect in historical comparison when its lifecycle retained. |
+| 98 | 4319–4336 | <code>p9:cor:v1105-k48-unit-background-readout</code> | VERIFIED-CONDITIONAL | VI-A 10454–10506 supplies γ48=1 on unbroken C3 H endpoint; a^-3 density is conditional on retained-source freeze/advection and cannot be called native history without that guard (later clarified 4363). |
+| 99 | 4338–4347 | <code>p9:rem:v1105-k48-four-thirds-retired</code> | REPRODUCED | Current unbroken branch H-T5 quadratic Schur block vanishes by VI-A; quarter higher-source jet not a homogeneous stiffness. C3-breaking branch separate. |
+| 100 | 4349–4355 | <code>p9:rem:v1105-k48-perturbation-frontier</code> | REPRODUCED | Background k=0 endpoint normalization cannot substitute full time-dependent metric perturbation/kinetic dynamics. Source does not claim complete cosmological CDM phenomenology. |
+| 101 | 4363–4384 | <code>p9:cor:v1107-k48-endpoint-readout-retype</code> | VERIFIED-CONDITIONAL | Native endpoint I48 and same-action H owner correctly distinct from optional exact advected dust; VI-A 10540–10587 no native source-coordinate insertion, actual H history/slice are downstream. |
+| 102 | 4386–4401 | <code>p9:cor:v1107-k48-n0-readout</code> | INCONSISTENT | Import drops VI-A 10590–10622 prerequisite regular expanding stationary-Einstein constraint segment; dot a(s)=0 makes G0^R undefined. On same positive segment fixed-C time-origin tangent/relational zero remains true (issue 015). |
+| 103 | 4403–4416 | <code>p9:cor:v1107-resolved-cold-readout</code> | VERIFIED-CONDITIONAL | VI-A 10624–10660 kernel E3 solves first-order scalar constraint on constant-Fstar pressureless no-slip zero-shift Einstein tangent H&gt;0; omitted segment guards grouped under issue 015. n&gt;2 alone insufficient. |
+| 104 | 4418–4440 | <code>p9:cor:v1107-kinetic-dynamic-readout</code> | VERIFIED-CONDITIONAL | VI-A 10663–10694 and III-F collisionless Schur import. Frozen χkin/F and ω→0 relaxed χrel/F are different limits, requiring admitted kinetic source, resolvent and causal domain. |
+| 105 | 4442–4461 | <code>p9:rem:v1107-moving-port-frontier</code> | REPRODUCED | Sectorial sqrt impedance depends on actual product collar, complete moving FLRW metric contact and causal domain; source explicitly does not claim physical moving-port closure. |
+| 106 | 4485–4513 | <code>p9:cor:v2203-rar-boundary-normalization</code> | VERIFIED-CONDITIONAL | E3 B∞²=6M⁴C7, a0=√C7/4π, G=1/(8πM²) imply B∞=4π√6 M²a0, ρΛ=M²C7/2, ρD/ρΛ=ν_H/(2π). ν_H=2 is a target only. |
+| 107 | 4522–4547 | <code>p9:prop:v2203-abundance-two-ports</code> | VERIFIED-CONDITIONAL | E3 independent first Friedmann / Raychaudhuri rederive ν_H budget and dot B condition for p_D=0; actual same-slice source subtraction and vacuum branch required. No double counting existing source. |
+| 108 | 4559–4575 | <code>p9:rem:v2203-cold-density-frontier</code> | REPRODUCED | Terminal comparison identity does not select present slice, positive independent remainder, source history or p_D=0. Conserved cold stress requires a^-3, constant cold/vac ratio needs exchange. |
+| 109 | 4590–4624 | <code>p9:prop:v2206-loaded-shape-weighting</code> | VERIFIED-CONDITIONAL | E3 body self energy divided by Mb, exact quadratic cross from positive static inverse, nonnegative Ji and ηi. Leading weak-field compactness; cannot extrapolate to positive cosmic excess. |
+| 110 | 4626–4644 | <code>p9:prop:v2206-field-only-compensation</code> | VERIFIED | E3 quadratic completion: field=+1/2 j†A^-1j, interaction=−j†A^-1j, net negative half; source/V term is not an extra independent positive mean. |
+| 111 | 4646–4669 | <code>p9:rem:v2206-positive-history-target</code> | REPRODUCED | Conditional positive completed kinetic block; work identity for E_∂=Vρ with Q_∂ and p; full action allocation and actual clock required. |
+| 112 | 4686–4740 | <code>p9:cor:v2209-survival-cold-readout</code> | VERIFIED-CONDITIONAL | E1 VI-B + IV-B 9007–9044, E3 2-level unitary test, reverse-triangle/Duhamel: liminf E≥Δ[max(0,√p_l−I_tail)]². Cold asymptotic requires separately E∞&gt;0,Vp→0 and correct allocation; not present-slice prediction. |</p>
+<p>| 113 | 4841–4849 | <code>UNLABELED:Paper6B:definition:4841</code> | REPRODUCED | Validation-vs-construction type grammar. External data do not become native constructors. |
+| 114 | 4851–4870 | <code>p9:thm:no-selector-boundary-clean</code> | REPRODUCED | E1 disjoint input dependence: if reduced kernel K is fixed independently of D, varying D within V cannot change K. Does not prevent an explicitly redefined fitted model. |
+| 115 | 4884–4901 | <code>p9:prop:v2204-compact-potential-benchmark</code> | VERIFIED-CONDITIONAL | E3 apply Δ to VI-A normalized S³ inverse. Requires actual mean-zero density and explicitly licensed minimal Poisson reduction; not the general physical Schur/metric operator. |
+| 116 | 4903–4933 | <code>p9:cor:v2204-rar-propagation-elasticity</code> | VERIFIED-CONDITIONAL | E3 exact differentiation gives E=1−√y/[2(e^√y−1)]; E→1/2 and 1. VI-A compact force χ²/3−2χ³/(3π) independently expanded. Requires optional all-order Reeb (R1/R2) static readout actually licensed. |
+| 117 | 4940–4964 | <code>p9:prop:v2204-curvature-distance-consistency</code> | VERIFIED-CONDITIONAL | E3 D_M=a sin(D_C/a) and Taylor; D_A/D_L duality requires same closed FLRW metric photons, conserved number and supplied H(z). Fix radius on same comparison member; never promote to native photon action. |
+| 118 | 4966–4991 | <code>p9:rem:v2204-observational-kernel-scope</code> | REPRODUCED | Physical time-dependent source/constraint operators not replaced by compact Poisson benchmark; no ℓ=2/3 amplitude from spatial projectors. |
+| 119 | 5010–5068 | <code>p6b:prop:v2210-lit-cold-car-capacity</code> | VERIFIED-CONDITIONAL | E3 mode energy derivative −∂log a E=p²/E; positive occupancy [0,1] and weighted Chebyshev bound yield high-w≤ε/η and E≤Cη/(1−ε/η). Requires fixed mass, actual full finite CAR, no anomalous pair source, reference subtraction. |
+| 120 | 5086–5113 | <code>p6b:cor:v2210-lit-sky-covariance</code> | VERIFIED | E3 finite exact Gram construction: W T Γ TᵀWᵀ is positive semidefinite and rank cannot increase. Source assumes all memory modes and actual joint stochastic sources, excludes nonlinear/full observation conclusion. |
+| 121 | 5135–5166 | <code>p6b:prop:v2210-lit-nuclear-network</code> | VERIFIED-CONDITIONAL | E3 inward-pointing reaction cone at each simplex face, Aᵀν=0, compact positive simplex and local Lipschitz continuation. Existence of actual native weak/QCD rates, initial composition and admissible clock are premises; may conditionally discharge III-A local uniqueness obligation (issue 006) on this stronger domain only. |
+| 122 | 5208–5251 | <code>p9:cor:v215-geometric-pulse-production</code> | VERIFIED-CONDITIONAL | E1 Paper I-B 20858–20949 β=iλn hhat(2n)+r and explicit Volterra e_n. E3 2(n²−1) coexact multiplicity times n/a over 2π² a³ gives d_G n(n²−1)/(π²a⁴). Requires exact positive Z pulse and admitted complete window; no actual cosmic mode census. |
+| 123 | 5253–5289 | <code>p9:prop:v215-pulse-rate-order</code> | VERIFIED-CONDITIONAL | E3 Fourier long-pump δ limit and k-integral yield d_G λ²m⁵ Φ²/(128π), Γ=d_G λ²m³/(64π). Finite fixed-shell monochromatic limit has no irreversible width; continuum/many-shell first and perturbative plateau restrictions kept. |
+| 124 | 5304–5317 | <code>p9:rem:m8-batch-readout-inputs</code> | REPRODUCED | K16 action/Noether owner and RAR Schur boundary are imported with distinct nonzero history and physical source conditions; no fresh coefficient. |
+| 125 | 5480–5506 | <code>p9:thm:v164-k16-state-history-readout</code> | REPRODUCED | VI-A/III-F Ward-reduced bosonic same-owner vertex; one-loop weights checked in preceding batch. A nonzero vertex is not nonzero Bogoliubov production. Native history/state and MIX16 kinetic/KMS predicates remain distinct. |
+| 126 | 5508–5532 | <code>p9:thm:v164-k48-rar-readout-correction</code> | VERIFIED-CONDITIONAL | K48 current ≠ material dust and terminal f=R−C56 yield the terminal acceleration. Generic local Yukawa f(R) formula is source-proved only on stationary, stable, weak-field/subhorizon, same-metric/source domain in VI-A D18; stronger unguarded active-force wording needs this qualification (issue 016). Not a native global S+T/RAR prediction. |
+| 127 | 5534–5550 | <code>p9:thm:v164-perturbation-readout-boundary</code> | REPRODUCED | VI-C p8:thm:v164-perturbation-owner 495–516 supplies quadratic-core single-clock adiabatic reference n_s/r and squeezed fNL relation. No actual state/covariance/pivot or finite-sky bispectrum produced by 2I count. |
+| 128 | 5663–5677 | <code>p9:cor:v226-cosmological-information</code> | VERIFIED-CONDITIONAL | II-C p2c:thm:v226-chirality-radius imports TV≤√(1−3R²/r²). Solve necessary r≥√3R/√(1−d²); information decreases under coarse-graining. Radius is classical intrinsic-moment outcome, not FLRW distance. |
+| 129 | 5720–5757 | <code>p6b:cor:v266-chiral-feasibility</code> | VERIFIED-CONDITIONAL | II-C p2c:thm:v266-sharp-chirality-support 6949–6987 provides saturating 7 outcomes and 6 outcomes for r≥√34R/3. Independent algebra d²≥7/34 threshold; full detector/source realization is not asserted. |
+| 130 | 5782–5817 | <code>p9:thm:v356-closed-comparison-inverse</code> | VERIFIED-CONDITIONAL | E3 compose forward r=2e^(−3d), x=α⁷ e^(−2N−2d)/(1+r); recover unique (N,d). N&gt;Ncrit ↔ x&lt;3(r/2)^(2/3)/(1+r). H²=Λeff c²/(3ΩΛ). Conditional dust/vacuum algebra only. |
+| 131 | 5819–5825 | <code>p9:rem:v356-inversion-not-occurrence</code> | REPRODUCED | Algebraic parameter inversion does not select physical present epoch, source exchange or physical Newton matching. |
+| 132 | 5832–5868 | <code>p9:prop:v358-kinematic-null</code> | VERIFIED-CONDITIONAL | E3 polynomial identity F(j−2q−Ωr)=3A0 and Ω_m=2(q+j)/3, ΩΛ=(j−2q)/3, Ωk=1−j when A4=0; stationary conserved expanding branch required. |
+| 133 | 5870–5904 | <code>p9:thm:v358-window-reconstruction</code> | VERIFIED | E3 exact 3×3 top-hat moment determinant ∏(yj−yi)(Σ yiyj−h²)&gt;0 for h&lt;y1&lt;y2&lt;y3, and pseudoinverse σmin stability. Only calibrated instrument protocol b_i=∫F dW_i; requires rank-four observations if radiation unknown. |
+| 134 | 5906–5926 | <code>p9:cor:v358-observer-invariant-history</code> | VERIFIED | E3 exact cubic minimum F(y*)=A0+4A2³/(27A3²), strict global F&gt;0 iff Econn&lt;1. Scaling A_k↦λ^(−k) cancels in Econn. Only A0&gt;0,A2&lt;0,A3&gt;0 branch. |
+| 135 | 5928–5958 | <code>p9:prop:v358-optical-two-redshift</code> | VERIFIED-CONDITIONAL | E3 two independent round S³ distances invert Y=λ²−KX and recover K=1/a0², λ². Requires calibrated H/c, single constant distance multiplier, D≠0 and distinct X. No unconditional native photon Hessian. |
+| 136 | 5960–5967 | <code>p9:rem:v358-no-present-preserved</code> | REPRODUCED | Keeps p9:prop:present-slice-no-go and explicit window/observer protocol, no privileged physical present generated. |</p>
+<p><strong>Final cumulative disposition:</strong> VERIFIED 10, VERIFIED-CONDITIONAL 50, REPRODUCED 58, FORMALIZED 9, INCONSISTENT 9; total <strong>136/136</strong> (100% formal-source census). Conditional verification does not discharge physical realization or all external experimental/observer inputs.</p>
+<h2>Issue certificates (canonical per root)</h2>
+<h3>BH-VIB-K16-FLUX-001 — MATHEMATICAL_INCONSISTENCY (high; established)</h3>
+<ul>
+<li><strong>Source claim:</strong> Paper6B <code>p9:cor:k16-timewidth-retired</code>, lines 510–518. On a <code>C^1</code> curvature branch, the source says <code>χ_+ dot R_+=χ_- dot R_-</code> &quot;reduces&quot; to <code>dot R_h(t2)=0</code>.</li>
+<li><strong>Exact proved inputs:</strong> III-E <code>p3e:sec:v194-amplitude-flux-sync</code>, lines 5105–5115, says <code>χ</code> is continuous positive and flux means continuity of normal derivative; explicitly denies zero-derivative implication. III-F <code>p3f:thm:v266-gp-exact-k16-junction-condition</code>, lines 9383–9414, proves χ+=χ-&gt;0 and allows transverse C¹ crossing. VI-A <code>p8:thm:v2111-cyclic-k16-finite-arrival</code>, lines 15502–15517 and 15540–15553, <strong>exhibits the actual admitted cyclic branch with <code>dot R&lt;0</code> at the K16 hit</strong>.</li>
+<li><strong>Missing/false inference:</strong> <code>χ_+v_+=χ_-v_-</code> and <code>v_+=v_-</code> cannot imply <code>v_+=v_-=0</code> when <code>χ_+=χ_-&gt;0</code>; any common nonzero rate satisfies the equation. Under VI-A's certified cyclic branch, the rate is actually negative, so the false subclaim conflicts with upstream physical branch, not only an ambient toy example.</li>
+<li><strong>Positive control:</strong> <code>v_+=v_-=0</code> satisfies the same matching law, demonstrating zero rate is a permitted special case, <strong>not</strong> a necessary condition.</li>
+<li><strong>Impact:</strong> the second boxed equation in the VI-B corollary is invalid. The no-free-time-width statement, transverse crossing law, K16 state/history and scalaron history are not thereby invalidated. No numerical/observable downstream route has yet been proved to consume the false zero-velocity clause. Later batches will map any actual uses.</li>
+<li><strong>Condition origin:</strong> upstream III-F smooth-Hessian and positive χ are existing derived conditions; no new occurrence or surface layer assumed.</li>
+<li><strong>Needed action:</strong> correct source inference in a separate paper-repair task (prohibited in this audit); in the DAG mark this <em>subclaim</em> inconsistent while preserving other clause statuses and evidence.</li>
+</ul>
+<h3>BH-VIB-CELL-SCOPE-002 — SCOPE_GUARD_OMITTED (moderate; established source-level conflict)</h3>
+<ul>
+<li><p><strong>Source:</strong> Paper6B lines 129–130, 229–234 and 758–764 use <code>a_P=√(6/U)=√(π/3) R_mom</code> or <code>U=18/(π R_mom²)</code> with an unqualified &quot;geometric actualization&quot; phrasing.</p>
+</li>
+<li><p><strong>Upstream condition:</strong> III-E <code>p3e:eq:v2211-momentum-eh-port</code> and <code>p3e:eq:hurwitz-cell-normalized-eh-handoff</code>, lines 457–484, explicitly define the exact nontrivial action/geometry comparison <code>(CELL_{K→U})</code>, with equivalent test <code>Λ_g R_mom=24√(3π)</code>. III-F 125/5100 and VI-A <code>p8:rem:v2211-cell-pqti-scope</code>, lines 108–130, retain its conditional status. VI-B itself acknowledges the test at lines 307–326 and 497–499.</p>
+</li>
+<li><p><strong>Issue:</strong> an unqualified numeric momentum-radius equality conflicts with the exact guarded source scope. This is <strong>not</strong> evidence that the neutral U-owned hierarchy is wrong and <strong>not</strong> a new independent assumption. The original predicate is introduced upstream and should be inherited as one canonical condition node/use path.</p>
+</li>
+<li><p><strong>Next requirement:</strong> either point to a source-certified evaluation of the existing CELL test (not located in the inspected imports), or explicitly guard the displayed momentum-radius rewrites by that existing premise in a future source edit. Do not turn the unknown evaluation into a refutation of conditional arithmetic.</p>
+</li>
+<li><p><strong>Impact:</strong> physical curvature-radius and absolute-unit readouts only when using the momentum-radius substitution; neutral U-owned ratios and the independent intrinsic Kp=6/R_mom² are unaffected.</p>
+</li>
+<li><p><strong>Additional Batch 4 occurrence:</strong> the absolute native carrier-energy rewrite at VI-B 3816–3835 (upstream VI-A 11996–12019) uses the same momentum-radius energy identification; inherit the existing <code>CELL_{K→U}</code> certificate rather than adding a new condition or treating its numerical finite-carrier ratio as wrong.</p>
+</li>
+</ul>
+<h3>BH-VIB-MUKHANOV-LOC-003 — SOURCE_ATTRIBUTION (minor; established)</h3>
+<ul>
+<li><strong>Source:</strong> Paper6B <code>p9:prop:v191-kms-to-sky-interface</code>, lines 887–906, names <code>p8:thm:g30a-2i-mukhanov-bridge</code> as a theorem of &quot;Paper VI-A&quot;.</li>
+<li><strong>Actual current source:</strong> the unique controlling <code>\label{p8:thm:g30a-2i-mukhanov-bridge}</code> is in <code>Paper6C-TechnicalMaterial-v1_43.tex</code>, lines 2377ff, despite its historical <code>p8:</code> label prefix. It imports II-C's canonical reciprocal harmonic intertwiner. There is no second label definition in VI-A.</li>
+<li><strong>Issue:</strong> wrong paper attribution, <strong>not</strong> missing theorem/proof; the conditionally scoped reciprocal bridge is available from VI-C. Current-source anchor and typed import edge must point to VI-C and not to VI-A.</li>
+<li><strong>Impact:</strong> proof provenance and DAG source locator; no refutation of the numerical harmonic-degree equality or observed-sky firewall.</li>
+</ul>
+<h3>BH-VIB-OPTICAL-CURVE-004 — MISSING_CONDITION / INCORRECT_STEP (moderate; confirmed for fixed-radius closed comparison)</h3>
+<ul>
+<li><strong>Origin:</strong> VI-B <code>p9:prop:external-optical-homothety-diagnostic</code>, lines 1044–1063, especially proof asserting <code>D_A -&gt; T D_A</code> merely from <code>H^{-1}-&gt;T H^{-1}</code>.</li>
+<li><strong>Formal as printed:</strong> An <em>external</em>, not native, positive scalar clock rescaling <code>H^{-1}-&gt;T H^{-1}</code> with unchanged recombination opacity is used to claim <code>r_D^2-&gt;Tr_D^2</code>, <code>D_A-&gt;TD_A</code>, and <code>theta_D-&gt;T^{-1/2}theta_D</code> on the distance family, which includes the closed spatial geometry of lines 1017–1039.</li>
+<li><strong>Exact E3/E4:</strong> On a fixed physical closed-slice radius <code>a_*</code>, the paper's own transverse-distance law has <code>D_M=a_* sin(D_C/a_*)</code>, so if <code>D_C' = T D_C</code>, then <code>D_M'=a_* sin(T D_C/a_*)</code>. With angle <code>D_C/a_*=pi/6</code> and <code>T=2</code>, <code>D_M'/D_M=sqrt(3)</code>, not 2; <code>theta_D'/theta_D=sqrt(2/3)</code>, not <code>1/sqrt(2)</code>, while <code>r_D'/r_D=sqrt(2)</code> as claimed. The arguments remain in the first closed-geodesic branch. <strong>Positive control:</strong> the flat <code>a_* -&gt; infinity</code> limit has linear scaling <code>D_M'=TD_M</code> and the target damping law.</li>
+<li><strong>What remains true:</strong> <code>r_D^2</code> is linear in an independently scaled positive <code>H^{-1}</code> <em>if its opacity and other integrand terms are held fixed</em>. The native framework does <strong>not</strong> adopt <code>T</code>. No CMB observation is claimed from this diagnostic.</li>
+<li><strong>Required already-applicable domain guard:</strong> either specify a <em>full optical metric/radius homothety</em> (<code>a_*-&gt;Ta_*</code>, or a fixed dimensionless curvature <code>Omega_k</code> family rather than fixed <code>a_*</code>) or restrict the displayed angular scaling to the flat/small-angle limit. Scaling <code>H^{-1}</code> alone is insufficient at fixed closed radius. This is an <strong>inferred condition</strong>, not an independently invented physical optical mechanism.</li>
+<li><strong>Proven impact:</strong> this claim's angular-damping scaling subclaim only; <code>p9:eq:background-distance-core</code> and the closed <code>sin</code> distance map remain correct. No proven downstream target uses of this hypothetical scaling yet.</li>
+</ul>
+<h3>BH-VIB-BBN-EXTRA-005 — NORMALIZATION_OR_READOUT (moderate; unresolved observational baseline)</h3>
+<ul>
+<li><strong>Origin:</strong> VI-B <code>p9:thm:finite-bbn-response</code>, lines 1668–1686. It defines <code>rho_ord,rel</code> as <strong>the</strong> relativistic stress-energy of the occupied ordinary ordered output, not expressly as the excess above a specified standard plasma; nevertheless it labels <code>(rho_ord,rel+rho_X,rel)/rho_nu,1</code> as <code>Delta N_eff^{extra}</code>.</li>
+<li><strong>Issue:</strong> The <strong>defined diagnostic ratio</strong> is algebraically legitimate, but to identify it as the <em>extra</em> neutrino-equivalent radiation readout one must specify the baseline standard photon/neutrino/electron radiation already allocated. The ordinary K16-produced support may include those standard species. No reference-subtracted energy density or explicit proof of its equality to the displayed numerator is in this theorem. Counting ordinary standard radiation as extra would conflate total and excess radiation.</li>
+<li><strong>Status/scope:</strong> This does <strong>not</strong> refute the conditional Frechet response, prove a positive excess, or require a conventional thermalization mechanism. The needed object is an observation-side baseline/allocated stress difference on the <strong>same</strong> history and neutrino reference convention, not a new particle population. The <code>Delta N_eff=0 only if both vanish</code> clause additionally consumes nonnegativity of the two <em>incremental</em> component densities; positivity is not generalized to arbitrary geometric effective stresses.</li>
+<li><strong>Impact:</strong> BBN radiation/<code>Delta N_eff</code> observational interpretation at lines 1681–1686 only. Physical K16 radiation stress still enters expansion whether or not thermalized. Later nuclear-yield calculation cannot inherit an <strong>extra</strong>-radiation value without this normalization certificate.</li>
+</ul>
+<h3>BH-VIB-BBN-HISTORY-006 — IMPORTED_CONDITION / CONDITIONAL_FRONTIER (moderate; unclosed construction certificate)</h3>
+<ul>
+<li><strong>Origin:</strong> VI-B <code>p9:cor:bbn-network-history-descendant</code>, lines 1711–1729, invokes III-A <code>p3a:thm:unique-solution-history-descent</code> (current III-A lines 3898–3925) from continuity in <code>T</code>, local Lipschitz in <code>Y</code>, and initial data.</li>
+<li><strong>Exact imported theorem:</strong> III-A separately requires a <strong>previously frozen, licensed exact-solution constructor</strong> with a typed output and a <strong>well-posed problem on the claim domain</strong> (global existence and uniqueness modulo the specified relation). Local Lipschitz alone proves local uniqueness, not all the extra III-A hypotheses.</li>
+<li><strong>E4 negative control (scope, not a physical BBN counterexample):</strong> <code>Y'=Y²</code>, <code>Y(0)=1</code> is locally Lipschitz everywhere but blows up at clock 1, so alone does not license a full claimed <code>[0,2]</code> solution history. This counterfamily is not asserted to be the positive conserved nuclear network of VI-B.</li>
+<li><strong>Possible local discharge:</strong> Same target later at lines 5134–5166, <code>p6b:prop:v2210-lit-nuclear-network</code>, states a <em>conditional</em> positive-baryon-simplex, bounded-coefficient and unique-continuation certificate. It has not yet been audited in this batch. If the corollary's phrase 'let the complete vector be governed on the interval' is interpreted as presupposing existence, uniqueness is mathematically sound; the <strong>licensed-constructor descent</strong> still needs its own imported-condition edge or explicit inherited proof certificate.</li>
+<li><strong>Impact:</strong> no refutation of BBN network uniqueness under stronger conditions; the <strong>generated-descendant status</strong> is conditional on a discharged same-domain solution constructor and interval existence. Nuclear rate/history/visibility inputs remain separately acknowledged open readouts, not new free selectors.</li>
+</ul>
+<h3>BH-VIB-K48-ANCESTRY-007 — CROSS_PAPER_CONFLICT / INCORRECT_PROOF_ROUTE (major; established)</h3>
+<ul>
+<li><strong>Source-as-printed:</strong> VI-B <code>p9:thm:closed-j48-scalaron-abundance-trace</code>, lines 3415–3460, asserts that the <em>selected dressing depth</em> is 2, obtains the homogeneous cosmic label by reflection <code>J(2)=8−2=6</code>, and treats <code>{n_2,n_7}</code> as the current action-owner set.</li>
+<li><strong>Controlling earlier source:</strong> VI-A's <strong>current</strong> source, lines 263–270 and 444–449, explicitly calls <code>J(2)</code>-based K48 ancestry an old comparison/retired explanation. Its grade-four comparison has <code>j_dress=4</code>, so <code>J(4)=4</code>; the <strong>current working gravitational action</strong> is the capped action of VI-A lines 105–118 and 3651–3682, distinct from both historical Laurent branches. VI-B itself correctly states the independent <code>56−8=48</code> route at lines 2296–2325.</li>
+<li><strong>E3/E4 exact contradiction:</strong> <code>J(2)=6</code> and <code>J(4)=4</code> are both true arithmetic. They are NOT the same ancestry. No type-correct inference from the current selected grade-four comparison can produce <code>j_cDM=6</code> by that reflection; the failed step is identifying obsolete depth 2 as currently selected. Exact current-branch control <code>P_{48}^{act}=0</code> follows separately from Paper III-C's active-depth spectrum <code>{0,4,5,7}</code>, while the carrier-free final-octet separator has <code>K_sh=56−8=48</code> and H/Hopf response imported in VI-A.</li>
+<li><strong>Boundary record:</strong> <code>BND-B3-K48</code> — source role <code>[CLASS]</code>: rank involution on a <em>given</em> branch; historical <code>j=2</code> is an earlier <code>[HOST/COMPARISON]</code> branch, not current <code>[GEN/REAL]</code> action depth. Physical K48 response <code>[DER]</code> has the separate final-octet/H ancestry; particle carrier <code>P48=0</code> is a different <code>[DER]</code> statement. No numerical-label equality licenses replacing the owner proof.</li>
+<li><strong>Impact:</strong> <strong>failed route only</strong> (<code>DIRECTLY_BLOCKED</code> for the <code>J(2)</code> ancestry). <code>K48</code> label, <code>P48=0</code>, smooth junction on the historical response, final-octet cosmic response and static RAR kernels retain <strong>INDEPENDENT_BYPASS</strong> where proved. Any downstream statement importing the <em>old reflected proof</em> inherits this issue until re-anchored. This is not a refutation of dark response itself.</li>
+<li><strong>Needed source action (outside this audit):</strong> retire the 2-depth selected-branch claim and point K48 provenance to the existing final-octet/H-response dependency. The supplied papers are unchanged.</li>
+</ul>
+<h3>BH-VIB-PB16-STRESS-008 — MISSING_CONDITION / NORMALIZATION_OR_READOUT (major; established)</h3>
+<ul>
+<li><strong>Origin:</strong> VI-B lines 2590–2668 and <code>p9:cor:v2186-c06-direct-energy-readout</code> 2262–2272, especially <code>ρ_ord(16)=ρ_{∂,16}=Ξ_{8→16}E16^4</code>, <code>PB16_owner=CLOSED</code> and the unqualified phrase <strong>unconditional particle-boundary energy-equivalent readout</strong>. VI-B's K16 kinetic-rate guard is stated, but the separate stress-identification guard is not carried at those occurrences.</li>
+<li><strong>Controlling source:</strong> VI-A <code>p8:thm:v2136-k16-direct-particle-owner</code> (9437ff) closes the constituted <strong>particle boundary support</strong>. VI-A <code>p8:cor:v2136-pb16-closed</code> (9501–9523) explicitly says <em>to identify its work and density with complete physical particle stress</em>, the <strong>same-action pullback must retain zero-order normalization, first field jets and metric/cell mixed jets</strong> of D19, VI-A 5877–5902. Its <code>p8:rem:v2201-pb16-action-jets</code> (9534–9541) says this qualifies physical uses of the direct energy-equivalent density and temperature. The theorem does not there evaluate the D19 certificate unconditionally.</li>
+<li><strong>Earliest failed edge:</strong> <code>owner/support and structural packet normalization → equality with full physical stress</code> without the complete D19 action-jet certificate. Finite source-target support proves neither arbitrary metric-dependent constants nor their variations vanish; D19 demonstrates the precise independent stress condition.</li>
+<li><strong>E4:</strong> Distinct functionals <code>S_1(q;g,η)=½⟨q,K(g,η)q⟩</code>, <code>S_2=S_1+c(g,η)</code> share the entire quadratic owner and particle pair kernel; if <code>∂_g c</code> or <code>∂_η c</code> is nonzero, stress/cell work differs. This is an admissible <em>mathematical</em> negative control for inferring stress from Hessian; it is not a constructed alternative physical theory. Positive control: constant <code>c</code> with all relevant jets equal makes the extra variation vanish, exactly as D19 states.</li>
+<li><strong>Boundary record:</strong> <code>BND-B3-PB16</code> — <code>[GEN/DER]</code> constitutes owner and fixed packet, <code>[REAL]</code> physical stress is a stronger typed action-variation map; <code>[CAL]</code> conversion to energy-equivalent temperature is then conditional on full stress identification, and thermodynamic temperature further consumes visible occupation/thermalization and the actual post-K16 rate-domain guard. These are <strong>distinct</strong> conditions, not duplicate PB16 owner axioms.</li>
+<li><strong>Impact:</strong> VI-B direct physical <code>ρ_ord</code>, visible-only total stress, <code>T16^E</code> as a <strong>physical</strong> particle energy measurement and any later kinetic/nuclear abundance using it <strong>INHERIT_CONDITION(D19)</strong>. Structural <code>Ξ E16^4</code> remains <code>INDEPENDENT_BYPASS</code> and is not revised. No invented efficiency is justified. This does not reopen the proven PB16 particle owner.</li>
+</ul>
+<h3>BH-VIB-TOP-RGE-009 — INCORRECT_STEP / NORMALIZATION_OR_READOUT (moderate; established)</h3>
+<ul>
+<li><strong>Source:</strong> unlabeled RGE remark VI-B lines 2901–2911 prints one-loop <code>β_{y_t}/y_t=(16π²)^{-1}[9y_t²/2 −(17/12)g_1−9g_2²/4−8g_3²]+...</code>.</li>
+<li><strong>Actual framework convention:</strong> Paper V-C current source lines 1058–1067 and 1525–1544 uses <code>g_1²=(5/3)g_Y²</code>, i.e. <code>g_1</code> is the GUT-normalized <strong>coupling</strong>. In that convention the Standard Model one-loop hypercharge contribution is <code>−17g_1²/20</code>; in an unnormalized <code>g_Y</code> basis it would be <code>−17g_Y²/12</code>. Source displays neither correct form.</li>
+<li><strong>E3 independent check:</strong> published one-loop top-Yukawa equation under explicitly stated <code>g_1=√(5/3)g_Y</code>, <em>Phys. Rev. D</em> <strong>91</strong>, 095010 (2015), DOI <code>10.1103/PhysRevD.91.095010</code>, Appendix B.1 Eq. (44), agrees with <code>−17g_1²/20</code>. E4 positive/negative numerical controls for <code>g_1=.46</code>: source <code>−.6516667</code>, standard <code>−.17986</code>. The missing exponent and normalization are distinct errors in the <em>example RGE</em>.</li>
+<li><strong>Impact:</strong> numerical <code>β_y</code>, <code>Dβ_y</code> and any portal-value evaluation that uses the <em>printed</em> top RGE are <strong>DIRECTLY_BLOCKED</strong>. The underlying formal spurion Taylor lemma and the two symbolic couplings are <strong>INDEPENDENT_BYPASS</strong> if the beta function is supplied from a correct licensed RG system. No top-Yukawa physical value or coupling renormalization is inferred by this audit.</li>
+</ul>
+<h3>BH-VIB-ACTION-LINEAGE-010 — CONDITIONAL_FRONTIER / CROSS_BRANCH_PROVENANCE (moderate; established missing proof-use edge)</h3>
+<ul>
+<li><p><strong>Source uses:</strong> VI-B 2296–2310 labels <code>D_4=Q^{n_4^+}</code> the active ultraviolet dressing; VI-B <code>p9:prop:v215-post-freeze-chart-bounds</code> lines 3021–3108 applies the <strong>current cyclic-root</strong> energy ceiling to the separate <strong>restored lower Laurent</strong> <code>f_{2|7}</code> Hessian bounds; <code>p9:thm:v181-kin16-bogoliubov-backreaction</code> lines 3113–3223 promotes the comparison to the <code>SCALE^canonical_16,cyc</code> source/history readout.</p>
+</li>
+<li><p><strong>Controlling boundary source:</strong> Current VI-A abstract and lines 105–118 and <code>p8:rem:v223-cap-status</code> (3665–3682) say the <strong>capped</strong> <code>f_c=PR+B(R)R²−σ²/B²</code> is the <em>working</em> gravitational action, still conditional on physical microscopic identification; historical <code>n_4|n_7</code>, <code>n_2|n_7</code> and smooth-MRESP branches are mathematical <strong>comparisons</strong>. Their cosmological numeric outputs cannot be transported into the cap without an evaluated same-action comparison. VI-A <code>p8:thm:v2219-active-dressing</code> (274–299) is explicitly a grade-four <em>comparison</em> coefficient. The current cap cyclic-root ceiling <code>p8:cor:v215-actual-root-energy</code> occurs at lines 16353–16382, while the lower <code>χ_7^{jet}</code> response is a distinct formula, VI-A 12274ff and 3936ff.</p>
+</li>
+<li><p><strong>Earliest missing edge:</strong> the physically instantiated historical Laurent Hessian/phase frequency and the current cap cyclic Cauchy history must be shown to arise from the <strong>same admitted action and root</strong> before bounds on their quotient are reported as a current-capped scalaron production prediction. No such same-action identification was located in the consumed current passages; VI-A expressly warns not to assume it.</p>
+</li>
+<li><p><strong>Boundary record:</strong> <code>BND-B3-CAP</code> — <code>f_c</code> is <code>[CONST/WORKING]</code> on the present source stage; historical <code>f_{2|7}</code> and <code>f_{4|7}</code> are <code>[CLASS/COMPARISON]</code>, the generated cyclic root belongs to its actual source/metric action and state. An <code>[ID/REAL]</code> branch-transfer theorem is a <strong>consumed condition</strong> for claims of current physical numbers, not an invitation to propose a new normalization, scalaron or mechanism.</p>
+</li>
+<li><p><strong>E3/E4:</strong> the <strong>conditional algebra is valid</strong> and the independently reproduced bounds <code>H_E/m_E≤8.85877×10^-6</code> and <code>ε_{m,E}≤1.06305×10^-4</code> hold on the simultaneous mathematical assumptions. Changing the action between the root energy calculation and the Hessian invalidates the physical implication even though each standalone bound is correct. This issue is therefore <strong>not</strong> labeled a refutation of the conditional proposition.</p>
+</li>
+<li><p><strong>Impact:</strong> current-cap-specific KIN16 quantitative scale/coupling/rate claims <strong>INHERIT_CONDITION(same-action lineage identification)</strong>; pure historical lower-action comparisons and independent cap geometry are <strong>INDEPENDENT_BYPASS</strong>. Do not import the WKB source as unconditional physical production.</p>
+</li>
+<li><p><strong>Additional Batch 4 scope occurrence:</strong> VI-B 3735–3757 and 3864–3889 expressly operate with the historical active Laurent <code>f_{2|7}^{act}</code>; physical current-capped-action cosmology cannot silently transfer their precise numeric Hessian/curvature fluid into the current <code>f_c</code> action. This shares issue 010’s same-action lineage guard rather than creating a second physical-owner issue.</p>
+</li>
+</ul>
+<h3>BH-VIB-PORTAL-RATIO-011 — TYPE_OR_DOMAIN / INCORRECT_RATIO_SCOPE (minor; established)</h3>
+<ul>
+<li><strong>Source:</strong> <code>p9:cor:alpha-delta-portal-factors</code>, lines 3347–3370, asserts <code>g_1(δ)/g_1(0)=e^(−δ/2)</code> and <code>g_2(δ)/g_2(0)=e^(−δ)</code> with only RG and thermal data held fixed.</li>
+<li><strong>E3:</strong> the <strong>multiplicative</strong> scaling <code>g_1(δ)=e^(−δ/2)g_1(0)</code> and <code>g_2(δ)=e^(−δ)g_2(0)</code> follows exactly from the already derived normalization powers.</li>
+<li><strong>E4 exact in-domain witness:</strong> the prior thermal source is <code>A_t=N_cT²/12</code>, and <code>T=0</code> is explicitly discussed in VI-B <code>p9:rem:thermal-portal-chronology</code> (2856–2869). At <code>T=0</code>, both <code>g_1(0)</code> and <code>g_2(0)</code> vanish for the portal source while their written ratios are <code>0/0</code>, undefined. Even at positive T, <code>y_tβ_y=0</code> or <code>β_y²+y_tDβ_y=0</code> permits a zero denominator unless explicitly excluded. Positive control: with nonzero denominators, the ratios are exactly correct.</li>
+<li><strong>Impact:</strong> literal ratio statements <strong>INHERIT_CONDITION</strong> of respective nonzero comparison denominators; the correct multiplicative α/δ coefficient relation, the portal expansion and the downstream mode-jump theorem are <strong>INDEPENDENT_BYPASS</strong>. This is a minor domain issue, not a claim that either portal coefficient must physically be nonzero.</li>
+</ul>
+<h3>BH-VIB-ABUNDANCE-ELASTICITY-012 — MATHEMATICAL_INCONSISTENCY / FALSE_NECESSARY_CONDITION (moderate; established)</h3>
+<ul>
+<li><strong>Target / earliest root:</strong> VI-B <code>p9:cor:closed-abundance-scaling</code>, lines 3677–3698, after the correct weighted-log-derivative identity. Claim-as-written: a global product homogeneity of <code>A=F+M</code> exists <strong>only when</strong> both positive component elasticities coincide for every varied parameter (or one vanishes).</li>
+<li><strong>E1:</strong> for <code>x&gt;0</code> and positive differentiable F, M, <code>Dlog(A)=(F/A)Dlog(F)+(M/A)Dlog(M)</code> holds exactly. The source proof differentiates A but does <strong>not</strong> prove the claimed necessity.</li>
+<li><strong>E3/E4 exact in-domain counterexample:</strong> <code>F(x)=x+x²/(1+x)&gt;0</code>, <code>M(x)=x/(1+x)&gt;0</code> on all <code>x&gt;0</code>. Both increase; <code>F+M=2x</code> is globally homogeneous of degree one. At <code>x=1</code>, the individual elasticities are <code>7/6</code> and <code>1/2</code>, unequal, while the weighted sum is exactly <code>1</code>. A two-parameter product extension is obtained by multiplying both by <code>y&gt;0</code>, yielding <code>2xy</code> without component-equality necessity. Positive control: if the two component elasticities coincide and the total exists, the total shares that elasticity; equal elasticities are <strong>sufficient</strong>, not necessary.</li>
+<li><strong>Boundary:</strong> Both terms are optional scalaron <strong>source-side</strong> positive energy coordinates, not cosmological CDM particles or a generated physical abundance. This attack refutes only the claimed universal <em>necessary</em> mathematical condition, not the absence of a source-proved universal <code>B_vis^-3/8</code> multiplier.</li>
+<li><strong>Impact:</strong> Directly blocks the only-if clause; Theorem <code>p9:thm:scalaron-readout-coordinate-conversion</code> (3700–3719) retains its negative inference because the finite 3/5–2/5 energy split does not establish any equality/compensation or a common scalaron abundance power. No downstream physical CDM stress claim needs this false necessity. <strong>Remaining obligation:</strong> correct the necessity direction in a future source version or supply the additional specific functional assumptions under which necessity truly holds; forbidden to repair during this audit.</li>
+</ul>
+<h3>BH-VIB-OSC-AVERAGE-013 — APPROXIMATION_SCOPE / EXACTNESS (moderate; established qualifier, not a refutation of WKB limit)</h3>
+<ul>
+<li><strong>Target:</strong> <code>p9:thm:transported-hot-cold-kinematic-split</code>, lines 3574–3612; the second boxed pair <code>⟨w_X⟩=0</code>, <code>⟨ρ_X⟩∝a^-3</code> is presented as an exact equation under a merely finite <code>H/m_X≪1</code> underdamped adiabatic hypothesis.</li>
+<li><strong>E1:</strong> for a freely oscillating canonical scalar, phase-averaged harmonic virial equipartition gives the leading WKB law, with an independently consumed averaging scale. Finite <code>H/m_X</code> is not the exact zero-friction limit, and the source gives no error bound or definition of the average.</li>
+<li><strong>E3/E4 counter-control:</strong> on the allowed constant-H oscillator <code>X(t)=A exp(-3Ht/2)cos(ωt+φ)</code>, <code>ω²=m_X²−(3H/2)²</code>, take <code>m_X=1</code>, <code>H=0.01</code>, <code>φ=π/4</code> and time average exact physical ρ and p over one full <code>2π/ω</code> cycle. Independent quadrature gives <code>⟨p⟩/⟨ρ⟩=0.014998312405...</code>, not exactly zero. The ratio decreases as H/m→0; the standard coarse-grained leading adiabatic approximation remains the positive control. A phase-averaging convention at frozen slow time is a distinct mathematical average and must be declared before elevating its leading result to an exact finite-time identity.</li>
+<li><strong>Impact:</strong> No claim of actual particle cold DM follows from the oscillator, and no native dark abundance is refuted. The second part of the theorem is <code>VERIFIED</code> <strong>only at leading adiabatic order</strong>; strict exact dust/dilution at finite H needs additional averaging/conservation hypotheses or explicit asymptotic notation. The first later-rung mass-energy suppression is independent and survives.</li>
+</ul>
+<h3>BH-VIB-DUST-SOUNDSPEED-014 — DOMAIN_DEGENERACY / UNDEFINED_DERIVATIVE (minor; established)</h3>
+<ul>
+<li><strong>Target:</strong> optional comparison theorem <code>p9:thm:k48-effective-dust-propagation</code>, lines 3759–3814, sound-speed conclusion <code>c_{s,cDM}²=0</code> after deriving additive <code>E(ζ)=μζ</code>, <code>p=ζE'(ζ)-E(ζ)=0</code>.</li>
+<li><strong>E1/E3:</strong> continuity + additivity on nonnegative ζ yield linear E, and p=0 for any μ. If μ≠0, <code>dp/dE=(dp/dζ)/(dE/dζ)=0/μ=0</code>. The current theorem allows μ=0 and even <code>λ_D=0</code>. For μ=0, <code>E</code> is identically zero; both derivatives vanish, <code>dp/dE=0/0</code> is undefined as the sound speed of a nontrivial fluid. Source does not supply an alternative perturbative sound-speed definition at zero energy.</li>
+<li><strong>Boundary and impact:</strong> Only the optional material-current comparison (<code>K48MATERIAL</code>, physical λD and E) is affected. Terminal Hodge shape, continuity/additivity and pressurelessness remain valid; native H-modality curvature-fluid cDM is an independent route. <strong>Needed guard:</strong> nonzero <code>dE/dζ</code> and an occupied perturbable material-energy domain for the derivative assertion. Do not introduce a new dark particle or density.</li>
+</ul>
+<h3>BH-VIB-RETARDED-SEGMENT-015 — IMPORTED_DOMAIN_LOSS / DIVISION_BY_ZERO (moderate; established)</h3>
+<ul>
+<li><strong>Target:</strong> <code>p9:cor:v1107-k48-n0-readout</code> 4386–4401 and linked <code>p9:cor:v1107-resolved-cold-readout</code> 4403–4416. Both import exact retarded kernels from VI-A without reprinting essential branch conditions. The n=0 kernel is <code>G0^R(t,s)=Θ(t-s) dot a(t)/dot a(s)</code>; the resolved scalar kernel has prefactor <code>c²/[3H(s)]</code> and <code>1/H</code> in the exponent.</li>
+<li><strong>Controlling upstream scope:</strong> VI-A <code>p8:thm:v2145-k48-n0-propagator</code>, lines 10589–10622, requires <strong>any regular expanding segment consistently reduced to the stationary Einstein tangent</strong> and <code>H²=F(a;C_A)</code>, <code>dot a=a sqrt F</code>; hence <code>dot a(s)&gt;0</code>. VI-A <code>p8:thm:v2145-closed-s3-cold-propagator</code>, lines 10624–10660, further requires constant <code>F_star</code>, <code>n&gt;2</code>, pressureless no-slip zero-shift scalar port and the regular expanding <code>H&gt;0</code> domain. VI-B mentions only the fixed constants (n=0) or n&gt;2 (resolved scalar).</li>
+<li><strong>E3/E4:</strong> On <code>a(t)=e^{Ht}</code> with H&gt;0 the n=0 kernel reduces exactly to <code>Θ e^{H(t−s)}</code> and its time-origin/relational interpretation follows. A turning point <code>dot a(s)=0</code>, permitted on a general cyclic history unless the segment condition is imported, yields an undefined quotient. Likewise <code>H(s)=0</code> makes the scalar retarded formula undefined. This is <strong>not</strong> a counterexample to the properly scoped VI-A theorem, only to extending its displayed formula to all times or all n&gt;2 modes. Unscreened movement through the turning point would require a different regular patch, not a new physical response postulate.</li>
+<li><strong>Impact:</strong> the explicit kernels and any late-time/cyclic use outside the inherited positive-H stationary-Einstein domain <strong>INHERIT_CONDITION(regular expanding stationary tangent)</strong>. The <code>D48 H|_a=0</code> time-origin result is verified on the actual upstream domain; no additional homogeneous K48 mode is shown by this audit. Dynamic collisionless source response 4418ff has its separate causal/domain guards, not a claimed universal consequence of these kernels.</li>
+</ul>
+<h2>Batch 2 source-import checks and independent controls</h2>
+<ul>
+<li><strong>Imports actually consulted:</strong> VI-A <code>p8:thm:v292-k48-h-modality-corealization</code> (11866–11923); VI-A lower-stationary inverse (3978–4042); VI-A static environmental terminal response (10105–10183); VI-A homogeneous response reconstruction/energy work (12603–12888); III-A <code>p3a:thm:unique-solution-history-descent</code> (3898–3925); the present paper's conditional positive finite nuclear network (5134–5166, <strong>not audited as its own claim yet</strong>); V-C native ordered coefficient at 3439,3515,6412. Additional Paper IV and Paper VI-A transfer imports are recorded as conditional proof-use interfaces; their full kernels are not independently re-audited.</li>
+<li><strong>E3 mathematical checks:</strong> <code>evidence/Paper6B-Batch2ExactChecks-v1_1.py</code> performs closed <code>sin</code> distance counterexample with flat positive control; algebraic closed Friedmann <code>x,N_min,N_crit</code> and Omegas; metrological internal numerical consistency; helium freeze-out variation; curvature-misallocation stress conservation; exact two-level BL2 Ward sign; charge/entropy Cauchy bound; ODE global-vs-local witness. Script completed without failure. No instrument/empirical calibration is independently certified by the script.</li>
+<li><strong>Distributional matching E3:</strong> Integrating <code>dot rho+3H(rho+p/c²)=S_reg</code> across a finite jump with bounded <code>H,p,S_reg</code> gives <code>rho^+=rho^-</code>, <em>only</em> under the optional existing <code>K48MATERIAL</code> and <code>K48MATCH</code> conditions. The native nonparticle curvature-fluid role is not required to satisfy an invented separate matter-current handoff.</li>
+<li><strong>Source normalization:</strong> The physical momentum radius rewrite <code>U=18/(pi R_mom²)</code> at lines 1448–1473 is an <strong>additional occurrence of issue 002</strong>, not a new condition. The <code>d=1/2</code> choice is clearly flagged optional and is not promoted to an observed cosmic present time.</li>
+<li><strong>Typed condition origins and uses (pending global integration):</strong> inherited upstream <code>CELL_{K-&gt;U}</code> -&gt; VI-B 1450–1473; upstream VI-A <code>PROP^cyc_48</code>/H-modality -&gt; VI-B 1125–1226; VI-B optional <code>K48MATERIAL</code> and <code>K48MATCH</code> first explicit joint occurrence at 1254–1263 -&gt; optional theorem 1249 and following energy ledger; upstream III-A exact-solution constructor/well-posedness -&gt; VI-B 1711–1729; VI-B external <code>H^{-1}</code>-only comparison at 1044ff -&gt; required full optical radius/curvature guard for angular conclusions. A mere reference to the same condition at a later location is <strong>not</strong> a second canonical assumption node.</li>
+<li><strong>Status discipline:</strong> <code>REPRODUCED</code> on VI-A physical-owner imports does not certify their entire cosmological source lineage; <code>VERIFIED-CONDITIONAL</code> on algebraic readouts does not certify empirical <code>H_0</code>, primordial <code>Delta N_eff</code>, CDM abundance, or baryogenesis; all new issue categories distinguish these from outright false algebra.</li>
+</ul>
+<h3>BH-VIB-STATIC-FORCE-SCOPE-016 — IMPORTED_DOMAIN_LOSS / PHYSICAL-OPERATOR_SCOPE (moderate; established missing guard)</h3>
+<ul>
+<li><strong>First current VI-B source origin:</strong> <code>p9:thm:v164-k48-rar-readout-correction</code>, lines 5516–5526, presents the <strong>active weak-field point-source</strong> Yukawa acceleration with <code>m_s²=(F_0−R_0 f_{RR})/(3 f_{RR})</code> immediately alongside a distinct terminal affine result, without explicitly preserving the conditions for the local linearized inverse.</li>
+<li><strong>Exact available controlling source:</strong> VI-A D18, lines 5844–5874, proves the Yukawa/linear point-source form <strong>on the weak-field, subhorizon, stable local metric-f(R) stationary branch with the same metric/source owner</strong>. It explicitly excludes extending this local bound into the complete global <code>S+T</code> or a galaxy-scale K48 environmental response. VI-C <code>p8:thm:v164-static-metric-response</code>, lines 518–551, independently marks its displayed <strong>specified numerical quadratic comparator</strong> as <em>historical</em>, not the currently working action or native terminal S+T. VI-A lines 95–103 adopt the <strong>capped</strong> working gravitational action, not those historical comparators by substitution.</li>
+<li><strong>Adjudication:</strong> The functional Yukawa <strong>formula is correct on the positive-mass stable stationary local reduction</strong>, and the affine terminal quotient <code>f=R−C_{56}</code> produces <code>+C_{56}c²r/6</code>. This is <strong>not</strong> a refutation of local metric-f(R) response. The issue is the missing import of the source-proven stable same-action stationarity/subhorizon/linear-domain guard and the risk of describing the historical comparator as the current global active kernel. An unrestricted active/capped physical response has not been established merely by displaying the local inverse. Distinguish this from <strong>issue 010</strong>, which concerns numerical scalaron Hessian/well transfer between lower Laurent and capped actions, not this local-force theorem.</li>
+<li><strong>BND record:</strong> <code>BND-VIB-STATIC-FORCE-016</code>: <code>[DER]</code> stationary positive-mass local inverse, <code>[HOST/COMPARISON]</code> numerical historical quadratic comparator, <code>[REAL]</code> physical full same-action source-conditioned S+T response. The latter does not follow from local metric inversion without its licensed Schur/metric/contact inputs.</li>
+<li><strong>Observed impact:</strong> restrict the <code>p9:thm:v164-k48-rar-readout-correction</code> active local formula to VI-A D18's admitted branch. The earlier VI-B <code>p9:cor:v1103-stationary-source-readout</code> remains conditional. The optional Reeb elasticity at 4903–4933 additionally retains independent (R1)/(R2) static readout conditions; it does <strong>not</strong> automatically consume the Yukawa formula. No certified physical-observable descendant in another paper is declared blocked absent a matching proof-use path.</li>
+<li><strong>Resolution/evidence requirement:</strong> source-level conditional scope or an already-established same-action physical-kernel certificate on a broader domain; no paper edits under this protocol.</li>
+</ul>
+<h2>Batch 3 review passes, inherited conditions and negative controls</h2>
+<ul>
+<li><strong>Target source block:</strong> Paper VI-B lines 2136–3461. 31 additional named/unlabeled formal environments now have explicit conservative dispositions (43–73 above). Unnumbered active premises examined include the kinetic source/environment projector (2445–2485), root tensor jets (2491–2519), neutrino terminal-role scope (2530–2541), direct K16 temperature/owner readout (2548–2673), BL2 boundary charge rule (2676–2698), MC.1/MC.2 (2987–3019), and the distinct K48 final-octet setup (2701–2720). Formal environment counts do not exhaust unnamed proof-use requirements.</li>
+<li><strong>Source import checks:</strong> VI-A current capped action/branch precedence (105–118, 263–270, 274–299, 444–449, 3651–3682), C06 K16 finite production/trace (8273–8484), D19 PB16 jets (5877–5902, 9437–9541), actual cyclic root energy (16353–16382), restored lower scalaron f2|7 (3936–3965 and 12274ff), Paper III-C active spectrum <code>{0,4,5,7}</code> near 359–408, Paper V-C breathing/GUT gauge normalization (1058–1067, 1535–1544, 2464–2528), Paper I-B exact Legendre logarithmic Hessian (20822ff). This is narrow prerequisite checking, <strong>not</strong> a remote-paper full audit.</li>
+<li><strong>E3 script:</strong> <code>evidence/Paper6B-Batch3ExactChecks-v1_1.py</code>. Independently passes H-response inversion and three w rays; finite RG Taylor; symbolic generic f(R) Hessian/derivative; native α, Q and c0; canonical H/m and εm one-sided bounds; positive sudden-mode squeeze; DOP853 homogenized reheating equality convergence for four widely separated initial densities; α/δ factors; leading tensor quadratic Bogoliubov jet; gauge/RGE controls; and native-common-heat Γ and T with correct lower canonical mass. Program exit code 0 on the actual frozen inputs.</li>
+<li><strong>Adversarial PASS:</strong> VI-A physical PB16 support does not by itself determine metric/cell stress jets; current action-vs-historical response ancestry does not have a demonstrated identity; J(2) cannot be selected-depth proof for grade-four response; GUT RGE gauge monomial differs; literal portal ratios require denominators.</li>
+<li><strong>Adversarial REJECTED false positive:</strong> Computing the native common-heat <code>Γ_g</code> with the <em>UV comparison</em> m≈3.53×10^13 GeV gives ≈6.44×10^-15 GeV, but source VI-B's quoted <code>Γ_g≈1.15035 GeV</code> is the <strong>lower-branch canonical mass</strong> m_E≈√(U/6)=1.988×10^18 GeV. Using that correct mass in the exact source Γ formula, source-native <code>g_i²=2π²</code> and gauge dimensions <code>(1,3,8)</code> reproduces <code>Γ_g≈1.15035058 GeV</code>, <code>T_eq≈5.7949674×10^8 GeV</code>. <strong>No issue</strong> is created for that benchmark; it is a valid mathematical native-boundary diagnostic but not a physical weak-coupling rate.</li>
+<li><strong>Assumption identity and inheritance (single logical origin):</strong> VI-A physical D19 same-action jets -&gt; VI-B 2262/2590–2668; VI-A cap vs historical-action precedence -&gt; VI-B 2296/3021/3113; VI-A established K48 final-octet/H owner -&gt; VI-B 2313, but VI-B 3415 illegitimately substitutes old J(2). The VI-B <code>T&gt;0</code>, nonzero <code>y_tβ_y</code> source block is explicitly present at 3328ff; the stronger ratio-denominator requirement at 3347ff is missing. Existing RG+kinetic state/window/coupling hypotheses in VI-B 3113/3268 are retained as <strong>conditional inputs</strong>, not fabricated new free constants.</li>
+<li><strong>Disposition integrity:</strong> No paper or incoming ZIP modified. No real additional agents available; one verifier performed separately logged E1 source replay, E3 independent symbolic/numeric checks and E4 challenge. No graph is yet released or claimed integrated; this audit Markdown is a cumulative interim evidence artifact.</li>
+</ul>
+<h2>Batch 4 source imports, independent verification and challenge results</h2>
+<ul>
+<li><strong>Target scope:</strong> VI-B lines 3462–4740, formal claims 74–112. This includes the final-octet geometric/Hopf interface; optional scalaron kinematics and stress; exact metric-f(R) curvature-fluid algebra; static D4/S3/Growth readouts; observation-side baryon/neutrino/density transfer; historical versus active K48/RAR ownership; terminal RAR/affine-vacuum density and pressure two-port budgets; static loaded source energy; and retention of actual finite-carrier excitations. Unnumbered material at 3837–3890, 3951–3955, 4041–4089, 4207–4263, 4474–4483, 4548–4557, 4584–4588 and 4675–4682 was explicitly checked for condition promotion.</li>
+<li><strong>Controlling VI-A imports actually read:</strong> VI-A <code>p8:cor:final-octet-primitive-remnant-depletion</code> 1893–1954, <code>p8:thm:final-octet-canonical-hopf-descent</code> 1957–2024, <code>p8:thm:final-octet-flrw-hodge-dilution</code> 2027–2073; <code>p8:cor:v2142-k48-gamma-unit</code> 10481–10506; <code>p8:thm:v2145-k48-dust-constructor-nogo</code> 10540–10567, <code>p8:cor:v2145-k48-endpoint-versus-dust</code> 10569–10587, n0 and resolved cold kernels 10589–10660 and kinetic corollary 10663–10694; finite carrier εcar VI-A 11980–12029. The VI-A historical lower branch <code>f2|7</code> and current capped <code>f_c</code> are not assumed identical (issue 010).</li>
+<li><strong>Other bounded source imports:</strong> VI-C <code>p8:thm:k16-produced-modes-radiation-like</code> 3571–3605 (actual energy-support condition); III-F <code>p3f:thm:v2203-terminal-boundary-budget</code> 16278–16319, plus III-F <code>p3f:thm:v2206-loaded-static-energy</code> 16695–16741, including field/int sign; IV-B <code>p4:thm:v2209-controlled-excitation-survival</code> 9006–9044. Specific V-B carrier-overlap claims and auxiliary imported readout theorems are only source-replayed, not globally re-audited.</li>
+<li><strong>E3/E4 evidence script:</strong> <code>.paper6b_work/evidence/Paper6B-Batch4ExactChecks-v1_1.py</code> (executed successfully) checks final-octet trace and Hopf normalization, additive derivative and global counterexample, degenerate dust sound speed, thermal free-streaming numerical coefficient, exact affine/RAR normalization, independent density and pressure ports, scalar Green spectrum, multi-species density transfer, quadratic loaded energy and compensation, two-level leakage survival bound, n0 kernel’s regular expanding control, and exact finite-friction oscillator mean. Script tests are mathematical subset evidence, not automatic proof of occurrence or empirical agreement.</li>
+<li><strong>E4 adjudication:</strong> The <code>F+M</code> false <em>necessary</em> condition is refuted exactly (issue 012); finite-H phase-sensitive time averaging disproves an unqualified exact oscillatory dust equality while preserving the leading adiabatic law (013); the μ=0 material-current zero-energy branch makes <code>dp/dE</code> undefined (014); missing VI-A expanding/domain guards generate kernel singularities at H=0 (015). Rejected false positives: historical γ48 open/4/3 is explicitly retired by later unit theorem; optional exact dust is explicitly no longer native; bare finite carrier mass gap is not a continuum Yang–Mills mass-gap claim; the data-dependent residual ωcDM is intentionally a target not a theory prediction.</li>
+<li><strong>Canonical condition inheritance:</strong> K48 <code>Q_D</code> structural owner originated in VI-A; same-action physical Hilbert owner and terminal/cyclic occurrence retain VI-A scope; optional <code>K48MATERIAL</code> and <code>K48MATCH</code> are <em>not</em> promoted to native. Existing <code>CELL_{K→U}</code> first upstream introduction is reused at 3816, not duplicated. Existing same-action historical-Laurent versus capped-action lineage issue 010 is reused at 3735/3864. New inferred <code>nontrivial material-energy derivative</code> applies to 3759 sound speed only. Upstream VI-A <code>REGULAR_EXPANDING_STATIONARY_EINSTEIN_TANGENT</code> is reused (not re-created) at 4386 and 4403. Statistical/thermal domain and projective physical-carrier assumptions preserve their own origins. Root 012 is a failed mathematical inference, not a new assumption to add to the global registry.</li>
+<li><strong>Issue/route scope:</strong> All historical RAR L/PCAD routes are stored as historical route/scope, not silently declared current proof; VI-A v2.145 supplies active native H path without native dust. Confirmed issue IDs now 001–015. Affected proof edges are only the exact import/claim spans; no unrelated paper is declared audited, no paper TeX/PDF is modified and no DAG ZIP has yet been released.</li>
+</ul>
+<h2>Final Batch 5 independent checks, source-scope and final audit ledger</h2>
+<ul>
+<li><strong>Source freeze:</strong> <code>Paper6B-CosmologyReadouts-v1_199.tex</code>; SHA-256 <code>63cbea2cf69a30885d79f7199297b704345fa2d4ed66d3a1a4e201c4f3d8c30a</code>. Lines 4741–5970 independently source-read, 24/24 final formal statements assigned claims 113–136, plus source 4753–4827/5180–5203/5321–5450/5556–5655/5690–5775 unnumbered source and application statements.</li>
+<li><strong>E1/E3/E4:</strong> <code>Proofs/Paper6B-Batch05IndependentChecks-v1_1.py</code> and <code>Evidence/Paper6B-Batch05IndependentChecks-v1_1.json</code> are executable, independent tests of 14 identity/boundary cases. Earlier Batch1–4 detailed source-location certificates are retained in this cumulative record; prior exploratory scripts mentioned in those checkpoints are not automatically assumed available, and E0 label/index checks do not count as mathematical E3. No separate agent was used; source replay, independent mathematics, and adversarial domain checks were distinct passes by the same auditor.</li>
+<li><strong>Source import controls:</strong> VI-A compact Poisson inverse 12482–12551, conditioned static S+T and local metric D18 13260–13368, 13521–13589, 5844–5874, current capped-action precedence 95–103; Paper I-B exact finite pulse 20858–20949; II-C sharp chiral POVM 6949–7058; VI-C v164 quadratic-comparator and perturbation 495–551; III-A imported exact-solution constructor for issue 006. These are bounded imported interfaces, not independent neighbor-paper audits.</li>
+<li><strong>E4 controls:</strong> positivity and rank survive any deterministic complete linear transfer; no positive scalaron abundance follows from exact finite-Poisson/Green algebra; the observer-window inverse needs its <strong>declared</strong> external instrument measure; flat/dust observer-coordinate inversions do not select the occurring present. Historical K48 reflected <code>J(2)</code> passage at VI-B 5344–5350 is a second manifestation of <strong>issue 007</strong>, not a seventeenth root. Optional degenerate material <code>c_s²=0</code> at 5350–5354 inherits <strong>issue 014</strong> and the actual physical cell/stress conditions inherit <strong>issues 002/008/010</strong>.</li>
+<li><strong>BBN issue 006 qualified by later theorem:</strong> final <code>p6b:prop:v2210-lit-nuclear-network</code> (5135–5166) <strong>conditionally proves</strong> positivity, baryon conservation and finite-interval continuation on a compact simplex with actual bounded locally Lipschitz native rate functions. It provides an alternative mathematical continuation route for the earlier ODE on this <strong>stronger</strong> domain, but does not itself construct those physical rates or discharge III-A's complete actual-source/constructor condition. The issue is therefore narrowed, not silently erased.</li>
+<li><strong>New issue:</strong> <strong>BH-VIB-STATIC-FORCE-SCOPE-016</strong>. Final tally: <strong>16</strong> distinct canonical root findings; <strong>15</strong> inherited and <strong>one</strong> new in Batch 5. The detailed root certificates above specify scope, exact source locations and separate physical/evidence/DAG effects.</li>
+<li><strong>Completion:</strong> <code>FULLY_AUDITED_WITH_OPEN_GAPS</code> for the <strong>136 formal environment census and inspected material unnamed source interfaces</strong>, with remaining <code>FORMALIZED</code> and <code>REPRODUCED</code> entries explicitly <strong>not</strong> promoted to independently verified physical occurrence. No paper, macro, source, or supplied ZIP was edited. DAG registration/release validation is recorded in the successor Atlas files; the audit ZIP contains only one most-current finished audit for each paper.</li>
+</ul>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

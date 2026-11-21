@@ -1,0 +1,1876 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper3C-ProofChainAudit-v1_3 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper3C-ProofChainAudit-v1_3 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper3C ProofChainAudit v1_3</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper3C-ProofChainAudit-v1_3.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Source migration and repair-integration addendum — Paper3C-ProofChainAudit-v1_3.md</h1>
+<p><strong>Integration release:</strong> <code>Paper00-PapersMinimal-v3_007.zip</code>, 14 November 2026.
+<strong>Current paper source:</strong> <code>Paper3C-ProtectedHierarchy-v1_187.tex</code>.
+<strong>Status:</strong> <code>SOURCE_INTEGRATED; GLOBAL_SOURCE_REAUDIT_PENDING</code>. An inherited historical audit is not a correctness certificate for the newer current manuscript.
+<strong>Evidence policy:</strong> Local algebraic proofs and scoped tests do not discharge physical source/observable interfaces or automatically alter the canonical proof DAG.</p>
+<hr />
+<h2>Historical source-bound audit: Paper3C-ProofChainAudit-v1_2.md</h2>
+<h1>Repair addendum — Paper III-C / 13 November 2026</h1>
+<p><strong>Current manuscript:</strong> <code>Paper3C-ProtectedHierarchy-v1_181.tex</code> (SHA-256 <code>b094df602815d38bf2e764cf22554614cf6eae45054ee9341415b0e686a2f4af</code>)<br />
+<strong>Historical report preserved:</strong> <code>Paper3C-ProofChainAudit-v1_1.md</code> verbatim below.<br />
+<strong>Scope/status:</strong> source repaired; scoped E3/E4 controls recorded; no blanket proof/physical status promotion.</p>
+<table>
+<thead>
+<tr>
+  <th>Audit finding</th>
+  <th>Current source locator</th>
+  <th>Correction</th>
+  <th>Remaining proof gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-IIIC-ALTMEASURE-001</code></td>
+  <td><code>Paper3C-ProtectedHierarchy-v1_181.tex:2016</code></td>
+  <td>Non-exhaustive REG alternative examples explicitly include determinant measure/power</td>
+  <td>Unique REG rank-one value remains only inside REG</td>
+</tr>
+<tr>
+  <td><code>BH-IIIC-DEPTHARG-002</code></td>
+  <td><code>Paper3C-ProtectedHierarchy-v1_181.tex:3434</code></td>
+  <td>Separate depth character hat chi(j) from flow chi(tau_j), finite hits and terminal limit</td>
+  <td>Physical owner still requires generated ancestry morphism</td>
+</tr>
+<tr>
+  <td><code>BH-IIIC-G25PROMOTION-003</code></td>
+  <td><code>Paper3C-ProtectedHierarchy-v1_181.tex:5397</code></td>
+  <td>Do not promote local PCAD germ to physical same-action K48 source/trace</td>
+  <td>Actual physical stationary action and B48-to-boundary source map still unproved</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Verification:</strong> <code>Paper00-AuditRepairBatch-v1_4.md</code>; 57/57 scoped checks in the atlas. Source line and version citations within the preserved historical baseline refer to the <strong>old edition</strong> and original OPEN flags remain valid at their original audit time.</p>
+<hr />
+<h2>Historical audit baseline (verbatim)</h2>
+<h1>Paper III-C — Rigorous Proof-Chain Audit</h1>
+<p><strong>Audit file:</strong> Paper3C-ProofChainAudit-v1_1.md<br />
+<strong>Paper:</strong> Paper3C-ProtectedHierarchy-v1_179.tex<br />
+<strong>Authoritative corpus:</strong> Paper00-PapersMinimal-v2_370; DAG baseline v1_100<br />
+<strong>Protocol:</strong> Paper00-RigorousVerificationDAGWorkProtocol-v2_4; ProofChainAuditProtocol-v1_1 as guardrails<br />
+<strong>Classification:</strong> FULLY_AUDITED_WITH_OPEN_GAPS (one paper only)<br />
+<strong>Source SHA256:</strong> <code>98c76115c0b368db6e2dd25ae9555dd37b360c1eed900c062a8e13b1adf3439e</code></p>
+<h2>Scope, coverage, and evidence</h2>
+<p>All 6,408 source lines, all 165 formal declarations and all 92 proof environments were inspected in five bounded batches. Material unnamed claims including the physical K48 promotion and conormal derivative were inspected. A mathematical proof need not establish physical occurrence; mathematical, conditional, unverified and refuted statement layers remain separate.</p>
+<p>Canonical formal-status distribution: FORMALIZED 31, INCONSISTENT 3, VERIFIED 66, VERIFIED-CONDITIONAL 65. Independent check records: 81 E3, 49 E4. Source proof replays: 165 E1 claim records (including remarks, definitions and proof-free corollaries, not a claim of a new independent proof for each).</p>
+<p>The original source, bibliography, macros and paper PDF were not modified or compiled. Other papers were consulted solely for indispensable imported claims.</p>
+<h2>All confirmed issues (source-as-printed)</h2>
+<h3>BH-IIIC-ALTMEASURE-001 — MINOR — LOGICAL_GAP</h3>
+<p><strong>Source origin:</strong> <code>p3:cor:non-D1-smooth-completions-are-insertions</code> at <code>Paper3C-ProtectedHierarchy-v1_179.tex:2009-2013,2024-2031</code>.</p>
+<p><strong>Failed/scope-dependent step:</strong> Show the enumerated modifications exhaust all alternatives that change the rank-one value, including determinant power/measure changes.</p>
+<p><strong>Why it matters:</strong> The assertion that the listed changes are necessary is overexhaustive; a determinant exponent/measure change gives an alternative not in the list. The REG0 value and its scheme-specific uniqueness are unaffected.</p>
+<p><strong>Independent/adversarial evidence:</strong> E3-IIIC-B2-006, E3-IIIC-B2-008, E4-IIIC-B2-005.</p>
+<p><strong>Conditions:</strong> BH-IIIC-A-0001, BH-IIIC-A-0002. <strong>Immediate source ancestry:</strong> [['p3c:prop:v2211-determinant-amplitude-measure', 'p3:cor:non-D1-smooth-completions-are-insertions']].</p>
+<p><strong>Verified impact / scope:</strong> []. <strong>Plausible but unconfirmed:</strong> ['Paper3C roadmap table lines 663-677 refers to the corollary; no additional downstream theorem located as proof consumer'].</p>
+<p><strong>Source correction obligation (not performed):</strong> Restrict list to illustrative examples, or include determinant exponent/field measure as a distinct possible alternative with correct scheme scope (recommendation only; do not edit source).</p>
+<h3>BH-IIIC-DEPTHARG-002 — MINOR — TYPE_OR_DOMAIN</h3>
+<p><strong>Source origin:</strong> <code>p3c:thm:generated-dual-depth-hierarchy</code> at <code>Paper3C-ProtectedHierarchy-v1_179.tex:3409-3422,3427-3435</code>.</p>
+<p><strong>Failed/scope-dependent step:</strong> The displayed χσ,w(j) must refer to depth q=j (or evaluation at τ_j), but χσ,w is explicitly defined as a function of τ and qsp(τ)≠τ.</p>
+<p><strong>Why it matters:</strong> The literal time-argument formulas and reflection products are false if j denotes τ. The intended depth-value formulas remain valid.</p>
+<p><strong>Independent/adversarial evidence:</strong> E3-IIIC-B4-001, E3-IIIC-B4-002, E4-IIIC-B4-002.</p>
+<p><strong>Conditions:</strong> BH-IIIC-A-0010, BH-IIIC-A-0005. <strong>Immediate source ancestry:</strong> [['p3:thm:smooth-protected-resolution-semigroup', 'p3c:thm:generated-dual-depth-hierarchy']].</p>
+<p><strong>Verified impact / scope:</strong> [['p3c:thm:generated-dual-depth-hierarchy', 'p3c:cor:owner-typed-octet-scale-reflection'], ['p3c:thm:generated-dual-depth-hierarchy', 'p3:cor:protected-spectral-resolution-landmarks']]. <strong>Plausible but unconfirmed:</strong> [].</p>
+<p><strong>Source correction obligation (not performed):</strong> Disambiguate depth-character evaluation from flow-time evaluation by notation and state finite hit times τ_j; source correction only.</p>
+<h3>BH-IIIC-G25PROMOTION-003 — MODERATE — TYPE_OR_DOMAIN</h3>
+<p><strong>Source origin:</strong> <code>Paper3C:unnamed:line-5332-5339</code> at <code>Paper3C-ProtectedHierarchy-v1_179.tex:5307-5339</code>.</p>
+<p><strong>Failed/scope-dependent step:</strong> To infer a physical same-action K48 boundary Hessian from the generated local PCAD β, one must separately establish a boundary stationary split/physical action trace Jpartial and owner-preserving β into that actual action domain.</p>
+<p><strong>Why it matters:</strong> Lines 308–320 and 323–329 explicitly limit v1.87 to a local geometric/PCAD structural port, while 5332–5339 treat it as discharging a physical boundary-port premise and generating K48 response. This is not established by the cited input.</p>
+<p><strong>Independent/adversarial evidence:</strong> E3-IIIC-B4-023, E3-IIIC-B4-024, E4-IIIC-B4-013.</p>
+<p><strong>Conditions:</strong> BH-IIIC-A-0008. <strong>Immediate source ancestry:</strong> [['p3c:thm:v187-b48-boundary-parent', 'Paper3C:unnamed:line-5332-5339'], ['p3c:thm:v158-b48-schur-factorization', 'Paper3C:unnamed:line-5332-5339']].</p>
+<p><strong>Verified impact / scope:</strong> [['Paper3C:unnamed:line-5332-5339', 'claim:generated K48 response family (narrative)']]. <strong>Plausible but unconfirmed:</strong> ['any downstream physical K48 RAR kernel inferred solely from geometric PCAD port; no certified remote path demonstrated'].</p>
+<p><strong>Source correction obligation (not performed):</strong> Keep 5332–5339 conditional on a separately certified physical same-action boundary owner/trace, or cite an actual proof of that upgrade; do not infer it from the local PCAD graph.</p>
+<h2>Confirmed nonissues and physical boundaries</h2>
+<ul>
+<li>The unit-Chern Hopf/contact residue and formal REG0 value δ_loc=1/(6√2) are reproduced; ALTMEASURE-001 concerns only an exhaustive catalogue of alternative field measures.</li>
+<li>Exact Clifford ranks 8→4→3→1 and real seven-dimensional scalar-free complement do not imply seven independent physical rank-changing events. Optional (FLAG) remains separate.</li>
+<li>Dimensionless spectral depth, scalar finite-seed heat time and an actual physical clock are different roles. Owner-typed scale inheritance requires a generated same-owner map.</li>
+<li>The v1.87 B48 local geometric/PCAD germ is valid. Only its asserted sufficiency for the later physical same-action boundary Hessian is unproved. The Schur theorem remains correct under its stated physical hypotheses.</li>
+<li>The normalized visibility state curve is not generated by a fixed homogeneous CPTP semigroup at the affine native parameter, but admits both a conditioned CP filter and a time-dependent or reparameterized CPTP realization.</li>
+<li>The Petersen positive polar congruence preserves the balanced off-diagonal geometric-mean weight, not physical-action gauge equivalence or particle Dirac spectrum.</li>
+</ul>
+<h2>Batch boundaries and checked imports</h2>
+<ul>
+<li><strong>Batch 1</strong>: lines 1–1305, 33 formal declarations, 14 proof environments, E3 9, E4 5, issues first confirmed 0.</li>
+<li><strong>Batch 2</strong>: lines 1306–2051, 25 formal declarations, 15 proof environments, E3 10, E4 6, issues first confirmed 1.</li>
+<li><strong>Batch 3</strong>: lines 2052–3395, 26 formal declarations, 15 proof environments, E3 17, E4 11, issues first confirmed 0.</li>
+<li><strong>Batch 4</strong>: lines 3396–5736, 65 formal declarations, 35 proof environments, E3 30, E4 16, issues first confirmed 2.</li>
+<li><strong>Batch 5</strong>: lines 5737–6408, 16 formal declarations, 13 proof environments, E3 15, E4 11, issues first confirmed 0.</li>
+</ul>
+<h2>Per-claim source-based ledger (all 165)</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">#</th>
+  <th>Formal claim / source label</th>
+  <th>Lines</th>
+  <th>Proof</th>
+  <th>Audit disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">1</td>
+  <td><code>p3c:cor:v261-physical-ndsp-discharge</code></td>
+  <td>195–210</td>
+  <td>—</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">2</td>
+  <td><code>p3c:rem:v189-three-sixteens-firewall</code></td>
+  <td>293–306</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">3</td>
+  <td><code>p3c:thm:v285-main-chain-g25-boundary-parent</code></td>
+  <td>308–321</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">4</td>
+  <td><code>Paper3C:remark:line-323</code></td>
+  <td>323–330</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">5</td>
+  <td><code>p3c:cor:v191-dyadic-null-owner-typing</code></td>
+  <td>334–347</td>
+  <td>—</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">6</td>
+  <td><code>p3c:prop:v2219-first-actual-carrier</code></td>
+  <td>354–367</td>
+  <td>368–373</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">7</td>
+  <td><code>Paper3C:remark:line-374</code></td>
+  <td>374–380</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">8</td>
+  <td><code>p3c:thm:v165-gp123-protected-carrier-gap</code></td>
+  <td>386–411</td>
+  <td>413–426</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">9</td>
+  <td><code>p3c:cor:v165-carrier-gap-profile-invariance</code></td>
+  <td>428–437</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">10</td>
+  <td><code>p3c:rem:v165-carrier-gap-not-continuum</code></td>
+  <td>439–446</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">11</td>
+  <td><code>p3c:thm:v187-three-eight-seven</code></td>
+  <td>451–475</td>
+  <td>—</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">12</td>
+  <td><code>p3c:lem:v176-g25-canonical-boundary-regularity</code></td>
+  <td>477–508</td>
+  <td>510–516</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">13</td>
+  <td><code>p3c:thm:v187-b48-boundary-parent</code></td>
+  <td>518–553</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">14</td>
+  <td><code>p3c:rem:v187-g25-nogo-scope</code></td>
+  <td>555–564</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">15</td>
+  <td><code>p3c:cor:v188-b48-abelianized-normalizer</code></td>
+  <td>567–591</td>
+  <td>593–615</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">16</td>
+  <td><code>p3c:rem:v188-b48-square-even</code></td>
+  <td>617–625</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">17</td>
+  <td><code>p3:thm:determinant-rank-character</code></td>
+  <td>778–796</td>
+  <td>798–803</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">18</td>
+  <td><code>p3c:thm:continuous-depth-character</code></td>
+  <td>805–823</td>
+  <td>825–831</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">19</td>
+  <td><code>p3:def:contact-to-scale-transfer</code></td>
+  <td>833–844</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">20</td>
+  <td><code>p3:def:determinant-shell-regularization</code></td>
+  <td>846–884</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">21</td>
+  <td><code>p3:def:alpha-two</code></td>
+  <td>916–948</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">22</td>
+  <td><code>p3:def:primitive-contact-residue</code></td>
+  <td>972–1004</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">23</td>
+  <td><code>p3:prop:contact-residue-normalization</code></td>
+  <td>1006–1022</td>
+  <td>1024–1057</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">24</td>
+  <td><code>p3c:rem:contact-coefficient-spectrum-check</code></td>
+  <td>1059–1070</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">25</td>
+  <td><code>p3:lem:no-hidden-hopf-channel</code></td>
+  <td>1073–1080</td>
+  <td>1082–1087</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">26</td>
+  <td><code>p3:thm:rank-one-hopf-localization</code></td>
+  <td>1089–1116</td>
+  <td>1118–1135</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">27</td>
+  <td><code>p3:lem:sharp-threshold-determinant-jump</code></td>
+  <td>1137–1150</td>
+  <td>1152–1158</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">28</td>
+  <td><code>p3:thm:Vlog</code></td>
+  <td>1160–1172</td>
+  <td>1174–1186</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">29</td>
+  <td><code>p3:cor:v2122-hopf-residue-target-typing</code></td>
+  <td>1188–1209</td>
+  <td>1211–1220</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">30</td>
+  <td><code>Paper3C:remark:line-1222</code></td>
+  <td>1222–1230</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">31</td>
+  <td><code>p3:cor:completed-primitive-rg-jump</code></td>
+  <td>1232–1238</td>
+  <td>1240–1244</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">32</td>
+  <td><code>Paper3C:remark:line-1247</code></td>
+  <td>1247–1255</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">33</td>
+  <td><code>p3:thm:alpha_step</code></td>
+  <td>1259–1286</td>
+  <td>1288–1303</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">34</td>
+  <td><code>p3:rem:levi-round-factor</code></td>
+  <td>1329–1347</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">35</td>
+  <td><code>Paper3C:remark:line-1370</code></td>
+  <td>1370–1372</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">36</td>
+  <td><code>p3:rem:contact-q4-not-spacetime-dimension</code></td>
+  <td>1375–1383</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">37</td>
+  <td><code>p3c:def:primitive-oriented-associated-line</code></td>
+  <td>1385–1408</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">38</td>
+  <td><code>p3:rem:no-hidden-basic-dolbeault-zero-mode</code></td>
+  <td>1410–1422</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">39</td>
+  <td><code>p3:prop:reduced-hopf-scalar-channel-uniqueness</code></td>
+  <td>1425–1456</td>
+  <td>1458–1479</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">40</td>
+  <td><code>p3:prop:hopf-spectral-trace</code></td>
+  <td>1481–1501</td>
+  <td>1502–1508</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">41</td>
+  <td><code>p3c:thm:dyadic-hopf-null-trace</code></td>
+  <td>1510–1555</td>
+  <td>1557–1569</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">42</td>
+  <td><code>p3:thm:hopf-trace-constant</code></td>
+  <td>1571–1589</td>
+  <td>1591–1598</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">43</td>
+  <td><code>p3:lem:local-sixth-heat</code></td>
+  <td>1600–1627</td>
+  <td>1628–1644</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">44</td>
+  <td><code>p3:prop:delta-local-sixth</code></td>
+  <td>1646–1657</td>
+  <td>1659–1661</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">45</td>
+  <td><code>p3:lem:levi-vs-round</code></td>
+  <td>1663–1690</td>
+  <td>1692–1696</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">46</td>
+  <td><code>p3:lem:levi-round-linear-amplitude</code></td>
+  <td>1699–1728</td>
+  <td>1730–1742</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">47</td>
+  <td><code>p3c:prop:v2211-determinant-amplitude-measure</code></td>
+  <td>1744–1766</td>
+  <td>1767–1781</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">48</td>
+  <td><code>p3c:prop:v2217-determinant-density-jets</code></td>
+  <td>1784–1803</td>
+  <td>1804–1810</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">49</td>
+  <td><code>p3:prop:delta-reduction</code></td>
+  <td>1820–1834</td>
+  <td>1836–1843</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">50</td>
+  <td><code>p3:prop:delta-sqrt2</code></td>
+  <td>1845–1855</td>
+  <td>1857–1862</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">51</td>
+  <td><code>Paper3C:remark:line-1864</code></td>
+  <td>1864–1874</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">52</td>
+  <td><code>p3:thm:delta_rigorous</code></td>
+  <td>1876–1892</td>
+  <td>1894–1904</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">53</td>
+  <td><code>p3:rem:2O-shell-match-owner-firewall</code></td>
+  <td>1905–1926</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">54</td>
+  <td><code>p3:def:first-order-contact-shell-germ</code></td>
+  <td>1937–1947</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">55</td>
+  <td><code>p3:def:D1-local-primitive-smooth-completion</code></td>
+  <td>1949–1969</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">56</td>
+  <td><code>p3:thm:D1-primitive-smooth-uniqueness</code></td>
+  <td>1971–1986</td>
+  <td>1988–2000</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">57</td>
+  <td><code>p3:cor:non-D1-smooth-completions-are-insertions</code></td>
+  <td>2002–2015</td>
+  <td>2017–2033</td>
+  <td>INCONSISTENT</td>
+</tr>
+<tr>
+  <td style="text-align:right">58</td>
+  <td><code>p3:rem:delta-closure-scope</code></td>
+  <td>2042–2048</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">59</td>
+  <td><code>p3:thm:clifford-dim</code></td>
+  <td>2073–2091</td>
+  <td>2093–2105</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">60</td>
+  <td><code>p3c:def:v237-mobile-clifford-role</code></td>
+  <td>2110–2125</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">61</td>
+  <td><code>p3c:thm:v237-generated-clifford-exceptional-resolution</code></td>
+  <td>2127–2161</td>
+  <td>2163–2169</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">62</td>
+  <td><code>p3c:cor:v285-ten-axis-quadrupole-resolution</code></td>
+  <td>2171–2189</td>
+  <td>—</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">63</td>
+  <td><code>Paper3C:remark:line-2191</code></td>
+  <td>2191–2196</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">64</td>
+  <td><code>p3c:cor:v237-mobile-active-family-ancestry</code></td>
+  <td>2198–2212</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">65</td>
+  <td><code>p3c:rem:v237-no-abstract-module-promotion</code></td>
+  <td>2214–2221</td>
+  <td>—</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">66</td>
+  <td><code>p3c:thm:v236-exceptional-active-fork</code></td>
+  <td>2225–2252</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">67</td>
+  <td><code>p3:thm:derived-active-support</code></td>
+  <td>2256–2372</td>
+  <td>2374–2412</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">68</td>
+  <td><code>p3c:thm:active-depth-six-obstruction</code></td>
+  <td>2414–2444</td>
+  <td>2446–2458</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">69</td>
+  <td><code>p3c:cor:active-projector-corealization</code></td>
+  <td>2460–2480</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">70</td>
+  <td><code>p3:cor:derived-infrared-projector</code></td>
+  <td>2482–2507</td>
+  <td>2509–2527</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">71</td>
+  <td><code>Paper3C:remark:line-2529</code></td>
+  <td>2529–2537</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">72</td>
+  <td><code>p3:def:active_corner</code></td>
+  <td>2539–2565</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">73</td>
+  <td><code>p3:thm:hopf-decomposition</code></td>
+  <td>2567–2586</td>
+  <td>2588–2620</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">74</td>
+  <td><code>p3:def:cumulative-rank-depth</code></td>
+  <td>2622–2642</td>
+  <td>—</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">75</td>
+  <td><code>p3:thm:basis-free-sevenfold-shell-clock</code></td>
+  <td>2644–2683</td>
+  <td>2685–2698</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">76</td>
+  <td><code>p3c:def:visibility-flow-calibration</code></td>
+  <td>2700–2710</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">77</td>
+  <td><code>p3:thm:smooth-protected-resolution-semigroup</code></td>
+  <td>2712–2851</td>
+  <td>2853–2931</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">78</td>
+  <td><code>p3c:cor:visibility-universal-continuation-instance</code></td>
+  <td>2933–2971</td>
+  <td>2973–2982</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">79</td>
+  <td><code>p3c:cor:primitive-final-octet-residual</code></td>
+  <td>2984–3037</td>
+  <td>3039–3053</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">80</td>
+  <td><code>p3c:thm:common-trace-defect-spectral-filtration</code></td>
+  <td>3055–3133</td>
+  <td>3135–3186</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">81</td>
+  <td><code>p3c:cor:rank-changing-projector-continuity-no-go</code></td>
+  <td>3188–3198</td>
+  <td>3200–3208</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">82</td>
+  <td><code>p3c:cor:heat-loop-versus-normalized-state</code></td>
+  <td>3210–3237</td>
+  <td>3239–3251</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">83</td>
+  <td><code>p3c:thm:protected-octet-trace-reflection</code></td>
+  <td>3253–3302</td>
+  <td>3304–3324</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">84</td>
+  <td><code>p3c:cor:corealized-protected-visibility-family</code></td>
+  <td>3326–3376</td>
+  <td>3378–3395</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">85</td>
+  <td><code>p3c:thm:generated-dual-depth-hierarchy</code></td>
+  <td>3397–3458</td>
+  <td>3460–3485</td>
+  <td>INCONSISTENT</td>
+</tr>
+<tr>
+  <td style="text-align:right">86</td>
+  <td><code>p3c:cor:owner-typed-physical-dual-scale</code></td>
+  <td>3487–3525</td>
+  <td>3527–3539</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">87</td>
+  <td><code>p3c:cor:owner-typed-octet-scale-reflection</code></td>
+  <td>3541–3568</td>
+  <td>3570–3581</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">88</td>
+  <td><code>p3c:cor:typed-determinant-owner-inheritance</code></td>
+  <td>3584–3607</td>
+  <td>3609–3618</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">89</td>
+  <td><code>Paper3C:remark:line-3620</code></td>
+  <td>3620–3627</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">90</td>
+  <td><code>p3:cor:protected-spectral-resolution-landmarks</code></td>
+  <td>3629–3661</td>
+  <td>3663–3673</td>
+  <td>INCONSISTENT</td>
+</tr>
+<tr>
+  <td style="text-align:right">91</td>
+  <td><code>p3:cor:hierarchy-factor</code></td>
+  <td>3675–3696</td>
+  <td>3698–3706</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">92</td>
+  <td><code>p3:app:decoupling</code></td>
+  <td>3708–3713</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">93</td>
+  <td><code>p3:thm:exact-rg</code></td>
+  <td>3725–3739</td>
+  <td>3741–3755</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">94</td>
+  <td><code>paper3c:sec:organized-determinant</code></td>
+  <td>3757–3761</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">95</td>
+  <td><code>p3c:prop:no-natural-reg-origin</code></td>
+  <td>3779–3784</td>
+  <td>3786–3789</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">96</td>
+  <td><code>p3c:thm:exact-scheme-continuation-quotient</code></td>
+  <td>3801–3838</td>
+  <td>3840–3850</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">97</td>
+  <td><code>p3c:prop:full-scheme-depth-determinant-connection</code></td>
+  <td>3852–3907</td>
+  <td>3909–3924</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">98</td>
+  <td><code>p3c:thm:positive-associated-line-fourth-root</code></td>
+  <td>3926–3948</td>
+  <td>3950–3964</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">99</td>
+  <td><code>p3c:cor:positive-associated-line-half-root</code></td>
+  <td>3966–3984</td>
+  <td>3986–3992</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">100</td>
+  <td><code>p3c:cor:operational-generator-root-transport</code></td>
+  <td>3994–4010</td>
+  <td>4012–4020</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">101</td>
+  <td><code>p3c:cor:v199-rgas-operational-clock</code></td>
+  <td>4023–4038</td>
+  <td>4039–4042</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">102</td>
+  <td><code>p3c:thm:born-fourth-root-inversion</code></td>
+  <td>4044–4068</td>
+  <td>4070–4083</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">103</td>
+  <td><code>p3c:cor:weight-four-born-logrelation</code></td>
+  <td>4085–4100</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">104</td>
+  <td><code>p3c:rem:fourth-root-same-representation-firewall</code></td>
+  <td>4112–4120</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">105</td>
+  <td><code>p3:prop:2O-shell-levi-reconstruction</code></td>
+  <td>4139–4155</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">106</td>
+  <td><code>p3c:def:octahedral-shell-determinant-compiler</code></td>
+  <td>4157–4183</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">107</td>
+  <td><code>p3c:thm:canonical-octahedral-owner-intertwiner</code></td>
+  <td>4185–4209</td>
+  <td>4211–4229</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">108</td>
+  <td><code>p3c:cor:v2184-octahedral-quarterroot-bivector-half-character</code></td>
+  <td>4231–4255</td>
+  <td>4257–4263</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">109</td>
+  <td><code>p3:prop:conditional-2O-owner-REG0-closure</code></td>
+  <td>4265–4285</td>
+  <td>4287–4291</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">110</td>
+  <td><code>Paper3C:remark:line-4293</code></td>
+  <td>4293–4303</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">111</td>
+  <td><code>p3c:thm:occurring-hurwitz-reg-origin</code></td>
+  <td>4312–4330</td>
+  <td>4331–4345</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">112</td>
+  <td><code>p3c:thm:v2216-all-charge-zeta</code></td>
+  <td>4373–4391</td>
+  <td>4392–4409</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">113</td>
+  <td><code>p3c:cor:v2216-all-charge-anomaly</code></td>
+  <td>4411–4425</td>
+  <td>4426–4436</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">114</td>
+  <td><code>p3c:prop:v2216-convergent-determinant</code></td>
+  <td>4438–4454</td>
+  <td>4455–4473</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">115</td>
+  <td><code>p3c:thm:v2216-round-hopf-completion</code></td>
+  <td>4475–4493</td>
+  <td>4494–4504</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">116</td>
+  <td><code>p3c:prop:v2216-completed-zeta</code></td>
+  <td>4506–4520</td>
+  <td>4521–4535</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">117</td>
+  <td><code>p3c:thm:v179-clifford-projector-tangent</code></td>
+  <td>4562–4593</td>
+  <td>4594–4605</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">118</td>
+  <td><code>p3c:thm:v179-balanced-hierarchy-response</code></td>
+  <td>4607–4644</td>
+  <td>4645–4658</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">119</td>
+  <td><code>p3c:cor:v179-complete-balanced-weights</code></td>
+  <td>4660–4680</td>
+  <td>4681–4691</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">120</td>
+  <td><code>p3c:def:v222-log-scale-circles</code></td>
+  <td>4714–4737</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">121</td>
+  <td><code>p3c:thm:v222-rank-character-unitary-companion</code></td>
+  <td>4739–4768</td>
+  <td>4770–4782</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">122</td>
+  <td><code>p3c:rem:v222-phase-scope</code></td>
+  <td>4784–4796</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">123</td>
+  <td><code>p3c:rem:v242-quarter-character-owner</code></td>
+  <td>4800–4822</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">124</td>
+  <td><code>p3c:prop:v2208-preterminal-response</code></td>
+  <td>4835–4851</td>
+  <td>4852–4858</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">125</td>
+  <td><code>p3c:def:v166-transverse-normalizer-bridge-target</code></td>
+  <td>4903–4923</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">126</td>
+  <td><code>p3c:thm:v166-unique-transverse-k48-bridge</code></td>
+  <td>4925–4977</td>
+  <td>4979–5008</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">127</td>
+  <td><code>p3c:thm:v166-transverse-diamond-halfsteps</code></td>
+  <td>5010–5068</td>
+  <td>5070–5099</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">128</td>
+  <td><code>p3c:cor:v166-transverse-bridge-scope</code></td>
+  <td>5101–5111</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">129</td>
+  <td><code>p3c:def:v158-b48-boundary-promotion</code></td>
+  <td>5117–5141</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">130</td>
+  <td><code>p3c:thm:v158-b48-boundary-owner-nogo</code></td>
+  <td>5143–5169</td>
+  <td>5171–5184</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">131</td>
+  <td><code>p3c:thm:v158-b48-schur-factorization</code></td>
+  <td>5186–5211</td>
+  <td>5213–5228</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">132</td>
+  <td><code>p3c:thm:v158-b48-terminal-order</code></td>
+  <td>5230–5256</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">133</td>
+  <td><code>p3c:cor:v158-b48-ward-critical-firewall</code></td>
+  <td>5258–5278</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">134</td>
+  <td><code>p3c:rem:v158-b48-boundary-scope</code></td>
+  <td>5280–5297</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">135</td>
+  <td><code>p3c:def:v187-three-support-levels</code></td>
+  <td>5423–5436</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">136</td>
+  <td><code>p3c:prop:v187-e48-terminal-symmetry-firewall</code></td>
+  <td>5438–5449</td>
+  <td>—</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">137</td>
+  <td><code>p3c:prop:v187-e44-endpoint-edge</code></td>
+  <td>5451–5467</td>
+  <td>—</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">138</td>
+  <td><code>p3c:rem:v187-no-adjacency-selector</code></td>
+  <td>5469–5475</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">139</td>
+  <td><code>p3c:cor:v188-normalized-unresolved-rank-seven-trace</code></td>
+  <td>5482–5498</td>
+  <td>—</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">140</td>
+  <td><code>p3c:rem:v188-visibility-not-curvature-hessian</code></td>
+  <td>5499–5507</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">141</td>
+  <td><code>p3c:thm:v190-cell-translation-reflection</code></td>
+  <td>5517–5540</td>
+  <td>—</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">142</td>
+  <td><code>p3c:cor:v190-normalized-energy-homology</code></td>
+  <td>5542–5561</td>
+  <td>—</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">143</td>
+  <td><code>p3c:prop:v192-k48-complete-invariant-return</code></td>
+  <td>5568–5591</td>
+  <td>—</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">144</td>
+  <td><code>p3c:cor:v192-k48-quarter-typing</code></td>
+  <td>5593–5605</td>
+  <td>—</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">145</td>
+  <td><code>p3c:prop:v1101-terminal-edge-all-orders</code></td>
+  <td>5608–5644</td>
+  <td>5645–5651</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">146</td>
+  <td><code>p3c:rem:v192-k48-residual-firewall</code></td>
+  <td>5655–5664</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">147</td>
+  <td><code>p3c:cor:v193-k48-h-t5-mixed-zero</code></td>
+  <td>5671–5686</td>
+  <td>—</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">148</td>
+  <td><code>p3c:rem:v193-k48-higher-jet-firewall</code></td>
+  <td>5688–5696</td>
+  <td>—</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">149</td>
+  <td><code>p3c:prop:v257-k48-invariant-jets</code></td>
+  <td>5698–5718</td>
+  <td>5719–5726</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">150</td>
+  <td><code>p3c:thm:v2216-berger-norms</code></td>
+  <td>5740–5761</td>
+  <td>5762–5772</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">151</td>
+  <td><code>p3c:cor:v2216-berger-cutoff</code></td>
+  <td>5774–5784</td>
+  <td>5785–5791</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">152</td>
+  <td><code>p3c:thm:v2216-visibility-generator</code></td>
+  <td>5793–5804</td>
+  <td>5805–5813</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">153</td>
+  <td><code>p3c:prop:v2216-visibility-realizations</code></td>
+  <td>5815–5836</td>
+  <td>5837–5852</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">154</td>
+  <td><code>p3c:prop:v2218-fixed-seed-heat-spectra</code></td>
+  <td>5865–5902</td>
+  <td>5903–5911</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">155</td>
+  <td><code>p3c:thm:v2218-born-heat-depth</code></td>
+  <td>5913–5943</td>
+  <td>5944–5962</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">156</td>
+  <td><code>p3c:cor:v2218-born-depth-neutral-character</code></td>
+  <td>5964–5986</td>
+  <td>5987–5996</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">157</td>
+  <td><code>p3c:prop:v2218-protected-heat-commutant</code></td>
+  <td>5998–6010</td>
+  <td>6011–6025</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">158</td>
+  <td><code>p3c:rem:v2218-fixed-seed-role-status</code></td>
+  <td>6027–6070</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">159</td>
+  <td><code>p3c:cor:v226-hierarchy-projectors</code></td>
+  <td>6076–6085</td>
+  <td>6086–6090</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">160</td>
+  <td><code>p3c:cor:v266-protected-projector-resource</code></td>
+  <td>6223–6237</td>
+  <td>6238–6243</td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:right">161</td>
+  <td><code>p3c:thm:v319-petersen-midpoint</code></td>
+  <td>6263–6287</td>
+  <td>6288–6295</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">162</td>
+  <td><code>p3c:rem:v319-not-a-gauge-change</code></td>
+  <td>6297–6307</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:right">163</td>
+  <td><code>p3c:prop:v319-petersen-complement-spectrum</code></td>
+  <td>6309–6323</td>
+  <td>6324–6330</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">164</td>
+  <td><code>p3c:cor:v346-active-heat-checksum</code></td>
+  <td>6337–6355</td>
+  <td>6356–6367</td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:right">165</td>
+  <td><code>p3c:rem:v346-hierarchy-measure-scope</code></td>
+  <td>6369–6384</td>
+  <td>—</td>
+  <td>FORMALIZED</td>
+</tr>
+</tbody>
+</table>
+<h2>Per-claim proof and condition notes</h2>
+<h3>1. <code>p3c:cor:v261-physical-ndsp-discharge</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:195-210; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-UPSTREAM-IMPORT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>2. <code>p3c:rem:v189-three-sixteens-firewall</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:293-306; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>3. <code>p3c:thm:v285-main-chain-g25-boundary-parent</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:308-321; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-LOCAL-GERM</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>4. <code>Paper3C:remark:line-323</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:323-330; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>5. <code>p3c:cor:v191-dyadic-null-owner-typing</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:334-347; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-FORWARD-DEPENDENCY-PENDING</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>6. <code>p3c:prop:v2219-first-actual-carrier</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:354-367; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-ACTIVE-BRANCH</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>7. <code>Paper3C:remark:line-374</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:374-380; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>8. <code>p3c:thm:v165-gp123-protected-carrier-gap</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:386-411; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-ACTIVE-BRANCH</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B1-001. <strong>Adversarial E4:</strong> E4-IIIC-B1-001.</p>
+<h3>9. <code>p3c:cor:v165-carrier-gap-profile-invariance</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:428-437; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-ACTIVE-BRANCH</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>10. <code>p3c:rem:v165-carrier-gap-not-continuum</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:439-446; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>11. <code>p3c:thm:v187-three-eight-seven</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:451-475; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-MATHEMATICAL-WITH-IMPORTED-PARENT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>12. <code>p3c:lem:v176-g25-canonical-boundary-regularity</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:477-508; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-EXACT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B1-002. <strong>Adversarial E4:</strong> E4-IIIC-B1-003.</p>
+<h3>13. <code>p3c:thm:v187-b48-boundary-parent</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:518-553; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-MARKED-U-LOCAL-GERM</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> batch-level upstream confirmation only. <strong>Adversarial E4:</strong> E4-IIIC-B1-002.</p>
+<h3>14. <code>p3c:rem:v187-g25-nogo-scope</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:555-564; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>15. <code>p3c:cor:v188-b48-abelianized-normalizer</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:567-591; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-2O-NORMALIZER</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B1-003. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>16. <code>p3c:rem:v188-b48-square-even</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:617-625; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>17. <code>p3:thm:determinant-rank-character</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:778-796; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-EXACT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B1-004. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>18. <code>p3c:thm:continuous-depth-character</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:805-823; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-EXACT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B1-005. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>19. <code>p3:def:contact-to-scale-transfer</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:833-844; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>FORMALIZED-CONDITIONS-NOT-PROOFS</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>20. <code>p3:def:determinant-shell-regularization</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:846-884; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>FORMALIZED-CONDITIONS-NOT-PROOFS</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0001</code>.</p>
+<h3>21. <code>p3:def:alpha-two</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:916-948; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>FORMALIZED-CONDITIONS-NOT-PROOFS</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>22. <code>p3:def:primitive-contact-residue</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:972-1004; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>FORMALIZED-CONDITIONS-NOT-PROOFS</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>23. <code>p3:prop:contact-residue-normalization</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1006-1022; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-EXACT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B1-006. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>24. <code>p3c:rem:contact-coefficient-spectrum-check</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1059-1070; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>25. <code>p3:lem:no-hidden-hopf-channel</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1073-1080; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-ONLY-DECLARED-SCALAR-ATOM</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>26. <code>p3:thm:rank-one-hopf-localization</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1089-1116; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-RANK-MATCHED-TENSOR</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B1-008. <strong>Adversarial E4:</strong> E4-IIIC-B1-004.</p>
+<h3>27. <code>p3:lem:sharp-threshold-determinant-jump</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1137-1150; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-AS-NORMALIZED-REPRESENTATIVE</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>28. <code>p3:thm:Vlog</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1160-1172; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-EXACT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B1-007. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>29. <code>p3:cor:v2122-hopf-residue-target-typing</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1188-1209; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-OWNER-PRESERVING-IMPORT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>30. <code>Paper3C:remark:line-1222</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1222-1230; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>31. <code>p3:cor:completed-primitive-rg-jump</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1232-1238; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-RANK-ONE-EVENT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>32. <code>Paper3C:remark:line-1247</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1247-1255; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>33. <code>p3:thm:alpha_step</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1259-1286; <strong>Batch:</strong> 1; <strong>Source disposition:</strong> <code>VERIFIED-AS-NEUTRAL-CHARACTER-WITH-SCHEME-CONDITION</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B1-009. <strong>Adversarial E4:</strong> E4-IIIC-B1-005.</p>
+<h3>34. <code>p3:rem:levi-round-factor</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1329-1347; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>35. <code>Paper3C:remark:line-1370</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1370-1372; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>36. <code>p3:rem:contact-q4-not-spacetime-dimension</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1375-1383; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>37. <code>p3c:def:primitive-oriented-associated-line</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1385-1408; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>CONSTITUTIVE-ROLE-DEFINITION</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>38. <code>p3:rem:no-hidden-basic-dolbeault-zero-mode</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1410-1422; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>39. <code>p3:prop:reduced-hopf-scalar-channel-uniqueness</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1425-1456; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>VERIFIED-CONSTITUTED-ANALYTIC-Q+1-COMPARISON</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B2-001. <strong>Adversarial E4:</strong> E4-IIIC-B2-001.</p>
+<h3>40. <code>p3:prop:hopf-spectral-trace</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1481-1501; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-FIXED-CHARGE</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>41. <code>p3c:thm:dyadic-hopf-null-trace</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1510-1555; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-AS-ASYMPTOTIC</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B2-002. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>42. <code>p3:thm:hopf-trace-constant</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1571-1589; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-INCLUDING-ZETA(0)</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B2-003, E3-IIIC-B2-009. <strong>Adversarial E4:</strong> E4-IIIC-B2-002.</p>
+<h3>43. <code>p3:lem:local-sixth-heat</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1600-1627; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-ON-S2-LINE-CONNECTION</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B2-004. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>44. <code>p3:prop:delta-local-sixth</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1646-1657; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>VERIFIED-LOCAL-HEAT-COEFFICIENT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>45. <code>p3:lem:levi-vs-round</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1663-1690; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-UNIT-NORMALIZATION</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>46. <code>p3:lem:levi-round-linear-amplitude</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1699-1728; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>VERIFIED-FORMAL-HALF-DETERMINANT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B2-005. <strong>Adversarial E4:</strong> E4-IIIC-B2-003.</p>
+<h3>47. <code>p3c:prop:v2211-determinant-amplitude-measure</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1744-1766; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>VERIFIED-WITH-FORMAL-VS-PHYSICAL-MEASURE-DISTINCTION</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0002</code>.
+<strong>Independent E3:</strong> E3-IIIC-B2-006. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>48. <code>p3c:prop:v2217-determinant-density-jets</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1784-1803; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-HOMOTHETIC-CHART</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B2-007. <strong>Adversarial E4:</strong> E4-IIIC-B2-006.</p>
+<h3>49. <code>p3:prop:delta-reduction</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1820-1834; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>VERIFIED-AS-DECLARED-REG-READOUT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>50. <code>p3:prop:delta-sqrt2</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1845-1855; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>VERIFIED-AS-DECLARED-REG-READOUT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B2-010. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>51. <code>Paper3C:remark:line-1864</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1864-1874; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>52. <code>p3:thm:delta_rigorous</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1876-1892; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>VERIFIED-AS-REG0-NORMALIZED-SHELL-READOUT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>53. <code>p3:rem:2O-shell-match-owner-firewall</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1905-1926; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>54. <code>p3:def:first-order-contact-shell-germ</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1937-1947; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>CONSTITUTIVE-ROLE-DEFINITION</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>55. <code>p3:def:D1-local-primitive-smooth-completion</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1949-1969; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>CONSTITUTIVE-ROLE-DEFINITION</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>56. <code>p3:thm:D1-primitive-smooth-uniqueness</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:1971-1986; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>VERIFIED-WITHIN-EXPLICIT-REG-CLAUSES</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0002</code>.
+<strong>Independent E3:</strong> E3-IIIC-B2-008. <strong>Adversarial E4:</strong> E4-IIIC-B2-004.</p>
+<h3>57. <code>p3:cor:non-D1-smooth-completions-are-insertions</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2002-2015; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>FIRST-SENTENCE-VERIFIED; EXHAUSTIVE-ALTERNATIVES-REFUTED</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> batch-level upstream confirmation only. <strong>Adversarial E4:</strong> E4-IIIC-B2-005.</p>
+<h3>58. <code>p3:rem:delta-closure-scope</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2042-2048; <strong>Batch:</strong> 2; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>59. <code>p3:thm:clifford-dim</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2073-2091; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-INHERITED-ND_SP-REAL-REGULAR-MODULE</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-001. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>60. <code>p3c:def:v237-mobile-clifford-role</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2110-2125; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>CONDITIONAL-GENERATED-ROLE-DEFINITION</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0004</code>.</p>
+<h3>61. <code>p3c:thm:v237-generated-clifford-exceptional-resolution</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2127-2161; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-MOBCL-EXACT-5-CORE-10-AXIS</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-002. <strong>Adversarial E4:</strong> E4-IIIC-B3-001.</p>
+<h3>62. <code>p3c:cor:v285-ten-axis-quadrupole-resolution</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2171-2189; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-INCIDENCE-QUOTIENT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0004</code>.
+<strong>Independent E3:</strong> E3-IIIC-B3-003. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>63. <code>Paper3C:remark:line-2191</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2191-2196; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>64. <code>p3c:cor:v237-mobile-active-family-ancestry</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2198-2212; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-SAME-OWNER-GENERATED-ORBIT-SCOPE</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0004</code>.</p>
+<h3>65. <code>p3c:rem:v237-no-abstract-module-promotion</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2214-2221; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-CONSTITUTIONAL-ROLE-FIREWALL</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>66. <code>p3c:thm:v236-exceptional-active-fork</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2225-2252; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-BRANCH-FORK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-004. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>67. <code>p3:thm:derived-active-support</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2256-2372; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-ON-CONDITIONAL-LOCAL-CORE</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-005. <strong>Adversarial E4:</strong> E4-IIIC-B3-002.</p>
+<h3>68. <code>p3c:thm:active-depth-six-obstruction</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2414-2444; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-C3-INVARIANT-PROJECTOR-CLASSIFICATION</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-006. <strong>Adversarial E4:</strong> E4-IIIC-B3-003.</p>
+<h3>69. <code>p3c:cor:active-projector-corealization</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2460-2480; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-GENERATED-ORBIT-NO-MEMBER-MARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>70. <code>p3:cor:derived-infrared-projector</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2482-2507; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-COMMON-O3-SCALAR-ENDPOINT</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-007. <strong>Adversarial E4:</strong> E4-IIIC-B3-004.</p>
+<h3>71. <code>Paper3C:remark:line-2529</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2529-2537; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>SCOPE-VERIFIED-REMARK</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>72. <code>p3:def:active_corner</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2539-2565; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>TYPED-SORT-AND-RESIDUAL-ACTCL-DEFINITION</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>73. <code>p3:thm:hopf-decomposition</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2567-2586; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-RANK-7-WITHOUT-FLAG</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-008. <strong>Adversarial E4:</strong> E4-IIIC-B3-005.</p>
+<h3>74. <code>p3:def:cumulative-rank-depth</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2622-2642; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-DISCRETE-DEPTH-DEFINITION</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>75. <code>p3:thm:basis-free-sevenfold-shell-clock</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2644-2683; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-NEUTRAL-DEFINED-CLOCK-SCHEME-LABELLED</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-009. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>76. <code>p3c:def:visibility-flow-calibration</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2700-2710; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>EXPLICIT-CALIBRATION-CONDITION-NOT-DERIVED</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<h3>77. <code>p3:thm:smooth-protected-resolution-semigroup</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2712-2851; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-WITH-FROZEN-SIGMA_VIS-CONSTRUCTOR-SCHEMA</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0005</code>.
+<strong>Independent E3:</strong> E3-IIIC-B3-010. <strong>Adversarial E4:</strong> E4-IIIC-B3-006.</p>
+<h3>78. <code>p3c:cor:visibility-universal-continuation-instance</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2933-2971; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-ONE-RAY-CONDITIONAL-ROLE-PROOF</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-011. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>79. <code>p3c:cor:primitive-final-octet-residual</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:2984-3037; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-UNIT-TRACE-RANK-7-NONPROJECTOR</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-012. <strong>Adversarial E4:</strong> E4-IIIC-B3-007.</p>
+<h3>80. <code>p3c:thm:common-trace-defect-spectral-filtration</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3055-3133; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-INVARIANT-TRACE-AND-STEPS</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-013. <strong>Adversarial E4:</strong> E4-IIIC-B3-008.</p>
+<h3>81. <code>p3c:cor:rank-changing-projector-continuity-no-go</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3188-3198; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-FINITE-DIMENSIONAL-NO-GO</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-014. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>82. <code>p3c:cor:heat-loop-versus-normalized-state</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3210-3237; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-WITH-CLOSED-LOOP-VS-NORMALIZED-STATE-TYPES</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-015. <strong>Adversarial E4:</strong> E4-IIIC-B3-009.</p>
+<h3>83. <code>p3c:thm:protected-octet-trace-reflection</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3253-3302; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-SCALAR-INVOLUTION-NOT-TIME-REVERSAL</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-016. <strong>Adversarial E4:</strong> E4-IIIC-B3-010.</p>
+<h3>84. <code>p3c:cor:corealized-protected-visibility-family</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3326-3376; <strong>Batch:</strong> 3; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-DECLARED-NORMALIZATION-AND-POSTPROCESSOR</code>.</p>
+<p>Proof replay and scope recorded in batch evidence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B3-017. <strong>Adversarial E4:</strong> E4-IIIC-B3-011.</p>
+<h3>85. <code>p3c:thm:generated-dual-depth-hierarchy</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3397-3458; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DEPTH-ARGUMENT-NOTATION-ISSUE</code>.</p>
+<p>The scalar character is correct as a function of q_sp and continuous depth; χ(j) is not χ(τ=j) as printed with χ(τ) defined.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0001</code>, <code>BH-IIIC-A-0005</code>, <code>BH-IIIC-A-0010</code>.
+<strong>Independent E3:</strong> E3-IIIC-B4-001. <strong>Adversarial E4:</strong> E4-IIIC-B4-001, E4-IIIC-B4-002.</p>
+<h3>86. <code>p3c:cor:owner-typed-physical-dual-scale</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3487-3525; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-OWNER-ANCESTRY</code>.</p>
+<p>Only if a nonzero generated ancestry morphism places X in the weight-w determinant-dual owner and no independent owner deformation occurs.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0007</code>.
+<strong>Independent E3:</strong> batch-level upstream confirmation only. <strong>Adversarial E4:</strong> E4-IIIC-B4-003.</p>
+<h3>87. <code>p3c:cor:owner-typed-octet-scale-reflection</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3541-3568; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-ON-DEPTH-REPARAMETERIZATION</code>.</p>
+<p>Products valid for depth q=j and q=8-j, not for literal flow-parameter evaluations τ=j and 8-j.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-002. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>88. <code>p3c:cor:typed-determinant-owner-inheritance</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3584-3607; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-SAME-OWNER</code>.</p>
+<p>Only same determinant-multiplicity owner and direct-sum character.</p>
+<h3>89. <code>Paper3C:remark:line-3620</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3620-3627; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>90. <code>p3:cor:protected-spectral-resolution-landmarks</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3629-3661; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DEPTH-ARGUMENT-NOTATION-ISSUE</code>.</p>
+<p>Six finite trace-coordinate crossings q=j and asymptotic q=7; no spectral projector events.</p>
+<h3>91. <code>p3:cor:hierarchy-factor</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3675-3696; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>92. <code>p3:app:decoupling</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3708-3713; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>93. <code>p3:thm:exact-rg</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3725-3739; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-SHARP-FRONTIER</code>.</p>
+<p>m_seed=1 gives k_max=floor(1-1/2)=0 in the associated window only; SF_Λ required for sharp-count process.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-003. <strong>Adversarial E4:</strong> E4-IIIC-B4-004.</p>
+<h3>94. <code>paper3c:sec:organized-determinant</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3757-3761; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>95. <code>p3c:prop:no-natural-reg-origin</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3779-3784; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-UNANCHORED-TORSOR</code>.</p>
+<p>No translation-invariant selected point under all translations.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-004. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>96. <code>p3c:thm:exact-scheme-continuation-quotient</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3801-3838; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-NONZERO-WEIGHT-SCALAR</code>.</p>
+<p>For a nonzero scalar coordinate total weight W=0 iff translation invariant; horizontal associated sections may have W≠0.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-005. <strong>Adversarial E4:</strong> E4-IIIC-B4-005.</p>
+<h3>97. <code>p3c:prop:full-scheme-depth-determinant-connection</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3852-3907; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-AT-STATED-GAUGE-SCOPE</code>.</p>
+<p>Flat gauge-isomorphic weighted lines do not select λ. Identity intertwiner of same frozen associated representation forces λ=1.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-006. <strong>Adversarial E4:</strong> E4-IIIC-B4-006.</p>
+<h3>98. <code>p3c:thm:positive-associated-line-fourth-root</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3926-3948; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-POSITIVE-CATEGORY</code>.</p>
+<p>Structure group R&gt;0 has a bijective fourth-power map; no sign ambiguity.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-007. <strong>Adversarial E4:</strong> E4-IIIC-B4-007.</p>
+<h3>99. <code>p3c:cor:positive-associated-line-half-root</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3966-3984; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>100. <code>p3c:cor:operational-generator-root-transport</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:3994-4010; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-TYPED-CAUSAL-DETERMINANT</code>.</p>
+<p>Requires independent occurrence placing rank-four causal generator in fundamental determinant owner.</p>
+<h3>101. <code>p3c:cor:v199-rgas-operational-clock</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4023-4038; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>102. <code>p3c:thm:born-fourth-root-inversion</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4044-4068; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-INHERITED-ACTION</code>.</p>
+<p>Functional form H_B^2/H is explicitly target-action identification, not derived from arbitrary Born involution.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-008. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>103. <code>p3c:cor:weight-four-born-logrelation</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4085-4100; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-SAME-OWNER</code>.</p>
+<p>Log identity only given R/R_B=(μ/μ_B)^4.</p>
+<h3>104. <code>p3c:rem:fourth-root-same-representation-firewall</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4112-4120; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>105. <code>p3:prop:2O-shell-levi-reconstruction</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4139-4155; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-009. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>106. <code>p3c:def:octahedral-shell-determinant-compiler</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4157-4183; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>107. <code>p3c:thm:canonical-octahedral-owner-intertwiner</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4185-4209; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITHIN-FROZEN-COMPILER</code>.</p>
+<p>Numerical 1/2<em>1/3</em>1/sqrt(2) identity; same-owner claim depends on declared shell/connection/Laplacian/zeta compiler; not a physical owner map.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-010. <strong>Adversarial E4:</strong> E4-IIIC-B4-008.</p>
+<h3>108. <code>p3c:cor:v2184-octahedral-quarterroot-bivector-half-character</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4231-4255; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>109. <code>p3:prop:conditional-2O-owner-REG0-closure</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4265-4285; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-COMPILER-ORIGIN</code>.</p>
+<p>Once δσ=ω2O in the same compiled owner, σ=0 algebraically; this is not translation-invariant natural origin on unanchored torsor.</p>
+<h3>110. <code>Paper3C:remark:line-4293</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4293-4303; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>111. <code>p3c:thm:occurring-hurwitz-reg-origin</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4312-4330; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITHIN-FROZEN-2O-COMPILER</code>.</p>
+<p>Normalizer is 2O, numerical factors correct; σ=0 on declared same-owner zeta compiler branch.</p>
+<p><strong>Independent E3:</strong> batch-level upstream confirmation only. <strong>Adversarial E4:</strong> E4-IIIC-B4-009.</p>
+<h3>112. <code>p3c:thm:v2216-all-charge-zeta</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4373-4391; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-FIXED-CHARGE</code>.</p>
+<p>Heat coefficients independently derived by symbolic Bernoulli-polynomial EM; q=0 kernel is subtracted.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-011. <strong>Adversarial E4:</strong> E4-IIIC-B4-010.</p>
+<h3>113. <code>p3c:cor:v2216-all-charge-anomaly</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4411-4425; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-FORMAL-DETERMINANT-EXPONENT</code>.</p>
+<p>b log2/3 anomaly for q != 0; b=1 complex Gaussian differs from formal b=1/2.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-012. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>114. <code>p3c:prop:v2216-convergent-determinant</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4438-4454; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-HIGH-PRECISION-AND-TAIL</code>.</p>
+<p>70-digit numeric value, 2^-r tail checks and uniform expansion near zero.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-013. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>115. <code>p3c:thm:v2216-round-hopf-completion</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4475-4493; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-ROUND-SLICE</code>.</p>
+<p>Full spatial mode eigenvalue adds vertical q²; real conjugate pair vs one complex charged sector counted correctly.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-014. <strong>Adversarial E4:</strong> E4-IIIC-B4-011.</p>
+<h3>116. <code>p3c:prop:v2216-completed-zeta</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4506-4520; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-OPERATOR-SPECIFIC</code>.</p>
+<p>Heat factor e^-ct changes constant by -c/4; fixed-charge periodic-clock product has no t^0 coefficient.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-015. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>117. <code>p3c:thm:v179-clifford-projector-tangent</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4562-4593; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-QUATERNIONIC-MATRICES</code>.</p>
+<p>4x4 exact left/right quaternion matrices + full octet trace check independently reproduce the offdiagonal and commutator identities.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-016. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>118. <code>p3c:thm:v179-balanced-hierarchy-response</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4607-4644; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-POSITIVE-BALANCING</code>.</p>
+<p>Geometric mean E36 and hyperbolic-sine commutator factor independently checked.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0007</code>.
+<strong>Independent E3:</strong> E3-IIIC-B4-017. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>119. <code>p3c:cor:v179-complete-balanced-weights</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4660-4680; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-ALL-SIX-EVEN-WEIGHTS</code>.</p>
+<p>Block multiplicities 1,4,4,2,4,1 sum to 16.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-018. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>120. <code>p3c:def:v222-log-scale-circles</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4714-4737; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>121. <code>p3c:thm:v222-rank-character-unitary-companion</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4739-4768; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-CONSTRUCTED-SCALE-CIRCLE</code>.</p>
+<p>Primitive faithful characters m=±1 and orientation m=+1 gives winding -7; not Hopf-fiber holonomy.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-019. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>122. <code>p3c:rem:v222-phase-scope</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4784-4796; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>123. <code>p3c:rem:v242-quarter-character-owner</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4800-4822; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>124. <code>p3c:prop:v2208-preterminal-response</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4835-4851; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-IMPORT-SCOPE</code>.</p>
+<p>Imported rooted isometry maps P0 to Qc and Q5 to Qperp; inverse and Moore-Penrose endpoint differ in order.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-020. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>125. <code>p3c:def:v166-transverse-normalizer-bridge-target</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4903-4923; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>126. <code>p3c:thm:v166-unique-transverse-k48-bridge</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:4925-4977; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-REPRESENTATION-SCOPE</code>.</p>
+<p>Binary dihedral stabilizer decomposition forces only scalar plus sign line; transverse rank two defect six.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-021. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>127. <code>p3c:thm:v166-transverse-diamond-halfsteps</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5010-5068; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-INDEPENDENT-PROJECTORS</code>.</p>
+<p>Explicit four-real-dimensional projectors give meet P0, join Pi4; barycentre defects 11/2 and 13/2; semigroup points distinct.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-022. <strong>Adversarial E4:</strong> E4-IIIC-B4-012.</p>
+<h3>128. <code>p3c:cor:v166-transverse-bridge-scope</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5101-5111; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>129. <code>p3c:def:v158-b48-boundary-promotion</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5117-5141; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>130. <code>p3c:thm:v158-b48-boundary-owner-nogo</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5143-5169; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-RESTRICTED-LATE-HOM-FIREWALL</code>.</p>
+<p>No physical Jpartial or same-action Hom map from already split C2 modules merely by dimension. Earlier PCAD proves only local geometric germ.</p>
+<h3>131. <code>p3c:thm:v158-b48-schur-factorization</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5186-5211; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-SAME-ACTION</code>.</p>
+<p>β* Kboundary β follows after independently supplied physical split, same-action stationary Hessian and licensed β.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0008</code>.
+<strong>Independent E3:</strong> E3-IIIC-B4-023. <strong>Adversarial E4:</strong> E4-IIIC-B4-013.</p>
+<h3>132. <code>p3c:thm:v158-b48-terminal-order</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5230-5256; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-TERMINAL-LIMIT</code>.</p>
+<p>Eliminate-before-quotient: mixing memory cannot be dropped without its zero limit or independent identity.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-024. <strong>Adversarial E4:</strong> E4-IIIC-B4-014.</p>
+<h3>133. <code>p3c:cor:v158-b48-ward-critical-firewall</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5258-5278; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL-WARD-DIRECTION</code>.</p>
+<p>Only actual boundary components of generated symmetry directions are Ward-null.</p>
+<h3>134. <code>p3c:rem:v158-b48-boundary-scope</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5280-5297; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>135. <code>p3c:def:v187-three-support-levels</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5423-5436; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>136. <code>p3c:prop:v187-e48-terminal-symmetry-firewall</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5438-5449; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-UNBROKEN-C3</code>.</p>
+<p>Hom_C3(T5,S7)=0 despite nonzero unmarked Hom operator envelope.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-025. <strong>Adversarial E4:</strong> E4-IIIC-B4-015.</p>
+<h3>137. <code>p3c:prop:v187-e44-endpoint-edge</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5451-5467; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-QUATERNIONIC-EDGE</code>.</p>
+<p>u²=-1 gives Q7 L_u Q4 = -|1&gt;&lt;u| and balanced E44.</p>
+<h3>138. <code>p3c:rem:v187-no-adjacency-selector</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5469-5475; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>139. <code>p3c:cor:v188-normalized-unresolved-rank-seven-trace</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5482-5498; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-TRACE-NORMALIZATION</code>.</p>
+<p>ν7=e^-τ, q=7(1-ν7); affine log formula and endpoints correct.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-026. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>140. <code>p3c:rem:v188-visibility-not-curvature-hessian</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5499-5507; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>141. <code>p3c:thm:v190-cell-translation-reflection</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5517-5540; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-LOCAL-VS-GLOBAL-MAPS</code>.</p>
+<p>T40 preserves interpolation s, J8 sends s-&gt;1-s; no equality of distinct physical owners.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-027. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>142. <code>p3c:cor:v190-normalized-energy-homology</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5542-5561; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-EXPONENTIAL-RATIOS</code>.</p>
+<p>Local ratios identical under same-owner alpha; unrebased absolute energies not equated.</p>
+<h3>143. <code>p3c:prop:v192-k48-complete-invariant-return</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5568-5591; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-C3-INVARIANT-QUADRATIC-PACKET</code>.</p>
+<p>Edge Gram = (1/4)I_T, diffuse Sigma=(1/2)P_T; does not select a physical action member.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-028. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>144. <code>p3c:cor:v192-k48-quarter-typing</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5593-5605; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-EDGE-ONLY</code>.</p>
+<p>Tr_T[(P_T/2)(P_T/4)]=1/4, no automatic H stiffness.</p>
+<h3>145. <code>p3c:prop:v1101-terminal-edge-all-orders</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5608-5644; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-EXACT-MATRIX-AND-HESSIAN</code>.</p>
+<p>3x3 characteristic polynomial and g(D) Hessian independently verified for g(x)=x^2,x^3,x^4; general divided difference follows.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B4-029. <strong>Adversarial E4:</strong> E4-IIIC-B4-016.</p>
+<h3>146. <code>p3c:rem:v192-k48-residual-firewall</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5655-5664; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>147. <code>p3c:cor:v193-k48-h-t5-mixed-zero</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5671-5686; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-C3-SCHUR</code>.</p>
+<p>Real two-dimensional rotation has no invariant linear functional to a real trivial representation.</p>
+<h3>148. <code>p3c:rem:v193-k48-higher-jet-firewall</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5688-5696; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-WITH-DECLARED-SCOPE</code>.</p>
+<p>Scope/definition/remark rechecked against immediate proof group and explicit boundaries; no independently selected physical realization inferred.</p>
+<h3>149. <code>p3c:prop:v257-k48-invariant-jets</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5698-5718; <strong>Batch:</strong> 4; <strong>Source disposition:</strong> <code>VERIFIED-C3-TAYLOR-THROUGH-DEGREE4</code>.</p>
+<p>Degree 2 |z|², degree 3 Re(cz³), degree 4 |z|⁴; cubic survives even while mixed Hessian vanishes.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0009</code>.
+<strong>Independent E3:</strong> E3-IIIC-B4-030. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>150. <code>p3c:thm:v2216-berger-norms</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5740-5761; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>VERIFIED</code>.</p>
+<p>Commuting Berger spectral resolution gives exact nonbasic minimum λ=(2+ε^-2)/R_mom² at k=1,q=±1; operator norm sup yields heat/resolvent equalities. Finite bands can remove minimizer.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B5-001. <strong>Adversarial E4:</strong> E4-IIIC-B5-001.</p>
+<h3>151. <code>p3c:cor:v2216-berger-cutoff</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5774-5784; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>VERIFIED</code>.</p>
+<p>Closed cutoff condition is strict because boundary modes λ=Λ_cut² are included; projected resolvent zero on orthogonal complement so not globally injective.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B5-002. <strong>Adversarial E4:</strong> E4-IIIC-B5-002.</p>
+<h3>152. <code>p3c:thm:v2216-visibility-generator</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5793-5804; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>VERIFIED</code>.</p>
+<p>Finite-dimensional fixed linear generator yields entire matrix elements in complex time; requested p0(t)=1/(1+7e^-t) is meromorphic with nonremovable poles log7+(2n+1)πi, contradicting analyticity.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0005</code>.
+<strong>Independent E3:</strong> E3-IIIC-B5-003. <strong>Adversarial E4:</strong> E4-IIIC-B5-003.</p>
+<h3>153. <code>p3c:prop:v2216-visibility-realizations</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5815-5836; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>VERIFIED</code>.</p>
+<p>Commuting single-Kraus filters form CP/TNI semigroup; amplitude damping with rate p0(τ) obeys population equation; reparametrized constant-rate map reproduces excited population e^-gt/8 exactly. No physical clock selected.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0005</code>.
+<strong>Independent E3:</strong> E3-IIIC-B5-004. <strong>Adversarial E4:</strong> E4-IIIC-B5-004.</p>
+<h3>154. <code>p3c:prop:v2218-fixed-seed-heat-spectra</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5865-5902; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>VERIFIED</code>.</p>
+<p>15-dimensional sector (1,4,3,3,2,2) and two spectral squares matched to I-A claims; compressed D_F² has 11 zeros, unlike retained LC square with one.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B5-005. <strong>Adversarial E4:</strong> E4-IIIC-B5-005.</p>
+<h3>155. <code>p3c:thm:v2218-born-heat-depth</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5913-5943; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>VERIFIED</code>.</p>
+<p>14 excited heat eigenvalues yield q_H, q_H' positive, exact variance τ_H''(0)=-213/392, strictly monotone crossings and stated exponential comparison bounds.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B5-006. <strong>Adversarial E4:</strong> E4-IIIC-B5-006.</p>
+<h3>156. <code>p3c:cor:v2218-born-depth-neutral-character</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5964-5986; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL</code>.</p>
+<p>Scalar pullback D_H=α_σ^q_H is exact on frozen positive determinant scheme, not a fixed-seed/protected-space intertwiner; physical scale requires owner typed action map.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0001</code>, <code>BH-IIIC-A-0007</code>, <code>BH-IIIC-A-0010</code>.
+<strong>Independent E3:</strong> E3-IIIC-B5-007. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>157. <code>p3c:prop:v2218-protected-heat-commutant</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:5998-6010; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL</code>.</p>
+<p>On ND_sp the two heat generators restrict to scalar multiples on the 4-complex spinor block; unitary adjoints fix every protected operator, symmetric heat sandwich scales identity and W together.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIB-A-B4-NDSP-001</code>.
+<strong>Independent E3:</strong> E3-IIIC-B5-008. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>158. <code>p3c:rem:v2218-fixed-seed-role-status</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:6027-6070; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>FORMALIZED</code>.</p>
+<p>Typed scope firewall correctly distinguishes finite seed Hilbert states, 8-real-dimensional protected operator space, neutral scalar, and total Born action value vs local metric coefficient.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B5-009. <strong>Adversarial E4:</strong> not separately logged for this claim.</p>
+<h3>159. <code>p3c:cor:v226-hierarchy-projectors</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:6076-6085; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL</code>.</p>
+<p>Imports degree-six chiral coordinate words and native dual-coefficient theorem from Paper I; no new physical chiral source populations inferred.</p>
+<h3>160. <code>p3c:cor:v266-protected-projector-resource</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:6223-6237; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>VERIFIED-CONDITIONAL</code>.</p>
+<p>Upstream II-C source gives six effects for either added operator and seven for both at r&gt;=2R; sharp chiral information 7 at r&gt;=sqrt3 R and 6 at r&gt;=sqrt34/3 R; 5 blind.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B5-010. <strong>Adversarial E4:</strong> E4-IIIC-B5-007.</p>
+<h3>161. <code>p3c:thm:v319-petersen-midpoint</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:6263-6287; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>VERIFIED</code>.</p>
+<p>Two-core polar spectrum 4,1/4,1/4 gives R eigenvalues 2,1/2,1/2; transverse (4,5) blocks invariant under RSR; geometric-mean midpoint unchanged under congruence.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B5-011. <strong>Adversarial E4:</strong> E4-IIIC-B5-008.</p>
+<h3>162. <code>p3c:rem:v319-not-a-gauge-change</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:6297-6307; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>FORMALIZED</code>.</p>
+<p>R positive nonunitary and thus does not implement action gauge equivalence; only specified off-diagonal transition preserved.</p>
+<h3>163. <code>p3c:prop:v319-petersen-complement-spectrum</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:6309-6323; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>VERIFIED</code>.</p>
+<p>Using J_i^T J_j in SO(3) with transverse cos=-7/8 yields det(I+J_i^TJ_j)=1/2, SVD (2,1/2,1/2); complementary -T determinant -1/2; doubled symmetric block ±singular values.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B5-012. <strong>Adversarial E4:</strong> E4-IIIC-B5-009.</p>
+<h3>164. <code>p3c:cor:v346-active-heat-checksum</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:6337-6355; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>VERIFIED</code>.</p>
+<p>Nested support differences have multiplicities (4,1,2,1); heat of 7I-Q_act is exactly 1+2e^-2t+e^-3t+4e^-7t, invariant under conjugacy.</p>
+<p><strong>Independent E3:</strong> E3-IIIC-B5-013. <strong>Adversarial E4:</strong> E4-IIIC-B5-010.</p>
+<h3>165. <code>p3c:rem:v346-hierarchy-measure-scope</code></h3>
+<p><strong>Source:</strong> Paper3C-ProtectedHierarchy-v1_179.tex:6369-6384; <strong>Batch:</strong> 5; <strong>Source disposition:</strong> <code>FORMALIZED</code>.</p>
+<p>High-precision α values for formal half and complex Gaussian determinant exponents reproduced; neither physical field measure is inferred; explicitly reinforces ALTMEASURE-001.</p>
+<p><strong>Direct scope guards:</strong> <code>BH-IIIC-A-0001</code>, <code>BH-IIIC-A-0002</code>.
+<strong>Independent E3:</strong> E3-IIIC-B5-014. <strong>Adversarial E4:</strong> E4-IIIC-B5-011.</p>
+<h2>Reproducible verification and source imports</h2>
+<p>E3 and E4 records in the atlas ProofEvidenceLedger; final batch numerical outputs in Batch05IndependentChecks.json. All source locators are within current corpus v2.370; imported peer results were checked only as prerequisites, not re-audited in entirety.</p>
+<h2>DAG implementation notes</h2>
+<p>The new Paper3C audit layer is registered in the canonical graph and composite index; it contains claim ledger, typed material and nonpromoting edges, proof routes, canonical assumption origins, gap registry, evidence, boundary map, and source coverage. The three findings have exactly one first origin each; none is propagated into remote physics without a certified path. The current source anchor map is retained. No original source paper or preexisting theorem proof flag was changed.</p>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

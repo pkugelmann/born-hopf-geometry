@@ -1,0 +1,1984 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper4B-ProofChainAudit-v1_4 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper4B-ProofChainAudit-v1_4 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper4B ProofChainAudit v1_4</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper4B-ProofChainAudit-v1_4.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Paper4B — CC18 current-source scope rebase (Paper4B-ProofChainAudit-v1_4.md)</h1>
+<p><strong>Latest source:</strong> <code>Paper4B-QuantumResponse-v1_51.tex</code>; SHA-256 <code>ee68e1edfd7834515a337cd2d4734671ddf3949ce222ebf0cf5281cb570b4693</code>.  <strong>Framework release:</strong> <code>Paper00-PapersMinimal-v3_019.zip</code> based on v3.018.  <strong>DAG release:</strong> <code>Paper00-DAGAtlas-v1_155.zip</code> based on v1.154.  <strong>Audit collection:</strong> <code>Paper00-ProofChainAudits-v1_68.zip</code> based on v1.67.</p>
+<p><strong>Scope and grade:</strong> <code>SOURCE_INTEGRATED_LOCAL_MATH_CHECKS / NEW_CLAIMS_NOT_FULLY_AUDITED</code>.  The historical audit below remains valid only for the original source body and the exact original manuscript version it names.  The added CC18 proof statements have formal source labels, precise dependency owners and reproducible finite/exact checks, but <strong>not a fresh exhaustive E3/E4 audit for this entire revised paper</strong>.  No old issue, open physical obligation, or conditional status is silently closed.  No physical occurrence/observable was promoted.</p>
+<p>New source-labelled mathematical result(s):</p>
+<ul>
+<li><code>p4b:thm:cc18-nonet-su3-obstruction</code> — source-integrated auxiliary comparison, no physical-owner certificate.</li>
+<li><code>p4b:thm:cc18-rankone-haar-twirl</code> — source-integrated auxiliary comparison, no physical-owner certificate.</li>
+</ul>
+<p><strong>Local evidence:</strong> <code>DAG/SourceUpdates/DAGCrossConnections-v1_9/</code> contains the independent exact-cubature, exact-block, independent facet-geometry and independent nonet reconstruction scripts from supplement v1.9; the release manifest records their replay status and the exact updated source anchors.  The predecessor audit, source text before the appended CC18 block, and all predecessor issue ledgers are preserved as provenance; source hash changed and must not be mistaken for E0 equality to the old manuscript.</p>
+<hr />
+<h2>Historical audit retained verbatim (not current-version re-certification)</h2>
+<h1>Source migration and repair-integration addendum — Paper4B-ProofChainAudit-v1_3.md</h1>
+<p><strong>Integration release:</strong> <code>Paper00-PapersMinimal-v3_007.zip</code>, 14 November 2026.
+<strong>Current paper source:</strong> <code>Paper4B-QuantumResponse-v1_49.tex</code>.
+<strong>Status:</strong> <code>SOURCE_INTEGRATED; GLOBAL_SOURCE_REAUDIT_PENDING</code>. An inherited historical audit is not a correctness certificate for the newer current manuscript.
+<strong>Evidence policy:</strong> Local algebraic proofs and scoped tests do not discharge physical source/observable interfaces or automatically alter the canonical proof DAG.</p>
+<hr />
+<h2>Historical source-bound audit: Paper4B-ProofChainAudit-v1_2.md</h2>
+<h1>Repair addendum — Paper4B / 13 November 2026</h1>
+<p><strong>Current manuscript:</strong> <code>Paper4B-QuantumResponse-v1_43.tex</code> (SHA-256 <code>7e34acf99133089396835891bcad540d337e899e385da6c8654aa621f7fd967d</code>)<br />
+<strong>Historical report preserved:</strong> <code>Paper4B-ProofChainAudit-v1_1.md</code> verbatim below.<br />
+<strong>Disposition:</strong> Scoped source repairs, not complete independent mathematical re-audit; all prior DAG proof/physical statuses unchanged.</p>
+<table>
+<thead>
+<tr>
+  <th>Issue</th>
+  <th>Current source line(s)</th>
+  <th>Change</th>
+  <th>Disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-G-000100</code></td>
+  <td><code>Paper4B-QuantumResponse-v1_43.tex:2922</code>, <code>Paper4B-QuantumResponse-v1_43.tex:2934</code>, <code>Paper4B-QuantumResponse-v1_43.tex:2943</code>, <code>Paper4B-QuantumResponse-v1_43.tex:2959</code>, <code>Paper4B-QuantumResponse-v1_43.tex:2979</code></td>
+  <td>Corrected restricted-composition Cauchy leap; a determining full-real or dense additive composition-domain certificate is now explicit.</td>
+  <td>SOURCE_CORRECTED; REAUDIT PENDING / IMPORTED GATE RETAINED</td>
+</tr>
+<tr>
+  <td><code>BH-G-000101</code></td>
+  <td><code>Paper4B-QuantumResponse-v1_43.tex:4553</code>, <code>Paper4B-QuantumResponse-v1_43.tex:4569</code>, <code>Paper4B-QuantumResponse-v1_43.tex:4584</code></td>
+  <td>Equilibrium is characterized by all additive collision invariants; Gibbs form follows only if the actual positive-rate collision-invariant space is complete.</td>
+  <td>SOURCE_CORRECTED; REAUDIT PENDING / IMPORTED GATE RETAINED</td>
+</tr>
+</tbody>
+</table>
+<p>See <code>Paper00-AuditRepairBatch-v1_3.md</code> and the 28/28 scoped controls in the current atlas. Source hashes and line numbers appearing in the original text below refer to its <strong>previous source edition</strong>; original OPEN flags are historical and have not been changed or globally promoted.</p>
+<hr />
+<h2>Historical audit baseline (unaltered original text)</h2>
+<h1>Paper IV-B — Full Rigorous Proof-Chain Audit (all four batches)</h1>
+<p><strong>Artifact:</strong> <code>Paper4B-ProofChainAudit-v1_1.md</code> | <strong>Audit protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code>
+<strong>Status:</strong> <code>FULLY_AUDITED_WITH_OPEN_GAPS</code>, under source-as-printed finite/conditional proof interpretation; no framework-wide certificate.
+<strong>Authoritative source:</strong> <code>Paper4B-QuantumResponse-v1_42.tex</code> (framework v2.371); SHA256 <code>11b93140dc5c53854a382763fde536862e8d979f65ba8e37c1af562b23bdab6f</code>; 12149 lines. Predecessor audits/atlas left immutable.
+<strong>Result:</strong> 227/227 named theorem/lemma/proposition/corollary/definition/remark statements; 176/176 proof environments; 119/119 scoped independent checks; two source-implication defects originating in Batch 2.</p>
+<h2>Evidence methodology and precise classification</h2>
+<ul>
+<li>E1: every named statement and its source-located proof environment compared against the <em>current</em> TeX. Proof environments not directly attached to named statements are inventoried separately in Batch 3.</li>
+<li>E2/E3: 119 passing independent finite matrix/CAR/instrument/response controls, plus positive controls and bounded countermodels. They verify the exact tested branches, not universal quantified claims beyond the finite owner.</li>
+<li>E4: adversarial counterexample attempts and source-domain firewall. The two issues below are established countermodels to the <em>implications as printed</em>, not automatically to the actual physical operator or untested source selection.</li>
+<li>Imported upstream assertions are read at relevant exact scopes only. This single-paper audit does not independently re-audit earlier works.</li>
+<li>Multiple separately written replay, computational and boundary checks were executed by one coordinating analyst; an independent multi-agent run is <strong>not</strong> claimed.</li>
+<li>All conditional upstream physical occurrences, actualized states, common-source normalizations, quasiparticle collision kernels and thermodynamic subnet assumptions remain conditional on their stated hypotheses.</li>
+<li>Source-classified verdicts: <strong>VERIFIED 12</strong>, <strong>VERIFIED-CONDITIONAL 136</strong>, <strong>REPRODUCED 37</strong>, <strong>FORMALIZED 40</strong>, <strong>INCONSISTENT 2</strong>. These are proof/evidence statuses, not 227 claims universally independently proved.</li>
+</ul>
+<h2>Every identified mathematical issue</h2>
+<h3>BH-G-000100 — Major, missing condition in global Euclidean exponential-weight rigidity</h3>
+<ul>
+<li><strong>Origin:</strong> <code>p4:thm:euclidean-weight-rigidity</code>, lines 2913–2942, proof 2937–2942. The printed hypothesis gives positive continuous <code>w:R→R+</code> and multiplicativity when two actions occur in relation-free composed subsystems; its proof then treats this as the Cauchy relation for all <code>x,y∈R</code>.</li>
+<li><strong>Failure certificate:</strong> If admissible composition values are nonnegative integers, <code>w(x)=exp(-x+sin(2πx)/20)</code> is positive, continuous and strictly decreasing; <code>w(n+m)=w(n)w(m)</code> for all admitted integer pairs, but it is not globally <code>exp(cx)</code>. Full-real action composability, or a determining dense set plus extension argument, is an undischarged additional condition <code>BH-IVB-A-0001</code>.</li>
+<li><strong>Scope:</strong> Ordinary continuous additive Cauchy theorem holds when its premise really is valid for all real pairs; positive finite Euclidean integrals with an <em>explicitly supplied</em> <code>exp(-S_E/ħ)</code> weight are not refuted.</li>
+<li><strong>Material downstream:</strong> <code>p4:thm:euclidean-weight-rigidity → p4:def:generated-finite-euclidean-quantum-ray → p4:cor:finite-generated-quantum-constructor</code> uses the rigidity assertion for the no-extra-selector conclusion. No certified cross-paper impacted proof path asserted. Earlier source: <code>p2:post:GP2</code> role-composition grammar; it does <strong>not</strong> discharge action-coordinate coverage.</li>
+<li><strong>Resolution obligation:</strong> Source-verified composability/density for the actual action-coordinate domain with continuous extension; no axiom added and no source changed.</li>
+</ul>
+<h3>BH-G-000101 — Moderate, missing collision-invariant completeness for unique Gibbs equilibrium</h3>
+<ul>
+<li><strong>Origin:</strong> <code>p4:thm:v496-quantum-kinetic-h</code>, lines 4537–4563. The nonnegative collision entropy production is valid. But connectedness of the reversible reaction graph need not exhaust additive collision invariants.</li>
+<li><strong>Failure certificate:</strong> Eight fermionic momentum cells in four opposite pairs, with only the three positive-rate opposite-pair exchange reactions sharing a reference pair, form a connected microreversible total-charge/energy-momentum sector. Occupancies 1/2 on the six axis cells, 3/4 on <code>+u</code> and 1/4 on <code>−u</code> yield zero entropy production because opposite-pair log-odds sums vanish. No single printed affine Gibbs log-odds parameter fits both axis and <code>±u</code> values.</li>
+<li><strong>Scope:</strong> The inequality <code>(X−Y) log(X/Y)≥0</code> remains correct; this countermodel is a permitted abstract collision kernel, <strong>not</strong> a test of the actually generated Born–Hopf Standard Model collision network. The thermal/KMS interface retains its own independently stated conditions.</li>
+<li><strong>Direct impact:</strong> Gibbs-uniqueness clause of <code>p4:thm:v496-quantum-kinetic-h</code>; no certified universal downstream proof route attached. Additional collision-invariant completeness <code>BH-IVB-A-0002</code> is required. Later cosmological kinetic consumers are POSSIBLY_AFFECTED, not claimed proved dependent.</li>
+<li><strong>Resolution obligation:</strong> Check and certify full additive-collision-invariant classification on the <em>actually admitted</em> quasiparticle kernel/sector; no assumption manufactured.</li>
+</ul>
+<h2>Mathematical issue vs conditional physical interface</h2>
+<ul>
+<li><strong>Established proof-scope defects:</strong> exactly the two IDs above. No additional source-as-printed defect established in Batches 1, 3, 4.</li>
+<li><strong>Legitimate conditional statements:</strong> finite KMS/global KMS accumulation, full interacting H source-visible pole, dynamical detector/source actualization, finite-to-asymptotic scattering, chosen lepton and Petersen source incidents, and cosmological source work. These are not classified as incorrect merely because the paper explicitly requires their inputs.</li>
+<li><strong>Evidence scope:</strong> finite computation on a sample owner cannot certify all quantified possible source words; follow-up physical data may be needed even after the mathematical source theorem is correct.</li>
+<li><strong>DAG coverage:</strong> reviewed material edges are explicitly promoted only with source-matched use witnesses and AND routes. Citation-only candidates remain quarantined. Two first-known inferred predicates are entered as single condition nodes; existing constituted checkpoints are inherited, not duplicated.</li>
+</ul>
+<h2>Four bounded batches and their retained exact ledgers</h2>
+<table>
+<thead>
+<tr>
+  <th>Batch</th>
+  <th style="text-align:right">Source lines</th>
+  <th style="text-align:right">Named statements</th>
+  <th style="text-align:right">Proofs</th>
+  <th style="text-align:right">Passing scoped checks</th>
+  <th>New issues</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td style="text-align:right">65–2240</td>
+  <td style="text-align:right">39</td>
+  <td style="text-align:right">29</td>
+  <td style="text-align:right">14</td>
+  <td>none</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td style="text-align:right">2241–4710</td>
+  <td style="text-align:right">57</td>
+  <td style="text-align:right">36</td>
+  <td style="text-align:right">26</td>
+  <td>BH-G-000100, BH-G-000101</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td style="text-align:right">4711–7996</td>
+  <td style="text-align:right">53</td>
+  <td style="text-align:right">46</td>
+  <td style="text-align:right">32</td>
+  <td>none</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td style="text-align:right">7997–12149</td>
+  <td style="text-align:right">78</td>
+  <td style="text-align:right">65</td>
+  <td style="text-align:right">47</td>
+  <td>none</td>
+</tr>
+</tbody>
+</table>
+<h2>Full 227-claim source disposition ledger</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">#</th>
+  <th style="text-align:right">Source line</th>
+  <th>Type</th>
+  <th>Exact label</th>
+  <th>Verdict</th>
+  <th style="text-align:center">Has proof</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">352</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:native-qft-status</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">404</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:qft-postulate-boundary</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">3</td>
+  <td style="text-align:right">475</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:bare-algebra-one-particle-no-selector</code></td>
+  <td>VERIFIED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">4</td>
+  <td style="text-align:right">494</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:stationary-positive-frequency-mode-space</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">5</td>
+  <td style="text-align:right">546</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v245-hessian-kahler-projective-geometry</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">6</td>
+  <td style="text-align:right">651</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:no-exact-ccr</code></td>
+  <td>VERIFIED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">7</td>
+  <td style="text-align:right">674</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v245-finite-free-vacuum-covariance</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">8</td>
+  <td style="text-align:right">737</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:paired-berezin-determinant-line</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">9</td>
+  <td style="text-align:right">767</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v489-fixed-carrier-gauge-jacobian-cancellation</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">10</td>
+  <td style="text-align:right">792</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v489-fixed-versus-chiral-line</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">11</td>
+  <td style="text-align:right">802</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:parallel-line-trivialization</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">12</td>
+  <td style="text-align:right">833</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:parallel-line-chiral-firewall</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">13</td>
+  <td style="text-align:right">842</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:doubled-pfaffian-presentation</code></td>
+  <td>VERIFIED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">14</td>
+  <td style="text-align:right">860</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:finite-fermion-clock-real-form</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">15</td>
+  <td style="text-align:right">908</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:finite-energy-source-certificate</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">16</td>
+  <td style="text-align:right">936</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:finite-constrained-energy-duality</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">17</td>
+  <td style="text-align:right">985</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v4106-functional-hilbert-response</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">18</td>
+  <td style="text-align:right">1061</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v4106-moving-carrier-contact</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">19</td>
+  <td style="text-align:right">1106</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v4106-canonical-stress-ward</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">20</td>
+  <td style="text-align:right">1207</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v4118-passive-clock-pullback</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">21</td>
+  <td style="text-align:right">1286</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v4118-homogeneous-time-ward</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">22</td>
+  <td style="text-align:right">1343</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v4118-homogeneous-source-work</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">23</td>
+  <td style="text-align:right">1400</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v2174-occupation-phase-moment</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">24</td>
+  <td style="text-align:right">1448</td>
+  <td>REMARK</td>
+  <td><code>UNLABELED:Paper4B:remark:1448</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">25</td>
+  <td style="text-align:right">1465</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:gp1-bosonic-occupation-boundary</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">26</td>
+  <td style="text-align:right">1528</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:occupation-cutoff-saturation</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">27</td>
+  <td style="text-align:right">1614</td>
+  <td>DEFINITION</td>
+  <td><code>p4:def:intrinsic-finite-spectral-block</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">28</td>
+  <td style="text-align:right">1629</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:reeb-polarization-not-time-frequency</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">29</td>
+  <td style="text-align:right">1647</td>
+  <td>LEMMA</td>
+  <td><code>p4:lem:positive-frequency-generator-from-euclidean-block</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">30</td>
+  <td style="text-align:right">1728</td>
+  <td>DEFINITION</td>
+  <td><code>p4:def:minimal-uninserted-free-scalar-cover-domain</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">31</td>
+  <td style="text-align:right">1783</td>
+  <td>LEMMA</td>
+  <td><code>p4:lem:second-order-free-collapse</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">32</td>
+  <td style="text-align:right">1819</td>
+  <td>LEMMA</td>
+  <td><code>p4:lem:scalar-cover-speed-normalization</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">33</td>
+  <td style="text-align:right">1858</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:finite-inherited-operational-speed</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">34</td>
+  <td style="text-align:right">1877</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:finite-one-particle-dispersion</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">35</td>
+  <td style="text-align:right">1993</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:pure-scalar-factor-representation</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">36</td>
+  <td style="text-align:right">2029</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:stationary-free-law-dyn-law-closure</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">37</td>
+  <td style="text-align:right">2048</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:stationary-quadratic-real-form-pair</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">38</td>
+  <td style="text-align:right">2140</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v244-action-generated-schrodinger-form</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">39</td>
+  <td style="text-align:right">2206</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v244-generated-green-operators</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">40</td>
+  <td style="text-align:right">2248</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:coordinate-source-work</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">41</td>
+  <td style="text-align:right">2285</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:spherical-free-dirac-source</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">42</td>
+  <td style="text-align:right">2338</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:spherical-free-positive-constituent</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">43</td>
+  <td style="text-align:right">2362</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:spherical-dirac-trace-source-work</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">44</td>
+  <td style="text-align:right">2388</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:spherical-dirac-retarded-kernel</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">45</td>
+  <td style="text-align:right">2433</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:common-flow-dynamic-tests</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">46</td>
+  <td style="text-align:right">2459</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:finite-tt-source-response</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">47</td>
+  <td style="text-align:right">2522</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2190-car-euler-derivation</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">48</td>
+  <td style="text-align:right">2583</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2190-complete-finite-propagator</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">49</td>
+  <td style="text-align:right">2619</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v2190-frame-constraint-transport</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">50</td>
+  <td style="text-align:right">2683</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:finite-thermal-kms-kinetic-interface</code></td>
+  <td>VERIFIED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">51</td>
+  <td style="text-align:right">2726</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:finite-kms-kinetic-boundary</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">52</td>
+  <td style="text-align:right">2756</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:finite-channel-scattering-lsz-interface</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">53</td>
+  <td style="text-align:right">2818</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:external-fermion-line-generated-closure</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">54</td>
+  <td style="text-align:right">2873</td>
+  <td>REMARK</td>
+  <td><code>UNLABELED:Paper4B:remark:2873</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">55</td>
+  <td style="text-align:right">2885</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:finite-reference-integration-ray</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">56</td>
+  <td style="text-align:right">2913</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:euclidean-weight-rigidity</code></td>
+  <td>INCONSISTENT</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">57</td>
+  <td style="text-align:right">2944</td>
+  <td>DEFINITION</td>
+  <td><code>p4:def:generated-finite-euclidean-quantum-ray</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">58</td>
+  <td style="text-align:right">2964</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:finite-generated-quantum-constructor</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">59</td>
+  <td style="text-align:right">2974</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v2140-relative-determinant-weights</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">60</td>
+  <td style="text-align:right">3033</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:finite-euclidean-path-integral-status</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">61</td>
+  <td style="text-align:right">3084</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:finite-interaction-versus-geometric-vertex</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">62</td>
+  <td style="text-align:right">3116</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:hurwitz-link-finite-support-import</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">63</td>
+  <td style="text-align:right">3213</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v204-quantum-sampled-transport</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">64</td>
+  <td style="text-align:right">3249</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:no-scalene-carrier-triangle</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">65</td>
+  <td style="text-align:right">3255</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:hurwitz-finite-operator-algebras</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">66</td>
+  <td style="text-align:right">3325</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:finite-gauge-constraint-closure</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">67</td>
+  <td style="text-align:right">3343</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v176-finite-gauge-noether-typing</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">68</td>
+  <td style="text-align:right">3367</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:explicit-finite-ccr-boundary-defect</code></td>
+  <td>VERIFIED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">69</td>
+  <td style="text-align:right">3394</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:ccr-defect-meaning</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">70</td>
+  <td style="text-align:right">3432</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:finite-wick-quasifree-calculus</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">71</td>
+  <td style="text-align:right">3513</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:finite-wick-downstream-support</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">72</td>
+  <td style="text-align:right">3529</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:car-source-variance</code></td>
+  <td>VERIFIED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">73</td>
+  <td style="text-align:right">3575</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:bounded-source-connected-return</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">74</td>
+  <td style="text-align:right">3601</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v4100-exact-graded-eaa</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">75</td>
+  <td style="text-align:right">3640</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v4100-graded-eaa-scope</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">76</td>
+  <td style="text-align:right">3699</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:framework-scattering-window</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">77</td>
+  <td style="text-align:right">3744</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:scattering-smatrix</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">78</td>
+  <td style="text-align:right">3785</td>
+  <td>LEMMA</td>
+  <td><code>p4:lem:derived-scattering-plateau</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">79</td>
+  <td style="text-align:right">3907</td>
+  <td>LEMMA</td>
+  <td><code>p4:lem:finite-window-scattering-cauchy-criterion</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">80</td>
+  <td style="text-align:right">3934</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:moller-bridge</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">81</td>
+  <td style="text-align:right">4129</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:finite-resonance-reduction</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">82</td>
+  <td style="text-align:right">4176</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:finite-resonance-status</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">83</td>
+  <td style="text-align:right">4186</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:resonance-meaning</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">84</td>
+  <td style="text-align:right">4232</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:scattering-spectroscopy-bridge</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">85</td>
+  <td style="text-align:right">4280</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:minimal-finite-temperature-seesaw-interface</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">86</td>
+  <td style="text-align:right">4430</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:thermal-interface-status</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">87</td>
+  <td style="text-align:right">4440</td>
+  <td>LEMMA</td>
+  <td><code>p4:lem:uniform-finite-trace-efficiency</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">88</td>
+  <td style="text-align:right">4457</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:sphaleron-and-photon-conversion</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">89</td>
+  <td style="text-align:right">4519</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v496-depth-not-beta</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">90</td>
+  <td style="text-align:right">4537</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v496-quantum-kinetic-h</code></td>
+  <td>INCONSISTENT</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">91</td>
+  <td style="text-align:right">4565</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v496-local-not-global-kms</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">92</td>
+  <td style="text-align:right">4580</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v497-internal-response-positive-frequency</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">93</td>
+  <td style="text-align:right">4602</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v497-state-not-saturation</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">94</td>
+  <td style="text-align:right">4623</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v498-no-charge-production</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">95</td>
+  <td style="text-align:right">4665</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v4103-real-pair-response-no-new-phase</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">96</td>
+  <td style="text-align:right">4694</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v4103-relative-sector-cp</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">97</td>
+  <td style="text-align:right">4766</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:sector-compatible-observables</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">98</td>
+  <td style="text-align:right">4820</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:sector-vs-mixing-observables</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">99</td>
+  <td style="text-align:right">4841</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:trace-neutral-finite-word-selection</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">100</td>
+  <td style="text-align:right">4869</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:trace-neutral-selection-status</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">101</td>
+  <td style="text-align:right">4908</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:finite-family-factors</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">102</td>
+  <td style="text-align:right">4949</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:rank-three-family-sectors</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">103</td>
+  <td style="text-align:right">4994</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:finite-sector-transition</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">104</td>
+  <td style="text-align:right">5021</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:sector-transition-meaning</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">105</td>
+  <td style="text-align:right">5060</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:finite-threshold</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">106</td>
+  <td style="text-align:right">5098</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:effective-threshold-language</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">107</td>
+  <td style="text-align:right">5117</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:finite-multiplet-mixing</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">108</td>
+  <td style="text-align:right">5175</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v4101-generated-pair-member-handoff</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">109</td>
+  <td style="text-align:right">5217</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v4101-exact-charge-scope</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">110</td>
+  <td style="text-align:right">5240</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v4102-pair-charge-source</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">111</td>
+  <td style="text-align:right">5295</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v4102-finite-car-charge-propagation</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">112</td>
+  <td style="text-align:right">5348</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v4102-charge-propagation-scope</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">113</td>
+  <td style="text-align:right">5360</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v498-phase-locked-pairing-invariant</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">114</td>
+  <td style="text-align:right">5398</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v4102-relative-phase-scope</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">115</td>
+  <td style="text-align:right">5426</td>
+  <td>LEMMA</td>
+  <td><code>p4:lem:v2167-pair-commutator</code></td>
+  <td>VERIFIED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">116</td>
+  <td style="text-align:right">5442</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2167-inherited-pair-coefficients</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">117</td>
+  <td style="text-align:right">5488</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v2167-returned-pair-kernel</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">118</td>
+  <td style="text-align:right">5549</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v2168-stationary-source-quotient</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">119</td>
+  <td style="text-align:right">5634</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2168-dynamical-fidelity</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">120</td>
+  <td style="text-align:right">5681</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v2168-positive-source-leakage</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">121</td>
+  <td style="text-align:right">5722</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2168-stationary-family-fidelity</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">122</td>
+  <td style="text-align:right">5888</td>
+  <td>THEOREM</td>
+  <td><code>p4:v2169:b11:thm:normalstate</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">123</td>
+  <td style="text-align:right">5940</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v239-gibbs-support-scope</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">124</td>
+  <td style="text-align:right">5981</td>
+  <td>THEOREM</td>
+  <td><code>p4:v2169:b11:thm:weakslater</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">125</td>
+  <td style="text-align:right">6173</td>
+  <td>THEOREM</td>
+  <td><code>p4:v2169:b12:thm:adjacentnumber</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">126</td>
+  <td style="text-align:right">6230</td>
+  <td>COROLLARY</td>
+  <td><code>p4:v2169:b12:cor:onefermion</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">127</td>
+  <td style="text-align:right">6370</td>
+  <td>THEOREM</td>
+  <td><code>p4:v2171:thm:fullcharge</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">128</td>
+  <td style="text-align:right">6427</td>
+  <td>THEOREM</td>
+  <td><code>p4:v2171:thm:flow</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">129</td>
+  <td style="text-align:right">6494</td>
+  <td>THEOREM</td>
+  <td><code>p4:v2171:thm:capcommutator</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">130</td>
+  <td style="text-align:right">6546</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v2219-uv-bogoliubov</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">131</td>
+  <td style="text-align:right">6563</td>
+  <td>REMARK</td>
+  <td><code>UNLABELED:Paper4B:remark:6563</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">132</td>
+  <td style="text-align:right">6580</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v228-charged-bilinear</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">133</td>
+  <td style="text-align:right">6603</td>
+  <td>PROPOSITION</td>
+  <td><code>p4b:prop:v240-protected-chiral-source-splitting</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">134</td>
+  <td style="text-align:right">6624</td>
+  <td>THEOREM</td>
+  <td><code>p4b:thm:v240-complete-one-source-stieltjes</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">135</td>
+  <td style="text-align:right">6699</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2168-bilinear-source-commutators</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">136</td>
+  <td style="text-align:right">6755</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v2168-coefficient-pairing</code></td>
+  <td>VERIFIED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">137</td>
+  <td style="text-align:right">6791</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2168-commuting-port-memory-gram</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">138</td>
+  <td style="text-align:right">6856</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v2168-equivariant-charge-reduction</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">139</td>
+  <td style="text-align:right">6934</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2168-faithful-stationary-poles</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">140</td>
+  <td style="text-align:right">7012</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v2168-support-family-visibility</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">141</td>
+  <td style="text-align:right">7057</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2168-regular-gap-root-bound</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">142</td>
+  <td style="text-align:right">7198</td>
+  <td>THEOREM</td>
+  <td><code>p4:v2169:b7:thm:closure</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">143</td>
+  <td style="text-align:right">7248</td>
+  <td>THEOREM</td>
+  <td><code>p4:v2169:b7:thm:poles</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">144</td>
+  <td style="text-align:right">7420</td>
+  <td>THEOREM</td>
+  <td><code>p4:v2169:b10:thm:support</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">145</td>
+  <td style="text-align:right">7637</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v2174-full-ground-degree-bound</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">146</td>
+  <td style="text-align:right">7715</td>
+  <td>LEMMA</td>
+  <td><code>p4:lem:v2186-exact-source-cyclic-action</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">147</td>
+  <td style="text-align:right">7756</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2186-common-source-cyclic-polynomial</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">148</td>
+  <td style="text-align:right">7815</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v2186-source-cyclic-residue-scope</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">149</td>
+  <td style="text-align:right">7837</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v2186-scalar-center-pole-invisibility</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">150</td>
+  <td style="text-align:right">8056</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:weak-monitoring-diffusive</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">151</td>
+  <td style="text-align:right">8251</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:weak-value-ozawa-domain</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">152</td>
+  <td style="text-align:right">8345</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:pure-dephasing-rates</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">153</td>
+  <td style="text-align:right">8416</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:pointer-operational</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">154</td>
+  <td style="text-align:right">8507</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2203-gaussian-physical-work</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">155</td>
+  <td style="text-align:right">8551</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v2203-gaussian-functional-work</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">156</td>
+  <td style="text-align:right">8585</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v2203-time-dependent-chart-work</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">157</td>
+  <td style="text-align:right">8635</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2203-causal-mean-response-noise</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">158</td>
+  <td style="text-align:right">8673</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v2203-gaussian-connected-noise</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">159</td>
+  <td style="text-align:right">8726</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v2203-gaussian-linear-even-parity</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">160</td>
+  <td style="text-align:right">8750</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v2203-quantum-schur-nonduplication</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">161</td>
+  <td style="text-align:right">8787</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2203-gaussian-cold-tail</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">162</td>
+  <td style="text-align:right">8863</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2209-passive-work-capacity</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">163</td>
+  <td style="text-align:right">8906</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2217-monotone-free-loading</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">164</td>
+  <td style="text-align:right">8952</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v2209-compact-bloch-source</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">165</td>
+  <td style="text-align:right">8988</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v2209-noise-energy-witness</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">166</td>
+  <td style="text-align:right">9006</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2209-controlled-excitation-survival</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">167</td>
+  <td style="text-align:right">9054</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v2209-native-tail-retention</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">168</td>
+  <td style="text-align:right">9082</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v2209-inherited-mixedness-gap</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">169</td>
+  <td style="text-align:right">9113</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v2212-massive-conformal-shape-kernel</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">170</td>
+  <td style="text-align:right">9244</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v2212-conformal-shape-scope</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">171</td>
+  <td style="text-align:right">9282</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:quasilocal-thermodynamic-bridge</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">172</td>
+  <td style="text-align:right">9369</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:thermo-conditionality</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">173</td>
+  <td style="text-align:right">9386</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v490-local-kinetic-versus-kms</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">174</td>
+  <td style="text-align:right">9404</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v236-thermal-atlas</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">175</td>
+  <td style="text-align:right">9431</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v236-scattering-atlas</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">176</td>
+  <td style="text-align:right">9455</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2109-finite-root-restrictions</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">177</td>
+  <td style="text-align:right">9500</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2114-neutral-fock-unit</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">178</td>
+  <td style="text-align:right">9546</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2114-positive-family-ground-source</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">179</td>
+  <td style="text-align:right">9586</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2109-finite-evolution-error</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">180</td>
+  <td style="text-align:right">9636</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2109-euclidean-weight-support</code></td>
+  <td>VERIFIED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">181</td>
+  <td style="text-align:right">9672</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v164-action-hessian-pole-owner</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">182</td>
+  <td style="text-align:right">9687</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v164-finite-gibbs-vacuum-no-thermalization</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">183</td>
+  <td style="text-align:right">9764</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v491-fermion-factor-source-multiplication</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">184</td>
+  <td style="text-align:right">9960</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2210-lit-instrument-mixing</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">185</td>
+  <td style="text-align:right">10014</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v2211-finite-event-resolvent-certificate</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">186</td>
+  <td style="text-align:right">10083</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v2211-event-frequency-strong-law</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">187</td>
+  <td style="text-align:right">10125</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v255-sharp-event-frequency</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">188</td>
+  <td style="text-align:right">10284</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v255-periodic-persistent-records</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">189</td>
+  <td style="text-align:right">10343</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v258-nonstationary-frequency-law</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">190</td>
+  <td style="text-align:right">10506</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v258-asymptotic-frequency-povm</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">191</td>
+  <td style="text-align:right">10559</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v258-stationary-frequency-recovery</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">192</td>
+  <td style="text-align:right">10586</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v258-frequency-law-diagnostics</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">193</td>
+  <td style="text-align:right">10661</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v2210-lit-frequency-obstructions</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">194</td>
+  <td style="text-align:right">10691</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v2210-lit-markov-window</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">195</td>
+  <td style="text-align:right">10729</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2216-zero-excitation-dynamic-response</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">196</td>
+  <td style="text-align:right">10797</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v2216-qroot-dynamic-scope</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">197</td>
+  <td style="text-align:right">10817</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v2216-graded-matter-uv</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">198</td>
+  <td style="text-align:right">10882</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v2216-graded-matter-scope</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">199</td>
+  <td style="text-align:right">10914</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:prop:v2216-finite-heat-integrability</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">200</td>
+  <td style="text-align:right">10959</td>
+  <td>REMARK</td>
+  <td><code>p4:rem:v2216-finite-heat-domain</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">201</td>
+  <td style="text-align:right">10986</td>
+  <td>THEOREM</td>
+  <td><code>p3f:thm:v247-car-influence-determinant</code></td>
+  <td>VERIFIED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">202</td>
+  <td style="text-align:right">11041</td>
+  <td>COROLLARY</td>
+  <td><code>p3f:cor:v247-car-logdet-jets</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">203</td>
+  <td style="text-align:right">11065</td>
+  <td>PROPOSITION</td>
+  <td><code>p3f:prop:v247-car-source-jets</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">204</td>
+  <td style="text-align:right">11118</td>
+  <td>PROPOSITION</td>
+  <td><code>p3f:prop:v247-car-influence-frame-transport</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">205</td>
+  <td style="text-align:right">11151</td>
+  <td>THEOREM</td>
+  <td><code>p4:thm:v247-native-source-factorization</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">206</td>
+  <td style="text-align:right">11263</td>
+  <td>COROLLARY</td>
+  <td><code>p4:cor:v247-native-source-work-cumulants</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">207</td>
+  <td style="text-align:right">11351</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:v251:prop:symmetry-transport</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">208</td>
+  <td style="text-align:right">11380</td>
+  <td>PROPOSITION</td>
+  <td><code>p4:v251:prop:finite-response-symmetry</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">209</td>
+  <td style="text-align:right">11428</td>
+  <td>THEOREM</td>
+  <td><code>p4:v251:thm:lepton-cyclic-response</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">210</td>
+  <td style="text-align:right">11493</td>
+  <td>COROLLARY</td>
+  <td><code>p4:v251:cor:required-noncyclic-content</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">211</td>
+  <td style="text-align:right">11596</td>
+  <td>THEOREM</td>
+  <td><code>p4b:thm:v254-in-in-charge-detector-covariance</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">212</td>
+  <td style="text-align:right">11641</td>
+  <td>COROLLARY</td>
+  <td><code>p4b:cor:v254-ward-operator-residual</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">213</td>
+  <td style="text-align:right">11670</td>
+  <td>PROPOSITION</td>
+  <td><code>p4b:prop:v254-same-action-angular-flux</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">214</td>
+  <td style="text-align:right">11696</td>
+  <td>REMARK</td>
+  <td><code>UNLABELED:Paper4B:remark:11696</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+<tr>
+  <td style="text-align:right">215</td>
+  <td style="text-align:right">11715</td>
+  <td>THEOREM</td>
+  <td><code>p4b:thm:v266-native-instrument</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">216</td>
+  <td style="text-align:right">11746</td>
+  <td>COROLLARY</td>
+  <td><code>p4b:cor:v266-quadratic-repeat</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">217</td>
+  <td style="text-align:right">11781</td>
+  <td>THEOREM</td>
+  <td><code>p4b:thm:v320-chiral-auxiliary-poles</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">218</td>
+  <td style="text-align:right">11831</td>
+  <td>COROLLARY</td>
+  <td><code>p4b:cor:v320-complement-phase-gauge</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">219</td>
+  <td style="text-align:right">11855</td>
+  <td>THEOREM</td>
+  <td><code>p4b:thm:v320-z2-loop-interference</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">220</td>
+  <td style="text-align:right">11892</td>
+  <td>PROPOSITION</td>
+  <td><code>p4b:prop:v320-source-incidence-boundary</code></td>
+  <td>REPRODUCED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">221</td>
+  <td style="text-align:right">11931</td>
+  <td>THEOREM</td>
+  <td><code>p4b:thm:v347-onebody-criterion</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">222</td>
+  <td style="text-align:right">11972</td>
+  <td>COROLLARY</td>
+  <td><code>p4b:cor:v347-retarded-criterion</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">223</td>
+  <td style="text-align:right">11999</td>
+  <td>PROPOSITION</td>
+  <td><code>p4b:prop:v347-three-mode-response-obstruction</code></td>
+  <td>VERIFIED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">224</td>
+  <td style="text-align:right">12032</td>
+  <td>THEOREM</td>
+  <td><code>p4b:thm:v347-majorana-hierarchy</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">225</td>
+  <td style="text-align:right">12064</td>
+  <td>PROPOSITION</td>
+  <td><code>p4b:prop:v347-odd-transfer-witness</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">226</td>
+  <td style="text-align:right">12100</td>
+  <td>THEOREM</td>
+  <td><code>p4b:thm:v356-current-visible-krylov</code></td>
+  <td>VERIFIED</td>
+  <td style="text-align:center">yes</td>
+</tr>
+<tr>
+  <td style="text-align:right">227</td>
+  <td style="text-align:right">12137</td>
+  <td>REMARK</td>
+  <td><code>p4b:rem:v356-current-krylov-scope</code></td>
+  <td>FORMALIZED</td>
+  <td style="text-align:center">—</td>
+</tr>
+</tbody>
+</table>
+<h2>Global DAG and reproducibility handoff</h2>
+<ul>
+<li>Global audit layer: <code>DAG/AuditLayer/Paper4B-v1_1/Index.json</code>, linked in <code>DAG/Paper00-TheoremDAG.json</code>, <code>DAG/CombinedGraphIndex-v1_108.json</code> and <code>DAG/Paper00-CompositeAuditIndex-v1_108.json</code>.</li>
+<li>Full original LaTeX statements, exact proof text, proof witnesses and source locator links: <code>AuditClaimLedger.json</code>. All local test scripts and raw results are included inside the atlas under <code>Evidence/Paper4B/</code>.</li>
+<li>Typed proof edge semantics: <code>TypedDependencyEdges.json</code>; conditional AND routes: <code>ProofRoutes.json</code>; two exact gap certificates: <code>GapRegistry.json</code>; first-known inferred premises: <code>AssumptionRegistry.json</code>; traversal/impact: <code>ImpactIndex.json</code>.</li>
+<li>The general DAG query script handles <code>node</code>, <code>conditions</code>, <code>descendants</code>, <code>prerequisites</code>, <code>issue</code>, <code>checks</code>, <code>staged</code> and <code>source</code>. No claim is made that all 5100+ historical claims are newly reverified here.</li>
+<li><strong>Output packages:</strong> updated global atlas <code>Paper00-DAGAtlas-v1_108.zip</code> and the latest-only audit collection <code>Paper00-ProofChainAudits-v1_25.zip</code> (15 audit reports: 14 inherited and Paper4B).</li>
+</ul>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

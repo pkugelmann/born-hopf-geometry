@@ -1,0 +1,1688 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper3E-ProofChainAudit-v1_3 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper3E-ProofChainAudit-v1_3 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper3E ProofChainAudit v1_3</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper3E-ProofChainAudit-v1_3.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Source migration and repair-integration addendum — Paper3E-ProofChainAudit-v1_3.md</h1>
+<p><strong>Integration release:</strong> <code>Paper00-PapersMinimal-v3_007.zip</code>, 14 November 2026.
+<strong>Current paper source:</strong> <code>Paper3E-GravityAction-v1_197.tex</code>.
+<strong>Status:</strong> <code>SOURCE_INTEGRATED; GLOBAL_SOURCE_REAUDIT_PENDING</code>. An inherited historical audit is not a correctness certificate for the newer current manuscript.
+<strong>Evidence policy:</strong> Local algebraic proofs and scoped tests do not discharge physical source/observable interfaces or automatically alter the canonical proof DAG.</p>
+<hr />
+<h2>Historical source-bound audit: Paper3E-ProofChainAudit-v1_2.md</h2>
+<h1>Repair addendum — Paper3E / 13 November 2026</h1>
+<p><strong>Current manuscript:</strong> <code>Paper3E-GravityAction-v1_191.tex</code> (SHA-256 <code>4483fa84b3d5de8113171edbb6177ffdb303bd65d6dd47effacd9d47f9ec896c</code>)<br />
+<strong>Historical report preserved:</strong> <code>Paper3E-ProofChainAudit-v1_1.md</code> verbatim below.<br />
+<strong>Disposition:</strong> Scoped source repairs, not complete independent mathematical re-audit; all prior DAG proof/physical statuses unchanged.</p>
+<table>
+<thead>
+<tr>
+  <th>Issue</th>
+  <th>Current source line(s)</th>
+  <th>Change</th>
+  <th>Disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-IIIE-G-0001</code></td>
+  <td><code>Paper3E-GravityAction-v1_191.tex:840</code>, <code>Paper3E-GravityAction-v1_191.tex:857</code></td>
+  <td>Separated seven-real-dimensional Clifford response W_7 from complex spin W_spin and corrected J_Delta codomain and V-A consumers.</td>
+  <td>SOURCE_CORRECTED; REAUDIT PENDING / IMPORTED GATE RETAINED</td>
+</tr>
+<tr>
+  <td><code>BH-IIIE-G-0002</code></td>
+  <td><code>Paper3E-GravityAction-v1_191.tex:984</code>, <code>Paper3E-GravityAction-v1_191.tex:993</code>, <code>Paper3E-GravityAction-v1_191.tex:1025</code></td>
+  <td>Retyped CRP4 as unique scheme-depth partial B-connection; no full BxM connection uniqueness without independent M-direction data.</td>
+  <td>SOURCE_CORRECTED; REAUDIT PENDING / IMPORTED GATE RETAINED</td>
+</tr>
+<tr>
+  <td><code>BH-IIIE-G-0003</code></td>
+  <td><code>Paper3E-GravityAction-v1_191.tex:1371</code>, <code>Paper3E-GravityAction-v1_191.tex:1377</code>, <code>Paper3E-GravityAction-v1_191.tex:1733</code>, <code>Paper3E-GravityAction-v1_191.tex:1749</code>, <code>Paper3E-GravityAction-v1_191.tex:1759</code>, <code>Paper3E-GravityAction-v1_191.tex:1776</code>, <code>Paper3E-GravityAction-v1_191.tex:1797</code></td>
+  <td>Scoped ordinary heat trace class to finite/compact parents; noncompact localized/relative/volume trace is a distinct readout requiring a trace certificate.</td>
+  <td>SOURCE_CORRECTED; REAUDIT PENDING / IMPORTED GATE RETAINED</td>
+</tr>
+<tr>
+  <td><code>BH-IIIE-G-0004</code></td>
+  <td><code>Paper3E-GravityAction-v1_191.tex:4287</code>, <code>Paper3E-GravityAction-v1_191.tex:4290</code></td>
+  <td>Carrier-four D_4(C_2)/Q is scheme dependent; 0.825729956674 is the REG0 numeric value, propagated to VI-A/VI-B.</td>
+  <td>SOURCE_CORRECTED; REAUDIT PENDING / IMPORTED GATE RETAINED</td>
+</tr>
+<tr>
+  <td><code>BH-IIIE-G-0005</code></td>
+  <td><code>Paper3E-GravityAction-v1_191.tex:4656</code></td>
+  <td>Bare reciprocal midpoint derivative is zero at x=1; at q=7/2 it requires R_s^2=UC, not a generic cap reference.</td>
+  <td>SOURCE_CORRECTED; REAUDIT PENDING / IMPORTED GATE RETAINED</td>
+</tr>
+<tr>
+  <td><code>BH-IIIE-G-0006</code></td>
+  <td><code>Paper3E-GravityAction-v1_191.tex:4600</code>, <code>Paper3E-GravityAction-v1_191.tex:4679</code>, <code>Paper3E-GravityAction-v1_191.tex:4689</code></td>
+  <td>Consistent curvature dimensions for Y,j and h_eff; dimensionless rescaling y=Y/R_s now retains R_s^16 Jacobian.</td>
+  <td>SOURCE_CORRECTED; REAUDIT PENDING / IMPORTED GATE RETAINED</td>
+</tr>
+<tr>
+  <td><code>BH-IIIE-G-0007</code></td>
+  <td><code>Paper3E-GravityAction-v1_191.tex:6147</code></td>
+  <td>Replaced nonexistent III-F section reference with exact current proposition and remark labels, separating restricted tests.</td>
+  <td>SOURCE_CORRECTED; REAUDIT PENDING / IMPORTED GATE RETAINED</td>
+</tr>
+</tbody>
+</table>
+<p>See <code>Paper00-AuditRepairBatch-v1_3.md</code> and the 28/28 scoped controls in the current atlas. Source hashes and line numbers appearing in the original text below refer to its <strong>previous source edition</strong>; original OPEN flags are historical and have not been changed or globally promoted.</p>
+<hr />
+<h2>Historical audit baseline (unaltered original text)</h2>
+<h1>Paper III-E — Rigorous proof-chain audit (complete source review)</h1>
+<p><strong>Source:</strong> <code>Paper3E-GravityAction-v1_190.tex</code> (Framework v2.370), SHA-256 <code>c09e1f6c834e784d593f12827045a22b184671324c5091f2e50b12e076e3119b</code>.</p>
+<p><strong>Audit protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code>, with E1 source replay, E3 independently calculated algebra/numerical tests, E4 adversarial and counterfamily testing. E0 file integrity is not a proof.</p>
+<p><strong>Classification:</strong> <code>FULLY_AUDITED_WITH_OPEN_GAPS</code>. <strong>Complete source coverage:</strong> lines 1–6,449; <strong>115/115</strong> formal claims, <strong>92/92</strong> proof environments, <strong>30/30</strong> formal remarks. <strong>Scope:</strong> paper III-E only, not unconditional framework or physical experiment verification.</p>
+<p><strong>Six batches:</strong> B1 1–1211 (14 claims, 10 proofs, 17 checks); B2 1212–2133 (14, 10, 24); B3 2134–3237 (22, 19, 36); B4 3238–4382 (25, 23, 62); B5 4383–5611 (26, 16, 78); B6 5612–6449 (14, 14, 127). All 344 exact or targeted reproducibility checks across the listed batch suites passed their designed predicates; semantic source gaps remain separately reported.</p>
+<p><strong>Claim dispositions:</strong> FORMALIZED: 12, REPRODUCED: 5, UNRESOLVED: 5, VERIFIED: 15, VERIFIED-CONDITIONAL: 78. Conditional physical-action/whole-action contacts are not upgraded by algebraic reconstruction.</p>
+<h2>Seven still-open issues</h2>
+<h3>BH-IIIE-G-0001 — TYPE_OR_DOMAIN (MODERATE, OPEN)</h3>
+<p><strong>First origin:</strong> <code>p3e:cor:even-external-internal-grading-ancestry</code> — <code>Paper3E-GravityAction-v1_190.tex:851-860</code>.</p>
+<p><strong>Exact obligation:</strong> Type J_Delta and its chirality operator on the exact spin carrier W_L⊕W_R (eight real dimensions), separately from the seven-real-dimensional Clifford block W; source does not supply their identification.</p>
+<p><strong>Preserved:</strong> Parity-preserving spin ancestry remains valid with its correctly typed carrier.</p>
+<h3>BH-IIIE-G-0002 — TYPE_OR_DOMAIN (MODERATE, OPEN)</h3>
+<p><strong>First origin:</strong> <code>p3e:thm:crp4-uniqueness</code> — <code>Paper3E-GravityAction-v1_190.tex:963-1011</code>.</p>
+<p><strong>Exact obligation:</strong> Specify independent spacetime M-direction connection on π_M<em>W</em> or restrict uniqueness to the scheme–depth B partial connection; unique B fourth-root transport is not a unique full B×M connection.</p>
+<p><strong>Preserved:</strong> CRP4 fourth-root determinant and scheme-depth transport.</p>
+<h3>BH-IIIE-G-0003 — TYPE_OR_DOMAIN (MODERATE, OPEN)</h3>
+<p><strong>First origin:</strong> <code>p3e:thm:general-closed-gravitational-readout</code> — <code>Paper3E-GravityAction-v1_190.tex:1711-1744; controlling domain Paper3E-GravityAction-v1_190.tex:1335-1377</code>.</p>
+<p><strong>Exact obligation:</strong> On the noncompact trace-per-volume/relative-trace branch explicitly permitted by the source, distinguish a finite localized/relative trace from the positive unlocalized heat operator itself being in the ordinary Schatten-L1 class. For an L1 conclusion either exhibit a trace-class sector owner or a declared trace-class localizer and change the output sort accordingly; no construction is performed here.</p>
+<p><strong>Preserved:</strong> unresolved noncompact branch; verified compact/finite branch</p>
+<h3>BH-IIIE-G-0004 — TYPE_OR_DOMAIN (MODERATE, OPEN)</h3>
+<p><strong>First origin:</strong> <code>p3e:thm:v2219-carrier-four-jets</code> — <code>Paper3E-GravityAction-v1_190.tex:4251-4259</code>.</p>
+<p><strong>Exact obligation:</strong> Determine whether the local numeric equality is meant only on REG0 (ln alpha=4pi^2+1/(6sqrt2)) or uniform on the already defined positive REGσ scheme locus; the same theorem states no explicit REG0 guard.</p>
+<p><strong>Preserved:</strong> unresolved scope qualifier on scheme-dependent numerical claim</p>
+<h3>BH-IIIE-G-0005 — MISSING_CONDITION (MINOR, OPEN)</h3>
+<p><strong>First origin:</strong> <code>p3e:thm:v223-cap-source / immediate post-theorem comparison</code> — <code>Paper3E-GravityAction-v1_190.tex:4620-4629</code>.</p>
+<p><strong>Exact obligation:</strong> Identify R_s=sqrt(U C) and q(R)=ln(U/R)/ln alpha before concluding x(q=7/2)=1 and vanishing derivative. Otherwise state the derivative zero at x=1 without hierarchy-depth substitution.</p>
+<p><strong>Preserved:</strong> established missing hierarchy-midpoint guard on ancillary derivative</p>
+<h3>BH-IIIE-G-0006 — TYPE_OR_DOMAIN (MODERATE, OPEN)</h3>
+<p><strong>First origin:</strong> <code>p3e:prop:v223-source-volume</code> — <code>Paper3E-GravityAction-v1_190.tex:4550-4556,4568-4571,4585-4590,4634-4646</code>.</p>
+<p><strong>Exact obligation:</strong> Make W_s quadratic/linear/source terms and exp[-W_s/(8h_eff)] dimensionally homogeneous using the declared [R_s]=curvature and stated dimensionless Y, and supply the corresponding density/Jacobian and h_eff type.</p>
+<p><strong>Preserved:</strong> unresolved dimensional coordinate/measure normalization despite verified pure Gaussian algebra</p>
+<h3>BH-IIIE-G-0007 — DAG_COVERAGE (MINOR, OPEN)</h3>
+<p><strong>First origin:</strong> <code>p3e:rem:v229-native-selection</code> — <code>Paper3E-GravityAction-v1_190.tex:6095-6099</code>.</p>
+<p><strong>Exact obligation:</strong> Resolve the cited PaperIII-F section label on the authoritative v2.370 source; if intended, verify exact subject-matched cross-reference to source-tested no-go results.</p>
+<p><strong>Preserved:</strong> established missing source reference, unverified intended replacement</p>
+<h2>Verification and propagation policy</h2>
+<p>Inherited canonical conditions and upstream theorem flags are unchanged. Newly explicit Paper III-E conditions are source-local scope predicates, not additional physical axioms. All accepted material imports are traced to exact source-use anchors and remain conditional on their own hypotheses. Citation-only, possible-target, and unresolved-label links are excluded from proof traversal. Mathematical existence, spectral comparison, physical occurrence, actual action/contact selection, and empirical readout are distinct.</p>
+<h2>Source-ordered per-batch detailed audit reports</h2>
+<hr />
+<h1>Detailed Batch 1</h1>
+<h1>Paper III-E — Rigorous verification, batch 01 (of planned source slices)</h1>
+<p><strong>Frozen source:</strong> <code>Paper3E-GravityAction-v1_190.tex</code>; SHA-256 <code>c09e1f6c834e784d593f12827045a22b184671324c5091f2e50b12e076e3119b</code></p>
+<p><strong>Coverage:</strong> lines 1–1,211; 14/115 formal declarations, 10/92 proofs, 1/30 remarks; 17 exact E3 symbolic checks passed.</p>
+<p><strong>Disposition:</strong> {'VERIFIED': 1, 'FORMALIZED': 3, 'VERIFIED-CONDITIONAL': 7, 'UNRESOLVED': 2, 'REPRODUCED': 1}. These are batch-level verdicts, not a full-paper or upstream-corpus certification.</p>
+<h2>Per-claim evidence ledger</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">ID</th>
+  <th style="text-align:right">Source line</th>
+  <th style="text-align:left">Claim label</th>
+  <th style="text-align:left">Current verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0001</td>
+  <td style="text-align:right">246</td>
+  <td style="text-align:left"><code>p3e:prop:v169-analytic-reconstruction-firewall</code></td>
+  <td style="text-align:left">VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0002</td>
+  <td style="text-align:right">285</td>
+  <td style="text-align:left"><code>p3:def:causal-wick-response-hypotheses</code></td>
+  <td style="text-align:left">FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0003</td>
+  <td style="text-align:right">419</td>
+  <td style="text-align:left"><code>p3e:prop:v2211-whole-action-newton-certificate</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0004</td>
+  <td style="text-align:right">486</td>
+  <td style="text-align:left"><code>p3e:cor:typed-planck-normalization</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0005</td>
+  <td style="text-align:right">706</td>
+  <td style="text-align:left"><code>p3e:thm:uniform-reg-response-bundle</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0006</td>
+  <td style="text-align:right">765</td>
+  <td style="text-align:left"><code>p3e:cor:owner-typed-active-spectral-profile</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0007</td>
+  <td style="text-align:right">851</td>
+  <td style="text-align:left"><code>p3e:cor:even-external-internal-grading-ancestry</code></td>
+  <td style="text-align:left">UNRESOLVED</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0008</td>
+  <td style="text-align:right">871</td>
+  <td style="text-align:left"><code>p3e:prop:c12-scheme-depth-closure-criterion</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0009</td>
+  <td style="text-align:right">938</td>
+  <td style="text-align:left"><code>p3e:def:crp4-cross-role-positive-parent</code></td>
+  <td style="text-align:left">FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0010</td>
+  <td style="text-align:right">963</td>
+  <td style="text-align:left"><code>p3e:thm:crp4-uniqueness</code></td>
+  <td style="text-align:left">UNRESOLVED</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0011</td>
+  <td style="text-align:right">1013</td>
+  <td style="text-align:left"><code>p3e:cor:crp4-c12-discharge</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0012</td>
+  <td style="text-align:right">1037</td>
+  <td style="text-align:left"><code>p3e:cor:v179-response-energy-quarter-character</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0013</td>
+  <td style="text-align:right">1117</td>
+  <td style="text-align:left"><code>p3e:prop:conditional-susceptibility-half-weight</code></td>
+  <td style="text-align:left">REPRODUCED</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0014</td>
+  <td style="text-align:right">1168</td>
+  <td style="text-align:left"><code>p3e:prop:v236-mresp-decomposition</code></td>
+  <td style="text-align:left">FORMALIZED</td>
+</tr>
+</tbody>
+</table>
+<h2>Open source-anchored issues</h2>
+<h3>BH-IIIE-G-0001 — TYPE_OR_DOMAIN (MODERATE)</h3>
+<p><strong>Origin:</strong> <code>Paper3E-GravityAction-v1_190.tex:851-860</code> / <code>p3e:cor:even-external-internal-grading-ancestry</code>.</p>
+<p>In this manuscript W is a seven-real-dimensional trace-free Cl(0,3) block at lines 112,622,629. Imported diagonal-fibre spin transport targets W_L and W_R, a half-spin direct sum of four complex (eight real) dimensions; source gives no graded identification of these non-isomorphic codomains. The standalone map and Gamma_W are therefore not well typed as printed.</p>
+<p><strong>Preserved valid result:</strong> The conditional parity-preserving spin map into W_L direct-sum W_R may be mathematically valid after explicit type naming. This is not a refutation of the Paper III-B spin theorem.</p>
+<p><strong>Verified downstream check:</strong> Paper5A-FiniteMatterGeometry-v3_202.tex:803-826 (p5:cor:chi5-visible-chirality) cites the grading ancestry</p>
+<p><strong>Required certificate:</strong> Define separate W_7 and W_spin=W_L⊕W_R, exact S_x and Gamma_Wspin and J_Delta maps with matching dimensions; replay later uses under those types.</p>
+<h3>BH-IIIE-G-0002 — TYPE_OR_DOMAIN (MODERATE)</h3>
+<p><strong>Origin:</strong> <code>Paper3E-GravityAction-v1_190.tex:963-1011</code> / <code>p3e:thm:crp4-uniqueness</code>.</p>
+<p>A unique scheme–depth B transport does not determine the spacetime M part of a full connection on pi_M^* W<em>. The source specifies no M-direction ∇^M for W</em>, and the antecedent positive-line fourth-root theorem is a B-base statement. Thus the full B×M connection is not uniquely induced without an inherited spacetime connection or a restriction to the relative B-direction connection.</p>
+<p><strong>Preserved valid result:</strong> The unique B-direction positive root, determinant transport, and displayed B-connection are verified; an explicit local choice of full d or a separately existing M-connection would cure the scope issue, but no repair is executed in this audit.</p>
+<p><strong>Verified downstream check:</strong> Paper5D-TechnicalMaterial-v1_47.tex:2440-2476 consumes the CRP4 connection in scheme-depth B role; that B-only route is not blocked</p>
+<p><strong>Required certificate:</strong> Clarify d=d_B versus d_{B×M}; if full, identify source-certified ∇^M on W* and its frame covariance, then verify direct-sum formula.</p>
+<h2>Evidence gates and qualified ports</h2>
+<ul>
+<li>E1: source replay of all 10 self-contained proof environments in this slice; definitions and no-proof corollary separately scoped.</li>
+<li>E3: 17 exact zero-reduction tests (SymPy), including the 7 integer depth hits; type and physical-owner gates require additional semantic checks.</li>
+<li>E4: tested grading-carrier typing and non-uniqueness of unspecified M-direction connections; discarded out-of-domain counterfamilies.</li>
+<li>No source-proven equivalence between raw joint and scalar Newton constants has been assumed; the constant-z physical matching stays conditional.</li>
+<li>The CELL curvature/EH residual, actual ACD_H/CRP4 port, PQTI tensorial normalization, REG scheme evaluation, and terminal metrics are kept distinct from proved algebraic descendants.</li>
+<li>The current paper’s conditions are not reintroduced as global DAG assumptions until their earliest logical appearance is checked against the existing registry.</li>
+</ul>
+<h2>Continuation and archive policy</h2>
+<p>The next source slice is 1,212–2,133. No archive has been modified in this batch. The final batch will emit the successor global DAG atlas and proof-chain-audits ZIP, with only the newest version of each included component.</p>
+<hr />
+<h1>Detailed Batch 2</h1>
+<h1>Paper III-E — rigorous DAG verification, batch 02</h1>
+<p><strong>Frozen source:</strong> <code>Paper3E-GravityAction-v1_190.tex</code>; SHA-256 <code>c09e1f6c834e784d593f12827045a22b184671324c5091f2e50b12e076e3119b</code>.</p>
+<p><strong>Source coverage:</strong> lines <strong>1,212–2,133</strong>, 14/115 formal claims, 10/92 proof environments, 7/30 formal remarks. Cumulative: <strong>28/115 claims, 20/92 proofs, 8/30 remarks</strong> through line 2,133.</p>
+<p><strong>Current verdicts:</strong> {'FORMALIZED': 4, 'VERIFIED': 1, 'VERIFIED-CONDITIONAL': 8, 'UNRESOLVED': 1}. One new issue; the two Batch 1 issues remain open. These classifications apply to exact theorem scopes, not all external physical realizations.</p>
+<h2>Exhaustive source-anchored formal-claim ledger</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Claim ID</th>
+  <th style="text-align:right">Line</th>
+  <th style="text-align:left">Source label</th>
+  <th style="text-align:left">Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0015</td>
+  <td style="text-align:right">1335</td>
+  <td style="text-align:left"><code>p3e:def:grav-closed-occurrence</code></td>
+  <td style="text-align:left">FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0016</td>
+  <td style="text-align:right">1367</td>
+  <td style="text-align:left"><code>p3e:def:grav-smooth-expansion-domain</code></td>
+  <td style="text-align:left">FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0017</td>
+  <td style="text-align:right">1380</td>
+  <td style="text-align:left"><code>p3e:thm:born-orbit-eh-identification</code></td>
+  <td style="text-align:left">VERIFIED</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0018</td>
+  <td style="text-align:right">1508</td>
+  <td style="text-align:left"><code>p3:def:f2_rescaled</code></td>
+  <td style="text-align:left">FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0019</td>
+  <td style="text-align:right">1527</td>
+  <td style="text-align:left"><code>p3:def:projected-grav-scalar-operator</code></td>
+  <td style="text-align:left">FORMALIZED</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0020</td>
+  <td style="text-align:right">1548</td>
+  <td style="text-align:left"><code>p3:lem:scalar-remnant-laplacian</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0021</td>
+  <td style="text-align:right">1586</td>
+  <td style="text-align:left"><code>p3e:thm:generated-gravitational-heat-role</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0022</td>
+  <td style="text-align:right">1711</td>
+  <td style="text-align:left"><code>p3e:thm:general-closed-gravitational-readout</code></td>
+  <td style="text-align:left">UNRESOLVED</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0023</td>
+  <td style="text-align:right">1747</td>
+  <td style="text-align:left"><code>p3e:cor:native-heat-action-constructor</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0024</td>
+  <td style="text-align:right">1775</td>
+  <td style="text-align:left"><code>p3:prop:EH_from_a2</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0025</td>
+  <td style="text-align:right">1827</td>
+  <td style="text-align:left"><code>p3e:thm:fixed-scalar-and-active-weights</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0026</td>
+  <td style="text-align:right">1929</td>
+  <td style="text-align:left"><code>p3:thm:EH-normalization-gauge</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0027</td>
+  <td style="text-align:right">2014</td>
+  <td style="text-align:left"><code>p3e:cor:grav-heat-branch</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0028</td>
+  <td style="text-align:right">2068</td>
+  <td style="text-align:left"><code>p3e:cor:singleton-heat-profile-fibre</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+</tr>
+</tbody>
+</table>
+<h2>E1 source replay / E3 independent assessment</h2>
+<ul>
+<li><strong>BH-IIIE-C-0015 (1335) — FORMALIZED:</strong> Defines d_g-sector scalar Laplacian exponential and closing map. Noncompact trace/volume is expressly a different domain, not automatic global L1.</li>
+<li><strong>BH-IIIE-C-0016 (1367) — FORMALIZED:</strong> Sufficient compact, boundaryless smooth 4d Riemannian domain for local heat asymptotics; not inferred from finite root.</li>
+<li><strong>BH-IIIE-C-0017 (1380) — VERIFIED:</strong> Independent change-of-variables proof of integral naturality; 1/2+1/2=1 on j_B(g); no off-diagonal or finite matrix trace equality.</li>
+<li><strong>BH-IIIE-C-0018 (1508) — FORMALIZED:</strong> Direct integral ∫0∞e^-u du=1 yields f2=(4π)^-2; process-relative convention, not gauge or matter moment.</li>
+<li><strong>BH-IIIE-C-0019 (1527) — FORMALIZED:</strong> Explicit hypothesis class aΔ+E with a&gt;0 and e^-tL 1=1; a generated minimal scalar branch, not generic spinorial Dirac-square.</li>
+<li><strong>BH-IIIE-C-0020 (1548) — VERIFIED-CONDITIONAL:</strong> Differentiate unital semigroup at t=0: L1=E=0. Constant a absorbed as t_eff=at and Λ_eff²=Λ_g²/a; no claim of rigidity of generic bundle operator.</li>
+<li><strong>BH-IIIE-C-0021 (1586) — VERIFIED-CONDITIONAL:</strong> Given occurring root and source-stated frozen local scalar role, Δ and P_W determine strongly continuous e^-tΔ and e^-τP_W. Semigroup/generator/domain/functoriality checked; co-realization inherits II-A constructor-origin/GP1 boundary, not all physical process tokens. No generic joint-heat-origin closure of prior BH-IIIB-G-0002 asserted.</li>
+<li><strong>BH-IIIE-C-0022 (1711) — UNRESOLVED:</strong> Ordinary A_g ∈ L1 and Tr_H A_g are valid on compact smooth or finite scalar carriers. The stated noncompact relative/trace-per-volume alternative does not entail ordinary L1; theorem does not repeat the branch guard.</li>
+<li><strong>BH-IIIE-C-0023 (1747) — VERIFIED-CONDITIONAL:</strong> On frozen claim-complete native heat-action owner with trace-class/localized readout, composition Δ→heat semigroup→closed scalar trace meets III-A pre-action grammar; no full physical effective-action owner is inferred.</li>
+<li><strong>BH-IIIE-C-0024 (1775) — VERIFIED-CONDITIONAL:</strong> Independent scalar 4d Seeley–DeWitt a2=R/6 positive; Born 1/2+1/2 gives single copy; ambient τ8(P0)=1/8 yields f2Λ²/48. Only GRAV-ASYM smooth expansion, not finite-m_p heat coefficient.</li>
+<li><strong>BH-IIIE-C-0025 (1827) — VERIFIED-CONDITIONAL:</strong> Heat a0/a2 terms and ambient τ8(P0)=1/8 match; active-state endpoint eigenvalues I8/8 and P0 imply e^S/8=1 and 1/8. Vanishing terminal Hessian also consumes MRESP visibility u(C)=0; renormalized vacuum not inferred.</li>
+<li><strong>BH-IIIE-C-0026 (1929) — VERIFIED-CONDITIONAL:</strong> Algebraic if-and-only-if for EH coefficient ONLY: f2Λ²=f2′Λ′²; rescaling profile changes a0 and higher-heat outputs, so no whole-action physical equivalence asserted.</li>
+<li><strong>BH-IIIE-C-0027 (2014) — VERIFIED-CONDITIONAL:</strong> Exponent integral and algebra give Λg²=96π²U; cell comparison Λg Rmom=24√(3π) remains an actual-owner conditional; raw joint 96U stays separate.</li>
+<li><strong>BH-IIIE-C-0028 (2068) — VERIFIED-CONDITIONAL:</strong> For attained λ&gt;0 in frozen minimal heat role, F=e^-u, f2=1/(16π²), and unique Λ²=96π²λ; profile invariance is valid only on this fibre and complete generated descendant scopes.</li>
+</ul>
+<h2>New open source-anchored finding</h2>
+<h3>BH-IIIE-G-0003 — TYPE_OR_DOMAIN / MISSING_CONDITION (MODERATE)</h3>
+<p><strong>Earliest root:</strong> <code>Paper3E-GravityAction-v1_190.tex:1711-1744</code>, <code>p3e:thm:general-closed-gravitational-readout</code>; controlling domain <code>Paper3E-GravityAction-v1_190.tex:1335-1377</code>.</p>
+<p><strong>Issue:</strong> The theorem asserts the unlocalized positive heat operator is in ordinary trace class <code>L¹(H_g)</code> and has an ordinary full carrier trace. The preceding definition explicitly allows noncompact parents only after their own trace-per-volume or relative-trace domain is supplied. Those alternatives do not entail <code>Tr_H_g(e^{-tΔ})&lt;∞</code> or <code>e^{-tΔ}∈L¹(H_g)</code>.</p>
+<p><strong>Independent in-domain branch test:</strong> On flat <code>R⁴</code>, the scalar heat kernel diagonal is <code>(4πt)^−2</code>; a trace per unit volume is finite, but the unlocalized ordinary trace is infinite. Compact smooth <code>S⁴</code> is the positive control: its heat eigenvalue sum is finite for every <code>t&gt;0</code>.</p>
+<p><strong>What survives:</strong> The theorem is verified on finite windows and compact smooth parents. The Einstein–Hilbert <code>a₂</code> derivation assumes the compact four-dimensional <code>(GRAV-ASYM)</code> parent, so this new finding does not invalidate the scoped EH coefficient or heat-profile law.</p>
+<p><strong>Verified material path:</strong> <code>p3e:def:grav-closed-occurrence</code> → <code>p3e:thm:generated-gravitational-heat-role</code> → <code>p3e:thm:general-closed-gravitational-readout</code> → <code>p3e:cor:native-heat-action-constructor</code> (latter requires trace-domain correction for noncompact action). No remote-papers path certified.</p>
+<p><strong>Required certificate:</strong> Declare finite/compact ordinary trace scope, or provide an explicit noncompact localized/relative/volume trace with a correctly typed output claim; do not infer ordinary L¹ from FSRΣ notation. This is not a refutation of the compact statement.</p>
+<h2>Already-open and inherited issues</h2>
+<ul>
+<li><strong>BH-IIIE-G-0001 (Batch 1):</strong> seven-real-dimensional Clifford <code>W</code> versus half-spin <code>W_L⊕W_R</code> grading-carrier type ambiguity; unchanged.</li>
+<li><strong>BH-IIIE-G-0002 (Batch 1):</strong> unique scheme-depth B transport does not alone choose a full spacetime M connection; unchanged.</li>
+<li><strong>BH-IIIB-G-0002 (previous III-B audit):</strong> frozen full operator-square heat process/readout origin remains a general upstream obligation. The narrower III-E scalar metric-root construction must not be used to mark the generic issue globally resolved.</li>
+</ul>
+<h2>E3 exact checks and spectral positive control</h2>
+<ul>
+<li><strong>24 exact symbolic zero reductions passed</strong>, including <code>1/2+1/2</code>, <code>τ8(P0)=1/8</code> vs <code>τ8(I8)=1</code>, <code>a₂=R/6</code>, <code>Λg²=96π² U</code>, <code>Λg Rmom=24√(3π)</code> under CELL, semigroup/projector matrix identities, and entropy endpoint weights.</li>
+<li>A separate numerical E3 test used the exact unit-round <code>S⁴</code> scalar spectrum <code>λℓ=ℓ(ℓ+3)</code>, <code>dℓ=(2ℓ+3)(ℓ+2)(ℓ+1)/6</code>, yielding the expected small-time heat trace <code>1/(6t²)+1/(3t)+29/90+O(t)</code>:</li>
+</ul>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">t</th>
+  <th style="text-align:right">Observed remainder after a₀,a₂</th>
+  <th style="text-align:right">Expected a₄</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">0.030</td>
+  <td style="text-align:right">0.328166652</td>
+  <td style="text-align:right">0.322222222</td>
+</tr>
+<tr>
+  <td style="text-align:right">0.010</td>
+  <td style="text-align:right">0.324187795</td>
+  <td style="text-align:right">0.322222222</td>
+</tr>
+<tr>
+  <td style="text-align:right">0.005</td>
+  <td style="text-align:right">0.323203031</td>
+  <td style="text-align:right">0.322222222</td>
+</tr>
+<tr>
+  <td style="text-align:right">0.002</td>
+  <td style="text-align:right">0.322614072</td>
+  <td style="text-align:right">0.322222222</td>
+</tr>
+</tbody>
+</table>
+<h2>E4 attacks and scope verdicts</h2>
+<ul>
+<li><strong>Valid:</strong> noncompact heat trace per unit volume is finite without the unlocalized operator being trace class (G-0003).</li>
+<li><strong>Out-of-domain:</strong> adding <code>ξR</code> to the minimal scalar generator violates unit preservation; replacing the Born-diagonal metric pair by unrelated off-diagonal metrics violates the theorem’s embedding hypothesis.</li>
+<li><strong>Not a contradiction:</strong> optional profiles with the same EH coefficient can have different bare vacuum/high-curvature outputs; the normalization theorem is deliberately EH-only.</li>
+<li><strong>Not a contradiction:</strong> the exact fixed finite Dirac-square trace is not a four-dimensional continuum heat coefficient. The source recognizes that missing operator/effective-action port explicitly.</li>
+<li><strong>Inherited, not duplicated:</strong> Paper III-B’s full generic native-heat output-origin gap is preserved pending a licensed constructor certificate.</li>
+</ul>
+<h2>Seven remarks and unnamed clauses</h2>
+<ul>
+<li><strong>Line 1489</strong> (p3e:rem:v2211-finite-smooth-action-port): VERIFIED SCOPE FIREWALL: finite physical D_x,p traces are not exact 4d scalar a2 coefficients; actual operator/effective action coefficient port left independent.</li>
+<li><strong>Line 1891</strong> (p3:rem:corner-trace-convention): VERIFIED ambient rank-one scalar projector trace 1/8 versus full scalar multiplication trace 1.</li>
+<li><strong>Line 1912</strong> (anonymous optional enlarged-profile normalization): VERIFIED for EH coefficient only; separate normalization of distinct output a0 not inferred.</li>
+<li><strong>Line 1996</strong> (anonymous separate origins of 6, 2pi and Newton): VERIFIED symbolic identities; measured G and scalar/joint owner matching remain separate.</li>
+<li><strong>Line 2109</strong> (anonymous additional profile representatives): SCOPE ONLY: optional representatives deferred; no alternative profile selected.</li>
+<li><strong>Line 2115</strong> (anonymous kinematic carrier density): VERIFIED factor 1/8 unaffected by multiplying a separate sector-density comparison after closure.</li>
+<li><strong>Line 2124</strong> (anonymous local Born-Liouville phase volume): SCOPE ONLY: CAL_hbar and separate widths/cell needed; no state count inferred here.</li>
+</ul>
+<h2>Audit boundaries and next batch</h2>
+<ul>
+<li><strong>No paper edits or new theory.</strong> Source-to-observable boundaries maintained: compact scalar heat coefficient ≠ raw joint coefficient ≠ exact finite momentum trace ≠ physically normalized Newton coupling. Calibration and physical action/export ports remain independent where source says so.</li>
+<li><strong>Canonical conditions:</strong> reuses <code>BH-IIIB-A-0007</code>, <code>BH-IIIB-A-0008</code>, and <code>BH-IIIB-A-0013</code> rather than duplicating their assumptions. First-occurrence reconciliation for new explicit trace-domain/GRAV-ASYM predicates remains a final atlas-integration task.</li>
+<li><strong>Baselines:</strong> latest supplied DAG v1.102 and ProofChainAudits v1.20; no archive edited in this batch.</li>
+<li><strong>Next source range:</strong> lines <strong>2,134–3,100</strong>, beginning with operational Lorentzian signature and causal chain.</li>
+</ul>
+<p><strong>Companion machine-readable evidence:</strong> <code>Paper3E-RigorousVerificationBatch02-v1_2.json</code>, including all per-claim import candidates, boundary records, E3 tests, and E4 negative evidence.**</p>
+<hr />
+<h1>Detailed Batch 3</h1>
+<h1>Paper III-E — Rigorous verification, batch 03 (causal/spectral/dilation segment)</h1>
+<p><strong>Frozen source:</strong> <code>Paper3E-GravityAction-v1_190.tex</code>; SHA-256 <code>c09e1f6c834e784d593f12827045a22b184671324c5091f2e50b12e076e3119b</code>.
+<strong>Corpus:</strong> <code>Paper00-PapersMinimal-v2_370</code> (unchanged); <strong>protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code>.</p>
+<p><strong>Coverage:</strong> lines <strong>2,134–3,237</strong>; <strong>22/115</strong> source formal claims, <strong>19/92</strong> proof environments, <strong>6/30</strong> formal remarks; <strong>36/36</strong> independent exact symbolic controls passed. The batch includes the complete dilation proof and complete conformal-cutoff theorem, rather than ending mid-theorem at line 3,100.</p>
+<p><strong>Verdicts (this batch):</strong> <strong>3 VERIFIED</strong>, <strong>17 VERIFIED-CONDITIONAL</strong>, <strong>2 FORMALIZED</strong>. No new source-supported mathematical issue was established; the previously recorded Paper III-E findings G-0001, G-0002 and G-0003 remain open and distinct. The noncompact branch of G-0003 is inherited by the readout scope in lines 2,835–2,868 but is not counted again.</p>
+<h2>Complete source-bound claim ledger</h2>
+<p>| ID | Lines | Claim label | Verdict | Independent/core qualification |
+|:--|:--|:--|:--|:--|
+| BH-IIIE-C-0029 | 2157–2190 | <code>p3:thm:lorentzian-signature</code> | VERIFIED-CONDITIONAL | Solve Q=Aτ²+B|ξ|² vanishing on |ξ|=cτ: A=-Bc², B&gt;0. The existence of every tangent sphere direction… |
+| BH-IIIE-C-0030 | 2214–2269 | <code>p3e:thm:clock-hopf-null-ray-geometry</code> | VERIFIED-CONDITIONAL | Independent 2x2 Lorentz Gram calculation and quotient period cT=2πR, all exact. |
+| BH-IIIE-C-0031 | 2294–2323 | <code>p3e:cor:null-coframe-frobenius-boundary</code> | VERIFIED-CONDITIONAL | Independent dual basis Gram computation and exterior-product two-term check: (±c dt∧dη+η∧dη)/2≠0; on… |
+| BH-IIIE-C-0032 | 2336–2361 | <code>p3e:thm:positive-null-generator-components</code> | VERIFIED-CONDITIONAL | Independent boundary/strict-cone substitution E=c||p||+δ verifies nonnegative components and… |
+| BH-IIIE-C-0033 | 2373–2390 | <code>p3e:def:lf-ray-geometry-package</code> | FORMALIZED | Type census checks N± tangent, ℓ± cotangent, γ families, p± generator germs; no cross-owner promotion. |
+| BH-IIIE-C-0034 | 2392–2438 | <code>p3:cor:chiral-projective-null-directions</code> | VERIFIED-CONDITIONAL | Direct Pauli determinant and right Weyl contragredient group-automorphism computation. |
+| BH-IIIE-C-0035 | 2470–2488 | <code>p3e:cor:projective-primal-dual-null-ray</code> | VERIFIED-CONDITIONAL | Independent support pairing qn(vn)=c−c=0; unique spatial unit n fixes a dual support ray. |
+| BH-IIIE-C-0036 | 2490–2518 | <code>p3:cor:causal-scalar-principal-part</code> | VERIFIED-CONDITIONAL | Independent Hamilton equations, symplectic Jacobian det=1, coefficient rescaling b→ab, and Legendre… |
+| BH-IIIE-C-0037 | 2549–2606 | <code>p3:thm:minimal-local-scalar-cone-order</code> | VERIFIED-CONDITIONAL | Direct principal symbol differentiation and characteristic ratio |ξ|/τ=√(b/a); independent polar… |
+| BH-IIIE-C-0038 | 2643–2656 | <code>p3e:thm:primitive-scalar-support-ancestry</code> | VERIFIED-CONDITIONAL | The unique irreducible trivial real representation is the tensor-unit R; second distinguishable copy… |
+| BH-IIIE-C-0039 | 2672–2700 | <code>p3e:thm:metric-principal-descendant-saturation</code> | VERIFIED-CONDITIONAL | Independent algebra comparing quadratic zero sets: proportionality forces b/a=c_op², whereas an… |
+| BH-IIIE-C-0040 | 2721–2764 | <code>p3:def:paper-iv-finite-field-input</code> | FORMALIZED | Type check scalar Laplacian nonnegative, A1=0; domain separates full smooth-parent differential… |
+| BH-IIIE-C-0041 | 2766–2791 | <code>p3:thm:p3-p4-lorentzian-chain-closure</code> | VERIFIED-CONDITIONAL | Independent mode substitution and exact mass shell E²=c²(ℏ²λ)+μ²c⁴. |
+| BH-IIIE-C-0042 | 2815–2823 | <code>p3:cor:closed-lorentzian-dilation-constraint</code> | VERIFIED-CONDITIONAL | Independent determinant density/Jacobian square confirms no causal-field Hamiltonian used in the… |
+| BH-IIIE-C-0043 | 2835–2855 | <code>p3:cor:wick-from-gp-constitution</code> | VERIFIED-CONDITIONAL | Independent distinction: a single number Tr e^(−tΔ) cannot determine a two-point correlation kernel;… |
+| BH-IIIE-C-0044 | 2900–2928 | <code>p3:prop:spectral-gap-mass-upgrade</code> | VERIFIED-CONDITIONAL | Direct monotonicity of ℏ²c²λ+μ²c⁴ in λ, with positive λmin; λ=0 remains lower if included, so… |
+| BH-IIIE-C-0045 | 2973–3006 | <code>p3e:thm:compact-haar-born-balance</code> | VERIFIED | Independent uniqueness of Haar and product pushforward theorem; symbolic S³ volume density… |
+| BH-IIIE-C-0046 | 3023–3030 | <code>p3e:cor:haar-effective-balance-firewall</code> | VERIFIED | Independent smooth conformal rescaling g_p=c^(1/2) β_<em>g_x changes 4d effective volume ratio to c… |
+| BH-IIIE-C-0047 | 3040–3054 | <code>p3e:cor:born-diagonal-effective-density-balance</code> | VERIFIED-CONDITIONAL | For any diffeo β, determinant density transformation gives β</em>dμ_β*g=dμ_g; conformal 4d off-diagonal… |
+| BH-IIIE-C-0048 | 3081–3126 | <code>p3:thm:dilation_identity</code> | VERIFIED-CONDITIONAL | Independent exact determinant and positive-square calculation; explicitly test nonunit J and J=1… |
+| BH-IIIE-C-0049 | 3187–3199 | <code>p3:cor:dilation_linear</code> | VERIFIED-CONDITIONAL | Independent exact symbolic substitution. The relation is linear in μx and μp with temporal scales… |
+| BH-IIIE-C-0050 | 3216–3224 | <code>p3:thm:conformal-compactification-cutoff</code> | VERIFIED | Independent simple Lie algebra → compact u(N) obstruction (kernel all or injective; injective… |</p>
+<h2>E1 replay, E3 independent checks and E4 adversarial outcomes</h2>
+<h3>1. Exact GP1 cone and metric conformal signature, lines 2,134–2,212</h3>
+<p>The upstream Paper III-A <code>p3:thm:gp1-speed-calibration</code> at lines 2,368–2,440 bounds each generated velocity by the clock–Hopf constant, and <code>p3:cor:gp1-round-causal-envelope</code> at 2,443–2,474 uses actually licensed round isometry conjugations to attain every tangent sphere direction. The convex envelope is therefore <strong>exactly</strong> the full ball, not merely a ball-shaped upper bound. Paper I-C, under the Paper I-B label <code>p1b:prop:local-coframe</code>, establishes coframe/cone uniqueness. Independent check: an O(3)-invariant quadratic form <code>A τ²+B|ξ|²</code> zero on <code>|ξ|=cτ</code> forces <code>A=−Bc²</code>, up to nonzero scalar sign. Conditional only on the established <code>(CAUS)</code>/<code>CAL_t</code> domain; no field equation or measured light propagation assumed.</p>
+<h3>2. Clock–Hopf ray, Frobenius and chiral null directions, lines 2,214–2,489</h3>
+<p>The oriented II-D principal-to-metric normalization and III-A contragredient action make <code>N±=(c⁻¹∂t ± eH)/√2</code> well typed. Independent Gram and dual-coframe calculations verify <code>g(N±,N±)=0</code>, <code>g(N+,N−)=−1</code>, <code>ℓα(Nβ)=δαβ</code>, and <code>g⁻¹(ℓ±,ℓ±)=0</code>. A full quotient orbit turn is <code>s=√2 cT=√2 2πR</code>; neither null helix closes on the elapsed universal cover. The nonzero contact component <code>η∧dη</code> certifies the Frobenius obstruction, but the clock–Hopf 2D orbit cylinder admits local <code>x±</code> coordinates.</p>
+<p>In the positive polar <code>E≥c||p||</code>, <code>|p_H|≤||p||</code> establishes both <code>p±≥0</code>. The upstream II-E spinor theorem supplies the left C² map and the <strong>conjugate-dual</strong>, not ordinary left, right action. Direct Pauli determinant and a nontrivial complex SL(2,C) right-Weyl composition test pass. This is projective local geometry, not a finite-QCD operator or a chosen physical ray; Paper VII-B explicitly consumes it only as the LF-A geometry package.</p>
+<h3>3. Local scalar order, undeformed principal and energy threshold, lines 2,490–2,947</h3>
+<p>An O(3)-invariant <strong>scalar</strong> first-order principal form has no spatial generator; the least spatially propagating scalar principal order is two. The PDE principal symbol <code>aω²−b|k|²</code> has Hamilton base speed squared <code>b/a</code>. The separately normalized positive Hamiltonian <code>H=(a π²+b|∇φ|²)/2</code> has speed squared <strong><code>ab</code></strong>, because its symbol is in a different coefficient convention; the symplectic rescaling <code>φ′=φ/√a, π′=√a π</code> reconciles the two. No inconsistent factor was found. The same-owner undeformed branch freezes the relative temporal/spatial quadratic owner, and then the characteristic front saturates <code>c_op</code>; other media may remain strictly slower.</p>
+<p>A separately constituted neutral real tensor-unit support does <strong>not</strong> determine speed; II-A independently requires principal ancestry and smooth hyperbolic finite propagation. In the conservative smooth-parent free-law domain, formal selfadjointness kills real time drift, the nonnegative rest term is an explicit stability condition, and substitution on each finite eigenblock gives <code>E²=ℏ² c_field² λ+μ² c_field⁴</code>. The threshold claims concern a selected positive-gap block; the zero mode is not silently removed from every scalar spectrum.</p>
+<h3>4. Euclidean heat reconstruction scope, lines 2,835–2,898</h3>
+<p>The scalar heat trace is valid on the finite or compact ordinary-trace owner. A scalar trace is <strong>not</strong> a Euclidean quantum two-point kernel, and no automatic <code>(WICK_2cyc)</code>, <code>(WICK_same)</code>, finite reflection-positive reconstruction, or interacting infinite-volume continuation is inferred. The noncompact ordinary-L¹ issue from Batch 2 (<code>BH-IIIE-G-0003</code>) is inherited without duplication. Paper IV finite kernel reconstructions are later, conditional consumer results, not independent premises for the III-E Lorentzian sign.</p>
+<h3>5. Haar, Born-diagonal metric density and cubic Jacobian, lines 2,958–3,203</h3>
+<p>Haar uniqueness independently proves that a compact group isomorphism pushes normalized Haar to normalized Haar. The Born factor exchange preserves the compact product but <strong>does not</strong> constrain arbitrary separately chosen effective density factors. In four dimensions the III-G off-diagonal witness <code>g_p^(c)=c^(1/2) β_*g_x</code> has volume-density ratio <code>c</code>, despite unchanged compact Haar measures. On the <strong>generated diagonal</strong>, however, <code>β*dμ_{β_*g}=dμ_g</code> is an exact diffeomorphism identity. With <code>J_B</code> the absolute coordinate Jacobian, the two diagonal Lorentzian sector determinants give <strong><code>λ_x³ λ_t = J_B² λ_p³ λ_E</code></strong>, which reduces to the historical Jacobian-free formula only for <code>J_B=1</code>. The <code>μ_x=λ_x³, μ_p=λ_p³</code> form is linear in the two volume variables with the temporal/Jacobian coefficients held fixed.</p>
+<h3>6. Conformal compactification and finite unitary no-go, lines 3,206–3,237</h3>
+<p>The smooth compactification <code>(S³×S¹_conf)/Z₂</code> and its Einstein static universal cover <code>S³×R</code> are standard. Independently, a nontrivial continuous finite-dimensional unitary representation of connected noncompact simple <code>SO_0(2,4)</code> would give an injective Lie-algebra map into compact <code>u(N)</code>, which is impossible; <code>P U(g) P</code> generally violates the group product law by the omitted cross-band term <code>P U(g1)(I−P)U(g2)P</code>. Nonunitary finite algebraic conformal representations are expressly not excluded.</p>
+<p><strong>Independent machine algebra:</strong> 36 exact checks (36 zero residuals) in <code>Paper3E-Batch03-IndependentChecks-v1_1.json</code>, with reproducible script <code>Paper3E-Batch03-IndependentChecks-v1_1.py</code>. These are supplemented by theorem-level independent arguments, not represented as physical process certificates.</p>
+<h2>E4 attack register</h2>
+<ul>
+<li><strong>E4-IIIE-B03-001 — REJECTED-AFTER-IMPORT:</strong> A GP1 speed bound alone might bound only an axis, not the full sphere. <strong>Disposition:</strong> III-A exact convex-envelope corollary consumes actual O(3) tangent isotropy and Hopf-orbit conjugates, establishes all sharp boundary directions.</li>
+<li><strong>E4-IIIE-B03-002 — PASSED-CONTROL:</strong> Check contragredient inverse-action sign, geodesic/nonperiodic cover, and finite common quotient period. <strong>Disposition:</strong> Source transports oriented pair (eta0,xi0) natively; independently calculated N± periods agree, and cover clock displacement prevents closure.</li>
+<li><strong>E4-IIIE-B03-003 — FAILED-COUNTEREXAMPLE-CONFIRMS-OBSTRUCTION:</strong> Try to find global functions x± with dx±=ell± on R×S3 despite contact curvature. <strong>Disposition:</strong> dell±=±deta/√2 nonzero; eta∧deta nonzero contact 3-form, and each ell wedge dell nonzero.</li>
+<li><strong>E4-IIIE-B03-004 — REJECTED-BY-SCOPE:</strong> An O(3)-invariant first-order scalar symbol might already produce spatial fronts. <strong>Disposition:</strong> Scalar O(3) invariant linear symbol proportional to omega; base Hamilton projection has zero spatial component. Matrix/Dirac first-order operators are different target sort.</li>
+<li><strong>E4-IIIE-B03-005 — INVALID-OUT-OF-DOMAIN:</strong> Take second-order scalar principal form omega²−v²|k|² with 0&lt;v&lt;c_op. <strong>Disposition:</strong> Admissible for cone-faithful medium branch, but changes temporal/spatial relative principal owner and violates explicit undeformed same-owner hypothesis.</li>
+<li><strong>E4-IIIE-B03-006 — INVALID-OUT-OF-DOMAIN:</strong> Add stationary damping gamma partial_t, which changes dispersion. <strong>Disposition:</strong> Formal selfadjointness on invariant product measure is explicit and excludes any real nonzero time-drift coefficient.</li>
+<li><strong>E4-IIIE-B03-007 — SCOPE-QUALIFIER-NO-REFUTATION:</strong> Include constant Laplace zero mode, below first nonzero eigenvalue. <strong>Disposition:</strong> Proposition concerns positive imported lambda_min on selected gapped block, not full spectrum bottom when zero mode retained.</li>
+<li><strong>E4-IIIE-B03-008 — VALID POSITIVE FIREWALL WITNESS:</strong> Scale g_p=c^(1/2) beta_*g_x (c!=1) and seek Haar invariance with effective balance violation. <strong>Disposition:</strong> Volume density scales by c in four dimensions while normalized compact Haar remains invariant. No attack on Born-diagonal claim.</li>
+<li><strong>E4-IIIE-B03-009 — REJECTED-AS-SOURCE-ALREADY-QUALIFIED:</strong> Use nonunit Jacobian and independent effective metrics to invalidate Jacobian-free formula. <strong>Disposition:</strong> Source retains J_B² explicitly and requires g_p=beta_*g_x; independent metrics are excluded.</li>
+<li><strong>E4-IIIE-B03-010 — INHERITED ISSUE BH-IIIE-G-0003:</strong> Extend ordinary heat trace unqualified to noncompact parent. <strong>Disposition:</strong> Compact proof controls actual readout; general noncompact theorem already recorded unresolved in Batch 2. No duplicate issue introduction.</li>
+<li><strong>E4-IIIE-B03-011 — INVALID-OUT-OF-DOMAIN:</strong> Use finite 2x2 Weyl representation of SL(2,C) to contradict finite conformal no-go. <strong>Disposition:</strong> Finite Weyl boosts and conformal representations are nonunitary; no-go concerns nontrivial exact finite-dimensional unitary action of connected noncompact simple group.</li>
+<li><strong>E4-IIIE-B03-012 — INVALID-AUTOMATIC-PROMOTION:</strong> Identify derived null geometry automatically with a physical QCD light-front source or hadron alignment. <strong>Disposition:</strong> Source explicitly excludes physical operator/state/limit and Paper7B uses separate LF-A to LF-D typed packages.</li>
+</ul>
+<h2>Scope and imported ancestry</h2>
+<p>The source-boundary review records four typed separation certificates (<code>BND-IIIE-B03-001</code> through <code>004</code>): operational cone/ray token, scalar principal/field occurrence, Haar/effective-density owner, and smooth conformal/finite-carrier representation. They are stored in the machine ledger. Source-verified imports were bounded to Paper III-A cone and polar, Paper I-C coframe, Paper II-D Hopf normalization, Paper II-E Weyl chiral ray, Paper II-A support/principal inheritance, and Paper III-G two technical-appendix interfaces; these peer papers have <strong>not</strong> been independently audited here.</p>
+<p><strong>Material downstream uses confirmed (without full remote audit):</strong> <code>p3:thm:lorentzian-signature</code> → Paper IV-A <code>p4:thm:three-map-bridge</code> at 1409–1417; <code>p3:thm:p3-p4-lorentzian-chain-closure</code> → Paper IV-B <code>p4:thm:finite-one-particle-dispersion</code> at 1957–1968; <code>p3e:def:lf-ray-geometry-package</code> → Paper VII-B <code>p11:def:hadronic-distribution-package</code> at 2390–2404. The last retains independent operator, state and limit ports. No new issue propagation from Batch 3 was established.</p>
+<h2>Open findings and continuation</h2>
+<ul>
+<li><strong>BH-IIIE-G-0001 (moderate):</strong> Clifford <code>W_7</code> versus spin-grading <code>W_L⊕W_R</code> type declaration, from Batch 1; no new source contradiction here.</li>
+<li><strong>BH-IIIE-G-0002 (moderate):</strong> CRP4 scheme–depth B connection does not by itself uniquely fix the full B×M connection, from Batch 1; no new effect established here.</li>
+<li><strong>BH-IIIE-G-0003 (moderate):</strong> noncompact relative/volume trace does not entail ordinary unlocalized heat operator trace class, from Batch 2; restricted finite/compact heat readout remains valid and is used in this batch.</li>
+</ul>
+<p><strong>Cumulative:</strong> lines <strong>1–3,237</strong>, <strong>50/115 formal claims</strong>, <strong>39/92 proofs</strong>, <strong>14/30 remarks</strong>. This is <strong>PARTIALLY AUDITED</strong>, with 3 currently open Paper III-E findings. The total claim count includes definitions and all named proposition/theorem/corollary results. <strong>No new gap/assumption nodes are inserted into the canonical global atlas in this intermediate batch</strong>, avoiding duplicate first-occurrence conditions. Final merging and schema/ZIP verification remain deferred until every Paper III-E source claim has been examined.</p>
+<p><strong>Next batch:</strong> lines <strong>3,238 onward</strong> through the maximal complete hierarchy-response proof unit that can be finished without ending inside a theorem; target about <strong>4,300</strong> (adjust to proof boundary). The supplied DAG Atlas v1.102, ProofChainAudits v1.20 and papers corpus v2.370 remain unchanged.</p>
+<hr />
+<h1>Detailed Batch 4</h1>
+<h1>Paper III-E — Rigorous verification and typed-DAG audit, batch 04</h1>
+<p><strong>Frozen target:</strong> <code>Paper3E-GravityAction-v1_190.tex</code> (SHA-256 <code>c09e1f6c834e784d593f12827045a22b184671324c5091f2e50b12e076e3119b</code>), from <code>Paper00-PapersMinimal-v2_370(1).zip</code>. <strong>Audit protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code>. <strong>Authoritative current-source lines:</strong> <strong>3,238–4,382</strong> of 6,449; the slice ends before the next capped-scalaron section. No parent paper or previously supplied archive was edited.</p>
+<p><strong>Batch census:</strong> 25 named formal declarations (3 VERIFIED; 19 VERIFIED-CONDITIONAL; 2 FORMALIZED; 1 UNRESOLVED), 23 replayed proof environments, 2 formal remarks. <strong>E3:</strong> 62/62 exact and high-precision controls pass; <strong>E4:</strong> 15 paper-theorem challenges plus 2 explicit in-domain REG-family mutation controls. Independent algebraic checks do not substitute for empirical or action-occurrence certificates.</p>
+<p><strong>Single new open finding:</strong> <code>BH-IIIE-G-0004</code> (moderate; scheme-dependent rank-four midpoint <em>decimal</em>). <code>BH-IIIE-G-0001</code>–<code>G-0003</code> remain open; no new defects are attributed to their unchanged proof paths. This is <strong>PARTIALLY AUDITED</strong> across the full paper; terminal DAG/archive integration is deferred.</p>
+<h2>1. Complete source-bound claim ledger</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Claim ID</th>
+  <th style="text-align:left">Source lines</th>
+  <th style="text-align:left">Source label or source title</th>
+  <th style="text-align:left">Verdict</th>
+  <th style="text-align:left">E3 and scope assessment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0051</td>
+  <td style="text-align:left">3252–3281</td>
+  <td style="text-align:left"><code>p3:def:normalized-reduced-shell-length</code></td>
+  <td style="text-align:left">FORMALIZED</td>
+  <td style="text-align:left">Eigenvalue/trace normalization and endpoint exact checks in E3-B04.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0052</td>
+  <td style="text-align:left">3283–3304</td>
+  <td style="text-align:left"><code>p3e:thm:entropy-effective-count-uniqueness</code></td>
+  <td style="text-align:left">VERIFIED</td>
+  <td style="text-align:left">Independent semigroup-character argument plus octet/pure-state exact controls; no physical entropy process inferred.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0053</td>
+  <td style="text-align:left">3323–3359</td>
+  <td style="text-align:left"><code>p3:thm:index-locking</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent spectrum normalization, Shannon-like entropy, derivative and both endpoint checks.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0054</td>
+  <td style="text-align:left">3399–3423</td>
+  <td style="text-align:left"><code>p3:rem:index-locking-status</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent two-family signature-injectivity check on frozen support/scale/role; pointwise support rank degeneracy at C does not erase running family identity.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0055</td>
+  <td style="text-align:left">3439–3464</td>
+  <td style="text-align:left"><code>p3e:def:primitive-quadratic-trace-inheritance</code></td>
+  <td style="text-align:left">FORMALIZED</td>
+  <td style="text-align:left">Dimensionless residual has U χ / Z_C vs 16√ασ; positive Z_C necessary to define hatγ.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0056</td>
+  <td style="text-align:left">3466–3510</td>
+  <td style="text-align:left"><code>p3e:thm:pqti-quadratic-normalization</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent coefficients 8×2×√ασ=16√ασ, ratio law, and scheme-rescaling covariance tested exactly.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0057</td>
+  <td style="text-align:left">3580–3600</td>
+  <td style="text-align:left"><code>p3:def:reduced-curvature-transport-factor</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Cancel κ symbolically and verify g(C)=g(U)=1 and (C+U)R g=R²+CU.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0058</td>
+  <td style="text-align:left">3609–3657</td>
+  <td style="text-align:left"><code>p3e:thm:regular-two-scale-terminal-reconstruction</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent solution of the second-order terminal value problem plus exact Euler identity and endpoint value.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0059</td>
+  <td style="text-align:left">3684–3716</td>
+  <td style="text-align:left"><code>p3e:cor:two-scale-affine-junction-family</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Check affine kernel, sharp-regular slope and absence of change in Hessian.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0060</td>
+  <td style="text-align:left">3728–3754</td>
+  <td style="text-align:left"><code>p3e:thm:canonical-covariant-hessian-pullback</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent general 2×2 quadratic form pullback, matrix Hessian, positive semidefiniteness, and semigroup exact control.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0061</td>
+  <td style="text-align:left">3773–3802</td>
+  <td style="text-align:left"><code>p3e:thm:response-homothety</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent nonconstant dimensionless h=x² example and scale-invariant first derivative check.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0062</td>
+  <td style="text-align:left">3812–3831</td>
+  <td style="text-align:left"><code>p3e:cor:uv-susceptibility-homothety</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent scaling check and alternative positive γ family; no numerical γ identified.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0063</td>
+  <td style="text-align:left">3845–3870</td>
+  <td style="text-align:left"><code>p3:lem:curvature-transport-character</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Exact two-root scale substitution and midpoint square-root identity.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0064</td>
+  <td style="text-align:left">3891–3911</td>
+  <td style="text-align:left"><code>p3e:thm:general-hessian-reconstruction</code></td>
+  <td style="text-align:left">VERIFIED</td>
+  <td style="text-align:left">Independent polynomial h example with terminal value/slope and exact second derivative.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0065</td>
+  <td style="text-align:left">3921–3942</td>
+  <td style="text-align:left"><code>p3e:cor:terminal-data-minimality</code></td>
+  <td style="text-align:left">VERIFIED</td>
+  <td style="text-align:left">Independent rank test of endpoint map and Hessian-invisible affine shifts.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0066</td>
+  <td style="text-align:left">3958–3979</td>
+  <td style="text-align:left"><code>p3e:thm:v2217-uv-ir-moment-nonuniqueness</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent polynomial χ moment integrals, weighted-mean bound, and endpoint-jet-preserving perturbation with both moments zero.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0067</td>
+  <td style="text-align:left">4001–4016</td>
+  <td style="text-align:left"><code>p3:lem:protected-hessian-transport</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent U endpoint h(U)=γ/U and C endpoint h(C)=0; no additional scaling character arises within declared sorts.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0068</td>
+  <td style="text-align:left">4033–4063</td>
+  <td style="text-align:left"><code>p3e:thm:complete-minimal-smooth-response-family</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent positivity/limits of factors and generic terminal reconstruction exact controls.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0069</td>
+  <td style="text-align:left">4076–4123</td>
+  <td style="text-align:left"><code>p3e:cor:mresp-composite-witness-transport</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent uniqueness of C² output and source verification of the II-A Orig/RootReal conditional theorem; origin is a premise, not inferred from mere written formula.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0070</td>
+  <td style="text-align:left">4144–4153</td>
+  <td style="text-align:left"><code>p3:lem:terminal-protected-slope</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent terminal derivative calculation; does not use a first-variation semigroup.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0071</td>
+  <td style="text-align:left">4166–4173</td>
+  <td style="text-align:left"><code>p3:lem:terminal-hamiltonian-lagrangian-sign</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Direct endpoint subtraction independent of Hamiltonian interpretation.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0072</td>
+  <td style="text-align:left">4183–4217</td>
+  <td style="text-align:left"><code>p3:thm:master-lagrangian</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent endpoint jet and convexity checks as a specialization of the general Cauchy theorem.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0073</td>
+  <td style="text-align:left">4251–4271</td>
+  <td style="text-align:left"><code>p3e:thm:v2219-carrier-four-jets</code></td>
+  <td style="text-align:left">UNRESOLVED</td>
+  <td style="text-align:left">Independent n4(q) derivative, tanh algebra and q↔R Jacobian; high precision agrees with REG0; valid REG positive σ=±1 changes D4(C2)/Q.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0074</td>
+  <td style="text-align:left">4284–4303</td>
+  <td style="text-align:left"><code>p3e:prop:v288-cap-laurent-nonidentification</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent Hessian-limit incompatibility and analytic-regularity comparison.</td>
+</tr>
+<tr>
+  <td style="text-align:left">BH-IIIE-C-0075</td>
+  <td style="text-align:left">4319–4352</td>
+  <td style="text-align:left"><code>p3e:thm:v287-s3-acceleration-hessian</code></td>
+  <td style="text-align:left">VERIFIED-CONDITIONAL</td>
+  <td style="text-align:left">Independent nonlinear cubic f(R) exact acceleration differentiation plus arbitrary first-jet boundary exemplar.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Claim/proof traceability:</strong> every nondefinition entry has its adjacent proof span recorded independently in the JSON ledger; both definitions are recorded as FORMALIZED. The two remarks (lines 3,880 and 4,372) were checked as scope boundaries, not counted as proof theorems. Each claim links by actual ID to the relevant independent checks, with source assumptions and type qualifications in the machine ledger.</p>
+<h2>2. E1 source replay + E3 independent verification</h2>
+<h3>Entropy-effective state and protected action coefficients (lines 3,238–3,573)</h3>
+<p>The normalized active state has the source spectrum <code>1/(1+7u)</code> and <code>u/(1+7u)</code> with sevenfold degeneracy, for <code>u=ln(R/C)/ln(U/C) ∈ [0,1]</code>. Thus</p>
+<pre><code class="language-math">S(u)=\ln(1+7u)-\frac{7u}{1+7u}\ln u,\qquad \frac{dS}{du}=-\frac{7\ln u}{(1+7u)^2}.
+</code></pre>
+<p>The continuous entropy-sufficient multiplicative count on finite tensor products, with the pure and uniform-octet calibrations, is uniquely <code>N=e^S</code>. The independent E3 checks verify trace, spectrum, endpoint entropies (0 and <code>ln 8</code>), and the derivative; direct reasoning supplies the continuity/Cauchy-character argument. The count is a theorem in its declared finite-state domain, not a physical particle count.</p>
+<p>The generated action uses separate matching classes: static <code>P0</code> has protected coefficient <code>1/8</code>, whereas the active seven-branch composite gets running nonlinear weight <code>e^S/8</code>. This use of the Paper II-A canonical signature theorem remains conditional on the <em>complete frozen support/scale/role signature</em> and occurring MRESPmin composite; it is not inferred from the support rank at the pure endpoint.</p>
+<p>The PQTI certificate is an <strong>actual same-action second-jet equality</strong>, not a consequence of merely writing down an abstract square root. If that separately evaluated residual vanishes, the raw seed carries <code>sqrt(alpha_sigma)/8</code> and multiplying the entire action by eight yields <code>Q''=2</code> and <code>chi_UV=16 sqrt(alpha_sigma)/Lambda_EH^2</code>. Algebraic factor 16 and scheme covariance check independently. Neither the existence of a realized PQTI port nor an empirical value of gamma is certified by those equalities.</p>
+<h3>Two-root response, terminal ODE, affine shifts and Hessian transport (lines 3,574–3,888)</h3>
+<p>The bare two-root response simplifies to <code>g(R)=(R^2+CU)/[(C+U)R]</code> (auxiliary kappa cancels) and satisfies <code>g(C)=g(U)=1</code>. With constant bare Hessian <code>h=2/(C+U)</code>, the terminal data <code>f(C)=0</code>, <code>f'(C)=1</code> give</p>
+<pre><code class="language-math">f_{\mathrm{reg}}(R)=(R-C)+\frac{(R-C)^2}{U+C},\qquad Rf_{\mathrm{reg}}^\prime-f_{\mathrm{reg}}=\frac{R^2+CU}{U+C}.
+</code></pre>
+<p>Changing the remaining affine member <code>kappa (R−C)</code> does not change the Hessian, but does shift the Euler/Legendre potential by <code>kappa C</code>. The source term “regular C1 member” is safe when read as a specified <strong>junction-slope matching choice</strong>; it cannot mean all other bare <code>[C,U]</code> members fail to be C1, because they too are C2 there. This distinction was tested adversarially and recorded as a wording scope guard, not a separate source failure.</p>
+<p>For a covariant Hessian tensor under the minimal pullback <code>A_tau=e^{−tau/2} I</code>, <code>A_tau^* H A_tau=e^{−tau}H</code>; cross-term and semigroup tests pass. Scale homothety of a dimensionless response <code>f=U fhat(R/U)</code> forces <code>h=U^{−1} hhat</code> and, with fixed active weight, <code>chi_UV=gamma_sigma/U</code>. The amplitude <code>gamma_sigma</code> is <strong>not numerically fixed by homothety</strong>; the actual PQTI port remains an independent conditional route. The generated-owner scale is <code>U=Lambda_EH^2</code>, <code>C/U=alpha_sigma^{−7}</code> on the stated stage, with the Born midpoint a curvature scale rather than an automatic geometric radius.</p>
+<h3>General Hessian reconstruction, UV/IR moments and occurring response (lines 3,889–4,232)</h3>
+<p>For a continuous specified Hessian <code>h</code>, double integration with two terminal jets determines a unique C2 <code>f</code>; the homogeneous kernel is exactly <code>span{1,R−C}</code>. A single independent scalar endpoint condition cannot remove both affine freedoms. The endpoint moments are the integral increments of <code>f'</code> and <code>R f'−f</code>, respectively, with integrands <code>chi</code> and <code>R chi</code>. A compactly supported C∞ second-derivative perturbation with vanishing zeroth and first moments gives distinct smooth interior profiles with identical endpoint germs. Both moment cancellations and endpoint cancellations pass independent checks.</p>
+<p>The minimal curvature-Hessian response <code>h=(gamma/U) (e^{S(u)}/8) u</code> is nonnegative, zero at the protected endpoint and positive on the interior. Source-member terminal conditions on the total <code>f=R+C_sp</code>, namely <code>f(C)=0</code>, <code>f'(C)=1</code>, impose <code>C_sp(C)=−C</code>, <code>C_sp'(C)=0</code>. These are typed <em>source terminal data</em>, not a terminal-vacuum principle or a proof of a propagating scalar.</p>
+<p>The conditional rooted-output witness theorem uses the Paper II-A generated-image theorem <strong>only if</strong> the frozen tuple is jointly occurring and a licensed finite word has the specified response-graph sort. Constructing a mathematical <code>C2</code> graph alone is not a Lorentzian metric/action realization. That physical promotion is expressly excluded in E1 and the E4 scope test.</p>
+<h3>Rank-four Laurent freeze and capped/FLRW separation (lines 4,233–4,382)</h3>
+<p>Paper III-D’s actual-grade-four positive Laurent index <code>n_4^+</code> is zero below <code>C_4</code>; its first active derivative boundary occurs at <code>C_4</code>. At <code>C_2=√(U C_4)</code> the rank-four and seven-level indices are smooth. The source’s third-derivative jump evaluates to</p>
+<pre><code class="language-math">[f_{RRR}]_{C_4}=\frac{(U-C_4)\ln Q}{4C_4(U+C_4)\ln\alpha_\sigma}\,\chi_7(C_4)&gt;0.
+</code></pre>
+<p>Independent differentiation of <code>ln cosh</code> and the <code>q↔R</code> Jacobian confirm this expression, and a midpoint regularity challenge is rejected. The symbolic discontinuity and its <em>location</em> therefore survive independently of the disputed decimal at <code>C_2</code>. The exact <code>D_4(C_2)/Q</code> value, however, varies with the positive REG scheme; see G-0004 below.</p>
+<p>The capped gravity density and positive-part Laurent comparator are not equal on the same curvature chart: the latter has a Hessian tending to zero at <code>C_7</code>, while the cited capped analytic response, on the condition <code>2BU&gt;d</code>, has Hessian bounded below by <code>2BU−d&gt;0</code>. Affine modifications do not fix a Hessian mismatch. This is a <strong>same-chart nonidentification</strong>, not a prohibition on all cross-owner correspondences.</p>
+<p>For the k=+1 round closed-three-sphere homogeneous metric jet, the unreduced local Lagrangian <code>L_f=2 pi^2 Z N a^3 f(R)</code> has</p>
+<pre><code class="language-math">\frac{\partial^2L_f}{\partial\ddot a^2}=\frac{72\pi^2 Za}{N^3}f_{RR}(R).
+</code></pre>
+<p>The <code>R</code>-versus-acceleration derivative, second derivative, and boundary first-jet invariance tests pass. This <strong>does not</strong> count the physical propagating scalar modes; Hamiltonian constraints or physical solution space are not included. The final formal remark keeps older rank-two/K16-kink comparisons historical, not active source results.</p>
+<h2>3. New issue certificate — BH-IIIE-G-0004</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Field</th>
+  <th style="text-align:left">Source-verified value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Issue class / severity</td>
+  <td style="text-align:left"><code>TYPE_OR_DOMAIN</code> with numerical-readout scope; <strong>moderate</strong>, OPEN</td>
+</tr>
+<tr>
+  <td style="text-align:left">Earliest located source</td>
+  <td style="text-align:left"><code>Paper3E-GravityAction-v1_190.tex:4251–4259</code>, <code>p3e:thm:v2219-carrier-four-jets</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">Source assertion</td>
+  <td style="text-align:left"><code>D_4(C_2)/Q=0.825729956674...</code>, with no explicit <code>REG_0</code> qualifier in the theorem as printed</td>
+</tr>
+<tr>
+  <td style="text-align:left">Verified positive control</td>
+  <td style="text-align:left"><code>ln alpha_0=4pi^2+1/(6sqrt2)</code> gives <strong>0.8257299566743899173773...</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left">In-domain variation</td>
+  <td style="text-align:left"><code>sigma_fin=+1</code> gives <strong>0.8261002425941142257374...</strong>; the ratio is not scheme-invariant</td>
+</tr>
+<tr>
+  <td style="text-align:left">Target of finding</td>
+  <td style="text-align:left"><strong>Only</strong> the unqualified decimal’s domain; not the exact positive-part index, <code>C_2</code> midpoint, <code>C_4</code> freeze or third-jet jump</td>
+</tr>
+<tr>
+  <td style="text-align:left">Required adjudication</td>
+  <td style="text-align:left">Establish an already licensed source <code>REG_0</code> guard for this numeric claim, or show the claim was explicitly intended scheme-relative; no new mechanism or changed numerical definition is authorized</td>
+</tr>
+<tr>
+  <td style="text-align:left">Remote effects</td>
+  <td style="text-align:left">A downstream use of this <em>particular number</em> could inherit the qualification; no verified downstream material path currently located</td>
+</tr>
+</tbody>
+</table>
+<p>The exact scheme-parametric expression checked is</p>
+<pre><code class="language-math">\frac{D_4(C_2)}{Q}=\exp\!\left[\ln Q\left(\frac{\ln\cosh(2\ln\alpha_\sigma)}{2\ln\alpha_\sigma}-1\right)\right],\qquad Q=8\sqrt{\alpha_\sigma}.
+</code></pre>
+<p>Changing sigma is an <strong>in-domain</strong> counterexample to the uniform-decimal interpretation, not a counterexample to the source’s conditional algebraic rank-four result. The evidence identifiers are <code>E3-IIIE-B04-057</code>, <code>E4-IIIE-B04-058</code>, <code>E4-IIIE-B04-059</code> and <code>E4-IIIE-B04-011</code>. The issue remains open for precise published-scope adjudication; this audit did not edit the paper.</p>
+<h2>4. Adversarial E4 challenge register</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">ID</th>
+  <th style="text-align:left">Matched challenge</th>
+  <th style="text-align:left">Verdict</th>
+  <th style="text-align:left">Reason / boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-001</td>
+  <td style="text-align:left">Could N(ρ)=exp(k S(ρ)) with k≠1 obey every premise?</td>
+  <td style="text-align:left">REJECTED</td>
+  <td style="text-align:left">Octet condition forces 8^k=8, k=1; without entropy sufficiency/multiplicativity alternative counts are explicitly enlarged roles.</td>
+</tr>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-002</td>
+  <td style="text-align:left">Treat III-D secant-matched entropy state as active MRESP state.</td>
+  <td style="text-align:left">INVALID-TYPE-MERGE</td>
+  <td style="text-align:left">III-C generates ρτ from same visibility process; u=log(R/C)/log(U/C) inversion is independent of III-D n_sec.</td>
+</tr>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-003</td>
+  <td style="text-align:left">At u=0, σact has rank one, same as P0; does that invalidate type separation?</td>
+  <td style="text-align:left">REJECTED-BY-FAMILY-SIGNATURE</td>
+  <td style="text-align:left">Signature uses frozen role and scale dependence of complete constituent, not pointwise support rank at one endpoint. Same-image of generated term signatures is a conditional input.</td>
+</tr>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-004</td>
+  <td style="text-align:left">Mutate γ to g≠16sqrt(ασ) while keeping MRESP homothety.</td>
+  <td style="text-align:left">VALID MRESP-ONLY CONTROL, INVALID PQTI COUNTEREXAMPLE</td>
+  <td style="text-align:left">Shows PQTI is an additional evaluated actual-action certificate; mutated g fails its coefficient residual. No unconditional coefficient selection claimed.</td>
+</tr>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-005</td>
+  <td style="text-align:left">Add affine κ(R−C) to constant Hessian and demand same Euler potential.</td>
+  <td style="text-align:left">REJECTED-BY-EXPLICIT-TERMINAL-SLOPE</td>
+  <td style="text-align:left">Violates fixed Z_C=1; the next corollary explicitly keeps this affine family.</td>
+</tr>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-006</td>
+  <td style="text-align:left">Use a nonlinear amplitude A with nonzero D²A to produce extra Hessian term.</td>
+  <td style="text-align:left">OUT-OF-DOMAIN</td>
+  <td style="text-align:left">Theorem requires linear generated amplitude A:W→W and Hessian at origin; nonlinear A changes type/grammar.</td>
+</tr>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-007</td>
+  <td style="text-align:left">Choose χ(U)=U^(-2) and expect homothety.</td>
+  <td style="text-align:left">REJECTED</td>
+  <td style="text-align:left">Violates exact λ^-1 Hessian scaling when visibility factors are dimensionless and nonzero on interior.</td>
+</tr>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-008</td>
+  <td style="text-align:left">One nonlocal scalar boundary condition could fix both affine coefficients nonlinearly.</td>
+  <td style="text-align:left">OUT-OF-DOMAIN</td>
+  <td style="text-align:left">Statement explicitly concerns continuous linear scalar conditions; rank ≤1 for one linear functional.</td>
+</tr>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-009</td>
+  <td style="text-align:left">Perturb by smooth interior u, preserve both endpoint moments but change interior curvature.</td>
+  <td style="text-align:left">VALID POSITIVE WITNESS (SUPPORTS THEOREM)</td>
+  <td style="text-align:left">u and u′ vanish on collars, giving ∫u″=0, ∫R u″=0; small |epsilon| preserves χ&gt;0 on support.</td>
+</tr>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-010</td>
+  <td style="text-align:left">Infer a real physical metric action from the mathematical graph alone.</td>
+  <td style="text-align:left">REJECTED-BY-SORT</td>
+  <td style="text-align:left">Source requires jointly occurring input tuple and an explicitly frozen output sort RespGraph; Lorentzian action is a different sort.</td>
+</tr>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-011</td>
+  <td style="text-align:left">Vary REGσ within I+ and test printed scheme-independent midpoint decimal.</td>
+  <td style="text-align:left">VALID SOURCE-DOMAIN CHALLENGE — BH-IIIE-G-0004</td>
+  <td style="text-align:left">REG0 yields 0.825729956674389917; σ=+1 yields 0.826100242594114226. Exact symbol formula survives; number needs REG0 guard.</td>
+</tr>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-012</td>
+  <td style="text-align:left">Seek a third-derivative kink at Born midpoint C2.</td>
+  <td style="text-align:left">REJECTED</td>
+  <td style="text-align:left">C2&gt;C4&gt;C7, both n4 and n7 raw Laurent indices smooth in neighborhood of C2; kink arises at positive-part boundary C4.</td>
+</tr>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-013</td>
+  <td style="text-align:left">Add affine term and multiply comparator by finite nonzero scalar to match cap at C7.</td>
+  <td style="text-align:left">REJECTED</td>
+  <td style="text-align:left">Comparator second derivative tends to zero, cap lower bound remains &gt;0; affines cannot change second derivatives.</td>
+</tr>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-014</td>
+  <td style="text-align:left">Interpret nonzero unreduced acceleration Hessian as automatic propagating scalar mode.</td>
+  <td style="text-align:left">INVALID-PHYSICAL-PROMOTION</td>
+  <td style="text-align:left">No Hamiltonian constraints or physical scalaron sector provided by this jet calculation; source expressly disclaims it.</td>
+</tr>
+<tr>
+  <td style="text-align:left">E4-IIIE-B04-015</td>
+  <td style="text-align:left">Interpret “regular C1 member” as a claim other κ have no C1 regularity within [C,U].</td>
+  <td style="text-align:left">WORDING-SCOPE BOUNDARY</td>
+  <td style="text-align:left">All κ members are C2 on bare interval. “Regular” must refer to the source-matched terminal junction slope; not used to infer intrinsic loss of C1.</td>
+</tr>
+</tbody>
+</table>
+<p>Two additional numerical mutant schemes (<code>sigma_fin=−1,+1</code>) were evaluated within the declared REG positive family; both changed the numeric midpoint ratio. All 62 E3 scalar/symbolic controls pass. Adversarial challenges rejected by the theorem’s explicit domain do not generate new issue nodes.</p>
+<h2>5. Constructor/condition and typed-import boundaries</h2>
+<p><strong>BND-IIIE-B04-001</strong> — Paper3E lines 3244-3437. <code>[CONST] MRESPmin typed co-realized family</code> → <code>[GEN] III-C visibility/normalized state</code> → <code>[DER] entropy count unique by sufficiency/multiplicativity</code> → <code>[ID] map to nonlinear action under matching signature</code>. E/U of entropy coupling derived; physical occurrence and terms require jointly occurring MRESP.</p>
+<p><strong>BND-IIIE-B04-002</strong> — Paper3E lines 3439-3573. <code>[CONST] separate actual-action PQTI compare</code> → <code>[DER] positive tensor-square half character</code> → <code>[CAL] octet scalar trace whole-action normalization</code> → <code>[ID] γ/ZC fixed only after PQTI residual zero</code>. No action appearance inferred from an abstract positive tensor square; separate physical comparison required.</p>
+<p><strong>BND-IIIE-B04-003</strong> — Paper3E lines 4233-4304 and III-D lines 1479-1556, 1835-1870. <code>[CONST] rank-character n_j^L(α) for positive REGσ</code> → <code>[GEN] first carrier grade P4</code> → <code>[DER] n4 positive-part freeze at C4</code> → <code>[CAL] printed D4(C2)/Q decimal matches REG0 only</code>. Exact scheme-parametric freeze is valid; decimal scope pending REG0 anchor.</p>
+<p><strong>BND-IIIE-B04-004</strong> — Paper3E lines 4076-4142, II-A lines 2219-2300. <code>[FROZEN] joint input tuple, schema and output sort before evaluation</code> → <code>[GEN] finite integration word to C2 graph</code> → <code>[DER] independent unique graph and non-obstructed conditional realization</code> → <code>[REAL] no automatic Lorentzian action realization</code>. Rooted generated-image theorem applies only on the declared origin-certified joint input domain.</p>
+<p><strong>BND-IIIE-B04-005</strong> — Paper3E lines 4284-4369, III-F lines 7819-7856. <code>[CONST] cap f_c action on its independent source/boundary ports</code> → <code>[DER] analytic positive cap fRR bound</code> → <code>[HOST] separate rank4 Laurent comparator</code> → <code>[DER] Hessian mismatch on shared curvature chart</code> → <code>[REAL] local FLRW acceleration jet not physical extra scalar mode</code>. Common-parent reductions and owner substitutions not automatically identified; same chart only.</p>
+<p><strong>Material imports replayed at their exact interface (not full peer-paper re-audits):</strong></p>
+<ul>
+<li><code>PaperIII-C / p3c:cor:corealized-protected-visibility-family</code> (Paper3C 3326-3363): full normalized ρτ and entropy postprocessor under occurring active composite.</li>
+<li><code>PaperII-A / p2:cor:canonical-constituent-identification</code> (Paper2A 2738-2771): injective equal-image frozen signature allows unique 2-term identification.</li>
+<li><code>PaperII-A / p2a:thm:rooted-generated-image-corealization</code> (Paper2A 2219-2300): conditional generated image co-realization after licensed Orig word.</li>
+<li><code>PaperIII-D / p3d:cor:rank-character-laurent-family</code> (Paper3D 1479-1573): n_j positive/full secants and C_j positions.</li>
+<li><code>PaperIII-D / p3d:thm:v2219-carrier-four-dressing</code> (Paper3D 1835-1870): first actual carrier-grade j=4 instead of optional least-support j=2.</li>
+<li><code>PaperIII-F / p3f:prop:v223-cap-legendre</code> (Paper3F 7819-7856): independent uniform cap Hessian lower bound under 2BU&gt;d.</li>
+<li><code>PaperIII-B / p3b:thm:generated-action-response-owner</code> (Paper3E 1142-1162; Paper3B located): generated U=Λ_EH² identity-stage section.</li>
+</ul>
+<p>The JSON ledger separately records verified typed <code>IMPORTED_PROOF</code> and <code>ISSUE_AT</code> edges with source locators and guard predicates. It does <strong>not</strong> invent global assumption IDs or reintroduce G0/GP1–GP3 and already recorded canonical conditions as new nodes. Any assumptions newly encountered in this batch must be reconciled against the global registry at the final merge.</p>
+<h2>6. Other open findings, scope firewall and release status</h2>
+<ul>
+<li><strong>BH-IIIE-G-0001 (moderate, Batch 1):</strong> Clifford <code>W</code> 7-real block vs the spin grading carrier <code>W_L⊕W_R</code>; overloaded map codomain/<code>Gamma_W</code> needs typed declaration. This batch does not modify that theorem.</li>
+<li><strong>BH-IIIE-G-0002 (moderate, Batch 1):</strong> unique positive CRP4 connection along scheme-depth base <code>B</code> does not uniquely determine a full bundle connection on <code>B×M</code>; the established B-transport stays valid.</li>
+<li><strong>BH-IIIE-G-0003 (moderate, Batch 2):</strong> relative/noncompact trace-per-volume need not make the unlocalized heat operator ordinary trace class. Compact finite/smooth heat-port proofs remain intact.</li>
+<li><strong>BH-IIIE-G-0004 (moderate, this batch):</strong> numerical scheme guard at rank-four midpoint; exact Laurent positive-part geometry and C4 jump independently verified.</li>
+</ul>
+<p><strong>Active scope firewalls:</strong></p>
+<ul>
+<li>Metric f(R) action physically occurring is not derived from smooth response-graph reconstruction.</li>
+<li>PQTI amplitude equality is evaluated action-port comparison, not tensor-square type alone.</li>
+<li>Affine Hessian kernel does not fix full zero-order response/Legendre potential without terminal data.</li>
+<li>Rank-four positive Laurent comparator is not the capped gravity working density.</li>
+<li>FLRW acceleration jet Hessian alone is not propagating scalaron certificate.</li>
+<li>Section 4372 old rank-two K16 kink is explicitly comparison-only/superseded.</li>
+<li>Source-regime scheme-zero midpoint number must not be treated as σ-independent prediction.</li>
+</ul>
+<p><strong>Cumulative coverage after Batch 4:</strong> <strong>75/115</strong> named claims, <strong>62/92</strong> proof environments, <strong>16/30</strong> formal remarks, source through <strong>line 4,382</strong>, four open findings. Not-yet-reviewed source starts at line <strong>4,383</strong>, with capped scalaron and further physical-action ports. Current overall status: <code>PARTIALLY_AUDITED</code> (correctness of unreviewed downstream source is not inferred).</p>
+<p><strong>Archive retention:</strong> <code>Paper00-DAGAtlas-v1_102(1).zip</code>, <code>Paper00-ProofChainAudits-v1_20(1).zip</code> and source <code>Paper00-PapersMinimal-v2_370(1).zip</code> are <strong>unchanged</strong>. The final batch will merge the complete target audit, deduplicate canonical conditions and issues, run schema/archive validation, and package only latest component versions in the DAG and audit ZIP successors. This batch releases intermediate markdown/JSON/reproducible controls only.</p>
+<p><strong>Reproducibility and limitations:</strong> <code>Paper3E-RigorousVerificationBatch04-v1_1.json</code> gives every named declaration’s exact source/proof span, verdict, independent evidence IDs, scoped imported uses, 15 theorem-level E4 challenges, one complete new gap certificate, and five boundary adjudications. <code>Paper3E-Batch04-IndependentChecks-v1_1.json</code> gives 62 exact/precision E3 controls plus 2 scheme-mutation checks; companion <code>.py</code> scripts regenerate the deterministic checks. Tests establish identities on declared mathematical domains, not experimental validation or actual physical occurrence. No archive was released or claimed to have passed final global DAG verification.</p>
+<hr />
+<h1>Detailed Batch 5</h1>
+<h1>Paper III-E — Rigorous verification and typed-DAG audit, Batch 05</h1>
+<p><strong>Authoritative frozen source:</strong> <code>Paper3E-GravityAction-v1_190.tex</code>, SHA-256 <code>c09e1f6c834e784d593f12827045a22b184671324c5091f2e50b12e076e3119b</code>, under <code>Paper00-PapersMinimal-v2_370(1).zip</code>.
+<strong>Audit protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code> and inherited non-reopening guard from <code>Paper00-ProofChainAuditProtocol-v1_1.md</code>.
+<strong>Newly examined source:</strong> <strong>lines 4,383–5,611 inclusive</strong> of 6,449, completing the capped scalaron and boundary-source constructor section at a major source boundary.
+<strong>No paper or master ZIP was edited.</strong></p>
+<p><strong>Batch census:</strong> <strong>26</strong> formal declarations (4 <code>VERIFIED</code>, 16 <code>VERIFIED-CONDITIONAL</code>, 4 <code>REPRODUCED</code> import/owner packets, 1 <code>FORMALIZED</code>, 1 <code>UNRESOLVED</code> dimensional clause); <strong>16</strong> direct proof environments replayed; <strong>7</strong> formal remarks reviewed; <strong>6</strong> mathematically material unnamed assertions separately classified. <strong>E3:</strong> <strong>78/78</strong> deterministic exact or high-precision independent controls passed. <strong>E4:</strong> <strong>18</strong> theorem- and scope-level challenges, plus <strong>2</strong> targeted mutation/dimension tests. New gap certificates: <code>BH-IIIE-G-0005</code> (minor) and <code>BH-IIIE-G-0006</code> (moderate). Earlier <code>G-0001</code>–<code>G-0004</code> persist unchanged. The numeric algebra in G-0006 is verified; its source dimensional sort is unresolved.</p>
+<p><strong>Cumulative:</strong> <strong>101/115</strong> formal declarations, <strong>78/92</strong> proof environments, <strong>23/30</strong> formal remarks audited, through line 5,611; <strong>6</strong> currently open target-paper findings. Remaining lines <strong>5,612–6,449</strong>. Overall target status remains <code>PARTIALLY_AUDITED</code> pending final source slice and global DAG merge.</p>
+<h2>1. Complete formal-claim ledger</h2>
+<table>
+<thead>
+<tr>
+  <th>ID</th>
+  <th style="text-align:right">Source lines</th>
+  <th>Current-source claim</th>
+  <th>Status</th>
+  <th>Independent evidence and scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>BH-IIIE-C-0076</td>
+  <td style="text-align:right">4398–4420</td>
+  <td><code>p3e:thm:general-scalaron-decoupling</code> — General metric-(mathfrak f) scalaron decoupling criterion</td>
+  <td><code>VERIFIED</code></td>
+  <td>Direct limit in independent smooth f(R) test.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0077</td>
+  <td style="text-align:right">4427–4472</td>
+  <td><code>p3:thm:scalar-threshold</code> — Scalaron decoupling for the complete minimal response family</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Independent entropy endpoint weights and algebraic Hessian/mass limits verified; III-F trace equation checked at its precise constant-curvature scope.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0078</td>
+  <td style="text-align:right">4489–4498</td>
+  <td><code>p3e:cor:source-endpoint-not-vacuum</code> — The source endpoint is not a terminal vacuum</td>
+  <td><code>VERIFIED</code></td>
+  <td>Exact endpoint substitution; independently compare III-F sourced trace theorem.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0079</td>
+  <td style="text-align:right">4504–4529</td>
+  <td><code>p3:cor:scalar-threshold-handoff</code> — Owner-typed Paper-III terminal handoff</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Direct substitution, monotone q_tau=7(1-e^-tau), exact six finite inversions.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0080</td>
+  <td style="text-align:right">4550–4574</td>
+  <td><code>p3e:def:v223-cap-data</code> — Normalized cap data and ports</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Independent half-angle rationalization and B=BI*(1-c²t²).</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0081</td>
+  <td style="text-align:right">4576–4608</td>
+  <td><code>p3e:thm:v223-cap-source</code> — Normalized source response and reciprocal transport</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Exact tensor determinant/trace, source Hessian and nontrivial exact metric-transport/Jacobian checks pass.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0082</td>
+  <td style="text-align:right">4634–4651</td>
+  <td><code>p3e:prop:v223-source-volume</code> — Finite source volume and multiplicity</td>
+  <td><code>UNRESOLVED</code></td>
+  <td>Exact determinant and Gaussian normalization algebra passes; dimension-exponent adversary finds W quadratic and linear terms of incompatible types with dimensionless Y.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0083</td>
+  <td style="text-align:right">4667–4701</td>
+  <td><code>p3e:thm:v223-exact-cap-reduction</code> — Exact capped action on a stated constructor domain</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Independent flux minimization, complete source stationarity and 1/8-to-1/4 boundary normalization verify the stated finite reduction.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0084</td>
+  <td style="text-align:right">4720–4731</td>
+  <td><code>p3e:prop:v223-port-incidence</code> — Common-interior incidence distinguishes the cap</td>
+  <td><code>VERIFIED</code></td>
+  <td>Direct symbolic minimization under all three incidence patterns and exact Hessian difference.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0085</td>
+  <td style="text-align:right">4795–4815</td>
+  <td><code>p3e:prop:v224-source-moments</code> — Three-moment source test</td>
+  <td><code>VERIFIED</code></td>
+  <td>Independent 4x4 matrix inversion, nonisotropic PSD test and isotropic reference positive control.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0086</td>
+  <td style="text-align:right">4831–4847</td>
+  <td><code>p3e:prop:v224-common-multiplicity</code> — Common Einstein/source multiplicity</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Independent analytic small-r expansion and source/EH derivatives at zero.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0087</td>
+  <td style="text-align:right">4858–4869</td>
+  <td><code>p3e:cor:v224-reference-source-status</code> — Exact source law with remaining physical inputs</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Exact algebraic cap B and incidence controls corroborate the claimed equality; underlying full boundary reference-field proof not independently re-established here.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0088</td>
+  <td style="text-align:right">4892–4916</td>
+  <td><code>p3e:thm:v164-generated-gravitational-heat-orbit</code> — Generated gravitational heat orbit</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Independent rescaling of effective heat generator and coefficient; scalar heat moment integral checked.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0089</td>
+  <td style="text-align:right">4918–4929</td>
+  <td><code>p3e:cor:v164-newton-fixes-profile-orbit</code> — Newton normalization fixes the orbit</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Independent exact factor 6(4π)²=96π².</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0090</td>
+  <td style="text-align:right">4932–4957</td>
+  <td><code>p3e:cor:v174-yang-mills-action-derived-later</code> — Derived-later local Yang--Mills action and phase space</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Source-matched III-F theorem located and its scope inspected, not a second independent E3 audit of the full phase-space result.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0091</td>
+  <td style="text-align:right">4959–4989</td>
+  <td><code>p3e:cor:v175-einstein-scalar-actions-derived-later</code> — Derived-later joint-Dirac Einstein and native odd-scalar actions</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Exact raw normalization U_J^raw=96U and κ_J=12U checked against III-F source, but full spinor action variation is not independently reproved.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0092</td>
+  <td style="text-align:right">4995–5020</td>
+  <td><code>p3e:cor:v176-local-bosonic-noether-constraint-derived-later</code> — Derived-later local bosonic Noether and constraint packet</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Exact source theorem and canonical-momentum formulas located; no E3 reconstruction of full constrained Hamiltonian completed.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0093</td>
+  <td style="text-align:right">5048–5077</td>
+  <td><code>p3e:thm:v188-two-depth-structures</code> — Two independent depth structures</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Independent SL(2,3) commutator order 8, SL(2,5) perfect order 120, quaternion Q8 commutator ±1.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0094</td>
+  <td style="text-align:right">5122–5145</td>
+  <td><code>p3e:prop:v1107-raw-not-physical-euler</code> — The raw Laurent secant cannot be the terminal metric Euler response</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Independent exact Euler derivative/primitive and endpoint Hessian nonidentity.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0095</td>
+  <td style="text-align:right">5185–5229</td>
+  <td><code>p3e:prop:v2218-raw-heat-log-port</code> — Exact logarithmic raw-heat value and inverse-Euler test</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Independent exact first/second derivatives, reconstructed log-Euler response and terminal jets.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0096</td>
+  <td style="text-align:right">5257–5308</td>
+  <td><code>p3e:thm:v2218-factorized-heat-clock</code> — Complete contact residual and forced heat-clock trajectory</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Exact ODE/contact differentiation, t(q) substitution, c0,c2 and offset ratios.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0097</td>
+  <td style="text-align:right">5333–5356</td>
+  <td><code>p3e:cor:v2218-distinct-heat-visibility-clocks</code> — Fixed cutoff and distinct-clock tests</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Exact terminal t0 alpha^7/8 limit and quotient c0/c2=6/t, coefficient derivative.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0098</td>
+  <td style="text-align:right">5482–5518</td>
+  <td><code>p3e:thm:laur17-projected-terminal-freeze</code> — Terminal endpoint evaluation, no-second-EH firewall, and scalaron status</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Independent affine Euler intercept invariant and zero Hessian; III-F terminal source theorem inspected.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0099</td>
+  <td style="text-align:right">5531–5561</td>
+  <td><code>p3:thm:active-window-matching-rule</code> — Six finite scalar hierarchy hits and one asymptotic endpoint</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Six exact finite t_j inversions plus terminal limit.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0100</td>
+  <td style="text-align:right">5573–5592</td>
+  <td><code>p3:prop:uv-limit-active-density</code> — Ultraviolet and terminal limits</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Independent entropy visibility endpoint Hessian and smooth qτ limits.</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0101</td>
+  <td style="text-align:right">5594–5607</td>
+  <td><code>p3:cor:frozen-constant-term-readout</code> — Terminal frozen nonlinear magnitude readout</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Exact endpoint algebra independent of any terminal vacuum.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Proof count:</strong> 16 direct adjacent <code>\begin{proof}</code>/<code>\end{proof}</code> environments; all have exact spans in <code>Paper3E-RigorousVerificationBatch05-v1_1.json</code>. The four derived-later owner packets are marked <code>REPRODUCED</code>, not <code>VERIFIED</code>, because their III-F source statements and key coefficients were examined but complete joint-Dirac/Hamiltonian independent proofs were <em>not</em> performed in this target-paper audit. They cannot be promoted solely by citation.</p>
+<p><strong>Remarks (7):</strong> lines 4531–4537 preserve six finite smooth level hits plus asymptote; 4744–4759 preserve conditional native cap selection; 4763–4780 reject inference from mere phase Gram trace cancellation; 5157–5166 separate raw Laurent and physical Euler sorts; 5366–5396 restrict heat-clock equation to comparator; 5422–5454 keep generated character/owner genealogy separate from actualization; 5520–5529 distinguish optional smooth MRESP from active Laurent owner. All seven have direct scope dispositions in the JSON ledger.</p>
+<p><strong>Material unnamed statements (6):</strong> <code>(i)</code> reciprocal midpoint <code>q=7/2</code> derivative (unresolved G-0005), <code>(ii)</code> M8 rank-4 determinant root, <code>(iii)</code> amplitude <code>e^{-τ/2}</code> versus response <code>e^{-τ}</code>, <code>(iv)</code> K16 continuity from positive common susceptibility, <code>(v)</code> multiplicative continuous character <code>D(s)=Q^s</code>, <code>(vi)</code> affine terminal Euler intercept and formal Einstein root. They remain explicitly tracked even though they are not named theorem environments.</p>
+<h2>2. Independent mathematical verification (E1 source replay, E3 exact evidence)</h2>
+<h3>A. Source-normalized scalaron criterion (4,388–4,529)</h3>
+<p>For <code>f ∈ C²((C,U]) ∩ C¹([C,U])</code>, if <code>f''&gt;0</code>, <code>f''→0⁺</code> and <code>f'−Rf''→L&gt;0</code>, the algebraic mass <code>m_s²=(f'−Rf'')/(3f'')</code> tends to positive infinity. As an independent control, <code>f(R)=(R−C)+(R−C)³/6</code> has <code>f''=R−C</code>, <code>f'(C)=1</code> and the required divergent ratio. On the smooth <code>MRESP_min</code> response the Hessian <code>h=(γσ/U)w_nl(u)u</code> is positive for <code>0&lt;u≤1</code> and tends to zero at <code>u=0</code>; independent entropy-state limiting values are <code>w_nl(0)=1/8</code>, <code>w_nl(1)=1</code>. The physically measured mass requires an existing full trace-equation background; imported III-F 9564–9611 makes that restriction explicit. On the source pair <code>(F_C,Z_C)=(0,1)</code>, the unsourced vacuum residual is <code>C≠0</code>. Thus no automatic terminal vacuum is claimed or proved.</p>
+<h3>B. Capped positive tensor, complete source word and Gaussian (4,550–4,780)</h3>
+<p>With <code>G=√(1+x²)</code>, <code>t=x/(1+G)</code> and <code>c²=1−B_U/B_I</code>, direct rationalization gives <code>t²=(G−1)/(G+1)</code> and the exact identity <code>B=B_I(1−c²t²)=B_U+2Δ/(1+G)</code>. For <code>v=ct</code>, both symmetric two-channel ports <code>M_±=I±vX</code> are positive, with determinant <code>1−v²</code>. Their tensor <code>T_s=M_+⊗M_-</code> satisfies <strong><code>det T_s=b⁴</code> and <code>Tr T_s⁻¹=4/b²</code></strong>. Direct completion of the full 4×4 source matrix gives <code>Y_*=-T_s⁻¹j</code>, <code>W_*=-Tr(jᵀT_s⁻¹j)</code>, and the scalar variation Hessian <code>−(I_4⊗T_s⁻¹)/4</code>. With <code>ρ=R_s/2</code>, <code>W_*/8=−σ²/(8B²)</code>.</p>
+<p>An independent non-scalar exact matrix example confirms <code>AᵀT_r A=T_s</code>, transported <code>j_r=A^{-T}j_s</code>, unchanged source return, and the four-column Jacobian rule. For 16 Gaussian entries, <code>det(I_4⊗T_s)=b¹⁶</code>, hence the metric volume is <code>b⁸</code>. Completing the square yields the supplied <code>(8πℏ_eff)^8</code> prefactor and cancellation of the <code>b</code> determinant. The algebra survives arbitrary positive spectators provided their entire multiplicity and reference normalization are retained. <em>This pure algebra is distinct from the source's contradictory dimensional-coordinate phrase; see G-0006.</em></p>
+<p>For the conjugate-flux cap, independently minimizing <code>(a²+G⁻¹b²)/2</code> at <code>a+b=2√Δ R</code> gives <code>2Δ R²/(1+G)</code>, hence the declared <code>B(R)R²</code>. The sourced term supplies <code>−σ²/B²</code>; the specified first-order parent supplies GHY term <code>f_c'K/4</code> alongside interior <code>f_c/8</code>. All three source-incidence patterns have been checked: independent interiors produce <code>B_I(1-v²)r²</code>, symmetric shared interior <code>B_I r²</code>, and antisymmetric shared interior <code>B_I(1-v²)r²</code>. Equal dimensions and common co-consumption do not determine native incidence. The physical source/normal operator and measure are explicitly prerequisites rather than proved native selections.</p>
+<p><strong>Ancillary midpoint defect (G-0005):</strong> The bare reciprocal coordinate response <code>4ρ²/[b(x)b(1/x)]</code> is stationary at <code>x=1</code>, but not at an arbitrary hierarchy-labelled depth <code>q=7/2</code> unless <code>x(q=7/2)=1</code>, equivalently <code>R_s=√(UC)</code> for <code>R=U α^{-q}</code>, <code>C=U α^{-7}</code>. The theorem's cap data have only <code>R_s&gt;0</code>. High-precision E4 positive and negative controls provide a direct bounded counterexample to the unguarded <strong>comparison sentence</strong>, not to the transported-source theorem.</p>
+<h3>C. Source moments, independent multiplicities and native-status firewall (4,786–4,885)</h3>
+<p>With commuting involutions <code>A=X⊗I</code> and <code>B=I⊗X</code>, exact multiplication gives</p>
+<pre><code>T(u)^(-1) = [I + u(B-A) - u²AB] / (1-u²)².
+Tr(j†T(u)^(-1)j) = [a0 + u a1 - u² a2]/(1-u²)².
+</code></pre>
+<p>The three fixed-frame source moments are necessary and sufficient for a constant inverse-square scalar return on an <em>open interval</em>. For moving source/frame only the complete functional identity remains; no stronger fixed-moment criterion has been transferred. With <code>R_s²=P_0 C_7</code>, <code>B(0)=B_I</code> and <code>B'(0)=0</code>, the normalized small-curvature comparison is <code>r−(m/M_E)C_7+O(r²)</code>. In particular, <code>m=M_E</code> is a genuine matching premise; <code>m=96</code> is not established as a native species count. I-B/III-F reference Poisson source is rechecked at exact interface, not independently reconstructed across those peer manuscripts.</p>
+<h3>D. Scalar profile orbit, local owner imports, and exceptional groups (4,889–5,116)</h3>
+<p><code>F_a(u)=exp(-au)</code> at scale <code>Λ</code> depends only on <code>a/Λ²</code>: <code>Λ_eff²=Λ²/a</code>. Under <code>(a,Λ)→(ρa,√ρ Λ)</code> the entire same-action expression and its variation remain unchanged. The smooth scalar <code>a₂</code> moment is <code>1/[a(4π)²]</code>; Einstein coefficient is <code>Λ_eff²/[6(4π)²]</code>, so the numeric factor <strong><code>96π²</code></strong> checks exactly. This fixes an <em>orbit</em>, not an absolute heat rate or a generic joint-Dirac physical Newton coefficient.</p>
+<p>III-F's local Yang–Mills, joint Einstein–scalar, and Noether/ADM corollaries are <strong>imported-with-scope</strong>, not promoted to global nonlinear <code>f(R)</code> action theorems. The checked import includes <code>κ_J=12U</code>, <code>U_J^raw=96U</code>; its physical coupling remains a distinct matched-action port. Independent finite matrix enumeration verifies <code>SL(2,3)</code> order 24 with derived subgroup order 8, <code>SL(2,5)</code> perfect order 120, and <code>[Q_8,Q_8]={±1}</code>. These support the exceptional group-derived chain independently of the Clifford rank hierarchy: they are different sorts, not one group-derived particle decay clock.</p>
+<h3>E. Laurent inverse-Euler firewall and fixed finite trace (5,120–5,254)</h3>
+<p>The raw lower-Laurent secant <code>(R²+UC)/(U+C)</code> uniquely gives <code>f_raw=(R−C)+(R−C)²/(U+C)</code> under normalized terminal jets, with <code>f_raw''=2/(U+C)&gt;0</code>. The source compares it to the distinct <code>EXJET7</code> local-Hessian route with <code>f_{RR}(C)=0</code>; arbitrary affine kernels cannot remove this second-derivative difference. No contradiction is implied between a raw scalar <em>value</em> and a physical metric <em>response</em> from a different action port.</p>
+<p>For finite seed <code>Z_H</code>, <code>A_p=15/2−q_H</code> and <code>R_H=U α^{-q_H}</code> give <code>A_p=1/2+log(R_H/C)/L</code>, independent of the interpolation profile. A positive direct value promotion has <strong>negative</strong> Hessian <code>−γ/(LR²)</code>. A positive affine <em>Euler</em> port instead yields <code>f_log=R−C+λ[R/C−1−log(R/C)]</code> with <code>f_log''=λ/R²&gt;0</code>; this one does not vanish at the terminal endpoint. Both are expressly proposed tests, not arbitrary exclusions of all physical finite-action reductions.</p>
+<h3>F. Forced heat-clock comparator, terminal quotient and hierarchy (5,255–5,611)</h3>
+<p>The controlled smooth tensor product has local coefficients <code>c0=(8−q)/[(4π)²t²]</code>, <code>c2=(8−q)/[6(4π)²t]</code>. The complete source/contact residual is</p>
+<pre><code>η_H = [L − 1/(8−q) − d(log t)/dq] dq.
+</code></pre>
+<p>Independent ODE integration verifies the unique root-normalized zero-residual trajectory <code>t(q)=t0(8−q)α^q/8</code>. Substitution verifies <code>U_H(q)/U_H(0)=α^(−q)</code>, <code>c0(q)/c0(0)=8 α^(−2q)/(8−q)</code> and normalized <code>c0/c2</code> ratio <code>8 α^(−q)/(8−q)</code>. At fixed <code>t</code> the residual does not vanish identically; a positive affine time correspondence with <code>τ</code> fails because <code>t(τ)→t0 α⁷/8</code> is finite. <strong>No physical operator clock is selected</strong> by that comparator ODE; the paper expressly retains that obligation.</p>
+<p>For the terminal rank-seven owner, the imported Legendre–Euler equation at <code>R=C_7</code> implies the affine-kernel-invariant intercept <code>−C_7</code>. The retained slope-one representative <code>f_term(R)=R−C_7</code> has exactly zero Hessian and is not a second Einstein term. The source separates this quotient from an independent full physical history or vacuum. Finally <code>q_sp(τ)=7(1-e^(−τ))</code> reaches <strong>six</strong> integer levels at finite <code>τ_j=−ln(1−j/7)</code> and level <strong>seven</strong> only asymptotically. This is not a seven-projector chronology. The source endpoint <code>C_sp(C)=−C</code> also follows by exact subtraction under <code>(F_C,Z_C)=(0,1)</code>.</p>
+<h2>3. All new issue certificates</h2>
+<h3>BH-IIIE-G-0005 — unguarded hierarchy midpoint in the reciprocal bare source</h3>
+<ul>
+<li><strong>Class/severity:</strong> <code>MISSING_CONDITION / TYPE_OR_DOMAIN</code>, <strong>MINOR</strong>, <code>OPEN</code>; comparison statement, not a theorem refutation.</li>
+<li><strong>Exact origin:</strong> <code>Paper3E-GravityAction-v1_190.tex:4620–4629</code>, immediately after <code>p3e:thm:v223-cap-source</code>.</li>
+<li><strong>Printed assertion:</strong> bare reciprocal return has vanishing logarithmic <code>q</code> derivative at <code>q=7/2</code>.</li>
+<li><strong>E3 positive control:</strong> <code>R_s=√(UC)</code> implies <code>x=1</code> at the Born midpoint; symmetry <code>b(x)b(1/x)</code> forces zero derivative.</li>
+<li><strong>E4 in-domain witness:</strong> set <code>U=10</code>, <code>C=1</code>, <code>α=(U/C)^(1/7)</code>, <code>B_I=3</code>, <code>B_U=1</code>, <code>R_s=2</code>. The cap definition permits this <code>R_s</code>. Then <code>x(q=7/2)=√10/2</code>, and <code>d_q log([b(x)b(1/x)]⁻¹)</code> is <strong><code>−0.0561883538303380274544346…</code></strong>, not zero.</li>
+<li><strong>Required condition:</strong> the additional existing geometric-mean specialization <code>R_s²=UC</code> (with <code>q(R)=log(U/R)/log α</code>), or scope the derivative claim to <code>x=1</code> rather than <code>q=7/2</code>.</li>
+<li><strong>Downstream supported impact:</strong> local midpoint stationarity assertion alone. No verified path to the classical cap or the source-transport equality: those are independent and remain correct. Physical midpoint source selection unproved; no neighboring paper declared affected.</li>
+<li><strong>Provenance:</strong> conditional source family in cap definition (free <code>R_s</code>), exact reciprocal tensor word, independent mutation and positive control <code>E4M-IIIE-B05-001</code>.</li>
+</ul>
+<h3>BH-IIIE-G-0006 — Gaussian units and source-coordinate normalization</h3>
+<ul>
+<li><strong>Class/severity:</strong> <code>TYPE_OR_DOMAIN / NORMALIZATION_OR_READOUT</code>, <strong>MODERATE</strong>, <code>OPEN</code> as dimensional-typing scope, not counterexample to Gaussian math.</li>
+<li><strong>Exact origin:</strong> dimension table <code>:4550–4556</code>, source coordinate/section <code>:4568–4571</code>, source <code>ρ=R_s/2</code> <code>:4585–4590</code>, Gaussian proposition <code>:4634–4646</code>.</li>
+<li><strong>E1/E3:</strong> positive symmetric 16-variable real Gaussian gives the printed determinant/normalization cancellation. This part <strong>passes</strong>.</li>
+<li><strong>Type conflict:</strong> with <code>[R_s]=[ρ]=curvature</code>, dimensionless <code>T_s</code> and the proposition's advertised <em>dimensionless</em> <code>Y</code>, the quadratic term <code>Tr(YᵀT_sY)</code> has dimension 1 while <code>Tr(j_sᵀY)</code> has dimension curvature and the stationary return has dimension curvature². The exponential and measure cannot all be dimensionally typed without an additional convention.</li>
+<li><strong>Remaining evidence obligation:</strong> specify curvature-valued <code>Y</code>, <code>[ℏ_eff]=curvature²</code>, and a dimensional volume, <strong>or</strong> explicitly rescale <code>y=Y/R_s</code>, <code>ℏbar=ℏ_eff/R_s²</code> with the complete measure and any <code>R_s</code> Jacobian. The audit does not choose a physical native measure.</li>
+<li><strong>Verified bypass:</strong> the exact algebraic finite Gaussian formula is correct on an abstract real vector space with consistent units; the purely <em>classical</em> cap reduction and its stationary source term do not use a quantum integration measure.</li>
+<li><strong>Scoped impact:</strong> the interpretation of the Gaussian proposition and conditional quantum-integrated clause in <code>p3e:thm:v223-exact-cap-reduction</code>, potentially downstream native measure comparison if used; no direct established failure of Newton normalization or background gravitation was found.</li>
+<li><strong>Provenance:</strong> dimensional mutation <code>E4M-IIIE-B05-002</code>, matrix-volume exact checks, and the source text's current unit table.</li>
+</ul>
+<h2>4. Adversarial challenge ledger (E4)</h2>
+<p>| Evidence | Attempted attack or boundary mutation | Disposition | Certificate |
+|---|---|---|---|
+| E4-IIIE-B05-001 | Scalaron divergence from Hessian alone as a realized vacuum mass | INVALID-PHYSICAL-PROMOTION | Trace linearization needs an actual constant-curvature background; source explicitly conditions it. |
+| E4-IIIE-B05-002 | Source endpoint F_C=0,Z_C=1 solves unsourced terminal trace equation | REJECTED | C Z_C-2F_C=C&gt;0, so there is no such vacuum. |
+| E4-IIIE-B05-003 | Use an alternate x with |c t|&gt;=1 to disprove positive T | OUT-OF-DOMAIN | BI&gt;BU&gt;0 gives 0&lt;c&lt;1 and |t|&lt;1. |
+| E4-IIIE-B05-004 | Change reciprocal source coordinates but leave incoming section rho I fixed | VALID NEGATIVE CONTROL | A metric isometry preserves the whole action only when the linear source and Jacobian are transported; source says so. |
+| E4-IIIE-B05-005 | Claim bare reciprocal source derivative vanishes at q=7/2 for arbitrary R_s | VALID G-0005 | With U=10,C=1,BI=3,BU=1,R_s=2 derivative is -0.05618835...; at R_s=sqrt(UC) it vanishes. |
+| E4-IIIE-B05-006 | Demand source quadratic, linear and stationary terms retain curvature units with dimensionless Y | VALID G-0006 | Printed curvature types make W quadratic term dimensionless and linear term curvature; consistent rescaling not specified. |
+| E4-IIIE-B05-007 | Add arbitrary background integration weight to geometric Gaussian measure | VALID CONDITION CONTROL | Actual effective action then gains h_eff[8ln b - ln(m(R)/m(0))]; no unconditional native measure selected. |
+| E4-IIIE-B05-008 | Tensor a spectator and divide source return by spectator rank without compensating rho | REJECTED | Source normalization requires rho_n=R_s/(2sqrt(n)); tensor multiplicity is not freely discarded. |
+| E4-IIIE-B05-009 | Change to symmetric shared interior and assume same B coefficient | REJECTED | Shared symmetric incidence gives BI r² instead of B r²; explicit actual incidence required. |
+| E4-IIIE-B05-010 | Infer native species count m=96 from algebraic three-moment target | REJECTED | Target norm is not actual species count or evaluated native source. |
+| E4-IIIE-B05-011 | Interpret heat-rate scale orbit as a unique a or SI cutoff | REJECTED | Effective scale Lambda²/a invariant; no representative selected by orbit. |
+| E4-IIIE-B05-012 | Identify Clifford q depth with finite group derived depth | REJECTED-BY-TYPE | Rank/codimension filtration and derived subgroup series have different targets. |
+| E4-IIIE-B05-013 | Repair raw Laurent Hessian mismatch with an affine Einstein term | REJECTED | Affine terms have zero second derivative; 2/(U+C) remains nonzero. |
+| E4-IIIE-B05-014 | Promote positive raw logarithmic finite heat value directly to convex f | REJECTED | Positive γ second derivative is -γ/(LR²), strictly negative. |
+| E4-IIIE-B05-015 | At fixed t make hierarchy contact residual vanish identically | REJECTED | L-1/(8-q) depends on q. |
+| E4-IIIE-B05-016 | Identify visibility τ with heat proper time t via positive affine law | REJECTED | Forced t(τ) has finite limit, positive affine t(τ) diverges. |
+| E4-IIIE-B05-017 | Claim physical heat-clock selection solely because zero-residual ODE has a solution | INVALID-PHYSICAL-PROMOTION | Source calls equation a factorized comparison target, requiring operator and density origin. |
+| E4-IIIE-B05-018 | Treat endpoint scalaron quotient as second EH term or seven finite projector events | REJECTED | Terminal term fixed R-C7 with zero Hessian; six finite smooth crossings only and FLAG separate. |</p>
+<p>A valid challenge to a <em>stronger-than-printed physical claim</em> is not a refutation of the actual conditional theorem. Both issue mutants are independently retained as source-typing/scope certificates, not used to lower the unrelated tensor, group or semigroup proofs.</p>
+<h2>5. Exact cross-paper uses — source-matched, scope-guarded</h2>
+<table>
+<thead>
+<tr>
+  <th>Current imported label</th>
+  <th>Checked upstream source anchor</th>
+  <th style="text-align:right">III-E use line</th>
+  <th>Required typed scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>p3f:thm:trace-linearized-scalaron-mass</code></td>
+  <td>Paper3F-CompleteDynamics-v1_256.tex:9565</td>
+  <td style="text-align:right">Paper3E:4427</td>
+  <td>constant-curvature trace-linearity and scalaron mass conditional physical meaning</td>
+</tr>
+<tr>
+  <td><code>p1b:thm:v223-positive-source-transport</code></td>
+  <td>Paper1B-M8Geometry-v1_131.tex:19281</td>
+  <td style="text-align:right">Paper3E:4594</td>
+  <td>whole source-word isometry and source/jacobian transport</td>
+</tr>
+<tr>
+  <td><code>p1b:thm:v223-extension-flux</code></td>
+  <td>Paper1B-M8Geometry-v1_131.tex:19230</td>
+  <td style="text-align:right">Paper3E:4674</td>
+  <td>positive normal square-root extension and conjugate-flux minimization</td>
+</tr>
+<tr>
+  <td><code>p3f:thm:v223-cap-parent</code></td>
+  <td>Paper3F-CompleteDynamics-v1_256.tex:7740</td>
+  <td style="text-align:right">Paper3E:4706</td>
+  <td>complete scalar-curvature parent including GHY canonical boundary</td>
+</tr>
+<tr>
+  <td><code>p1b:thm:v224-poisson-defect</code></td>
+  <td>Paper1B-M8Geometry-v1_131.tex:19354</td>
+  <td style="text-align:right">Paper3E:4871</td>
+  <td>reference normal Poisson source</td>
+</tr>
+<tr>
+  <td><code>p3f:thm:v224-reference-cap-parent</code></td>
+  <td>Paper3F-CompleteDynamics-v1_256.tex:12603</td>
+  <td style="text-align:right">Paper3E:4872</td>
+  <td>reference cap parent and positive Dirichlet normalization</td>
+</tr>
+<tr>
+  <td><code>p3b:thm:v164-generated-heat-profile</code></td>
+  <td>Paper3B-SpectralAction-v1_181.tex:3238</td>
+  <td style="text-align:right">Paper3E:4894</td>
+  <td>premise-minimal scalar exponential heat generator</td>
+</tr>
+<tr>
+  <td><code>p3f:thm:v174-generated-joint-gauge-phase-space-action</code></td>
+  <td>Paper3F-CompleteDynamics-v1_256.tex:4678</td>
+  <td style="text-align:right">Paper3E:4936</td>
+  <td>local pure-gauge stationary product action and constraint packet</td>
+</tr>
+<tr>
+  <td><code>p3f:thm:v175-generated-joint-einstein-action</code></td>
+  <td>Paper3F-CompleteDynamics-v1_256.tex:4977</td>
+  <td style="text-align:right">Paper3E:4962</td>
+  <td>local joint Dirac Einstein coefficient</td>
+</tr>
+<tr>
+  <td><code>p3f:thm:v175-native-local-scalar-action</code></td>
+  <td>Paper3F-CompleteDynamics-v1_256.tex:5226</td>
+  <td style="text-align:right">Paper3E:4964</td>
+  <td>native odd-scalar local action</td>
+</tr>
+<tr>
+  <td><code>p3f:thm:v176-adm-constraint-packet</code></td>
+  <td>Paper3F-CompleteDynamics-v1_256.tex:6081</td>
+  <td style="text-align:right">Paper3E:4995</td>
+  <td>local ADM constraint and scalar canonical-momentum packet</td>
+</tr>
+<tr>
+  <td><code>p3c:thm:v2218-born-heat-depth</code></td>
+  <td>Paper3C-ProtectedHierarchy-v1_179.tex:5914</td>
+  <td style="text-align:right">Paper3E:5188</td>
+  <td>finite seed depth and physical operator comparison scope</td>
+</tr>
+<tr>
+  <td><code>p3f:cor:laur17-terminal-ren-representative</code></td>
+  <td>Paper3F-CompleteDynamics-v1_256.tex:9253</td>
+  <td style="text-align:right">Paper3E:5462</td>
+  <td>same-action terminal Euler intercept and one-jet affine quotient</td>
+</tr>
+<tr>
+  <td><code>p3e:thm:uniform-reg-response-bundle</code></td>
+  <td>Paper3E-GravityAction-v1_190.tex:707</td>
+  <td style="text-align:right">Paper3E:5533</td>
+  <td>uniform positive REG smooth spectral scale hierarchy</td>
+</tr>
+</tbody>
+</table>
+<p>No incoming citation was promoted to a proof-use edge without checking the exact target and source domain. The above <strong>14</strong> links are material ancestry for these target statements only; their <code>IMPORTED_PROOF</code> edges, AND guards and source-use locators are in the batch ledger. This does not certify peer-paper derivations globally. In particular the imported joint-Dirac/noether package is <strong>REPRODUCED</strong> pending an independent full theorem proof, not opportunistically upgraded to <code>VERIFIED</code>.</p>
+<h2>6. Boundary adjudications, canonical assumptions and inherited issues</h2>
+<p>Seven detailed <code>BND-IIIE-B05-*</code> records are in the machine ledger, separating physical constitution, source generation, normal response and selected action. Key blocked promotions: scalaron Hessian → vacuum solution; mathematical cap source → native gravitational source; isometry → selected input section; scalar heat-rate orbit → physical Newton/joint-Dirac coefficient; zero-contact comparator → derived physical proper-time trajectory; group-derived subgroup clock → Clifford hierarchy; terminal Einstein representative → observed cosmological history.</p>
+<p>New condition candidates are <em>not</em> given duplicate <code>BH-A</code> identifiers in this intermediate report: <code>R_s²=UC</code> for the q-midpoint comparison and a homogeneous <code>Y,ℏ_eff</code>/measure convention. Their earliest established occurrences and equivalence to any existing canonical assumptions must be reconciled against the <strong>global</strong> AssumptionRegistry at final merge. Conditions already proved earlier (G0/GP1–GP3, <code>H_1</code>, <code>m_p=1</code>, calibrated REG/CRP4, smooth corealization) are inherited, not reopened.</p>
+<p><strong>Inherited open issues unchanged:</strong></p>
+<ul>
+<li><code>BH-IIIE-G-0001</code>, moderate: grading carrier <code>W</code> 7-real block versus <code>W_L⊕W_R</code> spin grading map (Batch 1).</li>
+<li><code>BH-IIIE-G-0002</code>, moderate: CRP4 unique base <code>B</code>-direction transport versus unlicensed uniqueness of a full <code>B×M</code> connection (Batch 1).</li>
+<li><code>BH-IIIE-G-0003</code>, moderate: noncompact relative heat trace not necessarily ordinary trace-class global heat operator (Batch 2).</li>
+<li><code>BH-IIIE-G-0004</code>, moderate: rank-four numerical midpoint value is verified only on <code>REG_0</code>, not arbitrary positive REG member (Batch 4).</li>
+</ul>
+<p><strong>Cumulative status:</strong> <code>PARTIALLY_AUDITED_WITH_6_OPEN_FINDINGS</code>. Current confidence is claim-specific E1/E3/E4 evidence, not whole-framework physical action validation. No original source paper, prior audit archive, or DAG archive is changed.</p>
+<h2>7. Next batch and release boundary</h2>
+<p><strong>Next range:</strong> lines <strong>5,612–6,449</strong> (final Paper III-E source slice). Its initial section is gravity export and actual physical action obligations, followed by Petersen, scale independence, conormal cap, boundary-Schur source, whole-action matching and quantum-reduced Newton response.</p>
+<p><strong>Final-batch tasks:</strong> finish all <strong>115/115</strong> named claim dispositions, <strong>92/92</strong> proof environments and <strong>30/30</strong> formal remarks; adjudicate all 6 findings with any final new findings; reconcile canonical conditions once; merge the typed E1/E3/E4 layer into the <strong>full original</strong> DAG Atlas; validate the core and new audit layer; preserve histories and provenance; write and read back <code>Paper00-DAGAtlas-v1_103.zip</code> and <code>Paper00-ProofChainAudits-v1_21.zip</code> with <strong>only the latest versions of each component</strong>. The source corpus and supplied ZIPs remain unchanged until that verified final release. A genuine open condition is recorded, not silently patched or erased.</p>
+<p><strong>Reproducibility:</strong> <code>Paper3E-RigorousVerificationBatch05-v1_1.json</code> records the 26 claim spans, 16 proof spans, 7 remarks, six unnamed mathematical assertions, 18 challenges, two complete gap certificates, seven boundary audits and 14 typed imported-proof uses. <code>Paper3E-Batch05-IndependentChecks-v1_1.py</code> regenerates 78 independent controls and two issue-mutant witnesses in its <code>.json</code>. All artifacts are source-identity checked by SHA-256.</p>
+<hr />
+<h1>Detailed Batch 6</h1>
+<h1>Paper III-E — Rigorous verification, Batch 06 (final source slice)</h1>
+<p><strong>Frozen source:</strong> <code>Paper3E-GravityAction-v1_190.tex</code> (<code>c09e1f6c834e784d593f12827045a22b184671324c5091f2e50b12e076e3119b</code>); framework v2.370.
+<strong>Lines audited:</strong> 5612–6449; 14/14 declarations and proof environments, 7/7 remarks; 127/127 independent controls passed.
+<strong>Batch verdicts:</strong> VERIFIED=3, VERIFIED-CONDITIONAL=11. <strong>New issue:</strong> <code>BH-IIIE-G-0007</code> (reference locator only).</p>
+<h2>1. Every formal statement and source-replayed proof</h2>
+<table>
+<thead>
+<tr>
+  <th>Claim ID</th>
+  <th style="text-align:right">Source lines</th>
+  <th>Source label</th>
+  <th>Evidence-backed status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>BH-IIIE-C-0102</td>
+  <td style="text-align:right">5809–5830</td>
+  <td><code>p3e:cor:v2216-local-global-response-scope</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0103</td>
+  <td style="text-align:right">5872–5886</td>
+  <td><code>p3e:prop:v319-petersen-gravity-firewall</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0104</td>
+  <td style="text-align:right">5912–5930</td>
+  <td><code>p3e:thm:v346-cell-scale-independence</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0105</td>
+  <td style="text-align:right">5967–5992</td>
+  <td><code>p3e:thm:v229-conormal-cap</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0106</td>
+  <td style="text-align:right">6005–6017</td>
+  <td><code>p3e:cor:v229-rooted-amplitude</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0107</td>
+  <td style="text-align:right">6037–6054</td>
+  <td><code>p3e:prop:v229-source-counterfamily</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0108</td>
+  <td style="text-align:right">6075–6082</td>
+  <td><code>p3e:prop:v229-complete-cap-injective</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0109</td>
+  <td style="text-align:right">6106–6146</td>
+  <td><code>p3e:prop:v289-cap-source-ward</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0110</td>
+  <td style="text-align:right">6209–6237</td>
+  <td><code>p3e:thm:v353-positive-schur</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0111</td>
+  <td style="text-align:right">6248–6267</td>
+  <td><code>p3e:prop:v353-schur-jet</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0112</td>
+  <td style="text-align:right">6275–6294</td>
+  <td><code>p3e:prop:v353-schur-orientation</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0113</td>
+  <td style="text-align:right">6320–6334</td>
+  <td><code>p3e:prop:v356-whole-action-jet-criterion</code></td>
+  <td>VERIFIED</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0114</td>
+  <td style="text-align:right">6369–6393</td>
+  <td><code>p3e:prop:v358-finite-reduction-covariance</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+<tr>
+  <td>BH-IIIE-C-0115</td>
+  <td style="text-align:right">6404–6429</td>
+  <td><code>p3e:cor:v358-gaussian-newton-measure</code></td>
+  <td>VERIFIED-CONDITIONAL</td>
+</tr>
+</tbody>
+</table>
+<h3>BH-IIIE-C-0102: Local source certification and global response have distinct scope</h3>
+<ul>
+<li><strong>Source/label:</strong> <code>p3e:cor:v2216-local-global-response-scope</code>, lines 5809–5830; proof 5831–5847.</li>
+<li><strong>E1 replay:</strong> Two integrations fix the affine freedom from f(C)=0,f’(C)=1. Differentiating R f’−f gives R f’’ and hence P=C+∫_C^R t D2(t)χ7(t)dt. The claim does not identify the raw Laurent Euler excess with this metric Euler function. Source III-D provides a distinct non-gluing certificate.</li>
+<li><strong>E3:</strong> 6 targeted exact/numerical controls, see machine-readable independent ledger. Controls of this sort do not alone establish physical occurrence.</li>
+<li><strong>Typed scope:</strong> Actual EXJET7 is local; global coefficient requires owned smooth second-jet transport, endpoint/source/boundary and physical normalization.</li>
+<li><strong>Exact imported prerequisites checked:</strong> <code>p3d:thm:v2216-exjet-global-obstruction</code>, <code>p3d:cor:v2216-raw-euler-nongluing</code>, <code>p3d:prop:v2216-finite-born-limits</code>, <code>p3d:thm:v2216-complete-action-jets</code></li>
+</ul>
+<h3>BH-IIIE-C-0103: No automatic metric, Newton, or curvature correction</h3>
+<ul>
+<li><strong>Source/label:</strong> <code>p3e:prop:v319-petersen-gravity-firewall</code>, lines 5872–5886; proof 5887–5894.</li>
+<li><strong>E1 replay:</strong> Existing 15-dimensional edge representations on each marked quaternionic factor yield 225=120+105 in symmetric/antisymmetric exchange eigenspaces. Availability of this auxiliary tensor does not alter the uninserted metric/operator/physical action.</li>
+<li><strong>E3:</strong> 2 targeted exact/numerical controls, see machine-readable independent ledger. Controls of this sort do not alone establish physical occurrence.</li>
+<li><strong>Typed scope:</strong> The conclusion is about non-insertion, not a no-go for an independently derived sourced finite anisotropy.</li>
+<li><strong>Exact imported prerequisites checked:</strong> <code>p1b:thm:petersen-factor-exchange</code></li>
+</ul>
+<h3>BH-IIIE-C-0104: Exact scale residual and an independent cutoff counterfamily</h3>
+<ul>
+<li><strong>Source/label:</strong> <code>p3e:thm:v346-cell-scale-independence</code>, lines 5912–5930; proof 5931–5942.</li>
+<li><strong>E1 replay:</strong> From U=Λg²/(96π²), Kp=6/Rmom² and ρH=3/π, U/(ρHKp)=(Λg Rmom)²/(24√(3π))². Changing Λg→sΛg at fixed pre-port momentum data shifts the residual by 2log(s).</li>
+<li><strong>E3:</strong> 3 targeted exact/numerical controls, see machine-readable independent ledger. Controls of this sort do not alone establish physical occurrence.</li>
+<li><strong>Typed scope:</strong> This mathematical counterfamily is pre-port only, not an actual licensed physical cutoff variation.</li>
+<li><strong>Exact imported prerequisites checked:</strong> No additional indispensable remote theorem beyond the stated action/definition and source hypotheses.</li>
+</ul>
+<h3>BH-IIIE-C-0105: Full conormal flux realization and absolute weight</h3>
+<ul>
+<li><strong>Source/label:</strong> <code>p3e:thm:v229-conormal-cap</code>, lines 5967–5992; proof 5993–6003.</li>
+<li><strong>E1 replay:</strong> For common positive K0 and GK0, constrained p0+p1=j stationary equations yield p0=j/(1+G),p1=Gj/(1+G) and positive minimum 〈j,K0^-1 j〉/[2(1+G)]. The transported source covariance commuting with UR makes the all-column norm b²γN²R²d0. Matching 2Δ requires b²γN²d0=4Δ.</li>
+<li><strong>E3:</strong> 8 targeted exact/numerical controls, see machine-readable independent ledger. Controls of this sort do not alone establish physical occurrence.</li>
+<li><strong>Typed scope:</strong> Inherited Paper I-B operator-domain positivity, full homothety and source-column covariance; physical b, normal operator and density remain unselected.</li>
+<li><strong>Exact imported prerequisites checked:</strong> <code>p1b:prop:v229-affine-conormal</code>, <code>p1b:thm:v229-coupled-homothety</code></li>
+</ul>
+<h3>BH-IIIE-C-0106: Evaluated amplitude target for the rooted block</h3>
+<ul>
+<li><strong>Source/label:</strong> <code>p3e:cor:v229-rooted-amplitude</code>, lines 6005–6017; proof 6018–6024.</li>
+<li><strong>E1 replay:</strong> The singlet spectral weights of the rooted positive 2x2 A block give 〈KD〉=Q_D. Paper I-B exact conormal theorem makes d0=Q_D/μ². Substitution of γN=μ/Rs into the preceding cap-amplitude target yields b_req²=4Δ Rs²/Q_D.</li>
+<li><strong>E3:</strong> 9 targeted exact/numerical controls, see machine-readable independent ledger. Controls of this sort do not alone establish physical occurrence.</li>
+<li><strong>Typed scope:</strong> Only on the frozen constant two-partner block with the same source, normal-bag and shared operator domain; b_req is a comparison target.</li>
+<li><strong>Exact imported prerequisites checked:</strong> <code>p1b:thm:v229-conormal-response</code>, <code>p3e:thm:v229-conormal-cap</code></li>
+</ul>
+<h3>BH-IIIE-C-0107: Geometric anchors alone do not select the source</h3>
+<ul>
+<li><strong>Source/label:</strong> <code>p3e:prop:v229-source-counterfamily</code>, lines 6037–6054; proof 6055–6069.</li>
+<li><strong>E1 replay:</strong> h is nonnegative and reciprocal; its polynomial factor has double zeros at x²=C/U and U/C. The remaining factor vanishes at x=1 and at 0,∞. The inequality [2/(1+G)]h/t² ≤ 2(1+G)(G²−2)²/G⁸≤4 gives Bε&lt;BI for 0&lt;ε&lt;1/4. Nonzero h away from anchors changes B.</li>
+<li><strong>E3:</strong> 24 targeted exact/numerical controls, see machine-readable independent ledger. Controls of this sort do not alone establish physical occurrence.</li>
+<li><strong>Typed scope:</strong> The deformed current is a mathematically admissible comparison; physical occurrence is expressly not claimed.</li>
+<li><strong>Exact imported prerequisites checked:</strong> <code>p3e:thm:v229-conormal-cap</code></li>
+</ul>
+<h3>BH-IIIE-C-0108: The retained inverse-square source cannot hide a coefficient mismatch</h3>
+<ul>
+<li><strong>Source/label:</strong> <code>p3e:prop:v229-complete-cap-injective</code>, lines 6075–6082; proof 6083–6085.</li>
+<li><strong>E1 replay:</strong> Differentiation yields d_B[R²B−σ²/B²]=R²+2σ²/B³&gt;0 for B&gt;0. Hence a common complete density at fixed R and σ forces the same B.</li>
+<li><strong>E3:</strong> 5 targeted exact/numerical controls, see machine-readable independent ledger. Controls of this sort do not alone establish physical occurrence.</li>
+<li><strong>Typed scope:</strong> Pointwise fixed R and fixed source σ; not a statement about retuning the source or boundary.</li>
+<li><strong>Exact imported prerequisites checked:</strong> No additional indispensable remote theorem beyond the stated action/definition and source hypotheses.</li>
+</ul>
+<h3>BH-IIIE-C-0109: One-anchor differential certificate for the complete inverse-square source</h3>
+<ul>
+<li><strong>Source/label:</strong> <code>p3e:prop:v289-cap-source-ward</code>, lines 6106–6146; proof 6147–6161.</li>
+<li><strong>E1 replay:</strong> The derivative of T^-1 is −T^-1 T’ T^-1, so s’=2〈j’,T^-1j〉−〈T^-1j,T’T^-1j〉. Multiplying by B² gives exact differential (B²s)’; connectedness plus one reference fixes σ². For the 4x4 port full-column trace T_s^-1=4/b² yields B²s=(BI Rs)².</li>
+<li><strong>E3:</strong> 14 targeted exact/numerical controls, see machine-readable independent ledger. Controls of this sort do not alone establish physical occurrence.</li>
+<li><strong>Typed scope:</strong> Valid for positive C1 B,T and C1 j on a connected interval with a reference. No physical native operator/current determination from Ward algebra.</li>
+<li><strong>Exact imported prerequisites checked:</strong> <code>p3e:thm:v223-cap-source</code></li>
+</ul>
+<h3>BH-IIIE-C-0110: Positive two-channel Schur characterization</h3>
+<ul>
+<li><strong>Source/label:</strong> <code>p3e:thm:v353-positive-schur</code>, lines 6209–6237; proof 6238–6246.</li>
+<li><strong>E1 replay:</strong> The block inverse top compression equals S_+^-1, and with J=(Rs/√2)P+ the trace is −Rs² Tr_{E+}S_+^-2/16. Rank2 S+=bI gives −Rs²/(8b²). For A=D=I, bI iff CC†=u²I, yielding unitary polar factor for u≠0.</li>
+<li><strong>E3:</strong> 25 targeted exact/numerical controls, see machine-readable independent ledger. Controls of this sort do not alone establish physical occurrence.</li>
+<li><strong>Typed scope:</strong> Positive Hermitian 2+2 comparison source and normalized frame; does not prove the actual Dirac DtN map equals this finite model.</li>
+<li><strong>Exact imported prerequisites checked:</strong> <code>p3e:def:v223-cap-data</code></li>
+</ul>
+<h3>BH-IIIE-C-0111: Exact first curvature-jet target</h3>
+<ul>
+<li><strong>Source/label:</strong> <code>p3e:prop:v353-schur-jet</code>, lines 6248–6267; proof 6268–6273.</li>
+<li><strong>E1 replay:</strong> Two derivatives of S=A−CD^-1C† at C(0)=0 give S’(0)=A’(0), S’’(0)=A’’(0)−2C’(0)C’(0)†. From t=R/(2Rs)+O(R³), b’’(0)=−c²/(2Rs²).</li>
+<li><strong>E3:</strong> 2 targeted exact/numerical controls, see machine-readable independent ledger. Controls of this sort do not alone establish physical occurrence.</li>
+<li><strong>Typed scope:</strong> Requires C² regularity through reference R=0 and the specifically justified normalization at R=0; native equality is a test.</li>
+<li><strong>Exact imported prerequisites checked:</strong> <code>p3e:thm:v353-positive-schur</code></li>
+</ul>
+<h3>BH-IIIE-C-0112: Scalar-source non-identifiability</h3>
+<ul>
+<li><strong>Source/label:</strong> <code>p3e:prop:v353-schur-orientation</code>, lines 6275–6294; proof 6295–6300.</li>
+<li><strong>E1 replay:</strong> For K_U off-diagonal uU, Schur block bI gives common scalar trace but mixed inverse block −uU/b retains U orientation. Separate Sε diagonal positive examples have identical Tr Sε^-2=2/b² while not proportional to the identity.</li>
+<li><strong>E3:</strong> 9 targeted exact/numerical controls, see machine-readable independent ledger. Controls of this sort do not alone establish physical occurrence.</li>
+<li><strong>Typed scope:</strong> A scalar return alone cannot identify current orientation, full response or same-source coupling.</li>
+<li><strong>Exact imported prerequisites checked:</strong> <code>p3e:thm:v353-positive-schur</code></li>
+</ul>
+<h3>BH-IIIE-C-0113: Equivalent first-jet and action matching</h3>
+<ul>
+<li><strong>Source/label:</strong> <code>p3e:prop:v356-whole-action-jet-criterion</code>, lines 6320–6334; proof 6335–6344.</li>
+<li><strong>E1 replay:</strong> On a connected open regular source chart, zero differential of S_phys−zS_J implies constant difference, and the converse follows by differentiation. The x,y example matches the EH x coefficient at z=1/96 but differs in source y curvature.</li>
+<li><strong>E3:</strong> 1 targeted exact/numerical controls, see machine-readable independent ledger. Controls of this sort do not alone establish physical occurrence.</li>
+<li><strong>Typed scope:</strong> One constant z and all retained variations on one connected chart; physical projection itself not generated.</li>
+<li><strong>Exact imported prerequisites checked:</strong> <code>p3e:prop:v2211-whole-action-newton-certificate</code></li>
+</ul>
+<h3>BH-IIIE-C-0114: Exact finite reduction covariance test</h3>
+<ul>
+<li><strong>Source/label:</strong> <code>p3e:prop:v358-finite-reduction-covariance</code>, lines 6369–6393; proof 6394–6402.</li>
+<li><strong>E1 replay:</strong> Differentiation under positive finite integration gives z〈S_u〉_z and Hessian z〈S_uv〉−z² Cov_z(S_u,S_v)/hbar. Differentiating the normalized expectation with respect to z gives −Cov_z(S_u,S)/hbar and the oriented integral from 1 to z.</li>
+<li><strong>E3:</strong> 11 targeted exact/numerical controls, see machine-readable independent ledger. Controls of this sort do not alone establish physical occurrence.</li>
+<li><strong>Typed scope:</strong> Source-independent internal measure and legal interchange; if external source-dependent density is present it contributes additional terms.</li>
+<li><strong>Exact imported prerequisites checked:</strong> No additional indispensable remote theorem beyond the stated action/definition and source hypotheses.</li>
+</ul>
+<h3>BH-IIIE-C-0115: Gaussian determinant and measure criterion</h3>
+<ul>
+<li><strong>Source/label:</strong> <code>p3e:cor:v358-gaussian-newton-measure</code>, lines 6404–6429; proof 6430–6435.</li>
+<li><strong>E1 replay:</strong> Complete the Gaussian square with source-dependent positive K and common density rho(x)dy: Γ_z=z S_red+(hbar/2)ln detK−hbar ln rho+(m hbar/2)ln z + constant. Therefore dΓ_z−z dΓ_1=hbar(1−z)d ln(sqrt(detK)/rho). K=e^{x²},rho=1 yields zero first derivative but nonzero Hessian at 0.</li>
+<li><strong>E3:</strong> 7 targeted exact/numerical controls, see machine-readable independent ledger. Controls of this sort do not alone establish physical occurrence.</li>
+<li><strong>Typed scope:</strong> Gaussian-specific source-dependent measure, identical for all z; extra measure requirement is not a Born–Hopf physical measure selection.</li>
+<li><strong>Exact imported prerequisites checked:</strong> <code>p3e:prop:v358-finite-reduction-covariance</code></li>
+</ul>
+<h2>2. Formal remarks</h2>
+<table>
+<thead>
+<tr>
+  <th>Lines</th>
+  <th>Remark</th>
+  <th>Disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>5896–5905</td>
+  <td>A possible sixfold angular diagnostic, not a gravitational source</td>
+  <td>FORMALIZED-SCOPE</td>
+</tr>
+<tr>
+  <td>5943–5953</td>
+  <td>Physical owner status</td>
+  <td>FORMALIZED-SCOPE</td>
+</tr>
+<tr>
+  <td>6087–6100</td>
+  <td>What the conormal theorem establishes</td>
+  <td>SOURCE_REFERENCE_UNRESOLVED</td>
+</tr>
+<tr>
+  <td>6162–6169</td>
+  <td>Scope of the one-anchor test</td>
+  <td>FORMALIZED-SCOPE</td>
+</tr>
+<tr>
+  <td>6302–6313</td>
+  <td>Native-source firewall and dependence</td>
+  <td>FORMALIZED-SCOPE</td>
+</tr>
+<tr>
+  <td>6346–6355</td>
+  <td>Separate physical matching obligation</td>
+  <td>FORMALIZED-SCOPE</td>
+</tr>
+<tr>
+  <td>6437–6446</td>
+  <td>Physical projection remains an independent gate</td>
+  <td>FORMALIZED-SCOPE</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Source-local G-0007 certificate</h2>
+<ul>
+<li><strong>ID:</strong> BH-IIIE-G-0007; <code>DAG_COVERAGE / MISSING_EVIDENCE</code>; MINOR; OPEN.</li>
+<li><strong>Origin:</strong> <code>Paper3E-GravityAction-v1_190.tex:6095–6099</code>, <code>p3e:rem:v229-native-selection</code>.</li>
+<li><strong>Exact failure:</strong> <code>p3f:sec:v229-action-tests</code> is not defined in any <code>.tex</code> source of the authoritative <code>Paper00-PapersMinimal-v2_370</code> archive. An apparently related section <code>p3f:sec:v229-cap-uv-hessian</code> occurs at Paper III-F:9071, but cannot be substituted without checking intent and coverage.</li>
+<li><strong>E3/E4:</strong> complete reference-label census; no proof step in the conormal flux theorem requires the dangling locator.</li>
+<li><strong>Impact:</strong> navigability and source-matched downstream-reference certificate only; no established mathematical refutation or physical prediction effect.</li>
+<li><strong>Resolution requirement:</strong> locate current intended Paper III-F section/results and replace/migrate the reference in an explicitly separate source-editing task. The audit leaves source unchanged.</li>
+</ul>
+<h2>4. E4 adversarial challenges</h2>
+<table>
+<thead>
+<tr>
+  <th>ID</th>
+  <th>Attack</th>
+  <th>Disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>E4-IIIE-B06-001</td>
+  <td>Infer a global physical metric from local EXJET7 Hessian alone</td>
+  <td>REJECTED-BY-SOURCE</td>
+</tr>
+<tr>
+  <td>E4-IIIE-B06-002</td>
+  <td>Read Petersen auxiliary 120-dimensional exchange eigenspace as a new 120-element 2I action</td>
+  <td>OUT-OF-DOMAIN</td>
+</tr>
+<tr>
+  <td>E4-IIIE-B06-003</td>
+  <td>Vary cutoff s at fixed momentum and falsely claim true physical history</td>
+  <td>INVALID-PHYSICAL-PROMOTION</td>
+</tr>
+<tr>
+  <td>E4-IIIE-B06-004</td>
+  <td>Assert conormal b=1 follows from unit incoming singlet</td>
+  <td>REJECTED</td>
+</tr>
+<tr>
+  <td>E4-IIIE-B06-005</td>
+  <td>Retain only one conormal source column</td>
+  <td>OUT-OF-DOMAIN</td>
+</tr>
+<tr>
+  <td>E4-IIIE-B06-006</td>
+  <td>Conclude finite reciprocal midpoint and endpoints determine unique source profile</td>
+  <td>VALID-COUNTERFAMILY</td>
+</tr>
+<tr>
+  <td>E4-IIIE-B06-007</td>
+  <td>Use a variable physical sigma to evade injection at fixed sigma</td>
+  <td>OUT-OF-DOMAIN</td>
+</tr>
+<tr>
+  <td>E4-IIIE-B06-008</td>
+  <td>One reference s and Ward only at one point imply s=σ²/B² globally</td>
+  <td>VALID-REJECTION</td>
+</tr>
+<tr>
+  <td>E4-IIIE-B06-009</td>
+  <td>Scalar Schur inverse-square return determines unitary channel orientation</td>
+  <td>VALID-NONIDENTIFIABILITY</td>
+</tr>
+<tr>
+  <td>E4-IIIE-B06-010</td>
+  <td>Treat C(0)=0 as sufficient to fix A(0),D(0) and Schur first jets</td>
+  <td>OUT-OF-DOMAIN</td>
+</tr>
+<tr>
+  <td>E4-IIIE-B06-011</td>
+  <td>Gravity-only EH coefficient matching proves all-direction physical action equality</td>
+  <td>VALID-COUNTEREXAMPLE</td>
+</tr>
+<tr>
+  <td>E4-IIIE-B06-012</td>
+  <td>Assume quantum first-jet scaling follows from classical action factor at fixed hbar</td>
+  <td>VALID-OBSTRUCTION</td>
+</tr>
+<tr>
+  <td>E4-IIIE-B06-013</td>
+  <td>Treat nonexistent PaperIII-F cap-test section label as verified proof import</td>
+  <td>VALID-SOURCE-LOCATOR</td>
+</tr>
+<tr>
+  <td>E4-IIIE-B06-014</td>
+  <td>Assume Gaussian first source derivative at one point ensures all jets match</td>
+  <td>VALID-HESSIAN-COUNTEREXAMPLE</td>
+</tr>
+<tr>
+  <td>E4-IIIE-B06-015</td>
+  <td>Demand any continuous U(R) has an operator curvature derivative</td>
+  <td>OUT-OF-CLAIM</td>
+</tr>
+</tbody>
+</table>
+<h2>5. Qualified downstream and upstream dependencies</h2>
+<ul>
+<li>Papers III-D and I-B imports were checked only where directly used by Paper III-E. Imported source proof hypotheses retain their own domain, normal operator and density conditions.</li>
+<li>Earlier G-0005 is in a general cap family. This final source section explicitly restricts the conormal member to <code>R_s=√(UC)</code>; this provides a domain-specific valid route, not a retroactive unconditional proof of the earlier claim.</li>
+<li>Earlier G-0006 dimensional Gaussian coordinate/measure issue remains unresolved. The last finite quantum theorem independently demonstrates what additional measure information is required for a physical Newton projection.</li>
+<li>The raw <code>U_J^raw=96U</code> and the pre-port cell ratio do not supply a common-owner physical Newton action or observed gravitational normalization.</li>
+</ul>
+<h2>6. Audit/verification boundary</h2>
+<ul>
+<li>All fourteen formal proofs were source-replayed. Independent evidence uses exact calculus, positive matrix/spectral reconstruction, counterfamilies, finite Gibbs differentiation, determinant tests and a complete cross-reference census.</li>
+<li>Code and JSON companion files preserve every control and result. E1, E3 and E4 are separate evidence roles conducted by one executor, not a claim of simultaneous independent-agent work.</li>
+<li>The complete six-batch source census and the seven issue certificates will be integrated in the versioned Atlas audit layer. The proof-chain audit ZIP contains one finished Paper3E audit file, not every intermediate batch.</li>
+</ul>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

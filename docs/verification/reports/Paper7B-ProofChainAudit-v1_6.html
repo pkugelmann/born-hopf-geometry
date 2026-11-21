@@ -1,0 +1,1815 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper7B-ProofChainAudit-v1_6 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper7B-ProofChainAudit-v1_6 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper7B ProofChainAudit v1_6</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper7B-ProofChainAudit-v1_6.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Paper7B — current-source repair and bounded-check addendum (18 November 2026)</h1>
+<p><strong>Current source:</strong> <code>Paper7B-QCDReadouts-v1_164.tex</code>; SHA-256 <code>2659e5aa8a1cc87d0cd186c2efc006ce0c5b6f5f61493017fea01b534cdc8487</code>.
+<strong>Framework:</strong> Paper00-PapersMinimal-v3_032.zip; <strong>DAG:</strong> Paper00-DAGAtlas-v1_182.zip; <strong>Audit:</strong> Paper00-ProofChainAudits-v1_74.zip.
+<strong>Scope:</strong> TARGETED SOURCE REPAIR / SELECTED CLAIM LOCAL RECHECK, <strong>not a new full-paper E3/E4 audit</strong>. Historical text and findings below are preserved. Old open verdicts are not erased; consult the effective status ledger <code>Paper00-ClosedGapCrosswalk-v1_4.json</code>.</p>
+<p><strong>Repair:</strong> two-state transfer Ritz values, exact source-visible Schur pole test; no actual pole owner/physical QCD spectrum asserted.</p>
+<p><strong>Evidence:</strong> <code>Paper00-MultiDomainReverificationBatch2-v1_1.md</code>, source patch diff and 38/38 combined scoped checks. Physical action, state, pole, history and observational occurrence remain conditional unless independently proved from actual owners.</p>
+<hr />
+<h2>Previous audit preserved as historical document</h2>
+<h1>Paper7B — current-source bounded verification annex, 2026-11-18</h1>
+<p>This is the latest full audit report, with the original historical audit text preserved verbatim below. Current source matches v3.031; older <code>OPEN</code> entries retain historical meaning. For the <strong>effective current disposition</strong>, see <code>Paper00-QCDReverificationBatch1-v1_1.md</code> and crosswalk v1.3 in the DAG. This is not a full new-paper E3/E4 audit.</p>
+<p><strong>Reviewed roots:</strong> 13 · <strong>Local corrections verified:</strong> 7 · <strong>Owner-gated:</strong> 6.</p>
+<table>
+<thead>
+<tr>
+  <th>Issue</th>
+  <th style="text-align:right">Current source line</th>
+  <th>Effective source disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-VIIB-G-0134</code></td>
+  <td style="text-align:right">227</td>
+  <td>Scoped local correction verified</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0135</code></td>
+  <td style="text-align:right">796</td>
+  <td>Source conditional, owner unresolved</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0137</code></td>
+  <td style="text-align:right">974</td>
+  <td>Scoped local correction verified</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0138</code></td>
+  <td style="text-align:right">1149</td>
+  <td>Scoped local correction verified</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0139</code></td>
+  <td style="text-align:right">908</td>
+  <td>Scoped local correction verified</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0140</code></td>
+  <td style="text-align:right">1801</td>
+  <td>Scoped local correction verified</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0141</code></td>
+  <td style="text-align:right">1919</td>
+  <td>Source conditional, owner unresolved</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0142</code></td>
+  <td style="text-align:right">2692</td>
+  <td>Source conditional, owner unresolved</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0143</code></td>
+  <td style="text-align:right">2987</td>
+  <td>Scoped local correction verified</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0144</code></td>
+  <td style="text-align:right">3591</td>
+  <td>Scoped local correction verified</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0145</code></td>
+  <td style="text-align:right">3794</td>
+  <td>Source conditional, owner unresolved</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0146</code></td>
+  <td style="text-align:right">4266</td>
+  <td>Source conditional, owner unresolved</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0147</code></td>
+  <td style="text-align:right">4809</td>
+  <td>Source conditional, owner unresolved</td>
+</tr>
+</tbody>
+</table>
+<p><strong>New issue <code>BH-VIIB-G-0148</code>:</strong> trial 2x2 transfer-block pole identification is false without reduction; in-domain finite counterexample recorded in batch report.</p>
+<hr />
+<h2>Preserved historical source-era audit (original text below)</h2>
+<h1>Source migration and repair-integration addendum — Paper7B-ProofChainAudit-v1_4.md</h1>
+<p><strong>Integration release:</strong> <code>Paper00-PapersMinimal-v3_007.zip</code>, 14 November 2026.
+<strong>Current paper source:</strong> <code>Paper7B-QCDReadouts-v1_157.tex</code>.
+<strong>Status:</strong> <code>SOURCE_INTEGRATED; GLOBAL_SOURCE_REAUDIT_PENDING</code>. An inherited historical audit is not a correctness certificate for the newer current manuscript.
+<strong>Evidence policy:</strong> Local algebraic proofs and scoped tests do not discharge physical source/observable interfaces or automatically alter the canonical proof DAG.</p>
+<hr />
+<h2>Historical source-bound audit: Paper7B-ProofChainAudit-v1_3.md</h2>
+<h1>Repair addendum — Paper7B, 13 November 2026</h1>
+<p><strong>Current source:</strong> <code>Paper7B-QCDReadouts-v1_151.tex</code> (SHA-256 <code>efe40952e04b0c845e1009c94a0acf95b5260a85280eaa379f948bca6c5318e1</code>)<br />
+<strong>Inherited audit:</strong> <code>Paper7B-ProofChainAudit-v1_2.md</code>; the complete text follows, unedited as historical evidence.<br />
+<strong>Disposition:</strong> SOURCE-REPAIR EVENT, not independent full re-audit; no theorem/physical status promotion.</p>
+<table>
+<thead>
+<tr>
+  <th>Distinct source-audit issue</th>
+  <th>Current TeX location(s)</th>
+  <th>Repair/scope</th>
+  <th>Remaining status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-VIIB-G-0134</code></td>
+  <td><code>Paper7B-QCDReadouts-v1_151.tex:210</code>, <code>Paper7B-QCDReadouts-v1_151.tex:212</code></td>
+  <td>Transfer spectrum is taken on Ran(P) instead of ambient PHP with spurious zero eigenvalues.</td>
+  <td>SOURCE_REPAIRED; REAUDIT PENDING</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0135</code></td>
+  <td><code>Paper7B-QCDReadouts-v1_151.tex:727</code>, <code>Paper7B-QCDReadouts-v1_151.tex:729</code>, <code>Paper7B-QCDReadouts-v1_151.tex:737</code></td>
+  <td>Physical nucleon-sector spectral claim now requires a nonzero reducing projection [PN,H]=0.</td>
+  <td>SOURCE_REPAIRED; IMPORTED/PHYSICAL CONDITION OPEN</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0137</code></td>
+  <td><code>Paper7B-QCDReadouts-v1_151.tex:908</code>, <code>Paper7B-QCDReadouts-v1_151.tex:922</code>, <code>Paper7B-QCDReadouts-v1_151.tex:934</code></td>
+  <td>Two-state Hermitian mixing eigenvalues corrected from kappa squared to absolute kappa squared.</td>
+  <td>SOURCE_REPAIRED; REAUDIT PENDING</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0138</code></td>
+  <td><code>Paper7B-QCDReadouts-v1_151.tex:1085</code>, <code>Paper7B-QCDReadouts-v1_151.tex:1103</code></td>
+  <td>Reported two-loop QCD scale explicitly requires and states the external MZ reference and beta normalization.</td>
+  <td>SOURCE_REPAIRED; IMPORTED/PHYSICAL CONDITION OPEN</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0139</code></td>
+  <td><code>Paper7B-QCDReadouts-v1_151.tex:845</code>, <code>Paper7B-QCDReadouts-v1_151.tex:856</code></td>
+  <td>Simple-pole residue uses holomorphic numerator at pole divided by denominator derivative; higher jets affect finite part.</td>
+  <td>SOURCE_REPAIRED; REAUDIT PENDING</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0140</code></td>
+  <td><code>Paper7B-QCDReadouts-v1_151.tex:1731</code>, <code>Paper7B-QCDReadouts-v1_151.tex:1740</code>, <code>Paper7B-QCDReadouts-v1_151.tex:1747</code></td>
+  <td>Finite-volume Feynman–Hellmann hadron mass response subtracts the vacuum-energy derivative.</td>
+  <td>SOURCE_REPAIRED; IMPORTED/PHYSICAL CONDITION OPEN</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0141</code></td>
+  <td><code>Paper7B-QCDReadouts-v1_151.tex:1847</code>, <code>Paper7B-QCDReadouts-v1_151.tex:1870</code>, <code>Paper7B-QCDReadouts-v1_151.tex:1873</code></td>
+  <td>Winding number alone no longer identifies Noether baryon current without action/current-matched map.</td>
+  <td>SOURCE_REPAIRED; IMPORTED/PHYSICAL CONDITION OPEN</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0142</code></td>
+  <td><code>Paper7B-QCDReadouts-v1_151.tex:2626</code>, <code>Paper7B-QCDReadouts-v1_151.tex:2641</code></td>
+  <td>PDF normalization on [0,1] requires actual support/crossing and endpoint and zero-mode controls.</td>
+  <td>SOURCE_REPAIRED; IMPORTED/PHYSICAL CONDITION OPEN</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0143</code></td>
+  <td><code>Paper7B-QCDReadouts-v1_151.tex:2919</code>, <code>Paper7B-QCDReadouts-v1_151.tex:2929</code></td>
+  <td>Negative-x GPD antiquark branch signs are stated separately for unpolarized and helicity sectors.</td>
+  <td>SOURCE_REPAIRED; IMPORTED/PHYSICAL CONDITION OPEN</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0144</code></td>
+  <td><code>Paper7B-QCDReadouts-v1_151.tex:3521</code>, <code>Paper7B-QCDReadouts-v1_151.tex:3537</code></td>
+  <td>Dimensionful Hamiltonian source uses -T/V times logZ derivative, distinct from dimensionless-exponent convention.</td>
+  <td>SOURCE_REPAIRED; REAUDIT PENDING</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0145</code></td>
+  <td><code>Paper7B-QCDReadouts-v1_151.tex:3724</code>, <code>Paper7B-QCDReadouts-v1_151.tex:3737</code>, <code>Paper7B-QCDReadouts-v1_151.tex:3741</code></td>
+  <td>Abstract geometric F_sigma is separated from Hurwitz E_sigma by a chosen, not automatic, isometric map.</td>
+  <td>SOURCE_REPAIRED; IMPORTED/PHYSICAL CONDITION OPEN</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0146</code></td>
+  <td><code>Paper7B-QCDReadouts-v1_151.tex:4226</code>, <code>Paper7B-QCDReadouts-v1_151.tex:4264</code></td>
+  <td>Positive spectral measures are not claimed to imply analytic continuation to a second resonance sheet.</td>
+  <td>SOURCE_REPAIRED; IMPORTED/PHYSICAL CONDITION OPEN</td>
+</tr>
+<tr>
+  <td><code>BH-VIIB-G-0147</code></td>
+  <td><code>Paper7B-QCDReadouts-v1_151.tex:4713</code>, <code>Paper7B-QCDReadouts-v1_151.tex:4715</code></td>
+  <td>Pure-glue member is a typed restriction of QCD data with its own vacuum energy, not literal tuple inclusion.</td>
+  <td>SOURCE_REPAIRED; IMPORTED/PHYSICAL CONDITION OPEN</td>
+</tr>
+</tbody>
+</table>
+<p>See <code>Paper00-AuditRepairBatch-v1_2.md</code> and the 24/24 scoped math controls in the active DAG atlas for checks and counterexamples. Historical source-hash and line locations below apply <strong>only</strong> to the previous paper version. Do not reinterpret their original <code>OPEN</code>, <code>REFUTED</code>, or <code>VERIFIED</code> labels as new-version global adjudications.</p>
+<hr />
+<h2>Historical audit baseline (unaltered text)</h2>
+<blockquote>
+<p><strong>Merge-only identifier reconciliation (Atlas v1.120).</strong> This is the complete unchanged mathematical Paper VII-B v1.1 audit, reissued as v1.2 solely to prevent independent issue-ID collisions. The 14 source-local <code>BH-G-000134</code>–<code>BH-G-000147</code> references are globally <code>BH-VIIB-G-0134</code>–<code>BH-VIIB-G-0147</code>. Paper VII-A retains the bare <code>BH-G-...</code> identities. See <code>DAG/IssueIDReconciliation-v1_120.json</code> for the crosswalk. This merge is not a new mathematical verification or a gap closure.</p>
+</blockquote>
+<h1>Born–Hopf Geometry — Paper VII-B rigorous mathematical proof-chain audit</h1>
+<p><strong>Artifact:</strong> <code>Paper7B-ProofChainAudit-v1_2.md</code>
+<strong>Audit unit:</strong> current <code>Paper7B-QCDReadouts-v1_150.tex</code>, framework v2.371 source archive
+<strong>Protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code> with proof-chain provenance v1.1
+<strong>Scope:</strong> all 195 named mathematical statements and material unnamed step/observable interfaces in the target Paper VII-B source only.
+<strong>Classification:</strong> <code>FULLY_AUDITED_WITH_OPEN_GAPS</code> in the source-statement disposition sense; 1 printed result refuted and 13 open issues, not a globally verified or physically complete QCD theory.
+<strong>Reviewer:</strong> one executor performing E1 replay, independent E3 checks and E4 adversarial tests sequentially; <strong>no multi-agent independent agreement claimed</strong>.
+<strong>Frozen source SHA-256:</strong> <code>d23f9643784f1963e50d51a45fcdecb3f37508414154d855008bfd5cdb7bc2c0</code>.</p>
+<h2>Cumulative verdicts</h2>
+<table>
+<thead>
+<tr>
+  <th>Disposition</th>
+  <th style="text-align:right">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>VERIFIED</code></td>
+  <td style="text-align:right">59</td>
+</tr>
+<tr>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td style="text-align:right">67</td>
+</tr>
+<tr>
+  <td><code>REPRODUCED</code></td>
+  <td style="text-align:right">18</td>
+</tr>
+<tr>
+  <td><code>FORMALIZED</code></td>
+  <td style="text-align:right">40</td>
+</tr>
+<tr>
+  <td><code>UNRESOLVED</code></td>
+  <td style="text-align:right">10</td>
+</tr>
+<tr>
+  <td><code>REFUTED</code></td>
+  <td style="text-align:right">1</td>
+</tr>
+<tr>
+  <td><strong>Total</strong></td>
+  <td style="text-align:right"><strong>195</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The 195-statement count is the named-environment census, not an assertion that only named formulae were read. The audit also inspected essential unnamed equations, source assumptions, physical readout typing, imported theorem instances and explicit exclusions. Conditional statuses retain the actual domain guards and are not promoted to physical occurrence.</p>
+<h2>Batch summary</h2>
+<table>
+<thead>
+<tr>
+  <th>Batch</th>
+  <th style="text-align:right">Claim records</th>
+  <th>Source span</th>
+  <th style="text-align:right">Number of independently executed tests</th>
+  <th>New issue IDs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td style="text-align:right">31</td>
+  <td>109–832</td>
+  <td style="text-align:right">0</td>
+  <td>BH-VIIB-G-0134, BH-VIIB-G-0135, BH-VIIB-G-0136</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td style="text-align:right">31</td>
+  <td>833–1681</td>
+  <td style="text-align:right">15</td>
+  <td>BH-VIIB-G-0137, BH-VIIB-G-0138, BH-VIIB-G-0139</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td style="text-align:right">36</td>
+  <td>1682–2633</td>
+  <td style="text-align:right">24</td>
+  <td>BH-VIIB-G-0140, BH-VIIB-G-0141, BH-VIIB-G-0142</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td style="text-align:right">44</td>
+  <td>2637–3881</td>
+  <td style="text-align:right">50</td>
+  <td>BH-VIIB-G-0143, BH-VIIB-G-0144, BH-VIIB-G-0145</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td style="text-align:right">53</td>
+  <td>3887–5695</td>
+  <td style="text-align:right">77</td>
+  <td>BH-VIIB-G-0146, BH-VIIB-G-0147</td>
+</tr>
+</tbody>
+</table>
+<h2>All source-bound named result dispositions</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">#</th>
+  <th>Label</th>
+  <th style="text-align:right">Source line</th>
+  <th>Class</th>
+  <th>Adjudicated scope/step</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">1</td>
+  <td><code>p11:def:imported-paper-x-core-datum</code></td>
+  <td style="text-align:right">109–124</td>
+  <td><code>FORMALIZED</code></td>
+  <td>imported exact tuple; no mathematical occurrence promotion</td>
+</tr>
+<tr>
+  <td style="text-align:right">2</td>
+  <td><code>p11:cor:v147-generated-readout-descendants</code></td>
+  <td style="text-align:right">126–141</td>
+  <td><code>REPRODUCED</code></td>
+  <td>generated structural readout scope via imported Paper7A/Paper2A; upstream source matched, independent physical grammar proof not re-executed</td>
+</tr>
+<tr>
+  <td style="text-align:right">3</td>
+  <td><code>p11:cor:v2187-spectrum-before-population</code></td>
+  <td style="text-align:right">154–174</td>
+  <td><code>VERIFIED</code></td>
+  <td>finite functional calculus and preparation-independent spectrum</td>
+</tr>
+<tr>
+  <td style="text-align:right">4</td>
+  <td><code>p11:rem:conditional-strong-interface-scope</code></td>
+  <td style="text-align:right">186–201</td>
+  <td><code>FORMALIZED</code></td>
+  <td>scope limitation and numeric ancestry reminder</td>
+</tr>
+<tr>
+  <td style="text-align:right">5</td>
+  <td><code>UNLABELED:Paper7B:definition:209</code></td>
+  <td style="text-align:right">209–221</td>
+  <td><code>FORMALIZED</code></td>
+  <td>readout definitions; spectrum-of-compression domain notation under review</td>
+</tr>
+<tr>
+  <td style="text-align:right">6</td>
+  <td><code>p11:cor:v154-km-selector-retired</code></td>
+  <td style="text-align:right">228–236</td>
+  <td><code>FORMALIZED</code></td>
+  <td>conditional spurion uniqueness claim; actual G16 transport retained</td>
+</tr>
+<tr>
+  <td style="text-align:right">7</td>
+  <td><code>p11:thm:singlet-support-classification</code></td>
+  <td style="text-align:right">329–345</td>
+  <td><code>REPRODUCED</code></td>
+  <td>SU3 invariant contractions, exhaustive primitive types checked to first tensor degrees; no full independent FFT audit</td>
+</tr>
+<tr>
+  <td style="text-align:right">8</td>
+  <td><code>p11:thm:hadronic-fermion-parity</code></td>
+  <td style="text-align:right">351–360</td>
+  <td><code>VERIFIED</code></td>
+  <td>triality + parity mod 2</td>
+</tr>
+<tr>
+  <td style="text-align:right">9</td>
+  <td><code>p11:cor:minimal-baryon-exchange-symmetry</code></td>
+  <td style="text-align:right">369–372</td>
+  <td><code>VERIFIED</code></td>
+  <td>antisymmetric determinant and fermion exchange</td>
+</tr>
+<tr>
+  <td style="text-align:right">10</td>
+  <td><code>p11:thm:color-casimir-attraction-channels</code></td>
+  <td style="text-align:right">384–402</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>all 5 Casimir factors checked independently; sign-as-attraction only on leading one-gluon-exchange branch; current V-C import is p7v2:prop:color-channels (renamed title)</td>
+</tr>
+<tr>
+  <td style="text-align:right">11</td>
+  <td><code>p11:thm:primitive-channel-loss-hierarchy</code></td>
+  <td style="text-align:right">415–431</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>color Casimir not dynamic amplitude; spectral gap on ran(P) only</td>
+</tr>
+<tr>
+  <td style="text-align:right">12</td>
+  <td><code>p11:cor:numerical-primitive-channel-floors</code></td>
+  <td style="text-align:right">437–442</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>family H=E0I+cP and restricted gap; depends on ran(P) typing</td>
+</tr>
+<tr>
+  <td style="text-align:right">13</td>
+  <td><code>p11:thm:v323-petersen-k-core-spectrum</code></td>
+  <td style="text-align:right">460–477</td>
+  <td><code>VERIFIED</code></td>
+  <td>exact characteristic polys for k=0,...,5 plus all 32 subset numerical checks independent from 7D proof</td>
+</tr>
+<tr>
+  <td style="text-align:right">14</td>
+  <td><code>p11:cor:v323-2-3-contrast</code></td>
+  <td style="text-align:right">490–501</td>
+  <td><code>VERIFIED</code></td>
+  <td>norm of k2 vs k3 eigenvalues and J map separation</td>
+</tr>
+<tr>
+  <td style="text-align:right">15</td>
+  <td><code>p11:prop:v323-actual-hadron-spectrum-criterion</code></td>
+  <td style="text-align:right">508–521</td>
+  <td><code>REPRODUCED</code></td>
+  <td>source-owned physical embedding necessary; excludes geometry-only pole mapping</td>
+</tr>
+<tr>
+  <td style="text-align:right">16</td>
+  <td><code>p11:prop:v327-meson-gram-support</code></td>
+  <td style="text-align:right">540–566</td>
+  <td><code>VERIFIED</code></td>
+  <td>Gram eigen decomposition/PSD condition</td>
+</tr>
+<tr>
+  <td style="text-align:right">17</td>
+  <td><code>p11:def:v327-meson-squared-gap-observable</code></td>
+  <td style="text-align:right">573–590</td>
+  <td><code>FORMALIZED</code></td>
+  <td>conditional source-owned squared mass gap test</td>
+</tr>
+<tr>
+  <td style="text-align:right">18</td>
+  <td><code>p11:rem:v327-meson-matched-spectrum-benchmark</code></td>
+  <td style="text-align:right">592–618</td>
+  <td><code>FORMALIZED</code></td>
+  <td>PDG benchmark orientation; no theorem, approximate only</td>
+</tr>
+<tr>
+  <td style="text-align:right">19</td>
+  <td><code>p11:prop:v327-no-automatic-meson-spectrum</code></td>
+  <td style="text-align:right">620–631</td>
+  <td><code>VERIFIED</code></td>
+  <td>parameter-varying conditional Hamiltonian vs fixed projector</td>
+</tr>
+<tr>
+  <td style="text-align:right">20</td>
+  <td><code>p11:def:hadronic-eigenvalue-problem</code></td>
+  <td style="text-align:right">658–667</td>
+  <td><code>FORMALIZED</code></td>
+  <td>actual invariant sector definition, refinement guard</td>
+</tr>
+<tr>
+  <td style="text-align:right">21</td>
+  <td><code>p11:thm:native-spectral-correlator-mass-bridge</code></td>
+  <td style="text-align:right">670–685</td>
+  <td><code>VERIFIED</code></td>
+  <td>positive spectral Laplace and log derivative on nonzero overlap branch</td>
+</tr>
+<tr>
+  <td style="text-align:right">22</td>
+  <td><code>p11:rem:v2217-temporal-source-clock</code></td>
+  <td style="text-align:right">692–706</td>
+  <td><code>VERIFIED</code></td>
+  <td>2x explicit cubic clock sign tests C0&lt;C1</td>
+</tr>
+<tr>
+  <td style="text-align:right">23</td>
+  <td><code>p11:prop:dimensional-hadron-mass-form</code></td>
+  <td style="text-align:right">709–718</td>
+  <td><code>VERIFIED</code></td>
+  <td>reference-unit dimensional identity</td>
+</tr>
+<tr>
+  <td style="text-align:right">24</td>
+  <td><code>p11:thm:native-nucleon-mass-eigenvalue</code></td>
+  <td style="text-align:right">724–734</td>
+  <td><code>UNRESOLVED</code></td>
+  <td>isospin-labelled physical projector not shown to reduce actual H on general unequal-mass branch</td>
+</tr>
+<tr>
+  <td style="text-align:right">25</td>
+  <td><code>p11:def:finite-baryon-flux-junction-support</code></td>
+  <td style="text-align:right">741–751</td>
+  <td><code>FORMALIZED</code></td>
+  <td>epsilon-singlet flux-leg representation</td>
+</tr>
+<tr>
+  <td style="text-align:right">26</td>
+  <td><code>p11:lem:no-incoherent-baryon-junction-branch</code></td>
+  <td style="text-align:right">753–758</td>
+  <td><code>REPRODUCED</code></td>
+  <td>finite Wedderburn commutant criterion imported from VII-A; no branch occurrence asserted</td>
+</tr>
+<tr>
+  <td style="text-align:right">27</td>
+  <td><code>p11:thm:baryon-flux-junction-contraction</code></td>
+  <td style="text-align:right">764–773</td>
+  <td><code>VERIFIED</code></td>
+  <td>3C_F+2pair=0 gives -2</td>
+</tr>
+<tr>
+  <td style="text-align:right">28</td>
+  <td><code>p11:thm:positive-native-nucleon-mass-floor</code></td>
+  <td style="text-align:right">779–788</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>positive uniform floor iff inf_L gap&gt;0, provided exact P_N sector</td>
+</tr>
+<tr>
+  <td style="text-align:right">29</td>
+  <td><code>p11:cor:dimensionless-baryon-anchor-floor</code></td>
+  <td style="text-align:right">794–799</td>
+  <td><code>VERIFIED</code></td>
+  <td>reference-gap ratio dimensionless and nonuniversal</td>
+</tr>
+<tr>
+  <td style="text-align:right">30</td>
+  <td><code>p11:thm:finite-hadron-spectrum-closure</code></td>
+  <td style="text-align:right">805–808</td>
+  <td><code>REPRODUCED</code></td>
+  <td>finite spectral decomposition on all <em>conserved</em> blocks; no numeric spectrum computed</td>
+</tr>
+<tr>
+  <td style="text-align:right">31</td>
+  <td><code>p11:rem:m8-batch-qcd-readout-inputs</code></td>
+  <td style="text-align:right">814–826</td>
+  <td><code>FORMALIZED</code></td>
+  <td>readout scope remark</td>
+</tr>
+<tr>
+  <td style="text-align:right">32</td>
+  <td><code>p11:lem:v153-scheme-invariant-isolated-pole</code></td>
+  <td style="text-align:right">836–848</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Determinant zero divisor preserved on common analytic invertible chart; residue covariance requires simple-pole or full Laurent-jet interpretation (issue BH-VIIB-G-0139)</td>
+</tr>
+<tr>
+  <td style="text-align:right">33</td>
+  <td><code>p11:def:same-channel-finite-transfer-block</code></td>
+  <td style="text-align:right">858–873</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Finite source Gram normalization and transfer approximant are definitions; positive contraction follows on vacuum-offset positive H</td>
+</tr>
+<tr>
+  <td style="text-align:right">34</td>
+  <td><code>p11:thm:no-parameter-same-channel-mixing</code></td>
+  <td style="text-align:right">875–880</td>
+  <td><code>VERIFIED</code></td>
+  <td>Nested-trial min-max on compressed e^{-tA}, not on e^{-t compressed A}; transfer-energy Ritz monotonicity independently checked</td>
+</tr>
+<tr>
+  <td style="text-align:right">35</td>
+  <td><code>p11:thm:no-additional-shell-normalizer-qcd</code></td>
+  <td style="text-align:right">886–892</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>No extra fit normalizer on already supplied Hamiltonian/clock; not a derivation of absolute QCD scale</td>
+</tr>
+<tr>
+  <td style="text-align:right">36</td>
+  <td><code>p11:cor:first-two-support-pole-extraction</code></td>
+  <td style="text-align:right">898–928</td>
+  <td><code>REFUTED</code></td>
+  <td>Displayed real-symmetric 2x2 matrix and kappa^2 discriminant fail for arbitrary complex Gram-orthonormal source states; exact admissible 2x2 counterexample (BH-VIIB-G-0137)</td>
+</tr>
+<tr>
+  <td style="text-align:right">37</td>
+  <td><code>p11:thm:inclusive-color-counting-export</code></td>
+  <td style="text-align:right">951–979</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Color sums 2,10/3,11/3 independently reconstructed; observable R(s) uses explicitly imported SMAT/IR and massless leading-power assumptions</td>
+</tr>
+<tr>
+  <td style="text-align:right">38</td>
+  <td><code>p11:thm:qcd-validation-hierarchy</code></td>
+  <td style="text-align:right">1016–1022</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Acyclic validation pipeline is a source policy; unfinished observed quantities explicitly remain targets, not computed predictions</td>
+</tr>
+<tr>
+  <td style="text-align:right">39</td>
+  <td><code>p11:cor:derived-perturbative-comparison-package</code></td>
+  <td style="text-align:right">1072–1087</td>
+  <td><code>UNRESOLVED</code></td>
+  <td>Running and nf=3 fixed fractions checked, but 206.9499404 MeV needs 91.1876 GeV comparison scale and Lambda convention not specified/source-owned (BH-VIIB-G-0138)</td>
+</tr>
+<tr>
+  <td style="text-align:right">40</td>
+  <td><code>p11:cor:primitive-support-and-baryon-matrix-elements</code></td>
+  <td style="text-align:right">1094–1104</td>
+  <td><code>VERIFIED</code></td>
+  <td>Wigner-Eckart and Feynman-Hellmann separate group factors from dynamical matrix elements; no count-based gA prediction</td>
+</tr>
+<tr>
+  <td style="text-align:right">41</td>
+  <td><code>p11:thm:orthogonal-hurwitz-adjoint-winding-variance</code></td>
+  <td style="text-align:right">1110–1122</td>
+  <td><code>VERIFIED</code></td>
+  <td>Quadratic covariance w^T C w and PSD counterfamily independently verified</td>
+</tr>
+<tr>
+  <td style="text-align:right">42</td>
+  <td><code>p11:cor:hard-exclusive-da-moments-and-kernels</code></td>
+  <td style="text-align:right">1128–1141</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Asymptotic DA beta integrals algebraic; absolute amplitudes require physical Fpi/source matrix and process-scoped factorization certificate</td>
+</tr>
+<tr>
+  <td style="text-align:right">43</td>
+  <td><code>p11:cor:thermal-bqs-susceptibility-endpoint</code></td>
+  <td style="text-align:right">1151–1185</td>
+  <td><code>VERIFIED</code></td>
+  <td>Independently derived all BQS 3x3 susceptibility entries and all diagonal fourth-to-second ratios from free Dirac pressure</td>
+</tr>
+<tr>
+  <td style="text-align:right">44</td>
+  <td><code>p11:cor:native-pseudoscalar-gas-fingerprint</code></td>
+  <td style="text-align:right">1191–1201</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Free Bose gas formulas exact within stated ideal-gas/mass-input domain; not numerical crossover or interacting QCD</td>
+</tr>
+<tr>
+  <td style="text-align:right">45</td>
+  <td><code>p11:thm:leading-transverse-contact-support-selection</code></td>
+  <td style="text-align:right">1222–1228</td>
+  <td><code>VERIFIED</code></td>
+  <td>Same JPC/flavor source sector may support varying interaction strengths and eigenvalues; count energies not fixed</td>
+</tr>
+<tr>
+  <td style="text-align:right">46</td>
+  <td><code>p11:thm:native-leading-vector-nonet</code></td>
+  <td style="text-align:right">1234–1242</td>
+  <td><code>REPRODUCED</code></td>
+  <td>SU3 octet plus singlet and reduced matrix-element independence; physical vector poles conditional on actual currents, source matrices</td>
+</tr>
+<tr>
+  <td style="text-align:right">47</td>
+  <td><code>p11:cor:native-vector-current-constants</code></td>
+  <td style="text-align:right">1248–1255</td>
+  <td><code>VERIFIED</code></td>
+  <td>Conserved-charge Ward fixes F(0), does not fix Fprime(0), residues or VMD uniqueness</td>
+</tr>
+<tr>
+  <td style="text-align:right">48</td>
+  <td><code>p11:thm:native-axial-pole-L10</code></td>
+  <td style="text-align:right">1261–1274</td>
+  <td><code>VERIFIED</code></td>
+  <td>Arbitrary c&gt;0 solves first two Weinberg narrow-resonance sum rules; nonunique axial mass and L10</td>
+</tr>
+<tr>
+  <td style="text-align:right">49</td>
+  <td><code>p11:thm:native-scalar-L5-L8</code></td>
+  <td style="text-align:right">1280–1288</td>
+  <td><code>VERIFIED</code></td>
+  <td>Chiral source-response coefficient definitions plus positive parameter counterfamily establish nonuniqueness of scalar saturation values</td>
+</tr>
+<tr>
+  <td style="text-align:right">50</td>
+  <td><code>p11:thm:native-L1-L2-L3</code></td>
+  <td style="text-align:right">1294–1299</td>
+  <td><code>REPRODUCED</code></td>
+  <td>L1-3 as renormalized p4 generating functional coefficients; source matching structure repeated but physical correlator execution not independently evaluated</td>
+</tr>
+<tr>
+  <td style="text-align:right">51</td>
+  <td><code>p11:thm:native-L7-anomalous</code></td>
+  <td style="text-align:right">1305–1310</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Quadratic heavy-singlet tree elimination yields negative exchange low-energy coefficient, conditional on positive singlet mass/source normalization</td>
+</tr>
+<tr>
+  <td style="text-align:right">52</td>
+  <td><code>p11:cor:native-leading-p7-constants-summary</code></td>
+  <td style="text-align:right">1316–1321</td>
+  <td><code>VERIFIED</code></td>
+  <td>L4,L6 not forced zero by absent carrier labels; chiral invariants allow independent couplings</td>
+</tr>
+<tr>
+  <td style="text-align:right">53</td>
+  <td><code>p11:thm:block-b-finite-pole-dressing</code></td>
+  <td style="text-align:right">1337–1367</td>
+  <td><code>VERIFIED</code></td>
+  <td>Direct complex 3x3 block inverse independently reproduces finite Feshbach projected resolvent; poles real before open-channel limit</td>
+</tr>
+<tr>
+  <td style="text-align:right">54</td>
+  <td><code>p11:cor:schur-positive-gap-weight</code></td>
+  <td style="text-align:right">1380–1407</td>
+  <td><code>VERIFIED</code></td>
+  <td>1D complement calculation checks residue/lowering; general degenerate Loewner bounds source-matched to Paper1B theorem</td>
+</tr>
+<tr>
+  <td style="text-align:right">55</td>
+  <td><code>p11:thm:response-visible-inverse</code></td>
+  <td style="text-align:right">1421–1440</td>
+  <td><code>VERIFIED</code></td>
+  <td>Independent two-pole complete matrix response yields rank-sum minimal environment and invisible dark subspace; imported I-B theorem exact</td>
+</tr>
+<tr>
+  <td style="text-align:right">56</td>
+  <td><code>p11:cor:block-b-leading-vector-complex-poles</code></td>
+  <td style="text-align:right">1455–1463</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Only after open-channel limiting boundary/continuation; finite self-adjoint block does not by itself yield complex resonances</td>
+</tr>
+<tr>
+  <td style="text-align:right">57</td>
+  <td><code>p11:thm:block-c-topology-pseudoscalar-separation</code></td>
+  <td style="text-align:right">1472–1479</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Z(theta) cumulants and anomaly current separation from source; actual chiYM and coupled correlator are unexecuted</td>
+</tr>
+<tr>
+  <td style="text-align:right">58</td>
+  <td><code>p11:thm:block-d-finite-distribution-spectral-measures</code></td>
+  <td style="text-align:right">1485–1497</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Physical PDF owner imported with distinct optional exact LFRep branch; named later claims located, not upgraded before their batches</td>
+</tr>
+<tr>
+  <td style="text-align:right">59</td>
+  <td><code>p11:thm:block-e-thermal-finite-trace</code></td>
+  <td style="text-align:right">1508–1513</td>
+  <td><code>VERIFIED</code></td>
+  <td>Finite-dimensional thermal trace is real analytic for T&gt;0 with finite charge/chemical sources; critical transition requires limit</td>
+</tr>
+<tr>
+  <td style="text-align:right">60</td>
+  <td><code>p11:thm:block-f-nuclear-transfer-cumulants</code></td>
+  <td style="text-align:right">1519–1524</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Möbius cumulant algebra well defined given partition-indexed cluster amplitudes; sector energies/contacts require actual QCD source calculations</td>
+</tr>
+<tr>
+  <td style="text-align:right">61</td>
+  <td><code>p11:thm:v2210-lit-gevp-frame-gap</code></td>
+  <td style="text-align:right">1542–1584</td>
+  <td><code>VERIFIED</code></td>
+  <td>Finite source isometry/GEVP, minmax upper energies, complete frame lower-gap bound and Weyl error bounds independently checked</td>
+</tr>
+<tr>
+  <td style="text-align:right">62</td>
+  <td><code>p11:prop:v2210-lit-semigroup-leakage</code></td>
+  <td style="text-align:right">1603–1613</td>
+  <td><code>VERIFIED</code></td>
+  <td>Duhamel double off-block insertion bounds nonreducing compression-return by tau^2 delta^2/2; positive Hermitian numeric examples</td>
+</tr>
+<tr>
+  <td style="text-align:right">63</td>
+  <td><code>p11:thm:nucleon-trace-anomaly-bridge</code></td>
+  <td style="text-align:right">1692–1711</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Trace Ward identity gives M_N only on matched relativistic normalization with finite scale residual proved absent/absorbed; source explicitly retains R_scale otherwise.</td>
+</tr>
+<tr>
+  <td style="text-align:right">64</td>
+  <td><code>p11:thm:native-scalar-response-bridge</code></td>
+  <td style="text-align:right">1716–1726</td>
+  <td><code>UNRESOLVED</code></td>
+  <td>M_h is a vacuum-subtracted gap, but FH proof uses raw hadron eigenvalue derivative; connected/vacuum-subtracted scalar operator must be specified. Exact E4 example BH-VIIB-G-0140.</td>
+</tr>
+<tr>
+  <td style="text-align:right">65</td>
+  <td><code>p11:thm:rg-invariant-scalar-bridge</code></td>
+  <td style="text-align:right">1732–1749</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Opposite anomalous dimensions imply RG invariance of m_q times scalar density in the declared scheme. Sigma as derivative is safe after mass-source/vacuum normalization.</td>
+</tr>
+<tr>
+  <td style="text-align:right">66</td>
+  <td><code>p11:thm:native-goldberger-treiman-bridge</code></td>
+  <td style="text-align:right">1754–1762</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>PCAC, isolated physical nucleon/pion poles and controlled chiral limit are explicit; GT residue relation standard within those conditions; no numerical g_A inferred.</td>
+</tr>
+<tr>
+  <td style="text-align:right">67</td>
+  <td><code>p11:thm:leading-native-nucleon-axial-charge</code></td>
+  <td style="text-align:right">1768–1778</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Independent normalized SU6 spin-flavor state reproduces Delta u=4/3, Delta d=-1/3, g_A=5/3; source expressly does not assert physical ground-state realization.</td>
+</tr>
+<tr>
+  <td style="text-align:right">68</td>
+  <td><code>p11:thm:native-one-pion-exchange-nuclear-boundary</code></td>
+  <td style="text-align:right">1784–1809</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Derivative pion-pole vertices generate quoted OPE momentum structure on SMAT/LSZ chiral branch; contacts consume actual pole-subtracted matching prescription, not finite support counts.</td>
+</tr>
+<tr>
+  <td style="text-align:right">69</td>
+  <td><code>p11:thm:microscopic-topological-baryon-matching</code></td>
+  <td style="text-align:right">1828–1852</td>
+  <td><code>UNRESOLVED</code></td>
+  <td>Determinant color singlet and pi3(SU3)=Z are each valid; identification of normalized microscopic U1_B current with chiral winding needs action-derived matching, not proved from uniqueness of conservation alone (BH-VIIB-G-0141).</td>
+</tr>
+<tr>
+  <td style="text-align:right">70</td>
+  <td><code>p11:thm:wzw-baryon-multiplet-quantization</code></td>
+  <td style="text-align:right">1857–1872</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Imported VII-A WZW coefficient N_c=3 plus actual winding-B chiral soliton and SU3 hedgehog collective quantization gives Y_R=Nc B/3, allowed octet/decuplet; no state occurrence asserted.</td>
+</tr>
+<tr>
+  <td style="text-align:right">71</td>
+  <td><code>p11:cor:leading-baryon-mass-relations</code></td>
+  <td style="text-align:right">1877–1894</td>
+  <td><code>VERIFIED</code></td>
+  <td>Exact symbolic substitution confirms octet GMO and linear decuplet equal spacing in the stated first-order isospin-limit spurion form; no absolute mass derived.</td>
+</tr>
+<tr>
+  <td style="text-align:right">72</td>
+  <td><code>p11:thm:nc3-large-color-scaling</code></td>
+  <td style="text-align:right">1899–1904</td>
+  <td><code>VERIFIED</code></td>
+  <td>Asymptotic big-O with free coefficient does not supply equality or normalization at Nc=3.</td>
+</tr>
+<tr>
+  <td style="text-align:right">73</td>
+  <td><code>p11:thm:native-chiral-running</code></td>
+  <td style="text-align:right">1942–1953</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Integrated chiral L_i running and log cancellation independently checked, given scheme Gamma_i; matching scale arbitrary within EFT window.</td>
+</tr>
+<tr>
+  <td style="text-align:right">74</td>
+  <td><code>p11:cor:native-one-loop-FK-Fpi</code></td>
+  <td style="text-align:right">1959–1965</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Conditional one-loop formula described but full explicit function is not printed here; provenance is chiral generating functional with free matched L5, F0, masses; no decimal.</td>
+</tr>
+<tr>
+  <td style="text-align:right">75</td>
+  <td><code>p11:cor:native-one-loop-mass-logs</code></td>
+  <td style="text-align:right">1971–1976</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Renormalized p4 chiral mass expansion necessarily includes analytic L_i counterterms and logs; source gives no explicit numerical mass to verify.</td>
+</tr>
+<tr>
+  <td style="text-align:right">76</td>
+  <td><code>p11:cor:native-vector-strong-widths</code></td>
+  <td style="text-align:right">1982–1998</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Two-body open-channel vector width follows phase space only with on-shell source 3pt vertex and SMAT1–3,5,7 (SMAT4 for LSZ); no KSRF prediction.</td>
+</tr>
+<tr>
+  <td style="text-align:right">77</td>
+  <td><code>p11:rem:vector-vertex-reclosure-targets</code></td>
+  <td style="text-align:right">2008–2016</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Explicit limitation: flavor-dependent vector 3pt amplitudes remain uncomputed; no extrinsic strange-leg coefficient inserted.</td>
+</tr>
+<tr>
+  <td style="text-align:right">78</td>
+  <td><code>p11:lem:minimal-transverse-spin-glue-sheet</code></td>
+  <td style="text-align:right">2025–2030</td>
+  <td><code>VERIFIED</code></td>
+  <td>Scaling the physical Hamiltonian insertion leaves a normalized geometric second moment unchanged, independently showing 8/3 not a dynamical energy weight.</td>
+</tr>
+<tr>
+  <td style="text-align:right">79</td>
+  <td><code>p11:lem:dressed-determinant-current-projections</code></td>
+  <td style="text-align:right">2036–2041</td>
+  <td><code>VERIFIED</code></td>
+  <td>Wigner–Eckart reduced matrix elements independent across vector/axial/tensor/magnetic operators; conserved vector Ward controls charge only.</td>
+</tr>
+<tr>
+  <td style="text-align:right">80</td>
+  <td><code>p11:thm:native-baryon-spin-gluon-ladder</code></td>
+  <td style="text-align:right">2047–2062</td>
+  <td><code>UNRESOLVED</code></td>
+  <td>Block spectrum identity holds for invariant spin/flavor sector, but physical pole assertion inherits prior BH-VIIB-G-0135 projector-commutation certificate, especially unequal mass branch; do not duplicate root.</td>
+</tr>
+<tr>
+  <td style="text-align:right">81</td>
+  <td><code>p11:rem:baryon-recoupling-status</code></td>
+  <td style="text-align:right">2068–2071</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Explicit recoupling coefficients are finite reference block values; not physical baryon masses absent full Hamiltonian diagonalization.</td>
+</tr>
+<tr>
+  <td style="text-align:right">82</td>
+  <td><code>p11:thm:native-dressed-baryon-residues</code></td>
+  <td style="text-align:right">2073–2085</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Different source residues are distinct current matrix elements; scalar Feynman–Hellmann as mass-gap derivative inherits vacuum-subtraction guard BH-VIIB-G-0140.</td>
+</tr>
+<tr>
+  <td style="text-align:right">83</td>
+  <td><code>p11:thm:finite-em-current-radius-reclosure</code></td>
+  <td style="text-align:right">2091–2103</td>
+  <td><code>VERIFIED</code></td>
+  <td>Independent analytic form-factor family F(q²)=Q+cq² shows Ward charge does not determine radius or magnetic slope.</td>
+</tr>
+<tr>
+  <td style="text-align:right">84</td>
+  <td><code>p11:cor:native-octet-axial-current-block</code></td>
+  <td style="text-align:right">2110–2118</td>
+  <td><code>VERIFIED</code></td>
+  <td>Two octet reduced axial couplings from SU3 8⊗8 containing two octets; no numerical F/D ratio from color determinant.</td>
+</tr>
+<tr>
+  <td style="text-align:right">85</td>
+  <td><code>p11:prop:v2220-physical-baryon-readout</code></td>
+  <td style="text-align:right">2142–2168</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Finite positive spectral expansion and large-T log-ratio exact for two visible isolated stable spin levels; not resonance pole identification.</td>
+</tr>
+<tr>
+  <td style="text-align:right">86</td>
+  <td><code>p11:prop:v2220-flux-source-test</code></td>
+  <td style="text-align:right">2178–2202</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>FH derivative for isolated simple level and spin-invariant multiplet trace independently checked; geometric source is bookkeeping, not mass parameter.</td>
+</tr>
+<tr>
+  <td style="text-align:right">87</td>
+  <td><code>p11:thm:v235-signed-face-source-compression</code></td>
+  <td style="text-align:right">2214–2231</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Exact Haar conditional covariance and 3 of 96 fan-face overlap give 85/768 and difference 1/2304; source upstream Haar orthogonality used, off-diagonal proof not separately exhaustively recomputed.</td>
+</tr>
+<tr>
+  <td style="text-align:right">88</td>
+  <td><code>p11:cor:v235-signed-adjoint-selection</code></td>
+  <td style="text-align:right">2255–2278</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Adjoint character projection coefficient 3/(96*8)=1/256 independently checked; mode-overlap cancellation inherits preceding Haar support.</td>
+</tr>
+<tr>
+  <td style="text-align:right">89</td>
+  <td><code>p11:cor:v235-hurwitz-edge-source-ward</code></td>
+  <td style="text-align:right">2290–2305</td>
+  <td><code>VERIFIED</code></td>
+  <td>Independent 24-cell simplicial incidence reconstructed: 24 vertices, 96 edges, 96 faces, boundary ranks 23 and 73; all vertex-gradient directions annihilate face-generated source.</td>
+</tr>
+<tr>
+  <td style="text-align:right">90</td>
+  <td><code>p11:rem:v235-source-vs-poles</code></td>
+  <td style="text-align:right">2315–2341</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Pure-electric comparison is explicitly noninvariant, nonphysical baryon gap; cubic affine determinant derivative -2Tr A³ directly verified; physical fermionic insertion remains conditional.</td>
+</tr>
+<tr>
+  <td style="text-align:right">91</td>
+  <td><code>p11:rem:v230-all-link-flux-readout</code></td>
+  <td style="text-align:right">2345–2357</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Source expressly forbids identifying finite comparison x with interacting Euclidean time or baryon hyperfine poles.</td>
+</tr>
+<tr>
+  <td style="text-align:right">92</td>
+  <td><code>p11:def:hadronic-distribution-package</code></td>
+  <td style="text-align:right">2390–2469</td>
+  <td><code>FORMALIZED</code></td>
+  <td>LF-A through LF-D source packages typed separately: physical plus owner/state and claim-local limit, optional stronger exact LFRep. No automatic hadron occurrence.</td>
+</tr>
+<tr>
+  <td style="text-align:right">93</td>
+  <td><code>p11:thm:v134-fixed-plus-sector-preservation</code></td>
+  <td style="text-align:right">2471–2490</td>
+  <td><code>VERIFIED</code></td>
+  <td>Finite spectral functional calculus gives [H,E_p]=0 from [H,Pphys+]=0 on preserved singlet subspace; no need for R3.</td>
+</tr>
+<tr>
+  <td style="text-align:right">94</td>
+  <td><code>p11:def:claim-local-lf-limit-package</code></td>
+  <td style="text-align:right">2501–2528</td>
+  <td><code>FORMALIZED</code></td>
+  <td>L1–L5 are optional claim-indexed limit hypotheses; L2–L4 not provided merely by geometry; L5 only for TMD.</td>
+</tr>
+<tr>
+  <td style="text-align:right">95</td>
+  <td><code>p11:rem:v186-exact-asymptotic-lfrep-split</code></td>
+  <td style="text-align:right">2531–2547</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Exact finite LFRep and asymptotically controlled local-flat representation are distinct certificates; no exact conclusion from vanishing limit defect.</td>
+</tr>
+<tr>
+  <td style="text-align:right">96</td>
+  <td><code>p11:rem:v252-physical-fock-plus-distinction</code></td>
+  <td style="text-align:right">2549–2563</td>
+  <td><code>FORMALIZED</code></td>
+  <td>R3 equality PF+=Pphys+ is not entailed by R1-R2; explicit commuting diagonal model demonstrates independence.</td>
+</tr>
+<tr>
+  <td style="text-align:right">97</td>
+  <td><code>p11:thm:lf-wilson-line-identification</code></td>
+  <td style="text-align:right">2565–2589</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Gauge-link bilocal endpoint covariance and covariant Taylor on geodesic Hopf null ray check; continuum collinear PDF identification explicitly consumes L2–L4, no finite exact Fock positivity/support inferred.</td>
+</tr>
+<tr>
+  <td style="text-align:right">98</td>
+  <td><code>p11:thm:native-pdf-sum-rules</code></td>
+  <td style="text-align:right">2601–2623</td>
+  <td><code>UNRESOLVED</code></td>
+  <td>Source’s immediately prior theorem expressly does not prove [0,1] PDF support; Ward full moments alone do not imply [0,1] integrals. Additional support/crossing/zero-mode certificate needed (BH-VIIB-G-0142).</td>
+</tr>
+<tr>
+  <td style="text-align:right">99</td>
+  <td><code>p11:rem:v264-optional-finite-positive-measure-branch</code></td>
+  <td style="text-align:right">2637–2647</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Optional exact finite positive fractions are explicitly distinguished from renormalized physical PDF; no positivity transfer without matching.</td>
+</tr>
+<tr>
+  <td style="text-align:right">100</td>
+  <td><code>p11:thm:native-dglap-scale-evolution</code></td>
+  <td style="text-align:right">2649–2677</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>V-C DGLAP/ERBL/threshold generators imported with scheme and boundary; exact SU3 factors check; preservation of physical [0,1] moments inherits BH-VIIB-G-0142.</td>
+</tr>
+<tr>
+  <td style="text-align:right">101</td>
+  <td><code>p11:thm:native-qcd-factorization-bridge</code></td>
+  <td style="text-align:right">2685–2701</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Process-dependent factorization and SMAT/IR hypotheses are explicitly required; no generated scattering amplitudes inferred from light-ray definitions.</td>
+</tr>
+<tr>
+  <td style="text-align:right">102</td>
+  <td><code>p11:thm:native-distribution-amplitude-export</code></td>
+  <td style="text-align:right">2714–2737</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Axial-current limit fixes DA integral when normalized supported light-ray pion matrix element and required LF/ERBL realization exist; 6x(1-x) is conditional UV fixed mode.</td>
+</tr>
+<tr>
+  <td style="text-align:right">103</td>
+  <td><code>p11:thm:isospin-symmetric-pion-da-parity</code></td>
+  <td style="text-align:right">2748–2770</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Isospin/charge-conjugation exchange gives DA parity under the stated equal-mass symmetry and Wilson-line domain; Gegenbauer odd coefficients vanish.</td>
+</tr>
+<tr>
+  <td style="text-align:right">104</td>
+  <td><code>p11:cor:closed-pion-da-first-moments</code></td>
+  <td style="text-align:right">2784–2797</td>
+  <td><code>VERIFIED</code></td>
+  <td>Symmetric normalized pion DA forces mean x=1/2 and vanishing first xi moment, independent of its even shape.</td>
+</tr>
+<tr>
+  <td style="text-align:right">105</td>
+  <td><code>p11:cor:asymptotic-pion-da-moments</code></td>
+  <td style="text-align:right">2804–2839</td>
+  <td><code>VERIFIED</code></td>
+  <td>Exact SymPy integration reproduces every printed x^n and xi^(2m) closed formula in general and samples; fixed ERBL mode is separately imported.</td>
+</tr>
+<tr>
+  <td style="text-align:right">106</td>
+  <td><code>p11:thm:asymptotic-determinant-baryon-da</code></td>
+  <td style="text-align:right">2877–2889</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>3-quark asymptotic ERBL lowest mode 120 x1 x2 x3 integrates exactly to one on simplex; no finite-scale nucleon DA derived.</td>
+</tr>
+<tr>
+  <td style="text-align:right">107</td>
+  <td><code>p11:thm:native-gpd-unification-bridge</code></td>
+  <td style="text-align:right">2896–2907</td>
+  <td><code>UNRESOLVED</code></td>
+  <td>GPD forward equation H_q(x,0,0)=q(x) lacks domain: native q is [0,1] quark PDF, whereas GPD x ranges [-1,1]. For x&lt;0 the C-conjugate antiquark branch is generally -qbar(-x), unless q is explicitly signed-extended (BH-VIIB-G-0143). Other local-current/Ji limits remain conditional identities.</td>
+</tr>
+<tr>
+  <td style="text-align:right">108</td>
+  <td><code>p11:thm:native-bjorken-sum-rule-bridge</code></td>
+  <td style="text-align:right">2912–2931</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Bjorken first moment and 1-alpha_s/pi nonsinglet coefficient standard on actual polarized DIS, OPE, SMAT and PDF-support domain; no native numeric g_A computed.</td>
+</tr>
+<tr>
+  <td style="text-align:right">109</td>
+  <td><code>p11:thm:asymptotic-quark-gluon-momentum-partition</code></td>
+  <td style="text-align:right">2937–2960</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>2x2 LO DGLAP moment matrix has exact zero eigenvector (3nf,16), reproducing Q/G; physical PDF integrals require inherited support BH-VIIB-G-0142.</td>
+</tr>
+<tr>
+  <td style="text-align:right">110</td>
+  <td><code>p11:cor:qcd-remnant-envelope-25-support</code></td>
+  <td style="text-align:right">2971–2976</td>
+  <td><code>VERIFIED</code></td>
+  <td>25=9+16 is arithmetic, not an operator projection. Source explicitly refuses physical remnant inference.</td>
+</tr>
+<tr>
+  <td style="text-align:right">111</td>
+  <td><code>p11:cor:asymptotic-quark-gluon-angular-momentum-partition</code></td>
+  <td style="text-align:right">2983–3024</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Ji total angular-momentum operator shares spin-two singlet anomalous-dimension matrix; printed 9/50 and 8/25 check. Requires native GPD EMT matching and inherited GPD domain qualification BH-VIIB-G-0143.</td>
+</tr>
+<tr>
+  <td style="text-align:right">112</td>
+  <td><code>p11:prop:fragmentation-as-singlet-outcome</code></td>
+  <td style="text-align:right">3045–3050</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Defines required CPTP hadronization channel and states lack of constructed Kraus map. Finite singlet projection alone does not supply out-state probabilities.</td>
+</tr>
+<tr>
+  <td style="text-align:right">113</td>
+  <td><code>p11:thm:native-fragmentation-hadronization-export</code></td>
+  <td style="text-align:right">3057–3074</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Inclusive charge/momentum conservation is algebraic under CPTP charge/four-momentum-preserving channel; SM1-3,6 and IR separately guard asymptotic hadrons.</td>
+</tr>
+<tr>
+  <td style="text-align:right">114</td>
+  <td><code>p11:def:distribution-computation-targets</code></td>
+  <td style="text-align:right">3090–3104</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Prioritizes moments, g_A, sigma_piN and matrix elements as computation targets; sigma term inherits BH-VIIB-G-0140.</td>
+</tr>
+<tr>
+  <td style="text-align:right">115</td>
+  <td><code>p11:thm:v2210-lit-spacelike-source-jets</code></td>
+  <td style="text-align:right">3109–3141</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Finite path-ordered Wilson transporter yields exactly covariant source jets and Taylor remainder under N+1 differentiability; no exact LFRep or Fock projector assumed.</td>
+</tr>
+<tr>
+  <td style="text-align:right">116</td>
+  <td><code>p11:cor:v2210-lit-ioffe-ratio-test</code></td>
+  <td style="text-align:right">3158–3173</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Common nonzero state-independent scalar Z cancels in normalized Ioffe ratio; mixing/additive contacts and physical PDF matching explicitly excluded.</td>
+</tr>
+<tr>
+  <td style="text-align:right">117</td>
+  <td><code>p11:def:native-thermal-partition-function</code></td>
+  <td style="text-align:right">3228–3250</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Grand canonical finite Haar-singlet strong trace defined on actual finite H_L and conserved charges; no continuum thermodynamic phase assumed.</td>
+</tr>
+<tr>
+  <td style="text-align:right">118</td>
+  <td><code>p11:thm:finite-thermal-export-exists</code></td>
+  <td style="text-align:right">3252–3255</td>
+  <td><code>VERIFIED</code></td>
+  <td>Trace of finite self-adjoint H with real chemical sources exists and is strictly positive; external data absent.</td>
+</tr>
+<tr>
+  <td style="text-align:right">119</td>
+  <td><code>p11:thm:native-thermodynamic-response-bridge</code></td>
+  <td style="text-align:right">3261–3300</td>
+  <td><code>VERIFIED</code></td>
+  <td>Duhamel derivative of logZ, epsilon=Ts-varpi+mu n, p_mech=T d_V W tested for finite volume-dependent H; p_mech != varpi absent extensivity.</td>
+</tr>
+<tr>
+  <td style="text-align:right">120</td>
+  <td><code>p11:thm:thermal-trace-anomaly-operator-closure</code></td>
+  <td style="text-align:right">3312–3348</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Complete finite scale insertion identity and conditional Euler law reproduced. Continuum QCD anomaly insertion retains uncomputed R_scale rather than setting it to zero.</td>
+</tr>
+<tr>
+  <td style="text-align:right">121</td>
+  <td><code>p11:thm:native-qcd-stefan-boltzmann-limit</code></td>
+  <td style="text-align:right">3360–3380</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>SB coefficients 16 gluon and 12 quark dof per flavor reproduce pi²(8/45+7Nf/60) only on explicitly certified near-continuum free-gas window.</td>
+</tr>
+<tr>
+  <td style="text-align:right">122</td>
+  <td><code>p11:prop:v2211-fixed-ceiling-thermal-remainder</code></td>
+  <td style="text-align:right">3387–3411</td>
+  <td><code>VERIFIED</code></td>
+  <td>Numerical quadratures at multiple r verify printed Bose/Fermi pressure/energy cutoff-tail bounds, occupation truncation formula; does not prove interacting limit.</td>
+</tr>
+<tr>
+  <td style="text-align:right">123</td>
+  <td><code>p11:rem:v245-gluon-count-singlet-thermal-firewall</code></td>
+  <td style="text-align:right">3424–3437</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Distinguishes local free gluon helicity factor g=16 from finite exact Haar-singlet thermal trace; no inconsistent product factorization.</td>
+</tr>
+<tr>
+  <td style="text-align:right">124</td>
+  <td><code>p11:thm:native-low-temperature-pion-gas</code></td>
+  <td style="text-align:right">3440–3458</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Three massless continuum Goldstones give p/T4=pi²/30 and epsilon=3p; source conditions on spontaneously broken phase. Fixed finite L does not yield this endpoint without thermodynamic/local-flat size window.</td>
+</tr>
+<tr>
+  <td style="text-align:right">125</td>
+  <td><code>p11:def:thermal-export-object</code></td>
+  <td style="text-align:right">3466–3491</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Finite thermal export tuple and pressure/extensivity branch unambiguously defined; not an external EOS.</td>
+</tr>
+<tr>
+  <td style="text-align:right">126</td>
+  <td><code>p11:def:native-scalar-shell-thermal-activation-scale</code></td>
+  <td style="text-align:right">3494–3497</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Log temperature reference coordinate carries no physical Tc or shell scaling; source rejects count-to-temperature identification.</td>
+</tr>
+<tr>
+  <td style="text-align:right">127</td>
+  <td><code>p11:def:native-thermal-crossover-readout</code></td>
+  <td style="text-align:right">3499–3513</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Finite response and maximizer mathematically defined. If h is dimensionful H-source, Sigma=V^-1 d_h logZ is not conventional condensate &lt;O&gt;/V: differs by factor 1/T; physical crossover identification needs source convention (BH-VIIB-G-0144).</td>
+</tr>
+<tr>
+  <td style="text-align:right">128</td>
+  <td><code>p11:prop:thermal-activation-shell-amplitude</code></td>
+  <td style="text-align:right">3515–3524</td>
+  <td><code>VERIFIED</code></td>
+  <td>A dimensionless shell coefficient alone cannot set a temperature without dimensionful H or source; no physical number derived.</td>
+</tr>
+<tr>
+  <td style="text-align:right">129</td>
+  <td><code>p11:prop:native-transition-scaling</code></td>
+  <td style="text-align:right">3530–3541</td>
+  <td><code>VERIFIED</code></td>
+  <td>Finite analytic positive partition forbids fixed-L nonanalytic phase transitions; Gaussian countermodel shows u↦-u does not select crossover.</td>
+</tr>
+<tr>
+  <td style="text-align:right">130</td>
+  <td><code>p11:prop:hadronic-rates-native-thermal-averages</code></td>
+  <td style="text-align:right">3547–3564</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Rate average is a typed construction from actual QCD masses, matrix elements and SMAT/IR-qualified cross sections; no computed thermal rates or BBN fits supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:right">131</td>
+  <td><code>p11:thm:cosmological-export-boundary</code></td>
+  <td style="text-align:right">3576–3579</td>
+  <td><code>FORMALIZED</code></td>
+  <td>One-way QCD to VI-B cosmological export boundary; not a numerical cosmology prediction.</td>
+</tr>
+<tr>
+  <td style="text-align:right">132</td>
+  <td><code>p11:def:selected-finite-shell-readout-support</code></td>
+  <td style="text-align:right">3598–3609</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Definition B_r=Sym^r(C4) at fixed selected carrier; readout r not changed momentum truncation m.</td>
+</tr>
+<tr>
+  <td style="text-align:right">133</td>
+  <td><code>p11:lem:raw-selected-cell-shell-count</code></td>
+  <td style="text-align:right">3611–3625</td>
+  <td><code>VERIFIED</code></td>
+  <td>Stars-and-bars dimension binom(r+3,3) and sequence 1,4,10,20,35,56,84 exact for raw symmetric powers.</td>
+</tr>
+<tr>
+  <td style="text-align:right">134</td>
+  <td><code>p11:rem:first-three-terms-selected</code></td>
+  <td style="text-align:right">3634–3651</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Source I-A H1 shell 1,4,10 matches raw B0,B1,B2 only in dimensions; no equivariant isomorphism asserted or assumed.</td>
+</tr>
+<tr>
+  <td style="text-align:right">135</td>
+  <td><code>p11:lem:first-forbidden-coordinate-exclusion-boundary</code></td>
+  <td style="text-align:right">3653–3689</td>
+  <td><code>VERIFIED</code></td>
+  <td>SU2 x SU2 Clebsch–Gordan returns two chiral 2D and excludes two 6D weight-3/2 sectors; not automatic physical nuclear deletion.</td>
+</tr>
+<tr>
+  <td style="text-align:right">136</td>
+  <td><code>p11:def:oriented-coordinate-boundary-face</code></td>
+  <td style="text-align:right">3697–3718</td>
+  <td><code>UNRESOLVED</code></td>
+  <td>P1A defines a chosen X=C eta + F_sigma and only optionally attaches Hurwitz E_sigma after explicit isomorphism. VII-B substitutes trimer E_sigma without source-specified embedding F_sigma to E_sigma. Quotient ranks valid but identity of physical face and actual Gram kernel depends on that map (BH-VIIB-G-0145).</td>
+</tr>
+<tr>
+  <td style="text-align:right">137</td>
+  <td><code>p11:lem:triangular-rank-coordinate-boundary</code></td>
+  <td style="text-align:right">3720–3737</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>For chosen degree-three-onset face eta Sym^(r-1)(F) rank binom(r+1,2) exact; upstream onset r&lt;3=0 is expressly a convention, not geometric inevitability.</td>
+</tr>
+<tr>
+  <td style="text-align:right">138</td>
+  <td><code>p11:thm:v2211-nuclear-gram-kernel-certificate</code></td>
+  <td style="text-align:right">3746–3762</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Given actual S L=0 and complementary positive Gram floor, ker S=L by linear algebra; physical realized operator must execute the test.</td>
+</tr>
+<tr>
+  <td style="text-align:right">139</td>
+  <td><code>p11:prop:no-insertion-status-coordinate-boundary</code></td>
+  <td style="text-align:right">3772–3791</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>No new physical projector conditional on previously chosen oriented face and actual Gram-kernel test; inherits unresolved E-to-F embedding BH-VIIB-G-0145, and no proof of unique physical selector.</td>
+</tr>
+<tr>
+  <td style="text-align:right">140</td>
+  <td><code>p11:def:boundary-reduced-finite-shell-support</code></td>
+  <td style="text-align:right">3805–3817</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Degreewise quotient B_r/L_r at r&gt;=3; not a quotient algebra, as I-A explicitly warns. Distinct orientation signs are alternatives.</td>
+</tr>
+<tr>
+  <td style="text-align:right">141</td>
+  <td><code>p11:thm:native-boundary-reduced-shell-count</code></td>
+  <td style="text-align:right">3819–3852</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Geometric ranks 1,4,10,14,25,41,63 and twofold CAR capacities 2,8,20,28,50,82,126 reproduce; actual physical nuclear shell ordering not computed; inherits BH-VIIB-G-0145.</td>
+</tr>
+<tr>
+  <td style="text-align:right">142</td>
+  <td><code>p11:rem:boundary-reduced-shell-count-status</code></td>
+  <td style="text-align:right">3868–3881</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Explicit mathematical-vs-physical nuclear capacity firewall; no binding energies or isotope stability concluded.</td>
+</tr>
+<tr>
+  <td style="text-align:right">143</td>
+  <td><code>p11:thm:v2210-lit-complete-duhamel-contacts</code></td>
+  <td style="text-align:right">3887–3903</td>
+  <td><code>VERIFIED</code></td>
+  <td>Finite matrix Duhamel differentiation includes -beta E(H_ab) contact and positive logarithmic-mean covariance; explicit nonlinear central source has negative Hessian.</td>
+</tr>
+<tr>
+  <td style="text-align:right">144</td>
+  <td><code>p11:thm:standard-method-import-boundary</code></td>
+  <td style="text-align:right">3968–4002</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Standard external extraction toolbox only processes supplied native finite data under its own theorem hypotheses; the theorem expressly does not compute QCD coefficients.</td>
+</tr>
+<tr>
+  <td style="text-align:right">145</td>
+  <td><code>p11:prop:hypothesis-audit-standard-imports</code></td>
+  <td style="text-align:right">4019–4052</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Source enumerates specific native-input checks for Feshbach, chiral, anomaly, scattering, LF and thermal methods; all are guard conditions, not discharged physical results.</td>
+</tr>
+<tr>
+  <td style="text-align:right">146</td>
+  <td><code>p11:thm:exact-scalar-hodge-schur-ledger</code></td>
+  <td style="text-align:right">4057–4063</td>
+  <td><code>VERIFIED</code></td>
+  <td>Dimensionless incidence/Hodge spectra are independent of physical Yang–Mills form; generalized physical eigenvalues vary under rescaling the latter.</td>
+</tr>
+<tr>
+  <td style="text-align:right">147</td>
+  <td><code>p11:thm:native-scalar-curvature-krylov-block</code></td>
+  <td style="text-align:right">4069–4080</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Lanczos/Ritz variational property holds for fixed finite selfadjoint Hodge matrix; physical energy identification requires separately supplied positive Yang–Mills/metric pair.</td>
+</tr>
+<tr>
+  <td style="text-align:right">148</td>
+  <td><code>p11:thm:compact-scalar-glue-singlet-mixing</code></td>
+  <td style="text-align:right">4086–4104</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Flavor multiplicities fix normalized singlet amplitudes sqrt(2/3),sqrt(1/3); displayed real 3x3 matrix is a declared leading compact ansatz, not a computed full scalar spectrum.</td>
+</tr>
+<tr>
+  <td style="text-align:right">149</td>
+  <td><code>p11:cor:compact-scalar-cubic</code></td>
+  <td style="text-align:right">4110–4137</td>
+  <td><code>VERIFIED</code></td>
+  <td>3x3 determinant, Schur fractions, analytic even nondegenerate perturbative glue-root shift and its conditional sign exactly reproduce.</td>
+</tr>
+<tr>
+  <td style="text-align:right">150</td>
+  <td><code>p11:thm:scalar-two-goldstone-trace-row</code></td>
+  <td style="text-align:right">4147–4160</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Two-Goldstone discontinuity/dispersion is explicitly conditional on computed couplings and a certified positive spectral cut or process unitarity; reduced chiral constants remain free native responses.</td>
+</tr>
+<tr>
+  <td style="text-align:right">151</td>
+  <td><code>p11:thm:schur-real-part-sheets-residues</code></td>
+  <td style="text-align:right">4170–4234</td>
+  <td><code>UNRESOLVED</code></td>
+  <td>Dispersion tail integral and simple matrix-pole residue formula check, but real-cut Gamma(s) is not guaranteed holomorphically continuable; sheet formula at complex s needs analytic continuation domain and sheet conventions (BH-VIIB-G-0146).</td>
+</tr>
+<tr>
+  <td style="text-align:right">152</td>
+  <td><code>p11:thm:isolated-resonance-pole-residue-limit</code></td>
+  <td style="text-align:right">4247–4281</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Rouché argument and matrix residue convergence hold assuming holomorphic continued D_L,D and locally uniform convergence; physical S-matrix pole needs separate SMAT package. Does not discharge BH-VIIB-G-0146 in preceding theorem.</td>
+</tr>
+<tr>
+  <td style="text-align:right">153</td>
+  <td><code>p11:thm:tensor-pseudoscalar-glue-closures</code></td>
+  <td style="text-align:right">4298–4304</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Tensor and singlet-anomaly block algebra is valid when source topological cumulants and matching projectors are actually supplied; no numerical topology mass extracted.</td>
+</tr>
+<tr>
+  <td style="text-align:right">154</td>
+  <td><code>p11:cor:transport-endpoint-closures</code></td>
+  <td style="text-align:right">4310–4315</td>
+  <td><code>VERIFIED</code></td>
+  <td>Explicit distinct valence measures 2delta_a and delta_(1-2a) obey identical counts/momentum but varying splits; exact transport endpoints remain conditional on their owner packages.</td>
+</tr>
+<tr>
+  <td style="text-align:right">155</td>
+  <td><code>p11:prop:finite-qcd-benchmark-package</code></td>
+  <td style="text-align:right">4378–4384</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Proof-status partitions are mutually scoped: finite geometric numbers vs executed nonperturbative matrix readouts and continuum obligations; no native QCD numbers supplied.</td>
+</tr>
+<tr>
+  <td style="text-align:right">156</td>
+  <td><code>p11:thm:post-gap-finite-carrier-control</code></td>
+  <td style="text-align:right">4422–4428</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Positive uniform gap controls imaginary-time semigroup; exponential spatial clustering requires declared locality/RP and continuum hypotheses; norm-resolvent stability of isolated spectral islands is valid.</td>
+</tr>
+<tr>
+  <td style="text-align:right">157</td>
+  <td><code>p11:cor:native-pure-glue-comparison-control-derived</code></td>
+  <td style="text-align:right">4434–4443</td>
+  <td><code>VERIFIED</code></td>
+  <td>Example kappa_L=1/L confirms strictly positive finite gaps need not give uniform infimum; antecedent not falsely marked proved.</td>
+</tr>
+<tr>
+  <td style="text-align:right">158</td>
+  <td><code>p11:thm:admissible-refinement-stability-finite-readouts</code></td>
+  <td style="text-align:right">4450–4504</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Riesz projection norms/ranks, finite island eigenvalues, source residues, and simple scalar pole/nonzero-overlap criterion follow under stated norm-resolvent hypotheses.</td>
+</tr>
+<tr>
+  <td style="text-align:right">159</td>
+  <td><code>p11:cor:source-selected-fixed-momentum-state</code></td>
+  <td style="text-align:right">4527–4556</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>For actual gauge-singlet physical fixed-plus island, commuting spectral projectors and nonzero source overlap construct a normalized state; convergence requires nonzero limiting overlap and projector/operator norm limits.</td>
+</tr>
+<tr>
+  <td style="text-align:right">160</td>
+  <td><code>p11:thm:paper-xi-finite-qcd-completion-certificate</code></td>
+  <td style="text-align:right">4595–4614</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Completion is explicitly limited to a typed finite readout grammar and conditional operator/limit interfaces; state, chiral, uniform gap, area, spectrum and scattering calculations not claimed.</td>
+</tr>
+<tr>
+  <td style="text-align:right">161</td>
+  <td><code>p11:thm:two-layer-paper-xi-export-paper-xii</code></td>
+  <td style="text-align:right">4654–4660</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Finite operator sequence versus continuum targets are cleanly separated, with quantified limit/RP/gap/area certificates reserved downstream.</td>
+</tr>
+<tr>
+  <td style="text-align:right">162</td>
+  <td><code>p11:def:pure-g-wilson-continuum-datum</code></td>
+  <td style="text-align:right">4671–4681</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Finite QCD export defined by existing H, transfer, operators, sources and traces with unexecuted limits and occurrence left conditional.</td>
+</tr>
+<tr>
+  <td style="text-align:right">163</td>
+  <td><code>p11:def:pure-glue-wilson-curvature-subdatum-paper-xii</code></td>
+  <td style="text-align:right">4683–4697</td>
+  <td><code>UNRESOLVED</code></td>
+  <td>Pure-glue member can be constructed as a deletion/restriction and vacuum recalculation, but the literal set inclusion D_YM subset D_QCD is not type-correct for the displayed tuples (BH-VIIB-G-0147).</td>
+</tr>
+<tr>
+  <td style="text-align:right">164</td>
+  <td><code>p11:cor:paper-x-xii-circularity-audit</code></td>
+  <td style="text-align:right">4728–4733</td>
+  <td><code>VERIFIED</code></td>
+  <td>One-way VII-A to VII-B to VII-C proof-use chronology is sound; backward calibration would violate supplied independent source selection.</td>
+</tr>
+<tr>
+  <td style="text-align:right">165</td>
+  <td><code>p11:rem:printed-qcd-numerics-source-branch</code></td>
+  <td style="text-align:right">4739–4741</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Explicitly excludes unconditional nonperturbative decimals; perturbative comparison numbers consume supplied running/mass/scale.</td>
+</tr>
+<tr>
+  <td style="text-align:right">166</td>
+  <td><code>p11:thm:v164-vacuum-gap-readouts</code></td>
+  <td style="text-align:right">4819–4834</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Symmetric finite ground projector/zero-temperature Gibbs state and transfer-gap logarithm are correct for a positive actual transfer with stated time unit; physical gap beyond carrier remains conditional.</td>
+</tr>
+<tr>
+  <td style="text-align:right">167</td>
+  <td><code>p11:thm:v164-string-tension-readout</code></td>
+  <td style="text-align:right">4836–4853</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Wilson area readout is stated for generated chart, fixed-loop limit and transfer/RP hypotheses; strictly positive tension requires separate same-action area certificate, not inferred from shape.</td>
+</tr>
+<tr>
+  <td style="text-align:right">168</td>
+  <td><code>p11:thm:v165-native-carrier-gap-qcd-boundary</code></td>
+  <td style="text-align:right">4855–4869</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Native carrier-support spectral gap distinct from QCD transfer and continuum YM gap; imported carrier gap not re-proven, no physical mass inferred.</td>
+</tr>
+<tr>
+  <td style="text-align:right">169</td>
+  <td><code>p11:cor:v226-hadron-coefficients</code></td>
+  <td style="text-align:right">4916–4924</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Complete finite momentum response inverse may reconstruct admitted same-source coefficients once an actual complete hadron frame is supplied; native 137 count not full hadron dimension.</td>
+</tr>
+<tr>
+  <td style="text-align:right">170</td>
+  <td><code>p11:cor:v227-hadron-response</code></td>
+  <td style="text-align:right">4945–4954</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Equality of complete finite meromorphic source responses determines admitted pole/residue comparisons, not all physical eigenvalues outside source-visible sector.</td>
+</tr>
+<tr>
+  <td style="text-align:right">171</td>
+  <td><code>p11:prop:v338-formal-source-residues</code></td>
+  <td style="text-align:right">4984–5003</td>
+  <td><code>VERIFIED</code></td>
+  <td>Secular determinant factors linear in t give normalized source numerator, residue slopes and [0,1] bounds of a projector deformation; no physical hadron interpretation.</td>
+</tr>
+<tr>
+  <td style="text-align:right">172</td>
+  <td><code>p11:prop:v338-native-meson-no-mass-prediction</code></td>
+  <td style="text-align:right">5013–5029</td>
+  <td><code>VERIFIED</code></td>
+  <td>Independent source coefficients change physical poles with unchanged Hodge/Pfaffian data; contact projector rank does not determine pion/kaon masses.</td>
+</tr>
+<tr>
+  <td style="text-align:right">173</td>
+  <td><code>UNLABELED:Paper7B:remark:5042</code></td>
+  <td style="text-align:right">5042–5050</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Optional finite source-owned transfer need not assume RG masses as axioms, but still requires same-action Hamiltonian and source before claiming physical meson spectrum.</td>
+</tr>
+<tr>
+  <td style="text-align:right">174</td>
+  <td><code>p11:prop:v344-same-action-curvature-extraction</code></td>
+  <td style="text-align:right">5070–5085</td>
+  <td><code>VERIFIED</code></td>
+  <td>Large-time Euclidean correlators isolate unique lowest source-visible selected masses; log-ratio produces three-channel second difference and cancels constant source scales.</td>
+</tr>
+<tr>
+  <td style="text-align:right">175</td>
+  <td><code>p11:cor:v344-character-no-hadron-mass</code></td>
+  <td style="text-align:right">5095–5105</td>
+  <td><code>REPRODUCED</code></td>
+  <td>Petersen three-face eligibility and 1/25 geometric transfer do not determine baryon same-action mass curvature or sign; arbitrary compatible flavor couplings vary curvature.</td>
+</tr>
+<tr>
+  <td style="text-align:right">176</td>
+  <td><code>UNLABELED:Paper7B:remark:5116</code></td>
+  <td style="text-align:right">5116–5122</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Real stable ground-state asymptotic is not a complex resonance pole; additional coupled-channel continuation is required.</td>
+</tr>
+<tr>
+  <td style="text-align:right">177</td>
+  <td><code>p11:prop:v345-f40-no-mass-inference</code></td>
+  <td style="text-align:right">5130–5149</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>F40 representation frame reconstruction and mirror-source eligibility are geometric; physical pole requires same-action embedding, source residue and leakage block.</td>
+</tr>
+<tr>
+  <td style="text-align:right">178</td>
+  <td><code>p11:prop:v349-f40-unique-packet-no-pole</code></td>
+  <td style="text-align:right">5162–5181</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>F40 44-coordinate reconstruction and 23 compatibility conditions are imported from P1A and do not imply full-H energy poles; distinct operator sorts kept separate.</td>
+</tr>
+<tr>
+  <td style="text-align:right">179</td>
+  <td><code>p11:prop:v350-nuclear-cumulative-obstruction</code></td>
+  <td style="text-align:right">5203–5219</td>
+  <td><code>VERIFIED</code></td>
+  <td>Degreewise 2d ranks differ from cumulative occupancy 2 sum d; exact cumulative sequence 2,10,30,58,108,190,316 reproduced.</td>
+</tr>
+<tr>
+  <td style="text-align:right">180</td>
+  <td><code>p11:thm:v350-nuclear-physical-spectral-count</code></td>
+  <td style="text-align:right">5229–5249</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Nested genuine nuclear-H spectral projectors of ranks d yield 2d cumulative capacities only with physical intertwiner and twofold spin degeneracy; rank increments check.</td>
+</tr>
+<tr>
+  <td style="text-align:right">181</td>
+  <td><code>p11:prop:v350-light-ray-owner-qualification</code></td>
+  <td style="text-align:right">5261–5278</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Physical null generator commutes with H under inherited longitudinal commutation; physical light-ray PDF sum rules additionally consume current/EMT Mellin and support/limit certificates, inheriting BH-VIIB-G-0142.</td>
+</tr>
+<tr>
+  <td style="text-align:right">182</td>
+  <td><code>p11:thm:v350-dglap-fixed-nf-correction</code></td>
+  <td style="text-align:right">5288–5311</td>
+  <td><code>VERIFIED</code></td>
+  <td>Fixed-n_f DGLAP singlet matrix has zero column sums and stationary eigenvector (3nf,16), giving 9/25,16/25 for nf3 and 9/17 for nf6.</td>
+</tr>
+<tr>
+  <td style="text-align:right">183</td>
+  <td><code>p11:prop:v356-hadron-effective-mass-error</code></td>
+  <td style="text-align:right">5329–5346</td>
+  <td><code>VERIFIED</code></td>
+  <td>Finite positive spectral source correlator yields nonincreasing effective mass and explicit exponential residue/visible-gap error bound.</td>
+</tr>
+<tr>
+  <td style="text-align:right">184</td>
+  <td><code>p11:thm:v356-octa-heat-wilson</code></td>
+  <td style="text-align:right">5357–5378</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Isolated uniform SU(3) heat-face octahedron Z and Wilson fusion series reproduce cited numerical W1,W2, conditional heat-model action not native physical Wilson tension.</td>
+</tr>
+<tr>
+  <td style="text-align:right">185</td>
+  <td><code>p11:prop:v356-full-hurwitz-character-leading</code></td>
+  <td style="text-align:right">5390–5401</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>24 eight-face octahedral cycles and two fundamental/antifundamental labels yield 24<em>2</em>9=432 leading coefficient at heat Casimir exponent 16/3, on uniform 96-face conditional gauge model.</td>
+</tr>
+<tr>
+  <td style="text-align:right">186</td>
+  <td><code>p11:rem:v356-closed-shell-status</code></td>
+  <td style="text-align:right">5420–5436</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Printed isolated and Monte Carlo comparators are not same-action or rigorous confidence claims; no physical string tension or QCD mass inferred.</td>
+</tr>
+<tr>
+  <td style="text-align:right">187</td>
+  <td><code>p11:thm:v357-pair-transfer-shell-gap</code></td>
+  <td style="text-align:right">5444–5477</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Finite destination ground-state nonzero pair-source overlaps isolate E_N+2-E_N; correlator ratio gives energy curvature and finite-time exponential error bound.</td>
+</tr>
+<tr>
+  <td style="text-align:right">188</td>
+  <td><code>p11:prop:v357-shell-gap-curvature-source</code></td>
+  <td style="text-align:right">5489–5510</td>
+  <td><code>VERIFIED</code></td>
+  <td>Second difference of a spin-paired one-body reference yields 2(e_K+1-e_K) plus residual curvature; quark-source derivative commutes with finite difference on differentiable branches.</td>
+</tr>
+<tr>
+  <td style="text-align:right">189</td>
+  <td><code>p11:rem:v357-nuclear-pair-scope</code></td>
+  <td style="text-align:right">5518–5529</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Explicitly leaves physical pair-overlap, nuclear spectra, and Gram/physical cumulative shell certificates conditional.</td>
+</tr>
+<tr>
+  <td style="text-align:right">190</td>
+  <td><code>p11:def:v365-hadron-pole-channel</code></td>
+  <td style="text-align:right">5542–5559</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Defines same-action visible pole and complete channel hyperedge as source/full-resolvent object; requires detector, outgoing states and actual charge/flavor/kinematic projectors.</td>
+</tr>
+<tr>
+  <td style="text-align:right">191</td>
+  <td><code>p11:prop:v365-pole-leakage-test</code></td>
+  <td style="text-align:right">5561–5570</td>
+  <td><code>VERIFIED</code></td>
+  <td>2x2 Feshbach counterexample shows compressed root differs from full pole when leakage B nonzero; reducing subspace B=0 and nonzero overlap suffices to preserve visible pole.</td>
+</tr>
+<tr>
+  <td style="text-align:right">192</td>
+  <td><code>p11:rem:v365-observable-decay-frontier</code></td>
+  <td style="text-align:right">5581–5594</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Geometric count/weight comparisons are not exhaustive physical hadron/decay tables and cannot alone imply irreversible widths; physical source/SMAT criteria enumerated.</td>
+</tr>
+<tr>
+  <td style="text-align:right">193</td>
+  <td><code>p11:prop:v366-prepared-hurwitz-angular-law</code></td>
+  <td style="text-align:right">5606–5629</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Independent CG and spherical-harmonic calculation reproduces prepared J3/2 isotropic and J5/2 quartic distribution and 9/4 axis ratio; physical rotation/source, pure Qchi and partial-wave assumptions explicit.</td>
+</tr>
+<tr>
+  <td style="text-align:right">194</td>
+  <td><code>p11:prop:v366-hurwitz-decay-residue-gate</code></td>
+  <td style="text-align:right">5644–5663</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+  <td>Actual pole-to-decay-channel residue and action-owned intertwiner are required; pentagonal rank-3 selection annihilator is geometric, not a physical branching fraction.</td>
+</tr>
+<tr>
+  <td style="text-align:right">195</td>
+  <td><code>p11:rem:v366-decay-physical-frontier</code></td>
+  <td style="text-align:right">5676–5687</td>
+  <td><code>FORMALIZED</code></td>
+  <td>Explicitly declines identifying named observed resonances, new widths or physical masses from unprojected finite representation decompositions.</td>
+</tr>
+</tbody>
+</table>
+<h2>Complete canonical issue register (every distinct root, including resolved issue)</h2>
+<p>Status taxonomy: errors/refutation, missing source certificates, valid conditional physical readout frontiers, or source/evidence typing. No new physical mechanism or theorem was inserted.</p>
+<h3>BH-VIIB-G-0134 — MINOR — TYPE_OR_DOMAIN — OPEN</h3>
+<p><strong>Earliest matched source location:</strong> <code>UNLABELED:Paper7B:definition:209</code>, <code>Paper7B-QCDReadouts-v1_150.tex:210-214</code>.</p>
+<p><strong>Exact problem / remaining obligation:</strong> The spectrum of P H P must be understood as the restriction to ran(P), not its full carrier extension with zero complement.</p>
+<p><strong>Direct/negative evidence:</strong> VII-B-B01-E3-DOMAIN-001.</p>
+<p><strong>Effect:</strong> Read literally on the whole space, projection compression introduces spurious zero levels and invalidates positive gap assertions; prose repeatedly indicates intended restricted-block reading.</p>
+<p><strong>Verified material descendants:</strong> None beyond source origin recorded.</p>
+<p><strong>Possible/unconfirmed remote effects:</strong> p11:thm:primitive-channel-loss-hierarchy; p11:cor:numerical-primitive-channel-floors; p11:thm:native-nucleon-mass-eigenvalue; p11:thm:positive-native-nucleon-mass-floor</p>
+<p><strong>Scope firewall:</strong> No claim of failed finite QCD physics if restricted block semantics is understood.</p>
+<h3>BH-VIIB-G-0135 — MODERATE — MISSING_CONDITION — OPEN</h3>
+<p><strong>Earliest matched source location:</strong> <code>p11:thm:native-nucleon-mass-eigenvalue</code>, <code>Paper7B-QCDReadouts-v1_150.tex:724-738</code>.</p>
+<p><strong>Exact problem / remaining obligation:</strong> Show that the specified spin/isospin nucleon projector reduces actual H_L, [H_L,P_N,L]=0, on the claimed physical mass-source branch; alternatively identify the exact conserved-charge or source-visible spectral projector being used.</p>
+<p><strong>Direct/negative evidence:</strong> VII-B-B01-E3-REDUCING-001.</p>
+<p><strong>Effect:</strong> A nonreducing isospin projector can have compression eigenvalues different from the poles of actual H. Unequal running quark masses make exact isospin a claim-specific condition, not universal full-QCD conservation.</p>
+<p><strong>Verified material descendants:</strong> None beyond source origin recorded.</p>
+<p><strong>Possible/unconfirmed remote effects:</strong> p11:thm:positive-native-nucleon-mass-floor; p11:cor:dimensionless-baryon-anchor-floor; p11:thm:nucleon-trace-anomaly-bridge</p>
+<p><strong>Scope firewall:</strong> Abstract 3x3 Hermitian witness is a logical boundary test, not an in-grammar full-QCD countermodel; result remains UNRESOLVED, not REFUTED.</p>
+<h3>BH-VIIB-G-0136 — MINOR — DAG_COVERAGE — RESOLVED</h3>
+<p><strong>Earliest matched source location:</strong> <code>p11:thm:color-casimir-attraction-channels</code>, <code>Paper7B-QCDReadouts-v1_150.tex:384-411</code>.</p>
+<p><strong>Exact problem / remaining obligation:</strong> Resolve the current imported V-C source theorem by ID, not stale title.</p>
+<p><strong>Direct/negative evidence:</strong> VII-B-B01-E3-CASIMIR-001.</p>
+<p><strong>Effect:</strong> V-C current source calls the cited exact result Short-distance color channels; the numbers are consistent but the quoted title cannot be resolved literally.</p>
+<p><strong>Verified material descendants:</strong> p7v2:prop:color-channels -&gt; p11:thm:color-casimir-attraction-channels -&gt; p11:thm:primitive-channel-loss-hierarchy</p>
+<p><strong>Possible/unconfirmed remote effects:</strong> None recorded.</p>
+<p><strong>Scope firewall:</strong> Locator-only issue, not a claim of false color factors or wrong QCD attraction sign.</p>
+<h3>BH-VIIB-G-0137 — MODERATE — INCORRECT_STEP — OPEN</h3>
+<p><strong>Earliest matched source location:</strong> <code>p11:cor:first-two-support-pole-extraction</code>, <code>Paper7B-QCDReadouts-v1_150.tex:898-937</code>.</p>
+<p><strong>Exact problem / remaining obligation:</strong> In an arbitrary complex Gram-orthonormal trial basis the transfer block must be Hermitian; the printed symmetric matrix and eigenvalues with kappa_AB^2 require a real relative-phase convention not contained in the stated hypotheses.</p>
+<p><strong>Direct/negative evidence:</strong> P7B-B02-E3-TRANSFER-001.</p>
+<p><strong>Effect:</strong> A valid positive transfer has real positive eigenvalues but the printed square-root discriminant can be negative if the off-diagonal source overlap is imaginary. Independent general-Hermitian Ritz statements survive.</p>
+<p><strong>Verified material descendants:</strong> None beyond source origin recorded.</p>
+<p><strong>Possible/unconfirmed remote effects:</strong> p11:thm:native-leading-vector-nonet; p11:thm:block-b-finite-pole-dressing</p>
+<p><strong>Scope firewall:</strong> Exact counterexample is a legal 2-dimensional positive finite transfer, not a counterexample to the physical H_L compiler or to Ritz monotonicity.</p>
+<h3>BH-VIIB-G-0138 — MODERATE — NORMALIZATION_OR_READOUT — OPEN</h3>
+<p><strong>Earliest matched source location:</strong> <code>p11:cor:derived-perturbative-comparison-package</code>, <code>Paper7B-QCDReadouts-v1_150.tex:1072-1092</code>.</p>
+<p><strong>Exact problem / remaining obligation:</strong> Identify the dimensionful input M_Z^{BH} and precise conventional two-loop Lambda integration definition used to convert the legitimate dimensionless running factor into the printed 206.9499404 MeV; distinguish external measured comparison from native output.</p>
+<p><strong>Direct/negative evidence:</strong> P7B-B02-E3-RUNNING-001.</p>
+<p><strong>Effect:</strong> Without a dimensionful comparison-scale certificate the decimal MeV result is not derivable from alpha_s=1/sqrt72 and universal beta coefficients. Exact independent recalculation reproduces that decimal when mu=91.1876 GeV is supplied.</p>
+<p><strong>Verified material descendants:</strong> None beyond source origin recorded.</p>
+<p><strong>Possible/unconfirmed remote effects:</strong> p11:thm:native-dglap-scale-evolution; p11:thm:asymptotic-quark-gluon-momentum-partition</p>
+<p><strong>Scope firewall:</strong> Two-loop running arithmetic is correct within the asymptotic integration convention; this is provenance of a comparison number, not a refutation of the beta function or a claim that QCD mass scale cannot exist.</p>
+<h3>BH-VIIB-G-0139 — MINOR — MISSING_CONDITION — OPEN</h3>
+<p><strong>Earliest matched source location:</strong> <code>p11:lem:v153-scheme-invariant-isolated-pole</code>, <code>Paper7B-QCDReadouts-v1_150.tex:836-856</code>.</p>
+<p><strong>Exact problem / remaining obligation:</strong> Distinguish invariance of determinant-zero multiplicity from pointwise covariance of Laurent residue coefficients; a simple pole or constant regular maps suffice for latter, whereas higher-order principal parts mix with derivatives of analytic maps.</p>
+<p><strong>Direct/negative evidence:</strong> P7B-B02-E3-SCHEME-001.</p>
+<p><strong>Effect:</strong> An analytic nonzero frame factor preserves zero multiplicity but a p-dependent frame can mix double-pole Laurent coefficients; individual residues do not always transform by value-at-pole channel matrices.</p>
+<p><strong>Verified material descendants:</strong> None beyond source origin recorded.</p>
+<p><strong>Possible/unconfirmed remote effects:</strong> p11:cor:native-vector-current-constants; p11:cor:block-b-leading-vector-complex-poles</p>
+<p><strong>Scope firewall:</strong> Algebraic analytic-chart counterexample is at a double pole, not a challenge to stable physical simple pole residues.</p>
+<h3>BH-VIIB-G-0140 — MODERATE — MISSING_CONDITION — OPEN</h3>
+<p><strong>Earliest matched source location:</strong> <code>p11:thm:native-scalar-response-bridge</code>, <code>Paper7B-QCDReadouts-v1_150.tex:1716-1729</code>.</p>
+<p><strong>Exact problem / remaining obligation:</strong> For native hadron mass M_h=E_h-E_0, show the scalar insertion used is connected/vacuum-subtracted so its expectation is &lt;h|dH/dm|h&gt;-&lt;0|dH/dm|0&gt;, or establish dE0/dm=0; specify compatible 1/(2M_h) relativistic normalization.</p>
+<p><strong>Direct/negative evidence:</strong> B03-E3-FH-002.</p>
+<p><strong>Effect:</strong> Differentiating vacuum-subtracted physical mass is not the same as differentiating the excited eigenvalue when vacuum energy depends on m_q. Relativistic normalization does not by itself subtract the vacuum.</p>
+<p><strong>Verified material descendants:</strong> p11:thm:native-scalar-response-bridge -&gt; p11:thm:native-dressed-baryon-residues (scalar source branch only)</p>
+<p><strong>Possible/unconfirmed remote effects:</strong> p11:thm:rg-invariant-scalar-bridge; p11:thm:nucleon-trace-anomaly-bridge</p>
+<p><strong>Scope firewall:</strong> Simple finite Hamiltonian counterexample disproves unqualified eigenvalue-to-gap FH inference, not renormalized continuum QCD sigma relations.</p>
+<h3>BH-VIIB-G-0141 — MODERATE — MISSING_CONDITION — OPEN</h3>
+<p><strong>Earliest matched source location:</strong> <code>p11:thm:microscopic-topological-baryon-matching</code>, <code>Paper7B-QCDReadouts-v1_150.tex:1828-1855</code>.</p>
+<p><strong>Exact problem / remaining obligation:</strong> Establish an action/current-matched map from the microscopic quark baryon charge to the normalized chiral winding current on the chiral soliton branch; independent conservation and pi3(SU3)=Z do not identify their charges.</p>
+<p><strong>Direct/negative evidence:</strong> B03-E3-WZW-006.</p>
+<p><strong>Effect:</strong> A microscopic determinant singlet has baryon charge 1, but constant U:S3-&gt;SU3 has winding 0; deriving their equality requires a physical EFT matching map, not just a shared U1 label. The constant map is a logical independence witness, not a claimed realized baryon.</p>
+<p><strong>Verified material descendants:</strong> None beyond source origin recorded.</p>
+<p><strong>Possible/unconfirmed remote effects:</strong> p11:thm:wzw-baryon-multiplet-quantization; p11:cor:leading-baryon-mass-relations</p>
+<p><strong>Scope firewall:</strong> Does not refute pi3(SU3), winding integrality, WZW hypercharge formula or physical skyrmion descriptions.</p>
+<h3>BH-VIIB-G-0142 — MODERATE — MISSING_CONDITION — OPEN</h3>
+<p><strong>Earliest matched source location:</strong> <code>p11:thm:native-pdf-sum-rules</code>, <code>Paper7B-QCDReadouts-v1_150.tex:2601-2633</code>.</p>
+<p><strong>Exact problem / remaining obligation:</strong> In the physical collinear PDF construction without exact R3, establish support/crossing/zero-mode conditions that identify the full local-current and stress-tensor Mellin moments with integrals over 0&lt;=x&lt;=1 for q, antiquark and gluon.</p>
+<p><strong>Direct/negative evidence:</strong> B03-E3-FIXPLUS-018.</p>
+<p><strong>Effect:</strong> VII-B:2565-2595 explicitly denies that physical bilocal theorem proves [0,1] support, yet VII-B:2601-2623 writes 0..1 integrals. Ward identities fix whole Mellin moments, not restricted integrals without the support/crossing bridge.</p>
+<p><strong>Verified material descendants:</strong> None beyond source origin recorded.</p>
+<p><strong>Possible/unconfirmed remote effects:</strong> p11:thm:native-dglap-scale-evolution; p11:thm:native-qcd-factorization-bridge</p>
+<p><strong>Scope firewall:</strong> The toy off-support density is a logical nonimplication witness, not a realized QCD state; physical PDF sum rules are not thereby experimentally refuted.</p>
+<h3>BH-VIIB-G-0143 — MINOR — TYPE_OR_DOMAIN — OPEN</h3>
+<p><strong>Earliest matched source location:</strong> <code>p11:thm:native-gpd-unification-bridge</code>, <code>Paper7B-QCDReadouts-v1_150.tex:2896-2907</code>.</p>
+<p><strong>Exact problem / remaining obligation:</strong> Declare x&gt;0 on quark forward H=q branch and the negative-x antiquark continuation H^q(x,0,0)=-qbar(-x), or explicitly define one signed extended q(x) on [-1,1], consistent with earlier 0..1 q and qbar.</p>
+<p><strong>Direct/negative evidence:</strong> B04-E4-GPD-NEG-011.</p>
+<p><strong>Effect:</strong> Same source writes GPD moments on [-1,1] but earlier quark PDFs q_f, qbar_f separately on [0,1]. The all-x forward equality is ill-typed or false without charge-conjugation continuation.</p>
+<p><strong>Verified material descendants:</strong> p11:thm:native-gpd-unification-bridge -&gt; p11:cor:asymptotic-quark-gluon-angular-momentum-partition (Ji operator bridge; not fixed fractions alone)</p>
+<p><strong>Possible/unconfirmed remote effects:</strong> p11:thm:native-qcd-factorization-bridge</p>
+<p><strong>Scope firewall:</strong> No claim that the usual full GPD moments, form factors or Ji sum rule fail with the proper convention.</p>
+<h3>BH-VIIB-G-0144 — MINOR — NORMALIZATION_OR_READOUT — OPEN</h3>
+<p><strong>Earliest matched source location:</strong> <code>p11:def:native-thermal-crossover-readout</code>, <code>Paper7B-QCDReadouts-v1_150.tex:3499-3513</code>.</p>
+<p><strong>Exact problem / remaining obligation:</strong> Clarify whether h is a dimensionless source in exponent (then Sigma is intentionally defined as printed) or a dimensionful chiral Hamiltonian mass source h<em>O (then the physical condensate density is T/V</em>d_h logZ). Specify whether Tc,L is merely a conventionally chosen response or physical chiral condensate crossover.</p>
+<p><strong>Direct/negative evidence:</strong> B04-E4-CHI-SOURCE-031.</p>
+<p><strong>Effect:</strong> If h enters H as an energy source, d_h logZ carries 1/T. Multiplication by T changes the selected response and potentially its maximizer; source leaves that physical identification unstated.</p>
+<p><strong>Verified material descendants:</strong> None beyond source origin recorded.</p>
+<p><strong>Possible/unconfirmed remote effects:</strong> p11:def:thermal-export-object (T_c,L tuple component); p11:thm:cosmological-export-boundary</p>
+<p><strong>Scope firewall:</strong> Not a counterexample to the definition; no claim that a measured QCD transition temperature is incorrectly calculated because none is printed.</p>
+<h3>BH-VIIB-G-0145 — MODERATE — MISSING_CONDITION — OPEN</h3>
+<p><strong>Earliest matched source location:</strong> <code>p11:def:oriented-coordinate-boundary-face</code>, <code>Paper7B-QCDReadouts-v1_150.tex:3697-3718; Paper1A-Geometry-v5_168.tex:9208-9234</code>.</p>
+<p><strong>Exact problem / remaining obligation:</strong> Produce the explicit selected orientation-compatible isomorphism F_sigma≈E_sigma within X≈N_sigma⊕F_sigma, or an established proof that actual Gram-kernel and physical source-map conditions are invariant over allowed identifications. I-A explicitly calls E identification optional, while VII-B substitutes E as an embedded face without its map.</p>
+<p><strong>Direct/negative evidence:</strong> B04-E4-HURWITZ-IDENT-042, B04-E3-SHELL-FACE-037.</p>
+<p><strong>Effect:</strong> Abstract F_sigma and Hurwitz E_sigma are both 3-dimensional, so quotient rank arithmetic is right, but they are not the same embedded subspace until a specific map is declared. Changing complementary embedding changes L3, so an actual S_r can annihilate one but not another.</p>
+<p><strong>Verified material descendants:</strong> p11:def:oriented-coordinate-boundary-face -&gt; p11:thm:v2211-nuclear-gram-kernel-certificate -&gt; p11:thm:native-boundary-reduced-shell-count (physical-capacity route only)</p>
+<p><strong>Possible/unconfirmed remote effects:</strong> p11:prop:no-insertion-status-coordinate-boundary</p>
+<p><strong>Scope firewall:</strong> Does not refute the binomial, triangular, quotient ranks, CAR capacities or conditional Gram-kernel proof. Degree-three onset is a source-stated upstream convention, not here falsely refuted.</p>
+<h3>BH-VIIB-G-0146 — MODERATE — MISSING_CONDITION — OPEN</h3>
+<p><strong>Earliest matched source location:</strong> <code>p11:thm:schur-real-part-sheets-residues</code>, <code>Paper7B-QCDReadouts-v1_150.tex:4170-4234, especially 4199-4207</code>.</p>
+<p><strong>Exact problem / remaining obligation:</strong> Establish a channel-local holomorphic continuation of the real-cut discontinuity Gamma^(alpha)(s) to the claimed complex resonance sheet, including cut/end-point domain and sign conventions, or explicitly condition sheet formula on this continuation. Positivity plus the stated tail condition alone do not give such an extension.</p>
+<p><strong>Direct/negative evidence:</strong> B05-E4-CUSP-DENSITY, B05-E3-TAIL-DISPERSION, B05-E3-RESIDUE-MATRIX.</p>
+<p><strong>Effect:</strong> A positive compactly supported cut density with a nonanalytic cusp inside the open cut satisfies the integral and tail hypotheses, but cannot be evaluated as a holomorphic Gamma(s) through that point. A sheet-indexed complex zero needs this additional analytic input.</p>
+<p><strong>Verified material descendants:</strong> None beyond source origin recorded.</p>
+<p><strong>Possible/unconfirmed remote effects:</strong> p11:thm:paper-xi-finite-qcd-completion-certificate (continued resonance route); Paper VII-C SMAT identification only if source continuation route used</p>
+<p><strong>Scope firewall:</strong> No error in algebraic matrix simple-zero residue formula or conditional holomorphic Rouché limit.</p>
+<h3>BH-VIIB-G-0147 — MINOR — TYPE_OR_DOMAIN — OPEN</h3>
+<p><strong>Earliest matched source location:</strong> <code>p11:def:pure-glue-wilson-curvature-subdatum-paper-xii</code>, <code>Paper7B-QCDReadouts-v1_150.tex:4683-4697</code>.</p>
+<p><strong>Exact problem / remaining obligation:</strong> Specify a well-typed projection/restriction map from the full finite compiler to the pure-glue Hamiltonian/operator datum and how its vacuum Omega_YM is selected. The displayed YM and full-QCD sets consist of different operators/states on different carriers, so the literal subset inclusion does not hold as written.</p>
+<p><strong>Direct/negative evidence:</strong> B05-E4-PURE-GLUE-TUPLE-TYPE.</p>
+<p><strong>Effect:</strong> Literal set inclusion would equate projected YM operators and vacuum with full-QCD datum entries despite different carrier/ground-state definitions. The intended submodel/functor semantics remain available but need typing.</p>
+<p><strong>Verified material descendants:</strong> p11:def:pure-glue-wilson-curvature-subdatum-paper-xii -&gt; p11:cor:paper-x-xii-circularity-audit (export typing only)</p>
+<p><strong>Possible/unconfirmed remote effects:</strong> Paper VII-C pure-glue continuum/OS export interface</p>
+<p><strong>Scope firewall:</strong> Does not refute construction of a pure-glue finite model or any of the paper’s conditional continuum boundaries.</p>
+<h2>Final Batch 5 important replay results</h2>
+<p>The Duhamel Hessian includes its nonlinear Hamiltonian contact term. Compact scalar 3×3 cubic and the nondegenerate glue root shift agree algebraically, but no scalar mass follows without native source entries. The real-cut spectral tail estimate is valid; a complex continuation additionally needs analytic data <code>BH-VIIB-G-0146</code> beyond positivity of the cut density. Rouché and Riesz projector/residue convergence are verified <strong>on their stated holomorphic/norm-resolvent hypotheses</strong>, not as proved QCD occurrence.</p>
+<p>The separate pure-glue datum exists as a construction interface only with an actual typed restriction/deletion map and its own vacuum. Literal <code>D_{YM} ⊂ D_{QCD}</code> is ill-typed for the displayed lists of distinct operators; see <code>BH-VIIB-G-0147</code>. No physical Yang–Mills gap is imported.</p>
+<p>At fixed active <code>n_f=3</code>, LO singlet momentum fractions are <code>(9/25,16/25)</code> and Ji fractions <code>(9/50,8/25)</code>, whereas formal <code>n_f=6</code> has quark fraction <code>9/17</code>. These are not matched native boundary PDFs. Source-visible effective masses and neutron pair transfer formulas produce exact same-action gap/curvature identities only with nonzero overlaps. Degreewise nuclear ranks are not cumulative capacities: independent consecutive quotient shells would yield <code>(2,10,30,58,108,190,316)</code>; physical cumulative <code>(2,8,20,28,50,82,126)</code> is a <strong>separate conditional nested spectral threshold test</strong>.</p>
+<p>Independent <code>SU(3)</code> character sums reproduce the isolated uniform octahedron heat weights <code>W1/W2</code> and the 24-cell octahedral eight-face count gives the conditional full-shell coefficient <code>432</code>. The isotropic <code>J=3/2</code> and prepared <code>J=5/2</code> quartic angular intensities and the <code>9/4</code> axis/diagonal ratio have been independently reconstructed using Clebsch–Gordan and spherical harmonics. They are <strong>not</strong> identified with any observed resonance or decay rate.</p>
+<h2>Mathematical integrity and continuation rules</h2>
+<ul>
+<li>The target source and all imported paper files remain <strong>byte-for-byte unchanged</strong>. The full G0/GP1–GP3 chain, upstream constitutional checkpoints and their known certificates are not reopened without matched contrary evidence.</li>
+<li>Existing physical/QCD conditions are <strong>reused by reference</strong>. Pending canonical aliases are not silently promoted to unique new foundational assumptions.</li>
+<li>The audit identifies 14 issue roots (13 open and 1 resolved). The single source <code>REFUTED</code> statement concerns an unrestricted complex off-diagonal mixing formula (<code>BH-VIIB-G-0137</code>); 10 claim dispositions remain <code>UNRESOLVED</code> (some because they inherit old issues). The other 11 open issues do not individually refute theorems unless a validated counterexample exists.</li>
+<li>The conditional statements about continuum limits, nuclear realization, decay hyperedges, scattering/SMAT, light-front PDF support and chiral occurrence remain conditional <strong>exactly as scoped by their source</strong>.</li>
+<li>Executed independent E3/E4 tests are evidence for the individual finite formulas, not proof that a native QCD action/continuum phase has been constructed.</li>
+<li>The atlas contains a registered linked VII-B layer with 195 claim records, proof routes, 14 exact gap records, condition usages, source-frozen evidence and typed dependency edges. The combined graph exposes reviewed material paths without promoting citations or guessed cross-paper impacts.</li>
+</ul>
+<h2>Audit release and archive hygiene</h2>
+<p><strong>New Atlas:</strong> <code>Paper00-DAGAtlas-v1_118.zip</code>, derived from supplied Atlas v1_117 and preserving its previous valid paper layers/controlling sources. Its proof/route updates are in <code>DAG/AuditLayer/Paper7B-v1_1/</code> and the versioned combined query indices.</p>
+<p><strong>New proof-chain audits:</strong> <code>Paper00-ProofChainAudits-v1_35.zip</code>, all previously latest audits plus this one full Paper VII-B report; no duplicate older version of a paper-level audit in the audit ZIP.</p>
+<p><strong>Release validation:</strong> recorded in <code>DAG/AuditLayer/Paper7B-v1_1/CoverageAndValidation.json</code> and <code>DAG/AtlasReleaseValidation-v1_118.json</code>.</p>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>

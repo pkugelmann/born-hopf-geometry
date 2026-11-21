@@ -1,0 +1,2592 @@
+<!doctype html>
+<html lang="en"><head><base href="../../"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#071723"><meta name="description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:title" content="Paper6A-ProofChainAudit-v1_17 — Born–Hopf Geometry"><meta property="og:description" content="Born–Hopf Geometry: a research program connecting compact geometry, finite spectral structures and observable physics."><meta property="og:type" content="website"><title>Paper6A-ProofChainAudit-v1_17 · Born–Hopf Geometry</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/catalog.js" defer></script><script src="assets/main.js" defer></script></head>
+<body data-page="verification"><a class="skip-link" href="#main">Skip to content</a><div class="site-shell"><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Born–Hopf Geometry, homepage"><span class="brand-mark">BH<span class="brand-dot">·</span></span><span class="brand-caption">BORN–HOPF<br>GEOMETRY</span></a><nav class="main-nav" aria-label="Primary"><a href="index.html">Overview</a><a href="framework.html">Framework</a><a href="observables.html">Observables</a><a href="papers.html">Papers</a><a href="verification.html" class="active" aria-current="page">Verification</a></nav><a class="nav-cta" href="papers.html">Explore research <span aria-hidden="true">↗</span></a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="eyebrow"><a href="verification.html" class="micro-link">← Verification archive</a> · Paper-specific proof-chain audit</div><h1 style="font-size:clamp(2.1rem,4vw,3.4rem)">Paper6A ProofChainAudit v1_17</h1><p>Readable HTML presentation of the supplied audit record. Historical statuses and version-specific findings remain part of the original report.</p><a class="btn btn-secondary" href="verification/reports/Paper6A-ProofChainAudit-v1_17.md" download>Download original Markdown ↗</a></div></section><div class="container page-section"><div class="notice" style="margin-bottom:35px"><strong>Interpretation:</strong> An audit entry or source correction does not, by itself, certify a complete physical derivation. Resolve its exact paper version, premise and evidence owner.</div><article class="prose report-prose"><h1>Paper Paper6A current-source normalization integration — 18 November 2026</h1>
+<p><strong>Current paper:</strong> <code>Paper6A-GravityCosmology-v2_264.tex</code> (SHA-256 <code>dab09bd19056542b8b6e60b9c143a76b2211508de53a7afec00ae6b603f64664</code>).<br />
+<strong>Framework:</strong> <code>Paper00-PapersMinimal-v3_036.zip</code>; <strong>scope:</strong> TARGETED SOURCE INTEGRATION AND BOUNDED MATH CHECKS, NOT A FULL NEW PAPER AUDIT.<br />
+<strong>Source claims:</strong> <code>p8:thm:reciprocal-position-source-normalization; p8:prop:v3036-newton-physical-matching-criterion</code>.<br />
+<strong>Disposition:</strong> The scalar-normalized Einstein variation is valid, but physical common-action Newton source normalization consumes the existing III-F unresolved bridge.<br />
+<strong>Evidence:</strong> <code>Paper00-PlanckCurvatureConsistency-v1_5.md</code> and <code>Paper00-PlanckCurvatureConsistencyChecks-v1_4.py</code> (91/91 scoped checks, independently rerun).<br />
+<strong>Ownership:</strong> The earliest unresolved source-native physical source/metric bridge remains <code>p3f:prop:v2211-newton-owner-matching</code>; no new axioms, no independent issue duplicate, no physical closure promotion. Historical issue status and prior proofs are preserved verbatim below.</p>
+<hr />
+<h2>Historical audits and prior scoped updates (unchanged content)</h2>
+<h1>Paper6A — current-source repair and bounded-check addendum (18 November 2026)</h1>
+<p><strong>Current source:</strong> <code>Paper6A-GravityCosmology-v2_263.tex</code>; SHA-256 <code>dd4387070a4b052810cf8ab898edc21b7ede494a1d0d159f041f428e3e134e5a</code>.
+<strong>Framework:</strong> Paper00-PapersMinimal-v3_032.zip; <strong>DAG:</strong> Paper00-DAGAtlas-v1_182.zip; <strong>Audit:</strong> Paper00-ProofChainAudits-v1_74.zip.
+<strong>Scope:</strong> TARGETED SOURCE REPAIR / SELECTED CLAIM LOCAL RECHECK, <strong>not a new full-paper E3/E4 audit</strong>. Historical text and findings below are preserved. Old open verdicts are not erased; consult the effective status ledger <code>Paper00-ClosedGapCrosswalk-v1_4.json</code>.</p>
+<p><strong>Repair:</strong> same-chart cap-vs-coherent UV comparison; existing actual curvature Schur result; appendix reference resolution, no global gravity source/stress upgrade.</p>
+<p><strong>Evidence:</strong> <code>Paper00-MultiDomainReverificationBatch2-v1_1.md</code>, source patch diff and 38/38 combined scoped checks. Physical action, state, pole, history and observational occurrence remain conditional unless independently proved from actual owners.</p>
+<hr />
+<h2>Previous audit preserved as historical document</h2>
+<h1>Paper VI-A proof-chain audit v1.14 — G-0006 source-charge integration mathematics</h1>
+<p><strong>Targeted status:</strong> <code>BH-VIA-G-0006</code> is <strong>LOCAL_MATH_CLOSED ONLY for the original factor-three/shell-width-to-charge integration defect</strong>. The historical v2.253 audit and canonical historical issue state are retained. Current source: <code>Paper6A-GravityCosmology-v2_261.tex</code> SHA-256 <code>b15dea7e84ed67596c77a658ca36e6cbb483b5318828bbd2c47f9594628cac1d</code>; theorem <code>p8:thm:smooth-solar-system-screening-ppn</code> lines 4563–4676, source fraction <code>p8:eq:smooth-screening-epsilon</code> lines 4590–4604. The new source replaces the old <code>q=Delta r/r</code> inference with exact positive radial Yukawa integrals. Uniform source <code>q(0)=1-(1-d)^3=3d-3d²+d³</code>; finite mass <code>q(x,d)=1-H((1-d)x)/H(x)</code> where <code>H(x)=x cosh(x)-sinh(x)</code>. Independent replay <strong>32/32</strong> source/symbolic/adversarial checks plus <strong>700/700</strong> numeric checks. Evidence and full derivation: <code>Paper6A-ThinShellChargeClosure-v1_1.md</code>, <code>Paper6A-ThinShellChargeClosureChecks-v1_1.py</code>, <code>Paper6A-ThinShellChargeClosureEvidence-v1_1.json</code>.</p>
+<p><strong>Material physical subobligation still OPEN under the same issue ID:</strong> No on-shell same-action material-body scalar profile and its nonnegative/order-bounded effective trace source have been evaluated. The inherited trace law formally identifies <code>J_eff=-kappa deltaT/3 - nonlinear_W_remainder/c²</code>, but neither actual source positivity nor the normalization of the canonical exterior scalar against the Newtonian <code>1/r</code> coefficient is thereby proved. For a uniform finite-radius source an additional unscreened reference factor <code>A(x)=3e^(-x)[x cosh(x)-sinh(x)]/x³</code> appears; at <code>x=1</code>, <code>A=3e^-2</code>, showing why scalar-to-metric matching is a separate theorem premise. The current source acknowledges the matching guard. Same-boundary-excursion positive-source counterexamples give different charges, so the proxy cannot replace the integral. <strong>No source-body realization, Solar-System test, Newton matching, dark-energy physical occurrence or whole-paper theorem status promotion.</strong></p>
+<p><strong>Cumulative math lineage:</strong> earlier eight scoped closures <code>G-0010</code>, <code>G-0011</code>, <code>G-0012</code>, <code>G-0008</code>, <code>G-0009</code>, <code>G-0003</code>, <code>G-0004</code>, <code>G-0005</code> are preserved; <code>G-0013</code> numerical, <code>G-0014</code> static owner, <code>NEWTON_WHOLE_ACTION</code>, <code>COSMO_OCCURRENCE</code> remain open. Current source papers unchanged. No full v2.261 re-audit.</p>
+<hr />
+<h2>Inherited proof-chain audit v1.13 (preserved verbatim)</h2>
+<h1>Paper VI-A proof-chain audit v1.13 — scoped G-0005 dimensional weak-field repair</h1>
+<p><strong>Current targeted disposition:</strong> <code>BH-VIA-G-0005</code> is <strong>LOCAL_MATH_CLOSED for its historical dimension/metric-potential convention defect only</strong>. Current source: <code>Paper6A-GravityCosmology-v2_261.tex</code> SHA-256 <code>b15dea7e84ed67596c77a658ca36e6cbb483b5318828bbd2c47f9594628cac1d</code>, theorem <code>p8:thm:smooth-solar-system-screening-ppn</code> current 4563–4635, potentials <code>p8:eq:smooth-ppn-potentials</code> current 4605–4614. The original v2.253 audit identified an SI-invalid sum <code>GM_B/(F_env r) + varrho_env*r²/24</code>; current v2.261 has <code>GM_B/(F_env*c²*r)</code> and dimensionless <code>varrho_env*r²/24</code> in the <strong>same dimensionless metric-potential convention</strong>. Multiplication of both by <code>c²</code> gives specific-energy potentials with matching units. Source checks, dimensional algebra, E3 independent gamma ratio checks, E4 old-counterexample and ambient-background controls: <strong>42/42</strong>, plus <strong>400/400</strong> SI weak-field random checks. Evidence: <code>Paper6A-WeakFieldPotentialClosure-v1_1.md</code>; checker <code>Paper6A-WeakFieldPotentialClosureChecks-v1_1.py</code>; JSON <code>Paper6A-WeakFieldPotentialClosureEvidence-v1_1.json</code>.</p>
+<p><strong>Preserved conditions and unresolved physical bridge:</strong> Current theorem separates the local <code>1/r</code> PPN ratio from the <em>full</em> ratio with finite background curvature. Its scalar fraction is defined conditionally by an actual action-owned Yukawa source and unscreened reference; the printed formula is <strong>not a proof of those source histories</strong>. <code>BH-VIA-G-0006</code> remains open for source/charge physical matching, and <code>BH-VIA-G-0014</code>, <code>NEWTON_WHOLE_ACTION</code>, <code>COSMO_OCCURRENCE</code>, numerical <code>G-0013</code> and physical Solar System observation comparison remain open. No additional source-specific screen mechanism, matter density, experimental verification, or new physical theorem is supplied. The historical <code>BH-VIA-A-0006</code> units/convention objection is locally discharged only in the current printed metric potential; unrelated premises still apply.</p>
+<p><strong>Lineage:</strong> earlier scoped local mathematical issues <code>BH-VIA-G-0010, BH-VIA-G-0011, BH-VIA-G-0012, BH-VIA-G-0008, BH-VIA-G-0009, BH-VIA-G-0003, BH-VIA-G-0004</code> remain closed; original papers, the full historical audit, canonical graph claims and physical statuses are unchanged. No complete v2.261 source re-audit performed.</p>
+<hr />
+<h2>Inherited proof-chain audit v1.12 (preserved verbatim)</h2>
+<h1>Paper VI-A proof-chain audit v1.12 — G-0004 original scalaron WKB physical-time correction</h1>
+<p><strong>New targeted mathematical disposition:</strong> <code>BH-VIA-G-0004</code> is <strong>LOCAL_MATH_CLOSED for its historically challenged original corollary only</strong>, source <code>Paper6A-GravityCosmology-v2_261.tex</code> SHA256 <code>b15dea7e84ed67596c77a658ca36e6cbb483b5318828bbd2c47f9594628cac1d</code>. Original audit v2.253 challenged <code>p8:cor:lower-scalaron-matter-like-average</code>, current lines 4087–4141: the exact trace equation uses <code>c^2 m_s^2</code> as a frequency squared in seconds, and its repaired local corollary explicitly gives <code>omega_s=c m_s</code>, <code>epsilon_H=|H|/(c m_s)</code>, <code>epsilon_m=|dot m_s|/(c m_s^2)</code> with dots in physical time and conditional WKB smoothness/local-well residence. Independent source, type, symbolic ODE, clock-transformation and adversarial controls passed <strong>27/27 classes plus 400/400 parameter checks</strong>. Certificate: <code>Paper6A-ScalaronTimeClosure-v1_1.md</code>; code: <code>Paper6A-ScalaronTimeClosureChecks-v1_1.py</code>; JSON: <code>Paper6A-ScalaronTimeClosureEvidence-v1_1.json</code>.</p>
+<p><strong>Unresolved downstream normalization scope:</strong> this does <strong>not</strong> certify the later physical-time conventions in <code>p8:cor:v2178-scalaron-coherent-envelope</code> (current 8327–8351) or <code>p8:cor:v2119-running-mass-diagnostic</code> (10440–10485), which display some <code>epsilon_H=H/m_s</code>, <code>epsilon_m=|dot m_s|/m_s^2</code> formulas without explicit <code>c</code> even while other equations contain it. They must state that all dots are in <code>x^0=ct</code> (so <code>c=1</code> ratios are legitimate) or restore <code>1/c</code> for physical-seconds derivatives. The local correction is <strong>not globally propagated</strong>. The D15 numerical passage near 5772–5805 belongs to a <code>c=1</code> section and is not independently replayed here. No numeric K16/K48, cold-DM, terminal stopping, source occupation, physical dark-energy occurrence or Newton-normalization certification follows.</p>
+<p><strong>Scope/lineage:</strong> historical evidence and all six earlier scoped closures <code>BH-VIA-G-0010, BH-VIA-G-0011, BH-VIA-G-0012, BH-VIA-G-0008, BH-VIA-G-0009, BH-VIA-G-0003</code> remain unchanged; no full-paper re-audit, no modification to physical source papers, no global theorem promotion. Canonical <code>BH-VIA-A-0005</code> local-well/WKB condition continues. The clock-convention caveat is tracked in a residual gate, not counted as another historical issue without a new source-wide audit.</p>
+<hr />
+<h2>Inherited proof-chain audit v1.11 (historical, preserved verbatim)</h2>
+<h1>Paper VI-A proof-chain audit v1.11 — hierarchy-unit repair and physical static-owner evidence gate</h1>
+<p><strong>New scoped current-source mathematical closure:</strong> <code>BH-VIA-G-0003</code> is <strong>LOCAL_MATH_CLOSED</strong> on current <code>Paper6A-GravityCosmology-v2_261.tex</code> (SHA256 <code>b15dea7e84ed67596c77a658ca36e6cbb483b5318828bbd2c47f9594628cac1d</code>), specifically the three typed exports <code>mathcal R_{8j} [m^-1]</code>, <code>C_{8j} [m^-2]</code>, <code>C^B_{8j} [m^-2]</code> and their dimensionally consistent action-density <code>I_{8j} [m^-4]</code>. Read source lines 2740–2764 (remark), 2766–2869 (figure) and 3040–3126 (table). The historical v2.253 numerical values attributed m^-2 Born-midpoint curvatures to m^-1 root labels; v2.261 differentiates them consistently. Independently verified the full coordinate algebra, current labels and approximate readouts for the printed reference <code>U=6.09e68 m^-2</code>, with <strong>50/50 successful checks and 300/300 parameter members</strong>. Exact evidence and source-scope certificate at <code>Paper6A-HierarchyUnitsClosure-v1_1.md</code>, <code>Paper6A-HierarchyUnitsClosureChecks-v1_1.py</code>, <code>Paper6A-HierarchyUnitsClosureEvidence-v1_1.json</code>.</p>
+<p><strong>Physical guard remains:</strong> the mathematical closure does <strong>not</strong> prove <code>CELL_{K-&gt;U}</code>, the occurrence of a physical scale/action owner, <code>NEWTON_WHOLE_ACTION</code>, the actual cosmological time history, or any empirical event label. Reference-input rounding at the last printed digit is explicitly separated from the historical dimensional-type defect.</p>
+<p><strong>Targeted unresolved owner gate:</strong> the next substantive issue <code>BH-VIA-G-0014</code> remains <strong>OPEN / UNDISCHARGED PHYSICAL OWNER BRIDGE</strong>. Current VI-A lines 11463–11585 define and solve the comparison <code>Gamma_R</code> with its exact <code>sqrt(R)</code> DtN, explicitly retain <code>(TR1)</code> for physical trace ownership, while lines 12349–12373 later describe <code>(TR1)</code> as retired. VI-C <code>p8:thm:v166-boundary-module-owner-criterion</code> and VI-A's generic <code>K_48=beta_48^* Schur(D^2 S_star) beta_48</code> provide the action-owned pullback but <strong>not</strong> its exact scalar stiffness <code>sqrt(R)</code>. A verified positive quadratic Schur countermodel demonstrates that the latter does not follow from the former. The exact required zero-mode Hessian equality and conormal/acceleration match are documented in <code>Paper6A-StaticAccelerationOwnerGate-v1_1.md</code>, <code>Paper6A-StaticAccelerationOwnerGateChecks-v1_1.py</code>, <code>Paper6A-StaticAccelerationOwnerGateEvidence-v1_1.json</code>. No physical action, new parameter, or alternative dark model was added.</p>
+<p><strong>Preservation and limits:</strong> Historical <code>BH-VIA-G-0014</code>, <code>BH-VIA-G-0013</code> numerical-replay evidence, and all other unresolved physical gaps retain their statuses. Prior local mathematical closures <code>BH-VIA-G-0010, BH-VIA-G-0011, BH-VIA-G-0012, BH-VIA-G-0008, BH-VIA-G-0009</code> remain in the current scoped disposition. This is a targeted present-source verification, not a full current-source VI-A re-audit and not a global proof/physical-occurrence promotion. Original paper sources remain unchanged.</p>
+<hr />
+<h2>Inherited proof-chain audit v1.10 (historical, preserved verbatim)</h2>
+<h1>Paper VI-A proof-chain audit v1.10 — positive-matter phantom-crossing scope closure</h1>
+<p><strong>Scoped current-source recheck:</strong> <code>BH-VIA-G-0009</code> at <code>p8:eq:hs-crossing-geometric</code> is <strong>LOCAL_MATH_CLOSED</strong> for <code>Paper6A-GravityCosmology-v2_261.tex:7344–7443</code>, with the statement's explicit <code>M(a)&gt;0</code> guard and source SHA256 <code>b15dea7e84ed67596c77a658ca36e6cbb483b5318828bbd2c47f9594628cac1d</code>. The old v2.253 formula was not valid on the M=0 endpoint; the current text at 7432–7443 explicitly retains the endpoint exception and restricts the equivalence.</p>
+<p><strong>Exact mathematical result:</strong> On the unique Y≥1 branch of <code>Y=M+G_A(1/Y)</code>, with fixed <code>β_A=√π/(48√2)&gt;0</code>, conditional H1/H2, late conserved dust, and M&gt;0, one has <code>w_DE+1= -M G_Θ/[G_A(Y²+G_Θ)]</code>, <code>G_A≥1</code>, <code>Y²+G_Θ&gt;0</code>, <code>G_Θ=2β_A(1-3/Y)</code>. Hence <code>w_DE=-1 ⇔ Y=3 ⇔ Θ_A=1/3 ⇔ R_A=R_A,∞/√3</code>. The separately allowed M=0 member uniquely has Y=1, Θ_A=1, w_DE=-1 and remains a counterexample to the <strong>historical unqualified</strong> claim. The guard <code>BH-VIA-A-0012</code> is <strong>retained</strong> as an actual scope premise, not globally discharged.</p>
+<p><strong>Independent E3/E4:</strong> Analytic proof, algebraic identity checks and 41/41 source/evidence test classes passed, 450 deterministic positive-matter members and 80 high-precision conservation/finite-difference calculations. At Y=3 the conditional crossing mass is <code>M*=2-4β_A/3≈1.9651857184&gt;0</code> and the derived local expanding-branch slope <code>d(w_DE+1)/d ln a=2β_A M*²/[9(1+4β_A/3)]&gt;0</code>. This transversality calculation is <strong>not</strong> a claim of actual physical crossing. Full certificate and executable evidence at <code>Paper6A-PhantomCrossingClosure-v1_1.md</code>, <code>Paper6A-PhantomCrossingClosureChecks-v1_1.py</code>, <code>Paper6A-PhantomCrossingClosureEvidence-v1_1.json</code>.</p>
+<p><strong>Boundary:</strong> H1/H2 physical derivation, absolute Newton same-action ownership, choice of a realized cosmological history, and <code>COSMO_OCCURRENCE</code> all remain undischarged. No new field or free parameter has been introduced; current source paper is unchanged. Historical <code>BH-VIA-G-0013</code> numerical black-hole history remains <code>OPEN_EVIDENCE_MISSING</code> and the previous local closures <code>BH-VIA-G-0008/0010/0011/0012</code> remain unaffected. No whole-paper re-audit or global theorem promotion is claimed.</p>
+<hr />
+<h2>Inherited proof-chain audit v1.9 (historical, preserved verbatim)</h2>
+<h1>Paper VI-A proof-chain audit v1.9 — native vacuum-density normalization closure; BH numerical gate preserved</h1>
+<p><strong>Scope-limited current-source recheck:</strong> <code>BH-VIA-G-0008</code>, the horizon vacuum-density normalization <code>p8:eq:hs-lambda-infty</code>, is <strong>LOCAL_MATH_CLOSED</strong> for current <code>Paper6A-GravityCosmology-v2_261.tex:7260–7270</code> (SHA256 <code>b15dea7e84ed67596c77a658ca36e6cbb483b5318828bbd2c47f9594628cac1d</code>). This supersedes only the historical incorrect <code>κ²</code> expression found in the old v2.253 source. The current v2.261 equation states <code>κ_grav=M^-2</code> and <code>ρ_infty=C56/(2κ_grav)=M² C56/2</code> explicitly. The independently replayed affine action variation fixes this coefficient; no new density fit or premise.</p>
+<p><strong>Corrected action and notational guard:</strong> <code>S_grav=(M²/2)∫sqrt(-g)(R-C56)</code> implies <code>G+(C56/2)g=M^-2 T</code>; writing an effective vacuum stress fixes <code>rho_infty=M² C56/2=UC56/8</code> using source-defined <code>M²=U/4</code>. If a separate conventional coupling is written <code>κ_conv²=M^-2</code>, it denotes <strong>the same</strong> coupling as <code>κ_grav</code>, not <code>κ_grav²</code>. The historical <code>BH-VIA-A-0011</code> symbolic ambiguity is no longer a consumed premise.</p>
+<p><strong>Independent E3/E4:</strong> 21/21 exact-source/symbolic and archive-evidence checks, 300 deterministic positive coefficient cases; mathematical source and evidence <code>Paper6A-VacuumNormalizationClosure-v1_1.md</code>, <code>Paper6A-VacuumNormalizationClosureChecks-v1_1.py</code>, and corresponding JSON. <strong>No whole-paper re-audit or physical-owner/NEWTON_WHOLE_ACTION promotion.</strong> Conditional H1/H2 horizon transport and cosmic occurrence remain open.</p>
+<p><strong>Important blocked next issue:</strong> <code>BH-VIA-G-0013</code> remains <strong>OPEN_EVIDENCE_MISSING</strong>. The v1.9–v1.12 black-hole regulation executables and v1.12 JSON are absent in the supplied three current archives. The current appendix contains reported outputs, not the full numerical Cauchy/source data needed to certify the coupled history. The source's three printed k/ν/μ constants underdetermine the initial Bloch source port. See <code>Paper6A-BlackHoleNumericalReplayGate-v1_1.md</code>. This is <strong>not</strong> a refutation of possible regulated histories, and conditional analytic results remain intact.</p>
+<p><strong>Inherited targeted closures preserved:</strong> <code>BH-VIA-G-0010</code>, <code>BH-VIA-G-0011</code>, <code>BH-VIA-G-0012</code> remain LOCALLY MATH CLOSED with their original certificates; every other issue's effective scope/status is unchanged. No physics/same-action realization upgraded.</p>
+<hr />
+<h2>Inherited proof-chain audit v1.8 (historical, preserved verbatim)</h2>
+<h1>Paper VI-A proof-chain audit v1.8 — 24-cell invariant shell eigenchannel scoped closure</h1>
+<p><strong>Scoped recheck:</strong> <code>BH-VIA-G-0012</code> / <code>p8:prop:shell-algebra-nonterminal-rar</code> is <strong>LOCAL_MATH_CLOSED</strong> for current <code>Paper6A-GravityCosmology-v2_261.tex:10038–10087</code> (SHA256 <code>b15dea7e84ed67596c77a658ca36e6cbb483b5318828bbd2c47f9594628cac1d</code>). This supersedes only the historical spectral omission in the old v2.253 source; its historical issue record stays preserved below.</p>
+<p><strong>Mathematics:</strong> the 24-cell normalized nearest-neighbor walk <code>T=A_+/8</code> has spectrum <code>(1)^(1), (1/2)^(4), (0)^(9), (-1/4)^(8), (-1/2)^(2)</code>. Thus for all integers <code>n&gt;=1</code>, <code>T^n=E_1+(1/2)^n E_{1/2}+(-1/4)^n E_{-1/4}+(-1/2)^n E_{-1/2}</code>, with <code>T^n E_0=0</code> and <code>E_1=J/24</code>. The three nonconstant factors are exhaustive only on mean-zero shell functions. <code>BH-VIA-A-0015</code> is therefore not a condition for the <strong>full</strong> factor list; the mean-zero predicate remains required for the reduced list.</p>
+<p><strong>Independent E3/E4:</strong> exact 24-Hurwitz-vertex reconstruction, rational <code>24x24</code> spectral idempotents and orthogonality, full walk powers, 29/29 test classes including 128 synthetic exact vectors, plus explicit old-claim counterexample using the constant vector. Certificate <code>Paper6A-ShellEigenchannelClosure-v1_1.md</code>; evidence <code>Paper6A-ShellEigenchannelClosureChecks-v1_1.py</code>/JSON; integrated in the active DAG closure layer.</p>
+<p><strong>Provenance note:</strong> the current source's narrative attribution to <strong>Paper I-A</strong> is inaccurate; the actual controlling 24-cell Bose–Mesner spectral proposition is <strong>Paper I-B</strong> <code>p1:prop:math-twentyfourcell-bose-mesner</code> (<code>Paper1B-ExceptionalGeometry-v1_8.tex:7904–7934</code>). The source itself is unchanged; citation/editing cleanup remains. This does not undermine the independently verified theorem.</p>
+<p><strong>No physical upgrade:</strong> the conditional exact-RAR-to-isotropic-shell projection and static owner assumptions remain unproved, as do dark-energy occurrence, Newton whole-action normalization and global cosmological history. Prior local closures <code>BH-VIA-G-0010</code> and <code>BH-VIA-G-0011</code> remain intact. No whole-paper re-audit is claimed.</p>
+<hr />
+<h2>Inherited proof-chain audit v1.7 (historical, preserved verbatim)</h2>
+<h1>Paper VI-A proof-chain audit v1.7 — conformal-frame targeted closure</h1>
+<p><strong>Source-first scoped disposition:</strong> <code>BH-VIA-G-0011</code> / <code>p8:sec:tensor-frame-ledger</code> is <strong>LOCAL_MATH_CLOSED</strong> for current <code>Paper6A-GravityCosmology-v2_261.tex</code> lines <strong>11282–11317</strong> (SHA256 <code>b15dea7e84ed67596c77a658ca36e6cbb483b5318828bbd2c47f9594628cac1d</code>); this is not a whole-paper re-audit. The old <code>OPEN</code>/<code>UNRESOLVED</code> finding remains historically correct for source v2.253 and is preserved below.</p>
+<p><strong>Exact claim:</strong> (H_E,dt_E=H_J,dt_J+\tfrac12d\ln F), from (a_E=\sqrt F a_J), (dt_E=\sqrt Fdt_J), (F&gt;0) and positive regular scale factor. A time-varying (F) is admitted; the invalid old equality holds only for (dF=0). The old inferred condition <code>BH-VIA-A-0014</code> is no longer needed for the current result. Tensor momentum (P_h^E=P_h^J), generator (A_L^J=\sqrt FA_L^E), and the distinction between Hubble scalar and Dirac Hamiltonian are retained.</p>
+<p><strong>Evidence:</strong> <code>Paper6A-ConformalFrameClosure-v1_1.md</code> and independent symbolic/numeric check <code>Paper6A-ConformalFrameClosureChecks-v1_1.py</code> with <code>Paper6A-ConformalFrameClosureEvidence-v1_1.json</code>: 17 classes passed, 600 finite positive varying-frame trials, 600 old-identity counterexamples. Analytical proof, not numerical samples, is decisive. These are integrated into the DAG's named closure layer.</p>
+<p><strong>Scope guard:</strong> <code>BH-VIA-G-0010</code> remains LOCAL_MATH_CLOSED by the previous v1.6 certificate. No physical frame/source occurrence, inflationary state, scalaron stopping, Newton normalization, cap-to-daughter constructor or dark-energy status is promoted. Original papers not changed. Other historical issues retain their current dispositions.</p>
+<hr />
+<h2>Inherited proof-chain audit v1.6 (verbatim)</h2>
+<h1>Paper VI-A proof-chain audit v1.6 — targeted mathematical closure</h1>
+<p><strong>Scope:</strong> claim-matched source re-audit <strong>only</strong> of <code>BH-VIA-G-0010</code> / <code>p8:prop:v2188-trace-coefficient-certificate</code> in current <strong>Paper6A-GravityCosmology-v2_261.tex</strong>, lines <strong>8591–8665</strong>, SHA256 <code>b15dea7e84ed67596c77a658ca36e6cbb483b5318828bbd2c47f9594628cac1d</code>. This does NOT assert a new full Paper VI-A re-audit.</p>
+<p><strong>Effective current disposition:</strong> <strong>LOCAL_MATH_CLOSED</strong> (<code>BH-VIA-G-0010</code>); historical v2.253 <code>OPEN</code> and its counterexample remain true <strong>of the previous manuscript</strong>, and are retained below verbatim as provenance. The current theorem independently proves two <em>separate</em> sufficient routes: Hermitian max-row-sum <code>B_a</code>, or fully declared bounded-word operator certificate <code>K_a</code>. It explicitly forbids the false claim <code>B_a&lt;=K_a</code>.</p>
+<p><strong>Proof:</strong> <code>Paper6A-TraceNormClosure-v1_1.md</code>, cited source paragraphs v2.261 lines 8512–8555 and 8591–8665. Independent evidence <code>Paper6A-TraceNormClosureChecks-v1_1.py</code> / <code>Paper6A-TraceNormClosureEvidence-v1_1.json</code>: 14 passing classes, 400 reproducible finite-state trials, including the retained exact old Hadamard counterexample; analytic proof is primary.</p>
+<p><strong>Residual conditional gates:</strong> the complete actual physical source operator and all contacts, actual compact chart, <code>N_0</code>, <code>V_0</code>, sourced trajectory and any numerical <code>10^18</code> sufficient threshold <strong>remain OPEN</strong>. The inferred historical missing condition <code>BH-VIA-A-0013</code> (row-sum bounds for individual words) is not consumed by the independent operator-norm route. No REG0, CELL, Newton, scalaron terminal arrival, <code>COSMO_OCCURRENCE</code> or physical dark-energy status is promoted.</p>
+<p><strong>Archival precedence:</strong> THIS targeted v1.6 scope declaration supersedes only the earlier <em>current issue status</em> of <code>BH-VIA-G-0010</code>; the unchanged older report below preserves every original finding and previous source version label.</p>
+<hr />
+<h2>Inherited historical audit and repair addenda (verbatim)</h2>
+<h1>Source migration and repair-integration addendum — Paper6A-ProofChainAudit-v1_5.md</h1>
+<p><strong>Integration release:</strong> <code>Paper00-PapersMinimal-v3_007.zip</code>, 14 November 2026.
+<strong>Current paper source:</strong> <code>Paper6A-GravityCosmology-v2_261.tex</code>.
+<strong>Status:</strong> <code>SOURCE_INTEGRATED; GLOBAL_SOURCE_REAUDIT_PENDING</code>. An inherited historical audit is not a correctness certificate for the newer current manuscript.
+<strong>Evidence policy:</strong> Local algebraic proofs and scoped tests do not discharge physical source/observable interfaces or automatically alter the canonical proof DAG.</p>
+<hr />
+<h2>Historical source-bound audit: Paper6A-ProofChainAudit-v1_4.md</h2>
+<h1>Repair addendum — Paper6A / batch 6 / 13 November 2026</h1>
+<p><strong>Current manuscript:</strong> <code>Paper6A-GravityCosmology-v2_255.tex</code> (SHA-256 <code>df16f9572607ab7f8c1d027232494167ba75fe7cd188927ec1b73c65119a5191</code>)<br />
+<strong>Source release:</strong> Paper00-PapersMinimal-v2_377; previous audited edition v2.254.<br />
+<strong>Historical audit reports:</strong> v1_1 and v1_2 preserved verbatim below.<br />
+<strong>Disposition:</strong> 11 original VI-A issue IDs source-corrected or made explicitly conditional. Physical constructor evidence is <strong>not</strong> inferred and no original verdict is silently promoted.<br />
+<strong>Independent local checks:</strong> 16/16 scoped controls, not a whole-paper E3 audit.</p>
+<table>
+<thead>
+<tr>
+  <th>Issue ID</th>
+  <th>Current source locator</th>
+  <th>Mathematical/source status</th>
+  <th>Residual proof obligation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-VIA-G-0001</code></td>
+  <td><code>p8:thm:k48-conditional-exact-dust</code> line 2129</td>
+  <td>SOURCE_CONDITIONAL_DERIVATION / PHYSICAL GATE OPEN: Cauchy additivity yields real slope; mu&gt;=0 now explicitly requires nonnegative effective energy.</td>
+  <td>Positivity of actual physical branch not derived by neutral current alone.</td>
+</tr>
+<tr>
+  <td><code>BH-VIA-G-0002</code></td>
+  <td><code>p8:thm:k48-conditional-exact-dust</code> line 2129</td>
+  <td>SOURCE_MATH_CORRECTED / REAUDIT PENDING: Sound-speed derivative c_s^2=0 restricted to mu!=0; mu=0 is degenerate.</td>
+  <td>No physical-density realization is inferred from the degenerate zero-stress branch.</td>
+</tr>
+<tr>
+  <td><code>BH-VIA-G-0003</code></td>
+  <td><code>p8:tab:geometric-outputs</code> line 3036</td>
+  <td>SOURCE_MATH_CORRECTED / REAUDIT PENDING: Recomputed wavenumber roots R8,R16 in m^-1; displayed Born midpoint curvatures separately in m^-2.</td>
+  <td>Metrological U identification remains inherited and conditional.</td>
+</tr>
+<tr>
+  <td><code>BH-VIA-G-0004</code></td>
+  <td><code>p8:cor:lower-scalaron-matter-like-average</code> line 4117</td>
+  <td>SOURCE_MATH_CORRECTED / REAUDIT PENDING: Corrected physical WKB omega_s=c m_s and H/(c m_s), /dm_s/dt//(c m_s^2).</td>
+  <td>Local-well residence, slow variation and action source remain conditional.</td>
+</tr>
+<tr>
+  <td><code>BH-VIA-G-0005</code></td>
+  <td><code>p8:thm:smooth-solar-system-screening-ppn</code> line 4559</td>
+  <td>SOURCE_CONDITIONAL_DERIVATION / PHYSICAL GATE OPEN: Potentials dimensionless GM/(F c^2 r); gamma is ratio of 1/r contributions, not full background-inclusive fields.</td>
+  <td>Real exterior metric/source matching is still conditional.</td>
+</tr>
+<tr>
+  <td><code>BH-VIA-G-0006</code></td>
+  <td><code>p8:thm:smooth-solar-system-screening-ppn</code> line 4559</td>
+  <td>SOURCE_CONDITIONAL_DERIVATION / PHYSICAL GATE OPEN: Derived Yukawa-weighted radial action-source fraction; shell volume 1-(1-delta)^3, not delta.</td>
+  <td>Action-owned J_act and unscreened comparison and equality of boundary excursion to integrated charge remain unproved.</td>
+</tr>
+<tr>
+  <td><code>BH-VIA-G-0008</code></td>
+  <td><code>p8:eq:hs-lambda-infty</code> line 7257</td>
+  <td>SOURCE_MATH_CORRECTED / REAUDIT PENDING: Horizon rho_inf=C56/(2 kappa_grav)=M^2 C56/2 with kappa_grav=M^-2.</td>
+  <td>Horizon action/physical stress identification remains inherited.</td>
+</tr>
+<tr>
+  <td><code>BH-VIA-G-0009</code></td>
+  <td><code>p8:eq:hs-crossing-geometric</code> line 7432</td>
+  <td>SOURCE_MATH_CORRECTED / REAUDIT PENDING: w_DE=-1 iff Theta_A=1/3 only on positive-matter branch; M=0 vacuum endpoint exception recorded.</td>
+  <td>Physical branch/model prerequisites unchanged.</td>
+</tr>
+<tr>
+  <td><code>BH-VIA-G-0010</code></td>
+  <td><code>p8:prop:v2188-trace-coefficient-certificate</code> line 8587</td>
+  <td>SOURCE_MATH_CORRECTED / REAUDIT PENDING: Separated maximum row-sum bound B from independent operator-norm coefficient bound K with valid proof.</td>
+  <td>Actual K16/K48 coefficient lists and first-hit numeric cap not certified.</td>
+</tr>
+<tr>
+  <td><code>BH-VIA-G-0011</code></td>
+  <td><code>p8:sec:tensor-frame-ledger</code> line 11178</td>
+  <td>SOURCE_MATH_CORRECTED / REAUDIT PENDING: Corrected Hubble one-form H_E dt_E=H_J dt_J+1/2 d ln F; Dirac Hamiltonian operator distinguished.</td>
+  <td>Native frame/Dirac source occurrence and matching remain conditional.</td>
+</tr>
+<tr>
+  <td><code>BH-VIA-G-0012</code></td>
+  <td><code>p8:prop:shell-algebra-nonterminal-rar</code> line 9939</td>
+  <td>SOURCE_MATH_CORRECTED / REAUDIT PENDING: Restored invariant 1^n eigenchannel, retaining nontrivial factors only for mean-zero sector.</td>
+  <td>Projection of physical halo response onto finite cell algebra remains conditional.</td>
+</tr>
+</tbody>
+</table>
+<p>See <code>Paper00-AuditRepairBatch-v1_6.md</code> and the batch 6 proof results in the current DAG Atlas for mathematical derivations and exact counterexamples. The inherited audit report below names older source files and line numbers; those are immutable historical references and not the latest current locator. The new source-level algebra does <strong>not</strong> establish any of the listed physical source/action or numerical witnesses.</p>
+<hr />
+<h2>Historical audit baseline (v1.2 and earlier, preserved verbatim)</h2>
+<h1>Repair addendum — Paper6A / 13 November 2026</h1>
+<p><strong>Current manuscript:</strong> <code>Paper6A-GravityCosmology-v2_254.tex</code> (SHA-256 <code>0979595a645668d8c447c88e077c0e30ac32393f0b5b909290cbd8f2e9228915</code>)<br />
+<strong>Historical report preserved:</strong> <code>Paper6A-ProofChainAudit-v1_1.md</code> verbatim below.<br />
+<strong>Disposition:</strong> Scoped source repairs, not complete independent mathematical re-audit; all prior DAG proof/physical statuses unchanged.</p>
+<table>
+<thead>
+<tr>
+  <th>Issue</th>
+  <th>Current source line(s)</th>
+  <th>Change</th>
+  <th>Disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-IIIE-G-0004</code></td>
+  <td><code>Paper6A-GravityCosmology-v2_254.tex:283</code></td>
+  <td>Carrier-four D_4(C_2)/Q is scheme dependent; 0.825729956674 is the REG0 numeric value, propagated to VI-A/VI-B.</td>
+  <td>SOURCE_CORRECTED; REAUDIT PENDING / IMPORTED GATE RETAINED</td>
+</tr>
+</tbody>
+</table>
+<p>See <code>Paper00-AuditRepairBatch-v1_3.md</code> and the 28/28 scoped controls in the current atlas. Source hashes and line numbers appearing in the original text below refer to its <strong>previous source edition</strong>; original OPEN flags are historical and have not been changed or globally promoted.</p>
+<hr />
+<h2>Historical audit baseline (unaltered original text)</h2>
+<h1>Paper VI-A — rigorous verification DAG audit (full source; six bounded batches)</h1>
+<p><strong>Target:</strong> <code>Paper6A-GravityCosmology-v2_253.tex</code> (<code>Paper00-PapersMinimal-v2_371</code>), SHA256 <code>3110e5c951b395665f54a2a910dd6e3570eb9659e775d3b0b4128e6fe28a82d1</code>, 17,251 lines.
+<strong>Protocol:</strong> <code>Paper00-RigorousVerificationDAGWorkProtocol-v2_4.md</code>; no theory development and no source edits.
+<strong>Rebased onto:</strong> <code>Paper00-DAGAtlas-v1_116.zip</code> / <code>Paper00-ProofChainAudits-v1_33.zip</code>; earlier Batch1–5 checkpoint ledgers remain preserved, but only latest cumulative VI-A records are active.
+<strong>Disposition:</strong> <code>FULLY_AUDITED_WITH_OPEN_GAPS</code> as SOURCE-COVERAGE classification; this does <strong>not</strong> mean complete E3 certification of every theorem.
+<strong>Formal census:</strong> 357/357 named source results inspected; 14 additional final-batch unnamed material/interface blocks recorded; earlier batches include additional unnamed claims.
+<strong>Final status:</strong> FORMALIZED 121, REPRODUCED 109, UNRESOLVED 13, VERIFIED-CONDITIONAL 114.
+<strong>Exact subclaim controls:</strong> 354/354 cumulatively (310 from Batches 1–5 plus 44 from Batch 6); passing E4 challenges deliberately expose defects. Independent agents unavailable; no multi-agent claim is made.
+<strong>Open issue roots:</strong> 17 (14 inherited from earlier batches, 3 new in Batch 6). Physical occurrence, same-action owner, and observational calibration are never inferred from algebra alone.</p>
+<h2>Batch source coverage</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">Batch</th>
+  <th style="text-align:left">Line interval</th>
+  <th style="text-align:right">New named claims</th>
+  <th style="text-align:right">Cumulative named claims</th>
+  <th style="text-align:right">Exact subclaim controls</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">1</td>
+  <td style="text-align:left">1–2,514</td>
+  <td style="text-align:right">52</td>
+  <td style="text-align:right">52</td>
+  <td style="text-align:right">48</td>
+</tr>
+<tr>
+  <td style="text-align:right">2</td>
+  <td style="text-align:left">2,515–5,533</td>
+  <td style="text-align:right">65</td>
+  <td style="text-align:right">117</td>
+  <td style="text-align:right">59</td>
+</tr>
+<tr>
+  <td style="text-align:right">3</td>
+  <td style="text-align:left">5,534–9,030</td>
+  <td style="text-align:right">61</td>
+  <td style="text-align:right">178</td>
+  <td style="text-align:right">57</td>
+</tr>
+<tr>
+  <td style="text-align:right">4</td>
+  <td style="text-align:left">9,031–11,203</td>
+  <td style="text-align:right">71</td>
+  <td style="text-align:right">249</td>
+  <td style="text-align:right">70</td>
+</tr>
+<tr>
+  <td style="text-align:right">5</td>
+  <td style="text-align:left">11,204–14,549</td>
+  <td style="text-align:right">63</td>
+  <td style="text-align:right">312</td>
+  <td style="text-align:right">76</td>
+</tr>
+<tr>
+  <td style="text-align:right">6</td>
+  <td style="text-align:left">14,550–17,251</td>
+  <td style="text-align:right">45</td>
+  <td style="text-align:right">357</td>
+  <td style="text-align:right">44</td>
+</tr>
+</tbody>
+</table>
+<h2>Complete open issue register (all 17)</h2>
+<h3>BH-VIA-G-0001 — MODERATE — MISSING_CONDITION</h3>
+<p><strong>First origin:</strong> <code>p8:thm:k48-conditional-exact-dust</code>; VI-A lines 2142–2149.
+Cauchy additivity only yields μ∈R, not μ≥0; F(ζ)=−ζ is an exact counterexample.</p>
+<p><strong>Precise obligation:</strong> Locate and source-type a nonnegative effective-energy premise or qualify the μ sign; no paper/source edits performed.</p>
+<p><strong>Retained:</strong> F is linear with real slope; pressure p=0 for linear F; terminal current dilutes as a^-3</p>
+<p><strong>Conditions:</strong> As shown in source-bound gap record; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0002 — MINOR — TYPE_OR_DOMAIN / MISSING_CONDITION</h3>
+<p><strong>First origin:</strong> <code>p8:thm:k48-conditional-exact-dust</code>; VI-A lines 2149–2157.
+At μ=0 the equation of state is F=p=0 and dp/dF is undefined without a limiting convention.</p>
+<p><strong>Precise obligation:</strong> Restrict the sound-speed derivative statement to a nondegenerate effective-density branch, or explicitly define a limiting convention; no theory repair inserted.</p>
+<p><strong>Retained:</strong> The zero-energy case has zero stress and pressure; On μ&gt;0 nondegenerate branch, c_s²=0; Neutral Hodge current balance unaffected</p>
+<p><strong>Conditions:</strong> As shown in source-bound gap record; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0003 — MODERATE — NORMALIZATION_OR_READOUT</h3>
+<p><strong>First origin:</strong> <code>p8:tab:geometric-outputs</code>; VI-A lines 2730–3105.
+Figure/table numbers and m−2 units represent Born midpoint curvatures C8^B/C16^B, not root scales ℛ8/ℛ16 in m−1.</p>
+<p><strong>Precise obligation:</strong> Make numerical readout labels, values and units consistent with the source-defined coordinate; source unchanged.</p>
+<p><strong>Retained:</strong> Neutral seven-shell hierarchy identities survive; The correctly defined root and midpoint coordinates survive</p>
+<p><strong>Conditions:</strong> As shown in source-bound gap record; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0004 — MODERATE — NORMALIZATION_OR_READOUT / TYPE_OR_DOMAIN</h3>
+<p><strong>First origin:</strong> <code>p8:cor:lower-scalaron-matter-like-average</code>; VI-A lines 4068–4112.
+WKB phase uses m_s as physical frequency although the exact physical-time scalaron equation contains c²m_s²; dotΘ=cm_s for m_s in m−1.</p>
+<p><strong>Precise obligation:</strong> Specify a consistent physical-time/natural-unit convention or source-derive the frequency and dimensionless adiabatic parameters from the displayed trace equation.</p>
+<p><strong>Retained:</strong> Exact c² trace and scalaron force law remain valid; Conditional local-well requirement and no-global-matter-like conclusion remain intact</p>
+<p><strong>Conditions:</strong> BH-VIA-A-0005; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0005 — MODERATE — NORMALIZATION_OR_READOUT / TYPE_OR_DOMAIN</h3>
+<p><strong>First origin:</strong> <code>p8:thm:smooth-solar-system-screening-ppn</code>; VI-A lines 4540–4573.
+SI weak-field potential terms GM/(Fr) and R_env r²/24 have inconsistent dimensions under the printed dimensionless Φ convention.</p>
+<p><strong>Precise obligation:</strong> Source-type the potential normalization/gauge: dimensionless potentials need GM/(F c²r), while physical potentials need curvature terms with c²; do not silently choose one.</p>
+<p><strong>Retained:</strong> Stated assumptions F&gt;0, f_RR&gt;0, m²&gt;0 remain unchallenged; Formal gamma fraction identity survives after a consistent normalization</p>
+<p><strong>Conditions:</strong> BH-VIA-A-0006; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0006 — MODERATE — UNPROVED_IMPORTED_NORMALIZATION / MISSING_PROOF_STEP</h3>
+<p><strong>First origin:</strong> <code>p8:thm:smooth-solar-system-screening-ppn</code>; VI-A lines 4548–4602.
+Thin-shell thickness q=Δr/r_B is substituted for an integrated scalar charge without showing the usual active fraction ≃3q in the same action.</p>
+<p><strong>Precise obligation:</strong> Provide a same-action charge integral in the asserted thin-shell domain and demonstrate why printed eps_B is the effective integrated scalar charge, or qualify its normalization and PPN quantitative response.</p>
+<p><strong>Retained:</strong> Qualitative limit eps_B-&gt;0 remains sufficient for a screened branch as a limit, subject to solved source backgrounds; The algebraic gamma relation in terms of a correctly defined exterior charge survives</p>
+<p><strong>Conditions:</strong> BH-VIA-A-0007; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0007 — MINOR — SCOPE</h3>
+<p><strong>First origin:</strong> <code>p8:sec:v2201-derived-d11</code>; VI-A lines 5629–5634.
+The D11 numerical quadrature/covariance JSON replay attachment is not present, so reported tolerances lack an independently runnable witness.</p>
+<p><strong>Precise obligation:</strong> Locate/provide original executed JSON and replay specification or retain D11 readouts explicitly as unreplicated reported numerical outputs.</p>
+<p><strong>Retained:</strong> Displayed D11 numbers are not disproved; D12 tensor t^6 and t^4 local coefficients survive exact controls; No numerical certificate is upgraded to E3</p>
+<p><strong>Conditions:</strong> As shown in source-bound gap record; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0008 — MODERATE — SCOPE</h3>
+<p><strong>First origin:</strong> <code>p8:eq:hs-lambda-infty</code>; VI-A lines 7187–7192.
+Horizon vacuum density C56/(2κ²) conflicts with earlier κ=M−2 convention implying C56/(2κ); distinguish alternate coupling or normalize.</p>
+<p><strong>Precise obligation:</strong> Resolve whether the horizon subsection introduces a different conventional coupling kappa_h satisfying kappa_h²=kappa_native, or reconcile rho_infty using the existing defined symbol.</p>
+<p><strong>Retained:</strong> Dimensionless normalized horizon polynomial/cubic and the conditional shape of w_DE remain algebraically consistent; The native terminal rho_Lambda=M² C/2 remains unchanged</p>
+<p><strong>Conditions:</strong> BH-VIA-A-0011; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0009 — MINOR — SCOPE</h3>
+<p><strong>First origin:</strong> <code>p8:eq:hs-crossing-geometric</code>; VI-A lines 7353–7362.
+w_DE=−1 ⇔ Θ_A=1/3 fails at allowed M=0 endpoint (w_DE=−1, Θ_A=1); requires positive matter.</p>
+<p><strong>Precise obligation:</strong> Scope the equivalence to M(a)&gt;0 or explicitly account for the vacuum endpoint exception without changing the source during audit.</p>
+<p><strong>Retained:</strong> Physical-branch uniqueness and monotonicity for M&gt;=0 survive; Positive-matter phantom crossing and conditional EOS remain valid</p>
+<p><strong>Conditions:</strong> BH-VIA-A-0012; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0010 — MODERATE — SCOPE</h3>
+<p><strong>First origin:</strong> <code>p8:prop:v2188-trace-coefficient-certificate</code>; VI-A lines 8531–8559.
+Operator 2-norm does not generally upper bound maximum absolute row sum B_a; normalized 2×2 Hadamard matrix witnesses sqrt2&gt;1.</p>
+<p><strong>Precise obligation:</strong> Supply a genuine row-sum bound on each finite word or state a distinct operator-norm sufficient route with its own proof; audit does not repair the manuscript.</p>
+<p><strong>Retained:</strong> The primary row-sum bound on the source trace remains correct; Finite CAR monomials are contractions in operator norm; No actual first-K48 numerical threshold certificate was claimed in this proposition</p>
+<p><strong>Conditions:</strong> BH-VIA-A-0013; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0011 — MODERATE — INCORRECT_STEP / TYPE_OR_DOMAIN</h3>
+<p><strong>First origin:</strong> <code>p8:sec:tensor-frame-ledger</code>; VI-A lines 11083–11108.
+Conformal Hubble 1-forms satisfy H_Edt_E=H_Jdt_J+(1/2)dlnF; omitting the extra term fails when F varies.</p>
+<p><strong>Precise obligation:</strong> Correct or branch-qualify the conformal Hubble identity in a subsequent source revision; keep other correct frame transformations intact.</p>
+<p><strong>Retained:</strong> Canonical tensor momenta P_h^E=P_h^J; The tensor frame generator A_L^J=sqrt(F)A_L^E; Frame-related mass identity m_E=m_J/sqrt(F)</p>
+<p><strong>Conditions:</strong> BH-VIA-A-0014; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0012 — MINOR — INCORRECT_STEP / MISSING_CONDITION</h3>
+<p><strong>First origin:</strong> <code>p8:prop:shell-algebra-nonterminal-rar</code>; VI-A lines 9851–9884.
+24-cell walk spectrum includes invariant eigenvalue 1 and hence factor 1^n, omitted from displayed exhaustive-looking surviving factors.</p>
+<p><strong>Precise obligation:</strong> Include the invariant 1^n channel or make the mean-zero/orthogonal-to-constant restriction explicit in the original proposition.</p>
+<p><strong>Retained:</strong> Full normalized walk spectrum and multiplicities as printed; Nine-dimensional null-channel result T^n E_2=0; Nontrivial mean-zero n-step channel factor list</p>
+<p><strong>Conditions:</strong> BH-VIA-A-0015; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0013 — MODERATE — EVIDENCE_MISSING / NUMERICAL_REPLAY</h3>
+<p><strong>First origin:</strong> <code>p8:prop:v2184-native-source-memory-regulator</code>; VI-A lines 11655–11739.
+D11/VI-C black-hole numerical history reports small residuals but executable inputs/scripts and JSON are absent in supplied archives.</p>
+<p><strong>Precise obligation:</strong> Supply versioned VI-C-cited v1_9-v1_12 Python executables, v1_12 JSON and full Cauchy/source-strength/buffer data; replay signed marginal radii, lapse/Raychaudhuri residuals, perturbation derivatives, and constraint buffers independently. No paper change at this audit stage.</p>
+<p><strong>Retained:</strong> Analytic finite Cauchy/source and conditional ODE framework as stated; Transversality entails an open zero-survival basin assuming the quoted regular base witness and smooth dependence; Conditional spherical constraint matching equations and locally Lipschitz compact-invariant continuation criterion</p>
+<p><strong>Conditions:</strong> As shown in source-bound gap record; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0014 — MODERATE — PHYSICAL_OWNER_BRIDGE / UNDISCHARGED_CONDITIONAL</h3>
+<p><strong>First origin:</strong> <code>p8:prop:static-acceleration-readout</code>; VI-A lines 11254–12399.
+Scalar collar DtN sqrtR is exact, but a generic same-action Schur Hessian has not been identified with that particular physical acceleration determinant.</p>
+<p><strong>Precise obligation:</strong> Exhibit the actual occurring stationary S_star boundary/interior Schur Hessian on the physically generated scalar zero mode, including β_48 conormal normalization, and prove it equals the proposed Γ_R comparison scalar DtN with physical acceleration observable. Alternatively retain TR1 as explicit conditional physical-identification premise. Do not alter valid abstract DtN/Hopf algebra.</p>
+<p><strong>Retained:</strong> Exact abstract comparison collar DtN spectrum and zero mode; Unique Haar probability normalization on Hopf S² and its 1/(4π) trace-to-density factor; Generic physical boundary Schur reduction and its exact source derivative, under physical stationary-split hypotheses</p>
+<p><strong>Conditions:</strong> BH-VIA-A-0016; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0015 — MODERATE — LOGICAL_GAP / UNDISCHARGED_GENERATOR_EXHAUSTION</h3>
+<p><strong>First origin:</strong> <code>p8:thm:v2112-terminal-causal-cap-occurrence</code>; VI-A lines 14846–14927.
+Finite causal exclusion and redshift do not alone eliminate all exactly nontrivial operational readout generators or certify discrete detachment occurrence.</p>
+<p><strong>Precise obligation:</strong> Establish from the actual finite operator-system/readout constructors a defined notion of asymptotic quotient/triviality and show full exhaustion on the located cap (or explicitly condition occurrence on that additional premise). Do not infer non-scalar-generator disappearance from redshift alone.</p>
+<p><strong>Retained:</strong> Finite causal reach/volume complement on the stipulated finite bound-source domain; Asymptotic material dilution and conditional cap-algebra theorem assuming full generator exhaustion; Definition and selector identities for ζ_D</p>
+<p><strong>Conditions:</strong> BH-VIA-A-0018, BH-VIA-A-0019; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0016 — MODERATE — UNDISCHARGED_IMPORTED_BOUNDARY_CONDITION</h3>
+<p><strong>First origin:</strong> <code>p8:thm:complete-cap-zero-cotangent</code>; VI-A lines 15372–15426.
+Zero intrinsic daughter momentum consumes upstream locally constant inherited boundary functional BH-IIIA-A-0042, not discharged merely by no parent readout.</p>
+<p><strong>Precise obligation:</strong> Provide a source-bound proof that the specific inherited complete boundary functional is locally constant on the daughter homogeneous boundary role, or retain BH-IIIA-A-0042 as an explicit unresolved antecedent. Do not equate absence of external impulse with zero intrinsic momentum.</p>
+<p><strong>Retained:</strong> Paper III-A boundary-trivial lemma under its explicit two hypotheses; Conditional zero-cotangent to H0=dot X0=0 algebra; Conditional closed-FLRW bounce radius/sign algebra</p>
+<p><strong>Conditions:</strong> BH-IIIA-A-0042, BH-IIIA-A-0043; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h3>BH-VIA-G-0017 — MODERATE — MISSING_PHYSICAL_CONSTRUCTOR_CERTIFICATE</h3>
+<p><strong>First origin:</strong> <code>p8:cor:v2112-no-duplicate-lineage-occurrence</code>; VI-A lines 15104–15644.
+Conditional II-A no-idle/co-realization needs a frozen licensed cap→daughter dynamical/occurrence constructor; structural reset alone is not its certificate.</p>
+<p><strong>Precise obligation:</strong> Locate and certify the existing pre-frozen typed cap-to-daughter dynamical/occurrence constructor, exact full inputs, nonredundant output sort, and R≼ΣP relation, or scope the daughter history as conditional on that constructor. No new constructor is to be invented in this audit.</p>
+<p><strong>Retained:</strong> Structural I8/q=0 reset on a complete cap; Primitive Hopf residue and daughter root normalization; Conditional K8/K16/K48 crossings for a supplied regular daughter history</p>
+<p><strong>Conditions:</strong> BH-VIA-A-0020, BH-IIA-A-B37-GEN-ROLE-001; <strong>confirmed cross-paper impacts:</strong> 0; all other possible impacts remain unconfirmed.</p>
+<h2>Final batch exact checks</h2>
+<p>Native constant <code>A=4π²+1/(6√2)≈39.596268734555</code> and <code>Q≈3.17183e+09</code>. Independent quadrature gives:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">Candidate j</th>
+  <th style="text-align:right">Potential-end q</th>
+  <th style="text-align:right">Printed approximate q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">1</td>
+  <td style="text-align:right">0.516686676</td>
+  <td style="text-align:right">0.516687</td>
+</tr>
+<tr>
+  <td style="text-align:right">2</td>
+  <td style="text-align:right">0.566388774</td>
+  <td style="text-align:right">0.566389</td>
+</tr>
+<tr>
+  <td style="text-align:right">3</td>
+  <td style="text-align:right">0.566388773</td>
+  <td style="text-align:right">0.566389</td>
+</tr>
+<tr>
+  <td style="text-align:right">4</td>
+  <td style="text-align:right">0.566388773</td>
+  <td style="text-align:right">0.566389</td>
+</tr>
+</tbody>
+</table>
+<p>The terminal selector, S³ causal-ball volume, positive mass/force subclaims, full Hopf residue, Planck-square rewrite, cyclic-root ratio, FLRW constraint, source corner energy, conditional radiation/dust separatrix, and exact coefficient work readout passed their specific controls. E4 controls also confirm that norm-decay does not automatically trivialize an exact algebra, absence of source impulse does not force zero bulk momentum, and nonzero corner energy cannot disappear under continuous finite-state evolution.</p>
+<h2>Imported theorem boundary firewall</h2>
+<ul>
+<li>II-A no-idle: licensed frozen constructor + all generated inputs + required nonredundant typed output. Its source warns mathematical availability alone is insufficient.</li>
+<li>II-A generated-role co-realization: a separately established role relation inside an occurring parent, not physical occurrence of every possible state or process.</li>
+<li>III-A boundary-trivial: both (i) locally constant inherited boundary functional (existing canonical <code>BH-IIIA-A-0042</code>) AND (ii) no new independent varying boundary functional (<code>BH-IIIA-A-0043</code>). No duplicate assumptions introduced.</li>
+<li>VI-A complete-cap definition implies compact operator-system triviality by definition; an actual time-dependent complete-cap history is a separate assertion.</li>
+</ul>
+<h2>Named claim source index and dispositions</h2>
+<table>
+<thead>
+<tr>
+  <th>Claim</th>
+  <th style="text-align:right">Source lines</th>
+  <th>Source title</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>BH-VIA-C-0001</code></td>
+  <td style="text-align:right">108–131</td>
+  <td>Global scope of the distinct normalization tests</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0002</code></td>
+  <td style="text-align:right">224–240</td>
+  <td>Structural boundary/interface status after parent-collar descent</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0003</code></td>
+  <td style="text-align:right">273–296</td>
+  <td>Grade-four comparison coefficient and exact carrier-four $K16$ midpoint</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0004</code></td>
+  <td style="text-align:right">299–340</td>
+  <td>Exact grade-four onset in same-action curvature coefficients</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0005</code></td>
+  <td style="text-align:right">363–388</td>
+  <td>Conditional Starobinsky UV scalaron in closed FLRW</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0006</code></td>
+  <td style="text-align:right">389–408</td>
+  <td>Closed particle work and finite-source matching</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0007</code></td>
+  <td style="text-align:right">409–418</td>
+  <td>Structural versus physical clocks and infrared reduction</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0008</code></td>
+  <td style="text-align:right">419–442</td>
+  <td>Recomputed rank-four inflation comparison, $N=56$</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0009</code></td>
+  <td style="text-align:right">443–451</td>
+  <td>K48 independent of the ultraviolet dress rank</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0010</code></td>
+  <td style="text-align:right">452–465</td>
+  <td>Historical D15/D16 and decay benchmark correction</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0011</code></td>
+  <td style="text-align:right">526–588</td>
+  <td>Compressed residual status through Paper VI-B</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0012</code></td>
+  <td style="text-align:right">600–631</td>
+  <td>Complete action on the declared cosmological domain</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0013</code></td>
+  <td style="text-align:right">727–746</td>
+  <td>Native cyclic (\mathrm{REN}_0) retirement and terminal higher-order extinction</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0014</code></td>
+  <td style="text-align:right">780–806</td>
+  <td>Compact boundary exclusion is not a source channel</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0015</code></td>
+  <td style="text-align:right">818–861</td>
+  <td>Common-action reciprocal-position source normalization</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0016</code></td>
+  <td style="text-align:right">919–932</td>
+  <td>Source conservation and internal equivalence relation</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0017</code></td>
+  <td style="text-align:right">944–968</td>
+  <td>Reciprocal-position source dependency chain</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0018</code></td>
+  <td style="text-align:right">981–991</td>
+  <td>Low-curvature Levi--Civita channel</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0019</code></td>
+  <td style="text-align:right">993–1000</td>
+  <td>No downstream shell-count source premise</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0020</code></td>
+  <td style="text-align:right">1031–1148</td>
+  <td>Positive-part Laurent clocks and restored local-jet Laurent--Legendre action</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0021</code></td>
+  <td style="text-align:right">1150–1186</td>
+  <td>Depth-two dressing selects the exact (K=16) density scale</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0022</code></td>
+  <td style="text-align:right">1197–1210</td>
+  <td>Persistent (n_7^+) owner and the RAR branch</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0023</code></td>
+  <td style="text-align:right">1212–1241</td>
+  <td>Optional smooth-MRESP susceptibility comparison</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0024</code></td>
+  <td style="text-align:right">1255–1262</td>
+  <td>Comparison status of the entropy-Hessian graph</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0025</code></td>
+  <td style="text-align:right">1334–1359</td>
+  <td>Paper~III contact-residue interface imported here</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0026</code></td>
+  <td style="text-align:right">1361–1371</td>
+  <td>Contact dimension and flat-cone scope</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0027</code></td>
+  <td style="text-align:right">1398–1401</td>
+  <td>Paper--VI-A gravitational closure boundary</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0028</code></td>
+  <td style="text-align:right">1601–1623</td>
+  <td>A constructive first right-$2I$ scalar harmonic</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0029</code></td>
+  <td style="text-align:right">1636–1645</td>
+  <td>Three constructive primitive angular-to-$S^3$ channels</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0030</code></td>
+  <td style="text-align:right">1647–1657</td>
+  <td>Reciprocal factorwise comparison; not an extra $M_8$ action</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0031</code></td>
+  <td style="text-align:right">1659–1671</td>
+  <td>Gravitational scope and first anisotropy order</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0032</code></td>
+  <td style="text-align:right">1715–1746</td>
+  <td>Six finite protected crossovers and one terminal endpoint</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0033</code></td>
+  <td style="text-align:right">1759–1804</td>
+  <td>Closed-FLRW octet reflection and self-dual midpoint</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0034</code></td>
+  <td style="text-align:right">1822–1875</td>
+  <td>Scheme-uniform final-octet complement and covariant K=48 pullback</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0035</code></td>
+  <td style="text-align:right">1892–1936</td>
+  <td>Primitive-remnant depletion across the final octet</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0036</code></td>
+  <td style="text-align:right">1956–2003</td>
+  <td>Canonical Hopf representative and exact final-octet descent</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0037</code></td>
+  <td style="text-align:right">2026–2073</td>
+  <td>Closed-FLRW Hodge realization fixes the neutral (a^{-3}) shape</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0038</code></td>
+  <td style="text-align:right">2084–2104</td>
+  <td>Chronology requires an actual transverse curvature crossing</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0039</code></td>
+  <td style="text-align:right">2113–2124</td>
+  <td>Crossing event as a unique-history descendant</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0040</code></td>
+  <td style="text-align:right">2126–2178</td>
+  <td>Exact effective-dust law conditional on same-action geometric occurrence</td>
+  <td><code>UNRESOLVED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0041</code></td>
+  <td style="text-align:right">2192–2203</td>
+  <td>Topological and isocurvature scope</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0042</code></td>
+  <td style="text-align:right">2205–2222</td>
+  <td>Typed hierarchy-event predicate</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0043</code></td>
+  <td style="text-align:right">2224–2241</td>
+  <td>Typed hierarchy-event identification</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0044</code></td>
+  <td style="text-align:right">2254–2266</td>
+  <td>Born-midpoint curvature realization of a typed hierarchy rung</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0045</code></td>
+  <td style="text-align:right">2268–2287</td>
+  <td>Derived (K=16) coefficient-freeze event predicate</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0046</code></td>
+  <td style="text-align:right">2289–2304</td>
+  <td>Status of the seven familiar labels</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0047</code></td>
+  <td style="text-align:right">2306–2329</td>
+  <td>Historical rank-two reflection and no-particle firewall</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0048</code></td>
+  <td style="text-align:right">2338–2348</td>
+  <td>Meaning of the protected number fifty-six</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0049</code></td>
+  <td style="text-align:right">2350–2373</td>
+  <td>Position unfolding level</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0050</code></td>
+  <td style="text-align:right">2375–2412</td>
+  <td>Conditional fixed-band spatial stabilization and sharp-frontier discharge</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0051</code></td>
+  <td style="text-align:right">2436–2478</td>
+  <td>Finite position-side scalar remnant and the typed export boundary</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0052</code></td>
+  <td style="text-align:right">2494–2504</td>
+  <td>A sufficient history for complete-band spatial stabilization</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0053</code></td>
+  <td style="text-align:right">2523–2543</td>
+  <td>Unresolved, resolved, and crossover visibility</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0054</code></td>
+  <td style="text-align:right">2545–2557</td>
+  <td>Visibility monotonicity and band localization</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0055</code></td>
+  <td style="text-align:right">2563–2586</td>
+  <td>Typed readout ledger on six finite landmarks and the terminal completion</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0056</code></td>
+  <td style="text-align:right">2597–2611</td>
+  <td>Octahedral carrier readout near the (E_{36}) interface</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0057</code></td>
+  <td style="text-align:right">2613–2622</td>
+  <td>Dynamic meaning of the octahedral quotient readout</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0058</code></td>
+  <td style="text-align:right">2624–2648</td>
+  <td>Optional smooth-MRESP convexity and algebraic terminal freeze</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0059</code></td>
+  <td style="text-align:right">2660–2670</td>
+  <td>Active Laurent indices and comparison exponent</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0060</code></td>
+  <td style="text-align:right">2672–2690</td>
+  <td>No compact vacuum from the positive smooth Born heat tower through (a_4)</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0061</code></td>
+  <td style="text-align:right">2726–2743</td>
+  <td>Three distinct dimensional hierarchy exports</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0062</code></td>
+  <td style="text-align:right">2850–2868</td>
+  <td>Global (2I) perturbation endpoint and local particle core</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0063</code></td>
+  <td style="text-align:right">2885–2918</td>
+  <td>Paper-I-A exceptional ranks with Paper-V-B readout chronology</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0064</code></td>
+  <td style="text-align:right">2925–2965</td>
+  <td>Imported protected structural resolution clock</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0065</code></td>
+  <td style="text-align:right">2977–2984</td>
+  <td>Structural clock without a shell-source phase selector</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0066</code></td>
+  <td style="text-align:right">2987–3002</td>
+  <td>Protected non-carrier rungs in the cosmological clock</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0067</code></td>
+  <td style="text-align:right">3433–3455</td>
+  <td>Lapse extraction of the same-action potential</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0068</code></td>
+  <td style="text-align:right">3478–3495</td>
+  <td>Complete homogeneous canonical constraint</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0069</code></td>
+  <td style="text-align:right">3535–3562</td>
+  <td>Regular separated Born--Legendre consequences</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0070</code></td>
+  <td style="text-align:right">3580–3612</td>
+  <td>Historical copied-response endpoint as an affine displacement</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0071</code></td>
+  <td style="text-align:right">3631–3641</td>
+  <td>Terminal quotient and active sharp branch remain distinct</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0072</code></td>
+  <td style="text-align:right">3666–3680</td>
+  <td>Current working action retains its native-identification obligations</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0073</code></td>
+  <td style="text-align:right">3683–3710</td>
+  <td>Capped working-action vacuum location and positive scalaron sign</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0074</code></td>
+  <td style="text-align:right">3783–3837</td>
+  <td>Exact nonlinear scalaron force potential and work identity</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0075</code></td>
+  <td style="text-align:right">3852–3872</td>
+  <td>One force numerator controls Jordan evolution and Einstein-frame slope</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0076</code></td>
+  <td style="text-align:right">3874–3917</td>
+  <td>Closed-FLRW constrained scalaron generator and flow boundary</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0077</code></td>
+  <td style="text-align:right">3934–3960</td>
+  <td>Unique lower stationary curvature and running positive scalaron mass</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0078</code></td>
+  <td style="text-align:right">3978–4015</td>
+  <td>Exact lower stationary source interval and susceptibility</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0079</code></td>
+  <td style="text-align:right">4032–4046</td>
+  <td>Regular terminal stationary source limit</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0080</code></td>
+  <td style="text-align:right">4054–4064</td>
+  <td>Stationary source domain and dynamical scope</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0081</code></td>
+  <td style="text-align:right">4066–4091</td>
+  <td>Variable-susceptibility scalaron law and terminal susceptibility decoupling</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0082</code></td>
+  <td style="text-align:right">4100–4116</td>
+  <td>Adiabatic local-oscillation statement</td>
+  <td><code>UNRESOLVED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0083</code></td>
+  <td style="text-align:right">4118–4128</td>
+  <td>Trace-source work remains same-action</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0084</code></td>
+  <td style="text-align:right">4130–4159</td>
+  <td>Structural resolution parameter is not generic physical scalaron time</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0085</code></td>
+  <td style="text-align:right">4168–4174</td>
+  <td>Cold behavior is not a dark-matter normalization</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0086</code></td>
+  <td style="text-align:right">4176–4218</td>
+  <td>Terminal endpoint spectral handoff</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0087</code></td>
+  <td style="text-align:right">4248–4253</td>
+  <td>Deferred Paper~III infrared realization is covered on the cosmological branch</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0088</code></td>
+  <td style="text-align:right">4292–4310</td>
+  <td>Trace-force cubic and quartic vertices</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0089</code></td>
+  <td style="text-align:right">4323–4342</td>
+  <td>Uniform restoring-mass positivity for the restored action</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0090</code></td>
+  <td style="text-align:right">4356–4361</td>
+  <td>One regular vacuum root in the hierarchy window</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0091</code></td>
+  <td style="text-align:right">4382–4396</td>
+  <td>Unique restored trace response and controlled inverse</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0092</code></td>
+  <td style="text-align:right">4454–4514</td>
+  <td>Active Laurent coupling, convexity, and physical scalaron-mass domain</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0093</code></td>
+  <td style="text-align:right">4529–4536</td>
+  <td>Optional smooth-MRESP local comparison</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0094</code></td>
+  <td style="text-align:right">4538–4588</td>
+  <td>Sufficient thin-shell and PPN recovery criterion</td>
+  <td><code>UNRESOLVED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0095</code></td>
+  <td style="text-align:right">4605–4620</td>
+  <td>Distinct scalaron and dark-sector projections</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0096</code></td>
+  <td style="text-align:right">4645–4663</td>
+  <td>Round-$S^3$ scalar stress projections</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0097</code></td>
+  <td style="text-align:right">4689–4715</td>
+  <td>Full resolved scalar Einstein bulk reconstruction</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0098</code></td>
+  <td style="text-align:right">4744–4794</td>
+  <td>Dependent finite causal scalar source--metric composition</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0099</code></td>
+  <td style="text-align:right">4862–4900</td>
+  <td>Complete functional scalar source--metric composition</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0100</code></td>
+  <td style="text-align:right">4921–4970</td>
+  <td>Guarded free Dirac stress Ward and scalar contact closure</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0101</code></td>
+  <td style="text-align:right">5054–5074</td>
+  <td>One exceptional curvature owner, one scalaron root, multiple response projections</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0102</code></td>
+  <td style="text-align:right">5085–5104</td>
+  <td>Positive frame norm must not be replaced by a signed curvature invariant</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0103</code></td>
+  <td style="text-align:right">5106–5128</td>
+  <td>FLRW enthalpy complement does not constitute a second scalaron</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0104</code></td>
+  <td style="text-align:right">5138–5174</td>
+  <td>All-orders traceless-Ricci identities on exact closed FLRW</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0105</code></td>
+  <td style="text-align:right">5184–5193</td>
+  <td>Parity-odd pure-metric background scalars</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0106</code></td>
+  <td style="text-align:right">5197–5250</td>
+  <td>The six-derivative radiation/tidal term is a conditional heat diagnostic</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0107</code></td>
+  <td style="text-align:right">5252–5272</td>
+  <td>Exact same-action scalaron matching with non-scalar forcing</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0108</code></td>
+  <td style="text-align:right">5274–5292</td>
+  <td>Preservation of the established K48 and terminal scope</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0109</code></td>
+  <td style="text-align:right">5294–5306</td>
+  <td>Scope of the achieved consistency and remaining exact task</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0110</code></td>
+  <td style="text-align:right">5315–5347</td>
+  <td>Exact complete FLRW curvature reconstruction from the scalaron and residual</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0111</code></td>
+  <td style="text-align:right">5358–5385</td>
+  <td>Noether integrability and exact effective-fluid criteria</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0112</code></td>
+  <td style="text-align:right">5397–5422</td>
+  <td>Ordinary Dirac local six-derivative radiation test is not dust</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0113</code></td>
+  <td style="text-align:right">5447–5455</td>
+  <td>Status of generalized curvature--matter closure</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0114</code></td>
+  <td style="text-align:right">5463–5485</td>
+  <td>Exact static-patch optical delay of the terminal floor</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0115</code></td>
+  <td style="text-align:right">5492–5506</td>
+  <td>The exceptional curvature coordinate vanishes on pure closed de Sitter</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0116</code></td>
+  <td style="text-align:right">5514–5523</td>
+  <td>Observable tests and no parent-cone conclusion</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0117</code></td>
+  <td style="text-align:right">5524–5532</td>
+  <td>Structural curvature versus physical Ricci curvature</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0118</code></td>
+  <td style="text-align:right">6068–6100</td>
+  <td>Hierarchy comparison and canonical scalar normalization</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0119</code></td>
+  <td style="text-align:right">6116–6128</td>
+  <td>Strict Laurent susceptibility on the active strata</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0120</code></td>
+  <td style="text-align:right">6152–6172</td>
+  <td>Conservative lower-window coefficient and local-range bounds</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0121</code></td>
+  <td style="text-align:right">6190–6207</td>
+  <td>Terminal floor and static acceleration share one scale</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0122</code></td>
+  <td style="text-align:right">6247–6267</td>
+  <td>Canonical continuation through the $D_k=0$ chart locus</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0123</code></td>
+  <td style="text-align:right">6287–6300</td>
+  <td>Chart connection is not physical source work</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0124</code></td>
+  <td style="text-align:right">6310–6321</td>
+  <td>Exact minimum criterion for the physical scalar root</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0125</code></td>
+  <td style="text-align:right">6330–6343</td>
+  <td>Persistent positive Euler energy is not empty root excitation</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0126</code></td>
+  <td style="text-align:right">6388–6404</td>
+  <td>Final local interval duration for a positive amplitude</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0127</code></td>
+  <td style="text-align:right">6424–6434</td>
+  <td>Integrated budget for an exactly cold local trajectory</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0128</code></td>
+  <td style="text-align:right">6464–6487</td>
+  <td>Source-subtracted terminal amplitude and pressure test</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0129</code></td>
+  <td style="text-align:right">6504–6527</td>
+  <td>Conserved cold charge and terminal Ricci test</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0130</code></td>
+  <td style="text-align:right">6591–6613</td>
+  <td>A finite observation slice is not the asymptotic limit</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0131</code></td>
+  <td style="text-align:right">6615–6642</td>
+  <td>Retained native-scalar low modes are a separate restriction</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0132</code></td>
+  <td style="text-align:right">6754–6777</td>
+  <td>Same-action homogeneous curvature-response exchange</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0133</code></td>
+  <td style="text-align:right">6787–6818</td>
+  <td>Homogeneous Schur response of the retained scalaron</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0134</code></td>
+  <td style="text-align:right">6970–6979</td>
+  <td>REG0 finite-denominator compatibility</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0135</code></td>
+  <td style="text-align:right">6988–7008</td>
+  <td>Exact dust--vacuum reacceleration scale</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0136</code></td>
+  <td style="text-align:right">7017–7026</td>
+  <td>Non-derivability of a fixed reacceleration depth from (\delta)</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0137</code></td>
+  <td style="text-align:right">7036–7077</td>
+  <td>Closed-FLRW reacceleration depth with its unavoidable integration constant</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0138</code></td>
+  <td style="text-align:right">7092–7094</td>
+  <td>Curvature magnitude handoff</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0139</code></td>
+  <td style="text-align:right">7115–7124</td>
+  <td>Quasilocal causal scalar phase support</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0140</code></td>
+  <td style="text-align:right">7126–7134</td>
+  <td>FLRW apparent-horizon radius from the quasilocal support premise</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0141</code></td>
+  <td style="text-align:right">7153–7177</td>
+  <td>Horizon scalar trace kernel under the minimal bilinear interface premise</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0142</code></td>
+  <td style="text-align:right">7267–7289</td>
+  <td>Physical horizon branch</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0143</code></td>
+  <td style="text-align:right">7478–7503</td>
+  <td>Regular scalar reduction through the simultaneous turning root</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0144</code></td>
+  <td style="text-align:right">7527–7572</td>
+  <td>Positive oscillators at the generated cyclic birth root</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0145</code></td>
+  <td style="text-align:right">7651–7687</td>
+  <td>Fresh-root neutral state and QROOT closure</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0146</code></td>
+  <td style="text-align:right">7705–7720</td>
+  <td>Ground-support selection on a completed fixed-root source branch</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0147</code></td>
+  <td style="text-align:right">7735–7749</td>
+  <td>K48 reach with a subcritical adverse trace</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0148</code></td>
+  <td style="text-align:right">7776–7816</td>
+  <td>Exact FLRW restriction of the rooted exceptional curvature map</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0149</code></td>
+  <td style="text-align:right">7818–7834</td>
+  <td>Scalar hierarchy lines and complete-curvature circles</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0150</code></td>
+  <td style="text-align:right">7836–7861</td>
+  <td>Einstein-form stress coordinates</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0151</code></td>
+  <td style="text-align:right">7863–7883</td>
+  <td>Exceptional form of the lower-branch turnaround/bounce sheets</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0152</code></td>
+  <td style="text-align:right">7885–7913</td>
+  <td>Homogeneous functional source ports in the exceptional plane</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0153</code></td>
+  <td style="text-align:right">7915–7931</td>
+  <td>Scale-weight trace cancellation</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0154</code></td>
+  <td style="text-align:right">7933–7947</td>
+  <td>K16 later-rung midpoint trace-depth bound</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0155</code></td>
+  <td style="text-align:right">7966–8015</td>
+  <td>Native cyclic G28 handoff closure as a generated parent image</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0156</code></td>
+  <td style="text-align:right">8051–8070</td>
+  <td>Abstract full-locus G28 strengthening is not a core physical residual</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0157</code></td>
+  <td style="text-align:right">8152–8183</td>
+  <td>Conditioning preserves the response already present</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0158</code></td>
+  <td style="text-align:right">8206–8217</td>
+  <td>Framework-native scalaron precedence</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0159</code></td>
+  <td style="text-align:right">8219–8244</td>
+  <td>Intrinsic susceptibility decoupling is not a decay width</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0160</code></td>
+  <td style="text-align:right">8246–8270</td>
+  <td>Adiabatic coherent-envelope suppression</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0161</code></td>
+  <td style="text-align:right">8272–8304</td>
+  <td>Finite ordered-kernel realization of K16 occupations</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0162</code></td>
+  <td style="text-align:right">8306–8321</td>
+  <td>Scalaron-driven K16 modulation switches off at the regular terminal limit</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0163</code></td>
+  <td style="text-align:right">8323–8351</td>
+  <td>Corrected C06/A22.1 finite frontier</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0164</code></td>
+  <td style="text-align:right">8358–8369</td>
+  <td>C06 exceptional-curvature output contract</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0165</code></td>
+  <td style="text-align:right">8371–8395</td>
+  <td>First-K48 reach versus complete production history</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0166</code></td>
+  <td style="text-align:right">8402–8421</td>
+  <td>Fixed direct-packet energy and resolved occupations</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0167</code></td>
+  <td style="text-align:right">8431–8459</td>
+  <td>State-uniform sufficient first-K48 trace certificate</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0168</code></td>
+  <td style="text-align:right">8477–8488</td>
+  <td>Incoming sourced-history comparison has no new seed</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0169</code></td>
+  <td style="text-align:right">8510–8549</td>
+  <td>Finite row-sum and normalized-word bounds</td>
+  <td><code>UNRESOLVED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0170</code></td>
+  <td style="text-align:right">8600–8624</td>
+  <td>One-sided first-K48 comparison</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0171</code></td>
+  <td style="text-align:right">8641–8675</td>
+  <td>Sharper comparison and geometric Hubble bootstrap</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0172</code></td>
+  <td style="text-align:right">8693–8716</td>
+  <td>Local matter breaking sign with the native boundary handoff</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0173</code></td>
+  <td style="text-align:right">8768–8802</td>
+  <td>Exact CAR upper trace and sharp affine pair bound</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0174</code></td>
+  <td style="text-align:right">8861–8871</td>
+  <td>Almost-sure unique optimized planar axis</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0175</code></td>
+  <td style="text-align:right">8901–8909</td>
+  <td>Haar axis independent of invariant shape and power</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0176</code></td>
+  <td style="text-align:right">8921–8927</td>
+  <td>Nonempty same-shell observer branch</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0177</code></td>
+  <td style="text-align:right">8946–8965</td>
+  <td>Gaussian Schur descent and optimized relative-axis law</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0178</code></td>
+  <td style="text-align:right">8984–9006</td>
+  <td>Fixed-window covariance test and Gaussian angular pushforward</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0179</code></td>
+  <td style="text-align:right">9045–9062</td>
+  <td>First post-inflation Born-boundary response cell</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0180</code></td>
+  <td style="text-align:right">9064–9091</td>
+  <td>Exact reheating response law</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0181</code></td>
+  <td style="text-align:right">9093–9112</td>
+  <td>In-cell dilution functional</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0182</code></td>
+  <td style="text-align:right">9114–9159</td>
+  <td>Physical post-K16 retained-scalaron branch and Schur reductions</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0183</code></td>
+  <td style="text-align:right">9162–9187</td>
+  <td>Exact slow-manifold plus coherent-mode decomposition</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0184</code></td>
+  <td style="text-align:right">9189–9206</td>
+  <td>K48 as a trace-conditioned crossing</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0185</code></td>
+  <td style="text-align:right">9208–9219</td>
+  <td>C06 execution frontier after scalaron-retention correction</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0186</code></td>
+  <td style="text-align:right">9221–9240</td>
+  <td>Stationary-tangent Hubble diagnostic</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0187</code></td>
+  <td style="text-align:right">9242–9265</td>
+  <td>Visible thermalization and numerical reheating temperature</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0188</code></td>
+  <td style="text-align:right">9267–9277</td>
+  <td>Retained scalaron and particle production are one coupled history</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0189</code></td>
+  <td style="text-align:right">9316–9334</td>
+  <td>Typed direct K16 structural packet</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0190</code></td>
+  <td style="text-align:right">9336–9363</td>
+  <td>K16 particle-boundary owner condition</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0191</code></td>
+  <td style="text-align:right">9365–9381</td>
+  <td>K16 state-level saturation criterion</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0192</code></td>
+  <td style="text-align:right">9383–9404</td>
+  <td>Ordinary-radiation normalization conditional on PB16</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0193</code></td>
+  <td style="text-align:right">9406–9428</td>
+  <td>Current K16 status</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0194</code></td>
+  <td style="text-align:right">9436–9480</td>
+  <td>K16 direct particle-boundary owner</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0195</code></td>
+  <td style="text-align:right">9501–9531</td>
+  <td>PB16 owner closure and conditional physical stress normalization</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0196</code></td>
+  <td style="text-align:right">9534–9544</td>
+  <td>Support and complete stress use</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0197</code></td>
+  <td style="text-align:right">9547–9567</td>
+  <td>Particle-sector closure versus visible-only exhaustion</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0198</code></td>
+  <td style="text-align:right">9569–9584</td>
+  <td>Supersession of the v2.135 owner frontier</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0199</code></td>
+  <td style="text-align:right">9592–9623</td>
+  <td>Inflation-end conditioned remainder of the K8--K16 cell</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0200</code></td>
+  <td style="text-align:right">9625–9641</td>
+  <td>Exact conditioned flow</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0201</code></td>
+  <td style="text-align:right">9643–9663</td>
+  <td>Neutral charge-two boundary owner target</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0202</code></td>
+  <td style="text-align:right">9665–9681</td>
+  <td>Native inflation-exit baryogenesis status</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0203</code></td>
+  <td style="text-align:right">9683–9691</td>
+  <td>K24 bridge scope without a source-phase postulate</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0204</code></td>
+  <td style="text-align:right">9700–9722</td>
+  <td>Native $K=32$ hierarchy curvature length</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0205</code></td>
+  <td style="text-align:right">9724–9732</td>
+  <td>Metre comparison is validation/metrology</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0206</code></td>
+  <td style="text-align:right">9744–9771</td>
+  <td>Baryogenesis roles after the incidence correction</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0207</code></td>
+  <td style="text-align:right">9773–9781</td>
+  <td>K16--K24 response is not the asymmetry</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0208</code></td>
+  <td style="text-align:right">9820–9839</td>
+  <td>Gravitational scalaron core and static ownership boundary</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0209</code></td>
+  <td style="text-align:right">9851–9884</td>
+  <td>Finite shell algebra constraint on decompositions of the exact RAR response</td>
+  <td><code>UNRESOLVED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0210</code></td>
+  <td style="text-align:right">9949–9970</td>
+  <td>Canonical multiplicative imbalance group</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0211</code></td>
+  <td style="text-align:right">9985–10026</td>
+  <td>Born-balance continuation rigidity on a fixed product leaf</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0212</code></td>
+  <td style="text-align:right">10041–10054</td>
+  <td>Sector-specific instance of universal continuation</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0213</code></td>
+  <td style="text-align:right">10056–10068</td>
+  <td>No unmarked linear visibility-to-balance bridge</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0214</code></td>
+  <td style="text-align:right">10077–10089</td>
+  <td>Exact scope of the Born-balance law</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0215</code></td>
+  <td style="text-align:right">10105–10144</td>
+  <td>Environment-conditioned terminal $S+T$ response</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0216</code></td>
+  <td style="text-align:right">10161–10183</td>
+  <td>No universal one-variable baryons-only RAR on the full environmental class</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0217</code></td>
+  <td style="text-align:right">10185–10215</td>
+  <td>Same-action $H/S$ source-conditioned response; no additive cDM force</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0218</code></td>
+  <td style="text-align:right">10217–10239</td>
+  <td>Homogeneous $C_6$ is not the static selected floor</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0219</code></td>
+  <td style="text-align:right">10241–10275</td>
+  <td>Exact running-mass adiabaticity diagnostic</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0220</code></td>
+  <td style="text-align:right">10288–10317</td>
+  <td>Sufficient local-well residence certificate</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0221</code></td>
+  <td style="text-align:right">10333–10342</td>
+  <td>Residence and first-passage scope</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0222</code></td>
+  <td style="text-align:right">10353–10366</td>
+  <td>K48 H-owned terminal relation consumption</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0223</code></td>
+  <td style="text-align:right">10368–10384</td>
+  <td>K48 H-response normalization jet</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0224</code></td>
+  <td style="text-align:right">10386–10404</td>
+  <td>Same-owner post-K48 matter-like continuation</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0225</code></td>
+  <td style="text-align:right">10406–10419</td>
+  <td>Homogeneous/inhomogeneous response split</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0226</code></td>
+  <td style="text-align:right">10421–10430</td>
+  <td>No-double-counting firewall</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0227</code></td>
+  <td style="text-align:right">10432–10446</td>
+  <td>K48 normalization shortcut firewall</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0228</code></td>
+  <td style="text-align:right">10454–10479</td>
+  <td>K48 zero-order and quadratic-response exhaustion</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0229</code></td>
+  <td style="text-align:right">10481–10506</td>
+  <td>Unit K48 H-response normalization</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0230</code></td>
+  <td style="text-align:right">10508–10520</td>
+  <td>Unit-normalized same-owner post-K48 dust branch</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0231</code></td>
+  <td style="text-align:right">10522–10532</td>
+  <td>Retired K48 normalization routes and surviving frontiers</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0232</code></td>
+  <td style="text-align:right">10540–10567</td>
+  <td>No native K48-to-dust first-integral constructor in the current grammar</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0233</code></td>
+  <td style="text-align:right">10569–10587</td>
+  <td>Endpoint normalization versus optional exact dust</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0234</code></td>
+  <td style="text-align:right">10589–10622</td>
+  <td>Constraint-reduced homogeneous boundary propagator</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0235</code></td>
+  <td style="text-align:right">10624–10660</td>
+  <td>Resolved closed-$S^3$ cold scalar constraint propagator</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0236</code></td>
+  <td style="text-align:right">10662–10694</td>
+  <td>Collisionless environmental dynamic source block</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0237</code></td>
+  <td style="text-align:right">10696–10711</td>
+  <td>Conditional causal boundary impedance</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0238</code></td>
+  <td style="text-align:right">10713–10747</td>
+  <td>Revised K48/RAR frontier</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0239</code></td>
+  <td style="text-align:right">10769–10772</td>
+  <td>Round-Dirac eta source boundary for tensor helicity</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0240</code></td>
+  <td style="text-align:right">10774–10777</td>
+  <td>Beltrami helicity is the orientation datum</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0241</code></td>
+  <td style="text-align:right">10779–10794</td>
+  <td>Protected reciprocal transverse response is not the parity-odd Hopf source</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0242</code></td>
+  <td style="text-align:right">10797–10816</td>
+  <td>Complementary protected sign projectors have the same connection</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0243</code></td>
+  <td style="text-align:right">10831–10839</td>
+  <td>Canonical Hopf--Chern--Simons tensor transfer</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0244</code></td>
+  <td style="text-align:right">10841–10877</td>
+  <td>Parity-odd density and the state-conditioned zero-transfer branch</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0245</code></td>
+  <td style="text-align:right">10901–10951</td>
+  <td>Native cyclic complete-shell covariance</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0246</code></td>
+  <td style="text-align:right">10993–11009</td>
+  <td>Unmarked exceptional shell fractions are not selected finite projectors</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0247</code></td>
+  <td style="text-align:right">11021–11053</td>
+  <td>Native cyclic tensor covariance</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0248</code></td>
+  <td style="text-align:right">11116–11144</td>
+  <td>Regular causal tensor and Dirac source system</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0249</code></td>
+  <td style="text-align:right">11169–11178</td>
+  <td>Regular tensor source inheritance</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0250</code></td>
+  <td style="text-align:right">11215–11233</td>
+  <td>Infrared action dominance and the ambient floor</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0251</code></td>
+  <td style="text-align:right">11238–11251</td>
+  <td>Static response curvature and selected ambient floor</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0252</code></td>
+  <td style="text-align:right">11254–11274</td>
+  <td>Static scalaron-lapse boundary-value comparison</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0253</code></td>
+  <td style="text-align:right">11276–11292</td>
+  <td>Dirichlet-to-Neumann eigenvalue of the terminal branch</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0254</code></td>
+  <td style="text-align:right">11311–11347</td>
+  <td>Static determinant trace and local acceleration readouts</td>
+  <td><code>UNRESOLVED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0255</code></td>
+  <td style="text-align:right">11379–11382</td>
+  <td>Static determinant readout versus other scalaron projections</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0256</code></td>
+  <td style="text-align:right">11411–11420</td>
+  <td>Bounded faithful metric/action realization</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0257</code></td>
+  <td style="text-align:right">11437–11452</td>
+  <td>Attained fixed-source density maximum</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0258</code></td>
+  <td style="text-align:right">11465–11484</td>
+  <td>Free-generator bounds on physical radii</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0259</code></td>
+  <td style="text-align:right">11497–11517</td>
+  <td>Spherical curvature compression and turning test</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0260</code></td>
+  <td style="text-align:right">11532–11572</td>
+  <td>Local areal reversal from the native first-jet action</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0261</code></td>
+  <td style="text-align:right">11594–11614</td>
+  <td>Native scalar momentum at the admitted turning point</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0262</code></td>
+  <td style="text-align:right">11655–11685</td>
+  <td>Numerically certified native source-memory regulation member</td>
+  <td><code>UNRESOLVED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0263</code></td>
+  <td style="text-align:right">11687–11705</td>
+  <td>Open regulating basin around the certified member</td>
+  <td><code>UNRESOLVED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0264</code></td>
+  <td style="text-align:right">11707–11739</td>
+  <td>Explicit spherical constraint-buffer matching</td>
+  <td><code>UNRESOLVED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0265</code></td>
+  <td style="text-align:right">11741–11759</td>
+  <td>Nonzero axial product-band horizon representation firewall</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0266</code></td>
+  <td style="text-align:right">11770–11781</td>
+  <td>Sufficient regular finite continuation criterion</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0267</code></td>
+  <td style="text-align:right">11866–11923</td>
+  <td>Final-octet homogeneous $H$-modality co-realization</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0268</code></td>
+  <td style="text-align:right">11975–12010</td>
+  <td>Finite final-octet carrier energy</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0269</code></td>
+  <td style="text-align:right">12197–12218</td>
+  <td>Uniqueness of the native terminal deep coefficient</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0270</code></td>
+  <td style="text-align:right">12302–12399</td>
+  <td>Exact fixed-environment same-action response operator</td>
+  <td><code>UNRESOLVED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0271</code></td>
+  <td style="text-align:right">12431–12465</td>
+  <td>Scalar reduction, optional Reeb branch and remaining instance-level work</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0272</code></td>
+  <td style="text-align:right">12482–12495</td>
+  <td>Exact mean-zero compact Poisson inverse</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0273</code></td>
+  <td style="text-align:right">12518–12539</td>
+  <td>Exact radial flux and local curvature correction</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0274</code></td>
+  <td style="text-align:right">12552–12571</td>
+  <td>Spectral realization and operator-specific extensions</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0275</code></td>
+  <td style="text-align:right">12580–12596</td>
+  <td>Physical operator and readout scope</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0276</code></td>
+  <td style="text-align:right">12616–12646</td>
+  <td>Isotropic response stress and the two homogeneous ports</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0277</code></td>
+  <td style="text-align:right">12662–12684</td>
+  <td>Compact Poisson projection does not erase a nonlinear mean</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0278</code></td>
+  <td style="text-align:right">12728–12768</td>
+  <td>Exact response energy and ratio evolution</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0279</code></td>
+  <td style="text-align:right">12777–12786</td>
+  <td>Closed geometry does not force a changing abundance ratio</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0280</code></td>
+  <td style="text-align:right">12790–12821</td>
+  <td>Local adiabatic energy reduction and geometric pressure</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0281</code></td>
+  <td style="text-align:right">12829–12847</td>
+  <td>Conditional matter-attached boundary dressing</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0282</code></td>
+  <td style="text-align:right">12859–12883</td>
+  <td>Curvature-corrected response reconstruction</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0283</code></td>
+  <td style="text-align:right">12892–12911</td>
+  <td>Closed vacuum changes Hubble rate without changing the floor</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0284</code></td>
+  <td style="text-align:right">12944–12987</td>
+  <td>Source-loaded scalar restriction of the physical static action</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0285</code></td>
+  <td style="text-align:right">13011–13024</td>
+  <td>What the sign test does and does not exclude</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0286</code></td>
+  <td style="text-align:right">13028–13052</td>
+  <td>Exact compact static response spectrum and radial kernel</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0287</code></td>
+  <td style="text-align:right">13062–13075</td>
+  <td>The global regular part is retained in energy</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0288</code></td>
+  <td style="text-align:right">13079–13095</td>
+  <td>Compact modal mean and its homogeneous component</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0289</code></td>
+  <td style="text-align:right">13103–13130</td>
+  <td>Uniform geodesic ball: explicit compact energy</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0290</code></td>
+  <td style="text-align:right">13139–13161</td>
+  <td>Small-source sphere and disk energy coefficients</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0291</code></td>
+  <td style="text-align:right">13176–13195</td>
+  <td>Canonical source and susceptibility scale derivatives</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0292</code></td>
+  <td style="text-align:right">13203–13230</td>
+  <td>Scale work of the compact quadratic energy</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0293</code></td>
+  <td style="text-align:right">13297–13320</td>
+  <td>Compact cubic solvability, amplitude and induced-energy sign</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0294</code></td>
+  <td style="text-align:right">13342–13358</td>
+  <td>Critical spatial scale weight and conditional coldness</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0295</code></td>
+  <td style="text-align:right">13471–13486</td>
+  <td>Static and temporal tests have different closure obligations</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0296</code></td>
+  <td style="text-align:right">13546–13566</td>
+  <td>Direct state-conditioned cubic polarization</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0297</code></td>
+  <td style="text-align:right">13589–13608</td>
+  <td>Radial law and a state-defined crossover</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0298</code></td>
+  <td style="text-align:right">13643–13662</td>
+  <td>Gaussian moment relation and energy-allocation scope</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0299</code></td>
+  <td style="text-align:right">13696–13714</td>
+  <td>Full state-conditioned cubic scale law</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0300</code></td>
+  <td style="text-align:right">13762–13768</td>
+  <td>A cancellation witness and the physical-port distinction</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0301</code></td>
+  <td style="text-align:right">13804–13830</td>
+  <td>Invariant preparation and homogeneous physical ports</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0302</code></td>
+  <td style="text-align:right">13870–13915</td>
+  <td>Closed-S3 local mode and endpoint pump certificate</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0303</code></td>
+  <td style="text-align:right">13959–13981</td>
+  <td>A sufficient static contact--memory margin</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0304</code></td>
+  <td style="text-align:right">13996–14032</td>
+  <td>Same-source static softening bounds the even dynamic response</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0305</code></td>
+  <td style="text-align:right">14058–14089</td>
+  <td>Quantitative cold mean on a common-action allocation</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0306</code></td>
+  <td style="text-align:right">14127–14151</td>
+  <td>A sufficient computable complete-source continuation barrier</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0307</code></td>
+  <td style="text-align:right">14172–14194</td>
+  <td>Local native Noether-charge entropy, with its scalar coefficient</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0308</code></td>
+  <td style="text-align:right">14244–14268</td>
+  <td>Positive complete-curvature coordinates on the product frame</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0309</code></td>
+  <td style="text-align:right">14277–14326</td>
+  <td>Same-action residual scalar, shear and curvature-flow budget</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0310</code></td>
+  <td style="text-align:right">14337–14364</td>
+  <td>Exact generalized-area focusing and the signed source budget</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0311</code></td>
+  <td style="text-align:right">14375–14421</td>
+  <td>Constrained rolling scalaron--shape Hessian</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0312</code></td>
+  <td style="text-align:right">14514–14549</td>
+  <td>Active strong-field obligations after the evaluated feedback</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0313</code></td>
+  <td style="text-align:right">14598–14615</td>
+  <td>Connected-floor no-go for ordinary voids</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0314</code></td>
+  <td style="text-align:right">14621–14656</td>
+  <td>Scalar phase support and detached-cap selector</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0315</code></td>
+  <td style="text-align:right">14658–14685</td>
+  <td>Scalar phase decoupling</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0316</code></td>
+  <td style="text-align:right">14691–14710</td>
+  <td>Complete parent-relative empty cap</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0317</code></td>
+  <td style="text-align:right">14712–14736</td>
+  <td>Compact-side parent-relative readout object</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0318</code></td>
+  <td style="text-align:right">14738–14755</td>
+  <td>Complete-empty compact-readout no-go</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0319</code></td>
+  <td style="text-align:right">14804–14828</td>
+  <td>Asymptotic complete-cap criterion</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0320</code></td>
+  <td style="text-align:right">14846–14874</td>
+  <td>Terminal causal-cap occurrence on the native finite-readout branch</td>
+  <td><code>UNRESOLVED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0321</code></td>
+  <td style="text-align:right">14931–14964</td>
+  <td>Operational complete-cap vacuum closure and ambient-state firewall</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0322</code></td>
+  <td style="text-align:right">14986–15055</td>
+  <td>Active-index freeze and complete raw (n_2\mid n_7) cap valuation</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0323</code></td>
+  <td style="text-align:right">15083–15101</td>
+  <td>The terminal reciprocal transition actually occurs</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0324</code></td>
+  <td style="text-align:right">15104–15129</td>
+  <td>Complete-cap structural fresh-root reclosure</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0325</code></td>
+  <td style="text-align:right">15148–15189</td>
+  <td>Typed structural and dressed root reset</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0326</code></td>
+  <td style="text-align:right">15191–15244</td>
+  <td>Complete-cap dressed seed to daughter curvature-square handoff</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0327</code></td>
+  <td style="text-align:right">15258–15309</td>
+  <td>Primitive Hopf-residue cyclic reclosure</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0328</code></td>
+  <td style="text-align:right">15330–15370</td>
+  <td>Planck-curvature-square normalization of cyclic reclosure</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0329</code></td>
+  <td style="text-align:right">15372–15401</td>
+  <td>Complete-cap intrinsic zero-cotangent reclosure</td>
+  <td><code>UNRESOLVED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0330</code></td>
+  <td style="text-align:right">15429–15465</td>
+  <td>Hopf-residue-selected same-action root Cauchy datum and outgoing bounce</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0331</code></td>
+  <td style="text-align:right">15497–15518</td>
+  <td>Finite regular K16 arrival on the restored source-free cyclic lineage</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0332</code></td>
+  <td style="text-align:right">15556–15564</td>
+  <td>Cyclic K16 reach status</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0333</code></td>
+  <td style="text-align:right">15567–15595</td>
+  <td>Unique transverse first-cell Born boundary on the cyclic daughter</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0334</code></td>
+  <td style="text-align:right">15614–15621</td>
+  <td>Boundary, not slow-roll endpoint</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0335</code></td>
+  <td style="text-align:right">15623–15645</td>
+  <td>No duplicate cap-lineage or homogeneous occurrence</td>
+  <td><code>UNRESOLVED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0336</code></td>
+  <td style="text-align:right">15648–15697</td>
+  <td>Cyclic-lineage downstream homogeneous-history propagation</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0337</code></td>
+  <td style="text-align:right">15699–15736</td>
+  <td>Complete-cap terminal freeze and same-action carrier renewal</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0338</code></td>
+  <td style="text-align:right">15754–15782</td>
+  <td>Root-to-terminal curvature hierarchy and fresh-root reaccessibility</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0339</code></td>
+  <td style="text-align:right">15795–15822</td>
+  <td>Vacuum-curvature interpretation firewall</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0340</code></td>
+  <td style="text-align:right">15824–15839</td>
+  <td>Scope of the cyclic-lineage theorem</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0341</code></td>
+  <td style="text-align:right">15849–15870</td>
+  <td>Cosmological position unfolding preserves the $m_p=1$/$m_{\rm cmp}=2$ distinction</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0342</code></td>
+  <td style="text-align:right">16196–16207</td>
+  <td>Structural endpoint interface after parent-collar descent</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0343</code></td>
+  <td style="text-align:right">16276–16310</td>
+  <td>Finite source-free/traceless K48 reach on the restored lower branch</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0344</code></td>
+  <td style="text-align:right">16312–16327</td>
+  <td>K48 underdamping is not the remaining scale problem</td>
+  <td><code>VERIFIED-CONDITIONAL</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0345</code></td>
+  <td style="text-align:right">16329–16343</td>
+  <td>Scalaron part of the terminal G28 Schur obligation</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0346</code></td>
+  <td style="text-align:right">16352–16371</td>
+  <td>Root energy and its expanding-branch transport</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0347</code></td>
+  <td style="text-align:right">16468–16486</td>
+  <td>A canonical corner cannot delete incoming scalaron energy</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0348</code></td>
+  <td style="text-align:right">16516–16528</td>
+  <td>Restricted free loading and retained population</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0349</code></td>
+  <td style="text-align:right">16599–16611</td>
+  <td>Executed gauge work in the coupled budget</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0350</code></td>
+  <td style="text-align:right">16612–16619</td>
+  <td>Statistics and the source-to-target map</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0351</code></td>
+  <td style="text-align:right">16658–16675</td>
+  <td>Radiation/dust continuation threshold</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0352</code></td>
+  <td style="text-align:right">16795–16811</td>
+  <td>Candidate-independent potential end range</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0353</code></td>
+  <td style="text-align:right">16910–16926</td>
+  <td>The end-range antecedent need not be read from the selected depth</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0354</code></td>
+  <td style="text-align:right">17003–17020</td>
+  <td>Finite native energy variation in an exact coefficient frame</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0355</code></td>
+  <td style="text-align:right">17066–17091</td>
+  <td>Identification of energy currents requires their actual same-action equality</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0356</code></td>
+  <td style="text-align:right">17161–17183</td>
+  <td>Scalar vacuum agreement does not certify the tensor action</td>
+  <td><code>REPRODUCED</code></td>
+</tr>
+<tr>
+  <td><code>BH-VIA-C-0357</code></td>
+  <td style="text-align:right">17233–17248</td>
+  <td>Claim-specific native gravitational action certificate</td>
+  <td><code>FORMALIZED</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Dependency and evidence release notes</h2>
+<ul>
+<li>Cumulative source-traced typed edges: 289. Batch 6 introduces 102 source-exact uses/guards; citation-only and missing-premise links are explicitly quarantined.</li>
+<li>Conditions are introduced exactly once in the VI-A local layer; imported III-A boundary-constancy conditions are reused from the existing global DAG.</li>
+<li><code>FULLY_AUDITED_WITH_OPEN_GAPS</code> is source-census coverage. <code>FORMALIZED</code> does not denote an independent theorem proof, and checked <code>VERIFIED-CONDITIONAL</code> outcomes do not imply their antecedent occurs.</li>
+<li>Complete Paper VI-C and Paper II/III independent re-audits were outside the one-paper scope; only material imports were traced.</li>
+<li>Original paper, TeX, PDFs and baseline ZIPs were not altered.</li>
+</ul>
+<h2>13 November 2026 — source derivation addendum, first-K48 operator bound (v1.4)</h2>
+<p>Current revised source: <code>Paper6A-GravityCosmology-v2_256.tex</code> (Framework v2.378). Newly source-derived mathematical certificate <code>p8:cor:v2256-k48-pair-contact-ceiling</code>, numerical diagnostic <code>p8:rem:v2256-k48-direct-packet-diagnostic</code>. Derivation and exact hypotheses are in <code>Paper00-AuditRepairBatch-v1_7.md</code>; executable 45/45 checks live in the v1.130 DAG <code>Proofs/Paper00-K48BoundBatch7-v1_1-*</code>.</p>
+<p><strong>Verified mathematical step:</strong> for each exact coherent 4-state Dirac pair, T_exc &lt;= H_exc + beta_* m I with sharp beta_<em>=(sqrt(5)-1)/(2 sqrt(2+sqrt(5)))=0.300283106..., uniformly in momentum and state. Sum over actual admitted independent even pair blocks; retain the entire hermitian Theta_rem. At K16, the packet's *normalized energy</em> equals (4/3)Xi alpha^-2 &lt;= 5.396e-35; its identification as an ordinary-fluid trace requires the stated positive-pressure scope.</p>
+<p><strong>No physical status promotion:</strong> <code>BH-VIA-G-0010</code> still requires full actual first-K48 source insertion, coefficients, chart and generated-history Cauchy packet. C06/A22.1a is still <code>OPEN_FINITE_COMPLETE_TRACE_CONTACT_CERTIFICATE</code>; A22.1b full history is still open. The newly sharpened pair inequality is an operator theorem with a source-level proof, <strong>not a certified decomposition of the complete physical Hamiltonian</strong>. Previous 11 audit-finding repairs and historical evidence/statuses remain intact.</p>
+<hr />
+<h2>Framework v3.016 source integration (Paper VI-A audit v1.15, 15 November 2026)</h2>
+<p><strong>New current source:</strong> <code>Paper6A-GravityCosmology-v2_262.tex</code>, integrated from the supplied <code>Paper00-PapersMinimal-v3_015</code> source and compiled as part of <code>Paper00-PapersMinimal-v3_016</code>. Paper I-B v1.9 and all 30 other paper mathematical bodies are preserved. This is a <strong>source-scope integration</strong>, not a fresh global correctness audit of Paper VI-A.</p>
+<p><strong>Previously certified nine local mathematical repairs carried forward:</strong> <code>BH-VIA-G-0010</code>, <code>BH-VIA-G-0011</code>, <code>BH-VIA-G-0012</code>, <code>BH-VIA-G-0008</code>, <code>BH-VIA-G-0009</code>, <code>BH-VIA-G-0003</code>, <code>BH-VIA-G-0004</code>, <code>BH-VIA-G-0005</code>, <code>BH-VIA-G-0006</code>. Their earlier exact checker hashes belong to source v2.261; new v2.262 source anchors and independent integration checks are recorded separately, not masqueraded as reruns of those historical checkers.</p>
+<p><strong>Additional source-scope mathematical insertions:</strong> (i) proposition <code>p8:prop:v2262-uniform-shell-yukawa-reference</code> proves the exact uniform shell Yukawa source fraction and finite-radius point-reference factor, without a physical scalar-to-metric normalization claim; (ii) <code>p8:cor:v2178-scalaron-coherent-envelope</code> and <code>p8:cor:v2119-running-mass-diagnostic</code> retain explicit SI physical-second factors <code>c</code>; (iii) D15's reported numerical ratios explicitly declare natural units <code>c=1</code>.</p>
+<p><strong>Required open gates preserved:</strong> <code>BH-VIA-G-0006::PHYSICAL_SOURCE_AND_METRIC_MATCHING</code>, <code>BH-VIA-G-0013</code> (black-hole numerical witness), <code>BH-VIA-G-0014</code> (static acceleration same-action operator), downstream nonuniform WKB convention checks, <code>NEWTON_WHOLE_ACTION</code>, <code>COSMO_OCCURRENCE</code>, causal-cap/terminal handoff, H1/H2 physical source and REG0 physical incidence. Neither a local mathematical proof nor a regenerated PDF upgrades these physical source/occurrence claims.</p>
+<p><strong>Merge:</strong> Replaces the earlier Paper VI-A v1.5 report in the newly supplied 32-report audit tree while preserving Paper I-B Exceptional Geometry v1.2 audit and the other 29 report bodies.</p>
+</article></div></main>
+<footer class="site-footer"><div class="container footer-grid"><div>
+<a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
+<p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
+<p class="foot-muted">Author: Peter Kugelmann · Source snapshot: 2026-11-20</p></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="observables.html">What must be explained?</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Research archive</h3><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads & provenance</a><a href="about.html">About & citation</a></div></div>
+<div class="container footer-bottom"><span>Paper corpus: v3.058 · DAG atlas: v1.215 · Audits: v1.79</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer></div></body></html>
