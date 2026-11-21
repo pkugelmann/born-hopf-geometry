@@ -1,5 +1,5 @@
 {
-  "site": "Paper00-GitHubPage-v1_2",
+  "site": "Paper00-GitHubPage-v1_4",
   "snapshotDate": "2026-11-20",
   "author": "Peter Kugelmann",
   "papersRelease": "v3_077",
@@ -800,5 +800,23 @@
     "proofPromotions": 0,
     "occurrencePromotions": 0
   },
-  "sourceReleaseSha256": "7251579625c16732bae925b2e77062820c65607edbf9f62d7cd1ba378997971a"
+  "sourceReleaseSha256": "7251579625c16732bae925b2e77062820c65607edbf9f62d7cd1ba378997971a",
+  "newVisuals": [
+    {
+      "path": "figures/exceptional-fork-2o-2i.svg",
+      "sha256": "8aeaca299acd587ad0cb10694b9dbdee396612de5adffc3d18ca168568f333ff"
+    },
+    {
+      "path": "figures/hurwitz-heavy.png",
+      "sha256": "98466698109cd1bd83805c33ff41f1ff4cda3faa6a9e56ee184bc81521fc764a"
+    },
+    {
+      "path": "figures/hurwitz-middle.png",
+      "sha256": "3fd89c7d282915a0a8176030ffd572e3d40334ff248e37373f454c988f631b93"
+    },
+    {
+      "path": "figures/hurwitz-light.png",
+      "sha256": "ebdd1d8d5661cd045f1ec944a70dae14d2cd79559aed6e6631bac4fe9a1df387"
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Publish the already-validated v1.2 website to the existing main branch.
+# Publish the already-validated v1.3 website to the existing main branch.
 # Requires git + Python 3 and push authentication for the GitHub account.
 set -euo pipefail
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -37,7 +37,7 @@ if [[ "$DRY_RUN" == 1 ]]; then
   exit 0
 fi
 printf '\nCommitting and pushing to %s...\n' "$BRANCH"
-git -C "$REPO" commit -m 'Update Born–Hopf site v1.2; sync Papers v3.077, Audits v1.83, DAG v1.223, S³ v1.49'
+git -C "$REPO" commit -m 'Update Born–Hopf site v1.3; sync Papers v3.077, Audits v1.83, DAG v1.323, S³ v1.49'
 git -C "$REPO" push origin "$BRANCH"
 printf '\nPUSHED. Check GitHub Actions and Settings > Pages (source: GitHub Actions).\n'
 printf 'Repository: https://github.com/pkugelmann/born-hopf-geometry\n'

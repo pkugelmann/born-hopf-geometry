@@ -2,14 +2,14 @@
 
 **Repository:** `https://github.com/pkugelmann/born-hopf-geometry` (branch `main`).
 
-This is an **update**, not a new repository: `Paper00-GitHubPage-v1_2.zip` contains the complete replacement for the GitHub Pages website and research library, plus an upload script.
+This is an **update**, not a new repository: `Paper00-GitHubPage-v1_3.zip` contains the complete replacement for the GitHub Pages website and research library, plus an upload script.
 
 ## One terminal upload
 
 On macOS, Linux, or Windows with WSL/Git Bash, after downloading the ZIP into `~/Downloads`:
 
 ```bash
-mkdir -p ~/born-hopf-update && unzip -o ~/Downloads/Paper00-GitHubPage-v1_2.zip -d ~/born-hopf-update && bash ~/born-hopf-update/publish.sh
+mkdir -p ~/born-hopf-update && unzip -o ~/Downloads/Paper00-GitHubPage-v1_3.zip -d ~/born-hopf-update && bash ~/born-hopf-update/publish.sh
 ```
 
 The upload script clones the existing `main`, safely replaces only the managed site, content, scripts, workflows and root website metadata, validates hashes and internal links again, commits, and pushes. It **does not reset Git history** or delete unrelated files at the repository root. Your existing Git authentication must allow `git push` to `pkugelmann/born-hopf-geometry`. If GitHub prompts for credentials, authenticate via Git Credential Manager or `gh auth login` followed by `gh auth setup-git` (when GitHub CLI is installed); use a token rather than your GitHub account password for HTTPS.
@@ -39,3 +39,7 @@ If the workflow does not appear, check that the hidden `.github/workflows/` dire
 The current full archives are direct site downloads (`docs/data/`): PapersMinimal v3.077, ProofChainAudits v1.83, DAG Atlas v1.223 and S³ Structure Network v1.49. Every single file is under GitHub's 100 MiB normal-blob limit; Git LFS is not required for this release. Future archives may be larger and should be screened before adding them to Git.
 
 **Evidence limitation:** website validation checks file integrity, labels and links. It is not an independent global E3/E4 mathematical audit or a new physical source/measurement certificate.
+
+## Editing the Key ideas page
+
+`content/ideas.md` is the only text source for `docs/ideas.html`. Edit Markdown and commit; the Pages workflow rebuilds it. The main page and navigation link to this guide. The 149 X-post images were not supplied as part of `Paper00-XPosts-v1_12.md`, so they are not included as website assets.

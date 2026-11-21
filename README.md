@@ -12,7 +12,7 @@ Author: **Peter Kugelmann**. This repository hosts both the public research webs
 | Proof-chain audits | **v1.83** | 45 readable Markdown/HTML reports, 130 retained obligation rows |
 | Dependency graph | **DAG Atlas v1.223** | 14,366 current source labels; 7,667 inherited nodes |
 | S³ exact finite-geometry network | **v1.49** | 13 diagrams, complete network ZIP |
-| Website | **Paper00-GitHubPage-v1_2** | Editable Markdown + browser indexes |
+| Website | **Paper00-GitHubPage-v1_4** | Editable Markdown + browser indexes |
 
 The v3.077 source adds **55 scoped mathematical source labels** across five papers. The current DAG source overlay links these statements to their new line numbers but does **not** promote them to independently verified global E3/E4 status or physical occurrence. The audit archive is versioned and source-dependent; not every new paper has been independently re-audited.
 
@@ -40,3 +40,12 @@ To install this version over the existing GitHub repository from the versioned Z
 Mathematical construction, action/source selection, propagation, measurement and independent validation are different claims. Source-integrated does **not** mean globally independently proved. Original manuscripts and full audit records govern the detailed hypotheses.
 
 Citation metadata: `CITATION.cff`. No open-source licence is implied unless the author publishes one explicitly.
+
+## Key ideas
+
+[Question-led research explanations](docs/ideas.html) adapted from Paper00-XPosts-v1_12. Edit `content/ideas.md` to revise the public prose without altering the scientific manuscripts.
+
+
+## Exceptional particle and hadron geometry (v1.4)
+
+Open [2O / 2I and the geometry of matter](docs/matter.html). The explanatory source lives in `content/matter.md` and the reproducible exact-coordinate SVG generator is `scripts/build_polyhedral_figure.py`. Mathematical splits, working physical roles, and remaining hadron-current/pole obligations are kept distinct.

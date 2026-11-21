@@ -27,3 +27,8 @@ The distinction is crucial: the current source provides **geometric and operator
 The current DAG release carries **14,366 distinct source labels** and a **7,667-node inherited canonical graph**. It adds current-source anchors for **55 newly integrated labels** without adding new certified canonical proof edges or promoting physical occurrence claims. The separate audit archive contains versioned reports and **130 recorded remaining-obligation rows**; these are not a new E3/E4 audit of all v3.077 text.
 
 Use [the research explorer](research.html?type=labels&latest=1) to find the 55 new statements, [the paper library](papers.html) to inspect the source, and [the verification browser](research.html?type=obligations) to find historical proof obligations. For exact scope, the versioned manuscripts and audit records remain authoritative.
+
+
+## Particle and hadron research, connected visually
+
+The separately editable [matter geometry guide](matter.html) connects the complete 2O working elementary-particle response to the current 2I/600-cell hadron-source comparisons through their **common 2T Hurwitz core**, without incorrectly embedding 2O inside 2I. It illustrates the heavy, middle and light split grammars using the supplied X-posts visual archive. It also explains the Paper VII-A/VII-B finite three-face baryon membrane, heat-reference overlap, Gram-normalized current cancellation and source-visible pole tests. These finite operators are not yet a prediction of observed partial widths, and the latest source integration remains unaudited at E3/E4 as a block.

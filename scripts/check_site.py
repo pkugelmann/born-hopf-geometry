@@ -23,7 +23,7 @@ def need(ok,msg):
     if not ok:bad(msg)
 
 m=json.loads((DOC/'data/manifest.json').read_text(encoding='utf-8'))
-need(m['site']=='Paper00-GitHubPage-v1_2','Unexpected website package marker')
+need(m['site']=='Paper00-GitHubPage-v1_4','Unexpected website package marker')
 need(len(m['papers'])==31 and len({p['code'] for p in m['papers']})==31,'Not 31 distinct primary papers')
 need(len(m['audits'])==45,'Not 45 Markdown audit reports')
 need(len(m['diagrams'])==13,'Not 13 SVG diagrams')
@@ -47,6 +47,11 @@ for a in m['archives']:
         need(f.stat().st_size==a['bytes'],f'Archive size mismatch: {a["name"]}')
         need(sha(f)==a['sha256'],f'Archive SHA-256 mismatch: {a["name"]}')
         need(f.stat().st_size<100*1024*1024,f'Archive exceeds GitHub single-file limit: {a["name"]}')
+
+for visual in m.get('newVisuals',[]):
+    p=DOC/visual['path']
+    need(p.is_file(),f'Missing authored visual: {visual["path"]}')
+    if p.is_file(): need(sha(p)==visual['sha256'],f'Visual digest mismatch: {p}')
 
 for a in m['audits']:
     need((DOC/a['href']).is_file(),'Missing report page '+a['href'])
@@ -114,7 +119,7 @@ for f,obj in parsed.items():
             if dest in parsed and unquote(parts.fragment) not in parsed[dest].ids:
                 bad(f'{f.relative_to(ROOT)}: broken anchor {link}')
 
-for name in ['index.html','papers.html','paper.html','framework.html','observables.html','pathways.html','updates.html','research.html','geometry.html','verification.html','downloads.html','about.html','glossary.html','.nojekyll']:
+for name in ['index.html','ideas.html','matter.html','papers.html','paper.html','framework.html','observables.html','pathways.html','updates.html','research.html','geometry.html','verification.html','downloads.html','about.html','glossary.html','.nojekyll']:
     need((DOC/name).exists(),'Missing publication entry '+name)
 need((ROOT/'.github/workflows/pages.yml').exists(),'GitHub Pages workflow absent')
 print(f"Checked {len(m['papers'])} current paper pairs, {len(m['audits'])} reports, {len(files)} HTML pages, {len(m['diagrams'])} SVGs, {len(browser.get('labels',[]))} exact label anchors and {len(m['archives'])} archive digests")

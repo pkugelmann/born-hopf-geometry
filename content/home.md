@@ -15,3 +15,7 @@ None of this means that a particle is literally a vertex of a polytope. The rese
 The series develops its argument in stages: geometric constitution and finite momentum, reciprocal kinematics, dynamics and spectral responses, finite quantum mechanics, matter and interaction carriers, gravity and cosmology, and strong-interaction structures. Each stage inherits conditions from earlier ones. Those conditions matter: a mathematically available operator is not automatically an experimentally observed phenomenon.
 
 For the full explanation, start with the [guided framework](framework.html). For the specific questions the framework must answer, see [From geometry to observables](observables.html). The [31 versioned manuscripts](papers.html) and [proof-chain archive](verification.html) supply the technical record.
+
+## A shorter route into the ideas
+
+The [key ideas guide](ideas.html) uses questions from the 15-thread X-post series to explain why the framework is called Born–Hopf, what the seven hierarchy levels mean, how its cosmological and particle constructions are supposed to reach observations, and which tests are still open. It adapts the text for the current scientific source; it is not a catalogue of social-media claims.

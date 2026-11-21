@@ -36,6 +36,8 @@ ART = ART_FILE.read_text(encoding='utf-8')
 
 NAV = [
     ('Overview','index.html','home'),
+    ('Key ideas','ideas.html','ideas'),
+    ('2O & 2I','matter.html','matter'),
     ('Framework','framework.html','framework'),
     ('Explore','research.html','research'),
     ('Papers','papers.html','papers'),
@@ -55,7 +57,7 @@ def make_footer():
 <a href="index.html" class="footer-brand">BORN–HOPF <span>GEOMETRY</span></a>
 <p>A geometry-first research programme working from mathematical structures to specific questions about measurable physics.</p>
 <p class="foot-muted">Author: {E(DATA['author'])} · Source snapshot: {E(MANIFEST['snapshotDate'])}</p></div><div>
-<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="pathways.html">Reading pathways</a><a href="observables.html">Observable questions</a><a href="updates.html">What changed</a><a href="glossary.html">Key terms</a></div><div>
+<h3>Understand</h3><a href="index.html">Start here</a><a href="framework.html">The framework explained</a><a href="ideas.html">Key ideas in plain language</a><a href="matter.html">2O / 2I: particles &amp; hadrons</a><a href="pathways.html">Reading pathways</a><a href="observables.html">Observable questions</a><a href="updates.html">What changed</a><a href="glossary.html">Key terms</a></div><div>
 <h3>Research archive</h3><a href="research.html">Browse theorem labels &amp; issues</a><a href="papers.html">31 manuscripts</a><a href="geometry.html">Geometry diagrams</a><a href="verification.html">Verification records</a><a href="downloads.html">Downloads &amp; provenance</a><a href="about.html">About &amp; citation</a></div></div>
 <div class="container footer-bottom"><span>Paper corpus: {E(PAPER_RELEASE)} · DAG atlas: {E(DAG_RELEASE)} · Audits: {E(AUDIT_RELEASE)}</span><span>Mathematical construction, physical realization, and observation are distinct claims.</span></div></footer>'''
 
@@ -103,12 +105,14 @@ def render_home():
     o=DATA['home']
     body, _ = render_markdown('home.md')
     concepts=''.join(card(x) for x in o['concepts'])
+    featured=''.join(f'<a class="route-card" href="{E(x["href"])}"><strong>{E(x["title"])}</strong><p>{E(x["text"])}</p><span>Read the explanation →</span></a>' for x in o.get('featured_ideas',[]))
     path=''.join(f'''<a href="{E(x['href'])}" class="path-step"><span class="path-index">0{i+1}</span><h3>{E(x['title'])}</h3><p>{E(x['text'])}</p></a>''' for i,x in enumerate(o['path']))
     main=f'''<section class="hero"><div class="container hero-inner"><div class="hero-copy"><div class="eyebrow">{E(o['eyebrow'])}</div>
 <h1>{E(o['headline'])}<br><em>{E(o['accent'])}</em></h1><p class="lead">{E(o['lead'])}</p>
 <div class="hero-actions">{anchor_button(o['primary_link']['title'],o['primary_link']['href'],'primary')}{anchor_button(o['secondary_link']['title'],o['secondary_link']['href'],'secondary')}</div>
 <div class="hero-meta"><span><strong>Author</strong> {E(DATA['author'])}</span><span><strong>Manuscripts</strong> 31</span><span><strong>Source edition</strong> {E(PAPER_RELEASE)}</span></div></div>{ART}</div></section>
 <div class="stats"><div class="container stat-grid"><div class="stat"><div class="stat-value">S³</div><div class="stat-label">Compact geometry</div></div><div class="stat"><div class="stat-value">M₈</div><div class="stat-label">Reciprocal construction</div></div><div class="stat"><div class="stat-value">I–VII</div><div class="stat-label">Research series</div></div><div class="stat"><div class="stat-value">31</div><div class="stat-label">Primary manuscripts</div></div></div></div>
+<section class="section section-alt"><div class="container"><div class="eyebrow">Questions that lead into the theory</div><div class="section-head"><h2>Start with what deserves an explanation.</h2><p>Short scientific introductions adapted from the project's 149-post question-led series, with the current papers and status boundaries.</p></div><div class="route-cards">{featured}</div><a class="micro-link" href="ideas.html">Explore all key ideas →</a></div></section>
 <section class="section"><div class="container"><div class="eyebrow">The working idea</div><div class="section-head"><h2>Geometry as a source of constraints.</h2><p>Not a metaphor for physics, but an attempt to make physics follow from operators that geometry allows.</p></div><div class="concept-grid">{concepts}</div></div></section>
 <section class="section section-alt"><div class="container"><div class="eyebrow">The research pathway</div><div class="section-head"><h2>From a relation to a measurable result.</h2><p>Each arrow represents work that must be done, not a result that may simply be assumed.</p></div><div class="path-grid">{path}</div></div></section>
 <section class="section"><div class="container"><div class="narrative-article prose">{body}</div></div></section>
@@ -116,6 +120,8 @@ def render_home():
     (DOC/'index.html').write_text(shell('Overview',main,'home',DATA['tagline']),encoding='utf-8')
 
 INTRO={
+ 'matter':('2O, 2I and the geometry of matter','How a common Hurwitz core connects elementary-particle response, the 600-cell, hadron source geometry and measurable decay questions.','Exceptional geometry · hadronic observables'),
+ 'ideas':('Key ideas, explained','Question-led introductions to the geometry, cosmology, particle structure and the specific measurements the framework must explain.','From the X-post series · updated for current sources'),
  'framework':('The framework explained','Follow the reasoning from a minimal geometric starting point to proposed physical consequences.','Why this geometry?'),
  'observables':('From geometry to observables','The measured questions the theory must answer—and the exact links that remain to be established.','What has to be explained?'),
  'glossary':('Glossary','Clear definitions of the geometry and physics terminology used across the research.','The language of the framework'),
@@ -132,7 +138,7 @@ def render_reader(key):
     (DOC/(key+'.html')).write_text(shell(title,main,key,description),encoding='utf-8')
 
 def replace_other_page_nav_and_footer():
-    excludes={'index.html','framework.html','observables.html','glossary.html','pathways.html','updates.html','research.html','geometry.html','downloads.html','verification.html','about.html'}
+    excludes={'index.html','ideas.html','matter.html','framework.html','observables.html','glossary.html','pathways.html','updates.html','research.html','geometry.html','downloads.html','verification.html','about.html'}
     for page in DOC.rglob('*.html'):
         if page.parent==DOC and page.name in excludes:continue
         txt=page.read_text(encoding='utf-8')
@@ -203,7 +209,7 @@ def render_about():
     (DOC/'about.html').write_text(shell('About',main,'home','Research programme, source version and how to cite the work.'),encoding='utf-8')
 
 render_home()
-for key in ('framework','observables','glossary','pathways','updates'):
+for key in ('ideas','matter','framework','observables','glossary','pathways','updates'):
     render_reader(key)
 render_research()
 render_geometry()

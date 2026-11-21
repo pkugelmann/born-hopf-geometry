@@ -1,5 +1,7 @@
 # Understanding Born–Hopf Geometry
 
+For a shorter, question-led route into the ideas, start with [Key ideas explained](ideas.html). The guide is adapted from the X-post series and linked to the current papers.
+
 Born–Hopf Geometry is an attempt to explain physical structure from a tightly constrained mathematical starting point. Its question is not simply whether known equations can be rewritten in geometric language. It is whether geometry itself is restrictive enough to determine the **states, relations and dynamical responses that measurements reveal**.
 
 A useful way to read the framework is as a chain: **what can be distinguished → which geometry is admissible → which operations it supports → which histories actually occur → what an experiment could measure**. The intermediate steps are mathematical; the final step is physical.

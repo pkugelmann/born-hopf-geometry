@@ -6,12 +6,18 @@ The editable source is `content/` — **not** the generated `docs/*.html` pages.
 | --- | --- |
 | `site.json` | Homepage heading, introductory paragraph, concept cards and research path |
 | `home.md` | Homepage narrative |
+| `matter.md` | Illustrated 2O/2I and hadron-source guide; its equations, source links and captions can be edited independently |
+| `ideas.md` | Question-led introductions adapted from the X-post series; all scientific claims and source links are editable |
 | `framework.md` | Main plain-language technical explanation |
 | `pathways.md` | The six guided routes through the papers |
 | `observables.md` | What measurements and predictions must ultimately be explained |
 | `updates.md` | Current source integration, its scope and remaining obligations |
 | `glossary.md` | Definition of terms for scientifically curious readers |
 | `protocols/*.md` | Original verification protocol sources (not rewritten by website editing) |
+
+The new **2O/2I matter geometry** page is generated from `content/matter.md`, with images in `docs/figures/`. The 600-cell illustration can be recreated with `python scripts/build_polyhedral_figure.py` from the exact Paper I-B quaternions.
+
+The **Key ideas** page is generated directly from `content/ideas.md`. Headings become browseable anchors automatically. Three source-provided Hurwitz particle-split PNGs are included in `docs/figures/` with the original attribution and a clear diagnostic-vs-physical-reading note. The other X-post images remain outside the repository.
 
 All other site material (paper catalog, audit browser, source-label anchors, geometry network, PDF files, full archives) comes from a versioned research release and should not be rewritten editorially.
 
